@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/source.xml" />
+		</update>
+	</info>
+	<element name="The Illrigger Revised" type="Source" source="Core" id="ID_MCDM_SOURCE_ILLRIGGER_REVISED">
+		<description>
+			<h5 style="margin-top:-1em">The Illrigger is MCDM's first custom class for fifth edition!</h5>
+			<p>Illriggers are versatile armored warriors with a wide array of supernatural abilities that reflect the infernal source of their power. They can be highly mobile stealthy assassins, heavily armored battlefield commanders, or fighting illusionists.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">ILLR</set>
+			<set name="url">https://shop.mcdmproductions.com/collections/front-page-feature/products/illrigger-class</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/ILLR.png</set>
+			<set name="author" abbreviation="MCDM" url="https://shop.mcdmproductions.com/">MCDM Productions</set>
+			<set name="third-party">true</set>
+			<set name="release">20231219</set>
+		</setters>
+	</element>
+</elements>

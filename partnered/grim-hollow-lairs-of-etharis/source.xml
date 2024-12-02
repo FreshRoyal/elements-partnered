@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Grim Hollow - Lairs of Etharis</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis/source.xml" />
+		</update>
+	</info>
+	<element name="Grim Hollow: Lairs of Etharis" type="Source" source="Core" id="ID_GFG_SOURCE_GRIM_HOLLOW_LAIRS_OF_ETHARIS">
+		<description>
+			<h5 style="margin-top:-1em">Hunt, Salvage, and Survive the Monsters of Etharis</h5>
+			<p>From its deep and forbidding forests, where horrific aberrations lurk, to the hulking and impenetrable mountain ranges where lost legacies lie, the landscape of Etharis is formidable. While nefarious figures entice those who seek power, the devotees of dead gods punish the impious. There are few heroes in a world as morally corrupted as this. Can you hunt, salvage, and survive the monsters of Etharis? Each of the adventures contained within can be run by themselves or as part of an ongoing campaign.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">GHLE</set>
+			<set name="url">https://marketplace.dndbeyond.com/settings/SRC-00130</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis/GHLE.jpg</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com/">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+			<set name="release">20231201</set>
+		</setters>
+	</element>
+</elements>

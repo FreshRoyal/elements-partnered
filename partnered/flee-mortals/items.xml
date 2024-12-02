@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Flee, Mortals!</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals/items.xml" />
+		</update>
+	</info>
+
+	<element name="Amethyst Die" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_AMETHYST_DIE">
+		<description>
+			<p>This gaming die is carved from a fragment of powerful psionic crystal and resonates with a remnant of its power. This die has 3 charges and regains all expended charges daily at dawn. When you make an ability check, attack roll, or saving throw, you can expend 1 charge to roll a d6 and add the number rolled to the d20 roll. Immediately after the ability check, attack roll, or saving throw is resolved, you take psychic damage equal to twice the number you rolled on the d6.</p>
+		</description>
+		<setters>
+			<set name="keywords">ability, attack, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Boog's Ball" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_BOOGS_BALL">
+		<description>
+			<p>This magic stone sphere is incredibly dense, has a 3-inch radius, and grows when thrown. As an action, you can throw the ball at a point you can see within 60 feet of you. If you throw the ball 30 feet or less away from you, the ball grows to a 5-foot radius. If you throw the ball farther than 30 feet, it grows to a 10-foot radius. Each creature in the ball's area when it reaches that point must succeed on a DC 15 Dexterity saving throw or take 14 (4d6) bludgeoning damage. The ball then shrinks back to its 3-inch radius and teleports either into your open hand or into a pack or pouch you wear (your choice).</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw, bludgeoning, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Eye of Sunrise" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_EYE_OF_SUNRISE">
+		<description>
+			<p>A crimson gemstone glitters on the back of this black iron gauntlet. While wearing the gauntlet, you can use a bonus action to cause the stone to shed bright red light in a 10-foot radius and dim light for an additional 10 feet. You can use another bonus action to extinguish the light.</p>
+			<p class="indent">Additionally, you can use an action to raise the gauntlet and emit a fiery explosion in a 30-foot cone. The explosion can be heard 300 feet away. Each creature in the area must make a DC 15 Dexterity saving throw, taking 5d6 fire damage plus 5d6 force damage on a failed save, or half as much damage on a successful one. Each structure and mundane object in the area that isn't being worn or carried takes 10d6 fire damage plus 10d6 force damage. Once this action is used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">gauntlet, saving throw, fire, force, damage, light</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">hands</set>
+		</setters>
+	</element>
+
+	<element name="Iron Ring" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_IRON_RING">
+		<description>
+			<p>While wearing this ring, you can use an action to speak a passphrase known only to the High Command of the Black Iron Pact—"Blood of Rioja"—and choose a target destination. If you are not in the demiplane known as the Cyst, you must choose a destination within the Cyst. If you are already in the Cyst, you must choose a destination you have visited before. Once you choose a destination in this way, the ring teleports you there. The ring can be used to teleport twice and regains both uses daily at dusk.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this ring, you can't take it off or end your attunement to it unless you are targeted by a <i>cure ailment</i> power of 4th order or higher or the <i>greater restoration</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">action</set>
+			<set name="category">Rings</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Mantle of the Lightbender" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_MANTLE_OF_THE_LIGHTBENDER">
+		<description>
+			<p>This elegant cloak is lined with the iridescent mane of a <i>lightbender</i>. When you're hit with an attack while wearing this cloak, you can use your reaction to reveal that the attacker is attacking a past visual imprint of you. You appear in an unoccupied space you can see within 30 feet of your imprint, the attack misses, then the imprint disappears. You can't use this reaction if the attacker relies on senses other than sight, such as blindsight, or if they can perceive illusions as false, as with truesight. Once you use the cloak to reveal a past visual imprint of yourself, you can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, reaction</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Mindrazor" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_MINDRAZOR">
+		<description>
+			<p>This rapier was forged using shattered fragments of a powerful psionic crystal and ore from a falling star. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">This rapier has 3 charges and regains all expended charges daily at dawn. When you hit a creature with an attack roll using this weapon, you can expend 1 charge to attempt to inflict a psionic wound. The target must succeed on a DC 17 Intelligence saving throw or become vulnerable to psychic damage for 1 minute (save ends at end of turn).</p>
+		</description>
+		<setters>
+			<set name="keywords">rapier, attack, damage, saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Rapier</set>
+		</setters>
+	</element>
+
+	<element name="Poison Popper" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_POISON_POPPER">
+		<description>
+			<p>You can throw this inedible fruit at a point you can see within 60 feet of you, causing it to explode and release a cloud of noxious gas in a 10-foot-radius sphere centered on that point. The cloud spreads around corners and lingers for 1 minute. A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.</p>
+			<p class="indent">The cloud's area is lightly obscured, and when a creature enters it for the first time on a turn or starts their turn there, they must make a DC 13 Constitution saving throw. On a failed save, a creature takes 14 (4d6) poison damage and is poisoned for 1 minute (save ends at end of turn). While poisoned in this way, a creature's speed is halved. On a successful save, a creature takes half as much damage and suffers no other effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw, poison, damage, poisoned</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Star of Iron" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_STAR_OF_IRON">
+		<description>
+			<p>This magic maul is made of a durable, light metal and has a long haft, giving it a reach of 10 feet. When you hit a creature with this maul, they are hexed until the end of their next turn. Whenever a creature hexed in this way makes an attack roll or saving throw, they must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
+			<p class="indent">While you hold the maul, you can use an action to change the appearance of its head, choosing its shape and color.</p>
+		</description>
+		<setters>
+			<set name="keywords">maul, action, reach, hexed</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="maul">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Maul</set>
+		</setters>
+	</element>
+
+	<element name="Sun Eater's Mind" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_SUN_EATERS_MIND">
+		<description>
+			<p>The shifting shadows within this black glass ring constantly move. While wearing this ring, when a creature you can see within 60 feet of you makes a spell attack against you or casts a spell that requires you to make a saving throw, you can use your reaction to pierce the creature's mind. The next attack you make against that creature before the end of your next turn is automatically a critical hit. The ring can be used to pierce a creature's mind three times and regains all uses daily at dusk.</p>
+			<p class="indent"><strong><em>Sun Eater's Gift.</em></strong> While within 30 feet of a willing creature who is attuned to the Sun Eater's soul, you can use a bonus action to swap places with them. The ring can be used to swap places three times and regains all uses daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, reaction, critical</set>
+			<set name="category">Rings</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Sun Eater's Soul" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_SUN_EATERS_SOUL">
+		<description>
+			<p>This black metal ring is unnervingly matte, reflecting nothing even in the brightest of light. While wearing this ring, when a creature you can see within 30 feet of you is hit with an attack, you can use your reaction to halve the damage that creature takes from the attack. The ring can be used to halve damage three times and regains all uses daily at dusk.</p>
+			<p class="indent"><strong><em>Sun Eater's Grace.</em></strong> When you cast a spell that restores hit points to a creature, you can also restore that same number of hit points to a creature within 30 feet of you who is attuned to the Sun Eater's mind. The ring can be used to restore hit points three times and regains all uses daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, reaction</set>
+			<set name="category">Rings</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Tome of the Ethereal" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_TOME_OF_THE_ETHEREAL">
+		<description>
+			<p>Lighter than it rightly should be, this book is always cold to the touch and blurs when seen in periphery. While holding the tome, you can see into the Ethereal Plane out to a range of 120 feet.</p>
+			<p class="indent">In addition, the tome has 3 charges, and it regains all expended charges daily at dusk. When a creature you can see within 60 feet of you targets you with a power, a spell, or an attack while you aren't on the Ethereal Plane, you can use your reaction to expend 1 charge and choose one of the following effects:</p>
+			<ul>
+				<li>You enter the Ethereal Plane, then return to the plane and the space you left at the start of your next turn.</li>
+			</ul>
+			<p class="indent">If that space is occupied, you return to the nearest unoccupied space of your choice.</p>
+			<ul>
+				<li>You teleport up to 60 feet to an unoccupied space you can see.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">reaction, ethereal plane, teleport</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Treant Arrow" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_TREANT_ARROW">		
+		<description>
+			<p>This arrow is carved from the boughs of a living treant.</p>
+			<p class="indent">When a creature takes damage from the arrow, they are restrained by vines that sprout from the shaft. A creature can make a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check as an action, freeing themself or another creature restrained by the arrow within their reach on a success.</p>
+			<p class="indent">Once a <i>treant arrow</i> restrains a creature or if the treant used to make the arrow dies, it becomes a mundane arrow.</p>
+		</description>
+		<setters>
+			<set name="keywords">restrained</set>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Waning Moon" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_WANING_MOON">
+		<description>
+			<p>This slender elven bow is lacquered blue and purple.</p>
+			<p class="indent">Its inside curve twinkles with tiny diamonds set like a field of stars.</p>
+			<p class="indent">This magical longbow grants a +1 bonus to attack and damage rolls made with it. If you hit a creature who can't see you with this bow, the attack deals an extra 2d6 force damage.</p>
+			<p class="indent">Additionally, when you hit a target with an attack made with the bow, you can choose to become invisible for 1 minute and take the Hide action as part of the attack.</p>
+			<p class="indent">The invisibility ends early if you attack, cast a spell, or manifest a power. Once this invisibility has been used, it can't be used again until the next dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow, damage, force, invisible</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longbow</set>
+		</setters>
+	</element>
+
+	<!--Soulbinder Items-->
+
+	<element name="Bracers of the Spellbreaker" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_BRACERS_OF_THE_SPELLBREAKER">
+		<description>
+			<p>These mithral bracers are engraved with runes and inlaid with three multicolored bands of tiny gemstones.</p>
+			<p class="indent">While wearing these bracers, you have advantage on saving throws against spells and magical effects. In addition, damage from your spell attacks ignore your target's damage resistances.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> This magic item is sentient. Its alignment and Intelligence, Wisdom, and Charisma scores match the corresponding persona's stat block.</p>
+			<p class="indent">This magic item has hearing and darkvision out to a range of 60 feet. It can speak, read, and understand the languages in its persona's stat block, and it can communicate telepathically with its wearer.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this item, you can't end your attunement to it unless you are targeted by the <i>remove curse</i> spell or similar magic. Seven days after you attune to it, you must make a DC 18 Wisdom saving throw. On a failed save, your Wisdom score is reduced by 1 for as long as you remain attuned to the item. You must repeat this saving throw every 24 hours while you remain attuned to the item.</p>
+			<p class="indent">If you fail this saving throw three times, the magic item possesses your body, and your soul becomes trapped in your body. Your body transforms into the original body of the soul within the magic item, and your statistics change to match the persona in control of your new body. While possessed, your equipment transforms into the equipment used by the possessing persona's stat block. You sense everything your body can sense, but the persona controls your movement, speech, and actions.</p>
+			<p class="indent">If you end your attunement to the magic item, your body returns to its original form, you regain control of your body, and the magic item's soul returns to the magic item. If you die, the magic item's soul returns to the magic item. If your body is possessed for 1d6 + 12 months, your soul is destroyed, your body crumbles to dust, and you die.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">arms</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Crown of Majesty" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_CROWN_OF_MAJESTY">
+		<description>
+			<p>This mithral circlet is inscribed with an intricate filigree formed of Elvish runes. The front of the circlet holds a flawless diamond that changes hue in sunlight.</p>
+			<p class="indent">While wearing this crown, you have resistance to psychic damage, and you can't be charmed or frightened.</p>
+			<p class="indent">The crown has 3 charges. While wearing it, you can use an action and expend 1 charge to cast one of the following spells from it (save DC 18): <i>command</i> or <i>charm person</i>. The crown regains 1d3 expended charges daily at dawn.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> This magic item is sentient. Its alignment and Intelligence, Wisdom, and Charisma scores match the corresponding persona's stat block.</p>
+			<p class="indent">This magic item has hearing and darkvision out to a range of 60 feet. It can speak, read, and understand the languages in its persona's stat block, and it can communicate telepathically with its wearer.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this item, you can't end your attunement to it unless you are targeted by the <i>remove curse</i> spell or similar magic. Seven days after you attune to it, you must make a DC 18 Wisdom saving throw. On a failed save, your Wisdom score is reduced by 1 for as long as you remain attuned to the item. You must repeat this saving throw every 24 hours while you remain attuned to the item.</p>
+			<p class="indent">If you fail this saving throw three times, the magic item possesses your body, and your soul becomes trapped in your body. Your body transforms into the original body of the soul within the magic item, and your statistics change to match the persona in control of your new body. While possessed, your equipment transforms into the equipment used by the possessing persona's stat block. You sense everything your body can sense, but the persona controls your movement, speech, and actions.</p>
+			<p class="indent">If you end your attunement to the magic item, your body returns to its original form, you regain control of your body, and the magic item's soul returns to the magic item. If you die, the magic item's soul returns to the magic item. If your body is possessed for 1d6 + 12 months, your soul is destroyed, your body crumbles to dust, and you die.</p>
+		</description>
+		<setters>
+			<set name="keywords">resistance, psychic, action, spells</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC"  />
+		</rules>
+	</element>
+
+	<element name="Pathfinder's Boots" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_PATHFINDERS_BOOTS">
+		<description>
+			<p>Silver eyelets decorate these soft leather boots. While wearing these boots, you gain a +2 bonus to your AC and your walking speed increases by 10 feet.</p>
+			<p class="indent">The boots have 7 charges. While wearing them, you can expend 1 charge to cast one of the following spells from them: <i>feather fall</i>, <i>jump</i>, or <i>shield</i>. The boots regain 1d6 + 1 expended charges daily at dawn.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> This magic item is sentient. Its alignment and Intelligence, Wisdom, and Charisma scores match the corresponding persona's stat block.</p>
+			<p class="indent">This magic item has hearing and darkvision out to a range of 60 feet. It can speak, read, and understand the languages in its persona's stat block, and it can communicate telepathically with its wearer.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this item, you can't end your attunement to it unless you are targeted by the <i>remove curse</i> spell or similar magic. Seven days after you attune to it, you must make a DC 18 Wisdom saving throw. On a failed save, your Wisdom score is reduced by 1 for as long as you remain attuned to the item. You must repeat this saving throw every 24 hours while you remain attuned to the item.</p>
+			<p class="indent">If you fail this saving throw three times, the magic item possesses your body, and your soul becomes trapped in your body. Your body transforms into the original body of the soul within the magic item, and your statistics change to match the persona in control of your new body. While possessed, your equipment transforms into the equipment used by the possessing persona's stat block. You sense everything your body can sense, but the persona controls your movement, speech, and actions.</p>
+			<p class="indent">If you end your attunement to the magic item, your body returns to its original form, you regain control of your body, and the magic item's soul returns to the magic item. If you die, the magic item's soul returns to the magic item. If your body is possessed for 1d6 + 12 months, your soul is destroyed, your body crumbles to dust, and you die.</p>
+		</description>
+		<setters>
+			<set name="keywords">spells, armor class, speed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="speed" value="10" />
+			<stat name="ac:misc" value="2" />
+		</rules>
+	</element>
+
+	<element name="Pendant of Grave Regeneration" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_PENDANT_OF_GRAVE_REGENERATION">
+		<description>
+			<p>While you wear this pendant, your skin becomes pale and cold to the touch, and you regain 5 hit points at the start of your turn if you have at least 1 hit point.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> This magic item is sentient. Its alignment and Intelligence, Wisdom, and Charisma scores match the corresponding persona's stat block.</p>
+			<p class="indent">This magic item has hearing and darkvision out to a range of 60 feet. It can speak, read, and understand the languages in its persona's stat block, and it can communicate telepathically with its wearer.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this item, you can't end your attunement to it unless you are targeted by the <i>remove curse</i> spell or similar magic. Seven days after you attune to it, you must make a DC 18 Wisdom saving throw. On a failed save, your Wisdom score is reduced by 1 for as long as you remain attuned to the item. You must repeat this saving throw every 24 hours while you remain attuned to the item.</p>
+			<p class="indent">If you fail this saving throw three times, the magic item possesses your body, and your soul becomes trapped in your body. Your body transforms into the original body of the soul within the magic item, and your statistics change to match the persona in control of your new body. While possessed, your equipment transforms into the equipment used by the possessing persona's stat block. You sense everything your body can sense, but the persona controls your movement, speech, and actions.</p>
+			<p class="indent">If you end your attunement to the magic item, your body returns to its original form, you regain control of your body, and the magic item's soul returns to the magic item. If you die, the magic item's soul returns to the magic item. If your body is possessed for 1d6 + 12 months, your soul is destroyed, your body crumbles to dust, and you die.</p>
+		</description>
+		<setters>
+			<set name="keywords">hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Scarlet Shadows" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_RING_OF_SCARLET_SHADOWS">
+		<description>
+			<p>This iridium ring is inlaid with an obsidian band. The stone inlay occasionally appears to writhe or shift, as if shadows play along its surface.</p>
+			<p class="indent">While wearing this ring, you gain darkvision out to a range of 60 feet, or if you already have darkvision, its range increases by 60 feet. Additionally, you have advantage on Dexterity (Stealth) checks made to hide.</p>
+			<p class="indent"><strong><em>Shadow Blade.</em></strong> When you cast a spell that restores hit points to a creature, you can also restore that same number of hit points to a creature within 30 feet of you who is attuned to the Sun Eater's mind. The ring can be used to restore hit points three times and regains all uses daily at dusk.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> This magic item is sentient. Its alignment and Intelligence, Wisdom, and Charisma scores match the corresponding persona's stat block.</p>
+			<p class="indent">This magic item has hearing and darkvision out to a range of 60 feet. It can speak, read, and understand the languages in its persona's stat block, and it can communicate telepathically with its wearer.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this item, you can't end your attunement to it unless you are targeted by the <i>remove curse</i> spell or similar magic. Seven days after you attune to it, you must make a DC 18 Wisdom saving throw. On a failed save, your Wisdom score is reduced by 1 for as long as you remain attuned to the item. You must repeat this saving throw every 24 hours while you remain attuned to the item.</p>
+			<p class="indent">If you fail this saving throw three times, the magic item possesses your body, and your soul becomes trapped in your body. Your body transforms into the original body of the soul within the magic item, and your statistics change to match the persona in control of your new body. While possessed, your equipment transforms into the equipment used by the possessing persona's stat block. You sense everything your body can sense, but the persona controls your movement, speech, and actions.</p>
+			<p class="indent">If you end your attunement to the magic item, your body returns to its original form, you regain control of your body, and the magic item's soul returns to the magic item. If you die, the magic item's soul returns to the magic item. If your body is possessed for 1d6 + 12 months, your soul is destroyed, your body crumbles to dust, and you die.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, necrotic, darkvision, advantage</set>
+			<set name="category">Rings</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+
+	<element name="Visionary's Cloak" type="Magic Item" source="Flee, Mortals!" id="ID_MCDM_FM_MAGIC_ITEM_VISIONARYS_CLOAK">
+		<description>
+			<p>This gray, hooded traveler's cloak sports a white silk hem and a platinum clasp that, when closed, resembles the shape of an eye.</p>
+			<p class="indent">While wearing this cloak, you have advantage on initiative checks and can't be surprised.</p>
+			<p class="indent">Additionally, when you wear the cloak with the hood up, you gain truesight out to a range of 60 feet and your eyes cast a soft blue-white glow. Pulling the hood up or down requires an action.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> This magic item is sentient. Its alignment and Intelligence, Wisdom, and Charisma scores match the corresponding persona's stat block.</p>
+			<p class="indent">This magic item has hearing and darkvision out to a range of 60 feet. It can speak, read, and understand the languages in its persona's stat block, and it can communicate telepathically with its wearer.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once you attune to this item, you can't end your attunement to it unless you are targeted by the <i>remove curse</i> spell or similar magic. Seven days after you attune to it, you must make a DC 18 Wisdom saving throw. On a failed save, your Wisdom score is reduced by 1 for as long as you remain attuned to the item. You must repeat this saving throw every 24 hours while you remain attuned to the item.</p>
+			<p class="indent">If you fail this saving throw three times, the magic item possesses your body, and your soul becomes trapped in your body. Your body transforms into the original body of the soul within the magic item, and your statistics change to match the persona in control of your new body. While possessed, your equipment transforms into the equipment used by the possessing persona's stat block. You sense everything your body can sense, but the persona controls your movement, speech, and actions.</p>
+			<p class="indent">If you end your attunement to the magic item, your body returns to its original form, you regain control of your body, and the magic item's soul returns to the magic item. If you die, the magic item's soul returns to the magic item. If your body is possessed for 1d6 + 12 months, your soul is destroyed, your body crumbles to dust, and you die.</p>
+		</description>
+		<setters>
+			<set name="keywords">initiative, advantage, truesight</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+</elements>

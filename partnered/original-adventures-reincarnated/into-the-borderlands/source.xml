@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Original Adventures Reincarnated #1 - Into the Borderlands</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/original-adventures-reincarnated/into-the-borderlands/source.xml" />
+		</update>
+	</info>
+	<element name="Original Adventures Reincarnated #1: Into the Borderlands" type="Source" source="Core" id="ID_GMG_SOURCE_ORIGINAL_ADVENTURES_REINCARNATED_INTO_THE_BORDERLANDS">
+		<description>
+			<p> An adventure for levels 1-3. The Borderlands. An untamed wild region far flung from the comforts and protection of civilization. A lone fortified Keep is the only bastion of Good desperately striving to maintain the forces of Chaos at bay. But Evil is everywhere, lurking in dark caves, fetid swamps, and forlorn forests. Bands of cutthroat brigands and ruthless tribes of humanoids eager to clash with the forces of Good rove the region. The Borderlands hold many secret wondrous locations, and the opportunities for fame, prestige, and fortune are plentiful. But equally abundant are the perils, risks, and challenges to those brave enough to explore the wilds. Sharpen your swords and axes. Purchase your iron rations and tinderboxes. And don’t forget at least one 10-foot pole. Adventure awaits those with the mettle to confront Chaos in the Borderlands! This tome is an homage to the origins of Adventure that began decades ago with B1: In Search of the Unknown and B2: The Keep on the Borderlands. Herein you will find high-quality scans from multiple printings of the original first edition adventure modules, plus commentary by such gaming luminaries as Luke Gygax and Mike Mearls. Full fifth edition conversions of both adventures are included, as well as brand new additional adventure locations to further expand and develop the Borderlands. This is a fully playable mini-campaign to start off your new fifth edition adventures, with a distinct old-school vibe.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">OAR1</set>
+			<set name="url">https://www.amazon.com/Original-Adventures-Reincarnated-Into-Borderlands/dp/1946231355</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/original-adventures-reincarnated/into-the-borderlands/OAR1.jpg</set>
+			<set name="author" abbreviation="GMG" url="https://goodman-games.com/">Goodman Games</set>
+			<set name="third-party">true</set>
+			<set name="release">20180601</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Grim Hollow - Lairs of Etharis</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Arboreal Curse" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_ARBOREAL_CURSE">
+		<supports>Druid, Spell Saving Throw</supports>
+		<description>
+			<p>You attempt to turn one creature that you can see within range into wood. If the target's body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden into bark. On a successful save, the creature isn't affected.</p>
+			<p class="indent">A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its Constitution saving throw three times, it is turned into a tree and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.</p>
+			<p class="indent">If the transformed creature is burned, chopped down, or otherwise destroyed while petrified, the creature is slain.</p>
+			<p class="indent">A creature remains transformed unless the effect is reversed within one year with greater restoration, wish, or similar magical effects. If the creature spends one year and a day as a tree, the transformation becomes permanent, and nothing can return the creature to its original form.</p>
+		</description>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cup of sap</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Consume Mind" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_CONSUME_MIND">
+		<supports>Cleric, Warlock, Wizard</supports>
+		<description>
+			<p>You consume the brain of another creature's corpse, gaining its memories and knowledge. The corpse must have a brain and can't be undead. The spell fails if the corpse has been dead (and not preserved) for more than three days.</p>
+			<p class="indent">Until the spell ends, you can attempt to recall any important fact known to the creature—family history, recent events, building layouts, passwords, details of the creature's death, and similar information. To recall a piece of information, you must make an ability check using your spellcasting modifier. The DC is equal to the corpse's Intelligence score.</p>
+			<p class="indent">Once the caster rolls to determine whether they recall a fact, they cannot attempt to recall it again.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a 1-ounce fresh or magically preserved portion of another creature's brain</set>
+			<set name="duration">1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Heartseeker" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_HEARTSEEKER">
+		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>As part of casting this spell you must expend six hit dice or the spell automatically fails. When you do, blood flows from your body then crystallizes into a barbed arrow, which launches at a creature of your choice within range. Make a ranged spell attack against the chosen creature. On a hit, roll the hit dice expended to cast this spell, and the creature takes piercing damage equal to the result.</p>
+			<p class="indent">Once lodged in the creature, the bloody arrow begins to burrow toward its heart, rendering it vulnerable to further attacks. At the start of the creature's next turn, it must make a Constitution saving throw. On a failure, attacks against the creature score critical hits on a 19 or 20 on the attack roll.</p>
+			<p class="indent">At the start of each of the creature's turns after that, it must repeat the Constitution saving throw or the critical hit range on attacks against the creature increases by 1 again. If the creature succeeds on three of these saving throws (these successes do not need to be consecutive) this spell ends. The increased critical hit range ends when the spell does.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">300 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a ruby worth at least 100 gp</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Hunter Sense" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_HUNTER_SENSE">
+		<supports>Druid</supports>
+		<description>
+			<p>You touch one willing creature. While this spell is active, the target's senses are heightened. If the target rolls a 9 or below on the die when making a Wisdom (Perception) check, they instead act as if they rolled a 10.</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Magic Mirror" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_MAGIC_MIRROR">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>A momentary bubble of iridescent energy shimmers in the air between you and the caster of the triggering spell. The spell is redirected to a creature of your choice that you can see within 60 feet. If the spell is 5th level or lower, you are no longer a target of the spell and the chosen creature is instead. If the spell is 6th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, you are no longer a target of the spell and the chosen creature is instead. On a failed check, you remain the target of the triggering spell.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when you are targeted by a spell</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a polished marble</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Suffocate" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_SUFFOCATE">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You create a pair of grasping hands made from invisible forces. Make a spell attack against one creature that you can see within range. On a hit, the creature is restrained as the hands crush their throat or bodily equivalent.</p>
+			<p class="indent">If the creature requires air to breathe, it begins to suffocate. A suffocating creature can survive for a number of rounds equal to 1 + its Constitution modifier (minimum of 1 round). At the start of its next turn after those rounds are over, it becomes unconscious, and it can't regain hit points until it can breathe again.</p>
+			<p class="indent">A conscious creature restrained by the hands can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, the spell ends on the target.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a leather glove</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Wrack" type="Spell" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_SPELL_WRACK">
+		<supports>Cleric, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature that you can see within range. The target must succeed on a Constitution saving throw or be afflicted with excruciating muscle spasms for the duration. A creature affected in this way has its speed halved and rolls attacks with disadvantage. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a frayed piece of cord</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+</elements>

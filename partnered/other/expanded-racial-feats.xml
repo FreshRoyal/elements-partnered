@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Expanded Racial Feats</name>
+		<update version="0.0.1">
+			<file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/expanded-racial-feats.xml" />
+		</update>
+	</info>
+	
+	<element name="Expanded Racial Feats" type="Source" source="Core" id="ID_ABF_SOURCE_EXPANDED_RACIAL_FEATS">
+		<description>
+			<p>As featured on D&amp;D Beyond, this supplement introduces additional feats that allow you to explore your character’s race further. These feats are each associated with a race from sources outside the Player’s Handbook, as summarized in the Racial Feats table below.</p><p>As with the feats found in Xanathar’s Guide to Everything, using these racial feats means that your connection with your race’s culture has deepened or something more dramatic has happened, such as a physical transformation through age, powerful magic, or a spectacular event in your campaign.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">ERF</set>
+			<set name="url">https://www.dmsguild.com/product/226194/Expanded-Racial-Feats</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/ERF.jpg</set>
+			<set name="author" abbreviation="ABF" url="https://www.dmsguild.com/browse.php/?author=Adam%20Bradford">Adam Bradford</set>
+			<set name="third-party">true</set>
+			<set name="release">20171110</set>
+		</setters>
+	</element>
+
+	<element name="Angelic Protection" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_ANGELIC_PROTECTION">
+		<prerequisite>Aasimar</prerequisite>
+		<requirements>ID_WOTC_DMG_RACE_AASIMAR||ID_WOTC_VGTM_RACE_AASIMAR||ID_WOTC_MOTM_RACE_AASIMAR||ID_WOTC_PHB24_RACE_AASIMAR</requirements>
+		<description>
+			<p><i>Prerequisite: Aasimar</i></p>
+			<p>The innate resistance to magic that angels possess extends to you. You have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+	
+	<element name="Dao Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_DAO_HERITAGE">
+		<prerequisite>Genasi (earth)</prerequisite>
+		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_EARTH||ID_WOTC_MOTM_SUBRACE_EARTH_GENASI</requirements>
+		<description>
+			<p><i>Prerequisite: Genasi (earth)</i></p>
+			<p>You manifest more of the magical power of your dao heritage. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>detect magic</i> spell and can cast it at will, without expending a spell slot.</li>
+				<li>You gain natural armor. While you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You learn the detect magic spell and can cast it at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Dao Heritage" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+
+			<stat name="dao heritage:natural armor" value="13" />
+			<stat name="dao heritage:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="dao heritage:natural armor" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Dao Heritage)" />
+		</rules>
+	</element>
+	
+	<element name="Djinn Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_DJINN_HERITAGE">
+		<prerequisite>Genasi (air)</prerequisite>
+		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_AIR||ID_WOTC_MOTM_SUBRACE_AIR_GENASI</requirements>
+		<description>
+			<p><i>Prerequisite: Genasi (air)</i></p>
+			<p>You manifest more of the magical power of your djinn heritage. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity or Constitution score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>detect magic</i> spell and can cast it at will, without expending a spell slot.</li>
+				<li>You have resistance to lightning and thunder damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You learn the detect magic spell and can cast it at will, without expending a spell slot.
+			You have resistance to lightning and thunder damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Djinn Heritage" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_DEXTERITY" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	
+	<element name="Efreet Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_EFREET_HERITAGE">
+		<prerequisite>Genasi (fire)</prerequisite>
+		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_FIRE||ID_WOTC_MOTM_SUBRACE_FIRE_GENASI</requirements>
+		<description>
+			<p><i>Prerequisite: Genasi (fire)</i></p>
+			<p>You manifest more of the magical power of your efreet heritage. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Intelligence score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>detect magic</i> spell and can cast it at will, without expending a spell slot.</li>
+				<li>Your darkvision has a radius of 120 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You learn the detect magic spell and can cast it at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Efreet Heritage" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Feline Grace" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_FELINE_GRACE">
+		<prerequisite>Tabaxi</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_TAXBAXI||ID_WOTC_MOTM_RACE_TABAXI</requirements>
+		<description>
+			<p><i>Prerequisite: Tabaxi</i></p>
+			<p>Your incredible reflexes and agility further improve. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You can use your Feline Agility trait twice before you must move 0 feet on one of your turns to use the trait again. You can still only use this ability once per turn when you move.</li>
+				<li>You don’t take damage from falling 20 feet or less if you aren’t incapacitated.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use your Feline Agility trait twice before you must move 0 feet on one of your turns to use the trait again. You can still only use this ability once per turn when you move.
+			You don’t take damage from falling 20 feet or less if you aren’t incapacitated.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Firbolg Beast Magic" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_FIRBOLG_BEAST_MAGIC">
+		<prerequisite>Firbolg</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_FIRBOLG||ID_WOTC_MOTM_RACE_FIRBOLG</requirements>
+		<description>
+			<p><i>Prerequisite: Firbolg</i></p>
+			<p>Your connection to animals deepens. You learn the <i>speak with animals</i> spell and can cast it at will, without expending a spell slot. You also learn the <i>animal friendship</i> and <i>beast sense</i> spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Wisdom is your spellcasting ability for all three spells.</p>
+		</description>
+		<sheet>
+			<description>You learn the speak with animals spell and can cast it at will, without expending a spell slot. You also learn the animal friendship and beast sense spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Wisdom is your spellcasting ability for all three spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+
+	<element name="Like a Boss" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_LIKE_A_BOSS">
+		<prerequisite>Goblin</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_GOBLIN||ID_WOTC_MOTM_RACE_GOBLIN||ID_WOTC_GGTR_RACE_GOBLIN||ID_WOTC_AWM_RACE_DANKWOOD_GOBLIN||ID_WOTC_PSZ_RACE_GOBLIN</requirements>
+		<description>
+			<p><i>Prerequisite: Goblin</i></p>
+			<p>You are accustomed to using others to avoid being attacked. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>When a creature you can see targets you with an attack and another creature is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. Once you use this ability, you can’t do so again until you finish a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When a creature you can see targets you with an attack and another creature is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Marid Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MARID_HERITAGE">
+		<prerequisite>Genasi (water)</prerequisite>
+		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_WATER||ID_WOTC_MOTM_SUBRACE_WATER_GENASI</requirements>
+		<description>
+			<p><i>Prerequisite: Genasi (water)</i></p>
+			<p>You manifest more of the magical power of your marid heritage. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>detect magic</i> spell and can cast it at will, without expending a spell slot.</li>
+				<li>You have resistance to cold damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You learn the detect magic spell and can cast it at will, without expending a spell slot.
+			You have resistance to cold damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Marid Heritage" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Master of Mimicry" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MASTER_OF_MIMICRY">
+		<prerequisite>Kenku</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_KENKU||ID_WOTC_MOTM_RACE_KENKU</requirements>
+		<description>
+			<p><i>Prerequisite: Kenku</i></p>
+			<p>You have learned to temporarily mimic even the training of others. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</li>
+				<li>Whenever another creature you can see uses a skill or tool, you can use your reaction to gain proficiency in that skill or tool. Proficiencies gained in this way last for 1 hour, and you can only mimic one proficiency at a time. Once you use this ability, you can’t do so again until you finish a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Whenever another creature you can see uses a skill or tool, you can use your reaction to gain proficiency in that skill or tool. Proficiencies gained in this way last for 1 hour, and you can only mimic one proficiency at a time.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Master of Mimicry" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Mountain’s Endurance" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MOUNTAINS_ENDURANCE">
+		<prerequisite>Goliath</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_GOLIATH||ID_WOTC_MOTM_RACE_GOLIATH||ID_WOTC_PHB24_RACE_GOLIATH</requirements>
+		<description>
+			<p><i>Prerequisite: Goliath</i></p>
+			<p>Your ability to shrug off some injuries is legendary, even for your race. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>When you use your Stone’s Endurance trait as a reaction to reduce damage, instead of rolling a d12 and adding your Constitution modifier, you can choose to gain resistance to the triggering attack’s damage type until the start of your next turn. If the triggering attack deals more than one type of damage, choose one. As normal, after you use this trait, you can’t use it again until you finish a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you use your Stone’s Endurance trait as a reaction to reduce damage, instead of rolling a d12 and adding your Constitution modifier, you can choose to gain resistance to the triggering attack’s damage type until the start of your next turn. If the triggering attack deals more than one type of damage, choose one.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Mountain’s Endurance" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Serpent Form" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_SERPENT_FORM">
+		<prerequisite>Yuan-ti Pureblood</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_YUANTI_PUREBLOOD</requirements>
+		<description>
+			<p><i>Prerequisite: Yuan-ti Pureblood</i></p>
+			<p>You have unlocked more of your serpentfolk heritage. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence or Charisma score by 1, to a maximum of 20.</li>
+				<li>You can use an action to polymorph into a Medium snake or back into your true form. Your statistics are the same in each form. Any equipment you are wearing or carrying isn’t transformed. If you die, you stay in your current form.</li>
+				<li>While in snake form, you gain a bite attack as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. When you hit with a bite attack, you can choose to deal 2d6 additional poison damage to the target. Once you deal this poison damage, you can’t do so again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use an action to polymorph into a Medium snake or back into your true form. Your statistics are the same in each form. Any equipment you are wearing or carrying isn’t transformed. If you die, you stay in your current form.
+			While in snake form, you gain a bite attack as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal 1d4+{{strength:modifier}} piercing damage. When you hit with a bite attack, you can choose to deal 2d6 additional poison damage to the target. Once you deal this poison damage, you can’t do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Serpent Form" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Sky Warden" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_SKY_WARDEN">
+		<prerequisite>Aarakocra</prerequisite>
+		<requirements>ID_WOTC_POTA_RACE_AARAKOCRA||ID_WOTC_MOTM_RACE_AARAKOCRA</requirements>
+		<description>
+			<p><i>Prerequisite: Aarakocra</i></p>
+			<p>You are trained for both scouting the skies and aerial combat. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Perception skill if you don’t already have it. You add double your proficiency bonus to Perception checks that rely on sight.</li>
+				<li>Once per turn, if you are flying and dive at least 30 feet straight toward a target and then hit it with a melee weapon attack, the attack deals an extra 1d6 damage to the target.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You add double your proficiency bonus to Perception checks that rely on sight.
+			Once per turn, if you are flying and dive at least 30 feet straight toward a target and then hit it with a melee weapon attack, the attack deals an extra 1d6 damage to the target.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Sky Warden" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+
+	<element name="Tanarukk Blood" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TANARUKK_BLOOD">
+		<prerequisite>Orc</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_ORC||ID_WOTC_ERLW_RACE_ORC||ID_WOTC_MOTM_RACE_ORC||ID_WOTC_PHB24_RACE_ORC</requirements>
+		<description>
+			<p><i>Prerequisite: Orc</i></p>
+			<p>Through fell magic or an ancestor, you are touched by the corruptive power of Baphomet. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>You have resistance to fire and poison damage.</li>
+				<li>You gain a bite attack as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a bite attack as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal 1d6+{{strength:modifier}} piercing damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Tanarukk Blood" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Tortle Protector" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TORTLE_PROTECTOR">
+		<prerequisite>Tortle</prerequisite>
+		<requirements>ID_WOTC_TOA_RACE_TORTLE||ID_WOTC_MOTM_RACE_TORTLE</requirements>
+		<description>
+			<p><i>Prerequisite: Tortle</i></p>
+			<p>You have mastered using your shell to better protect yourself and others. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Wisdom score by 1, to a maximum of 20.</li>
+				<li>Your natural armor trait now provides a base AC of 18. As normal, your Dexterity modifier doesn’t affect this number.</li>
+				<li>As a reaction when you are forced to make a Dexterity saving throw, choose any number of creatures within 5 feet of you. Each chosen creature is considered to have half-cover against any harmful attacks or effects while within 5 feet of you until the start of your next turn. Once you use this ability, you can’t do so again until you’ve finished a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>When you are forced to make a Dexterity saving throw, choose any number of creatures within 5 feet of you. Each chosen creature is considered to have half-cover against any harmful attacks or effects while within 5 feet of you until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Tortle Protector" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM" />
+			<stat name="tortle:natural armor" value="18" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Touch of Sess’inek" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TOUCH_OF_SESSINEK">
+		<prerequisite>Lizardfolk</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_LIZARDFOLK||ID_WOTC_MOTM_RACE_LIZARDFOLK</requirements>
+		<description>
+			<p><i>Prerequisite: Lizardfolk</i></p>
+			<p>You embody the demonic bearing of a lizard king or queen. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li>
+				<li>You learn to speak, read, and write Abyssal.</li>
+				<li>You are immune to being frightened.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You are immune to being frightened.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Touch of Sess’inek" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+		</rules>
+	</element>
+
+	<element name="Triton Deep Magic" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TRITON_DEEP_MAGIC">
+		<prerequisite>Triton</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_TRITON||ID_WOTC_MOTM_RACE_TRITON</requirements>
+		<description>
+			<p><i>Prerequisite: Triton</i></p>
+			<p>You master more of the magic of elemental air and water. You learn the <i>create or destroy water</i> spell and can cast it as a 1st level spell at will, without expending a spell slot. You also learn <i>warding wind</i> and <i>water breathing</i>, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.</p>
+		</description>
+		<sheet>
+			<description>You learn the create or destroy water spell and can cast it as a 1st level spell at will, without expending a spell slot. You also learn warding wind and water breathing, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
+		</rules>
+	</element>
+
+	<element name="Uphold the Legion" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_UPHOLD_THE_LEGION">
+		<prerequisite>Hobgoblin</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_HOBGOBLIN||ID_WOTC_MOTM_RACE_HOBGOBLIN</requirements>
+		<description>
+			<p><i>Prerequisite: Hobgoblin</i></p>
+			<p>You were born for life in the legion. You gain the follow-ing benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Intelligence score by 1, to a maximum of 20.</li>
+				<li>You can deal an extra 2d6 damage to a creature you hit with a weapon attack if that creature is within 5 feet of an ally that isn’t incapacitated. You can use this trait only once per combat.</li>
+				<li>You can extend the benefit of your Saving Face trait to an ally. As a reaction, if an ally misses with an attack roll or fails an ability check or a saving throw, you can grant a bonus to the roll equal to the number of allies your ally can see within 30 feet (including you, maximum bonus of +5). As normal, once you use this trait, you can’t use it again until you finish a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can deal an extra 2d6 damage to a creature you hit with a weapon attack if that creature is within 5 feet of an ally that isn’t incapacitated. You can use this trait only once per combat.
+			You can extend the benefit of your Saving Face trait to an ally. As a reaction, if an ally misses with an attack roll or fails an ability check or a saving throw, you can grant a bonus to the roll equal to the number of allies your ally can see within 30 feet (including you, maximum bonus of +5). As normal, once you use this trait, you can’t use it again until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Uphold the Legion" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE" />
+		</rules>
+	</element>
+
+	<element name="Urd Wings" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_URD_WINGS">
+		<prerequisite>Kobold</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_KOBOLD||ID_WOTC_MOTM_RACE_KOBOLD</requirements>
+		<description>
+			<p><i>Prerequisite: Kobold</i></p>
+			<p>You manifest leathery wings, transforming into an urd. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You gain a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<stat name="speed:fly" value="30" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+	<element name="Well-Rested" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_WELL_RESTED">
+		<prerequisite>Bugbear</prerequisite>
+		<requirements>ID_WOTC_VGTM_RACE_BUGBEAR||ID_WOTC_MOTM_RACE_BUGBEAR</requirements>
+		<description>
+			<p><i>Prerequisite: Bugbear</i></p>
+			<p>Your practiced napping leaves you invigorated when you are awake. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li>Whenever you spend one or more hit dice during a short rest, you can regain an extra 1d6 hit points.</li>
+				<li>At the end of a long rest, you gain inspiration.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you spend one or more hit dice during a short rest, you can regain an extra 1d6 hit points.
+			At the end of a long rest, you gain inspiration.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Well-Rested" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+
+</elements>

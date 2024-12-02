@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Grim Hollow - Lairs of Etharis</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Adroit Crafter" type="Feat" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_FEAT_ADROIT_CRAFTER">
+		<description>
+			<p>You've trained in crafting items using a skill or tool that you're proficient with, and the steps in crafting have become second nature to you. You gain the following benefits:</p>
+			<ul>
+				<li>The time it takes to create an item using your proficient skills or tools is halved.</li>
+				<li>If you fail to successfully craft the item and would lose the components, you retain the components instead.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>The time it takes to create an item using your proficient skills or tools is halved.
+			If you fail to successfully craft the item and would lose the components, you retain the components instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Careful Crafter" type="Feat" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_FEAT_CAREFUL_CRAFTER">
+		<description>
+			<p>You've trained in crafting items using a skill or tool that you're proficient with, and your creations are known for being well made and reliable. You gain the following benefits:</p>
+			<ul>
+				<li>You make all ability checks for crafting with advantage.</li>
+				<li>Anyone assisting you in crafting an item gains advantage on their ability checks for crafting.</li>
+				<li>If you fail to successfully craft the item, the amount of time it took to complete the process is halved.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You make all ability checks for crafting with advantage.
+			Anyone assisting you in crafting an item gains advantage on their ability checks for crafting.
+			If you fail to successfully craft the item, the amount of time it took to complete the process is halved.</description>
+		</sheet>
+	</element>
+
+</elements>

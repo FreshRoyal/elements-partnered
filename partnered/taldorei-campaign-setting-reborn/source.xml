@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Tal'dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/source.xml" />
+		</update>
+	</info>
+	<element name="Tal'dorei Campaign Setting Reborn" type="Source" source="Core" id="ID_CRDP_SOURCE_TALDOREI_CAMPAIGN_SETTING_REBORN">
+		<description>
+			<h5 style="margin-top:-1em">Bring the world of Exandria to life.</h5>
+			<p>Behold the wonders of the Tal'dorei, one of the continents of Exandria and a land filled with epic adventure. Contained within is a guide to each major region of the continent, complete with story hooks to entice players, new subclass options for your party, and dozens of new spells, monsters, and magic items! </p>
+			<p>Whether you're a longtime fan of <em>Critical Role</em> and <em>Vox Machina</em> or brand new to the world of Exandria, an experienced Dungeon Master or a first-time player, this is where your legend begins! </p>
+		</description>
+		<setters>
+			<set name="abbreviation">TCSR</set>
+			<set name="url">https://shop.critrole.com/collections/all/products/taldorei-campaign-setting-reborn?_pos=2&amp;_fid=1f65b18f7&amp;_ss=c</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/TCSR.jpg</set>
+			<set name="author" abbreviation="CRDP" url="https://darringtonpress.com">Darrington Press (Critical Role)</set>
+			<set name="third-party">true</set>
+			<set name="release">20220118</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Flee, Mortals!</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals/source.xml" />
+		</update>
+	</info>
+	<element name="Flee, Mortals!" type="Source" source="Core" id="ID_MCDM_SOURCE_FLEE_MORTALS">
+		<description>
+			<h5 style="margin-top:-1em">ACTION-ORIENTED MONSTERS.</h5>
+			<p>If a monster is big enough and bad enough to challenge an entire party on their own, or if it just makes sense for the Queen of the Goblins to be better than a normal Goblin Boss, we make a named, unique, Action-Oriented version of that monster. </p>
+			<p>This is something we originally developed for the Chain of Acheron. The Black Iron Pact was the first test of this design. It was a success, and we’ve learned a LOT since! Action-Oriented monsters get special Villain Actions that allow them to act when it’s not their turn, and they rely on spells much less.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">FM</set>
+			<set name="url">https://shop.mcdmproductions.com/collections/flee-mortals-the-mcdm-monster-book/products/flee-mortals-the-mcdm-monster-book-pdf</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals/FM.png</set>
+			<set name="author" abbreviation="MCDM" url="https://shop.mcdmproductions.com/">MCDM Productions</set>
+			<set name="third-party">true</set>
+			<set name="release">20231011</set>
+		</setters>
+	</element>
+</elements>
