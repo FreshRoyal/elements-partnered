@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Partnered Content</name>
+		<update version="1.0.0">
+			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
+		</update>
+	</info>
+	<files>
+		<file name="flee-mortals.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals.index" />
+		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
+		<file name="other.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other.index" />
+		<file name="the-illrigger-revised.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised.index" />
+		<file name="tome-of-beasts-2023.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023.index" />
+	</files>
+</index>
