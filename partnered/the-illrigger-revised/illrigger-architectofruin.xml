@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Architect of Ruin</name>
+		<description>Architect of Ruin Archetype from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="illrigger-architectofruin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-architectofruin.xml" />
+		</update>
+	</info>
+
+	<element name="Architect of Ruin" type="Archetype" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_ILLRIGGER_ARCHITECT_OF_RUIN">
+		<supports>Diabolic Contract, Illrigger Revised</supports>
+		<description>
+			<p class="flavor">Architects of Ruin are cool and calculating arcane knights who serve Asmodeus, deploying spells, steel, and subterfuge to win at any cost.</p>
+			<p>Asmodeus rules Acheron, the City of Fear. His illriggers scour the timescape, collecting secrets and spells designed to deceive and terrify his opponents. The war he fights against the other archdevils is one of deception and information.</p>
+			<p class="indent">His Architects of Ruin work to make Hell's enemies seem outnumbered and outmaneuvered. These illriggers are skillful spellblades on the battlefield, though some employ tactics such as research, infiltration, and propaganda to play mind games with their quarry. When an Architect of Ruin finally confronts an enemy, the advantage is theirs—they have studied, prepared, and gripped fate within their gauntlet, forcing it to favor them. They hungrily seek the dark arts to arm both themselves and Asmodeus with the impossible.</p>
+			<h5 class="caption">Precepts of Ruin</h5>
+			<p>Architects of Ruin swear an oath to Asmodeus when they join the Order of Desolation. These precepts commit them to destroy Asmodeus's enemies by commanding great magic, causing fear, and sowing distrust.</p>
+			<p class="indent"><strong><em>The Battlefield of the Mind.</em></strong> By the time my armies meet yours, you'll be filled with terror and doubt your own strength. I won't have to lift a finger to defeat you.</p>
+			<p class="indent"><strong><em>The Proper Secret.</em></strong> Once I know your secrets, I know your weakness.</p>
+			<p class="indent"><strong><em>Knowledge Is Power.</em></strong> Lore is as powerful as steel. I learn every detail about my enemy and anticipate their every move, checkmating them before the game even begins.</p>
+			<p class="indent"><strong><em>Magic Is Mine to Command.</em></strong> Cunning is also as powerful as steel. I wield the dark arcane arts to manipulate your senses, weaken your resolve, and strengthen my blade. Your soldiers will quake for fear of what dark magics may next cloak my blade.</p>
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_BLESSING" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SPELLCASTING" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_HELLISH_VERSATILITY" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_INTERDICTION" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SUBMIT" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_VILE_TRANSMOGRIFICATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_BLESSING" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_HELLISH_VERSATILITY" level="7" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_INTERDICTION" level="7" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SUBMIT" level="11" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_VILE_TRANSMOGRIFICATION" level="15" />
+		</rules>
+	</element>
+
+	<element name="Asmodeus's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_BLESSING">
+		<description>
+			<p><em>3rd-Level Architect of Ruin Feature</em></p>
+			<p>When Asmodeus accepts you as an Architect of Ruin, he grants you access to his infernal knowledge. You gain proficiency in one of the following skills of your choice: Arcana, History, Nature, or Religion.</p>
+			<p class="indent">In addition, you can also read and write the languages granted by your Forked Tongue, instead of only speaking them.</p>
+		</description>
+		<sheet>
+			<description>You can also read and write the languages granted by your Forked Tongue, instead of only speaking them.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Nature's Intuition" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" level="3" />
+		</rules>
+	</element>
+
+	<element name="Spellcasting" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SPELLCASTING">
+		<description>
+			<p>As an Architect of Ruin, you access a well of profane magic to cast spells.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You know two cantrips of your choice from the Architect of Ruin spell list (presented at the end of this subclass). You learn an additional cantrip from this list at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Architect of Ruin Spellcasting table shows how many spell slots you have to cast your illrigger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell hellish rebuke and have a 1st-level and a 2nd-level spell slot available, you can cast hellish rebuke using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> At 3rd level, you know three 1st-level spells of your choice from the Architect of Ruin spell list (presented at the end of this subclass).</p>
+			<p class="indent">The Spells Known column of the Architect of Ruin Spellcasting table shows when you learn more illrigger spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. When you reach 7th level, for example, you learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the illrigger spells you know with another spell of your choice from the illrigger spell list. The new spell must be of a level for which you have spell slots.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Charisma is your spellcasting ability for your spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> You have an unholy symbol, such as an amulet symbolizing your archdevil, a fragment of a blasphemous relic, or a glass orb holding a consecrated drop of archdevil blood. You can use the unholy symbol as a spellcasting focus for your illrigger spells. You must have a free hand to use the unholy symbol, but it can be the same hand you use to perform somatic components.</p>
+			<h5 class="caption">ARCHITECT OF RUIN SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Illriger Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Architect of Ruin" ability="Charisma" prepare="false" allowReplace="true">
+			<list>Architect of Ruin</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="architect of ruin:spellcasting:slots:1" value="2" level="3" />
+			<stat name="architect of ruin:spellcasting:slots:1" value="1" level="4" />
+			<stat name="architect of ruin:spellcasting:slots:1" value="1" level="7" />
+			<stat name="architect of ruin:spellcasting:slots:2" value="2" level="7" />
+			<stat name="architect of ruin:spellcasting:slots:2" value="1" level="10" />
+			<stat name="architect of ruin:spellcasting:slots:3" value="2" level="13" />
+			<stat name="architect of ruin:spellcasting:slots:3" value="1" level="16" />
+			<stat name="architect of ruin:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Architect of Ruin)" supports="Architect of Ruin, 0" level="3" number="2" spellcasting="Architect of Ruin" />
+			<select type="Spell" name="Cantrip (Architect of Ruin)" supports="Architect of Ruin, 0" level="10" number="1" spellcasting="Architect of Ruin" />
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="($(spellcasting:list)||Architect of Ruin), 1" level="3" number="1" spellcasting="Architect of Ruin" />
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Architect of Ruin" />
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="(Architect of Ruin||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="(Architect of Ruin||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Architect of Ruin"/>
+			<select type="Spell" name="Spellcasting (Architect of Ruin)" supports="(Architect of Ruin||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Architect of Ruin"/>
+		</rules>
+	</element>
+	
+	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL">
+		<compendium display="false" />
+		<description>
+			<p><em>3rd-Level Architect of Ruin Feature</em></p>
+			<p>You gain the following two Invoke Hell options:</p>
+			<p class="indent"><b><i>Enervating Spell.</i></b> When you deal damage to a creature with an illrigger spell of 1st level or higher, you can expend a seal (no action required) and imbue the spell with weakening magic. The target has vulnerability to that spell's damage. If they normally have resistance or immunity to the spell's damage, that resistance or immunity is suppressed for this spell, and the target has vulnerability to the damage instead.</p>
+			<p class="indent"><b><i>Spellblade.</i></b> You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL_ENVERATING_SPELL" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL_SPELLBLADE" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell: Enverating Spell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL_ENVERATING_SPELL">
+		<description>
+			<p>When you deal damage to a creature with an illrigger spell of 1st level or higher, you can expend a seal (no action required) and imbue the spell with weakening magic. The target has vulnerability to that spell's damage. If they normally have resistance or immunity to the spell's damage, that resistance or immunity is suppressed for this spell, and the target has vulnerability to the damage instead.</p>
+		</description>
+		<sheet alt="Enverating Spell" usage="Invoke Hell">
+			<description>When you deal damage to a creature with an illrigger spell of 1st level or higher, you can expend a seal (no action required) and imbue the spell with weakening magic. The target has vulnerability to that spell's damage. If they normally have resistance or immunity to the spell's damage, that resistance or immunity is suppressed for this spell, and the target has vulnerability to the damage instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Invoke Hell: Spellblade" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL_SPELLBLADE">
+		<description>
+			<p>You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.</p>
+		</description>
+		<sheet alt="Spellblade" usage="Invoke Hell" action="Action">
+			<description>You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.</description>
+		</sheet>
+	</element>
+
+	<element name="Hellish Versatility" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_HELLISH_VERSATILITY">
+		<description>
+			<p><em>7th-Level Architect of Ruin Feature</em></p>
+			<p>Once on each of your turns, you can cast one of your illrigger cantrips in place of one of your attacks granted by your Extra Attack feature.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns, you can cast one of your illrigger cantrips in place of one of your attacks granted by your Extra Attack feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Asmodeus's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_INTERDICTION">
+		<description>
+			<p><em>7th-Level Architect of Ruin Feature</em></p>
+			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
+			<p class="indent"><b><i>Axiomatic Seals (7th Level).</i></b> Asmodeus's secrets allow you to infuse your seals with manifest power. When you burn one or more seals to deal damage to a creature, you can activate this boon (no action required) to add your Charisma modifier (minimum of 1) to each seal's damage roll.</p>
+			<p class="indent"><b><i>Spellbreaker (13th Level).</i></b> When an interdicted creature you can see within 60 feet of you casts a spell, you can use your reaction to burn one or more of the seals on them. When you do, burning the seal deals no damage, and instead you cast counterspell on them without expending a spell slot. Your spell's level increases by 1 for every additional seal you burn after the first.</p>
+			<p class="indent"><b><i>Hell Mage (18th Level; Passive).</i></b> When you or an ally within 30 feet of you succeed on a saving throw against a spell or other magical effect imposed by an enemy, you can immediately place one or more seals on that enemy, up to a number equal to your proficiency bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_AXIOMATIC_SEALS" level="7" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_SPELLBREAKER" level="13" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_HELL_MAGE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Submit" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SUBMIT">
+		<description>
+			<p><em>11th-Level Hellspeaker Feature</em></p>
+			<p>When you cast an illrigger spell you know, you can burn two seals on an interdicted creature (no action required) to impose disadvantage on their saving throw against the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast an illrigger spell you know, you can burn two seals on an interdicted creature (no action required) to impose disadvantage on their saving throw against the spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Vile Transmogrification" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_VILE_TRANSMOGRIFICATION">
+		<description>
+			<p><em>15th-Level Architect of Ruin Feature</em></p>
+			<p>You uncover two new ways to employ Asmodeus's magic:</p>
+			<p class="indent"><b><i>Regaining Seals.</i></b> As a bonus action on your turn, you can expend one spell slot to regain a number of seals equal to that slot's level.</p>
+			<p class="indent"><b><i>Regaining Spell Slots.</i></b> As a bonus action on your turn, you can expend any number of seals to regain a spell slot of a level equal to one-third that number. For example, you can expend six seals to regain a 2nd-level spell slot.</p>
+			<p class="indent">Once you use one of these benefits, you can't use that benefit again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You uncover two new ways to employ Asmodeus's magic: &#13;
+			• You can expend one spell slot to regain a number of seals equal to that slot's level. &#13;
+			• You can expend any number of seals to regain a spell slot of a level equal to one-third that number.</description>
+		</sheet>
+	</element>
+
+	<!--Spell List-->
+	 <append id="ID_PHB_SPELL_CHILL_TOUCH">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_DANCING_LIGHTS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_FIRE_BOLT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_MESSAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_MINOR_ILLUSION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_RAY_OF_FROST">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_SHOCKING_GRASP">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_THAUMATURGY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_VICIOUS_MOCKERY">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	 <append id="ID_PHB_SPELL_BANE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_BURNING_HANDS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_CHARM_PERSON">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_COLOR_SPRAY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_COMMAND">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_DETECT_MAGIC">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_DISGUISE_SELF">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_HELLISH_REBUKE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_SHIELD">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_SHIELD_OF_FAITH">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_SILENT_IMAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	 <append id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_AUGURY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_BLUR">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_DARKNESS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_DETECT_THOUGHTS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_ENTHRALL">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_HEAT_METAL">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_HOLD_PERSON">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_INVISIBILITY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_LESSER_RESTORARION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_MIRROR_IMAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_PHB_SPELL_SCORCHING_RAY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SILENCE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUGGESTION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	
+	<append id="ID_PHB_SPELL_BESTOW_CURSE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEAR">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HASTE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAJOR_IMAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PHANTOM_STEED">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REMOVE_CURSE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REVIVIFY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLOW">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_BANISHMENT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLIGHT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMPULSION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIMENSION_DOOR">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DOMINATE_BEAST">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LOCATE_CREATURE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PHANTASMAL_KILLER">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+</elements>

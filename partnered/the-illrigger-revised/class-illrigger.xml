@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Illrigger</name>
+		<description>Illrigger class from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="class-illrigger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/class-illrigger.xml" />
+		</update>
+	</info>
+
+	<element name="Illrigger" type="Class" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_ILLRIGGER">
+		<description>
+			<div class="sidebar">
+				<h5>CONTENT WARNING</h5>
+				<p>This class contains a subclass called the Hellspeaker, which has themes of mental manipulation and mind control. In addition, the Sanguine Knight subclass contains effects that manipulate another creature's blood. Lastly, illriggers are typically evil-aligned characters—and even those who aren't still serve evil creatures with dark agendas.</p>
+				<p class="indent">We recommend using the MCDM Tabletop Safety Toolkit and Checklist and adjusting as needed to ensure everyone at your table is comfortable.</p>
+			</div>
+			<p>The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternally plots to bring the others to heel—to ascend to the Throne of Hell, unite the Seven Cities and every infernal being living there, and lead an inexhaustible army of devils across the timescape until all worlds burn.</p>
+			<p class="indent">These archdevils' elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil's infernal will.</p>
+			<h4>The Order of Desolation</h4>
+			<p>Millennia ago, the rulers of Hell did something remarkable: they cooperated. Together, they created the Order of Desolation—knights sworn to serve Hell first, their patron archdevil second.</p>
+			<p class="indent">Those accepted into the Order of Desolation become comrades with every other illrigger, regardless of which archdevil they serve. Each archdevil has grand temples, underground fanes, secret societies, and sinister cults, all with leaders fanatically devoted to the archdevil who grants them their power. But the Order of Desolation stands above the petty political squabbles dividing the Seven Cities.</p>
+			<p class="indent">Members of the Order of Desolation, also known as the Desolate, are expected to be intelligent, resourceful, tactical, and manipulative. The order was founded to give the archdevils capable agents who could act independently across the timescape, free from the direct control of their patron.</p>
+			<p class="indent">An illrigger has many powerful abilities granted by their archdevil, but more precious is their patron's trust. Each illrigger is expected to sow discord, pain, strife, deceit, and fear without instruction or supervision. It's not unusual, therefore, for a Desolate to first rely on other order members—regardless of which archdevil they serve—before turning to an institution devoted to their own archdevil.</p>
+			<h4>Creating an Illrigger</h4>
+			<p>To create an illrigger, consult the following subsections, which give you hit points, proficiencies, and starting equipment. Then look at the Illrigger table to see which features you get at each level. The descriptions of those features appear in the "Class Features" section.</p>
+			<h5>Quick Build</h5>
+			<p>You can make an illrigger quickly by following these suggestions. First, put your highest ability score in Strength (if you want to focus on melee weapons), Dexterity (if you want to focus on archery or finesse weapons), or CHarisma (if you plan to choose the Architect of Ruin subclass). Your second highest ability score should be Constitution. Then, choose the soldier or outlander background from the core rules, or any background that gives proficiency in skills such as Athletics, Deception, Intimidation, or Persuasion.</p>
+			<h3>CLASS FEATURES</h3>
+			<h5>Hit Points</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per illrigger level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per illrigger level after 1st</li>
+			</ul>
+			<h5>Proficiencies</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+				<li><strong>Tools:</strong> None</li>
+				<li><strong>Saving Throws:</strong> Constitution, Charisma</li>
+				<li><strong>Skills:</strong> Choose two from Arcana, Athletics, Deception, Insight, Intimidation, Investigation, Persuasion, Religion, Stealth</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> two martial weapons or <i>(b)</i> one martial weapon and a shield</li>
+				<li><i>(a)</i> chain shirt or <i>(b)</i> leather armor, a longbow, and 20 arrows</li>
+				<li><i>(a)</i> a priest's pack or <i>(b)</i> a dungeoneer's pack</li>
+				<li>five javelins</li>
+			</ul>
+			<p class="indent">Alternatively, you can forgo this starting equipment and the starting equipment granted by your background, instead starting with 5d4 x 10 gp.</p>
+			<h5 class="caption">THE ILLRIGGER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Features</td><td class="col-15">Seals</td><td class="col-15">Seal Damage</td><td class="col-15">Interdict Boon</td><td class="col-15">Infernal Conduit</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>Baleful Interdict, Forked Tongue</td><td>3</td><td>1d6</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td>Combat Mastery, Interdiction</td><td>3</td><td>1d6</td><td>1</td><td>—</td></tr>
+				<tr><td> 3rd</td><td>Diabolic Contract, Invoke Hell</td><td>4</td><td>1d6</td><td>1</td><td>—</td></tr>
+				<tr><td> 4th</td><td>Ability Score Improvement</td><td>4</td><td>1d6</td><td>1</td><td>—</td></tr>
+				<tr><td> 5th</td><td>Extra Attack</td><td>4</td><td>2d6</td><td>1</td><td>—</td></tr>
+				<tr><td> 6th</td><td>Infernal Conduit</td><td>4</td><td>2d6</td><td>1</td><td>3</td></tr>
+				<tr><td> 7th</td><td>Diabolic Contract feature</td><td>5</td><td>2d6</td><td>2</td><td>4</td></tr>
+				<tr><td> 8th</td><td>Ability Score Improvement</td><td>5</td><td>2d6</td><td>2</td><td>4</td></tr>
+				<tr><td> 9th</td><td>Forked Tongue Improvement</td><td>5</td><td>2d6</td><td>2</td><td>5</td></tr>
+				<tr><td> 10th</td><td>Blood Price</td><td>5</td><td>2d6</td><td>2</td><td>5</td></tr>
+				<tr><td> 11th</td><td>Diabolic Contract feature, Infernal Conduit Improvement, Terrorizing Force</td><td>5</td><td>3d6</td><td>2</td><td>6</td></tr>
+				<tr><td> 12th</td><td>Ability Score Improvement</td><td>5</td><td>3d6</td><td>2</td><td>6</td></tr>
+				<tr><td> 13th</td><td>—</td><td>6</td><td>3d6</td><td>3</td><td>7</td></tr>
+				<tr><td> 14th</td><td>Superior Interdict</td><td>6</td><td>3d6</td><td>3</td><td>7</td></tr>
+				<tr><td> 15th</td><td>Diabolic Contract feature</td><td>6</td><td>3d6</td><td>3</td><td>8</td></tr>
+				<tr><td> 16th</td><td>Ability Score Improvement</td><td>6</td><td>3d6</td><td>3</td><td>8</td></tr>
+				<tr><td> 17th</td><td>Infernal Majesty</td><td>6</td><td>3d6</td><td>3</td><td>9</td></tr>
+				<tr><td> 18th</td><td>—</td><td>7</td><td>3d6</td><td>4</td><td>9</td></tr>
+				<tr><td> 19th</td><td>Ability Score Improvement</td><td>7</td><td>3d6</td><td>4</td><td>10</td></tr>
+				<tr><td> 20th</td><td>Master of Hell</td><td>7</td><td>4d6</td><td>4</td><td>10</td></tr>
+			</table>
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_BALEFUL_INTERDICT" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_FORKED_TONGUE" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICTION" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_DIABOLIC_CONTRACT" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INVOKE_HELL" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_EXTRA_ATTACK" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_BLOOD_PRICE" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_TERRORIZING_FORCE" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_SUPERIOR_INTERDICT" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_MAJESTY" />
+			<div element="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_MASTER_OF_HELL" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A knight sworn to serve Hell.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<select type="Proficiency" name="Skill Proficiency (Illrigger)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_MCDM_ILLR_MULTICLASS_ILLRIGGER"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_BALEFUL_INTERDICT" level="1"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_FORKED_TONGUE" level="1"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY" level="2"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICTION" level="2"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_DIABOLIC_CONTRACT" level="3"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INVOKE_HELL" level="3"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT" level="6"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_BLOOD_PRICE" level="10"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_TERRORIZING_FORCE" level="11"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_SUPERIOR_INTERDICT" level="14"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_MAJESTY" level="17"/>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_MASTER_OF_HELL" level="20"/>
+		</rules>
+		<multiclass id="ID_MCDM_ILLR_MULTICLASS_ILLRIGGER">
+			<prerequisite>Strength 13 or Dexterity 13; Charisma 13</prerequisite>
+			<requirements>([str:13]||[dex:13]),[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Baleful Interdict" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_BALEFUL_INTERDICT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_BALEFUL_INTERDICT</requirements>
+		<p><em>1st-Level Illrigger Feature</em></p>
+		<description>
+			<p>You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range. This seal lasts for 1 minute or until burned (see "Burning Seals" below). A creature with one or more of your seals is referred to as an interdicted creature. Seals you place are invisible to other creatures, and when you can see an interdicted creature, the seals appear to you as glowing glyphs on the creature's body.</p>
+			<p class="indent">You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels, as indicated in the Seals column of the Illrigger table.</p>
+			<p class="indent">If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them. Each seal's duration continues to elapse when an interdicted creature dies and when that seal is moved to a new creature.</p>
+			<p class="indent"><strong><em>Burning Seals.</em></strong> When an interdicted creature you can see within 30 feet of you takes damage from any source other than a seal burned by an illrigger, you can burn any number of seals you placed on them to deal 1d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn't require an action from you, but you can't do so while incapacitated. Once a seal is burned, it immediately vanishes.</p>
+			<p class="indent">Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 11th level (for a total of 3d6) and 20th level (for a total of 4d6) in this class, as indicated in the Seal Damage column of the Illrigger table.</p>
+			<p class="indent"><strong><em>Interdict Save.</em></strong> Class features you gain later can add additional effects to your Baleful Interdict and require your target to make a saving throw to resist them. The saving throw DC for these effects uses your interdict save DC, which is calculated as follows:</p>
+			<center>
+				<p><strong>Interdict save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+			</center>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can place a seal on a creature within {{baleful interdict:range}} ft of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range. This seal lasts for 1 minute or until burned. A creature with 1 or more of your seals is referred to as an interdicted creature. Seals you place are invisible to other creatures, and when you can see an interdicted creature, the seals appear to you as glowing glyphs on the creature's body. &#13;
+			You can only place {{baleful interdict:seals}}, and you regain all seals when you finish a short rest. &#13;
+			If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within {{baleful interdict:range}} ft of them. Each seal's duration continues to elapse when an interdicted creature dies and when that seal is moved to a new creature. &#13;
+			Burning Seals. When an interdicted creature you can see within 30 ft of you takes damage from any source other than a seal burned by an illrigger, you can burn any number of seals you placed on them to deal {{baleful interdict:dice}}d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn't require an action from you, but you can't do so while incapacitated. Once a seal is burned, it immediately vanishes. &#13;
+			Interdict save DC = {{baleful interdict:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="baleful interdict:seals" value="3" bonus="base" />
+			<stat name="baleful interdict:seals" value="4" bonus="base" level="3" />
+			<stat name="baleful interdict:seals" value="5" bonus="base" level="7" />
+			<stat name="baleful interdict:seals" value="6" bonus="base" level="13" />
+			<stat name="baleful interdict:seals" value="7" bonus="base" level="18" />
+			<stat name="baleful interdict:dice" value="1" bonus="base" />
+			<stat name="baleful interdict:dice" value="2" bonus="base" level="5" />
+			<stat name="baleful interdict:dice" value="3" bonus="base" level="11" />
+			<stat name="baleful interdict:dice" value="4" bonus="base" level="20" />
+			<stat name="baleful interdict:range" value="30" bonus="base" />
+			<stat name="baleful interdict:dc" value="8" />
+			<stat name="baleful interdict:dc" value="proficiency" />
+			<stat name="baleful interdict:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Forked Tongue" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_FORKED_TONGUE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_FORKED_TONGUE</requirements>
+		<description>
+			<p><em>1st-Level Illrigger Feature</em></p>
+			<p>You can instinctively speak, read, and write Infernal.</p>
+			<p class="indent">In addition, you can speak two other languages of your choice, but you can't read or write them. When you finish a long rest, you can draw on your archdevil's knowledge to replace one of these two languages. When you do, choose another language whose name you know; you magically forget the previous language and gain this new one instead. Once you replace a language in this way, you must finish a long rest before you can do so again.</p>
+			<p class="indent">Starting at 9th level, this feature grants you another language, for a total of three (in addition to Infernal). Furthermore, you gain advantage on Wisdom (Insight) checks made to ascertain the intentions or sincerity of creatures.</p>
+		</description>
+		<sheet>
+			<description>You can speak two languages of your choice, but you can't read or write them. When you finish a long rest, you can replace one of these two languages. When you do, choose another language whose name you know; you magically forget the previous language and gain this new one instead. Once you replace a language in this way, you must finish a long rest before you can do so again.</description>
+			<description level="9">You can speak three languages of your choice, but you can't read or write them. When you finish a long rest, you can replace one of these three languages. When you do, choose another language whose name you know; you magically forget the previous language and gain this new one instead. Once you replace a language in this way, you must finish a long rest before you can do so again. &#13;
+			Furthermore, you gain advantage on Wisdom (Insight) checks made to ascertain the intentions or sincerity of creatures.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+
+	<element name="Combat Mastery" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_COMBAT_MASTERY</requirements>
+		<description>
+			<p><em>2nd-Level Illrigger Feature</em></p>
+			<p>Your archdevil grants you uncanny skill in a certain form of combat. Choose one of the following illrigger combat masteries.</p>
+			<p><strong><em>Bravado.</em></strong> While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit.</p>
+			<p><strong><em>Brutal.</em></strong> When you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 5 feet horizontally. If you choose, you can then spend your movement to move into the space they left.</p>
+			<p><strong><em>Inexorable.</em></strong> You gain a +1 bonus to saving throws for each hostile creature within 5 feet of you, to a maximum bonus of +5.</p>
+			<p><strong><em>Lies.</em></strong> You can choose one type of melee weapon, such as a battleaxe, greatsword, or spear. When you attack with that type of weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. You can choose a new weapon type, which replaces your previous choice, when you finish a long rest.</p>
+			<p><strong><em>Lissome.</em></strong> When you hit a creature with a melee weapon attack, you can spend your movement to move 5 feet without provoking opportunity attacks.</p>
+			<p><strong><em>Unfettered.</em></strong> When you use your Baleful Interdict to place or burn a seal, its range is 60 feet instead of 30 feet. When you gain the Infernal Conduit feature at 6th level, its range is 30 feet instead of touch.</p>
+			<p class="indent">In addition, making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Combat Mastery" supports="Combat Mastery, Illrigger Revised" level="2" />
+		</rules>
+	</element>
+
+	<element name="Interdiction" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICTION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INTERDICTION</requirements>
+		<description>
+			<p><em>2nd-Level Illrigger Feature</em></p>
+			<p>You can infuse your seals with hellish magical power, enhancing their effects.</p>
+			<p class="indent"><strong><em>Interdict Boons Known.</em></strong> You learn one interdict boon of your choice from the "Interdict Boons" section. As you gain levels in this class, you gain additional boons of your choice, as shown in the Interdict Boons column of the Illrigger table. Each new boon must be of a level you can learn. When you reach 7th level, for example, you learn one new boon of 2nd or 7th level.</p>
+			<p class="indent">Whenever you gain an illrigger level, you can choose a boon you know and replace it with another boon you can learn.</p>
+			<p class="indent"><strong><em>Using Interdict Boons.</em></strong> Some boons allow you to expend unplaced seals to fuel abilities, while others empower all your seals or grant you benefits against interdicted creatures.</p>
+			<p class="indent">The boons that grant passive (or "always on") benefits, such as the 2nd-level Swift Retribution boon, are marked with a "Passive" tag. You don't need to expend a seal or take an action to benefit from the passive boons you know. All other boons, such as the 2nd-level Abating Seal boon, must be activated on a turn (for example, by expending a seal). You can activate only one non-passive boon per turn, regardless of how many you know.</p>
+			<div class="sidebar">
+				<h5>Burn vs. Expend</h5>
+				<p>Burning a seal is part of the main gameplay loop of this class. The illrigger places a seal by using a bonus action or hitting a creature with an attack, then burns the seal for additional damage (as described in the Baleful Interdict class feature). Many interdict boons activate when you burn a seal; these burned seals deal the normal damage to the interdicted creature in addition to any effects granted by the boon.</p>
+				<p class="indent">Other interdict boons instead require you to expend a seal. In this case, the illrigger expends an unplaced seal from their pool of available seals. This may require using an action, bonus action, or reaction, but not always (such as in the case of the Hellspeaker's Charm Enemy feature, where you can expend seals to increase the number of targets).</p>
+				<p class="indent">Each active interdict boon details if any kind of action is required to expend the seal and activate the boon's benefit. Part of the illrigger's resource management is maximizing efficiency between burned seals (and their extra damage) and expended seals (and their unique effects).</p>
+			</div>
+		</description>
+		<sheet>
+			<description>You can infuse your seals with hellish magical power, enhancing their effects. Whenever you gain an illrigger level, you can choose a boon you know and replace it with another boon you can learn. Some boons allow you to expend unplaced seals to fuel abilities, while others empower all your seals or grant you benefits against interdicted creatures. You don't need to expend a seal or take an action to benefit from the passive boons you know. All other boons must be activated on a turn. You can activate only one non-passive boon per turn, regardless of how many you know.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Interdict Boon" supports="Interdict Boon, Illrigger Revised" level="2" />
+			<select type="Class Feature" name="Interdict Boon" supports="Interdict Boon, Illrigger Revised" level="7" />
+			<select type="Class Feature" name="Interdict Boon" supports="Interdict Boon, Illrigger Revised" level="13" />
+			<select type="Class Feature" name="Interdict Boon" supports="Interdict Boon, Illrigger Revised" level="18" />
+		</rules>
+	</element>
+
+	<element name="Diabolic Contract" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_DIABOLIC_CONTRACT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_DIABOLIC_CONTRACT</requirements>
+		<description>
+			<p><em>3rd-Level Illrigger Feature</em></p>
+			<p>You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Hellspeaker (Moloch), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Diabolic Contract" supports="Diabolic Contract, Illrigger Revised" />
+		</rules>
+	</element>
+	
+	<element name="Invoke Hell" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INVOKE_HELL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INVOKE_HELL</requirements>
+		<description>
+			<p><em>3rd-Level Illrigger Feature</em></p>
+			<p>Your diabolic connection allows you to channel infernal energy to empower magical effects. Your chosen diabolic contract grants you two Invoke Hell options and describes how to use each.</p>
+			<p class="indent">When you use your Invoke Hell, you choose which option to use. You must then finish a short or long rest to use your Invoke Hell again.</p>
+			<p class="indent">Some Invoke Hell effects require a saving throw. When you use such an effect, the DC equals your interdict save DC.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you use your Invoke Hell, you choose which option to use.
+			Some Invoke Hell effects require a saving throw. When you use such an effect, the DC equals {{baleful interdict:dc}}.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ability Score Improvement" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p><em>4th-Level Illrigger Feature</em></p>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Illrigger,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Illrigger,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Illrigger,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Illrigger,16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Illrigger,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_EXTRA_ATTACK">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_EXTRA_ATTACK</requirements>
+		<description>
+			<p><em>5th-Level Illrigger Feature</em></p>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Infernal Conduit" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INFERNAL_CONDUIT</requirements>
+		<description>
+			<p><em>6th-Level Illrigger Feature</em></p>
+			<p>You can strengthen your allies at the cost of yourself—or drain your enemy's life force for your own gain. You have a pool of Infernal Conduit dice, which are d10s. The number of Infernal Conduit dice in your pool increase as you gain illrigger levels, as shown in the Infernal Conduit Dice column of the Illrigger table.</p>
+			<p class="indent">As an action, you can touch another creature and spend one or more dice from your pool. The target must make a Constitution saving throw against your interdict save DC. A creature can willingly fail this saving throw. Roll the spent dice and choose one of the following effects:</p>
+			<p class="indent"><strong><em>Invigorate.</em></strong> On a failed save, the target regains hit points equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as many hit points, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can't be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.</p>
+			<p class="indent"><strong><em>Devour.</em></strong> On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hit points equal to that total. On a successful save, the target takes half as much damage, and you regain hit points equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can't be reduced in any way. When you reach 11th level in this class, the target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can't suffer more than three levels of exhaustion combined from all illriggers' Infernal Conduit features.</p>
+			<p class="indent">You regain any spent Infernal Conduit dice when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{infernal conduit:dice}}d10/Long Rest}}">
+			<description>You have a pool of Infernal Conduit dice, which is {{infernal conduit:dice}}d10. You can touch another creature and spend one or more dice from your pool. The target must make a DC {{baleful interdict:dc}} Constitution saving throw. You regain any spent Infernal Conduit dice when you finish a long rest. Roll the spent dice and choose one of the following effects:</description>
+		</sheet>
+		<rules>
+			<stat name="infernal conduit:dice" value="3" bonus="base" />
+			<stat name="infernal conduit:dice" value="4" bonus="base" level="7" />
+			<stat name="infernal conduit:dice" value="5" bonus="base" level="9" />
+			<stat name="infernal conduit:dice" value="6" bonus="base" level="11" />
+			<stat name="infernal conduit:dice" value="7" bonus="base" level="13" />
+			<stat name="infernal conduit:dice" value="8" bonus="base" level="15" />
+			<stat name="infernal conduit:dice" value="9" bonus="base" level="17" />
+			<stat name="infernal conduit:dice" value="10" bonus="base" level="19" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT_INVIGORATE" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT_DEVOUR" />
+		</rules>
+	</element>
+	<element name="Invigorate" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT_INVIGORATE">
+		<compendium display="false" />
+		<description>
+			<p>On a failed save, the target regains hit points equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as many hit points, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can't be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.</p>
+		</description>
+		<sheet action="Infernal Conduit">
+			<description>On a failed save, the target regains hp equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as much hp, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can't be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.</description>
+		</sheet>
+	</element>
+	<element name="Devour" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_CONDUIT_DEVOUR">
+		<compendium display="false" />
+		<description>
+			<p>On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hit points equal to that total. On a successful save, the target takes half as much damage, and you regain hit points equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can't be reduced in any way. When you reach 11th level in this class, the target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can't suffer more than three levels of exhaustion combined from all illriggers' Infernal Conduit features.</p>
+		</description>
+		<sheet action="Infernal Conduit">
+			<description>On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hp equal to that total. On a successful save, the target takes half as much damage, and you regain hp equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can't be reduced in any way.</description>
+			<description level="11">On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hp equal to that total. On a successful save, the target takes half as much damage, and you regain hp equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can't be reduced in any way. The target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can't suffer more than three levels of exhaustion combined from all illriggers' Infernal Conduit features.</description>
+		</sheet>
+	</element>
+
+	<element name="Blood Price" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_BLOOD_PRICE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_BLOOD_PRICE</requirements>
+		<description>
+			<p><em>10th-Level Illrigger Feature</em></p>
+			<p>You can strengthen your defenses at the cost of your vitality. Whenever you fail a saving throw, you can spend one of your Hit Dice, rolling it and adding the number rolled to the result of the save.</p>
+		</description>
+		<sheet>
+			<description>Whenever you fail a saving throw, you can spend one of your Hit Dice, rolling it and adding the number rolled to the result of the save.</description>
+		</sheet>
+	</element>
+
+	<element name="Terrorizing Force" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_TERRORIZING_FORCE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_TERRORIZING_FORCE</requirements>
+		<description>
+			<p><em>11th-Level Illrigger Feature</em></p>
+			<p>Your attacks are empowered with devastating might. When you gain this feature, choose a damage type: cold, fire, necrotic, or poison. When you hit with a weapon attack, you deal an extra 1d8 damage of the chosen type. You can choose a different damage type when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Choose a damage type: cold, fire, necrotic, or poison. When you hit with a weapon attack, you deal an extra 1d8 damage of the chosen type. You can choose a different damage type when you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Superior Interdict" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_SUPERIOR_INTERDICT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SUPERIOR_INTERDICT</requirements>
+		<description>
+			<p><em>14th-Level Illrigger Feature</em></p>
+			<p>Damage from your seals ignores any damage resistances the target has.</p>
+			<p class="indent">In addition, you can use a bonus action to regain a seal if you have none remaining. Once you regain a seal in this way, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Damage from your seals ignores any damage resistances the target has. &#13;
+			In addition, you can use a bonus action to regain a seal if you have none remaining. Once you regain a seal in this way, you can't do so again until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Infernal Majesty" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INFERNAL_MAJESTY">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INFERNAL_MAJESTY</requirements>
+		<description>
+			<p><em>17th-Level Illrigger Feature</em></p>
+			<p>Your archdevil bestows on you the ability to don a measure of their power. As a bonus action, you channel the might of Hell, gaining the following benefits for 10 minutes:</p>
+			<ul>
+				<li>You gain resistance to fire, cold, and necrotic damage.</li>
+				<li>Wings appear on your back, granting you a flight speed of 60 feet.</li>
+				<li>When you use your Blood Price, you can cause an enemy you can see within 10 feet of you to take damage equal to the number rolled on your Hit Die.</li>
+				<li>When you hit with a weapon attack, your Terrorizing Force deals an extra 2d8 damage instead of 1d8.</li>
+			</ul>
+			<p>For the duration, if you die, you can choose to have your body disappear in a burst of flame, leaving behind only your equipment. If you do, your body reforms 1d6 days later somewhere in Hell. Once your body reforms, you return to life and regain all of your hit points.</p>
+			<p class="indent">Once you channel your Infernal Majesty, you must finish a long rest before you can do so again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You channel the might of Hell, gaining the following benefits for 10 minutes: &#13;
+			• You gain resistance to fire, cold, and necrotic damage. &#13;
+			• Wings appear on your back, granting you a flight speed of 60 ft. &#13;
+			• When you use your Blood Price, you can cause an enemy you can see within 10 ft of you to take damage equal to the number rolled on your Hit Die. &#13;
+			• When you hit with a weapon attack, your Terrorizing Force deals an extra 2d8 damage instead of 1d8. &#13;
+			For the duration, if you die, you can choose to have your body disappear in a burst of flame, leaving behind only your equipment. If you do, your body reforms 1d6 days later somewhere in Hell. Once your body reforms, you return to life and regain all of your hp.</description>
+		</sheet>
+	</element>
+
+	<element name="Master of Hell" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_MASTER_OF_HELL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_MASTER_OF_HELL</requirements>
+		<description>
+			<p><em>20th-Level Illrigger Feature</em></p>
+			<p>You learn to tear open a rift to Hell and wreak its fury on your enemies. As an action, you can summon a hellstorm centered on a point you can see within 150 feet of you. Choose one of the following effects, which fills a 50-foot-radius sphere centered on that point:</p>
+			<p><strong><em>Inferno.</em></strong> Hellfire rains down on your foes. Each enemy in that area must make a Dexterity saving throw. On a failed save, a creature takes 5d10 fire damage plus 5d10 necrotic damage, and they burn for 1 minute. On a successful save, a creature takes half as much damage and does not burn. A creature burning in this way must repeat this saving throw at the end of their turn, taking 1d10 fire damage plus 1d10 necrotic damage on a failed save, or ending the effect on themself on a successful one. This hellfire can't be extinguished by nonmagical means.</p>
+			<p><strong><em>Pestilence.</em></strong> A foul miasma swirls around your foes. Each enemy in that area must make a Constitution saving throw. On a failed save, a creature takes 5d10 poison damage plus 5d10 necrotic damage and becomes poisoned for 1 minute. On a successful save, a creature takes half as much damage and does not become poisoned.</p>
+			<p><strong><em>Darkness.</em></strong> A bitter storm assails your foes. Each enemy in that area must make a Constitution saving throw, taking 10d10 cold damage on a failed save, or half as much damage on a successful one. Additionally, the storm's gloom persists for 1 minute, and each enemy within that area is blinded for the duration or until they leave the area.</p>
+			<p>Once you summon a hellstorm, you must finish a long rest before you can do so again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can summon a hellstorm centered on a point you can see within 150 ft of you. Choose one of the following effects, which fills a 50-foot-radius sphere centered on that point: &#13;
+			Inferno. Hellfire rains down on your foes. Each enemy in that area must make a Dexterity saving throw. On a failed save, a creature takes 5d10 fire damage plus 5d10 necrotic damage, and they burn for 1 minute. On a successful save, a creature takes half as much damage and does not burn. A creature burning in this way must repeat this saving throw at the end of their turn, taking 1d10 fire damage plus 1d10 necrotic damage on a failed save, or ending the effect on themself on a successful one. This hellfire can't be extinguished by nonmagical means. &#13;
+			Pestilence. A foul miasma swirls around your foes. Each enemy in that area must make a Constitution saving throw. On a failed save, a creature takes 5d10 poison damage plus 5d10 necrotic damage and becomes poisoned for 1 minute. On a successful save, a creature takes half as much damage and does not become poisoned. &#13;
+			Darkness. A bitter storm assails your foes. Each enemy in that area must make a Constitution saving throw, taking 10d10 cold damage on a failed save, or half as much damage on a successful one. Additionally, the storm's gloom persists for 1 minute, and each enemy within that area is blinded for the duration or until they leave the area.</description>
+		</sheet>
+	</element>
+
+	<!--Combat Masteries-->
+	<element name="Bravado" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY_BRAVADO">
+		<supports>Combat Mastery, Illrigger Revised</supports>
+		<description>
+			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>While you are not wearing any armor, your AC equals {{ac:unarmored defense illrigger bravado}}. You can use a shield and still gain this benefit.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense illrigger bravado:base" value="10" />
+			<stat name="ac:unarmored defense barbarian:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense illrigger bravado:charisma" value="charisma:modifier" />
+
+			<stat name="ac:unarmored defense illrigger bravado" value="ac:unarmored defense illrigger bravado:base" />
+			<stat name="ac:unarmored defense illrigger bravado" value="ac:unarmored defense illrigger bravado:dexterity" />
+			<stat name="ac:unarmored defense illrigger bravado" value="ac:unarmored defense illrigger bravado:charisma" />
+
+			<stat name="ac:calculation" value="ac:unarmored defense illrigger bravado" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Bravado)" />
+		</rules>
+	</element>
+
+	<element name="Brutal" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY_BRUTAL">
+		<supports>Combat Mastery, Illrigger Revised</supports>
+		<description>
+			<p>When you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 5 feet horizontally. If you choose, you can then spend your movement to move into the space they left.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 5 ft horizontally. If you choose, you can then spend your movement to move into the space they left.</description>
+		</sheet>
+	</element>
+
+	<element name="Inexorable" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY_INEXORABLE">
+		<supports>Combat Mastery, Illrigger Revised</supports>
+		<description>
+			<p>You gain a +1 bonus to saving throws for each hostile creature within 5 feet of you, to a maximum bonus of +5.</p>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to saving throws for each hostile creature within 5 feet of you, to a maximum bonus of +5.</description>
+		</sheet>
+	</element>
+
+	<element name="Lies" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY_LIES">
+		<supports>Combat Mastery, Illrigger Revised</supports>
+		<description>
+			<p>You can choose one type of melee weapon, such as a battleaxe, greatsword, or spear. When you attack with that type of weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. You can choose a new weapon type, which replaces your previous choice, when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a long rest, you can choose one type of melee weapon. When you attack with that weapon, you can use +{{combat mastery lies:attack}} for the attack and +{{charisma:modifier}} damage.</description>
+		</sheet>
+		<rules>
+			<stat name="combat mastery lies:attack" value="charisma:modifier" bonus="ability" />
+			<stat name="combat mastery lies:attack" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Lissome" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY_LISSOME">
+		<supports>Combat Mastery, Illrigger Revised</supports>
+		<description>
+			<p>When you hit a creature with a melee weapon attack, you can spend your movement to move 5 feet without provoking opportunity attacks.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a melee weapon attack, you can spend your movement to move 5 ft without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Unfettered" type="Class Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_COMBAT_MASTERY_UNFETTERED">
+		<supports>Combat Mastery, Illrigger Revised</supports>
+		<description>
+			<p>When you use your Baleful Interdict to place or burn a seal, its range is 60 feet instead of 30 feet. When you gain the Infernal Conduit feature at 6th level, its range is 30 feet instead of touch.</p>
+			<p class="indent">In addition, making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.</p>
+		</description>
+		<sheet>
+			<description>Making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.</description>
+			<description level="6">The range of your Infernal Conduit feature is 60 ft instead of touch. &#13;
+			Making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="baleful interdict:range" value="30" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Baleful Interdict Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_BALEFUL_INTERDICT" />
+	<element name="Forked Tongue Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_FORKED_TONGUE" />
+	<element name="Combat Mastery Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_COMBAT_MASTERY" />
+	<element name="Interdiction Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INTERDICTION" />
+	<element name="Diabolic Contract Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_DIABOLIC_CONTRACT" />
+	<element name="Invoke Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INVOKE_HELL" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_EXTRA_ATTACK" />
+	<element name="Infernal Conduit Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INFERNAL_CONDUIT" />
+	<element name="Blood Price Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_BLOOD_PRICE" />
+	<element name="Terrorizing Force Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_TERRORIZING_FORCE" />
+	<element name="Superior Interdict Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SUPERIOR_INTERDICT" />
+	<element name="Infernal Majesty Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_INFERNAL_MAJESTY" />
+	<element name="Master of Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_MASTER_OF_HELL" />
+	
+</elements>

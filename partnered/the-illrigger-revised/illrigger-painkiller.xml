@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Painkiller</name>
+		<description>Painkiller Archetype from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="illrigger-painkiller.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-painkiller.xml" />
+		</update>
+	</info>
+
+	<element name="Painkiller" type="Archetype" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_ILLRIGGER_PAINKILLER">
+		<supports>Diabolic Contract, Illrigger Revised</supports>
+		<description>
+			<p class="flavor">The heavily armored death troopers of Hell, Painkillers serve Dispater, leading from the front of every major infernal battle.</p>
+			<p>Dispater rules Dis, the City of War. When Hell invades another world, Dispater's army does the fighting and dying. His Painkillers are master strategists who lead from the front, inspiring terror and awe in their soldiers. The imperious Painkillers are full of pride and hubris, and they often obsess over their personal appearance.</p>
+			<p class="indent">Though among the most chivalrous of the illriggers, a Painkiller's gallantry is twisted. They accept and honor challenges to single combat, and swiftly punish any who try to interfere—but if losing, they don't hesitate to cheat, and if winning, they arrogantly toy with an enemy before finishing them.</p>
+			<p class="indent">In a moment of weakness or desperation, a ruler in another world might see their army facing certain defeat and call on Dispater. Ever eager to sow strife and discord, Dispater often responds to these pleas by sending a Painkiller to lead the desperate ruler's armies.</p>
+			<h5 class="caption">Precepts of Pride</h5>
+			<p>Dispater's heavy shock troops must be effective battlefield commanders and quickly dispatch enemies. Painkillers follow precepts instructing them to lead Hell's armies and wage war against Good across the timescape.</p>
+			<p class="indent"><strong><em>Lead from the Front.</em></strong> I charge in at the front of every battle, inspiring my soldiers and terrifying my enemies.</p>
+			<p class="indent"><strong><em>Commander.</em></strong> Wherever I go, I command. I don't take orders from those who don't have the will to lead.</p>
+			<p class="indent"><strong><em>Victory at Any Cost.</em></strong> I respect the enemy leader and treat them honorably. But once swords are drawn, I use every trick in my arsenal to win, expecting them to do the same.</p>
+			<p class="indent"><strong><em>Soldiers Die.</em></strong> I care not for the lives of my soldiers, for they are resources I spend to secure my victory.</p>
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DISPATERS_BLESSING" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEVASTATOR" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DESPATERS_INTERDICTION" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_YOU_DIE_ON_MY_COMMAND" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEATHSTRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DISPATERS_BLESSING" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEVASTATOR" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DESPATERS_INTERDICTION" level="7" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_YOU_DIE_ON_MY_COMMAND" level="11" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEATHSTRIKE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Dispater's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DISPATERS_BLESSING">
+		<description>
+			<p><em>3rd-Level Painkiller Feature</em></p>
+			<p>When Dispater accepts you as his illrigger, you gain proficiency with heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"  />
+		</rules>
+	</element>
+
+	<element name="Devastator" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEVASTATOR">
+		<description>
+			<p><em>3rd-Level Painkiller Feature</em></p>
+			<p>As an action, you invoke the authority of Dispater. You make a weapon attack and choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.</p>
+			<p class="indent">Once you use this action, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You make a weapon attack and choose up to {{proficiency}} willing creatures who you can see within 30 ft of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.</description>
+		</sheet>
+	</element>
+
+	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL">
+		<compendium display="false" />
+		<description>
+			<p><em>3rd-Level Painkiller Feature</em></p>
+			<p>You gain the following two Invoke Hell options:</p>
+			<p class="indent"><b><i>Grand Strategist.</i></b> You can order your allies to follow your formation (no action required). Choose one or more creatures within 60 feet of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target can immediately move up to half their speed without provoking opportunity attacks.</p>
+			<p class="indent"><b><i>Punishment.</i></b> When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes necrotic damage equal to the damage they dealt you with the triggering attack. On a successful save, the attacker takes half as much damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL_GRAND_STRATEGIST" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL_PUNISHMENT" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell: Grand Strategist" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL_GRAND_STRATEGIST">
+		<description>
+			<p>You can order your allies to follow your formation (no action required). Choose one or more creatures within 60 feet of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target can immediately move up to half their speed without provoking opportunity attacks.</p>
+		</description>
+		<sheet alt="Grand Strategist" usage="Invoke Hell">
+			<description>You can order your allies to follow your formation (no action required). Choose up to {{proficiency}} creatures within 60 ft of you who can hear you. Each target can immediately move up to half their speed without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Invoke Hell: Punishment" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL_PUNISHMENT">
+		<description>
+			<p>When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes necrotic damage equal to the damage they dealt you with the triggering attack. On a successful save, the attacker takes half as much damage.</p>
+		</description>
+		<sheet alt="Punishment" action="Reaction" usage="Invoke Hell">
+			<description>When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes necrotic damage equal to the damage they dealt you with the triggering attack. On a successful save, the attacker takes half as much damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Dispater's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DESPATERS_INTERDICTION">
+		<description>
+			<p><em>7th-Level Painkiller Feature</em></p>
+			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
+			<p class="indent"><b><i>Telekinetic Seal (7th Level).</i></b> When a creature you can see moves within 5 feet of you, you can use your reaction to place a seal on them. When you do, the target must succeed on a Wisdom saving throw or be either pushed back 15 feet or knocked prone (your choice).</p>
+			<p class="indent"><b><i>By the Throat (13th Level).</i></b> When you use a bonus action to place or move a seal on a creature who is no more than one size larger than you, they must succeed on a Wisdom saving throw or be restrained until the end of their next turn.</p>
+			<p class="indent"><b><i>Dispater's Supremacy (18th Level; Passive).</i></b> Your attacks against interdicted creatures score a critical hit on a roll of 18 through 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_TELEKINETIC_SEAL" level="7" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_BY_THE_THROAT" level="13" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_DISPATERS_SUPREMACY" level="18" />
+		</rules>
+	</element>
+
+	<element name="You Die on My Command!" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_YOU_DIE_ON_MY_COMMAND">
+		<description>
+			<p><em>11th-Level Painkiller Feature</em></p>
+			<p>When an ally within 30 feet of you who can hear you drops to 0 hit points without being killed outright, you can use your reaction to shout an order at them, causing them to drop to 1 hit point instead. Once you use this reaction, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When an ally within 30 ft of you who can hear you drops to 0 hp without being killed outright, you can use your reaction to shout an order at them, causing them to drop to 1 hp instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Deathstrike" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEATHSTRIKE">
+		<description>
+			<p><em>15th-Level Painkiller Feature</em></p>
+			<p>When you hit an interdicted creature with a melee weapon attack, you can use your reaction to burn one of the seals on them to turn the hit into a critical hit. When you do, you also double the damage dice you roll for the burned seal.</p>
+			<p class="indent">You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>When you hit an interdicted creature with a melee weapon attack, you can use your reaction to burn one of the seals on them to turn the hit into a critical hit. When you do, you also double the damage dice you roll for the burned seal.</description>
+		</sheet>
+	</element>
+
+</elements>

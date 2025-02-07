@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/items.xml" />
+		</update>
+	</info>
+
+	<element name="Bloodsbane" type="Magic Item" source="The Illrigger Revised" id="ID_MCDM_ILLR_MAGIC_ITEM_BLOODSBANE">		
+		<description>
+			<p>This oil is deceptively clear and smells faintly like parchment, dried ink, and a touch of sulfur. To unlock the oil's power, an additional component must be mixed in (as shown in the Bloodsbane Effects table); this component may have already been added, or the oil's user can acquire an unmixed oil and add the component as part of a short or long rest. These components are difficult to sense once diluted in the oil, and identifying this oil may require a keen nose or additional research.</p>
+			<p class="indent">The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil in this way takes 1 minute, during which time a willing creature must offer one drop of their blood, mixing it into the oil to activate its magic.</p>
+			<p class="indent">A creature hit with a weapon or ammunition coated in this oil must succeed on a DC 15 Constitution saving throw or suffer an effect depending on the oil's special component added. In addition, if the creature fails the saving throw and the blood in the oil came from an illrigger, the creature has a seal placed on them by that illrigger. This seal doesn't count against the number of seals granted by the illrigger's Baleful Interdict feature.</p>
+			<h5>Bloodsbane Effects</h5>
+			<table>
+				<thead>
+					<tr><td>Ingredient</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>Mentha arvensis oil</td><td>The target is under the effects of the <i>zone of truth</i> spell for 10 minutes.</td></tr>
+				<tr><td>Nightshade oil</td><td>The target is paralyzed for 1 minute.</td></tr>
+				<tr><td>Bloodhound fur</td><td>The creature who offered their blood to the oil knows the direction and distance to the target for 24 hours.</td></tr>
+				<tr><td>Rose oil</td><td>The target is under the effect of the <i>charm person</i> spell for 1 hour. The creature they are charmed by is the creature who offered their blood to the oil.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--True Name-->
+	<element name="True Name" type="Magic Item" source="The Illrigger Revised" id="ID_MCDM_ILLR_MAGIC_ITEM_TRUE_NAME">
+		<description>
+			<p>This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your <i>true name</i> to it. The name sears across the weapon in Infernal runes, then fades.</p>
+			<p class="indent">The typical <i>True Name</i>, an uncommon item, empowers an illrigger's Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">illrigger, baleful interdict</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="by an illrigger">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">True Name {{parent}}</set>
+		</setters>
+	</element>
+	<element name="True Name, +1" type="Magic Item" source="The Illrigger Revised" id="ID_MCDM_ILLR_MAGIC_ITEM_TRUE_NAME_1">
+		<description>
+			<p>This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your <i>true name</i> to it. The name sears across the weapon in Infernal runes, then fades.</p>
+			<p class="indent">The typical <i>True Name</i>, an uncommon item, empowers an illrigger's Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made using the weapon, and the damage dealt by your seals increases by 1d6.</p>
+		</description>
+		<setters>
+			<set name="keywords">illrigger, baleful interdict</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement" addition="by an illrigger">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">True Name {{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+	<element name="True Name, +2" type="Magic Item" source="The Illrigger Revised" id="ID_MCDM_ILLR_MAGIC_ITEM_TRUE_NAME_2">
+		<description>
+			<p>This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your <i>true name</i> to it. The name sears across the weapon in Infernal runes, then fades.</p>
+			<p class="indent">The typical <i>True Name</i>, an uncommon item, empowers an illrigger's Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made using the weapon, and the damage dealt by your seals increases by 1d6.</p>
+		</description>
+		<setters>
+			<set name="keywords">illrigger, baleful interdict</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="attunement" addition="by an illrigger">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">True Name {{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+	<element name="True Name, +3" type="Magic Item" source="The Illrigger Revised" id="ID_MCDM_ILLR_MAGIC_ITEM_TRUE_NAME_3">
+		<description>
+			<p>This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your <i>true name</i> to it. The name sears across the weapon in Infernal runes, then fades.</p>
+			<p class="indent">The typical <i>True Name</i>, an uncommon item, empowers an illrigger's Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made using the weapon, and the damage dealt by your seals increases by 1d6.</p>
+		</description>
+		<setters>
+			<set name="keywords">illrigger, baleful interdict</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="attunement" addition="by an illrigger">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">True Name {{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+	<!--/Truename-->
+	
+</elements>

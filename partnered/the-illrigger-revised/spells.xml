@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Aura of Desecration" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_AURA_OF_DESECRATION">
+		<supports>Architect of Ruin, Cleric, Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>Life-defiling energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Whenever creatures of your choice enter the area for the first time on a turn or start their turn there, they must make a Constitution saving throw. On a failed save, a creature takes 4d6 necrotic damage and can't regain hit points until the start of their next turn. On a successful save, a creature takes half as much damage and suffers no other effect.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30-foot emanation)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Hell's Lash" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_HELLS_LASH">
+		<supports>Architect of Ruin, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You lash a whip of crimson energy at a creature you can see within range, creating a conduit between you and the target. The target must succeed on a Constitution saving throw or take 4d4 fire damage and be tethered. A tethered creature takes 2d4 fire damage at the beginning of each of their turns. A tethered creature can repeat the saving throw at the end of each of their turns, ending the effect on a success.</p>
+			<p class="indent">For the duration, if the target is an interdicted creature, you can use your reaction to burn one of your seals on the creature. When you do, the creature makes their next saving throw to end this spell with disadvantage.</p>
+			<p class="indent"><strong><i>At Higher Levels. </i></strong>When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 2d4 for each slot level above 1st, and the subsequent damage increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the forked tongue of a serpent</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Hellfire" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_HELLFIRE">
+		<supports>Architect of Ruin, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create an eruption of smoldering hellfire around a creature you can see within range. The target must succeed on a Charisma saving throw or take 1d4 fire damage plus 1d4 necrotic damage.</p>
+			<p class="indent"><strong><i>At Higher Levels. </i></strong>Both of the spell's damage types increase by 1d4 when you reach 5th level (2d4 each), 11th level (3d4 each), and 17th level (4d4 each).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Infernal Challenge" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_INFERNAL_CHALLENGE">
+		<supports>Architect of Ruin, Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>You offer a creature a compelling challenge. If you have no allies within 5 feet of you, choose one creature within range who can see and hear you. They must succeed on a Charisma saving throw or answer your challenge and fight you. For the duration, you gain a +2 bonus to AC, the target has disadvantage on attack rolls against creatures other than you, and the first time the target tries to move away from you on a turn, they must succeed on a Charisma saving throw or their speed becomes 0 until the start of their next turn.</p>
+			<p class="indent">This spell ends if you end your turn more than 30 feet away from the target.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Maligned Weapon" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_MALIGNED_WEAPON">
+		<supports>Architect of Ruin, Paladin</supports>
+		<description>
+			<p>You imbue a weapon you touch with an infernal blessing. Until the spell ends, the weapon extinguishes any mundane sources of light in a 30-foot radius. In addition, attacks made with the weapon deal an extra 2d6 necrotic damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.</p>
+			<p class="indent">As a bonus action on your turn while holding this weapon, you can end the spell early and cause the weapon to emit a burst of dark energy. Each creature of your choice who you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature takes 4d6 necrotic damage and is frightened for 1 minute. On a successful save, a creature takes half as much damage and isn't frightened. At the end of each of their turns, a frightened creature can make a Wisdom saving throw, ending the effect on themself on a success.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Mote of Hell" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_HELLS_LASH">
+		<supports>Architect of Ruin, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You manifest a pocket of Hell. A 15-foot-radius sphere of darkness, brimstone, and blasting heat appears, centered on a point within range and lasting for the duration. The cloud of hellfire echoes with the cries of damned souls that can be heard by creatures within 30 feet of it. No light, even magical light, can illuminate the cloud, and any creatures fully within that area are blinded.</p>
+			<p class="indent">The cloud warps the timescape, making the cloud's area difficult terrain. A creature who starts their turn in that area takes 3d6 fire damage. A creature who ends their turn in that area must succeed on a Wisdom saving throw or take 3d6 psychic damage as the voices of the damned crowd their mind.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of sulfur</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Mote of Hell" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_HELLS_LASH">
+		<supports>Architect of Ruin, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You manifest a pocket of Hell. A 15-foot-radius sphere of darkness, brimstone, and blasting heat appears, centered on a point within range and lasting for the duration. The cloud of hellfire echoes with the cries of damned souls that can be heard by creatures within 30 feet of it. No light, even magical light, can illuminate the cloud, and any creatures fully within that area are blinded.</p>
+			<p class="indent">The cloud warps the timescape, making the cloud's area difficult terrain. A creature who starts their turn in that area takes 3d6 fire damage. A creature who ends their turn in that area must succeed on a Wisdom saving throw or take 3d6 psychic damage as the voices of the damned crowd their mind.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of sulfur</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Vengeful Blade" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_VENGEFUL_BLADE">
+		<supports>Architect of Ruin, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes 1d8 necrotic damage and the spell ends.</p>
+			<p class="indent">This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon worth at least 1 sp</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Wall of Death" type="Spell" source="The Illrigger Revised" id="ID_MCDM_ILLR_SPELL_WALL_OF_DEATH">
+		<supports>Architect of Ruin, Druid, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a wall of necrotic energy on a surface within range. You can make a wall up to 60 feet long, 20 feet high, and 1 foot thick, or can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration. When the wall appears, each creature in its area must make a Constitution saving throw. A creature takes 4d8 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">One side of the wall, selected by you when you cast this spell, deals 4d8 necrotic damage to each creature who ends their turn within 10 feet of that side or inside the wall. A creature takes the same damage when they enter the wall for the first time on a turn or end their turn there. The other side of the wall deals no damage.</p>
+			<p class="indent">Whenever a creature takes damage from the wall, you can use your reaction to gain temporary hit points equal to the amount of damage dealt.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chip of onyx</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+	
+</elements>

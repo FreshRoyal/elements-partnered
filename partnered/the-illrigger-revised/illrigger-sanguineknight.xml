@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sanguine Knight</name>
+		<description>Sanguine Knight Archetype from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="illrigger-sanguineknight.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-sanguineknight.xml" />
+		</update>
+	</info>
+
+	<element name="Sanguine Knight" type="Archetype" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_ILLRIGGER_SANGUINE_KNIGHT">
+		<supports>Diabolic Contract, Illrigger Revised</supports>
+		<description>
+			<p class="flavor">The blood-knights of Hell, Sanguine Knights serve Sutekh, Lord of Blood. Their sorceries drain their enemies' life force, pouring this stolen vitality into infernal rituals to turn the tide of battle.</p>
+			<p>Sutekh rules Naraka, the City of Blood. Recognized as the greatest sorcerer in hell, he carries the title of High Sanguinary and rules from the Temple of Vitality. He is a master of blood magic, and his inner circle of priests and wizards are the Bloodliches, undead spellcasters whose corporeal forms turned to ash centuries ago and whose bodies are crafted from solid blood.</p>
+			<p class="indent">Sutekh's illriggers all belong to a cult known as the Chalice of Vitality. Knights of the Chalice drink deeply of their enemies' essence, draining it to power their magics. Other members of the Order of Desecration fear that the Sanguine Knights seek more than Sutekh's mere ascension to the Throne of Hell; some whisper that the Chalice secretly schemes to make Sutekh a god. This would, of course, be treason.</p>
+			<div class="sidebar">
+				<h5>CONTENT WARNING</h5>
+				<p>This subclass deals with manipulating another creature's blood. Before choosing this subclass, please ensure everyone at your table is comfortable with this concept. And as always, we encourage the ongoing use of safety tools throughout your game.</p>
+			</div>
+			<h5 class="caption">Precepts of Blood</h5>
+			<p>Sanguine Knights swear an oath to Sutekh when they join the Order of Desolation. These tenets swear them to wield profane blood magic, commanding loyalty and inflicting terror.</p>
+			<p class="indent"><strong><em>Their Strength is Their Weakness.</em></strong> I target the strongest of my foes, for their vitality shall feed my victory.</p>
+			<p class="indent"><strong><em>Sin Demands Suffering.</em></strong> Opposing me is heresy. Before my enemies taste defeat, they must pay for their unbelief with agony.</p>
+			<p class="indent"><strong><em>Loyalty Rewarded.</em></strong> My boons lead my allies to depend on me—and on the bloodshed that empowers me.</p>
+			<p class="indent"><strong><em>Mercy is Power.</em></strong> In granting succor to my allies, I prove how great my power is. Each time I restore life, it serves as a reminder of how quickly I can strip it away.</p>
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_BLESSING" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_EXSANGUINATE" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_INTERDICTION" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_BLOODSTROKE" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_HAEMAL_EXCHANGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_BLESSING" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_EXSANGUINATE" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_INTERDICTION" level="7" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_BLOODSTROKE" level="11" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_HAEMAL_EXCHANGE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Sutekh's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_BLESSING">
+		<description>
+			<p><em>3rd-Level Sanguine Knight Feature</em></p>
+			<p>When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain proficiency in the Religion skill.</p>
+			<p class="indent">In addition, as an action, you can expand your awareness of life around you. Until the end of your next turn, you can sense creatures who have blood within 120 feet of you without having to see them. This ability can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. You know the distance and direction of each creature, as well as the creature's type. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p> 
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>Until the end of your next turn, you can sense creatures who have blood within 120 ft of you without having to see them. This ability can penetrate most barriers, but is blocked by 1 ft of stone, 1 inch of common metal, a thin sheet of lead, or 3 ft of wood or dirt. You know the distance and direction of each creature, as well as the creature's type.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION"  />
+		</rules>
+	</element>
+
+	<element name="Exsanguinate" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_EXSANGUINATE">
+		<description>
+			<p><em>3rd-Level Sanguine Knight Feature</em></p>
+			<p>You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature who isn't a Construct or Undead, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.</p>
+		</description>
+		<sheet>
+			<description>Whenever you burn one or more seals on a creature who isn't a Construct or Undead, you can choose an ally you can see within 30 ft of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL">
+		<compendium display="false" />
+		<description>
+			<p><em>3rd-Level Sanguine Knight Feature</em></p>
+			<p>You gain the following two Invoke Hell options:</p>
+			<p class="indent"><b><i>Embolden Allies.</i></b> As a bonus action, you restore a total number of hit points equal to five times your illrigger level, divided however you choose between yourself and other creatures within 30 feet of you.</p>
+			<p class="indent"><b><i>Vitalize.</i></b> You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 feet of you gains a bonus to ability checks equal to your proficiency bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL_EMBOLDEN_ALLIES" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL_VITALIZE" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell: Embolden Allies" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL_EMBOLDEN_ALLIES">
+		<description>
+			<p>As a bonus action, you restore a total number of hit points equal to five times your illrigger level, divided however you choose between yourself and other creatures within 30 feet of you.</p>
+		</description>
+		<sheet alt="Embolden Allies" usage="Invoke Hell" action="Bonus Action">
+			<description>You restore a total number of hp equal to {{embolden allies:hp}}, divided however you choose between yourself and other creatures within 30 ft of you.</description>
+		</sheet>
+		<rules>
+			<stat name="embolden allies:hp" value="level:illrigger" />
+			<stat name="embolden allies:hp" value="level:illrigger" />
+			<stat name="embolden allies:hp" value="level:illrigger" />
+			<stat name="embolden allies:hp" value="level:illrigger" />
+			<stat name="embolden allies:hp" value="level:illrigger" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell: Vitalize" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL_VITALIZE">
+		<description>
+			<p>You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 feet of you gains a bonus to ability checks equal to your proficiency bonus.</p>
+		</description>
+		<sheet alt="Vitalize" usage="Invoke Hell">
+			<description>You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 ft of you gains a +{{proficiency}} bonus to ability checks.</description>
+		</sheet>
+	</element>
+
+	<element name="Sutekh's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_INTERDICTION">
+		<description>
+			<p><em>7th-Level Sanguine Knight Feature</em></p>
+			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
+			<p class="indent"><b><i>Foul Interchange (7th Level).</i></b>As an action, you choose a creature you can see within 30 feet of you and expend a seal to end one of the following conditions afflicting them: blinded, charmed, dazed, deafened, frightened, paralyzed, or poisoned. Another creature you can see within 60 feet of you must succeed on a Constitution saving throw or suffer that same condition until the end of your next turn. If that creature is immune to the condition, they don't suffer the condition, but the condition ends for the original creature.</p>
+			<p class="indent"><b><i>Sanguine Gift (13th Level).</i></b> When a creature you can see within 30 feet of you regains hit points, you can expend a seal (no action required) and the creature regains additional hit points equal to your illrigger level.</p>
+			<p class="indent"><b><i>Blood for Blood (18th Level; Passive).</i></b> Whenever an ally takes damage from an interdicted creature, that interdicted creature takes necrotic damage equal to your proficiency bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_FOUL_INTERCHANGE" level="7" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_SANGUINE_GIFT" level="13" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_BLOOD_FOR_BLOOD" level="18" />
+		</rules>
+	</element>
+
+	<element name="Bloodstroke" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_BLOODSTROKE">
+		<description>
+			<p><em>11th-Level Sanguine Knight Feature</em></p>
+			<p>The magic that shields your allies now also saps their enemies' strength. When an ally who has temporary hit points from your Exsanguinate feature is hit by a melee attack, the attacker takes cold, fire, or necrotic damage (your choice) equal to your illrigger level.</p>
+		</description>
+		<sheet>
+			<description>When an ally who has temporary hp from your Exsanguinate feature is hit by a melee attack, the attacker takes cold, fire, or necrotic damage (your choice) equal to {{level:illrigger}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Haemal Exchange" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_HAEMAL_EXCHANGE">
+		<description>
+			<p><em>15th-Level Sanguine Knight Feature</em></p>
+			<p>You have mastered the ability to enervate enemies and endow allies. When an interdicted creature within 60 feet of you makes an attack roll or saving throw, you can use your reaction to burn one of the seals on them and transfer their power. The target must roll a d8 and subtract the number rolled from the triggering attack roll or saving throw.</p>
+			<p class="indent">You then empower an ally within 30 feet of you. The next time that ally makes an attack roll or saving throw, they roll a d8 and add the number rolled to the attack roll or saving throw.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an interdicted creature within 60 ft of you makes an attack roll or saving throw, you can use your reaction to burn one of the seals on them and transfer their power. The target must roll a d8 and subtract the number rolled from the triggering attack roll or saving throw.
+			You then empower an ally within 30 ft of you. The next time that ally makes an attack roll or saving throw, they roll a d8 and add the number rolled to the attack roll or saving throw.</description>
+		</sheet>
+	</element>
+
+</elements>

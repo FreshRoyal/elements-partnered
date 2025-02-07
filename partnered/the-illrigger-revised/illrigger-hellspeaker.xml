@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hellspeaker</name>
+		<description>Hellspeaker Archetype from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="illrigger-hellspeaker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-hellspeaker.xml" />
+		</update>
+	</info>
+
+	<element name="Hellspeaker" type="Archetype" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_ILLRIGGER_HELLSPEAKER">
+		<supports>Diabolic Contract, Illrigger Revised</supports>
+		<description>
+			<p class="flavor">The charismatic and manipulative Hellspeakers serve Moloch as they slip about the battlefield, coercing enemies into becoming unwitting allies.</p>
+			<p>Moloch rules Styx, the City of Lies, but his reach extends far beyond it. Hell's greatest politicians and diplomats rise to prominence through Moloch's subtle manipulations. They follow him with great loyalty, for they know they are nothing without him—and thus his power echoes through all of Hell.</p>
+			<p class="indent">Moloch's illriggers are silver-tongued enchanters, lulling his foes to complacency with sorcery and subterfuge until they wake and find themselves under the command of the Order of Desolation. These Hellspeakers train in the art known as the Red Cant or Hell's Cant. By understanding their enemy and through weaving subtle sorceries into normal speech, Hellspeakers can make their foes feel, think, or do nearly anything to accelerate Hell's victory.</p>
+			<p class="indent">Across the timescape, Hellspeakers enjoy a reputation as smiling rogues and swashbuckling villains. An asset in any negotiation, Hellspeakers know that in a world of lies, the truth can be as potent a weapon as steel.</p>
+			<div class="sidebar">
+				<h5>CONTENT WARNING</h5>
+				<p>This subclass has themes of mental manipulation and mind control. Before choosing this subclass, please ensure everyone at the table is comfortable exploring these dark and harmful themes. And as always, we encourage the ongoing use of safety tools throughout your game.</p>
+			</div>
+			<h5 class="caption">Precepts of Deception</h5>
+			<p>Hellspeakers swear an oath to Moloch when they join the Order of Desolation. By following these precepts, they infiltrate the farthest reaches of power and manipulate all under their influence.</p>
+			<p class="indent"><strong><em>My Voice Is a Weapon.</em></strong> Even when my enchantments fail, if my enemy can hear me, they are mine.</p>
+			<p class="indent"><strong><em>Doubt Is Certainty.</em></strong> I need not convince my enemy, only sow doubt and wait for it to bear fruit.</p>
+			<p class="indent"><strong><em>Trust Me.</em></strong> For each lie I utter, I tell the truth tenfold. One who always lies says nothing.</p>
+			<p class="indent"><strong><em>Never Tell the Same Lie Twice.</em></strong> An overused skill becomes too predictable. Keep moving, switch targets, keep them guessing.</p>
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_CHARM_ENEMY" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_INTERDICTION" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INTRANSIGENT" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_LETS_MAKE_A_DEAL" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_QUID_PRO_QUO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_CHARM_ENEMY" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_INTERDICTION" level="7" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INTRANSIGENT" level="11" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_LETS_MAKE_A_DEAL" level="11" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_QUID_PRO_QUO" level="15" />
+		</rules>
+	</element>
+
+	<element name="Moloch's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING">
+		<description>
+			<p><em>3rd-Level Hellspeaker Feature</em></p>
+			<p>When Moloch accepts you as his illrigger, you gain proficiency in the Persuasion or Deception skill (your choice). If you already have proficiency in the skill of your choice, your proficiency bonus is doubled for any ability check you make with that skill.</p>
+			<p class="indent">In addition, your Forked Tongue feature grants you an additional language (for a total of three at 3rd level and four at 9th level). Whenever you speak in a language gained by this feature, your devilish influence is subconsciously felt by creatures who can hear and understand you, granting you advantage on Charisma checks to influence those creatures.</p>
+		</description>
+		<sheet>
+			<description>Your Forked Tongue feature grants you an additional language. Whenever you speak in a language gained by this feature, your devilish influence is subconsciously felt by creatures who can hear and understand you, granting you advantage on Charisma checks to influence those creatures.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Skill Proficiency or Double (Moloch's Blessing)" supports="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING_DECEPTION|ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING_PERSUASION" level="3" />
+		</rules>
+	</element>
+	<element name="Deception" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING_DECEPTION">
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+		</rules>
+	</element>
+	<element name="Persuasion" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING_PERSUASION">
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+		</rules>
+	</element>
+	
+	<element name="Charm Enemy" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_CHARM_ENEMY">
+		<description>
+			<p><em>3rd-Level Hellspeaker Feature</em></p>
+			<p>When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them. While charmed, the target regards you as a friendly acquaintance. When the charmed condition ends, the target knows they were charmed by you.</p>
+			<p class="indent">When you use this bonus action, you can additionally burn one or more seals on one or more other interdicted Humanoids within 30 feet of you, attempting to charm those targets as well. After taking damage from the burned seals, each of those targets must succeed on a Charisma saving throw or be under the same charmed effect.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{hellspeaker:charm enemy:usage}}/Long Rest">
+			<description>When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them. While charmed, the target regards you as a friendly acquaintance. When the charmed condition ends, the target knows they were charmed by you. &#13;
+			When you use this bonus action, you can additionally burn one or more seals on one or more other interdicted Humanoids within 30 ft of you, attempting to charm those targets as well. After taking damage from the burned seals, each of those targets must succeed on a Charisma saving throw or be under the same charmed effect.</description>
+		</sheet>
+		<rules>
+			<stat name="hellspeaker:charm enemy:usage" value="charisma:modifier" bonus="bonus" />
+			<stat name="hellspeaker:charm enemy:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL">
+		<compendium display="false" />
+		<description>
+			<p><em>3rd-Level Hellspeaker Feature</em></p>
+			<p>You gain the following two Invoke Hell options:</p>
+			<p class="indent"><b><i>Honey-Sweet Blades.</i></b> When you make a weapon attack against an interdicted creature, you can gain advantage on that attack (no action required). If the attack hits, it becomes a critical hit.</p>
+			<p class="indent"><b><i>Turncoat.</i></b> As an action, you wield your manipulative tongue against your enemies. You choose a number of enemy creatures up to your proficiency bonus within 60 feet of you who can hear you. Each target must succeed on a Charisma saving throw or use their reaction to make a weapon attack against a single target of your choice. A creature affected by this feature can't attack themself.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL_HONEY_SWEET_BLADES" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL_TURNCOAT" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell: Honey-Sweet Blades" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL_HONEY_SWEET_BLADES">
+		<description>
+			<p>When you make a weapon attack against an interdicted creature, you can gain advantage on that attack (no action required). If the attack hits, it becomes a critical hit.</p>
+		</description>
+		<sheet alt="Honey-Sweet Blades" usage="Invoke Hell">
+			<description>When you make a weapon attack against an interdicted creature, you can gain advantage on that attack. If the attack hits, it becomes a critical hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Invoke Hell: Turncoat" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL_TURNCOAT">
+		<description>
+			<p>As an action, you wield your manipulative tongue against your enemies. You choose a number of enemy creatures up to your proficiency bonus within 60 feet of you who can hear you. Each target must succeed on a Charisma saving throw or use their reaction to make a weapon attack against a single target of your choice. A creature affected by this feature can't attack themself.</p>
+		</description>
+		<sheet alt="Turncoat" usage="Invoke Hell" action="Action">
+			<description>You choose up to {{proficiency}} enemy creatures within 60 ft of you who can hear you. Each target must succeed on a Charisma saving throw or use their reaction to make a weapon attack against a single target of your choice. A creature affected by this feature can't attack themself.</description>
+		</sheet>
+	</element>
+
+	<element name="Moloch's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_INTERDICTION">
+		<description>
+			<p><em>7th-Level Hellspeaker Feature</em></p>
+			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
+			<p class="indent"><b><i>Red Cant (7th Level).</i></b> When you make a Charisma check, you can expend a seal to treat a d20 roll of 9 or lower as a 10.</p>
+			<p class="indent"><b><i>Slippery Ploy (13th Level).</i></b> When a creature targets you with an attack, spell, or other magical effect, you can place a seal on them as a reaction and force the creature to make a Charisma saving throw. On a failed save, the creature must choose a new target or lose the attack or effect.</p>
+			<p class="indent"><b><i>Incontrovertible (18th Level; Passive).</i></b> Interdicted creatures have disadvantage on Wisdom and Charisma saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_RED_CANT" level="7" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_SLIPPERY_PLOY" level="13" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_INCONTROVERTIBLE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Intransigent" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INTRANSIGENT">
+		<description>
+			<p><em>11th-Level Hellspeaker Feature</em></p>
+			<p>You and each creature of your choice within 10 feet of you are immune to the charmed condition while you are conscious.</p>
+		</description>
+		<sheet>
+			<description>You and each creature of your choice within 10 ft of you are immune to the charmed condition while you are conscious.</description>
+		</sheet>
+	</element>
+
+	<element name="Let's Make a Deal" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_LETS_MAKE_A_DEAL">
+		<description>
+			<p><em>11th-Level Hellspeaker Feature</em></p>
+			<p>You can offer your allies a deal—at a price, of course. As a bonus action, you choose one willing ally within 60 feet of you who can hear you.</p>
+			<p class="indent">Once within the next 10 minutes, the creature can choose to gain advantage on one attack roll or saving throw they make and can add a bonus equal to your proficiency bonus to the same roll. If this attack hits or this saving throw succeeds, the creature gains temporary hit points equal to your illrigger level. If this attack misses or this saving throw fails, the creature has disadvantage on the next attack roll or saving throw they make. This disadvantage can't be canceled out with advantage in any way. A creature can strike only one deal with you at a time.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You choose one willing ally within 60 ft of you who can hear you.
+			Once within the next 10 minutes, the creature can choose to gain advantage on one attack roll or saving throw they make and can add a +{{proficiency}} bonus to the same roll. If this attack hits or this saving throw succeeds, the creature gains {{level:illrigger}} temporary hp. If this attack misses or this saving throw fails, the creature has disadvantage on the next attack roll or saving throw they make. This disadvantage can't be canceled out with advantage in any way. A creature can strike only one deal with you at a time.</description>
+		</sheet>
+	</element>
+
+	<element name="Quid Pro Quo" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_QUID_PRO_QUO">
+		<description>
+			<p><em>15th-Level Hellspeaker Feature</em></p>
+			<p>You can whisper to the legions of Hell, ensnaring enemies and calling allies. As an action, you can attempt to banish a creature you can see within 30 feet of you. The target must succeed on a Charisma saving throw. On a failed save, the target is banished to the wastes of Hell for 1 minute, after which they return to the unoccupied space nearest to the one they left. A target banished in this way can repeat the saving throw at the end of each of their turns, ending the effect early on a success. A creature who succeeds on a saving throw against this effect becomes immune to your Quid Pro Quo for 24 hours.</p>
+			<p class="indent">Additionally, when a target is banished in this way, a devil jurist (from MCDM's Flee, Mortals!) or a horned devil (from the core rules) appears in their place. This devil acts as an ally to you and follows your commands until the banished creature is no longer banished, at which time the devil disappears.</p>
+			<p class="indent">Once you successfully banish a creature in this way, you can't use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can attempt to banish a creature you can see within 30 ft of you. The target must succeed on a Charisma saving throw. On a failed save, the target is banished to the wastes of Hell for 1 minute, after which they return to the unoccupied space nearest to the one they left. A target banished in this way can repeat the saving throw at the end of each of their turns, ending the effect early on a success. A creature who succeeds on a saving throw against this effect becomes immune to your Quid Pro Quo for 24 hours. &#13;
+			Additionally, when a target is banished in this way, a devil jurist or a horned devil appears in their place. This devil acts as an ally to you and follows your commands until the banished creature is no longer banished, at which time the devil disappears.</description>
+		</sheet>
+	</element>
+
+</elements>

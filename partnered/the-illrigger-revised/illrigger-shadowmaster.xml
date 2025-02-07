@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shadowmaster</name>
+		<description>Shadowmaster Archetype from The Illrigger Revised</description>
+		<update version="0.0.1">
+			<file name="illrigger-shadowmaster.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-shadowmaster.xml" />
+		</update>
+	</info>
+
+	<element name="Shadowmaster" type="Archetype" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_ILLRIGGER_SHADOWMASTER">
+		<supports>Diabolic Contract, Illrigger Revised</supports>
+		<description>
+			<p class="flavor">The hidden assassins of Hell, Shadowmasters serve Belial and excel at stealth and disguise.</p>
+			<p>Belial rules Gehennom, the City of Darkness. He strives to rule Hell through poison, torture, and assassination. His illriggers strike from the shadows or use deception to earn high-ranking positions close to powerful rulers. Many Shadowmasters run networks of spies and assassins who have no idea of the infernal provenance of their leader.</p>
+			<p class="indent">Shadowmasters are sworn not to reveal their true allegiance, and if need be, they must take their own lives to fulfill this oath. Many Shadowmasters prepare elaborate plans for their own assassination so that, should they risk discovery, their assassination obscures the truth. Of course, these killers never learn they were hired by their deceased target.</p>
+			<h5 class="caption">Precepts of Shadow</h5>
+			<p>Shadowmasters swear an oath to Belial when they join the Order of Desolation. These precepts commit them to serve Belial's foes as allies before revealing themselves as enemies.</p>
+			<p class="indent"><strong><em>Plans Within Plans.</em></strong> My enemies must never discover my true goals. If needed, I will sacrifice myself to protect my schemes.</p>
+			<p class="indent"><strong><em>Positions of Power.</em></strong> I control everything from the shadows by knowing who to deceive and where to hide in plain sight.</p>
+			<p class="indent"><strong><em>Power in Patience.</em></strong> I study my enemy and methodically build their trust. My loyalty must be unquestionable so my inevitable betrayal is unthinkable.</p>
+			<p class="indent"><strong><em>Hesitation Is Failure.</em></strong> Though I usually rely on agents, when the opportunity presents itself, I can unhesitatingly kill with efficiency and precision.</p>
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_MARKED_FOR_DEATH" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_STRIKE_FROM_THE_DARK" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_BELIALS_INTERDICTION" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_UMBRAL_KILLER" />
+			<div element="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_DOOMED_TO_THE_SHADOWS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_MARKED_FOR_DEATH" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_STRIKE_FROM_THE_DARK" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL" level="3" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_BELIALS_INTERDICTION" level="7" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_UMBRAL_KILLER" level="11" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_DOOMED_TO_THE_SHADOWS" level="15" />
+		</rules>
+	</element>
+
+	<element name="Marked for Death" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_MARKED_FOR_DEATH">
+		<description>
+			<p><em>3rd-Level Shadowmaster Feature</em></p>
+			<p>You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on your first attack against an interdicted creature on each of your turns.</description>
+		</sheet>
+	</element>
+
+	<element name="Strike from the Dark" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_STRIKE_FROM_THE_DARK">
+		<description>
+			<p><em>3rd-Level Shadowmaster Feature</em></p>
+			<p>You understand the power of striking from the shadows. Once per turn, when you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll a number of d4s equal to your proficiency bonus and deal extra damage equal to the total you rolled. This damage increases by 1d4 if the target is in dim light or darkness.</p>
+		</description>
+		<sheet>
+			<description>When you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll {{proficiency}}d{{strike from the dark:dice}} and deal extra damage equal to the total you rolled. This damage increases by {{strike from the dark:bonus dice}}d{{strike from the dark:bonus die}} if the target is in dim light or darkness.</description>
+		</sheet>
+		<rules>
+			<stat name="strike from the dark:dice" value="4" bonus="base" />
+			<stat name="strike from the dark:bonus dice" value="1" bonus="base" />
+			<stat name="strike from the dark:bonus die" value="4" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL">
+		<compendium display="false" />
+		<description>
+			<p><em>3rd-Level Shadowmaster Feature</em></p>
+			<p>You gain the following two Invoke Hell options:</p>
+			<p class="indent"><b><i>Master of Disguise.</i></b> As an action, you can cast the <i>disguise self</i> spell without expending a spell slot.</p>
+			<p class="indent"><b><i>No Escape.</i></b> As a bonus action, you can call on the shadows to entrap a creature you can see within 30 feet of you. The target must make a Charisma saving throw, made with disadvantage if they are in dim light or darkness. On a failed save, the target's speed is halved and they can't willingly move more than 30 feet away from you. This effect ends for the target if you are incapacitated or die or if the target is more than 30 feet away from you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL_MASTER_OF_DISGUISE" />
+			<grant type="Archetype Feature" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL_NO_ESCAPE" />
+		</rules>
+	</element>
+
+	<element name="Invoke Hell: Master of Disguise" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL_MASTER_OF_DISGUISE">
+		<description>
+			<p>As an action, you can cast the <i>disguise self</i> spell without expending a spell slot.</p>
+		</description>
+		<sheet alt="Master of Disguise" action="Action" usage="Invoke Hell">
+			<description>You can cast the disguise self spell without expending a spell slot.</description>
+		</sheet>
+	</element>
+
+	<element name="Invoke Hell: No Escape" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL_NO_ESCAPE">
+		<description>
+			<p>As a bonus action, you can call on the shadows to entrap a creature you can see within 30 feet of you. The target must make a Charisma saving throw, made with disadvantage if they are in dim light or darkness. On a failed save, the target's speed is halved and they can't willingly move more than 30 feet away from you. This effect ends for the target if you are incapacitated or die or if the target is more than 30 feet away from you.</p>
+		</description>
+		<sheet alt="No Escape" action="Bonus Action" usage="Invoke Hell">
+			<description>You can call on the shadows to entrap a creature you can see within 30 ft of you. The target must make a Charisma saving throw, made with disadvantage if they are in dim light or darkness. On a failed save, the target's speed is halved and they can't willingly move more than 30 ft away from you. This effect ends for the target if you are incapacitated or die or if the target is more than 30 ft away from you.</description>
+		</sheet>
+	</element>
+
+	<element name="Belial's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_BELIALS_INTERDICTION">
+		<description>
+			<p><em>7th-Level Shadowmaster Feature</em></p>
+			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
+			<p class="indent"><b><i>Viel of Lies (7th Level).</i></b> As a bonus action, you can expend a seal to become invisible for 10 minutes or until you attack or cast a spell.</p>
+			<p class="indent"><b><i>Hell's Assassin (13th Level; Passive).</i></b> Whenever you roll a 1 or 2 on a die to determine the damage of your seals or your weapon attacks against interdicted creatures, you can reroll the die and must use the new roll.</p>
+			<p class="indent"><b><i>Dark Malediction (18th Level; Passive).</i></b> Interdicted creatures radiate darkness in a 10-foot radius. Mundane sources of light can't illuminate this darkness, but creatures with darkvision can see through it. If any of this darkness overlaps with an area of light created by magic or psionics, the overlapping area of darkness is illuminated by the light.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_VEIL_OF_LIES" level="7" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_HELLS_ASSASSIN" level="13" />
+			<grant type="Class Feature" id="ID_MCDM_ILLR_CLASS_FEATURE_ILLRIGGER_INTERDICT_BOON_DARK_MALEDICTION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Umbral Killer" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_UMBRAL_KILLER">
+		<description>
+			<p><em>11th-Level Shadowmaster Feature</em></p>
+			<p>Shadows are your companion, aiding you in your exploits. You gain the following benefits:</p>
+			<ul>
+				<li>You gain darkvision out to 60 feet. If you already have darkvision, its range increases by 60 feet.</li>
+				<li>Your movement speed increases by 10 feet.</li>
+				<li>You have advantage on Dexterity (Stealth) checks made to hide. Whenever you make a Dexterity saving throw to take only half damage from an effect, you instead take no damage if you succeed on the saving throw, and half damage if you fail.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity (Stealth) checks made to hide. Whenever you make a Dexterity saving throw to take only half damage from an effect, you instead take no damage if you succeed on the saving throw, and half damage if you fail.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Doomed to the Shadows" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_DOOMED_TO_THE_SHADOWS">
+		<description>
+			<p><em>15th-Level Shadowmaster Feature</em></p>
+			<p>You have perfected your assassin's strike. The extra damage from your Strike from the Dark feature increases to a number of d8s equal to your proficiency bonus (instead of that number of d4s), and you deal an extra 2d8 damage if the target is in dim light or darkness (instead of an extra 1d4 damage).</p>
+			<p class="indent">In addition, when you deal damage using Strike from the Dark, you can use your reaction to burn a seal on the creature, causing them to be blinded for 1 minute instead of dealing the seal's damage.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you deal damage using Strike from the Dark, you can use your reaction to burn a seal on the creature, causing them to be blinded for 1 minute instead of dealing the seal's damage.</description>
+		</sheet>
+		<rules>
+			<stat name="strike from the dark:dice" value="8" bonus="base" />
+			<stat name="strike from the dark:bonus dice" value="2" bonus="base" />
+			<stat name="strike from the dark:bonus die" value="8" bonus="base" />
+		</rules>
+	</element>
+
+</elements>
