@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Flee, Mortals! from MCDM</name>
+		<update version="1.0.0">
+			<file name="flee-mortals.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals/items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals/source.xml" />
+	</files>
+</index>

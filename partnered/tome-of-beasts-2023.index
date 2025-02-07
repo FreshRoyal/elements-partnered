@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Tome of Beasts 2023 Edition from Kobold Press</name>
+		<update version="1.0.0">
+			<file name="tome-of-beasts-2023.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023.index" />
+		</update>
+	</info>
+	<files>
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023-edition/languages.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023-edition/source.xml" />
+	</files>
+</index>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Other Partnered Content on DDB</name>
+		<update version="1.0.0">
+			<file name="other.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other.index" />
+		</update>
+	</info>
+	<files>
+		<file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/expanded-racial-feats.xml" />
+		<file name="gunslinger-martial-archetype-for-fighters.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/gunslinger-martial-archetype-for-fighters.xml" />
+	</files>
+</index>
