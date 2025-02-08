@@ -3,6 +3,8 @@ Third-party content officially published on D&amp;D Beyond implemented for the A
 
 This repo will also include content from the first six books of Goodman Games' Original Adventures Reincarnated series.
 
+Index URL: https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index
+
 ## Disclaimer
 The Partnered Content repository is intended as a place for easily-accessible Aurora Builder content (xml) files of products you already own. Please ensure you only access content in accordance with your local laws.
 
