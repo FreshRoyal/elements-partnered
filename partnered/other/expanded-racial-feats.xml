@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Expanded Racial Feats</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/expanded-racial-feats.xml" />
 		</update>
 	</info>
@@ -204,7 +204,7 @@
 
 	<element name="Mountain’s Endurance" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MOUNTAINS_ENDURANCE">
 		<prerequisite>Goliath</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_GOLIATH||ID_WOTC_MOTM_RACE_GOLIATH||ID_WOTC_PHB24_RACE_GOLIATH</requirements>
+		<requirements>ID_WOTC_VGTM_RACE_GOLIATH||ID_WOTC_MOTM_RACE_GOLIATH||ID_WOTC_PHB24_RACIAL_TRAIT_GOLIATH_GIANT_ANCESTRY_STONES_ENDURANCE</requirements>
 		<description>
 			<p><i>Prerequisite: Goliath</i></p>
 			<p>Your ability to shrug off some injuries is legendary, even for your race. You gain the following benefits:</p>
