@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Tal'Dorei Campaign Setting Reborn by Darrington Press</name>
+		<update version="1.0.0">
+			<file name="taldorei-campaign-setting-reborn.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn.index" />
+		</update>
+	</info>
+	<files>
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/feats.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/spells.xml" />
+		
+		<!--Archetypes-->
+		<file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/barbarian-juggernaut.xml" />
+		<file name="bard-tragedy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/bard-tragedy.xml" />
+		<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/cleric-blood.xml" />
+		<file name="cleric-moon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/cleric-moon.xml" />
+		<file name="druid-blighted.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/druid-blighted.xml" />
+		<file name="monk-cobalt-soul.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/monk-cobalt-soul.xml" />
+		<file name="paladin-open-sea.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/paladin-open-sea.xml" />
+		<file name="sorcerer-runechild.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/sorcerer-runechild.xml" />
+		<file name="wizard-blood-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/wizard-blood-magic.xml" />
+
+		<!--Background-->
+		<file name="background-ashari.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-ashari.xml" />
+		<file name="background-clasp-member.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-clasp-member.xml" />
+		<file name="background-lyceum-scholar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-lyceum-scholar.xml" />
+		<file name="background-reformed-cultist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-reformed-cultist.xml" />
+		<file name="background-whitestone-rifle-corps.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-whitestone-rifle-corps.xml" />
+	</files>
+</index>
