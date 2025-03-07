@@ -2,11 +2,12 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
 	<files>
+		<file name="taldorei-campaign-setting-reborn.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn.index" />
 		<file name="flee-mortals.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals.index" />
 		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
 		<file name="other.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other.index" />
