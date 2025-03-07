@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ashari</name>
+		<description>The Ashari Background from Tal'Dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="background-ashari.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-ashari.xml" />
+		</update>
+	</info>
+
+	<element name="Ashari" type="Background" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_ASHARI">
+		<description>
+			<p>Isolated from the political struggles of urban Tal'Dorei, you are a member of the Ashari people—a society bound to an ancient covenant protecting the Material Plane from the chaos of the primordial elements. You've been raised to revere and protect the natural world, and to shepherd the tumultuous elemental forces that give it life. When the elements threaten to overwhelm the delicate balance of nature, it is the role of the Ashari to restore harmony.</p>
+			<p class="indent">You grew up in a tight-knit society, bound to a leader who successfully returned from the traditional journey to the Elemental Planes known as an Aramante. By contrast, you might well have never traveled more than a few days from your home, and thus have closer bonds with your family and neighbors than many people of Tal'Dorei.</p>
+			<p class="indent">In your early life, you likely took up one of the many roles that make up your society, whether homemaker, hunter, explorer, or protector. If you have the ability to use elemental magic, you might have had one of the most important duties of all: protecting and soothing the elemental rift at the heart of your home. And even as an adventurer now traveling far beyond that home, your loyalties still lie with the continued safety of your order. Whatever else you do as you learn about the new world around you, you're conscious of the need to gather allies to your cause.</p>
+			<p class="indent">Each Ashari is tethered to one of the four elemental orders and their settlements. You must select Pyrah (fire), Vesrah (water), Terrah (earth), or Zephrah (wind). The rifts of earth and air are both in Tal'Dorei. If you live or lived among your people, then you are familiar with the remarkable sights of Air Ashari on skysails above the Summit Peaks, or Earth Ashari erupting from the solid stone of the Cliffkeep Mountains on their earthboards.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Nature, plus your choice of Arcana or Survival</li>
+				<li> <strong>Tool Proficiencies:</strong> Herbalism Kit</li>
+				<li> <strong>Languages:</strong> Primordial (Aquan, Auran, Ignan, or Terran, depending on the elemental affinity of your tribe)</li>
+				<li> <strong>Equipment:</strong> A set of traveler's clothes, a staff carved with symbols of your tribe, an herbalism kit, and a belt pouch containing 10 gp</li>
+			</ul>
+			<div element="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>The Ashari hold themselves removed from the rest of Tal'Dorei by their own choice. This makes many Ashari naive to the ways of the world beyond their homes—but it can also make them determined, steadfast, and tightly focused on their goals. Ever since Keyleth, Voice of the Tempest and leader of the Zephrah, became a world-renowned hero, the Air Ashari at least have become more familiar to Tal'Dorei's other peoples. They are known to welcome outsiders to their mountaintop enclave, and to take on quests that force them to leave their isolated home.</p>
+		</description>
+		<setters>
+			<set name="short">Nature, Arcana/Survival, Herbalism Kit, Primordial (Aquan/Auran/Ignan/Terran)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<select type="Proficiency" name="Skill Proficiency (Ashari)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Language" id="ID_MM_LANGUAGE_IGNAN" requirements="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_PYRAH" />
+			<grant type="Language" id="ID_MM_LANGUAGE_TERRAN" requirements="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_TERRAH" />
+			<grant type="Language" id="ID_MM_LANGUAGE_AQUAN" requirements="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_VESRAH" />
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" requirements="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_ZEPHRAH" />
+			<select type="Background Feature" name="Ashari Tribe" supports="TCSR Ashari Tribe" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I like to keep my hands busy, no matter where I am.</item>
+				<item id="2">I love to explore new places and meet new people.</item>
+				<item id="3">I meditate at dawn each day—and I can't stand it when my routine is interrupted.</item>
+				<item id="4">I like noticing patterns in the world around me, whether or not they mean anything.</item>
+				<item id="5">I don't let anything—or anyone—stand in the way of my mission.</item>
+				<item id="6">I'm a plain talker, even with people who outrank me.</item>
+				<item id="7">I've always got some of my native element with me in some form. (This might be modeling clay, pure water, special burning incense, or a bottled cloud.)</item>
+				<item id="8">I talk with everyone like I've known them all my life. Because most people I know, I have known all my life!</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Destiny. I believe that everyone has a role to play. Now I just have to find mine. (Neutral)</item>
+				<item id="2">Community. It's important to surround yourself with people you can count on, and who will support you. (Good)</item>
+				<item id="3">Knowledge. I want to learn everything I can about the Elemental Planes—and maybe even visit them myself. (Neutral)</item>
+				<item id="4">Freedom. I don't care what anyone says. Even if it causes problems, the elements must be free. And so should I. (Chaotic)</item>
+				<item id="5">Structure. The elements are in harmony when they are free to act as they will, within the safe boundaries set by the Ashari. People are much the same. (Lawful)</item>
+				<item id="6">Virtuous Cycle. If I see someone who needs help, I feel compelled to assist them. Surely they'll return the favor someday! (Good)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I have a cousin in another Ashari tribe whom I've never met, but someday I want to visit my extended family.</item>
+				<item id="2">The leader of my tribe thinks I could be their successor, but I worry that I don't have enough experience to lead my people.</item>
+				<item id="3">A mysterious person killed a member of my family. I've left home to discover who the killer was—and to seek vengeance.</item>
+				<item id="4">My older sibling set out on their Aramante a year ago, and I haven't seen them since.</item>
+				<item id="5">When I was a baby, a giant eagle brought me to Zephrah. I love my family, but I often wonder who my birth parents are.</item>
+				<item id="6">I trust my animal friends more than any humanoid ally.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Big cities are overwhelming. I get nervous when surrounded by people I don't know.</item>
+				<item id="2">I know all too well that elemental power is dangerous—but I like playing around with it anyway.</item>
+				<item id="3">I get surly if I go too long without being in contact with my native element.</item>
+				<item id="4">I think the mission of my people is a fool's errand. They should abandon isolation, let the elements be, and enjoy the pleasures of the world!</item>
+				<item id="5">I can't stand it when people say one thing and mean another! Just say what you mean!</item>
+				<item id="6">Ugh, I know it's not right, but I can't help but look down on people who can't manipulate the elements. It's not like it's hard!</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Elemental Harmony" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY">
+		<description>
+			<p>Growing up surrounded by wild elemental magics has attuned your senses to those chaotic forces, enabling you to subtly bend them to your will. As an action, you channel minor magic involving the element of your chosen Ashari order, giving you one of the following abilities:</p>
+			<p class="indent"><strong><em>Pyrah.</em></strong> You instantaneously create and control a burst of flame small enough to light a candle, a torch, or a small campfire. Alternatively, you snuff out a flame of the same size.</p>
+			<p class="indent"><strong><em>Terrah.</em></strong> You instantaneously create a small rock no larger than a gold coin. The rock appears in your hand, then turns to dust after 1 minute.</p>
+			<p class="indent"><strong><em>Vesrah.</em></strong> You instantaneously create enough hot or cold water to fill a small drinking vessel.</p>
+			<p class="indent"><strong><em>Zephrah.</em></strong> You create an instantaneous puff of wind strong enough to blow papers off a desk or mess up someone's hair.</p>
+		</description>
+		<sheet alt="Elemental Harmony" />
+	</element>
+
+	<element name="Feature: Elemental Harmony (Pyrah)" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_PYRAH">
+		<compendium display="false" />
+		<supports>Background Feature,TCSR Ashari Tribe</supports>
+		<description>
+			<p>You instantaneously create and control a burst of flame small enough to light a candle, a torch, or a small campfire. Alternatively, you snuff out a flame of the same size.</p>
+			<div class="reference">
+				<div element="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY" />
+			</div>
+		</description>
+		<sheet alt="Elemental Harmony (Pyrah)">
+			<description>Growing up surrounded by wild elemental magics has attuned your senses to those chaotic forces, enabling you to subtly bend them to your will. As an action, you instantaneously create and control a burst of flame small enough to light a candle, a torch, or a small campfire. Alternatively, you snuff out a flame of the same size.</description>
+		</sheet>
+	</element>
+	<element name="Feature: Elemental Harmony (Terrah)" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_TERRAH">
+		<compendium display="false" />
+		<supports>Background Feature,TCSR Ashari Tribe</supports>
+		<description>
+			<p>You instantaneously create a small rock no larger than a gold coin. The rock appears in your hand, then turns to dust after 1 minute.</p>
+			<div class="reference">
+				<div element="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY" />
+			</div>
+		</description>
+		<sheet alt="Elemental Harmony (Terrah)">
+			<description>Growing up surrounded by wild elemental magics has attuned your senses to those chaotic forces, enabling you to subtly bend them to your will. As an action, you instantaneously create a small rock no larger than a gold coin. The rock appears in your hand, then turns to dust after 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Feature: Elemental Harmony (Vesrah)" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_VESRAH">
+		<compendium display="false" />
+		<supports>Background Feature,TCSR Ashari Tribe</supports>
+		<description>
+			<p>You instantaneously create enough hot or cold water to fill a small drinking vessel.</p>
+			<div class="reference">
+				<div element="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY" />
+			</div>
+		</description>
+		<sheet alt="Elemental Harmony (Vesrah)">
+			<description>Growing up surrounded by wild elemental magics has attuned your senses to those chaotic forces, enabling you to subtly bend them to your will. As an action, you instantaneously create enough hot or cold water to fill a small drinking vessel.</description>
+		</sheet>
+	</element>
+	<element name="Feature: Elemental Harmony (Zephrah)" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY_ZEPHRAH">
+		<compendium display="false" />
+		<supports>Background Feature,TCSR Ashari Tribe</supports>
+		<description>
+			<p>You create an instantaneous puff of wind strong enough to blow papers off a desk or mess up someone's hair.</p>
+			<div class="reference">
+				<div element="ID_CRDP_TCSR_BACKGROUND_FEATURE_ASHARI_ELEMENTAL_HARMONY" />
+			</div>
+		</description>
+		<sheet alt="Elemental Harmony (Zephrah)">
+			<description>Growing up surrounded by wild elemental magics has attuned your senses to those chaotic forces, enabling you to subtly bend them to your will. As an action, you create an instantaneous puff of wind strong enough to blow papers off a desk or mess up someone's hair.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Blood Domain</name>
+		<description>The Blood Domain from Tal'Dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/cleric-blood.xml" />
+		</update>
+	</info>
+
+	<element name="Blood Domain" type="Archetype" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_CLERIC_BLOOD_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Developed in Wildemount by the Claret Orders, the Blood Domain centers around the understanding of the natural life force as it exists within the body, and the divine conduit it can become. Those who take up this domain understand that the power of blood is the power of sacrifice, the balance of life and death, and the spirit's anchor within the mortal shell.</p>
+			<p class="indent">Gods who grant the power of the Blood Domain, including The Ruiner and The Matron of Ravens, direct their followers to tap into the connection between body and soul, exploit the hidden reserves of will within one's own vitality, and corrupt the bodies of others through the secret rites of hemocraft. Clerics of good gods use hemocraft to fill their self-sacrifice with purpose and power, while clerics with fewer morals use the blood of others to achieve their own malevolent ends.</p>
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SPELLS" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BLOODLETTING_FOCUS" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_CRIMSON_BOND" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_BLOOD_PUPPET" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SANGUINE_RECALL" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_VASCULAR_CORRUPTION_AURA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BLOODLETTING_FOCUS" level="1" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_CRIMSON_BOND" level="2" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_BLOOD_PUPPET" level="6" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SANGUINE_RECALL" level="6" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_VASCULAR_CORRUPTION_AURA" level="17" />
+		</rules>
+	</element>
+
+	<element name="Domain Spells" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Blood Domain Spells table.</p>
+			<h5 class="caption">Blood Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>false life, sleep</em></td></tr>
+				<tr><td>3rd</td><td><em>hold person, ray of enfeeblement</em></td></tr>
+				<tr><td>5th</td><td><em>haste, slow</em></td></tr>
+				<tr><td>7th</td><td><em>blight, stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, hold monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this domain at 1st level, you gain proficiency with martial weapons.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+
+	<element name="Bloodletting Focus" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BLOODLETTING_FOCUS">
+		<description>
+			<p>Starting at 1st level, your divine magic draws the blood from magically inflicted wounds, worsening the agony of your foes. When you cast a damage-dealing spell of 1st level or higher whose duration is instantaneous, any creature with blood that takes damage from the spell takes extra necrotic damage equal to 2 + the spell's level.</p>
+		</description>
+		<sheet>
+			<description>When you cast a damage-dealing spell of 1st level or higher whose duration is instantaneous, any creature with blood that takes damage from the spell takes extra necrotic damage equal to 2 + the spell's level.</description>
+		</sheet>
+	</element>
+
+	<element name="Channel Divinity: Crimson Bond" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_CRIMSON_BOND">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to form a supernatural bond with a creature you can see, or with a creature for which you possess a blood sample. This bond lasts for 1 hour or until your concentration is broken (as if concentrating on a spell).</p>
+			<p class="indent">While the bond is in effect, you can use an action to learn the target's approximate distance and direction from you, as well as its current hit points and any conditions affecting it, as long as the target is within 10 miles of you. Alternatively, you can use your action to attempt to connect with the target's senses. You take 2d6 necrotic damage and the target makes a Constitution saving throw against your spell save DC. On a successful save, the bond ends. On a failure, you can choose to either see or hear through the target's senses for a number of minutes equal to your Wisdom modifier (minimum 1 minute). During this time, you are blinded or deafened (respectively) with regard to your own senses. When the connection ends, the bond is lost.</p>
+			<p class="indent">Regardless of the outcome, the target feels a wave of unease pass over it when it makes this save.</p>
+		</description>
+		<sheet alt="Crimson Bond" action="Action" usage="Channel Divinity">
+			<description>You form a supernatural bond with a creature you can see, or with a creature for which you possess a blood sample. This bond lasts for 1 hour or until your concentration is broken.
+			While the bond is in effect, you can use an action to learn the target's distance and direction from you, as well as its current hp and any conditions affecting it, as long as the target is within 10 miles of you. Alternatively, you can use your action to attempt to connect with the target's senses. You take 2d6 necrotic damage and the target makes a Constitution saving throw (DC {{cleric:spellcasting:dc}}). On a successful save, the bond ends. On a failure, you can choose to either see or hear through the target's senses for {{blood domain:crimson bond:duration}} minute(s). During this time, you are blinded or deafened (respectively) with regard to your own senses. When the connection ends, the bond is lost.
+			Regardless of the outcome, the target feels a wave of unease pass over it when it makes this save.</description>
+		</sheet>
+		<rules>
+			<stat name="blood domain:crimson bond:duration" value="wisdom:modifier" bonus="bonus" />
+			<stat name="blood domain:crimson bond:duration" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Blood Puppet" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_BLOOD_PUPPET">
+		<description>
+			<p>You can use your Channel Divinity to briefly control a creature's actions— whether that creature is living or dead. As an action, you target a Large or smaller creature or corpse within 60 feet of you that has blood. A creature you target must succeed on a Wisdom saving throw against your spell save DC or become charmed by you. An unconscious creature automatically fails its saving throw, and isn't incapacitated while you control its actions. A corpse targeted by this effect gains a semblance of life that you control.</p>
+			<p class="indent">On the affected creature or animated corpse's turn, you can command it (no action required) to move up to half its speed and use its action to do one of the following:</p>
+			<ul>
+				<li>Interact with an object </li>
+				<li>Make a single attack </li>
+				<li>Do nothing </li>
+			</ul>
+			<p class="indent">An animated corpse or an unconscious creature takes its turn immediately after yours, but can't move or take actions unless you command it to do so. Its statistics are the same as when it was alive or conscious. An affected living creature makes a new saving throw at the end of each of its turns, ending the effect on itself on a success. For any target, your control lasts for 1 minute or until your concentration is broken (as if concentrating on a spell). At 17th level, you can use this feature to target a Huge or smaller creature or corpse.</p>
+		</description>
+		<sheet alt="Blood Puppet" action="Action" usage="Channel Divinity">
+			<description>You target a Large or smaller creature or corpse within 60 ft of you that has blood.It must succeed on a Wisdom saving throw (DC {{cleric:spellcasting:dc}}) or become charmed by you. An unconscious creature automatically fails its saving throw, and isn't incapacitated while you control its actions. A corpse targeted by this effect gains a semblance of life that you control. An animated corpse or an unconscious creature takes its turn immediately after yours, but can't move or take actions unless you command it to do so. Its statistics are the same as when it was alive or conscious. An affected living creature makes a new saving throw at the end of each of its turns, ending the effect on itself on a success. For any target, your control lasts for 1 minute or until your concentration is broken.</description>
+			<description level="17">You target a Large or smaller creature or corpse within 60 ft of you that has blood.It must succeed on a Wisdom saving throw (DC {{cleric:spellcasting:dc}}) or become charmed by you. An unconscious creature automatically fails its saving throw, and isn't incapacitated while you control its actions. A corpse targeted by this effect gains a semblance of life that you control. An animated corpse or an unconscious creature takes its turn immediately after yours, but can't move or take actions unless you command it to do so. Its statistics are the same as when it was alive or conscious. An affected living creature makes a new saving throw at the end of each of its turns, ending the effect on itself on a success. For any target, your control lasts for 1 minute or until your concentration is broken.</description>
+		</sheet>
+	</element>
+
+	<element name="Sanguine Recall" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SANGUINE_RECALL">
+		<description>
+			<p>At 6th level, you can sacrifice a portion of your own vitality to recover expended spell slots as an action. The spell slots can have a combined level equal to or less than half your cleric level (rounded up), and none of the slots can be 6th level or higher. You take 1d8 necrotic damage for each spell slot level recovered, which can't be reduced in any way. You can't use this feature again until you finish a long rest.</p>
+			<p class="indent">For example, if you're an 8th-level cleric, you can recover up to four levels of spell slots—a single 4th-level slot, two 2nd-level slots, a 3rd-level slot and a 1st-level slot, or four 1st-level slots. You then take 4d8 necrotic damage.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can sacrifice a portion of your own vitality to recover expended spell slots as an action. The spell slots can have a combined level equal to or less than half your cleric level (rounded up), and none of the slots can be 6th level or higher. You take 1d8 necrotic damage for each spell slot level recovered, which can't be reduced in any way.</description>
+		</sheet>
+	</element>
+
+	<element name="Divine Strike" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to cause the physical wounds you deal out to bleed profusely. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage to the target.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 necrotic damage to the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Vascular Corruption Aura" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_DOMAIN_VASCULAR_CORRUPTION_AURA">
+		<description>
+			<p>At 17th level, you can use your action to emit a deathly aura of necrotic energy that causes the veins of nearby foes to burst and bleed. For 1 minute, any hostile creature with blood that moves within 30 feet of you for the first time on a turn or starts its turn there takes 3d6 necrotic damage. If a hostile creature with blood regains hit points while in the aura, it regains only half as many hit points as expected.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>For 1 minute, any hostile creature with blood that moves within 30 ft of you for the first time on a turn or starts its turn there takes 3d6 necrotic damage. If a hostile creature with blood regains hp while in the aura, it regains only half as many hp as expected.</description>
+		</sheet>
+	</element>
+
+</elements>

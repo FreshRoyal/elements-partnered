@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<description>Spells from Tal'dorei Campaign Setting Reborn</description>
+		<description>Spells from Tal'Dorei Campaign Setting Reborn</description>
 		<update version="0.0.1">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/spells.xml" />
 		</update>
 	</info>
 
-	<element name="Freedom of the Waves" type="Spell" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_SPELL_FREEDOM_OF_THE_WAVES">
+	<element name="Freedom of the Waves" type="Spell" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_SPELL_FREEDOM_OF_THE_WAVES">
 		<supports>Druid, Ranger, Sorcerer, Spell Saving Throw</supports>
 		<description>
 			<p>You conjure a deluge of seawater in a 15-foot-radius, 10-foot-tall cylinder centered on a point within range. This water takes the form of a tidal wave, a whirlpool, a waterspout, or another form of your choice. Each creature in the area must succeed on a Strength saving throw against your spell save DC or take 2d8 bludgeoning damage and fall prone. You can choose a number of creatures equal to your spellcasting modifier (minimum of 1) to automatically succeed on this saving throw.</p>
@@ -27,7 +27,7 @@
 		</setters>
 	</element>
 
-	<element name="Freedom of the Winds" type="Spell" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_SPELL_FREEDOM_OF_THE_WINDS">
+	<element name="Freedom of the Winds" type="Spell" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_SPELL_FREEDOM_OF_THE_WINDS">
 		<supports>Druid, Ranger, Sorcerer</supports>
 		<description>
 			<p>Wind wraps around your body, tugging at your hair and clothing as your feet lift off the ground. You gain a flying speed of 60 feet. Additionally, you have advantage on ability checks to avoid being grappled, and on saving throws against being restrained or paralyzed.</p>

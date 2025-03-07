@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Open Sea</name>
+		<description>The Oath of the Open Sea from Tal'Dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="paladin-open-sea.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/paladin-open-sea.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Open Sea" type="Archetype" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_PALADIN_OATH_OF_THE_OPEN_SEA">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Open Sea calls to seafaring warriors, swashbuckling sailors, and traveling guardians who seek the thrill of a limitless horizon. Driven to search for adventure and mystery across and beneath every endless oceanic expanse, paladins who swear this oath stand against those who would deny liberty to likeminded travelers, rooting out tyranny and corruption wherever it is found.</p>
+			<p class="indent">Such guardians believe in the natural beauty of the sea, often making offerings and prayers to entities or deities such as the Wildmother or the Stormlord who influence safe passage. At the same time, they answer the call to hunt the monstrous creatures that too often bloody the waters with wanton violence and ill intent, and which terrorize the folk of the sea and shore.</p>
+			<h5 class="caption">Tenets of the Open Sea</h5>
+			<p>Freedom can be a selfless virtue or a selfish want. For paladins who swear the Oath of the Open Sea, freedom is the highest calling, and a gift to be granted to all.</p>
+			<p class="indent"><strong><em>No Greater Life than a Life Lived Free.</em></strong> One should be free to chart their own path without oppression. Those who would exert their power to dominate others shall be smote.</p>
+			<p class="indent"><strong><em>Trust the Skies.</em></strong> The guidance of a strong breeze. The rumbling warnings of a coming storm. Nature is a source of portent and council that should be heeded.</p>
+			<p class="indent"><strong><em>Adapt Like the Water.</em></strong> The waters of the ocean can shift around any obstacle—or become the most impassable obstacle of all. They carve away the land to reveal the secrets of the past, or swallow the truth and hide it forever. To embrace this fluidity is to be ready for any challenge.</p>
+			<p class="indent"><strong><em>Explore the Uncharted.</em></strong> The world is filled with mystery. Through the pursuit of enigmatic ends, one can uncover those who hide their foul deeds, and find the path to becoming something great.</p>
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_OATH_SPELLS" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CHANNEL_DIVINITY" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_AURA_OF_LIBERATION" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_STORMY_WATERS" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_MYTHIC_SWASHBUCKLER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_AURA_OF_LIBERATION" level="7" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_STORMY_WATERS" level="15" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_MYTHIC_SWASHBUCKLER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed in the Oath of the Open Sea Spells table. Spells marked with an asterisk are new spells described on the spells page.</p>
+			<h5 class="caption">Oath of the Open Sea Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>create or destroy water, expeditious retreat</em></td></tr>
+				<tr><td>5th</td><td><em>augury, misty step</em></td></tr>
+				<tr><td>9th</td><td><em>call lightning, freedom of the waves</em></td></tr>
+				<tr><td>13th</td><td><em>control water, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>commune with nature, freedom of the winds</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_CRDP_TCSR_SPELL_FREEDOM_OF_THE_WAVES" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_CRDP_TCSR_SPELL_FREEDOM_OF_THE_WINDS" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em>Marine Layer.</em></strong> As an action, you channel the sea to create a thick cloud of fog that surrounds you for 20 feet in all directions. The fog moves with you, remaining centered on you and making its area heavily obscured. You and each creature within 5 feet of you instead treat the area as lightly obscured. This fog lasts for 10 minutes, spreads around corners, and cannot be dispersed unless you choose to end this effect (no action required).</p>
+			<p class="indent"><strong><em>Fury of the Tides.</em></strong> As a bonus action, you channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with a weapon attack, you can choose to push the target 10 feet away from you. If pushed into an obstacle or another creature, the target takes bludgeoning damage equal to your Charisma modifier.</p>
+			<div class="sidebar">
+				<h5>Rules Tip: Visibility</h5>
+				<p>Fog and other effects can obscure vision for you, your enemies, and your allies. When you heavily obscure an area using your Marine Layer Channel Divinity option, all creatures within the area have their vision completely blocked, and creatures outside the area can't see in. Creatures that can't see automatically fail ability checks that require sight. Also, attack rolls against creatures that can't see have advantage, and their own attack rolls have disadvantage.</p>
+				<p class="indent">Creatures in a lightly obscured area have disadvantage only on Wisdom (Perception) checks that rely on sight. The rules for when your vision is obscured are described completely in the fifth edition core rules.</p>
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CD_MARINE_LAYER" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CD_FURY_OF_THE_TIDES" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Marine Layer" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CD_MARINE_LAYER">
+		<compendium display="false" />
+		<description>
+			<p>As an action, you channel the sea to create a thick cloud of fog that surrounds you for 20 feet in all directions. The fog moves with you, remaining centered on you and making its area heavily obscured. You and each creature within 5 feet of you instead treat the area as lightly obscured. This fog lasts for 10 minutes, spreads around corners, and cannot be dispersed unless you choose to end this effect (no action required).</p>
+		</description>
+		<sheet alt="Marine Layer" action="Action" usage="Channel Divinity">
+			<description>You channel the sea to create a thick cloud of fog that surrounds you for 20 ft in all directions. The fog moves with you, remaining centered on you and making its area heavily obscured. You and each creature within 5 ft of you instead treat the area as lightly obscured. This fog lasts for 10 minutes, spreads around corners, and cannot be dispersed unless you choose to end this effect (no action required).</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Fury of the Tides" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CD_FURY_OF_THE_TIDES">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with a weapon attack, you can choose to push the target 10 feet away from you. If pushed into an obstacle or another creature, the target takes bludgeoning damage equal to your Charisma modifier.</p>
+		</description>
+		<sheet alt="Fury of the Tides" action="Bonus Action" usage="Channel Divinity">
+			<description>You channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with a weapon attack, you can choose to push the target 10 ft away from you. If pushed into an obstacle or another creature, the target takes {{charisma:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Aura of Liberation" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_AURA_OF_LIBERATION">
+		<description>
+			<p>Starting at 7th level, you fill nearby creatures with the energy of movement. While you're not incapacitated, you and creatures of your choice within 10 feet of you cannot be grappled or restrained, and ignore penalties on movement and attacks while underwater. Creatures that are already grappled or restrained when they enter the aura can spend 5 feet of movement to automatically escape unless they are bound by magic restraints.</p>
+			<p class="indent">When you reach 18th level in this class, the aura affects creatures within 30 feet of you.</p>
+		</description>
+		<sheet>
+			<description>While you're not incapacitated, you and creatures of your choice within 10 ft of you cannot be grappled or restrained, and ignore penalties on movement and attacks while underwater. Creatures that are already grappled or restrained when they enter the aura can spend 5 ft of movement to automatically escape unless they are bound by magic restraints.</description>
+			<description level="18">While you're not incapacitated, you and creatures of your choice within 30 ft of you cannot be grappled or restrained, and ignore penalties on movement and attacks while underwater. Creatures that are already grappled or restrained when they enter the aura can spend 5 ft of movement to automatically escape unless they are bound by magic restraints.</description>
+		</sheet>
+	</element>
+
+	<element name="Stormy Waters" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_STORMY_WATERS">
+		<description>
+			<p>At 15th level, you can call on the force of crashing waters as a reaction whenever a creature moves into or out of your reach. The creature takes 1d12 bludgeoning damage and must succeed on a Strength saving throw against your spell save DC or be knocked prone.</p>
+		</description>
+		<sheet>
+			<description>You can call on the force of crashing waters as a reaction whenever a creature moves into or out of your reach. The creature takes 1d12 bludgeoning damage and must succeed on a Strength saving throw (DC {{paladin:spellcasting:dc}}) or be knocked prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Mythic Swashbuckler" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_MYTHIC_SWASHBUCKLER">
+		<description>
+			<p>At 20th level, you learn to channel the spirits of historic sea captains to briefly become a paragon of heroic adventure. As an action, you embrace these spirits of the sea to gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You have advantage on Strength (Athletics) checks and you gain a climbing speed equal to your walking speed. If you already have a climbing speed, it is doubled.</li>
+				<li>If you are within 5 feet of a creature and no other creatures are within 5 feet of you, you have advantage on attack rolls against that creature.</li>
+				<li>You can take the Dash or Disengage action as a bonus action.</li>
+				<li>You have advantage on Dexterity checks and Dexterity saving throws against effects you can see.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You embrace these spirits of the sea to gain the following benefits for 1 minute: &#13;
+			• You have advantage on Strength (Athletics) checks and you gain a climbing speed equal to {{open sea:mythic swashbuckler:climb speed}}. &#13;
+			• If you are within 5 ft of a creature and no other creatures are within 5 ft of you, you have advantage on attack rolls against that creature. &#13;
+			• You can take the Dash or Disengage action as a bonus action. &#13;
+			• You have advantage on Dexterity checks and Dexterity saving throws against effects you can see.</description>
+		</sheet>
+		<rules>
+			<stat name="open sea:mythic swashbuckler:climb speed" value="speed" />
+			<stat name="open sea:mythic swashbuckler:climb speed" value="speed:climb"  />
+		</rules>
+	</element>
+	
+	
+
+</elements>

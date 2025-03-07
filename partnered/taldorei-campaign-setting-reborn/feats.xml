@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Tal'Dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Cruel" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_CRUEL">
+		<description>
+			<p>The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others. You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are d6s. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it.</p>
+			<p>You can roll a cruelty die under any of the following circumstances, with the indicated result:</p>
+			<ul>
+				<li>When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll.</li>
+				<li>When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll.</li>
+				<li>When you make a Charisma (Intimidation) check, spend one cruelty die and add the roll to your check.</li>
+			</ul>
+			<p>You regain all spent cruelty dice when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}d6/Long Rest">
+			<description> You gain {{proficiency}} cruelty dice, which are d6s. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it. You can roll a cruelty die under any of the following circumstances, with the indicated result: &#13;
+				• When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll. &#13;
+          		• When you score a critical hit, spend one cruelty die to gain temporary hp equal to the roll. &#13;
+        		• When you make a Charisma (Intimidation) check, spend one cruelty die and add the roll to your check. &#13;
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Flash Recall" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_FLASH_RECALL">
+		<prerequisite>Spellcasting feature from a class that prepares spells</prerequisite>
+		<description>
+			<p>You've developed the ability to instantly recall an unprepared spell in moments of sudden necessity. As a bonus action, you prepare a spell of 1st level or higher from your spellbook (if you're a wizard) or from your class spell list (if you're not a wizard). This spell must be of a level for which you have spell slots, and it replaces another spell of an equal or higher level that you had previously prepared. Once you use this feat to recall a spell, you can't do so again until you complete a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+			<description>You can prepare a spell of 1st level or higher from your spell spellbook (if you're a wizard) or from your class spell list (if you're not a wizard). This spell must be of a level of which you have spell slots, and replaces a previously prepared spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Mystic Conflux" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_MYSTIC_CONFLUX">
+		<description>
+			<p>You possess an intuitive understanding of the way magic ebbs and flows within enchanted items. Such items attune easily to you, and you are able to sound out their secrets. You gain the following benefits:</p>
+			<ul>
+				<li>You can attune to up to four magic items at once.</li>
+				<li>You can cast the identify spell without expending a spell slot or material components. You must finish a long rest before you can do so again.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the identify spell without expending a spell slot or material components. You must finish a long rest before you can do so again. &#13; 
+				You can attune to up to {{attunement:max}} items at once.</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="4" bonus="base" />
+			<grant type="spell" id="ID_PHB_SPELL_IDENTIFY" />
+		</rules>
+	</element>
+
+	<element name="Remarkable Recovery" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_REMARKABLE_RECOVERY">
+		<description>
+			<p>Your body has the ability to recover quickly from terrible injuries, and is unusually receptive to healing magic. You gain the following benefits:</p>
+			<ul>
+				<li>increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>When you are successfully stabilized while dying, you regain hit points equal to your Constitution modifier (minimum of 1).</li>
+				<li>Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to your Constitution modifier (minimum of 1).</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				When you are successfully stabilized while dying, you regain hit points equal to {{remarkable recovery:hp}}. &#13;
+				Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to {{remarkable recovery:hp}}. &#13;
+			</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="remarkable recovery:hp" value="constitution:modifier" bonus="bonus" />
+            <stat name="remarkable recovery:hp" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Spelldriver" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_SPELLDRIVER">
+		<prerequisite>11th level; Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>[level:11]</requirements>
+		<description>
+			<p>	Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting.</p>
+ 			<p class="indent">When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher.</p>
+		</description>
+		<sheet>
+			<description>When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. If you cast two or more spells in a single turn, only one of them can be 3rd level or higher.</description>
+		</sheet>
+	</element>
+
+	<element name="Thrown Arms Master" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_THROWN_ARMS_MASTER">
+		<description>
+			<p>You've honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+				<li>Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.</li>
+				<li>Weapons that already have the thrown property increase their short range by 20 feet and their long range by 40 feet for you.</li>
+				<li>When you miss with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 ft and a long range of 60 ft, while two-handed weapons have a normal range of 15 feet and a long range of 30 ft. &#13;
+			Weapons that already have the thrown property increase their short range by 20 ft and their long range by 40 ft for you. &#13;
+			When you miss with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way. &#13;
+			</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Thrown Arms Master)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="Vital Sacrifice" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_VITAL_SACRIFICE">
+		<description>
+			<p>You've learned secrets of hemocraft that grant you esoteric power at the price of your own life force. As a bonus action, you can choose to take 1d6 necrotic damage to gain a blood boon. Your blood boon lasts for 1 hour or until expended. &#13;
+			You can expend this blood boon to gain one of the following benefits:</p>
+			<ul>
+				<li>When you make an attack roll, you roll 1d6 and add it to the total.</li>
+				<li>When you hit with an attack or spell, you deal an additional 2d6 necrotic damage.</li>
+				<li>When you cause a creature to make a Strength, Dexterity, or Constitution saving throw, roll a d4 and reduce their save by the amount rolled.</li>
+			</ul>
+			<p class="indent">The damage you take to gain a blood boon can't be reduced in any way.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>
+				You can choose to take 1d6 necrotic damage to gain a blood boon. Your blood boon lasts for 1 hour or until expended. You may expend this bloodboon: &#13;
+				• When you make an attack roll, you roll 1d6 and add it to the total. &#13;
+				• When you hit with an attack or spell, you deal an additional 2d6 necrotic damage. &#13;
+				• When you cause a creature to make a Strength, Dexterity, or Constitution saving throw, roll a d4 and reduce their save by the amount rolled. &#13;
+				The damage you take to gain a blood boon can't be reduced in any way.
+			</description>
+		</sheet>
+	</element>
+	
+</elements>

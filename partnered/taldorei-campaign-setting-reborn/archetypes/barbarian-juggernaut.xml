@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Path of the Juggernaut</name>
-		<description>The Path of the Juggernaut from Tal'dorei Campaign Setting Reborn</description>
+		<description>The Path of the Juggernaut from Tal'Dorei Campaign Setting Reborn</description>
 		<update version="0.0.1">
 			<file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/barbarian-juggernaut.xml" />
 		</update>
 	</info>
 
-	<element name="Path of the Juggernaut" type="Archetype" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_BARBARIAN_PATH_OF_THE_JUGGERNAUT">
+	<element name="Path of the Juggernaut" type="Archetype" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_BARBARIAN_PATH_OF_THE_JUGGERNAUT">
 		<supports>Primal Path</supports>
 		<description>
 			<p>Barbarians who follow the Path of the Juggernaut stand so resolutely that none can deter them, and they swing their weapons with such force that all who stand against them are flung aside. In might and in spirit, juggernauts are immovable object and unstoppable force all at once.</p>
@@ -31,7 +31,7 @@
 		</rules>
 	</element>
 
-	<element name="Thunderous Blows" type="Archetype Feature" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_THUNDEROUS_BLOWS">
+	<element name="Thunderous Blows" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_THUNDEROUS_BLOWS">
 		<description>
 			<p>Starting when you choose this path at 3rd level, your rage instills you with the strength to shove and smash your way through your foes, making any battlefield your domain. When you hit a creature with a melee attack while you're raging, you can push that creature up to 5 feet away from you in a direction of your choice. A creature that is Huge or larger makes a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a success, the creature is not pushed.</p>
 			<p class="indent">Starting at 10th level, you can push a creature up to 10 feet when you hit it with a melee attack while you're raging.</p>
@@ -52,7 +52,7 @@
 		</rules>
 	</element>
 
-	<element name="Spirit of the Mountain" type="Archetype Feature" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_SPIRIT_OF_THE_MOUNTAIN">
+	<element name="Spirit of the Mountain" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_SPIRIT_OF_THE_MOUNTAIN">
 		<description>
 			<p>At 3rd level, you harness your fury to anchor your feet to the ground, becoming a bulwark of strength. While you are raging, you can't be knocked prone or moved along the ground against your will.</p>
 		</description>
@@ -61,7 +61,7 @@
 		</sheet>
 	</element>
 
-	<element name="Demolishing Might" type="Archetype Feature" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_DEMOLISHING_MIGHT">
+	<element name="Demolishing Might" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_DEMOLISHING_MIGHT">
 		<description>
 			<p>Starting at 6th level, your melee weapon attacks deal an extra 1d8 damage to constructs, and deal double damage to objects and structures.</p>
 		</description>
@@ -70,7 +70,7 @@
 		</sheet>
 	</element>
 
-	<element name="Resolute Stance" type="Archetype Feature" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_RESOLUTE_STANCE">
+	<element name="Resolute Stance" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_RESOLUTE_STANCE">
 		<description>
 			<p>Also at 6th level, you can temporarily refocus your combat ability to make yourself a bulwark of defense. At the start of your turn (no action required), you can assume a defensive stance that lasts until the start of your next turn. While in this stance, you can't be grappled, attack rolls against you have disadvantage, and your weapon attacks are made with disadvantage.</p>
 		</description>
@@ -79,7 +79,7 @@
 		</sheet>
 	</element>
 
-	<element name="Hurricane Strike" type="Archetype Feature" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_HURRICANE_STRIKE">
+	<element name="Hurricane Strike" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_HURRICANE_STRIKE">
 		<description>
 			<p>Starting at 10th level, your blows can hurl foes through the air and into the attacks of your allies. As a reaction, when you push a creature at least 5 feet, you can then leap into an unoccupied space next to the creature. If you do so, the creature must succeed on a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier or be knocked prone. This leap costs no movement and does not provoke opportunity attacks.</p>
 			<p class="indent">Additionally, whenever you push a creature into a space within 5 feet of one of your allies, the ally can use its reaction to make a melee weapon attack against that creature.</p>
@@ -95,7 +95,7 @@
 		</rules>
 	</element>
 
-	<element name="Unstoppable" type="Archetype Feature" source="Tal'dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_UNSTOPPABLE">
+	<element name="Unstoppable" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_UNSTOPPABLE">
 		<description>
 			<p>At 14th level, your fury in battle makes you unstoppable. While you're raging, your speed cannot be reduced, and you are immune to the frightened, paralyzed, prone, and stunned conditions.</p>
 			<p class="indent">If you are frightened, paralyzed, or stunned, you can still use a bonus action to enter a rage (even if you can't otherwise take actions). You aren't affected by any of these conditions while you're raging.</p>

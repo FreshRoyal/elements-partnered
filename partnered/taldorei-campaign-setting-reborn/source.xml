@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<description>Tal'dorei Campaign Setting Reborn</description>
+		<description>Tal'Dorei Campaign Setting Reborn</description>
 		<update version="0.0.1">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/source.xml" />
 		</update>
 	</info>
-	<element name="Tal'dorei Campaign Setting Reborn" type="Source" source="Core" id="ID_CRDP_SOURCE_TALDOREI_CAMPAIGN_SETTING_REBORN">
+	<element name="Tal'Dorei Campaign Setting Reborn" type="Source" source="Core" id="ID_CRDP_SOURCE_TALDOREI_CAMPAIGN_SETTING_REBORN">
 		<description>
 			<h5 style="margin-top:-1em">Bring the world of Exandria to life.</h5>
 			<p>Behold the wonders of the Tal'dorei, one of the continents of Exandria and a land filled with epic adventure. Contained within is a guide to each major region of the continent, complete with story hooks to entice players, new subclass options for your party, and dozens of new spells, monsters, and magic items! </p>

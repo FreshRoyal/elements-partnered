@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Runechild</name>
+		<description>The Runechild from Tal'Dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="sorcerer-runechild.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/sorcerer-runechild.xml" />
+		</update>
+	</info>
+
+	<element name="Runechild" type="Archetype" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_SORCERER_RUNECHILD">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>The mysterious weave and flow of magic is feared by many folk across Exandria. But while some spellcasters must study the essence and nature of magic in the hope of learning to harness it, sorcerers possess an innate talent to sculpt and wield the errant strands of power that shape the world. For some sorcerers, the body becomes a conduit for this power, which is collected and stored in the form of natural runes—and which sees a sorcerer named as a Runechild.</p>
+			<p class="indent">The talents of a Runechild are rare, and sorcerers with this origin are sought after for study by mages and scholars alike, driven by a prevalent belief that the secrets of their runes can help understand the mysteries of magic. Others sometimes seek to enslave Runechild sorcerers, using their bodies as tortured spell batteries for diabolic pursuits. Runechild sorcerers were subjugated throughout the Age of Arcanum, and many of their contemporaries now search for ways to hide their essence—a task that isn't easy given the revealing nature of their gifts.</p>
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_ESSENCE_RUNES" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_RUNIC_MAGIC" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_GLYPH_OF_AEGIS" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_SIGILIC_AUGMENTATION" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_MANIFEST_INSCRIPTIONS" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_RUNIC_TORRENT" />
+			<div element="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_ARCANE_EXEMPLAR" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_ESSENCE_RUNES" level="1" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_RUNIC_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_GLYPH_OF_AEGIS" level="1" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_SIGILIC_AUGMENTATION" level="6" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_MANIFEST_INSCRIPTIONS" level="6" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_RUNIC_TORRENT" level="14" />
+			<grant type="Archetype Feature" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_ARCANE_EXEMPLAR" level="18" />
+		</rules>
+	</element>
+
+	<element name="Essence Runes" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_ESSENCE_RUNES">
+		<description>
+			<p>At 1st level, your body begins to express your innate magic as runes traced out across your skin. You start with 1 essence rune, and gain an additional rune whenever you gain a level in this class. These runes can manifest anywhere on your body, though the first usually manifests on the forehead. Your essence runes remain invisible when inert.</p>
+			<p class="indent">At the end of a turn during which you spent one or more sorcery points, a number of your essence runes equal to the number of sorcery points you spent begin to glow with stored energy, becoming charged runes. You use these charged runes to power your Runechild subclass features. Also, as a bonus action, you may spend a sorcery point to convert two essence runes into two charged runes.</p>
+			<p class="indent">If you have no sorcery points and no charged runes, you can convert a single essence rune into a charged rune as an action.</p>
+			<p class="indent">If you have 5 or more charged runes, you emit bright light in a 5-foot radius and dim light for an additional 5 feet.</p>
+			<p class="indent">If you expend a charged rune to use one of your Runechild features, it returns to being an inert essence rune. Any charged runes also revert to inert essence runes after you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You have {{level:sorcerer}} essence runes. At the end of a turn during which you spent one or more sorcery points, a number of your essence runes equal to the number of sorcery points you spent begin to glow with stored energy, becoming charged runes. You use these charged runes to power your Runechild subclass features. Also, as a bonus action, you may spend a sorcery point to convert two essence runes into two charged runes. &#13;
+			If you have no sorcery points and no charged runes, you can convert a single essence rune into a charged rune as an action. &#13;
+			If you have 5 or more charged runes, you emit bright light in a 5-ft radius and dim light for an additional 5 ft. &#13;
+			If you expend a charged rune to use one of your Runechild features, it returns to being an inert essence rune. Any charged runes also revert to inert essence runes after you finish a long rest.</description>
+		</sheet>
+	</element>
+	
+	<element name="Runic Magic" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_RUNIC_MAGIC">
+		<description>
+			<p>Beginning at 1st level, you learn additional spells when you reach certain levels in this class, as shown on the Runic Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.</p>
+			<p class="indent">When you gain a level in this class, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an abjuration or transmutation spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5 class="caption">Runic Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>longstrider, protection from evil and good</em></td></tr>
+				<tr><td>3rd</td><td><em>lesser restoration, protection from poison</em></td></tr>
+				<tr><td>5th</td><td><em>glyph of warding, magic circle</em></td></tr>
+				<tr><td>7th</td><td><em>death ward, freedom of movement</em></td></tr>
+				<tr><td>9th</td><td><em>greater restoration, telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="1st Additional Spell (Runic Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="1" default="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="2nd Additional Spell (Runic Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Protection From Evil and Good" level="1" default="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="3rd Additional Spell (Runic Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Lesser Restoration" level="3" default="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="4th Additional Spell (Runic Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Protection from Poison" level="3" default="ID_PHB_SPELL_PROTECTION_FROM_POISON" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="5th Additional Spell (Runic Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_GLYPH_OF_WARDING" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="6th Additional Spell (Runic Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_MAGIC_CIRCLE" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="7th Additional Spell (Runic Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Death Ward" level="7" default="ID_PHB_SPELL_DEATH_WARD" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="8th Additional Spell (Runic Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Freedom of Movement" level="7" default="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="9th Additional Spell (Runic Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Greater Restoration" level="9" default="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="10th Additional Spell (Runic Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="9" default="ID_PHB_SPELL_TELEKINESIS" spellcasting="Sorcerer" allowReplace="false" />
+		</rules>
+	</element>
+
+	<append id="ID_PHB_SPELL_LESSER_RESTORATION">
+		<supports>Lesser Restoration</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+		<supports>Protection from Poison</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Death Ward</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+		<supports>Freedom of Movement</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_RESTORATION">
+		<supports>Greater Restoration</supports>
+	</append>
+
+	<element name="Glyph of Aegis" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_GLYPH_OF_AEGIS">
+		<description>
+			<p>Starting at 1st level, you can release the stored arcane power within your runes to absorb or deflect threatening attacks. Whenever you take damage, you can expend any number of charged runes as a reaction. Roll a number of d6s equal to the number of runes you expended, and reduce the damage by the total.</p>
+			<p class="indent">When you reach 6th level, you can touch a creature as an action and expend up to 3 charged runes to transfer your protective power to it for up to 1 hour. The next time that creature takes damage within the next hour, it rolls 1d6 per charged rune spent and reduces the damage by the total. You can't transfer this power to a creature already under the effect of Glyph of Aegis.</p>
+			<p class="indent">Your Glyph of Aegis die becomes a d8 at 14th level.</p>
+		</description>
+		<sheet>
+			<description>Whenever you take damage, you can expend any number of charged runes as a reaction. Roll a number of d6s equal to the number of runes you expended, and reduce the damage by the total.</description>
+			<description level="6">Whenever you take damage, you can expend any number of charged runes as a reaction. Roll a number of d6s equal to the number of runes you expended, and reduce the damage by the total. &#13;
+			Additionally, you can touch a creature as an action and expend up to 3 charged runes to transfer your protective power to it for up to 1 hour. The next time that creature takes damage within the next hour, it rolls 1d6 per charged rune spent and reduces the damage by the total. You can't transfer this power to a creature already under the effect of Glyph of Aegis.</description>
+			<description level="14">Whenever you take damage, you can expend any number of charged runes as a reaction. Roll a number of d8s equal to the number of runes you expended, and reduce the damage by the total. &#13;
+			Additionally, you can touch a creature as an action and expend up to 3 charged runes to transfer your protective power to it for up to 1 hour. The next time that creature takes damage within the next hour, it rolls 1d8 per charged rune spent and reduces the damage by the total. You can't transfer this power to a creature already under the effect of Glyph of Aegis.</description>
+		</sheet>
+	</element>
+
+	<element name="Sigilic Augmentation" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_SIGILIC_AUGMENTATION">
+		<description>
+			<p>At 6th level, you can channel your runes to temporarily bolster your physical capabilities. When you make a Strength, Dexterity, or Constitution ability check, you can expend a charged rune as a reaction to gain advantage on the roll.</p>
+			<p class="indent">In addition, when you are forced to make a Strength, Dexterity, or Constitution saving throw, you can use your reaction and expend a charged rune to gain advantage on the saving throw. Once you use this feature in this way, you can't use it in this way again until you complete a long rest.</p>
+		</description>
+		<sheet>
+			<description>When you make a Strength, Dexterity, or Constitution ability check, you can expend a charged rune as a reaction to gain advantage on the roll. &#13;
+			When you are forced to make a Strength, Dexterity, or Constitution saving throw, you can use your reaction and expend a charged rune to gain advantage on the saving throw. Once you use this feature in this way, you can't use it in this way again until you complete a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Manifest Inscriptions" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_MANIFEST_INSCRIPTIONS">
+		<description>
+			<p>Also at 6th level, you can reveal hidden glyphs and enchantments that surround you. As an action, you expend one charged rune to reveal hidden or invisible arcane traps, marks, runes, wards, sensors, or glyphs within 60 feet of you. They glow with dim light in a 5-foot radius for 1 minute.</p>
+			<p class="indent">You have advantage on Intelligence (Arcana) checks to discern the nature of any magic revealed in this way for the duration. If the glyphs you reveal mean something in a language you can't read, you can understand them while they are glowing as if you knew that language.</p>
+		</description>
+		<sheet action="Action">
+			<description>You expend one charged rune to reveal hidden or invisible arcane traps, marks, runes, wards, sensors, or glyphs within 60 ft of you. They glow with dim light in a 5-ft radius for 1 minute. You have advantage on Intelligence (Arcana) checks to discern the nature of any magic revealed in this way for the duration. If the glyphs you reveal mean something in a language you can't read, you can understand them while they are glowing as if you knew that language.</description>
+		</sheet>
+	</element>
+
+	<element name="Runic Torrent" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_RUNIC_TORRENT">
+		<description>
+			<p>Upon reaching 14th level, you can channel runic energy to overpower even the staunchest defenses. When you cast a spell, you can expend 2 charged runes to cause the spell to deal force damage instead of its usual damage types. Additionally, all creatures targeted by the spell or within the spell's area must succeed on a Strength saving throw against your spell save DC or be knocked prone or pushed up to 15 feet away from the spell's point of origin (your choice).</p>
+			<p class="indent">Once you use this feature, you can't do so again until you complete a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you cast a spell, you can expend 2 charged runes to cause the spell to deal force damage instead of its usual damage types. Additionally, all creatures targeted by the spell or within the spell's area must succeed on a Strength saving throw {{sorcerer:spellcasting:dc}}) or be knocked prone or pushed up to 15 feet away from the spell's point of origin (your choice).</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Exemplar" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_RUNECHILD_ARCANE_EXEMPLAR">
+		<description>
+			<p>Starting at 18th level, you can use a bonus action and expend a charged rune to become a being of pure magical energy. While in your exemplar form, you gain the following benefits:</p>
+			<ul>
+				<li>You have a flying speed of 60 feet.</li>
+				<li>Creatures have disadvantage on saving throws against your sorcerer spells.</li>
+				<li>You have resistance to damage dealt by spells.</li>
+				<li>Whenever you cast a spell of 1st level or higher, you regain hit points equal to the spell's level.</li>
+			</ul>
+			<p class="indent">Your exemplar form lasts until the end of your turn. However, you can expend a charged rune at the end of your turn (no action required) to extend the duration until the end of your next turn. When your exemplar form ends, you are stunned until the end of your next turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you complete a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can expend a charged rune to become a being of pure magical energy. While in your exemplar form, you gain the following benefits: &#13;
+			• You have a flying speed of 60 feet. &#13;
+			• Creatures have disadvantage on saving throws against your sorcerer spells. &#13;
+			• You have resistance to damage dealt by spells. &#13;
+			• Whenever you cast a spell of 1st level or higher, you regain hit points equal to the spell's level. &#13;
+			Your exemplar form lasts until the end of your turn. However, you can expend a charged rune at the end of your turn (no action required) to extend the duration until the end of your next turn. When your exemplar form ends, you are stunned until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+</elements>

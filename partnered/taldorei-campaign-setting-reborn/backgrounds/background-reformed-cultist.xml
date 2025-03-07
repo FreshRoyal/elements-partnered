@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Reformed Cultist</name>
+		<description>The Reformed Cultist Background from Tal'Dorei Campaign Setting Reborn</description>
+		<update version="0.0.1">
+			<file name="background-reformed-cultist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/backgrounds/background-reformed-cultist.xml" />
+		</update>
+	</info>
+
+	<element name="Reformed Cultist" type="Background" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_REFORMED_CULTIST">
+		<description>
+			<p>Two pantheons have battled over the fate of Exandria since the world's founding—the Prime Deities and the Betrayer Gods. During the Calamity, the Prime Deities allied themselves with the mortal races of Exandria, their original creations, to protect their flawed world and its multifarious forms of life. The Betrayers sought to wipe the slate clean.</p>
+			<p class="indent">At the end of that devastating war, the Prime Deities established a Divine Gate that would prevent all gods, good or evil, from directly affecting the world, but which would leave the gods' mortal followers and supernal servants to enact their will. And so the corrupting whispers of the Betrayer Gods have ensnared the minds of power-hungry mortals for centuries, promising them a sliver of the gods' great power in exchange for dedicating their souls to occult lore.</p>
+			<p class="indent">You once belonged to such a cult of the Betrayer Gods. Perhaps this faith only briefly tempted your rebellious, youthful spirit. Perhaps the cult gave you love and family when you had none, asking only your adherence to their prophet in exchange. Or maybe you were raised from birth to pay homage to gods of selfish cruelty—until one fateful day the veil was lifted, so that nothing stood between you and the horrifying truth.</p>
+			<p class="indent">However it happened, you were freed from the shackles of this poisonous sect. Yet you know that this group does not forgive betrayers. As long as you live, you will be hunted—and if the members of the cult think you dead, their hunt will begin again the second they learn they're wrong.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Deception and Religion</li>
+				<li> <strong>Languages:</strong> One of your choice</li>
+				<li> <strong>Equipment:</strong> Vestments and a holy symbol of your previous cult, a set of common clothes, a belt pouch containing 15 gp</li>
+			</ul>
+			<div element="ID_CRDP_TCSR_BACKGROUND_FEATURE_REFORMED_CULTIST_FELL_TEACHINGS" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>The life of every former cultist is defined to some degree by the process of fleeing the past, and of trying to make a future away from the beliefs that once claimed them. Your bond is likely associated with those who gave you the insight and strength to flee your old ways. Your ideal might involve your desire to take down and destroy those who promote the evil you escaped, and perhaps finding new faith in a forgiving god.</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Religion, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Language" name="Language (Reformed Cultist)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_REFORMED_CULTIST_FELL_TEACHINGS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I need a dagger close at hand at all times. Just in case they find me.</item>
+				<item id="2">I can't believe I'm out here fighting monsters. After everything I've been through, why can't I find a normal life?</item>
+				<item id="3">I need a stiff drink before I do anything stressful these days. I know it's a problem. Just...let me have this.</item>
+				<item id="4">Murder is okay when it's for a good cause! I didn't tear my past out by the roots so I could let evil people cause more harm.</item>
+				<item id="5">My past is filled with stories like you wouldn't believe. Ones that'll really make your skin crawl. Do you want to hear...?</item>
+				<item id="6">Yeah, I'm crying. I do that. Get over yourself.</item>
+				<item id="7">I know you've told me your name twice already, but that's not good enough. How can I be sure you are who you say you are?</item>
+				<item id="8">My mind is always racing. I can't...I just need to...you have to give me a second—or else I can't...organize my thoughts.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Life. I've spent too long shackled to an evil master. No matter what happened before, I deserve my freedom now. (Chaotic)</item>
+				<item id="2">Redemption. People can change, but redemption must be something they choose for themselves. If they do, it is my duty to help them along that path. (Good)</item>
+				<item id="3">Power. When I abandoned the cult, it wasn't out of some misguided sense of righteousness. That pathetic organization was merely a shackle on my potential. (Evil)</item>
+				<item id="4">Vengeance. The cult has poisoned my life. I will see all its followers suffer. (Any)</item>
+				<item id="5">Hierarchy. The cult was vile, but its strength was in stability and organization. As long as good folk lack unity, evil will always triumph. (Lawful)</item>
+				<item id="6">Reparations. As a cultist, I harmed people whose names I'll never know. I feel obligated to repay my debt by aiding others. (Good)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">My cousin escaped the cult with me. I lost track of them when we fled, but I know they're alive. I can feel it.</item>
+				<item id="2">I was saved from the cult by a priest of one of the Prime Deities. If not for that sign of faith, I would surely be lost.</item>
+				<item id="3">I was told by the person who saved me that a sage once said: "Life needs things to live." I don't know what that means, but I've dedicated my existence to finding out.</item>
+				<item id="4">One of my cultist parents had a change of heart when I was a teenager, and we fled together in the dark of night. I didn't want to leave, but I understand now that their courage saved my life.</item>
+				<item id="5">I was bested by a warrior when I fumbled a cult-ordered assassination. I don't know why that person took pity on me, but they gave me purpose when I was lost.</item>
+				<item id="6">Now that I've saved myself, the only person important to me is my former cult leader—because I've sworn that they'll die by my hand.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I'm haunted by what I saw in those ritual chambers. Every time I see blood, I...oh, gods, I can't bear to even think about it.</item>
+				<item id="2">I ran from the cult long ago. But deep down, there's a part of me that still thinks they were right about certain things.</item>
+				<item id="3">I can't help but feel a rush whenever I see a life snuffed out before me. Just one more kill... just one more.</item>
+				<item id="4">Organized religion terrifies me. Betrayer Gods or Prime Deities...it doesn't matter. The sight of the faithful freezes my blood cold.</item>
+				<item id="5">Oh, I always tell the truth. Always. I've never had to keep a secret from anyone, so of course I'll be open with you.</item>
+				<item id="6">I don't trust easily. If you grew up being lied to about every little thing? The fundamental nature of the world? You wouldn't, either.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Fell Teachings" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_BACKGROUND_FEATURE_REFORMED_CULTIST_FELL_TEACHINGS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You were inundated with knowledge about one of the Betrayer Gods, and know by heart everything from their basic commandments to some of their most esoteric secrets. Choose one of the Betrayer Gods. You have advantage on Intelligence (Religion) checks to know information about their faith, including obscure secrets unknown to most worshipers.</p>
+			<p class="indent">Additionally, you can work with your GM to create a secret that you learned during your time in the cult. This secret might be the seed of a conspiracy, a myth of a legendary hero whose true meaning has mutated over the years, or even the location of a fabled artifact of the gods.</p>
+		</description>
+		<sheet alt="Fell Teachings" />
+	</element>
+
+</elements>
