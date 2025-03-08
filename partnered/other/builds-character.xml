@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Builds Character</name>
+		<update version="0.0.1">
+			<file name="builds-character.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/builds-character.xml" />
+		</update>
+	</info>
+	
+	<element name="Builds Character" type="Source" source="Core" id="ID_DDB_SOURCE_BUILDS_CHARACTER">
+		<description>
+			<p>Join Todd Kenreck and guests as they create Dungeons and Dragons characters using the D&amp;D Beyond Character Builder.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">BC</set>
+			<set name="url">https://www.youtube.com/playlist?list=PLPjdPog_vKX2DSWRkXOWS4HDqWxf_KhAr</set>
+			<set name="author" abbreviation="DDB" url="https://www.dndbeyond.com/">D&amp;D Beyond</set>
+			<set name="homebrew">true</set>
+			<set name="release">20210122</set>
+		</setters>
+	</element>
+
+	<!--Phoenix Domain-->
+	<element name="Phoenix Domain" type="Archetype" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_CLERIC_PHOENIX_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Some believe that creation and destruction are two sides of the same coin. Those who respect the power and danger of fire while admiring its beauty and light are drawn to worship the Phoenix. A neutral, though benevolent, spirit, they embody the dichotomy between renewal and relentless destructive power. Life and death are inextricably linked in an enduring cycle, one to be celebrated and protected in equal measure. Clerics who follow the Phoenix understand that new life can rise from the ashes of destruction, that fire can both harm and heal, and that adapting to change is the most powerful constant.</p>
+			<p class="flavor">Special thanks to: Adam Walton, Dustin Fletcher, Eugenio Vargas, James Haeck, Josh Simons, Mackenzie De Armas, and Justice Arman.</p>
+			<p class="flavor">Editor: Hannah Rose</p>
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_BONUS_CANTRIP" />
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_WARMTH_OF_THE_FLAME" />
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_CD_EXPLOSION_OF_LIFE" />
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_RISE_FROM_THE_ASHES" />
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_AVATAR_OF_DESTRUCTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_BONUS_CANTRIP" level="1" />
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_WARMTH_OF_THE_FLAME" level="1" />
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_CD_EXPLOSION_OF_LIFE" level="2" />
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_RISE_FROM_THE_ASHES" level="6" />
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_AVATAR_OF_DESTRUCTION" level="17" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+	
+	<element name="Domain Spells" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<h5>Phoenix Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Burning Hands, Cure Wounds</em></td></tr>
+				<tr><td>3rd</td><td><em>Flaming Sphere, Gentle Repose</em></td></tr>
+				<tr><td>5th</td><td><em>Fireball, Revivify</em></td></tr>
+				<tr><td>7th</td><td><em>Wall of Fire, Death Ward</em></td></tr>
+				<tr><td>9th</td><td><em>Flame Strike, Raise Dead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+
+	<element name="Bonus Cantrip" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_BONUS_CANTRIP">
+		<description>
+			<p>When you choose this domain at 1st level you gain the <i>produce flame</i> cantrip. It counts as a cleric cantrip for you, but it doesn’t count against your number of cantrips known. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" spellcasting="Cleric" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+
+	<element name="Warmth of the Flame" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_WARMTH_OF_THE_FLAME">
+		<description>
+			<p>Also at 1st level, the destruction of your foes brings warmth to your allies. When you cast a spell of 1st level or higher that deals fire damage, you can choose to heal one creature of your choice within 30 feet. The creature regains hit points equal to 1d4 + the spell’s level.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you cast a spell of 1st level or higher that deals fire damage, you can choose to heal one creature of your choice within 30 ft. The creature regains hp equal to 1d4 + the spell's level.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity: Explosion of Life" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_CD_EXPLOSION_OF_LIFE">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to protect your allies with an aura of flames.</p>
+			<p class="indent">As an action, you present your holy symbol, and a sphere of fiery light emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with bright light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) starts its turn in the sphere, you can grant that creature these benefits:</p>
+			<ul>
+				<li>The fire bolsters their vitality, giving it 1d8 temporary hit points.</li>
+				<li>The fire protects, granting resistance to fire damage until the end of its next turn.</li>
+			</ul>
+		</description>
+		<sheet alt="Explosion of Life" action="Action" usage="Channel Divinity">
+			<description>ou present your holy symbol, and a sphere of fiery light emanates from you. The sphere is centered on you, has a 30-ft radius, and is filled with bright light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) starts its turn in the sphere, you can grant that creature these benefits: &#13;
+			• You grant it 1d8 temporary hp. &#13;
+			• The fire protects, granting resistance to fire damage until the end of its next turn.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+
+	<element name="Rise from the Ashes" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_RISE_FROM_THE_ASHES">
+		<description>
+			<p>Starting at 6th level, you gain the ability to coax new life from the ashes of destruction. When you cast a cleric spell that returns a creature from the dead, you can choose to cast the spell without expending any material components, instead using the energy of your own fire to fuel the spell. When you cast the spell in this way the creature returns to life with a number of hit points equal to half of their hit point maximum, and does not suffer from any penalties from coming back from the dead. Otherwise, the spell functions as normal.</p>
+			<p class="indent">However, the effort taxes you greatly; if you cast <i>revivify</i>, you take a −2 penalty to all attack rolls, saving throws, and ability checks, or a −4 penalty for any other spell that returns a creature from the dead. These penalties are cumulative. Every time you finish a long rest, the penalty is reduced by 1 until it disappears.</p>
+		</description>
+		<sheet>
+			<description>hen you cast a cleric spell that returns a creature from the dead, you can choose to cast the spell without expending any material components. When you cast the spell in this way the creature returns to life with a number of hp equal to half of their hp maximum, and does not suffer from any penalties from coming back from the dead. Otherwise, the spell functions as normal. However, the effort taxes you greatly; if you cast revivify, you take a -2 penalty to all attack rolls, saving throws, and ability checks, or a -4 penalty for any other spell that returns a creature from the dead. These penalties are cumulative. Every time you finish a long rest, the penalty is reduced by 1 until it disappears.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+
+	<element name="Avatar of Destruction" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_AVATAR_OF_DESTRUCTION">
+		<description>
+			<p>Starting at 17th level, the power of the Phoenix can save you from death while punishing those who harm you. If you drop to 0 hit points or killed outright, you are immediately reduced to ash. At the start of your next turn, you are resurrected in an explosion of fire in the last space you occupied, or, if that space is occupied, the nearest unoccupied space.</p>
+			<p class="indent">You return with a number of hit points equal to half of your hit point maximum, and each hostile creature within 30 feet of you must make a Constitution saving throw. On a failure, a creature takes fire damage equal to 2d10 + your cleric level and is blinded until the end of its next turn. On a success, it takes half as much damage and isn't blinded.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If you drop to 0 hp or killed outright, you are immediately reduced to ash. At the start of your next turn, you are resurrected in an explosion of fire in the last space you occupied, or, if that space is occupied, the nearest unoccupied space.
+			You return with a number of hp equal to half of your hp maximum, and each hostile creature within 30 ft of you must make a Constitution saving throw. On a failure, a creature takes fire damage equal to 2d10 + {{level:cleric}} and is blinded until the end of its next turn. On a success, it takes half as much damage and isn't blinded.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
+		</setters>
+	</element>
+	
+</elements>
