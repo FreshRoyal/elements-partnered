@@ -2,16 +2,26 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
 	<files>
-		<file name="taldorei-campaign-setting-reborn.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn.index" />
-		<file name="flee-mortals.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals.index" />
-		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
 		<file name="other.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other.index" />
+		
+		<!--Darrington Press-->
+		<file name="taldorei-campaign-setting-reborn.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn.index" />
+
+		<!--MCDM-->
+		<file name="flee-mortals.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals.index" />
 		<file name="the-illrigger-revised.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised.index" />
+
+		<!--Kobold Press-->
 		<file name="tome-of-beasts-2023.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023.index" />
+
+		<!--Ghostfire Gaming-->
+		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
+		<file name="grim-hollow-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack.index" />
+		
 	</files>
 </index>
