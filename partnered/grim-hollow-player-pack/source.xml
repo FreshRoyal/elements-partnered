@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/source.xml" />
+		</update>
+	</info>
+	<element name="Grim Hollow: Player Pack" type="Source" source="Core" id="ID_GFG_SOURCE_GRIM_HOLLOW_PLAYER_PACK">
+		<description>
+			<h5 style="margin-top:-1em">Become the heroes of a broken world.</h5>
+			<p>Etharis is a world in dire need of heroes. Will you answer the call? Enter a godless, unforgiving world filled with curses, plagues and ghoulish creatures. Stand against the encroaching darkness and learn what it takes to be a hero. Welcome to Etharis, a setting where the lines between right and wrong become blurred and heroes become monsters. </p>
+			<p>Immerse yourself in this grim world with a collection of character options tailored for Etharis’ unique challenges. Whether you master martial maneuvers or cling zealously to divine power in the absence of gods, the <em>Grim Hollow: Player Pack</em> will give you evocative options for a grittier game. </p>
+		</description>
+		<setters>
+			<set name="abbreviation">GHPP</set>
+			<set name="url">https://marketplace.dndbeyond.com/category/SRC-00150</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/GHPP.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com/">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+			<set name="release">20240625</set>
+		</setters>
+	</element>
+</elements>

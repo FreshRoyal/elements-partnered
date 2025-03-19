@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Inquisition Domain</name>
+		<description>Inquisition Domain from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="cleric-inquisition.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/cleric-inquisition.xml" />
+		</update>
+	</info>
+
+	<element name="Inquisition Domain" type="Archetype" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_CLERIC_INQUISITION_DOMAIN">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Inquisition domain reflects the order of the multiverse and the rejection of tainted magic—at least so far as certain celestial powers see it. Only the divine casters are pure and fit for use. Since arcane magic is strong enough to challenge the gods, divine beings of this domain, such as the Arch Seraph Empyreus, demand magic-using mortals are kept in check. Most zealots root out all arcanists, while some strike fragile truces when complete removal isn't feasible.</p>
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_CD_SPELL_SHIELD" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_REBUKE_INVOKER" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_CD_SPELL_SHIELD" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_REBUKE_INVOKER" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD" level="17" />
+		</rules>
+	</element>
+
+	<element name="Domain Spells" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<h5>Inquisition Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>detect magic, identify</em></td></tr>
+				<tr><td>3rd</td><td><em>see invisibility, silence</em></td></tr>
+				<tr><td>5th</td><td><em>dispel magic, remove curse</em></td></tr>
+				<tr><td>7th</td><td><em>arcane eye, locate creature</em></td></tr>
+				<tr><td>9th</td><td><em>creation, hallow</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SILENCE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with martial weapons and heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+
+	<element name="Witch Hunter's Strike" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE">
+		<description>
+			<p>At 1st level, when you hit a creature with a weapon attack, you can deal an additional 1d8 force damage. If the creature is concentrating on a spell, you deal an additional 2d8 force damage instead. If a creature fails its saving throw to maintain concentration as a result of taking damage from this feature, you gain a number of temporary hit points equal to the extra force damage dealt by this attack. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once), regaining all uses upon completion of a long rest.</p>
+			<p class="indent">At 14th level, this damage increases to 2d8, and 3d8 if the creature is concentrating on a spell.</p>
+		</description>
+		<sheet usage="{{inquisition domain:witch hunters strike:usage}}/Long Rest">
+			<description>When you hit a creature with a weapon attack, you can deal an additional 1d8 force damage. If the creature is concentrating on a spell, you deal an additional 2d8 force damage instead. If a creature fails its saving throw to maintain concentration as a result of taking damage from this feature, you gain a number of temporary hp equal to the extra force damage dealt by this attack.</description>
+			<description level="14">When you hit a creature with a weapon attack, you can deal an additional 2d8 force damage. If the creature is concentrating on a spell, you deal an additional 3d8 force damage instead. If a creature fails its saving throw to maintain concentration as a result of taking damage from this feature, you gain a number of temporary hp equal to the extra force damage dealt by this attack.</description>
+		</sheet>
+		<rules>
+			<stat name="inquisition domain:witch hunters strike:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="inquisition domain:witch hunters strike:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Channel Divinity: Spell Shield" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_CD_SPELL_SHIELD">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to bestow a temporary resilience to arcane harm.</p>
+			<p class="indent">As a bonus action, you present your holy symbol and choose a creature you can see (including yourself) within 30 feet. The chosen creature gains temporary hit points equal to 1d10 + your cleric level. While a creature has temporary hit points granted by your spell shield, it has resistance to damage from spells and advantage on saving throws against spells. The creature loses any remaining temporary hit points after 1 hour.</p>
+		</description>
+		<sheet alt="Spell Shield" action="Bonus Action" usage="Channel Divinity">
+			<description>You present your holy symbol and choose a creature you can see (including yourself) within 30 ft. The chosen creature gains temporary hp equal to 1d10 + {{level:cleric}}. While a creature has temporary hp granted by your spell shield, it has resistance to damage from spells and advantage on saving throws against spells. The creature loses any remaining temporary hit points after 1 hour.</description>
+			<description level="17">You present your holy symbol and choose a number of creatures equal to {{inquisition domain:spell shield:creatures}} you can see (including yourself) within 30 ft. The chosen creature gains temporary hp equal to 1d10 + {{level:cleric}}. While a creature has temporary hp granted by your spell shield, it has resistance to damage from spells and advantage on saving throws against spells. The creature loses any remaining temporary hit points after 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Rebuke Invoker" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_REBUKE_INVOKER">
+		<description>
+			<p>Starting at 6th level, as a reaction when a creature you can see within 60 feet casts a spell, you can force the creature to make a Constitution saving throw. On a failure, the creature takes force damage equal to 1d8 per level of spell slot expended casting the spell + your Wisdom modifier. Cantrips are considered first-level spells for this ability. On a successful save the creature takes half as much damage instead.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum once). You regain all uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{inquisition domain:rebuke invoker:usage}}/Long Rest">
+			<description>when a creature you can see within 60 ft casts a spell, you can force the creature to make a Constitution saving throw. On a failure, the creature takes force damage equal to 1d8 per level of spell slot expended casting the spell + {{wisdom:modifier}}. Cantrips are considered first-level spells for this ability. On a successful save the creature takes half as much damage instead.</description>
+		</sheet>
+		<rules>
+			<stat name="inquisition domain:rebuke invoker:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="inquisition domain:rebuke invoker:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Divine Strike" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with the power of celestial order. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target.</description>
+			<description level="14">When you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 force damage to the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Supernal Safeguard" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD">
+		<description>
+			<p>Starting at 17th level, when you use your Channel Divinity: Spell Shield feature, you can choose a number of creatures up to your Wisdom modifier (minimum 2) instead of choosing only one.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="inquisition domain:spell shield:creatures" value="wisdom:modifier" bonus="bonus" />
+			<stat name="inquisition domain:spell shield:creatures" value="2" bonus="bonus" />
+		</rules>
+	</element>
+
+</elements>

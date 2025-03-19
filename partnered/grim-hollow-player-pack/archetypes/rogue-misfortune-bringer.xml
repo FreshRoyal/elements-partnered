@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Misfortune Bringer</name>
+		<description>Misfortune Bringer from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="rogue-misfortune-bringer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/rogue-misfortune-bringer.xml" />
+		</update>
+	</info>
+
+	<element name="Misfortune Bringer" type="Archetype" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_ROGUE_MISFORTUNE_BRINGER">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>You've matched your penchant for illicit activities with the ability to mark your enemies for mishaps and misfortune. Whether your mother was a hag, you were imbued with magical powers by spending time among the fey, or you learned the art of cursing from a long line of hedge wizards before you, you are a Misfortune Bringer. Although not universal, many Misfortune Bringers have eyes of two different colors, using only one when glaring at the targets they intend to curse.</p>
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_EVIL_EYE" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNES" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_STEAL_LUCK" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_CURSE_CASTER" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_EVIL_EYE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNES" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_STEAL_LUCK" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_CURSE_CASTER" level="13" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK" level="17" />
+		</rules>
+	</element>
+
+	<element name="Evil Eye" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_EVIL_EYE">
+		<description>
+			<p>When you choose this archetype at 3rd level, you gain the ability to place a minor curse on others with a glance. As a bonus action on your turn, choose a creature you can see within 60 feet. The chosen creature must succeed on a Charisma saving throw against your misfortune save DC or be marked by your evil eye. While a creature is marked by your evil eye, you can use your Sneak Attack against the creature even if you don't have advantage on the attack roll, but not if you have disadvantage on it.</p>
+			<p class="indent">The creature remains marked by your evil eye for 1 minute or until you mark a different creature with your evil eye, whichever comes first.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>On your turn, choose a creature you can see within 60 ft. The chosen creature must succeed on a Charisma saving throw (DC {{ghpp:misfortune bringer:misfortunist:dc}}) or be marked by your evil eye. While a creature is marked by your evil eye, you can use your Sneak Attack against the creature even if you don't have advantage on the attack roll, but not if you have disadvantage on it.
+			The creature remains marked by your evil eye for 1 minute or until you mark a different creature with your evil eye, whichever comes first.</description>
+		</sheet>
+	</element>
+
+	<element name="Misfortunist" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST">
+		<description>
+			<p>Also at 3rd level, you learn misfortunes that you can inflict on those marked by your evil eye.</p>
+			<p class="indent"><strong><em>Misfortunes.</em></strong> You learn three maneuvers of your choice, which are detailed under “Maneuvers” below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>
+			<p class="indent"><strong><em>Jinx Points.</em></strong> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</p>
+			<p class="indent"><strong><em>Saving Throws.</em></strong> Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Misfortune save DC</strong> = 8 + Charisma modifier + Proficiency Bonus</p>
+			</center>
+		</description>
+		<sheet>
+			<description>You learn misfortunes that you can inflict on those marked by your evil eye. Each time you finish a long rest, you can replace one misfortune you know with a different one. You have {{ghpp:misfortune bringer:misfortunist:points}} jinx points. When you spend a jinx point, it is no longer available to you until you regain it. You regain all spent jinx points when you finish a short or long rest. DC {{ghpp:misfortune bringer:misfortunist:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="ghpp:misfortune bringer:misfortunist:points" value="4" />
+			<stat name="ghpp:misfortune bringer:misfortunist:points" value="2" level="13" />
+			
+			<stat name="ghpp:misfortune bringer:misfortunist:dc" value="8" />
+			<stat name="ghpp:misfortune bringer:misfortunist:dc" value="charisma:modifier" />
+			<stat name="ghpp:misfortune bringer:misfortunist:dc" value="proficiency" />
+
+			<select type="Archetype Feature" name="Misfortune (Level 3)" supports="GHPP Misfortune Bringer Misfortunes" number="2" />
+			<select type="Archetype Feature" name="Misfortune (Level 9)" supports="GHPP Misfortune Bringer Misfortunes" level="9" />
+			<select type="Archetype Feature" name="Misfortune (Level 13)" supports="GHPP Misfortune Bringer Misfortunes" level="13" />
+			<select type="Archetype Feature" name="Misfortune (Level 17)" supports="GHPP Misfortune Bringer Misfortunes" level="17" />
+		</rules>
+	</element>
+
+	<element name="Misfortunes" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNES">
+		<description>
+			<p>The misfortunes are presented in alphabetical order.</p>
+
+			<p class="indent"><strong><em>Curse of the Befuddled.</em></strong> As an action, you can spend 2 jinx points, and the creature marked by your evil eye is charmed for 10 minutes. When you do, the creature is no longer marked by your evil eye, and the charmed condition ends early if you or your allies deal damage to the creature or cause it to make a saving throw. After the 10 minutes have elapsed, the creature knows you used magic to influence its mood and disposition towards you.</p>
+
+			<p class="indent"><strong><em>Curse of the Clumsy.</em></strong> When a creature marked by your evil eye moves 5 feet or more, you can use your reaction and spend 3 jinx points to cause the creature to fall prone and have its movement speed reduced to 0 until the end of the turn. When you do, the creature is no longer marked by your evil eye.</p>
+
+			<p class="indent"><strong><em>Curse of the Debilitated.</em></strong> When a creature marked by your evil eye takes damage, you can use your reaction and spend 1 jinx point to roll 1d12. The creature takes necrotic damage equal to the result.</p>
+			
+			<p class="indent"><strong><em>Curse of the Doomed.</em></strong> After you miss with a weapon attack against a creature marked by your evil eye, you can use your reaction and spend 1 jinx point to make an additional weapon attack against the creature as part of the same action.</p>
+			
+			<p class="indent"><strong><em>Curse of the Fearful.</em></strong> As an action, you can spend 2 jinx points, and the creature marked by your evil eye is frightened for 1 minute. When you do, the creature is no longer marked by your evil eye, and it can make a Wisdom saving throw at the end of each of its turns, ending this misfortune early on a success.</p>
+
+			<p class="indent"><strong><em>Curse of the Inept.</em></strong> After a creature marked by your evil eye makes an ability check or attack roll, but before the DM declares whether or not it is successful, you can use your reaction and spend 1 jinx point to make the creature reroll and use the lower result.</p>
+
+			<p class="indent"><strong><em>Curse of the Insensate.</em></strong> As an action, you can spend 3 jinx points, and the creature marked by your evil eye is blinded and deafened for 1 minute. When you do, the creature is no longer marked by your evil eye, and it can make a Constitution saving throw at the end of each of its turns, ending this misfortune early on a success.</p>
+
+			<p class="indent"><strong><em>Curse of the Maimed.</em></strong> When you hit a creature marked by your evil eye with a weapon attack, and the die result was 18 or 19, you can use your reaction and spend 2 jinx points to turn the hit into a critical.</p>
+
+			<p class="indent"><strong><em>Curse of the Marked.</em></strong> As a bonus action on your turn, you can spend 2 jinx points to enhance the effects of your evil eye on a creature you have marked by it. When you do, the duration increases to 24 hours or until you mark a different creature with your evil eye, whichever comes first. Additionally, while the creature is marked by your evil eye, you always know the direction and distance to the creature, provided you are on the same plane.</p>
+
+			<p class="indent"><strong><em>Curse of the Plagued.</em></strong> When a creature marked by your evil eye regains hit points, you can use your reaction and spend 1 jinx point to halve the amount of hit points regained. When you do, the creature can't regain hit points until the start of your next turn.</p>
+
+			<p class="indent"><strong><em>Curse of the Ruined.</em></strong> After a creature marked by your evil eye makes a saving throw, but before the DM declares whether or not it is successful, you can use your reaction and spend 2 jinx points to make the creature reroll and use the lower result.</p>
+
+			<p class="indent"><strong><em>Curse of the Somnolent.</em></strong> As an action, you can spend 3 jinx points, and the creature marked by your evil eye becomes drowsy. Roll a number of d10 equal to your level in this class and add 15 to their total. If the creature's current hit points are equal to or less than the total, it goes unconscious. The target regains consciousness after 10 minutes, or when it takes damage or another creature uses its action to rouse it.</p>
+
+			<p class="indent"><strong><em>Curse of the Unlucky.</em></strong> As a bonus action on your turn, you can spend 3 jinx points to put a pox on a creature marked by your evil eye. Whenever the creature makes an attack roll or saving throw, you roll 1d4 and subtract the result from their total.</p>
+			<p class="indent">This pox ends when the creature is no longer marked by your evil eye.</p>
+
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Steal Luck" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_STEAL_LUCK">
+		<description>
+			<p>Starting at 9th level, when a creature you can see within 30 feet of you makes an ability check, attack roll, or saving throw with advantage, you can use your reaction to remove advantage from the roll. When you do, you regain an expended jinx point. Once you use this feature, you must finish a short or long rest before you can do so again.</p>
+		</description>
+		<sheet action="Reaction" usage="{{ghpp:misfortune bringer:steal luck:usage}}/Short Rest">
+			<description>When a creature you can see within 30 ft of you makes an ability check, attack roll, or saving throw with advantage, you can use your reaction to remove advantage from the roll. When you do, you regain an expended jinx point.</description>
+		</sheet>
+		<rules>
+			<stat name="ghpp:misfortune bringer:steal luck:usage" value="1" />
+		</rules>
+	</element>
+
+	<element name="Curse Caster" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_CURSE_CASTER">
+		<description>
+			<p>At 13th level, you can use an action and spend 3 jinx points to cast the bestow curse spell. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 3 jinx points to cast the bestow curse spell. Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
+		</rules>
+	</element>
+
+	<element name="Improved Steal Luck" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK">
+		<description>
+			<p>At 17th level, you can use the Steal Luck feature three times, regaining all uses when you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ghpp:misfortune bringer:steal luck:usage" value="2" />
+		</rules>
+	</element>
+
+	<!--Misfortunes-->
+
+	<element name="Curse of the Befuddled" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_BEFUDDLED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>As an action, you can spend 2 jinx points, and the creature marked by your evil eye is charmed for 10 minutes. When you do, the creature is no longer marked by your evil eye, and the charmed condition ends early if you or your allies deal damage to the creature or cause it to make a saving throw. After the 10 minutes have elapsed, the creature knows you used magic to influence its mood and disposition towards you.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 2 jinx points, and the creature marked by your evil eye is charmed for 10 minutes. When you do, the creature is no longer marked by your evil eye, and the charmed condition ends early if you or your allies deal damage to the creature or cause it to make a saving throw. After the 10 minutes have elapsed, the creature knows you used magic to influence its mood and disposition towards you.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Clumsy" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_CLUMSY">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>When a creature marked by your evil eye moves 5 feet or more, you can use your reaction and spend 3 jinx points to cause the creature to fall prone and have its movement speed reduced to 0 until the end of the turn. When you do, the creature is no longer marked by your evil eye.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature marked by your evil eye moves 5 ft or more, you can use your reaction and spend 3 jinx points to cause the creature to fall prone and have its movement speed reduced to 0 until the end of the turn. When you do, the creature is no longer marked by your evil eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Debilitated" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_DEBILITATED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>When a creature marked by your evil eye takes damage, you can use your reaction and spend 1 jinx point to roll 1d12. The creature takes necrotic damage equal to the result.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature marked by your evil eye takes damage, you can use your reaction and spend 1 jinx point to roll 1d12. The creature takes necrotic damage equal to the result.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Doomed" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_DOOMED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>After you miss with a weapon attack against a creature marked by your evil eye, you can use your reaction and spend 1 jinx point to make an additional weapon attack against the creature as part of the same action.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>After you miss with a weapon attack against a creature marked by your evil eye, you can use your reaction and spend 1 jinx point to make an additional weapon attack against the creature as part of the same action.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Fearful" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_FEARFUL">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>As an action, you can spend 2 jinx points, and the creature marked by your evil eye is frightened for 1 minute. When you do, the creature is no longer marked by your evil eye, and it can make a Wisdom saving throw at the end of each of its turns, ending this misfortune early on a success.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 2 jinx points, and the creature marked by your evil eye is frightened for 1 minute. When you do, the creature is no longer marked by your evil eye, and it can make a Wisdom saving throw (DC {{ghpp:misfortune bringer:misfortunist:dc}}) at the end of each of its turns, ending this misfortune early on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Inept" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_INEPT">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>After a creature marked by your evil eye makes an ability check or attack roll, but before the DM declares whether or not it is successful, you can use your reaction and spend 1 jinx point to make the creature reroll and use the lower result.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>After a creature marked by your evil eye makes an ability check or attack roll, but before the DM declares whether or not it is successful, you can use your reaction and spend 1 jinx point to make the creature reroll and use the lower result.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Insensate" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_INSENSATE">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>As an action, you can spend 3 jinx points, and the creature marked by your evil eye is blinded and deafened for 1 minute. When you do, the creature is no longer marked by your evil eye, and it can make a Constitution saving throw at the end of each of its turns, ending this misfortune early on a success.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 3 jinx points, and the creature marked by your evil eye is blinded and deafened for 1 minute. When you do, the creature is no longer marked by your evil eye, and it can make a Constitution saving throw (DC {{ghpp:misfortune bringer:misfortunist:dc}}) at the end of each of its turns, ending this misfortune early on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Maimed" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_MAIMED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>When you hit a creature marked by your evil eye with a weapon attack, and the die result was 18 or 19, you can use your reaction and spend 2 jinx points to turn the hit into a critical.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you hit a creature marked by your evil eye with a weapon attack, and the die result was 18 or 19, you can use your reaction and spend 2 jinx points to turn the hit into a critical.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Marked" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_MARKED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>As a bonus action on your turn, you can spend 2 jinx points to enhance the effects of your evil eye on a creature you have marked by it. When you do, the duration increases to 24 hours or until you mark a different creature with your evil eye, whichever comes first. Additionally, while the creature is marked by your evil eye, you always know the direction and distance to the creature, provided you are on the same plane.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>On your turn, you can spend 2 jinx points to enhance the effects of your evil eye on a creature you have marked by it. When you do, the duration increases to 24 hours or until you mark a different creature with your evil eye, whichever comes first. Additionally, while the creature is marked by your evil eye, you always know the direction and distance to the creature, provided you are on the same plane.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Plagued" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_PLAGUED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>When a creature marked by your evil eye regains hit points, you can use your reaction and spend 1 jinx point to halve the amount of hit points regained. When you do, the creature can't regain hit points until the start of your next turn.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature marked by your evil eye regains hp, you can use your reaction and spend 1 jinx point to halve the amount of hp regained. When you do, the creature can't regain hp until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Ruined" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_RUINED">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>After a creature marked by your evil eye makes a saving throw, but before the DM declares whether or not it is successful, you can use your reaction and spend 2 jinx points to make the creature reroll and use the lower result.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>After a creature marked by your evil eye makes a saving throw, but before the DM declares whether or not it is successful, you can use your reaction and spend 2 jinx points to make the creature reroll and use the lower result.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Somnolent" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_SOMNOLENT">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>As an action, you can spend 3 jinx points, and the creature marked by your evil eye becomes drowsy. Roll a number of d10 equal to your level in this class and add 15 to their total. If the creature's current hit points are equal to or less than the total, it goes unconscious. The target regains consciousness after 10 minutes, or when it takes damage or another creature uses its action to rouse it.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 3 jinx points, and the creature marked by your evil eye becomes drowsy. Roll a number of {{level:rogue}}d10 and add 15 to their total. If the creature's current hp are equal to or less than the total, it goes unconscious. The target regains consciousness after 10 minutes, or when it takes damage or another creature uses its action to rouse it.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Unlucky" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNE_CURSE_OF_THE_UNLUCKY">
+		<supports>GHPP Misfortune Bringer Misfortunes</supports>
+		<description>
+			<p>As a bonus action on your turn, you can spend 3 jinx points to put a pox on a creature marked by your evil eye. Whenever the creature makes an attack roll or saving throw, you roll 1d4 and subtract the result from their total.</p>
+			<p class="indent">This pox ends when the creature is no longer marked by your evil eye.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>On your turn, you can spend 3 jinx points to put a pox on a creature marked by your evil eye. Whenever the creature makes an attack roll or saving throw, you roll 1d4 and subtract the result from their total. This pox ends when the creature is no longer marked by your evil eye.</description>
+		</sheet>
+	</element>
+	
+</elements>

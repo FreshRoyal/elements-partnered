@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Grim Hollow: Player Pack by Ghostfire Gaming</name>
+		<update version="1.0.0">
+			<file name="grim-hollow-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/spells.xml" />
+		
+		<!--Races-->
+		<file name="race-disembodied.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/races/race-disembodied.xml" />
+		<file name="race-wechselkind.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/races/race-wechselkind.xml" />
+		
+		<!--Archetypes-->
+		<file name="barbarian-carrion-raven.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/barbarian-carrion-raven.xml" />
+		<file name="bard-requiems.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/bard-requiems.xml" />
+		<file name="cleric-inquisition.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/cleric-inquisition.xml" />
+		<file name="fighter-blade-breaker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/fighter-blade-breaker.xml" />
+		<file name="paladin-zeal.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/paladin-zeal.xml" />
+		<file name="rogue-misfortune-bringer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/rogue-misfortune-bringer.xml" />
+	</files>
+</index>

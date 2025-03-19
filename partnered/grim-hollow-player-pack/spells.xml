@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Bloodletter" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_BLOODLETTER">
+		<supports>Cleric, Paladin, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You touch a nonmagical weapon. Until the spell ends, the next creature hit by the weapon must succeed on a Constitution saving throw or receive a festering wound. A creature with a festering wound takes 2d6 necrotic damage at the beginning of its turn for the remainder of the spell's duration. A creature can only have one festering wound at a time.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Creeping Touch" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_CREEPING_TOUCH">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You detach your hand at the wrist, transforming it into a spider. While the spider is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through its eyes and hear what it hears until the start of your next turn. During this time, you have the deafened and blinded condition with regard to your own senses.</p>
+			<p class="indent">If the spider is killed or prevented from returning to you, your hand is restored, but you take 1d6 points of psychic damage. If you command the spider to return, it crawls back to your wrist, and the spell ends.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Crown of Radiance" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_CROWN_OF_RADIANCE">
+		<supports>Bard, Cleric, Druid</supports>
+		<description>
+			<p>A flaming crown of holy light adorns your head until the spell ends. Any fiend, fey, or undead that moves within 20 feet of you or begins their turn within 20 feet of you takes 2d8 radiant damage.</p>
+			<p class="indent">The crown of radiance sheds bright light in a 30-foot radius and dim light for an additional 30 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Flense" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_FLENSE">
+		<supports>Cleric, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You target a creature you can see within range, using necromantic force to slice the skin from its body. Make a ranged spell attack against that creature. The target must succeed on a Constitution saving throw, taking 8d6 necrotic damage on a failure or half as much damage on a success. On each of your turns for the duration, you can use your action to force the same target to make another Constitution saving throw and repeat the damage. The spell also ends if the target is ever outside the spell's range, if the target is reduced to 0 hit points, or if it has total cover from you.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">8</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scalpel</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Holy Word" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_HOLY_WORD">
+		<supports>Cleric, Spell Attack</supports>
+		<description>
+			<p>You mutter a word of the divine under your breath, being careful not to speak it any louder, for such celestial power is not for the tainted and unworthy. Make a ranged spell attack against the target. On a hit, the target takes 1d8 radiant damage. If you hit an undead, fiend, or fey, then its speed is reduced by 10 feet and it cannot take reactions until the end of its next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Life Tether" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_LIFE_TETHER">
+		<supports>Cleric, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>The target must make a Wisdom saving throw. On a failure, a sickly green ethereal tether forms between you and your target. Whenever you take damage, each tethered target takes half that amount as necrotic damage. Damage dealt this way is distributed after any damage resistances or immunities are applied. If a target with a tether drops to 0 Hit Points, they are no longer affected by the tether. As a bonus action, you can move the tether from one fallen foe to another target. The new target must succeed on a Wisdom saving throw or also be subject to the effects of this spell. A target may only have one tether attached to them from any instance of this spell at a given time.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the number of tethers created is increased by one for every two slot levels above the 2nd.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Phoenix Flames" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_PHOENIX_FLAMES">
+		<supports>Cleric, Druid, Sorcerer, Spell Saving Throw</supports>
+		<description>
+			<p>You immolate yourself, consuming your body in a searing cloud of holy flames. All creatures within 20 feet of you must make a Constitution saving throw or take 30d6 radiant damage and gain one level of exhaustion. On a successful save, a creature takes half damage and is not exhausted. If a target is killed by this damage, its body is incinerated.</p>
+			<p class="indent">After 10 minutes, you rise from the ashes where you originally cast the spell. You are returned fully to life as if you were affected by a <i>true resurrection</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">9</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Ride the Lightning" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_RIDE_THE_LIGHTNING">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You transform yourself into a bolt of lightning and teleport up to 60 feet to an unoccupied space you can see. Each creature within 5 feet of the line created between your starting point and final destination takes 4d6 lightning damage unless they succeed on a Dexterity saving throw to halve the damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th. In addition, you can teleport yourself an additional 10 feet further for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self (60-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a length of copper wire</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Spirit Swarm" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_SPIRIT_SWARM">
+		<supports>Cleric, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You invite spirits to take their revenge upon a target. A creature that you can see within range must make a Charisma saving throw. A creature with a Charisma score of 2 or lower can't be affected by this spell. A target takes 8d8 psychic damage on a failed save and is frightened of you until the spell ends. On a successful save, a target takes half damage and is not frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Supernal Smite" type="Spell" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_SPELL_SUPERNAL_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<p>The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon shatters the ambient magic surrounding the creature, and the attack deals an extra 4d6 force damage. If the creature is concentrating on a spell, that concentration is broken.</p>
+			<p class="indent">In addition, any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spells' level. On a successful check, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+</elements>

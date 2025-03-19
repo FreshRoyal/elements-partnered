@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Disembodied</name>
+		<description>The Disembodied from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="race-disembodied.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/races/race-disembodied.xml" />
+		</update>
+	</info>
+
+	<element name="The Disembodied" type="Race" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACE_DISEMBODIED">
+		<description>
+			<p>You possess certain traits as a result of the magical mishap that trapped you between worlds. The disembodied are a collection of species that were in Ulmur's Gate when the accident occurred. Because of this, you can choose what species you appear as. This also affects some features below, such as your height. Unless specified, you do not gain any features from your origin species.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2 and your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> The disembodied mature at a much slower rate than their humanoid equivalent, and their life expectancy is drastically higher, with not a single disembodied having passed due to old age.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The disembodied tend towards no particular alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You still possess the height of your former humanoid self, but your nearly insubstantial nature has drastically reduced your weight to a quarter of your original weight. Your size is the same it was before the accident.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Fade Away.</em></strong> On your turn, as an action, you can fade from the Material Realm and disappear into the ethereal plane. While you remain faded away, you cannot interact with the Material Plane, and effects on the Material Plane cannot interact with you, including spells and creatures. However, you can move and hear as normal, and see everything in shades of grey.</p>
+			<p class="indent">This effect lasts for 1 minute, or until you use a bonus action to end it. When the effect ends, you reappear on the Material Plane, in the closest unoccupied space you disappeared from. Once you use this feature, you cannot use it again until you complete a long rest.</p>
+			<p class="indent"><strong><em>Planar Outcast.</em></strong> You may cast the <i>feather fall</i> spell once per day, targeting yourself only. When you reach 3rd level, you may cast the <i>blur</i> spell once per day. When you reach 5th level, you may cast the <i>blink</i> spell once per day. Intelligence is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Arcane Origins.</em></strong> You gain proficiency in the Arcana skill.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write two languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="dexterity" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (The Disembodied)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (The Disembodied)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Racial Trait" name="Size (The Disembodied)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<select type="Language" name="Language (The Disembodied)" number="2" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPP_RACIAL_TRAIT_DISEMBODIED_FADE_AWAY" />
+			<grant type="Racial Trait" id="ID_GFG_GHPP_RACIAL_TRAIT_DISEMBODIED_PLANAR_OUTCAST" />
+			<grant type="Racial Trait" id="ID_GFG_GHPP_RACIAL_TRAIT_DISEMBODIED_ARCANE_ORIGINS" />
+		</rules>
+	</element>
+
+	<element name="Fade Away" type="Racial Trait" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACIAL_TRAIT_DISEMBODIED_FADE_AWAY">
+		<description>
+			<p>On your turn, as an action, you can fade from the Material Realm and disappear into the ethereal plane. While you remain faded away, you cannot interact with the Material Plane, and effects on the Material Plane cannot interact with you, including spells and creatures. However, you can move and hear as normal, and see everything in shades of grey.</p>
+			<p class="indent">This effect lasts for 1 minute, or until you use a bonus action to end it. When the effect ends, you reappear on the Material Plane, in the closest unoccupied space you disappeared from. Once you use this feature, you cannot use it again until you complete a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can fade from the Material Realm and disappear into the ethereal plane. While you remain faded away, you cannot interact with the Material Plane, and effects on the Material Plane cannot interact with you, including spells and creatures. However, you can move and hear as normal, and see everything in shades of grey. This effect lasts for 1 minute, or until you use a bonus action to end it. When the effect ends, you reappear on the Material Plane, in the closest unoccupied space you disappeared from.</description>
+		</sheet>
+	</element>
+
+	<element name="Planar Outcast" type="Racial Trait" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACIAL_TRAIT_DISEMBODIED_PLANAR_OUTCAST">
+		<description>
+			<p>You may cast the <i>feather fall</i> spell once per day, targeting yourself only. When you reach 3rd level, you may cast the <i>blur</i> spell once per day. When you reach 5th level, you may cast the <i>blink</i> spell once per day. Intelligence is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You may cast the feather fall spell once per day. &#13;
+			Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You may cast the feather fall and blur spells, each once per day. &#13;
+			Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You may cast the feather fall, blur, and blink spells, each once per day. &#13;
+			Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" />
+		</rules>
+	</element>
+
+	<element name="Childish Agility" type="Racial Trait" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACIAL_TRAIT_DISEMBODIED_ARCANE_ORIGINS">
+		<description>
+			<p>You gain proficiency in the Arcana skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Arcane Origins)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+</elements>

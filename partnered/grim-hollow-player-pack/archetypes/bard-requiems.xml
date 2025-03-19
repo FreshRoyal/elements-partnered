@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Reguiems</name>
+		<description>College of Requiems from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="bard-requiems.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/bard-requiems.xml" />
+		</update>
+	</info>
+
+	<element name="College of Requiems" type="Archetype" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_BARD_COLLEGE_OF_REQUIEMS">
+		<supports>Bard College</supports>
+		<description>
+			<p>Not all grand stories conclude in triumphant victory. Many tales end with death and despair, and bards of the College of Tragedy know that sorrow and pathos are emotions just as potent as joy and delight. These bards specialize in the power of tragic storytelling, weaving words and spells together to dramatic and devastating effect.</p>
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_CHILLING_MELODY" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_PLUCK_THE_HEARTSTRINGS" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_STIR_THE_BONES" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_DANCE_OF_THE_DEAD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_CHILLING_MELODY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_PLUCK_THE_HEARTSTRINGS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_STIR_THE_BONES" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_DANCE_OF_THE_DEAD" level="14" />
+		</rules>
+	</element>
+
+	<element name="Chilling Melody" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_CHILLING_MELODY">
+		<description>
+			<p>At 3rd level, you learn two necromancy cantrips of your choice from any class spell list. These count as bard spells for you, but don't count against the number of cantrips you know.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Necromancy Cantrip (Chilling Melody)" number="2" supports="Necromancy&amp;&amp;0" spellcasting="Bard" />
+		</rules>
+	</element>
+
+	<element name="Pluck the Heartstrings" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_PLUCK_THE_HEARTSTRINGS">
+		<description>
+			<p>Beginning at 3rd level, you gain the ability to use your Bardic Inspiration to pluck at the tethers of life within a creature. A creature with one of your Bardic Inspiration dice can expend it when dealing damage with a weapon attack, dealing additional necrotic damage equal to the die result.</p>
+			<p class="indent">Additionally, when a living creature that has your Bardic Inspiration die is reduced to 0 hit points, it can expend that die as a reaction to be reduced to 1 hit point instead.</p>
+		</description>
+		<sheet>
+			<description>A creature with one of your Bardic Inspiration dice can expend it when dealing damage with a weapon attack, dealing additional necrotic damage equal to the die result. 
+			Additionally, when a living creature that has your Bardic Inspiration die is reduced to 0 hp, it can expend that die as a reaction to be reduced to 1 hp instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Stir the Bones" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_STIR_THE_BONES">
+		<description>
+			<p>At 6th level, you learn the <i>animate dead</i> spell. It counts as a bard spell for you, and it doesn't count against the number of Bard spells you know.</p>
+			<p class="indent">When you give a creature one of your Bardic Inspiration dice, choose a number of undead creatures equal to your proficiency bonus under your control and within 60 feet of you. Chosen creatures each gain a Dirge die, which they lose if they do not spend within the next 10 minutes. Dirge dice can be spent the same way and under the same circumstances you spend Bardic Inspiration dice. You can also issue mental commands to undead creatures under your control as part of the same bonus action.</p>
+			<p class="indent">When an undead creature you control expends a Dirge die on an attack roll that hits, it can also apply the result to the damage roll.</p>
+		</description>
+		<sheet>
+			<description>When you give a creature one of your Bardic Inspiration dice, choose {{proficiency}} undead creatures under your control and within 60 ft of you. Chosen creatures each gain a Dirge die, which they lose if they do not spend within the next 10 minutes. Dirge dice can be spent the same way and under the same circumstances you spend Bardic Inspiration dice. You can also issue mental commands to undead creatures under your control as part of the same bonus action.
+			When an undead creature you control expends a Dirge die on an attack roll that hits, it can also apply the result to the damage roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Bard" />
+		</rules>
+	</element>
+
+	<element name="Dance of the Dead" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_COLLEGE_OF_REQUIEMS_DANCE_OF_THE_DEAD">
+		<description>
+			<p>Starting at 14th level, when you cast a necromancy spell that targets only one creature, you can have it target a second creature within range. This does not consume additional components.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you cast a necromancy spell that targets only one creature, you can have it target a second creature within range. This does not consume additional components.</description>
+		</sheet>
+	</element>
+
+</elements>

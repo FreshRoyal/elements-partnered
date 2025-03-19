@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/items.xml" />
+		</update>
+	</info>
+
+	<element name="Arc Rifle" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_ARC_RIFLE">
+		<description>
+			<p>In the unforgiving lands of Etharis, having reliable and efficient weapons is as essential as carrying water and food. In that regard, skilled inventors are highly sought after, and among them gnomes are the most renowned. However, innovation can sometimes go too far, and the <i>arc rifle</i> is the perfect example of how. Invented by a team of famous gnome engineers, it literally shoots lightning, hitting the target faster than any other ranged weapon and reducing flesh to ashes in mere seconds, regardless of armor. Due in part to this tremendous efficiency, this weapon was quickly declared illegal in most regions of Etharis. It is also believed to destroy the target's soul when it kills them.</p>
+			<p class="indent">This part-science, part-arcane contraption is a rifle-like weapon housing glass tubes of sparking electricity and powered by a small perpetualmotion device.</p>
+			<p class="indent">The arc rifle has 4 charges. It regains 1d4 expended charges daily at dawn.</p>
+			<p class="indent"><strong><em>Lightning Torrent.</em></strong> You can expend 1 charge as an action to launch a torrent of lightning in a 60-foot line, 5 feet wide. Each creature that the lightning passes through must make a Dexterity saving throw with a DC equal to your proficiency bonus plus your Dexterity modifier. On a failed save a creature takes 6d6 lightning damage, or half as much on a successful save.</p>
+			<p class="indent">Whenever you expend the last charge of the <i>arc rifle</i>, roll a d20. On a result of 1 the arc rifle has fried its mechanisms and becomes useless.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw, lightning, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Ardor" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_ARDOR">
+		<description>
+			<p>The blades of this axe smolder with an inner light. The dark wooden handle is accented with silver.</p>
+			<p class="indent">When the celestial realm turned back yet another assault from the forces of evil, a fiendish forge master received a vision, allowing them to craft a battleaxe like no other. With the might of <i>Ardor</i>, the fiends now possess a weapon capable of striking down the celestial forces.</p>
+			<p class="indent"><i>Ardor</i> now lies in the fiendish realm's hidden vaults, waiting to be wielded when the forces of darkness make their ultimate strike to consume the world. The fiends don't realize that an equally powerful weapon rests in the hands of the celestials who wage eternal war against them. The fates who inspired the forge master to craft <i>Ardor</i> also sent a vision to a smith of heaven in the interest of maintaining the balance of power.</p>
+			<p class="indent"><strong><em>Axe of Hell.</em></strong> This magic battleaxe grants a +3 bonus to attack and damage rolls made with it. When you hit with an attack using it, the target takes an extra 3d10 necrotic damage.</p>
+			<p class="indent"><strong><em>Champion of Evil.</em></strong> While holding the battleaxe, you are immune to the charmed, frightened, paralyzed, poisoned, and stunned conditions.</p>
+			<p class="indent"><strong><em>Ardor's Pursuit.</em></strong> As a bonus action, you can release <i>Ardor</i> to hover magically in an unoccupied space within 5 feet of you. If you can see the battleaxe, you can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to your hands. If any effect targets the hovering axe, you are considered to be holding it. The hovering axe falls if the attuned user dies.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> While the axe is on your person, you can use an action to cast one of the following spells (save DC 18): <i>bane</i>, <i>banishment</i>, <i>bestow curse</i>, <i>branding smite</i>, or <i>incendiary cloud</i>. Once you use the axe to cast a spell, that spell can't be cast again from it until the next dawn.</p>
+			<p class="indent"><strong><em>Destroying the Axe.</em></strong> The only thing capable of damaging the battleaxe is its celestial twin <i>Zeal</i>. A creature wielding <i>Zeal</i> can choose to attack <i>Ardor</i>, which has an AC of 21 and 300 hit points. No other creature or object can damage <i>Ardor</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">battleaxe, necrotic, damage, immunity, charmed, frightened, paralyzed, poisoned, stunned, bonus action, spells, bane, banishment, bestow curse, branding smite, incendiary cloud</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="battleaxe">Weapon</set>
+			<set name="attunement" addition="by a creature of evil alignment">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Battleaxe</set>
+		</setters>
+	</element>
+
+	<element name="Bow of Four" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_BOW_OF_FOUR">
+		<description>
+			<p>This white wooden bow is set with four gemstones: a ruby, an emerald, a sapphire, and a diamond. When you hold this bow, you can summon a magical arrow composed of one of the four elements. Conjuring an arrow in this way does not require an action. Each time you summon an arrow, you must choose one of the four options below. If you do not fire the arrow within 1 minute of summoning it, it dissolves.</p>
+			<p class="indent"><strong><em>Arrow of Air.</em></strong> On a hit, the arrow of air deals 2d8 lightning damage.</p>
+			<p class="indent"><strong><em>Arrow of Earth.</em></strong> On a hit, the arrow of earth deals 2d8 magical bludgeoning damage.</p>
+			<p class="indent"><strong><em>Arrow of Fire.</em></strong> On a hit, the arrow of fire deals 2d8 fire damage.</p>
+			<p class="indent"><strong><em>Arrow of Water.</em></strong> On a hit, the arrow of water deals 2d8 cold damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow, bludgeoning, cold, fire, lighting, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Longbow</set>
+		</setters>
+	</element>
+
+	<element name="Carvaloth Scale Armor" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_CARVALOTH_SCALE_ARMOR">
+		<description>
+			<p>This red-tinged armor was fashioned from the scales of several carvaloths. While wearing this armor, Wisdom (Perception) checks to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks to hide from sight, as the armor's color shifts to camouflage you.</p>
+		</description>
+		<setters>
+			<set name="keywords">scale, disadvantage, stealth, advantage</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="scale mail">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Scale Mail</set>
+		</setters>
+	</element>
+
+	<element name="Cinder Coat" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_CINDER_COAT">
+		<description>
+			<p>This floor-length leather duster is the color of dying embers. You have a +1 bonus to AC while wearing this armor.</p>
+			<p class="indent">The coat has 3 charges. When you hit a creature with an attack, and that creature is not at maximum hit points, you can expend 1 charge to deal an extra 1d10 fire damage to the target. The coat regains 1d3 expended charges daily at dawn.</p>
+			<p class="indent">The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
+		</description>
+		<setters>
+			<set name="keywords">leather, fire, damage</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="leather">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Leather</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Cloak of the Stygian Bat" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_CLOAK_OF_THE_STYGIAN_BAT">
+		<description>
+			<p>This cloak is made from the hide of stygian bats, bristling with coarse black hairs. While wearing the cloak, you have advantage on Wisdom (Perception) checks that rely on hearing.</p>
+			<p class="indent">In addition, you can activate the cloak to gain a fly speed of 30 feet for one minute. While it is active, you also have blindsight (out to a range of 120 feet) and have advantage on Dexterity saving throws while in the air. The cloak cannot be activated again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, perception, flying, dexterity, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Flammable Tincture" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_FLAMMABLE_TINCTURE">		
+		<description>
+			<p>This swirling mixture of red and white liquid is formed from the remains of a coldfire ooze. As an action, the vial of <i>flammable tincture</i> can be hurled up to 30 feet at a target, which must succeed on a DC 10 Dexterity saving throw or be covered with the liquid. For 1 minute, the creature is vulnerable to fire damage. This overrides any previous immunity or resistance.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Light Drinker" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_LIGHT_DRINKER">
+		<description>
+			<p>This sword's hilt and blade are forged of a single piece of black metal that seems to absorb the light around it. You gain a +2 bonus to attack and damage rolls made with this weapon, which deals cold damage instead of slashing damage. While attuned to the sword, you gain darkvision to 60 feet and can see in magical darkness.</p>
+			<p class="indent">As a bonus action, you can cause the sword to emit magical darkness in a 15-foot radius and dim light for an additional 15 feet. While the darkness is active, you can use an action to expand or reduce its radius of darkness by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each. Darkness created by this sword can only be suppressed by an antimagic field.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword, cold, damage, bonus action</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Ring of Hidden Desire" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_RING_OF_HIDDEN_DESIRE">
+		<description>
+			<p>This rose gold band is set with an obsidian stone carved in the shape of a heart. While wearing this ring, you can use an action to attempt to learn a creature's darkest desire. Select a creature that you can see. That creature must succeed on a DC 13 Wisdom saving throw. On a failed save, you immediately learn the target's darkest desire. On a successful save, you do not learn anything, and the creature is immune to the effects of the ring for 24 hours. If the creature you choose has an Intelligence of 3 or lower, the creature is unaffected. The ring's power can be used 3 times per day and recharges at midnight.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Seeing Glass" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_SEEING_GLASS">
+		<description>
+			<p>This ornate silver hand mirror is decorated with a motif of withered roses. The mirror's reflection always shows the true form of any creature viewed in it as if it were seen by the <i>true seeing</i> spell. You can see invisible creatures, the true form of shapechanger, and the true faces of creatures attempting to disguise their hideous appearance.</p>
+			<p class="indent">If the <i>seeing glass</i> is turned upon a vampire, the glass immediately shatters and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">mirror, true seeing</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Telltale Heart" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_TELLTALE_HEART">
+		<description>
+			<p>This cherry-sized bloodstone heart is the beating center of a poppet. While on your person, you have advantage on saving throws against becoming frightened. If an effect causes you to be frightened without a saving throw, you receive a DC 15 Wisdom saving throw to avoid the condition.</p>
+			<p class="indent">Also, when you make an Intelligence ability check while holding the stone, you can listen to it, gaining unusual insight or access to esoteric lore. If you do so, you gain advantage on that Intelligence check. The telltale heart can't be used this way again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">frightened, saving throw, advantage, intelligence</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Zeal" type="Magic Item" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_MAGIC_ITEM_ZEAL">
+		<description>
+			<p>The steel head of this warhammer seems to glow with an inner light. The pale wooden handle is accented with white gold.</p>
+			<p class="indent">When the celestial realm nearly fell into darkness, a heavenly smith received a vision allowing them to craft a hammer like no other. With the might of <i>Zeal</i>, the armies of heaven turned back their foes, restoring cosmic balance.</p>
+			<p class="indent"><i>Zeal</i> now lies in the hidden vaults of the celestial realms, waiting to be wielded once again when the forces of darkness threaten to consume the world.</p>
+			<p class="indent">The celestials don't realize that an equally powerful weapon rests in the hands of the very same armies of darkness that drove them back. The fates who inspired the smith to craft <i>Zeal</i> also sent a vision to a forge keeper of hell in the interest of maintaining the balance of power.</p>
+			<p class="indent"><strong><em>Hammer of Heaven.</em></strong> This magic warhammer grants a +3 bonus to attack and damage rolls made with it. When you hit with an attack using it, the target takes an extra 3d10 radiant damage.</p>
+			<p class="indent"><strong><em>Champion of Good.</em></strong> While holding the hammer, you are immune to the charmed, frightened, paralyzed, poisoned, and stunned conditions.</p>
+			<p class="indent"><strong><em>Zealous Pursuit.</em></strong> As a bonus action, you can release Zeal to hover magically in an unoccupied space within 5 feet of you. If you can see the hammer, you can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to your hands. If any effect targets the hovering hammer, you are considered to be holding it. The hovering hammer falls if the attuned user dies.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> While the hammer is on your person, you can use an action to cast one of the following spells (save DC 18): <i>banishment</i>, <i>branding smite</i>, <i>beacon of hope</i>, <i>earthquake</i>, or <i>heroism</i>. Once you use the hammer to cast a spell, that spell can't be cast again from it until the next dawn.</p>
+			<p class="indent"><strong><em>Destroying the Hammer.</em></strong> The only thing capable of damaging the hammer is its fiendish twin <i>Ardor</i>. A creature wielding <i>Ardor</i> can choose to attack <i>Zeal</i>, which has an AC of 21 and 300 hit points. No other creature or object can damage <i>Zeal</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer, radiant, damage, immunity, charmed, frightened, paralyzed, poisoned, stunned, bonus action, spells, banishment, branding smite, beacon of hope, earthquake, heroism</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="warhammer">Weapon</set>
+			<set name="attunement" addition="by a creature of good alignment">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Warhammer</set>
+		</setters>
+	</element>
+
+</elements>

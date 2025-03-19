@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wechselkind</name>
+		<description>Wechselkind from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="race-wechselkind.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/races/race-wechselkind.xml" />
+		</update>
+	</info>
+
+	<element name="Wechselkind" type="Race" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACE_WECHSELKIND">
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2 and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> As constructs, the wechselkind do not age as normal creatures do. They are forever trapped in the doll-like body of a stolen child. As such, their maximum age is more a function of natural erosion and damage than of time, occasionally needing to replace or fix body parts when needed. You are immune to magical aging effects.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Faerie are as close to the embodiment of chaos as most mortals are likely to see, and their creations usually follow that trend. Although some tend towards mischief, more wechselkind lean towards good than evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Built to resemble a child, wechselkind are between 2 and 3 feet tall and weigh between 35 and 55 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Artificial Form.</em></strong> As a constructed creature, your body functions differently than a normal person. You have advantage on saving throws against being poisoned, and you have resistance to poison damage. You are immune to disease. You don't need to eat, drink, sleep, or breathe. You are still considered humanoid.</p>
+			<p class="indent"><strong><em>Faerie Glamour.</em></strong> When the faerie leaves a wechselkind in place of a mortal child, they cover it with a glamour to make it appear identical to the child that was stolen. Over time this glamour fades, but a wechselkind can still call upon it in times of need. You may cast the <i>disguise self</i> spell once with this trait, but only to take on the appearance of the child you were intended to replace, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<p class="indent"><strong><em>Childish Agility.</em></strong> You can move through the space of any creature that is of a size larger than yours. You gain proficiency in the Acrobatics skill.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Sylvan and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Wechselkind)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wechselkind)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Wechselkind)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Wechselkind)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPP_RACIAL_TRAIT_WECHSELKIND_ARTIFICIAL_FORM" />
+			<grant type="Racial Trait" id="ID_GFG_GHPP_RACIAL_TRAIT_WECHSELKIND_FAERIE_GLAMOUR" />
+			<grant type="Racial Trait" id="ID_GFG_GHPP_RACIAL_TRAIT_WECHSELKIND_CHILDISH_AGILITY" />
+		</rules>
+	</element>
+
+	<element name="Artificial Form" type="Racial Trait" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACIAL_TRAIT_WECHSELKIND_ARTIFICIAL_FORM">
+		<description>
+			<p>As a constructed creature, your body functions differently than a normal person. You have advantage on saving throws against being poisoned, and you have resistance to poison damage. You are immune to disease. You don't need to eat, drink, sleep, or breathe. You are still considered humanoid.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being poisoned. You are immune to disease. You don't need to eat, drink, sleep, or breathe.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Faerie Glamour" type="Racial Trait" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACIAL_TRAIT_WECHSELKIND_FAERIE_GLAMOUR">
+		<description>
+			<p>When the faerie leaves a wechselkind in place of a mortal child, they cover it with a glamour to make it appear identical to the child that was stolen. Over time this glamour fades, but a wechselkind can still call upon it in times of need. You may cast the <i>disguise self</i> spell once with this trait, but only to take on the appearance of the child you were intended to replace, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You may cast the disguise self spell with this trait, but only to take on the appearance of the child you were intended to replace, and you regain the ability to do so when you finish a long rest. &#13;
+			Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+
+	<element name="Childish Agility" type="Racial Trait" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_RACIAL_TRAIT_WECHSELKIND_CHILDISH_AGILITY">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours. You gain proficiency in the Acrobatics skill.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Childish Agility)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+</elements>

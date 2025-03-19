@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Carrion Raven</name>
+		<description>Path of the Carrion Raven from Grim Hollow - Player Pack</description>
+		<update version="0.0.1">
+			<file name="barbarian-carrion-raven.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/barbarian-carrion-raven.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Carrion Raven" type="Archetype" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_BARBARIAN_PATH_OF_THE_CARRION_RAVEN">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Barbarians who walk the Path of the Carrion Raven wield the warrior spirit of a blood-soaked raven blessed with the gift of speech. This carrion bird aided Kentigern on his quest to slay Gormadraug so that the raven might feast on the heart of the Prismatic Wyrm. This path is popular among wanderers of the inhospitable wastes of Valika—yet most remain mistrusted outsiders, even among the hardened Valikan clans. They don't mind.</p>
+			<p class="indent">Barbarians who embody the Saga of the Carrion Raven prefer the company of beasts. This close proximity to animals grants them deeper insights into the raven's search for power and survival at any cost. To them, it's a high compliment. To other Valikans, it marks them as outsiders to be feared and kept away at spearpoint.</p>
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_CARRION_RAVEN_MANEUVERS" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_FERAL_CELERITY" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_RAVENS_SPIRIT" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_FEROCIOUS_RAGE" />
+			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_VIOLENT_HUNGER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_CARRION_RAVEN_MANEUVERS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_FERAL_CELERITY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_RAVENS_SPIRIT" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_FEROCIOUS_RAGE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_VIOLENT_HUNGER" level="14" />
+		</rules>
+	</element>
+
+	<element name="Martial Maneuvers" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS">
+		<description>
+			<p>You have trained in the manner of heroes from the old sagas, and now you can perform certain martial maneuvers. A maneuver requires you to spend maneuver points to use it.</p>
+			<p class="indent">You know three maneuvers of your choice from the list below. You learn an additional maneuver at 6th, 10th, and 14th level. Each time you learn a maneuver, you can also replace one maneuver you know with a different one you can learn.</p>
+			<p class="indent"><strong><em>Maneuver Points.</em></strong> Channeling the heroes from the old sagas is no easy task, and your pool of maneuver points represents the limit of your abilities to do so. Your barbarian class level determines the number of maneuver points you have, as shown in the Maneuver Points column in the Path of the Carrion Raven table below. You regain all spent maneuver points at the end of a long rest.</p>
+			<p class="indent"><strong><em>Using Maneuvers.</em></strong> You can use one maneuver during each turn. Some maneuvers require concentration, as if concentrating on a spell, or certain conditions to use. Some maneuvers will require your target to make a saving throw to resist the maneuver's effects.</p>
+			<center>
+				<p><strong>Martial Maneuver save DC</strong> = 8 + Constitution modifier + Proficiency Bonus</p>
+			</center>
+		</description>
+		<sheet>
+			<description>You can perform certain Martial Maneuvers. You have {{ghpp:carrion raven:martial maneuver:points}} manuever points. When you spend a maneuver point, it is no longer available to you until you regain it. You regain all spent manuever points when you finish a short or long rest. You can use one maneuver during each turn. Some maneuvers require concentration, as if concentrating on a spell, or certain conditions to use. DC {{ghpp:carrion raven:martial maneuver:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="ghpp:carrion raven:martial maneuver:points" value="level:barbarian" />
+			<stat name="ghpp:carrion raven:martial maneuver:points" value="level:barbarian" />
+			
+			<stat name="ghpp:carrion raven:martial maneuver:dc" value="8" />
+			<stat name="ghpp:carrion raven:martial maneuver:dc" value="constitution:modifier" />
+			<stat name="ghpp:carrion raven:martial maneuver:dc" value="proficiency" />
+
+			<select type="Archetype Feature" name="Martial Maneuver (Level 3)" supports="GHPP Carrion Raven Manuevers" number="3" />
+			<select type="Archetype Feature" name="Martial Maneuver (Level 6)" supports="GHPP Carrion Raven Manuevers" level="6" />
+			<select type="Archetype Feature" name="Martial Maneuver (Level 10)" supports="GHPP Carrion Raven Manuevers" level="10" />
+			<select type="Archetype Feature" name="Martial Maneuver (Level 14)" supports="GHPP Carrion Raven Manuevers" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Maneuvers" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_CARRION_RAVEN_MANEUVERS">
+		<description>
+			<p>The Saga of the Carrion Raven speaks of a talking raven with the power to transform into any animal he had eaten to wield their powers. His tale intersects with Kentigern and his companions on their journey to slay the Great Prismatic Wyrm Gormadraug, where the raven appeared, offering to help in exchange for the chance to eat the Prismatic Wyrm's heart. As the story goes, the raven taught the heroes how to fight with the ferocity of the north's fiercest predators and fly with the speed of their fastest birds.</p>
+			<p class="indent">Warriors who practice the Saga of the Carrion Raven trust in their instincts, and embody the cunning, resilience, and power of the natural world. Masters of this saga learn to knit their flesh, take flight, and even adopt the shape of the beasts they've so long emulated.</p>
+			<p class="indent">These maneuvers can be used by anyone who studies the Carrion Raven saga.</p>
+
+			<p class="indent"><strong><em>Apex Dominance.</em></strong> You can use an action and spend 5 maneuver points to attempt to sunder your enemy with excessive force. When you do, a creature within your reach must succeed on a Strength saving throw. If the creature is currently grappled by you, it has disadvantage on this saving throw.</p>
+			<p class="indent">On a failed saving throw, the creature takes 6d10 force damage. On a successful save, the target takes half as much damage. If damage from this maneuver reduces a creature to 0 hit points, it immediately dies as you rip it apart.</p>
+			
+			<p class="indent"><strong><em>Axolotl's Regeneration.</em></strong> You can use a bonus action and spend 2 or 6 maneuver points to regenerate your body. When you do, you regain 1d12 + your Constitution modifier hit points. If you spent 6 points, you also regrow a lost limb or organ of your choice.</p>
+
+			<p class="indent"><strong><em>Bestial Transformation.</em></strong> You can use an action and spend 8 maneuver points to cast <i>polymorph</i> targeting only yourself without providing material components. However, you can only transform into a beast with a CR of half your level or lower, and you retain your Intelligence, Wisdom, and Charisma scores. Constitution is your spellcasting ability when you cast the spell in this way.</p>
+
+			<p class="indent"><strong><em>Bestial Transformation.</em></strong> When a creature marked by your evil eye takes damage, you can use your reaction and spend 1 jinx point to roll 1d12. The creature takes necrotic damage equal to the result.</p>
+			
+			<p class="indent"><strong><em>Call of the Beast Lord.</em></strong> You can use an action and spend 5 maneuver points to howl, calling a bestial spirit to your aid. When you do, choose any beast with a CR equal to or less than your level to appear in an unoccupied space of your choice within 60 feet.</p>
+			<p class="indent">A beast conjured in this way disappears when it is reduced to 0 hit points, after 10 minutes, or when you lose concentration on this maneuver (as if you were concentrating on a spell). The summoned creature is friendly to you and your companions. The creature shares your initiative but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands to the creature, it defends itself from hostile creatures by taking the Dodge action.</p>
+			
+			<p class="indent"><strong><em>Carrion Feast.</em></strong> You can use an action and spend 4 maneuver points to feast on an enemy's waning life. When you use this maneuver, make a melee weapon attack. On a hit, the attack deals an additional 5d6 necrotic damage and you gain temporary hit points equal to the necrotic damage dealt.</p>
+
+			<p class="indent"><strong><em>Falcon's Glide.</em></strong> When you fall, you can use your reaction and spend 1 maneuver point to slow your fall to 60 feet per round for 1 minute. If you land before this time elapses, you take no falling damage.</p>
+			<p class="indent">In addition, as a bonus action on each of your turns for the duration of this maneuver, you can spend 1 additional maneuver point to gain a fly speed of 30 feet until the end of the turn.</p>
+
+			<p class="indent"><strong><em>Feral Fighting.</em></strong> You can use a bonus action and spend 1 maneuver point to fight with beastlike fury. When you do, make a single unarmed strike against a creature. On a hit, you can roll 1d8 in place of the normal damage of your unarmed strike.</p>
+
+			<p class="indent"><strong><em>Hibernating Bear Recuperation.</em></strong> You can spend an action and 5 maneuver points to put yourself into a deep and restful sleep for the next 10 minutes. During this time you have resistance to all damage except psychic and, when you take damage, you can choose to remain asleep or wake up. If you sleep for the entire 10 minutes, you gain the benefits of having completed a short rest, immediately end any poison affecting you, and lose one level of exhaustion.</p>
+			<p class="indent">At the end of this sleep, you can spend and roll any number of Hit Die, adding your Constitution modifier to each Hit Die rolled, gaining temporary hit points equal to the total.</p>
+
+			<p class="indent"><strong><em>Pack Leader.</em></strong> When an enemy creature within 5 feet of you is attacked, you can use your reaction and spend 1 maneuver point to make a melee attack at the same enemy creature. When you do, the triggering attack has advantage.</p>
+
+			<p class="indent"><strong><em>Predator's Howl.</em></strong> You can use a bonus action and spend 2 maneuver points to emit a terrifying howl. Two creatures of your choice within 30 feet of you must make a Wisdom saving throw. On a failed save, the creature is frightened until the start of your next turn. Each time the frightened creature takes damage from weapon attacks, they take an additional 1d6 psychic damage.</p>
+
+			<p class="indent"><strong><em>Shape of the Behemoth.</em></strong> As an action you can spend 3 maneuver points to embody the power of nature's largest beasts for 1 minute. When you do, your size increases by one category to a maximum size of Large. In addition, for the duration your reach increases by 5 feet, your weapon attacks deal an additional 1d6 damage, and you gain 1d6 temporary hit points at the start of each of your turns. This maneuver ends early if you lose concentration (as if you were concentrating on a spell).</p>
+
+			<p class="indent"><strong><em>Slippery Otter.</em></strong> You can use a bonus action and spend 1 maneuver point to embody the grace and endurance of an otter in water. For the next hour, you have a swimming speed of 30 feet and can hold your breath for a number of minutes equal to twice your Constitution ability score. While in the water, you can take the Dash action as a bonus action.</p>
+
+			<p class="indent"><strong><em>Snout of the Bloodhound.</em></strong> You take a minute and spend a maneuver point to attune your senses to your surroundings, enhancing your senses of smell, sight, and hearing for the next hour. During this time, you gain the following benefits:</p>
+			<p class="indent">You have advantage on Wisdom (Perception) and Wisdom (Survival) checks to track You add your proficiency bonus to initiative checks. You do not have disadvantage on attack rolls against invisible creatures Stoic Oxen Spirit (2 points) When you become charmed or frightened, you can use your reaction and spend 2 maneuver points to immediately end the triggering charmed or frightened condition. In addition, you have advantage on attack rolls against the creature who attempted to charm or frighten you until the end of your next turn.</p>
+
+			<p class="indent"><strong><em>Trampling Bull.</em></strong> You can use a bonus action and spend 3 maneuver points to channel the charging bull, moving up to your speed. While moving this way, you can move through the space of creatures of your size or smaller, but you must end your movement in an unoccupied space.</p>
+			<p class="indent">Each creature whose space you moved through must succeed on a Strength saving throw or be knocked prone and take bludgeoning damage equal to 1d8 + your Strength modifier.</p>
+
+			<p class="indent"><strong><em>Tusks of the Rampaging Mammoth.</em></strong> You can use an action and spend 3 maneuver points to strike an enemy with the overwhelming force of a rampaging mammoth. When you do, make a melee weapon attack against a creature within 5 feet. On a hit, you deal 3d12 damage in addition to your attack's normal damage. If the creature is Huge or smaller, you push the creature 15 feet.</p>
+
+			<p class="indent"><strong><em>Woolly Beast's Hide.</em></strong> When you are hit by an attack, you can use your reaction and spend 2 or more maneuver points to use the resilient parts of your body to shield your vulnerabilities from harmful damage. When you use this maneuver, roll 1d6 for every 2 points you spend to use this maneuver and reduce the damage from an attack by the result. After taking any remaining damage, you also gain temporary hit points equal to the result of the roll.</p>
+
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Feral Celerity" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_FERAL_CELERITY">
+		<description>
+			<p>Your rage grants you animalistic speed of action. As part of the bonus action to enter a rage, you can make one weapon attack. Additionally, you gain the ability to concentrate on maneuvers, even while you are raging. You still cannot concentrate on spells while raging.</p>
+		</description>
+		<sheet usage="Rage">
+			<description>As part of the bonus action to enter a rage, you can make one weapon attack. Additionally, you gain the ability to concentrate on maneuvers, even while you are raging. You still cannot concentrate on spells while raging.</description>
+		</sheet>
+	</element>
+
+	<element name="Raven's Spirit" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_RAVENS_SPIRIT">
+		<description>
+			<p>You gain proficiency in the Animal Handling skill. If you are already proficient in it, you gain proficiency in your choice of one the following skills instead: Athletics, Nature, or Survival.</p>
+			<p class="indent">In addition, you can cast <i>speak with animals</i> as a ritual.</p>
+		</description>
+		<sheet>
+			<description>You can cast speak with animals as a ritual.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Raven's Spirit" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" default="ID_PROFICIENCY_SKILL_ANIMALHANDLING" default-behaviour="force" />
+		</rules>
+	</element>
+
+	<element name="Ferocious Rage" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_FEROCIOUS_RAGE">
+		<description>
+			<p>When you enter your rage, creatures of your choice within 10 feet that can see you must succeed on a Wisdom saving throw against your Martial Maneuvers save DC. On a failed saving throw, the creature is frightened of you until the end of its next turn.</p>
+		</description>
+		<sheet usage="Rage">
+			<description>When you enter your rage, creatures of your choice within 10 feet that can see you must succeed on a Wisdom saving throw (DC {{ghpp:carrion raven:martial maneuver:dc}}). On a failed saving throw, the creature is frightened of you until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Violent Hunger" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_VIOLENT_HUNGER">
+		<description>
+			<p>When you deal damage to a creature with a weapon attack and roll the maximum result of one of the damage dice, you can spend 1 maneuver point to roll another die of the same type and add its result to the damage dealt by the attack. You can do this once per attack.</p>
+		</description>
+		<sheet usage="1/Attack">
+			<description>When you deal damage to a creature with a weapon attack and roll the maximum result of one of the damage dice, you can spend 1 maneuver point to roll another die of the same type and add its result to the damage dealt by the attack.</description>
+		</sheet>
+	</element>
+
+
+	<!--Maneuvers-->
+
+	<element name="Apex Daminance" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_APEX_DOMINANCE">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use an action and spend 5 maneuver points to attempt to sunder your enemy with excessive force. When you do, a creature within your reach must succeed on a Strength saving throw. If the creature is currently grappled by you, it has disadvantage on this saving throw.</p>
+			<p class="indent">On a failed saving throw, the creature takes 6d10 force damage. On a successful save, the target takes half as much damage. If damage from this maneuver reduces a creature to 0 hit points, it immediately dies as you rip it apart.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 5 maneuver points to attempt to sunder your enemy with excessive force. When you do, a creature within your reach must succeed on a Strength saving throw (DC {{ghpp:carrion raven:martial maneuver:dc}}). If the creature is currently grappled by you, it has disadvantage on this saving throw.
+			On a failed saving throw, the creature takes 6d10 force damage. On a successful save, the target takes half as much damage. If damage from this maneuver reduces a creature to 0 hp, it immediately dies as you rip it apart.</description>
+		</sheet>
+	</element>
+
+	<element name="Axolotl's Regeneration" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_AXOLOTLS_REGENERATION">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use a bonus action and spend 2 or 6 maneuver points to regenerate your body. When you do, you regain 1d12 + your Constitution modifier hit points. If you spent 6 points, you also regrow a lost limb or organ of your choice.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 2 or 6 maneuver points to regenerate your body. When you do, you regain 1d12 + {{constitution:modifier}} hp. If you spent 6 points, you also regrow a lost limb or organ of your choice.</description>
+		</sheet>
+	</element>
+
+	<element name="Bestial Transformation" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_BESTIAL_TRANSFORMATION">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use an action and spend 8 maneuver points to cast <i>polymorph</i> targeting only yourself without providing material components. However, you can only transform into a beast with a CR of half your level or lower, and you retain your Intelligence, Wisdom, and Charisma scores. Constitution is your spellcasting ability when you cast the spell in this way.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 8 maneuver points to cast polymorph targeting only yourself without providing material components. However, you can only transform into a beast with a CR of {{level:half}} or lower, and you retain your Intelligence, Wisdom, and Charisma scores. Constitution is your spellcasting ability when you cast the spell in this way.</description>
+		</sheet>
+	</element>
+
+	<element name="Call of the Beast Lord" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_CALL_OF_THE_BEAST_LORD">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use an action and spend 5 maneuver points to howl, calling a bestial spirit to your aid. When you do, choose any beast with a CR equal to or less than your level to appear in an unoccupied space of your choice within 60 feet.</p>
+			<p class="indent">A beast conjured in this way disappears when it is reduced to 0 hit points, after 10 minutes, or when you lose concentration on this maneuver (as if you were concentrating on a spell). The summoned creature is friendly to you and your companions. The creature shares your initiative but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands to the creature, it defends itself from hostile creatures by taking the Dodge action.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 5 maneuver points to howl, calling a bestial spirit to your aid. When you do, choose any beast with a CR equal to or less than {{level}} to appear in an unoccupied space of your choice within 60 ft.
+			A beast conjured in this way disappears when it is reduced to 0 hp, after 10 minutes, or when you lose concentration on this maneuver (as if you were concentrating on a spell). The summoned creature is friendly to you and your companions. The creature shares your initiative but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands to the creature, it defends itself from hostile creatures by taking the Dodge action.</description>
+		</sheet>
+	</element>
+
+	<element name="Carrion Feast" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_CARRION_FEAST">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use an action and spend 4 maneuver points to feast on an enemy's waning life. When you use this maneuver, make a melee weapon attack. On a hit, the attack deals an additional 5d6 necrotic damage and you gain temporary hit points equal to the necrotic damage dealt.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 4 maneuver points to feast on an enemy's waning life. When you use this maneuver, make a melee weapon attack. On a hit, the attack deals an additional 5d6 necrotic damage and you gain temporary hp equal to the necrotic damage dealt.</description>
+		</sheet>
+	</element>
+
+	<element name="Falcon's Glide" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_FALCONS_GLIDE">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>When you fall, you can use your reaction and spend 1 maneuver point to slow your fall to 60 feet per round for 1 minute. If you land before this time elapses, you take no falling damage.</p>
+			<p class="indent">In addition, as a bonus action on each of your turns for the duration of this maneuver, you can spend 1 additional maneuver point to gain a fly speed of 30 feet until the end of the turn.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you fall, you can use your reaction and spend 1 maneuver point to slow your fall to 60 ft per round for 1 minute. If you land before this time elapses, you take no falling damage.
+			In addition, as a bonus action on each of your turns for the duration of this maneuver, you can spend 1 additional maneuver point to gain a 30 ft fly speed until the end of the turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Feral Fighting" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_FERAL_FIGHTING">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use a bonus action and spend 1 maneuver point to fight with beastlike fury. When you do, make a single unarmed strike against a creature. On a hit, you can roll 1d8 in place of the normal damage of your unarmed strike.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 1 maneuver point to fight with beastlike fury. When you do, make a single unarmed strike against a creature. On a hit, you can roll 1d8 in place of the normal damage of your unarmed strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Hibernating Bear Recuperation" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_HIBERNATING_BEAR_RECUPERATION">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can spend an action and 5 maneuver points to put yourself into a deep and restful sleep for the next 10 minutes. During this time you have resistance to all damage except psychic and, when you take damage, you can choose to remain asleep or wake up. If you sleep for the entire 10 minutes, you gain the benefits of having completed a short rest, immediately end any poison affecting you, and lose one level of exhaustion.</p>
+			<p class="indent">At the end of this sleep, you can spend and roll any number of Hit Die, adding your Constitution modifier to each Hit Die rolled, gaining temporary hit points equal to the total.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 5 maneuver points to put yourself into a deep and restful sleep for the next 10 minutes. During this time you have resistance to all damage except psychic and, when you take damage, you can choose to remain asleep or wake up. If you sleep for the entire 10 minutes, you gain the benefits of having completed a short rest, immediately end any poison affecting you, and lose one level of exhaustion.At the end of this sleep, you can spend and roll any number of Hit Die, adding {{constitution:modifier}} to each Hit Die rolled, gaining temporary hp equal to the total.</description>
+		</sheet>
+	</element>
+
+	<element name="Pack Leader" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_PACK_LEADER">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>When an enemy creature within 5 feet of you is attacked, you can use your reaction and spend 1 maneuver point to make a melee attack at the same enemy creature. When you do, the triggering attack has advantage.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an enemy creature within 5 ft of you is attacked, you can use your reaction and spend 1 maneuver point to make a melee attack at the same enemy creature. When you do, the triggering attack has advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Predator's Howl" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_PREDATORS_HOWL">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use a bonus action and spend 2 maneuver points to emit a terrifying howl. Two creatures of your choice within 30 feet of you must make a Wisdom saving throw. On a failed save, the creature is frightened until the start of your next turn. Each time the frightened creature takes damage from weapon attacks, they take an additional 1d6 psychic damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 2 maneuver points to emit a terrifying howl. Two creatures of your choice within 30 feet of you must make a Wisdom saving throw (DC {{ghpp:carrion raven:martial maneuver:dc}}). On a failed save, the creature is frightened until the start of your next turn. Each time the frightened creature takes damage from weapon attacks, they take an additional 1d6 psychic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Shape of the Behemoth" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_SHAPE_OF_THE_BEHEMOTH">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>As an action you can spend 3 maneuver points to embody the power of nature's largest beasts for 1 minute. When you do, your size increases by one category to a maximum size of Large. In addition, for the duration your reach increases by 5 feet, your weapon attacks deal an additional 1d6 damage, and you gain 1d6 temporary hit points at the start of each of your turns. This maneuver ends early if you lose concentration (as if you were concentrating on a spell).</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 3 maneuver points to embody the power of nature's largest beasts for 1 minute. When you do, your size increases by one category to a maximum size of Large. In addition, for the duration your reach increases by 5 ft, your weapon attacks deal an additional 1d6 damage, and you gain 1d6 temporary hp at the start of each of your turns. This maneuver ends early if you lose concentration.</description>
+		</sheet>
+	</element>
+
+	<element name="Slippery Otter" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_SLIPPERY_OTTER">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use a bonus action and spend 1 maneuver point to embody the grace and endurance of an otter in water. For the next hour, you have a swimming speed of 30 feet and can hold your breath for a number of minutes equal to twice your Constitution ability score. While in the water, you can take the Dash action as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 1 maneuver point to embody the grace and endurance of an otter in water. For the next hour, you have a 30 ft swimming speed and can hold your breath for {{ghpp:carrion raven:slippery otter:time}} minutes. While in the water, you can take the Dash action as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="ghpp:carrion raven:slippery otter:time" value="constitution:score" />
+			<stat name="ghpp:carrion raven:slippery otter:time" value="constitution:score" />
+		</rules>
+	</element>
+
+	<element name="Snout of the Bloodhound" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_SNOUT_OF_THE_BLOODHOUND">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You take a minute and spend a maneuver point to attune your senses to your surroundings, enhancing your senses of smell, sight, and hearing for the next hour. During this time, you gain the following benefits:</p>
+			<p class="indent">You have advantage on Wisdom (Perception) and Wisdom (Survival) checks to track You add your proficiency bonus to initiative checks. You do not have disadvantage on attack rolls against invisible creatures Stoic Oxen Spirit (2 points) When you become charmed or frightened, you can use your reaction and spend 2 maneuver points to immediately end the triggering charmed or frightened condition. In addition, you have advantage on attack rolls against the creature who attempted to charm or frighten you until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You take a minute and spend a maneuver point to attune your senses to your surroundings, enhancing your senses of smell, sight, and hearing for the next hour. During this time, you gain the following benefits:
+			You have advantage on Wisdom (Perception) and Wisdom (Survival) checks to track You add {{proficiency}} to initiative checks. You do not have disadvantage on attack rolls against invisible creatures Stoic Oxen Spirit (2 points) When you become charmed or frightened, you can use your reaction and spend 2 maneuver points to immediately end the triggering charmed or frightened condition. In addition, you have advantage on attack rolls against the creature who attempted to charm or frighten you until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Trampling Bull" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_TRAMPLING_BULL">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use a bonus action and spend 3 maneuver points to channel the charging bull, moving up to your speed. While moving this way, you can move through the space of creatures of your size or smaller, but you must end your movement in an unoccupied space.</p>
+			<p class="indent">Each creature whose space you moved through must succeed on a Strength saving throw or be knocked prone and take bludgeoning damage equal to 1d8 + your Strength modifier.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 3 maneuver points to channel the charging bull, moving up to your speed. While moving this way, you can move through the space of creatures of your size or smaller, but you must end your movement in an unoccupied space.
+			Each creature whose space you moved through must succeed on a Strength saving throw (DC {{ghpp:carrion raven:martial maneuver:dc}}) or be knocked prone and take bludgeoning damage equal to 1d8 + {{strength:modifier}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Tusks of the Rampaging Mammoth" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_TUSKS_OF_THE_RAMPAGING_MAMMOTH">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>You can use an action and spend 3 maneuver points to strike an enemy with the overwhelming force of a rampaging mammoth. When you do, make a melee weapon attack against a creature within 5 feet. On a hit, you deal 3d12 damage in addition to your attack's normal damage. If the creature is Huge or smaller, you push the creature 15 feet.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 3 maneuver points to strike an enemy with the overwhelming force of a rampaging mammoth. When you do, make a melee weapon attack against a creature within 5 ft. On a hit, you deal 3d12 damage in addition to your attack's normal damage. If the creature is Huge or smaller, you push the creature 15 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Woolly Beast's Hide" type="Archetype Feature" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_FEATURE_PATH_OF_THE_CARRION_RAVEN_MARTIAL_MANEUVERS_WOOLLY_BEASTS_HIDE">
+		<supports>GHPP Carrion Raven Manuevers</supports>
+		<description>
+			<p>When you are hit by an attack, you can use your reaction and spend 2 or more maneuver points to use the resilient parts of your body to shield your vulnerabilities from harmful damage. When you use this maneuver, roll 1d6 for every 2 points you spend to use this maneuver and reduce the damage from an attack by the result. After taking any remaining damage, you also gain temporary hit points equal to the result of the roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you are hit by an attack, you can use your reaction and spend 2 or more maneuver points to use the resilient parts of your body to shield your vulnerabilities from harmful damage. When you use this maneuver, roll 1d6 for every 2 points you spend to use this maneuver and reduce the damage from an attack by the result. After taking any remaining damage, you also gain temporary hp equal to the result of the roll.</description>
+		</sheet>
+	</element>
+	
+</elements>
