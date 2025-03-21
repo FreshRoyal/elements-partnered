@@ -68,7 +68,7 @@
 		</setters>
 	</element>
 
-	<element name="Cursed Blade" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_SWORD_OF_VENGEANCE">
+	<element name="Cursed Blade" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_CURSED_BLADE">
 		<description>
 			<p>When removed from its scabbard, this blade glows pale yellow, equivalent to dim light in a 10-foot radius. A character that wields this sword gains a +1 bonus to attack and damage rolls. However, the blade is cursed, which is revealed only in the heat of battle.</p>
 			<p class="indent"><strong><em>Curse.</em></strong> Despite the bonus to hit (and damage) all weapon attacks with a cursed blade are made at disadvantage. This can be revealed with the use of an <i>idenfify</i> spell. The cursed blade can't be willingly discarded until the character is the recipient of a <i>remove curse</i> spell or similar magic.</p>
