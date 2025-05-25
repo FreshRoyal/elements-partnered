@@ -3,13 +3,13 @@
 	<info>
 		<name>Inquisition Domain</name>
 		<description>Inquisition Domain from Grim Hollow - Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-inquisition.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/archetypes/cleric-inquisition.xml" />
 		</update>
 	</info>
 
 	<element name="Inquisition Domain" type="Archetype" source="Grim Hollow: Player Pack" id="ID_GFG_GHPP_ARCHETYPE_CLERIC_INQUISITION_DOMAIN">
-		<supports>Sacred Oath</supports>
+		<supports>Divine Domain</supports>
 		<description>
 			<p>The Inquisition domain reflects the order of the multiverse and the rejection of tainted magic—at least so far as certain celestial powers see it. Only the divine casters are pure and fit for use. Since arcane magic is strong enough to challenge the gods, divine beings of this domain, such as the Arch Seraph Empyreus, demand magic-using mortals are kept in check. Most zealots root out all arcanists, while some strike fragile truces when complete removal isn't feasible.</p>
 			<div element="ID_GFG_GHPP_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_DOMAIN_SPELLS" />
