@@ -3,13 +3,15 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Grim Hollow - Lairs of Etharis</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis/feats.xml" />
 		</update>
 	</info>
 
 	<element name="Adroit Crafter" type="Feat" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_FEAT_ADROIT_CRAFTER">
+		<prerequisite>Proficiency in a skill or tool</prerequisite>
 		<description>
+			<p><i>Prerequisite: Proficiency in a skill or tool</i></p>
 			<p>You've trained in crafting items using a skill or tool that you're proficient with, and the steps in crafting have become second nature to you. You gain the following benefits:</p>
 			<ul>
 				<li>The time it takes to create an item using your proficient skills or tools is halved.</li>
@@ -23,7 +25,9 @@
 	</element>
 
 	<element name="Careful Crafter" type="Feat" source="Grim Hollow: Lairs of Etharis" id="ID_GFG_GHLE_FEAT_CAREFUL_CRAFTER">
+		<prerequisite>Proficiency in a skill or tool</prerequisite>
 		<description>
+			<p><i>Prerequisite: Proficiency in a skill or tool</i></p>
 			<p>You've trained in crafting items using a skill or tool that you're proficient with, and your creations are known for being well made and reliable. You gain the following benefits:</p>
 			<ul>
 				<li>You make all ability checks for crafting with advantage.</li>
