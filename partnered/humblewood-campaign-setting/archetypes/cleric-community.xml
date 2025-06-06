@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Community Domain</name>
+		<description>Community Domain from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="cleric-community.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/cleric-community.xml" />
+		</update>
+	</info>
+
+	<element name="Community Domain" type="Archetype" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_CLERIC_COMMUNITY_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The community domain focuses on the ties that bind all people together. These are the ties of family and friendship, the ties to ancestors, as well as the ties between elders and the next generation with whom they share their wisdom. The power of the Gods of community is in the security of home and hearth, and the joy of good company. Many such gods teach the value of tradition and simple ways of living in harmony with the natural world. They also tend towards the rule of law, not as a kind of great bureaucracy, but as sacred traditions passed from generation to generation. Some gods advocate the removal of harsh or disruptive forces to this order, and proper sanctions for the violation of the goodwill that any community ought to provide.</p>
+			<p class="indent">Clerics of such gods value unity, and praise the strength that can be gained when people support each other.</p>
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_SPELLS" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_BLESSING_OF_THE_HEARTH" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_CD_MAGNIFICENT_FEAST" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_CD_COMMUNITY_WATCH" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_PARAGON_OF_THE_PEOPLE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_BLESSING_OF_THE_HEARTH" level="1" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_CD_MAGNIFICENT_FEAST" level="2" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_CD_COMMUNITY_WATCH" level="6" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_PARAGON_OF_THE_PEOPLE" level="17" />
+		</rules>
+	</element>
+
+	<element name="Domain Spells" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_SPELLS">
+		<description>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>bless, goodberry</em></td></tr>
+				<tr><td>3rd</td><td><em>aid, heroism</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope, spirit guardians</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, faithful hound</em></td></tr>
+				<tr><td>9th</td><td><em>mass cure wounds, telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Blessing of the Hearth" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_BLESSING_OF_THE_HEARTH">
+		<description>
+			<p>From 1st level, you gain the ability to conjure a small flagstone hearth with a simple iron cooking pot whenever you rest. This hearth helps warm you and your companions, and can be used to prepare hearty and nutritious meals on the road. If you or any friendly creatures you make camp with would regain hit points at the end of a short rest by spending one or more hit dice, each of those creatures may choose to re-roll one of their resting dice, taking the higher roll between the two.</p>
+			<p class="indent">Additionally, you gain proficiency with Cook's Utensils.</p>
+		</description>
+		<sheet>
+			<description>You can conjure a small flagstone hearth with a simple iron cooking pot whenever you rest. If you or any friendly creatures you make camp with would regain hp at the end of a short rest by spending one or more hit dice, each of those creatures may choose to re-roll one of their resting dice, taking the higher roll between the two.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Magnificent Feast" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_CD_MAGNIFICENT_FEAST">
+		<description>
+			<p>Starting at 2nd level, you may use your Channel Divinity to conjure a magical feast for the rough road ahead. By spending 10 minutes, you may create a number of delicious, well-prepared, yet simple food items equal to your Wisdom modifier (minimum of 1). These food items will last up to 8 hours or until the end of a rest, and will never spoil. Eating food created in this way takes an action, providing whomever eats it with healing equal to 2d4 + your cleric level, and can remove either the frightened or poisoned condition from that creature (chosen by the creature when consumed).</p>
+		</description>
+		<sheet alt="Magnificent Feast" usage="Channel Divinity">
+			<description>By spending 10 minutes, you may create {{hwcs:community domain:magnificent feast:items}} simple food items. These food items will last up to 8 hours or until the end of a rest, and will never spoil. Eating food created in this way takes an action, providing whomever eats it with healing equal to 2d4 + {{level:cleric}}, and can remove either the frightened or poisoned condition from that creature (chosen by the creature when consumed).</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:community domain:magnificent feast:items" value="wisdom:modifier" bonus="bonus" />
+			<stat name="hwcs:community domain:magnificent feast:items" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Community Watch" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_CD_COMMUNITY_WATCH">
+		<description>
+			<p>Starting at 6th level, you can use your Channel Divinity to instill a feeling of vigilant protection in you and your allies. You grant yourself and a number of allies, up to your Wisdom modifier (minimum of 1), a boon from your deity. Allies must be able to see you and be within 30 feet to receive the boon. Once per round, a creature benefitting from this boon can roll a d6, adding the result to a skill check, saving throw, or attack roll. This effect lasts for a number of rounds equal to your Wisdom modifier (minimum of 1 round). A creature can only benefit from this effect if it can see at least one of its allies.</p>
+		</description>
+		<sheet alt="Community Watch" usage="Channel Divinity">
+			<description>You grant yourself and a number of allies, up to {{hws:community domain:community watch:number}}, a boon from your deity. Allies must be able to see you and be within 30 ft to receive the boon. Once per round, a creature benefitting from this boon can roll {{hwcs:community domain:community watch:dice}}d6, adding the result to a skill check, saving throw, or attack roll. This effect lasts for {{hwcs:community domain:community watch:number}} rounds. A creature can only benefit from this effect if it can see at least one of its allies.</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:community domain:community watch:number" value="wisdom:modifier" bonus="bonus" />
+			<stat name="hwcs:community domain:community watch:number" value="1" bonus="bonus" />
+			<stat name="hwcs:community domain:community watch:dice" value="1" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Divine Strike" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon with the power to punish wrongdoing. Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target. Visions of the evil they have wrought upon others flash before their eyes. You choose whether any foe reduced to 0 hit points by this attack remains stable or dies. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target. Visions of the evil they have wrought upon others flash before their eyes. You choose whether any foe reduced to 0 hp by this attack remains stable or dies.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 psychic damage to the target. Visions of the evil they have wrought upon others flash before their eyes. You choose whether any foe reduced to 0 hp by this attack remains stable or dies.</description>
+		</sheet>
+	</element>
+
+	<element name="Paragon of the People" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_COMMUNITY_DOMAIN_PARAGON_OF_THE_PEOPLE">
+		<description>
+			<p>At 17th level, your Community Watch grants an additional d6 to each affected ally. It also grants immunity to fear for the duration of the effect. Additionally, your Magnificent Feast produces twice as many foodstuffs, each of which can, when consumed, remove a single curse or disease affecting the target (including attunement to a cursed item).</p>
+		</description>
+		<sheet>
+			<description>Your Community Watch grants immunity to fear for the duration of the effect. Additionally, foodstufs produced by your Magnificent Feast, when consumed, can remove a single curse or disease affecting the target (including attunement to a cursed item).</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:community domain:community watch:dice" value="2" bonus="base" />
+			<stat name="hwcs:community domain:magnificent feast:items" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+</elements>

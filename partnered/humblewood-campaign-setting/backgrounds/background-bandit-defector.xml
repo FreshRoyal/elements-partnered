@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bandit Defector</name>
+		<description>Bandit Defector from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="background-bandit-defector.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/backgrounds/background-bandit-defector.xml" />
+		</update>
+	</info>
+
+	<element name="Bandit Defector" type="Background" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_BACKGROUND_BANDIT_DEFECTOR">
+		<description>
+			<p>You were once a member of the Bandit Coalition, moving from place to place, ambushing and robbing passing merchants. Something made you decide that path was no longer worth pursuing, and you left that life behind. But quitting the Bandit Coalition isn't so easy.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Deception, Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Disguise kit, one type of gaming set or musical instrument</li>
+				<li><strong>Equipment:</strong> a knife, a cooking pot, a winter blanket, an object you received as your cut from a successful robbery, a set of common clothes, and a pouch containing 10 gp</li>
+			</ul>
+			<h5>BANDIT SPECIALTY</h5>
+			<p>The Bandit Coalition is a rather loose organization of rogues and brigands, but there is still a degree of specialization within the ranks. This ensures that everyone knows what their job is and lessens confusion in the heat of a robbery. You can select your bandit specialty from the Bandit Specialty table, or roll randomly.</p>
+			<table>
+				<thead>
+					<tr><td class="col-10">d6</td><td>Bandit Specialty</td></tr>
+				</thead>
+				<tr><td>1</td><td>Lookout</td></tr>
+				<tr><td>2</td><td>Lifter</td></tr>
+				<tr><td>3</td><td>Thug</td></tr>
+				<tr><td>4</td><td>Runner</td></tr>
+				<tr><td>5</td><td>Hustler</td></tr>
+				<tr><td>6</td><td>Captain</td></tr>
+			</table>
+			<p class="indent"><strong><em>Lookouts</em></strong> typically watch the roads for any signs of Perch Guard patrols, signalling the team to bail if a heist looks too risky. They also keep an eye out for potential marks.</p>
+			<p class="indent"><strong><em>Lifters</em></strong> are the specialist thieves of an operation. They are usually as adept at pick-pocketing as they are at sneaking up behind a cart to liberate its valuables.</p>
+			<p class="indent"><strong><em>Thugs</em></strong> are the muscle of a bandit group, and use their size and strength to intimidate merchants into giving up without a fight. They also keep other bandits in line, at the captain's discretion.</p>
+			<p class="indent"><strong><em>Runners</em></strong> are the messengers and scouts of the Coalition, serving to smuggle pilfered goods to fences. Additionally, they pass information throughout the different camps of the organization. Their job often finds them working alone which makes them particularly vulnerable.</p>
+			<p class="indent"><strong><em>Hustlers</em></strong> are inveterate con-artists. Through careful planning and execution, their diversions can keep cart drivers occupied just long enough for the lifters to do their work, or create a seamless opening for an ambush.</p>
+			<p class="indent"><strong><em>Captains</em></strong> are the glue that holds each bandit team together, providing leadership, and stamping out dissention where necessary, often with force. They are figures that inspire with their skill and bravado.</p>
+			<div element="ID_HPP_HWCS_BACKGROUND_FEATURE_BANDIT_ROUTES" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Those who have chosen to leave the Coalition behind have not made the choice lightly. Some wrestle with their doubts, still caring deeply about the friends they left behind, while others have forsaken their former lives entirely.</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Survival, Disguise kit, Gaming Set/Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<select type="Proficiency" name="Gaming Set or Musical Intrument (Bandit Defector)" supports="Gaming Set||Musical Instrument" />
+			<grant type="Background Feature" id="ID_HPP_HWCS_BACKGROUND_FEATURE_BANDIT_ROUTES" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Bandit Routes" type="List">
+				<item id="1">Lookout</item>
+				<item id="2">Lifter</item>
+				<item id="3">Thug</item>
+				<item id="4">Runner</item>
+				<item id="5">Hustler</item>
+				<item id="6">Captain</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I am plucky and confident in my abilities, at least, that's what I want others to think.</item>
+				<item id="2">I often crack jokes to lighten the mood.</item>
+				<item id="3">I like to keep my secrets, and those who try to pry into my life irritate me.</item>
+				<item id="4">I have trouble sleeping unless I'm on the ground (or floor) in my bedroll.</item>
+				<item id="5">I picked up many stories during my time on the road, and I have one for every occasion.</item>
+				<item id="6">You mess with my friends, you mess with me.</item>
+				<item id="7">I never really had a plan in life, I tend to just go with the flow.</item>
+				<item id="8">I'm as cautious as they come.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Repentance. I've done terrible things in the past, and I want to try and make up for them. (Good)</item>
+				<item id="2">Nature. I've seen what's happening to the forest, and it's bigger than all of us. We're all doomed unless we do something about it. (Neutral)</item>
+				<item id="3">Friendship. My friends are like family to me, and I'll keep trying to do right by them until the end. (Good)</item>
+				<item id="4">Self-Preservation. Any good rat knows when it's time to flee a sinking ship. I want to be clear of the Bandit Coalition when it goes down. (Evil)</item>
+				<item id="5">Compassion. The struggle between humblefolk and birdfolk will only lead to more bloodshed. It needs to stop somewhere. (Good)</item>
+				<item id="6">Freedom. I just want to be free to live my own life, and make my own way in the world. (Chaotic)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I did some hard time in Alderheart's prison, and the perch guard who arrested me still has it out for me.</item>
+				<item id="2">I stole something valuable from the Captain of my unit. I'm in big trouble if they ever find me.</item>
+				<item id="3">I harbor a terrible secret that might change how people think of me if it got out.</item>
+				<item id="4">I still sympathize with the Coalition's aims, I just believe there's a better way.</item>
+				<item id="5">My friends in the Coalition didn't understand why I had to leave. They've branded me a traitor.</item>
+				<item id="6">I had people in the Coalition who looked up to me as a leader. They might still follow me, if I could only reach them.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I'm always ready to bail when something goes wrong.</item>
+				<item id="2">Whenever I see something valuable, I can't help but think of a way to steal it.</item>
+				<item id="3">It's hard for me to trust people. I've been burned before. </item>
+				<item id="4">I have a problem with authority. Nobody tells me what to do.</item>
+				<item id="5">There's a warrant out for my arrest.</item>
+				<item id="6">I have a bad habit that I picked up on the road.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Bandit Routes" type="Background Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_BACKGROUND_FEATURE_BANDIT_ROUTES">
+		<supports>Background Feature</supports>
+		<description>
+			<p>As someone who once assisted in countless highway robberies, you are familiar with the roads of the Wood and escape paths used by bandits. When you are not in combat, you (and companions you lead) can travel between locations that cut through forested areas twice as fast as your speed would normally allow.</p>
+		</description>
+		<sheet alt="Bandit Routes">
+			<description>As someone who once assisted in countless highway robberies, you are familiar with the roads of the Wood and escape paths used by bandits. When you are not in combat, you (and companions you lead) can travel between locations that cut through forested areas twice as fast as your speed would normally allow.</description>
+		</sheet>
+	</element>
+
+</elements>

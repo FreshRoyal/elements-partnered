@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scofflaw</name>
+		<description>Scofflaw from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="fighter-scofflaw.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/fighter-scofflaw.xml" />
+		</update>
+	</info>
+
+	<element name="Scofflaw" type="Archetype" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FIGHTER_SCOFFLAW">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>A fighter who hits hard and fights dirty, the Scofflaw balks at the ideals of honor and tradition, doing what they need to survive. Rules are made to be broken, and the Scofflaw extends this logic to their fighting style. Using every trick at their disposal to gain the upper hand against their foes, the Scofflaw cows their enemy into submission, or overwhelms their defenses with a single cheap shot.</p>
+			<p class="indent">Scofflaws eventually trust their notorious reputation to do much of the work for them, gaining the ability to cause foes to quake with a single threat. Scofflaws are a diverse bunch that run the gamut from graceful yet deadly knaves to bruiser thugs. What ties them together is their belief that there's no such thing as a bad win.</p>
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_INTIMIDATING_BANTER" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BRUTAL_BRAWLER" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_MISDIRECTION" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BLINDSIDE" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_INFAMY" />
+			<div element="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_TWO_FOR_FLINCHING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_INTIMIDATING_BANTER" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BRUTAL_BRAWLER" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_MISDIRECTION" level="7" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BLINDSIDE" level="10" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_INFAMY" level="15" />
+			<grant type="Archetype Feature" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_TWO_FOR_FLINCHING" level="18" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose this Martial Archetype at 3rd level, you gain proficiency in one of the following skills of your choice: Deception, Insight, Intimidation, Sleight of Hand, or Stealth. Alternatively, you may learn Thieves' Cant.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Skill Proficiency or Thieves' Cant" supports="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY_SKILL|ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY_THIEVES_CANT" />
+		</rules>
+	</element>
+	<element name="Skill Proficiency" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY_SKILL">
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in one of the following skills of your choice: Deception, Insight, Intimidation, Sleight of Hand, or Stealth.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (Scofflaw)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Thieves' Cant" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BONUS_PROFICIENCY_THIEVES_CANT">
+		<compendium display="false" />
+		<description>
+			<p>You learn Thieves' Cant.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+
+	<element name="Intimidating Banter" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_INTIMIDATING_BANTER">
+		<description>
+			<p>At 3rd level, you are adept at integrating insults and barbs into your fighting style. So long as you are in combat, you may choose to use Strength or Dexterity to make Charisma ability checks.</p>
+		</description>
+		<sheet>
+			<description>So long as you are in combat, you may choose to use Strength or Dexterity to make Charisma ability checks.</description>
+		</sheet>
+	</element>
+
+	<element name="Brutal Brawler" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BRUTAL_BRAWLER">
+		<description>
+			<p>At 3rd level, your tavernside scuffles have honed your ability to deal damage with just about anything that's handy. You have proficiency with improvised weapons, and treat any improvised weapon you handle as if it has the finesse quality.</p>
+			<p class="indent">Additionally, whenever you hit with an improvised weapon, you may spend a bonus action to break it over your opponent. Doing this destroys the weapon, but deals the maximum number each of the weapon's damage dice could deal to the target. Any additional dice added to the attack's damage roll are not affected by this ability.</p>
+			<p class="indent">At 10th level, the improvised weapons you wield become even more lethal in your hands. When you spend your bonus action to break an improvised weapon over your opponent, add an additional 2d6 to the weapon's base damage dice.</p>
+			<p class="indent">At 18th level, you have advantage on attacks you make with improvised weapons.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency with improvised weapons, and treat any improvised weapon you handle as if it has the finesse quality. Whenever you hit with an improvised weapon, you may spend a bonus action to break it over your opponent. Doing this destroys the weapon, but deals the maximum number each of the weapon's damage dice could deal to the target. Any additional dice added to the attack's damage roll are not affected by this ability.</description>
+			<description level="10">You have proficiency with improvised weapons, and treat any improvised weapon you handle as if it has the finesse quality. Whenever you hit with an improvised weapon, you may spend a bonus action to break it over your opponent. Doing this destroys the weapon, but deals the maximum number each of the weapon's damage dice could deal to the target. Any additional dice added to the attack's damage roll are not affected by this ability. This bonus action also adds an additional 2d6 to the weapon's base damage dice.</description>
+			<description level="18">You have proficiency with improvised weapons, have advantage on attacks you make with improvised weapons, and treat any improvised weapon you handle as if it has the finesse quality. Whenever you hit with an improvised weapon, you may spend a bonus action to break it over your opponent. Doing this destroys the weapon, but deals the maximum number each of the weapon's damage dice could deal to the target. Any additional dice added to the attack's damage roll are not affected by this ability. This bonus action also adds an additional 2d6 to the weapon's base damage dice.</description>
+		</sheet>
+	</element>
+
+	<element name="Misdirection" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_MISDIRECTION">
+		<description>
+			<p>At 7th level, you are adept at using words and gestures to taunt or fake-out your opponent, turning their lack of composure against them. This allows you to goad your foe into swinging in ways that can cause them to strike their allies, or which leave them open to a counterattack. As a bonus action you can misdirect an opponent within 5 feet of you. The target must succeed on an Intelligence saving throw against a DC equal to 8 + your proficiency bonus + your Strength or Dexterity modifier. On a failure, they must spend their reaction to attack a creature of your choice within 5 feet of them. If no other creatures are present within 5 feet of them, they waste their reaction attacking the air where you once were.</p>
+			<p class="indent">In order for you to misdirect a creature in this way they must be able to see, hear, or otherwise be able to understand you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can misdirect an opponent within 5 ft of you. The target must succeed on an Intelligence saving throw (DC {{hwcs:scofflaw:misdirection:dc}}). On a failure, they must spend their reaction to attack a creature of your choice within 5 feet of them. If no other creatures are present within 5 feet of them, they waste their reaction attacking the air where you once were. 
+			In order for you to misdirect a creature in this way they must be able to see, hear, or otherwise be able to understand you.</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:scofflaw:misdirection:dc" value="8" />
+			<stat name="hwcs:scofflaw:misdirection:dc" value="proficiency" />
+			<stat name="hwcs:scofflaw:misdirection:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="hwcs:scofflaw:misdirection:dc:ability" value="dexterity:modifier" bonus="ability"/>
+			<stat name="hwcs:scofflaw:misdirection:dc" value="scofflaw:misdirection:dc:ability" />
+		</rules>
+	</element>
+
+	<element name="Blindside" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_BLINDSIDE">
+		<description>
+			<p>At 10th level, you are truly skilled at exploiting the openings you create in combat, hitting off-guard opponents with precise blows that are swift and deadly. You may use this technique against any creature that hasn't yet taken a turn in combat, or who you have successfully misdirected this turn. You may also apply this technique to any attack roll you make with advantage. On a hit, you exploit an opening in the target's defenses, dealing an extra 5d6 points of damage. Once you use this ability, you can't use it again until you have taken a short or long rest.</p>
+			<p class="indent">At 15th level, the damage dealt by your blindside increases to 7d6.</p>
+			<p class="indent">At 18th level the damage dealt by your blindside increases to 9d6. If you have no uses of this ability at the beginning of combat on your turn, you regain one use of it.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You may use this technique against any creature that hasn't yet taken a turn in combat, or who you have successfully misdirected this turn. You may also apply this technique to any attack roll you make with advantage. On a hit, you exploit an opening in the target's defenses, dealing an extra 5d6 points of damage.</description>
+			<description level="15">You may use this technique against any creature that hasn't yet taken a turn in combat, or who you have successfully misdirected this turn. You may also apply this technique to any attack roll you make with advantage. On a hit, you exploit an opening in the target's defenses, dealing an extra 7d6 points of damage.</description>
+			<description level="18">You may use this technique against any creature that hasn't yet taken a turn in combat, or who you have successfully misdirected this turn. You may also apply this technique to any attack roll you make with advantage. On a hit, you exploit an opening in the target's defenses, dealing an extra 9d6 points of damage. If you have no uses of this ability at the beginning of combat on your turn, you regain one use of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Infamy" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_INFAMY">
+		<description>
+			<p>At 15th level, your reputation precedes you, making it easy for you to strike fear into the hearts of anyone foolish enough to oppose you. As part of your Attack action, you can utter deadly threats to a single target within 30 feet of you, causing them to become frightened of you for 1 minute on a failed Wisdom saving throw. An affected target may repeat this saving throw at the end of each of their turns, ending the effect on a success. The DC for this saving throw is 8 + your proficiency bonus + your Strength or Dexterity modifier. A creature who has witnessed or heard tales of your ruthlessness makes this saving throw with disadvantage.</p>
+			<p class="indent">In order for you to use this feature, a creature must be able to see, hear, or otherwise be able to understand you.</p>
+		</description>
+		<sheet action="Attack">
+			<description>You can utter deadly threats to a single target within 30 ft of you, causing them to become frightened of you for 1 minute on a failed Wisdom saving throw (DC {{hwcs:scofflaw:infamy:dc}}). An affected target may repeat this saving throw at the end of each of their turns, ending the effect on a success. A creature who has witnessed or heard tales of your ruthlessness makes this saving throw with disadvantage.
+			In order for you to misdirect a creature in this way they must be able to see, hear, or otherwise be able to understand you.</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:scofflaw:infamy:dc" value="8" />
+			<stat name="hwcs:scofflaw:infamy:dc" value="proficiency" />
+			<stat name="hwcs:scofflaw:infamy:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="hwcs:scofflaw:infamy:dc:ability" value="dexterity:modifier" bonus="ability"/>
+			<stat name="hwcs:scofflaw:infamy:dc" value="hwcs:sscofflaw:infamy:dc:ability" />
+		</rules>
+	</element>
+
+	<element name="Two For Flinching" type="Archetype Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ARCHETYPE_FEATURE_SCOFFLAW_TWO_FOR_FLINCHING">
+		<description>
+			<p>At 18th level, you have perfected the art of exploiting your opponent's weakness. Whenever you take the attack action against an opponent you have successfully misdirected this turn, or an opponent that is afflicted by a condition, you may make one additional attack against that opponent. You may only use this feature once per round.</p>
+		</description>
+		<sheet usage="1/Round">
+			<description>Whenever you take the attack action against an opponent you have successfully misdirected this turn, or an opponent that is afflicted by a condition, you may make one additional attack against that opponent.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Luma</name>
+		<description>Luma from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="race-luma.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-luma.xml" />
+		</update>
+	</info>
+
+	<element name="Luma" type="Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACE_LUMA">
+		<description>
+			<p>Lumas are a race of polar opposites when it comes to their role in perch society. They are as often shunned for their eccentricities as they are celebrated for them. Lumas are smaller than most birdfolk, and resemble either doves or pigeons. Many have ruffs of feathers that shine with unique iridescent colours, something which can be seen as either alluring or unusual. Most fledgling lumas approach social situations with hesitation, until a time when society inevitably labels them an outcast or a notable figure, and the individual naturally adapts to the role.</p>
+			<h4>Touched</h4>
+			<p>To most, lumas seem perpetually disorganized and distracted, which has lead to a belief that they are of low intelligence. In truth, lumas have a unique perception of the world. They are able to interpret information in an uncommon way, allowing them to see possibilities others cannot.</p>
+			<p class="indent">These inherent talents, sometimes dismissed as luck, can be improved upon with training and study. Pairing their natural gifts with magical education, powerful luma wizards and radical scholars have been at the forefront of magical innovation for some time in Humblewood.</p>
+			<h4>Of Two Worlds</h4>
+			<p>While most lumas find their peculiar nature to be a hindrance in society, some make use of their gifts to climb the social ladder. These individuals inspire curiosity and have an air of authority about them. This divide in social standing among lumas can make for curious and strained relationships among families and friends.</p>
+			<p class="indent">Other lumas find it difficult to exist in the larger society of birdfolk cities. It is said that this is a main contributing factor for the close-knit, and exclusive luma districts in larger cities. Lumas tend to keep to themselves, preferring the company of those who understand them rather than those who pass judgement.</p>
+			<h4>Luma Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Lumas are short-lived reaching adulthood around 20 years. Few lumas live beyond 70 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Spurred by personal interests and flights of fancy, lumas lean towards chaotic alignments. While generally good natured, those that have been spurned by society find it hard to see the benefits of altruism, but even under such circumstances lumas are rarely evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Lumas are the shortest and lightest of the birdfolk, standing roughly 3 feet tall and weighing only around 30 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Glide.</em></strong> Using your feathered arms, you can slow your fall, and glide short distances. When falling you can use your reaction to spread your arms, stiffen your wing feathers, and slow your descent. While doing so, you continue to fall gently at a speed of 60 feet per round, taking no fall damage when you land. If you would fall at least 10 feet in this way, you may fly up to your movement speed in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</p>
+			<p class="indent"><strong><em>Wing Flap.</em></strong> As a bonus action, you can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed. You can use it in conjunction with a regular jump, but not while gliding.</p>
+			<p class="indent"><strong><em>Touched.</em></strong> You know one cantrip from the sorcerer spell list. Charisma is your spellcasting ability for this cantrip.</p>
+			<p class="indent"><strong><em>Fated.</em></strong> Whether by luck or a guiding presence, you always seem to find your way. You can choose to reroll any attack, skill check, or saving throw. You can decide to do this after your roll, but only before the outcome of the roll has been determined. You can't use this feature again until you have completed a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Birdfolk. You can also understand Auran, though you cannot speak it naturally.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> There are two main subraces of luma: sable and sera. Choose one of these subraces.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d4">2'8"</set>
+			<set name="weight" modifier="1">25 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Luma)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||HWCS Birdfolk||HWCS Auran Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_GLIDE" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_WING_FLAP" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_TOUCHED" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_FATED" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Glide" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_GLIDE">
+		<description>
+			<p>Using your feathered arms, you can slow your fall, and glide short distances. When falling you can use your reaction to spread your arms, stiffen your wing feathers, and slow your descent. While doing so, you continue to fall gently at a speed of 60 feet per round, taking no fall damage when you land. If you would fall at least 10 feet in this way, you may fly up to your movement speed in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When falling you can use your reaction to spread your arms and slow your descent. While doing so, you continue to fall gently at a speed of 60 ft per round, taking no fall damage when you land. If you would fall at least 10 ft in this way, you may fly up to {{speed}} ft in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_HPP_HWCS_GRANTS_GLIDE_TRAIT" />
+		</rules>
+	</element>
+
+	<element name="Wing Flap" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_WING_FLAP">
+		<description>
+			<p>As a bonus action, you can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed. You can use it in conjunction with a regular jump, but not while gliding.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can use your powerful feathered arms to propel yourself upward a distance equal to {{speed:half}} ft. You can use it in conjunction with a regular jump, but not while gliding.</description>
+		</sheet>
+	</element>
+
+	<element name="Touched" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_TOUCHED">
+		<description>
+			<p>You know one cantrip from the sorcerer spell list. Charisma is your spellcasting ability for this cantrip.</p>
+		</description>
+		<sheet>
+			<description>You know one cantrip of your choice from the sorcerer spell list. &#13;
+			Your spellcasting ability for this cantrip is Charisma.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Sorcerer Cantrip (Luma)" supports="Sorcerer&amp;&amp;0" />
+		</rules>
+	</element>
+
+	<element name="Fated" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_FATED">
+		<description>
+			<p>Whether by luck or a guiding presence, you always seem to find your way. You can choose to reroll any attack, skill check, or saving throw. You can decide to do this after your roll, but only before the outcome of the roll has been determined. You can't use this feature again until you have completed a long rest.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>You can choose to reroll any attack, skill check, or saving throw. You can decide to do this after your roll, but only before the outcome of the roll has been determined.</description>
+		</sheet>
+	</element>
+
+	<element name="Subrace" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SUBRACE">
+		<description>
+			<p>There are two main subraces of luma: sable and sera. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Luma Subrace" supports="HWCS Luma Subrace" />
+		</rules>
+	</element>
+
+	<!--Sable-->
+
+	<element name="Sable Luma" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_LUMA_SABLE">
+		<supports>HWCS Luma Subrace</supports>
+		<description>
+			<p>As a sable luma, you are often found on the fringes of social situations. While you are overlooked by the crowd, your gifts are undeniable. You are destined for greatness.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Hard to Read.</em></strong> Your innate eccentricities make it hard for other folk to figure you out. When someone performs a Wisdom (Insight) check against you, they have disadvantage on their roll. Additionally, you gain advantage on Charisma (Deception) checks made against creatures that are not lumas.</p>
+			<p class="indent"><strong><em>Resilience.</em></strong> You have advantage on saving throws against poison and resistance against poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Sable Luma)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SABLE_HARD_TO_READ" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SABLE_RESILIENCE" />
+		</rules>
+	</element>
+	
+	<element name="Hard to Read" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SABLE_HARD_TO_READ">
+		<description>
+			<p>Your innate eccentricities make it hard for other folk to figure you out. When someone performs a Wisdom (Insight) check against you, they have disadvantage on their roll. Additionally, you gain advantage on Charisma (Deception) checks made against creatures that are not lumas.</p>
+		</description>
+		<sheet>
+			<description>When someone performs a Wisdom (Insight) check against you, they have disadvantage on their roll. Additionally, you gain advantage on Charisma (Deception) checks made against creatures that are not lumas.</description>
+		</sheet>
+	</element>
+
+	<element name="Resilience" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SABLE_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against poison and resistance against poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<!--Sera-->
+
+	<element name="Sera Luma" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_LUMA_SERA">
+		<supports>HWCS Luma Subrace</supports>
+		<description>
+			<p>As a sera luma, you are revered and celebrated by those around you. You have an almost unnatural beauty and grace, inspiring admiration in some and jealousy in others.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Center of Attention.</em></strong> You have proficiency in the Performance skill.</p>
+			<p class="indent"><strong><em>Songbird.</em></strong> When you perform, you can demonstrate the innate and mystical power of your Charisma. You may cast the <i>charm person</i> spell once per long rest. This spell does not require any somatic components to cast. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Sera Luma)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SERA_CENTER_OF_ATTENTION" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SERA_SONGBIRD" />
+		</rules>
+	</element>
+
+	<element name="Center of Attention" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SERA_CENTER_OF_ATTENTION">
+		<description>
+			<p>You have proficiency in the Performance skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Center of Attention)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Songbird" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_LUMA_SERA_SONGBIRD">
+		<description>
+			<p>When you perform, you can demonstrate the innate and mystical power of your Charisma. You may cast the <i>charm person</i> spell once per long rest. This spell does not require any somatic components to cast. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You can cast the charm person spell as a 1st-level spell once per long rest. Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Birdfolk" type="Language" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK">
+		<supports>Standard, HWCS Birdfolk</supports>
+		<description>
+			<p>Birdfolk is a language of clicks, caws, and whistles. Though primarily oral, a system for writing Birdfolk in pictograms was developed long before the founding of Alderheart and has since transformed into a set of abstract glyphs representing different sounds. Birdfolk can be written quickly with a quill, or scratched easily with a claw, and has been widely adopted throughout the Wood.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Birdfolk, Humblefolk</set>
+			<set name="script">Birdfolk</set>
+		</setters>
+	</element>
+
+	<element name="Cervan" type="Language" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_LANGUAGE_CERVAN">
+		<supports>Standard, HWCS Cervan Language</supports>
+		<description>
+			<p>Cervan is a complex language with no written script. It is seen as disrespectful to try and transcribe it using Birdfolk characters. Much of cervan history is preserved by village elders and passed down orally through the generations as stories, songs, and sayings. The adage, "What is essential to learn lies in the teaching", is often invoked to illustrate this point.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Cervans</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Hedge" type="Language" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_LANGUAGE_HEDGE">
+		<supports>Standard, HWCS Hedge Language</supports>
+		<description>
+			<p>Hedge is a language meant to be spoken softly. It confounds many who try to learn it due to the prevalence of passive voice and the deferential manners built into conversation. These are meant to ensure that everyone's feelings are heard and respected. It is written using a variation of Sylvan script.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Hedges</set>
+			<set name="script">Sylvan</set>
+		</setters>
+	</element>
+
+	<element name="Jerbeen" type="Language" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_LANGUAGE_JERBEEN">
+		<supports>Standard, HWCS Jerbeen Language</supports>
+		<description>
+			<p>Jerbeen is a system of squeaks and clicks represented in writing by using a variant of Birdfolk alphabet. It is a polite but direct language designed to communicate information quickly and effectively between multiple listeners.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Jerbeens</set>
+			<set name="script">Birdfolk</set>
+		</setters>
+	</element>
+
+	<element name="Mapach" type="Language" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_LANGUAGE_MAPACH">
+		<supports>Standard, HWCS Mapach Language</supports>
+		<description>
+			<p>Mapach is a very technically dense language that often incorporates rough equations and estimations of physical properties in normal conversation. Awareness of one's surroundings is key to survival, and the Mapach language emphasizes this. Mapach uses its own script of glyphs made of various lines, dashes, and dots.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Mapachs</set>
+			<set name="script">Mapach</set>
+		</setters>
+	</element>
+
+	<element name="Vulpin" type="Language" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_LANGUAGE_VULPIN">
+		<supports>Standard, HWCS Vulpin Language</supports>
+		<description>
+			<p>Vulpin is a language of growls, snarls, and yips. It is written in its own flowing cursive script. Speakers are taught to switch between low and high class versions of Vulpin depending on the context. The biggest stumbling block for new speakers is learning when to use which form.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Vulpins</set>
+			<set name="script">Vulpin</set>
+		</setters>
+	</element>
+
+	<append id="ID_MM_LANGUAGE_AURAN">
+		<supports>HWCS Auran Language</supports>
+	</append>
+
+</elements>

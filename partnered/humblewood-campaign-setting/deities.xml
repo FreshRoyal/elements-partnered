@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deities</name>
+		<description>Deities from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/deities.xml" />
+		</update>
+	</info>
+
+	<element name="Altus, The Enduring" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_ALTUS">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Challenge yourself. Endurance brings change, change brings growth, and growth brings strength!</p>
+			<p>Altus is depicted as a powerful horned owl with white feathers, who rides across the sky pouring thunderheads from his chalice. Altus is a pragmatic Amaranthine, believing that strength is cultivated through enduring hardships, overcoming challenges, and testing mortal limitations. Stories of Altus' tenacity and endurance abound, including the time he captured the moon as a gift to Ardea, and the time he made the mountains by lifting the earth. Themes of bravery and strength are common in his myths.</p>
+			<p class="indent">Altus resides with Tyton in the lands of death. Legend says that every year Altus makes the long and arduous journey to bring winter storms and foul weather. According to myth, this is as much to test the endurance of his people as it is to test himself by crossing the divide between life and death, which binds the Great Rhythm. Summers with especially bad weather are credited to Altus, who made the trip early to keep his people strong and vigilant.</p>
+			<p class="indent">Altus is the patron Amaranthine of the strig, and is celebrated by them annually in a great winter festival. Games and activities during this festival challenge entrants with feats of strength and endurance. No official winner is declared, and all who participate are lauded for their courage and given a special place at the feasting table.</p>
+			<p class="indent">Altus usually finds veneration among warriors or athletes, but also among common people who pray for strength to withstand personal hardships, bad harvests, and natural disasters.</p>
+		</description>
+		<sheet alt="Altus" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Tempest, War</set>
+			<set name="symbol">An ornate wooden chalice, out of which pour storm clouds</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Ardea, The Dawnmother" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_ARDEA">
+		<description>
+			<p><strong><em>Dogma:</em></strong> All life, great and small, is equal and sacred. Protect life, and be kind to all living beings.</p>
+			<p>Ardea is depicted as a great stork with shining golden feathers, wreathed in flowers or other plant life. She is the Amaranthine of the sun who watches over the flora and fauna of Everden and provides them with light and energy to grow.</p>
+			<p class="indent">Ardea's light is present in all living things, from the tiniest sprouting seed to the mightiest beast. Her light also represents love and kindness, which every creature is believed to possess. All birdfolk are said to be Ardea's children, and many think she appears as a stork to demonstrate her maternal love for them—although she is speculated to appear in a different form to each woodland race.</p>
+			<p class="indent">When she vacates the sky she rests in a plane of pure light and life. There, great celestial storks carry out her will, and act as her messengers in the mortal world. An old folk story relates that Ardea sends these storks to fly unnoticed into Everden, where they place her animating light into unhatched eggs. This is why birdfolk often refer to her as "Mother Stork".</p>
+			<p class="indent">She is worshiped by good aligned characters of every sort: poets write of the love she has bestowed upon the world, priests ask her to watch over the newly born, and farmers pray to her for good harvests and light winters.</p>
+		</description>
+		<sheet alt="Ardea" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Life, Light</set>
+			<set name="symbol">A radiant sun with two golden feathers</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Cairith, The Resolute" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_CAIRITH">
+		<description>
+			<p><strong><em>Dogma:</em></strong> The way of nature is growth. Let nothing stifle you, and you will flourish.</p>
+			<p>An Amaranthine of vigor and strength, Cairith is the patron spirit of the cervans. The energy that Cairith oversees is the cause of slow, steady growth and longevity. In living beings, this force manifests as the ability to run, jump, grow, and become strong. Ancient forests, where plants cover the trees and giant beasts are endowed with the intelligence to speak, are seen as signs of Cairith's blessing. Cairith teaches that adversity brings strength, but his teachings differ from those of Altus. Altus encourages his followers to seek out challenges, where Cairith sees life itself as a perpetual struggle. The true test of survival is always against oneself and one's own limits. By persevering in spite of these limits, Cairith counsels his adherents to triumph over the forces of death. This struggle must one day end, of course, and so the followers of Cairith seek to honor the daily triumphs of life as they happen. An existence is considered well-spent if it was lived unflinchingly, even in the face of sorrows and hardships. Cairith adamantly opposes necromancy as those made undead truly cannot appreciate life's struggles.</p>
+			<p class="indent">Cairith is described as a mighty stag with antlers covered in moss and flowering vines. He is massively tall, and wherever he walks plants sprout from the earth. Where others see a tangle of vegetation, Cairith sees the plan of nature unfolding. All cervans profess a kinship to Cairith. But rather than claiming him as a direct ancestor, he is seen as a guardian spirit. Some say he was the first to be born from the land when the Dawnmother gave Everden life.</p>
+			<p class="indent">Cairith guided the first cervans, and blessed them with many gifts so that they might survive in the primitive forest. One of these gifts, the power of The Sight, is attributed to Cairith. Certain cervans are gifted with The Sight, and this allows them to glimpse events that have occurred in the past, present, and future.</p>
+			<p class="indent">Cairith finds reverence among rangers, druids, healers, and community leaders. Paladins invoke his dogma to give heart to those they defend. Cervan diviners gifted with the Sight call upon Cairith in their rituals. Cairith also has many followers among common people, especially humblefolk who have suffered hardships.</p>
+		</description>
+		<sheet alt="Cairith" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">LN</set>
+			<set name="domains">Life</set>
+			<set name="symbol">A pair of white antlers wrapped in flowering vines</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Clhuran, The Fickle" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_CLHURAN">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Fortune will not always favor you, but live each moment to the fullest, for it is where you are meant to be.</p>
+			<p>Fickle and unpredictable, Clhuran is the Amaranthine of fortune, magic, and fate. He is commonly represented in dual profile: on one side as a jester with bangles and bells, carrying a marotte, and on the other as an executioner, weilding an axe. Clhuran's double profile illustrates his fickle nature, and the nature of fate. Clhuran's tales are of his luck, mirth, and jest, though he is also known to be a capricious Amaranthine. His normally pleasant demeanor can shift at a moment's notice to melancholy or jealousy.</p>
+			<p class="indent">Clhuran teaches that everyone is tied to the web of fate by invisible strands. Each thread extends out into the cosmos, darting and weaving as it moves to the Rhythm. Clhuran's wisdom is to allow yourself to be moved by the threads of fate, to feel the pull of possibility around you, and to act in accordance with their whims. Even misfortune may lead one to an important place, or so Clhuran says. Good times and bad times are all part of the tapestry of fate, and there is a strength that can be drawn from accepting one's destiny. According to his teachings, good luck is nothing more than being open to change, and following the will of the universe.</p>
+			<p class="indent">Lumas are seen to be Clhuran's chosen, because of their connection to the threads of fate, which manifests as a natural magical talent. Arcane spellcasters, seers, and fortune tellers pray to Clhuran for insight into the will of the universe. Bards, artists, and writers also pay homage to Clhuran, because of his wild moods and connection to emotion. They hope to follow their fate to events of great import, which may be immortalized by their art.</p>
+		</description>
+		<sheet alt="Clhuran" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Arcana, Trickery</set>
+			<set name="symbol">Two birds, one singing, the other crowing</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Gaspard, The Champion" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_GASPARD">
+		<description>
+			<p><strong><em>Dogma:</em></strong> With courage and conviction, the least among us can inspire the greatest.</p>
+			<p>An Amaranthine of heroism and valor, Gaspard is "The Champion". In life, Gaspard was a great jerbeen leader. Upon his death, the Great Rhythm took him, and his spirit ascended as an Amaranthine. It is believed he was chosen to serve as an example of greatness, one to inspire others for generations to come. Tales of his mortal adventures have earned him renown. He traveled the whole of Everden, with his closest companions, slaying monsters, unseating tyrants, and bringing peace and prosperity wherever he roamed.</p>
+			<p class="indent">Gaspard's followers believe the actions of an individual ripple outwards, affecting those around us, which in turn can embolden anyone to achieve greatness. The example of Gaspard teaches jerbeen to affect others with acts of courage, heroism, and kindness.</p>
+			<p class="indent">At times, Gaspard has been at odds with other Amaranthine. Before he ascended, there is a tale of him meeting Kren, where he was forced to show no sign of fear, lest she eat him and his companions. Thankfully, his composure kept his group strong, and in turn their bravery kept him strong. They escaped with their lives.</p>
+			<p class="indent">Gaspard's example has lead many to heed the paladin's call. Gaspard is worshiped by warriors who seek to match his exploits, as well as bards who seek to inspire others through the telling of heroic tales.</p>
+			<p class="indent">Humblefolk hold summer festivals in his honor. These holidays include storytelling, puppet shows, and magnificent jousts where armored jerbeens mounted on tamed wolves put on a spectacle of courage and daring before the crowds.</p>
+		</description>
+		<sheet alt="Gaspard" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Community</set>
+			<set name="symbol">Three rapiers, tied together by a pink ribbon</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Gesme, The Brilliant" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_GESME">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Learn, create, and discover. Sometimes the old ways must burn to make way for the new.</p>
+			<p>An enigmatic figure, Gesme is the Amaranthine who governs knowledge, insight, and inspiration. She represents fire, the spark which both inspires and destroys. She acknowledges that delving into the unknown requires the courage to be burned.</p>
+			<p class="indent">Gesme is depicted as a raven, whose body is alight with the flames of knowledge. In her talons she carries a staff of burning oak which lights the way for scholars. Gesme is best known for stealing fire from Ardea's sun and bringing it to Everden, burning her feathers black in the process.</p>
+			<p class="indent">Her stolen flame brought fire and the light of reason to the world. While this act earned her a place among the Amaranthine, many feel it was a folly to give fire to mortals.</p>
+			<p class="indent">She is the patron spirit of the corvums. Legend has it that all corvums have at least one black feather, symbolic of Gesme's seared plumage.</p>
+			<p class="indent">Gesme teaches that chaos and innovation are part of a great cycle. Each discovery spawns a new mystery, which leads to further discovery in a never-ending loop, in which the old becomes fodder for the new. She is a symbol of all that birdfolk can achieve if they dare to push boundaries and harness their creativity.</p>
+			<p class="indent">First among her followers are those who study the arcane arts or experiment with magical forces, such as scholars and mages. She is also revered by artisans, and craftspeople of every kind. Blacksmiths in particular understand the danger and power of working directly with flames and pay her special reverence. Her followers pray to her for the spark of creativity that will ignite the fires of creation.</p>
+		</description>
+		<sheet alt="Gesme" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">N</set>
+			<set name="domains">Forge, Knowledge</set>
+			<set name="symbol">A gnarled oak branch, burning at one end</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Hanera, The Provider" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_HANERA">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Respect the earth and her gifts, share what you can with those in need, and always live with compassion in your heart.</p>
+			<p>Hanera is the birdfolk Amaranthine closest to nature. She holds dominion over all things that grow within the earth. While Ardea is the animating force of life, Hanera is the guiding heart that gives life purpose and meaning. She encourages birdfolk to see the world not only from the treetops, but from the loam and all the tiny living things beneath. Everything, Hanera teaches, is connected as part of a vast continuum of life stretching back to the earliest ancestors.</p>
+			<p class="indent">Hanera is depicted as a pheasant with feathers that fade to green as they morph into plants and flowers. She is the patron Amaranthine of the gallus, and is invoked when growing anything from the soil.</p>
+			<p class="indent">As a spirit of both earth and hearth, Hanera governs the bonds that connect people to one another and to nature. She is celebrated at feasts, and during ceremonies involving the sharing of food.</p>
+			<p class="indent">Her generosity and kindness are renowned, as is her intolerance for evil. It is Hanera's will that evil be challenged wherever it is found. Not with violence, but with acts of compassion. Those who harbor darkness in their hearts require the warmth of friends, family, and shelter to heal, and so Hanera teaches birdfolk never to give up on each other. Even the most wicked among us can be healed with love.</p>
+			<p class="indent">Hanera is worshiped by farmers and druids, but many clerics tend shrines in her honor, mostly in modest woodland villages. Her holy symbol is often hung above the doorway, inside a home, to bless the dwelling and all those within.</p>
+		</description>
+		<sheet alt="Hanera" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Community, Nature</set>
+			<set name="symbol">A bird with plants for tail feathers</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Hath, The Whisperer" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_HATH">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Be crafty, be cunning, be careful. Death is everywhere, but heed my words, and you can evade its grasp.</p>
+			<p>Known as "The Uncaring", "The All-Knowing Stars", and "The Whisperer", Hath is an Amaranthine that humblefolk and birdfolk alike struggle to understand. In spite of this conflict, Hath is revered by the mapach. According to them, Hath was a constellation of stars who listened carefully to the Nightfather. In ancient times, the Nightfather spoke and spread his vast wisdom across the primordial darkness. He spoke of night, of time, and of the worlds beyond life. The constellation listened and grew wise, too wise to remain as stars. Thus, it became a part of the Great Rhythm as the Amaranthine of fear, doubt, and secrets. This is why, the tellers say, the Nightfather no longer speaks.</p>
+			<p class="indent">Ever since, Hath has whispered its unsettling secrets to the creatures below, speaking quietly so the other stars cannot hear. Mapachs were not the first to hear its voice, but they claim to be the first to truly make use of its secrets. While priests of Hath do not necessarily "hear" the words of the stars, mapachs believe that Hath speaks in subtle ways. Those frightened while traveling at night or caught in dangerous situations are bestowed with cautious and crafty thoughts by Hath. If heeded, one may survive. If ignored, one may die. Either way, Hath, The Uncaring, is apathetic.</p>
+			<p class="indent">The stars teach the importance of trusting in oneself and keeping your wits about you, even in dire situations. When a mapach gets a shiver of premonition, something they could never have known, it is said to be the whispers of Hath they have heard.</p>
+			<p class="indent">Hath has few followers, and most are mapachs. Rangers and travelers passing through dangerous parts of the Wood at night often pay homage to the All-Knowing Stars. While some pray to this Amaranthine for guidance, others hope not to hear Hath's voice, as the stars only whisper to those in peril. Warlocks make pacts with this Amaranthine for knowledge of the worlds beyond life. Most consider this practice to be rather reckless—The Uncaring is known to exact a terrible price for such secrets. Some lose their mind delving into the vast reservoir of knowledge that Hath is all too eager to supply.</p>
+		</description>
+		<sheet alt="Hath" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Night</set>
+			<set name="symbol">A raccoon mask with a single star above it</set>
+			<set name="gender"></set>
+		</setters>
+	</element>
+
+	<element name="Henwin, The Kind" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_HENWIN">
+		<description>
+			<p><strong><em>Dogma:</em></strong> The rose only blooms thanks to the many kindnesses of the soil.</p>
+			<p>Henwin, the patron spirit of hedges, is venerated by humblefolk of all kinds. They are the Amaranthine of balance, and teach that all things in the forest must be respected, as all are connected in a great web of kindness. It is thanks to the sun that the plants grow, and because the plants grow, all living things have food. Decayed food turns into soil, which nourishes more life. The teachings of Henwin ask followers to take into consideration the many kindnesses which brought each of them into being and nourished them throughout their lives.</p>
+			<p class="indent">It is only fitting, then, that Henwin is said to be a hedgehog who spends their life in the forest. Storytellers say that they reside in an ancient part of the world, hidden from the eyes of most mortals, where they inhabit a tangle of roots from every forest that has ever grown. Here they tend to a garden of moss, fungi, and insects, helping to keep the living roots healthy. Henwin ensures that even the husks of withered plants can provide for the vegetation and creatures who rely on dead things for sustenance.</p>
+			<p class="indent">Unlike other Amaranthine, Henwin is not described as male or female. Being a spirit of balance, they are considered to possess traits of all genders. They are often depicted carrying a yellow rose, which is their symbol. When a yellow rose blooms, it is said to be Henwin, blessing a forest with the beauty of their quiet grace. These roses are often given as tokens of friendship.</p>
+			<p class="indent">Henwin teaches understanding, and respect for the web of kindness that connects all life. If death is dealt indiscriminately, the web may become damaged. Although it is resilient, the web is still as fragile as one made from spider's silk. It is the duty of all who follow Henwin to strengthen the web and to help maintain the balance which supports all living things.</p>
+			<p class="indent">Henwin is followed by druids, who take the message of nature's web of kindness to heart. Henwin's druids can be found protecting groves and leading communities, keeping both safe from those with harmful intentions. Priests of Henwin often invoke the Amaranthine Henwin's name to protect the fauna, flora, and folk under their care. Gardeners honor Henwin by keeping plots filled with a diverse array of complementary plant and insect life.</p>
+		</description>
+		<sheet alt="Henwin" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Nature</set>
+			<set name="symbol">A blooming yellow rose, flecked with dew</set>
+			<set name="gender"></set>
+		</setters>
+	</element>
+
+	<element name="Kren, The Sly" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_KREN">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Guile is the greatest weapon at your disposal. Hone it, use it, and your fangs will always find their mark.</p>
+			<p>The Amaranthine of predation and guile, Kren is portrayed as a great fox-like beast, whose form is usually obscured by shadows. The only known parts of her form are her fangs and her eyes, glinting as they catch the light. Kren appears in many tales, as often a villain as a hero, and even then it is rare that her motives are laudable. Yet, one can learn from Kren, for her stories often demonstrate how hubris can be exploited, how heroes can be laid low, and how there is no weapon so deadly as flattery.</p>
+			<p class="indent">The patron spirit of the vulpin, Kren teaches them to walk the line between savagery and sophistication, and how and when each should be used. For many other humblefolk she demonstrates the value of cunning, showing that no creature is so wise or mighty that they cannot be taken advantage of.</p>
+			<p class="indent">Stories of her origin are often vague and contradictory. A popular vulpin myth tells that Kren came from a time before life existed on Everden. That she was an ancient force, ready to feast on a world full of new and fresh meat, who simply awoke when the Dawnmother and Nightfather set creation in motion. Others believe she was the first vulpin, who ascended from an ordinary fox. As the story goes, Kren tricked the Dawnmother into allowing her to watch over the Amaranthine's two divine feathers. Kren ate a single feather and became the Amaranthine of guile. This is why the Dawnmother only carries one feather in her beak.</p>
+			<p class="indent">Kren isn't worshiped in the same way as other Amaranthine. Rather, Kren is invoked in stories to teach the dangers of vainglory. Many outlaws keep shrines to her patronage. These individuals include thieves, smugglers, and purveyors of black market goods. Priests of Kren use her stories to teach others how to be crafty and cunning, but also to be cautious of the wiles of others. There are those, however, who invoke Kren for dark rites and rituals to gain power for themselves. Kren is always ready to make bargains with such supplicants, but all who do are fated to be devoured by her when their lives finally come to an end.</p>
+		</description>
+		<sheet alt="Kren" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Trickery</set>
+			<set name="symbol">An eye wreathed in fangs</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Reya, The Explorer" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_REYA">
+		<description>
+			<p><strong><em>Dogma:</em></strong> Seek out unknown horizons. Your skills can take you anywhere if properly harnessed.</p>
+			<p>Reya, the Amaranthine of wind, is depicted as a great hawk wrapped in a cloak of swirling clouds, wielding a great longbow in her talons. She is the patron of the raptors, and is believed to have endowed them with their superior senses.</p>
+			<p class="indent">The wind is free, streaming unimpeded across land and sea. Reya embodies this freedom. Her spirit glides through trees, over mountains, and out to the four corners of the world. She is the Amaranthine of exploration; her holy symbol forms a compass. Free-spirited folk who feel an insatiable urge to wander and roam the lands have been touched by her winds.</p>
+			<p class="indent">Reya is a skilled hunter, credited with the invention of the bow, a gift she passed down to the birdfolk. She is also honored for her skills in navigating wild country and surviving off the land. Travelers undertaking long journeys pray to be blessed by a portion of her talents, to assist them in the perilous wilderness. Reya watches over those who embark on daring expeditions, protecting travelers and presenting them with challenges to make their journey all the more memorable.</p>
+			<p class="indent">Reya is worshiped by hunters, travelers, sailors, and explorers. She is revered by wandering bards, who carry their journeys home in the form of songs and tales.</p>
+		</description>
+		<sheet alt="Reya" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Nature, Tempest</set>
+			<set name="symbol">Four arrows, in a circle of ivy, forming a compass</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Tyton, The Nightfather" type="Deity" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_DEITY_TYTON">
+		<description>
+			<p><strong><em>Dogma:</em></strong> As day turns to night, so must all things end. Respect the power of death, but fear not the end, for it is part of the Rhythm.</p>
+			<p>Tyton is depicted as an immense black barn owl. It is believed he ushers the night in by spreading his wings over the sky. Tyton also governs time, memory, and death. As the sun must set, so too must the light of life give way to the darkness of the grave. Rather than being seen as a frightful figure, Tyton is looked upon as kind; he greets the old, the frail, and those at the end of their lives as familiar friends, guiding their souls peacefully back into the Great Rhythm, where they will be reborn, in time.</p>
+			<p class="indent">When not occupying the sky, it is believed Tyton resides in the lands of death. Not an afterlife, rather this is a part of the Great Rhythm where everything is cold, dark, and eternally still. His abode lies beyond the parts of the Rhythm associated with life, a divide impossible for mortals to cross. Even other Amaranthine find travel to the lands of death difficult, except for Altus, who resides there with Tyton for most of the year, only leaving to bring winter storms across the land.</p>
+			<p class="indent">In addition to guiding the souls of the dead, Tyton is associated with the coming of old age, and the keeping of memory. When Tyton is invoked at funerals, it is to remember those who have passed, and to recall their lives and deeds. He watches the living, patiently observing all beneath him. Tyton can learn all there is to know of your life by watching your dreams. Because Tyton watches the living from birth to death, he is known as "Father Owl".</p>
+			<p class="indent">Tyton frowns upon those who would seek to enslave the souls of the dead using necromantic magics, and those who would desecrate the tombs of the deceased, as these actions corrupt the natural cycle.</p>
+		</description>
+		<sheet alt="Tyton" />
+		<setters>
+			<set name="setting">Humblewood</set>
+			<set name="alignment">LN</set>
+			<set name="domains">Grave, Night</set>
+			<set name="symbol">A wing containing three stars and a crescent moon</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+</elements>

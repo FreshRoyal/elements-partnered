@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/source.xml" />
+		</update>
+	</info>
+	<element name="Humblewood Campaign Setting" type="Source" source="Core" id="ID_HPP_SOURCE_HUMBLEWOOD_CAMPAIGN_SETTING">
+		<description>
+			<p>In the world of Everden lies a mystical forest known as Humblewood. The fires have come, and Humblewood has been thrown into chaos.</p>
+			<p>In this exciting campaign setting for fifth edition D&amp;D, you and your party take on the role of forest creatures like birds, raccoons, mice, and hedgehogs in order to save your home from a fiery threat.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">HWCS</set>
+			<set name="url">https://hitpointpress.com/products/humblewood-campaign-book</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/HWCS.png</set>
+			<set name="author" abbreviation="HPP" url="https://hitpointpress.com/">Hit Point Press</set>
+			<set name="third-party">true</set>
+			<set name="release">20200401</set>
+		</setters>
+	</element>
+</elements>

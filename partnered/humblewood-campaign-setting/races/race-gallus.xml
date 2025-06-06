@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gallus</name>
+		<description>Gallus from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="race-gallus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-gallus.xml" />
+		</update>
+	</info>
+
+	<element name="Gallus" type="Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACE_GALLUS">
+		<description>
+			<p>The gallus commonly dwell in small, familial communities as opposed to the grand perches of the Wood. Of the birdfolk, they are the most likely to be found living among the humblefolk. Gallus have a deep respect for nature and a love of gardening unmatched by other birdfolk. They value their social bonds above all else, and are always ready to help their neighbours and promote the common good. They are polite but have little patience for deceit and rudeness.</p>
+			<h4>A Varied Folk</h4>
+			<p>The gallus are a varied folk, resembling as many different varieties of wildfowl as there are trees in the Wood. Some are pheasant-like, others are grouse-like, while some resemble chickens or turkeys. There are dozens of variations of feathers, colors, and patterns even between gallus of the same subrace. The gallus are proud of their appearances but not to the point of vanity. Maintaining good grooming is akin to keeping a knife sharp and shows a level of respect for oneself.</p>
+			<p class="indent">Birdfolk are generally welcoming to other races, but the gallus are particularly well-known for their willingness to include virtually anyone in social or familial groups. In gallus culture, it is customary to always offer your seat at a table to guests. This is seen as the basis of a popular and hilarious children's story about a meal growing too cold to eat as the gallus continually give up their seats to late arrivals at a party.</p>
+			<h4>Salt of the Earth</h4>
+			<p>Gallus are a social and communal folk. They tend to form close-knit communities wherever they roost, and their sense of pride for their community runs deep. When tragedy leaves children in their village orphaned, it is customary for gallus families to take them in. Gallus value honest work, such as farming and smithing, and share labor equally between all community members. There is nothing a gallus would not give to their neighbors in a time of need.</p>
+			<p class="indent">While other birdfolk might look down on gallus for their common ways, the gallus have excellent interpersonal skills. They are insightful and empathetic, but not to the point of being socially exploitable. The gallus have an ear for the truth, and are often capable of rooting out lies and dishonesty.</p>
+			<h4>Gallus Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> While ages fluctuate, gallus reach maturity around 18 and can live anywhere between 70 and 100 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Most gallus are lawful good. They are a salt-of-the-earth sort of folk who believe in justice, the value of hard work, and the importance of respecting others.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Gallus are the most varied of the birdfolk races, ranging from just under 4 feet to just over 5 feet tall, and showing many unique builds. The variety of shapes and sizes means they also encompass a variety of weights, but most average around 90 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Glide.</em></strong> Using your feathered arms, you can slow your fall, and glide short distances. When falling you can use your reaction to spread your arms, stiffen your wing feathers, and slow your descent. While doing so, you continue to fall gently at a speed of 60 feet per round, taking no fall damage when you land. If you would fall at least 10 feet in this way, you may fly up to your movement speed in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</p>
+			<p class="indent"><strong><em>Wing Flap.</em></strong> As a bonus action, you can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed. You can use it in conjunction with a regular jump, but not while gliding.</p>
+			<p class="indent"><strong><em>Communal.</em></strong> Whenever you make an Intelligence (History) check related to the history of your race, culture, or community, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+			<p class="indent"><strong><em>Militia Training.</em></strong> You have proficiency in simple weapons.</p>
+			<p class="indent"><strong><em>Of the People.</em></strong> You gain proficiency with the artisan tools of your choice: brewer's supplies, carpenter's tools, or smith's tools.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Birdfolk. You can also understand Auran, though you cannot speak it naturally.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> There are two main subraces of gallus: bright and huden. Choose one of these subraces.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="3d10">3'4"</set>
+			<set name="weight" modifier="1d4">55 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Gallus)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||HWCS Birdfolk||HWCS Auran Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_GLIDE" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_WING_FLAP" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_COMMUNAL" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_MILITIA_TRAINING" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_OF_THE_PEOPLE" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Glide" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_GLIDE">
+		<description>
+			<p>Using your feathered arms, you can slow your fall, and glide short distances. When falling you can use your reaction to spread your arms, stiffen your wing feathers, and slow your descent. While doing so, you continue to fall gently at a speed of 60 feet per round, taking no fall damage when you land. If you would fall at least 10 feet in this way, you may fly up to your movement speed in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When falling you can use your reaction to spread your arms and slow your descent. While doing so, you continue to fall gently at a speed of 60 ft per round, taking no fall damage when you land. If you would fall at least 10 ft in this way, you may fly up to {{speed}} ft in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_HPP_HWCS_GRANTS_GLIDE_TRAIT" />
+		</rules>
+	</element>
+
+	<element name="Wing Flap" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_WING_FLAP">
+		<description>
+			<p>As a bonus action, you can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed. You can use it in conjunction with a regular jump, but not while gliding.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can use your powerful feathered arms to propel yourself upward a distance equal to {{speed:half}} ft. You can use it in conjunction with a regular jump, but not while gliding.</description>
+		</sheet>
+	</element>
+
+	<element name="Communal" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_COMMUNAL">
+		<description>
+			<p>Whenever you make an Intelligence (History) check related to the history of your race, culture, or community, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an Intelligence (History) check related to the history of your race, culture, or community, you are considered proficient in the History skill and add {{proficiency:double}} to the check, instead of your normal proficiency bonus.</description>
+		</sheet>
+	</element>
+
+	<element name="Militia Training" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_MILITIA_TRAINING">
+		<description>
+			<p>You have proficiency in simple weapons.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+		</rules>
+	</element>
+	
+	<element name="Of the People" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_OF_THE_PEOPLE">
+		<description>
+			<p>You gain proficiency with the artisan tools of your choice: brewer's supplies, carpenter's tools, or smith's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Of the People" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Of the People)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Subrace" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_SUBRACE">
+		<description>
+			<p>There are two main subraces of gallus: bright and huden. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Gallus Subrace" supports="HWCS Gallus Subrace" />
+		</rules>
+	</element>
+
+	<!--Bright-->
+
+	<element name="Bright Gallus" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_GALLUS_BRIGHT">
+		<supports>HWCS Gallus Subrace</supports>
+		<description>
+			<p>As a bright gallus, you are a natural leader. Growing up in your close-knit community has taught you how to inspire others and rally folks to a common cause. This air of command follows you wherever you roam.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Inspiring.</em></strong> By spending an action and giving words of advice or encouragement, you can inspire an ally who is able to see and hear you. The ally can roll a d4 and add the number rolled to their next ability check, attack roll, or saving throw.</p>
+			<p class="indent"><strong><em>Understanding.</em></strong> You gain proficiency in the Insight skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bright Gallus)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_BRIGHT_INSPIRING" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_BRIGHT_UNDERSTANDING" />
+		</rules>
+	</element>
+	
+	<element name="Inspiring" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_BRIGHT_INSPIRING">
+		<description>
+			<p>By spending an action and giving words of advice or encouragement, you can inspire an ally who is able to see and hear you. The ally can roll a d4 and add the number rolled to their next ability check, attack roll, or saving throw.</p>
+		</description>
+		<sheet action="Action">
+			<description>By giving words of advice or encouragement, you can inspire an ally who is able to see and hear you. The ally can roll a d4 and add the number rolled to their next ability check, attack roll, or saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Understanding" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_BRIGHT_UNDERSTANDING">
+		<description>
+			<p>You have proficiency in the Insight skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Understanding)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--Huden-->
+
+	<element name="Huden Gallus" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_GALLUS_HUDEN">
+		<supports>HWCS Gallus Subrace</supports>
+		<description>
+			<p>As a huden gallus, you are of the land. Like the Amaranthine Hanera, you have a unique connection to the Great Rhythm of nature, and in return the Rhythm grants you many gifts. This innate bond with nature may alienate you from city life, but you will always have a home within the more remote parts of the Wood.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>One With the Wood.</em></strong> You have proficiency in the Nature skill.</p>
+			<p class="indent"><strong><em>Seedspeech.</em></strong> Your connection to the Great Rhythm is such that you can speak with the greenery of the forest itself. Through speech and touch you can communicate simple ideas to living plants. You are able to interpret their responses in simple language. Plants in the Wood do not experience the world in terms of sight, but most can feel differences in temperature, describe things that have touched them, as well as hear vibrations that happened around them (including speech).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Huden Gallus)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_HUDEN_ONE_WITH_THE_WOOD" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_HUDEN_SEEDSPEECH" />
+		</rules>
+	</element>
+
+	<element name="One With the Wood" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_HUDEN_ONE_WITH_THE_WOOD">
+		<description>
+			<p>You have proficiency in the Nature skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (One With the Wood)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Seedspeech" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_GALLUS_HUDEN_SEEDSPEECH">
+		<description>
+			<p>Your connection to the Great Rhythm is such that you can speak with the greenery of the forest itself. Through speech and touch you can communicate simple ideas to living plants. You are able to interpret their responses in simple language. Plants in the Wood do not experience the world in terms of sight, but most can feel differences in temperature, describe things that have touched them, as well as hear vibrations that happened around them (including speech).</p>
+		</description>
+		<sheet>
+			<description>Through speech and touch you can communicate simple ideas to living plants. You are able to interpret their responses in simple language. Plants in the Wood do not experience the world in terms of sight, but most can feel differences in temperature, describe things that have touched them, as well as hear vibrations that happened around them (including speech).</description>
+		</sheet>
+	</element>
+
+</elements>

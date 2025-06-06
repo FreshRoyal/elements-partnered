@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>Magic Items from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/magic-items.xml" />
+		</update>
+	</info>
+
+	<element name="Blade of the Wood" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_BLADE_OF_THE_WOOD">
+		<description>
+			<p>A finely crafted sword with delicate etchings, it resonates with a faint hum of life.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">The sword has 2 charges. You can expend a charge and speak the command word to cast <i>spike growth</i> (save DC 16) centered on yourself. You can pass through this terrain unaffected.</p>
+			<p class="indent">The sword regains one charge each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, spell, spike growth</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">{{parent}} of the Wood</set>
+		</setters>
+	</element>
+
+	<element name="The Borealus" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_THE_BOREALUS">
+		<description>
+			<p>This legendary artifact was created by a powerful wizard, crafted from the finger of a towering, ancient elemental aspect of frost. It is so cold to the touch that it numbs any skin it comes into contact with, although an attuned character is immune to this effect.</p>
+			<p class="indent"><strong><em>Gifts of the Rime.</em></strong> As long as you are attuned to the <i>Borealus</i>, you gain the following benefits:</p>
+			<ul>
+				<li>You are resistant to fire damage</li>
+				<li>You are immune to cold damage</li>
+				<li>You learn the <i>ray of frost</i> cantrip</li>
+			</ul>
+			<p class="indent"><strong><em>Breath of Winter.</em></strong> While holding the staff you can use your action to unleash an icy-cold blizzard from your open mouth. A 100-foot-cone of hoarfrost blasts forth in a direction of your choice, dealing 9d8 cold damage to all creatures within the cone if they fail a DC 18 Constitution saving throw, or half as much on a success. You can't use this property again until the next dawn.</p>
+			<p class="indent"><strong><em>Glacial Prison.</em></strong> By using your action to touch the staff to a surface, you can cause a barrier of ice to spring into existence from a point you can see along this surface within 200 feet of you. This effect is otherwise identical to a <i>wall of ice</i> spell cast at 6th level, with a DC 18 for all saving throws related to the effect. You can't use this property again until 3 days have passed.</p>
+			<p class="indent"><strong><em>Cruel Winds.</em></strong> Wherever the staff goes, a bitterly cold boreal wind accompanies it. The wind gusts intermittently within 30 feet of the attuned character and extinguishes all non-magical flames it comes into contact with.</p>
+			<p class="indent"><strong><em>Destroying the Staff.</em></strong> The staff can be destroyed through exposure to flames from a fire elemental of equal power to the being it was crafted from. After centuries of exposure, it will melt away into nothing.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, ray of frost, cold, fire, resistance, immunity, damage, saving throw, action</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+		</rules>
+	</element>
+
+	<element name="Feathered Helm (Corvum)" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_FEATHERED_HELM_CORVUM">
+		<description>
+			<p>The helm itself is simple leather, hide, scale, or plate, but the magic imbued into it comes from the feather. The birdfolk races of Humblewood consider the giving of a feather to be one of the highest honors one can bestow, and it represents an eternal bond or deep appreciation.</p>
+			<p class="indent">The helm has 3 charges that, while wearing it, you can use to activate its abilities. The helm has different properties based on the race of the birdfolk who gifted the feather.</p>
+			<p class="indent"><strong><em>Corvum.</em></strong> You can use a charge to cast <i>hideous laughter</i> (save DC 16) and two charges to cast <i>detect thoughts</i> (save DC 16).</p>
+			<p class="indent"><strong><em>Gallus.</em></strong> You can use a charge to cast <i>bless</i> and two charges to cast <i>aid</i>.</p>
+			<p class="indent"><strong><em>Luma.</em></strong> You can use a charge to cast a random 1st-level spell from the sorcerer spell list, then roll a d20. On a roll of 20, you may use this ability again without expending a charge. On a roll of 1, the spell also targets you, unless you are its only target, in which case the spell fizzles to no effect. Any spell cast using this helm that requires a saving throw has a save DC of 16.</p>
+			<p class="indent"><strong><em>Raptor.</em></strong> You can use a charge to cast <i>hunter's mark</i> and two charges to cast <i>magic weapon</i>.</p>
+			<p class="indent"><strong><em>Strig.</em></strong> You can use a charge to cast <i>divine favor</i> and two charges to cast <i>pass without trace</i>.</p>
+			<p class="indent">The helm regains 1d3 charges each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, tasha's hideous laughter, detect thoughts</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Feathered Helm (Gallus)" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_FEATHERED_HELM_GALLUS">
+		<description>
+			<p>The helm itself is simple leather, hide, scale, or plate, but the magic imbued into it comes from the feather. The birdfolk races of Humblewood consider the giving of a feather to be one of the highest honors one can bestow, and it represents an eternal bond or deep appreciation.</p>
+			<p class="indent">The helm has 3 charges that, while wearing it, you can use to activate its abilities. The helm has different properties based on the race of the birdfolk who gifted the feather.</p>
+			<p class="indent"><strong><em>Corvum.</em></strong> You can use a charge to cast <i>hideous laughter</i> (save DC 16) and two charges to cast <i>detect thoughts</i> (save DC 16).</p>
+			<p class="indent"><strong><em>Gallus.</em></strong> You can use a charge to cast <i>bless</i> and two charges to cast <i>aid</i>.</p>
+			<p class="indent"><strong><em>Luma.</em></strong> You can use a charge to cast a random 1st-level spell from the sorcerer spell list, then roll a d20. On a roll of 20, you may use this ability again without expending a charge. On a roll of 1, the spell also targets you, unless you are its only target, in which case the spell fizzles to no effect. Any spell cast using this helm that requires a saving throw has a save DC of 16.</p>
+			<p class="indent"><strong><em>Raptor.</em></strong> You can use a charge to cast <i>hunter's mark</i> and two charges to cast <i>magic weapon</i>.</p>
+			<p class="indent"><strong><em>Strig.</em></strong> You can use a charge to cast <i>divine favor</i> and two charges to cast <i>pass without trace</i>.</p>
+			<p class="indent">The helm regains 1d3 charges each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, bless, aid</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Feathered Helm (Luma)" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_FEATHERED_HELM_LUMA">
+		<description>
+			<p>The helm itself is simple leather, hide, scale, or plate, but the magic imbued into it comes from the feather. The birdfolk races of Humblewood consider the giving of a feather to be one of the highest honors one can bestow, and it represents an eternal bond or deep appreciation.</p>
+			<p class="indent">The helm has 3 charges that, while wearing it, you can use to activate its abilities. The helm has different properties based on the race of the birdfolk who gifted the feather.</p>
+			<p class="indent"><strong><em>Corvum.</em></strong> You can use a charge to cast <i>hideous laughter</i> (save DC 16) and two charges to cast <i>detect thoughts</i> (save DC 16).</p>
+			<p class="indent"><strong><em>Gallus.</em></strong> You can use a charge to cast <i>bless</i> and two charges to cast <i>aid</i>.</p>
+			<p class="indent"><strong><em>Luma.</em></strong> You can use a charge to cast a random 1st-level spell from the sorcerer spell list, then roll a d20. On a roll of 20, you may use this ability again without expending a charge. On a roll of 1, the spell also targets you, unless you are its only target, in which case the spell fizzles to no effect. Any spell cast using this helm that requires a saving throw has a save DC of 16.</p>
+			<p class="indent"><strong><em>Raptor.</em></strong> You can use a charge to cast <i>hunter's mark</i> and two charges to cast <i>magic weapon</i>.</p>
+			<p class="indent"><strong><em>Strig.</em></strong> You can use a charge to cast <i>divine favor</i> and two charges to cast <i>pass without trace</i>.</p>
+			<p class="indent">The helm regains 1d3 charges each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, sorcerer</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Feathered Helm (Raptor)" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_FEATHERED_HELM_RAPTOR">
+		<description>
+			<p>The helm itself is simple leather, hide, scale, or plate, but the magic imbued into it comes from the feather. The birdfolk races of Humblewood consider the giving of a feather to be one of the highest honors one can bestow, and it represents an eternal bond or deep appreciation.</p>
+			<p class="indent">The helm has 3 charges that, while wearing it, you can use to activate its abilities. The helm has different properties based on the race of the birdfolk who gifted the feather.</p>
+			<p class="indent"><strong><em>Corvum.</em></strong> You can use a charge to cast <i>hideous laughter</i> (save DC 16) and two charges to cast <i>detect thoughts</i> (save DC 16).</p>
+			<p class="indent"><strong><em>Gallus.</em></strong> You can use a charge to cast <i>bless</i> and two charges to cast <i>aid</i>.</p>
+			<p class="indent"><strong><em>Luma.</em></strong> You can use a charge to cast a random 1st-level spell from the sorcerer spell list, then roll a d20. On a roll of 20, you may use this ability again without expending a charge. On a roll of 1, the spell also targets you, unless you are its only target, in which case the spell fizzles to no effect. Any spell cast using this helm that requires a saving throw has a save DC of 16.</p>
+			<p class="indent"><strong><em>Raptor.</em></strong> You can use a charge to cast <i>hunter's mark</i> and two charges to cast <i>magic weapon</i>.</p>
+			<p class="indent"><strong><em>Strig.</em></strong> You can use a charge to cast <i>divine favor</i> and two charges to cast <i>pass without trace</i>.</p>
+			<p class="indent">The helm regains 1d3 charges each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, hunter's mark, magic weapon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Feathered Helm (Strig)" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_FEATHERED_HELM_STRIG">
+		<description>
+			<p>The helm itself is simple leather, hide, scale, or plate, but the magic imbued into it comes from the feather. The birdfolk races of Humblewood consider the giving of a feather to be one of the highest honors one can bestow, and it represents an eternal bond or deep appreciation.</p>
+			<p class="indent">The helm has 3 charges that, while wearing it, you can use to activate its abilities. The helm has different properties based on the race of the birdfolk who gifted the feather.</p>
+			<p class="indent"><strong><em>Corvum.</em></strong> You can use a charge to cast <i>hideous laughter</i> (save DC 16) and two charges to cast <i>detect thoughts</i> (save DC 16).</p>
+			<p class="indent"><strong><em>Gallus.</em></strong> You can use a charge to cast <i>bless</i> and two charges to cast <i>aid</i>.</p>
+			<p class="indent"><strong><em>Luma.</em></strong> You can use a charge to cast a random 1st-level spell from the sorcerer spell list, then roll a d20. On a roll of 20, you may use this ability again without expending a charge. On a roll of 1, the spell also targets you, unless you are its only target, in which case the spell fizzles to no effect. Any spell cast using this helm that requires a saving throw has a save DC of 16.</p>
+			<p class="indent"><strong><em>Raptor.</em></strong> You can use a charge to cast <i>hunter's mark</i> and two charges to cast <i>magic weapon</i>.</p>
+			<p class="indent"><strong><em>Strig.</em></strong> You can use a charge to cast <i>divine favor</i> and two charges to cast <i>pass without trace</i>.</p>
+			<p class="indent">The helm regains 1d3 charges each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, divine favor, pass without trace</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Necronomicon Ex Corvis" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_NECRONOMICON_EX_CORVIS">
+		<description>
+			<p>This legendary tome of dark necromancy was penned by the mad corvum necromancer Lathrus, of the Night's Call. The book is one of a kind and contains terrible necromantic secrets.</p>
+			<p class="indent">The <i>Necronomicon Ex Corvis</i> is a spellbook, and as such only wizards can truly benefit from studying the dark secrets within.</p>
+			<p class="indent"><strong><em>Abyssal Secrets.</em></strong> By spending a full week studying the dark secrets in this tome, your Intelligence score increases by 2. These secrets gnaw at your mind, however, and your Wisdom score decreases by 1.</p>
+			<p class="indent"><strong><em>Grasp of Shadows.</em></strong> By spending at least a minute reciting a ritual listed in this book, you can summon forth 1d4 + 2 <strong>shadows</strong>. These creatures are loyal to you and can understand any instructions you give them. They will carry out these instructions to the best of their ability. This property can only be used once per week.</p>
+			<p class="indent"><strong><em>Knowledge Beyond Reason.</em></strong> You may add the spells listed below into your spellbook. However, the tome removes the restriction that requires you to be able to prepare and cast these spells. In effect, you can copy these spells to your spellbook now, though they will only be available to prepare once you reach a level at which you can cast them.</p>
+			<p class="indent">Additionally, rather than pay gold pieces to copy any spell within into your spellbook, you may deal one point of damage to yourself and take one level of exhaustion to scribe the spell in your own blood.</p>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>animate dead, bestow curse, vampiric touch</em></td></tr>
+				<tr><td>4th</td><td><em>blight</em></td></tr>
+				<tr><td>6th</td><td><em>circle of death, magic jar</em></td></tr>
+				<tr><td>7th</td><td><em>finger of death</em></td></tr>
+			</table>
+			<p class="indent"><strong><em>The Corvum's Curse.</em></strong> After copying at least one spell from this tome into your spellbook, you must succeed on a DC 16 Wisdom saving throw or become cursed (as <i>bestow curse</i>), with the effect of the curse being decided by the GM.</p>
+			<p class="indent">The curse persists for 2d4 days, but its duration resets anytime you copy a spell from this book. Otherwise, only a <i>remove curse</i> spell cast using a 5th level or higher spell slot can rid you of this effect.</p>
+			<p class="indent"><strong><em>Destroying the Book.</em></strong> Unlike other artifacts, the book is not immune to damage. Pages removed from the book will lose their magic within a day. Additionally, exposing the book to direct sunlight for at least 8 hours will cause the dark magic within to dissipate, rendering it useless.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellbook, wizard, spellcasting focus, summon, spell, animate dead, bestow curse, vampiric touch, blight, circle of death, magic jar, finger of death</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2" />
+			<stat name="wisdom" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Nest Charm" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_NEST_CHARM">
+		<description>
+			<p>This charm is a sphere of intricate metal branches, interwoven to form a sort of nest.</p>
+			<p class="indent">By placing the charm on the ground and speaking its command word, you can cause it to unfold, creating a 30-foot-diameter circular platform of interwoven branches. Once the platform has reached its full size, a magical tree grows beneath it, lifting the platform 50 feet into the air, carrying any passengers and items along with it.</p>
+			<p class="indent">This perch lasts up to 8 hours, at which point the tree will retreat into the ground and the platform will shrink, eventually curling back into the small charm. At any time the command word can be spoken again to dismiss the perch in a similar fashion. Once the <i>nest charm</i>'s power has been used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">platform</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Red-Feather Bow" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_RED_FEATHER_BOW">
+		<description>
+			<p>A prized hunting weapon among mistral raptors, this bow is imbued with magic to help the wielder see their prey from afar.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">The bow has 3 charges. When you fire an arrow from this bow, you can speak the command word and use a charge to see through the arrow as a bonus action. You can see from the point your arrow lands as if you were there for 1 minute. If the arrow strikes a creature, you see what they see for the same duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">bow, bonus action</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+			<set name="name-format">Red-Feather {{parent}}</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Wing Crest Shield" type="Magic Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_MAGIC_ITEM_WING_CREST_SHIELD">
+		<description>
+			<p>While wielding this shield, you gain a +1 bonus to your AC.</p>
+			<p class="indent">As an action, you can speak the command word to cast <i>gust of wind</i> (save DC 15). Once the shield has been used to cast this spell, it can't be used to cast this spell again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, spell, gust of wind</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+</elements>

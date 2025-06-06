@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Humblewood Campaign Setting by Hit Point Press</name>
+		<update version="1.0.0">
+			<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />
+		</update>
+	</info>
+	<files>
+		<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/comnpanions.xml" />
+		<file name="deities.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/deities.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/feats.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/languages.xml" />
+		<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/magic-items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/spells.xml" />
+		
+		<!--Archetypes-->
+		<file name="bard-road.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/bard-road.xml" />
+		<file name="cleric-community.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/cleric-community.xml" />
+		<file name="cleric-night.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/cleric-night.xml" />
+		<file name="fighter-scofflaw.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/fighter-scofflaw.xml" />
+
+		<!--Background-->
+		<file name="background-bandit-defector.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/backgrounds/background-bandit-defector.xml" />
+		<file name="background-grounded.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/backgrounds/background-grounded.xml" />
+		<file name="background-wind-touched.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/backgrounds/background-wind-touched.xml" />
+
+		<!--Races-->
+		<file name="race-cervan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-cervan.xml" />
+		<file name="race-corvum.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-corvum.xml" />
+		<file name="race-gallus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-gallus.xml" />
+		<file name="race-hedge.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-hedge.xml" />
+		<file name="race-jerbeen.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-jerbeen.xml" />
+		<file name="race-luma.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-luma.xml" />
+		<file name="race-mapach.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-mapach.xml" />
+		<file name="race-raptor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-raptor.xml" />
+		<file name="race-strig.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-strig.xml" />
+		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-vulpin.xml" />
+	</files>
+</index>

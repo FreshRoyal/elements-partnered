@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Corvum</name>
+		<description>Corvum from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="race-corvum.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-corvum.xml" />
+		</update>
+	</info>
+
+	<element name="Corvum" type="Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACE_CORVUM">
+		<description>
+			<p>Corvums are a crow-like race with dark feathers and sharp minds. Their reputation in birdfolk society is nothing short of villainous, and they are regularly cast as the antagonists of any given situation. It's hard to say whether the corvums are distrusted because they behave the way they do, or if they behave the way they do because they are distrusted.</p>
+			<h4>For Personal Gain</h4>
+			<p>It is widely believed that corvums only look out for themselves. Sometimes this presents as flexible morals, and at other times it simply means they follow a personal code instead of subscribing to general law. Either way, corvums are a crafty race and they tend to get what they want, one way or another.</p>
+			<p class="indent">Corvums are typically found in positions with a modicum of power, such as advisors or minor officials. The stigma they face usually prevents them from attaining too prominent a position in birdfolk society, but corvums are adept at working behind the scenes, spreading their influence subtly and to great effect.</p>
+			<h4>Too Smart</h4>
+			<p>Corvums are commonly accepted, sometimes begrudgingly, to be among the smartest of birdfolk. Keen observers, they trade in information the way others trade goods. They are hungry for knowledge and leverage it to further their goals whenever possible. Their undeniable skill in matters of logistics and planning make them valuable to councils and powerful individuals alike.</p>
+			<h4>Corvum Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Corvums reach adulthood at around 18 years. They live slightly shorter lives than other birdfolk, approximately 70 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Cervans are pragmatic in their thinking, and generally prefer to keep their philosophies flexible in order to prioritize what they believe is important for both themselves and their communities. They lean towards neutral alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Corvums cut imposing figures, standing between 4 and a half and 5 and a half feet tall, encompassing a variety of different builds. They weigh around 100 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Glide.</em></strong> Using your feathered arms, you can slow your fall, and glide short distances. When falling you can use your reaction to spread your arms, stiffen your wing feathers, and slow your descent. While doing so, you continue to fall gently at a speed of 60 feet per round, taking no fall damage when you land. If you would fall at least 10 feet in this way, you may fly up to your movement speed in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</p>
+			<p class="indent"><strong><em>Talons.</em></strong> Your sharp claws aid you in unarmed combat and while climbing. Your damage for an unarmed strike is 1d4 piercing damage. Additionally, you have advantage on Strength (Athletics) checks made to climb any surface your talons could reasonably grip.</p>
+			<p class="indent"><strong><em>Learned.</em></strong> You gain proficiency in one of the following skills: Arcana, History, Nature, or Religion.</p>
+			<p class="indent"><strong><em>Appraising Eye.</em></strong> You have an almost supernatural ability to appraise objects. By spending an action examining any object, you can determine any magical properties the item has, how they might be used or activated, as well as a fair estimation of market price. Using this skill strains the eyes, and you must complete a long or short rest before you can use it again.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Birdfolk. You can also understand Auran, though you cannot speak it naturally.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> There are two main subraces of corvum: dusk and kindled. Choose one of these subraces.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d10">4'4"</set>
+			<set name="weight" modifier="1d4">70 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Corvum)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||HWCS Birdfolk||HWCS Auran Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_GLIDE" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_TALONS" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_LEARNED" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_APPRAISING_EYE" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Glide" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_GLIDE">
+		<description>
+			<p>Using your feathered arms, you can slow your fall, and glide short distances. When falling you can use your reaction to spread your arms, stiffen your wing feathers, and slow your descent. While doing so, you continue to fall gently at a speed of 60 feet per round, taking no fall damage when you land. If you would fall at least 10 feet in this way, you may fly up to your movement speed in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When falling you can use your reaction to spread your arms and slow your descent. While doing so, you continue to fall gently at a speed of 60 ft per round, taking no fall damage when you land. If you would fall at least 10 ft in this way, you may fly up to {{speed}} ft in one direction you choose, although you cannot choose to move upwards, landing in the space you finish your movement. You cannot glide while carrying heavy weapons or wielding a shield (though you may drop any held items as part of your reaction to spread your arms). You cannot glide while wearing heavy armor, or if you are encumbered.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_HPP_HWCS_GRANTS_GLIDE_TRAIT" />
+		</rules>
+	</element>
+
+	<element name="Talons" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_TALONS">
+		<description>
+			<p>Your sharp claws aid you in unarmed combat and while climbing. Your damage for an unarmed strike is 1d4 piercing damage. Additionally, you have advantage on Strength (Athletics) checks made to climb any surface your talons could reasonably grip.</p>
+		</description>
+		<sheet>
+			<description>You have sharp claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d4 + {{strength:modifier}} piercing damage. Additionally, you have advantage on Strength (Athletics) checks made to climb any surface your talons could reasonably grip.</description>
+		</sheet>
+	</element>
+	
+	<element name="Learned" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_LEARNED">
+		<description>
+			<p>You gain proficiency in one of the following skills: Arcana, History, Nature, or Religion.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Learned" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Learned)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Appraising Eye" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_APPRAISING_EYE">
+		<description>
+			<p>You have an almost supernatural ability to appraise objects. By spending an action examining any object, you can determine any magical properties the item has, how they might be used or activated, as well as a fair estimation of market price. Using this skill strains the eyes, and you must complete a long or short rest before you can use it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>By examining any object, you can determine any magical properties the item has, how they might be used or activated, as well as a fair estimation of market price.</description>
+		</sheet>
+	</element>
+
+	<element name="Subrace" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_SUBRACE">
+		<description>
+			<p>There are two main subraces of corvum: dusk and kindled. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Corvum Subrace" supports="HWCS Corvum Subrace" />
+		</rules>
+	</element>
+
+	<!--Dusk-->
+
+	<element name="Dusk Corvum" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_CORVUM_DUSK">
+		<supports>HWCS Corvum Subrace</supports>
+		<description>
+			<p>As a dusk corvum, you are more at home in the bustle of society than in the wilds of the forest. You understand subtle social cues the way a hunter understands their prey, and you're just as quick to capitalize on an advantage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Skulker.</em></strong> You have advantage on Dexterity (Stealth) checks made in dim light or darkness.</p>
+			<p class="indent"><strong><em>Street Smarts.</em></strong> You gain proficiency in the Insight skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Dusk Corvum)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_DUSK_SKULKER" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_DUSK_STREET_SMARTS" />
+		</rules>
+	</element>
+
+	<element name="Skulker" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_DUSK_SKULKER">
+		<description>
+			<p>You have advantage on Dexterity (Stealth) checks made in dim light or darkness.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity (Stealth) checks made in dim light or darkness.</description>
+		</sheet>
+	</element>
+
+	<element name="Street Smarts" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_DUSK_STREET_SMARTS">
+		<description>
+			<p>You have proficiency in the Insight skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Street Smarts)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--Kindled-->
+
+	<element name="Kindled Corvum" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_CORVUM_KINDLED">
+		<supports>HWCS Corvum Subrace</supports>
+		<description>
+			<p>As a kindled corvum, you know implicitly that you are the smartest in the room. Your ability to utilize your knowledge to your advantage, along with your deep understanding of others motivations, makes you a formidable opponent.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Convincing.</em></strong> Kindled corvums have a way with words, and are accomplished at saying what someone wants or needs to hear. You have proficiency in either the Deception or Persuasion skill. Additionally, you have advantage on all Charisma checks made to convince someone of your exceptional knowledge on any topic related to the skill you selected with your learned trait (Arcana, History, Nature, or Religion).</p>
+			<p class="indent"><strong><em>Sharp Mind.</em></strong> You learn one additional language of your choice, gain proficiency in a tool of your choice, and are able to accurately recall with perfect clarity anything you have seen or heard within the past month.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kindled Corvum)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_KINDLED_CONVINCING" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_KINDLED_SHARP_MIND" />
+		</rules>
+	</element>
+
+	<element name="Convincing" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_KINDLED_CONVINCING">
+		<description>
+			<p>Kindled corvums have a way with words, and are accomplished at saying what someone wants or needs to hear. You have proficiency in either the Deception or Persuasion skill. Additionally, you have advantage on all Charisma checks made to convince someone of your exceptional knowledge on any topic related to the skill you selected with your learned trait (Arcana, History, Nature, or Religion).</p>
+		</description>
+		<sheet>
+			<description>You have advantage on all Charisma checks made to convince someone of your exceptional knowledge on any topic related to the skill you selected with your Learned trait.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Convincing" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Convincing)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Sharp Mind" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CORVUM_KINDLED_SHARP_MIND">
+		<description>
+			<p>You learn one additional language of your choice, gain proficiency in a tool of your choice, and are able to accurately recall with perfect clarity anything you have seen or heard within the past month.</p>
+		</description>
+		<sheet>
+			<description>You are able to accurately recall with perfect clarity anything you have seen or heard within the past month.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Sharp Mind)" supports="Standard||Exotic" />
+			<select type="Proficiency" name="Tool Proficiency (Sharp Mind)" supports="Tool" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Sharp Mind)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+</elements>

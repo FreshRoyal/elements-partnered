@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mapach</name>
+		<description>Mapach from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="race-mapach.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-mapach.xml" />
+		</update>
+	</info>
+
+	<element name="Mapach" type="Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACE_MAPACH">
+		<description>
+			<p>Naturally curious, mapachs are a medium-sized racoon-like race. They are crafty, hearty, and tough, but their true strength lies in the potential they see when looking at the world around them. Mapachs have incredibly light hands and a great degree of fine motor control that doesn't diminish with age. They are also adept at climbing and sneaking. This, combined with their love of trinkets, has earned them an undeserved reputation as thieves. While there are exceptions, most mapachs are quite good-natured, if a little eccentric.</p>
+			<h4>Resilient Opportunists</h4>
+			<p>Mapachs are adept at surviving tough woodland conditions, and at intuiting the right course of action when faced with a problem. They are also inveterate opportunists. Some may consider them brash, but mapachs know that opportunities rarely present themselves and are quick to act on them. Mapachs are alert and have a keen awareness of their surroundings. Only the truly foolhardy among them are taken in by obvious traps.</p>
+			<h4>Canny Craftspeople</h4>
+			<p>One of the traits mapachs are most well-known for is their ability to find a use for just about anything. This knack for creating functional or useful items out of debris, junk, or on-hand materials is known as "scroungecraft", and is a cultural staple among mapachs. This activity is considered an art form among mapachs, on par with the high art of other peoples. Scroungecrafting demonstrates creativity, ingenuity, and resourcefulness, but is misunderstood by outsiders who see it as primitive or crude. Genius ideas created by mapach hands frequently began as scroungecraft prototypes. Many who have built such interesting or unique creations achieve celebrity status among mapachs, going on to showcase their skills in loosely-organized scroungecraft fairs.</p>
+			<h4>Hubs of Invention</h4>
+			<p>Mapachs are often loners, but when they do establish communities with humblefolk or birdfolk, they have a habit of fostering innovation wherever they go. Mapach ingenuity was responsible for the contraption upon which Alderheart's pulley system was based. The pulley system was so successful that birdfolk perches beyond Alderheart have adopted the technology.</p>
+			<h4>Mapach Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Mapachs mature quickly, reaching adulthood around 8 years. Despite this they have fairly average lifespans, the oldest among them living just past 60 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Mapachs don't favour good over evil, with most choosing to remain neutral. They also lean towards the freedom of chaotic alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Mapachs stand between 4 and 5 feet tall, and encompass a variety of builds from svelt to wide, weighing between 90 and 160 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. Mapachs are most comfortable under the cloak of night.</p>
+			<p class="indent"><strong><em>Expert Climbers.</em></strong> You have a climb speed of 20 feet.</p>
+			<p class="indent"><strong><em>Resilience.</em></strong> You have advantage on saving throws against poison and resistance against poison damage.</p>
+			<p class="indent"><strong><em>Scroungecraft.</em></strong> You are proficient with tinker's tools. Additionally, you have the ability to construct crude but functional versions of common items using materials present in your surroundings. You may spend 10 minutes to craft these materials into any tool or piece of adventuring gear worth 30 gold pieces or less. The item will be completely functional, even capable of passing for a disguise (if you crafted an article of clothing). Tools, along with any other item that would logically break on its first use (caltrops, arrows), will become useless afterward. Scroungecrafted items will otherwise last 1 hour before falling apart.</p>
+			<p class="indent">Depending on the materials available, a Game Master (GM) may rule that you cannot craft an item in this way. For example, a vial of acid might be easy to make if you happen to be near a nest of acidic beetle larvae, or bark can be bound into a makeshift flask, but it would be difficult to create a passable facsimile of silken robes from a pile of leaves.</p>
+			<p class="indent">Should you have access to the proper materials, you can spend 8 hours converting an item you have scroungecrafted in this way into a permanent version, so long as you start this process before the item falls apart. Items crafted in such a way will function exactly as a normal version of the item, and if you have proficiency in the tools used to craft them, they can even look professionally-crafted. Otherwise, they retain a rather rough, cobbled-together appearance. You can also use scroungecraft to repair broken equipment, provided you have the materials on hand. Though, how long your repairs hold together is up to the GM.</p>
+			<p class="indent"><strong><em>Skulker.</em></strong> You have advantage on Stealth checks made in dim light and darkness.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Birdfolk and Mapach.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d6">3'11"</set>
+			<set name="weight" modifier="2d4">85 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mapach)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mapach)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_MAPACH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||HWCS Birdfolk||HWCS Mapach Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_EXPERT_CLIMBERS" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_SCROUNGECRAFT" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_SKULKER" />
+		</rules>
+	</element>
+
+	<element name="Expert Climbers" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_EXPERT_CLIMBERS">
+		<description>
+			<p>You have a climb speed of 20 feet.</p>
+		</description>
+		<sheet display="false" />
+ 		<rules>
+			<stat name="innate speed:climb" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Resilience" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against poison and resistance against poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Scroungecraft" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_SCROUNGECRAFT">
+		<description>
+			<p>You are proficient with tinker's tools. Additionally, you have the ability to construct crude but functional versions of common items using materials present in your surroundings. You may spend 10 minutes to craft these materials into any tool or piece of adventuring gear worth 30 gold pieces or less. The item will be completely functional, even capable of passing for a disguise (if you crafted an article of clothing). Tools, along with any other item that would logically break on its first use (caltrops, arrows), will become useless afterward. Scroungecrafted items will otherwise last 1 hour before falling apart.</p>
+			<p class="indent">Depending on the materials available, a Game Master (GM) may rule that you cannot craft an item in this way. For example, a vial of acid might be easy to make if you happen to be near a nest of acidic beetle larvae, or bark can be bound into a makeshift flask, but it would be difficult to create a passable facsimile of silken robes from a pile of leaves.</p>
+			<p class="indent">Should you have access to the proper materials, you can spend 8 hours converting an item you have scroungecrafted in this way into a permanent version, so long as you start this process before the item falls apart. Items crafted in such a way will function exactly as a normal version of the item, and if you have proficiency in the tools used to craft them, they can even look professionally-crafted. Otherwise, they retain a rather rough, cobbled-together appearance. You can also use scroungecraft to repair broken equipment, provided you have the materials on hand. Though, how long your repairs hold together is up to the GM.</p>
+		</description>
+		<sheet>
+			<description>You have the ability to construct crude but functional versions of common items using materials present in your surroundings. You may spend 10 minutes to craft these materials into any tool or piece of adventuring gear worth 30 gp or less. The item will be completely functional, even capable of passing for a disguise (if you crafted an article of clothing). Tools, along with any other item that would logically break on its first use (caltrops, arrows), will become useless afterward. Scroungecrafted items will otherwise last 1 hour before falling apart. Depending on the materials available, a Game Master (GM) may rule that you cannot craft an item in this way. Should you have access to the proper materials, you can spend 8 hours converting an item you have scroungecrafted in this way into a permanent version, so long as you start this process before the item falls apart. Items crafted in such a way will function exactly as a normal version of the item, and if you have proficiency in the tools used to craft them, they can even look professionally-crafted. Otherwise, they retain a rather rough, cobbled-together appearance. You can also use scroungecraft to repair broken equipment, provided you have the materials on hand. Though, how long your repairs hold together is up to the GM.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Scroungecraft)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Skulker" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_MAPACH_SKULKER">
+		<description>
+			<p>You have advantage on Stealth checks made in dim light and darkness.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Stealth checks made in dim light and darkness.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companions from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/comnpanions.xml" />
+		</update>
+	</info>
+
+	<element name="Emberbat" type="Companion" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_COMPANION_EMBERBAT">
+		<supports>Familiar, Variant Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">2</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">5</set>
+			<set name="ac">12</set>
+			<set name="hp">2 (1d4)</set>
+			<set name="speed">5 ft., fly 30 ft.</set>
+			<set name="senses">blindsight 60 ft.</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_HPP_HWCS_COMPANION_TRAIT_EMBERBAT_ECHOLOCATION,ID_HPP_HWCS_COMPANION_TRAIT_EMBERBAT_EMBER_FLAME,ID_HPP_HWCS_COMPANION_TRAIT_EMBERBAT_KEEN_HEARING</set>
+			<set name="actions">ID_HPP_HWCS_COMPANION_ACTION_EMBERBAT_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:speed" value="5" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Echolocation" type="Companion Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_COMPANION_TRAIT_EMBERBAT_ECHOLOCATION">
+		<description>
+			<p>The emberbat can't use its blindsight while deafened.</p>
+		</description>
+		<sheet>
+			<description>The emberbat can't use its blindsight while deafened.</description>
+		</sheet>
+	</element>
+
+	<element name="Ember Flame" type="Companion Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_COMPANION_TRAIT_EMBERBAT_EMBER_FLAME">
+		<description>
+			<p>The emberbat can create a flame from its nose at will. It sheds bright light in a 5-foot-radius and dim light in another 5 feet beyond this. This effect lasts until it is dismissed, which the emberbat can do at anytime. When lit, the flame also provides a small damage boost to the emberbat's bite (already included in stat block).</p>
+		</description>
+		<sheet>
+			<description>The emberbat can create a flame from its nose at will. It sheds bright light in a 5-foot-radius and dim light in another 5 feet beyond this. This effect lasts until it is dismissed, which the emberbat can do at anytime. When lit, the flame also provides a small damage boost to the emberbat's bite.</description>
+		</sheet>
+	</element>
+
+	<element name="Keen Hearing" type="Companion Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_COMPANION_TRAIT_EMBERBAT_KEEN_HEARING">
+		<description>
+			<p>The emberbat has advantage on Wisdom (Perception) checks that rely on hearing.</p>
+		</description>
+		<sheet>
+			<description>The emberbat has advantage on Wisdom (Perception) checks that rely on hearing.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Companion Action" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_COMPANION_ACTION_EMBERBAT_BITE">
+		<description>
+			<p>Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage plus 1 fire damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage plus 1 fire damage.</description>
+		</sheet>
+	</element>
+
+</elements>

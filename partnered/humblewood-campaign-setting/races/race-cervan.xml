@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cervan</name>
+		<description>Cervan from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="race-cervan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-cervan.xml" />
+		</update>
+	</info>
+
+	<element name="Cervan" type="Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACE_CERVAN">
+		<description>
+			<p>Cervans are a versatile deer-like folk who make their homes in small, intimate villages throughout Humblewood. More insular than other humblefolk, cervans often reside deep in the most ancient parts of Humblewood's vast forest, in tree stands and groves far from birdfolk perches.</p>
+			<h4>Hale and Hearty</h4>
+			<p>Cervans have a robust physique and are rarely sick. They are one of the longest-lived races among the humblefolk. Though their wariness has earned them a reputation as timid, cervans are cautious because they remain active and alert, and generally prefer practice to contemplation. Cervans like to pursue skills independently in order to give themselves a sense of purpose. This striving is what propels some cervans to positions of great import throughout the Wood. A happy cervan is one who is hard at work.</p>
+			<h4>Wary and Practical</h4>
+			<p>One of the reasons cervans form such close-knit communities is a mistrust of outsiders. Before the Treaty, vulpin raiders and mapach thieves were serious threats. These times have long since passed, but cervans still possess a wariness that makes it hard for others to gain their trust. After the implementation of the Humblefolk Treaty, many cervans continued to live by the old ways. However, some cervan villages have since started to contain the odd family of jerbeen, or a few lone hedges. Even under such circumstances, cervans have maintained positions of leadership and delegated responsibilities to make sure that villages are run in accordance with the old cervan teachings, ensuring that work necessary for survival in the most remote villages is accomplished, so that all its inhabitants may be kept healthy and happy.</p>
+			<p class="indent">The ability to balance their innate caution with practical considerations is one of the cervans' greatest strengths. Cervans teach that the best means of survival in any situation is to remain calm and weigh one's options. The best cervan leaders favour this approach.</p>
+			<h4>The Sight</h4>
+			<p>Cervans have a unique ability to bounce back and survive a physical shock that might kill others. Occasionally, cervans who survive such traumas are granted mystical visions. Sometimes these are flashes of insight into the world around them, sometimes portents of doom, and other times visions of a far away future. Known among cervans as "The Sight", this phenomenon is elusive, and out of the control of mortals. Cervans who have seen visions in this way are known as "The Sighted", and after this initial event, some will suddenly find themselves receptive to visions of the past, present, and future.</p>
+			<p class="indent">A cervan whose Sight has been triggered is encouraged to hone it, so that they might take on the role of a seer within their village. However, these efforts aren't always met with success. The Sight will sometimes visit a cervan only once in their lifetime, with no amount of training granting a glimpse of such visions again. This is believed to be for the best, as cervans acknowledge that those who are truly Sighted carry knowledge that can be both a blessing and a curse.</p>
+			<h4>The Blessing of Cairith</h4>
+			<p>While it's not unusual for some cervans to have small antlers or buds visible on their heads, only rarely is a cervan born who can grow a full set of antlers. These cervans are a different subrace—pronghorns—and are thought to be specially blessed by their Amaranthine Cairith, a sacred spirit of life and growth believed to watch over all cervans. Unlike other subraces, pronghorn and grove cervans are the same people. The arrival of a pronghorn cervan is an event to celebrate, as it can occur only once in a generation.</p>
+			<h4>Cervan Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Cervans reach maturity around 12 years. They live long lives compared to the rest of the Humblefolk, between 100 and 150 years, something they attribute as much to their way of life as the blessing of Cairith. Pronghorns generally live longer than grove cervans, which is considered a sign of Cairith's favor.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Cervans are pragmatic in their thinking, and generally prefer to keep their philosophies flexible in order to prioritize what they believe is important for both themselves and their communities. They lean towards neutral alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Grove cervans stand between 5 and 6 feet tall, and have light builds, weighing between 130 and 180 pounds. Pronghorn cervans are taller and tend toward heavier, more muscular builds, standing around 7 feet tall, and sometimes weighing over 200 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Practical.</em></strong> Cervans are eminently practical and like to spend their time learning useful skills for life in their woodland villages. You gain proficiency in one of the following skills: Athletics, Medicine, Nature, or Survival.</p>
+			<p class="indent"><strong><em>Surge of Vigor.</em></strong> All cervans possess a great tenacity and will to survive, which allows them to bounce back from even the most devastating blows. If an attack deals over half of your current remaining hit points in damage, (even if your hit points are reduced to 0 by the attack) you immediately regain hit points equal to 1d12 + your Constitution Modifier. You can't use this feature again until you have completed a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Birdfolk, and speak Cervan (Cervan has no written component).</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> There are two main subraces of cervans: grove or pronghorn. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Cervan)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_CERVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||HWCS Birdfolk||HWCS Cervan Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_PRACTICAL" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_SURGE_OF_VIGOR" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Practical" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_PRACTICAL">
+		<description>
+			<p>Cervans are eminently practical and like to spend their time learning useful skills for life in their woodland villages. You gain proficiency in one of the following skills: Athletics, Medicine, Nature, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Practical" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Practical)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Surge of Vigor" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_SURGE_OF_VIGOR">
+		<description>
+			<p>All cervans possess a great tenacity and will to survive, which allows them to bounce back from even the most devastating blows. If an attack deals over half of your current remaining hit points in damage, (even if your hit points are reduced to 0 by the attack) you immediately regain hit points equal to 1d12 + your Constitution Modifier. You can't use this feature again until you have completed a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If an attack deals over half of your current remaining hp in damage, (even if your hp is reduced to 0 by the attack) you immediately regain hp equal to 1d12 + {{constitution:modifier}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Subrace" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_SUBRACE">
+		<description>
+			<p>There are two main subraces of cervans: grove or pronghorn. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Cervan Subrace" supports="HWCS Cervan Subrace" />
+		</rules>
+	</element>
+
+	<!--Grove-->
+
+	<element name="Grove Cervan" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_CERVAN_GROVE">
+		<supports>HWCS Cervan Subrace</supports>
+		<description>
+			<p>As a grove cervan, you are swift and agile, able to quickly maneuver out of harm’s way. You are also incredibly versatile, and can fulfill a variety of roles within a village or an adventuring party.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Swift.</em></strong> Your base walking speed increases to 35 feet.</p>
+			<p class="indent"><strong><em>Standing Leap.</em></strong> Your base long jump is 30 feet, and your base high jump is 15 feet, with or without a running start.</p>
+			<p class="indent"><strong><em>Nimble Step.</em></strong> Opportunity attacks made against you are rolled with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="1d4">110 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Grove Cervan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_GROVE_SWIFT" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_GROVE_STANDING_LEAP" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_GROVE_NIMBLE_STEP" />
+		</rules>
+	</element>
+
+	<element name="Swift" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_GROVE_SWIFT">
+		<description>
+			<p>Your base walking speed increases to 35 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="35" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Standing Leap" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_GROVE_STANDING_LEAP">
+		<description>
+			<p>Your base long jump is 30 feet, and your base high jump is 15 feet, with or without a running start.</p>
+		</description>
+		<sheet>
+			<description>Your base long jump is 30 ft, and your base high jump is 15 ft, with or without a running start.</description>
+		</sheet>
+	</element>
+
+	<element name="Nimble Step" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_GROVE_NIMBLE_STEP">
+		<description>
+			<p>Opportunity attacks made against you are rolled with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Opportunity attacks made against you are rolled with disadvantage.</description>
+		</sheet>
+	</element>
+
+	<!--Pronghorn-->
+
+	<element name="Pronghorn Cervan" type="Sub Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_SUB_RACE_CERVAN_PRONGHORN">
+		<supports>HWCS Cervan Subrace</supports>
+		<description>
+			<p>As a pronghorn cervan, you were born larger and stronger than others in the community and found yourself laden with expectations from a very young age. It is up to you whether you embrace your position of privilege, or rebel against the constraints thrust upon you by cervan society.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Robust Build.</em></strong> Your carrying capacity is doubled, as is the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Antlers.</em></strong> You have a set of large, strong antlers that can be used to make devastating charge attacks. You can use your unarmed strike to gore opponents, dealing 1d6 + your Strength Modifier piercing damage on a hit.</p>
+			<p class="indent">Additionally, if you move at least 20 feet in a straight line towards an opponent, you can spend a bonus action to charge them, dealing an extra 1d6 points of piercing damage. If the target of your charge is Large or smaller, they must make a Strength saving throw against a DC of your Proficiency Bonus + 8 + your Strength Modifier. On failure, the target is pushed 10 feet away from you into a space of your choice.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d10">6'1"</set>
+			<set name="weight" modifier="2d4">120 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Pronghorn Cervan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_PRONGHORN_ROBUST_BUILD" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_PRONGHORN_ANTLERS" />
+		</rules>
+	</element>
+
+	 <element name="Robust Build" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_PRONGHORN_ROBUST_BUILD">
+		<description>
+			<p>Your carrying capacity is doubled, as is the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>Your carrying capacity is doubled, as is the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Antlers" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_CERVAN_PRONGHORN_ANTLERS">
+		<description>
+			<p>You have a set of large, strong antlers that can be used to make devastating charge attacks. You can use your unarmed strike to gore opponents, dealing 1d6 + your Strength Modifier piercing damage on a hit.</p>
+			<p class="indent">Additionally, if you move at least 20 feet in a straight line towards an opponent, you can spend a bonus action to charge them, dealing an extra 1d6 points of piercing damage. If the target of your charge is Large or smaller, they must make a Strength saving throw against a DC of your Proficiency Bonus + 8 + your Strength Modifier. On failure, the target is pushed 10 feet away from you into a space of your choice.</p>
+		</description>
+		<sheet>
+			<description>You have antlers that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing damage. &#13;
+			Additionally, if you move at least 20 ft in a straight line towards an opponent, you can spend a bonus action to charge them, dealing an extra 1d6 points of piercing damage. If the target of your charge is Large or smaller, they must make a Strength saving throw (DC {{hwcs:pronghorn cervan:antlers:dc}}). On failure, the target is pushed 10 ft away from you into a space of your choice.</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:pronghorn cervan:antlers:dc" value="8" />
+			<stat name="hwcs:pronghorn cervan:antlers:dc" value="strength:modifier" />
+			<stat name="hwcs:pronghorn cervan:antlers:dc" value="proficiency" />
+		</rules>
+	</element>
+
+</elements>

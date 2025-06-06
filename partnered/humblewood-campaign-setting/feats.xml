@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/feats.xml" />
+		</update>
+	</info>
+
+	<!--Glide Trait Grant-->
+	<element name="Glide Trait" type="Grants" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_GRANTS_GLIDE_TRAIT" />
+	
+	<element name="Aerial Expert" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_AERIAL_EXPERT">
+		<prerequisite>Glide trait</prerequisite>
+		<requirements>ID_HPP_HWCS_GRANTS_GLIDE_TRAIT</requirements>
+		<description>
+			<p><em>Prerequisite: Glide trait</em></p>
+			<p>Years of practice or an innate talent have made you adept at gliding. You gain the following benefits:</p>
+			<ul>
+				<li>You no longer need to move at least 10 feet to perform long and high jumps. You may choose whether the jump uses your Strength or Dexterity score for determining height or distance, and you double the distance you would normally leap in either case.</li>
+				<li>You may take the Dash action while gliding to fly an additional distance up to your movement speed.</li>
+				<li>You may change direction freely while gliding, and may gain up to 10 feet of altitude once before you finish your descent.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You no longer need to move at least 10 ft to perform long and high jumps. You may choose whether the jump uses your Strength or Dexterity score for determining height or distance, and you double the distance you would normally leap. &#13;
+			You may take the Dash action while gliding to fly an additional distance up to {{speed}} ft.
+			You may change direction freely while gliding, and may gain up to 10 feet of altitude once before you finish your descent.</description>
+		</sheet>
+	</element>
+
+	<element name="Bandit Cunning" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_BANDIT_CUNNING">
+		<description>
+			<p>Your time as a bandit has granted you a sense for danger, and made you skilled at sizing up opponents. You gain the following benefits:</p>
+			<ul>
+				<li>When you are asked to make a saving throw, you may spend your reaction to add your Intelligence modifier as an additional bonus to the saving throw. You cannot use this ability again until you have completed a long rest.</li>
+				<li>During combat, you can use your action to make an Intelligence (Investigation) check against any creature you have seen fight. As long as you succeed against a DC of 10 + their challenge rating, you can learn one useful fact of your choice about the target's combat abilities. Choose from:
+					<ul>
+						<li>one damage resistance or immunity</li>
+						<li>one condition immunity</li>
+						<li>one special ability possessed by the creature that either does damage, or prevents damage</li>
+						<li>one option under their attack, legendary, or reaction actions</li>
+						<li>one special sense they possess</li>
+					</ul>
+				</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you are asked to make a saving throw, you may spend your reaction to add your Intelligence modifier as an additional bonus to the saving throw. You cannot use this ability again until you have completed a long rest. &#13;
+			During combat, you can use your action to make an Intelligence (Investigation) check against any creature you have seen fight. As long as you succeed against a DC of 10 + their challenge rating, you can learn one useful fact of your choice about the target's combat abilities. Choose from: one damage resistance or immunity, one condition immunity, one special ability possessed by the creature that either does damage, or prevents damage, one option under their attack, legendary, or reaction actions, one special sense they possess.</description>
+		</sheet>
+	</element>
+	
+	<element name="Heavy Glider" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_HEAVY_GLIDER">
+		<prerequisite>Glide trait</prerequisite>
+		<requirements>ID_HPP_HWCS_GRANTS_GLIDE_TRAIT</requirements>
+		<description>
+			<p><em>Prerequisite: Glide trait</em></p>
+			<p>You were either born with great strength, or trained hard to allow yourself to glide under circumstances most would find impossible. You gain the following benefits:</p>
+			<ul>
+				<li>You may glide while holding a heavy weapon and wearing heavy armor as long as you aren't encumbered.</li>
+				<li>You may choose to land your glide in a space occupied by a hostile creature that is Large or smaller. If you do so, you may roll an opposed Strength check against the creature. On a success, you push them 10 feet away and knock them prone with the force of your impact. On a failure you land in the nearest un-occupied space.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You may glide while holding a heavy weapon and wearing heavy armor as long as you aren't encumbered. &#13;
+			You may choose to land your glide in a space occupied by a hostile creature that is Large or smaller. If you do so, you may roll an opposed Strength check against the creature. On a success, you push them 10 feet away and knock them prone with the force of your impact. On a failure you land in the nearest un-occupied space.</description>
+		</sheet>
+	</element>
+
+	<element name="Opportunistic Thief" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_OPPORTUNISTIC_THIEF">
+		<description>
+			<p>You have learned the tricks of the trade of thievery, allowing you to exploit opportunities for pick-pocketing both in and out of combat. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>When a creature fails a melee attack roll against you in combat, you can make a Dexterity (Sleight of Hand) check against a DC equal to 10 + the target's Dexterity modifier. On a success, you may steal any one item that is not being held or worn by the target.</li>
+				<li>Whenever you successfully use your Sleight of Hand skill outside of combat to steal an object, you may immediately conceal it flawlessly on your person, or put another object you possess in its place.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When a creature fails a melee attack roll against you in combat, you can make a Dexterity (Sleight of Hand) check against a DC equal to 10 + the target's Dexterity modifier. On a success, you may steal any one item that is not being held or worn by the target. &#13;
+			Whenever you successfully use your Sleight of Hand skill outside of combat to steal an object, you may immediately conceal it flawlessly on your person, or put another object you possess in its place.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	
+	<element name="Perfect Landing" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_PERFECT_LANDING">
+		<description>
+			<p>Years of living at great heights have taught you how to fall more gracefully. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>Reduce the damage die for fall damage from a d6 to a d4.</li>
+				<li>You do not fall prone after taking falling damage.</li>
+				<li>You do not take damage for the first 30 feet of your fall.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Reduce the damage die for fall damage from a d6 to a d4. &#13;
+			You do not fall prone after taking falling damage. &#13;
+			You do not take damage for the first 30 ft of your fall.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Speech of the Ancient Beasts" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_SPEECH_OF_THE_ANCIENT_BEASTS">
+		<description>
+			<p>You have a special connection with the natural world. Great beasts regard you as their kin, and you possess the ability to speak the languages of the most powerful and mystic of their kind. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>Beasts of Large size or larger have a friendly disposition toward you unless you have attacked them.</li>
+				<li>You have advantage on Charisma checks made against beasts that are of Large size or larger.</li>
+				<li>You can speak and understand Giant Eagle, Giant Elk, and Giant Owl. You can otherwise be understood by any beast of Large size or larger, whether or not they speak a language. Beasts with Intelligence scores of 4 or lower may only be able to understand simple concepts.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Beasts of Large size or larger have a friendly disposition toward you unless you have attacked them. &#13;
+			You have advantage on Charisma checks made against beasts that are of Large size or larger. &#13;
+			You can be understood by any beast of Large size or larger, whether or not they speak a language. Beasts with Intelligence scores of 4 or lower may only be able to understand simple concepts.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Language" id="ID_MM_LANGUAGE_GIANT_EAGLE" />
+			<grant type="Language" id="ID_MM_LANGUAGE_GIANT_ELK" />
+			<grant type="Language" id="ID_MM_LANGUAGE_GIANT_OWL" />
+		</rules>
+	</element>
+
+	<element name="Woodwise" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_WOODWISE">
+		<description>
+			<p>You have lived your entire life in the gnarled, wooded areas of the world. You are adept at finding your way through even the most treacherous terrain. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in either the Survival or Nature skill.</li>
+				<li>You ignore difficult terrain.</li>
+				<li>You cannot become lost in natural surroundings except by magical means.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You ignore difficult terrain. &#13;
+			You cannot become lost in natural surroundings except by magical means.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Woodwise" supports="ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+
+</elements>

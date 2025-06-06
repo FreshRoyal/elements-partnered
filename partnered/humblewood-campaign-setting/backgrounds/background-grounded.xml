@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grounded</name>
+		<description>Grounded from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="background-grounded.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/backgrounds/background-grounded.xml" />
+		</update>
+	</info>
+
+	<element name="Grounded" type="Background" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_BACKGROUND_GROUNDED">
+		<description>
+			<p>Despite the inherent vertical aspects of birdfolk culture, you have always felt safer and more at peace with your feet firmly planted on the soil. You are practical and level-headed, but due to your different perspective on the world, other bird-folk see you as quirky or unsettling. Your unique insight allows you to connect with the humblefolk who live under the forest canopy in ways perch-dwelling birdfolk cannot.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Athletics, Insight</li>
+				<li><strong>Tool Proficiencies:</strong> one type of artisan's tools</li>
+				<li><strong>Languages:</strong> one of your choice</li>
+				<li><strong>Equipment:</strong> a set of artisan's tools (your choice), a walking stick, a trinket from another culture, traveling clothes, and a belt pouch with 5 gp </li>
+			</ul>
+			<h5>AN ODD BIRD</h5>
+			<p>Among birdfolk you are somewhere between an oddity and an outcast. Some consider your aversion to heights a rejection of birdfolk culture, leading many to find you off-putting. Choose how your community regards you or roll on the table below to determine how you fit in.</p>
+			<table>
+				<thead>
+					<tr><td class="col-10">d6</td><td>Community Place</td></tr>
+				</thead>
+				<tr><td>1</td><td>I am considered weak or unskilled and many treat me like a fledgling.</td></tr>
+				<tr><td>2</td><td>I am looked upon as a traitor to my people.</td></tr>
+				<tr><td>3</td><td>My family wants me to return to the perch, but I just can't.</td></tr>
+				<tr><td>4</td><td>I am not welcome back in my home perch.</td></tr>
+				<tr><td>5</td><td>I am viewed as an oddity, someone for others to laugh at and tease.</td></tr>
+				<tr><td>6</td><td>I have found a new community on the forest floor.</td></tr>
+			</table>
+			<div element="ID_HPP_HWCS_BACKGROUND_FEATURE_FIND_ANOTHER_PATH" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Birdfolk who are grounded often find ways to cope with their aversion to canopy life. Some have completely forsaken their old lives in favor of new ones in undergrowth communities, while others keep ties with family and friends in the perches where they were born.</p>
+		</description>
+		<setters>
+			<set name="short">Athletics, Insight, Artisan's Tool, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Proficiency" name="Artisan's Tool (Grounded)" supports="Artisan tools" />
+			<select type="Language" name="Language (Grounded)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_HPP_HWCS_BACKGROUND_FEATURE_FIND_ANOTHER_PATH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Community Place" type="List">
+				<item id="1">I am considered weak or unskilled and many treat me like a fledgling.</item>
+				<item id="2">I am looked upon as a traitor to my people.</item>
+				<item id="3">My family wants me to return to the perch, but I just can't.</item>
+				<item id="4">I am not welcome back in my home perch.</item>
+				<item id="5">I am viewed as an oddity, someone for others to laugh at and tease.</item>
+				<item id="6">I have found a new community on the forest floor.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I always second guess my choices.</item>
+				<item id="2">I have learned to not let the comments of others affect me.</item>
+				<item id="3">I'm eager to show the benefits of my unique perspective.</item>
+				<item id="4">I'm slow to trust someone new, but open up over shared hardships.</item>
+				<item id="5">I manufacture difficult situations to prove my abilities.</item>
+				<item id="6">I get embarrassed easily, even when someone tries to compliment me.</item>
+				<item id="7">I will deny my fears to everyone.</item>
+				<item id="8">I want to see how others handle situations I'm afraid of.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Adversity. Others think of me as weak, but I will prove my worth with hard work and determination. (Lawful)</item>
+				<item id="2">Encouragement. I try to seek out and support others like me who are seen as outcasts. (Good)</item>
+				<item id="3">Exploration. I yearn to experience unique cultures and discover new places. (Chaotic)</item>
+				<item id="4">Safety. In this dangerous world, it's best to keep your head down and stay cautious. (Neutral)</item>
+				<item id="5">Rebellion. Who cares what others think of me, so long as my actions reflect how I feel in my heart? (Chaotic)</item>
+				<item id="6">Compromise. The best way to respect each other's differences is to find a solution that doesn't exclude anyone. (Good)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">My family has been the subject of ridicule ever since I left my home perch.</item>
+				<item id="2">A bully from my childhood now holds a position of power in my home perch.</item>
+				<item id="3">I follow the teachings of a wise outcast I met in my travels.</item>
+				<item id="4">I feel kinship to a culture outside my own.</item>
+				<item id="5">I won't tolerate anyone who insults me or my friends.</item>
+				<item id="6">I have found a new family on the forest floor, and they mean more to me than anything.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I am incapable of action when I'm at great heights.</item>
+				<item id="2">I lash out at the slightest insult.</item>
+				<item id="3">I keep a distance from others so they won't learn of my fears. </item>
+				<item id="4">I project my insecurities onto others.</item>
+				<item id="5">I am uncouth and mannerless.</item>
+				<item id="6">I find hard to trust other birdfolk.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Find Another Path" type="Background Feature" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_BACKGROUND_FEATURE_FIND_ANOTHER_PATH">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Since you have lived your life close to the ground, you are familiar with the undergrowth in the same way other birdfolk are familiar with the canopy. You can always recall the general layout of the terrain around you while traveling along the forest floor. If your path is ever blocked by an obstacle that requires you to climb or otherwise gain height to circumvent it, you can always find a way around, so long as such a path exists. Additionally, you are adept at finding shelter in the Wood while traveling, and can usually locate a suitable safe shelter (a cave, a tree hollow, or bramble thicket) somewhere on the forest floor for you and up to five other creatures.</p>
+		</description>
+		<sheet alt="Find Another Path">
+			<description>Since you have lived your life close to the ground, you are familiar with the undergrowth in the same way other birdfolk are familiar with the canopy. You can always recall the general layout of the terrain around you while traveling along the forest floor. If your path is ever blocked by an obstacle that requires you to climb or otherwise gain height to circumvent it, you can always find a way around, so long as such a path exists. Additionally, you are adept at finding shelter in the Wood while traveling, and can usually locate a suitable safe shelter (a cave, a tree hollow, or bramble thicket) somewhere on the forest floor for you and up to five other creatures.</description>
+		</sheet>
+	</element>
+
+</elements>

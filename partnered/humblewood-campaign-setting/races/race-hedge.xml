@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hedge</name>
+		<description>Hedge from Humblewood Campaign Setting</description>
+		<update version="0.0.1">
+			<file name="race-hedge.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-hedge.xml" />
+		</update>
+	</info>
+
+	<element name="Hedge" type="Race" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACE_HEDGE">
+		<description>
+			<p>The most diplomatic and good natured of all the humblefolk, hedges like to live quiet lives in villages throughout the Wood, or within the safety of birdfolk perches. They resemble hedgehogs, although the quills that cover their backs are far tougher, hard enough to repel blades and sharp enough to pierce the solid hides of monstrous creatures. Despite their sturdiness, hedges are sensitive and emotional creatures, who display meekness more than bravado. Their meek demeanor and deference in social situations has earned them a reputation as cowards in the eyes of outsiders. But rather than being born of cowardice, their behaviour stems from a desire to respect the feelings and sensitivities of others, something considered to be of utmost importance in hedge society.</p>
+			<h4>Sensitive and Kind</h4>
+			<p>Hedges have an incredible capacity for empathy, and tend to view all creatures, from the smallest beetle to the largest beast, as being equally deserving of respect and dignity. They are known across the Wood for being excellent conflict mediators, and usually find themselves acting as diplomats or emissaries between factions trying to broker an agreement.</p>
+			<p class="indent">Hedges feel most at home when everyone gets along. They are one of the few races who truly understand that conflict is not an evil force but simply represents an imbalance which must be resolved. This is not to say that hedges have never known strife, only that their proactive approach to mediation, coupled with their deep respect for the dignity of all living creatures, results in fewer occasions for conflict. Yet, when a serious conflict does arise, hedges who feel they have been truly and deeply wronged can close themselves off from the rest of their society, sometimes resulting in splits in a community.</p>
+			<p class="indent">One of the reasons hedges display such deep empathy and compassion towards others is due to the intensity of the emotions they feel. The strength of these emotions applies as much to positive feelings it does negative, meaning emotional wounds run deep with hedges.</p>
+			<h4>One With the Forest</h4>
+			<p>Gifted with a unique connection to the Great Rhythm, hedges are tied into the natural world in a fashion similar to the connection possessed by some gallus. This has granted hedges special magical gifts, such as the ability to speak with the smallest ground-dwelling creatures in the Wood, and the power to cause flowers to bloom. It is quite common for hedges to have a variety of animal friends who share their home.</p>
+			<p class="indent">Hedges who dwell outside of the birdfolk cities prefer to live in individual burrows under the great roots of trees. Communities of hedges enjoy living surrounded by nature, near clearings within the forest or lone copses. Central meeting areas and communal gardens can be constructed in the spaces between burrows. Hedges love gardening, and tend to keep a few small gardens wherever they live.</p>
+			<h4>Dressed for Comfort</h4>
+			<p>Hedges need special consideration when wearing clothes, and favor loose tunics, baggy trousers, flowing robes, and other clothes which fit easily over their quills. When not actively flared out, these tough quills naturally flatten, becoming smooth to the touch. However, if suddenly frightened, their quills reflexively flare out and stiffen, an accident which can ruin a hedge's clothing.</p>
+			<p class="indent">Adventuring clothes made specifically for hedges are available in nearly every major city in Humblewood, and tailors throughout the Wood are familiar with making alterations to suit a hedge's needs.</p>
+			<h4>Hedge Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Hedges take longer to mature than most other races, reaching adulthood around 20 years. They also live for a long time, with many reaching 120 years or more.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Hedges are compassionate, empathetic, and diplomatic, tending towards good alignments. They also favor neutral alignments, as hedges have a great respect for the balance of nature.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Hedges have short, rounded body shapes, standing between 3 and 4 feet in height, and weighing between 40 and 70 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Natural Burrowers.</em></strong> You have a burrowing speed of 15 feet. You are capable of burrowing through soil, but are unable to dig through anything more substantial with just your clawed hands.</p>
+			<p class="indent"><strong><em>Spiny Quills.</em></strong> The backs of hedges are covered with spiny quills, which makes it impossible for hedges to wear armor. These quills provide exceptional protection, therefore you have a base armor class of 14 + your Dexterity modifier. Even though you can't wear armor, you can still benefit from the armor class bonus provided by shields so long as you are proficient with them.</p>
+			<p class="indent"><strong><em>Curl Up.</em></strong> You can use your action to curl up, exposing attackers to a wall of your toughened quills. While curled up you cannot move, attack, or cast spells with somatic components, and your base armor class becomes 19. You cannot benefit from any Dexterity bonus to armor class while curled up, but you can still use shields.</p>
+			<p class="indent">Any creature that misses you with a melee attack while you are curled up takes 2d4 points of piercing damage from your sharp quills. If a creature hits you while you are curled up, you are knocked prone in your space at the end of the turn. You may uncurl yourself at any point during your turn.</p>
+			<p class="indent"><strong><em>Forest Magic.</em></strong> You have a deep connection to the magic of the Wood. You know the <i>druidcraft</i> cantrip. Additionally, you can cast <i>animal messenger</i> as a 2nd level spell once with this trait, and regain the ability to do so after a short or long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Speak With Bugs.</em></strong> Through sounds and gestures, you can communicate simple ideas with creatures of the beast subtype that represent insects, spiders, worms, and other creepy crawlies, regardless of their size.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Birdfolk and Hedge.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d6">2'11"</set>
+			<set name="weight" modifier="1d4">30 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Hedge)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hedge)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_BIRDFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_HPP_HWCS_LANGUAGE_HEDGE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||HWCS Birdfolk||HWCS Hedge Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_NATURAL_BURROWERS" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_SPINY_QUILLS" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_CURL_UP" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_FOREST_MAGIC" />
+			<grant type="Racial Trait" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_SPEAK_WITH_BUGS" />
+		</rules>
+	</element>
+
+	<element name="Natural Burrowers" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_NATURAL_BURROWERS">
+		<description>
+			<p>You have a burrowing speed of 15 feet. You are capable of burrowing through soil, but are unable to dig through anything more substantial with just your clawed hands.</p>
+		</description>
+		<sheet>
+			<description>You have a burrowing speed of {{speed:burrow}} ft. You are capable of burrowing through soil, but are unable to dig through anything more substantial with just your clawed hands.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:burrow" value="15" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Spiny Quills" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_SPINY_QUILLS">
+		<description>
+			<p>The backs of hedges are covered with spiny quills, which makes it impossible for hedges to wear armor. These quills provide exceptional protection, therefore you have a base armor class of 14 + your Dexterity modifier. Even though you can't wear armor, you can still benefit from the armor class bonus provided by shields so long as you are proficient with them.</p>
+		</description>
+		<sheet>
+			<description>It is impossible for you to wear armor.</description>
+		</sheet>
+		<rules>
+			<stat name="hwcs:hedge:spiny quills" value="14" bonus="base" />
+			<stat name="hwcs:hedge:spiny quills" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="hwcs:hedge:spiny quills" bonus="calculation" alt="Spiny Quills (Hedge)" />
+		</rules>
+	</element>
+
+	<element name="Curl Up" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_CURL_UP">
+		<description>
+			<p>You can use your action to curl up, exposing attackers to a wall of your toughened quills. While curled up you cannot move, attack, or cast spells with somatic components, and your base armor class becomes 19. You cannot benefit from any Dexterity bonus to armor class while curled up, but you can still use shields.</p>
+			<p class="indent">Any creature that misses you with a melee attack while you are curled up takes 2d4 points of piercing damage from your sharp quills. If a creature hits you while you are curled up, you are knocked prone in your space at the end of the turn. You may uncurl yourself at any point during your turn.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can curl up, exposing attackers to a wall of your toughened quills. While curled up you cannot move, attack, or cast spells with somatic components, and your base armor class becomes 19. You cannot benefit from any Dexterity bonus to armor class while curled up, but you can still use shields. &#13;
+			Any creature that misses you with a melee attack while you are curled up takes 2d4 points of piercing damage from your sharp quills. If a creature hits you while you are curled up, you are knocked prone in your space at the end of the turn. You may uncurl yourself at any point during your turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Forest Magic" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_FOREST_MAGIC">
+		<description>
+			<p>You have a deep connection to the magic of the Wood. You know the <i>druidcraft</i> cantrip. Additionally, you can cast <i>animal messenger</i> as a 2nd level spell once with this trait, and regain the ability to do so after a short or long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the druidcraft cantrip. You can cast the animal messenger spell once with this trait as a 2nd-level spell. (1/LR) (Spellcasting Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_MESSENGER" />
+		</rules>
+	</element>
+
+	<element name="Speak With Bugs" type="Racial Trait" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_RACIAL_TRAIT_HEDGE_SPEAK_WITH_BUGS">
+		<description>
+			<p>hrough sounds and gestures, you can communicate simple ideas with creatures of the beast subtype that represent insects, spiders, worms, and other creepy crawlies, regardless of their size.</p>
+		</description>
+		<sheet>
+			<description>hrough sounds and gestures, you can communicate simple ideas with creatures of the beast subtype that represent insects, spiders, worms, and other creepy crawlies, regardless of their size.</description>
+		</sheet>
+	</element>
+
+</elements>
