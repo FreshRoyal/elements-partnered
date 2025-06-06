@@ -2,12 +2,12 @@
 <index>
 	<info>
 		<name>Humblewood Campaign Setting by Hit Point Press</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />
 		</update>
 	</info>
 	<files>
-		<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/comnpanions.xml" />
+		<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/companions.xml" />
 		<file name="deities.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/deities.xml" />
 		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/feats.xml" />
 		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/languages.xml" />
