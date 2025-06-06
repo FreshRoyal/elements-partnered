@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -22,6 +22,9 @@
 		<!--Ghostfire Gaming-->
 		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
 		<file name="grim-hollow-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack.index" />
+
+		<!--Hit Point Press-->
+		<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />
 		
 	</files>
 </index>
