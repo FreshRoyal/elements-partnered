@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Leyline Magic</name>
+		<description>Leyline Magic Arcane Tradition from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="wizard-leyline-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/archetypes/wizard-leyline-magic.xml" />
+		</update>
+	</info>
+
+	<element name="Leyline Magic" type="Archetype" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_WIZARD_LEYLINE_MAGIC">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>The primal forces of nature have their own magical energy, one which can be harnessed by wizards with proper training. By drawing on this power, leyline wizards can tap into primordial reservoirs of magic to gain access to new spells, empower their own spellcasting, or disrupt opposing forces that attempt to take root in their domain. The most powerful wizards of this tradition can set new leylines, transforming unnatural or inhospitable places into paradises with time. These wizards work closely with druids, and they can gradually heal environments that have been blighted or corrupted.</p>
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_ATTUNEMENT" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_THRUM_OF_THE_LAND" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_BIORHYTHM" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_DISRUPTION" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_WEAVING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_ATTUNEMENT" level="2" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_THRUM_OF_THE_LAND" level="2" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_BIORHYTHM" level="6" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_DISRUPTION" level="10" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_WEAVING" level="14" />
+		</rules>
+	</element>
+
+	<element name="Natural Attunement" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_ATTUNEMENT">
+		<description>
+			<p>When you choose this arcane tradition at 2nd level, you learn how to attune yourself to the magic of leylines which course through nature. Each day when you prepare your spells in a natural setting, you may also attune yourself to the energy of a nearby leyline to gain additional spells. When you do, consult the list of spells from the Leyline Spells table that matches the environment in which you prepared your spells. You can only be attuned to one leyline at a time.</p>
+			<p class="indent">While attuned to a leyline, you gain access to any spells on your current list of leyline spells for which you meet the level requirement. For as long as you are attuned to a leyline, you always have these spells prepared, and they don't count against the number of spells you can prepare each day. Leyline spells are not copied into your spellbook. If you gain access to a spell that doesn't appear on the wizard spell list, the spell is nonetheless a wizard spell for you.</p>
+		</description>
+		<sheet>
+			<description>Each day when you prepare your spells in a natural setting, you may also attune yourself to the energy of a nearby leyline to gain additional spells. When you do, consult the list of spells from the Leyline Spells table that matches the environment in which you prepared your spells. You can only be attuned to one leyline at a time.
+			While attuned to a leyline, you gain access to any spells on your current list of leyline spells for which you meet the level requirement. For as long as you are attuned to a leyline, you always have these spells prepared, and they don't count against the number of spells you can prepare each day. Leyline spells are not copied into your spellbook. If you gain access to a spell that doesn't appear on the wizard spell list, the spell is nonetheless a wizard spell for you.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Leyline Spells" supports="HWT Leyline Magic Leyline Spells" />
+		</rules>
+	</element>
+
+	<element name="Leyline Spells" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS">
+		<description>
+			<h5>Arctic</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>grease</em></td></tr>
+				<tr><td>3rd</td><td><em>hold person</em></td></tr>
+				<tr><td>5th</td><td><em>slow</em></td></tr>
+				<tr><td>7th</td><td><em>ice storm</em></td></tr>
+				<tr><td>9th</td><td><em>cone of cold</em></td></tr>
+			</table>
+			<h5>Coast</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>mirror image</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning</em></td></tr>
+				<tr><td>7th</td><td><em>control water</em></td></tr>
+				<tr><td>9th</td><td><em>conjure elemental (air or water only)</em></td></tr>
+			</table>
+			<h5>Desert</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>color spray</em></td></tr>
+				<tr><td>3rd</td><td><em>blur</em></td></tr>
+				<tr><td>5th</td><td><em>daylight</em></td></tr>
+				<tr><td>7th</td><td><em>blight</em></td></tr>
+				<tr><td>9th</td><td><em>seeming</em></td></tr>
+			</table>
+			<h5>Forest</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>entangle</em></td></tr>
+				<tr><td>3rd</td><td><em>barkskin</em></td></tr>
+				<tr><td>5th</td><td><em>conjure animals</em></td></tr>
+				<tr><td>7th</td><td><em>shape plants</em></td></tr>
+				<tr><td>9th</td><td><em>tree stride</em></td></tr>
+			</table>
+			<h5>Grassland</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>elevated sight</em></td></tr>
+				<tr><td>3rd</td><td><em>gust of wind</em></td></tr>
+				<tr><td>5th</td><td><em>wind wall</em></td></tr>
+				<tr><td>7th</td><td><em>freedom of movement</em></td></tr>
+				<tr><td>9th</td><td><em>commune with nature</em></td></tr>
+			</table>
+			<h5>Mountain</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud</em></td></tr>
+				<tr><td>3rd</td><td><em>silence</em></td></tr>
+				<tr><td>5th</td><td><em>sleet storm</em></td></tr>
+				<tr><td>7th</td><td><em>stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>wall of stone</em></td></tr>
+			</table>
+			<h5>Swamp</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>veil of dusk</em></td></tr>
+				<tr><td>3rd</td><td><em>spike growth</em></td></tr>
+				<tr><td>5th</td><td><em>stinking cloud</em></td></tr>
+				<tr><td>7th</td><td><em>giant insect</em></td></tr>
+				<tr><td>9th</td><td><em>insect plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+	</element>
+	
+	<element name="Thrum of the Land" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_THRUM_OF_THE_LAND">
+		<description>
+			<p>Also at 2nd level, you learn how to channel energy from a leyline to supplement your spells, infusing them with power. Whenever you are in an environment that matches a leyline to which you are attuned, you can apply one of the following benefits to any leyline spell you cast (chosen when you cast the spell):</p>
+			<ul>
+				<li>You gain a +2 bonus to attack rolls made with this spell.</li>
+				<li>You gain a +1 bonus to your spell save DC for this spell.</li>
+				<li>You have advantage on Constitution saving throws you make to maintain concentration on this spell, and you can concentrate on this spell for up to twice its normal duration.</li>
+			</ul>
+			<p class="indent">At 14th level, you can apply one of these benefits to a single spell of 6th level or higher when you cast it, so long as you are in an environment that matches a leyline to which you are attuned. You can't use this feature again until you have completed a long rest.</p>
+		</description>
+		<sheet>
+			<description>Whenever you are in an environment that matches a leyline to which you are attuned, you can apply one of the following benefits to any leyline spell you cast (chosen when you cast the spell):  &#13;
+			• You gain a +2 bonus to attack rolls made with this spell. &#13;
+			• You gain a +1 bonus to your spell save DC for this spell. &#13;
+			• You have advantage on Constitution saving throws you make to maintain concentration on this spell, and you can concentrate on this spell for up to twice its normal duration.</description>
+			<description level="14">Whenever you are in an environment that matches a leyline to which you are attuned, you can apply one of the following benefits to any leyline spell you cast (chosen when you cast the spell):  &#13;
+			• You gain a +2 bonus to attack rolls made with this spell. &#13;
+			• You gain a +1 bonus to your spell save DC for this spell. &#13;
+			• You have advantage on Constitution saving throws you make to maintain concentration on this spell, and you can concentrate on this spell for up to twice its normal duration. &#13;
+			You can apply one of these benefits to a single spell of 6th level or higher when you cast it, so long as you are in an environment that matches a leyline to which you are attuned (1/Long Rest).</description>
+		</sheet>
+	</element>
+
+	<element name="Biorhythm" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_BIORHYTHM">
+		<description>
+			<p>At 6th level, you learn to channel the leyline's energies to augment your body's natural healing. As long as you are attuned to a leyline, whenever you use your Arcane Recovery feature to regain expended spell slots, you regain 1d8 hit points for each spell slot you recover.</p>
+			<p class="indent">Additionally, when you complete a short rest in a natural setting, you can attune yourself to a different leyline, following the rules of your Natural Attunement feature.</p>
+		</description>
+		<sheet>
+			<description>As long as you are attuned to a leyline, whenever you use your Arcane Recovery feature to regain expended spell slots, you regain 1d8 hp for each spell slot you recover.
+			Additionally, when you complete a short rest in a natural setting, you can attune yourself to a different leyline, following the rules of your Natural Attunement feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Disruption" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_DISRUPTION">
+		<description>
+			<p>By 10th level, you can channel energy from your leyline to disrupt others' magic. You can cast <i>counterspell</i> or <i>dispel magic</i> without expending a spell slot at the level of the highest spell slot available to you.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast counterspell or dispel magic without expending a spell slot at the level of the highest spell slot available to you.</description>
+		</sheet>
+	</element>
+
+	<element name="Leyline Weaving" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_WEAVING">
+		<description>
+			<p>At 14th level, you have learned how to tap into the interconnected network of distant leylines, temporarily infusing even unnatural or hostile environments with their power. By spending 1 hour in meditation, you can draw on the power of a distant leyline to temporarily create a new one in your location. When you do this, you may choose any one terrain from the Leyline Spells tables and attune yourself to its leyline. The terrain of this leyline does not need to match the terrain you are currently in. Your new leyline affects a 1-mile radius area from the spot you meditated upon, which counts as the terrain of the leyline you attuned to for the purposes of using your leyline abilities. It is hard for a leyline to take root in unfamiliar spaces, and after 24 hours, this effect dissipates. Once you use this feature, you can't do so again until you finish a long rest.</p>
+			<p class="indent">By using this ability to create the same type of leyline on the same spot each day for a full year, you can cause the effect to become permanent. This will forever alter the natural landscape within the zone you created, and you can choose whether the environment within this zone matches your new leyline or combines the features of its terrain with those naturally present.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>By spending 1 hour in meditation, you can draw on the power of a distant leyline to temporarily create a new one in your location. When you do this, you may choose any one terrain from the Leyline Spells tables and attune yourself to its leyline. The terrain of this leyline does not need to match the terrain you are currently in. Your new leyline affects a 1-mile radius area from the spot you meditated upon, which counts as the terrain of the leyline you attuned to for the purposes of using your leyline abilities. It is hard for a leyline to take root in unfamiliar spaces, and after 24 hours, this effect dissipates.
+			By using this ability to create the same type of leyline on the same spot each day for a full year, you can cause the effect to become permanent. This will forever alter the natural landscape within the zone you created, and you can choose whether the environment within this zone matches your new leyline or combines the features of its terrain with those naturally present.</description>
+		</sheet>
+	</element>
+
+	<!--Leyline Spell Lists-->
+	<element name="Arctic" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_ARCTIC">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>grease</em></td></tr>
+				<tr><td>3rd</td><td><em>hold person</em></td></tr>
+				<tr><td>5th</td><td><em>slow</em></td></tr>
+				<tr><td>7th</td><td><em>ice storm</em></td></tr>
+				<tr><td>9th</td><td><em>cone of cold</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Arctic.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Coast" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_COAST">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>mirror image</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning</em></td></tr>
+				<tr><td>7th</td><td><em>control water</em></td></tr>
+				<tr><td>9th</td><td><em>conjure elemental (air or water only)</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Coast.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Desert" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_DESERT">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>color spray</em></td></tr>
+				<tr><td>3rd</td><td><em>blur</em></td></tr>
+				<tr><td>5th</td><td><em>daylight</em></td></tr>
+				<tr><td>7th</td><td><em>blight</em></td></tr>
+				<tr><td>9th</td><td><em>seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Desert.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Forest" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_FOREST">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>entangle</em></td></tr>
+				<tr><td>3rd</td><td><em>barkskin</em></td></tr>
+				<tr><td>5th</td><td><em>conjure animals</em></td></tr>
+				<tr><td>7th</td><td><em>shape plants</em></td></tr>
+				<tr><td>9th</td><td><em>tree stride</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Forest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_HPP_HWCS_SPELL_SHAPE_PLANTS" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Grassland" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_GRASSLAND">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>elevated sight</em></td></tr>
+				<tr><td>3rd</td><td><em>gust of wind</em></td></tr>
+				<tr><td>5th</td><td><em>wind wall</em></td></tr>
+				<tr><td>7th</td><td><em>freedom of movement</em></td></tr>
+				<tr><td>9th</td><td><em>commune with nature</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Grassland.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_HPP_HWCS_SPELL_ELEVATED_SIGHT" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Mountain" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_MOUNTAIN">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud</em></td></tr>
+				<tr><td>3rd</td><td><em>silence</em></td></tr>
+				<tr><td>5th</td><td><em>sleet storm</em></td></tr>
+				<tr><td>7th</td><td><em>stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>wall of stone</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Mountain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SILENCE" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Swamp" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_SWAMP">
+		<supports>HWT Leyline Magic Leyline Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Leyline Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud</em></td></tr>
+				<tr><td>3rd</td><td><em>silence</em></td></tr>
+				<tr><td>5th</td><td><em>sleet storm</em></td></tr>
+				<tr><td>7th</td><td><em>stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>wall of stone</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your current Natural Attunement is Swamp.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_HPP_HWCS_SPELL_VEIL_OF_DUSK" level="1" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GIANT_INSECT" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+</elements>

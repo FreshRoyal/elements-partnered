@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>Feats from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/magic-items.xml" />
+		</update>
+	</info>
+
+	<element name="Alluring Dye" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_ALLURING_DYE">		
+		<description>
+			<p>This dye is available in many different colors, from the brightest of hues seen on bright gallus to more subtle brown, black, and green shades. Applying this thick paste to your feathers, fur, or hair permanently dyes it the color of the dye. You gain +2 to Charisma saving throws for 24 hours after first applying the dye and cannot benefit from this effect again unless you use a dye of a different color. If you re-dye yourself more than once in ten days, roll a d4. On a 1, your fur, feathers, or hair turn a shocking yellow as the dyes interact disastrously, and you have disadvantage on Charisma checks for 1d6 days, after which the color fades to your natural shade.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Antlers of the True Path" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_ANTLERS_OF_THE_TRUE_PATH">
+		<description>
+			<p>This polished wooden divining rod is a highly valued tool among Cairith's seers. It is carved into the shape of antlers and scored with delicate filigree.</p>
+			<p class="indent">While holding the divining rod by the antlers, you can spend 10 minutes visualizing a person, place, or object you are familiar with. After this time, the rod will pull you towards your target for as long as you maintain concentration on the effect (as if concentrating on a spell). The rod will only pull you towards the person, place, or object if it is within 1,000 feet of you and on the same plane of existence.</p>
+			<p class="indent">Once you have used this item, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">concentration</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Band of Fruitfulness" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_BAND_OF_FRUITFULNESS">
+		<description>
+			<p>This gold bangle is etched with depictions of fruits, vegetables, and prepared foods. It has 6 charges. You can speak the command word and expend up to 6 charges to cause the bangle to fly from your wrist and transform into a gold table filled with fresh and lovingly made home-cooked dishes. This food never goes bad or spoils, nor does the table empty until the effect's duration expires. The feast created by the bangle takes 10 minutes to consume for each charge expended to activate it. Up to 5 creatures can sit at the table. If they spend the full duration feasting, they gain the following benefits based on how many charges were spent to activate the bangle:</p>
+			<p class="indent"><strong><em>1 charge:</em></strong> Each creature heals 5d8 hit points.</p>
+			<p class="indent"><strong><em>2 charges:</em></strong> Each creature heals 5d8 hit points.</p>
+			<p class="indent"><strong><em>3 charges:</em></strong> All benefits listed above, and each creature is cured of all diseases and poisons currently affecting them.</p>
+			<p class="indent"><strong><em>4 charges:</em></strong> All benefits listed above, and each creature has their exhaustion level reduced by one.</p>
+			<p class="indent"><strong><em>5 charges:</em></strong> All benefits listed above, and each creature's hit point maximum increases by 2d10 for 1 hour. Each creature also gains this number of hit points.</p>
+			<p class="indent"><strong><em>6 charges:</em></strong> All benefits listed above, but exhaustion is reduced by an additional level, and all the benefits which last for 1 hour last for 24 hours instead.</p>
+			<p class="indent">Each time a charge is used, some of the etchings of food that decorate the band's surface fade away. When the band is out of charges, it resembles a plain gold bangle. The band regains 2 charges each day at dawn, up to a maximum of 6 charges.</p>
+			<p class="indent">This item is valued by followers of Hanera.</p>
+		</description>
+		<setters>
+			<set name="keywords">food, bard, cleric, druid, heal, advantage, exhaustion, poisoned, frightened, bard, cleric, druid</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a bard, cleric, or druid">true</set>
+		</setters>
+	</element>
+
+	<element name="Basilisk Crystal" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_BASILISK_CRYSTAL">
+		<description>
+			<p>Such crystals are grown on the backs of basilisks before they are shed, and possess incredible hardness. A <i>basilisk crystal</i> cannot be effectively cut or damaged except by tools or weapons made of adamantine.</p>
+			<p class="indent">A <i>basilisk crystal</i> otherwise serves as an excellent arcane spell focus.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellcasting focus, arcane focus</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Belt of the Weald" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_BELT_OF_THE_WEALD">
+		<description>
+			<p>This thin chain belt appears to be made of metal, yet closer inspection reveals it to be made up of links of highly polished wood. While wearing this belt, you gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on Survival skill checks while in a forest environment.</li>
+				<li>You ignore difficult terrain while moving through forests.</li>
+				<li>You can cast the <i>longstrider</i> spell once, targeting yourself. This property of the belt can't be used again until the next dawn.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">survival, advantage, spell, longstrider</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">waist</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Chronicle of Fools" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_CHRONICLE_OF_FOOLS">
+		<description>
+			<p>A poorly bound leather journal, the <i>chronicle of fools</i> is filled with stories from countless adventurers and chroniclers, spanning centuries. The back of the book perpetually has blank pages that hunger for more stories. The cover is indestructible, and if the pages are damaged or removed, they will re-form a few minutes later. The writing on the pages can't be obscured, smudged, or altered in any way. Only those attuned to the book can write in it. As an action, you can consult the stories within to grant yourself or a creature who can hear you advantage on any ability check. The target also adds double their proficiency bonus to this check, unless they already have expertise in the skill.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Attuning to the book curses you. You are reluctant to part with the chronicle for as long as you remain attuned to it and are compelled to keep the journal on you at all times. Some force inside the book urges you to write detailed entries about anything that happens in your life, including intimate details about you, your friends, and anything of note you may have come across. The book compels you to write in total honesty and to divulge vulnerabilities, flaws, and even damaging secrets in your entries.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, proficiency, curse</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Cloak of Spines" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_CLOAK_OF_SPINES">
+		<description>
+			<p>This garment is made of large, soft quills that harden while worn. When wearing this cloak, your AC becomes 14 + your Dexterity modifier if you aren't wearing any armor.</p>
+			<p class="indent">If you are hit by a melee attack while wearing the cloak, you can use your reaction to cause the cloak to block the attack and retaliate against the attacker. Reduce the damage of an attack blocked in this way by 2d4, and you deal 2d4 points of magical piercing damage to the attacker. A hedge who uses the cloak to block a melee attack instead reduces the attack's damage by 4d4 and deals 4d4 points of magical piercing damage to the attacker. Once used, this property of the cloak can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, armor, reaction, piercing, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="ac:cloak of spines:base" value="14" />
+			<stat name="ac:cloak of spines:dexterity" value="dexterity:modifier" />
+			<stat name="ac:cloak of spines" value="ac:cloak of spines:base" />
+			<stat name="ac:cloak of spines" value="ac:cloak of spines:dexterity" />
+			<stat name="ac:calculation" value="ac:cloak of spines" bonus="calculation" equipped="[armor:none]" alt="Cloak of Spines" />
+		</rules>
+	</element>
+
+	<element name="Cogwork Wings" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_COGWORK_WINGS">
+		<description>
+			<p>These wings are a strange device made by a mapach tinkerer. Two wings, made of brass and cloth, are attached to a box containing an intricate array of gears and cogs. Leather straps allow it to be worn on the back. It has two levers, one on either side of the central mechanism. Before donning the wings, you can pull the left lever to extend the wings and the right lever to set them into motion. Pushing the right lever causes the wings to stop flapping, and pushing the left lever causes them to retract, but you can't reach these levers while wearing the wings.</p>
+			<p class="indent">While wearing the contraption with the wings in motion, you have a fly speed as shown on the table below. You can use the device to fly for up to 1 hour, all at once, or in several shorter flights. The length of a flight is rounded up to the nearest minute. If you are flying when the hour expires, the wings stop moving and you drop to the ground, taking falling damage.</p>
+			<p class="indent">As a reaction while falling, you can press a button on the front of the center buckle of the straps to cause the wings to set into a fixed position, allowing you to glide. While gliding, you descend at a rate of feet per round determined by your combined weight until you land, moving forward and descending at the same speed.</p>
+			<p class="indent">If you press the gliding button, there is a 50 percent chance the device will fail and the wings will become stuck in a fixed gliding position. If this occurs, the device will become completely useless after you have landed, and nothing can cause the wings to retract or flap until they become unstuck after 2d12 hours.</p>
+			<p class="indent">The speed of your flight and glide is determined by your combined weight along with your gear (worn and carried). The <i>cogwork wings</i> themselves weigh 20 pounds and are included in the total weight.</p>
+			<table>
+				<thead>
+					<tr><td>Total Weight</td><td>Fly Speed</td><td>Glide Descent Speed</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Under 150 pounds</td><td>60 ft.</td><td>30 ft.</td></tr>
+					<tr><td>150 pounds to 250 pounds</td><td>30 ft.</td><td>60 ft.</td></tr>
+					<tr><td>Over 250 pounds</td><td>0 ft.</td><td>—</td></tr>
+				</tbody>
+			</table>
+			<p class="indent">The wings regain 10 minutes of flight for every 4 hours they aren't in use.</p>
+		</description>
+		<setters>
+			<set name="keywords">fly speed, glide</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Cream of Ooze Moisturizing Face Serum" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_CREAM_OF_OOZE_MOISTURIZING_FACE_SERUM">		
+		<description>
+			<p>When you apply this light pink cream, it causes a <i>prestidigitation</i>-like effect, cleaning any grime or dirt from your face or another equivalent-sized area of your body you apply it to.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Crown of Daffodils" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_CROWN_OF_DAFFODILS">
+		<description>
+			<p>This enchanted flower crown is woven from leafy, flowering vines which sprout 1d4 blooming daffodils. As long as the crown has at least one daffodil in bloom while you wear it, you gain a +1 bonus to ability checks and saving throws.</p>
+			<p class="indent">You can remove a daffodil from the crown as an action and bestow it to another creature. The creature can choose to magically affix the given daffodil to themselves. The daffodil can become a boutonniere, a hair ornament, or corsage. The creature possessing a freshly plucked daffodil gains a +1 bonus to ability checks and saving throws. The flower withers away 1 hour after it was removed from the crown and no longer grants a bonus effect.</p>
+			<p class="indent">Each day at dawn, 1d4 daffodils bloom on the crown, up to a maximum of 4 daffodils. When the last daffodil is removed from the crown, roll a d20. On a 1, the crown withers away and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">ability checks, saving throws, action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Draught of Feather Shine" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_DRAUGHT_OF_FEATHER_SHINE">		
+		<description>
+			<p>When you consume this oily draught, you gain advantage on Charisma ability checks and saving throws for 24 hours. If you have feathers, they are noticeably more shiny than usual.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Draught of Slime Curse Cure" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_DRAUGHT_OF_SLIME_CURSE_CURE">		
+		<description>
+			<p>This slightly astringent green liquid is thick and viscous, and is filled with bubbles. Drinking this potion grants you the benefits of the <i>remove curse</i> spell as though it were cast on you, as well as advantage on saving throws made to resist being cursed for 1 hour after you drink it.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Egg of Rebirth" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_EGG_OF_REBIRTH">
+		<description>
+			<p>This smooth golden egg fits in your hand. It feels warm and is surprisingly strong despite its delicate appearance. It is blessed with the life-giving powers of Ardea. Attuning to the egg involves placing a portion of your life energy inside of it. You can feel your life force within it, and once you have attuned to it, you always know its direction and distance from you as long as you are on the same plane of existence as the egg. The egg is unbreakable and indestructible. Only a <i>power word kill</i> spell cast on the egg can destroy it, causing it to turn black and crumble to dust and killing any attuned character in the process, regardless of their hit point total.</p>
+			<p class="indent">While you carry this egg with you, you may spend your reaction to grant yourself advantage on a saving throw against one effect or condition currently affecting you. Once you use this property, you can't use it again until the next dawn.</p>
+			<p class="indent">When you die, as long as the egg is within 20 feet of you, it shatters, destroying it, and you are immediately restored to life in a blaze of brilliant light. You are revived with full hit points, and your hit point maximum is restored (if it had been reduced). When this happens, all hostile creatures within 60 feet of you must succeed on a DC 17 Constitution saving throw, taking 12d6 radiant damage on a failure, or half as much on a success. Any creature that fails the saving throw is blinded for 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">reaction, advantage, saving throw, condition, radiant, damage, blinded</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Eye of Starlight" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_EYE_OF_STARLIGHT">
+		<description>
+			<p>This black bronze amulet is made of intricate cogwork and has a single polished glass orb the size of an eye set tightly in its center. This item has 3 charges and regains 1d3 charges each night at dusk.</p>
+			<p class="indent"><strong><em>Cosmic Insight.</em></strong> When you wear this amulet, the orb inside grants you supernatural awareness of your surroundings. When you make a skill check, attack roll, or saving throw, you can spend your reaction and expend a charge to re-roll the result. You must do this after your first die has been rolled, but before the outcome has been determined. You must take the result of the new roll.</p>
+			<p class="indent"><strong><em>Stellar Eye.</em></strong> Speaking a command word causes the cogwork around the glass orb to open slightly, allowing the orb to be removed. Speaking the command word again closes it. While the amulet is open, you can use your bonus action to command the orb to float out of its setting, or return to a resting state. While the orb is floating, you can spend an action to move it up to 30 feet in any direction, and you can expend a single charge to mentally receive visual information from the orb for 10 minutes. The orb has truesight out to 30 feet and is blind beyond this radius. It can see in all directions at once. There is no limit to how far away from you the orb can move, but it can't enter a different plane of existence from you. The orb's movement can be blocked by a solid barrier, but it can pass through an opening as small as 1 inch in diameter. While the orb is outside of the amulet, you cannot benefit from its other property.</p>
+		</description>
+		<setters>
+			<set name="keywords">reaction, skill check, attack, saving throw, bonus action, action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Fangs of Guile" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FANGS_OF_GUILE">
+		<description>
+			<p>This rare necklace was created by supplicants of Kren, who obtained knowledge of their craft in a ritual exchange. The necklace imbues its wearer with equal parts guile and ferocity.</p>
+			<p class="indent">While you wear the necklace, you have advantage on Deception, Insight, and Persuasion skill checks.</p>
+			<p class="indent">The necklace has 3 charges. It regains 1d3 charges nightly, at dusk. You can spend an action to expend 1 to 3 charges and cause a large red spectral maw to bite a creature you can see within 5 feet of you. The spectral jaws make an attack roll with a +7 bonus. On a hit, the target takes 3d6 magical piercing damage for each charge spent. You gain an amount of temporary hit points equal to the damage dealt.</p>
+			<p class="indent">If the necklace has no charges at dusk, roll 1d6. On a 1 the fangs yellow and dull, and the necklace loses its magic forever.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, deception, insight, persuasion, attack, piercing, damage, temporary hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Feather Robe, Corvum" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CORVUM">
+		<description>
+			<p>This luxuriant robe is made from the feather of a birdfolk spellcaster. Though it appears to be made of many individual plumes, the robe is actually composed of only a single feather, flawlessly copied over and over again by the magic that created it.</p>
+			<p class="indent">You gain the following benefits from wearing the robe.</p>
+			<ul>
+				<li>Your Intelligence or Charisma score becomes 22 (your choice when you first attune to the robe).</li>
+				<li>You have a +1 bonus to saving throws while you wear this robe.</li>
+				<li>Your spell attacks have advantage against foes that have not yet acted in this combat. Treat any successful spell attack roll made against a surprised creature as though it were a critical hit.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, charisma, saving throw, critical hit, sorcerer, warlock, wizard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Ability Score (Feather Robe, Corvum)" supports="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_INTELLIGENCE|ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CHARISMA" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Feather Robe, Gallus" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_GALLUS">
+		<description>
+			<p>This luxuriant robe is made from the feather of a birdfolk spellcaster. Though it appears to be made of many individual plumes, the robe is actually composed of only a single feather, flawlessly copied over and over again by the magic that created it.</p>
+			<p class="indent">You gain the following benefits from wearing the robe.</p>
+			<ul>
+				<li>Your Intelligence or Charisma score becomes 22 (your choice when you first attune to the robe).</li>
+				<li>You have a +1 bonus to saving throws while you wear this robe.</li>
+				<li>When you cast a spell that targets only one ally and doesn't have a range of self, you can target a second ally in range with the same spell. You can use this property up to three times each day.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, charisma, saving throw, sorcerer, warlock, wizard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Ability Score (Feather Robe, Gallus)" supports="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_INTELLIGENCE|ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CHARISMA" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Feather Robe, Luma" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_GALLUS">
+		<description>
+			<p>This luxuriant robe is made from the feather of a birdfolk spellcaster. Though it appears to be made of many individual plumes, the robe is actually composed of only a single feather, flawlessly copied over and over again by the magic that created it.</p>
+			<p class="indent">You gain the following benefits from wearing the robe.</p>
+			<ul>
+				<li>Your Intelligence or Charisma score becomes 22 (your choice when you first attune to the robe).</li>
+				<li>You have a +1 bonus to saving throws while you wear this robe.</li>
+				<li>When a target succeeds on a saving throw against one of your spells, you can use your reaction to force that target to repeat that saving throw. The target must use the new result. You can use this property up to three times each day.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, charisma, saving throw, reaction, sorcerer, warlock, wizard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Ability Score (Feather Robe, Luma)" supports="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_INTELLIGENCE|ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CHARISMA" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Feather Robe, Raptor" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_RAPTOR">
+		<description>
+			<p>This luxuriant robe is made from the feather of a birdfolk spellcaster. Though it appears to be made of many individual plumes, the robe is actually composed of only a single feather, flawlessly copied over and over again by the magic that created it.</p>
+			<p class="indent">You gain the following benefits from wearing the robe.</p>
+			<ul>
+				<li>Your Intelligence or Charisma score becomes 22 (your choice when you first attune to the robe).</li>
+				<li>You have a +1 bonus to saving throws while you wear this robe.</li>
+				<li>When casting a spell that deals damage to a single target, so long as you have already expended some of your movement during that turn, your spell deals additional damage equal to your character level.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, charisma, saving throw, reaction, sorcerer, warlock, wizard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Ability Score (Feather Robe, Raptor)" supports="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_INTELLIGENCE|ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CHARISMA" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Feather Robe, Strig" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_STRIG">
+		<description>
+			<p>This luxuriant robe is made from the feather of a birdfolk spellcaster. Though it appears to be made of many individual plumes, the robe is actually composed of only a single feather, flawlessly copied over and over again by the magic that created it.</p>
+			<p class="indent">You gain the following benefits from wearing the robe.</p>
+			<ul>
+				<li>Your Intelligence or Charisma score becomes 22 (your choice when you first attune to the robe).</li>
+				<li>You have a +1 bonus to saving throws while you wear this robe.</li>
+				<li>Whenever you cast a spell using a spell slot, you gain temporary hit points equal to 2d10 + the level of the spell.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, charisma, saving throw, temporary hit points, sorcerer, warlock, wizard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Ability Score (Feather Robe, Strig)" supports="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_INTELLIGENCE|ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CHARISMA" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Class Feature" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your Intelligence score becomes 22.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence:score:set" value="22" bonus="base" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Class Feature" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FEATHER_ROBE_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your Charisma score becomes 22.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma:score:set" value="22" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Flame of Ingenuity" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_FLAME_OF_INGENUITY">
+		<description>
+			<p>This wooden lantern contains a small flame within and represents the true power of fire's gift when properly harnessed. The creation of the first <i>flame of ingenuity</i> is said to have been divinely inspired by Gesme herself.</p>
+			<p class="indent"><strong><em>Light of Revelation.</em></strong> The mystical flame inside this wooden lantern never goes out and can only be quenched inside an antimagic field. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects become visible so long as they are in the lantern's bright light, and illusions in the bright light are immediately revealed, appearing as spectral forms rather than solid matter. You can use a bonus action to speak a command word to reduce the flame's light to dim light in a 5-foot radius.</p>
+			<p class="indent"><strong><em>Stroke of Ingenuity.</em></strong> When you roll a 1 or 2 on an Intelligence check while you are attuned to the lantern, you can reroll the die and must use the new result.</p>
+			<p class="indent"><strong><em>Arcane Rekindling.</em></strong> By spending 1 minute meditating on the flame within the lantern, you can regain up to 5 levels worth of spell slots, divided as you choose. For example, you could regain one 5th level spell slot, or one 3rd level and one 2nd level spell slot. This property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, light, intelligence, spell slot, bard, sorcerer, wizard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a bard, sorcerer, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Glowing Ember" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_GLOWING_EMBER">
+		<description>
+			<p>This clear crystal contains an ember suspended in its center. It weighs one pound and feels perpetually warm to the touch. When you speak the <i>glowing ember</i>'s command word within 60 feet of it, the ember begins to glow, emitting bright light and heat in a 20-foot radius and dim light for an additional 20 feet. Additionally, any creatures within 20 feet of the illuminated crystal feel the ember's heat and gain resistance to cold damage for as long as the ember glows. Speaking the command word again extinguishes the ember's light and heat. A solid object placed over the illuminated crystal (such as a bucket or barrel) prevents the ember's light from emanating, but not its heat.</p>
+			<p class="indent">You can speak a different command word to cause the <i>glowing ember</i> to float up to 5 feet off the ground. Speaking this command word again causes the crystal to stop floating. If you move more than 20 feet from the hovering crystal, it follows until it is within 20 feet of you. It takes the shortest path to reach you, avoiding obstacles if possible. If prevented from moving towards you while it is illuminated, the crystal begins to emanate even more heat. If unable to reach the creature it is following within 3 rounds, it detonates, dealing 8d6 fire damage to each creature within 20 feet of it, and it is destroyed. Creatures caught in the blast can attempt a DC 13 Dexterity saving throw, taking half damage from the explosion on a success.</p>
+			<p class="indent">While it is illuminated, the crystal can be attacked. The crystal is a Tiny object with 30 hit points, AC 16, resistance to non-magical slashing and piercing damage, and immunity to fire damage. Once the crystal reaches 0 hit points, it detonates, as described above.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, cold, resistance, fire, damage, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Kwark's Wondrous Kernels, Planter" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_KWARKS_WONDROUS_KERNELS_PLANTER">
+		<description>
+			<p>These 1-inch-diameter kernels, which come in various shapes and colors, are found in ordinary-looking velvet pouches containing 2d4 seeds. The kernels come in two varieties, planters and tossables. For each bag found, the GM rolls a d8 to determine what types of kernels the bag holds, or chooses kernels from one of the lists below. Bags either contain planters or tossables, but not both.</p>
+			<h5>Planter Kernels</h5>
+			<p>Planter kernels must be planted for their magic to take effect. You can use an action to plant a seed in nearby soil. 1 minute after the planter kernel is planted, the associated effect occurs, depending on the type of kernel. All objects created by planter seeds wither into organic mush 1 hour after sprouting from the earth, as do any removable parts they create.</p>
+			<table>
+				<thead>
+					<tr><td>d8</td><td>Kernel Shape and Color</td><td>Effect</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>Round, Black</td><td>Grows a Large red flower. The flower closes around and swallows the first Large or smaller sized creature that comes within 5 feet of it for the first time on a turn. A creature swallowed by the flower is restrained, blinded, and has total cover against effects that originate from outside the flower. The flower can only swallow one creature at a time. A swallowed creature can cut its way out by attacking the flower from the inside with a weapon that deals slashing damage. The flower has AC 14 and 30 hit points. It disintegrates once it is reduced to 0 hit points. A swallowed creature is freed once the flower is destroyed.</td></tr>
+					<tr><td>2</td><td>Oval, Yellow</td><td>A strong root rises from the ground, topped with a removable wooden burl that resembles a bottle's stopper. While it exists, this root functions as an <i>eversmoking bottle</i> once the burl is removed as an action, except that the cloud of smoke it produces is yellow and smells strongly of mustard.</td></tr>
+					<tr><td>3</td><td>Teardrop, Brown</td><td>A small tree grows from the spot the seed was planted. It has 1d4 + 1 red fruits hanging from its branches. The fruit can be eaten as an action and provides the benefit of a potion of healing.</td></tr>
+					<tr><td>4</td><td>Teardrop, Orange</td><td>A sturdy sapling sprouts. One of its branches is longer than the others and can be easily removed. This branch can be commanded to glow or stop glowing by anyone holding it. It sheds bright orange light in a 60-foot radius and dim light in a 60-foot radius beyond this.</td></tr>
+					<tr><td>5</td><td>Round, Red</td><td>A single wooden shaft shoots up from the soil and then ignites. This magical torch can be removed and wielded. It sheds bright red light in a 30-foot radius and dim light in a 30-foot radius beyond this. You can make attacks with this torch as though it were a club. Any creature hit with the torch takes an additional 2d6 fire damage and must make a DC 13 Dexterity saving throw or catch fire. A creature that is on fire takes 1d6 fire damage at the start of its turn, and can repeat the saving throw using an action, ending the effect on a success. The torch cannot be extinguished except by magical means.</td></tr>
+					<tr><td>6</td><td>Oval, Russet</td><td>A hollow shell resembling a large oval-shaped seed sprouts from the earth. This shell splits down the middle into two halves. Each half can be taken and wielded as a standard shield. Anyone wielding one of these shields has resistance to fire damage.</td></tr>
+					<tr><td>7</td><td>Heart, Green</td><td>A gnarled staff covered in ivy and fruit-bearing grapevines grows in the spot where the seed was sown. The staff can be taken and wielded as a quarterstaff. Treat this weapon as though it were under the effect of a <i>shillelagh</i> spell for as long as the staff exists.</td></tr>
+					<tr><td>8</td><td>Teardrop, Purple</td><td>The seed grows into a Huge mushroom with a wooden door in its stalk and a small stone chimney rising from its cap. Inside, there is a stone hearth and five soft cushions. The person who planted the seed can issue a mental command at any time to lock or unlock the door.</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">action, restrained, blinded, total cover, healing, hp, light, fire, damage, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Kwark's Wondrous Kernels, Tossable" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_KWARKS_WONDROUS_KERNELS_TOSSABLE">
+		<description>
+			<p>These 1-inch-diameter kernels, which come in various shapes and colors, are found in ordinary-looking velvet pouches containing 2d4 seeds. The kernels come in two varieties, planters and tossables. For each bag found, the GM rolls a d8 to determine what types of kernels the bag holds, or chooses kernels from one of the lists below. Bags either contain planters or tossables, but not both.</p>
+			<h5>Tossable Kernels</h5>
+			<p>The magic of tossable kernels is activated by throwing them. You can use an action to throw a kernel up to a range of 20 feet. The associated effect is instantaneous and destroys the seed.</p>
+			<table>
+				<thead>
+					<tr><td>d8</td><td>Kernel Shape and Color</td><td>Effect</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>Round, Black</td><td>The seed explodes into a haze of blue pollen. Each creature within 10 feet of the explosion must make a DC 13 Constitution saving throw or fall asleep. A sleeping creature can be woken using an action, and wakes automatically if it takes any damage. Otherwise, they awaken in 1 minute.</td></tr>
+					<tr><td>2</td><td>Oval, Yellow</td><td>The seed bursts, unleashing a 10-foot radius cloud of pungent yellow gas that lasts for 1 minute. The effect is otherwise identical to a <i>stinking cloud</i> spell (save DC 14).</td></tr>
+					<tr><td>3</td><td>Teardrop, Brown</td><td>The seed unleashes a gentle, green radiance. Each creature within 10 feet gains 2d4 + 2 temporary hit points.</td></tr>
+					<tr><td>4</td><td>Teardrop, Orange</td><td>The seed erupts, releasing a cascade of orange acid. Each creature within 10 feet must succeed on a DC 14 Dexterity saving throw or take 2d8 acid damage.</td></tr>
+					<tr><td>5</td><td>Round, Red</td><td>The seed explodes in flames. Each creature within 10 feet must make a DC 14 Dexterity saving throw, taking 5d6 fire damage on a failure and half as much on a success.</td></tr>
+					<tr><td>6</td><td>Oval, Russet</td><td>The seed pops, releasing a cloud of small brown burrs. Each creature within 10 feet becomes coated by the burrs, and gains vulnerability to fire damage for 1 minute.</td></tr>
+					<tr><td>7</td><td>Heart, Green</td><td>The seed breaks, and a cloud of floral pink mist escapes. Each creature within 10 feet must make a DC 14 Wisdom saving throw or become incapable of attacking or taking hostile actions for 1 minute. A creature affected in this way can attempt the saving throw again on each of its turns, ending the effect on a success. The effect ends immediately if the creature is attacked.</td></tr>
+					<tr><td>8</td><td>Teardrop, Purple</td><td>The seed shatters into a haze of befuddling spores. Each creature within 5 feet must succeed on a DC 14 Constitution saving throw. On a failure, the creature behaves as if under the effect of the confusion spell. At the end of each of their turns, an affected creature can repeat the saving throw, ending the effect on a success.</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">action, saving throw, spell, stinking cloud, acid, fire, damage, confusion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Marotte of Chance" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_MAROTTE_OF_CHANCE">
+		<description>
+			<p>This flashy bird-shaped jester's baton has been imbued with the magic of the Amaranthine Clhuran: the magic of fate. Lumas can tap into this force to unleash all manner of magical effects.</p>
+			<p class="indent">The <i>marotte of chance</i> can be used as an arcane focus for your spells. Additionally, the marotte has an unusual heft to it, and it functions as a magical club with which you can use your Charisma modifier to make attack and damage rolls. Each time you hit with this weapon, roll a d100. On a result of 10 or less, something odd happens. When this occurs, roll a d10 and consult the Chance Table to determine any additional effects that occur. The attack deals damage as normal, unless otherwise specified.</p>
+			<h5>Chance Table</h5>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Effect</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>The attack deals no damage and emits a clear, resonant squeak, audible out to 100 feet.</td></tr>
+					<tr><td>2</td><td>A bouquet of sweet-smelling flowers springs from the head of the marotte. The attack deals no damage, and the target of your attack must succeed on a DC 13 Wisdom saving throw or become charmed by you for 1 minute. The charmed effect ends the moment you or one of your allies takes hostile actions against the target.</td></tr>
+					<tr><td>3</td><td>You and the target of your attack immediately switch places. This is a teleportation effect, which emits an audible pop.</td></tr>
+					<tr><td>4</td><td>Magical lightning arcs from the marotte toward the target of your attack. The target takes 2d6 points of lightning damage, and each creature within 10 feet of the target (including you) must succeed on a DC 13 Dexterity saving throw or take 1d6 points of lightning damage.</td></tr>
+					<tr><td>5</td><td>The target of your attack is affected by the effects of an <i>enlarge/reduce</i> spell. Roll a d10. On an even number, the target is enlarged, and on an odd number, the target is reduced. If the target is unwilling, it can make a DC 13 Constitution saving throw to avoid the effect.</td></tr>
+					<tr><td>6</td><td>The marotte transforms into an axe. Your attack deals 1d12 + your Charisma modifier slashing damage instead of what it would deal normally. The target of your attack must succeed on a DC 14 Wisdom saving throw or become frightened of you for 1 minute. A frightened creature can attempt a saving throw at the end of its turn, ending the effect on a success. The marotte transforms back into its normal form at the start of your next turn.</td></tr>
+					<tr><td>7</td><td>The target of your attack glows the color of your choice. Until the start of your next turn, the target sheds bright light in a 15-foot radius and dim light for an additional 15 feet and can't be invisible.</td></tr>
+					<tr><td>8</td><td>You turn invisible for 1 minute. Roll a d10. On an odd number, the target of your attack also becomes invisible for 1 minute.</td></tr>
+					<tr><td>9</td><td>Your attack deals no damage. The target of your attack must succeed on a DC 14 Wisdom saving throw or turn into a frog (as if under the effect of a <i>polymorph</i> spell) for 1 minute. Roll another d10. On a roll of 1, the effect happens again, targeting you.</td></tr>
+					<tr><td>10</td><td>Roll twice more on this table, re-rolling 10s. Your attack has both of the effects you rolled combined. If an effect states your attack would deal no damage, this applies only to the attack's original damage roll and not to damage caused by any additional effects.</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Rods</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="slot">onehand</set>
+			<set name="attunement" addition="by a luma">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Club</set>
+		</setters>
+	</element>
+
+	<element name="Pathfinder's Pebble" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_PATHFINDERS_PEBBLE">
+		<description>
+			<p>This polished pebble is inscribed with the holy symbol of Reya and carries a powerful blessing from the Amaranthine. So long as you carry the pebble and are outdoors, you always know which way is north.</p>
+			<p class="indent">When holding the stone, you can spend an action to focus your mind on your surroundings, allowing you to cast <i>commune with nature</i> once per day. You regain the ability to do so each dawn. Additionally, by grasping the pebble tightly and speaking out loud the name of a fixed location you are familiar with on the same plane of existence, the pebble will grant you knowledge of the shortest, most direct physical path toward it. As long as you are holding the pebble, you know how far the named location is from you and in what direction it lies. Furthermore, you can automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination. This lasts until you have either arrived at your destination, you select a new destination in the same manner described above, or you dismiss the effect at any time, costing no action.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, commune with nature, cleric, nature domain, druid, ranger</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a cleric of the nature domain, druid, or ranger">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Rest" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_POTION_OF_REST">		
+		<description>
+			<p>This pale blue elixir has a jasmine flower suspended within it. It is brewed using bluebee venom, which helps the imbiber sleep calmly and deeply.</p>
+			<p class="indent">Drinking this potion before taking a long or short rest causes the imbiber to wake with 1d10 + 5 temporary hit points. The imbiber also awakens healed of one level of exhaustion. This is in addition to what the rest would normally provide.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Recall Crystal" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_RECALL_CRYSTAL">
+		<description>
+			<p>As an action, you can smash this small clear crystal to teleport yourself and any equipment you are wearing or holding back to the Alderheart council chambers.</p>
+			<p class="indent">Once used, this item is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, teleport</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Plant Speech" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_RING_OF_PLANT_SPEECH">
+		<description>
+			<p>While wearing this ring, you can speak with plants and plant creatures within 30 feet of you as though you share a common language. Non-sentient plants within 30 feet of you gain sentience and can communicate with you telepathically, and you can question them about events they have witnessed within the last day, gaining information about creatures that have passed, weather, and other things that have occurred nearby from the plant's limited perspective.</p>
+			<p class="indent">This ring is prized by followers of Henwin.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ring of the Sky Hunter" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_RING_OF_THE_SKY_HUNTER">
+		<description>
+			<p>The dark metal talons of this ring's setting grasp a blue gem that seems to swirl with patterns of windswept clouds. This ring has 3 charges, and it regains 1d3 spent charges each day at dawn.</p>
+			<p class="indent"><strong><em>Stooping Talons.</em></strong> While wearing this ring, you can use an action and expend any number of its charges to attack one creature you can see within 60 feet of you. The ring produces a pair of spectral talons which dive from the sky and make an attack roll with a +7 bonus. On a hit, the target takes 2d8 magical piercing damage for each charge you spent.</p>
+			<p class="indent"><strong><em>Raising Talons.</em></strong> Alternatively, you can expend 1 to 3 of the ring's charges as an action to cause the same spectral talons to appear and lift a Large or smaller creature you can see within 60 feet of you. The target is grappled by the claws and lifted 20 feet into the air for each charge spent. An unwilling target must succeed on a DC 15 Strength saving throw to avoid being grappled. The grapple lasts for a number of rounds equal to the number of charges spent. The target can repeat the saving throw at the end of each of its turns to break free of the grapple and takes damage as normal if this causes it to fall.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Saber of Unity" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_SABER_OF_UNITY">
+		<description>
+			<p>This sword has been imbued with the spirit of Gaspard's leadership and grants whoever wields it a portion of his courage. You gain a +2 bonus to attack and damage rolls made with this magic sword. In addition, you and any allies within 10 feet of you are immune to being frightened while you wield it. Whenever you score a critical hit with this sword against a foe that is a size larger than you, you and all allies within 10 feet of you gain 2d10 temporary hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">immune, frightened, temporary hit points</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier or scimitar">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Rapier||Scimitar</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">{{parent}} of Unity</set>
+		</setters>
+	</element>
+
+	<element name="Shroud of Ending" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_SHROUD_OF_ENDING">
+		<description>
+			<p>You must make a DC 12 Constitution saving throw when you attune to this artifact. On a failure, the <i>Shroud of Ending</i> causes you to magically age 5d10 years. For the next hour, you have disadvantage on all attack rolls, ability checks, and saving throws as your body is temporarily weakened by your sudden advance in age. If this causes you to age beyond the average natural lifespan for your race, you instantly die, and your soul rises immediately as a ghost sworn to protect the artifact.</p>
+			<p class="indent">As long as you are attuned to this artifact, you deal 1d6 necrotic damage to any plant you touch that isn't also a creature. Creatures with the plant or beast type within 30 feet of you become hostile toward you. Additionally, you stop aging and no longer require food or sleep to live. Whenever you are no longer attuned to this item, you immediately age a number of years equal to the amount of time you would have aged naturally while attuned to the artifact. If this causes you to age beyond the average natural lifespan for your race, you instantly die.</p>
+			<p class="indent"><strong><em>Blessing of Tyton.</em></strong> While wearing the cloak, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a +2 bonus to your AC and saving throws.</li>
+				<li>You can see in darkness as if it were bright light.</li>
+				<li>You are immune to poison damage, the poisoned condition, and all diseases.</li>
+				<li>You have advantage on death saving throws, and on saving throws against effects that would kill you instantaneously.</li>
+			</ul>
+			<p class="indent"><strong><em>Hasten the Sunset.</em></strong> While wearing the cloak, you can spend an action to cause a living creature you can see within 120 feet of you to age rapidly. The creature must make a DC 17 Constitution saving throw, instantly aging 6d10 years on a failure and aging by one year on a success. On a failed saving throw, the target becomes cursed, automatically failing any Strength or Dexterity checks and making all other attack rolls, ability checks, and saving throws at disadvantage. This effect lasts until a <i>remove curse</i> spell is cast on the target. If the target ages over the average natural lifespan for their race, they die. Once this property has been used, it can't be used again until a week has passed.</p>
+			<p class="indent"><strong><em>Shade's Form.</em></strong> While wearing the cloak, you can cast <i>etherealness</i>. Once this property has been used, it can't be used again until the next dusk.</p>
+			<p class="indent"><strong><em>Step of the Night's Shadow.</em></strong> While wearing the cloak, you gain the ability to teleport to a location within an area of dim light or darkness within 500 feet of you as an action. You arrive at exactly the spot desired, so long as it is an area of dim light or darkness. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as "200 feet straight downward" or "upward to the northwest at a 45-degree angle, 300 feet." For the teleportation to succeed, you must arrive in an area of dim light or darkness; otherwise, you are teleported to the nearest such area within range. If no such area of dim light or darkness exists, the teleportation fails. You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you use this property. If you would arrive in a place already occupied by an object or a creature, the teleportation fails. After you use this property, roll 1d6. On a roll of 1, you can't use it again until the next dusk.</p>
+			<p class="indent"><strong><em>Destroying the Cloak.</em></strong> The only way to destroy the <i>Shroud of Ending</i> is for a Cleric of Ardea of at least 17th level to present it to the rising sun. The cleric must say a prayer, returning the power of night and death to Tyton, and cast the <i>daylight</i> spell on the cloak. The power within the Shroud of Ending will recognize the coming of Ardea's dawn and return to Tyton's realm. A faintly magical but powerless cloak will be left behind, which resembles the sky at dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, armor, saving throw, necrotic damage, action, teleport, spell, etherealness</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="2" />		
+			<stat name="strength:save:misc" value="2" />
+			<stat name="dexterity:save:misc" value="2" />
+			<stat name="constitution:save:misc" value="2" />
+			<stat name="intelligence:save:misc" value="2" />
+			<stat name="wisdom:save:misc" value="2" />
+			<stat name="charisma:save:misc" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+
+	<element name="Slimeforged Blade" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_SLIMEFORGED_BLADE">
+		<description>
+			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">When you attack a creature with this weapon and roll a 20 on the attack roll, the target is paralyzed until the end of their next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">paralyzed</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Greatsword</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+
+	<element name="Staff of Climbing Ivy" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_STAFF_OF_CLIMBING_IVY">
+		<description>
+			<p>This staff is formed from several strands of leafy vines that have grown together into the shape of a twisted walking stick. It is rigid and sturdy.</p>
+			<p class="indent">The staff has three command words. While holding the staff, you can speak one of its command words to cause an effect.</p>
+			<p class="indent"><strong><em>Growth.</em></strong> Speaking the first command word as a bonus action causes up to 120 feet of creeping vines to grow from the staff towards a solid surface or unattended object you can see. The vines grow at a speed of 30 feet per round.</p>
+			<p class="indent"><strong><em>Grasp.</em></strong> Speaking the second command word, costing no action causes the vines to firmly affix themselves to a surface or unattended object within their reach. The vines can only be anchored to one object or surface at a time.</p>
+			<p class="indent"><strong><em>Grapple.</em></strong> Speaking the third command word as an action causes the vines to retract into the staff at a speed of 30 feet per round. If anchored to a solid surface, the vines will pull the staff's wielder towards the surface at the same speed. If anchored to an object, the vines will pull the object towards the wielder of the staff.</p>
+			<p class="indent">When the vines are extended, they can be attacked. The extended vines have an Armor Class of 14, 45 hit points, and vulnerability to fire and slashing damage. The vines have a Strength score of 16 and can bear up to 240 pounds of weight at once. Weight in excess of this will cause the vines to begin to tear, dealing 10 points of damage to them each round. If the vines drop to 0 hit points, the staff is destroyed. The vines regain all lost hit points when they retract into the staff.</p>
+		</description>
+		<setters>
+			<set name="keywords">bard, druid, sorcerer, warlock, bonus action</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a bard, druid, sorcerer, or warlock">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+		</setters>
+	</element>
+
+	<element name="Talon Tincture" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_TALON_TINCTURE">		
+		<description>
+			<p>When you apply this light tincture to your talons, claws, or other appendages, you gain advantage on Dexterity ability checks and saving throws for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Talons of the Squall" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_TALONS_OF_THE_SQUALL">
+		<description>
+			<p>Awarded to those who pass the test of endurance administered by priests of Altus, these leg-bracers seem to crackle with faint energy. While you wear them, you gain the following benefits:</p>
+			<p class="indent">You gain the following benefits from wearing the robe.</p>
+			<ul>
+				<li>You have resistance to lightning damage.</li>
+				<li>You have advantage on saving throws and ability checks made to resist being moved by strong winds.</li>
+				<li>You do not suffer disadvantage on ranged attack rolls or Perception checks while in strong winds or under conditions of heavy rain or snowfall. If you can fly, you can fly at a normal speed under such conditions.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">lightning, resistance, advantage, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+
+	<element name="The Thorn of Kren" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_THE_THORN_OF_KREN">
+		<description>
+			<p>A pitch black thorn that thrums with eldritch power. When you touch the thorn, you must succeed on a DC 18 Wisdom saving throw or become automatically attuned to the thorn. If becoming attuned to this item causes you to go over your maximum number of attuned items, the GM chooses one of your currently attuned items to instantly unattune in order to make room for the thorn. Handling the thorn with gloves or wrapping it up in a blanket or cloth protects against this effect.</p>
+			<p class="indent"><strong><em>Hunter Senses.</em></strong> While attuned to this item, your senses become heightened and your body becomes more suited for hunting and killing. You have advantage on all Wisdom (Perception) and Wisdom (Survival) checks.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> Your teeth sharpen and become vicious, granting you a bite attack. Your bite is a natural weapon you can use to make unarmed strikes against creatures within 5 feet of you. On a hit, your bite deals 1d8 piercing damage, and you can use your Strength or Dexterity modifier for its attack and damage rolls. You can use your bonus action on each of your turns to make a bite attack.</p>
+			<p class="indent"><strong><em>Vicious Nature.</em></strong> You gain a +2 bonus to attack and damage rolls you make with unarmed strikes and natural melee weapons while attuned to the thorn. This bonus does not stack with bonuses provided by other magic items.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> This item has been cursed by the Amaranthine Kren and turns otherwise docile creatures into violent predators. Attuning to this item extends this curse to you. As long as you are cursed, you are driven by an insatiable hunger. You gain the following flaw: "My hunger is never satiated. I must feast on the flesh of beasts at every opportunity."</p>
+			<p class="indent">For each hour you go without eating fresh meat from a beast, you must succeed on a DC 13 Wisdom saving throw or fall into an overpowering bloodlust. While in this frenzy, you have disadvantage on all ability checks that don't relate to the hunt for fresh meat. In combat with a beast, you have advantage on all attacks, but all attacks made against you also have advantage. Every hour that you stave off the frenzy adds +1 to the save DC to resist it. After you give in to the frenzy and feed, the DC resets back down to 13.</p>
+			<p class="indent"><strong><em>Destroying the Thorn.</em></strong> The destruction of the thorn requires a complex ritual to which only ancient orders like the Tenders have access. This strenuous ritual involves placing the thorn at the heart of an Evertree and allowing the tree's natural magics to purify the artifact. Beyond the ritual, only the magic of a <i>wish</i> spell can destroy the thorn of Kren.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw, attack, piercing, damage, unarmed strikes, natural weapons, advantage, survival, curse</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+	
+	<element name="Whistle of Freedom" type="Magic Item" source="Humblewood Tales" id="ID_HPP_HWT_MAGIC_ITEM_WHISTLE_OF_FREEDOM">
+		<description>
+			<p>This captain's whistle has magical properties that, when blown, grants all creatures that can hear the whistle and are within 100 feet advantage on their next saving throw against a spell or effect currently affecting them. Any creature who can hear the whistle and is under a mind-controlling effect (such as <i>dominate person</i>) is immediately freed from that effect.</p>
+			<p class="indent">A creature that has benefitted from hearing the whistle cannot benefit from its magical properties again for the next 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, saving throw, mind controlling</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+</elements>

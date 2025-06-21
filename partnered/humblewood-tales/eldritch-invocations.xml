@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Invocations</name>
+		<description>Eldritch Invocations from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/eldritch-invocations.xml" />
+		</update>
+	</info>
+
+	<element name="Feral Transformation" type="Class Feature" source="Humblewood Tales" id="ID_HPP_HWT_CLASS_FEATURE_ELDRITCH_INVOCATION_FERAL_TRANSFORMATION">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p><em>Prerequisite: 7th level</em></p>
+			<p>As an action, you can transform into a <strong>dire wolf</strong>, <strong>giant spider</strong>, or <strong>giant octopus</strong> following the same rules as the <i>polymorph</i> spell, but you retain your Intelligence, Wisdom, and Charisma scores. You also retain all of your saving throw proficiencies, in addition to gaining those of the creature, as well as any skill proficiencies that your beast form is physically capable of performing. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. You maintain the ability to speak and can cast spells that have only a verbal component.</p>
+			<p class="indent">You maintain this form for 1 hour or until the form drops to 0 hit points, at which point you revert back to your normal form. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</p>
+			<p class="indent">Once you use this invocation, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can transform into a dire wolf, giant spider, or giant octopus following the same rules as the polymorph spell, but you retain your Intelligence, Wisdom, and Charisma scores. You also retain all of your saving throw proficiencies, in addition to gaining those of the creature, as well as any skill proficiencies that your beast form is physically capable of performing. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. You maintain the ability to speak and can cast spells that have only a verbal component.
+			You maintain this form for 1 hour or until the form drops to 0 hp, at which point you revert back to your normal form. If you revert as a result of dropping to 0 hp, any excess damage carries over to your normal form.</description>
+		</sheet>
+	</element>
+
+	<element name="Hexshredder" type="Class Feature" source="Humblewood Tales" id="ID_HPP_HWT_CLASS_FEATURE_ELDRITCH_INVOCATION_HEXSHREDDER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE|ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Blade</em></p>
+			<p>Your fingers grow into bestial claws, which you can use to make unarmed strikes that deal 1d6 points of slashing damage. You may add your Charisma modifier instead of your Strength modifier to attack and damage rolls made with these unarmed strikes. Your unarmed strikes count as pact weapons, in addition to any melee weapons you have chosen, and as light weapons for the purposes of two-weapon fighting.</p>
+		</description>
+		<sheet>
+			<description>Your fingers grow into claws, which you can use to make unarmed strikes that deal 1d6 slashing damage. You may add your Charisma modifier instead of your Strength modifier to attack and damage rolls made with these unarmed strikes. Your unarmed strikes count as pact weapons, in addition to any melee weapons you have chosen, and as light weapons for the purposes of two-weapon fighting.</description>
+		</sheet>
+	</element>
+
+	<element name="Hunter's Grimoire" type="Class Feature" source="Humblewood Tales" id="ID_HPP_HWT_CLASS_FEATURE_ELDRITCH_INVOCATION_HUNTERS_GRIMOIRE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME|ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_TOME</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Tome</em></p>
+			<p>A new page appears in your book of shadows, dedicated to your quarry. When you recover physical evidence from a creature (a drop of its blood, a strand of its hair, a feather, tooth or claw, etc.), you can offer it to your book of shadows in a special ritual that takes 10 minutes to perform. The ritual consumes the offered physical evidence as the name of the creature from which it came is inscribed upon the page in red ink. After this ritual, as long as you have your book of shadows with you, you have adavantage on any Intelligence checks you make related to the creature.</p>
+			<p class="indent">Additionally, you can spend 1 minute examining the page to learn one of the following facts about the creature:</p>
+			<ul>
+				<li>Its creature type and alignment</li>
+				<li>Any names or aliases it uses</li>
+				<li>Its current distance and direction from you (provided it is on the same plane of existence)</li>
+				<li>Any vulnerabilities or flaws it has</li>
+				<li>Whether or not it is wounded</li>
+				<li>Whether or not it is suffering from a condition, a curse, or a similar effect, as well as the nature of that effect</li>
+			</ul>
+			<p class="indent">The page can only hold the name of one creature at a time, and you can choose whether to replace the name of the creature currently occupying space on the page each time you complete the ritual.</p>
+		</description>
+		<sheet>
+			<description>When you recover physical evidence from a creature, you can offer it to your book of shadows in a ritual that takes 10 minutes to perform. The ritual consumes the offered physical evidence as the name of the creature from which it came is inscribed upon the page in red ink. After this ritual, as long as you have your book of shadows with you, you have adavantage on any Intelligence checks you make related to the creature.
+			Additionally, you can spend 1 minute examining the page to learn one of the following facts about the creature: &#13;
+			• Its creature type and alignment &#13;
+			• Any names or aliases it uses &#13;
+			• Its current distance and direction from you &#13;
+			• Any vulnerabilities or flaws it has &#13;
+			• Whether or not it is wounded &#13;
+			• Whether or not it is suffering from a condition, a curse, or a similar effect, as well as the nature of that effect &#13;
+			The page can only hold the name of one creature at a time, and you can choose whether to replace the name of the creature currently occupying space on the page each time you complete the ritual.</description>
+		</sheet>
+	</element>
+
+	<element name="Primal Summoner" type="Class Feature" source="Humblewood Tales" id="ID_HPP_HWT_CLASS_FEATURE_ELDRITCH_INVOCATION_PRIMAL_SUMMONER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Chain</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN|ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Chain</em></p>
+			<p>You can summon even more monstrous familiars to your side. When you cast the <i>find familiar</i> spell, you may choose one of the normal forms for your familiar or one of the following special forms: <strong>blink dog</strong>, <strong>death dog</strong>, <strong>panther</strong>, or <strong>worg</strong>.</p>
+			<p class="indent">Additionally, you can spend a bonus action on your turn to command your familiar to take the Attack action against an opponent of your choice.</p>
+		</description>
+		<sheet>
+			<description>When you cast the find familiar spell, you may choose one of the normal forms for your familiar or one of the following special forms: blink dog, death dog, panther, or worg.
+			Additionally, you can spend a bonus action on your turn to command your familiar to take the Attack action against an opponent of your choice.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<description>Adventuring Gear from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/items-gear.xml" />
+		</update>
+	</info>
+
+	<element name="Beast Whistle" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_BEAST_WHISTLE">
+		<description>
+			<p>This bone whistle is carved in the shape of a gargath. When blown, it produces a high-pitched sound that can only be heard clearly by certain creatures. When you blow this whistle, any beast within 100 feet of you that hears it can discern its distance from and direction to you. Friendly beasts can be trained to understand signals given with this whistle, and if you spend at least 24 hours training a friendly beast in this way, you can use it to deliver coded instructions to a trained beast within the whistle's range.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Firelance Venom" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_FIRELANCE_VENOM">
+		<description>
+			<p>This poison is harvested from the venom sac of a dead or incapacitated firelance. A creature subjected to this poison must make a DC 11 Constitution saving throw, taking 14 (4d6) poison damage on a failed save or half as much damage on a successful one. If the poison damage reduces a creature to 0 hit points, it is poisoned for 1 hour, even after regaining hit points. A single dose of this poison costs 300 gold pieces.</p>
+		</description>
+		<setters>
+			<set name="category">Poison</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Gargath Wool Clothes" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_GARGATH_WOOL_CLOTHES">
+		<description>
+			<p>These items of warm, heavy clothing from the Gargan Steppe are made of spun gargath wool lined with coarse fur. When worn, these clothes allow you to remain comfortable in temperatures as low as -50 degrees Fahrenheit.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="8">8 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Rations, Steppe" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_RATIONS_STEPPE">
+		<description>
+			<p>These small rations are made of smoked plants, dried berries, ground nuts, and honey, baked into a chewy bar. Though not sufficiently filling for a day of travel, a bar will stave off hunger for 2 hours. These rations are spiced in such a way that they warm you from the inside out. When you eat a bar, you gain resistance to cold damage for 1 hour. You can only benefit from this effect for 1 hour per day.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+		</setters>
+	</element>
+
+	<element name="Traveler's Guide" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_TRAVELERS_GUIDE">
+		<description>
+			<p>These handy books contain detailed information on a single large city or notable destination chosen by the GM. Most of these guides were written by Jonall, though some were written by other notable explorers. A traveler's guide allows you to add your proficiency bonus to any Intelligence checks you make related to the destination it details.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="2">2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Traveler's Lantern" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_TRAVELERS_LANTERN">
+		<description>
+			<p>This compact hooded lantern features a large metal ring on its top, allowing it to be affixed to a belt, sash, or similar article of clothing while still providing light. The lantern sheds bright light in a 15-foot radius and dim light for an additional 15 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" lb="1">1 lb.</set>
+		</setters>
+	</element>
+	
+</elements>

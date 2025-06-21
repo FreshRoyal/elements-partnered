@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spell</name>
+		<description>Spell from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="spell.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/spell.xml" />
+		</update>
+	</info>
+
+	<element name="Mend Plants" type="Spell" source="Humblewood Tales" id="ID_HPP_HWT_SPELL_MEND_PLANTS">
+		<supports>Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>Drawing on primordial magic, you instill vitality in nearby plants to create one of the following effects within range:</p>
+			<ul>
+				<li>You instantly repair a single break or tear in a living plant you touch, such as torn foliage, a scorched branch, a scar cut into bark, or two pieces of a plant that have been broken apart. As long as the damage is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former destruction.</li>
+				<li>You instantly cause a defoliated plant to grow foliage, cause a planted seed to sprout, or restore the ability to sprout to a dead seed pod.</li>
+				<li>You can cause a 5-foot cube of living plants to flourish with foliage such as leaves and grass. This area can become thick enough to conceal a Medium or smaller creature, or become overgrown enough to become difficult terrain (your choice when you cast the spell).</li>
+				<li>You can touch a living plant or plant creature to grant it 1d4 temporary hit points.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small twig and a loop of twine</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

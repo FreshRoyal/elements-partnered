@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companions from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/companions.xml" />
+		</update>
+	</info>
+
+	<element name="Slime Familiar" type="Companion" source="Humblewood Tales" id="ID_HPP_HWT_COMPANION_SLIME_FAMILIAR">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>A benign slime altered by magic and made into a familiar. These slimes come in a variety of colors and are intensely curious.</p>
+		</description>
+		<setters>
+			<set name="strength">12</set>
+			<set name="dexterity">3</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">6</set>
+			<set name="charisma">18</set>
+			<set name="ac">6</set>
+			<set name="hp">13 (2d8 + 4)</set>
+			<set name="speed">15 ft., climb 15 ft.</set>
+			<set name="senses">blindsight 60 ft. (blind beyond this radius), passive Perception 8</set>
+			<set name="immunities">bludgeoning, piercing, slashing</set>
+			<set name="conditionImmunities">blinded, charmed, deafened, exhaustion, frightened, prone</set>
+			<set name="languages">—</set>
+			<set name="type">Ooze</set>
+			<set name="size">Small</set>
+			<set name="alignment">chaotic good</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_ADORABLE_MONSTROSITY,ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_AMORPHOUS,ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_CUTE,ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_MUCUS</set>
+			<set name="actions">ID_HPP_HWT_COMPANION_ACTION_SLIME_FAMILIAR_PSEUDOPOD</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="6" />
+			<stat name="companion:hp:max" value="13" bonus="base" />
+			<stat name="companion:speed" value="15" bonus="base" />
+			<stat name="companion:speed:climb" value="15" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Keen Senses" type="Companion Trait" source="Humblewood Tales" id="ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_ADORABLE_MONSTROSITY">
+		<description>
+			<p>The slime has advantage on Charisma (Performance) and Charisma (Persuasion) checks.</p>
+		</description>
+		<sheet>
+			<description>The slime has advantage on Charisma (Performance) and Charisma (Persuasion) checks.</description>
+		</sheet>
+	</element>
+
+	<element name="Amorphous" type="Companion Trait" source="Humblewood Tales" id="ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_AMORPHOUS">
+		<description>
+			<p>The slime can move through a space as narrow as 1 inch wide without squeezing.</p>
+		</description>
+		<sheet>
+			<description>The slime can move through a space as narrow as 1 inch wide without squeezing.</description>
+		</sheet>
+	</element>
+
+	<element name="Cute" type="Companion Trait" source="Humblewood Tales" id="ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_CUTE">
+		<description>
+			<p>The slime is adorable. It can cast <i>charm person</i> once per day without material components.</p>
+		</description>
+		<sheet>
+			<description>The slime is adorable. It can cast charm person once per day without material components.</description>
+		</sheet>
+	</element>
+	
+	<element name="Mucus" type="Companion Trait" source="Humblewood Tales" id="ID_HPP_HWT_COMPANION_TRAIT_SLIME_FAMILIAR_MUCUS">
+		<description>
+			<p>When the slime is hit by a melee attack, the attacker must succeed on a DC 12 Strength saving throw or their weapon becomes stuck in the slime. The weapon can be wrenched out by using an action to make a DC 12 Strength (Athletics) check, freeing the weapon on a success. All weapons stuck in the slime can be retrieved once the slime is slain.</p>
+		</description>
+		<sheet>
+			<description>When the slime is hit by a melee attack, the attacker must succeed on a DC 12 Strength saving throw or their weapon becomes stuck in the slime. The weapon can be wrenched out by using an action to make a DC 12 Strength (Athletics) check, freeing the weapon on a success. All weapons stuck in the slime can be retrieved once the slime is slain.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Companion Action" source="Humblewood Tales" id="ID_HPP_HWT_COMPANION_ACTION_SLIME_FAMILIAR_PSEUDOPOD">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>Weapons from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/items-weapons.xml" />
+		</update>
+	</info>
+
+	<!--Boarding Axe-->
+	<element name="Boarding Axe" type="Weapon" source="Humblewood Tales" id="ID_HPP_HWT_WEAPON_BOARDING_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_BOARDING_AXE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+			<div element="ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_BOARDING_AXE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_BOARDING_AXE</set>
+		</setters>
+	</element>
+	
+	<element name="Special (Boarding Axe)" type="Weapon Property" source="Humblewood Tales" id="ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_BOARDING_AXE">
+		<description>
+			<p>This one-handed axe has a pick on the opposite end of the blade. You can choose to deal either slashing damage or piercing damage, depending on which end you use to attack. If you are proficient with axes, you can add your proficiency bonus on any checks made to climb a vertical surface when wielding it.</p>
+		</description>
+	</element>
+
+	<element name="Weapon Proficiency (Boarding Axe)" type="Proficiency" source="Humblewood Tales" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_BOARDING_AXE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_BOARDING_AXE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_BOARDING_AXE" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Twinshot Hand Crossbow-->
+	<element name="Twinshot Hand Crossbow" type="Weapon" source="Humblewood Tales" id="ID_HPP_HWT_WEAPON_TWINSHOT_HAND_CROSSBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS, ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_TWINSHOT_HAND_CROSSBOW</supports>
+		<description>
+			<p></p>
+			<div element="ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_TWINSHOT_HAND_CROSSBOW" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">85</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+		</setters>
+	</element>
+
+	<element name="Special (Twinshot Hand Crossbow" type="Weapon Property" source="Humblewood Tales" id="ID_HPP_HWT_WEAPON_PROPERTY_SPECIAL_TWINSHOT_HAND_CROSSBOW">
+		<description>
+			<p>This hand crossbow has been modified to support two crossbow mechanisms, each one activated with a separate trigger. Unlike other weapons with loading, it can be fired twice before it needs to be reloaded. If you are proficient with a hand crossbow, you are proficient with a twinshot hand crossbow as well.</p>
+		</description>
+	</element>
+	
+</elements>

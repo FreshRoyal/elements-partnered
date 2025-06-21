@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the Warden</name>
+		<description>The Circle of the Warden from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="druid-warden.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/archetypes/druid-warden.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Warden" type="Archetype" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_DRUID_CIRCLE_OF_THE_WARDEN">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Every druid has a responsibility to the natural world, but those who join the Circle of the Warden stand as sentinels of nature's balance. The Circle of the Warden druids specialize in divination and abjuration magic to help foresee possible imbalances and correct them before they cause irreparable damage. To the druids of this circle, people are as much a part of the natural balance as plants and animals. As such, these druids can be found providing succor to those affected by natural disasters just as often as to flora and fauna. In Humblewood, many druids who have joined the Tenders of the Scorched Grove are members of this circle, as its values align quite closely with the tenets of their order.</p>
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_HEARTBEAT_OF_THE_LAND" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_RECLAMATION" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_SYMPATHETIC_SHIELD" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_AURA_OF_CALM" />
+			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_BOND_OF_SHELTER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_HEARTBEAT_OF_THE_LAND" level="2" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_RECLAMATION" level="2" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_SYMPATHETIC_SHIELD" level="6" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_AURA_OF_CALM" level="10" />
+			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_BOND_OF_SHELTER" level="14" />
+		</rules>
+	</element>
+
+	<element name="Heartbeat of the Land" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_HEARTBEAT_OF_THE_LAND">
+		<description>
+			<p>Starting when you choose this circle at 2nd level, you form a connection to the natural world around you, and you can sense when it is in danger. You gain expertise in the Nature and Insight skills. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
+			<p class="indent">Additionally, by spending 10 minutes communing with nature, you can glean the following information about the area within 3 miles of you:</p>
+			<ul>
+				<li>You are flooded with adrenaline, feeling nothing besides the thrill of the hunt. You gain temporary hit points equal to two times your warlock level, up to a maximum of 20 temporary hit points at 10th level. These temporary hit points last until the end of your transformation.</li>
+				<li>Your senses become supernaturally keen. You have advantage on Dexterity (Stealth), Wisdom (Perception), and Wisdom (Survival) checks you make to track or stalk your prey.</li>
+				<li>You sprout a set of pointed teeth and razor-sharp claws, which are natural weapons you can use to make unarmed strikes against creatures within 5 feet of you. You have proficiency with these weapons and can use your Charisma modifier for the attack and damage rolls made using these natural weapons. On a hit, your bite deals 1d6 piercing damage, and your claws deal 1d4 slashing damage. If you already had a bite or claw attack (talon attacks count as claw attacks), its damage increases by one step (a d4 becomes a d6, a d6 becomes a d8, etc.). As a bonus action, after making a bite attack, you can make a claw attack.</li>
+				<li>Starting at 5th level, your muscles strengthen, and your movements quicken. You can now make two claw attacks using your bonus action after you have made a bite attack with your action. Additionally, at 5th level, you can take the Dash or Hide action as a bonus action while you are in your Form of the Beast.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>By spending 10 minutes communing with nature, you can glean the following information about the area within 3 miles of you:  &#13;
+			• You learn the general location and severity of any immediate threats to the environment in the region (forest fires, flooding, blights, etc.) &#13;
+			• You learn if any aberrations, beasts, elementals, fey, or undead are present within range, but not their specific locations. &#13;
+			• You learn the general direction of the nearest portal to an elemental plane.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INSIGHT" />
+		</rules>
+	</element>
+
+	<element name="Reclamation" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_RECLAMATION">
+		<description>
+			<p>Also at 2nd level, you learn the art of siphoning off harmful elemental energy. You can use this to lessen elemental damage being done to your allies by shouldering some of it yourself. When a creature within 30 feet of you takes cold, fire, lightning, or thunder damage, you can use your reaction to grant that creature resistance against the damage dealt. You take damage equal to the amount taken by the target creature.</p>
+			<p class="indent">Additionally, you may spend an action to reduce the area of natural or magical effects which deal persistent cold, fire, or lightning damage within 30 feet of you. You may remove up to a 20-foot cube from the area of such effects per use of this feature. However, for each 5-foot space of energy damage removed in this way, you take 1d4 points of damage of the same type the effect would deal. If the effect is caused by a spell, you instead take 1d4 points of damage per the spell's level for each 5-foot space removed and, if there are no damage-dealing spaces remaining, the spell is dispelled.</p>
+		</description>
+		<sheet>
+			<description>You can lessen elemental damage being done to your allies by shouldering some of it yourself. When a creature within 30 feet of you takes cold, fire, lightning, or thunder damage, you can use your reaction to grant that creature resistance against the damage dealt. You take damage equal to the amount taken by the target creature.
+			Additionally, you may spend an action to reduce the area of natural or magical effects which deal persistent cold, fire, or lightning damage within 30 ft of you. You may remove up to a 20-ft cube from the area of such effects per use of this feature. However, for each 5-ft space of energy damage removed in this way, you take 1d4 points of damage of the same type the effect would deal. If the effect is caused by a spell, you instead take 1d4 points of damage per the spell's level for each 5-ft space removed and, if there are no damage-dealing spaces remaining, the spell is dispelled.</description>
+		</sheet>
+	</element>
+
+	<element name="Sympathetic Shield" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_SYMPATHETIC_SHIELD">
+		<description>
+			<p>Starting at 6th level, you learn how to channel the energy of your beast shapes into manifestations of nature's protection. As an action, you may expend a use of your Wild Shape feature to shield yourself or an ally within 30 feet of you in the protective armor of a beast spirit. This spirit armor is translucent and doesn't block line of sight. The shield can take the shape of any beast you can transform into using your wild shape. The shielded creature gains 1d10 temporary hit points for every 3 druid levels you possess and a +1 bonus to its AC. The shield lasts until these temporary hit points are expended or replaced by another ability that grants temporary hit points.</p>
+			<p class="indent">At 14th level, the spirit armor can retaliate against foes who attack it directly. Whenever a shielded creature is dealt damage by a target within 5 feet of it, the spirit armor deals 1d8 points of magical bludgeoning, piercing, or slashing damage to that target. This damage type is chosen by the druid when activating Sympathetic Shield. The shield can deal damage to multiple targets in a round, but only once per round for each target.</p>
+		</description>
+		<sheet action="Action">
+			<description>You may expend a use of your Wild Shape feature to shield yourself or an ally within 30 ft of you in the protective armor of a beast spirit. This spirit armor is translucent and doesn't block line of sight. The shield can take the shape of any beast you can transform into using your wild shape. The shielded creature gains {{hwt:circle of the warden:sympathetic shield:dice}}d10 temporary hp and a +1 bonus to its AC. The shield lasts until these temporary hp are expended or replaced by another ability that grants temporary hp.</description>
+			<description level="14">You may expend a use of your Wild Shape feature to shield yourself or an ally within 30 ft of you in the protective armor of a beast spirit. This spirit armor is translucent and doesn't block line of sight. The shield can take the shape of any beast you can transform into using your wild shape. The shielded creature gains {{hwt:circle of the warden:sympathetic shield:dice}}d10 temporary hp and a +1 bonus to its AC. The shield lasts until these temporary hp are expended or replaced by another ability that grants temporary hp.
+			Whenever a shielded creature is dealt damage by a target within 5 ft of it, the spirit armor deals 1d8 points of magical bludgeoning, piercing, or slashing damage to that target. This damage type is chosen by the druid when activating Sympathetic Shield. The shield can deal damage to multiple targets in a round, but only once per round for each target.</description>
+		</sheet>
+		<rules>
+			<stat name="hwt:circle of the warden:sympathetic shield:dice" value="2" bonus="base" level="6" />
+			<stat name="hwt:circle of the warden:sympathetic shield:dice" value="3" bonus="base" level="9" />
+			<stat name="hwt:circle of the warden:sympathetic shield:dice" value="4" bonus="base" level="12" />
+			<stat name="hwt:circle of the warden:sympathetic shield:dice" value="5" bonus="base" level="15" />
+			<stat name="hwt:circle of the warden:sympathetic shield:dice" value="6" bonus="base" level="18" />
+		</rules>
+	</element>
+
+	<element name="Aura of Calm" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_AURA_OF_CALM">
+		<description>
+			<p>Starting at 10th level, your presence radiates an aura of soothing natural magic. Whenever you or a friendly creature within 10 feet of you receives healing from a spell, that spell restores an additional number of hit points equal to half your druid level. Additionally, all plants that aren't creatures within this aura grow thick and plentiful and are restored to their full vigor. Such plants also become safe to travelers while inside the aura, negating difficult terrain caused by plants, including magical effects such as <i>entangle</i> or <i>spike growth</i>, and granting advantage on any saving throws made to resist the harmful effects of such spells.</p>
+		</description>
+		<sheet >
+			<description>Whenever you or a friendly creature within 10 ft of you receives healing from a spell, that spell restores an additional {{level:druid:half}} hp. Additionally, all plants that aren't creatures within this aura grow thick and plentiful and are restored to their full vigor. Such plants also become safe to travelers while inside the aura, negating difficult terrain caused by plants, including magical effects, and granting advantage on any saving throws made to resist the harmful effects of such spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Bond of Shelter" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_CIRCLE_OF_THE_WARDEN_BOND_OF_SHELTER">
+		<description>
+			<p>Once you reach 14th level, your service to the natural balance is rewarded, and nature itself rises to protect you and your allies from harm. As an action, you can create a 30-foot radius, 20-foot tall cylinder of protective energy, centered on you. This cylinder lasts for 1 hour and does not move from its original location.</p>
+			<p class="indent">As long as you are on the Material Plane or an elemental plane, natural features within the cylinder, including plants, trees, rocks, and water (as well as wind, water, earth, or fire, if on an elemental plane) animate to defend you. If you are in a setting, such as an indoor area, where natural features are not present, then plants, trees, rocks, and other natural elements sprout from the floor before animating.</p>
+			<p class="indent">When you activate this ability, choose any number of creatures you are familiar with and can see to be immune to the cylinder's effect. All other creatures are subject to the following effects:</p>
+			<ul>
+				<li>Creatures can't willingly enter the cylinder unless they succeed on a Charisma saving throw against your spell save DC. The cylinder also protects the area against planar travel for the duration, preventing any creature from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the <i>plane shift</i> spell.</li>
+				<li>Creatures have disadvantage on attack rolls against targets within the cylinder.</li>
+				<li>Targets of your choice within the cylinder can't be charmed, frightened, or possessed by creatures inside or outside the cylinder.</li>
+				<li>When a creature enters the cylinder for the first time on a turn or starts its turn there, the creature takes 5d10 magical bludgeoning damage from the animated nature within.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can create a 30-ft radius, 20-ft tall cylinder of protective energy, centered on you. This cylinder lasts for 1 hour and does not move from its original location.
+			As long as you are on the Material Plane or an elemental plane, natural features within the cylinder, (as well as wind, water, earth, or fire, if on an elemental plane) animate to defend you. If you are in a setting, such as an indoor area, where natural features are not present, then plants, trees, rocks, and other natural elements sprout from the floor before animating. 
+			When you activate this ability, choose any number of creatures you are familiar with and can see to be immune to the cylinder's effect. All other creatures are subject to the following effects: &#13;
+			• Creatures can't willingly enter the cylinder unless they succeed on a Charisma saving throw (DC {{druid:spellcasting:dc}}). The cylinder also protects the area against planar travel for the duration, preventing any creature from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the plane shift spell. &#13;
+			• Creatures have disadvantage on attack rolls against targets within the cylinder. &#13;
+			• Targets of your choice within the cylinder can't be charmed, frightened, or possessed by creatures inside or outside the cylinder. &#13;
+			• When a creature enters the cylinder for the first time on a turn or starts its turn there, the creature takes 5d10 magical bludgeoning damage from the animated nature within.</description>
+		</sheet>
+	</element>
+	
+</elements>

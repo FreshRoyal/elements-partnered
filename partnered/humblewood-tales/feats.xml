@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Field Medic" type="Feat" source="Humblewood Tales" id="ID_HPP_HWT_FEAT_FIELD_MEDIC">
+		<description>
+			<p>You have been specially trained in magical triage and are able to identify the signs of shock and fatigue in those suffering from injuries. You are always ready to provide aid to those in need. You gain the following benefits:</p>
+			<ul>
+				<li>You can tell by looking at a creature if it is missing any of its hit points and whether or not it has more than half of its hit points. You also have advantage on Wisdom (Medicine) or Intelligence (Arcana or Religion) checks made to determine if the creature is cursed, diseased, possessed, or afflicted by any of the following conditions: blinded, deafened, exhaustion, incapacitated, paralyzed, or poisoned.</li>
+				<li>You learn the <i>spare the dying</i> cantrip and can cast it as a bonus action.</li>
+				<li>You gain the ability to cast the spell <i>cure wounds</i> without using a spell slot, up to a number of times equal to half your proficiency bonus. You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Charisma. &#13;
+			You can tell by looking at a creature if it is missing any of its hit points and whether or not it has more than half of its hit points. You also have advantage on Wisdom (Medicine) or Intelligence (Arcana or Religion) checks made to determine if the creature is cursed, diseased, possessed, or afflicted by any of the following conditions: blinded, deafened, exhaustion, incapacitated, paralyzed, or poisoned. &#13;
+			You can cast spare the dying as a bonus action. You can cast cure wounds without a spell slot {{proficiency:half}} time(s). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+			<grant type="spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+		</rules>
+	</element>
+
+	<element name="Flamewoken" type="Feat" source="Humblewood Tales" id="ID_HPP_HWT_FEAT_FLAMEWOKEN">
+		<description>
+			<p>Living in the Scorched Grove or other areas touched by elemental fire can sometimes cause strange abilities to manifest among their inhabitants. Known as "flamewoken" by the Tenders, these gifted few have the ability to communicate with fire-aspected creatures and have power over flames. Tenders guide the flamewoken in honing their talents in service of nature and many flamewoken choose to join the order. However, those outside the order usually keep their abilities hidden, as such powers are often seen as a curse. You gain the following benefits:</p>
+			<ul>
+				<li>You can speak, read, and write Ignan.</li>
+				<li>You learn the <i>produce</i> flame cantrip. Charisma is your spellcasting ability for this spell.</li>
+				<li>As a bonus action, you can strengthen the power of your flames. The next time you deal fire damage to one or more creatures before the end of your next turn, you can deal an additional 2d10 fire damage to one of those creatures. Once you use this feature, you can't use it again until you complete a short or long rest.</li>
+				<li>You can whisper magical words in Ignan toward any nonmagical flames you can see within 30 feet of you that could fit within a 5-foot cube. As a bonus action, you can cause these flames to either grow by 5 feet in a single direction, provided there is fuel of some sort present in the new location, or you can extinguish the flames present in this space.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Charisma. &#13;
+			The next time you deal fire damage to one or more creatures before the end of your next turn, you can deal an additional 2d10 fire damage to one of those creatures. Once you use this feature, you can't use it again until you complete a short or long rest. &#13;
+			You can whisper magical words in Ignan toward any nonmagical flames you can see within 30 feet of you that could fit within a 5-foot cube. As a bonus action, you can cause these flames to either grow by 5 feet in a single direction, provided there is fuel of some sort present in the new location, or you can extinguish the flames present in this space.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+			<grant type="language" id="ID_MM_LANGUAGE_IGNAN" />
+		</rules>
+	</element>
+
+	<element name="Forest Sage" type="Feat" source="Humblewood Tales" id="ID_HPP_HWT_FEAT_FOREST_SAGE">
+		<prerequisite>Druid or Wizard</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB24_CLASS_WIZARD||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB24_CLASS_DRUID</requirements>
+		<description>
+			<p>The Tenders value diversity among ideas, and although they began as a purely druidic order, they have since learned to accept many different ways of thinking about the natural world, especially regarding the application of magic. You are either a wizard who has learned to temper your arcane research with an eye to maintaining the delicate balance of natural forces, or you are a druid who has learned a new understanding of natural magic through study and experimentation. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</li>
+				<li>You can use your choice of Intelligence or Wisdom to make Animal Handling, Arcana, Nature, or Survival checks.</li>
+				<li>You can choose to learn two spells from either the druid or wizard spell list. Spells you choose must be of a level you can cast. The chosen spells count as spells of your class and are added to your spellbook if you are a wizard or your spells known if you are a druid.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use your choice of Intelligence or Wisdom to make Animal Handling, Arcana, Nature, or Survival checks.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Forest Sage)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+			<select type="Spell" name="Spell (Forest Sage)" supports="(Druid||Wizard),$(spellcasting:slots)||Wizard&amp;&amp;0||Druid&amp;&amp;0" spellcasting="Druid" prepared="true" requirements="ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB24_CLASS_DRUID" />
+			<select type="Spell" name="Spell (Forest Sage)" supports="(Druid||Wizard),$(spellcasting:slots)||Wizard&amp;&amp;0||Druid&amp;&amp;0" spellcasting="Druid" prepared="true" requirements="ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB24_CLASS_DRUID" />
+			<select type="Spell" name="Spell (Forest Sage)" supports="(Druid||Wizard),$(spellcasting:slots)||Wizard&amp;&amp;0||Druid&amp;&amp;0" spellcasting="Wizard" prepared="true" requirements="ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB24_CLASS_WIZARD" />
+			<select type="Spell" name="Spell (Forest Sage)" supports="(Druid||Wizard),$(spellcasting:slots)||Wizard&amp;&amp;0||Druid&amp;&amp;0" spellcasting="Wizard" prepared="true" requirements="ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB24_CLASS_WIZARD" />
+		</rules>
+	</element>
+
+	<element name="Plantmender" type="Feat" source="Humblewood Tales" id="ID_HPP_HWT_FEAT_PLANTMENDER">
+		<prerequisite>Wisdom 13+</prerequisite>
+		<requirements>[wisdom:13]</requirements>
+		<description>
+			<p>One of the basic forms of Tender magic, plantmending is often taught to seedlings of the order. Plantmending can be used either to help the forest recover from disasters or to defend against hazards that might be encountered while traveling. You gain the following benefits:</p>
+			<ul>
+				<li>You can touch a plant or tree as an action to determine what has occurred to it and the area within its immediate vicinity within the last 24 hours. These events are revealed to you in visions that appear as though you were present as they occurred. After using this ability on a plant, you instantly become aware of its status and health, including any blights or conditions currently affecting it. You can use this ability a number of times equal to twice your Wisdom modifier (minimum of 1), regaining expended uses of it when you complete a long rest.</li>
+				<li>You learn the <i>mend plants</i> and <i>shillelagh</i> cantrips. Wisdom is your spellcasting ability for these spells.</li>
+				<li>You can cast either the <i>barkskin</i> or <i>spike growth</i> spell once, and you must complete a long rest before you can cast either spell again. Wisdom is your spellcasting ability for these spells.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Wisdom. &#13;
+			You can touch a plant or tree as an action to determine what has occurred to it and the area within its immediate vicinity within the last 24 hours. These events are revealed to you in visions that appear as though you were present as they occurred. After using this ability on a plant, you instantly become aware of its status and health, including any blights or conditions currently affecting it. You can use this ability {{hwt:plantmender:usage}} times, regaining expended uses of it when you complete a long rest. &#13;
+			You can cast either the barkskin or spike growth spell once, and you must complete a long rest before you can cast either spell again. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_SHILLELAGH" />
+			<grant type="spell" id="ID_HPP_HWT_SPELL_MEND_PLANTS" />
+			<grant type="spell" id="ID_PHB_SPELL_BARKSKIN" />
+			<grant type="spell" id="ID_PHB_SPELL_SPIKE_GROWTH" />
+			<stat name="hwt:plantmender:usage" value="proficiency" />
+			<stat name="hwt:plantmender:usage" value="proficiency" />
+		</rules>
+	</element>
+</elements>

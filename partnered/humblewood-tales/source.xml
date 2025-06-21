@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Humblewood Tales</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/source.xml" />
+		</update>
+	</info>
+	<element name="Humblewood Tales" type="Source" source="Core" id="ID_HPP_SOURCE_HUMBLEWOOD_TALES">
+		<description>
+			<p><strong>Humblewood Tales</strong> is a 5th Edition supplement book for the lush world of Humblewood.</p>
+			<p>Featuring five new adventures and packed with expanded lore from the mystical tree city of Alderheart, Humblewood Tales is loaded with over 200 pages of adventures, premade characters, bestiary, magic items, subclasses and more.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">HWT</set>
+			<set name="url">https://hitpointpress.com/products/humblewood-tales-pdf</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/HWT.png</set>
+			<set name="author" abbreviation="HPP" url="https://hitpointpress.com/">Hit Point Press</set>
+			<set name="third-party">true</set>
+			<set name="release">20230707</set>
+		</setters>
+	</element>
+</elements>
