@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -25,6 +25,7 @@
 
 		<!--Hit Point Press-->
 		<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />
+		<file name="humblewood-tales.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales.index" />
 		
 	</files>
 </index>
