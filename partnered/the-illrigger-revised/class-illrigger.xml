@@ -3,7 +3,7 @@
 	<info>
 		<name>Illrigger</name>
 		<description>Illrigger class from The Illrigger Revised</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-illrigger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/class-illrigger.xml" />
 		</update>
 	</info>
@@ -93,7 +93,7 @@
 		</description>
 		<sheet display="false" />
 		<setters>
-			<set name="short">A knight sworn to serve Hell.</set>
+			<set name="short">Knights, assassins, mages, and terror commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil's infernal will.</set>
 			<set name="hd">d10</set>
 		</setters>
 		<rules>
