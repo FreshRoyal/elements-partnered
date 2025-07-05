@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<description>Adventuring Gear from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-gear.xml" />
+		</update>
+	</info>
+
+	<element name="Rations, Cram" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_RATIONS_CRAM">
+		<description>
+			<p>Cram is a biscuitish cake that keeps good indefinitely, made by the Bardings for long journeys. Albeit certainly not entertaining (and in fact, mostly a chewing exercise), it is doubtlessly sustaining and very nutritious: one pound of cram counts as two pounds of food.</p>
+			<p class="indent">If you are a Barding (or you have been taught the recipe by a Barding) and you are proficient with cook's utensils, during each Fellowship Phase you can prepare a number of cram rations equal to 5 times your proficiency bonus (10 times your proficiency bonus during a Yule Fellowship Phase), or twice as much if a feature lets you add double your proficiency bonus with cook's utensils.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+</elements>

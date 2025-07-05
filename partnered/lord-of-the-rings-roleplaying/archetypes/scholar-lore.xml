@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lore</name>
+		<description>Lore Scholar Tradition from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="scholar-lore.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/scholar-lore.xml" />
+		</update>
+	</info>
+
+	<element name="Lore" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_SCHOLAR_LORE">
+		<supports>LRRP Scholar Tradition</supports>
+		<description>
+			<p>Some say that lore-masters risk accumulating knowledge at the expense of wisdom. You are determined to prove them wrong.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_BONUS_PROFICIENCIES" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_LORE_MASTER" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_WORDS_OF_COMMAND" />
+			<p></p>
+			<p class="flavor">“This only would he say, that Imladris was of old the name among the Elves of a far northern dale, where Elrond the Halfelven dwelt, greatest of lore-masters.”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_LORE_MASTER" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_WORDS_OF_COMMAND" level="7" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this tradition at 3rd level, you gain proficiency in the Old Lore skill and with calligrapher's supplies. If you are already proficient in any one of them, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_HISTORY" />
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_OR_EXPERTISE_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Calligrapher's Supplies Proficiency or Expertise" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_OR_EXPERTISE_CALLIGRAPHERS_SUPPLIES">
+        <rules>
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES" requirements="!ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES_EXPERTISE" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Calligrapher's Supplies Proficiency" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Calligrapher's Supplies Expertise" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES_EXPERTISE">
+        <rules>
+           <grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_BONUS_PROFICIENCIES_DOUBLE" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES" />
+        </rules>
+    </element>
+	<element name="Bonus Proficiencies (Lore)" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_BONUS_PROFICIENCIES_DOUBLE">
+		<compendium display="false" />
+		<description>
+			<p>Your proficiency bonus is doubled for any Calligrapher's Supplies check you make.</p>
+		</description>
+		<sheet alt="Bonus Proficiencies">
+        	<description>Your proficiency bonus is doubled for any Calligrapher's Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="calligraphers supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Lore-Master" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_LORE_MASTER">
+		<description>
+			<p>Also at 3rd level, when a creature rolls a Lore die it gained from you, the creature can reroll the Lore die and use either total.</p>
+		</description>
+		<sheet>
+			<description>When a creature rolls a Lore die it gained from you, the creature can reroll the Lore die and use either total.</description>
+		</sheet>
+	</element>
+
+	<element name="Words of Command" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_LORE_WORDS_OF_COMMAND">
+		<description>
+			<p>At 7th level, when you roll a Lore die and add the number rolled to an ability check using a skill other than Medicine, you can obtain a magical success. You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{lrrp:words of command:usage}}/Long Rest">
+			<description>When you roll a Lore die and add the number rolled to an ability check using a skill other than Medicine, you can obtain a magical success.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:words of command:usage" value="intelligence:modifier" bonus="bonus" />
+			<stat name="lrrp:words of command:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+</elements>

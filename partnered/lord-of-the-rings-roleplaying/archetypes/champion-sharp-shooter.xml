@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sharp-Shooter</name>
+		<description>Sharp-Shooter Champion Way from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="champion-sharp-shooter.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/champion-sharp-shooter.xml" />
+		</update>
+	</info>
+
+	<element name="Sharp-Shooter" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_CHAMPION_SHARP_SHOOTER">
+		<supports>LRRP Champion Way</supports>
+		<description>
+			<p>As King Bard proved, well-placed arrow shots can slay dragons and restore lost kingdoms. You decided to follow his path by mastering ranged weapons.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_BONUS_PROFICIENCY" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_MIGHTY_SHOT" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_TRUE_SHOT" />
+			<p></p>
+			<p class="flavor">“That was a mighty shot in the dark, my friend!”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_MIGHTY_SHOT" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_TRUE_SHOT" level="7" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiency" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose this way at 3rd level, you gain proficiency in the Perception skill. If you are already proficient, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERCEPTION" />
+		</rules>
+	</element>
+
+	<element name="Mighty Shot" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_MIGHTY_SHOT">
+		<description>
+			<p>Starting at 3rd level, you have learned to put all your might into your shots. Before you make an attack with a ranged weapon, you can choose to roll the weapon's damage die and subtract the number rolled from the attack roll. If the attack hits, you roll two additional weapon damage dice on the damage roll. You can deal this extra damage only once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Before you make an attack with a ranged weapon, you can choose to roll the weapon's damage die and subtract the number rolled from the attack roll. If the attack hits, you roll two additional weapon damage dice on the damage roll.</description>
+		</sheet>
+	</element>
+
+	<element name="True Shot" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SHARP_SHOOTER_TRUE_SHOT">
+		<description>
+			<p>By 7th level, once per turn when you take the Attack action and attack with a ranged weapon, you can forgo one of your attacks. If you do so, the next hit you score with a ranged weapon before the end of your turn is a critical hit.</p>
+		</description>
+		<sheet action="Attack" usage="1/Turn">
+			<description>When you take the Attack action and attack with a ranged weapon, you can forgo one of your attacks. If you do so, the next hit you score with a ranged weapon before the end of your turn is a critical hit.</description>
+		</sheet>
+	</element>
+
+</elements>

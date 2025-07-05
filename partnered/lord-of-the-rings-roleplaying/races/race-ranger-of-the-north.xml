@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ranger of the North</name>
+		<description>Ranger of the North from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="race-ranger-of-the-north.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-ranger-of-the-north.xml" />
+		</update>
+	</info>
+
+	<element name="Ranger of the North" type="Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH">
+		<description>
+			<p class="flavor">...in the wild lands beyond Bree there were mysterious wanderers. The Bree-folk called them Rangers, and knew nothing of their origin.</p>
+			<p>The Rangers of the North are a secret people, severely diminished in number with the passing of a thousand years. They wander in disguise among the ruins of what was once their kingdom of Arnor, tirelessly patrolling its many paths and roads.</p>
+			<p class="indent">While the years have lengthened, the task of the Rangers has always been the same: to keep the folk of Eriador free from care and fear. They labour secretly, keeping to themselves, and rarely giving their names to the travellers they save or to the folk whose farms they guard at night, when evil things come out from dark places.</p>
+			<h4>Description</h4>
+			<p>The Rangers are the last descendants in the North of the Dúnedain, kings among Men that once came to Middle-earth over the Sea out of Westernesse. When they do not disguise their features, they are tall and lordly, towering above most Men. They are often silent and grim of countenance, and look wise and mature beyond their years.</p>
+			<p class="indent">When in the Wild, the Rangers of the North wear comfortable but weather-beaten garments, favouring high leather boots and heavy cloaks of dark grey or green cloth, with ample hoods that can be cast over a worn helm.</p>
+			<h4>Typical Names</h4>
+			<p>The Rangers of the North retain an ancient tradition of naming their children using the Sindarin speech.</p>
+			<ul class="unstyled">
+				<li><strong>Sample Female Names:</strong> Anwen, Arbereth, Berúthiel, Baraniel, Calanril, Celenneth, Elnîth, Eraniel, Finduilas, Gilraen, Gilraeth, Gloredhel, Idril, Ioreth, Ivorwen, Lôrwend, Lothíriel, Luindîs, Meneloth, Moriel, Morwen, Narieth, Narniel, Orothêl, Tarandîs.</li>
+				<li><strong>Sample Male Names:</strong> Adrahil, Amlaith, Arvegil, Baranor, Belecthor, Bergil, Celepharn, Cirion, Damrod, Dírhael, Duinhir, Egalmoth, Eradan, Findemir, Forlong, Golasdan, Hallas, Hirluin, Ingold, Iorlas, Malvegil, Ohtar, Orodreth, Tarannon, Targon.</li>
+			</ul>
+			<h4>Cultural Traits</h4>
+			<p>Your character gains the following benefits based on their cultural heritage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength, Constitution, and Wisdom scores each increase by 1. Then, increase one ability score of your choice by 1.</p>
+			<p class="indent"><strong><em>Adventuring Age.</em></strong> Between 20–50 years of age. Rangers take to the Wild around the age of twenty, but may begin to go on adventures even at a younger age. They retain their strength of body and will longer than most Men, but usually cease to travel far from Eriador when they reach their fifties.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Most Dúnedain stand well over 6 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Dúnedain have long shanks, and move about at great pace. Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Wandering Folk.</em></strong> You have proficiency in two of the following skills of your choice: Explore, Hunting, Old Lore, Perception, Stealth, or Travel.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Westron and Sindarin.</p>
+			<p class="indent"><strong><em>Standard of Living: Frugal.</em></strong> Rangers rarely wear or carry anything whose worth cannot be measured in a practical way. Their gear or garments are never considered precious for the gleam of stone or gold, but for their capability to endure long journeys and strenuous fights.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INFORMATION_STARTING_GEAR" />
+			</div>
+		</description>
+		<sheet display="false" alt="Dúnedain" />
+		<setters>
+			<set name="names" type="male">Adrahil, Amlaith, Arvegil, Baranor, Belecthor, Bergil, Celepharn, Cirion, Damrod, Dírhael, Duinhir, Egalmoth, Eradan, Findemir, Forlong, Golasdan, Hallas, Hirluin, Ingold, Iorlas, Malvegil, Ohtar, Orodreth, Tarannon, Targon</set>
+			<set name="names" type="female">Anwen, Arbereth, Berúthiel, Baraniel, Calanril, Celenneth, Elnîth, Eraniel, Finduilas, Gilraen, Gilraeth, Gloredhel, Idril, Ioreth, Ivorwen, Lôrwend, Lothíriel, Luindîs, Meneloth, Moriel, Morwen, Narieth, Narniel, Orothêl, Tarandîs</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+			<stat name="strength" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			 <select type="Ability Score Improvement" name="Ability Score Improvement +1" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ranger of the North)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" number="4" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="35" bonus="base" />
+
+			<grant type="Language" id="ID_FLP_LRRP_LANGUAGE_WESTRON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_FLP_LRRP_LANGUAGE_SINDARIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||LRRP Westron||LRRP Elf Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_RANGER_OF_THE_NORTH_WANDERING_FOLK" />
+		</rules>
+	</element>
+
+	<element name="Wandering Folk" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_RANGER_OF_THE_NORTH_WANDERING_FOLK">
+		<description>
+			<p>You have proficiency in two of the following skills of your choice: Explore, Hunting, Old Lore, Perception, Stealth, or Travel.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Wandering Folk" supports="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE|ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Wandering Folk)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--Ability Score Improvement-->
+	<element name="Ability Score Improvement +2, +1, +1" type="Ability Score Improvement" source="Internal" id="ID_FLP_LRRP_ABILITY_SCORE_IMPROVEMENT_OPTION_1">
+        <supports>Custom Ability Score Improvement Option</supports>
+        <description>
+            <p>You can increase one of the scores by 2 and increase a different score by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2" supports="Custom Ability Score Increase 2" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" />
+        </rules>
+    </element>
+
+</elements>

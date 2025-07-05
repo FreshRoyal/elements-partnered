@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Chieftan</name>
+		<description>Chieftan Captain Title from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="captain-chieftan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/captain-chieftan.xml" />
+		</update>
+	</info>
+
+	<element name="Chieftan" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_CAPTAIN_CHIEFTAN">
+		<supports>LRRP Captain Title</supports>
+		<description>
+			<p>As a chieftain you are both a leader and a weaponmaster, accustomed to leading your comrades by jumping first into battle.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_CHIEFTAN_CHALLENGE" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_CHIEFTAN_PURSUER_OF_FOES" />
+			<p></p>
+			<p class="flavor">“Here is Aragorn son of Arathorn, chieftain of the Dúnedain of Arnor, Captain of the Host of the West...”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_CHIEFTAN_CHALLENGE" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_CHIEFTAN_PURSUER_OF_FOES" level="7" />
+		</rules>
+	</element>
+
+	<element name="Challenge" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_CHIEFTAN_CHALLENGE">
+		<description>
+			<p>Starting at 3rd level, you can issue a challenge to a creature you can see within 10 feet of you as a bonus action. You gain advantage on melee attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious. In addition, the creature must make a Wisdom (Insight) check (DC 8 + your proficiency bonus + your Charisma modifier). On a failed check, the creature has disadvantage on attack rolls against targets other than you for the duration, until you attack another creature, if a creature friendly to you attacks the target, or if you end your turn more than 30 feet away from the target.</p>
+			<p class="indent">You must then finish a short or long rest to use this feature again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can issue a challenge to a creature you can see within 10 feet of you as a bonus action. You gain advantage on melee attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious. In addition, the creature must make a Wisdom (Insight) check (DC {{lrrp:challenge:dc}}). On a failed check, the creature has disadvantage on attack rolls against targets other than you for the duration, until you attack another creature, if a creature friendly to you attacks the target, or if you end your turn more than 30 feet away from the target.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:challenge:dc" value="8" />
+			<stat name="lrrp:challenge:dc" value="charisma:modifier" />
+			<stat name="lrrp:challenge:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Pursuer of Foes" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_CHIEFTAN_PURSUER_OF_FOES">
+		<description>
+			<p>Starting at 7th level, creatures provoke opportunity attacks from you even if they take the Disengage action. In addition, when you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.</p>
+		</description>
+		<sheet>
+			<description>Creatures provoke opportunity attacks from you even if they take the Disengage action. In addition, when you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.</description>
+		</sheet>
+	</element>
+
+</elements>

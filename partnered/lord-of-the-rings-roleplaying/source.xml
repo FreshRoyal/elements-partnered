@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/source.xml" />
+		</update>
+	</info>
+	<element name="The Lord of the Rings Roleplaying" type="Source" source="Core" id="ID_FLP_SOURCE_THE_LORD_OF_THE_RINGS_ROLEPLAYING">
+		<description>
+			<h5 style="margin-top:-1em">Roleplaying in the world of <em>The Lord of the Rings™</em></h5>
+			<p>Return to Middle-earth with <em>The Lord of the Rings™ Roleplaying</em>, a brand new adaptation of the works of J.R.R. Tolkien using the rules for 5E.</p>
+			<p>Based on the second edition of <em>The One Ring™</em> roleplaying game by Francesco Nepitello, the beautifully illustrated full-color hardback volume <em>The Lord of the Rings™ Roleplaying</em> contains everything you need to create exciting adventures set in the world’s most popular fantasy setting – six original heroic cultures from the land of Eriador, six new classes, a host of terrifying adversaries, and comprehensive rules for journeys, councils, wondrous artefacts, and the subtle magic of Middle-earth.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">LRRP</set>
+			<set name="url">https://freeleaguepublishing.com/games/the-lord-of-the-rings-roleplaying/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/LRRP.jpg</set>
+			<set name="author" abbreviation="FLP" url="https://freeleaguepublishing.com/">Free League Publishing</set>
+			<set name="third-party">true</set>
+			<set name="release">20230519</set>
+		</setters>
+	</element>
+
+	<!--Temporary Tool Expertise Elements, delete when they are merged in the main repo-->
+
+	<!--Player's Handbook-->
+	<element name="Tool Expertise (Bagpipes)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_BAGPIPES">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_BAGPIPES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Bagpipes check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_BAGPIPES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Bagpipes check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="bagpipes:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Drum)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_DRUM">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Drum check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_DRUM" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Drum check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="drum:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Dulcimer)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_DULCIMER">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_DULCIMER</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Dulcimer check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_DULCIMER" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Dulcimer check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="dulcimer:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Flute)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_FLUTE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Flute check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_FLUTE" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Flute check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="flute:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Lute)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_LUTE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Lute check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_LUTE" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Lute check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lute:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Lyre)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_LYRE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_LYRE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Lyre check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_LYRE" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Lyre check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lyre:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Horn)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_HORN">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_HORN</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Horn check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_HORN" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Horn check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="horn:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Pan Flute)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_PAN_FLUTE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_PAN_FLUTE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Pan Flute check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_PANFLUTE" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Pan Flute check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="pan flute:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Shawm)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_SHAWM">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_SHAWM</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Shawm check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_SHAWM" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Shawm check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="shawm:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Viol)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_VIOL">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_VIOL</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Viol check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SRD_INSTRUMENT_VIOL" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Viol check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="viol:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Alchemist's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_ALCHEMISTS_SUPPLIES">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Alchemist's Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_ALCHEMISTS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Alchemist's Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemists supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Brewer's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_BREWERS_SUPPLIES">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Brewer's Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_BREWERS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Brewer's Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="brewers supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Calligrapher's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_CALLIGRAPHERS_SUPPLIES">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Calligrapher's Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Calligrapher's Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="calligraphers supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Carpenter's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_CARPENTERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Carpenter's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_CARPENTERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Carpenter's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="carpenters tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Cartographer's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_CARTOGRAPHERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Cartographer's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_CARTOGRAPHERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Cartographer's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="cartographers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Cobbler's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_COBBLERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Cobbler's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_COBBLERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Cobbler's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="cobblers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Cook's Utensils)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_COOKS_UTENSILS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Cook's Utensils check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_COOKS_UTENSILS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Cook's Utensils check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="cooks utensils:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Disguise Kit)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_DISGUISE_KIT">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Disguise Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_DISGUISE_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Disguise Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="disguise kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Forgery Kit)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_COBBLERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Forgery Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_FORGERY_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Forgery Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="forgery kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Glassblower's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_GLASSBLOWERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Glassblower's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_GLASSBLOWERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Glassblower's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="glassblowers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Herbalism Kit)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_HERBALISM_KIT">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Herbalism Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_HERBALISM_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Herbalism Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="herbalism kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Jeweler's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_JEWELERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Jeweler's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_JEWELERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Jeweler's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="jewelers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Leatherworker's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_LEATHERWORKERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Leatherworker's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_LEATHERWORKERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Leatherworker's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="leatherworkers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Mason's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_MASONS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Mason's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_MASONS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Mason's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="masons tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Navigator's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_NAVIGATORS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Navigator's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_NAVIGATORS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Navigator's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="navigators tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Painter's Supples)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_PAINTERS_SUPPLIES">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Painter's Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_PAINTERS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Painter's Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="painters supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Poisoner's Kit)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_POISONERS_KIT">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Poisoner's Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Poisoner's Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="poisoners kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Potter's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_POTTERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Potter's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_POTTERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Potter's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="potters tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Tinker's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_TINKERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Thinker's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_TINKERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Tinker's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="tinkers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Weaver's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_WEAVERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Weaver's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_WEAVERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Weaver's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="weavers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Woodcarver's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_WOODCARVERS_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Woodcarver's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_WOODCARVERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Woodcarver's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="woodcarvers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Dice Set)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_DICE_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Dice Set check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_DICE_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Dice Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="dice set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Dragonchess Set)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_DRAGONCHESS_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Dragonchess Set check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_DRAGONCHESS_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Dragonchess Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="dragonchess set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Playing Card Set)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_DICE_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Playing Card Set check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_PLAYING_CARD_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Playing Card Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="playing card set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Three-Dragon Ante Set)" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_THREE_DRAGON_ANTE_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Three-Dragon Ante Set check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_THREE_DRAGON_ANTE_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Three-Dragon Ante Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="three dragon ante:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Vehicles (land))" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_VEHICLES_LAND">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Vehicles (land) check you make.</p>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Vehicles (land) check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="vehicles land:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Vehicles (water))" type="Class Feature" source="Player’s Handbook" id="ID_FLP_LRRP_EXPERTISE_TOOL_VEHICLES_WATER">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Vehicles (water) check you make.</p>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Vehicles (water) check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="vehicles water:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	 
+	<!--Sword Coast Adventurer's Guide-->
+	<element name="Tool Expertise (Birdpipes)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_BIRDPIPES">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_BIRDPIPES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Birdpipes check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_BIRDPIPES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Birdpipes check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="birdpipes:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Glaur)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_GLAUR">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_GLAUR</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Glaur check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_GLAUR" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Glaur check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="glaur:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Hand Drum)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_HAND_DRUM">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_HAND_DRUM</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Hand Drum check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_HAND_DRUM" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Hand Drum check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="hand drum:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Longhorn)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_LONGHORN">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_LONGHORN</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Longhorn check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_LONGHORN" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Longhorn check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="longhorn:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Shawm)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_SHAWM">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_SHAWM</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Shawm check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_SHAWM" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Shawm check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="shawm:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Songhorn)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_SONGHORN">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_SONGHORN</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Songhorn check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_SONGHORN" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Songhorn check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="songhorn:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Tantan)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_TANTAN">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_TANTAN</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Tantan check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_TANTAN" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Tantan check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="tantan:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Thelarr)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_THELARR">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_THELARR</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Thelarr check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_THELARR" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Thelarr check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="thelarr:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Tocken)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_TOCKEN">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_TOCKEN</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Tocken check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_TOCKEN" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Tocken check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="tocken:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Wargong)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_WARGONG">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_WARGONG</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Wargong check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_WARGONG" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Wargong check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="wargong:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Yarting)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_YARTING">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_YARTING</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Yarting check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_YARTING" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Yarting check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="yarting:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Zulkoon)" type="Class Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_EXPERTISE_TOOL_ZULKOON">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_ZULKOON</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Zulkoon check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_SCAG_INSTRUMENT_ZULKOON" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Zulkoon check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="zulkoon:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	
+	<!--One Grung Above-->
+	<element name="Tool Expertise (Whistle-Stick)" type="Class Feature" source="One Grung Above" id="ID_WOTC_OGA_EXPERTISE_TOOL_WHISTLE_STICK">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_WOTC_OGA_PROFICIENCY_TOOL_PROFICIENCY_WHISTLE_STICK</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Whistle-Stick check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_OGA_ITEM_WHISTLE_STICK" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Whistle-Stick check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="whistle stick:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<!--Eberron: Rising from the Last War-->
+	<element name="Tool Expertise (Vehicles (Air and Sea))" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_EXPERTISE_TOOL_VEHICLES_AIR_AND_SEA">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_WOTC_ERLW_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR_SEA</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Vehicles (Air and Sea) check you make.</p>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Vehicles (Air and Sea) check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="vehicles air and sea:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<!--Astral Adventurer's Guide-->
+	<element name="Tool Expertise (Vehicles (space))" type="Class Feature" source="Astral Adventurer's Guide" id="ID_WOTC_AAG_EXPERTISE_TOOL_VEHICLES_SPACE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_WOTC_AAG_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Vehicles (space) check you make.</p>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Vehicles (space) check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="vehicles space:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<!--Unearthed Arcana: Modern Magic-->
+	<element name="Tool Expertise (Hacking Tools)" type="Class Feature" source="Unearthed Arcana: Modern Magic" id="ID_WOTC_UA20150803_EXPERTISE_TOOL_HACKING_TOOLS">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_WOTC_UA20150803_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Hacking Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_UA20150803_ITEM_TOOL_HACKING_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Hacking Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="hacking tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+</elements>

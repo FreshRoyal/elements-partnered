@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armor</name>
+		<description>Armor from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-armor.xml" />
+		</update>
+	</info>
+
+	<!--Items-->
+	
+	<!--Light Armor-->
+	<element name="Leather Shirt" type="Armor" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARMOR_LIGHT_LEATHER_SHIRT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier (max 4)</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_SHIRT</set>
+		</setters>
+		<rules>
+			<stat name="lrrp:leather shirt:ac" value="11" bonus="bonus" />
+			<stat name="lrrp:leather shirt:ac" value="dexterity:modifier" maximum="4" />
+			<stat name="ac:calculation" value="lrrp:leather shirt:ac" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Leather Corslet" type="Armor" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARMOR_LIGHT_LEATHER_CORSLET">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>A close-fitting shirt of hardened leather with long sleeves.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="sp">45</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dex modifier (max 3)</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_CORSLET</set>
+		</setters>
+		<rules>
+			<stat name="lrrp:leather corslet:ac" value="12" bonus="bonus" />
+			<stat name="lrrp:leather corslet:ac" value="dexterity:modifier" maximum="3" />
+			<stat name="ac:calculation" value="lrrp:leather corslet:ac" bonus="calculation" />
+		</rules>
+	</element>
+
+	<!--Medium Armor-->
+	<element name="Scale Armour" type="Armor" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARMOR_MEDIUM_SCALE_ARMOUR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>This armour consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_ARMOUR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="14" />
+		</rules>
+	</element>
+
+	<!--Heavy Armor-->
+	<element name="Ring-Mail" type="Armor" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARMOR_HEAVY_RING_MAIL">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>This armour is leather armour with heavy rings sewn into it. The rings help reinforce the armour against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="50">50 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">15</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_RING_MAIL</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+		</rules>
+	</element>
+
+	<!--Proficiencies-->
+
+	<element name="Armor Proficiency (Leather Shirt)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_SHIRT">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+	</element>
+
+	<element name="Armor Proficiency (Leather Corslet)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_CORSLET">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_SHIRT" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_CORSLET" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Armor Proficiency (Scale Armour)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_ARMOUR">
+		<supports>Medium Armor, ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_ARMOUR" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Armor Proficiency (Ring-mail)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_RING_MAIL">
+		<supports>Heavy Armor, ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_ARMOR_PROFICIENCY_RING_MAIL" type="Proficiency" />
+		</rules>
+	</append>
+	
+</elements>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Healing</name>
+		<description>Healing Scholar Tradition from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="scholar-healing.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/scholar-healing.xml" />
+		</update>
+	</info>
+
+	<element name="Healing" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_SCHOLAR_HEALING">
+		<supports>LRRP Scholar Tradition</supports>
+		<description>
+			<p>Some say that lore-masters risk accumulating knowledge at the expense of wisdom. You are determined to prove them wrong.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_BONUS_PROFICIENCIES" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_WISE_LEECHCRAFT" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_A_CURE_FOR_WEARINESS" />
+			<p></p>
+			<p class="flavor">“...the leechcraft of Gondor was still wise, and skilled in the healing of wound and hurt, and all such sickness as east of the Sea mortal men were subject to.”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_WISE_LEECHCRAFT" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_A_CURE_FOR_WEARINESS" level="7" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this tradition at 3rd level, you gain proficiency in the Medicine skill and with the herbalism kit. If you are already proficient in any one of them, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MEDICINE" />
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_OR_EXPERTISE_HERBALISM_KIT" />
+		</rules>
+	</element>
+	<element name="Herbalism Kit Proficiency or Expertise" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_OR_EXPERTISE_HERBALISM_KIT">
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_HERBALISM_KIT" requirements="!ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_HERBALISM_KIT_EXPERTISE" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+	<element name="Herbalism Kit Proficiency" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_HERBALISM_KIT">
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+	<element name="Herbalism Kit Expertise" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_HERBALISM_KIT_EXPERTISE">
+		<rules>
+		   <grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_BONUS_PROFICIENCIES_DOUBLE" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_TOOL_HERBALISM_KIT" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies (Healing)" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_BONUS_PROFICIENCIES_DOUBLE">
+		<compendium display="false" />
+		<description>
+			<p>Your proficiency bonus is doubled for any Herbalism Kit check you make.</p>
+		</description>
+		<sheet alt="Bonus Proficiencies">
+			<description>Your proficiency bonus is doubled for any Herbalism Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="herbalism kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Wise Leechcraft" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_WISE_LEECHCRAFT">
+		<description>
+			<p>Also starting at 3rd level, you add your Wisdom modifier (minimum of +1) to your Intelligence (Medicine) checks, to the hit points regained for each Hit Die spent by any creature you choose as the target of your Hands of a Healer, and to the number of uses of your Rhymes of Lore. The Lore dice granted by these additional uses can only be added to Intelligence (Medicine) checks.</p>
+			<p class="indent">In addition, when a creature would roll a Lore die it gained from you on an Intelligence (Medicine) check, it instead uses the highest number possible for the die.</p>
+		</description>
+		<sheet>
+			<description>You add +{{lrrp:wise leechcraft:modifier}} to your Intelligence (Medicine) checks, to the hit points regained for each Hit Die spent by any creature you choose as the target of your Hands of a Healer, and to the number of uses of your Rhymes of Lore. The Lore dice granted by these additional uses can only be added to Intelligence (Medicine) checks. &#13;
+			In addition, when a creature would roll a Lore die it gained from you on an Intelligence (Medicine) check, it instead uses the highest number possible for the die.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:wise leechcraft:modifier" value="wisdom:modifier" bonus="bonus" />
+			<stat name="lrrp:wise leechcraft:modifier" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="A Cure for Weariness" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_HEALING_A_CURE_FOR_WEARINESS">
+		<description>
+			<p>Beginning at 7th level, the healing you impart on others also shakes off their weariness. During a short rest, you can reduce a creature's exhaustion level by one. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{lrrp:a cure for weariness:usage}}/Long Rest">
+			<description>During a short rest, you can reduce a creature's exhaustion level by one.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:a cure for weariness:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="lrrp:a cure for weariness:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+</elements>

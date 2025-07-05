@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hobbit Backgrounds</name>
+		<description>Hobbit Backgrounds from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="backgrounds-hobbit.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-hobbit.xml" />
+		</update>
+	</info>
+
+	<element name="Bucklander" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_BUCKLANDER">
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>Your parents belong to the folk of Buckland, and you were brought up on the 'wrong side of the Brandywine River', as they say. If half the tales be true, members of your family have always displayed a certain queerness of character, and an unusual fighting spirit, a strangeness you seem to possess yourself.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Hunting, Perception</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Carpenter's tools or water vehicles</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Rustic, Wary</p>
+		</description>
+		<setters>
+			<set name="short">Hunting, Perception, Carpenter's Tools/Water Vehicles</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Proficiency" name="Tool Proficiency (Bucklander)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+		</rules>
+	</element>
+	
+	<element name="On Patrol" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_ON_PATROL">
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>Your aunt was a Shirriff, and often brought you along with her when she went 'beating the bounds', that is, when she was appointed to watch the Shire's borders for Outsiders. More often than not, her watch included a visit to The Ivy Bush, a small inn on the Bywater Road. There, you heard the best stories over deep mugs of excellent beer.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Investigation, Travel</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Brewer's supplies</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Inquisitive, Wary</p>
+		</description>
+		<setters>
+			<set name="short">Investigation, Travel, Brewer's Supplies</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Restless Farmer" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_RESTLESS_FARMER">
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>You were born into a family of farmers in the Southfarthing, where the best pipe-weed grows. To satisfy your curiosity—and your parents' expectations—you started to work at a very early age, learning a lot from farmhands and traders. From time to time, you feel your closeness to the earth move you, awakening a desire to sleep in the fields, under a canopy of stars.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Animal Handling, Nature</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Cook's utensils or herbalism kit</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Faithful, Rustic</p>
+		</description>
+		<setters>
+			<set name="short">Animal Handling, Nature, Cook's Utensils/Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<select type="Proficiency" name="Tool Proficiency (Restless Farmer)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSIL|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+
+	<element name="Too Many Paths to Tread" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_TOO_MANY_PATHS_TO_TREAD">
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>Your father was a mason and you were supposed to take his place in his workshop in Hardbottle at the age of 33. But before that time, a mysterious wanderlust took you and you were away from home for months. When you came back, you renounced your position, to the outrage of your whole neighbourhood. But you know that secretly your father approves; he always dreamed of leaving the Shire to 'go and see Elves'!</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Athletics, Explore</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Mason's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Eager, Merry</p>
+		</description>
+		<setters>
+			<set name="short">Athletics, Explore, Mason's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Tookish Blood" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_TOOKISH_BLOOD">
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>Yours is a honourable family of potters from the Marish, Eastfarthing. One day, something Tookish stirred in your blood and overcame your respectability. It first happened on your way home one night, when you spotted some outlandish folk around a bright campfire. When you described them to your grandmother, she told you they were Dwarves, on their way to the Blue Mountains. From that night you started to shun well-trodden paths, hoping to meet other wayfarers secretly crossing the Shire.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Deception, Riddle</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Potter's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Eager, Honourable</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Riddle, Potter's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Witty Gentlehobbit" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_WITTY_GENTLEHOBBIT">
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>You come from a well-to-do family of landed Westfarthing gentry, living in a Hobbit-hole in Michel Delving. It is rumoured that your great-grandfather once vanished, only to show up three days later at the local inn, talking of a giant Tree-man he had seen on the North Moors. Some believe your family's fortune is based on the giant's hoard your ancestor discovered, but you have been able to dispel such rumours with your humorous remarks.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Insight, Persuasion</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Cook's utensils or herbalism kit</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Fair-spoken, Merry</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Persuasion, Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Tool Proficiency (Witty Gentlehobbit)" supports="Gaming Set" />
+		</rules>
+	</element>
+
+</elements>

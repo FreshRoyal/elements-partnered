@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>New Skills</name>
+		<description>New Skills from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
+		</update>
+	</info>
+	
+	<!--New Skills Option-->
+	<element name="New Skills (LRRP)" type="Option" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_OPTION_NEW_SKILLS">
+		<description>
+			<p><em>The Lord of the Rings Roleplaying</em> does not use the Arcana or Religion skills. The History skill is renamed Old Lore, and a new skill, Riddle, is added, given the importance of this custom among many cultures of Middle-earth. The Survival skill is replaced by three focused skills to highlight the importance of journeys in this setting: Explore, Hunting, and Travel.</p>
+			<p class="indent">Finally, to preserve balance between abilities, while playing <em>The Lord of the Rings Roleplaying</em> we recommend applying the Medicine skill to Intelligence checks rather than Wisdom checks: for this reason, in the following pages the skill is indicated as Intelligence (Medicine).</p>
+		</description>
+		<setters>
+			<set name="short">You have access to the Riddle, Explore, Hunting, and Travel skills from <em>The Lord of the Rings Roleplaying™</em>.</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_EXPLORE_DISPLAY" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_HUNTING_DISPLAY" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_RIDDLE_DISPLAY" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TRAVEL_DISPLAY" />
+			<stat name="explore:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="hunting:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="riddle:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="travel:proficiency" value="wisdom:modifier" bonus="ability" />
+		</rules>
+	</element>
+	
+	<!--Intelligence (Old Lore) Information-->
+	<element name="Old Lore (Intelligence)" type="Information" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_INFORMATION_OLD_LORE_INTELLIGENCE">
+		<description>
+			<p><b>Note:</b> Old Lore is just the History skill from the core rules but renamed.</p>
+			<p>An Intelligence (Old Lore) check measures the ability of a Player-hero to recall obscure information from bygone days, such as knowledge of the ancient tales of the Elder Days, the annals of kings and rulers, family genealogies, and recollections of deeds and places lost to common lore. This knowledge may derive from different sources, from stories heard around the fire to the dusty records of a chronicler.</p>
+			<p class="flavor">He knew many histories and legends of long ago, of Elves and Men and the good and evil deeds of the Elder Days.</p>
+		</description>
+	</element>
+
+	<!--Skill Proficiencies-->
+
+	<!--Explore-->
+	<element name="Explore" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE">
+		<supports>Skill,Wisdom</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>Player-heroes rely on this when they move through an unfamiliar area of the Wild. A Wisdom (Explore) check may be required during a journey to find out where the Company is heading, or to get back on track after a detour; to cope with adverse weather conditions or other natural hazards; to create paths through the wilderness suitable for others to follow; or to choose a suitable place to set up camp.</p>
+			<p class="flavor">“We have found a dry cave," they said, "not far round the next corner; and ponies and all could get inside.”</p>
+		</description>
+		<rules>
+			<stat name="explore:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="explore:proficiency" value="wisdom:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Explore Proficiency or Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_EXPLORE">
+        <rules>
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE_DOUBLE" requirements="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+        </rules>
+    </element>
+
+    <element name="Explore Proficiency" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE">
+        <rules>
+            <grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+        </rules>
+    </element>
+
+    <element name="Explore Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE_DOUBLE">
+        <rules>
+            <stat name="explore:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE" alt="Double Proficiency" />
+        </rules>
+    </element>
+
+	<element name="Skill Expertise (Explore)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_EXPLORE">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Explore check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="explore:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	 <element name="Explore" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPLORE_DISPLAY">
+		<compendium display="false" />
+		<description />
+		<sheet alt="Wisdom (Explore)">
+			<description>Your bonus for checks using this skill is {{explore:proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<!--Hunting-->
+	<element name="Hunting" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING">
+		<supports>Skill,Wisdom</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>Knowing how to hunt is a fundamental skill, shared by most cultures of Middle-earth. A Wisdom (Hunting) check is required when hunting wild game, or to follow tracks and identify a quarry by its spoor. This skill also covers fishing and preparing traps. In wilder areas, hunters learn to apply their trade to more dangerous creatures—such as Orcs, Spiders, or Wargs—or else risk becoming the prey.</p>
+			<p class="flavor">They dwelt most often by the edges of the woods, from which they could escape at times to hunt, or to ride and run over the open lands by moonlight or starlight...</p>
+		</description>
+		<rules>
+			<stat name="hunting:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="hunting:proficiency" value="wisdom:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Hunting Proficiency or Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_HUNTING">
+        <rules>
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_HUNTING" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_HUNTING_DOUBLE" requirements="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+        </rules>
+    </element>
+
+    <element name="Hunting Proficiency" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_HUNTING">
+        <rules>
+            <grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+        </rules>
+    </element>
+
+    <element name="Hunting Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_HUNTING_DOUBLE">
+        <rules>
+            <stat name="hunting:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_HUNTING" alt="Double Proficiency" />
+        </rules>
+    </element>
+
+	<element name="Skill Expertise (Hunting)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_HUNTING">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Hunting check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hunting:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	 <element name="Hunting" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_HUNTING_DISPLAY">
+		<compendium display="false" />
+		<description />
+		<sheet alt="Wisdom (Hunting)">
+			<description>Your bonus for checks using this skill is {{hunting:proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<!--Riddle-->
+	<element name="Riddle" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE">
+		<supports>Skill,Intelligence</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>The riddle game is an accepted custom among many creatures, including quite a few that would be classified as wicked if they did not respect the ancient rules. An Intelligence (Riddle) check is used to gain helpful insight from a spoken or written riddle, but also to draw conclusions from seemingly unconnected scraps of information by deduction, reasoning, and intuition.</p>
+			<p class="flavor">"A Hobbit waded out into the water and back; but I cannot say how long ago." "How then do you read this riddle?" asked Gimli.</p>
+		</description>
+		<rules>
+			<stat name="riddle:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="riddle:proficiency" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Riddle Proficiency or Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_RIDDLE">
+        <rules>
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_RIDDLE" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_RIDDLE_DOUBLE" requirements="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+        </rules>
+    </element>
+
+    <element name="Riddle Proficiency" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_RIDDLE">
+        <rules>
+            <grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+        </rules>
+    </element>
+
+    <element name="Riddle Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_RIDDLE_DOUBLE">
+        <rules>
+            <stat name="riddle:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_RIDDLE" alt="Double Proficiency" />
+        </rules>
+    </element>
+
+	<element name="Skill Expertise (Riddle)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_RIDDLEL">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Riddle check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="riddle:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	 <element name="Riddle" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_RIDDLE_DISPLAY">
+		<compendium display="false" />
+		<description />
+		<sheet alt="Intelligence (Riddle)">
+			<description>Your bonus for checks using this skill is {{riddle:proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<!--Travel-->
+	<element name="Travel" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL">
+		<supports>Skill,Wisdom</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>In the Third Age, the cities, villages, and towns of Middle-earth are often separated by many leagues of wild or deserted areas. Roads that used to lead safely to distant realms now end in broken trails that go nowhere. Whichever way the Company chooses to go, it will be a long and weary way before they get there. A successful Wisdom (Travel) check may let a Player-hero estimate the length of a journey, read a map, and even evaluate whether a group of strangers on the road can be approached safely or if they should be left alone instead.</p>
+			<p class="flavor">The country was much rougher and more barren than in the green vale of the Great River in Wilderland on the other side of the range, and their going would be slow...</p>
+		</description>
+		<rules>
+			<stat name="travel:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="travel:proficiency" value="wisdom:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Travel Proficiency or Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_TRAVEL">
+        <rules>
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+            <grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL_DOUBLE" requirements="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+        </rules>
+    </element>
+
+    <element name="Travel Proficiency" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL">
+        <rules>
+            <grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+        </rules>
+    </element>
+
+    <element name="Travel Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_TRAVEL_DOUBLE">
+        <rules>
+            <stat name="travel:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL" alt="Double Proficiency" />
+        </rules>
+    </element>
+
+	<element name="Skill Expertise (Travel)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_TRAVEL">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Travel check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="travel:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	 <element name="Travel" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TRAVEL_DISPLAY">
+		<compendium display="false" />
+		<description />
+		<sheet alt="Wisdom (Travel)">
+			<description>Your bonus for checks using this skill is {{travel:proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<!--Jack of All Trades-->
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
+		<rules>
+			<stat name="explore:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<stat name="hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<stat name="travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+		</rules>
+	</append>
+	<!--todo: append to 2024 bard-->
+
+</elements>

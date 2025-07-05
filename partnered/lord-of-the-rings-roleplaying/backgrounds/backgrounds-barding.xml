@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Barding Backgrounds</name>
+		<description>Barding Backgrounds from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="backgrounds-barding.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-barding.xml" />
+		</update>
+	</info>
+
+	<element name="Dragon Stories" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_DRAGON_STORIES">
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>Your family told many tales of Smaug the Dragon, from its arrival long ago to its death at the hand of your lord, King Bard. After his victory your family reclaimed their ancestral home in Dale. But now, the only dragons in Dale grace the painted signs of inns, and so you have left your home in search of adventure.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Explore, Old Lore</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> A musical instrument of your choice</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Eager, Proud</p>
+		</description>
+		<setters>
+			<set name="short">Explore, Old Lore, 1 Musical Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<select type="Proficiency" name="Musical Instrument (Dragon Stories)" supports="Musical Instrument" />
+		</rules>
+	</element>
+
+	<element name="By Hammer and Anvil" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_BY_HAMMER_AND_ANVIL">
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>Your parents paid richly for a Dwarf-smith to take you as an apprentice in his forge, and you worked hard under his severe discipline, to prove that your craft could reach his people's high standards. In the long hours you spent hammering on the anvil under the close scrutiny of your master, you have learnt that it is possible to create amazing things, but it is only by putting your heart into your work that you can succeed in creating a masterpiece.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Insight, Intimidation</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Smith's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Proud, Wilful</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Intimidation, Smith's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Healing Hands" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_HEALING_HANDS">
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>You have long served on a trading boat from Esgaroth, first leaving the Long Lake when you were very young. Once, staying for months in a distant town in Dorwinion, waiting for a caravan from the East to arrive, you fell victim to a foreign sickness, and were succoured by a lady speaking a strange tongue. She saved your life, and taught you how to save others in time of need.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Medicine, Travel</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Herbalism kit or water vehicles</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Bold, Generous</p>
+		</description>
+		<setters>
+			<set name="short">Medicine, Travel, Herbalism Kit/Water Vehicles</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<select type="Proficiency" name="Tool Proficiency (Healing Hands)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+		</rules>
+	</element>
+
+	<element name="Gifted Senses" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_GIFTED_SENSES">
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>You are the first to notice when things are out of place, or just don't smell or sound right. Others have learned to pay attention to your intuition, and invite you to help them, since you may see something they missed. Little did you realise how far from home this would carry you.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Investigation, Perception</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Brewer's supplies or cook's utensils</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Generous, Wilful</p>
+		</description>
+		<setters>
+			<set name="short">Investigation, Perception, Brewer's Supplies/Cook's Utensils</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Proficiency" name="Tool Proficiency (Gifted Senses)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+
+	<element name="A Patient Hunter" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_A_PATIENT_HUNTER">
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>Faithful to your ancestors' heritage, your family never embraced the ways of the merchants of Esgaroth, and when you were a child, your father spent long days hunting. For a few years after the death of the Dragon, hunting was a dangerous trade, bearing little fruit, as the land was still recovering from the Desolation of Smaug. But now the land is again blooming with every new spring, and birds and animals alike are returning in ever greater numbers.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Hunting, Nature</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Leatherworker's tools or woodcarver's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Bold, Fierce</p>
+		</description>
+		<setters>
+			<set name="short">Hunting, Nature, Leatherworker's Tools/Woodcarver's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<select type="Proficiency" name="Tool Proficiency (A Patient Hunter)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Wordweaver" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_WORDWEAVER">
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>King Bard earned his throne by accomplishing a feat deemed unthinkable by most, setting an example for generations to come. But it is another deed that caught your interest and fired your imagination: that of the witty halfling who crossed words with Smaug the Golden in his lair. While you yourself do not expect to ever see a living Dragon, you look forward to your chance to win renown with your cunning.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Deception, Riddle</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> A gaming set of your choice</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Eager, Fair-spoken</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Riddle, Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<select type="Proficiency" name="Gaming Set (Wordweaver)" supports="Gaming Set" />
+		</rules>
+	</element>
+
+</elements>

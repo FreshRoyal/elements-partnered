@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Counsellor</name>
+		<description>Counsellor Messenger Path from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="messenger-counsellor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/messenger-counsellor.xml" />
+		</update>
+	</info>
+
+	<element name="Counsellor" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_MESSENGER_COUNSELLOR">
+		<supports>LRRP Messenger Path</supports>
+		<description>
+			<p>Wise counsel is rare to come by in the Twilight of the Third Age, as words can be distorted and put to crooked uses by the servants of the Enemy. This notwithstanding, you have chosen to oppose the Shadow by bringing your advice to all who need it.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_WORDS_OF_GUARD_AND_GUIDING" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_A_DANGEROUS_GIFT" />
+			<p></p>
+			<p class="flavor">“...advice is a dangerous gift, even from the wise to the wise, and all courses may run ill.”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_WORDS_OF_GUARD_AND_GUIDING" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_A_DANGEROUS_GIFT" level="7" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this path at 3rd level, you become proficient in two of the following skills of your choice: Deception, Insight, Intimidation, Performance, Persuasion, and Riddle. If you are already proficient in any one of them, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Skill Proficiency or Double (Counsellor)" supports="LRRP Counsellor Bonus Proficiency" level="3"/>
+		</rules>
+	</element>
+	<element name="Deception" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES_DECEPTION">
+		<compendium display="false" />
+		<supports>LRRP Counsellor Bonus Proficiency</supports>
+		<description>
+			<p>You become proficient in the Deception skill. If you are already proficient in it, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+		</rules>
+	</element>
+	<element name="Insight" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES_INSIGHT">
+		<compendium display="false" />
+		<supports>LRRP Counsellor Bonus Proficiency</supports>
+		<description>
+			<p>You become proficient in the Insight skill. If you are already proficient in it, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Intimidation" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES_INTIMIDATION">
+		<compendium display="false" />
+		<supports>LRRP Counsellor Bonus Proficiency</supports>
+		<description>
+			<p>You become proficient in the Intimidation skill. If you are already proficient in it, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Performance" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES_PERFORMANCE">
+		<compendium display="false" />
+		<supports>LRRP Counsellor Bonus Proficiency</supports>
+		<description>
+			<p>You become proficient in the Performance skill. If you are already proficient in it, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFORMANCE" />
+		</rules>
+	</element>
+	<element name="Persuasion" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES_PERSUASION">
+		<compendium display="false" />
+		<supports>LRRP Counsellor Bonus Proficiency</supports>
+		<description>
+			<p>You become proficient in the Persuasion skill. If you are already proficient in it, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Riddle" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_BONUS_PROFICIENCIES_RIDDLE">
+		<compendium display="false" />
+		<supports>LRRP Counsellor Bonus Proficiency</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>You become proficient in the Riddle skill. If you are already proficient in it, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_RIDDLE" />
+		</rules>
+	</element>
+	
+	<element name="Words of Guard and Guiding" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_WORDS_OF_GUARD_AND_GUIDING">
+		<description>
+			<p>Starting at 3rd level, you can use a bonus action to make a Charisma check or take the Help action. In addition, whenever you use the Help action to aid an ally in attacking a creature, the target of the attack can be within 30 feet of you rather than within 5 feet of you, if the ally can hear and understand you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can make a Charisma check or take the Help action. In addition, whenever you use the Help action to aid an ally in attacking a creature, the target of the attack can be within 30 feet of you rather than within 5 feet of you, if the ally can hear and understand you.</description>
+		</sheet>
+	</element>
+
+	<element name="A Dangerous Gift" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_COUNSELLOR_A_DANGEROUS_GIFT">
+		<description>
+			<p>Starting at 7th level, you have advantage on Intelligence (Riddle) and Wisdom (Insight) checks. In addition, you can reroll a single ability check that you fail during the Interaction stage of a council.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence (Riddle) and Wisdom (Insight) checks. In addition, you can reroll a single ability check that you fail during the Interaction stage of a council.</description>
+		</sheet>
+	</element>
+
+</elements>

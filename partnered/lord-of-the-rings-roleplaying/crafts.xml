@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Crafts</name>
+		<description>Crafts from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="crafts.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/crafts.xml" />
+		</update>
+	</info>
+	
+	<element name="Crafts" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_CRAFTS">
+		<compendium display="false" />
+		<description />
+		<sheet usage="{{lrrp:crafts:slots}}/Rest">
+			<description>You have {{lrrp:crafts:slots}} craft slots. To use one of your crafts, you must expend a craft slot. You regain all expended craft slots when you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Crafts" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_CRAFTS" />
+	
+	<!--Crafts-->
+	<element name="Beast-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_BEAST_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>You gain the ability to comprehend and verbally communicate with beasts. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and creatures, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favour for you, at the Loremaster's discretion, such as delivering a letter, or a verbal message to someone who can also speak with beasts.</p>
+			<p class="indent">In addition, as an action you can spend a craft slot and choose a beast that you can see within 30 feet of you. It must be able to see and hear you. Make a Wisdom (Animal Handling) check, contested by the target's Wisdom (Insight) check. If you win the contest, the beast is charmed by you for 24 hours or until you or your companions do anything harmful to it. If you obtain a magical success and the target is a beast with a challenge rating of 1/8 or lower, you can make the beast permanently charmed by you, until you dismiss it, harm it, or make another beast permanently charmed by you. A beast automatically wins the contest if its Intelligence score is 4 or higher. When you reach 5th level, you can affect one additional beast, or two additional beasts at 9th level.</p>
+			<p class="flavor">“...and he has much lore of herbs and beasts, and birds are especially his friends.”</p>
+		</description>
+		<sheet>
+			<description>You can comprehend and verbally communicate with beasts. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and creatures, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favour for you, at the Loremaster's discretion.
+			In addition, as an action you can spend a craft slot and choose a beast that you can see within 30 ft of you. It must be able to see and hear you. Make a Wisdom (Animal Handling) check, contested by the target's Wisdom (Insight) check. If you win the contest, the beast is charmed by you for 24 hours or until you or your companions do anything harmful to it. If you obtain a magical success and the target is a beast with a CR of 1/8 or lower, you can make the beast permanently charmed by you, until you dismiss it, harm it, or make another beast permanently charmed by you. A beast automatically wins the contest if its Intelligence score is 4 or higher.</description>
+			<description level="5">You can comprehend and verbally communicate with beasts. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and creatures, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favour for you, at the Loremaster's discretion.
+			In addition, as an action you can spend a craft slot and choose up to 2 beasts that you can see within 30 ft of you. It must be able to see and hear you. Make a Wisdom (Animal Handling) check, contested by the target's Wisdom (Insight) check. If you win the contest, the beast is charmed by you for 24 hours or until you or your companions do anything harmful to it. If you obtain a magical success and the target is a beast with a CR of 1/8 or lower, you can make the beast permanently charmed by you, until you dismiss it, harm it, or make another beast permanently charmed by you. A beast automatically wins the contest if its Intelligence score is 4 or higher.</description>
+			<description level="9">You can comprehend and verbally communicate with beasts. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and creatures, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favour for you, at the Loremaster's discretion.
+			In addition, as an action you can spend a craft slot and choose up to 3 beasts that you can see within 30 ft of you. It must be able to see and hear you. Make a Wisdom (Animal Handling) check, contested by the target's Wisdom (Insight) check. If you win the contest, the beast is charmed by you for 24 hours or until you or your companions do anything harmful to it. If you obtain a magical success and the target is a beast with a CR of 1/8 or lower, you can make the beast permanently charmed by you, until you dismiss it, harm it, or make another beast permanently charmed by you. A beast automatically wins the contest if its Intelligence score is 4 or higher.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+	<element name="Hand-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_HAND_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>This craft is not meant to cover the whole range of abilities of smiths, wrights, and other artisans, but reflects a talent for making things with superior skill and cunning. During a Fellowship Phase, you can spend a craft slot and choose a non-magical item in your possession. You must be proficient with the tools related to the item you choose, and you might also need access to special materials or locations, such as a forge. If a feature lets you add double your proficiency bonus with a tool, you can select two items related to that tool instead of one. Then, choose one of the following options for each item:</p>
+			<ul>
+				<li>If it's a suit of armour or a shield, it is upgraded with a reward. When you reach 5th level, a creature also gains a +1 bonus to Armour Class while wearing or holding it.</li>
+				<li>If it's a weapon, it is upgraded with a reward. If you can obtain a magical success with the tools used, the weapon can also become magical. When you reach 5th level, a creature also gains a +1 bonus to attack and damage rolls made with it.</li>
+				<li>If it's any other item, choose a skill somehow related to the item, for example Stealth if the item is a cloak, or Athletics if the item is a pair of boots. A creature holding or wearing the item gains a Blessing die on ability checks using that skill. If you can obtain a magical success with the tools used, the item can instead become a Marvellous Artefact with a blessing affecting the chosen skill.</li>
+			</ul>
+			<p>Each of the above options can only be chosen once for each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can withdraw the bonuses granted by that slot and regain the slot, if you wish.</p>
+			<p class="flavor">“The lesser rings were only essays in the craft before it was full-grown, and to the Elven-smiths they were but trifles–yet still to my mind dangerous for mortals...”</p>
+		</description>
+		<sheet>
+			<description>During a Fellowship Phase, you can spend a craft slot and choose a non-magical item in your possession. You must be proficient with the tools related to the item you choose, and you might also need access to special materials or locations, such as a forge. If a feature lets you add double your proficiency bonus with a tool, you can select two items related to that tool instead of one. Then, choose one of the following options for each item: &#13;
+			• If it's a suit of armour or a shield, it is upgraded with a reward. &#13;
+			• If it's a weapon, it is upgraded with a reward. If you can obtain a magical success with the tools used, the weapon can also become magical. &#13;
+			• If it's any other item, choose a skill somehow related to the item. A creature holding or wearing the item gains a Blessing die on ability checks using that skill. If you can obtain a magical success with the tools used, the item can instead become a Marvellous Artefact with a blessing affecting the chosen skill. &#13;
+			Each of the above options can only be chosen once for each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can withdraw the bonuses granted by that slot and regain the slot, if you wish.</description>
+			<description level="5">During a Fellowship Phase, you can spend a craft slot and choose a non-magical item in your possession. You must be proficient with the tools related to the item you choose, and you might also need access to special materials or locations, such as a forge. If a feature lets you add double your proficiency bonus with a tool, you can select two items related to that tool instead of one. Then, choose one of the following options for each item: &#13;
+			• If it's a suit of armour or a shield, it is upgraded with a reward. A creature also gains a +1 bonus to Armour Class while wearing or holding it. &#13;
+			• If it's a weapon, it is upgraded with a reward. If you can obtain a magical success with the tools used, the weapon can also become magical. A creature also gains a +1 bonus to attack and damage rolls made with it. &#13;
+			• If it's any other item, choose a skill somehow related to the item. A creature holding or wearing the item gains a Blessing die on ability checks using that skill. If you can obtain a magical success with the tools used, the item can instead become a Marvellous Artefact with a blessing affecting the chosen skill. &#13;
+			Each of the above options can only be chosen once for each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can withdraw the bonuses granted by that slot and regain the slot, if you wish.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+	<element name="Leech-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_LEECH_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>You are skilled, according to ancient traditions, in the healing of wounds and sickness. As an action, you can spend a craft slot to tend to a creature within 5 feet of you and make a DC 10 Intelligence (Medicine) check. You can spend one use of a healer's kit to replace the d20 roll with a 10. If you succeed, the creature regains a number of hit points equal to your check result minus 10 (minimum 1 hit point).</p>
+			<p class="indent">When you reach 5th level, on a successful check you can alternatively cure the target of one disease or neutralise one poison affecting it.</p>
+			<p class="flavor">“Alas!" he cried. "It was this accursed knife that gave the wound. Few now have the skill in healing to match such evil weapons. But I will do what I can.”</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend a craft slot to tend to a creature within 5 feet of you and make a DC 10 Intelligence (Medicine) check. You can spend one use of a healer's kit to replace the d20 roll with a 10. If you succeed, the creature regains a number of hit points equal to your check result minus 10 (minimum 1 hit point).</description>
+			<description level="5">You can spend a craft slot to tend to a creature within 5 feet of you and make a DC 10 Intelligence (Medicine) check. You can spend one use of a healer's kit to replace the d20 roll with a 10. If you succeed, the creature regains a number of hit points equal to your check result minus 10 (minimum 1 hit point).
+			Alternatively, on a successful check, you can cure the target of one disease or neutralise one poison affecting it.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+	<element name="Rune-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_RUNE_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>You can now read and write runic inscriptions. You can use the runes to convey secret messages to other creatures who know them, or whom you previously instructed in their meaning.</p>
+			<p class="indent">At the end of a short or long rest, you can spend a craft slot and choose a magical item in the Company's possession. Make an Intelligence (Old Lore) check. The DC is 10 for a Marvellous Artefact, 15 for a Wondrous Item, or 20 for a Famous Weapon or Armour. If you succeed, you learn all there is to be discovered about the item's qualities, and whether it is cursed or not.</p>
+			<p class="indent">In addition, during a Fellowship Phase, you can spend a craft slot to inscribe runes of power on a non-magical item of your choice, or on two items when you reach 5th level. You must be proficient with the tools related to the substance of which the item you choose is made (smith's tools for metal, woodcarver's tools for wood, etc.). While a creature holds or wears the item, it gains a +1 bonus to saving throws. If the item is a shield or a weapon, you may attribute it a bane instead. Choose a creature type among Evil Men, Orcs, Spiders, Trolls, Undead, or Wolves. If the item has one or more rewards, their effects are doubled against bane creatures (for example, a Keen weapon scores a critical hit on a roll of 18–20 against bane creatures). The runes can only be inscribed once on each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can cancel the runes inscribed with that slot and regain the slot, if you wish.</p>
+			<p class="flavor">“These look like good blades...They were not made by any troll, nor by any smith among men in these parts and day; but when we can read the runes on them, we shall know more about them.”</p>
+		</description>
+		<sheet>
+			<description>You can now read and write runic inscriptions. You can use the runes to convey secret messages to other creatures who know them, or whom you previously instructed in their meaning. &#13;
+			At the end of a short or long rest, you can spend a craft slot and choose a magical item in the Company's possession. Make an Intelligence (Old Lore) check. The DC is 10 for a Marvellous Artefact, 15 for a Wondrous Item, or 20 for a Famous Weapon or Armour. If you succeed, you learn all there is to be discovered about the item's qualities, and whether it is cursed or not. &#13;
+			In addition, during a Fellowship Phase, you can spend a craft slot to inscribe runes of power on a non-magical item of your choice. You must be proficient with the tools related to the substance of which the item you choose is made. While a creature holds or wears the item, it gains a +1 bonus to saving throws. If the item is a shield or a weapon, you may attribute it a bane instead. Choose a creature type among Evil Men, Orcs, Spiders, Trolls, Undead, or Wolves. If the item has one or more rewards, their effects are doubled against bane creatures. The runes can only be inscribed once on each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can cancel the runes inscribed with that slot and regain the slot, if you wish.</description>
+			<description level="5">You can now read and write runic inscriptions. You can use the runes to convey secret messages to other creatures who know them, or whom you previously instructed in their meaning. &#13;
+			At the end of a short or long rest, you can spend a craft slot and choose a magical item in the Company's possession. Make an Intelligence (Old Lore) check. The DC is 10 for a Marvellous Artefact, 15 for a Wondrous Item, or 20 for a Famous Weapon or Armour. If you succeed, you learn all there is to be discovered about the item's qualities, and whether it is cursed or not. &#13;
+			In addition, during a Fellowship Phase, you can spend a craft slot to inscribe runes of power on up to 2 non-magical items of your choice. You must be proficient with the tools related to the substance of which the item you choose is made. While a creature holds or wears the item, it gains a +1 bonus to saving throws. If the item is a shield or a weapon, you may attribute it a bane instead. Choose a creature type among Evil Men, Orcs, Spiders, Trolls, Undead, or Wolves. If the item has one or more rewards, their effects are doubled against bane creatures. The runes can only be inscribed once on each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can cancel the runes inscribed with that slot and regain the slot, if you wish.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+	<element name="Song-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_SONG_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>You have been trained in the art of singing, according to the tradition of the wandering minstrels. Your musical lore runs deeper than most, as you partake of the knowledge of the mighty singers of old. As an action, you can spend a craft slot and make a Charisma (Performance) check, contested by the Intelligence (Riddle) check of each creature of your choice within 30 feet of you that can hear you. A creature can choose to fail its ability check if it wishes. For each target against which you win the contest, choose one of the following options:</p>
+			<ul>
+				<li>You can suppress any effect causing the target to be charmed or frightened until the end of your next turn. This effect ends if the target can no longer hear you.</li>
+				<li>You can make the target indifferent about creatures of your choice that it is hostile towards until the end of your next turn. The target also has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you for the same duration. This effect ends if the target can no longer hear you, it is harmed, or if it witnesses any of its friends being harmed.</li>
+				<li>Until the end of your next turn, whenever the target makes an attack roll or a saving throw, the target must roll a d4 and either add the number rolled to the attack roll or saving throw (if the target is friendly to you), or subtract it (if the target is hostile). This effect ends if the target can no longer hear you.</li>
+			</ul>
+			<p>When you reach 5th level, you can use a bonus action on each of your turns to extend the duration of each of these effects on all targets until the end of your next turn, up to 1 minute.</p>
+			<p class="flavor">“...for in these days men are slow to believe that a captain can be wise and learned in the scrolls of lore and song...”</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend a craft slot and make a Charisma (Performance) check, contested by the Intelligence (Riddle) check of each creature of your choice within 30 ft of you that can hear you. A creature can choose to fail its ability check if it wishes. For each target against which you win the contest, choose one of the following options: &#13;
+			• You can suppress any effect causing the target to be charmed or frightened until the end of your next turn. This effect ends if the target can no longer hear you. &#13;
+			• You can make the target indifferent about creatures of your choice that it is hostile towards until the end of your next turn. The target also has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you for the same duration. This effect ends if the target can no longer hear you, it is harmed, or if it witnesses any of its friends being harmed. &#13;
+			• Until the end of your next turn, whenever the target makes an attack roll or a saving throw, the target must roll a d4 and either add the number rolled to the attack roll or saving throw (if the target is friendly to you), or subtract it (if the target is hostile). This effect ends if the target can no longer hear you. &#13;
+			Each of the above options can only be chosen once for each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can withdraw the bonuses granted by that slot and regain the slot, if you wish.</description>
+			<description level="5">You can spend a craft slot and make a Charisma (Performance) check, contested by the Intelligence (Riddle) check of each creature of your choice within 30 ft of you that can hear you. A creature can choose to fail its ability check if it wishes. For each target against which you win the contest, choose one of the following options: &#13;
+			• You can suppress any effect causing the target to be charmed or frightened until the end of your next turn. This effect ends if the target can no longer hear you. &#13;
+			• You can make the target indifferent about creatures of your choice that it is hostile towards until the end of your next turn. The target also has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you for the same duration. This effect ends if the target can no longer hear you, it is harmed, or if it witnesses any of its friends being harmed. &#13;
+			• Until the end of your next turn, whenever the target makes an attack roll or a saving throw, the target must roll a d4 and either add the number rolled to the attack roll or saving throw (if the target is friendly to you), or subtract it (if the target is hostile). This effect ends if the target can no longer hear you. &#13;
+			You can use a bonus action on each of your turns to extend the duration of each of these effects on all targets until the end of your next turn, up to 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+	<element name="Speech-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_SPEECH_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>You are a student of Sindarin and Quenya, the Ancient Tongue, and have advantage on Charisma checks when interacting with Elves.</p>
+			<p class="indent">In addition, as an action you can spend a craft slot and choose a creature other than an Elf, or a Wizard, or a similarly powerful creature, within 30 feet of you who can hear you. Then, choose one of the following options:</p>
+			<ul>
+				<li>Make a Charisma (Intimidation) check contested by the target's Charisma (Intimidation) check. A target has advantage on this check if it is Large or larger or if it cannot understand you. If you win the contest, the target is frightened of you for 1 minute. The frightened target can make a Charisma (Intimidation) check against your passive Charisma (Intimidation) score at the end of each of its turns, ending the effect on itself on a success. When you reach 5th level, you can target one additional creature, or two additional creatures at 9th level.</li>
+				<li>Make a Charisma (Intimidation) or Charisma (Persuasion) check contested by the target's Wisdom (Insight) check. A target has advantage on this check if it is immune to being charmed or if it cannot understand you. If you win the contest, you can speak a one-word command that the target must follow on its next turn, if it can and if the command is not directly harmful to it. Once the target has executed the command, it ends its turn. Some typical commands include "Fall!" (the target falls prone), "Flee!" (the target moves away from you), and "Halt!" (the target doesn't move and takes no actions), and the effect may be considered a Misdeed depending on the circumstances. When you reach 5th level, you can target one additional creature, or two additional creatures at 9th level.</li>
+			</ul>
+			<p class="flavor">“...for in these days men are slow to believe that a captain can be wise and learned in the scrolls of lore and song...”</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma checks when interacting with Elves.
+			In addition, as an action you can spend a craft slot and choose a creature other than an Elf, or a Wizard, or a similarly powerful creature, within 30 ft of you who can hear you. Then, choose one of the following options: &#13;
+			• Make a Charisma (Intimidation) check contested by the target's Charisma (Intimidation) check. A target has advantage on this check if it is Large or larger or if it cannot understand you. If you win the contest, the target is frightened of you for 1 minute. The frightened target can make a Charisma (Intimidation) check against your passive Charisma (Intimidation) score at the end of each of its turns, ending the effect on itself on a success. &#13;
+			• Make a Charisma (Intimidation) or Charisma (Persuasion) check contested by the target's Wisdom (Insight) check. A target has advantage on this check if it is immune to being charmed or if it cannot understand you. If you win the contest, you can speak a one-word command that the target must follow on its next turn, if it can and if the command is not directly harmful to it. Once the target has executed the command, it ends its turn. Some typical commands include "Fall!" (the target falls prone), "Flee!" (the target moves away from you), and "Halt!" (the target doesn't move and takes no actions), and the effect may be considered a Misdeed depending on the circumstances.</description>
+			<description level="5">You have advantage on Charisma checks when interacting with Elves.
+			In addition, as an action you can spend a craft slot and choose up to 2 creatures other than an Elf, or a Wizard, or a similarly powerful creature, within 30 ft of you who can hear you. Then, choose one of the following options: &#13;
+			• Make a Charisma (Intimidation) check contested by the target's Charisma (Intimidation) check. A target has advantage on this check if it is Large or larger or if it cannot understand you. If you win the contest, the target is frightened of you for 1 minute. The frightened target can make a Charisma (Intimidation) check against your passive Charisma (Intimidation) score at the end of each of its turns, ending the effect on itself on a success. &#13;
+			• Make a Charisma (Intimidation) or Charisma (Persuasion) check contested by the target's Wisdom (Insight) check. A target has advantage on this check if it is immune to being charmed or if it cannot understand you. If you win the contest, you can speak a one-word command that the target must follow on its next turn, if it can and if the command is not directly harmful to it. Once the target has executed the command, it ends its turn. Some typical commands include "Fall!" (the target falls prone), "Flee!" (the target moves away from you), and "Halt!" (the target doesn't move and takes no actions), and the effect may be considered a Misdeed depending on the circumstances.</description>
+			<description level="9">You have advantage on Charisma checks when interacting with Elves.
+			In addition, as an action you can spend a craft slot and choose up to 3 creatures other than an Elf, or a Wizard, or a similarly powerful creature, within 30 ft of you who can hear you. Then, choose one of the following options: &#13;
+			• Make a Charisma (Intimidation) check contested by the target's Charisma (Intimidation) check. A target has advantage on this check if it is Large or larger or if it cannot understand you. If you win the contest, the target is frightened of you for 1 minute. The frightened target can make a Charisma (Intimidation) check against your passive Charisma (Intimidation) score at the end of each of its turns, ending the effect on itself on a success. &#13;
+			• Make a Charisma (Intimidation) or Charisma (Persuasion) check contested by the target's Wisdom (Insight) check. A target has advantage on this check if it is immune to being charmed or if it cannot understand you. If you win the contest, you can speak a one-word command that the target must follow on its next turn, if it can and if the command is not directly harmful to it. Once the target has executed the command, it ends its turn. Some typical commands include "Fall!" (the target falls prone), "Flee!" (the target moves away from you), and "Halt!" (the target doesn't move and takes no actions), and the effect may be considered a Misdeed depending on the circumstances.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+	<element name="Weapon-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_WEAPON_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>Choose a type of weapon. You gain proficiency with this weapon if you don't already have it. When you attack with that type of weapon and the weapon is finesse or ranged, you can use your choice of your Intelligence, Wisdom, or Charisma modifier instead of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.</p>
+			<p class="indent">In addition, when you hit a creature with the chosen weapon, you can spend a craft slot to roll a number of additional weapon damage dice on the damage roll. The number of additional weapon damage dice is equal to your proficiency bonus.</p>
+			<p class="flavor">“...and though we still hold that a warrior should have more skills and knowledge than only the craft of weapons and slaying, we esteem a warrior, nonetheless, above men of other crafts.”</p>
+		</description>
+		<sheet>
+			<description>Choose a weapon when you select this feature. When you attack with that type of weapon and the weapon is finesse or ranged, you can use your choice of your Intelligence, Wisdom, or Charisma modifier instead of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
+			In addition, when you hit a creature with the chosen weapon, you can spend a craft slot to add {{proficiency}} additional weapon damage dice on the damage roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+			<select type="Proficiency" name="Weapon Proficiency, Weapon-Craft" supports="Simple||Martial" />
+			<!--maybe go back and make elements for each official weapon? Ew.-->
+		</rules>
+	</element>
+
+	<element name="Wood-Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CRAFT_WOOD_CRAFT">
+		<supports>LRRP Craft</supports>
+		<description>
+			<p>You are familiar with the difficulties encountered when crossing wild lands, and with the ways of overcoming them. You can make an Intelligence (Nature) check in place of any Wisdom (Explore) or Wisdom (Hunting) check.</p>
+			<p class="indent">In addition, you can spend 1 hour and a craft slot to make an Intelligence (Nature), Wisdom (Explore), or Wisdom (Hunting) check (your choice). The DC is determined by the terrain type the Company is currently traversing (as if a journey event was taking place there). The check has disadvantage if it is autumn or winter. If you succeed, choose one of the following options:</p>
+			<ul>
+				<li>Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 1 hour, each of those creatures has a +5 bonus to its Dexterity (Stealth) checks. When you reach 5th level, the bonus increases to +10. If you obtain a magical success, the creatures also leave behind no tracks or other traces of their passage for the duration.</li>
+				<li>Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 8 hours, each of those creatures has a +5 bonus to its passive Wisdom (Perception) score. When you reach 5th level, the bonus increases to +10. If you obtain a magical success, the creatures also gain tremorsense out to a range of 60 feet for the duration.</li>
+				<li>You forage a number of pounds of food and gallons of water equal to your check result minus the terrain DC (minimum 1). The food lasts for 24 hours, or 48 hours when you reach 5th level. If you obtain a magical success, each pound of food foraged in this way also restores 1 hit point to the creature eating it during a short or long rest.</li>
+			</ul>
+			<p class="flavor">“Let us be thankful that they are not hunting us: for they use poisoned arrows, it is said, and they are woodcrafty beyond compare.”</p>
+		</description>
+		<sheet>
+			<description>You can make an Intelligence (Nature) check in place of any Wisdom (Explore) or Wisdom (Hunting) check.
+			In addition, you can spend 1 hour and a craft slot to make an Intelligence (Nature), Wisdom (Explore), or Wisdom (Hunting) check (your choice). The DC is determined by the terrain type the Company is currently traversing (as if a journey event was taking place there). The check has disadvantage if it is autumn or winter. If you succeed, choose one of the following options: &#13;
+			• Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 1 hour, each of those creatures has a +5 bonus to its Dexterity (Stealth) checks. If you obtain a magical success, the creatures also leave behind no tracks or other traces of their passage for the duration. &#13;
+			• Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 8 hours, each of those creatures has a +5 bonus to its passive Wisdom (Perception) score. If you obtain a magical success, the creatures also gain tremorsense out to a range of 60 feet for the duration. &#13;
+			• You forage a number of pounds of food and gallons of water equal to your check result minus the terrain DC (minimum 1). The food lasts for 24 hours. If you obtain a magical success, each pound of food foraged in this way also restores 1 hp to the creature eating it during a short or long rest.</description>
+			<description level="5">You can make an Intelligence (Nature) check in place of any Wisdom (Explore) or Wisdom (Hunting) check.
+			In addition, you can spend 1 hour and a craft slot to make an Intelligence (Nature), Wisdom (Explore), or Wisdom (Hunting) check (your choice). The DC is determined by the terrain type the Company is currently traversing (as if a journey event was taking place there). The check has disadvantage if it is autumn or winter. If you succeed, choose one of the following options: &#13;
+			• Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 1 hour, each of those creatures has a +10 bonus to its Dexterity (Stealth) checks. If you obtain a magical success, the creatures also leave behind no tracks or other traces of their passage for the duration. &#13;
+			• Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 8 hours, each of those creatures has a +10 bonus to its passive Wisdom (Perception) score. If you obtain a magical success, the creatures also gain tremorsense out to a range of 60 feet for the duration. &#13;
+			• You forage a number of pounds of food and gallons of water equal to your check result minus the terrain DC (minimum 1). The food lasts for 48 hours. If you obtain a magical success, each pound of food foraged in this way also restores 1 hp to the creature eating it during a short or long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<stat name="lrrp:crafts:slots" value="1" />
+		</rules>
+	</element>
+
+</elements>

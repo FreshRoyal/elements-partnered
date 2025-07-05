@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hobbit</name>
+		<description>Hobbit from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="race-hobbit.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-hobbit.xml" />
+		</update>
+	</info>
+
+	<element name="Hobbit" type="Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACE_HOBBIT">
+		<description>
+			<p class="flavor">...he wished to go and see the great mountains, and hear the pine-trees and the waterfalls, and explore the caves, and wear a sword instead of a walking-stick.</p>
+			<p>Hobbits are a small and merry folk, possessing a love for time-honoured traditions and respectable ways, and a strong dislike for anything out of the ordinary. If Hobbits had their way, the days would go by in an unchanging world, as they have since anyone can remember. At least, in their land, the Shire.</p>
+			<p class="indent">But since the return of Mr Bilbo Baggins from his adventure with a group of Dwarves and a travelling Wizard, something has changed. Stories about remote lands, dark woods, Giants, Elves, and forgotten halls beneath the earth have started to circulate among Hobbits of a more adventurous sort. And with every year, another one or two discreetly disappear to go and have adventures.</p>
+			<h4>Description</h4>
+			<p>Hobbits are much smaller than Men, even smaller than Dwarves, and might be mistaken for children of Men by those who do not know of their existence. They have never been warlike, but for all their gentle appearance they are surprisingly tough, and difficult to intimidate or kill. A merry folk, Hobbits possess a cheerful spirit and a friendliness that makes them good companions.</p>
+			<p class="indent">When pushed to resort to weapons, Hobbits choose short swords and hunting bows, which they can shoot with uncanny precision.</p>
+			<h4>Typical Names</h4>
+			<p>Hobbit names are composed of a first name and a family name. First names for men are usually simple and short, with women being often given names of flowers or precious stones, but among the older families a custom survives of giving more heroic and high-sounding names, whose origin can be traced back to a time before the Shire.</p>
+			<ul class="unstyled">
+				<li><strong>Sample Female Names:</strong> Adaldrida, Amaranth, Asphodel, Belba, Bell, Berylla, Camellia, Daisy, Eglantine, Estella, Gilly, Hanna, Lily, Malva, Marigold, May, Melilot, Menegilda, Mentha, Mirabella, Myrtle, Pearl, Peony, Pervinca, Pimpernel, Primrose, Primula, Prisca, Rosamunda, Ruby, Salvia.</li>
+				<li><strong>Sample Male Names:</strong> Andwise, Berilac, Bungo, Cottar, Doderic, Dudo, Erling, Fastred, Ferumbras, Folco, Gorhendad, Griffo, Halfred, Hamson, Ilberic, Isembold, Isengar, Longo, Marmadas, Marroc, Mungo, Odo, Orgulas, Otho, Posco, Reginard, Robin, Rudigar, Sadoc, Saradas, Tobold, Tolman.</li>
+				<li><strong>Sample Family Names:</strong> Baggins, Boffin, Bolger, Bracegirdle, Brandybuck, Brown, Brownlock, Bunce, Burrows, Cotton, Gamgee, Gardner, Goldworthy, Goodbody, Goodchild, Grubb, Headstrong, Hornblower, Maggot, Noakes, North-Tooks, Proudfoot, Puddifoot, Roper, Rumble, Sackville, Smallburrow, Took, Twofoot, Whitfoot.</li>
+			</ul>
+			<h4>Cultural Traits</h4>
+			<p>Your character gains the following benefits based on their cultural heritage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Adventuring Age.</em></strong> Between 25–60 years of age. Hobbits do not abandon their comfortable lives easily, but when they do they usually wait for their coming of age at 33. A particularly reckless fellow might feel the call to adventure when in their tweens, as Hobbits call their twenties.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Hobbits average about 3 feet tall and weigh about 50 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Hobbit Elusiveness.</em></strong> You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Hobbit-Sense.</em></strong> You have advantage on all Intelligence, Wisdom, and Charisma saving throws against Shadow.</p>
+			<p class="indent"><strong><em>Pipe-Weed Lore.</em></strong> You have proficiency with pipes.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You speak, read and write Westron, preserving the use of a few words and names of your own forgotten tongue.</p>
+			<p class="indent"><strong><em>Standard of Living: Common.</em></strong> Hobbits live in peace, their land is well-tilled and their borders protected, but theirs is an isolated island in the middle of a desolate region, and trading is an uncommon occurrence.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INFORMATION_STARTING_GEAR" />
+			</div>
+			<p class="indent"><strong><em>Subculture.</em></strong> All Hobbits display the traits described so far, but in their wandering days the Shire-folk were divided into three distinct groups: the Fallohides, the Harfoots, and the Stoors. Although those branches today are blended together in most families, there is a tendency for an individual Hobbit to display some characteristics that can be traced back to one of the three ancestral origins. Choose one of these subcultures.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Andwise, Berilac, Bungo, Cottar, Doderic, Dudo, Erling, Fastred, Ferumbras, Folco, Gorhendad, Griffo, Halfred, Hamson, Ilberic, Isembold, Isengar, Longo, Marmadas, Marroc, Mungo, Odo, Orgulas, Otho, Posco, Reginard, Robin, Rudigar, Sadoc, Saradas, Tobold, Tolman</set>
+			<set name="names" type="female">Adaldrida, Amaranth, Asphodel, Belba, Bell, Berylla, Camellia, Daisy, Eglantine, Estella, Gilly, Hanna, Lily, Malva, Marigold, May, Melilot, Menegilda, Mentha, Mirabella, Myrtle, Pearl, Peony, Pervinca, Pimpernel, Primrose, Primula, Prisca, Rosamunda, Ruby, Salvia</set>
+			<set name="names" type="family">Baggins, Boffin, Bolger, Bracegirdle, Brandybuck, Brown, Brownlock, Bunce, Burrows, Cotton, Gamgee, Gardner, Goldworthy, Goodbody, Goodchild, Grubb, Headstrong, Hornblower, Maggot, Noakes, North-Tooks, Proudfoot, Puddifoot, Roper, Rumble, Sackville, Smallburrow, Took, Twofoot, Whitfoot</set>
+			<set name="names-format">{{name}} {{family}}</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HALFLING" />
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Hobbit)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+
+			<grant type="Language" id="ID_FLP_LRRP_LANGUAGE_WESTRON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||LRRP Westron" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_HOBBIT_ELUSIVENESS" requirements="!ID_FLP_LRRP_RACIAL_TRAIT_REPLACEMENT_HOBBIT_HOBBIT_ELUSIVENESS" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_HOBBIT_SENSE" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_PIPE_WEED_LORE" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_UNOBTRUSIVE" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_SUBCULTURE" />
+
+			<select type="Race Variant" name="Hobbit Variant" supports="LRRP Hobbit Variant" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Hobbit Elusiveness" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_HOBBIT_ELUSIVENESS">
+		<description>
+			<p>You have proficiency in the Stealth skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Hobbit Elusiveness)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Hobbit-Sense" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_HOBBIT_SENSE">
+		<description>
+			<p>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against Shadow.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against Shadow.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pipe-Weed Lore" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_PIPE_WEED_LORE">
+		<description>
+			<p>You have proficiency with pipes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_ITEM_TOOL_PIPE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Pipe-Weed Lore)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Unobtrusive" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_UNOBTRUSIVE">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+	</element>
+
+	<element name="Subculture" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_SUBCULTURE">
+		<description>
+			<p>All Hobbits display the traits described so far, but in their wandering days the Shire-folk were divided into three distinct groups: the Fallohides, the Harfoots, and the Stoors. Although those branches today are blended together in most families, there is a tendency for an individual Hobbit to display some characteristics that can be traced back to one of the three ancestral origins. Choose one of these subcultures.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Hobbit Subculture" supports="LRRP Hobbit Subculture" />
+		</rules>
+	</element>
+
+	<!--Fallohide-->
+	<element name="Fallohide" type="Sub Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_SUB_RACE_HOBBIT_FALLOHIDE">
+		<supports>LRRP Hobbit Subculture</supports>
+		<description>
+			<p>Originally a northerly branch, Fallohides were bold and adventurous, possessing more skill in language and song than any other craft.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Skill in Language and Song.</em></strong> You have proficiency with the tools of your choice: calligrapher's supplies, cartographer's tools, or a musical instrument.</p>
+		</description>
+		<sheet display="false" alt="Fallohide Hobbit" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Fallohide)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_FALLOHIDE_SKILL_IN_LANGUAGE_AND_SONG" />
+		</rules>
+	</element>
+
+	<element name="Skill in Language and Song" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_FALLOHIDE_SKILL_IN_LANGUAGE_AND_SONG">
+		<description>
+			<p>You have proficiency with the tools of your choice: calligrapher's supplies, cartographer's tools, or a musical instrument.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Skill in Language and Song)" supports="LRRP Fallohide Skill in Language and Song||Musical Instrument" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Skill in Language and Song)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES">
+		<supports>LRRP Fallohide Skill in Language and Song</supports>
+	</append>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS">
+		<supports>LRRP Fallohide Skill in Language and Song</supports>
+	</append>
+
+	<!--Harfoot-->
+	<element name="Harfoot" type="Sub Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_SUB_RACE_HOBBIT_HARFOOT">
+		<supports>LRRP Hobbit Subculture</supports>
+		<description>
+			<p>Harfoots were friendly with Dwarves in ancient times, sharing their love of living underground and possessing neat and nimble hands.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Skillful with Tools.</em></strong> You have proficiency with the artisan's tools of your choice: herbalism kit, mason's tools, or weaver's tools.</p>
+		</description>
+		<sheet display="false" alt="Harfoot Hobbit" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Harfoot)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_HARFOOT_SKILLFUL_WITH_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Skillful with Tools" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_HARFOOT_SKILLFUL_WITH_TOOLS">
+		<description>
+			<p>You have proficiency with the artisan's tools of your choice: herbalism kit, mason's tools, or weaver's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Skillful with Tools)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Skillful with Tools)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--Stoor-->
+	<element name="Stoor" type="Sub Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_SUB_RACE_HOBBIT_STOOR">
+		<supports>LRRP Hobbit Subculture</supports>
+		<description>
+			<p>Heavier in build than most Hobbits, Stoors favoured riversides and were more familiar with Men than most Hobbits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Riverside Dweller.</em></strong> You have proficiency with the tools of your choice: carpenter's tools, water vehicles, or woodcarver's tools.</p>
+		</description>
+		<sheet display="false" alt="Stoor Hobbit" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Stoor)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_STOOR_RIVERSIDE_DWELLER" />
+		</rules>
+	</element>
+
+	<element name="Riverside Dweller" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_STOOR_RIVERSIDE_DWELLER">
+		<description>
+			<p>You have proficiency with the tools of your choice: carpenter's tools, water vehicles, or woodcarver's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Riverside Dweller)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Riverside Dweller)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--Bree-Hobbit-->
+	<element name="Bree-Hobbit" type="Race Variant" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT">
+		<supports>LRRP Hobbit Variant</supports>
+		<description>
+			<h4>THE BIG AND THE LITTLE</h4>
+			<p>There are many families of Hobbits spread among the villages of the Bree-land, especially in Staddle.These Bree-hobbits are of course closely related to their neighbours in the Shire – indeed, to most Big Folk, it is impossible to tell the difference (unless one makes the mistake of asking one of the Hobbits, in which case get comfortable — you are in for a long talk about family trees, obscure legal issues, and exceedingly minute cultural differences).</p>
+			<p class="indent">If you desire to create a Bree-hobbit, use all the rules concerning the Hobbits found on page 37, with the following exceptions:</p>
+			<ul>
+				<li>Bree-hobbits have proficiency in Insight instead of Stealth.</li>
+				<li>They must pick their cultural virtues from the following list: <i>Bree-pony, Desperate Courage, Small Folk, Strange as News from Bree, The Art of Smoking, Tough as Old Tree Roots</i>.</li>
+			</ul>
+			<p>Bree-hobbits share many family names with the local Big Folk (Mugworts, for example), but most have Shire-sounding names, such as Banks, Brockhouse, Longhole, Sandheaver, Tunnelly, and Underhill.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_BREE_HOBBIT_CURIOSITY" />
+		</rules>
+	</element>
+
+	<element name="Bree-Hobbit Curiosity" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_HOBBIT_BREE_HOBBIT_CURIOSITY">
+		<description>
+			<p>You have proficiency in the Insight skill. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_RACIAL_TRAIT_REPLACEMENT_HOBBIT_HOBBIT_ELUSIVENESS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Bree-hobbit Curiosity)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--racial trait replacement grant-->
+	<element name="Hobbit Elusiveness Replacement" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_REPLACEMENT_HOBBIT_HOBBIT_ELUSIVENESS" />
+	
+</elements>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scholar</name>
+		<description>Scholar from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="class-scholar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-scholar.xml" />
+		</update>
+	</info>
+
+	<element name="Scholar" type="Class" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_SCHOLAR">
+		<description>
+			<p class="flavor" align="center">“Speak no secrets! Here is a scholar in the Ancient Tongue.”</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Features</td><td class="col-15">Craft Slots</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Crafts, Rhymes of Lore (d6), Unarmoured Defence</td><td>1</td></tr>
+				<tr><td> 2nd</td><td class="left">Cunning Mind, Hands of a Healer (d6)</td><td>1</td></tr>
+				<tr><td> 3rd</td><td class="left">Expertise, Scholar Tradition</td><td>2</td></tr>
+				<tr><td> 4th</td><td class="left">Virtue</td><td>2</td></tr>
+				<tr><td> 5th</td><td class="left">Rhymes of Lore (d8), Endless Rhymes</td><td>3</td></tr>
+				<tr><td> 6th</td><td class="left">Virtue</td><td>3</td></tr>
+				<tr><td> 7th</td><td class="left">Scholar Tradition feature</td><td>4</td></tr>
+				<tr><td> 8th</td><td class="left">Virtue</td><td>4</td></tr>
+				<tr><td> 9th</td><td class="left">Hands of a Healer (d8)</td><td>5</td></tr>
+				<tr><td>10th</td><td class="left">Expertise, Rhymes of Lore (d10), Unfailing Rhymes</td><td>5</td></tr>
+			</table>
+			<p>For you, knowledge makes the wild world a less threatening place. Yellowed maps in lost books replace a fear of the unknown with curiosity and wonder, songs composed in ages past strengthen the weariest of hearts. A love of learning guides your every step, and illuminates the way for you and those who listen to your advice.</p>
+			<h2>CALLING FEATURES</h2>
+			<p>As a Scholar you gain the following features:</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per Scholar level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Scholar level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armour:</strong> Light armour</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> Two tools of your choice among calligrapher’s supplies, cartographer’s tools, herbalism kit, a musical instrument, navigator’s tools, or pipes</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose three from Animal Handling, Insight, Investigation, Medicine, Nature, Old Lore, Performance, Riddle, and Travel.</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your standard of living:</p>
+			<ul>
+				<li>A healer’s kit, any simple melee weapon, and any two tools</li>
+				<li>(a) Leather shirt or (b) a bow and a quiver of 20 arrows</li>
+			</ul>
+			<h4>SHADOW PATH</h4>
+			<p><strong>Lure of Secrets:</strong> Inquisitiveness and curiosity are desirable virtues in an individual, but knowledge can be put to malicious use, and learned individuals can look down on others as ignorant fools. Secrets are dangerous, as the very desire to uncover them may corrupt the heart.</p>
+			
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_RHYMES_OF_LORE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNARMOURED_DEFENCE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CUNNING_MIND" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_HANDS_OF_A_HEALER" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_EXPERTISE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_SCHOLAR_TRADITION" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_VIRTUE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNENDING_RHYMES" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNFAILING_RHYMES" />
+		</description>
+		<setters>
+			<set name="short">A master of learning, familiar with ancient lore and healing arts alike.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<select type="Proficiency" name="Tool Proficiency (Scholar)" supports="LRRP Scholar Tool||Musical Instrument" />
+			<select type="Proficiency" name="Tool Proficiency (Scholar)" supports="LRRP Scholar Tool||Musical Instrument" requirements="!ID_FLP_LRRP_MULTICLASS_SCHOLAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_FLP_LRRP_MULTICLASS_SCHOLAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_FLP_LRRP_MULTICLASS_SCHOLAR" />
+			<select type="Proficiency" name="Skill Proficiency (Scholar)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE|ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" number="3" requirements="!ID_FLP_LRRP_MULTICLASS_SCHOLAR" />	
+
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" level="1" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_RHYMES_OF_LORE" level="1" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNARMOURED_DEFENCE" level="1" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CUNNING_MIND" level="2" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_HANDS_OF_A_HEALER" level="2" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_SCHOLAR_TRADITION" level="3" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_VIRTUE" level="4" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNENDING_RHYMES" level="5" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNFAILING_RHYMES" level="10" />
+		</rules>
+		<multiclass id="ID_FLP_LRRP_MULTICLASS_SCHOLAR">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armour, simple weapons, one skill from the class' skill list, one of the tools from the class' tools list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<select type="Proficiency" name="Skill Proficiency (Scholar)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE|ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES">
+		<supports>LRRP Scholar Tool</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS">
+		<supports>LRRP Scholar Tool</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT">
+		<supports>LRRP Scholar Tool</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS">
+		<supports>LRRP Scholar Tool</supports>
+	</append>
+	<append id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_PIPE">
+		<supports>LRRP Scholar Tool</supports>
+	</append>
+
+	<element name="Crafts" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_CRAFTS</requirements>
+		<description>
+			<p>You have learned techniques that have been passed down along the generations. These crafts do not translate into mere skill but represent obscure branches of knowledge, forgotten by most and seeming almost magical to uneducated eyes.</p>
+			<p><strong>Craft Slots:</strong> The Scholar table shows how many slots you have to use your crafts. To use one of your crafts, you must expend a craft slot. You regain all expended craft slots when you finish a short or long rest.</p>
+			<p><strong>Known Crafts:</strong> You know a craft of your choice from the "Crafts" list. Each time you gain a new craft slot, you also learn another craft of your choice.</p>
+		</description>
+		<sheet usage="{{lrrp:crafts:slots}}/Rest">
+			<description>You have {{lrrp:crafts:slots}} craft slots. To use one of your crafts, you must expend a craft slot. You regain all expended craft slots when you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Craft (Level 1)" supports="LRRP Craft" level="1" />
+			<select type="Class Feature" name="Craft (Level 3)" supports="LRRP Craft" level="3" />
+			<select type="Class Feature" name="Craft (Level 5)" supports="LRRP Craft" level="5" />
+			<select type="Class Feature" name="Craft (Level 7)" supports="LRRP Craft" level="7" />
+			<select type="Class Feature" name="Craft (Level 9)" supports="LRRP Craft" level="9" />
+		</rules>
+	</element>
+
+	<element name="Rhymes of Lore" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_RHYMES_OF_LORE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_RHYMES_OF_LORE</requirements>
+		<description>
+			<p>Rhymes of Lore are short verses created by many cultures to help them remember significant facts from ancient history which might otherwise be lost. You can use a bonus action on your turn to choose one creature (including yourself) within 30 feet of you who can hear and understand you. That creature gains one Lore die, a d6.</p>
+			<p class="indent">Once within the next minute, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after seeing the roll before deciding to use the Lore die, but must decide before the Loremaster says whether the roll succeeds or fails. Once the Lore die is rolled, it is lost. A creature can have only one Lore die at a time.</p>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
+			<p class="indent">Your Rhymes of Lore die changes when you reach certain levels in this calling. The die becomes a d8 at 5th level, and a d10 at 10th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{lrrp:rhymes of lore:usage}}/Long Rest">
+			<description>You can choose one creature (including yourself) within 30 feet of you who can hear and understand you. That creature gains one Lore die (1d{{lrrp:rhymes of lore:dice}}).
+			Once within the next minute, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after seeing the roll before deciding to use the Lore die, but must decide before the Loremaster says whether the roll succeeds or fails. Once the Lore die is rolled, it is lost. A creature can have only one Lore die at a time.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:rhymes of lore:dice" value="6" level="1" bonus="base" />
+			<stat name="lrrp:rhymes of lore:dice" value="8" level="5" bonus="base" />
+			<stat name="lrrp:rhymes of lore:dice" value="10" level="10" bonus="base" />
+			<stat name="lrrp:rhymes of lore:usage" value="intelligence:modifier" bonus="bonus" />
+			<stat name="lrrp:rhymes of lore:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Unarmoured Defence" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNARMOURED_DEFENCE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_UARMOURED_DEFENCE</requirements>
+		<description>
+			<p>Beginning at 1st level, while you are wearing no armour and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{lrrp:ac:unarmoured defence scholar}}.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:ac:unarmoured defence scholar:base" value="10" />
+			<stat name="lrrp:ac:unarmoured defence scholar:dexterity" value="dexterity:modifier" />
+			<stat name="lrrp:ac:unarmoured defence scholar:wisdom" value="wisdom:modifier" />
+			<stat name="lrrp:ac:unarmoured defence scholar" value="lrrp:ac:unarmoured defence scholar:base" />
+			<stat name="lrrp:ac:unarmoured defence scholar" value="lrrp:ac:unarmoured defence scholar:dexterity" />
+			<stat name="lrrp:ac:unarmoured defence scholar" value="lrrp:ac:unarmoured defence scholar:wisdom" />
+			<stat name="ac:calculation" value="lrrp:ac:unarmoured defence scholar" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmoured Defence (Scholar)" />
+		</rules>
+	</element>
+
+	<element name="Cunning Mind" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CUNNING_MIND">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_CUNNING_MIND</requirements>
+		<description>
+			<p>Starting at 2nd level, you can take a bonus action on each of your turns in combat. This action can be used only to make an Intelligence or Wisdom check, or to take the Help action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can take a bonus action on each of your turns in combat. This action can be used only to make an Intelligence or Wisdom check, or to take the Help action.</description>
+		</sheet>
+	</element>
+
+	<element name="Hands of a Healer" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_HANDS_OF_A_HEALER">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_HANDS_OF_A_HEALER</requirements>
+		<description>
+			<p>Beginning at 2nd level, you can use healing techniques to treat the wounds of your allies during a short rest. Choose a number of friendly creatures (including yourself) who spent one or more Hit Dice at the end of the short rest, up to twice your proficiency bonus. Each of those creatures regains an extra 1d6 hit points for each Hit Die spent.</p>
+			<p class="indent">The extra hit points increase to 1d8 when you reach 9th level in this calling.</p>
+		</description>
+		<sheet>
+			<description>You can use healing techniques to treat the wounds of your allies during a short rest. Choose up to {{lrrp:hands of a healer:number}} friendly creatures (including yourself) who spent one or more Hit Dice at the end of the short rest. Each of those creatures regains an extra 1d{{lrrp:hands of a healer:dice}} hit points for each Hit Die spent.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:hands of a healer:dice" value="6" level="2" bonus="base" />
+			<stat name="lrrp:hands of a healer:dice" value="8" level="9" bonus="base" />
+			<stat name="lrrp:hands of a healer:number" value="proficiency" />
+			<stat name="lrrp:hands of a healer:number" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Expertise" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_EXPERTISE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_EXPERTISE</requirements>
+		<description>
+			<p>At 3rd level, choose any combination of two of your skill and tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p class="indent">At 10th level, you can choose another two proficiencies (in skills or with tools) to gain this benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Scholar)" level="3" number="2" supports="Expertise"/>
+			<select type="Class Feature" name="Expertise (Scholar)" level="10" number="2" supports="Expertise"/>
+		</rules>
+	</element>
+
+	<element name="Scholar Tradition" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_SCHOLAR_TRADITION">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_SCHOLAR_TRADITION</requirements>
+		<description>
+			<p>Also at 3rd level, you choose a tradition that determines the focus of your study. Choose Healing or Lore (both are detailed at the end of the calling description). The tradition you choose grants you features at 3rd level and again at 7th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Scholar Tradition" supports="LRRP Scholar Tradition" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Virtue" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_VIRTUE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_VIRTUE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>At 4th level, and again at 6th and 8th level, you can take a common or cultural virtue of your choice. You can take each virtue only once. As normal, you cannot increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Virtue (Scholar 4)" level="4" />
+			<select type="Feat" name="Virtue (Scholar 6)" level="6" />
+			<select type="Feat" name="Virtue (Scholar 8)" level="8" />
+		</rules>
+	</element>
+
+	<element name="Unending Rhymes" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNENDING_RHYMES">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_UNENDING_RHYMES</requirements>
+		<description>
+			<p>Beginning when you reach 5th level, you regain all of your expended uses of Rhymes of Lore when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You regain all of your expended uses of Rhymes of Lore when you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Unfailing Rhymes" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_UNFAILING_RHYMES">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_UNFAILING_RHYMES</requirements>
+		<description>
+			<p>At 10th level, your Rhymes of Lore mastery is such that those who listen to them are bound to succeed. When a creature adds one of your Lore dice to its ability check, attack roll, or saving throw and the roll fails, the creature can keep the Lore die.</p>
+		</description>
+		<sheet>
+			<description>When a creature adds one of your Lore dice to its ability check, attack roll, or saving throw and the roll fails, the creature can keep the Lore die.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Crafts Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_CRAFTS" />
+	<element name="Rhymes of Lore Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_RHYMES_OF_LORE" />
+	<element name="Unarmoured Defence Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_UNARMOURED_DEFENCE" />
+	<element name="Cunning Mind Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_CUNNING_MIND" />
+	<element name="Hands of a Healer Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_HANDS_OF_A_HEALER" />
+	<element name="Expertise Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_EXPERTISE" />
+	<element name="Scholar Traditions Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_SCHOLAR_TRADITIONS" />
+	<element name="Virtue Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_VIRTUE" />
+	<element name="Unending Rhymes Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_UNENDING_RHYMES" />
+	<element name="Unfailing Rhymes Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_SCHOLAR_UNFAILING_RHYMES" />
+
+</elements>

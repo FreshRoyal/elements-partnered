@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Burglar</name>
+		<description>Burglar Treasure Hunter Specialty from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="treasure-hunter-burglar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/treasure-hunter-burglar.xml" />
+		</update>
+	</info>
+
+	<element name="Burglar" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_TREASURE_HUNTER_BURGLAR">
+		<supports>LRRP Treasure Hunter Specialty</supports>
+		<description>
+			<p>Yours are the venerable arts of pickpocketing, lock picking, or otherwise getting hold of the possessions of others and accessing protected areas.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_CLEVER_HANDED" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_TREE_CLIMBER" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_QUIET_FOOTED" />
+			<p></p>
+			<p class="flavor">Burglar wants a good job, plenty of Excitement and reasonable Reward, that's how it is usually read.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_CLEVER_HANDED" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_TREE_CLIMBER" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_QUIET_FOOTED" level="7" />
+		</rules>
+	</element>
+
+	<element name="Clever-Handed" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_CLEVER_HANDED">
+		<description>
+			<p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check or take the utilize action.</p>
+		</description>
+		<sheet>
+			<description>You can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check or take the utilize action.</description>
+		</sheet>
+	</element>
+
+	<element name="Tree-Climber" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_TREE_CLIMBER">
+		<description>
+			<p>Also at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.</p>
+			<p class="indent">In addition, you can add your Dexterity modifier to Strength (Athletics) checks you make to climb or jump, and to the distance you cover (in feet) when you make a running jump.</p>
+		</description>
+		<sheet>
+			<description>Climbing no longer costs you extra movement.
+			In addition, you can add your Dexterity modifier ({{dexterity:modifier}}) to Strength (Athletics) checks you make to climb or jump, and to the distance you cover (in feet) when you make a running jump.</description>
+		</sheet>
+	</element>
+
+	<element name="Quiet-Footed" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_BURGLAR_QUIET_FOOTED">
+		<description>
+			<p>Starting at 7th level, you have advantage on Dexterity (Sleight of Hand) and Dexterity (Stealth) checks if you move no more than half your speed on the same turn.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity (Sleight of Hand) and Dexterity (Stealth) checks if you move no more than half your speed on the same turn.</description>
+		</sheet>
+	</element>
+
+</elements>

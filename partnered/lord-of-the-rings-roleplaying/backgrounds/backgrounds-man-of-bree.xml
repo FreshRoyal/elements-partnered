@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Man of Bree Backgrounds</name>
+		<description>Man of Bree Backgrounds from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="backgrounds-man-of-bree.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-man-of-bree.xml" />
+		</update>
+	</info>
+
+	<element name="Crossroads of the North" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_CROSSROADS_OF_THE_NORTH">
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Your family has run a tailoring business in Bree since forever, serving the needs of Bree-landers and wanderers alike. Your grandfather even says he once had Elves on his doorstep—and indeed, their coin was as good as anyone else's. You worked in the family business when you were younger, until a great desire came upon you to follow the Road and see where all those strangers and their gold come from.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Explore, Persuasion</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Cobbler's tools, leatherworker's tools, or weaver's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Faithful, Generous</p>
+		</description>
+		<setters>
+			<set name="short">Explore, Persuasion, Cobbler's Tools/Leatherworker's Tools/Weaver's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Tool Proficiency (Crossroads of the North)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="Forest-Dweller" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_FOREST_DWELLER">
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Your kin dwell in the Chetwood, east of Bree. Most of the forest is wholesome, but parts of it—especially near the Midgewater Marshes—have their own perils. As a child you learned to find food that was safe to eat near certain old trees that whispered to one another in the night. It was worth creeping out of Archet and risking the dangers of the wood, though, because on some nights, you could hear Elves singing in the wind.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Nature, Stealth</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Herbalism kit</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Cunning, Rustic</p>
+		</description>
+		<setters>
+			<set name="short">Nature, Stealth, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+
+	<element name="Gate-Warden" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_GATE_WARDEN">
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Great care is kept in the Bree-land to keep out of its borders anyone, or anything, that would make trouble. In addition to your ordinary job as a woodworker you served as one of the gate-wardens, and spent many cold, lonely nights on watch, with only the stars and hooting owls for company.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Intimidation, Perception</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Carpenter's tools or woodcarver's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Inquisitive, Patient</p>
+		</description>
+		<setters>
+			<set name="short">Intimidation, Perception, Carpenter's Tools/Woodcarver's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Proficiency" name="Tool Proficiency (Gate-Warden)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="No Longer Free from Care and Fear" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_NO_LONGER_FREE_FROM_CARE_AND_FEAR">
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Many years ago you discovered that the Bree-land is far from being safe, but is rather a small island surrounded by unseen foes. You haven't told anyone as they won't believe you. But you know for sure, because you have listened to the stories that the Rangers tell when they trust somebody. Now you know that a Shadow is returning, and the day when you will go out and seek the Rangers is near.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Deception, Investigation</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> A gaming set or a musical instrument of your choice</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Inquisitive, Rustic</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Investigation, Gaming Set/Musical Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<select type="Proficiency" name="Gaming Set or Musical Instrument (No Longer Free from Care and Fear)" supports="Gaming Set||Musical Instrument" />
+		</rules>
+	</element>
+
+	<element name="Off with Dwarves" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_OFF_WITH_DWARVES">
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Once, Dwarwen travellers passing through Bree on their way to the Blue Mountains took you with them to care for their ponies. You became friends, if that is a word that can describe the grudging respect you earned from that stern folk. When you returned home to Bree you realised that you developed a wanderlust that will never allow you to sit idle in Bree anymore.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Animal Handling, Travel</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Land vehicles</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Fair-spoken, Faithful</p>
+		</description>
+		<setters>
+			<set name="short">Animal Handling, Travel, Land Vehicles</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+		</rules>
+	</element>
+	
+	<element name="Up the Greenway" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_UP_THE_GREENWAY">
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Your grandfather was not born around here. He made a long journey up from the South, across the Gap of Rohan from beyond the Isen. He crossed the river at Tharbad with his wife and children and settled here by Bree-hill. The North is cold and wild compared to the southern lands, but the tales your grandfather used to tell about the fierce kings of the South never made you doubt his choice.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Old Lore, Riddle</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Mason's tools, potter's tools, or smith's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Fair-spoken, True-hearted</p>
+		</description>
+		<setters>
+			<set name="short">Old Lore, Riddle, Mason's Tools/Potter's Tools/Smith's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<select type="Proficiency" name="Tool Proficiency (Up the Greenway)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+
+</elements>

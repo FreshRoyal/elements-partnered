@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Adûnaic" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_ADUNAIC">
+		<supports>Exotic, LRRP Shadow Lore Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Númenóreans</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Black Speech" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_BLACK_SPEECH">
+		<supports>Exotic</supports>
+		<description>
+			<p>Created by Sauron to be the sole language of all the servants of Mordor, replacing the many different varieties of Orkish and other languages used by his servants.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Wights, Wraiths, The Wight-King</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Dalish" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_DALISH">
+		<supports>Standard, LRRP Barding Language, LRRP Shadow Lore Language</supports>
+		<description>
+			<p>A very old form of the Common Speech.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Wights, Wraiths, The Wight-King</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+
+	<element name="Dunlendish" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_DUNLENDISH">
+		<supports>Standard, LRRP Shadow Lore Language</supports>
+		<description>
+			<p>The Dunland Tongue.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Southerners, Dunlendings</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Khuzdul" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_KHUZDUL">
+		<supports>Exotic, LRRP Dwarf Language, LRRP Shadow Lore Language</supports>
+		<description>
+			<p>The secret language of the Dwarves.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Dwarves</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+
+	<element name="Orkish" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_ORKISH">
+		<supports>Standard, LRRP Shadow Lore Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Orcs</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Quenya" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_QUENYA">
+		<supports>Exotic, LRRP Shadow Lore Language</supports>
+		<description>
+			<p>The Ancient elven tongue.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Elves, Speech-Crafters</set>
+			<set name="script">Elven</set>
+		</setters>
+	</element>
+
+	<element name="Sindarin" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_SINDARIN">
+		<supports>Standard, LRRP Elf Language, LRRP Shadow Lore Language</supports>
+		<description>
+			<p>The Grey-elven tongue.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Elves, Rangers of the North</set>
+			<set name="script">Elven</set>
+		</setters>
+	</element>
+
+	<element name="Warg-speech" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_WARG_SPEECH">
+		<supports>Exotic, LRRP Shadow Lore Language</supports>
+		<description>
+			<p>While not much is known about this language, it is described as queer, sounding "like animal noises turned into talk".</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Wargs, Werewolves, Gandalf</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Westron" type="Language" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_LANGUAGE_WESTRON">
+		<supports>Standard, LRRP Westron, LRRP Shadow Lore Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Bardings, Dwarves, Elves, Hobbits, Men of Bree, Rangers of the North, Evil Men, Orcs, Stone Trolls, Wights, Wraiths</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+
+</elements>

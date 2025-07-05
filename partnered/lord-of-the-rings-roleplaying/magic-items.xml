@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>Magic Items from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/magic-items.xml" />
+		</update>
+	</info>
+	
+	<element name="Ancient Close-fitting Armour" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_ANCIENT_CLOSE_FITTING_ARMOUR">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven, Dwarven</p>
+			<p>A skilful smith has made this armour more difficult to overcome with critical hits. While you're wearing it, any critical hit against you becomes a normal hit.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Ancient Close-fitting {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Ancient Cunning Make Armour" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_CUNNING_MAKE_ARMOUR">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven, Dwarven</p>
+			<p>You have a +1 bonus to AC while wearing this armour. This armour is half the normal weight. If it normally imposes disadvantage on fatigue saving throws, this version doesn't. Otherwise, the maximum Dexterity modifier you can add to your AC when you wear it increases by 1.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Ancient Cunning Make {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Archet Hunting Bow" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_ARCHET_HUNTING_BOW">
+		<description>
+			<p>When making a weapon attack roll with an <i>Archet hunting bow</i>, you can use your Wisdom modifier instead of your Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. In addition, when you score a critical hit with an <i>Archet hunting bow</i>, you can roll one additional weapon damage die and add it to the extra damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">bow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+			<set name="name-format">Archet Hunting {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Biting Dart Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_BITING_DART_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven</p>
+			<p><strong>Special:</strong> Bane</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. If you hit a bane creature using this weapon, it also has disadvantage on attack rolls until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">bane</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any ranged">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Biting Dart {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Cleaving Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_CLEAVING_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Any</p>
+			<p>You can make one melee attack with this magic weapon as a bonus action on each of your turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any melee">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Cleaving {{parent}}</set>
+		</setters>
+	</element>
+	
+	<element name="Close-fitting Armour" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_CLOSE_FITTING_ARMOUR">
+		<description>
+			<p>A skilful smith has made this armour more difficult to overcome with critical hits. While you're wearing it, any critical hit against you becomes a normal hit.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Close-fitting {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Cunning-make Armour" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_CUNNING_MAKE_ARMOUR">
+		<description>
+			<p>A skilled craftsman has made this armour lighter or less cumbersome than its lesser counterparts. The armour is half the normal weight. If it normally imposes disadvantage on fatigue saving throws, this version doesn't. Otherwise, the maximum Dexterity modifier you can add to your AC when you wear it increases by 1.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Cunning-make {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Fell Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_FELL_WEAPON">
+		<description>
+			<p>Hard and straight, a critical hit from this weapon is more dangerous. When you score a critical hit with this weapon, you can roll two additional weapon damage dice and add them to the extra damage.</p>
+			<p class="indent">You cannot apply this reward to a weapon that has the ammunition property, but you can apply it to one piece of ammunition instead, that you can choose to expend after you roll the die for the attack roll, but before the Loremaster tells you whether you hit or miss. You can always recover this piece of ammunition at the end of a battle.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Fell {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Fell Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_FELL_WEAPON_AMMO">
+        <description>
+            <p>Hard and straight, a critical hit from this weapon is more dangerous. When you score a critical hit with this weapon, you can roll two additional weapon damage dice and add them to the extra damage.</p>
+			<p class="indent">You cannot apply this reward to a weapon that has the ammunition property, but you can apply it to one piece of ammunition instead, that you can choose to expend after you roll the die for the attack roll, but before the Loremaster tells you whether you hit or miss. You can always recover this piece of ammunition at the end of a battle.</p>
+        </description>
+        <setters>
+			<set name="keywords">arrow, bolt</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="ammunition">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Flame of Hope Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_FLAME_OF_HOPE_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven</p>
+			<p>While you hold this magic weapon drawn, it creates an aura in a 10-foot radius around you. Whenever you or a friendly creature in the aura must make a saving throw during combat, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1).</p>
+		</description>
+		<setters>
+			<set name="keywords">aura</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any melee">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Flame of Hope {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Foe-Slaying Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_FOE_SLAYING_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven, Númenórean</p>
+			<p><strong>Special:</strong> Bane</p>
+			<p>When you hit a bane creature with this magic weapon, you can roll one additional weapon damage die, or two additional dice if it is of Elven craftsmanship.</p>
+		</description>
+		<setters>
+			<set name="keywords">bane</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Foe-Slaying {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Gleam of Terror Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_GLEAM_OF_TERROR_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven, Dwarven</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. As a bonus action, you can cause the weapon emit dim light in a radius equal to its reach until the start of your next turn. The light is sunlight. While the weapon gleams, it also deals radiant damage instead of its normal type.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, light</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Gleam of Terror {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Grievous Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_GRIEVOUS_WEAPON">
+		<description>
+			<p>The weapon is strong and heavy, inflicting more harm on its targets. You gain a +1 bonus to damage rolls with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Grievous {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Hammering Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_HAMMERING_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> any</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, when you hit a creature with it, the creature must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or fall prone.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any melee">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Hammering {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Hollow Steel Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_HOLLOW_STEEL_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Númenórean</p>
+			<p><strong>sPECIAL:</strong> no Bane required</p>
+			<p>You can make one ranged attack with this magic weapon as a bonus action on each of your turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any ranged">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Hollow Steel {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Keen Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_KEEN_WEAPON">
+		<description>
+			<p>Sharp or better-balanced, this weapon is now more likely to produce a critical hit when hitting its target. Attacks using this weapon score a critical hit on a roll of 19–20.</p>
+			<div class="sidebar">
+				<h5>Keen Weapons Using The One Ring Dice</h5>
+				<p>If you are using a set of The One Ring Success Dice, a Keen weapon scores a critical hit also when the dice show two or more 5 results, or three 5 results if you have disadvantage on the roll. A Superior Keen weapon additionally scores a critical hit against bane creatures when the dice show two or more 4 results, or three 4 results if you have disadvantage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Keen {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Luminescence Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_LUMINESCENCE_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven</p>
+			<p><strong>Special:</strong> Bane</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. The weapon glows with a pale, cold light when a bane creature is within 500 feet of it, shedding dim light in a radius equal to its reach. While the weapon is glowing, you and any of your companions within 30 feet of you that can see you cannot be surprised by these creatures, and have advantage on initiative rolls.</p>
+		</description>
+		<setters>
+			<set name="keywords">bane, light</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any melee">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Luminescence {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Mithril Mail-shirt" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_MITHRIL_MAIL_SHIRT">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven</p>
+			<p>A Mithril mail-shirt is half its normal weight, and can be worn under normal clothes. When you are wearing it, your base Armour Class is 14 + your Dexterity modifier (max 4), and you are considered proficient with it if you have proficiency with light armour.</p>
+		</description>
+		<setters>
+			<set name="keywords">chain, shirt</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="type" addition="chain shirt">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="armor">Chain Shirt</set>
+		</setters>
+		<rules>
+			<stat name="lrrp:mithril mail shirt:ac" value="14" bonus="bonus" />
+			<stat name="lrrp:mithril mail shirt:ac" value="dexterity:modifier" maximum="4" />
+			<stat name="ac:calculation" value="lrrp:mithril mail shirt:ac" bonus="calculation" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />			
+		</rules>
+	</element>
+
+	<element name="Reinforced Shield" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_REINFORCED_SHIELD">
+		<description>
+			<p>The shield's structure is reinforced, possibly with a metal rim or a larger iron boss, letting its wearer parry blows with greater ease. While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Rune-Scored Armour" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_RUNE_SCORED_ARMOUR">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven</p>
+			<p>You gain a +1 bonus to AC and saving throws while you wear this armour.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Rune-Scored {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Rune-Scored Shield" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_RUNE_SCORED_SHIELD">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven</p>
+			<p>While holding this shield, you gain a +1 bonus to AC (in addition to the shield's normal bonus to AC) and saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, saving throw</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Rune-Scored Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_RUNE_SCORED_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the weapon is on your person, you also gain a +1 bonus to saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any melee">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Rune-Scored {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Straight Flight Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_STRAIGHT_FLIGHT_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Any</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you make a ranged attack roll with this magic weapon, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any ranged">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Straight Flight {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Superior Fell Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_FELL_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Elven, Númenórean</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with this weapon. This increases to three additional dice if it is of Elven craftsmanship, or to four additional dice against bane creatures (if Númenórean).</p>
+			<p class="indent">You cannot apply this enchanted reward to a weapon that has the ammunition property, but you can apply it to one piece of ammunition instead, in the same way as Fell (see Chapter 4).</p>
+		</description>
+		<setters>
+			<set name="keywords">bane</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Superior Fell {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Superior Fell Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_FELL_WEAPON_AMMO">
+        <description>
+        	<p><strong>Craftsmanship:</strong> Elven, Númenórean</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with this weapon. This increases to three additional dice if it is of Elven craftsmanship, or to four additional dice against bane creatures (if Númenórean).</p>
+			<p class="indent">You cannot apply this enchanted reward to a weapon that has the ammunition property, but you can apply it to one piece of ammunition instead, in the same way as Fell (see Chapter 4).</p>
+        </description>
+        <setters>
+			<set name="keywords">bane</set>
+			<set name="keywords">arrow, bolt</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="ammunition">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Superior Grievous Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_GRIEVOUS_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven, Númenórean</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus to damage rolls increases to +2 if it is of Dwarven craftsmanship, or to +3 against bane creatures (if Númenórean).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Superior Grievous {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Superior Grievous Weapon (Dwarven)" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_GRIEVOUS_WEAPON_DWARVEN">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven, Númenórean</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus to damage rolls increases to +2 if it is of Dwarven craftsmanship, or to +3 against bane creatures (if Númenórean).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Superior Grievous {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Superior Grievous Weapon (Númenórean)" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_GRIEVOUS_WEAPON_NUMENOREAN">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven, Númenórean</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus to damage rolls increases to +2 if it is of Dwarven craftsmanship, or to +3 against bane creatures (if Númenórean).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Superior Grievous {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Superior Keen Weapon" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_KEEN_WEAPON">
+		<description>
+			<p><strong>Craftsmanship:</strong> Dwarven, Elven</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Elven)</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, attacks using this weapon score a critical hit on a roll of 19–20, or 18–20 against bane creatures (if Elven).</p>
+			<div class="sidebar">
+				<h5>Keen Weapons Using The One Ring Dice</h5>
+				<p>If you are using a set of The One Ring Success Dice, a Keen weapon scores a critical hit also when the dice show two or more 5 results, or three 5 results if you have disadvantage on the roll. A Superior Keen weapon additionally scores a critical hit against bane creatures when the dice show two or more 4 results, or three 4 results if you have disadvantage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unknown</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Superior Keen {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Superior Reinforced Shield" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_REINFORCED_SHIELD">
+		<description>
+			<p><strong>Craftsmanship:</strong> Any</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>While holding this shield, you have a +1 bonus to AC. The bonus increases to +2 if the shield is of Dwarven or Elven craftsmanship, or to +3 against attacks from bane creatures (if Númenórean). This bonus is in addition to the shield's normal bonus to AC.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Superior Reinforced Shield (Elven)" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_REINFORCED_SHIELD_ELVEN">
+		<description>
+			<p><strong>Craftsmanship:</strong> Any</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>While holding this shield, you have a +1 bonus to AC. The bonus increases to +2 if the shield is of Dwarven or Elven craftsmanship, or to +3 against attacks from bane creatures (if Númenórean). This bonus is in addition to the shield's normal bonus to AC.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">2</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Superior Reinforced Shield (Númenórean)" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SUPERIOR_REINFORCED_SHIELD_NUMENOREAN">
+		<description>
+			<p><strong>Craftsmanship:</strong> Any</p>
+			<p><strong>Craftsmanship:</strong> Bane (if Númenórean)</p>
+			<p>While holding this shield, you have a +1 bonus to AC. The bonus increases to +2 if the shield is of Dwarven or Elven craftsmanship, or to +3 against attacks from bane creatures (if Númenórean). This bonus is in addition to the shield's normal bonus to AC.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Unknown</set>
+			<set name="enhancement">3</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="3" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<!--Beyond 10th Level Boons-->
+	<element name="Craft" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_CRAFT">
+		<description>
+			<p>You gain a craft slot and a craft of your choice from the Scholar's Crafts list.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Craft (Craft)" supports="LRRP Craft" />
+		</rules>
+	</element>
+
+	<element name="Fighting Style" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_FIGHTING_STYLE">
+		<description>
+			<p>You can choose a fighting style option from the Champion's Fighting Style feature. As normal, you cannot take a Fighting Style option more than once.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Fighting Style (Fighting Style)" supports="Fighting Style,LRRP Champion" />
+		</rules>
+	</element>
+
+	<element name="Hit Die" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_HIT_DIE">
+		<description>
+			<p>You gain a Hit Die, a d6, and your hit points maximum increases by 1d6 (or 4) + your Constitution modifier.</p>
+			<p><strong>Special.</strong> You may take this feature multiple times.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="level"  />
+		</rules>
+	</element>
+
+	<element name="Reward" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_REWARD">
+		<description>
+			<p>You choose a reward.</p>
+			<p><strong>Special.</strong> You may take this feature multiple times.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Sneak Attack" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_SNEAK_ATTACK">
+		<description>
+			<p>You gain the Sneak Attack feature. The extra damage is 1d6.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_BOON_SNEAK_ATTACK" />
+		</rules>
+	</element>
+	<element name="Sneak Attack" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_BOON_SNEAK_ATTACK">
+		<description>
+			<p>You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+			<p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, you can deal an extra {{lrrp:boon:sneak attack:count}}d{{lrrp:boon:sneak attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+			You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:boon:sneak attack:count" value="1" />
+			<stat name="lrrp:boon:sneak attack:die" value="6" bonus="die" />
+		</rules>
+	</element>
+
+	<element name="Virtue" type="Magic Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_MAGIC_ITEM_VIRTUE">
+		<description>
+			<p>You gain a common or cultural virtue of your choice.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<select type="Feat" name="Virtue (Virtue)" />
+		</rules>
+	</element>
+	
+</elements>

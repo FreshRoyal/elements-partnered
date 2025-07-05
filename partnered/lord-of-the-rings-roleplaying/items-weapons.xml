@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>Weapons from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-weapons.xml" />
+		</update>
+	</info>
+
+	<!--Items-->
+	
+	<!--Simple Weapons-->
+
+	<element name="Axe" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="versatile">1d8</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_AXE</set>
+		</setters>
+	</element>
+
+	<element name="Hammer" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_HAMMER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER</set>
+		</setters>
+	</element>
+
+	<element name="Staff" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="cp">2</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="versatile">1d6</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_STAFF</set>
+		</setters>
+	</element>
+
+	<!--Martial Weapons-->
+
+	<element name="Battle Axe" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_BATTLEAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_BATTLE_AXE</set>
+		</setters>
+	</element>
+
+	<element name="Heavy Hammer" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_HEAVY_HAMMER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="2">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_HAMMER</set>
+		</setters>
+	</element>
+
+	<element name="Mattock" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_MATTOCK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing"> 1d12</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_MATTOCK</set>
+		</setters>
+	</element>
+
+	<element name="Sword" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_SWORD</set>
+		</setters>
+	</element>
+
+	<element name="Long Sword" type="Weapon" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_WEAPON_LONG_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_LONG_SWORD</set>
+		</setters>
+	</element>
+
+	<!--Proficiencies-->
+
+	<element name="Weapon Proficiency (Axe)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_AXE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Hammer)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Staff)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_STAFF">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_AXE" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_STAFF" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Battle Axe)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_BATTLE_AXE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Heavy Hammer)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_HAMMER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Mattock)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_MATTOCK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Sword)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_SWORD">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Long Sword)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_LONG_SWORD">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_BATTLE_AXE" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_HAMMER" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_MATTOCK" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_SWORD" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_LONG_SWORD" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Kensei Weapon Options-->
+
+	<element name="Kensei Weapon (Axe)" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_KENSEI_WEAPON_AXE">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Axe if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_AXE" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Hammer)" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_KENSEI_WEAPON_HAMMER">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Hammer if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_HAMMER" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Staff)" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_KENSEI_WEAPON_STAFF">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Staff if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_STAFF" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Sword)" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_KENSEI_WEAPON_SWORD">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Sword if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_SWORD" />
+		</rules>
+	</element>
+
+</elements>

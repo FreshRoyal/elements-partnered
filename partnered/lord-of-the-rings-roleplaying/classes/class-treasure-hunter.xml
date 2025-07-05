@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Treasure Hunter</name>
+		<description>Treasure Hunter from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="class-treasure-hunter.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-treasure-hunter.xml" />
+		</update>
+	</info>
+
+	<element name="Treasure Hunter" type="Class" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_TREASURE_HUNTER">
+		<description>
+			<p class="flavor" align="center">Far over the Misty Mountains cold, To dungeons deep and caverns old. We must away ere break of day, To seek the pale enchanted gold.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Features</td><td class="col-15">Sneak Attack</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Expertise, Sneak Attack</td><td>1d6</td></tr>
+				<tr><td> 2nd</td><td class="left">Cunning Action</td><td>1d6</td></tr>
+				<tr><td> 3rd</td><td class="left">Treasure Hunter Speciality</td><td>2d6</td></tr>
+				<tr><td> 4th</td><td class="left">Virtue</td><td>2d6</td></tr>
+				<tr><td> 5th</td><td class="left">Uncanny Dodge</td><td>3d6</td></tr>
+				<tr><td> 6th</td><td class="left">Craft or Virtue</td><td>3d6</td></tr>
+				<tr><td> 7th</td><td class="left">Treasure Hunter Speciality feature</td><td>4d6</td></tr>
+				<tr><td> 8th</td><td class="left">Virtue</td><td>4d6</td></tr>
+				<tr><td> 9th</td><td class="left">Expertise</td><td>5d6</td></tr>
+				<tr><td>10th</td><td class="left">Reliable Talent</td><td>5d6</td></tr>
+			</table>
+			<p>The world has seen the passing of the glory of many Dwarven kings and Elven lords, and their heritage is now buried in Orc-infested dungeons. Hoards of stolen gold and jewels, guarded by fell beasts, beckon all who dare to find them. You seek to recover what is lost, even when it means braving unspeakable dangers.</p>
+			<h2>CALLING FEATURES</h2>
+			<p>As a Treasure Hunter you gain the following features:</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per Treasure Hunter level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Treasure Hunter level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armour:</strong> Light armour</li>
+				<li><strong>Weapons:</strong> Simple weapons, short swords, swords</li>
+				<li><strong>Tools:</strong> A tool of your choice among cartographer’s tools, a gaming set, or thieves’ tools</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+				<li><strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Investigation, Old Lore, Perception, Persuasion, Riddle, Sleight of Hand, Stealth, and Travel</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your standard of living:</p>
+			<ul>
+				<li>Leather shirt, any simple melee weapon, and thieves’ tools</li>
+				<li>(a) a short sword or (b) a sword</li>
+				<li>(a) a bow and a quiver of 20 arrows or (b) any simple melee weapon</li>
+			</ul>
+			<h4>SHADOW PATH</h4>
+			<p><strong>Dragon-Sickness:</strong> Adventurers who find themselves on the Road to seek lost riches run the risk of catching the age-old disease capable of turning a pile of enchanted gold into bitter ashes. As the Shadow tightens its grip on their hearts, the world shrinks around them and their closely guarded possessions.</p>
+			
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_EXPERTISE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_SNEAK_ATTACK" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CUNNING_ACTION" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_TREASURE_HUNTER_SPECIALTY" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_UNCANNY_DODGE" />
+			<div element="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_RELIABLE_TALENT" />
+		</description>
+		<setters>
+			<set name="short">A cunning adventurer who seeks to recover what is lost.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_FLP_LRRP_MULTICLASS_TREASURE_HUNTER" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_WEAPON_PROFICIENCY_SWORD" requirements="!ID_FLP_LRRP_MULTICLASS_TREASURE_HUNTER" />
+			<select type="Proficiency" name="Tool Proficiency (Treasure Hunter)" supports="LRRP Treasure Hunter Tool||Gaming Set" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_FLP_LRRP_MULTICLASS_TREASURE_HUNTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_FLP_LRRP_MULTICLASS_TREASURE_HUNTER" />
+			<select type="Proficiency" name="Skill Proficiency (Treasure Hunter)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" number="4" requirements="!ID_FLP_LRRP_MULTICLASS_TREASURE_HUNTER" />
+
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_CRAFTS" level="1" requirements="ID_FLP_LRRP_GRANTS_CRAFTS" />
+
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_EXPERTISE" level="1" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_SNEAK_ATTACK" level="1" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_TREASURE_HUNTER_SPECIALTY" level="3" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE" level="4" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_UNCANNY_DODGE" level="5" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_RELIABLE_TALENT" level="10" />
+		</rules>
+		<multiclass id="ID_FLP_LRRP_MULTICLASS_TREASURE_HUNTER">
+			<prerequisite>Dexterity 13</prerequisite>
+			<requirements>[dex:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armour, simple weapons, one skill from the class' skill list, one of the tools from the class' tools list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<select type="Proficiency" name="Skill Proficiency (Treasure Hunter)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS">
+		<supports>LRRP Treasure Hunter Tool</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS">
+		<supports>LRRP Treasure Hunter Tool</supports>
+	</append>
+
+	<element name="Expertise" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_EXPERTISE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_EXPERTISE</requirements>
+		<description>
+			<p>At 1st level, choose any combination of two of your skill and tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p class="indent">At 9th level, you can choose another two proficiencies (in skills or with tools) to gain this benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Treasure Hunter)" level="1" number="2" supports="Expertise"/>
+			<select type="Class Feature" name="Expertise (Treasure Hunter)" level="9" number="2" supports="Expertise"/>
+		</rules>
+	</element>
+
+	<element name="Sneak Attack" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_SNEAK_ATTACK">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_SNEAK_ATTACK</requirements>
+		<description>
+			<p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+			<p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
+			<p class="indent">The amount of the extra damage increases as you gain levels in this calling, as shown in the Sneak Attack column of the Treasure Hunter table.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, you can deal an extra {{lrrp:treasure hunter:sneak attack:count}}d{{lrrp:treasure hunter:sneak attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+			You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:treasure hunter:sneak attack:count" value="1" level="1" />
+			<stat name="lrrp:treasure hunter:sneak attack:count" value="1" level="3" />
+			<stat name="lrrp:treasure hunter:sneak attack:count" value="1" level="5" />
+			<stat name="lrrp:treasure hunter:sneak attack:count" value="1" level="7" />
+			<stat name="lrrp:treasure hunter:sneak attack:count" value="1" level="9" />
+			<stat name="lrrp:treasure hunter:sneak attack:die" value="6" bonus="die" />
+		</rules>
+	</element>
+
+	<element name="Cunning Action" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CUNNING_ACTION">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_CUNNING_ACTION</requirements>
+		<description>
+			<p>Starting at 2nd level, you can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+		</description>
+		<sheet>
+			<description>You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</description>
+		</sheet>
+	</element>
+
+	<element name="Treasure Hunter Specialty" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_TREASURE_HUNTER_SPECIALTY">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_TREASURE_HUNTER_SPECIALTY</requirements>
+		<description>
+			<p>When you reach 3rd level, you choose a speciality to pattern your career as a Treasure Hunter after. You can choose to be a Burglar or a Spy. Specialities grant you features at 3rd and 7th level. Both specialties are detailed at the end of the calling description.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Treasure Hunter Specialty" supports="LRRP Treasure Hunter Specialty" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Craft or Virtue" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_CRAFT_OR_VIRTUE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>At 4th level, and again at 6th and 8th level, you can take a common or cultural virtue of your choice. You can take each virtue only once. As normal, you cannot increase an ability score above 20 using this feature.</p>
+			<p class="indent">At 6th level, instead of taking a virtue you can gain a craft slot and a craft of your choice from the Scholar's Crafts list (see Crafts).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Virtue (Treasure Hunter 4)" level="4" />
+			<select type="Class Feature" name="Craft or Virtue (Treasure Hunter 6)" supports="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE_CRAFT|ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE_VIRTUE" level="6" />
+			<select type="Feat" name="Virtue (Treasure Hunter 8)" level="8" />
+		</rules>
+	</element>
+	<element name="Craft" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE_CRAFT">
+		<compendium display="false" />
+		<description>
+			<p>You can take a Craft.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Craft (Treasure Hunter 6)" supports="LRRP Craft" />
+		</rules>
+	</element>
+	<element name="Virtue" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_CRAFT_OR_VIRTUE_VIRTUE">
+		<compendium display="false" />
+		<description>
+			<p>You can take a Virtue.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Virtue (Treasure Hunter 6)" level="6" />
+		</rules>
+	</element>
+
+	<element name="Uncanny Dodge" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_UNCANNY_DODGE">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_UNCANNY_DODGE</requirements>
+		<description>
+			<p>Beginning at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an attacker that you can see hits you with an attack, you can halve the attack’s damage against you.</description>
+		</sheet>
+	</element>
+
+	<element name="Reliable Talent" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_TREASURE_HUNTER_RELIABLE_TALENT">
+		<requirements>!ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_RELIABLE_TALENT</requirements>
+		<description>
+			<p>By 10th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Expertise Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_EXPERTISE" />
+	<element name="Sneak Attack Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_SNEAK_ATTACK" />
+	<element name="Cunning Action Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_CUNNING_ACTION" />
+	<element name="Treasure Hunter Specialty Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_TREASURE_HUNTER_SPECIALTY" />
+	<element name="Craft or Virtue Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_CRAFT_OR_VIRTUE" />
+	<element name="Uncanny Dodge Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_UNCANNY_DODGE" />
+	<element name="Reliable Talent Feature Replacement" type="Grants" source="Internal" id="ID_FLP_LRRP_FEATURE_REPLACEMENT_TREASURE_HUNTER_RELIABLE_TALENT" />
+
+</elements>

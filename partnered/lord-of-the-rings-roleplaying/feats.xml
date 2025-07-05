@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Virtues from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/feats.xml" />
+		</update>
+	</info>
+	
+	<!--Common Virtues-->
+	<element name="Confidence" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_CONFIDENCE">
+		<supports>LRRP Common Virtue</supports>
+		<description>
+			<p>Overcoming difficulties has reinforced your spirit and renewed your faith in a brighter future.</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in saving throws using Intelligence, Wisdom, or Charisma (your choice).</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Confidence)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Proficiency" name="Saving Throw Proficiency (Confidence)" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Dour-Handed" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DOUR_HANDED">
+		<supports>LRRP Common Virtue</supports>
+		<description>
+			<p>Your blows have become more forceful and your aim steadier, allowing you to do greater harm.</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+				<li>You gain a +1 bonus to weapon damage rolls using Strength.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to weapon damage rolls using Strength.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Hardiness" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_HARDINESS">
+		<supports>LRRP Common Virtue</supports>
+		<description>
+			<p>Your determination and stamina have improved through hardship and toil.</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>Your hit point maximum increases by an amount equal to your level when you gain this virtue. Whenever you gain a level thereafter, your hit point maximum increases by an additional hit point.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your hit points maximum increases by {{level}}.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+
+	<element name="Mastery" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_MASTERY">
+		<supports>LRRP Common Virtue</supports>
+		<description>
+			<p>You have practised certain skills until they have become as natural as breathing.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain one skill, tool, or weapon proficiency of your choice.</li>
+				<li>Choose one of your skill or tool proficiencies. You gain Expertise with that skill or tool, which means your proficiency bonus is doubled for any ability check you make with it.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Mastery)" supports="Feat" />
+			<select type="Proficiency" name="Skill, Tool, or Weapon Proficiency (Mastery)" supports="Skill||Tool||Weapon" />
+			<select type="Class Feature" name="Expertise (Mastery)" supports="Expertise" />
+		</rules>
+	</element>
+
+	<element name="Nimbleness" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_NIMBLENESS">
+		<supports>LRRP Common Virtue</supports>
+		<description>
+			<p>Your skill (or fortune?) in battle has increased with your growth in experience.</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You gain a +1 bonus to AC. You lose this bonus if you are incapacitated or wielding a shield.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to AC. You lose this bonus if you are incapacitated or wielding a shield.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="[shield:none]" alt="Nimbleness" />
+		</rules>
+	</element>
+
+	<element name="Prowess" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_PROWESS">
+		<supports>LRRP Common Virtue</supports>
+		<description>
+			<p>Adventuring has honed your inborn talents.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 2, or two ability scores of your choice by 1, to a maximum of 20.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Prowess)" supports="Ability Score Improvement, Class" number="2" />
+		</rules>
+	</element>
+
+	<!--Barding Cultural Virtues-->
+	<element name="Dragon-Slayer" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DRAGON_SLAYER">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>The legend of Bard the Bowman has inspired many young men and women from Dale, so much that they long to prove their worth with the killing of a great monster. As many more before you, you have long pondered on the ways to deal with creatures of size, hoping one day to gain renown defeating them.</p>
+			<ul>
+				<li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+				<li>You have advantage on attack rolls against Large or larger creatures.</li>
+			</ul>
+			<p class="flavor">“I am Bard, and by my hand was the dragon slain and your treasure delivered.”</p>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against Large or larger creatures.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Dragon-Slayer)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="Dwarf-Friend" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DWARF_FRIEND">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>The days of the Dragon have forged a strong alliance between the Bardings and the Dwarves of Erebor.</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>Your proficiency bonus is doubled for any Charisma (Persuasion) check you make. In addition, you have advantage on Charisma (Persuasion) checks made when interacting with Dwarves.</li>
+				<li>Increase the Fellowship rating of your Company by 1.</li>
+				<li>When you are within 5 feet of a friendly Dwarf and at least one of you isn't incapacitated, and a creature you or the Dwarf can see attacks you or the Dwarf, you can spend a Fellowship point to impose disadvantage on the attack roll.</li>
+			</ul>
+			<p class="flavor">“Nowhere are there any men so friendly to us as the Men of Dale.”</p>
+		</description>
+		<sheet>
+			<description>Increase the Fellowship rating of your Company by 1. &#13;
+			Your proficiency bonus is doubled for any Charisma (Persuasion) check you make. In addition, you have advantage on Charisma (Persuasion) checks made when interacting with Dwarves. &#13;
+			When you are within 5 ft of a friendly Dwarf and at least one of you isn't incapacitated, and a creature you or the Dwarf can see attacks you or the Dwarf, you can spend a Fellowship point to impose disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<element name="Fierce Shot" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_FIERCE_SHOT">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>The Black Arrow that brought down Smaug the Dragon may have been fated to do so, but the hand that sent it flying so fiercely was exceedingly strong. When you throw a spear or bend your bow, you make sure that your grip is steady and your aim true.</p>
+			<ul>
+				<li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+				<li>When making an attack with a ranged weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.</li>
+				<li>If you move no more than half your speed on the same turn and you hit a creature with a ranged weapon attack, you can use a bonus action to cause the attack to deal 1d4 extra damage of the weapon's type.</li>
+			</ul>
+			<p class="flavor">The great bow twanged...the arrow...smote and vanished, barb, shaft and feather...</p>
+		</description>
+		<sheet>
+			<description>When making an attack with a ranged weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. &#13;
+			If you move no more than half your speed on the same turn and you hit a creature with a ranged weapon attack, you can use a bonus action to cause the attack to deal 1d4 extra damage of the weapon's type.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fierce Shot)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="High-Density" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_HIGH_DENSITY">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>Stories tell that those who belong to the race of Dale are destined for greatness, a fact proven true by your King and his story. Do you share the same destiny of those of the line of Girion?</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You have advantage on death saving throws.</li>
+				<li>Whenever you become stable, you also regain 1 hit point.</li>
+			</ul>
+			<p class="flavor">“Bard is not lost!" he cried. "He dived from Esgaroth, when the enemy was slain. I am Bard, of the line of Girion...”</p>
+		</description>
+		<sheet>
+			<description>You have advantage on death saving throws.
+			Whenever you become stable, you also regain 1 hp.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Stout-Hearted" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_STOUT_HEARTED">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>Living for many a year under the ever-present menace of Smaug the Dreadful has made the Bardings a courageous race. After all, there are not many creatures more fearsome than a great Dragon...</p>
+			<ul>
+				<li>Increase your Wisdom or Charisma by 1, to a maximum of 20.</li>
+				<li>You have advantage on Charisma saving throws, and you cannot be frightened by non-undead creatures.</li>
+			</ul>
+			<p class="flavor">To the lineage of Gondor he added the fearless spirit of the Northmen...</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma saving throws, and you cannot be frightened by non-undead creatures.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Stout-Hearted)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="The Language of Birds" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_THE_LANGUAGE_OF_BIRDS">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Barding Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_BARDING</requirements>
+		<description>
+			<p>Stories told in the North say how Dalemen can become so wise as to comprehend the speech of birds, and so by understanding their song be forewarned of impending threats, or be able to spot a weakness in their enemies' defences.</p>
+			<ul>
+				<li>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</li>
+				<li>You can comprehend and verbally communicate with birds, and you can obtain a magical success on any Intelligence (Nature) and Wisdom (Animal Handling) check related to birds.</li>
+				<li>When you are outside and you make an ability check, attack roll, or saving throw, you can do so with advantage. You can use this virtue a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+			<p class="flavor">...he found he could understand its tongue, for he was of the race of Dale.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can comprehend and verbally communicate with birds, and you can obtain a magical success on any Intelligence (Nature) and Wisdom (Animal Handling) check related to birds. &#13;
+			When you are outside and you make an ability check, attack roll, or saving throw, you can do so with advantage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (The Language of Birds)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+		</rules>
+	</element>
+
+	<!--Dwarf Cultural Virtues-->
+	<element name="Baruk Khazâd!" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_BARUK_KHAZAD">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>The secret tongue of the Dwarves is guarded as a treasure of the past, yet their battle-cry is well-known and feared by their foes.</p>
+			<ul>
+				<li>Increase your Strength or Charisma by 1, to a maximum of 20.</li>
+				<li>You can use a bonus action on your turn to force each hostile creature that can hear and see you within 30 feet of you to make a Charisma (Intimidation) check (DC 8 + your proficiency bonus + your choice of your Strength or Charisma modifier). On a failed check, the creature becomes frightened of you until the end of your next turn. Attack rolls against creatures frightened in this way have advantage. Once you use this virtue, you cannot use it again until you finish a short or long rest.</li>
+			</ul>
+			<p class="flavor">"Baruk Khazâd! Khazâd ai-mênu!" An axe swung and swept back. Two Orcs fell headless. The rest fled.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can force each hostile creature that can hear and see you within 30 ft of you to make a Charisma (Intimidation) check (DC {{lrrp:baruk khazad:dc}}). On a failed check, the creature becomes frightened of you until the end of your next turn. Attack rolls against creatures frightened in this way have advantage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Baruk Khazâd!)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="lrrp:baruk khazad:dc" value="8" />
+			<stat name="lrrp:baruk khazad:dc" value="proficiency" />
+			<stat name="lrrp:baruk khazad:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="lrrp:baruk khazad:dc:ability" value="charisma:modifier" bonus="ability"/>
+			<stat name="lrrp:baruk khazad:dc" value="lrrp:baruk khazad:dc:ability" />
+		</rules>
+	</element>
+
+	<element name="Broken Spells" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_BROKEN_SPELLS">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>In ancient times, the Dwarves made mighty spells. You have been taught fragments of old enchantments that retain some power to this day.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>Choose any combination of three skills or tools you are proficient with. Whenever you make an ability check that uses one of the chosen proficiencies, you can obtain a magical success. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+			<p class="flavor">...they spoke fragments of broken spells of opening...</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Choose any combination of three skills or tools you are proficient with. Whenever you make an ability check that uses one of the chosen proficiencies, you can obtain a magical success.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Broken Spell)" supports="Feat" />
+		</rules>
+	</element>
+
+	<element name="Dark for Dark Business" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DARK_FOR_DARK_BUSINESS">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>Your kind is not troubled by mere darkness in itself, as most members of other cultures are. On the contrary, you have grown to like the dark better than the light, finding yourself at ease in its cold embrace.</p>
+			<ul>
+				<li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+				<li>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</li>
+				<li>When you are in dim light, in darkness, or underground, and you make an ability check, attack roll, or saving throw, you can do so with advantage. You can use this virtue a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+			<p class="flavor">“We like the dark," said the Dwarves. "Dark for dark business! There are many hours before dawn.”</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight. &#13;
+			When you are in dim light, in darkness, or underground, and you make an ability check, attack roll, or saving throw, you can do so with advantage.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+	</element>
+
+	<element name="Durin's Way" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DURINS_WAY">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>The Dwarves have fought many wars in deep places beneath the earth. You have been taught how to best defend yourself while fighting underground. As a result, you know how to exploit corners, darkness and other natural obstacles to your advantage.</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>When you have half or three-quarters cover, you gain an additional +1 bonus to AC and Dexterity saving throws.</li>
+				<li>Other creatures do not gain advantage on attack rolls against you as a result of being unseen by you.</li>
+			</ul>
+			<p class="flavor">That was the beginning of the War of the Dwarves and the Orcs, which was long and deadly, and fought for the most part in deep places beneath the earth.</p>
+		</description>
+		<sheet>
+			<description>When you have half or three-quarters cover, you gain an additional +1 bonus to AC and Dexterity saving throws. &#13;
+			Other creatures do not gain advantage on attack rolls against you as a result of being unseen by you.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Stone-Hard" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_STONE_HARD">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>The Dwarves were made to be strong to endure, for they came unto the world when a great evil ruled Middle-earth. As long as your spirit supports your strength you can resist any hurt of body more hardily than most.</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You cannot use this feature again until you finish a short or long rest.</li>
+			</ul>
+			<p class="flavor">They are a tough, thrawn race for the most part, secretive, laborious, retentive of the memory of injuries...</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Untameable Spirit" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_UNTAMEABLE_SPIRIT">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>Dwarves were made from their beginning to resist any form of domination. You have strengthened your resolve against all but the most subtle of the weapons of the Enemy.</p>
+			<ul>
+				<li>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</li>
+				<li>You are immune to being charmed.</li>
+				<li>You have advantage on Intelligence saving throws.</li>
+			</ul>
+			<p class="flavor">Though they could be slain or broken, they could not be reduced to shadows enslaved to another will...</p>
+		</description>
+		<sheet>
+			<description>You are immune to being charmed. &#13;
+			You have advantage on Intelligence saving throws.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Untameable Spirit)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+		</rules>
+	</element>
+
+	<!--Elf Cultural Virtues-->
+	<element name="Against the Unseen" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_AGAINST_THE_UNSEEN">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Elf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_ELF</requirements>
+		<description>
+			<p>Elves can perceive creatures that dwell in the wraith-world, be they spirits or ghosts, even when they are normally invisible to the eyes of the living and appear only as a chilling whisper of voices. You have learnt to strengthen your heart against such terrors.</p>
+			<ul>
+				<li>Increase your Wisdom or Charisma by 1, to a maximum of 20.</li>
+				<li>You have advantage on Charisma saving throws, and you cannot be frightened by Undead creatures.</li>
+			</ul>
+			<p class="flavor">“I also will come," said Legolas, "for I do not fear the Dead.”</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma saving throws, and you cannot be frightened by Undead creatures.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Against the Unseen)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Deadly Archery" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DEADLY_ARCHERY">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Elf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_ELF</requirements>
+		<description>
+			<p>Elves possess a natural talent for hitting the mark when using their bows. You have honed this talent almost to perfection, and your arrows find their target with uncanny precision.</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>As a bonus action, you can give yourself advantage on your next ranged weapon attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</li>
+			</ul>
+			<p class="flavor">...their small knives...would have been of no use against the arrows of the Elves that could hit a bird's eye in the dark.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can give yourself advantage on your next ranged weapon attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Elbereth Gilthoniel!" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_ELBERETH_GILTHONIEL">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Elf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_ELF</requirements>
+		<description>
+			<p>The name of Elbereth, the Queen of the Stars, is revered by all the Eldar still dwelling in Middle-earth. You have resorted to calling on her name in moments of great need, asking the Kindler to bestow her grace upon you.</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>When you are not miserable and make an ability check, attack roll, or saving throw, you can do so with advantage. You can use this virtue a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+			<p class="flavor">"Elbereth Gilthoniel!" sighed Legolas as he looked up.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you are not miserable and make an ability check, attack roll, or saving throw, you can do so with advantage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Elbereth Gilthoniel!)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Elvish Spirit" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_ELVISH_SPIRIT">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Elf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_ELF</requirements>
+		<description>
+			<p>The spirit of Elves is so strong that their bodies recover swiftly from many ills and injuries. You can recover from your exertions while awake, finding repose in the secret way of your folk.</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>If you meditate for at least 4 hours, you can reduce your exhaustion level by 1 and regain all lost hit points. You cannot use this virtue if you've had a long rest within the last 24 hours, or if you have 0 hit points. Once you use this virtue, you cannot use it again until you finish a long rest.</li>
+			</ul>
+			<p class="flavor">...he could sleep, if sleep it could be called by Men, resting his mind in the strange paths of elvish dreams, even as he walked open-eyed in the light of this world.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If you meditate for at least 4 hours, you can reduce your exhaustion level by 1 and regain all lost hit points. You cannot use this virtue if you've had a long rest within the last 24 hours, or if you have 0 hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Gleam of Wrath" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_GLEAM_OF_WRATH">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Elf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_ELF</requirements>
+		<description>
+			<p>Your folk have seen many defeats, and many fruitless victories in their wars against the Shadow. The deadly rage that your kindred harbour for the Enemy infuses your weapons with a gleam of chill flame.</p>
+			<ul>
+				<li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+				<li>As a bonus action, you can make a melee weapon that you are wielding emit dim light in a radius equal to its reach until the start of your next turn. The light is sunlight. While the weapon gleams, it also deals radiant damage instead of its normal type.</li>
+				<li>When you score a critical hit with a weapon attack, you can roll one of the weapon's damage dice one additional time and add it as extra radiant damage.</li>
+			</ul>
+			<p class="flavor">The Elves were the first to charge...Their spears and swords shone in the gloom with a gleam of chill flame, so deadly was the wrath of the hands that held them.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you can make a melee weapon that you are wielding emit dim light in a radius equal to its reach until the start of your next turn. The light is sunlight. While the weapon gleams, it also deals radiant damage instead of its normal type. &#13;
+			When you score a critical hit with a weapon attack, you can roll one of the weapon's damage dice one additional time and add it as extra radiant damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gleam of Wrath)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="Memory of Ancient Days" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_MEMORY_OF_ANCIENT_DAYS">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Elf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_ELF</requirements>
+		<description>
+			<p>Your folk have seen many defeats, and many fruitless victories in their wars against the Shadow. The deadly rage that your kindred harbour for the Enemy infuses your weapons with a gleam of chill flame.</p>
+			<ul>
+				<li>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</li>
+				<li>You can give yourself a bonus to pathfinding checks equal to your Intelligence modifier (minimum of +1).</li>
+				<li>When you are targeted by a journey event, the roll on the Journey Events table is done as if you were in a Border Land if you are in a Wild Land, and as if you were in a Wild Land if you are in a Dark Land.</li>
+			</ul>
+			<p class="flavor">But it is not your own Shire," said Gildor. "Others dwelt here before hobbits were; and others will dwell here again when hobbits are no more.</p>
+		</description>
+		<sheet>
+			<description>You can give yourself a bonus to pathfinding checks equal to {{lrrp:memory of ancient days:modifier}}. &#13;
+			When you are targeted by a journey event, the roll on the Journey Events table is done as if you were in a Border Land if you are in a Wild Land, and as if you were in a Wild Land if you are in a Dark Land.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Memory of Ancient Days)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+			<stat name="lrrp:memory of ancient days:modifier" value="intelligence:modifier" bonus="bonus" />
+			<stat name="lrrp:memory of ancient days:modifier" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<!--Hobbit Cultural Virtues-->
+	<element name="Art of Disappearing" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_ART_OF_DISAPPEARING">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT, !ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>Hobbits are said to have little or no magic about them, but the way they can choose to disappear quickly and quietly can be described by others only as supernatural. You have learnt to choose exactly the right moment to turn away from the attention of others, sometimes unconsciously anticipating the need to disappear.</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>Your proficiency bonus is doubled for any Dexterity (Stealth) check you make.</li>
+				<li>You can try to hide even when you are only lightly obscured from the creature from which you are hiding.</li>
+			</ul>
+			<p class="flavor">They possessed from the first the art of disappearing swiftly and silently, when large folk whom they do not wish to meet came blundering by...</p>
+		</description>
+		<sheet>
+			<description>You can try to hide even when you are only lightly obscured from the creature from which you are hiding.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_STEALTH_DOUBLE" />
+		</rules>
+	</element>
+
+	<element name="Brave at a Pinch" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_BRAVE_AT_A_PINCH">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT, !ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>One of the Wise once said that you have to put a Hobbit in a tight place before you find out what is in them. You prefer to avoid finding yourself in one, but you are also sure you would be able to take good care of yourself in the circumstances.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>Whenever a hostile creature or harmful effect imposes a condition on you, you suffer one or more levels of exhaustion, or you drop to half or less of your maximum hit points, you gain inspiration.</li>
+			</ul>
+			<p class="flavor">They possessed from the first the art of disappearing swiftly and silently, when large folk whom they do not wish to meet came blundering by...</p>
+		</description>
+		<sheet>
+			<description>Whenever a hostile creature or harmful effect imposes a condition on you, you suffer one or more levels of exhaustion, or you drop to half or less of your maximum hp, you gain inspiration.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Brave at a Pinch)" supports="Feat" />
+		</rules>
+	</element>
+
+	<element name="Small Folk" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_SMALL_FOLK">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Hobbit or Bree-Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>Hobbits are a little people, but their resourcefulness far exceeds their stature. You have learnt how to exploit your small size to your advantage in a fight.</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>Medium or larger creatures cannot gain advantage on attack rolls against you while you are not incapacitated.</li>
+				<li>You don't provoke opportunity attacks from Medium or larger creatures.</li>
+			</ul>
+			<p class="flavor">For they are a little people, smaller than Dwarves...</p>
+		</description>
+		<sheet>
+			<description>Medium or larger creatures cannot gain advantage on attack rolls against you while you are not incapacitated. &#13;
+			You don't provoke opportunity attacks from Medium or larger creatures.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Sure at the Mark" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_SURE_AT_THE_MARK">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT, !ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>Hobbits are said to have little or no magic about them, but the way they can choose to disappear quickly and quietly can be described by others only as supernatural. You have learnt to choose exactly the right moment to turn away from the attention of others, sometimes unconsciously anticipating the need to disappear.</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You are proficient with improvised weapons.</li>
+				<li>When making a ranged attack with an improvised weapon, you can use your choice of your Strength or your Dexterity modifier for the attack and damage rolls.</li>
+				<li>As a bonus action, you can give yourself advantage on your next ranged attack roll on the current turn. You can use this bonus action only if you haven't taken reactions during this turn, and after you use the bonus action, you cannot take reactions until the start of your next turn.</li>
+			</ul>
+			<p class="flavor">They shot well with the bow, for they were keen-eyed and sure at the mark. Not only with bows and arrows.</p>
+		</description>
+		<sheet>
+			<description>You are proficient with improvised weapons. &#13;
+			When making a ranged attack with an improvised weapon, you can use your choice of your Strength or your Dexterity modifier for the attack and damage rolls. &#13;
+			As a bonus action, you can give yourself advantage on your next ranged attack roll on the current turn. You can use this bonus action only if you haven't taken reactions during this turn, and after you use the bonus action, you cannot take reactions until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Three is Company" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_THREE_IS_COMPANY">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT, !ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>The Wise say that it is sometimes best to trust to friendship than to great wisdom. This is particularly true for Hobbits, as everyone knows that it is hardly possible to separate them from their friends. You have given your trust to your fellow Company members, and a true friendship has grown from the bond unifying you.</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>Increase the Fellowship rating of your Company by 1.</li>
+				<li>Whenever you or a companion you can see spend a Fellowship point, choose a number of companions (which can include yourself) who can see or hear you, up to your proficiency bonus. Each of those companions gains inspiration.</li>
+			</ul>
+			<p class="flavor">We hobbits ought to stick together, and we will. I shall go, unless they chain me up.</p>
+		</description>
+		<sheet>
+			<description>Increase the Fellowship rating of your Company by 1. &#13;
+			Whenever you or a companion you can see spend a Fellowship point, choose a number of companions (which can include yourself) who can see or hear you, up to your proficiency bonus. Each of those companions gains inspiration.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<element name="Three is Company" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_THREE_IS_COMPANY">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Hobbit or Bree-Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_HOBBIT</requirements>
+		<description>
+			<p>They say that Hobbits are difficult to dismay or kill, and that they recover their health at a prodigious pace if allowed to enjoy some peace and quiet. You have discovered that you recover wonderfully from falls and bruises (at the cost of some considerable pain).</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>When you would roll one or more Hit Dice to regain hit points, you instead use the highest number possible for each die.</li>
+			</ul>
+			<p class="flavor">“They are a remarkable race," said the Warden, nodding his head. "Very tough in the fibre, I deem.”</p>
+		</description>
+		<sheet>
+			<description>When you would roll one or more Hit Dice to regain hit points, you instead use the highest number possible for each die.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<!--Man of Bree Cultural Virtues-->
+	<element name="Bree-Pony" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_BREE_PONY">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Man of Bree or Bree-Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE|ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>Bree-ponies are very similar to their owners, the Bree-folk—they don't seem to have anything special compared to their peers in other parts of Middle-earth, and yet some of them display uncommon courage and exceptional memory. You have acquired an unusually brave and intelligent beast that follows you everywhere.</p>
+			<ul>
+				<li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+				<li>Your pony uses your proficiency bonus rather than its own, and adds your proficiency bonus to each of its ability scores, AC, and to any ability check or saving throw that it makes.</li>
+				<li>Your pony has a number of Hit Dice equal to your character level instead of its normal Hit Dice (minimum 2).</li>
+				<li>Your pony obeys your commands. In combat, it takes its turn on your initiative and acts and moves as you direct it (no action required by you), or on its own if you are absent or incapacitated. It cannot make opportunity attacks, and its only action options are Dash, Disengage, and Dodge, unless you spend an action on your turn to command it to take another action. If your pony dies, you can acquire a new one during the next Yule Fellowship Phase.</li>
+			</ul>
+			<p class="flavor">Bill the pony was with them, and as before he had a good deal of baggage, but he trotted along beside Sam and seemed well content.</p>
+		</description>
+		<sheet>
+			<description>You have acquired an usually brave and intelligent pony. Your pony uses your proficiency bonus rather than its own, and adds your proficiency bonus to each of its ability scores, AC, and to any ability check or saving throw that it makes. &#13;
+			Your pony has {{lrrp:bree pony:hit dice}} Hit Dice instead of its normal Hit Dice. &#13;
+			Your pony obeys your commands. In combat, it takes its turn on your initiative and acts and moves as you direct it (no action required by you), or on its own if you are absent or incapacitated. It cannot make opportunity attacks, and its only action options are Dash, Disengage, and Dodge, unless you spend an action on your turn to command it to take another action. If your pony dies, you can acquire a new one during the next Yule Fellowship Phase.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<stat name="lrrp:bree pony:hit dice" value="level" bonus="bonus" />
+			<stat name="lrrp:bree pony:hit dice" value="2" bonus="bonus" />
+			<grant type="Companion" id="ID_WOTC_PHB_COMPANION_PONY" />
+				<select type="Companion" name="Bree-Pony" supports="LRRP Bree Pony" default="ID_FLP_LRRP_COMPANION_BREE_PONY" />
+		</rules>
+	</element>
+	<element name="Pony" type="Companion" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_COMPANION_BREE_PONY">
+		<supports>LRRP Bree Pony</supports>
+		<description />
+		<setters>
+			<set name="strength">15</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">7</set>
+			<set name="ac">10</set>
+			<set name="hp">11 (2d8+2)</set>
+			<set name="speed">40 ft.</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/8</set>
+			<set name="actions">ID_FLP_LRRP_COMPANION_ACTION_BREE_PONY_HOOVES</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="10" />
+			<stat name="companion:hp:max" value="11" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name="Hooves" type="Companion Action" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_COMPANION_ACTION_BREE_PONY_HOOVES">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Defiance" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DEFIANCE">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Many realms have risen and fallen in the Lone-lands of Eriador since the Elder Days. Only ruins remain to mark their boundaries. Yet, the Bree-men have endured, revealing an unexpected reserve of strength and vigour in the face of adversity.</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>As a bonus action, you can spend one Hit Die to heal yourself.</li>
+			</ul>
+			<p class="flavor">Few had survived the turmoils of the Elder Days; but when the Kings returned again over the Great Sea they had found the Bree-men still there...</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend one Hit Die to heal yourself.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Desperate Courage" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_DESPERATE_COURAGE">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Man of Bree or Bree-Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE|ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>You have lived all your life on the edge of the Wild, but the worst news that has come to Bree in your time concerned only brigands or packs of hungry wolves. You don't know yet what the likes of you can do against the Shadow in the East, but you are sure you will stand against it, no matter the cost.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>Whenever you gain Shadow points, you also gain inspiration.</li>
+			</ul>
+			<p class="flavor">Are you still willing to help me?" "I am," said Mr. Butterbur. "More than ever.</p>
+		</description>
+		<sheet>
+			<description>Whenever you gain Shadow points, you also gain inspiration.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Desperate Courage)" supports="Feat" />
+		</rules>
+	</element>
+
+	<element name="Friendly and Familiar" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_FRIENDLY_AND_FAMILIAR">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Man of Bree Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE</requirements>
+		<description>
+			<p>Since you started your adventures, you have realised that your folk's custom of trading with foreigners may help you in your endeavours. Your nice manners and friendly demeanour easily gain the sympathies of those you meet, and your ability to inquire about the doings of strangers without letting curiosity get the better of you provides you with many opportunities to learn from those you meet along the way.</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>Increase the Fellowship rating of your Company by 1.</li>
+				<li>Your proficiency bonus is doubled for any Wisdom (Insight) check you make. In addition, you have advantage on the first Charisma (Persuasion) check you make when interacting with Dwarves, Elves, Hobbits, and Men (other than the Dúnedain).</li>
+			</ul>
+			<p class="flavor">...they were more friendly and familiar with Hobbits, Dwarves, Elves, and other inhabitants of the world about them than was (or is) usual with Big People.</p>
+		</description>
+		<sheet>
+			<description>Increase the Fellowship rating of your Company by 1. &#13;
+			You have advantage on the first Charisma (Persuasion) check you make when interacting with Dwarves, Elves, Hobbits, and Men (other than the Dúnedain).</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INSIGHT_DOUBLE" />
+		</rules>
+	</element>
+
+	<element name="Strange as News from Bree" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_STRANGE_AS_NEWS_FROM_BREE">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Man of Bree or Bree-Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE|ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>It is indeed true that the affairs of the four villages are the chief concern of the Bree-folk, but the most inquisitive among the inhabitants are always ready to gather what tidings come from distant lands. You have learnt that listening to the strange tales that travellers often talk about can prove to be very precious.</p>
+			<ul>
+				<li>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Investigation skill. If you are already proficient, you add double your proficiency bonus to checks you make with it.</li>
+				<li>During each Fellowship Phase, you can receive a rumour from the Loremaster.</li>
+			</ul>
+			<p class="flavor">Strange as News from Bree was still a saying in the Eastfarthing, descending from those days, when news from North, South, and East could be heard in the inn...</p>
+		</description>
+		<sheet>
+			<description>During each Fellowship Phase, you can receive a rumour from the Loremaster.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Strange as News from Bree)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INVESTIGATION" />
+		</rules>
+	</element>
+
+	<element name="The Art of Smoking" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_THE_ART_OF_SMOKING">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Man of Bree or Bree-Hobbit Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_MAN_OF_BREE|ID_FLP_LRRP_RACE_VARIANT_BREE_HOBBIT</requirements>
+		<description>
+			<p>You have mastered the art of smoking pipe-weed, and you always carry your pipe with you, as well as a bag of tobacco, for using it grants you patience and clarity of mind.</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>Your proficiency bonus is doubled for any ability check you make with pipes.</li>
+				<li>You can use your pipe to gain inspiration a number of times equal to your proficiency bonus, instead of once, before you need to finish a long rest.</li>
+			</ul>
+			<p class="flavor">And certainly it was from Bree that the art of smoking the genuine weed spread in the recent centuries...</p>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus is doubled for any ability check you make with pipes. &#13;
+			You can use your pipe to gain inspiration {{proficiency}} times, instead of once, before you need to finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (The Art of Smoking)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_ITEM_TOOL_PIPE" />
+		</rules>
+	</element>
+
+	<!--Ranger of the North Cultural Virtues-->
+	<element name="Endurance of the Ranger" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_ENDURANCE_OF_THE_RANGER">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>They say that a Ranger with a clear trail to follow can never be weary. You hope the saying will prove true, as it will be your fate to often travel in haste, to seek distant lands on urgent errands or to relentlessly hunt your enemies.</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You have advantage on Constitution saving throws.</li>
+			</ul>
+			<p class="flavor">“Hardy is the race of Elendil!”</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Constitution saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Foresight of Their Kindred" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_FORESIGHT_OF_THEIR_KINDRED">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>The Rangers of the North still possess a measure of the foresight that their ancestors possessed in full. In the Twilight of the Third Age, this gift manifests as a sense of watchfulness, and of fear, arising to warn a Ranger of a danger that has not yet come to pass.</p>
+			<ul>
+				<li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+				<li>You have a number of foresight points equal to your Wisdom modifier (minimum 1). Whenever you or a creature that you can see make an ability check, attack roll, or saving throw, you can spend one foresight point to reroll the d20 and must use the new roll. You can choose to spend one of your foresight points after the roll, but before the outcome is determined. You can also spend one foresight point after a roll on the Journey Events table. Roll a d20, and then choose whether the Loremaster uses their roll or yours. You regain your expended foresight points when you finish a long rest.</li>
+			</ul>
+			<p class="flavor">“And I say to you: if you pass the doors of Moria, beware!”</p>
+		</description>
+		<sheet>
+			<description>You have {{lrrp:foresight of their kindred:points}} foresight points. Whenever you or a creature that you can see make an ability check, attack roll, or saving throw, you can spend one foresight point to reroll the d20 and must use the new roll. You can choose to spend one of your foresight points after the roll, but before the outcome is determined. You can also spend one foresight point after a roll on the Journey Events table. Roll a d20, and then choose whether the Loremaster uses their roll or yours. You regain your expended foresight points when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<stat name="lrrp:foresight of their kindred:points" value="wisdom:modifier" bonus="bonus" />
+			<stat name="lrrp:foresight of their kindred:points" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Heir of Arnor" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_HEIR_OF_ARNOR">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>The days of your folk have darkened, and not many of you remain; but ever the memory of the Kings is passed from generation to generation. An artefact going back to the days of Lost Arnor has been in your family's possession for unbroken generations. Now you have been deemed worthy to become its keeper.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>With the help of the Loremaster, use the rules in Chapter 7 from <i>The Lord of the Rings Roleplaying</i> to create either a Wondrous Item, or a Famous Weapon possessing a single enchanted reward. The item is generally of Númenórean craftsmanship, but might even be of Elven or Dwarven make. If it is a Famous Weapon, it can be upgraded with up to two non-enchanted rewards, as if it was a normal item.</li>
+			</ul>
+			<p class="flavor">“Here is the ring of Barahir," he said, "the token of our kinship from afar; and here also are the shards of Narsil.”</p>
+		</description>
+		<sheet>
+			<description>With the help of the Loremaster, create either a Wondrous Item, or a Famous Weapon possessing a single enchanted reward. The item is generally of Númenórean craftsmanship, but might even be of Elven or Dwarven make. If it is a Famous Weapon, it can be upgraded with up to two non-enchanted rewards, as if it was a normal item.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Heir of Arnor)" supports="Feat" />
+		</rules>
+	</element>
+
+	<element name="Royalty Revealed" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_ROYALTY_REVEALED">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>Your kin belong to a bloodline of kings, but they have learnt to hide from their enemies in the twilight years of their kingdom. Should you choose to reveal your heritage, your noble bearing will cause your allies to cast away their doubts. You reveal yourself by shouting an ancestral battle-cry, or unsheathing a weapon of high lineage, or by showing a device or coat of arms.</p>
+			<ul>
+				<li>Increase your Strength or Charisma by 1, to a maximum of 20.</li>
+				<li>As a bonus action, you can choose to reveal your lineage. When you do so, choose a number of friendly creatures (which can include yourself) within 30 feet of you who can see or hear you, up to twice your proficiency bonus. Until the end of your next turn, each creature gains advantage on attack rolls and Charisma (Intimidation) checks, and is immune to being frightened. It also gains temporary hit points equal to your choice of your Strength or Charisma modifier (minimum 1). These temporary hit points last until they are depleted or the creature finishes a short or long rest. Once you use this virtue, you cannot use it again until you finish a short or long rest.</li>
+			</ul>
+			<p class="flavor">Aragorn threw back his cloak. The elven-sheath glittered as he grasped it, and the bright blade of Andúril shone like a sudden flame as he swept it out. "Elendil!" he cried.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can choose to reveal your lineage. When you do so, choose up to {{lrrp:royalty revealed:number}} friendly creatures (which can include yourself) within 30 ft of you who can see or hear you. Until the end of your next turn, each creature gains advantage on attack rolls and Charisma (Intimidation) checks, and is immune to being frightened. It also gains {{lrrp:royalty revealed:hp}} temporary hit points. These temporary hit points last until they are depleted or the creature finishes a short or long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Royalty Revealed)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="lrrp:royalty revealed:number" value="proficiency" />
+			<stat name="lrrp:royalty revealed:number" value="proficiency" />
+			<stat name="lrrp:royalty revealed:hp" value="strength:modifier" bonus="ability"/>
+			<stat name="lrrp:royalty revealed:hp" value="charisma:modifier" bonus="ability"/>
+		</rules>
+	</element>
+
+	<element name="Srength of Will" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_STRENGTH_OF_WILL">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>You have been raised in a land dotted with desolate ruins and burial mounds. You have heard the dead whisper with cold voices out of lonely barrows, while ghostly lights dance on haunted hills. When your will strengthens your heart, there is hardly anything in this world that can dismay you.</p>
+			<ul>
+				<li>Increase your Wisdom or Charisma by 1, to a maximum of 20.</li>
+				<li>You have advantage on Charisma saving throws.</li>
+				<li>Whenever you must make a Charisma saving throw, you gain a bonus to the saving throw equal to your Wisdom modifier (minimum +1).</li>
+			</ul>
+			<p class="flavor">"Does he feel no fear?" muttered the Dwarf.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Charisma saving throws. &#13;
+			Whenever you must make a Charisma saving throw, you gain a bonus to the saving throw equal to {{lrrp:strength of will:modifier}}.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Strength of Will)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="lrrp:strength of will:modifier" value="wisdom:modifier" bonus="bonus" />
+			<stat name="lrrp:strength of will:modifier" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Ways of the Wild" type="Feat" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_WAYS_OF_THE_WILD">
+		<supports>LRRP Cultural Virtue</supports>
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>The Rangers of the North roam ceaselessly, hunting for wicked things and guarding all frontiers. For you the Wild has become as familiar as the road that leads home is familiar to Hobbits, and the land itself may reveal useful tidings.</p>
+			<ul>
+				<li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+				<li>During a journey, you can take on multiple roles without penalties.</li>
+				<li>You gain proficiency in one of the following skills of your choice: Explore, Hunting, or Travel. If you are already proficient in each of them, you add double your proficiency bonus to checks you make with one of them of your choice.</li>
+				<li>When you make a Wisdom check using a skill in which you are proficient, you can obtain a magical success. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+			<p class="flavor">“Where sight fails the earth may bring us rumour," said Aragorn. "The land must groan under their hated feet.”</p>
+		</description>
+		<sheet>
+			<description>During a journey, you can take on multiple roles without penalties. &#13;
+			When you make a Wisdom check using a skill in which you are proficient, you can obtain a magical success. You can do so {{proficiency}} times per Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<select type="Feat Feature" name="Skill Proficiency or Double" supports="LRRP Ways of the Wild Skill" requirements="ID_FLP_LRRP_OPTION_NEW_SKILLS" />
+		</rules>
+	</element>
+	<element name="Explore" type="Feat Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_WAYS_OF_THE_WILD_EXPLORE">
+		<compendium display="false" />
+		<supports>LRRP Ways of the Wild Skill</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>You gain proficiency in the Explore skill. If you are already proficient, you add double your proficency bonus for any check made using this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_EXPLORE" />
+		</rules>
+	</element>
+	<element name="Hunting" type="Feat Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_WAYS_OF_THE_WILD_HUNTING">
+		<compendium display="false" />
+		<supports>LRRP Ways of the Wild Skill</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>You gain proficiency in the Hunting skill. If you are already proficient, you add double your proficency bonus for any check made using this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_HUNTING" />
+		</rules>
+	</element>
+	<element name="Travel" type="Feat Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_FEAT_WAYS_OF_THE_WILD_TRAVEL">
+		<compendium display="false" />
+		<supports>LRRP Ways of the Wild Skill</supports>
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>You gain proficiency in the Travel skill. If you are already proficient, you add double your proficency bonus for any check made using this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_TRAVEL" />
+		</rules>
+	</element>
+
+</elements>

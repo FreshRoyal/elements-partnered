@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Thane</name>
+		<description>Thane Captain Title from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="captain-thane.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/captain-thane.xml" />
+		</update>
+	</info>
+
+	<element name="Thane" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_CAPTAIN_THANE">
+		<supports>LRRP Captain Title</supports>
+		<description>
+			<p>You have sworn service to a King and serve as one of their chosen fighters. As long as war must be, you stand ready to protect the innocent and destroy your lord's enemies.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_THANE_BRIGHT_BLADE" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_THANE_TIRELESS_LEADER" />
+			<p></p>
+			<p class="flavor">From dark Dunharrow in the dim morning/with thane and captain rode Thengel's son:/to Edoras he came, the ancient halls/of the Mark-wardens mist-enshrouded...</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_THANE_BRIGHT_BLADE" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_THANE_TIRELESS_LEADER" level="7" />
+		</rules>
+	</element>
+
+	<element name="Bright Blade" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_THANE_BRIGHT_BLADE">
+		<description>
+			<p>Starting at 3rd level, as a bonus action, you can imbue a melee weapon that you are holding with your bravery. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). For the duration of the effect, when you hit a creature, the next attack roll against the target made by an attacker other than you has advantage if the attack is made before the start of your next turn. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>
+			<p class="indent">You must then finish a short or long rest to use this feature again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can imbue a melee weapon that you are holding with your bravery. For 1 minute, you add {{lrrp:bright blade:modifier}} to attack rolls made with that weapon. For the duration of the effect, when you hit a creature, the next attack roll against the target made by an attacker other than you has advantage if the attack is made before the start of your next turn. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:bright blade:modifier" value="charisma:modifier" bonus="bonus" />
+			<stat name="lrrp:bright blade:modifier" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Tireless Leader" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_THANE_TIRELESS_LEADER">
+		<description>
+			<p>Starting at 7th level, you and friendly creatures within 10 feet of you suffer the effects of exhaustion as if it was one level lower (no effects at level 1, disadvantage on ability checks at level 2, and so on).</p>
+		</description>
+		<sheet>
+			<description>You and friendly creatures within 10 feet of you suffer the effects of exhaustion as if it was one level lower.</description>
+		</sheet>
+	</element>
+
+</elements>

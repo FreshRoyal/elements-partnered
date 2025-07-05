@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dwarf Backgrounds</name>
+		<description>Dwarf Backgrounds from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="backgrounds-dwarf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-dwarf.xml" />
+		</update>
+	</info>
+
+	<element name="Bitter Exile" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_BITTER_EXILE">
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>Your ancestors fled their home in the far North, and you grew up hearing stories of lost Dwarf-halls fallen to Orc-kind or burnt to cinders by Dragons. It is your ambition to return to those mountains and set things right.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Explore, Old Lore</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> A musical instrument of your choice</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Fierce, Proud</p>
+		</description>
+		<setters>
+			<set name="short">Explore, Old Lore, 1 Musical Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<select type="Proficiency" name="Musical Instrument (Bitter Exile)" supports="Musical Instrument" />
+		</rules>
+	</element>
+
+	<element name="Eloquent Orator" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_ELOQUENT_ORATOR">
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>The hardships endured by your folk during two ages of the world have inspired many songs. But the words that come easier to your lips are those recounting feats of great cunning, not those about deeds of valour. It is by your ingenuity that you seek the fall of your adversaries.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Persuasion, Riddle</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Calligrapher's supplies</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Cunning, Lordly</p>
+		</description>
+		<setters>
+			<set name="short">Persuasion, Riddle, Calligrapher's Supplies</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Far Trader" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_FAR_TRADER">
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>By the reckoning of the Dwarves, you were only a stripling when you left your home to follow your kin along the trading roads. You have since seen many places and met different folks eager to trade goods for the product of Dwarven handiwork, and your heart burns with a desire to see more.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Deception, Travel</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Land vehicles</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Cunning, Proud</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Travel, Land Vehicles</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+		</rules>
+	</element>
+
+	<element name="The Grief of Azanulbizar" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_THE_GRIEF_OF_AZANULBIZAR">
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>A great war was fought between the Dwarves and the Orcs of the Misty Mountains about 170 years ago. The parents and grandparents of most Dwarves, including yours, remember the horrors of that war; you have vowed to mete out justice to all Orc-kind.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Hunting, Intimidation</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Smith's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Fierce, Stern</p>
+		</description>
+		<setters>
+			<set name="short">Hunting, Intimidation, Smith's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="A Life of Toil" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_A_LIFE_OF_TOIL">
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>Your ancestors crafted wondrous things out of shining stones and precious metals, while you have been forced to labour hard in the mines for far less noble ore. Unfortunately, to this day, most ancient Dwarf-holds are no more than Dragon's lairs or Orc-infested pits. You toil patiently, peering into the gloom with eyes hungry for the gleaming of gems and gold.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Athletics, Perception</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Mason's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Secretive, Wilful</p>
+		</description>
+		<setters>
+			<set name="short">Athletics, Perception, Mason's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="A Penetrating Gaze" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_A_PENETRATING_GAZE">
+		<prerequisite>Dwarf Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_DWARF</requirements>
+		<description>
+			<p>Your elder sibling instructed you to judge others by their deeds, not their words, especially when dealing with the fair-spoken Elves. But in time you have come to trust your instincts above all else, as your heart is not easily swayed. Thieves and liars do not dare to meet your eyes, as you seem able to lay bare their plots.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Insight, Investigation</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Pipes</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Wary, Wilful</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Investigation, Pipes</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_PIPE" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spy</name>
+		<description>Spy Treasure Hunter Specialty from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="treasure-hunter-spy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/treasure-hunter-spy.xml" />
+		</update>
+	</info>
+
+	<element name="Spy" type="Archetype" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_TREASURE_HUNTER_SPY">
+		<supports>LRRP Treasure Hunter Specialty</supports>
+		<description>
+			<p>The Enemy sends many agents among the Free Peoples, and you intend to spy upon them, lest they undermine your efforts to resist the Shadow.</p>
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_CUNNING_EYE" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_WEAK_SPOT" />
+			<div element="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_SHARP_EYED" />
+			<p></p>
+			<p class="flavor">“But it appeared that he was nobody's friend, and nobody could recollect when he had joined their party.”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_CUNNING_EYE" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_WEAK_SPOT" level="3" />
+			<grant type="Archetype Feature" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_SHARP_EYED" level="7" />
+		</rules>
+	</element>
+
+	<element name="Cunning Eye" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_CUNNING_EYE">
+		<description>
+			<p>Starting at 3rd level, you can add your Intelligence modifier to your Wisdom (Insight) and Wisdom (Perception) checks. In addition, you can use the bonus action granted by your Cunning Action to take the Search action.</p>
+		</description>
+		<sheet>
+			<description>You can add your Intelligence modifier to your Wisdom (Insight) and Wisdom (Perception) checks. In addition, you can use the bonus action granted by your Cunning Action to take the Search action.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:cunning eye:modifier" value="intelligence:modifier" bonus="bonus" />
+			<stat name="lrrp:cunning eye:modifier" value="0" bonus="bonus" />
+			<stat name="insight:misc" value="lrrp:cunning eye:modifier" />
+			<stat name="perception:misc" value="lrrp:cunning eye:modifier" />
+		</rules>
+	</element>
+
+	<element name="Weak Spot" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_WEAK_SPOT">
+		<description>
+			<p>Also at 3rd level, you can use a bonus action to make an Intelligence (Investigation) or Wisdom (Perception) check against a creature within 30 feet of you that you can see, contested by the target's Dexterity (Stealth) check. If you win the contest, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.</p>
+			<p class="indent">This benefit lasts for 1 minute or until you successfully use this feature against a different target.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can make an Intelligence (Investigation) or Wisdom (Perception) check against a creature within 30 feet of you that you can see, contested by the target's Dexterity (Stealth) check. If you win the contest, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.
+			This benefit lasts for 1 minute or until you successfully use this feature against a different target.</description>
+		</sheet>
+	</element>
+
+	<element name="Sharp-Eyed" type="Archetype Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ARCHETYPE_FEATURE_SPY_SHARP_EYED">
+		<description>
+			<p>Starting at 7th level, you have advantage on Intelligence (Investigation) and Wisdom (Perception) checks if you move no more than half your speed on the same turn.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence (Investigation) and Wisdom (Perception) checks if you move no more than half your speed on the same turn.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>The Lord of the Rings Roleplaying by Free League Publishing</name>
+		<update version="1.0.0">
+			<file name="lord-of-the-rings-roleplaying.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying.index" />
+		</update>
+	</info>
+	<files>
+		<file name="crafts.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/crafts.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/feats.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-armor.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-gear.xml" />
+		<file name="items-packs.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-packs.xml" />
+		<file name="items-tools.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-tools.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-weapons.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/languages.xml" />
+		<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/magic-items.xml" />
+		<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/source.xml" />
+
+		<!--Archetypes-->
+		<file name="captain-chieftan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/captain-chieftan.xml" />
+		<file name="captain-thane.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/captain-thane.xml" />
+		<file name="champion-sharp-shooter.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/champion-sharp-shooter.xml" />
+		<file name="champion-slayer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/champion-slayer.xml" />
+		<file name="messenger-counsellor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/messenger-counsellor.xml" />
+		<file name="messenger-herald.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/messenger-herald.xml" />
+		<file name="scholar-healing.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/scholar-healing.xml" />
+		<file name="scholar-lore.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/scholar-lore.xml" />
+		<file name="treasure-hunter-burglar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/treasure-hunter-burglar.xml" />
+		<file name="treasure-hunter-spy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/treasure-hunter-spy.xml" />
+		<file name="warden-forayer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/warden-forayer.xml" />
+		<file name="warden-hunter.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/archetypes/warden-hunter.xml" />
+
+		<!--Backgrounds-->
+		<file name="backgrounds-barding.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-barding.xml" />
+		<file name="backgrounds-dwarf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-dwarf.xml" />
+		<file name="backgrounds-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-elf.xml" />
+		<file name="backgrounds-hobbit.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-hobbit.xml" />
+		<file name="backgrounds-man-of-bree.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-man-of-bree.xml" />
+		<file name="backgrounds-ranger-of-the-north.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-ranger-of-the-north.xml" />
+
+		<!--Classes-->
+		<file name="class-captain.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-captain.xml" />
+		<file name="class-champion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-champion.xml" />
+		<file name="class-messenger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-messenger.xml" />
+		<file name="class-scholar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-scholar.xml" />
+		<file name="class-treasure-hunter.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-treasure-hunter.xml" />
+		<file name="class-warden.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-warden.xml" />
+
+		<!--Races-->
+		<file name="race-barding.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-barding.xml" />
+		<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-dwarf.xml" />
+		<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-elf.xml" />
+		<file name="race-hobbit.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-hobbit.xml" />
+		<file name="race-man-of-bree.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-man-of-bree.xml" />
+		<file name="race-ranger-of-the-north.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-ranger-of-the-north.xml" />
+	</files>
+</index>

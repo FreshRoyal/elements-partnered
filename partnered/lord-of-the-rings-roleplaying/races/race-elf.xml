@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elf</name>
+		<description>Elf from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-elf.xml" />
+		</update>
+	</info>
+
+	<element name="Elf" type="Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACE_ELF">
+		<description>
+			<p class="flavor">“Yes, it is Elves," said Frodo. "One can meet them sometimes in the Woody End.”</p>
+			<p>The Fair Folk of Eriador have dwelt in the Westlands since before the drowning of Beleriand. They are all members of the Firstborn, displaying a wisdom beyond the reach of Men. They rarely leave their sanctuaries in the Grey Havens, for these are their fading years.</p>
+			<p class="indent">More and more leave Middle-earth sailing West on grey ships, never to return. Those who still remain live mostly along the western coasts, where once were found great kingdoms of their kindred.</p>
+			<h4>Description</h4>
+			<p>All Elves are endowed with tremendous vitality and great vigour. They are not subject to illness or old age, and thus can dwell within the circles of the world until they choose to leave it, or are slain.</p>
+			<p class="indent">In battle, most Elves carry bows and spears. Many wield swords too, but by ancient tradition some still favour axes.</p>
+			<h4>Typical Names</h4>
+			<p>For the most part, Elves bear names fashioned in their own, fair tongue–the Sindarin speech.</p>
+			<ul class="unstyled">
+				<li><strong>Sample Female Names:</strong> Aranel, Arbereth, Berúthiel, Baraniel, Calanril, Celenneth, Elnîth, Eraniel, Finduilas, Gilraen, Gilraeth, Gloredhel, Idril, Ioreth, Ivorwen, Lôrwend, Lothíriel, Luindîs, Meneloth, Moriel, Morwen, Narieth, Narniel, Orothêl, Tarandîs.</li>
+				<li><strong>Sample Male Names:</strong> Amras, Aredhel, Beleganor, Belegon, Calanhir, Carmagor, Dagorhir, Durandir, Edrahil, Ellahir, Fincalan, Fuindor, Galdagor, Galdor, Hallas, Hirimlad, Ithildir, Lascalan, Linaith, Mablin, Malanor, Nauros, Orgalad, Pelegorn, Sargon.</li>
+			</ul>
+			<h4>Cultural Traits</h4>
+			<p>Your character gains the following benefits based on their cultural heritage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+			<p class="indent"><strong><em>Adventuring Age.</em></strong> 100–500. Elves may leave their homes at any time after they reach adulthood (at about a century of age). Adventurers older than 300 years are rare, as in time all Elves find the sea-longing that lies deep within their hearts to become irresistible.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Elves have slender builds and are taller than most Men, standing well over 6 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Elvish Dreams.</em></strong> Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit as from 8 hours of sleep.</p>
+			<p class="indent"><strong><em>Elven-Skill.</em></strong> By virtue of their birthright, Elves are capable of reaching levels of finesse unattainable by mortals. If you are not miserable and make an ability check that lets you add your proficiency bonus, you can obtain a magical success. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Immortal Folk.</em></strong> You are immune to ageing and disease.</p>
+			<p class="indent"><strong><em>Keen Eyes of the Elves.</em></strong> You have proficiency in the Perception skill, and dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Westron and Sindarin, the Grey-elven tongue.</p>
+			<p class="indent"><strong><em>Subculture.</em></strong> All Elves display the traits described so far, but the Fair Folk have experienced many sunderings since the Elder Days. In this book, only the Elves of Lindon subculture is available. Future supplements will introduce new subcultures of Elves.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Amras, Aredhel, Beleganor, Belegon, Calanhir, Carmagor, Dagorhir, Durandir, Edrahil, Ellahir, Fincalan, Fuindor, Galdagor, Galdor, Hallas, Hirimlad, Ithildir, Lascalan, Linaith, Mablin, Malanor, Nauros, Orgalad, Pelegorn, Sargon</set>
+			<set name="names" type="female">Aranel, Arbereth, Berúthiel, Baraniel, Calanril, Celenneth, Elnîth, Eraniel, Finduilas, Gilraen, Gilraeth, Gloredhel, Idril, Ioreth, Ivorwen, Lôrwend, Lothíriel, Luindîs, Meneloth, Moriel, Morwen, Narieth, Narniel, Orothêl, Tarandîs</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF" />
+			<stat name="wisdom" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elf)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_FLP_LRRP_LANGUAGE_WESTRON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_FLP_LRRP_LANGUAGE_SINDARIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||LRRP Westron||LRRP Elf Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_ELVISH_DREAMS" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_ELVEN_SKILL" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_IMMORTAL_FOLK" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_KEEN_EYES_OF_THE_ELVES" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_SUBCULTURE" />
+		</rules>
+	</element>
+
+	<element name="Elvish Dreams" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_ELVISH_DREAMS">
+		<description>
+			<p>Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit as from 8 hours of sleep.</p>
+		</description>
+		<sheet>
+			<description>Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. After resting in this way, you gain the same benefit as from 8 hours of sleep.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elven-Skill" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_ELVEN_SKILL">
+		<description>
+			<p>By virtue of their birthright, Elves are capable of reaching levels of finesse unattainable by mortals. If you are not miserable and make an ability check that lets you add your proficiency bonus, you can obtain a magical success. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>If you are not miserable and make an ability check that lets you add your proficiency bonus, you can obtain a magical success.</description>
+		</sheet>
+	</element>
+
+	<element name="Immortal Folk" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_IMMORTAL_FOLK">
+		<description>
+			<p>You are immune to ageing and disease.</p>
+		</description>
+		<sheet>
+			<description>You are immune to ageing and disease.</description>
+		</sheet>
+	</element>
+
+	<element name="Keen Eyes of the Elves" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_KEEN_EYES_OF_THE_ELVES">
+		<description>
+			<p>You have proficiency in the Perception skill, and dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</p>
+		</description>
+		<sheet>
+			<description>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Keen Eyes of the Elves)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Subculture" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_SUBCULTURE">
+		<description>
+			<p>All Elves display the traits described so far, but the Fair Folk have experienced many sunderings since the Elder Days. In this book, only the Elves of Lindon subculture is available. Future supplements will introduce new subcultures of Elves.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Elf Subculture" supports="LRRP Elf Subculture" />
+		</rules>
+	</element>
+
+	<!--Elf of Lindon-->
+	<element name="Elf of Lindon" type="Sub Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_SUB_RACE_ELF_LINDON">
+		<supports>LRRP Elf Subculture</supports>
+		<description>
+			<p>The Elves of Lindon are an ancient and wise folk, ruled by Círdan the Shipwright. Wandering Companies can at times be encountered on the roads leading east beyond the Tower Hills in spring and autumn.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity and Intelligence scores each increase by 1.</p>
+			<p class="indent"><strong><em>Elven-Lore.</em></strong> You have proficiency in one of the following skills of your choice: Nature, Old Lore, or Performance.</p>
+			<p class="indent"><strong><em>Shipwrights and Singers.</em></strong> You have proficiency with the tools of your choice: carpenter's tools, water vehicles, or a musical instrument of your choice.</p>
+			<p class="indent"><strong><em>Standard of Living: Frugal.</em></strong> The Fair Folk of Eriador live in harmony with Middle-earth and have little or no use for those things that others consider precious. They lack nothing, and craft beautiful things using the richest materials, but they don't profit from their wealth the way other folks do.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INFORMATION_STARTING_GEAR" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Elf of Lindon)" supports="Custom Ability Score Increase 1" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_LINDON_ELVEN_LORE" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_LINDON_SHIPWRIGHTS_AND_SINGERS" />
+		</rules>
+	</element>
+
+	<element name="Elven-Lore" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_LINDON_ELVEN_LORE">
+		<description>
+			<p>You have proficiency in one of the following skills of your choice: Nature, Old Lore, or Performance.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Elven-Lore" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Elven-Lore)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	
+	<element name="Shipwrights and Singers" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_ELF_LINDON_SHIPWRIGHTS_AND_SINGERS">
+		<description>
+			<p>You have proficiency with the tools of your choice: carpenter's tools, water vehicles, or a musical instrument of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Shipwrights and Singers)" supports="LRRP Lindon Shipwrights and Singers||Musical Instrument" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Shipwrights and Singers)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES">
+		<supports>LRRP Lindon Shipwrights and Singers</supports>
+	</append>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER">
+		<supports>LRRP Lindon Shipwrights and Singers</supports>
+	</append>
+
+</elements>

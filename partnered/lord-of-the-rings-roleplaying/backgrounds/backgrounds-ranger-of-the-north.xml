@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ranger of the North Backgrounds</name>
+		<description>Ranger of the North Backgrounds from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="backgrounds-ranger-of-the-north.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/backgrounds/backgrounds-ranger-of-the-north.xml" />
+		</update>
+	</info>
+
+	<element name="Counsellor" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_COUNSELLOR">
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>You have been taught that the Enemy thrives upon secrecy and deception. For the plans of his servants to be laid bare, their honey-tongued lies must be exposed and their twisted words unravelled. Fortunately, you can see through their tricks quite well, and you can recognise honesty in all Men, Elves, and Dwarves.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Insight, Riddle</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Pipes</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Secretive, Subtle</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Riddle, Pipes</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_ITEM_TOOL_PIPE" />
+		</rules>
+	</element>
+
+	<element name="Far-Reaching Herald" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_FAR_REACHING_HAROLD">
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>You wandered the far corners of the Northern Realm and travelled to places unknown to most before you reached 14 years of age. Many miles and many weeks spent in the Wild have made you strong and fit. Your talents have been noticed, and you have become a carrier of tidings, at the service of the many Rangers spread across one of the most dangerous realms of the world.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Athletics, Travel</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Land vehicles</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Bold, True-hearted</p>
+		</description>
+		<setters>
+			<set name="short">Athletics, Travel, Land Vehicles</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+		</rules>
+	</element>
+
+	<element name="Hunter of Orcs" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_HUNTER_OF_ORCS">
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>Orcs raid the lone-lands of Eriador from their lairs in the mountains, causing great destruction. You protect the isolated farmsteads and communities, forcing the Orcs back to their holes. Then the cycle begins anew. Your heart cries for vengeance, but your mind fears there will be no end to this war.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Hunting, Stealth</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Leatherworker's tools or woodcarver's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Bold, Stern</p>
+		</description>
+		<setters>
+			<set name="short">Hunting, Stealth, Leatherworker's Tools/Woodcarver's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Proficiency" name="Tool Proficiency (Bucklander)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Keeper of Lore" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_KEEPER_OF_LORE">
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>The history of your people is long and often obscure, and recorded only in Rivendell, away from the eyes of most of your kin. You've taken on the responsibility of telling tales of lost Arnor to whoever you meet, to spread the memory of the bitter struggle of your folk. Fortunately, Elrond has noticed and appreciated your efforts, and allowed you to visit the Last Homely House to learn.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Investigation, Old Lore</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Calligrapher's supplies</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Honourable, True-hearted</p>
+		</description>
+		<setters>
+			<set name="short">Investigation, Old Lore, Calligrapher's Supplies</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Protector of the Land" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_PROTECTOR_OF_THE_LAND">
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>Your people did not always live scattered across the lone-lands. Long ago, they were rulers, nobles and artisans of great kingdoms that existed here. Those realms failed and now you've only the land itself. Keep it safe, and it will do the same for you.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Nature, Medicine</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Herbalism kit</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Honourable, Subtle</p>
+		</description>
+		<setters>
+			<set name="short">Nature, Medicine, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+	
+	<element name="Watcher on the Border" type="Background" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_BACKGROUND_WATCHER_ON_THE_BORDER">
+		<prerequisite>Ranger of the North Culture</prerequisite>
+		<requirements>ID_FLP_LRRP_RACE_RANGER_OF_THE_NORTH</requirements>
+		<description>
+			<p>Interested in the edges of things, especially maps, you were often sent to the borders of the land of your folk to keep watch on the servants of the Enemy or the simple people who live there. You've learned that the reach of the Shadow has grown, but that some simple people will not falter, though the days may grow dark.</p>
+			<p class="indent"><strong><em>Skill Proficiencies:</em></strong> Explore, Perception</p>
+			<p class="indent"><strong><em>Tool Proficiency:</em></strong> Cartographer's tools</p>
+			<p class="indent"><strong><em>Distinctive Features:</em></strong> Secretive, Stern</p>
+		</description>
+		<setters>
+			<set name="short">Explore, Perception, Cartographer's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+		</rules>
+	</element>
+
+</elements>

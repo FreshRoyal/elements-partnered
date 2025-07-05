@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tools</name>
+		<description>Tools from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="items-tools.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/items-tools.xml" />
+		</update>
+	</info>
+
+	<!--Items-->
+	
+	<!--Gaming Sets-->
+	<element name="Chess Set" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_TOOL_CHESS_SET">
+		<description>
+			<p>If you are proficient with the Chess Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_CHESS_SET</set>
+		</setters>
+	</element>
+
+	<element name="Bowls Set" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_TOOL_BOWLS_SET">
+		<description>
+			<p>If you are proficient with the Bowls Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="cp">1</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_BOWLS_SET</set>
+		</setters>
+	</element>
+
+	<element name="Darts Set" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_TOOL_DARTS_SET">
+		<description>
+			<p>If you are proficient with the Darts Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="cp">3</set>
+			<set name="weight" lb="1.5">1½ lb.</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_DARTS_SET</set>
+		</setters>
+	</element>
+
+	<element name="Quoits Set" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_TOOL_QUOITS_SET">
+		<description>
+			<p>If you are proficient with the Quoits Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="cp">3</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_QUOITS_SET</set>
+		</setters>
+	</element>
+
+	<!--Musical Instruments-->
+	<element name="Clarinet" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_INSTRUMENT_CLARINET">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>If you have proficiency with the clarinet, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="sp">12</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_CLARINET</set>
+		</setters>
+	</element>
+
+	<element name="Fiddle" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_INSTRUMENT_FIDDLE">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>If you have proficiency with the fiddle, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="sp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_FIDDLE</set>
+		</setters>
+	</element>
+
+	<element name="Harp" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_INSTRUMENT_HARP">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>If you have proficiency with the harp, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_HARP</set>
+		</setters>
+	</element>
+
+	<element name="Trumpet" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_INSTRUMENT_TRUMPET">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>If you have proficiency with the trumpet, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="sp">35</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_TRUMPET</set>
+		</setters>
+	</element>
+
+	<!--Other Tools-->
+	<element name="Herbalism Kit" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_TOOL_HERBALISM_KIT">
+		<description>
+			<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing.</p>
+			<p class="indent">If you are proficient with the herbalism kit, during each Fellowship Phase you can collect medicinal plants and use them to create a number of herbal remedies equal to your proficiency bonus, or twice as much if a feature lets you add double your proficiency bonus with the herbalism kit.</p>
+			<p class="indent">A remedy can be expended to gain advantage on an Intelligence (Medicine) check, or it can be consumed as an action to gain advantage on saving throws against disease and poison for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT</set>
+		</setters>
+	</element>
+
+	<element name="Pipe" type="Item" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_ITEM_TOOL_PIPE">
+		<description>
+			<p>Pipes are made of clay or wood and used for inhaling the smoke of burning leaves of pipe-weed. A character that has proficiency with a pipe practises the art of smoking and likely has some skill at blowing smoke-rings. Smoking a pipe can aid you in efforts at introspection, and in friendly chatting with fellow practitioners of the art.</p>
+			<p class="indent">If you are proficient with pipes, you can spend one use of pipe-weed and at least one hour smoking your pipe to gain inspiration. You cannot use a pipe again in this way until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_PIPE</set>
+		</setters>
+	</element>
+
+	<!--Proficiencies-->
+
+	<!--Gaming Sets-->
+	<element name="Tool Proficiency (Chess set)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_CHESS_SET">
+		<supports>Tool, Gaming Set</supports>
+	</element>
+
+	<element name="Tool Proficiency (Bowls set)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_BOWLS_SET">
+		<supports>Tool, Gaming Set</supports>
+	</element>
+
+	<element name="Tool Proficiency (Darts set)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_DARTS_SET">
+		<supports>Tool, Gaming Set</supports>
+	</element>
+
+	<element name="Tool Proficiency (Quoits set)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_QUOITS_SET">
+		<supports>Tool, Gaming Set</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_CHESS_SET" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_BOWLS_SET" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_DARTS_SET" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_QUOITS_SET" type="Proficiency" />
+		</rules>
+	</append>
+	
+	<!--Musical Instruments-->
+	<element name="Tool Proficiency (Clarinet)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_CLARINET">
+		<supports>Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument</supports>
+	</element>
+
+	<element name="Tool Proficiency (Fiddle)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_FIDDLE">
+		<supports>Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument</supports>
+	</element>
+	
+	<element name="Tool Proficiency (Harp)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_HARP">
+		<supports>Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument</supports>
+	</element>
+
+	<element name="Tool Proficiency (Trumpet)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_TRUMPET">
+		<supports>Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_MUSICAL_INSTRUMENT">
+		<rules>
+			<grant name="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_CLARINET" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_FIDDLE" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_HARP" type="Proficiency" />
+			<grant name="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_TRUMPET" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Other Tools-->
+	<element name="Tool Proficiency (Pipe)" type="Proficiency" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_PIPE">
+		<supports>Tool</supports>
+	</element>
+
+	<!--Expertise-->
+	<element name="Tool Expertise (Chess Set)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_CHESS_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_CHESS_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Chess Set check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_ITEM_TOOL_CHESS_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Chess Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:chess set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Bowls Set)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_BOWLS_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_BOWLS_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Bowls Set check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_ITEM_TOOL_BOWLS_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Bowls Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:bowls set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Darts Set)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_DARTS_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_DARTS_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Darts Set check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_ITEM_TOOL_DARTS_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Darts Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:darts set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Quoits Set)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_QUOITS_SET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_GAMING_SET_PROFICIENCY_QUOITS_SET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Quoits Set check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_ITEM_TOOL_QUOITS_SET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Quoits Set check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:quoits set:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Clarinet)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_CLARINET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_CLARINET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Clarinet check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INSTRUMENT_CLARINET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Clarinet check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:clarinet:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Fiddle)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_FIDDLE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_FIDDLE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Fiddle check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INSTRUMENT_FIDDLE" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Fiddle check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:fiddle:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Harp)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_HARP">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_HARP</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Harp check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INSTRUMENT_HARP" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Harp check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:harp:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Trumpet)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_TRUMPET">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_TRUMPET</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Trumpet check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INSTRUMENT_TRUMPET" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Trumpet check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:trumpet:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Tool Expertise (Pipe)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_EXPERTISE_TOOL_PIPE">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_TOOL_PROFICIENCY_PIPE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Pipe check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_ITEM_TOOL_PIPE" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Pipe check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="lrrp:pipe:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+</elements>

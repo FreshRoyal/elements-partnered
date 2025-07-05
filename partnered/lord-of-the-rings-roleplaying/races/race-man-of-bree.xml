@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Man of Bree</name>
+		<description>Man of Bree from The Lord of the Rings Roleplaying</description>
+		<update version="0.0.1">
+			<file name="race-man-of-bree.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-man-of-bree.xml" />
+		</update>
+	</info>
+
+	<element name="Man of Bree" type="Race" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACE_MAN_OF_BREE">
+		<description>
+			<p class="flavor">“...four miles along the Road you'll come upon a village, Bree under Bree-hill, with doors looking westward.”</p>
+			<p>The inhabitants of the Bree-land and its four villages lying about Bree-hill are the descendants of the ancient people that first dwelt in the region known today as Eriador, the Lonelands. Few have survived the turmoils that have ravaged the area, but they are still there now.</p>
+			<p class="indent">Today, the Men of Bree live at an old meeting of ways, and even if the traffic was far greater in former days, travellers of various sorts still make their way along those roads. Whoever enters the common room of the Inn of Bree is sure to hear strange tales and news from afar, and maybe be swept away by them.</p>
+			<h4>Description</h4>
+			<p>Most Men of Bree are brown-haired and rather short, and tend to be stocky and broad. This, combined with their cheerful disposition, is the reason why they do not appear as outlandish as most foreigners do to their neighbours, the inhabitants of the Shire. But like Hobbits, their appearance can be deceiving: the Men of Bree can be simple and friendly, but they are independent and wise in their own way.</p>
+			<p class="indent">Not being of a warlike disposition, the Bree-folk favour simple weapons, derived from everyday tools and hunting implements.</p>
+			<h4>Typical Names</h4>
+			<p>The Men of Bree use names that to foreign ears sound similar to those used by Hobbits in the Shire (Hobbits beg to differ, of course).</p>
+			<ul class="unstyled">
+				<li><strong>Sample Female Names:</strong> Daisy, Emma, Etta, Fay, Fern, Flora, Gert, Holly, Lily, Myrtle, Poppy, Rose, Sage, Tilly, Violet.</li>
+				<li><strong>Sample Male Names:</strong> Alfred, Artie, Bill, Bob, Carl, Ed, Fred, Giles, Herb, Larry, Nob, Oswald, Percy, Perry, Sid, Tom, Harry.</li>
+				<li><strong>Sample Family Names:</strong> Appledore, Asterfire, Bellsap, Briarcleave, Butterbur, Cherryborn, Chesterstout, Droverwind, Ferny, Foxglow, Goatleaf, Hardybough, Heathertoes, Hedgedon, Kettlegrass, Lilyhawk, Mossburn, Mugworts, Oakstout, Pickthorn, Pollenroad, Rushlight, Shrubrose, Sweetroot, Thistlewool, Wayward.</li>
+			</ul>
+			<h4>Cultural Traits</h4>
+			<p>Your character gains the following benefits based on their cultural heritage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom and Charisma scores each increase by 1.</p>
+			<p class="indent"><strong><em>Adventuring Age.</em></strong> Between 18–40 years of age. Actual adventurers from Bree-land are rare indeed. If they leave their villages at all, they do it when the vigour of youth is in their limbs, and usually return home to settle down before their fortieth year.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Most of the ‘Big’ Bree-folk are not much taller than 5 feet and tend to be broad. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Pipe-weed Lore.</em></strong> You have proficiency with pipes.</p>
+			<p class="indent"><strong><em>See Through a Brick Wall in Time.</em></strong> You have proficiency in the Insight skill.</p>
+			<p class="indent"><strong><em>Starting Virtue.</em></strong> You gain one cultural virtue of your choice.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You speak, read and write Westron, albeit slightly altered in a local dialect.</p>
+			<p class="indent"><strong><em>Standard of Living: Common.</em></strong> Bree-land is not as wealthy as it once was, but these days the inhabitants of the four villages are no more rustic than their neighbours in the Shire, and no less well-off.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_INFORMATION_STARTING_GEAR" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Alfred, Artie, Bill, Bob, Carl, Ed, Fred, Giles, Herb, Larry, Nob, Oswald, Percy, Perry, Sid, Tom, Harry</set>
+			<set name="names" type="female">Daisy, Emma, Etta, Fay, Fern, Flora, Gert, Holly, Lily, Myrtle, Poppy, Rose, Sage, Tilly, Violet</set>
+			<set name="names" type="family">Appledore, Asterfire, Bellsap, Briarcleave, Butterbur, Cherryborn, Chesterstout, Droverwind, Ferny, Foxglow, Goatleaf, Hardybough, Heathertoes, Hedgedon, Kettlegrass, Lilyhawk, Mossburn, Mugworts, Oakstout, Pickthorn, Pollenroad, Rushlight, Shrubrose, Sweetroot, Thistlewool, Wayward</set>
+			<set name="names-format">{{name}} {{family}}</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Man of Bree)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" number="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_FLP_LRRP_LANGUAGE_WESTRON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||LRRP Westron" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_MAN_OF_BREE_PIPE_WEED_LORE" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_MAN_OF_BREE_SEE_THROUGH_A_BRICK_WALL_IN_TIME" />
+			<grant type="Racial Trait" id="ID_FLP_LRRP_RACIAL_TRAIT_MAN_OF_BREE_STARTING_VIRTUE" />
+		</rules>
+	</element>
+
+	<element name="Pipe-Weed Lore" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_MAN_OF_BREE_PIPE_WEED_LORE">
+		<description>
+			<p>You have proficiency with pipes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_ITEM_TOOL_PIPE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Pipe-Weed Lore)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	
+	<element name="See Through a Brick Wall in Time" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_MAN_OF_BREE_SEE_THROUGH_A_BRICK_WALL_IN_TIME">
+		<description>
+			<p>You have proficiency in the Insight skill. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (See Through a Brick Wall in Time)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Starting Virtue" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_RACIAL_TRAIT_MAN_OF_BREE_STARTING_VIRTUE">
+		<description>
+			<p>You gain one cultural virtue of your choice. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Virtue (Starting Virtue)" supports="LRRP Cultural Virtue" />
+		</rules>
+	</element>
+
+</elements>
