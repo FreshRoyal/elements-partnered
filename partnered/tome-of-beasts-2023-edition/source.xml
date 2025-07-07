@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023-edition/source.xml" />
 		</update>
 	</info>
@@ -21,7 +21,7 @@
 		<setters>
 			<set name="abbreviation">TOB23</set>
 			<set name="url">https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/</set>
-			<set name="image">https://raw.githubusercontent.com/AuroraLegacy/elements/master/collaborations/tome-of-beasts-2023-edition/ToB23.jpg</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023-edition/ToB23.jpg</set>
 			<set name="author" abbreviation="KBP" url="https://koboldpress.com/">Kobold Press</set>
 			<set name="third-party">true</set>
 			<set name="release">20230704</set>
