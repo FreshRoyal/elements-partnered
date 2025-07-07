@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Where Evil Lives</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives/source.xml" />
+		</update>
+	</info>
+	<element name="Where Evil Lives" type="Source" source="Core" id="ID_MCDM_SOURCE_WHERE_EVIL_LIVES">
+		<description>
+			<p>The best dungeons have fun boss battles, exciting hazards, and, of course, awesome treasure. <em>Where Evil Lives: The MCDM Book of Boss Battles</em> has all that plus everything you need to run a lair out of the book in a moment’s notice. Use a dungeon when you have nothing else planned, or build an entire campaign that leads up to a climactic encounter in a lair!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WEL</set>
+			<set name="url">https://shop.mcdmproductions.com/collections/front-page-feature/products/where-evil-lives-hardcover-pdf</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives/WEL.png</set>
+			<set name="author" abbreviation="MCDM" url="https://shop.mcdmproductions.com/">MCDM Productions</set>
+			<set name="third-party">true</set>
+			<set name="release">20231004</set>
+		</setters>
+	</element>
+</elements>

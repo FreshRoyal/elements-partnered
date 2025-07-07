@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<description>Adventuring Gear from Where Evil Lives</description>
+		<update version="0.0.1">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives/items-gear.xml" />
+		</update>
+	</info>
+
+	<element name="Ashyra's Research Notes" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_ASHYRAS_RESEARCH_NOTES">
+		<description>
+			<p>Ashyra's research notes about magic and necromancy are organized and indexed. When you fail an Intelligence (Arcana) check to recall lore, you can spend 1 hour during a short or long rest reviewing the notes and repeat the check. If the check is related to necromancy magic, you have advantage when you reroll it.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Balm of Shifting Form" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_BALM_OF_SHIFTING_FORM">
+		<description>
+			<p>This alchemical concoction was derived from research into the transmutation effects of olothec slime. When a creature uses an action to rub this balm onto their body, they can alter their superficial features, such as changing the color of their skin, hair, and eyes and reshaping their ears and facial features. The balm doesn't allow a creature to take on another specific creature's form, but it can be used to alter appearance and apparent ancestry with ease. A creature using the balm adds double their proficiency bonus to any ability checks they make to create a visual disguise, and they have advantage on those checks. The effects of the balm last until the creature finishes a long rest.</p>
+			<p class="indent">A character who studies a sample of balm for 1 week and succeeds on a DC 18 Intelligence (Arcana) or Wisdom (Medicine) check can create a recipe for it. Using the recipe, a character can create one dose of balm with 8 hours of work at a cost of 125 gp. Using slime collected from an olothec lair or a dead olothec as a reagent reduces the cost by half.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Battle Master's Compendium" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_BATTLE_MASTERS_COMPENDIUM">
+		<description>
+			<p>Written by Bloodlord Varrox, Battle Master's Compendium is a military treatise. Each of its thirteen chapters covers a different skill related to military strategy and tactics. The book's detailed analysis covers military units, weapons, strategy, rank, discipline, and much more.</p>
+			<p class="indent">When you study a chapter in the book for 1 hour during a short or long rest, you learn interesting military strategies. The first time you make an Intelligence or Charisma check to influence a general, monarch, or other military leader within the next 48 hours, you have advantage on the check.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Book of Secrets" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_BOOK_OF_SECRETS">
+		<description>
+			<p>This book contains Xorannox's collection of dirty secrets about other people: intrigues between nobles, unfaithful leaders, infernal contracts between devils and clergy of good-aligned temples, and similar misdeeds.</p>
+			<p class="indent">If you study the book for 1 uninterrupted hour, you find a piece of secret information about an important public figure of your choice. You only find information if the GM determines that person has a hidden secret. If you reveal you know the secret to the figure, you gain a +5 bonus on Charisma checks to influence them for 24 hours. After the book reveals ten secrets in this way, it holds no more secrets of use.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Crog's Guide to Disarming Magic Traps" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_CROGS_GUIDE_TO_DISARMING_MAGIC_TRAPS">
+		<description>
+			<p>This book describes various mundane techniques and theories related to foiling magic traps. If you spend 48 hours studying this book, you learn how to overcome certain types of magic traps with your thieves' tools.</p>
+			<p class="indent">If a trap's magic can be dispelled or suppressed by a <i>dispel magic</i> spell, you can make a Dexterity check using thieves' tools to achieve the same result. The DC of the Dexterity check is equal to 5 + the DC required to dispel or suppress the trap with <i>dispel magic</i> (minimum DC 18). On a failed check, the trap triggers.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Deed to Addlecove Castle" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_DEED_TO_ADDLECOVE_CASTLE">
+		<description>
+			<p>Submerged amid a sea of legal terms on this scroll of human skin, this deed declares that the bearer of this document is the rightful Lord of Addlecove Castle. An ancient fortress, Addlecove Castle has sat abandoned and haunted since Emperor Gaius VIII murdered the last Lord Addlecove.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Demon Signet Ring" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_DEMON_SIGNET_RING">
+		<description>
+			<p>This ring shows that you have encountered a Category 6 demon and lived to tell the tale. While you wear it, you have advantage on Charisma (Intimidation) checks made to influence demons and gnolls.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Compass" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_DRAGON_COMPASS">
+		<description>
+			<p>This brass compass has been calibrated not to point north, but to point toward the magical energy produced by true dragons. When you hold the compass, its needle points in the direction of the nearest Dragon who is at least a century old and on the same plane as you. If you are a Dragon who is at least a century old, the compass doesn't point toward you while you hold it.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Glowing Poison Recipe" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_GLOWING_POISON_RECIPE">
+		<description>
+			<p>This one-page recipe is written in fine calligraphy on a sheet of clean white parchment. If you are proficient with alchemist's supplies or a poisoner's kit, you can make a dose of this poison with raw materials worth 250 gp and 1 hour of uninterrupted work.</p>
+			<p class="indent">A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 8 hours. The DC for this saving throw equals 8 + your Intelligence modifier + your proficiency bonus. While poisoned in this way, a creature sheds bright green light in a 10-foot radius and dim light for an additional 10 feet. Any attack roll against the poisoned creature has advantage if the attacker can see them, and the affected creature can't benefit from being invisible or hide from creatures who can see.</p>
+			<p class="indent">Additionally, the creature leaves a glowing green trail whenever they move. The trail lasts until the creature is no longer poisoned.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="category">Poison</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Griffon Egg" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_GRIFFON_EGG">
+		<description>
+			<p>This 3-foot-diameter, 4-foot-high egg weighs 200 pounds.</p>
+			<p class="indent">After 1d6 weeks, a Medium baby griffon noncombatant hatches from the egg. After 1 year, the creature becomes a griffon companion. The GM can advance or slow this timeline to suit the campaign's pacing.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="200">200 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Heavenkiller Chronicles" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_HEAVENKILLER_CHRONICLES">
+		<description>
+			<p>Spicule's vast tome contains secrets concerning celestials and how to use them to fuel dark magic. You must spend 50 hours studying this tome to gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on Intelligence checks to determine the vulnerabilities and weaknesses of Celestials.</li>
+				<li>You deal an extra 9 (2d8) damage to Celestials when you hit them with an attack.</li>
+				<li>You know how to harvest parts of Celestials and use them to fuel dark magic. You can harvest a heart, eye, or other useful organ from a Celestial's corpse with a successful DC 16 Wisdom (Survival) check. You can use a harvested Celestial organ in place of one material component that would normally be consumed by the spell, up to a cost of 2,500 gp.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Kiona's Notes" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_KIONAS_NOTES">
+		<description>
+			<p>Kiona has filled nearly thirty books with notes and secrets about the Codex Mortis. If you spend 80 hours studying Kiona's notes, you gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on Intelligence checks to recall or understand lore about necromancy and the Codex Mortis.</li>
+				<li>You have advantage on death saving throws.</li>
+				<li>When you cast a necromancy spell, the gold piece cost of the spell's material components is halved.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Monument of Molten Blades" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_MANUMENT_OF_MOLTEN_BLADES">
+		<description>
+			<p>This 8-foot-tall sculpture of a giant's hand holding a volcanic glass orb is constructed from weapons, armor, holy symbols, jewelry, and an assortment of other metal objects taken from now-dead adventurers who dared challenge the Sunlight Legion. A miniature castle made of slagged weapons is suspended in the glass orb. The Sunlight Legion forged this sculpture, which weighs 1,200 pounds, as a monument to their triumph over all foes.</p>
+			<p class="indent">You can give this monument to a Giant, who in exchange will perform one favor for you. This favor can be life-threatening to the Giant, but the GM decides just how much the Giant is willing to do in exchange for the monument.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1200" excludeEncumbrance="true">1,200 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Soulstone Grimoire" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_SOULSTONE_GRIMOIRE">
+		<description>
+			<p>Scrawled in devil's ichor, this tome describes the rites necessary to achieve immortality in undeath. The book includes instructions for crafting a soulstone and imbuing it with power, transforming the ritual caster into a lich. In a final, terrible act, the completion of the ritual requires tearing out one's own heart and the heart of a loved one.</p>
+			<p class="indent">To decipher the grimoire, you must be a spellcaster who can cast spells of 7th level or higher. If you spend 80 hours over a period of 30 days or fewer studying the book, you learn the ritual to create a soulstone and turn yourself into a lich. The ritual takes 1 hour to perform and requires you kill a loved one during the procedure. In addition, the ritual requires components and gems worth 100,000 gp, which the ritual consumes.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Star Map of Creation" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_STAR_MAP_OF_CREATION">
+		<description>
+			<p>This scroll displays what the night sky looked like at the creation of the Mundane World. If you have proficiency with the Arcana or Nature skill, you can spend 1 minute holding and studying the map and search it for an omen about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible outcomes:</p>
+			<ul>
+				<li>Good omen</li>
+				<li>Bad omen</li>
+				<li>Mixed omen that has both good and bad results</li>
+				<li>No omen for a result that isn't especially good or bad</li>
+			</ul>
+			<p>The omen doesn't take into account any possible circumstances that might change the outcome, such as the loss or gain of equipment or a companion.</p>
+			<p class="indent">If the map is used two or more times in 24 hours, there is a cumulative 25 percent chance for each reading after the first that you get a random reading. The GM makes this roll in secret.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Treasure Rat" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_TREASURE_RAT">
+		<description>
+			<p>When you open the door to this white-furred, red-eyed rat's cage, they point their nose in the direction of the nearest magic item, if any, within 30 feet of them that isn't being worn or carried by another creature. They continue pointing their nose at that item for 1 minute or until you shut the cage door. After pointing at a magic item, the rat refuses to do so again until they consume a piece of cheese worth at least 10 gp.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Unsigned Infernal Contract" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_UNSIGNED_INFERNAL_CONTRACT">
+		<description>
+			<p>The archdevil who created Shadowkeep for Count Rhodar von Glauer wrote up another contract on human skin that Rhodar hasn't signed. The contract is written in Infernal.</p>
+			<p class="indent">When you sign this contract using your blood as ink, you lose all levels in your current classes and have the option of gaining levels equal to your character level in any combination of the illrigger, paladin, and warlock classes.</p>
+			<p class="indent">Additionally, you can reassign your six ability scores. You are bound by the contract until the archdevil dies or the contract is broken by a <i>wish</i> spell. The contract can only be signed by one creature.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Yserthrax's Corruption Poison Recipe" type="Item" source="Where Evil Lives" id="ID_MCDM_WEL_ITEM_YSERTHRAXS_CORRUPTION_POISON_RECIPE">
+		<description>
+			<p>This one-page recipe is written in Undercommon on a piece of bloodstained vellum. If you are proficient with alchemist's supplies or a poisoner's kit, you can make a dose of this poison with raw materials worth 750 gp and 1 hour of uninterrupted work.</p>
+			<p class="indent">A creature subjected to this poison must succeed on a DC 19 Constitution saving throw or be poisoned for 1 minute. They can repeat the saving throw at the end of each of their turns to end the poisoned condition. While poisoned in this way, the creature takes 10 (3d6) force damage at the start of each of their turns.</p>
+			<div class="reference">
+				<div element="ID_INTERNAL_SUPPORT_POISON_INJURY" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">poison,injure,injury</set>
+			<set name="category">Poison</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+</elements>

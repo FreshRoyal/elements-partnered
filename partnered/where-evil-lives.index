@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Where Evil Lives from MCDM</name>
+		<update version="1.0.0">
+			<file name="where-evil-lives.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives/items-gear.xml" />
+		<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives/magic-items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives/source.xml" />
+	</files>
+</index>
