@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.0.5">
+		<update version="1.0.6">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -15,6 +15,7 @@
 		<!--MCDM-->
 		<file name="flee-mortals.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/flee-mortals.index" />
 		<file name="the-illrigger-revised.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised.index" />
+		<file name="where-evil-lives.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/where-evil-lives.index" />
 
 		<!--Kobold Press-->
 		<file name="tome-of-beasts-2023.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023.index" />
