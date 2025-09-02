@@ -3,7 +3,7 @@
 	<info>
 		<name>New Skills</name>
 		<description>New Skills from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
 		</update>
 	</info>
@@ -274,5 +274,114 @@
 		</rules>
 	</append>
 	<!--todo: append to 2024 bard-->
+
+	<!--Book of Ebon Tides Gifted Umbral Human Skill Advantage and Disadvantage-->
+	<element name="Explore" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_EXPLORE">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS,!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_EXPLORE</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Explore skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<stat inline="true" name="boet-gifted-advantage" value="Explore"/>
+		</rules>
+	</element>
+
+	<element name="Hunting" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_HUNTING">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS,!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_HUNTING</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Hunting skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<stat inline="true" name="boet-gifted-advantage" value="Hunting"/>
+		</rules>
+	</element>
+
+	<element name="Riddle" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_RIDDLE">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS,!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_RIDDLE</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Riddle skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<stat inline="true" name="boet-gifted-advantage" value="Riddle"/>
+		</rules>
+	</element>
+
+	<element name="Travel" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_TRAVEL">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS,!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_TRAVEL</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Travel skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<stat inline="true" name="boet-gifted-advantage" value="Travel"/>
+		</rules>
+	</element>
+
+	<element name="Explore" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_EXPLORE">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS, !ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_EXPLORE</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Explore skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Explore"/>
+		</rules>
+	</element>
+
+	<element name="Hunting" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_HUNTING">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS, !ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_HUNTING</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Hunting skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Hunting"/>
+		</rules>
+	</element>
+
+	<element name="Riddle" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_RIDDLE">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS, !ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_RIDDLE</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Riddle skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Riddle"/>
+		</rules>
+	</element>
+
+	<element name="Travel" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_TRAVEL">
+		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS, !ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_TRAVEL</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Travel skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Travel"/>
+		</rules>
+	</element>
 
 </elements>
