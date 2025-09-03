@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells</name>
 		<description>Spells from Grim Hollow - Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack/spells.xml" />
 		</update>
 	</info>
@@ -165,7 +165,7 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a length of copper wire</set>
-			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="duration">Instantaneous</set>
 		</setters>
 	</element>
 
