@@ -3,7 +3,7 @@
 	<info>
 		<name>Waxwork Rogue</name>
 		<description>Waxwork Rogue from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="rogue-waxwork.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/rogue-waxwork.xml" />
 		</update>
 	</info>
@@ -141,6 +141,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<select type="Archetype Feature" name="Wax Enchantment, Advanced Enchantments" supports="ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_BLOOMING_LIGHT|ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_BURNING_DELAY|ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_CANDLE_POP|ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_DELICACY|ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_MAKERS_MARK|ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_SHIELDING_SEAL|ID_1985_OTTG_ARCHETYPE_FEATURE_WAXWORK_ROGUE_WAX_ENCHANTMENT_WAXLINGS" level="13" />
 			<stat name="ottg:waxwork rogue:blooming light:duration" value="8" bonus="base" />
 			<stat name="ottg:waxwork rogue:delicacy:die" value="12" bonus="base" />
 			<stat name="ottg:waxwork rogue:delicacy:amount" value="4" bonus="base" />
