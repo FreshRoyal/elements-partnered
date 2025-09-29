@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Skills</name>
+		<description>Skills from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/skills.xml" />
+		</update>
+	</info>
+
+	<element name="New Skills (OTTG)" type="Option" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_OPTION_NEW_SKILLS">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="short">You have access to the Mechanics and Salvage skills from <em>Obojima: Tales from the Tall Grass</em>.</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_1985_OTTG_CLASS_FEATURE_MECHANICS_DISPLAY" />
+			<grant type="Class Feature" id="ID_1985_OTTG_CLASS_FEATURE_SALVAGE_DISPLAY" />
+			<stat name="mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="salvage:proficiency" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<!--Mechanics-->
+	<element name="Mechanics" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS">
+		<supports>Skill,Intelligence</supports>
+		<requirements>ID_1985_OTTG_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>Your Intelligence (Mechanics) check measures your ability to comprehend, operate, craft, and repair non-magical machines.</p>
+		</description>
+		<rules>
+			<stat name="mechanics:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Mechanics Proficiency or Double" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MECHANICS">
+        <rules>
+            <grant type="Grants" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+            <grant type="Grants" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS_DOUBLE" requirements="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+        </rules>
+    </element>
+
+    <element name="Mechanics Proficiency" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS">
+        <rules>
+            <grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+        </rules>
+    </element>
+
+    <element name="Mechanics Proficiency Double" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS_DOUBLE">
+        <rules>
+            <stat name="mechanics:proficiency" value="proficiency" bonus="double" requirements="!ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS" alt="Double Proficiency" />
+        </rules>
+    </element>
+
+	<element name="Skill Expertise (Mechanics)" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_EXPERTISE_MECHANICS">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Mechanics check you make.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="mechanics:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	 <element name="Mechanics" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_MECHANICS_DISPLAY">
+		<compendium display="false" />
+		<description />
+		<sheet alt="Intelligence (Mechanics)">
+			<description>Your bonus for checks using this skill is {{mechanics:proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<!--Salvage-->
+	<element name="Salvage" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE">
+		<supports>Skill,Intelligence</supports>
+		<requirements>ID_1985_OTTG_OPTION_NEW_SKILLS</requirements>
+		<description>
+			<p>The GM might ask you to make an Intelligence (Salvage) check to search for, dissassemble, or otherwise recall information about mechanical parts that are useful for magical and non-magical machines or potions.</p>
+		</description>
+		<rules>
+			<stat name="salvage:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="salvage:proficiency" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Salvage Proficiency or Double" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_SALVAGE">
+        <rules>
+            <grant type="Grants" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+            <grant type="Grants" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE_DOUBLE" requirements="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+        </rules>
+    </element>
+
+    <element name="Salvage Proficiency" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE">
+        <rules>
+            <grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+        </rules>
+    </element>
+
+    <element name="Salvage Proficiency Double" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE_DOUBLE">
+        <rules>
+            <stat name="salvage:proficiency" value="proficiency" bonus="double" requirements="!ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE" alt="Double Proficiency" />
+        </rules>
+    </element>
+
+	<element name="Skill Expertise (Salvage)" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_EXPERTISE_SALVAGE">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Salvage check you make.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="salvage:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	 <element name="Salvage" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_SALVAGE_DISPLAY">
+		<compendium display="false" />
+		<description />
+		<sheet alt="Intelligence (Salvage)">
+			<description>Your bonus for checks using this skill is {{salvage:proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<!--Jack of All Trades-->
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
+		<rules>
+			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+		</rules>
+	</append>
+	<!--todo: append to 2024 bard-->
+
+	<!--LRRP Errand Runner-->
+	<append id="ID_FLP_LRRP_CLASS_FEATURE_MESSENGER_ERRAND_RUNNER">
+		<rules>
+			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+		</rules>
+	</append>
+
+	<!--Book of Ebon Tides Gifted Umbral Human Skill Advantage and Disadvantage-->
+	<element name="Mechanics" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_MECHANICS">
+		<requirements>ID_1985_OTTG_OPTION_NEW_SKILLS,!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_MECHANICS</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Mechanics skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat inline="true" name="boet-gifted-advantage" value="Mechanics"/>
+		</rules>
+	</element>
+
+	<element name="Salvage" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_SALVAGE">
+		<requirements>ID_1985_OTTG_OPTION_NEW_SKILLS,!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_SALVAGE</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Salvage skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			<stat inline="true" name="boet-gifted-advantage" value="Salvage"/>
+		</rules>
+	</element>
+
+	<element name="Mechanics" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_MECHANICS">
+		<requirements>ID_1985_OTTG_OPTION_NEW_SKILLS, !ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_MECHANICS</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Mechanics skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Mechanics"/>
+		</rules>
+	</element>
+
+	<element name="Salvage" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_MECHANICS">
+		<requirements>ID_1985_OTTG_OPTION_NEW_SKILLS, !ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_SALVAGE</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Salvage skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Salvage"/>
+		</rules>
+	</element>
+
+</elements>

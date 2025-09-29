@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Magic Items from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Boomerang Expert" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_BOOMERANG_EXPERT">
+		<description>
+			<p>You have mastered the versatile boomerang and are capable of performing extraordinary feats with the weapon. You gain the following benefits:</p>
+			<ul>
+				<li>The damage die for the boomerang is now a d8 for you.</li>
+				<li>Attacking at long range doesn't impose disadvantage on ranged attack rolls made with a boomerang.</li>
+				<li>You automatically catch the boomerang after throwing it without needing to use your reaction.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>The damage die for the boomerang is now a d8 for you. &#13;
+			Attacking at long range doesn't impose disadvantage on ranged attack rolls made with a boomerang. &#13;
+			You automatically catch the boomerang after throwing it without needing to use your reaction.</description>
+		</sheet>
+	</element>
+
+	<element name="Bumbling Fool" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_BUMBLING_FOOL">
+		<description>
+			<p>You have a peculiar way of fumbling through life that somehow always works out in your favor, succeeding in situations through what others might view as accidental luck. When you fail an ability check and roll a number on the die equal to half your level (rounded up) or lower, you can choose to replace the die roll with a 15 instead. You can use this ability three times, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>When you fail an ability check and roll a number on the die equal to {{level:half:up}} or lower, you can choose to replace the die roll with a 15 instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Canden and Moon's Master Cut" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_CANDEN_AND_MOONS_MASTER_CUT">
+		<prerequisite>You must have beaten a master at Master Canden and Moon's Sword School</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must have beaten a master at Master Canden and Moon's Sword School</em></p>
+			<p>Having trained with the masters of the first sword school of Obojima, you've picked up a handful of useful skills. You gain the following benefits:</p>
+			<ul>
+				<li>Your walking speed increases by 5 feet.</li>
+				<li>Immediately after rolling initiative, you can use your reaction before the first turn of combat to draw a weapon and move up to half your speed (rounded up). If you end this movement within reach of another creature, you can use the weapon to make one melee attack against that creature.</li>
+				<li>When you are hit by an attack, you can use a reaction to assume a defensive stance, allowing you to fend off incoming strikes. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack. Once you assume this stance, you can't do so again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Immediately after rolling initiative, you can use your reaction before the first turn of combat to draw a weapon and move up to half your speed (rounded up). If you end this movement within reach of another creature, you can use the weapon to make one melee attack against that creature. &#13;
+			When you are hit by an attack, you can use a reaction to assume a defensive stance, allowing you to fend off incoming strikes. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack. You can assume this stance onece per long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="5" />
+		</rules>
+	</element>
+
+	<element name="Cloud Hopper" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_CLOUD_HOPPER">
+		<description>
+			<p>Your exposure to the great wind spirit has changed you. You gain the following benefits:</p>
+			<ul>
+				<li>When you move on your turn, you can choose to conjure tiny clouds below your feet, allowing you to move into unoccupied spaces in the air. You can move a number of feet in this way equal to 5 × your proficiency bonus before the clouds stop appearing. Ending this movement while in the air causes you to fall as normal.</li>
+				<li>You learn the <i>Fog Cloud</i> and <i>Gust of Wind</i> spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast the spells using spell slots you have of the appropriate level. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice).</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Spellcasting Ability, Cloud Hopper" supports="OTTG Cloud Hopper" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" />
+			<stat name="ottg:cloud hopper:distance" value="proficiency" />
+			<stat name="ottg:cloud hopper:distance" value="proficiency" />
+			<stat name="ottg:cloud hopper:distance" value="proficiency" />
+			<stat name="ottg:cloud hopper:distance" value="proficiency" />
+			<stat name="ottg:cloud hopper:distance" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_CLOUD_HOPPER_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>OTTG Cloud Hopper</supports>
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Cloud Hopper">
+			<description>When you move on your turn, you can choose to conjure tiny clouds below your feet, allowing you to move into unoccupied spaces in the air. You can move {{ottg:cloud hopper:distance}} ft in this way before the clouds stop appearing. Ending this movement while in the air causes you to fall as normal. &#13;
+			You learn the Fog Cloud and Gust of Wind spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast the spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_CLOUD_HOPPER_WISDOM">
+		<compendium display="false" />
+		<supports>OTTG Cloud Hopper</supports>
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Cloud Hopper">
+			<description>When you move on your turn, you can choose to conjure tiny clouds below your feet, allowing you to move into unoccupied spaces in the air. You can move {{ottg:cloud hopper:distance}} ft in this way before the clouds stop appearing. Ending this movement while in the air causes you to fall as normal. &#13;
+			You learn the Fog Cloud and Gust of Wind spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast the spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_CLOUD_HOPPER_CHARISMA">
+		<compendium display="false" />
+		<supports>OTTG Cloud Hopper</supports>
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Cloud Hopper">
+			<description>When you move on your turn, you can choose to conjure tiny clouds below your feet, allowing you to move into unoccupied spaces in the air. You can move {{ottg:cloud hopper:distance}} ft in this way before the clouds stop appearing. Ending this movement while in the air causes you to fall as normal. &#13;
+			You learn the Fog Cloud and Gust of Wind spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast the spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Coven Witch" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_COVEN_WITCH">
+		<prerequisite>You must be a member of a witches coven</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must be a member of a witches coven</em></p>
+			<p>You have become an official member of a witches coven.</p>
+			<p class="indent">You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</li>
+				<li>You learn two random common and uncommon potion recipes from your coven.</li>
+				<li>You learn two 1st-level spells of your choice. The 1st-level spells must be from the divination, conjuration, or transmutation school of magic. You can cast each of these spells once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Witch Coven" supports="OTTG Witch Coven" />
+			<select type="Spell" name="Spell, Witch Coven" supports="1,(Divination||Conjuration||Transmutation)" number="2" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_COVEN_WITCH_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>OTTG Witch Coven</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Coven Witch">
+			<description>You can cast this feat’s spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Witch Coven" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_COVEN_WITCH_WISDOM">
+		<compendium display="false" />
+		<supports>OTTG Witch Coven</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Coven Witch">
+			<description>You can cast this feat’s spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Witch Coven" />
+		</rules>
+	</element>
+
+	<element name="Forager" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_FORAGER">
+		<description>
+			<p>You've spent countless hours exploring the island searching for ingredients. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Survival skill. If you already have this proficiency, you instead gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make using it.</li>
+				<li>You produce twice the number of common or uncommon ingredients when foraging.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You produce twice the number of common or uncommon ingredients when foraging.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Forager" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_SURVIVAL" />
+		</rules>
+	</element>
+
+	<element name="Freediver" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_FREEDIVER">
+		<description>
+			<p><b>Note:</b> This feat has mechanics that are very difficult to implement within the limitations of the app. You will have to manually add the bonuses to your swim speed through the items present in the "Additional Features" section under the "Equipment" tab. This will most likely be fixed in a future update.</p>
+			<p>You have undergone extensive underwater training. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain a swimming speed equal to twice your Constitution score (rounded up to the nearest 5 feet). If you already have a swimming speed, it instead increases by 10 feet.</li>
+				<li>You triple your Constitution modifier when calculating how long you can hold your breath.</li>
+				<li>You gain resistance to cold damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You triple your Constitution modifier when calculating how long you can hold your breath.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Freediver" />
+			<stat name="speed:swim" value="10" bonus="Freediver"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Group Combatant" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_GROUP_COMBATANT">
+		<description>
+			<p>You've honed your fighting skills and are just as comfortable fighting a group of enemies as you are facing a combatant one on one. You gain the following benefits:</p>
+			<ul>
+				<li>Bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 2, to a minimum of 1.</li>
+				<li>Creatures don't gain advantage on attacks made against you using the optional flanking rules.</li>
+				<li>After you provoke an opportunity attack on your turn, your movement doesn't provoke opportunity attacks for the rest of the turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 2, to a minimum of 1. &#13;
+			Creatures don't gain advantage on attacks made against you using the optional flanking rules. &#13;
+			After you provoke an opportunity attack on your turn, your movement doesn't provoke opportunity attacks for the rest of the turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Light Foot" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_LIGHT_FOOT">
+		<description>
+			<p>You are exceptionally speedy and agile. You gain the following benefits:</p>
+			<ul>
+				<li>While you aren't wearing heavy armor, you gain a +1 bonus to your AC.</li>
+				<li>Whenever you take the Attack action, you can forgo one of your attacks to move up to half your speed.</li>
+				<li>Nonmagical difficult terrain costs you no extra movement.</li>
+				<li>You can move through a hostile creature's space, regardless of its size.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you take the Attack action, you can forgo one of your attacks to move up to half your speed. &#13;
+			Nonmagical difficult terrain costs you no extra movement. &#13;
+			You can move through a hostile creature's space, regardless of its size.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="![armor:heavy]" alt="Light Foot" />
+		</rules>
+	</element>
+
+	<element name="Magically Mischievous" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_FORAGER">
+		<description>
+			<p>You've picked up a few magical tricks that assist your nefarious skills. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in the Sleight of Hand skill. If you already have proficiency, you gain expertise instead, which means your proficiency bonus is doubled for any ability check you make with it.</li>
+				<li>When you succeed on a Dexterity (Sleight of Hand) check to steal something, you can magically turn the object you stole invisible as part of the same action, as if you had cast the <i>Obscure Object</i> spell. The object must be small enough to fit in the palm of your hand, and this effect lasts for 1 minute. You can use this ability a number of times per day equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you succeed on a Dexterity (Sleight of Hand) check to steal something, you can magically turn the object you stole invisible as part of the same action, as if you had cast the Obscure Object spell. The object must be small enough to fit in the palm of your hand, and this effect lasts for 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_SLEIGHTOFHAND" />
+		</rules>
+	</element>
+
+	<element name="Member of AHA" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_CANDEN_AND_MOONS_MASTER_CUT">
+		<prerequisite>You must be a member of AHA</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must be a member of AHA</em></p>
+			<p>You have become an official member of AHA. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>Jolt</i> cantrip. You also learn one of the following spells of your choice: <i>Comprehend Languages</i>, <i>Detect Magic</i>, <i>Identify</i>, or <i>Illusory Script</i>. You can cast the chosen spell once without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Intelligence is your spellcasting ability for these spells.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can cast this feat’s spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Member of AHA" />
+			<grant type="Spell" id="ID_1985_OTTG_SPELL_JOLT" />
+			<select type="Spell" name="Spell, Member of AHA" supports="ID_PHB_SPELL_COMPREHEND_LANGUAGES|ID_PHB_SPELL_DETECT_MAGIC|ID_PHB_SPELL_IDENTIFY|ID_PHB_SPELL_ILLUSORY_SCRIPT" />
+		</rules>
+	</element>
+
+	<element name="Minor Corruption" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_MINOR_CORRUPTION">
+		<description>
+			<p>You were exposed to the Corruption, a dark magic that's poisoning the island. It's now begun to alter you as well. You gain the following benefits:</p>
+			<ul>
+				<li>You gain a +1 bonus to AC while you have less than half of your hit points remaining.</li>
+				<li>You can draw upon the Corruption within you to channel your magical power. You don't need to use a spellcasting focus for your spells, allowing you to ignore the material components specified for the spell, unless the component indicates a cost or is consumed by the spell.</li>
+				<li>As a reaction, when you take damage, you can temporarily negate an amount of the damage equal to three times your level; you take any excess damage as normal. At the end of your next turn, you must make a Constitution saving throw, the DC of which is equal to 10 or one-third the damage you would have taken, whichever number is higher. On a failed save, you immediately take the negated damage. You must continue to make a Constitution saving throw at the end of each of your turns for 1 minute or until you fail the save, at which point you take the negated damage. Once you take this reaction, you can't do so again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to AC while you have less than half of your hp remaining. &#13;
+			You don't need to use a spellcasting focus for your spells, allowing you to ignore the material components specified for the spell, unless the component indicates a cost or is consumed by the spell. &#13;
+			As a reaction, when you take damage, you can temporarily negate an amount of the damage equal to {{ottg:minor corruption:negation}}; you take any excess damage as normal. At the end of your next turn, you must make a Constitution saving throw, the DC of which is equal to 10 or one-third the damage you would have taken, whichever number is higher. On a failed save, you immediately take the negated damage. You must continue to make a Constitution saving throw at the end of each of your turns for 1 minute or until you fail the save, at which point you take the negated damage. Once you take this reaction, you can't do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:minor corruption:negation" value="level" />
+			<stat name="ottg:minor corruption:negation" value="level" />
+			<stat name="ottg:minor corruption:negation" value="level" />
+		</rules>
+	</element>
+
+	<element name="Nakudama's Electric Bloodline" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_NAKUDAMAS_ELECTRIC_BLOODLINE">
+		<requirements>ID_1985_OTTG_RACE_NAKUDAMA</requirements>
+		<prerequisite>You must be a Nakudama</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must be a Nakudama</em></p>
+			<p>Although it's uncommon in today's day and age, some Nakudama are able to awaken the now dormant skills held by their warring ancestors. You gain the following benefits:</p>
+			<ul>
+				<li>You have resistance to lightning damage.</li>
+				<li>You have an electrified tongue that you can use to make unarmed strikes. It has the finesse and reach properties, and when you hit with it, the strike deals lightning damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike. The damage from your tongue increases when you reach 5th level (1d8), 11th level (1d10), and 17th level (1d12).</li>
+				<li>When you become grappled by a creature, you can use your reaction to force the creature to make a Constitution saving throw (DC 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 lightning damage and the grapple ends.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have an electrified tongue that you can use to make unarmed strikes. It has the finesse and reach properties, and when you hit with it, the strike deals lightning damage equal to 1d{{ottg:nakudamas electric bloodline:die}} + {{ottg:nakudamas electric bloodline:modifier}}, instead of the bludgeoning damage normal for an unarmed strike. &#13;
+			When you become grappled by a creature, you can use your reaction to force the creature to make a Constitution saving throw (DC {{ottg:nakudamas electric bloodline:dc}}). On a failed save, the creature takes 1d10 lightning damage and the grapple ends.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat name="ottg:nakudamas electric bloodline:die" value="6" bonus="base" />
+			<stat name="ottg:nakudamas electric bloodline:die" value="8" bonus="base" level="5" />
+			<stat name="ottg:nakudamas electric bloodline:die" value="10" bonus="base" level="11" />
+			<stat name="ottg:nakudamas electric bloodline:die" value="12" bonus="base" level="17" />
+			<stat name="ottg:nakudamas electric bloodline:modifier:ability" value="strength:modifier" bonus="ability" />
+			<stat name="ottg:nakudamas electric bloodline:modifier:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="ottg:nakudamas electric bloodline:modifier" value="ottg:nakudamas electric bloodline:modifier:ability" />
+			<stat name="ottg:nakudamas electric bloodline:dc" value="8" />
+			<stat name="ottg:nakudamas electric bloodline:dc" value="constitution:modifier" />
+			<stat name="ottg:nakudamas electric bloodline:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Nakudama's Toxin Bloodline" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_NAKUDAMAS_TOXIN_BLOODLINE">
+		<requirements>ID_1985_OTTG_RACE_NAKUDAMA</requirements>
+		<prerequisite>You must be a Nakudama</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must be a Nakudama</em></p>
+			<p>Although it's uncommon in today's day and age, some Nakudama are able to awaken the now dormant skills held by their warring ancestors. You gain the following benefits:</p>
+			<ul>
+				<li>You have resistance to poison damage.</li>
+				<li>You have advantage on saving throws against being poisoned.</li>
+				<li>You can cause your cheeks to swell and bubble out as your mouth fills with liquid poison. As an action, you can spit several globs of poison in quick succession, targeting a number of creatures equal to your proficiency bonus. Each target must be within 30 feet of you and must make a Constitution saving throw (DC 8 + your Constitution modifier + your proficiency bonus). A target takes poison damage equal to 1d8 + your proficiency bonus on a failed save, or half as much damage on a successful one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being poisoned. &#13;
+			As an action, you can spit several globs of poison in quick succession, targeting a number of creatures equal to your proficiency bonus. Each target must be within 30 ft of you and must make a Constitution saving throw (DC {{ottg:nakudamas toxin bloodline:dc}}). A target takes poison damage equal to 1d8 + {{proficiency}} on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<stat name="ottg:nakudamas toxin bloodline:dc" value="8" />
+			<stat name="ottg:nakudamas toxin bloodline:dc" value="constitution:modifier" />
+			<stat name="ottg:nakudamas toxin bloodline:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Postal Knight" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_POSTAL_KNIGHT">
+		<prerequisite>You must be a member of the Courier Brigade</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must be a member of the Courier Brigade</em></p>
+			<p>You have trained as a member of the Courier Brigade. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Wisdom by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Athletics and Survival skills.</li>
+				<li>Exhaustion doesn't cause you to have disadvantage on ability checks.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Exhaustion doesn't cause you to have disadvantage on ability checks.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase, Postal Knight" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />	
+		</rules>
+	</element>
+
+	<element name="Potion Brewer" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_POTION_BREWER">
+		<description>
+			<p>Your expertise and understanding of magical potions and elixirs allow you to finesse ingredients and recipes to your specifications. You gain the following benefits:</p>
+			<ul>
+				<li>When brewing potions, you can choose to take the second-highest ingredient attribute number from your potion recipe, instead of the first.</li>
+				<li>When brewing a potion, you can roll percentile dice. If you roll a number equal to or lower than your level, you create two potions instead of one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When brewing potions, you can choose to take the second-highest ingredient attribute number from your potion recipe, instead of the first. &#13;
+			When brewing a potion, you can roll percentile dice. If you roll a number equal to or lower than your level, you create two potions instead of one.</description>
+		</sheet>
+	</element>
+
+	<element name="Tellu and Scale's Master Cut" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_TELLU_AND_SCALES_MASTER_CUT">
+		<prerequisite>You must have beaten a master at Master Tellu and Scale's Sword School</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must have beaten a master at Master Tellu and Scale's Sword School</em></p>
+			<p>Having trained with the masters of the valley sword school, you have learned the usefulness of quickly changing between different fighting techniques in the midst of battle. You gain the following benefits:</p>
+			<ul>
+				<li><strong>One Handed.</strong> While wielding a versatile weapon in one hand, your quick movements and agile defense allow you to regain ground even when your enemy advances. Once before the start of your next turn when you're missed by a melee attack from a creature within your reach, the attacker takes damage from your weapon equal to twice your proficiency bonus.</li>
+				<li><strong>Two Handed.</strong> When wielding a versatile weapon in two hands, your powerful stance allows you to catch your target off guard. Whenever an enemy within your reach makes a melee weapon attack against you and misses, you can use your reaction to attempt to knock the attacker off balance. The target must succeed on a Dexterity saving throw (DC 8 + your Strength modifier + your proficiency bonus) or be knocked prone.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While wielding a versatile weapon in one hand, your quick movements and agile defense allow you to regain ground even when your enemy advances. Once before the start of your next turn when you're missed by a melee attack from a creature within your reach, the attacker takes {{ottg:tellu and scales master cut:damage}} damage from your weapon. &#13;
+			When wielding a versatile weapon in two hands, your powerful stance allows you to catch your target off guard. Whenever an enemy within your reach makes a melee weapon attack against you and misses, you can use your reaction to attempt to knock the attacker off balance. The target must succeed on a Dexterity saving throw (DC {{ottg:tellu and scales master cut:dc}}) or be knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:tellu and scales master cut:damage" value="proficiency" />
+			<stat name="ottg:tellu and scales master cut:damage" value="proficiency" />
+			<stat name="ottg:tellu and scales master cut:dc" value="8" />
+			<stat name="ottg:tellu and scales master cut:dc" value="strength:modifier" />
+			<stat name="ottg:tellu and scales master cut:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Toraf and Bolder's Master Cut" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_TORAF_AND_BOLDERS_MASTER_CUT">
+		<prerequisite>You must have beaten a master at Master Toraf and Bolder's Sword School</prerequisite>
+		<description>
+			<p><em>Prerequisite: You must have beaten a master at Master Toraf and Bolder's Sword School</em></p>
+			<p>Having trained with the masters of the valley sword school, you have learned the usefulness of quickly changing between different fighting techniques in the midst of battle. You gain the following benefits:</p>
+			<ul>
+				<li><strong>Head Strike.</strong> Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target has disadvantage on the next attack roll it makes before the end of its next turn.</li>
+				<li><strong>Torso Strike.</strong> Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target can't speak until the start of your next turn, after which it is immune to the effects of Torso Strike for the next minute.</li>
+				<li><strong>Leg Strike.</strong> Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target's speed is reduced by 10 feet (to a minimum speed of 10 feet). This effect lasts until the start of your next turn.</li>
+			</ul>
+			<p>You can only use one of these strikes per attack.</p>
+		</description>
+		<sheet usage="1/Attack">
+			<description>Whenever you make an attack, you may use one of the following benefits: &#13;
+			• Head Strike. Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target has disadvantage on the next attack roll it makes before the end of its next turn. &#13;
+			• Torso Strike. Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target can't speak until the start of your next turn, after which it is immune to the effects of Torso Strike for the next minute. &#13;
+			• Leg Strike. Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target's speed is reduced by 10 feet (to a minimum speed of 10 feet). This effect lasts until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Vocalist Arcanist" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_VOCALIST_ARCANIST">
+		<description>
+			<p>Your unique method of weaving song into magic allows you to enhance your spells through your magical vocals. When you cast a spell that forces a target to make a saving throw or requires you to make a spell attack roll, you can choose to enhance the spell through song. You can wait until after you roll the d20 before deciding to use this, but must decide before the GM says whether the roll succeeds or fails.</p>
+			<p class="indent">When you do so, make a Charisma (Performance) check. The DC for this check is equal to 10 + the spell's level. On a success, your proficiency bonus is doubled for the spell attack roll or your save DC for that casting of the spell.</p>
+			<p class="indent">Once you have succeeded on this check three times, you can't use this benefit again until the next dawn.</p>
+		</description>
+		<sheet usage="3 Successes/Day">
+			<description>When you cast a spell that forces a target to make a saving throw or requires you to make a spell attack roll, you can choose to enhance the spell through song. You can wait until after you roll the d20 before deciding to use this, but must decide before the GM says whether the roll succeeds or fails. &#13;
+			When you do so, make a Charisma (Performance) check. The DC for this check is equal to 10 + the spell's level. On a success, your proficiency bonus is doubled for the spell attack roll or your save DC for that casting of the spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Wetland Explorer" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER">
+		<description>
+			<p>Your deep knowledge of the dangerous creatures that inhabit the world aid you in both fighting and tracking them. You gain the following benefits:</p>
+			<ul>
+				<li>Select two creature types of your choice. Whenever you roll initiative at the start of a combat that has one or more hostile creatures of the chosen type, you can add your proficiency bonus to the roll. If a creature has magically altered its form to appear as another creature type, you don't gain this benefit.</li>
+				<li>You gain a +5 bonus to Dexterity (Stealth) and Wisdom (Survival) checks involving one or more of the chosen creature types.</li>
+				<li>You gain a +2 bonus to attack rolls made against a target of the chosen creature type.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you roll initiative at the start of a combat that has one or more hostile creatures of the chosen types below, you can add {{proficiency}} to the roll. If a creature has magically altered its form to appear as another creature type, you don't gain this benefit. &#13;
+			You gain a +5 bonus to Dexterity (Stealth) and Wisdom (Survival) checks involving one or more of the chosen creature types. &#13;
+			You gain a +2 bonus to attack rolls made against a target of the chosen creature type.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Creature Type, Wetland Explorer" supports="OTTG Wetland Explorer" number="2" />
+		</rules>
+	</element>
+	<element name="Aberrations" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_ABERRATIONS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Beasts" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_BEAST">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Celestials" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_CELESTIALS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Constructs" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_CONSTRUCTS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Dragons" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_DRAGONS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Elementals" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_ELEMENTALS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Fey" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_FEY">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Fiends" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_FIENDS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Giants" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_GIANTS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Humanoids" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_HUMANOIDS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Monstrosities" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_MONSTROSITIES">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Oozes" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_OOZES">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Plants" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_PLANTS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Spirits" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_SPIRITS">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+	<element name="Undead" type="Feat Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_WETLAND_EXPLORER_UNDEAD">
+		<compendium display="false" />
+		<supports>OTTG Wetland Explorer</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_1985_OTTG_FEAT_WETLAND_EXPLORER" />
+			</div>
+		</description>
+	</element>
+
+</elements>

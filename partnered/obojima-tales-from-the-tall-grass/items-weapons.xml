@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>Weapons from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-weapons.xml" />
+		</update>
+	</info>
+
+	<!--Simple Melee-->
+	<element name="Boat Oar" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_BOAT_OAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">8</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d10</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOAT_OAR</set>
+		</setters>
+	</element>
+
+	<element name="Boomerang" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_BOOMERANG">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BOOMERANG</supports>
+		<description>
+			<p></p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BOOMERANG" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOOMERANG</set>
+		</setters>
+	</element>
+
+	<element name="Butterfly Staff" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_BUTTERFLY_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BUTTERFLY_STAFF</supports>
+		<description>
+			<p></p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BUTTERFLY_STAFF" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="cp">4</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="versatile">1d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BUTTERFLY_STAFF</set>
+		</setters>
+	</element>
+
+	<element name="Fan" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_FAN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FAN</supports>
+		<description>
+			<p></p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FAN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="cp">2</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FAN</set>
+		</setters>
+	</element>
+
+	<element name="Frying Pan" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_FRYING_PAN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FRYING_PAN</supports>
+		<description>
+			<p></p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FRYING_PAN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN</set>
+		</setters>
+	</element>
+
+	<element name="Iron Tea Kettle" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_IRON_TEA_KETTLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">2d4</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_IRON_TEA_KETTLE</set>
+		</setters>
+	</element>
+
+	<element name="Shovel" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_SHOVEL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_DAMAGE_TYPE_SLASHING, D_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning or slashing (you choose)">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL</set>
+		</setters>
+	</element>
+
+	<element name="Umbrella" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_UMBRELLA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_UMBRELLA</supports>
+		<description>
+			<p></p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_UMBRELLA" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_UMBRELLA</set>
+		</setters>
+	</element>
+
+	<!--Martial Melee-->
+	<element name="Bellow Flute" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_BELLOW_FLUTE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			<p>The traditional Obojiman instrument has gotten a second life as a swift club-like weapon commonly used by traveling performers. It is crafted from a special coral found all across the shallows, which naturally forms with dozens of tiny holes that run throughout the body of the instrumental weapon. When swung it emits a beautiful harmonic sound.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BELLOW_FLUTE</set>
+		</setters>
+	</element>
+
+	<element name="Candlemaker's Club" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_CANDLEMAKERS_CLUB">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_CANDLEMAKERS_CLUB, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+		<description>
+			<p>These heavy honey dipper shaped clubs are traditionally used for mixing the giant vats of wax used by the Courier Brigade to seal packages and craft candles. They're now used by postal knights and adventurers as a useful defensive and offensive tool.</p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_CANDLEMAKERS_CLUB" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">7</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">2d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_CANDLEMAKERS_CLUB</set>
+		</setters>
+	</element>
+
+	<element name="Dandelion Spear" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_DANDELION_SPEAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+		<description>
+			<p>This strange and intimidating weapon was made for fishing in the reefs and crags of the Shallows. Its long haft is tipped with a spherical array of thin sharp barbs, which gave the spear its title, as its silhouette is reminiscent of a blooming dandelion.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DANDELION_SPEAR</set>
+		</setters>
+	</element>
+
+	<element name="Drive Shaft" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_DRIVE_SHAFT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">3d4</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DRIVE_SHAFT</set>
+		</setters>
+	</element>
+
+	<element name="Lom Lom Dagger" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_LOM_LOM_DAGGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p>The short and angular blade of a lom lom dagger was designed for cleaving and quickly became a staple in most of Obojima's kitchens. Over time, the blade length grew longer and longer, and eventually the lom lom dagger made its way out of the kitchen and into the hands of adventurers, who favored it for its balance and accuracy when thrown.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_LOM_LOM_DAGGER</set>
+		</setters>
+	</element>
+
+	<element name="Secret Stone Sword" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_SECRET_STONE_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p>Although it's not much of a secret nowadays, the magical stone known as feather rock, which is used to craft these stone swords, was once coveted and kept hidden by the Nakudama. Even though feather rock is now commonly used by potion brewers, and the craft of making one of these swords is fairly common, the name has stayed the same.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SECRET_STONE_SWORD</set>
+		</setters>
+	</element>
+
+	<element name="Shepherd Crook" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_SHEPHERD_CROOK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_SHEPHERD_CROOK</supports>
+		<description>
+			<p></p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_SHEPHERD_CROOK" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">7</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHEPHERD_CROOK</set>
+		</setters>
+	</element>
+
+	<element name="Tapper Sack" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_TAPPER_SACK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_TAPPER_SACK</set>
+		</setters>
+	</element>
+
+	<element name="Vertebrae Sword" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_VERTEBRAE_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VERTEBRAE_SWORD, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p>The jagged vertebrae sword of a fishfolk warrior can barely be called a sword. Locals would say it's better described as a makeshift weapon crafted from a fish skeleton and sea trash. Its poor construction is the reason it's not often a weapon seen on land, though when used by a skilled fighter, it most certainly can be a formidable tool.</p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VERTEBRAE_SWORD" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">6</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VERTEBRAE_SWORD</set>
+		</setters>
+	</element>
+
+	<element name="Vaulter's Axe" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_VAULTERS_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VAULTERS_AXE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p>The vaulter's axe was designed by the Rangers of the Greenward Path for exploring the Brackwater Wetlands. Its tall haft allows wielders of the axe to easily check water depths and vault over obstacles. To this day it's a useful tool for anyone exploring the eastern side of the island.</p>
+			<div element="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VAULTERS_AXE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VAULTERS_AXE</set>
+		</setters>
+	</element>
+
+	<element name="Field Spear" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_FIELD_SPEAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+		<description>
+			<p>Also known as the merchant's blade, the field spear was proven a useful and sturdy tool by the hundreds of merchants and travelers that use it in their expeditions across the island. Its shorter haft is roughly half the size of a standard spear and its tip is more similar to a wide blade or dagger than the traditional spear tip.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FIELD_SPEAR</set>
+		</setters>
+	</element>
+	
+	<!--Martial Ranged-->
+	<element name="Nakudama Bubble Rod" type="Weapon" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_NAKUDAMA_BUBBLE_ROD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION</supports>
+		<description>
+			<p>The Nakudama bubble rod is most recognizable by the curious sounds it produces when used. The wet descending whistle of multiple water filled glass marbles shot from the end of the oblong tube, quickly followed by the unmistakable pop of the ammunition as they hit their target.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">22</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">50/200</set>
+			<set name="damage" type="bludgeoning">2d4</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_NAKUDAMA_BUBBLE_ROD</set>
+		</setters>
+	</element>
+	
+	<!--Proficiencies-->
+	<!--Simple Melee-->
+	<element name="Weapon Proficiency (Boat Oar)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOAT_OAR">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Boomerang)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOOMERANG">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BOOMERANG</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Butterfly Staff)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BUTTERFLY_STAFF">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BUTTERFLY_STAFF</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Fan)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FAN">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FAN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Frying Pan)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FRYING_PAN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Iron Tea Kettle)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_IRON_TEA_KETTLE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Shovel)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_DAMAGE_TYPE_SLASHING, D_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Umbrella)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_UMBRELLA">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_UMBRELLA</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOAT_OAR" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOOMERANG" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BUTTERFLY_STAFF" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FAN" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_IRON_TEA_KETTLE" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_UMBRELLA" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Martial Melee-->
+	<element name="Weapon Proficiency (Bellow Flute)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BELLOW_FLUTE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Candlemaker's Club)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_CANDLEMAKERS_CLUB">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_CANDLEMAKERS_CLUB, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Dandelion Spear)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DANDELION_SPEAR">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Drive Shaft)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DRIVE_SHAFT">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Lom Lom Dagger)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_LOM_LOM_DAGGER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Secret Stone Sword)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SECRET_STONE_SWORD">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Shepherd Crook)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHEPHERD_CROOK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_SHEPHERD_CROOK</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Tapper Sack)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_TAPPER_SACK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Vertebrae Sword)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VERTEBRAE_SWORD">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VERTEBRAE_SWORD, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Vaulter's Axe)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VAULTERS_AXE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VAULTERS_AXE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Field Spear)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FIELD_SPEAR">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BELLOW_FLUTE" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_CANDLEMAKERS_CLUB" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DANDELION_SPEAR" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DRIVE_SHAFT" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_LOM_LOM_DAGGER" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SECRET_STONE_SWORD" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHEPHERD_CROOK" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_TAPPER_SACK" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VERTEBRAE_SWORD" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VAULTERS_AXE" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FIELD_SPEAR" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Martial Ranged-->
+	<element name="Weapon Proficiency (Nakudama Bubble Rod)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_NAKUDAMA_BUBBLE_ROD">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION</supports>
+	</element>
+	
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_NAKUDAMA_BUBBLE_ROD" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Special Properties-->
+	<element name="Special (Boomerang)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BOOMERANG">
+		<description>
+			<p>When thrown, the boomerang returns to an unoccupied space adjacent to you. As a reaction, you can choose to catch it.</p>
+		</description>
+	</element>
+
+	<element name="Special (Butterfly Staff)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_BUTTERFLY_STAFF">
+		<description>
+			<p>When you make a grapple check while holding the butterfly staff, you can use the staff to target a Small or smaller creature that is up to 10 feet away from you. When you do so, you use your attack modifier for the weapon in place of your Strength (Athletics) check. While grappling a creature in this way, you can't make another attack with the butterfly staff.</p>
+		</description>
+	</element>
+
+	<element name="Special (Fan)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FAN">
+		<description>
+			<p>When you're hit by a ranged weapon attack, you can use your reaction to reduce the incoming damage of the attack by a number equal to your Dexterity modifier.</p>
+		</description>
+	</element>
+
+	<element name="Special (Frying Pan)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_FRYING_PAN">
+		<description>
+			<p>When wielding a frying pan, you can use your bonus action to add a +1 bonus to your AC until the end of your next turn. You can't gain this benefit while wielding a shield.</p>
+		</description>
+	</element>
+
+	<element name="Special (Umbrella)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_UMBRELLA">
+		<description>
+			<p>Whenever you take falling damage while wielding an umbrella, you can use your reaction to reduce the damage by a number equal to twice your proficiency bonus.</p>
+		</description>
+	</element>
+
+	<element name="Special (Candlemaker's Club)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_CANDLEMAKERS_CLUB">
+		<description>
+			<p>While wielding a candlemaker's club, you can use a bonus action to extinguish a flame within 5 feet of you.</p>
+		</description>
+	</element>
+
+	<element name="Special (Shepherd Crook)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_SPHEPHERD_CROOK">
+		<description>
+			<p>As a bonus action, you can make a contested Strength check against a creature within range, moving the target to another unoccupied space within 5 feet of you on a success.</p>
+		</description>
+	</element>
+
+	<element name="Special (Vertebrae Sword)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VERTEBRAE_SWORD">
+		<description>
+			<p>When you successfully hit a creature with a vertebrae sword, you can use a bonus action to rake and twist the weapon, breaking off some of the sword's boney barbs and dealing an extra 1d8 piercing damage. The vertebrae sword can only be used in this way 5 times before it becomes unusable as a weapon.</p>
+		</description>
+	</element>
+
+	<element name="Special (Vaulter's Axe)" type="Weapon Property" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_WEAPON_PROPERTY_SPECIAL_VAULTERS_AXE">
+		<description>
+			<p>As part of your movement, you can use the vaulter's axe to launch yourself 15 feet over a creature or obstacle. Using your movement in this way ignores nonmagical difficult terrain.</p>
+		</description>
+	</element>
+
+	<!--Kensei Weapon-->
+	<element name="Kensei Weapon (Boat Oar)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_BOAT_OAR">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Boat Oar if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BOAT_OAR" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Iron Tea Kettle)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_IRON_TEA_KETTLE">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Iron Tea Kettle if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_IRON_TEA_KETTLE" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Shovel)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_SHOVEL">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Shovel if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Bellow Flute)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_BELLOW_FLUTE">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Bellow Flute if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_BELLOW_FLUTE" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Lom Lom Dagger)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_LOM_LOM_DAGGER">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Lom Lom Dagger if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_LOM_LOM_DAGGER" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Secret Stone Sword)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_SECRET_STONE_SWORD">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Secret Stone Sword if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SECRET_STONE_SWORD" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Tapper Sack)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_TAPPER_SACK">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Tapper Sack if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_TAPPER_SACK" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Field Spear)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_FIELD_SPEAR">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Field Spear if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FIELD_SPEAR" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Nakudama Bubble Rod)" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_KENSEI_WEAPON_NAKUDAMA_BUBBLE_ROD">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Nakudama Bubble Rod if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_NAKUDAMA_BUBBLE_ROD" />
+		</rules>
+	</element>
+	
+</elements>

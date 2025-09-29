@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elf</name>
+		<description>Elf from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/races/race-elf.xml" />
+		</update>
+	</info>
+
+	<element name="Elf" type="Race" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACE_ELF">
+		<description>
+			<p>The elves of Obojima possess a deep and special bond with the enigmatic Spirit Realm and its native spirits. Unlike other inhabitants of the island, the elves do not form distinct communities or enclaves as they are not a people in the traditional sense. This is because elves are born to human parents. While this occurrence is uncommon, it is not so infrequent that it is met with disdain or apprehension. Instead, it's simply understood that an elf exists with one foot in two worlds. </p>
+			<h4>Marked by the Spirits</h4>
+			<p>Every elf shares common physical traits such as pointed ears and their keen ability to see in the dark. However, what sets Obojiman elves apart is the presence of Oaka Marks. Each elf bears a unique mark that symbolizes their connection to the Spirit Realm. These mystical glyphs appear as shimmering birthmarks and vary in size from that of a coin to large enough to cover an entire limb.</p>
+			<p class="indent">Beyond being mere physical markers, Oaka Marks hold deep significance for elves. They represent their profound bond with the spirit world and have the potential to bestow unique supernatural abilities.</p>
+			<h4>Spirit Guide by Circumstance</h4>
+			<p>Throughout the ages, the islanders and spirits have coexisted harmoniously, although it would be misleading to claim that they always agree on everything. Consequently, elves often find themselves acting as intermediaries when conflicts arise between spirits and folk from the Physical Realm.</p>
+			<h4>Elf Traits</h4>
+			<p>You, along with other elves, have been gifted a unique set of traits akin to the spirits that inhabit the island of Obojima.</p>
+			<p><strong><em>Ability Score Increase.</em></strong> One ability score of your choice increases by 2, and another ability score of your choice increases by 1.</p>
+			<p><strong><em>Age.</em></strong> Elves reach adulthood in their late teens and live less than a century.</p>
+			<p><strong><em>Size.</em></strong> Elves vary in height, which ranges from 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.</p>
+			<p><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p><strong><em>Languages.</em></strong> You can speak, read, and write Common.</p>
+			<p><strong><em>Darkvision.</em></strong> As a bonus action, you can lash out your tongue at an object you can see within 15 feet of you that weighs no more than 5 pounds and pull it to you, catching it in your open hand or allowing it to fall at your feet. If the object is being worn or carried by a creature, the creature must succeed on a contested Strength check or have the object pulled away from it.</p>
+			<p><strong><em>Ethereal Sight.</em></strong> As a bonus action, you can extend your tongue to latch onto a surface or creature that is at least one size larger than you, pulling yourself toward it. The target must be no more than 15 feet away from you.</p>
+			<h4>Oaka Birthmark</h4>
+			<p><strong><em>Courage.</em></strong> You know the <i>Resistance</i> cantrip and can cast it without requiring material components. When you reach 3rd level, you can cast <i>Heroism</i> as a 2nd-level spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p><strong><em>Fury.</em></strong> You know the <i>Sacred Flame</i> cantrip. When you reach 3rd level, you can cast <i>Shatter</i> once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p><strong><em>Harmony.</em></strong> You know the <i>Guidance</i> cantrip. When you reach 3rd level, you can cast <i>Calm Emotions</i> once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p><strong><em>Nature.</em></strong> You know the <i>Dancing Lights</i> cantrip and can cast it without requiring material components. When you reach 3rd level, you can cast <i>Animal Messenger</i> once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p><strong><em>Purity.</em></strong> You know the <i>Spare the Dying</i> cantrip. When you reach 3rd level, you can cast <i>Lesser Restoration</i> once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p><strong><em>Selflessness.</em></strong> You know the <i>Resilient Friendship</i> cantrip. When you reach 3rd level, you can cast <i>Gift</i> once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Elf)" supports="Custom Ability Score Increase 2" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Elf)" supports="Custom Ability Score Increase 1" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Elf)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_ETHEREAL_SIGHT" />
+			<select type="Racial Trait" name="Oaka Birthmark" supports="OTTG Oaka Birthmark" />
+		</rules>
+	</element>
+
+	<element name="Ethereal Sight" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_ETHEREAL_SIGHT">
+		<description>
+			<p>Your ocular prowess doesn't stop at darkvision. Additionally, you can use an action to shift your sight into the ethereal, allowing you to see creatures on the Spirit Realm, which appear as glowing outlines of themselves. This effect lasts for 1 hour. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can shift your sight into the ethereal, allowing you to see creatures on the Spirit Realm, which appear as glowing outlines of themselves. This effect lasts for 1 hour.</description>
+		</sheet>
+	</element>
+
+	<!--Oaka Birthmarks-->
+	<element name="Courage" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_OAKA_BIRTHMARK_COURAGE">
+		<supports>OTTG Oaka Birthmark</supports>
+		<description>
+			<p>You know the <i>Resistance</i> cantrip and can cast it without requiring material components. When you reach 3rd level, you can cast <i>Heroism</i> as a 2nd-level spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet alt="Oaka Birthmark, Courage">
+			<description>You know the Resistance cantrip and can cast it without requiring material components. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Resistance cantrip and can cast it without requiring material components. You can cast the Heroism spell as a 2nd-level spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RESISTANCE" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="3" />
+		</rules>
+	</element>
+
+	<element name="Fury" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_OAKA_BIRTHMARK_FURY">
+		<supports>OTTG Oaka Birthmark</supports>
+		<description>
+			<p>You know the <i>Sacred Flame</i> cantrip. When you reach 3rd level, you can cast <i>Shatter</i> once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet alt="Oaka Birthmark, Fury">
+			<description>You know the Sacred Flame cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Sacred Flame cantrip. You can cast the Shatter spell without material components once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" />
+		</rules>
+	</element>
+
+	<element name="Harmony" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_OAKA_BIRTHMARK_HARMONY">
+		<supports>OTTG Oaka Birthmark</supports>
+		<description>
+			<p>You know the <i>Guidance</i> cantrip. When you reach 3rd level, you can cast <i>Calm Emotions</i> once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet alt="Oaka Birthmark, Harmony">
+			<description>You know the Guidance cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Guidance cantrip. You can cast the Calm Emotions spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" />
+		</rules>
+	</element>
+
+	<element name="Nature" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_OAKA_BIRTHMARK_NATURE">
+		<supports>OTTG Oaka Birthmark</supports>
+		<description>
+			<p>You know the <i>Dancing Lights</i> cantrip and can cast it without requiring material components. When you reach 3rd level, you can cast <i>Animal Messenger</i> once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet alt="Oaka Birthmark, Nature">
+			<description>You know the Dancing Lights cantrip and can cast it without requiring material components. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Dancing Lights cantrip and can cast it without requiring material components. You can cast the Animal Messenger spell without material components once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_MESSENGER" level="3" />
+		</rules>
+	</element>
+
+	<element name="Purity" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_OAKA_BIRTHMARK_PURITY">
+		<supports>OTTG Oaka Birthmark</supports>
+		<description>
+			<p>You know the <i>Spare the Dying</i> cantrip. When you reach 3rd level, you can cast <i>Lesser Restoration</i> once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet alt="Oaka Birthmark, Purity">
+			<description>You know the Spare the Dying cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Spare the Dying cantrip. You can cast the Lesser Restoration spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" />
+		</rules>
+	</element>
+
+	<element name="Selflessness" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_ELF_OAKA_BIRTHMARK_SELFLESSNESS">
+		<supports>OTTG Oaka Birthmark</supports>
+		<description>
+			<p>You know the <i>Resilient Friendship</i> cantrip. When you reach 3rd level, you can cast <i>Gift</i> once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet alt="Oaka Birthmark, Selflessness">
+			<description>You know the Resilient Friendship cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Resilient Friendship cantrip. You can cast the Gift spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_1985_OTTG_SPELL_RESILIENT_FRIENDSHIP" />
+			<grant type="Spell" id="ID_1985_OTTG_SPELL_GIFT" level="3" />
+		</rules>
+	</element>
+
+</elements>

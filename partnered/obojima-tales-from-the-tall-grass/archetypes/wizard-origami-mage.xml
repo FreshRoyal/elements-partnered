@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Origami Mage</name>
+		<description>Origami Mage from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="wizard-origami-mage.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/wizard-origami-mage.xml" />
+		</update>
+	</info>
+
+	<element name="Origami Mage" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_WIZARD_ORIGAMI_MAGE">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Origami Mages are wielders of a unique form of magic that combines precision, creativity, and imagination. With a flick of their wrist and a whisper of arcane words, they transform simple sheets of paper into awe-inspiring manifestations of elemental forces, mystical beings, and fantastical creatures.</p>
+			<p class="indent">Drawing inspiration from the mysterious elegance of origami, these mages are not bound by traditional spell components but instead rely on the meticulous manipulation of paper to channel their magical energies. Origami magic is not without its challenges. Mastery of this arcane discipline demands patience, dexterity, and a keen eye for detail. Each fold must be precise, each crease exact, for even the smallest imperfection can disrupt the flow of magic and render a spell ineffective. Yet, for those who persevere, the rewards are boundless.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_AN_ARCANE_ART" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_FAMILIAR" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_BINDING_RELEASE" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_PAPER_PATH" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_SERVANT" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ARCANE_REFRESH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_AN_ARCANE_ART" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_FAMILIAR" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_BINDING_RELEASE" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_PAPER_PATH" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_SERVANT" level="10" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ARCANE_REFRESH" level="14" />
+		</rules>
+	</element>
+
+	<element name="An Arcane Art" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_AN_ARCANE_ART">
+		<description>
+			<p>At 2nd level, you learn to weave magic into origami, allowing you to create magnificent moving art pieces, which act on your behalf. As a bonus action, you can fold and imbue life into a paper construct that takes a form you choose from the list below. When crafted, an origami construct becomes bound to you or another creature of your choice that you can see within 60 feet of you.</p>
+			<p class="indent">A creature with a bound origami construct gains the unique effects and features listed for that construct. A creature can't have more than one of the same origami construct bound to it at a time, unless stated otherwise. A bound construct occupies the same space as the creature it's bound to.</p>
+			<p class="indent">These constructs stay imbued with life for a number of hours equal to half your wizard level. Origami constructs have an AC equal to your spell save DC, are immune to poison and psychic damage, and are destroyed when they take any damage. You can use this feature to create an origami construct a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<h4>ORIGAMI CONSTRUCTS</h4>
+			<p>The constructs are presented in alphabetical order.</p>
+			<p><strong><em>Bird.</em></strong> While the origami bird is bound to your person, you gain proficiency in the Perception skill. Additionally, you deal an additional 2 slashing damage whenever you hit a target with a ranged attack.</p>
+			<p><strong><em>Cat.</em></strong> While the origami cat is bound to your person, you gain proficiency in the Stealth skill. Additionally, once on each of your turns when you hit a target with a melee weapon attack, the origami cat can make a melee spell attack against the same target. Its attack modifier is equal to your weapon attack modifier, and on a hit, the target takes 1d6 slashing damage.</p>
+			<p class="indent">The origami cat's damage increases when you reach certain levels in this class: 1d8 at 5th level, 1d10 at 11th level, and 1d12 at 17th level.</p>
+			<p><strong><em>Crab.</em></strong> While the origami crab is bound to your person, you gain a +1 bonus to your AC and proficiency in the Athletics skill. If the wizard that crafted this origami crab creates another, this origami crab is destroyed.</p>
+			<p><strong><em>Dragon.</em></strong> While the origami dragon is bound to your person, you have disadvantage on Dexterity (Stealth) checks and can't benefit from being invisible. Additionally, you take 1d4 fire damage at the start of each of your turns. You can have multiple origami dragons bound to you at the same time.</p>
+			<p class="indent">When the construct is destroyed, it quickly pops in an audible explosion, dealing 2d6 fire damage to each creature within 5 feet of it.</p>
+			<p><strong><em>Frog.</em></strong> While the origami frog is bound to your person, you gain proficiency in the Acrobatics skill. As a reaction, when you would fail a Dexterity saving throw, you can add a bonus to the roll equal to the spellcasting ability modifier of the wizard that crafted the construct; using this feature destroys the origami frog.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can fold and imbue life into a paper construct that takes a form you choose from the list below. When crafted, an origami construct becomes bound to you or another creature of your choice that you can see within 60 ft of you. &#13;
+			A creature with a bound origami construct gains the unique effects and features listed for that construct. A creature can't have more than one of the same origami construct bound to it at a time, unless stated otherwise. A bound construct occupies the same space as the creature it's bound to. &#13;
+			These constructs stay imbued with life for {{level:wizard:half}} hour(s). Origami constructs have {{wizard:spellcasting:dc}} AC, are immune to poison and psychic damage, and are destroyed when they take any damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_BIRD" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_CAT" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_CRAB" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_DRAGON" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_FROG" level="2" />
+		</rules>
+	</element>
+
+	<element name="Origami Familiar" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_FAMILIAR">
+		<description>
+			<p>At 2nd level, you learn the <i>Find Familiar</i> spell; you always have it prepared, and it doesn't count against the number of spells you can prepare each day. Your familiar appears as an origami version of itself, is immune to poison and psychic damage, and is a construct, instead of a celestial, fey, or fiend. In addition to the familiar's normal statistics, it also gains access to the following abilities.</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Camouflage.</strong> You can command your familiar to shift into a flattened paper form. In this form the familiar looks nearly indistinguishable from a normal piece of paper. If a creature uses its action to examine the familiar, it can discern the familiar for what it is with a successful Intelligence (Investigation) check against your spell save DC. The familiar can use an action to shift back into its origami form.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Last Resort.</strong> As an action, your origami familiar can dive toward a creature, unfurling itself and wrapping around the target's face, as if a sheet of paper blown by the wind. The target must make a Dexterity saving throw against your spell save DC or become blinded for 1 minute. A creature blinded by the paper or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is no longer blinded. When this effect ends, your familiar is destroyed.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Reconnaissance.</strong> As an action, you can command your familiar to spy. The origami familiar will then spend 1 minute listening to any and all sounds within 15 feet of itself, recording what it overhears on its paper body. It then returns to you and dispels its familiar form, leaving behind a transcript of its findings written in a language of your choice that you know.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You always have the Find Familiar spell prepared. Your familiar appears as an origami version of itself, is immune to poison and psychic damage, and is a construct, instead of a celestial, fey, or fiend. In addition to the familiar's normal statistics, it also gains access to the following abilities: &#13;
+			• Camouflage. You can command your familiar to shift into a flattened paper form. In this form the familiar looks nearly indistinguishable from a normal piece of paper. If a creature uses its action to examine the familiar, it can discern the familiar for what it is with a successful Intelligence (Investigation) check (DC {{wizard:spellcasting:dc}}). The familiar can use an action to shift back into its origami form. &#13;
+			&#13;
+			• Last Resort. As an action, your origami familiar can dive toward a creature, unfurling itself and wrapping around the target's face, as if a sheet of paper blown by the wind. The target must make a Dexterity saving throw (DC {{wizard:spellcasting:dc}}) or become blinded for 1 minute. A creature blinded by the paper or one that can touch the creature can use its action to make a Strength check (DC {{wizard:spellcasting:dc}}). On a success, the target is no longer blinded. When this effect ends, your familiar is destroyed. &#13;
+			&#13;
+			• Reconnaissance. As an action, you can command your familiar to spy. The origami familiar will then spend 1 minute listening to any and all sounds within 15 feet of itself, recording what it overhears on its paper body. It then returns to you and dispels its familiar form, leaving behind a transcript of its findings written in a language of your choice that you know.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Binding Release" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_BINDING_RELEASE">
+		<description>
+			<p>Starting at 6th level, you can use a bonus action to move one of your origami constructs to a creature that you can see within 30 feet of it.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can move one of your origami constructs to a creature that you can see within 30 ft of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Paper Path" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_PAPER_PATH">
+		<description>
+			<p>Also at 6th level, when you cast a spell with a range of touch, your origami construct can deliver the spell as if it had cast the spell. Your construct must be within 100 feet of you. If the spell requires an attack roll, you use your attack modifier for the roll.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell with a range of touch, your origami construct can deliver the spell as if it had cast the spell. Your construct must be within 100 ft of you. If the spell requires an attack roll, you use your attack modifier for the roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Origami Servant" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_SERVANT">
+		<description>
+			<p>Beginning at 10th level, you learn the <i>Unseen Servant</i> spell; you always have it prepared, and it doesn't count against the number of spells you can prepare each day. In addition, you can cast it without expending a spell slot, but the maximum number of servants you can have at a time is equal to half your wizard level (rounded up). When you cast it, it has the following changes:</p>
+			<ul>
+				<li>The spell lasts for a number of hours equal to your proficiency bonus, instead of 1 hour.</li>
+				<li>Your servant appears as a visible origami version of itself.</li>
+				<li>Your servant is immune to poison and psychic damage.</li>
+				<li>Your servant can move through a space as narrow as 1 inch wide without squeezing.</li>
+				<li>When you use your bonus action to command a servant, you can issue a unique command to each servant you have created as part of the same bonus action.</li>
+				<li>Your servant falls at a rate of 60 feet per round and takes no falling damage.</li>
+				<li>Your servant can see invisible creatures and objects as if they were visible.</li>
+				<li>As an action, while your servant is within 100 feet of you, you can see through your servant's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the servant has. During this time, you are deaf and blind with regard to your own senses.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can cast the Unseen Servant spell without expending a spell slot, but the maximum number of servants you can have at a time is equal to {{level:wizard:half:up}}. When you cast it, it has the following changes: &#13;
+			• The spell lasts for {{proficiency}} hours, instead of 1 hour. &#13;
+			• Your servant appears as a visible origami version of itself. &#13;
+			• Your servant is immune to poison and psychic damage. &#13;
+			• Your servant can move through a space as narrow as 1 inch wide without squeezing. &#13;
+			• When you use your bonus action to command a servant, you can issue a unique command to each servant you have created as part of the same bonus action. &#13;
+			• Your servant falls at a rate of 60 ft per round and takes no falling damage. &#13;
+			• Your servant can see invisible creatures and objects as if they were visible. &#13;
+			• As an action, while your servant is within 100 ft of you, you can see through your servant's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the servant has. During this time, you are deaf and blind with regard to your own senses. &#13;</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Arcane Refresh" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ARCANE_REFRESH">
+		<description>
+			<p>At 14th level, your origami constructs return the magic you lent them when you imbued them with life whenever they are destroyed. When one of your constructs is destroyed, you can regain 10 hit points or regain a spell slot of 2nd level or lower (your choice).</p>
+			<p class="indent">Additionally, when one of your constructs would take damage, you can use your reaction to negate the damage against it. Once you use this ability, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>When one of your constructs is destroyed, you can regain 10 hp or regain a spell slot of 2nd level or lower (your choice). &#13;
+			Additionally, when one of your constructs would take damage, you can use your reaction to negate the damage against it. Once you use this ability, you can't do so again until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<!--Origami Constructs-->
+		<element name="Bird" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_BIRD">
+		<description>
+			<p>While the origami bird is bound to your person, you gain proficiency in the Perception skill. Additionally, you deal an additional 2 slashing damage whenever you hit a target with a ranged attack.</p>
+		</description>
+		<sheet alt="Origami Construct, Bird">
+			<description>While the origami bird is bound to your person, you gain proficiency in the Perception skill. Additionally, you deal an additional 2 slashing damage whenever you hit a target with a ranged attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Cat" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_CAT">
+		<description>
+			<p>While the origami cat is bound to your person, you gain proficiency in the Stealth skill. Additionally, once on each of your turns when you hit a target with a melee weapon attack, the origami cat can make a melee spell attack against the same target. Its attack modifier is equal to your weapon attack modifier, and on a hit, the target takes 1d6 slashing damage.</p>
+			<p class="indent">The origami cat's damage increases when you reach certain levels in this class: 1d8 at 5th level, 1d10 at 11th level, and 1d12 at 17th level.</p>
+		</description>
+		<sheet alt="Origami Construct, Cat">
+			<description>While the origami cat is bound to your person, you gain proficiency in the Stealth skill. Additionally, once on each of your turns when you hit a target with a melee weapon attack, the origami cat can make a melee spell attack against the same target. Its attack modifier is equal to your weapon attack modifier, and on a hit, the target takes 1d{{ottg:origami mage:cat:die}} slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:origami mage:cat:die" value="6" bonus="base" />
+			<stat name="ottg:origami mage:cat:die" value="8" bonus="base" level="5" />
+			<stat name="ottg:origami mage:cat:die" value="10" bonus="base" level="11" />
+			<stat name="ottg:origami mage:cat:die" value="12" bonus="base" level="17" />
+		</rules>
+	</element>
+
+	<element name="Crab" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_CRAB">
+		<description>
+			<p>While the origami crab is bound to your person, you gain a +1 bonus to your AC and proficiency in the Athletics skill. If the wizard that crafted this origami crab creates another, this origami crab is destroyed.</p>
+		</description>
+		<sheet alt="Origami Construct, Crab">
+			<description>While the origami crab is bound to your person, you gain a +1 bonus to your AC and proficiency in the Athletics skill. If the wizard that crafted this origami crab creates another, this origami crab is destroyed.</description>
+		</sheet>
+	</element>
+
+	<element name="Dragon" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_DRAGON">
+		<description>
+			<p>While the origami dragon is bound to your person, you have disadvantage on Dexterity (Stealth) checks and can't benefit from being invisible. Additionally, you take 1d4 fire damage at the start of each of your turns. You can have multiple origami dragons bound to you at the same time.</p>
+			<p class="indent">When the construct is destroyed, it quickly pops in an audible explosion, dealing 2d6 fire damage to each creature within 5 feet of it.</p>
+		</description>
+		<sheet alt="Origami Construct, Dragon">
+			<description>While the origami dragon is bound to your person, you have disadvantage on Dexterity (Stealth) checks and can't benefit from being invisible. Additionally, you take 1d4 fire damage at the start of each of your turns. You can have multiple origami dragons bound to you at the same time.
+			When the construct is destroyed, it quickly pops in an audible explosion, dealing 2d6 fire damage to each creature within 5 feet of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Frog" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ORIGAMI_MAGE_ORIGAMI_CONSTRUCTS_FROG">
+		<description>
+			<p>While the origami frog is bound to your person, you gain proficiency in the Acrobatics skill. As a reaction, when you would fail a Dexterity saving throw, you can add a bonus to the roll equal to the spellcasting ability modifier of the wizard that crafted the construct; using this feature destroys the origami frog.</p>
+		</description>
+		<sheet alt="Origami Construct, Frog">
+			<description>While the origami frog is bound to your person, you gain proficiency in the Acrobatics skill. As a reaction, when you would fail a Dexterity saving throw, you can add a +{{intelligence:modifier}} bonus to the roll; using this feature destroys the origami frog.</description>
+		</sheet>
+	</element>
+
+</elements>

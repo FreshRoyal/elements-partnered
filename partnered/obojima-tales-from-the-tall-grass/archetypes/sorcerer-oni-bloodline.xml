@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oni Bloodline</name>
+		<description>Oni Bloodline from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="sorcerer-oni-bloodline.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/sorcerer-oni-bloodline.xml" />
+		</update>
+	</info>
+
+	<element name="Oni Bloodline" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_SORCERER_ONI_BLOODLINE">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>In the realm of magic, there exists a lineage of sorcerers whose blood bears an ancient connection to the oni. These sorcerers, known as Oni Kin, harness the magic of their lineage to weave powerful spells. But, as they delve deeper into their arcane abilities, they find themselves gradually transforming, both physically and spiritually, into embodiments of the oni's fearsome might.</p>
+			<p class="indent">At the onset of their journey and as they use their powers, Oni Kin begin to see subtle manifestations of their lineage's traits—changes in appearance and temperament. However, as they channel their magic with more skill, these traits begin to intensify. Their skin may change, their eyes may glow with an eerie light, and their once-subtle features become more pronounced, bearing the unmistakable visage of an oni.</p>
+			<p class="indent">As their power reaches its zenith, Oni Kin reach a pinnacle where they can fully embrace their heritage and assume the form of a true oni. In this form, they stand as towering figures of terror, wielding unparalleled magical might and physical prowess. Yet, with this transformation comes a perilous temptation—the struggle to maintain control over the oni 's insatiable hunger for chaos and destruction. This struggle is not unnoticed by islanders, most of which fear or distrust the Oni Kin.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ARCANE_PRISON" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_OGRE_MANIPULATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_BOILING_POWER" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_TRANSFORMATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ARCANE_PRISON" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_OGRE_MANIPULATION" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_BOILING_POWER" level="14" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_TRANSFORMATION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Arcane Prison" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ARCANE_PRISON">
+		<description>
+			<p>Trapped inside of you is the essence of the First Oni, passed down through its children and stretched across a long and treacherous lineage. As you grow in strength, so does the spirit within you. It desperately wishes to bubble to the surface, and it does so when you're at your weakest. At 1st level, you gain the traits of the oni, which manifest as you expend sorcery points. Each oni trait becomes available to you based on how many sorcery points you're missing from your total, represented by the table below. Regaining sorcery points can cause you to lose one or more oni traits.</p>
+			<p class="indent">Each oni trait has both a physical and an arcane manifestation, which lasts until you finish a long rest.</p>
+			<table>
+				<thead>
+					<tr><td>Sorcery Points Missing</td><td>Manifestation</td></tr>
+				</thead>
+				<tr><td>0-1</td><td>Eyes</td></tr>
+				<tr><td>2-4</td><td>Horn</td></tr>
+				<tr><td>5-9</td><td>Skin</td></tr>
+				<tr><td>10-14</td><td>Tongue</td></tr>
+				<tr><td>15 or more</td><td>Hair</td></tr>
+			</table>
+			<h4>ONI TRAITS</h4>
+			<p><strong><em>Eyes.</em></strong> Your eyes shimmer with an almost mesmerizing quality. As an action, you can activate your innate ocular charm. For 1 minute, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you, provided it can see your eyes. When the effect ends, the creature must make a Wisdom saving throw against your spell save DC. On a success, the target realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the GM's discretion), depending on the nature of your interaction with it.</p>
+			<p><strong><em>Horns.</em></strong> You gain horns which rapidly grow and jut out from your head. When casting a cantrip that requires you to make a melee or ranged spell attack, you can instead make a melee spell attack using your horns, channeling the spell through them. When you hit a creature with a cantrip cast in this way, the target takes an extra 1d6 piercing damage.</p>
+			<p class="indent">Additionally, when a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a cantrip at the creature using your horns rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</p>
+			<p><strong><em>Skin.</em></strong> The hue of your skin turns to a dull red, green, or blue color and you adopt the regenerative powers of the oni. Whenever you cast a spell of 1st level or higher, you regain a number of hit points equal to the spell's level + your Constitution modifier. You don't gain this benefit if you activate the Tongue trait for that casting.</p>
+			<p><strong><em>Tongue.</em></strong> With every incantation cast, the twisted and demonic voice of the First Oni can be heard within your speech. When you cast a spell that requires a verbal component and targets a single creature, you can also use your bonus action to cause the target to recoil in fear. The target must make a Wisdom saving throw against your spell save DC. On a failed save, the target must use its reaction, if available, to move up to half its speed away from you or fall prone (your choice).</p>
+			<p><strong><em>Hair.</em></strong> Your hair turns a shocking white and stretches towards the ground as it grows to cover your back. You gain a +2 bonus to your AC.</p>
+		</description>
+		<sheet>
+			<description>You gain the traits of the oni, which manifest as you expend sorcery points. Each oni trait becomes available to you based on how many sorcery points you're missing from your total. Regaining sorcery points can cause you to lose one or more oni traits.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_EYES" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_HORNS" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_SKIN" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_TONGUE" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_HAIR" level="1" />
+		</rules>
+	</element>
+	<element name="Eyes" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_EYES">
+		<description>
+			<p>Your eyes shimmer with an almost mesmerizing quality. As an action, you can activate your innate ocular charm. For 1 minute, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you, provided it can see your eyes. When the effect ends, the creature must make a Wisdom saving throw against your spell save DC. On a success, the target realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the GM's discretion), depending on the nature of your interaction with it.</p>
+		</description>
+		<sheet action="Action" usage="0-1 Sorcery Points Missing">
+			<description>You can activate your innate ocular charm. For 1 minute, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you, provided it can see your eyes. When the effect ends, the creature must make a Wisdom saving throw (DC {{sorcerer:spellcasting:dc}}). On a success, the target realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the GM's discretion), depending on the nature of your interaction with it.</description>
+			<description level="14">You can activate your innate ocular charm. For 1 minute, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you, provided it can see your eyes. When the effect ends, the creature must make a Wisdom saving throw (DC {{sorcerer:spellcasting:dc}}). On a success, the target realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the GM's discretion), depending on the nature of your interaction with it. &#13;
+			You also learn the Zone of Truth spell, which you can cast without expending a spell slot. When you cast it, only one creature of your choice within 60 ft of you is affected by the spell. The target must make its saving throw against the spell at the start of each of its turns, provided it can see your eyes; the spell ends early if the target can no longer see your eyes.</description>
+		</sheet>
+	</element>
+	<element name="Horns" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_HORNS">
+		<description>
+			<p>You gain horns which rapidly grow and jut out from your head. When casting a cantrip that requires you to make a melee or ranged spell attack, you can instead make a melee spell attack using your horns, channeling the spell through them. When you hit a creature with a cantrip cast in this way, the target takes an extra 1d6 piercing damage.</p>
+			<p class="indent">Additionally, when a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a cantrip at the creature using your horns rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</p>
+		</description>
+		<sheet usage="2-4 Sorcery Points Missing">
+			<description>You gain horns which rapidly grow and jut out from your head. When casting a cantrip that requires you to make a melee or ranged spell attack, you can instead make a melee spell attack using your horns, channeling the spell through them. When you hit a creature with a cantrip cast in this way, the target takes an extra 1d{{ottg:oni bloodline:horns:die}} piercing damage. &#13;
+			Additionally, when a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a cantrip at the creature using your horns rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:oni bloodline:horns:die" value="6" bonus="base" />
+		</rules>
+	</element>
+	<element name="Skin" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_SKIN">
+		<description>
+			<p>The hue of your skin turns to a dull red, green, or blue color and you adopt the regenerative powers of the oni. Whenever you cast a spell of 1st level or higher, you regain a number of hit points equal to the spell's level + your Constitution modifier. You don't gain this benefit if you activate the Tongue trait for that casting.</p>
+		</description>
+		<sheet usage="5-9 Sorcery Points Missing">
+			<description>Whenever you cast a spell of 1st level or higher, you regain hp equal to the spell's level + {{constitution:modifier}}. You don't gain this benefit if you activate the Tongue trait for that casting.</description>
+			<description level="14">Whenever you cast a spell of 1st level or higher, you regain hp equal to twice the spell's level + {{constitution:modifier}}. You don't gain this benefit if you activate the Tongue trait for that casting.</description>
+		</sheet>
+	</element>
+	<element name="Tongue" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_TONGUE">
+		<description>
+			<p>With every incantation cast, the twisted and demonic voice of the First Oni can be heard within your speech. When you cast a spell that requires a verbal component and targets a single creature, you can also use your bonus action to cause the target to recoil in fear. The target must make a Wisdom saving throw against your spell save DC. On a failed save, the target must use its reaction, if available, to move up to half its speed away from you or fall prone (your choice).</p>
+		</description>
+		<sheet action="Bonus Action" usage="10-14 Sorcery Points Missing">
+			<description>When you cast a spell that requires a verbal component and targets a single creature, you can also use your bonus action to cause the target to recoil in fear. The target must make a Wisdom saving throw (DC {{sorcerer:spellcasting:dc}}). On a failed save, the target must use its reaction, if available, to move up to half its speed away from you or fall prone (your choice).</description>
+			<description level="14">When you cast a spell that requires a verbal component and targets a single creature, you can also use your bonus action to cause the target to recoil in fear. The target must make a Wisdom saving throw (DC {{sorcerer:spellcasting:dc}}). On a failed save, the target must use its reaction, if available, to move up to half its speed away from you or fall prone (your choice). &#13;
+			When you activate the Tongue trait using a spell slot of 5th level or higher, in place of the trait's normal effects, you can instead cause the target to tremble in fear, becoming hyper fixated on you. The target's passive Wisdom (Perception) score is reduced to 5 and it takes a -5 penalty to its AC against all attacks that aren't made by you. This effect lasts until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Hair" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_ONI_TRAITS_HAIR">
+		<description>
+			<p>Your hair turns a shocking white and stretches towards the ground as it grows to cover your back. You gain a +2 bonus to your AC.</p>
+		</description>
+		<sheet usage="15+ Sorcery Points Missing">
+			<description>You gain a +2 bonus to your AC.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ogre Manipulation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_OGRE_MANIPULATION">
+		<description>
+			<p>Starting at 6th level, you can manifest one of your oni traits, regardless of how many sorcery points you're missing. As a bonus action, you can gain one of the oni traits you could normally obtain through the expenditure of sorcery points and draw it out early. This trait lasts for 1 minute, and you lose it if you haven't gained the trait by normal means in that time.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can gain one of the oni traits you could normally obtain through the expenditure of sorcery points and draw it out early. This trait lasts for 1 minute, and you lose it if you haven't gained the trait by normal means in that time.</description>
+		</sheet>
+	</element>
+
+	<element name="Boiling Power" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_BOILING_POWER">
+		<description>
+			<p>At 14th level, your oni traits grow in strength. The following changes apply to your traits:</p>
+			<p><strong><em>Eyes.</em></strong> In addition to the benefits you normally have, you learn the <i>Zone of Truth</i> spell, which you can cast without expending a spell slot. When you cast it, only one creature of your choice within 60 feet of you is affected by the spell. The target must make its saving throw against the spell at the start of each of its turns, provided it can see your eyes; the spell ends early if the target can no longer see your eyes.</p>
+			<p><strong><em>Horns.</em></strong> The extra damage dealt by your horns increases to 1d12.</p>
+			<p><strong><em>Skin.</em></strong> Whenever you cast a spell of 1st level or higher, you now regain a number of hit points equal to twice the spell's level + your Constitution modifier.</p>
+			<p><strong><em>Tongue.</em></strong> When you activate the Tongue trait using a spell slot of 5th level or higher, in place of the trait's normal effects, you can instead cause the target to tremble in fear, becoming hyper fixated on you. The target's passive Wisdom (Perception) score is reduced to 5 and it takes a -5 penalty to its AC against all attacks that aren't made by you. This effect lasts until the start of your next turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ottg:oni bloodline:horns:die" value="12" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Transformation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_ONI_BLOODLINE_TRANSFORMATION">
+		<description>
+			<p>Beginning at 18th level, you can fully embody the fabled visage of your demon ancestor without needing to exhaust your sorcerous power. As an action, you can instantly manifest all of your oni traits, regardless of how many sorcery points you're missing. While manifesting your oni traits in this way, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and you can't be charmed or frightened.</p>
+			<p class="indent">This effect lasts for 1 minute, after which you lose any trait you haven't gained by normal means in that time. Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can instantly manifest all of your oni traits, regardless of how many sorcery points you're missing. While manifesting your oni traits in this way, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and you can't be charmed or frightened. 
+			This effect lasts for 1 minute, after which you lose any trait you haven't gained by normal means in that time. Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again.</description>
+		</sheet>
+	</element>
+
+</elements>

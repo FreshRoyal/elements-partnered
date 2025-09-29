@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Belly Brewer</name>
+		<description>Path of the Belly Brewer from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="barbarian-belly-brewer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/barbarian-belly-brewer.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Belly Brewer" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_BARBARIAN_PATH_OF_THE_BELLY_BREWER">
+		<supports>Primal Path</supports>
+		<description>
+			<p>These barbarians are masters of brewing potions on the fly—directly in their guts! Where others must painstakingly prepare potions with finesse, they channel their inner hunger to unlock the latent magic within raw ingredients without any prep.</p>
+			<p class="indent">Those born with the rumble in their belly often find that regular food can't quite satisfy. They require something more unusual. A generation ago, a handful of adventurous eaters with the appetite set out to find a way to appease their seemingly unappeasable appetites. This is how they discovered "belly brewing." Certain morsels consumed together not only quieted the rumble for a time, but they also yielded the potion-like effects they've since come to be known for.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_SIDE_EFFECTS" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_QUICK_BREW" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_LINGERING_EFFECTS" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_MIGHTY_QUICK_BREW" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_SIDE_EFFECTS" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_QUICK_BREW" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_LINGERING_EFFECTS" level="10" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_MIGHTY_QUICK_BREW" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Belly Concoction" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION">
+		<description>
+			<p>Starting at 3rd level, you learn the hard-earned skill of belly brewing, an arcane technique in which you swallow, mix, and brew magical concoctions inside your gut, creating a number of unique effects.</p>
+			<p class="indent">When you enter your rage, you focus your energy to harness and activate the effects of a belly concoction. Choose combat, utility, or whimsy. You gain the effects of the chosen belly concoction, as detailed below. You can change your belly concoction each time you rage.</p>
+			<h4>Combat</h4>
+			<p>Your body undergoes a unique change which magically alters your physical form, giving it the characteristics of rubber. While in this elastic state, you can use your reaction when you are hit by a ranged attack, deflecting it with your belly. When you do so, the damage you take from the attack is reduced by 1d12 + your Constitution modifier + your barbarian level.</p>
+			<p class="indent">Additionally, immediately before you make a melee weapon attack on your turn, you can use your bonus action to stretch your arms, increasing your reach by 5 feet for the rest of the turn. The first time you hit while your arms are stretched in this way, the attack deals an extra 1d6 damage of the weapon's type.</p>
+			<h4>Utility</h4>
+			<p>The bubbling elixir in your stomach is perfectly mixed to dissolve and absorb anything you can swallow. As a bonus action, you can consume any object you can fit in your mouth. When you do so, you can expend one of your Hit Dice as part of this bonus action to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1). Swallowing an object in this way destroys it, provided the object isn't magical. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<h4>Whimsy</h4>
+			<p>You focus on the magical brew inside you, only to get an array of strange and unruly effects. While in this state, you gain one of the following effects at the start of each of your turns:</p>
+			<ul>
+				<li>You teleport to an unoccupied space within 10 feet of you that you can see.</li>
+				<li>You take 1d4 necrotic damage; the next ability check you make before the end of your turn gains a bonus equal to the number rolled.</li>
+				<li>You can immediately take the Help action as a bonus action.</li>
+			</ul>
+			<p class="indent">Additionally, you gain a random visual effect that accompanies the other whimsical features, such as your hair turns to moss, a spectral bird circles above your head, or a tattoo of a dancing man appears on your person and moves about your body.</p>
+		</description>
+		<sheet usage="Rage">
+			<description>When you enter your rage, you focus your energy to harness and activate the effects of a belly concoction. Choose combat, utility, or whimsy. You gain the effects of the chosen belly concoction, as detailed below. You can change your belly concoction each time you rage.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION_COMBAT" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION_UTILITY" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION_WHIMSY" level="1" />
+		</rules>
+	</element>
+	<element name="Combat" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION_COMBAT">
+		<description>
+			<p>Your body undergoes a unique change which magically alters your physical form, giving it the characteristics of rubber. While in this elastic state, you can use your reaction when you are hit by a ranged attack, deflecting it with your belly. When you do so, the damage you take from the attack is reduced by 1d12 + your Constitution modifier + your barbarian level.</p>
+			<p class="indent">Additionally, immediately before you make a melee weapon attack on your turn, you can use your bonus action to stretch your arms, increasing your reach by 5 feet for the rest of the turn. The first time you hit while your arms are stretched in this way, the attack deals an extra 1d6 damage of the weapon's type.</p>
+		</description>
+		<sheet alt="Belly Concoction, Combat">
+			<description>Your body undergoes a unique change which magically alters your physical form, giving it the characteristics of rubber. While in this elastic state, you can use your reaction when you are hit by a ranged attack, deflecting it with your belly. When you do so, the damage you take from the attack is reduced by 1d12 + {{ottg:belly brewer:combat:reduction}}. &#13;
+			Additionally, immediately before you make a melee weapon attack on your turn, you can use your bonus action to stretch your arms, increasing your reach by 5 feet for the rest of the turn. The first time you hit while your arms are stretched in this way, the attack deals an extra 1d6 damage of the weapon's type.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:belly brewer:combat:reduction" value="constitution:modifier" />
+			<stat name="ottg:belly brewer:combat:reduction" value="level:barbarian" />
+		</rules>
+	</element>
+	<element name="Utility" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION_UTILITY">
+		<description>
+			<p>The bubbling elixir in your stomach is perfectly mixed to dissolve and absorb anything you can swallow. As a bonus action, you can consume any object you can fit in your mouth. When you do so, you can expend one of your Hit Dice as part of this bonus action to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1). Swallowing an object in this way destroys it, provided the object isn't magical. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet alt="Belly Concoction, Utility" action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can consume any object you can fit in your mouth. When you do so, you can expend one of your Hit Dice as part of this bonus action to heal yourself. Roll the die, add {{constitution:modifier}}, and regain a number of hit points equal to the total (minimum of 1). Swallowing an object in this way destroys it, provided the object isn't magical.</description>
+		</sheet>
+	</element>
+	<element name="Whimsy" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_BELLY_CONCOCTION_WHIMSY">
+		<description>
+			<p>You focus on the magical brew inside you, only to get an array of strange and unruly effects. While in this state, you gain one of the following effects at the start of each of your turns:</p>
+			<ul>
+				<li>You teleport to an unoccupied space within 10 feet of you that you can see.</li>
+				<li>You take 1d4 necrotic damage; the next ability check you make before the end of your turn gains a bonus equal to the number rolled.</li>
+				<li>You can immediately take the Help action as a bonus action.</li>
+			</ul>
+			<p class="indent">Additionally, you gain a random visual effect that accompanies the other whimsical features, such as your hair turns to moss, a spectral bird circles above your head, or a tattoo of a dancing man appears on your person and moves about your body.</p>
+		</description>
+		<sheet alt="Belly Concoction, Utility">
+			<description>You focus on the magical brew inside you, only to get an array of strange and unruly effects. While in this state, you gain one of the following effects at the start of each of your turns: &#13;
+			• You teleport to an unoccupied space within 10 ft of you that you can see. &#13;
+			• You take 1d4 necrotic damage; the next ability check you make before the end of your turn gains a bonus equal to the number rolled. &#13;
+			• You can immediately take the Help action as a bonus action. &#13;
+			Additionally, you gain a random visual effect that accompanies the other whimsical features.</description>
+		</sheet>
+	</element>
+
+	<element name="Side Effects" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_SIDE_EFFECTS">
+		<description>
+			<p>At 3rd level, you gain a number of magical side effects due to the countless magical ingredients you've ingested. You learn the <i>Prestidigitation</i> and <i>Thaumaturgy</i> cantrips.</p>
+		</description>
+		<sheet>
+			<description>You learn the Prestidigitation and Thaumaturgy cantrips.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+		</rules>
+	</element>
+
+	<element name="Quick Brew" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_QUICK_BREW">
+		<description>
+			<p>Beginning at 6th level, you've learned how to better control the effects your belly concoction produces.</p>
+			<p class="indent">Choose a common potion that you would normally consume. You can activate the effects of the chosen potion as a bonus action. Once you activate it, you can't do so again until you finish a long rest. If the potion's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+			<p class="indent">Each time you gain a level in this class, you can swap your chosen potion with a different one.</p>
+			<div class="reference">
+				<p>An alternate way of using this feature is to only allow the player to choose from a list of potion recipes that they're aware of. If the belly brewer has yet to learn any potion recipes, then the GM should provide a list of 10 options to choose from.</p>
+			</div>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You choose a common potion that you normally consume when you take this feature. You can activate the effects of the chosen potion as a bonus action. Once you activate it, you can't do so again until you finish a long rest. If the potion's effects require a saving throw, the DC equals {{ottg:belly brewer:quick brew:dc}}. Each time you gain a level in this class, you can swap your chosen potion with a different one.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:belly brewer:quick brew:dc" value="8" />
+			<stat name="ottg:belly brewer:quick brew:dc" value="constitution:modifier" />
+			<stat name="ottg:belly brewer:quick brew:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Lingering Effects" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_LINGERING_EFFECTS">
+		<description>
+			<p>When you finish a long rest, choose one of the following conditions: blinded, charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone, restrained, or stunned. You have advantage on saving throws against that condition until you choose a different one with this feature.</p>
+		</description>
+		<sheet>
+			<description>When you finish a long rest, choose one of the following conditions: blinded, charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone, restrained, or stunned. You have advantage on saving throws against that condition until you choose a different one with this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Mighty Quick Brew" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_PATH_OF_THE_BELLY_BREWER_MIGHTY_QUICK_BREW">
+		<description>
+			<p>Starting at 14th level, you learn an additional common potion as well as an uncommon potion, using your Quick Brew feature.</p>
+			<p>Each time you gain a level in this class, you can swap one of your chosen potions with a different one.</p>
+		</description>
+		<sheet>
+			<description>You learn an additional common potion as well as an uncommon potion, using your Quick Brew feature. Each time you gain a level in this class, you can swap one of your chosen potions with a different one.</description>
+		</sheet>
+	</element>
+
+</elements>

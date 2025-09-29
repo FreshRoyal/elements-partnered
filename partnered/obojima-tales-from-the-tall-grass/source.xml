@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/source.xml" />
+		</update>
+	</info>
+	<element name="Obojima: Tales from the Tall Grass" type="Source" source="Core" id="ID_1985_SOURCE_OBOJIMA_TALES_FROM_THE_TALL_GRASS">
+		<description>
+			<h5 style="margin-top:-1em">Cozy leisure fantasy meets D&amp;D!</h5>
+			<p>Mystery and whimsy collide on the beautiful island of Obojima, where humans and spirits have learned to live together. Every corner of the sprawling island has something new to uncover, and 80’s technology like vending machines, keytars, and kei trucks are mysteriously found throughout the land, But now, the Corruption has started to spread across Obojima, changing everything it touches into twisted abominations.</p>
+			<p><i>Obojima: Tales from the Tall Grass</i> keeps the focus on enjoying the world around you. The lo-fi atmosphere emboldens adventures to be creative, go at their own pace, and take it easy. With an expansive cast of characters, new subclasses, spells, magic items, and a brand new potion-making system, you’ll always find something new on the island!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">OTTG</set>
+			<set name="url">https://obojima.com/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/OTTG.png</set>
+			<set name="author" abbreviation="1985" url="https://1985games.com/">1985 Games</set>
+			<set name="third-party">true</set>
+			<set name="release">20250325</set>
+		</setters>
+	</element>
+
+</elements>

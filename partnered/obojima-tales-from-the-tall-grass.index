@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Obojima: Tales from the Tall Grass by 1985 Games</name>
+		<update version="1.0.0">
+			<file name="obojima-tales-from-the-tall-grass.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass.index" />
+		</update>
+	</info>
+	<files>
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/feats.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-armor.xml" />
+		<file name="items-boons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-boons.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-gear.xml" />
+		<file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-magic.xml" />
+		<file name="items-potions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-potions.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-weapons.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/languages.xml" />
+		<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/skills.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/spells.xml" />
+		<file name="type-spiritxml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/type-spirit.xml" />
+		
+		<!--Archetypes-->
+		<file name="barbarian-belly-brewer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/barbarian-belly-brewer.xml" />
+		<file name="bard-masks.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/bard-masks.xml" />
+		<file name="druid-petal.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/druid-petal.xml" />
+		<file name="fighter-spirit-fused.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/fighter-spirit-fused.xml" />
+		<file name="monk-sheep-dragon-shepherd.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/monk-sheep-dragon-shepherd.xml" />
+		<file name="paladin-river.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/paladin-river.xml" />
+		<file name="ranger-corrupted.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/ranger-corrupted.xml" />
+		<file name="rogue-waxwork.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/rogue-waxwork.xml" />
+		<file name="sorcerer-oni-bloodline.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/sorcerer-oni-bloodline.xml" />
+		<file name="warlock-lantern.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/warlock-lantern.xml" />
+		<file name="wizard-origami-mage.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/wizard-origami-mage.xml" />
+
+		<!--Backgrounds-->
+		<file name="background-apprentice-diver.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-apprentice-diver.xml" />
+		<file name="background-apprentice-of-aha.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-apprentice-of-aha.xml" />
+		<file name="background-apprentice-witch.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-apprentice-witch.xml" />
+		<file name="background-courier-brigade-cadet.xml.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-courier-brigade-cadet.xml" />
+		<file name="background-mechanic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-mechanic.xml" />
+		<file name="background-sprit-kin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-spirit-kin.xml" />
+
+		<!--Races-->
+		<file name="race-dara.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/races/race-dara.xml" />
+		<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/races/race-elf.xml" />
+		<file name="race-nakudama.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/races/race-nakudama.xml" />
+	</files>
+</index>

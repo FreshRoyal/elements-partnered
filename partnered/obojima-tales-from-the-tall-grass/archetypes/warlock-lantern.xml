@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Lantern</name>
+		<description>The Lantern from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="warlock-lantern.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/warlock-lantern.xml" />
+		</update>
+	</info>
+
+	<element name="Mother of Sorrows" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_WARLOCK_THE_LANTERN">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Warlocks who make a pact with a powerful spirit are able to tap into the magic that flows through the Spirit Realm. These warlocks are known by the special lanterns they carry—lanterns that burn with the essence of their patron. The illumination of this vessel carries with it the attributes of the spirit, granting the warlock an array of abilities.</p>
+			<p class="indent">When spirits enter pacts with people, there is often more to it than generosity. Spirits powerful enough to lend out bits of their magic do so for a variety of reasons. Perhaps the spirit is beholden to do so due to a bargain or curse. It could be that the spirit needs allies (though they might not readily admit it). Or maybe they simply see something in you that amuses them. The things that motivate spirits are as varied as they are. And truly powerful spirits can be inscrutable.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_SPELLS" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_ILLUMINATING_AURA" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_REVEALING_LIGHT" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_DANGEROUS_TOOL" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_ORACLE_ILLUMINATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_BRILLIANT_ILLUMINATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_BRIGHTER_STILL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_ILLUMINATING_AURA" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_REVEALING_LIGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_DANGEROUS_TOOL" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_ORACLE_ILLUMINATION" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_BRILLIANT_ILLUMINATION" level="10" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_BRIGHTER_STILL" level="14" />
+		</rules>
+	</element>
+
+	<element name="Spells" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_SPELLS">
+		<description>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Faerie Fire, Identify</em></td></tr>
+				<tr><td>2nd</td><td><em>Locate Object, Swallow Magic</em></td></tr>
+				<tr><td>3rd</td><td><em>Daylight, Nondetection</em></td></tr>
+				<tr><td>4th</td><td><em>Guardian of Faith, Locate Creature</em></td></tr>
+				<tr><td>5th</td><td><em>Create Spirit Train Stop, Tamh Gon's Fiery Festival Feast</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+			<extend>ID_PHB_SPELL_IDENTIFY</extend>
+			<extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+			<extend>ID_1985_OTTG_SPELL_SWALLOW_MAGIC</extend>
+			<extend>ID_PHB_SPELL_DAYLIGHT</extend>
+			<extend>ID_PHB_SPELL_NONDETECTION</extend>
+			<extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_1985_OTTG_SPELL_CREATE_SPIRIT_TRAIN_STOP</extend>
+			<extend>ID_1985_OTTG_SPELL_TAMH_GONS_FIERY_FESTIVAL_FEAST</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Illuminating Aura" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_ILLUMINATING_AURA">
+		<description>
+			<p>Starting at 1st level, the essence of your spirit patron is channeled into a lantern, where it appears as a minor form of itself. You can use your lantern as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">As a bonus action, you can activate your lantern, causing it to shed bright light in a 20-foot radius and dim light for an additional 20 feet. This light lasts for 1 minute, or until you let go of the lantern or choose to end this effect early (no action required). For the duration, you gain the following benefits:</p>
+			<ul>
+				<li>Whenever you see a creature in your lantern's bright light make a saving throw, you can use your reaction to grant that creature a bonus to the save equal to your Charisma modifier (minimum of +1).</li>
+				<li>Whenever a hostile creature within your lantern's dim light fails a saving throw, it takes radiant damage equal to half your warlock level (rounded up).</li>
+			</ul>
+			<p>Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You have a lantern that you can use as a spellcasting focus for your warlock spells. &#13;
+			You can activate your lantern, causing it to shed bright light in a 20-ft radius and dim light for an additional 20 ft. This light lasts for 1 minute, or until you let go of the lantern or choose to end this effect early (no action required). For the duration, you gain the following benefits: &#13;
+			• Whenever you see a creature in your lantern's bright light make a saving throw, you can use your reaction to grant that creature a +{{ottg:lantern:illuminating aura:modifier}} bonus to the save. &#13;
+			• Whenever a hostile creature within your lantern's dim light fails a saving throw, it takes {{warlock:level:half:up}} radiant damage.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:lantern:illuminating aura:modifier" value="charisma:modifier" bonus="bonus" />
+			<stat name="ottg:lantern:illuminating aura:modifier" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Revealing Light" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_REVEALING_LIGHT">
+		<description>
+			<p>Starting at 1st level, you can use an action to cause your lantern to illuminate with a vibrant maroon light, which sheds bright light in a 10-foot radius and dim light for an additional 10 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. The lantern sheds light in this manner for 1 hour or until you snuff it out early as a bonus action.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You cause your lantern to illuminate with a vibrant maroon light, which sheds bright light in a 10-ft radius and dim light for an additional 10 ft. Invisible creatures and objects are visible as long as they are in the lantern's bright light. The lantern sheds light in this manner for 1 hour or until you snuff it out early as a bonus action.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Dangerous Tool" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_DANGEROUS_TOOL">
+		<description>
+			<p>Starting at 6th level, your Illuminating Aura no longer ends if you let go of your lantern. While you aren't holding your lantern, you can magically take control of it for 1 minute (no action required), using it as if it were a <i>Spiritual Weapon</i> cast as a 2nd-level spell. Your lantern continues to act as your spellcasting focus while using this feature, even though you are no longer holding the lantern.</p>
+			<p class="indent">The level at which <i>Spiritual Weapon</i> is cast increases when you reach certain levels in this class, increasing to a 4th-level spell at 10th level and a 6th-level spell at 15th level.</p>
+			<p class="indent">Once you take control of your lantern in this way, you can't do so again until you finish a long rest, unless you expend a warlock spell slot to take control of it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>While you aren't holding your lantern, you can magically take control of it for 1 minute (no action required), using it as if it were a Spiritual Weapon cast as a 2nd-level spell. Your lantern continues to act as your spellcasting focus while using this feature, even though you are no longer holding the lantern.
+			Once you take control of your lantern in this way, you can't do so again until you finish a long rest, unless you expend a warlock spell slot to take control of it again.</description>
+			<description level="10">While you aren't holding your lantern, you can magically take control of it for 1 minute (no action required), using it as if it were a Spiritual Weapon cast as a 4th-level spell. Your lantern continues to act as your spellcasting focus while using this feature, even though you are no longer holding the lantern.
+			Once you take control of your lantern in this way, you can't do so again until you finish a long rest, unless you expend a warlock spell slot to take control of it again.</description>
+			<description level="15">While you aren't holding your lantern, you can magically take control of it for 1 minute (no action required), using it as if it were a Spiritual Weapon cast as a 6th-level spell. Your lantern continues to act as your spellcasting focus while using this feature, even though you are no longer holding the lantern.
+			Once you take control of your lantern in this way, you can't do so again until you finish a long rest, unless you expend a warlock spell slot to take control of it again.</description>
+		</sheet>
+	</element>
+
+	<element name="Oracle Illumination" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_ORACLE_ILLUMINATION">
+		<description>
+			<p>Beginning at 6th level, you can spend an action to magically connect your mind to a light source such as a candle or torch that you can see or are familiar with. The light source acts as if it were the sensor created by the <i>Clairvoyance</i> spell, granting you the same benefits. You can use the light source in this way for 10 minutes or until you use this feature again.</p>
+			<p class="indent">Once you use this feature on a light source, you can't use it on the same light source again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can magically connect your mind to a light source such as a candle or torch that you can see or are familiar with. The light source acts as if it were the sensor created by the Clairvoyance spell, granting you the same benefits. You can use the light source in this way for 10 minutes or until you use this feature again.
+			Once you use this feature on a light source, you can't use it on the same light source again until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Brilliant Illumination" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_BRILLIANT_ILLUMINATION">
+		<description>
+			<p>Starting at 10th level, while your lantern's Illuminating Aura is active you can use an action to cause the light to flare with an overwhelmingly brilliant flash. Each creature other than you illuminated by either your lantern's bright light or dim light (your choice) must make a Constitution saving throw against your warlock spell save DC. On a failed save, a creature takes radiant damage equal to 2d8 + your warlock level and is blinded until the end of your next turn. On a successful save, the creature takes half as much damage and isn't blinded.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>While your lantern's Illuminating Aura is active you can cause the light to flare with an overwhelmingly brilliant flash. Each creature other than you illuminated by either your lantern's bright light or dim light (your choice) must make a Constitution saving throw (DC {{warlock:spellcasting:dc}}). On a failed save, a creature takes radiant damage equal to 2d8 + {{level:warlock}} and is blinded until the end of your next turn. On a successful save, the creature takes half as much damage and isn't blinded.</description>
+		</sheet>
+	</element>
+
+	<element name="Brighter Still" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_THE_LANTERN_BRIGHTER_STILL">
+		<description>
+			<p>At 14th level, you gain the ability to activate your lantern's Illuminating Aura at will. Features such as Dangerous Tool and Brilliant Illumination that work in conjunction with Illuminating Aura are still limited to the number of uses described in their respective features. Additionally, while holding your lantern, you can use an action to cause it to illuminate with a pale blue light, revealing a glowing arcane path to a location you're familiar with, as if casting the <i>Find the Path</i> spell.</p>
+			<p class="indent">Once you use your lantern in this way, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can activate your lantern's Illuminating Aura at will. Features such as Dangerous Tool and Brilliant Illumination that work in conjunction with Illuminating Aura are still limited to the number of uses described in their respective features. Additionally, while holding your lantern, you can use an action to cause it to illuminate with a pale blue light, revealing a glowing arcane path to a location you're familiar with, as if casting the Find the Path spell.</description>
+		</sheet>
+	</element>
+
+</elements>

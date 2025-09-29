@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Spirit-Fused</name>
+		<description>The Spirit-Fused from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="fighter-spirit-fused.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/fighter-spirit-fused.xml" />
+		</update>
+	</info>
+
+	<element name="Spirit-Fused" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FIGHTER_SPIRIT_FUSED">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Even the life of a spirit must come to an end.</p>
+			<p class="indent">Those who take on the moniker of a spirit-fused fighter do not normally do so by choice but rather by circumstance. Because to become a spirit-fused fighter, you must first become the vessel of a dying spirit, a task that can't be accomplished by choice, as no one truly understands how or why this occurs.</p>
+			<p class="indent">All that is known is that the spirit's mind and body have passed on, and its essence now coexists within the fighter, granting them abilities beyond the capability of a normal spirit. Those who can harness this power can channel the latent energy into objects, which produce a magical quirk or powerful attacks. These arcane tricks are how these unconventional warriors fight and are the reason they have garnered so much attention and interest on the island.</p>
+			<h4>ARCANE QUIRK</h4>
+			<p>As the host of a powerful spirit, the magic within you can be strange and unruly. Though you've learned to control your powers, the arcane energy can still spark to life, often creating strange effects.</p>
+			<p class="indent">Choose one or more of the Arcane Quirks listed below:</p>
+			<ul>
+				<li>When activating any of the features from this subclass, First Age technology around you begins to act haywire.</li>
+				<li>Whenever you make a weapon attack, a radio or cassette player on your person plays a snippet of a song.</li>
+				<li>Whenever you take damage you cough bubbles.</li>
+				<li>Spirits find your odor to be incredibly off-putting.</li>
+				<li>Spirits find your odor to be incredibly attractive.</li>
+				<li>When you are unconscious, your body floats 1 foot off the ground and can be carried by the wind.</li>
+				<li>When you successfully land a critical hit on a creature, your head randomly transforms into a strange visage such as an anthropomorphic pig head, a crimson-skinned version of yourself with flaming locks, the face of an Urugama, or a CRT TV. This transformation lasts until you transform again or take a long rest.</li>
+			</ul>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_CHANNEL_ESSENCE" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_OBJECT_CHANNELING" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_SPIRIT_BATTERY" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_IMPROVED_OBJECT_CHANNELING" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_IMPROVISED_ARMOR" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_BACKUP_BATTERY" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_JUNK_MASTER" />
+			<h4>CHANNELING OPTIONS</h4>
+			<p>The channeling options are presented in alphabetical order.</p>
+			<p><strong><em>Ballooning Bag.</em></strong> As a bonus action, you cause a bag (such as a canvas sack, backpack, fanny pack, or satchel) that you are holding or is on your person to rapidly inflate with air. The bag then floats upward, lifting you off the ground and carrying you up to 30 feet straight into the air. You hover in place there until you let go of the bag (no action required) or until the start of your next turn, at which point the bag gently floats back to the ground.</p>
+			<p class="indent">Alternatively, when falling you can use your reaction to cause the bag to inflate, granting you the benefits of <i>Feather Fall</i>.</p>
+			<p><strong><em>Entangling Cord.</em></strong> When taking the attack action, you can choose to replace one of your attacks with an entangling strike. Choose an object that features tendril-like properties (such as a tape measure, game controller, extension cord, rope, or chain). The object can be on your person or within 30 feet of you, provided you can see it.</p>
+			<p class="indent">When you do so, the object springs to life, stretching out towards a creature you can see within 15 feet of it. Make a ranged attack using your Constitution modifier + your proficiency bonus. On a hit, the target is pulled up to 15 feet towards the object.</p>
+			<p><strong><em>Find the Thing.</em></strong> As an action, you focus your energy through a navigational object (such as a compass, GPS, or map). Doing so allows you to cast the <i>Locate Object</i> spell with the following changes:</p>
+			<ul>
+				<li>The spell doesn't require you to concentrate on it.</li>
+				<li>The spell's duration is 1 hour.</li>
+				<li>The spell can detect an object within 1 mile of you instead of 1,000 feet.</li>
+			</ul>
+			<p><strong><em>First Age Steed.</em></strong> You enact a ritual that creates a bond with a special vehicle of your choice (such as a bicycle, moped, or similar object you can sit on). This vehicle can only carry one creature, has a walking speed of 60 feet, and does not have a flying speed.</p>
+			<p class="indent">As an action, you can summon that vehicle to your side. While summoned the vehicle is indestructible and disappears in a puff of smoke after 1 hour.</p>
+			<p><strong><em>Goggled Vision.</em></strong> While wearing an ocular covering (such as ski goggles, spectacles, sunglasses, or a welding mask), you can use an action to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. Additionally, you have advantage on Intelligence (Investigation) checks to determine if something is an illusion. These effects on your goggles last for 1 hour.</p>
+			<p><strong><em>Leaping Sneakers.</em></strong> While wearing a pair of shoes you can use a bonus action to add a spring to your step. For 1 hour, you gain the benefits of the <i>Jump</i> spell.</p>
+			<p><strong><em>Pocket Voice.</em></strong> You enact a ritual that creates a bond with a special vehicle of your choice (such as a bicycle, moped, or similar object you can sit on). This vehicle can only carry one creature, has a walking speed of 60 feet, and does not have a flying speed.</p>
+			<p class="indent">Your voice stays bound to the object for 1 hour, or until you dismiss the effect as a bonus action. While bound, everything you say can also be heard through the object.</p>
+			<p><strong><em>Water Jettison.</em></strong> As a bonus action, you spray a misty stream of water from a container on your person (such as a waterskin, soda can, squirt water bottle, or spray bottle). Doing so moves you 10 feet backwards in a straight line and grants you the benefits of the Disengage action.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_CHANNEL_ESSENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_OBJECT_CHANNELING" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_SPIRIT_BATTERY" level="7" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_IMPROVED_OBJECT_CHANNELING" level="7" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_IMPROVISED_ARMOR" level="10" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_BACKUP_BATTERY" level="15" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_JUNK_MASTER" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Channel Essence" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_CHANNEL_ESSENCE">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to channel spirit energy into your attacks. You have a pool of four d6s that you spend to fuel this ability, which are called essence dice.</p>
+			<p class="indent">When you make a weapon attack roll against a creature, you can expend a die from your pool to add it to the roll. Alternatively, you can expend a die from your pool to add it to the attack's damage roll. You can choose to do this either before or after making the attack roll, but before any effects of the attack are applied.</p>
+			<p class="indent">You regain all of your expended essence dice when you finish a short or long rest.</p>
+			<p class="indent">You gain an additional d6 for your essence dice pool at certain levels in this class: 7th level (5d6), 10th level (6d6), 15th level (7d6), and 18th level (8d6).</p>
+		</description>
+		<sheet usage="{{ottg:spirit fused:essence dice:number}}d6/Short Rest">
+			<description>You have a pool of {{ottg:spirit fused:essence dice:number}} d6s that you spend to fuel this ability, which are called essence dice. 
+			When you make a weapon attack roll against a creature, you can expend a die from your pool to add it to the roll. Alternatively, you can expend a die from your pool to add it to the attack's damage roll. You can choose to do this either before or after making the attack roll, but before any effects of the attack are applied.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:spirit fused:essence dice:number" value="4" bonus="base" />
+			<stat name="ottg:spirit fused:essence dice:number" value="5" bonus="base" level="7" />
+			<stat name="ottg:spirit fused:essence dice:number" value="6" bonus="base" level="10" />
+			<stat name="ottg:spirit fused:essence dice:number" value="7" bonus="base" level="15" />
+			<stat name="ottg:spirit fused:essence dice:number" value="8" bonus="base" level="18" />
+		</rules>
+	</element>
+
+	<element name="Object Channeling" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_OBJECT_CHANNELING">
+		<description>
+			<p>Beginning at 3rd level, you gain the ability to channel your internal spirit energy into objects, creating an array of effects. You learn one Channeling Option of your choice (see "Channeling Options" below). In addition, you gain an object of your choice that you can use to channel the option through.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+			<p class="indent">You also gain proficiency in the Salvage skill.</p>
+		</description>
+		<sheet usage="{{ottg:spirit fused:object channeling:usage}}/Short Rest">
+			<description>You gain the ability to channel your internal spirit energy into objects. In addition, you gain an object of your choice that you can use to channel the option through.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Channeling Option, Object Channeling" supports="OTTG Channeling Option" level="3" />
+			<stat name="ottg:spirit fused:object channeling:usage" value="1" bonus="base" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+		</rules>
+	</element>
+
+	<element name="Spirit Battery" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_SPIRIT_BATTERY">
+		<description>
+			<p>Starting at 7th level, you learn the <i>Jolt</i> cantrip with the following changes:</p>
+			<ul>
+				<li>When you target a machine with the spell, the machine is powered for 1 hour instead of 18 seconds.</li>
+				<li>Your spell attack modifier is equal to your Constitution modifier + your proficiency modifier. Additionally, once on each of your turns when you hit a target with a weapon attack as part of the attack action, you can replace its damage with that of the <i>Jolt</i> cantrip. When you do so, you roll the <i>Jolt</i> cantrip's damage dice (which deals lightning damage) in place of the weapon's damage dice, and you can gain no other benefits to the attack's damage from other features or spells.</li>
+			</ul>
+			<p class="indent">You count as the spirit creature type.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_SPELL_JOLT" />
+			</div>
+		</description>
+		<sheet>
+			<description>You know the Jolt cantrip with the following changes: &#13;
+			• When you target a machine with the spell, the machine is powered for 1 hour instead of 18 seconds. &#13;
+			• Your spell attack modifier is {{ottg:spirit fused:spirit battery:modifier}}. Additionally, once on each of your turns when you hit a target with a weapon attack as part of the attack action, you can replace its damage with that of the Jolt cantrip. When you do so, you roll the Jolt cantrip's damage dice (which deals lightning damage) in place of the weapon's damage dice, and you can gain no other benefits to the attack's damage from other features or spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_1985_OTTG_SPELL_JOLT" />
+			<stat name="ottg:spirit fused:spirit battery:modifier" value="constitution:modifier" />
+			<stat name="ottg:spirit fused:spirit battery:modifier" value="proficiency" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_TYPE_SPIRIT" />
+		</rules>
+	</element>
+
+	<element name="Improved Object Channeling" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_IMPROVED_OBJECT_CHANNELING">
+		<description>
+			<p>At 7th level, you learn an additional Channeling Option, and you can now use your Object Channeling feature a number of times equal to your proficiency bonus. You regain all of the expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Channeling Option, Improved Object Channeling" supports="OTTG Channeling Option" level="7" />
+			<stat name="ottg:spirit fused:object channeling:usage" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Improvised Armor" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_IMPROVISED_ARMOR">
+		<description>
+			<p>Starting at 10th level, you learn to channel your energy into objects you are wearing, causing them to become harder than steel for a brief moment. When you are hit by an attack, you can use your reaction to roll one of your essence dice, adding the number rolled to your AC for that attack, potentially causing the attack to miss you.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you are hit by an attack, you can use your reaction to roll one of your essence dice, adding the number rolled to your AC for that attack, potentially causing the attack to miss you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Backup Battery" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_BACKUP_BATTERY">
+		<description>
+			<p>At 15th level, you learn to draw on the spirit energy within you to gain a quick rush of energy. You gain an additional use of your Second Wind feature. When your hit points drop below your fighter level while you have a use of Second Wind, you can choose to expend a use of Second Wind immediately (no action required).</p>
+		</description>
+		<sheet>
+			<description>You have an additional use of your Second Wind feature. When your hp drops below {{level:fighter}} while you have a use of Second Wind, you can choose to expend a use of Second Wind immediately (no action required).</description>
+		</sheet>
+	</element>
+
+	<element name="Junk Master" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_JUNK_MASTER">
+		<description>
+			<p>Starting at 18th level, you gain an additional channeling option from the Object Channeling feature.</p>
+			<p class="indent">In addition, when you roll initiative and have no uses of your Object Channeling feature left, you regain two uses of that feature.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative and have no uses of your Object Channeling feature left, you regain two uses of that feature.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Channeling Option, Junk Master" supports="OTTG Channeling Option" level="18" />
+		</rules>
+	</element>
+
+	<!--Channeling Options-->
+	<element name="Ballooning Bag" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_BALLOONING_BAG">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>As a bonus action, you cause a bag (such as a canvas sack, backpack, fanny pack, or satchel) that you are holding or is on your person to rapidly inflate with air. The bag then floats upward, lifting you off the ground and carrying you up to 30 feet straight into the air. You hover in place there until you let go of the bag (no action required) or until the start of your next turn, at which point the bag gently floats back to the ground.</p>
+			<p class="indent">Alternatively, when falling you can use your reaction to cause the bag to inflate, granting you the benefits of <i>Feather Fall</i>.</p>
+		</description>
+		<sheet usage="Channeling Option">
+			<description>As a bonus action, you cause a bag that you are holding or is on your person to rapidly inflate with air. The bag then floats upward, lifting you off the ground and carrying you up to 30 ft straight into the air. You hover in place there until you let go of the bag (no action required) or until the start of your next turn, at which point the bag gently floats back to the ground. &#13;
+			Alternatively, when falling you can use your reaction to cause the bag to inflate, granting you the benefits of Feather Fall.</description>
+		</sheet>
+	</element>
+
+	<element name="Entangling Cord" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_ENTANGLING_CORD">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>When taking the attack action, you can choose to replace one of your attacks with an entangling strike. Choose an object that features tendril-like properties (such as a tape measure, game controller, extension cord, rope, or chain). The object can be on your person or within 30 feet of you, provided you can see it.</p>
+			<p class="indent">When you do so, the object springs to life, stretching out towards a creature you can see within 15 feet of it. Make a ranged attack using your Constitution modifier + your proficiency bonus. On a hit, the target is pulled up to 15 feet towards the object.</p>
+		</description>
+		<sheet usage="Channeling Option">
+			<description>Choose an object that features tendril-like properties (such as a tape measure, game controller, extension cord, rope, or chain). The object can be on your person or within 30 ft of you, provided you can see it. &#13;
+			When you do so, the object springs to life, stretching out towards a creature you can see within 15 feet of it. Make a ranged attack with a modifier of {{ottg:spirit fused:entangling cord:modifier}}. On a hit, the target is pulled up to 15 feet towards the object.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:spirit fused:entangling cord:modifier" value="constitution:modifier" />
+			<stat name="ottg:spirit fused:entangling cord:modifier" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Find the Thing" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_FIND_THE_THING">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>As an action, you focus your energy through a navigational object (such as a compass, GPS, or map). Doing so allows you to cast the <i>Locate Object</i> spell with the following changes:</p>
+			<ul>
+				<li>The spell doesn't require you to concentrate on it.</li>
+				<li>The spell's duration is 1 hour.</li>
+				<li>The spell can detect an object within 1 mile of you instead of 1,000 feet.</li>
+			</ul>
+		</description>
+		<sheet action="Action" usage="Channeling Option">
+			<description>You focus your energy through a navigational object. Doing so allows you to cast the Locate Object spell with the following changes: &#13;
+			• The spell doesn't require you to concentrate on it. &#13;
+			• The spell's duration is 1 hour. &#13;
+			• The spell can detect an object within 1 mile of you instead of 1,000 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="First Age Steed" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_FIRST_AGE_STEED">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>You enact a ritual that creates a bond with a special vehicle of your choice (such as a bicycle, moped, or similar object you can sit on). This vehicle can only carry one creature, has a walking speed of 60 feet, and does not have a flying speed.</p>
+			<p class="indent">As an action, you can summon that vehicle to your side. While summoned the vehicle is indestructible and disappears in a puff of smoke after 1 hour.</p>
+		</description>
+		<sheet action="Action" usage="Channeling Option">
+			<description>You can summon a vehicle of your choice to your side (such as a bicycle, moped, or similar object you can sit on). This vehicle can only carry one creature, has a walking speed of 60 ft, and does not have a flying speed. While summoned the vehicle is indestructible and disappears in a puff of smoke after 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Goggled Vision" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_GOGGLED_VISION">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>While wearing an ocular covering (such as ski goggles, spectacles, sunglasses, or a welding mask), you can use an action to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. Additionally, you have advantage on Intelligence (Investigation) checks to determine if something is an illusion. These effects on your goggles last for 1 hour.</p>
+		</description>
+		<sheet action="Action" usage="Channeling Option">
+			<description>While wearing an ocular covering, you can see in dim light within 60 ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. Additionally, you have advantage on Intelligence (Investigation) checks to determine if something is an illusion. These effects on your goggles last for 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Leaping Sneakers" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_LEAPING_SNEAKERS">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>While wearing a pair of shoes you can use a bonus action to add a spring to your step. For 1 hour, you gain the benefits of the <i>Jump</i> spell.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channeling Option">
+			<description>For 1 hour, you gain the benefits of the Jump spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Pocket Voice" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_POCKET_VOICE">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>You spend 1 minute enacting a ritual that binds your voice to an object you can see that looks as if it would produce a sound (such as a boombox, pair of headphones, statue with a mouth, portrait of a person, radio, or jewelry box).</p>
+			<p class="indent">Your voice stays bound to the object for 1 hour, or until you dismiss the effect as a bonus action. While bound, everything you say can also be heard through the object.</p>
+		</description>
+		<sheet usage="Channeling Option">
+			<description>You spend 1 minute enacting a ritual that binds your voice to an object you can see that looks as if it would produce a sound (such as a boombox, pair of headphones, statue with a mouth, portrait of a person, radio, or jewelry box). &#13;
+			Your voice stays bound to the object for 1 hour, or until you dismiss the effect as a bonus action. While bound, everything you say can also be heard through the object.</description>
+		</sheet>
+	</element>
+
+	<element name="Water Jettison" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SPIRIT_FUSED_WATER_JETTISON">
+		<supports>OTTG Channeling Option</supports>
+		<description>
+			<p>As a bonus action, you spray a misty stream of water from a container on your person (such as a waterskin, soda can, squirt water bottle, or spray bottle). Doing so moves you 10 feet backwards in a straight line and grants you the benefits of the Disengage action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channeling Option">
+			<description>You spray a misty stream of water from a container on your person. Doing so moves you 10 ft backwards in a straight line and grants you the benefits of the Disengage action.</description>
+		</sheet>
+	</element>
+
+</elements>

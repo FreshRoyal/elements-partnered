@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Apprentice Diver</name>
+		<description>Apprentice Diver from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="background-apprentice-diver.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-apprentice-diver.xml" />
+		</update>
+	</info>
+
+	<element name="Apprentice Diver" type="Background" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_APPRENTICE_DIVER">
+		<description>
+			<p>You are or once were a member of the Mariners' Guild, an intrepid group of aquatic explorers and mariners. Working as an apprentice diver in the lodge you have learned much about the Shallows—you know what is dangerous and what is delicious. You have climbed the cliffs around the island, explored many beaches, and learned how to use the gear needed to survive under the waves. For more on the Mariners' Guild, see page 17.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Athletics, Nature</li>
+				<li> <strong>Tool Proficiencies:</strong> Divers Armor</li>
+				<li> <strong>Equipment:</strong> An Explorer's Pack, a chest, grappling hook, fishing tackle, a faction coin marking which lodge you trained under, and 11 gold flowers.</li>
+			</ul>
+			<div element="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_DIVER_ONCE_A_MEMBER_ALWAYS_A_MEMBER" />
+		</description>
+		<setters>
+			<set name="short">Athletics, Nature, Divers Armor</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_DIVERS" />
+			<grant type="Background Feature" id="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_DIVER_ONCE_A_MEMBER_ALWAYS_A_MEMBER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Once a Member Always a Member" type="Background Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_DIVER_ONCE_A_MEMBER_ALWAYS_A_MEMBER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>When visiting either of the Coastal Diver's Lodges, you always have free room and board. Additionally, the lodge will assist you in your endeavors as best they can.</p>
+		</description>
+		<sheet alt="Once a Member Always a Member" />
+	</element>
+
+</elements>

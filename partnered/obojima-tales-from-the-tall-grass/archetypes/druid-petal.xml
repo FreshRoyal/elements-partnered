@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the Petal</name>
+		<description>Circle of the Petal from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="druid-petal.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/druid-petal.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Petal" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_DRUID_CIRCLE_OF_THE_PETAL">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>In the tranquil groves where nature's harmony sings loudest, there exists a circle of druids attuned to the delicate dance of petals upon the breeze. These druid guardians of the natural world, known as the Circle of the Petal, draw their power from the spirit of Obojima, the steady island breeze and the ephemeral beauty and resilience of flowers. Embracing these subtle powers, they harness the whispers of the wind and the gentle caress of petals to weave their enchantments and shape the world around them.</p>
+			<p class="indent">Members of the Circle of the Petal are revered for their deep connection to the sacred dawn petal tree and their ability to evoke its serene splendor in both peaceful sanctuaries and in dire situations. These druids become conduits of life energy, channeling the essence of blossoms into healing balms, protective barriers, and devastating bursts of floral fury. Guided by the eternal cycle of growth, bloom, and decay, they embody the ever-renewing vitality of nature, ensuring that even in the darkest of times, hope blossoms anew like petals on the wind.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_PETAL_DANCE" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_PETAL_BEAST_MIMICRY" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_SPIRIT_OF_OBOJIMA" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_WINDS_OF_REVIVAL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_PETAL_DANCE" level="2" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_PETAL_BEAST_MIMICRY" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_SPIRIT_OF_OBOJIMA" level="10" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_WINDS_OF_REVIVAL" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Petal Dance" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_PETAL_DANCE">
+		<description>
+			<p>At 2nd level, you become permeated with the spirit of Obojima and are now able to control a fraction of Obojima's magic that manifests as flower petals of the druid's choosing. As a bonus action, you can expend a use of your Wild Shape to call on this power and conjure a resilient cloud of petals that functions as an extension of your own being. This cloud lasts for 1 hour. While enveloped by the cloud, your AC increases by 1 and you gain the following benefits.</p>
+			<p class="indent">As a bonus action, you can cause your petals to lunge toward a creature you can see within 30 feet of you, slashing at its body. Make a ranged spell attack against the target using your spell attack bonus. On a hit, the target takes 1d6 slashing damage. This damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			<p class="indent">Additionally, when you or a creature you can see within 10 feet of you takes damage, you can use your reaction to reduce that damage by an amount equal to your druid level + your Wisdom modifier. Once you've used your petal cloud in this way, the cloud dissipates.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of your Wild Shape to call on this power and conjure a resilient cloud of petals that functions as an extension of your own being. This cloud lasts for 1 hour. While enveloped by the cloud, your AC increases by 1 and you gain the following benefits. &#13;
+			As a bonus action, you can cause your petals to lunge toward a creature you can see within 30 ft of you, slashing at its body. Make a ranged spell attack against the target using your spell attack bonus (+{{druid:spellcasting:attack}}). On a hit, the target takes {{ottg:circle of the petal:petal dance:dice}}d6 slashing damage. &#13;
+			Additionally, when you or a creature you can see within 10 ft of you takes damage, you can use your reaction to reduce that damage by {{ottg:circle of the petal:petal dance:reduction}}. Once you've used your petal cloud in this way, the cloud dissipates.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:circle of the petal:petal dance:dice" value="1" bonus="base" />
+			<stat name="ottg:circle of the petal:petal dance:dice" value="2" bonus="base" level="5" />
+			<stat name="ottg:circle of the petal:petal dance:dice" value="3" bonus="base" level="11" />
+			<stat name="ottg:circle of the petal:petal dance:dice" value="4" bonus="base" level="17" />
+			<stat name="ottg:circle of the petal:petal dance:reduction" value="level:druid" />
+			<stat name="ottg:circle of the petal:petal dance:reduction" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Petal Beast Mimicry" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_PETAL_BEAST_MIMICRY">
+		<description>
+			<p>At 6th level, you gain the ability to imbue life into your petals. As an action, you can summon a spirit that has the appearance of a creature of your choice. This spirit arrives as a great wind that overtakes the petals before transforming into the desired beast, which you control. The spirit uses the <strong>bestial spirit</strong> statistics, with the following changes:</p>
+			<ul>
+				<li>Its hit points are equal to three times your druid level.</li>
+				<li>When it takes the attack action its attack modifier is equal to your spell attack modifier.</li>
+				<li>In addition to its walking speed, it has a flying speed of 20 feet and can hover.</li>
+				<li>It can move through the space of other creatures as if they were difficult terrain.</li>
+			</ul>
+			<p class="indent">The spirit appears in an unoccupied space of your choice within 30 feet of you and acts on your turn. The spirit can only take the Dash and Attack action. If the spirit is reduced to 0 hit points, it explodes in a stunning spectacle of cascading petals. Until the end of your next turn, all creatures within a 20-foot radius centered on the spirit are affected by the <i>Faerie Fire</i> spell. Alternatively, the spirit disappears after 1 minute or if you dismiss it early (no action required).</p>
+			<p class="indent">Starting at 11th level, you can expend two uses of this ability to summon two bestial spirits, instead of one, when you use this action.</p>
+			<p class="indent">You have two uses of this feature, and you gain an additional use of it when you reach certain levels in this class: 11th level (three uses) and 16th level (four uses). You regain all expended uses of this feature when you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_INFORMATION_BESTIAL_SPIRIT_STATBLOCK" />
+			</div>
+		</description>
+		<sheet action="Action" usage="{{ottg:circle of the petal:petal beast mimicry:usage}}/Long Rest">
+			<description>You can summon a spirit that has the appearance of a creature of your choice. This spirit arrives as a great wind that overtakes the petals before transforming into the desired beast, which you control. The spirit uses the bestial spirit statistics, with the following changes: &#13;
+			• Its hit points are equal to {{ottg:circle of the petal:petal beast mimicry:hp}}. &#13;
+			• When it takes the attack action its attack modifier is equal to {{druid:spellcasting:modifier}}. &#13;
+			• In addition to its walking speed, it has a flying speed of 20 ft and can hover. &#13;
+			• It can move through the space of other creatures as if they were difficult terrain. &#13;
+			The spirit appears in an unoccupied space of your choice within 30 ft of you and acts on your turn. The spirit can only take the Dash and Attack action. If the spirit is reduced to 0 hp, it explodes in a stunning spectacle of cascading petals. Until the end of your next turn, all creatures within a 20-ft radius centered on the spirit are affected by the Faerie Fire spell. Alternatively, the spirit disappears after 1 minute or if you dismiss it early (no action required).</description>
+			<description level="11">You can summon a spirit that has the appearance of a creature of your choice. This spirit arrives as a great wind that overtakes the petals before transforming into the desired beast, which you control. You can also expend two uses of this ability to summon two bestial spirits, instead of one. The spirit uses the bestial spirit statistics, with the following changes: &#13;
+			• Its hit points are equal to {{ottg:circle of the petal:petal beast mimicry:hp}}. &#13;
+			• When it takes the attack action its attack modifier is equal to {{druid:spellcasting:modifier}}. &#13;
+			• In addition to its walking speed, it has a flying speed of 20 ft and can hover. &#13;
+			• It can move through the space of other creatures as if they were difficult terrain. &#13;
+			The spirit appears in an unoccupied space of your choice within 30 ft of you and acts on your turn. The spirit can only take the Dash and Attack action. If the spirit is reduced to 0 hp, it explodes in a stunning spectacle of cascading petals. Until the end of your next turn, all creatures within a 20-ft radius centered on the spirit are affected by the Faerie Fire spell. Alternatively, the spirit disappears after 1 minute or if you dismiss it early (no action required).</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:circle of the petal:petal beast mimicry:usage" value="2" bonus="base" />
+			<stat name="ottg:circle of the petal:petal beast mimicry:usage" value="3" bonus="base" level="11" />
+			<stat name="ottg:circle of the petal:petal beast mimicry:usage" value="4" bonus="base" level="16" />
+			<stat name="ottg:circle of the petal:petal beast mimicry:hp" value="level:druid" />
+			<stat name="ottg:circle of the petal:petal beast mimicry:hp" value="level:druid" />
+			<stat name="ottg:circle of the petal:petal beast mimicry:hp" value="level:druid" />
+		</rules>
+	</element>
+	<element name="Bestial Spirit" type="Information" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_INFORMATION_BESTIAL_SPIRIT_STATBLOCK">
+		<description>
+			<p><em>Medium Spirit, Unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 15 (natural armor)</li>
+				<li><strong>Hit Points</strong> 38 (8d6 +10)</li>
+				<li><strong>Speed</strong> 40 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>15 (+2)</td><td>15 (+2)</td><td>15 (+2)</td><td>9 (-1)</td><td>12 (+1)</td><td>9 (-1)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Skills</strong> Intimidation +1, Perception +3, Stealth +4</li>
+				<li><strong>Senses</strong> Passive Perception 13</li>
+				<li><strong>Languages</strong> Common</li>
+				<li><strong>Challenge</strong> 1 (200 XP) <strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<p><strong><em>Promising Threat.</em></strong> The bestial spirit has advantage on Charisma (Intimidation) checks if the target has seen it hit a creature with its chomp attack in the past minute.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Chomp.</em></strong> <em>Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (2d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</p>
+			<h5 class="caption">REACTIONS</h5>
+			<p><strong><em>Devour.</em></strong> When the bestial spirit reduces a creature to 0 hit points, it consumes some of the creature's essence, regaining 1d10 hit points.</p>
+		</description>
+	</element>
+
+	<element name="Spirit of Obojima" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_SPIRIT_OF_OBOJIMA">
+		<description>
+			<p>Starting at 10th level, the spirit of Obojima comes to your aid in both subtle and grand ways. Whenever making a Wisdom (Survival) check to find a path or creature, the wind carries a collection of brilliant white petals in the direction you seek. You have advantage when making these skill checks.</p>
+			<p class="indent">Additionally, you can use an action to magically call forth a massive swarm of petals, which create a great barrier. In a space that you can see, a wall of shifting petals forms. This wall is 1 foot thick, 15 feet tall, and up to 60 feet long. It appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).</p>
+			<p class="indent">Nothing can physically pass through the wall except for creatures designated by you. It is immune to all damage, as the petals magically heal any hole that would be created by an attack or effect. This wall lasts a number of minutes equal to your druid level.</p>
+			<p class="indent">Once you use the petal barrier, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Whenever making a Wisdom (Survival) check to find a path or creature, the wind carries a collection of brilliant white petals in the direction you seek. You have advantage when making these skill checks. &#13;
+			Additionally, you can use an action to magically call forth a massive swarm of petals, which create a great barrier. In a space that you can see, a wall of shifting petals forms. This wall is 1 ft thick, 15 ft tall, and up to 60 ft long. It appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side). Nothing can physically pass through the wall except for creatures designated by you. It is immune to all damage, as the petals magically heal any hole that would be created by an attack or effect. This wall lasts {{level:druid}} minutes. Once you use the petal barrier, you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Winds of Revival" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CIRCLE_OF_THE_PETAL_WINDS_OF_REVIVAL">
+		<description>
+			<p>Starting at 14th level, the spirit of Obojima comes to your aid in your times of greatest need. When you are reduced to 0 hit points, you instead regain half of your hit points and are lifted to your feet amidst a turbulent tempest of petals.</p>
+			<p class="indent">You can then immediately use your reaction to send a wave of concussive wind sweeping out from you. Each creature in a 10-foot radius centered on you must succeed on a Strength saving throw against your spell save DC or be pushed 15 feet away from you and suffer 2d8 slashing damage.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 hp, you instead regain half of your hp and are lifted to your feet amidst a turbulent tempest of petals.
+			You can then immediately use your reaction to send a wave of concussive wind sweeping out from you. Each creature in a 10-ft radius centered on you must succeed on a Strength saving throw (DC {{druid:spellcasting:dc}}) or be pushed 15 ft away from you and suffer 2d8 slashing damage.</description>
+		</sheet>
+	</element>
+
+</elements>

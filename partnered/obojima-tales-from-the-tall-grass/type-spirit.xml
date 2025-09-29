@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spirit</name>
+		<description>Spirit Creature Type from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="type-spiritxml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/type-spirit.xml" />
+		</update>
+	</info>
+
+	<element name="Spirits" type="Information" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_INFORMATION_SPIRITS">
+		<description>
+			<p>Spirits on Obojima are magical entities that come in all kinds of shapes and sizes and have lived among the islanders for centuries. Spirits are as much a part of Obojiman society as all the other races, and it has been this way for as long as anyone can remember.</p>
+			<h4>Spirit Creature Types</h4>
+			<p class="indent">In the world of Obojima, there are no other planes of existence other than the Spirit Realm and the Physical Realm, and because of that, extraplanar creatures such as Fey, Celestials, and Aberrations instead become the creature type "spirit". That also means that spells and other special abilities that would affect those creature types affect the "spirit" creature type instead.</p>
+		</description>
+	</element>
+	
+	<element name="Spirit" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_TYPE_SPIRIT">
+		<supports>Creature Type</supports>
+		<description>
+			<p>Your creature type is Spirit.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_INFORMATION_SPIRIT_CREATURE_TYPES" />
+			</div>
+		</description>
+		<sheet alt="Creature Type">
+			<description>Spirit.</description>
+		</sheet>
+	</element>
+
+	<element name="Spirits" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_RANGER_FAVORED_ENEMY_SPIRITS">
+		<supports>Favored Enemy,Monster Type</supports>
+		<description>
+			<p>Spirits on Obojima are magical entities that come in all kinds of shapes and sizes and have lived among the islanders for centuries. Spirits are as much a part of Obojiman society as all the other races, and it has been this way for as long as anyone can remember.</p>
+		</description>
+	</element>
+
+</elements>

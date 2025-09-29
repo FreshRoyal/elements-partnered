@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mechanic</name>
+		<description>Mechanic from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="background-mechanic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-mechanic.xml" />
+		</update>
+	</info>
+
+	<element name="Mechanic" type="Background" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_MECHANIC">
+		<description>
+			<p>You've spent most of your life working on mechanisms and machines. For you, understanding both new and old technology requires a more hands on approach. Through trial and error, you have learned to create, repair, and modify all things mechanical and electronic, and you have honed your eye to recognize useful parts among the scattered bits of technology that are found throughout the island.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Mechanics, Salvage</li>
+				<li> <strong>Tool Proficiencies:</strong> You gain proficiency in three Artisan's Tools of your choice.</li>
+				<li> <strong>Equipment:</strong> An abacus, ball bearings (1000), block and tackle, flask of oil, an unfinished mechanical trinket, and 15 gold flowers.</li>
+			</ul>
+			<div element="ID_1985_OTTG_BACKGROUND_FEATURE_MECHANIC_MACHINE_WHISPERER" />
+		</description>
+		<setters>
+			<set name="short">Mechanics, Salvage, 3 Artisan's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			<select type="Proficiency" name="Artisan Tool, Mechanic" supports="Artisan tools" number="3" />
+			<grant type="Background Feature" id="ID_1985_OTTG_BACKGROUND_FEATURE_MECHANIC_MACHINE_WHISPERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Machine Whisperer" type="Background Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_FEATURE_MECHANIC_MACHINE_WHISPERER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have a knack for machines and can tell what state one is in by spending a few minutes with it. Machines that have been sundered are unusable and should be scrapped for parts. Machines in disrepair could potentially function again if someone fixed them up, and functioning machines do just that. Function!</p>
+		</description>
+		<sheet alt="Machine Whisperer" />
+	</element>
+
+</elements>

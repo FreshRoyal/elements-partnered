@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Nakudama</name>
+		<description>Nakudama from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="race-nakudama.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/races/race-nakudama.xml" />
+		</update>
+	</info>
+
+	<element name="Nakudama" type="Race" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACE_NAKUDAMA">
+		<description>
+			<p>A sweet treat left untasted, a hot spring left undipped in, a warm fire left unshared—all considered tragedies by a people driven to indulge in all the comforts and curiosities Obojima has to offer. To the other peoples of the island, the amphibious Nakudama seem to partake in all things with a sense of eagerness and excitement.</p>
+			<p class="indent">Nakudama tend to eschew enclaves for the more cosmopolitan settlements scattered across the island. They are highly social. Patrons of tea houses, taverns, and inns are sure to hear the booming, croaking voices of Nakudama mingling with crowds.</p>
+			<h4>Did I Ever Tell You the Story About...</h4>
+			<p>Life is too short to spend time on anything not worth recounting in an over-the-top tale later. Sharing and collecting stories is among the most cherished Nakudama traditions. It's what motivates many Nakudama to travel the island or frequent social gatherings. A quality story doesn't just happen, however. Any Nakudama will tell you it's one part lived experience and two parts showmanship, which includes creative license and allows for at least a bit of exaggeration. The art can be practiced, but experience must be earned. Therefore, Nakudama tend to venture out regularly in search of novel stories to share.</p>
+			<h4>Obojima's Earliest Inhabitants (Perhaps)</h4>
+			<p>Though the details have been lost to history or exaggerated over years of storytelling, it is generally believed that the Nakudama were the first people to call Obojima home. Several sites around the island point to an ancient Nakudama civilization, and many settlements appear to incorporate Nakudama architecture, which is noteworthy for its water features.</p>
+			<p class="indent">Other evidence that suggests an earlier Nakudama Age comes from the tales, which are filled with the fantastical feats of a powerful Nakudama queen. Though often overly dramatic in the portrayals, her exploits seem to line up with recent archaeological findings.</p>
+			<h4>Nakudama Traits</h4>
+			<p>Your Nakudama character gains traits that enable it to traverse and flourish on the island of Obojima.</p>
+			<p><strong><em>Ability Score Increase.</em></strong> One ability score of your choice increases by 2, and another ability score of your choice increases by 1.</p>
+			<p><strong><em>Age.</em></strong> Young Nakudama learn to walk and swim in shallow waters just a few weeks after birth. They reach adulthood by the age of 10 and live an average of 45 years.</p>
+			<p><strong><em>Size.</em></strong> Nakudama adults stand 2 to 3 feet tall and weigh 50 pounds on average. Your size is Small.</p>
+			<p><strong><em>Speed.</em></strong> Your base walking speed is 25 feet and you have a swimming speed of 30 feet.</p>
+			<p><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+			<p><strong><em>Standing Leap.</em></strong> Your long jump is up to 20 feet and your high jump is up to 15 feet, with or without a running start.</p>
+			<p><strong><em>Languages.</em></strong> You can speak, read, and write Common and Naku Naku.</p>
+			<p><strong><em>Grasping Tongue.</em></strong> As a bonus action, you can lash out your tongue at an object you can see within 15 feet of you that weighs no more than 5 pounds and pull it to you, catching it in your open hand or allowing it to fall at your feet. If the object is being worn or carried by a creature, the creature must succeed on a contested Strength check or have the object pulled away from it.</p>
+			<p><strong><em>Latching Tongue.</em></strong> As a bonus action, you can extend your tongue to latch onto a surface or creature that is at least one size larger than you, pulling yourself toward it. The target must be no more than 15 feet away from you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Nakudama)" supports="Custom Ability Score Increase 2" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Nakudama)" supports="Custom Ability Score Increase 1" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_1985_OTTG_LANGUAGE_NAKU_NAKU" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Nakudama)" supports="Custom Race Language||OTTG Nakudama Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_STANDING_LEAP" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_GRASPING_TONGUE" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_LATCHING_TONGUE" />
+		</rules>
+	</element>
+
+	<element name="Amphibious" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+	</element>
+
+	<element name="Standing Leap" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_STANDING_LEAP">
+		<description>
+			<p>Your long jump is up to 20 feet and your high jump is up to 15 feet, with or without a running start.</p>
+		</description>
+		<sheet>
+			<description>Your long jump is up to 20 feet and your high jump is up to 15 feet, with or without a running start.</description>
+		</sheet>
+	</element>
+
+	<element name="Grasping Tongue" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_GRASPING_TONGUE">
+		<description>
+			<p>As a bonus action, you can lash out your tongue at an object you can see within 15 feet of you that weighs no more than 5 pounds and pull it to you, catching it in your open hand or allowing it to fall at your feet. If the object is being worn or carried by a creature, the creature must succeed on a contested Strength check or have the object pulled away from it.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can lash out your tongue at an object you can see within 15 ft of you that weighs no more than 5 pounds and pull it to you, catching it in your open hand or allowing it to fall at your feet. If the object is being worn or carried by a creature, the creature must succeed on a contested Strength check or have the object pulled away from it.</description>
+		</sheet>
+	</element>
+
+	<element name="Latching Tongue" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_NAKUDAMA_LATCHING_TONGUE">
+		<description>
+			<p>As a bonus action, you can extend your tongue to latch onto a surface or creature that is at least one size larger than you, pulling yourself toward it. The target must be no more than 15 feet away from you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can extend your tongue to latch onto a surface or creature that is at least one size larger than you, pulling yourself toward it. The target must be no more than 15 ft away from you.</description>
+		</sheet>
+	</element>
+
+</elements>

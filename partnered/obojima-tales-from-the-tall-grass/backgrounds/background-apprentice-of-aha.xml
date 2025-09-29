@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Apprentice of AHA</name>
+		<description>Apprentice of AHA from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="background-apprentice-of-aha.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-apprentice-of-aha.xml" />
+		</update>
+	</info>
+
+	<element name="Apprentice of AHA" type="Background" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_APPRENTICE_OF_AHA">
+		<description>
+			<p>You spent time studying with the archaeologists, historians, and archivists of AHA, the group of adventuring academics who seek knowledge about the nature of Obojima and its past. With your mentor, you pursued answers to one of the island's mysteries. During your apprenticeship, you traveled to one or more of AHA's excavation sites and worked alongside the organization, but never became an official member. Even now, unanswered questions from your time with the group continue to rattle around in your mind. For more on AHA, see page 17.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> History, Investigation</li>
+				<li> <strong>Tool Proficiencies:</strong> You gain proficiency in an Artisan's Tool of your choice.</li>
+				<li> <strong>Equipment:</strong> An Explorer's Pack, 5 candles, shovel, signal whistle, a journal full of old research from your time as an apprentice, and 13 gold flowers.</li>
+			</ul>
+			<div element="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_OF_AHA_WISE_REPUTATION" />
+		</description>
+		<setters>
+			<set name="short">History, Investigation, Artisan's Tool</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<select type="Proficiency" name="Artisan Tool, Apprentice of AHA" supports="Artisan tools" />
+			<grant type="Background Feature" id="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_OF_AHA_WISE_REPUTATION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Wise Reputation" type="Background Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_OF_AHA_WISE_REPUTATION">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Due to your time spent in the field you've met or are familiar with many of the intellectuals and creative minds in Obojima's villages.</p>
+		</description>
+		<sheet alt="Wise Reputation" />
+	</element>
+
+</elements>

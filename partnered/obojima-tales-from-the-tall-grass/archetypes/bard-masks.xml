@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Masks</name>
+		<description>College of Masks from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="bard-masks.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/bard-masks.xml" />
+		</update>
+	</info>
+
+	<element name="College of Masks" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_BARD_COLLEGE_OF_MASKS">
+		<supports>Bard College</supports>
+		<description>
+			<p>To be a bard from the College of Masks is to be a theater actor capable of losing themselves in a role by using masks they imbue with magic. Through these masks, bards can mimic others and even take on attributes of the personas their masks depict.</p>
+			<p class="indent">To see the world through another's eyes. To show the world a face not your own. To become someone else. These are the actor's pursuits. Some local players might putter about on the stage as a hobby or distraction, but not bards of the College of Masks. Like liquid bronze being poured into a mold, these actors have turned their sense of self into a malleable thing able to transform themselves into someone else.</p>
+			<h5 class="caption">Tradition of Performance</h5>
+			<p>The College of Masks not only describes the bard, but it also refers to an Obojiman theater tradition where a solitary masked actor plays out a story from the island's myths and folktales, which feature a set of archetypal characters such as the Old Man, the Fish, and the Demon, among others. Throughout the show, the actor artfully shifts between masks depicting each character. Each performance is its own special thing, as no two are the same.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_TOOLS_OF_PERFORMANCE" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_COPYCAT" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_MANY_MASKED_PERFORMANCE" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_GIFT_OF_THEATRE" />
+			<h4>MASKS</h4>
+			<p>The masks are presented in alphabetical order.</p>
+			<p><strong><em>Demon (7th Level Required).</em></strong> While wearing this mask you gain the abilities Arcane Memory and Demon Eye.</p>
+			<ul>
+				<li><strong><em>Arcane Memory.</em></strong> While wearing this mask, you can use an action and expend a spell slot of 1st level or higher to magically learn whether a creature or object you specify has been within a 20-foot radius of your current location in the past 24 hours. If you expend a spell slot of 3rd level or higher, you get a brief vision of the creature or object while it was there, and you learn the exact time the creature or object was present.</li>
+				<li><strong><em>Demon Eye.</em></strong> As an action, you gain the ability to magically see through solid objects to a range of 15 feet. Your vision penetrates most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</li>
+			</ul>
+			<p><strong><em>Harpy (11th Level Required).</em></strong> While wearing this mask you have a flying speed of 30 feet and resistance to psychic damage.</p>
+			<p><strong><em>Fish.</em></strong> While wearing this mask you gain a swimming speed equal to your walking speed and the ability to breathe underwater. Additionally, you know the <i>Water Bullet</i> and <i>Whelm Weapon</i> spells.</p>
+			<p><strong><em>Fox.</em></strong> While wearing this mask, you can move through a hostile creature's space, regardless of its size, and another creature's space isn't difficult terrain for you. Additionally, your AC increases by 1 and when you make a Dexterity saving throw, you can use your reaction to gain advantage on the roll.</p>
+			<p><strong><em>Golem (7th Level Required).</em></strong> While wearing this mask, your weapon attacks deal an extra 1d8 damage on a hit. If you are Small, you don't have disadvantage on your attack rolls with weapons as a result of heavy. In addition, your attacks and spells deal double damage to objects and structures.</p>
+			<p><strong><em>Old Man.</em></strong> While wearing this mask, you can cast <i>Detect Magic</i> and <i>Identify</i> at will, without expending a spell slot or material components.</p>
+			<p><strong><em>Protagonist.</em></strong> When you roll initiative while wearing this mask, you gain temporary hit points equal to half your bard level (rounded up). As a bonus action, you can mark a creature as your antagonist for 1 minute. For the duration, you have advantage on ability checks involving your antagonist. Additionally, when you see your antagonist make an attack, you can use your reaction and expend a use of your Bardic Inspiration, rolling a Bardic Inspiration die to reduce the attack roll by the number rolled on the die.</p>
+			<p><strong><em>Sea Urchin.</em></strong> While wearing this mask, you can use a bonus action and expend a use of your Bardic Inspiration, rolling a Bardic Inspiration die to heal yourself for a number of hit points equal to the number rolled plus half your bard level (rounded up).</p>
+			<p class="indent">Additionally, you can use an action to attempt to immobilize a creature you can see within 30 feet of you, injecting it with magical toxins. The target must succeed on a Constitution saving throw or become restrained for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on itself on a success. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
+			<p><strong><em>Spirit (7th Level Required).</em></strong> While wearing this mask, you know the <i>Speak with Dead</i> spell. Additionally, you can expend a use of your Bardic Inspiration to temporarily move through the Spirit Realm. Whenever you would move, you instead step through the veil and into the Spirit Realm in the area where it overlaps with your current plane. You remain in the Spirit Realm until you stop moving or your turn ends. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take 1d10 force damage.</p>
+			<p class="indent">While on the Spirit Realm, you can only affect and be affected by other creatures on that plane. Creatures that aren't in the Spirit Realm can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so. You ignore all objects and effects that aren't on the Spirit Realm, allowing you to move through objects you perceive on the plane you originated from. This effect lasts until the end of your turn.</p>
+			<p><strong><em>Stone.</em></strong> While wearing this mask, you gain proficiency in the Athletics skill and all bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 2. Additionally, you have advantage on ability checks and saving throws against being pushed, pulled, or knocked prone while wearing the mask.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_TOOLS_OF_PERFORMANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_COPYCAT" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_MANY_MASKED_PERFORMANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_GIFT_OF_THEATRE" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Tools of Performance" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_TOOLS_OF_PERFORMANCE">
+		<description>
+			<p>When you join the College of Masks at 3rd level, you gain the ability to weave arcane boons into theater masks, which grant you abilities while you wear them. You craft two masks of your choice, which are detailed under the "Masks" section below. You're able to craft one additional mask of your choice when you reach 7th, 11th, and 15th level in this class. Each time you craft a new mask, you can also replace one mask you've already crafted with a different one.</p>
+			<p class="indent">While wearing a mask you gain the abilities granted by it. You can don or swap masks as an action or bonus action. If an ability from a mask requires a saving throw, the DC is equal to your bard spell save DC.</p>
+		</description>
+		<sheet>
+			<description>You gain the ability to weave arcane boons into theater masks, which grant you abilities while you wear them. Each time you craft a new mask, you can also replace one mask you've already crafted with a different one. While wearing a mask you gain the abilities granted by it. You can don or swap masks as an action or bonus action. If an ability from a mask requires a saving throw, the DC is {{bard:spellcasting:dc}}.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Mask, Tools of Performance" supports="OTTG Mask" level="3" number="2" />
+			<select type="Archetype Feature" name="Mask, Tools of Performance" supports="OTTG Mask" level="7" />
+			<select type="Archetype Feature" name="Mask, Tools of Performance" supports="OTTG Mask" level="11" />
+			<select type="Archetype Feature" name="Mask, Tools of Performance" supports="OTTG Mask" level="15" />
+		</rules>
+	</element>
+
+	<element name="Copycat" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_COPYCAT">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to quickly shift your appearance to match that of a person. As an action, you can expend one use of Bardic Inspiration to cast the <i>Alter Self</i> spell, using the spell's Change Appearance option to transform into another humanoid you have seen. When cast in this way, the spell has the following changes:</p>
+			<ul>
+				<li>It doesn't require your concentration, but you can still end the spell at any time (no action required).</li>
+				<li>You gain 5 temporary hit points, and the spell ends early if you lose all these hit points or die.</li>
+				<li>You gain new equipment that you would associate with the target and are aware of it possessing, such as its clothing, armor, weapons, and other small belongings. Any equipment gained in this way has no magical properties, even if the original object used by the target does.</li>
+				<li>Any equipment you were wearing or carrying merges into your new form and you can't activate, use, wield, or otherwise benefit from any of it.</li>
+			</ul>
+			<div class="reference">
+				<h4>Alter Self</h4>
+				<p>Change Appearance. You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.</p>
+			</div>
+		</description>
+		<sheet action="Action">
+			<description>You can expend one use of Bardic Inspiration to cast the Alter Self spell, using the spell's Change Appearance option to transform into another humanoid you have seen. When cast in this way, the spell has the following changes: &#13;
+			• It doesn't require your concentration, but you can still end the spell at any time (no action required). &#13;
+			• You gain 5 temporary hp, and the spell ends early if you lose all these hit points or die. &#13;
+			• You gain new equipment that you would associate with the target and are aware of it possessing, such as its clothing, armor, weapons, and other small belongings. Any equipment gained in this way has no magical properties, even if the original object used by the target does. &#13;
+			• Any equipment you were wearing or carrying merges into your new form and you can't activate, use, wield, or otherwise benefit from any of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Many-Masked Performance" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_MANY_MASKED_PERFORMANCE">
+		<description>
+			<p>At 6th level, you gain the ability to enthrall an audience with a dramatic performance. Over the course of 1 minute, you can engage in a captivating performance and attempt to cause nearby creatures to become charmed, frightened, or fall unconscious (your choice). Choose a number of creatures up to your bard level within 60 feet of you that can hear you. When the performance ends, each target must succeed on a Wisdom saving throw against your spell save DC or be subjected to the chosen condition.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Over the course of 1 minute, you can engage in a captivating performance and attempt to cause nearby creatures to become charmed, frightened, or fall unconscious (your choice). Choose up to {{level:bard}} within 60 ft of you that can hear you. When the performance ends, each target must succeed on a Wisdom saving throw (DC {{bard:spellcasting:dc}}) or be subjected to the chosen condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Gift of Theatre" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_GIFT_OF_THEATRE">
+		<description>
+			<p>At 14th level, you gain the ability to give one of your theater masks to an ally within 5 feet of you. As an action, you temporarily release the incantation that binds your theater mask to you, allowing one of your allies to use it. The mask can be used in this way for 1 minute and only one other creature can be designated to use it.</p>
+			<p class="indent">Once you've given an ally a theater mask, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can give one of your theater masks to an ally within 5 ft of you. As an action, you temporarily release the incantation that binds your theater mask to you, allowing one of your allies to use it. The mask can be used in this way for 1 minute and only one other creature can be designated to use it.</description>
+		</sheet>
+	</element>
+
+	<!--Masks-->
+	<element name="Demon" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_DEMON">
+		<supports>OTTG Mask</supports>
+		<prerequisite>7th Level Required</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>While wearing this mask you gain the abilities Arcane Memory and Demon Eye.</p>
+			<ul>
+				<li><strong><em>Arcane Memory.</em></strong> While wearing this mask, you can use an action and expend a spell slot of 1st level or higher to magically learn whether a creature or object you specify has been within a 20-foot radius of your current location in the past 24 hours. If you expend a spell slot of 3rd level or higher, you get a brief vision of the creature or object while it was there, and you learn the exact time the creature or object was present.</li>
+				<li><strong><em>Demon Eye.</em></strong> As an action, you gain the ability to magically see through solid objects to a range of 15 feet. Your vision penetrates most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While wearing this mask you gain the abilities Arcane Memory and Demon Eye. &#13;
+			•  Arcane Memory. You can use an action and expend a spell slot of 1st level or higher to magically learn whether a creature or object you specify has been within a 20-foot radius of your current location in the past 24 hours. If you expend a spell slot of 3rd level or higher, you get a brief vision of the creature or object while it was there, and you learn the exact time the creature or object was present. &#13;
+			•  Demon Eye. As an action, you gain the ability to magically see through solid objects to a range of 15 ft. Your vision penetrates most barriers, but it is blocked by 1 ft of stone, 1 inch of common metal, a thin sheet of lead, or 3 ft of wood or dirt.</description>
+		</sheet>
+	</element>
+
+	<element name="Harpy" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_HARPY">
+		<supports>OTTG Mask</supports>
+		<prerequisite>11th Level Required</prerequisite>
+		<requirements>[level:11]</requirements>
+		<description>
+			<p>While wearing this mask you have a flying speed of 30 feet and resistance to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask you have a {{speed}} ft flying speed and resistance to psychic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Fish" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_FISH">
+		<supports>OTTG Mask</supports>
+		<description>
+			<p>While wearing this mask you gain a swimming speed equal to your walking speed and the ability to breathe underwater. Additionally, you know the <i>Water Bullet</i> and <i>Whelm Weapon</i> spells.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask you gain a {{speed}} ft swimming speed and the ability to breathe underwater. Additionally, you know the Water Bullet and Whelm Weapon spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Fox" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_FOX">
+		<supports>OTTG Mask</supports>
+		<description>
+			<p>While wearing this mask, you can move through a hostile creature's space, regardless of its size, and another creature's space isn't difficult terrain for you. Additionally, your AC increases by 1 and when you make a Dexterity saving throw, you can use your reaction to gain advantage on the roll.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask, you can move through a hostile creature's space, regardless of its size, and another creature's space isn't difficult terrain for you. Additionally, your AC increases by 1 and when you make a Dexterity saving throw, you can use your reaction to gain advantage on the roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Golem" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_GOLEM">
+		<supports>OTTG Mask</supports>
+		<prerequisite>7th Level Required</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>While wearing this mask, your weapon attacks deal an extra 1d8 damage on a hit. If you are Small, you don't have disadvantage on your attack rolls with weapons as a result of heavy. In addition, your attacks and spells deal double damage to objects and structures.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask, your weapon attacks deal an extra 1d8 damage on a hit. If you are Small, you don't have disadvantage on your attack rolls with weapons as a result of heavy. In addition, your attacks and spells deal double damage to objects and structures.</description>
+		</sheet>
+	</element>
+
+	<element name="Old Man" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_OLD_MAN">
+		<supports>OTTG Mask</supports>
+		<description>
+			<p>While wearing this mask, you can cast <i>Detect Magic</i> and <i>Identify</i> at will, without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask, you can cast Detect Magic and Identify at will, without expending a spell slot or material components.</description>
+		</sheet>
+	</element>
+
+	<element name="Protagonist" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_PROTAGONIST">
+		<supports>OTTG Mask</supports>
+		<description>
+			<p>When you roll initiative while wearing this mask, you gain temporary hit points equal to half your bard level (rounded up). As a bonus action, you can mark a creature as your antagonist for 1 minute. For the duration, you have advantage on ability checks involving your antagonist. Additionally, when you see your antagonist make an attack, you can use your reaction and expend a use of your Bardic Inspiration, rolling a Bardic Inspiration die to reduce the attack roll by the number rolled on the die.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative while wearing this mask, you gain {{level:bard:half"up}} temporary hp. As a bonus action, you can mark a creature as your antagonist for 1 minute. For the duration, you have advantage on ability checks involving your antagonist. Additionally, when you see your antagonist make an attack, you can use your reaction and expend a use of your Bardic Inspiration, rolling a Bardic Inspiration die to reduce the attack roll by the number rolled on the die.</description>
+		</sheet>
+	</element>
+
+	<element name="Sea Urchin" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_SEA_URCHIN">
+		<supports>OTTG Mask</supports>
+		<description>
+			<p>While wearing this mask, you can use a bonus action and expend a use of your Bardic Inspiration, rolling a Bardic Inspiration die to heal yourself for a number of hit points equal to the number rolled plus half your bard level (rounded up).</p>
+			<p class="indent">Additionally, you can use an action to attempt to immobilize a creature you can see within 30 feet of you, injecting it with magical toxins. The target must succeed on a Constitution saving throw or become restrained for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on itself on a success. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask, you can use a bonus action and expend a use of your Bardic Inspiration, rolling a Bardic Inspiration die to heal yourself for a number of hit points equal to the number rolled plus {{level:bard:half:up}}. &#13;
+			Additionally, you can use an action to attempt to immobilize a creature you can see within 30 ft of you, injecting it with magical toxins. The target must succeed on a Constitution saving throw or become restrained for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on itself on a success. You can use this ability {{proficiewncy}} times, and you regain all expended uses of it when you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Spirit" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_SPIRIT">
+		<supports>OTTG Mask</supports>
+		<prerequisite>7th Level Required</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>While wearing this mask, you know the <i>Speak with Dead</i> spell. Additionally, you can expend a use of your Bardic Inspiration to temporarily move through the Spirit Realm. Whenever you would move, you instead step through the veil and into the Spirit Realm in the area where it overlaps with your current plane. You remain in the Spirit Realm until you stop moving or your turn ends. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take 1d10 force damage.</p>
+			<p class="indent">While on the Spirit Realm, you can only affect and be affected by other creatures on that plane. Creatures that aren't in the Spirit Realm can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so. You ignore all objects and effects that aren't on the Spirit Realm, allowing you to move through objects you perceive on the plane you originated from. This effect lasts until the end of your turn.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask, you know the Speak with Dead spell. Additionally, you can expend a use of your Bardic Inspiration to temporarily move through the Spirit Realm. Whenever you would move, you instead step through the veil and into the Spirit Realm in the area where it overlaps with your current plane. You remain in the Spirit Realm until you stop moving or your turn ends. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take 1d10 force damage. &#13;
+			While on the Spirit Realm, you can only affect and be affected by other creatures on that plane. Creatures that aren't in the Spirit Realm can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so. You ignore all objects and effects that aren't on the Spirit Realm, allowing you to move through objects you perceive on the plane you originated from. This effect lasts until the end of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Stone" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_COLLEGE_OF_MASKS_STONE">
+		<supports>OTTG Mask</supports>
+		<description>
+			<p>While wearing this mask, you gain proficiency in the Athletics skill and all bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 2. Additionally, you have advantage on ability checks and saving throws against being pushed, pulled, or knocked prone while wearing the mask.</p>
+		</description>
+		<sheet>
+			<description>While wearing this mask, you gain proficiency in the Athletics skill and all bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 2. Additionally, you have advantage on ability checks and saving throws against being pushed, pulled, or knocked prone while wearing the mask.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spirit Kin</name>
+		<description>Spirit Kin from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="background-sprit-kin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-spirit-kin.xml" />
+		</update>
+	</info>
+
+	<element name="Spirit Kin" type="Background" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_SPIRIT_KIN">
+		<description>
+			<p>Though everyone living on Obojima comes in contact with spirits to one degree or another, your interaction with the Spirit Realm has always occurred with peculiar regularity. All your life you've had a special kinship with spirits that few share in. You've come to love their food, their culture, and their people more than the average material being. These habits have drawn fascination, suspicion, and confusion from locals, but that doesn't stop them from enlisting your talents when spirit stuff gets weird.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Mechanics, Persuasion</li>
+				<li> <strong>Languages:</strong> Torum</li>
+				<li> <strong>Equipment:</strong> A bedroll, 10 candles, two different common ingredients (linked to your spirit allies), a special item gifted to you by a spirit, and 10 gold flowers.</li>
+			</ul>
+			<div element="ID_1985_OTTG_BACKGROUND_FEATURE_SPIRIT_KIN_CONNECTIONS_BEYOND_MATERIAL" />
+		</description>
+		<setters>
+			<set name="short">Mechanics, Persuasion, Torum</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Language" id="ID_1985_OTTG_LANGUAGE_TORUM" />
+			<grant type="Background Feature" id="ID_1985_OTTG_BACKGROUND_FEATURE_SPIRIT_KIN_CONNECTIONS_BEYOND_MATERIAL" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Connections Beyond Material" type="Background Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_FEATURE_SPIRIT_KIN_CONNECTIONS_BEYOND_MATERIAL">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have come to know two spirits by name, and through your relationship have learned special rituals and techniques that allow you to find them across the Physical and Spirit Realms.</p>
+			<p class="indent">By using two unique ingredients that you choose when taking this background, you can contact these spirits from any distance or plane of existence. The ritual you enact to utilize these ingredients and contact a spirit is uniquely your own—it might involve a tea ceremony, or perhaps the burning of the ingredients and partaking in the aromatic smoke they produce.</p>
+		</description>
+		<sheet alt="Connections Beyond Material" />
+	</element>
+
+</elements>

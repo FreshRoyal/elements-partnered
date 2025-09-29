@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Apprentice Witch</name>
+		<description>Apprentice Witch from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="background-apprentice-witch.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-apprentice-witch.xml" />
+		</update>
+	</info>
+
+	<element name="Apprentice Witch" type="Background" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_APPRENTICE_WITCH">
+		<description>
+			<p>The ways of witchery are mysterious and often guarded by its practitioners. Whether you sought it out or a witch recognized something in you, you came to apprentice for a witch or coven. Under their tutelage, you were introduced to Obojima's folk magic tradition, where you learned the rudiments of potions and other magical preparations. Although you may have trained under one for some time, you never officially joined one of the covens and are considered a witch without a crest. For more on witch covens, see page 19.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Arcana, Survival</li>
+				<li> <strong>Tool Proficiencies:</strong> Alchemist's Supplies</li>
+				<li> <strong>Equipment:</strong> Alchemist's supplies, 9 common ingredients (which you know the attributes for), a hat or robe from your time as an apprentice, and 9 gold flowers.</li>
+			</ul>
+			<div element="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_WITCH_SIBLING_STUDENT" />
+		</description>
+		<setters>
+			<set name="short">Arcana, Survival, Alchemist's Supplies</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<grant type="Background Feature" id="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_WITCH_SIBLING_STUDENT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Sibling Student" type="Background Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_FEATURE_APPRENTICE_WITCH_SIBLING_STUDENT">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have a close and trustworthy friend who studied under the same witch as you and has now made it into one of the six main covens. When needed, they act as your liaison to the coven or covens they're connected to.</p>
+		</description>
+		<sheet alt="Sibling Student" />
+	</element>
+
+</elements>

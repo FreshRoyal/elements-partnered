@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Courier Brigade Cadet</name>
+		<description>Courier Brigade Cadet from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="background-courier-brigade-cadet.xml.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/backgrounds/background-courier-brigade-cadet.xml" />
+		</update>
+	</info>
+
+	<element name="Courier Brigade Cadet" type="Background" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_COURIER_BRIGADE_CADET">
+		<description>
+			<p>You were a cadet with the noble Courier Brigade, where you trained at arms, learned to traverse the landscape quickly and quietly, and practiced the hallowed task of properly delivering a package. The couriers' code—"Deliverance through delivery"—taught you that your purpose is to be of service to others, and that one of the highest virtues is seeing things through to the end. For more on the Courier Brigade, see page 17.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Stealth, Survival</li>
+				<li> <strong>Tool Proficiencies:</strong> Cobbler's tools</li>
+				<li> <strong>Equipment:</strong> An Explorer's Pack, cobbler's tools, climber's kit, hooded lantern, lock, an old uniform issued by the courier brigade, and 11 gold flowers.</li>
+			</ul>
+			<div element="ID_1985_OTTG_BACKGROUND_FEATURE_COURIER_BRIGADE_CADET_POCKET_MAP" />
+		</description>
+		<setters>
+			<set name="short">Stealth, Survival, Cobbler's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS" />
+			<grant type="Background Feature" id="ID_1985_OTTG_BACKGROUND_FEATURE_COURIER_BRIGADE_CADET_POCKET_MAP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Pocket Map" type="Background Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_BACKGROUND_FEATURE_COURIER_BRIGADE_CADET_POCKET_MAP">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have an old worn out pocket map of the island from your time as a cadet. The map is inscribed with a handful of paths known only to the Courier Brigade.</p>
+		</description>
+		<sheet alt="Pocket Map" />
+	</element>
+
+</elements>

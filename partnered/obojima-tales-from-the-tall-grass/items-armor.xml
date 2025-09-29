@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armor</name>
+		<description>Armor from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-armor.xml" />
+		</update>
+	</info>
+
+	<element name="Bark" type="Armor" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARMOR_BARK">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>While wearing bark armor, you gain advantage on stealth checks made in wooded areas.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="14">14 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_BARK</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+
+	<element name="Scumweed" type="Armor" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARMOR_MEDIUM_SCUMWEED">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Scumweed is slimy and thick. Dried scumweed can even make hardy armor in a pinch and more than a few monsters and witches have been known to use it for precisely that purpose.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="22">22 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">15 + Dex modifier (max 1)</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_SCUMWEED</set>
+		</setters>
+		<rules>
+			<stat name="ottg:scumweed:ac" value="15" bonus="bonus" />
+			<stat name="ottg:scumweed:ac" value="dexterity:modifier" maximum="1" />
+			<stat name="ac:calculation" value="ottg:scumweed:ac" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Divers" type="Armor" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARMOR_HEAVY_DIVERS">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>While wearing divers armor your movement is reduced by 10, unless your Strength score is equal to or greater than 18. Additionally, whenever the spell <i>Water Breathing</i> is cast on you while wearing the divers armor, the duration of the spell is doubled for you.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="100">100 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">16</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">17</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_DIVERS</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="17" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:18]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element>
+
+	<element name="Pot Lid" type="Armor" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GEAR_POT_LID">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>When taking the attack action with a finesse or light melee weapon that you're holding in one hand, you can use a bonus action to attack with a pot lid that you're holding in the other hand. On a hit, the pot lid deals 1d4 bludgeoning damage. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+1</set>
+			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_POT_LID</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="shield" />
+		</rules>
+	</element>
+
+	<!--Proficiencies-->
+	<element name="Armor Proficiency (Bark)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_BARK">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_BARK" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Armor Proficiency (Scumweed)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_SCUMWEED">
+		<supports>Medium Armor, ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_SCUMWEED" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Armor Proficiency (Divers)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_DIVERS">
+		<supports>Heavy Armor, ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_DIVERS" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Armor Proficiency (Pot Lid)" type="Proficiency" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_POT_LID">
+		<supports>Shield, ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_ARMOR_PROFICIENCY_POT_LID" type="Proficiency" />
+		</rules>
+	</append>
+
+</elements>

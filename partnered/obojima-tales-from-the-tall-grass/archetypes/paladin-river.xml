@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the River</name>
+		<description>Oath of the River from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="paladin-river.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/paladin-river.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the River" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_PALADIN_OATH_OF_THE_RIVER">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Those who commit themselves to the Oath of the River have found guidance in the shifting waters and the great creatures that live within them. These diverse individuals model their lives and the tenets they follow after the tranquil waters of a blue pool and the rushing rapids that spill over a great waterfall, always striving to flow around obstacles if possible, but ready to crash through them when left with no other option. As the river flows and bends, it seeks the path of least resistance in its travels to the ocean. Like the river, paladins who have sworn this oath remain adaptable but steadfast in their own course.</p>
+			<h5 class="caption">Tenets of the River</h5>
+			<p>The tenets of the Oath of The River vary by paladin, but all of them revolve around embracing the flow and adaptability found in water. Paladins who uphold these tenets must understand when it is best to dispatch justice through violence or through understanding and forgiveness. The core principles of the tenets are:</p>
+			<p class="indent"><strong><em>The River Flows On.</em></strong> Forgiveness can be as sharp as any blade.</p>
+			<p class="indent"><strong><em>The River Quenches or Drowns.</em></strong> Judgment is reserved for those truly deserving of it.</p>
+			<p class="indent"><strong><em>The River Rages.</em></strong> If I must battle, I will fight with all my passion and strength.</p>
+			<p class="indent"><strong><em>The River Seeks the Sea...Always.</em></strong> I will not abandon my duty, especially when others are counting on me.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_OATH_SPELLS" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CHANNEL_DIVINITY" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_AURA_OF_THE_RIVER" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_SHIELDING_SPIRIT" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_FORM_OF_THE_RIVER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_AURA_OF_THE_RIVER" level="7" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_SHIELDING_SPIRIT" level="15" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_FORM_OF_THE_RIVER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Bless, Whelm Weapon</em></td></tr>
+				<tr><td>5th</td><td><em>Find Steed, Lesser Restoration</em></td></tr>
+				<tr><td>9th</td><td><em>Water Breathing, Water Walk</em></td></tr>
+				<tr><td>13th</td><td><em>Control Water, Freedom of Movement</em></td></tr>
+				<tr><td>17th</td><td><em>Mass Cure Wounds, Submerge</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_1985_OTTG_SPELL_WHELM_WEAPON" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_WALK" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_1985_OTTG_SPELL_SUBMERGE" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em>Rushing Rapids.</em></strong> As an action, you can cause a forceful wave of water to erupt outward in a 20-foot radius centered on you. Each Large or smaller creature of your choice in the area must succeed on a Strength saving throw or be pushed 5 feet outside of it.</p>
+			<p class="indent"><strong><em>Blessed Pool.</em></strong> As a bonus action, you speak gentle yet courageous words that encourage your allies and heal them. Choose a number of creatures up to twice your Charisma modifier (minimum 2) that you can see within 30 feet of you. Each creature regains 2d6 hit points.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CD_RUSHING_RAPIDS" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CD_BLESSED_POOL" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Rushing Rapids" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CD_RUSHING_RAPIDS">
+		<compendium display="false" />
+		<description>
+			<p>As an action, you can cause a forceful wave of water to erupt outward in a 20-foot radius centered on you. Each Large or smaller creature of your choice in the area must succeed on a Strength saving throw or be pushed 5 feet outside of it.</p>
+		</description>
+		<sheet alt="Rushing Rapids" action="Action" usage="Channel Divinity">
+			<description>You can cause a forceful wave of water to erupt outward in a 20-ft radius centered on you. Each Large or smaller creature of your choice in the area must succeed on a Strength saving throw or be pushed 5 ft outside of it.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Blessed Pool" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_CD_BLESSED_POOL">
+		<compendium display="false" />
+		<description>
+			<p>As a bonus action, you speak gentle yet courageous words that encourage your allies and heal them. Choose a number of creatures up to twice your Charisma modifier (minimum 2) that you can see within 30 feet of you. Each creature regains 2d6 hit points.</p>
+		</description>
+		<sheet alt="Blessed Pool" action="Bonus Action" usage="Channel Divinity">
+			<description>You speak gentle yet courageous words that encourage your allies and heal them. Choose up to {{ottg:river:running rapids:modifier}} creatures that you can see within 30 ft of you. Each creature regains 2d6 hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:river:running rapids:ability" value="charisma:modifier" />
+			<stat name="ottg:river:running rapids:ability" value="charisma:modifier" />
+			<stat name="ottg:river:running rapids:modifier" value="ottg:river:running rapids:ability" bonus="bonus" />
+			<stat name="ottg:river:running rapids:modifier" value="2" bonus="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Aura of the River" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_AURA_OF_THE_RIVER">
+		<description>
+			<p>Starting at 7th level, you emanate an aura that causes the area around you to feel as if wading into a body of water, slowing down your enemies as they approach. The area within 10 feet of you is considered difficult terrain for other creatures. You can designate any number of creatures you can see to be unaffected by it (no action required).</p>
+			<p class="indent">In addition, the first time you hit a Large or smaller creature on your turn with a melee attack, you can use your aura to move the target up to 10 feet to an unoccupied space you choose.</p>
+			<p class="indent">At 18th level, the area within 30 feet of you, instead of 10 feet, is considered difficult terrain for other creatures.</p>
+		</description>
+		<sheet>
+			<description>The area within 10 feet of you is considered difficult terrain for other creatures. You can designate any number of creatures you can see to be unaffected by it (no action required). &#13;
+			In addition, the first time you hit a Large or smaller creature on your turn with a melee attack, you can use your aura to move the target up to 10 ft to an unoccupied space you choose.</description>
+			<description level="18">The area within 10 feet of you is considered difficult terrain for other creatures. You can designate any number of creatures you can see to be unaffected by it (no action required). &#13;
+			In addition, the first time you hit a Large or smaller creature on your turn with a melee attack, you can use your aura to move the target up to 30 ft to an unoccupied space you choose.</description>
+		</sheet>
+	</element>
+
+	<element name="Shielding Spirit" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_SHIELDING_SPIRIT">
+		<description>
+			<p>Beginning at 15th level, whenever you make a Dexterity saving throw, you can use your reaction to halve any damage you would take from the effect. When you do so, you can also expend a spell slot to extend this benefit to nearby allies. Choose a number of creatures within 10 feet of you equal to the level of the spell slot expended; the damage is also halved for each of those creatures.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever you make a Dexterity saving throw, you can use your reaction to halve any damage you would take from the effect. When you do so, you can also expend a spell slot to extend this benefit to nearby allies. Choose a number of creatures within 10 ft of you equal to the level of the spell slot expended; the damage is also halved for each of those creatures.</description>
+		</sheet>
+	</element>
+
+	<element name="Form of the River" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_OATH_OF_THE_RIVER_FORM_OF_THE_RIVER">
+		<description>
+			<p>Starting at 20th level, you can manifest the powerful visage of a river spirit around your body. As a bonus action, you gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You gain a swimming speed of 60 feet, and your walking speed increases by 15 feet.</li>
+				<li>You have advantage on all saving throws.</li>
+				<li>Whenever you successfully move a creature with your aura you can choose to deal 2d8 bludgeoning damage to it.</li>
+			</ul>
+			<p class="indent">Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You gain the following benefits for 1 minute: &#13;
+			• You gain a swimming speed of 60 ft, and your walking speed increases by 15 ft. &#13;
+			• You have advantage on all saving throws. &#13;
+			• Whenever you successfully move a creature with your aura you can choose to deal 2d8 bludgeoning damage to it. &#13;
+			Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</description>
+		</sheet>
+	</element>
+
+</elements>

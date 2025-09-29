@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Corrupted Ranger</name>
+		<description>Corrupted Ranger from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="ranger-corrupted.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/ranger-corrupted.xml" />
+		</update>
+	</info>
+
+	<element name="Corrupted Ranger" type="Archetype" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_RANGER_CORRUPTED">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>You have become afflicted by the mysterious illness that haunts the island known as the Corruption. This same foul magic, which has stained the coastlines black, now resides within your body. It curses your skin and seeps from your pores, and in time it will even become difficult to distinguish you from it.</p>
+			<p class="indent">How this has happened is your story to tell. You may have been one of the first responders to the Corruption when it came to the shores of Obojima leaving you to possibly be the only survivor of that brave band of rangers. Perhaps you were an explorer, who stumbled on a pocket of Corruption and became infected, or maybe you were inflicted with this Corruption by an evil witch.</p>
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_1ST_MANIFESTATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_2ND_MANIFESTATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_3RD_MANIFESTATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_4TH_MANIFESTATION" />
+			<div element="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_5TH_MANIFESTATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_1ST_MANIFESTATION" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_2ND_MANIFESTATION" level="3" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_3RD_MANIFESTATION" level="7" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_4TH_MANIFESTATION" level="11" />
+			<grant type="Archetype Feature" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_5TH_MANIFESTATION" level="15" />
+		</rules>
+	</element>
+	
+	<element name="1st Manifestation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_1ST_MANIFESTATION">
+		<description>
+			<p>Starting at 3rd level, the Corruption within begins to manifest in combat.</p>
+			<p class="indent">Whenever you take damage, you also receive a curse marker; if the damage was from a critical hit, you receive two curse markers instead. These markers will remain active until the end of your next turn, and the maximum number of curse markers you can accumulate at a time is 2. When you hit a creature with a weapon attack, all the curse markers you have gained are instantly consumed, dealing an extra 1d4 necrotic damage to the target for each curse marker consumed.</p>
+			<p class="indent">Alternatively, you can use a bonus action to call upon your Corruption to immediately gain the maximum number of curse markers available to you. When you use this ability, you can't gain more than your maximum number of curse markers.</p>
+			<p class="indent">The number of curse markers you can accumulate at once increases when you reach certain levels in this class: 3 at 5th level, 4 at 11th level, and 5 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>Whenever you take damage, you also receive a curse marker; if the damage was from a critical hit, you receive two curse markers instead. These markers will remain active until the end of your next turn, and the maximum number of curse markers you can accumulate at a time is {{ottg:corrupted ranger:curse markers:number}}. When you hit a creature with a weapon attack, all the curse markers you have gained are instantly consumed, dealing an extra 1d4 necrotic damage to the target for each curse marker consumed. &#13;
+			Alternatively, you can use a bonus action to call upon your Corruption to immediately gain the maximum number of curse markers available to you. When you use this ability, you can't gain more than your maximum number of curse markers.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:corrupted ranger:curse markers:number" value="2" bonus="base" />
+			<stat name="ottg:corrupted ranger:curse markers:number" value="3" bonus="base" level="5" />
+			<stat name="ottg:corrupted ranger:curse markers:number" value="4" bonus="base" level="11" />
+			<stat name="ottg:corrupted ranger:curse markers:number" value="5" bonus="base" level="17" />
+		</rules>
+	</element>
+
+	<element name="2nd Manifestation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_2ND_MANIFESTATION">
+		<description>
+			<p>At 3rd level, you start to observe peculiar happenings within your own body. At times you notice that your limbs and torso exhibit independent movements, seemingly acting of their own volition.</p>
+			<p class="indent">When you make a Strength or Dexterity check, you can choose to replace the result with a number equal to 10 + your ranger level. You can wait until after you roll the d20 before deciding to use this feature, but must decide before the GM says whether the roll succeeds or fails. You can use this feature a number of times equal to half your proficiency bonus (rounded up), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency:half:up}}/Long Rest">
+			<description>When you make a Strength or Dexterity check, you can choose to replace the result with {{ottg:corrupted ranger:second manifestation:result}}. You can wait until after you roll the d20 before deciding to use this feature, but must decide before the GM says whether the roll succeeds or fails.</description>
+		</sheet>
+		<rules>
+			<stat name="ottg:corrupted ranger:second manifestation:result" value="10" />
+			<stat name="ottg:corrupted ranger:second manifestation:result" value="level:ranger" />
+		</rules>
+	</element>
+
+	<element name="3rd Manifestation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_3RD_MANIFESTATION">
+		<description>
+			<p>Starting at 7th level, when you make a weapon attack against a creature, you can expend one curse marker to roll a d4 and add it to the attack roll. You can choose to use a curse marker in this way before or after making the attack roll. You can expend a curse marker in this way only once per turn.</p>
+			<p class="indent">Additionally, whenever you take damage, you can use your reaction to reduce the damage taken by an amount equal to your ranger level. Once you reduce damage in this way, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>When you make a weapon attack against a creature, you can expend one curse marker to roll a d4 and add it to the attack roll. You can choose to use a curse marker in this way before or after making the attack roll. You can expend a curse marker in this way only once per turn. 
+			Additionally, whenever you take damage, you can use your reaction to reduce the damage taken by {{level:ranger}}. Once you reduce damage in this way, you can't do so again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="4th Manifestation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_4TH_MANIFESTATION">
+		<description>
+			<p>At 11th level, your ailment is beginning to have side effects on your body. Gain one of the following ailments of your choice.</p>
+			<p><strong><em>Failing Lungs.</em></strong> Your lungs have begun to ache and your days are filled with excessive coughing. At times you feel yourself gasping for air, and it's in those moments you've learned to steal another's breath. As an action, you pull your next breath from a creature you can see. The target falls prone and can't take reactions until the start of your next turn. Additionally, all of your curse markers are consumed, dealing 1d4 necrotic damage to the creature for each marker consumed in this way.</p>
+			<p class="indent">Alternatively, you can give your breath to another creature. Whenever a creature you can see makes a Dexterity saving throw, you can use your reaction to give it advantage on the saving throw and increase its speed by 15 feet until the start of your next turn.</p>
+			<p><strong><em>Graying Vision.</em></strong> Your eyes weaken and the world around you begins to lose some of its colorful luster. To adjust to your slowly worsening vision, you've gained blindsight out to a range of 15 feet. In addition, you automatically detect visual illusions if their Intelligence (Investigation) check DC is less than or equal to your ranger spell save DC.</p>
+			<p><strong><em>Losing Feeling.</em></strong> Numbness creeps into your muscles and bones and across your skin. The vibrancy of feeling gives way to a broad antagonism. Your hands and arms instead burn with a cold ethereal flame, which only you can see. As a bonus action, you can target a creature you can see within 60 feet of you, enveloping it with the same cursed flames. When you deal damage with your curse markers to a creature that has been enveloped by your flames, each curse marker deals an extra 1d6 necrotic damage, instead of 1d4.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="4th Manifestation" supports="OTTG Fourth Manifestation" level="11"/>
+		</rules>
+	</element>
+	<element name="Failing Lungs" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_4TH_MANIFESTATION_FAILING_LUNGS">
+		<supports>OTTG Fourth Manifestation</supports>
+		<description>
+			<p>Your lungs have begun to ache and your days are filled with excessive coughing. At times you feel yourself gasping for air, and it's in those moments you've learned to steal another's breath. As an action, you pull your next breath from a creature you can see. The target falls prone and can't take reactions until the start of your next turn. Additionally, all of your curse markers are consumed, dealing 1d4 necrotic damage to the creature for each marker consumed in this way.</p>
+			<p class="indent">Alternatively, you can give your breath to another creature. Whenever a creature you can see makes a Dexterity saving throw, you can use your reaction to give it advantage on the saving throw and increase its speed by 15 feet until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You pull your next breath from a creature you can see. The target falls prone and can't take reactions until the start of your next turn. Additionally, all of your curse markers are consumed, dealing 1d4 necrotic damage to the creature for each marker consumed in this way. &#13;
+			Alternatively, you can give your breath to another creature. Whenever a creature you can see makes a Dexterity saving throw, you can use your reaction to give it advantage on the saving throw and increase its speed by 15 ft until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Graying Vision" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_4TH_MANIFESTATION_GRAYING_VISION">
+		<supports>OTTG Fourth Manifestation</supports>
+		<description>
+			<p>Your eyes weaken and the world around you begins to lose some of its colorful luster. To adjust to your slowly worsening vision, you've gained blindsight out to a range of 15 feet. In addition, you automatically detect visual illusions if their Intelligence (Investigation) check DC is less than or equal to your ranger spell save DC.</p>
+		</description>
+		<sheet>
+			<description>You automatically detect visual illusions if their Intelligence (Investigation) check DC is less than or equal to {{ranger:spellcasting:dc}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="15" bonus="base" />
+		</rules>
+	</element>
+	<element name="Losing Feeling" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_4TH_MANIFESTATION_LOSING_FEELING">
+		<supports>OTTG Fourth Manifestation</supports>
+		<description>
+			<p>Numbness creeps into your muscles and bones and across your skin. The vibrancy of feeling gives way to a broad antagonism. Your hands and arms instead burn with a cold ethereal flame, which only you can see. As a bonus action, you can target a creature you can see within 60 feet of you, enveloping it with the same cursed flames. When you deal damage with your curse markers to a creature that has been enveloped by your flames, each curse marker deals an extra 1d6 necrotic damage, instead of 1d4.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can target a creature you can see within 60 ft of you, enveloping it with the same cursed flames. When you deal damage with your curse markers to a creature that has been enveloped by your flames, each curse marker deals an extra 1d6 necrotic damage, instead of 1d4.</description>
+		</sheet>
+	</element>
+
+	<element name="5th Manifestation" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_CORRUPTED_RANGER_5TH_MANIFESTATION">
+		<description>
+			<p>Starting at 15th level, you gain the ability to call upon the Corruption which greatly alters your natural capabilities. As a bonus action, you can activate this feature, doubling your walking speed, increasing your AC by 2, and allowing you to make two additional attacks when taking the Attack action. In addition, all attacks are treated as if you have the maximum number of curse markers accumulated. The effects of this feature last until the start of your next turn. You can use this ability without negative effects once per long rest.</p>
+			<p class="indent">If you use this feature a second time before finishing a long rest, in addition to the effects wearing off at the start of your next turn, you also suffer one level of exhaustion and immediately drop to 1 hit point if you have more than 1 hit point at the start of your turn.</p>
+			<p class="indent">Once you use this feature a second time, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2/Long Rest">
+			<description>You can activate this feature, doubling your walking speed, increasing your AC by 2, and allowing you to make two additional attacks when taking the Attack action. In addition, all attacks are treated as if you have the maximum number of curse markers accumulated. The effects of this feature last until the start of your next turn. You can use this ability without negative effects once per long rest. &#13;
+			If you use this feature a second time before finishing a long rest, in addition to the effects wearing off at the start of your next turn, you also suffer one level of exhaustion and immediately drop to 1 hp if you have more than 1 hit point at the start of your turn.</description>
+		</sheet>
+	</element>
+
+</elements>

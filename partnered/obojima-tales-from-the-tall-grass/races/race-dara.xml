@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dara</name>
+		<description>Dara from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="race-dara.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/races/race-dara.xml" />
+		</update>
+	</info>
+
+	<element name="Dara" type="Race" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACE_DARA">
+		<description>
+			<p>Dara are a mysterious people that emerged from the forests of Obojima less than 300 years ago. No one knows if they are from Obojima itself or if they came from another realm. Even the dara themselves speculate as to their origin, though most believe they are all descendents of an enigmatic figure known as the First Dara. What is known about the dara is that they are insatiably curious, a gift they claim is from their progenitor. Dara often gravitate toward being wanderers, seeking out anything that interests them, and many scrawl notes and sketches as they are observing. It's hard to know what a dara will be fascinated by next, as they are just as interested in a small bug trundling over a leaf as they are a sinuous dragon flying through the sky.</p>
+			<h4>A Message From the Past</h4>
+			<p>Dara possess a unique gift—the ability to absorb a vast amount of information in an instant through contact with a magical glyph. These magical symbols, which resemble large fingerprints, are found on trees throughout Obojima and can only be seen by dara. A dara who touches one of these glyphs taps into its reservoir of knowledge. Through it, a dara could learn not just information, but also new skills. It is widely believed that many of these glyphs were left by the First Dara to guide future generations.</p>
+			<h4>Dara Lifecycle</h4>
+			<p>It's widely understood that one dara's life begins where another ends. When a dara is about to die, their final act is to capture what remains of their soul and store it into a single glyph, which they place upon a tree. Known as a parting glyph, it is imbued with the dying dara's identity, memories, and skills. There, the glyph waits until it can be claimed by a new dara.</p>
+			<p class="indent">A dara is born from the earth, emerging into Obojima, fully formed, through the roots of a tree that bears a parting glyph. Most are born from trees in the sacred grove in Roa Kala, the ancestral homeland of the dara (see page 94 for more on Roa Kala), but it could be anywhere a dara has died. When a dara leaves the soil, they are a blank slate, aware and without identity until they touch the parting glyph found at the base of their tree.</p>
+			<p class="indent">Parting glyphs give young dara a set of intellectual tools to function. In the form of memories, the glyphs offer the previous dara's perspective about a world yet to be experienced. For many dara, the parting glyph leads them to Roa Kala and from there they choose their new life.</p>
+			<h4>Dara Traits</h4>
+			<p>Your dara character gains traits that enable it to traverse and flourish on the island of Obojima.</p>
+			<p><strong><em>Ability Score Increase.</em></strong> One ability score of your choice increases by 2, and another ability score of your choice increases by 1.</p>
+			<p><strong><em>Age.</em></strong> From the moment dara pop into existence they have all basic motor functions mastered. By the time a month has passed they are a fully functioning member of society. It's unknown how long a dara can live for, but the average is roughly 100 years.</p>
+			<p><strong><em>Alignment.</em></strong> Dara tend to lead slow-paced observant lives. Their natural curiosity and desire to learn often leads them down a life as passive bystanders. They're not easily swayed and tend to stay neutral both in conflict and life.</p>
+			<p><strong><em>Size.</em></strong> Dara naturally come in a variety of sizes ranging anywhere from 2 to 7 feet tall, with a weight between 65 and 300lbs. Your size is either small or medium depending on which type of dara you are: Small (red) or Medium (blue).</p>
+			<p><strong><em>Speed.</em></strong> Your base walking speed is based on your size: 25 feet if you're Small, or 30 feet if you're Medium.</p>
+			<p><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language of your choice.</p>
+			<p><strong><em>Awakened Skills.</em></strong> You gain proficiency in three skills of your choice.</p>
+			<p><strong><em>Create Talisman.</em></strong> Your long jump is up to 20 feet and your high jump is up to 15 feet, with or without a running start.</p>
+			<ul>
+				<li><strong><em>Sun Talisman.</em></strong> A creature in possession of this talisman can use its bonus action to activate the talisman, granting it the benefit of the Disengage or Dash action (its choice).</li>
+				<li><strong><em>Earth Talisman.</em></strong> When a creature in possession of this talisman is reduced to 0 hit points but not killed outright, the talisman activates, causing the creature to drop to 1 hit point instead.</li>
+				<li><strong><em>Moon Talisman.</em></strong> This paper talisman can be placed on any weapon as an action. The next time this weapon successfully hits a target, the talisman activates, dealing extra radiant damage equal to your level.</li>
+			</ul>
+			<p>The talisman lasts for 1 hour or until it is activated. Once you use this trait, you can't do so again until you finish a long rest.</p>
+			<p><strong><em>Sacred Revelation.</em></strong> You possess an innate gift allowing you to perceive and absorb information from the peculiar glyphs strewn across the island. These glyphs take the form of intricate symbols resembling thumbprints and hold the potential to convey anything from simple messages, to complex skills to you. As an action you can touch and absorb any information stored inside one of these glyphs.</p>
+			<p><strong><em>Impart Knowledge.</em></strong> In Dara culture, the individuals who go on to obtain wisdom truly worth sharing are blessed with a unique ability to impart glyphs before their death. This extraordinary skill is revered amongst the dara.</p>
+			<p class="indent">When you reach 10th level, you gain the ability to impart messages through dara glyphs. As an action, you can press your hand against any surface and create a thumbprint shaped glyph unique to you. When creating this glyph you recite a message, which is stored inside the magical symbol. The glyph can only be seen by other dara and can be absorbed by using the Sacred Revelation ability.</p>
+			<h4>The Color of Dara</h4>
+			<p>Dara come in two distinct forms, with many unique features between them, but most refer to them by their color: blue or red. There are no social differences between blue and red dara, and they seem to appear in equal numbers. The origin of the two types is unknown, though there is a belief among them that the First Dara looked like an amalgamation of both types.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Dara)" supports="Custom Ability Score Increase 2" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Dara)" supports="Custom Ability Score Increase 1" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<stat name="innate speed" value="25" bonus="base" requirements="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" requirements="ID_SIZE_MEDIUM" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Dara)" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Dara)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_AWAKENED_SKILLS" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_CREATE_TALISMAN" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_SACRED_REVELATION" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_IMPART_KNOWLEDGE" level="10" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_DARA_COLOR" />
+		</rules>
+	</element>
+
+	<element name="Awakened Skills" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_AWAKENED_SKILLS">
+		<description>
+			<p>You gain proficiency in three skills of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Awakened Skills)" supports="Skill" number="3" />
+		</rules>
+	</element>
+
+	<element name="Create Talisman" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_CREATE_TALISMAN">
+		<description>
+			<p>Your long jump is up to 20 feet and your high jump is up to 15 feet, with or without a running start.</p>
+			<ul>
+				<li><strong><em>Sun Talisman.</em></strong> A creature in possession of this talisman can use its bonus action to activate the talisman, granting it the benefit of the Disengage or Dash action (its choice).</li>
+				<li><strong><em>Earth Talisman.</em></strong> When a creature in possession of this talisman is reduced to 0 hit points but not killed outright, the talisman activates, causing the creature to drop to 1 hit point instead.</li>
+				<li><strong><em>Moon Talisman.</em></strong> This paper talisman can be placed on any weapon as an action. The next time this weapon successfully hits a target, the talisman activates, dealing extra radiant damage equal to your level.</li>
+			</ul>
+			<p>The talisman lasts for 1 hour or until it is activated. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+  			<description>You can create a magical paper talisman. When you do so, choose one of the following forms for the talisman: &#13;
+			• Sun Talisman. A creature in possession of this talisman can use its bonus action to activate the talisman, granting it the benefit of the Disengage or Dash action (its choice). &#13;
+			• Earth Talisman. When a creature in possession of this talisman is reduced to 0 hp but not killed outright, the talisman activates, causing the creature to drop to 1 hp instead. &#13;
+			• Moon Talisman. This talisman can be placed on any weapon as an action. The next time this weapon successfully hits a target, the talisman activates, dealing {{level}} extra radiant damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Sacred Revelation" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_SACRED_REVELATION">
+		<description>
+			<p>You possess an innate gift allowing you to perceive and absorb information from the peculiar glyphs strewn across the island. These glyphs take the form of intricate symbols resembling thumbprints and hold the potential to convey anything from simple messages, to complex skills to you. As an action you can touch and absorb any information stored inside one of these glyphs.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can perceive and absorb information from peculiar glyphs. These glyphs take the form of intricate symbols resembling thumbprints and hold the potential to convey anything from simple messages, to complex skills to you. You can touch and absorb any information stored inside one of these glyphs.</description>
+		</sheet>
+	</element>
+
+	<element name="Impart Knowledge" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_IMPART_KNOWLEDGE">
+		<description>
+			<p>In Dara culture, the individuals who go on to obtain wisdom truly worth sharing are blessed with a unique ability to impart glyphs before their death. This extraordinary skill is revered amongst the dara.</p>
+			<p class="indent">When you reach 10th level, you gain the ability to impart messages through dara glyphs. As an action, you can press your hand against any surface and create a thumbprint shaped glyph unique to you. When creating this glyph you recite a message, which is stored inside the magical symbol. The glyph can only be seen by other dara and can be absorbed by using the Sacred Revelation ability.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can press your hand against any surface and create a thumbprint shaped glyph unique to you. When creating this glyph you recite a message, which is stored inside the magical symbol. The glyph can only be seen by other dara and can be absorbed by using the Sacred Revelation ability.</description>
+		</sheet>
+	</element>
+
+	<element name="Dara Color" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_DARA_DARA_COLOR">
+		<description>
+			<p>Dara come in two distinct forms, with many unique features between them, but most refer to them by their color: blue or red. There are no social differences between blue and red dara, and they seem to appear in equal numbers. The origin of the two types is unknown, though there is a belief among them that the First Dara looked like an amalgamation of both types.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Dara Color" supports="OTTG Dara Color" />
+		</rules>
+	</element>
+
+	<!--Blue Dara-->
+	<element name="Blue Dara" type="Sub Race" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_SUB_RACE_DARA_BLUE">
+		<supports>OTTG Dara Color</supports>
+		<description>
+			<p>Blue dara are usually between 6 and 7 feet tall, with blue-hued skin and a single large eye found in the middle of their head. Their body is completely void of hair and they're normally quite stout.</p>
+			<p class="indent">As a blue dara you gain the use of the knowledge talisman and are able to produce it once per day in addition to other talismans you know.</p>
+			<p><strong><em>Knowledge Talisman.</em></strong> As an action, you can create a knowledge talisman. When a creature in possession of this talisman makes an ability check, it can activate the talisman, rolling a d6 and adding the number rolled to the check; the creature can roll the die before or after making the ability check. The talisman lasts for 1 hour or until it is activated. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_BLUE_DARA_KNOWLEDGE_TALISMAN" />
+		</rules>
+	</element>
+
+	<element name="Knowledge Talisman" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_BLUE_DARA_KNOWLEDGE_TALISMAN">
+		<description>
+			<p>As an action, you can create a knowledge talisman. When a creature in possession of this talisman makes an ability check, it can activate the talisman, rolling a d6 and adding the number rolled to the check; the creature can roll the die before or after making the ability check. The talisman lasts for 1 hour or until it is activated. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can create a knowledge talisman. When a creature in possession of this talisman makes an ability check, it can activate the talisman, rolling a d6 and adding the number rolled to the check; the creature can roll the die before or after making the ability check. The talisman lasts for 1 hour or until it is activated.</description>
+		</sheet>
+	</element>
+
+	<!--Red Dara-->
+	<element name="Red Dara" type="Sub Race" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_SUB_RACE_DARA_RED">
+		<supports>OTTG Dara Color</supports>
+		<description>
+			<p>Red dara are much shorter, with an average height between 2 and 3 feet tall. In addition to their smaller stature, they are easily distinguished from their larger kin by the bright red hue of their skin and their two eyes.</p>
+			<p class="indent">As a red dara you gain the use of the might talisman and are able to produce it once per day in addition to other talismans you know.</p>
+			<p><strong><em>Might Talisman.</em></strong> As an action, you can create a might talisman. When a creature in possession of this talisman makes a saving throw, it can activate the talisman, rolling a d6 and adding the number rolled to the save; the creature can roll the die before or after making the saving throw. The talisman lasts for 1 hour or until it is activated. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_RED_DARA_MIGHT_TALISMAN" />
+		</rules>
+	</element>
+
+	<element name="Might Talisman" type="Racial Trait" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_RACIAL_TRAIT_RED_DARA_MIGHT_TALISMAN">
+		<description>
+			<p>As an action, you can create a might talisman. When a creature in possession of this talisman makes a saving throw, it can activate the talisman, rolling a d6 and adding the number rolled to the save; the creature can roll the die before or after making the saving throw. The talisman lasts for 1 hour or until it is activated. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can create a might talisman. When a creature in possession of this talisman makes a saving throw, it can activate the talisman, rolling a d6 and adding the number rolled to the save; the creature can roll the die before or after making the saving throw. The talisman lasts for 1 hour or until it is activated.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Archaic First Age Languages" type="Language" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_LANGUAGE_ARCHAIC_FIRST_AGE_LANGUAGES">
+		<supports>Exotic</supports>
+		<description>
+			<p>The objects and structures from the island's earliest age contain a variety of written languages known to the islanders as First Age languages. Other than the academics who devote themselves to studying these mysterious languages, people generally know only a handful of words.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Naku Naku" type="Language" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_LANGUAGE_NAKU_NAKU">
+		<supports>Standard, OTTG Nakudama Language</supports>
+		<description>
+			<p>Most Nakudama continue to speak their original language as well as the common tongue, and they claim theirs is far richer for the telling of tales.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Nakudama</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Torum" type="Language" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_LANGUAGE_TORUM">
+		<supports>Exotic</supports>
+		<description>
+			<p>Torum is the favored language of the Spirit Realm. Though non-spirits can learn to understand it, beings of the Physical Realm often can't make the layered sounds required to voice the words.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Spirits</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+</elements>

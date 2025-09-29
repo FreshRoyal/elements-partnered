@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>Magic Items from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-magic.xml" />
+		</update>
+	</info>
+
+	<element name="Anglerfish Helm" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_ANGLERFISH_HELM">
+		<description>
+			<p>While wearing this helmet, the duration of the <i>Water Breathing</i> spell is doubled when cast on you, and you can cause the helmet's antenna to shed bright light in a 20-foot radius and dim light for an additional 20 feet. Additionally, you can cast <i>Charm Person</i> from the helmet as a 3rd-level spell. Once you do so, you can't use this property again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, water breathing, charm person, light</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Baffled Candle" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_BAFFLED_CANDLE">
+		<description>
+			<p>While lit, a creature holding this candle becomes invisible. The candle can burn for 1d4 + 3 minutes. Once the candle fully burns down, the item is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">invisible</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Bell of Resonance" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_BELL_OF_RESONANCE">
+		<description>
+			<p>The sound of this little bell causes metal to vibrate violently. As an action, you can ring the bell, causing all creatures wielding metal weapons within 30 feet of the bell to make a DC 14 Strength saving throw. On a failed save, the creature drops its weapon. Once you use this property, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Boots of the Stampede" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_BOOTS_OF_THE_STAMPEDE">
+		<description>
+			<p>While wearing these boots, you can move an additional 15 feet whenever you take the Dash action.</p>
+		</description>
+		<setters>
+			<set name="keywords">dash</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Burnright Brand Hair Dryer" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_BURNRIGHT_BRAND_HAIR_DRYER">
+		<description>
+			<p>This hair dryer has 7 charges. It regains 1d6 + 1 expended charges daily at dawn. While holding it, you can use an action to cast one of the following spells: <i>Burning Hands</i> (1 charge), <i>Cone of Cold</i> (5 charges), or <i>Gust of Wind</i> (2 charges).</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, burning hands, cone of cold, gust of wind</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">1d6+1</set>
+		</setters>
+	</element>
+
+	<element name="Canseco Bat" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_CANSECO_BAT">
+		<description>
+			<p>This baseball bat uses the statistics of a +1 warhammer. If a hostile creature misses you with a ranged spell attack while wielding this bat, you can use your reaction to redirect the attack at another creature you can see within 30 feet of you, using this weapon's attack bonus for the new attack roll. Once you use this property, you can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer, reaction</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="warhammer">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Warhammer</set>
+		</setters>
+	</element>
+
+	<element name="Censer of Arguing Spirits" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_CENSER_OF_ARGUING_SPIRITS">
+		<description>
+			<p>This tarnished and dented teapot appears like an unimportant mundane item. Sloshing sounds can be heard from within the pot when shaken, and it always feels warm to the touch. When the lid is removed, three tendrils of colored smoke rise from its blackened center. At the top of the tendrils are the smushed faces of 3 elderly men, all of which quickly begin to bicker amongst themselves. You can ask each man one question, and he will answer to the best of his ability. Once you have asked them all a question, they begin to ignore you and continue to argue amongst themselves until the lid is replaced at the top of the pot.</p>
+			<p class="indent">It's unknown who these men were, but each seems to retain knowledge from their past lives. Once you ask one of the men a question, you can't ask him another question until 7 days have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">pot</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Cloud-Touched Boomerang" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_CLOUD_TOUCHED_BOOMERANG">
+		<description>
+			<p>You can choose to activate this boomerang's swirling vortex whenever you attack with it. On a hit, the target must succeed on a DC 12 Strength saving throw or fall prone.</p>
+		</description>
+		<setters>
+			<set name="keywords">boomerang, saving throw, prone</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="boomerang">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Boomerang</set>
+		</setters>
+	</element>
+
+	<element name="Coin's Edge" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_COINS_EDGE">
+		<description>
+			<p>This magical coin has the symbol of a dagger on it. When the coin is flipped into the air, it transforms into a mundane dagger. Once this property is used, it can't be undone.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Corrupted Pendant" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_CORRUPTED_PENDANT">
+		<description>
+			<p>This finely crafted gemstone pendant has a dark Corruption sealed within it. Wearing it gives you the oddest desire to visit the ocean. While wearing this pendant, you can use an action to regain a number of hit points equal to one-third of your hit point maximum. Using the <i>corrupted pendant</i> in this way causes an unnatural rush that drains your body and prevents you from resting normally. Once you regain hit points in this way, you can't benefit from a short rest until the next dawn.</p>
+			<p class="indent">Once this property has been used, it can't be used again until the next dawn, after which point you must spend 1 hour performing a revitalizing ritual on the pendant for it to regain the use of this property. The ritual consumes three common potion ingredients.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, hit points, ritual</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="CRT TV &amp; Chicken Timer" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_CRT_TV_AND_CHICKEN_TIMER">
+		<description>
+			<p>As an action, the chicken timer can be set to eleven minutes and fourteen seconds. When the timer begins to count down, the TV starts to show a fuzzy video of a 10-foot-radius sphere centered on the chicken timer. Once the chicken timer goes off, the TV turns off again. Once the timer has been used in his way, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, sphere, video</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Ucommon</set>
+		</setters>
+	</element>
+
+	<element name="Cube of Cubes" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_CUBE_OF_CUBES">
+		<description>
+			<p>This First Age puzzle is seemingly impossible to fully solve as its tiles are constantly shifting and turning. As an action, you can solve a side of the puzzle, unlocking one of the six spells trapped inside and releasing its power. Roll a d6 and use the table below to determine which spell you cast as part of the action to solve the puzzle. Spells cast through the puzzle use a spellcasting modifier of +4, a spell attack bonus of +7, and a spell save DC of 15.</p>
+			<ul>
+				<li>1 (blue)—<i>Water Bullet</i></li>
+				<li>2 (green)—<i>Forest Guard</i></li>
+				<li>3 (white)—<i>Cure Wounds</i></li>
+				<li>4 (yellow)—<i>Enlarge/Reduce</i></li>
+				<li>5 (red)—<i>Flaming Sphere</i></li>
+				<li>6 (orange)—<i>Pacify Person</i></li>
+			</ul>
+			<p>Once the puzzle has been used to cast a spell, it can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, spell, water bullet, forest guard, cure wounds, enlarge reduce, flaming sphere, pacify person</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Eye Kite" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_EYE_KITE">
+		<description>
+			<p>These unique kites can be shaped like an octopus, crane, or dragon. As an action, while flying the kite, you can see through it as if it were a pair of eyes looking down from the sky. While looking through the kite, you gain all the visual benefits you would normally have and can see in all directions facing downward.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, vision</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Familiar's Collar" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_FAMILIARS_COLLAR">
+		<description>
+			<p>While worn by a friendly beast you can activate the <i>Control Animal</i> spell at will, targeting only the creature wearing the collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, control animal</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Field Cauldron" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_FIELD_CAULDRON">
+		<description>
+			<p>This miniature cauldron is used by adventuring witches to brew potions out on the road and stretch their ingredients even further. When used alongside alchemy supplies to brew an uncommon potion or rarer, you also brew a random common potion.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, control animal</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Fisherman's Spear" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_FISHERMANS_SPEAR">
+		<description>
+			<p>This well-crafted spear has a worn oak haft that magically springs forward at the call of its wielder. When you make a melee attack with the spear, you can cause it to magically extend, targeting a creature up to 15 feet away from you. For every 5 feet the spear extends beyond its normal reach, you take a -1 penalty to the attack roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">spear, reach</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Spear</set>
+		</setters>
+	</element>
+
+	<element name="Flying Broomstick" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_FLYING_BROOMSTICK">
+		<description>
+			<p>An ordinary broom that has the extraordinary power to fly and is surprisingly comfortable to ride. It's controlled by your thoughts, hovering beneath you when you desire and able to carry you through the air. It has a flying speed of 60 feet. It can carry up to 1,000 pounds, and you can command it to fly back to you in an instant if it's within 100 feet of you. While flying, the broom can leave a trail behind it, such as a trail of clouds, leaves, sparks, smoke, or bubbles.</p>
+		</description>
+		<setters>
+			<set name="keywords">fly speed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Gametoy" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_GAMETOY">
+		<description>
+			<p>Each <i>Gametoy</i> cartridge contains a unique skill proficiency. While you're attuned to the <i>Gametoy</i> with a cartridge inserted into it, you gain proficiency in the skill stored within the cartridge. While holding the <i>Gametoy</i>, you can use an action to remove, insert, or swap a cartridge. The <i>Gametoy</i> comes with one cartridge with a random skill proficiency stored inside.</p>
+		</description>
+		<setters>
+			<set name="keywords">skill, proficiency</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Gametoy)" supports="Skill" />
+		</rules>
+	</element>
+
+	<element name="Guardian Spheres" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_GUARDIAN_SPHERES">
+		<description>
+			<p>These ancient Nakudama devices float around the user at all times, intercepting incoming attacks on their own. Each <i>Guardian Sphere</i> has 5 hit points, which it will automatically sacrifice to reduce the total damage of an incoming attack targeting the user. Once a sphere is reduced to 0 hit points, it goes inert and drops to the ground. <i>Guardian Spheres</i> recover their hit points at dawn each day. There are 1d4 + 1 <i>Guardian Spheres</i> in a set.</p>
+		</description>
+		<setters>
+			<set name="keywords">hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Heron's Eye Ring" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_HERONS_EYE_RING">
+		<description>
+			<p>While wearing this ring you gain a +3 bonus to Wisdom (Insight and Perception) checks. Spells. The ring has 6 charges. While wearing it, you can use an action to expend some of its charges to cast one of the following spells from it:</p>
+			<ul>
+				<li><i>Dispel Magic</i> (3 charges)</li>
+				<li><i>Find Traps</i> (2 charges)</li>
+				<li><i>See Invisibility</i> (2 charges)</li>
+				<li><i>Shared Vision</i> (2 charges)</li>
+				<li><i>Spell Signature</i> (2 charges)</li>
+			</ul>
+			<p>The ring regains 1d4 + 2 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">1d4+2</set>
+		</setters>
+	</element>
+
+	<element name="Hover Hopper" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_HOVER_HOPPER">
+		<description>
+			<p>These magic balloons inflate and deflate at a moment's notice when their command word is spoken. While inflated and attached to your person, any falling damage you take is halved, and the maximum number of feet you can cover with your standing long and high jump is equal to your Strength or Dexterity score.</p>
+		</description>
+		<setters>
+			<set name="keywords">falling damage, long jump</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Hurler's Gloves" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_HURLERS_GLOVES">
+		<description>
+			<p>While wearing these rugged gloves, you gain a +2 bonus to damage rolls with thrown weapons. Additionally, the weapon's ranges are increased by 15 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage, thrown weapons, range</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Instaprint Camera" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_INSTAPRINT_CAMERA">
+		<description>
+			<p>Creatures or objects that bear magic are revealed to have a magical effect in the photos taken by this camera. The creature or object is shown to have a faint aura around it, which corresponds to one of the schools of magic, if the effect has any. The camera has 1d12 + 4 film cards, which can be used to take photos.</p>
+		</description>
+		<setters>
+			<set name="keywords">photo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Jabbadoon's Feather" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_JABBADOONS_FEATHER">
+		<description>
+			<p>While holding this enchanted object, a creature becomes as light as a feather.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Keys to the Sandcastle" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_KEYS_TO_THE_SANDCASTLE">
+		<description>
+			<p>This enchanted toy has 50 charges. While you are holding it, you can expend 1 charge as an action to speak its command word and cast the <i>Sand Structure</i> spell.</p>
+			<p class="indent">When all of the toy's charges are expended, it becomes a nonmagical knicknack.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, sand structure</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">50</set>
+		</setters>
+	</element>
+
+	<element name="Keytar" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_KEYTAR">
+		<description>
+			<p>As part of a minute-long performance on this First Age instrument, you can choose a lock you can see within 15 feet of you and attempt to pick it using the magic of music. Trying to pick a lock in this way requires no other tools besides the <i>keytar</i>. When you do so, you make a Charisma (Performance) check against the lock's DC, instead of the Dexterity check normally required. If you fail to unlock the lock using the <i>keytar</i>, you can't attempt to do so again until 24 hours have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">musical instrument, lockpick</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Lafula's Iron Teapot" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_LAFULAS_IRON_TEAPOT">
+		<description>
+			<p><i>Lafula's Iron Teapot</i> is tarnished with the wicked magic of the mage Lafula. Tea brewed inside the pot imparts a curse upon those who consume it. When used to brew tea, the maker chooses one of the effects from the <i>Bestow Curse</i> spell. A pot of tea produces 6 portions. A creature that consumes the tea is affected by the curse chosen by the maker. The curse lasts for 1 year or until removed. A creature affected by the tea's curse can't be affected by a different curse produced by the tea. Once you use the iron teapot to brew tea, you can't do so again for 1 month.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, bestow curse</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Lunar Weapon" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_LUNAR_WEAPON">
+		<description>
+			<p>This weapon is crafted with strands of moonlight. At night, attacks with it deal an extra 1d8 radiant damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Lunar {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Oiki's Pinwheel" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_OIKIS_PINWHEEL">
+		<description>
+			<p>As an action, <i>Oiki's Pinwheel</i> can be spun and placed on the ground. Each hostile creature within 120 feet of the pinwheel that can see it must succeed on a DC 15 Wisdom saving throw or be stunned until the pinwheel stops spinning. The pinwheel spins for 1 minute, or it spins indefinitely as long as it is within a strong wind. An affected creature can repeat the saving throw at the ends of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent">Once <i>Oiki's Pinwheel</i> stops spinning, its magic transfers to another random pinwheel on the same plane of existence.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, saving throw, stunned</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Only Members Jacket" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_ONLY_MEMBERS_JACKET">
+		<description>
+			<p>This stylish jacket has illusionary magic sewn into its seams. While wearing the jacket, you can use an action to take on an illusory disguise chosen by the jacket's enchanter. The jacket makes you—including your clothing, armor, weapons, and other belongings on your person—look like the humanoid chosen when the jacket was enchanted.</p>
+			<p class="indent">To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on a DC 14 Intelligence (Investigation) check.</p>
+			<p class="indent">The disguise lasts until the jacket is taken off.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, disguise</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Painter's Sun Hat" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_PAINTERS_SUN_HAT">
+		<description>
+			<p>This well-made hat can come in any shape, size, or form and from casual inspection seems to be mundane in nature. However, when the hat is placed on the ground as an action and its command word is spoken, it begins to float into the air. The hovering hat then produces an illusion of a humanoid of your choice that you are familiar with, with the caveat that the illusion is wearing the hat. The figure can't move and fails to hold up to physical inspection. The illusion remains until the hat is moved out of place, or until the command word is spoken once more, causing the hat to float back to the ground. A DC 10 Intelligence (Investigation) check reveals the figure is an illusion.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, illusion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Pendants of Belonging" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_PENDANTS_OF_BELONGING">
+		<description>
+			<p>These pendants come in sets of four, six, or eight. While worn, a creature always knows the direction of the other pendants in its set.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Punch Card" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_PUNCH_CARD">
+		<description>
+			<p>This old <i>punch card</i> from a long-forgotten tea shop somehow holds a unique enchantment, which punches a hole in the card every time the creature carrying it is hit by an attack; a hole can't be punched in the card by any means other than this enchantment. When found, the card has 1d6 punches already in it. When the tenth hole is punched in the card, the magic is released, reducing the incoming attack's damage to 0. The card's magic then fades.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Roake's Clay Urn" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_ROAKES_CLAY_URN">
+		<description>
+			<p>As an action, you can present this clay urn and speak a handful of ritualistic phrases unique to it. One spirit of your choice that can see or hear you within 30 feet of you must make a DC 13 Wisdom saving throw. On a failed save, it is pulled inside the clay urn and sealed away. If the spirit has a challenge rating of 3 or higher, it automatically succeeds on the save.</p>
+			<p class="indent">While the spirit is sealed inside, it is in a state of slumber. It doesn't need to eat or breathe, it doesn't suffer from any wounds or illnesses, and it ceases to age. The creature is released when the urn's seal is broken or the urn is destroyed. At which point, the creature reappears in the nearest unoccupied space to the urn, waking up as if no time had passed.</p>
+			<p class="indent">Once <i>Roake's Clay Urn</i> has been used to seal a spirit, it can't be used again.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, saving throw, sealed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Ruby Red Bike" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_RUBY_RED_BIKE">
+		<description>
+			<p>This bicycle has a walking speed of 70 feet. After using this bicycle to move at least 60 feet on your turn, you can use an action to produce a fiery wall in the path you took, as if from the <i>Wall of Fire</i> spell. Once this property of the bicycle has been used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, wall of fire, walking speed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Scarf of Muffling" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SCARF_OF_MUFFLING">
+		<description>
+			<p>This soft and well loved scarf wraps snugly around the wearer's neck, making anyone who adorns its feel extra cozy. As an action, you can throw the scarf at a creature within 60 feet of you. The target must succeed a DC 14 Dexterity saving throw or the scarf magically wraps around its mouth, preventing it from speaking. A creature can use its action to make a DC 14 Strength check, pulling the scarf off itself or another creature within its reach on a success. The scarf can be thrown in this way 3 times, and it regains all expended uses daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, saving throw, silence</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Scuttling Lantern" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SCUTTLING_LANTERN">
+		<description>
+			<p>As an action, you can touch the <i>Scuttling Lantern</i> to activate it (causing it to shed bright light in a 30-foot radius and dim light for an additional 30 feet) or deactivate it (snuffing out the light). While the lantern is lit, you can command it to move once on each of your turns (no action required), provided you are the one who activated it. When you do so, the lantern moves up to 20 feet in a direction of your choice. It deactivates if it is ever more than 500 feet away from you. The lantern can move through water and across any solid surface (including up, down, and across vertical surfaces and upside down along ceilings). If you command the lantern to follow you, it will always remain within 10 feet of you, provided no obstacles impede its path.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, bright, dim</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Sibling Purses" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SIBLING_PURSES">
+		<description>
+			<p>These two sibling coin pouches open up 5 inches wide and can hold up to 5 pounds each. When you place an object into one of the pouches, and the other pouch is within 20 feet of it, you can cause the object to teleport into the other pouch, provided there is room to accommodate the object.</p>
+		</description>
+		<setters>
+			<set name="keywords">teleport</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Soda Cans, Melon Soda" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SODA_CANS_MELON_SODA">
+		<description>
+			<p>These two sibling coin pouches open up 5 inches wide and can hold up to 5 pounds each. When you place an object into one of the pouches, and the other pouch is within 20 feet of it, you can cause the object to teleport into the other pouch, provided there is room to accommodate the object.</p>
+			<ul>
+				<li><strong>Melon Soda.</strong> This beverage grants the effect of 1 random common combat potion.</li>
+				<li><strong>Cola Soda.</strong> This beverage grants the effect of 1 random common utility potion.</li>
+				<li><strong>Fish Sauce Soda.</strong> This beverage grants the effect of 1 random common whimsical potion.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">combat, potion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Soda Cans, Cola Soda" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SODA_CANS_COLA_SODA">
+		<description>
+			<p>These two sibling coin pouches open up 5 inches wide and can hold up to 5 pounds each. When you place an object into one of the pouches, and the other pouch is within 20 feet of it, you can cause the object to teleport into the other pouch, provided there is room to accommodate the object.</p>
+			<ul>
+				<li><strong>Melon Soda.</strong> This beverage grants the effect of 1 random common combat potion.</li>
+				<li><strong>Cola Soda.</strong> This beverage grants the effect of 1 random common utility potion.</li>
+				<li><strong>Fish Sauce Soda.</strong> This beverage grants the effect of 1 random common whimsical potion.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">utility, potion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Soda Cans, Fish Sauce Soda" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SODA_CANS_FISH_SAUCE_SODA">
+		<description>
+			<p>These two sibling coin pouches open up 5 inches wide and can hold up to 5 pounds each. When you place an object into one of the pouches, and the other pouch is within 20 feet of it, you can cause the object to teleport into the other pouch, provided there is room to accommodate the object.</p>
+			<ul>
+				<li><strong>Melon Soda.</strong> This beverage grants the effect of 1 random common combat potion.</li>
+				<li><strong>Cola Soda.</strong> This beverage grants the effect of 1 random common utility potion.</li>
+				<li><strong>Fish Sauce Soda.</strong> This beverage grants the effect of 1 random common whimsical potion.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">random, potion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Solar Amulet" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SOLAR_AMULET">
+		<description>
+			<p>Whenever you regain hit points from a spell or magical effect while wearing this amulet, you regain an additional 3 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Splinter Bow" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SPLINTER_BOW">
+		<description>
+			<p>This magical bow can split arrows as you fire it, allowing you to target two creatures within 10 feet of each other. When you use the bow in this way, you make only one attack roll, which applies to both targets. If the attack hits at least one of the targets, roll damage normally; each target takes half the amount of damage rolled (rounded down).</p>
+		</description>
+		<setters>
+			<set name="keywords">bow, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+			<set name="name-format">Splinter {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Sticky Hand" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_STICKY_HAND">
+		<description>
+			<p>While holding this children's toy in one hand, you can cast the <i>Retrieve</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, retrieve</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Sunbaked Cassette" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SUNBAKED_CASSETTE">
+		<description>
+			<p>This sun-damaged cassette is beginning to lose hold of the magic stored inside it. As a bonus action, you can hold the cassette out in front of you in an attempt to draw out its power. Roll a d4; on a roll of 3 or lower, you regain an expended spell slot of a level equal to the number rolled (if you don't have any expended spell slots of that level, you instead regain a spell slot of the next-highest level that you have expended). On a roll of 4, you teleport 30 feet in a random direction.</p>
+			<p class="indent">Once you regain a spell slot in this way you can't do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, spell slot</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Sunken Suitcase" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SUNKEN_SUITCASE">
+		<description>
+			<p>This magic suitcase is indestructible and fully sealed from the outside world. When closed, it magically locks itself, setting its DC equal to 1d20 + 5.</p>
+		</description>
+		<setters>
+			<set name="keywords">indestructable, sealed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Talisman of the Phoenix" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_TALISMAN_OF_THE_PHOENIX">
+		<description>
+			<p>This talisman has 1d4 charges. When you fail a death saving throw while the talisman is on your person, you can choose to expend a charge to succeed instead. Once all of the talisman's charges have been used, it burns up in a flash, leaving behind a pile of ashes. It then reforms with 1d4 charges somewhere else on the same plane.</p>
+		</description>
+		<setters>
+			<set name="keywords">death saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">1d4</set>
+		</setters>
+	</element>
+
+	<element name="Travel Wok" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_TRAVEL_WOK">
+		<description>
+			<p>Unlike other frying pans, this enchanted wok both imbues its food with healing properties and heats up to strike a burning blow against its enemies. The wok is considered a +1 frying pan, which deals an extra 1d4 fire damage on a hit.</p>
+			<p class="indent">Not only can the wok cook food without the need for a fire, creatures that eat food prepared in the wok within an hour of it being cooked gain 1d6 temporary hit points. Temporary hit points gained by the wok's food last for 1 hour. Once this property has been used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">frying pan, fire, damage, temporary hit points</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="frying pan">Weapon</set>
+			<set name="enhancement">1</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Frying Pan</set>
+		</setters>
+	</element>
+
+	<element name="Umbrella of Shielding" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_UMBRELLA_OF_SHIELDING">
+		<description>
+			<p>This silk umbrella is reinforced with iron, making it as durable as it is heavy. It is considered a +1 shield. While wielding the umbrella and targeted by a ranged weapon attack, you can use your reaction to gain a +5 bonus to your AC for that attack, potentially causing the attack to miss you.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac, reaction</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="umbrella">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Umbrella</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="shield" />
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Weapon of the Sun And Moon" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_LUNAR_WEAPON">
+		<description>
+			<p>A creature in possession of both the <i>Lunar Weapon</i> and the <i>Solar Amulet</i> can perform a 1-hour ritual (as if attuning to a magic item) to combine those items, forming the <i>Weapon of the Sun and Moon</i>.</p>
+			<p class="indent">In addition to having the properties of both the <i>Lunar Weapon</i> and the <i>Solar Amulet</i>, this weapon is considered a +1 Weapon and gains two Eclipse Powers. During the day, the <i>Weapon of the Sun and Moon</i> can use its Eclipse Power to cast the <i>Darkness</i> spell; this version of the spell creates a 60-foot-radius sphere of darkness, instead of its normal size. During the night, it can use its Eclipse Power to cast the <i>Daylight</i> spell. Once the daytime Eclipse Power is used, it can't be used again until the next dawn; once the nighttime Eclipse Power is used, it can't be used again until the next dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant, damage, hit points, spell, darkness, daylight</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of the Sun and Moon</set>
+		</setters>
+	</element>
+
+	<element name="Yappa Mask" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_YAPPA_MASK">
+		<description>
+			<p>While wearing the <i>Yappa Mask</i>, your creature type changes to Spirit. In addition, you are able to speak and understand Torum, the spirit language.</p>
+		</description>
+		<setters>
+			<set name="keywords">spirit, language, torum</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">head</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_1985_OTTG_RACIAL_TRAIT_TYPE_SPIRIT" />
+			<grant type="Language" id="ID_1985_OTTG_LANGUAGE_TORUM" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Boons</name>
+		<description>Boons from Obojima: Tales from the Tall Grass</description>
+		<update version="0.0.1">
+			<file name="items-boons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-boons.xml" />
+		</update>
+	</info>
+
+	<element name="Acceptance" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_ACCEPTANCE">
+		<description>
+			<p><strong>Characteristics:</strong> Those who have gone through a deep and harrowing journey and came to face a truth so difficult that it hurt to accept it—and yet they did it anyways and eventually came to peace with that truth.</p>
+			<p><strong>Boon Ability:</strong> When making a skill check you can choose to add a +5 bonus to the roll. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Envy" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_ENVY">
+		<description>
+			<p><strong>Characteristics:</strong> Someone whose insecurities or past trauma have driven them to desire what others have. This person covets something so much that they'd be willing to do anything to get it, even at the expense of their loved ones.</p>
+			<p><strong>Boon Ability:</strong> Choose an ally creature that you can see and gain proficiency in a skill they have proficiency in. This effect lasts for 1 hour. While you have proficiency in the chosen skill, the ally you copied it from has disadvantage in all checks that use that skill.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Fearful" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_FEARFUL">
+		<description>
+			<p><strong>Characteristics:</strong> Through one impactful moment or a slow build over time, this person has been stricken with a deep and overwhelming fear. This fear now clouds their judgment and overrides their emotions—it controls their life.</p>
+			<p><strong>Boon Ability:</strong> If you are hit by an attack while an ally creature is within 5 feet of you, you can choose to have the ally take the damage instead of you. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Forgiveness" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_FORGIVENESS">
+		<description>
+			<p><strong>Characteristics:</strong> By accepting their emotions, this person can let go of their anger and frustrations, forgiving those who've wronged them and rekindling the damaged relationship.</p>
+			<p><strong>Boon Ability:</strong> When you are hit by an attack, you can choose to cause all subsequent attacks made by the creature to be made at disadvantage. This effect lasts until the end of your next turn. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Hate" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_HATE">
+		<description>
+			<p><strong>Characteristics:</strong> A person full of hate is blind to the effects their actions can have. To fulfill their vendetta they're willing to alienate and even hurt those close to them.</p>
+			<p><strong>Boon Ability:</strong> When you make an attack roll or skill check you can choose to change the roll to a 20. If you choose to do this all Charisma, Intelligence, and Wisdom checks are made at disadvantage for the next hour. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Heroic" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_HEROIC">
+		<description>
+			<p><strong>Characteristics:</strong> A person who puts fear behind themselves and stands up in a time of need to the very best they can. Whether they fail or not they give everything they can to do what is right.</p>
+			<p><strong>Boon Ability:</strong> When you would fail a Wisdom, Charisma, or Intelligence saving throw, you can instead choose to succeed. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Mercy" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_MERCY">
+		<description>
+			<p><strong>Characteristics:</strong> Those with the power to deal out judgment onto others but have the compassion and understanding to hold back.</p>
+			<p><strong>Boon Ability:</strong> When you make an attack that would drop a creature below zero hit points, you can choose to forgo the damage, making a Charisma skill check with advantage instead. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Selfishness" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SELFISHNESS">
+		<description>
+			<p><strong>Characteristics:</strong> Someone whose actions have worsened the lives of those closest to them. A character that, when they could have done the right thing, chose the path for the betterment of themselves over others.</p>
+			<p><strong>Boon Ability:</strong> When you take damage, you can choose to regain 2 hit points for each ally you have within 30 feet of you. When you do so, each ally suffers a number of Necrotic damage equal to the hit points you recovered. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Selfless" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SELFLESS">
+		<description>
+			<p><strong>Characteristics:</strong> Above all else, this person puts those around them before themselves. They wish to help the people they care the most about, sometimes to the detriment of their well-being.</p>
+			<p><strong>Boon Ability:</strong> On your turn, you can forgo your action, allowing a character that can see or hear you to take an action or move. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+	<element name="Shame" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_SHAME">
+		<description>
+			<p><strong>Characteristics:</strong> Devastated by a mistake they've made or a circumstance forced on them, this person now hates a part of themselves. This thing feels as if it is out in the open for all to see, and they can't stand the thought of others judging them for it.</p>
+			<p><strong>Boon Ability:</strong> As a bonus action, all creatures within 60 feet of you must succeed on a Wisdom saving throw or be unable to look in your direction until the end of your next turn. The DC for this boon is equal to 10 + your level. Once you use this boon, you can't do so again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+
+</elements>
