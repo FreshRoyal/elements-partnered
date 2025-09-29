@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description>Weapons from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-weapons.xml" />
 		</update>
 	</info>
@@ -260,6 +260,7 @@
 			<set name="weight" lb="5">5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="versatile">1d8</set>
 			<set name="proficiency">ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_TAPPER_SACK</set>
 		</setters>
 	</element>
