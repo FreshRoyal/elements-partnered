@@ -3,17 +3,17 @@
 	<info>
 		<name>Spells</name>
 		<description>Spells from Book of Ebon Tides</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spell.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/spells.xml" />
 		</update>
 	</info>
 
-    <element name="Bitter Wind" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BITTER_WIND">
-        <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+	<element name="Bitter Wind" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BITTER_WIND">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>Freezing wind, forming a line 120 feet long and 20 feet wide, blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 30 feet away from you in a direction following the line. Creatures that fail the saving throw also take 1d12 cold damage and are knocked prone. If cast during cold weather or in dark or shadowy conditions, the saving throw is made with disadvantage. Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.</p>
-            <p class="indent">As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>
-            <p class="indent">The bitter wind disperses gas or vapor, and it extinguishes candles, torches, lanterns, and similar flames in the area.</p>
+			<p class="indent">As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>
+			<p class="indent">The bitter wind disperses gas or vapor, and it extinguishes candles, torches, lanterns, and similar flames in the area.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the saving throw is made with disadvantage, and the damage increases by 1d12 for each slot level above 3rd.</p>
 		</description>
 		<setters>
@@ -32,13 +32,13 @@
 		</setters>
 	</element>
 
-    <element name="Blade of Blood and Bone" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BLADE_OF_BLOOD_AND_BONE">
-        <supports>Paladin, Ranger, Warlock</supports>
-        <description>
-            <p>When you cast this spell, you cut your body with the material component, your hit point maximum decreases by 3 and the material component disappears. For the duration, you can use a bonus action to draw a blade made of your own bone, blood, and sinew from your body. The blade is a magical weapon, uses your spell attack bonus when you attack with it, and deals 1d6 slashing damage on a hit. You are considered proficient with the blade. As a bonus action, you can slide the blade back into your body to conceal it. When the duration ends, the incision in your body disappears, your hit point maximum is restored, and the material component reappears.</p>
-            <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage dealt by the blade increases by 1d6 for every two slot levels above 2nd, and your hit point maximum decreases by an additional amount equal to the level of the slot used.</p>
-        </description>
-        <setters>
+	<element name="Blade of Blood and Bone" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BLADE_OF_BLOOD_AND_BONE">
+		<supports>Paladin, Ranger, Warlock</supports>
+		<description>
+			<p>When you cast this spell, you cut your body with the material component, your hit point maximum decreases by 3 and the material component disappears. For the duration, you can use a bonus action to draw a blade made of your own bone, blood, and sinew from your body. The blade is a magical weapon, uses your spell attack bonus when you attack with it, and deals 1d6 slashing damage on a hit. You are considered proficient with the blade. As a bonus action, you can slide the blade back into your body to conceal it. When the duration ends, the incision in your body disappears, your hit point maximum is restored, and the material component reappears.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage dealt by the blade increases by 1d6 for every two slot levels above 2nd, and your hit point maximum decreases by an additional amount equal to the level of the slot used.</p>
+		</description>
+		<setters>
 			<set name="keywords">slashing</set>
 			<set name="level">1</set>
 			<set name="school">Necromancy</set>
@@ -54,12 +54,12 @@
 		</setters>
 	</element>
 
-    <element name="Bright Sparks" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BRIGHT_SPARKS">
-        <supports>Bard, Cleric, Sorcerer, Wizard</supports>
-        <description>
-            <p>Sparks fly from your fingers for a moment, generating bright blue light. This illuminates the region around you to a distance of 60 feet until the start of your next turn. Wisdom (Perception) checks have advantage to spot creatures hidden in shadows.</p>
-        </description>
-        <setters>
+	<element name="Bright Sparks" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BRIGHT_SPARKS">
+		<supports>Bard, Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<p>Sparks fly from your fingers for a moment, generating bright blue light. This illuminates the region around you to a distance of 60 feet until the start of your next turn. Wisdom (Perception) checks have advantage to spot creatures hidden in shadows.</p>
+		</description>
+		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
 			<set name="school">Evocation</set>
