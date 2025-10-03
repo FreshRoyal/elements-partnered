@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/source.xml" />
+		</update>
+	</info>
+	<element name="Book of Ebon Tides" type="Source" source="Core" id="ID_KBP_SOURCE_BOOK_OF_EBON_TIDES">
+		<description>
+			<h5 style="margin-top:-1em">The Darkness Closes in Around You</h5>
+			<p>Welcome to the Shadow Realm, a twisting and distorted counterpart to the lands you know. Here the shadow fey hold court, reveling in their frivolities and intrigues, while the darakhul hunt the unwary and those other peoples adapted to the shadows strive to simply get on with their lives.</p>
+			<p> This plane of Shadow is ever changing and filled with adventure for those willing to explore the darkness. And oh, the things you’ll find in this 250+ page volume:</p>
+			<ul>
+				<li>Guard yourself against an often-hostile land of subtle intrigue and thinly veiled aggression, of political opportunities and roaming monsters</li>
+				<li>Learn the secrets of the ebon tides—the very ebb and flow of the shifting shadowstuff beneath your feet—and of the shadow roads that connect the planes</li>
+				<li>Visit the wondrous fey courts and realize your life may very well depend on proper etiquette and taking great care with your words</li>
+				<li>Negotiate with the peoples of the land, such as the bearfolk, shadow goblins, sable elves, umbral humans, and many others</li>
+				<li>Pay proper respect to those gods of the shadows lest they turn too close an eye toward you</li>
+				<li>Plus new options galore—82 spells, 25 races and subraces, 10 subclasses, 27 monsters and NPCs, 82 magic items, 12 maps, and more!</li>
+			</ul>
+			<p><em>Book of Ebon Tides</em> plunges you into the machinations of the various powers of shadow, providing everything you need to propel your adventures in the Shadow Realm. Here you’ll find an overview of all the peoples and monster and magics of the lands, and all the details that GMs and players need to carve their names in the shadows.</p>
+			<p>Uncover the dark realities of shadow and expand worlds of your own creation!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">BOET</set>
+			<set name="url">https://koboldpress.com/kpstore/product/book-of-ebon-tides-for-5th-edition/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/BoET.jpg</set>
+			<set name="author" abbreviation="KBP" url="https://koboldpress.com/">Kobold Press</set>
+			<set name="third-party">true</set>
+			<set name="release">20221011</set>
+		</setters>
+	</element>
+
+	<!-- -2 ASIs, remove when in main repo -->
+	<element name="Strength" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_DECREASE_2">
+		<supports>Custom Ability Score Decrease 2</supports>
+		<description>
+			<p>Your Strength decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Dexterity" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_DECREASE_2">
+		<supports>Custom Ability Score Decrease 2</supports>
+		<description>
+			<p>Your Dexterity decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Constitution" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_DECREASE_2">
+		<supports>Custom Ability Score Decrease 2</supports>
+		<description>
+			<p>Your Constitution decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_DECREASE_2">
+		<supports>Custom Ability Score Decrease 2</supports>
+		<description>
+			<p>Your Intelligence decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_DECREASE_2">
+		<supports>Custom Ability Score Decrease 2</supports>
+		<description>
+			<p>Your Wisdom decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_DECREASE_2">
+		<supports>Custom Ability Score Decrease 2</supports>
+		<description>
+			<p>Your Charisma decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+</elements>

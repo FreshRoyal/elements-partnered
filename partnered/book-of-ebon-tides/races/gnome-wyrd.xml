@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wyrd Gnome</name>
+		<description>Wyrd Gnome from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="gnome-wyrd.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/gnome-wyrd.xml" />
+		</update>
+	</info>
+
+	<element name="Wyrd Gnome" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_WYRD_GNOME">
+		<supports>Gnome</supports>
+		<description>
+			<p>Wyrd gnomes are accomplished arcanists and have a preferred status as servitors to shadow fey, having come with them to the Shadow Realm. Wyrd gnomes possess physical traits typical to the type of gnomes to which they are born, but they are born with two different colored eyes: the right one always blue, the left one always green. Wyrd gnomes possess an innate prescient ability that grows stronger in proximity to other wyrd gnomes. Some gnome communities find their powers a blessing while others find it disturbing. Over generations, wyrd gnomes have gathered together in small communities of their own kind. However, wyrd gnomes don't always birth more wyrd gnomes, and their communities and families have gnomes of other varieties within them.</p>
+			<p class="indent">Given the collective prescient power of wyrd gnome communities, they can be fascinating places to visit. Travelers may enter an inn to find the food and drink they wished to order already in place on a table. Conversations may start with wyrd gnomes giving answers before the questions are asked.</p>
+			<h4>Wyrd Gnome Names</h4>
+			<p>Naming conventions among wyrd gnomes are standard for their parent community, except where clan names are concerned. When an individual moves to a wyrd gnome community, they take the clan's name of the household that adopts them, or they create a new one if they relocate as an adult.</p>
+			<ul class="unstyled">
+				<li><strong>Example Clan Names:</strong> Alkuper, Begynn, Gingercrick, Goldenlock, Istovash, Kunnian, Murena, Muliget, Sadrienn, Turvalis.</li>
+			</ul>
+			<h4>Wyrd Gnome Traits</h4>
+			<p>You are a gnome with a natural prescience that sets you apart from most other gnomes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Natural Diviner.</em></strong> You have an innate knack for understanding the world and can catch glimpses of the mysteries of the universe. You know the <i>guidance</i> cantrip. When you reach 3rd level, you can cast the <i>identify</i> spell with this trait, requiring no material components, and starting at 5th level, you can cast the <i>augury</i> spell with it. Once you cast a non-cantrip spell with this trait, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Prescience.</em></strong> When you finish a long rest, roll a d20 and record the number rolled. Before your next long rest, you can replace one attack roll, saving throw, or ability check made by you or a creature that you can see with this prescience roll. You must choose to do so before the roll.</p>
+			<p class="indent">If 20 wyrd gnomes are present within a half mile of you when you make the prescience roll, you can add 1 to the result. Every time the number of nearby wyrd gnomes is doubled, you gain an additional bonus of 1 to the roll (+2 for 40 gnomes, +3 for 80, and so on) to a maximum bonus of +5.</p>
+		</description>
+		<setters>
+			<set name="names" type="clan">Alkuper, Begynn, Gingercrick, Goldenlock, Istovash, Kunnian, Murena, Muliget, Sadrienn, Turvalis</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wyrd Gnome)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_WYRD_GNOME_NATURAL_DIVINER" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_WYRD_GNOME_PRESCIENCE" />
+		</rules>
+	</element>
+
+	<element name="Natural Diviner" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_WYRD_GNOME_NATURAL_DIVINER">
+		<description>
+			<p>You have an innate knack for understanding the world and can catch glimpses of the mysteries of the universe. You know the <i>guidance</i> cantrip. When you reach 3rd level, you can cast the <i>identify</i> spell with this trait, requiring no material components, and starting at 5th level, you can cast the <i>augury</i> spell with it. Once you cast a non-cantrip spell with this trait, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the guidance cantrip. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the guidance cantrip. You can cast the identify spell once per rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the guidance cantrip. You can cast the identify and augury spells once per rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="5"/>
+		</rules>
+	</element>
+
+	<element name="Prescience" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_WYRD_GNOME_PRESCIENCE">
+		<description>
+			<p>When you finish a long rest, roll a d20 and record the number rolled. Before your next long rest, you can replace one attack roll, saving throw, or ability check made by you or a creature that you can see with this prescience roll. You must choose to do so before the roll.</p>
+			<p class="indent">If 20 wyrd gnomes are present within a half mile of you when you make the prescience roll, you can add 1 to the result. Every time the number of nearby wyrd gnomes is doubled, you gain an additional bonus of 1 to the roll (+2 for 40 gnomes, +3 for 80, and so on) to a maximum bonus of +5.</p>
+		</description>
+		<sheet>
+			<description>When you finish a long rest, roll a d20 and record the number rolled. Before your next long rest, you can replace one attack roll, saving throw, or ability check made by you or a creature that you can see with this prescience roll. You must choose to do so before the roll. &#13;
+			If 20 wyrd gnomes are present within a half mile of you when you make the prescience roll, you can add 1 to the result. Every time the number of nearby wyrd gnomes is doubled, you gain an additional bonus of 1 to the roll to a maximum bonus of +5.</description>
+		</sheet>
+	</element>
+	
+</elements>

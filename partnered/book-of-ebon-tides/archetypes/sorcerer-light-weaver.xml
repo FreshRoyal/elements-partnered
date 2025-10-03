@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Light Weaver</name>
+		<description>Light Weaver from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="sorcerer-light-weaver.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/sorcerer-light-weaver.xml" />
+		</update>
+	</info>
+
+	<element name="Light Weaver" type="Archetype" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_SORCERER_LIGHT_WEAVER">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your powers are drawn from the spark of light kindled within you. In places of great darkness, there are always those born with the affinity for light, and every shadow must have a shining source. The magic within you represents cosmic balance, and like the light, your magic flickers from radiance to darkness moment to moment.</p>
+			<div class="sidebar">
+				<h5>Illumination Magic</h5>
+				<p>If you have access to <i>Deep Magic</i>, consider granting light weaver sorcerers spells from the school of Illumination. These are spells dealing with light, stars, and darkness and fit the character type perfectly from a story and theme perspective.</p>
+			</div>
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_TRICK_OF_THE_LIGHT" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_FLICKERING_AURA" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_REFRACTION_SHIELD" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_AURA_MAGNIFICATION" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_SPELL_BIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_TRICK_OF_THE_LIGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_FLICKERING_AURA" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_REFRACTION_SHIELD" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_AURA_MAGNIFICATION" level="14" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_SPELL_BIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Trick of the Light" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_TRICK_OF_THE_LIGHT">
+		<description>
+			<p>Starting at 1st level, you can see normally in darkness, both magical and nonmagical, to a distance of 60 feet.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in darkness, both magical and nonmagical, to a distance of 60 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Flickering Aura" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_FLICKERING_AURA">
+		<description>
+			<p>Starting at 1st level, you can choose whether your magic is light-shifted or dark-shifted. You can change your choice at the end of a long rest.</p>
+			<p class="indent">While light-shifted you can use an action to emit an aura of bright light in a 15-foot-radius sphere centered on yourself. While the aura persists, you can use a bonus action to expand or reduce its radius of bright light by 5 feet, to a maximum of 30 feet each or a minimum of 10 feet.</p>
+			<p class="indent">While dark-shifted you gain the same ability, but you project an aura of nonmagical darkness.</p>
+		</description>
+		<sheet>
+			<description>You can choose whether your magic is light-shifted or dark-shifted. You can change your choice at the end of a long rest. &#13;
+			While light-shifted you can use an action to emit an aura of bright light in a 15-ft-radius sphere centered on yourself. While the aura persists, you can use a bonus action to expand or reduce its radius of bright light by 5 ft, to a maximum of 30 ft each or a minimum of 10 ft. &#13;
+			While dark-shifted you gain the same ability, but you project an aura of nonmagical darkness.</description>
+		</sheet>
+	</element>
+
+	<element name="Refraction Shield" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_REFRACTION_SHIELD">
+		<description>
+			<p>At 6th level, you can manipulate the light around you for protection. As a bonus action, you can spend 3 sorcery points to magically create a shield of light. While the shield is in place, whenever a creature within 5 feet of you hits you with a melee attack, the shield flashes with searing energy, and the attacker takes 2d8 radiant damage if you are light-shifted or 2d8 necrotic damage if you are dark-shifted. The shield disappears if you fall unconscious or after 10 minutes.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 3 sorcery points to magically create a shield of light. While the shield is in place, whenever a creature within 5 ft of you hits you with a melee attack, the shield flashes with searing energy, and the attacker takes 2d8 radiant damage if you are light-shifted or 2d8 necrotic damage if you are dark-shifted. The shield disappears if you fall unconscious or after 10 minutes.</description>
+		</sheet>
+	</element>
+
+	<element name="Aura Magnification" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_AURA_MAGNIFICATION">
+		<description>
+			<p>Starting at 14th level, your manipulation of the light around you becomes masterful. While light-shifted, your Flickering Aura produces sunlight. While dark-shifted, your aura produces magical darkness.</p>
+			<p class="indent">If any of this aura's area overlaps with an area of light or darkness created by a spell equal to or lower than the level of your highest available spell slot, the spell that created the light or darkness is dispelled.</p>
+		</description>
+		<sheet>
+			<description>While light-shifted, your Flickering Aura produces sunlight. While dark-shifted, your aura produces magical darkness.
+			If any of this aura's area overlaps with an area of light or darkness created by a spell equal to or lower than the level of your highest available spell slot, the spell that created the light or darkness is dispelled.</description>
+		</sheet>
+	</element>
+
+	<element name="Spell Bind" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_LIGHT_WEAVER_SPELL_BIND">
+		<description>
+			<p>Beginning at 18th level, your spell energy overwhelms your target's perceptions. As an action, you can spend 5 sorcery points to empower your Flickering Aura. For 1 minute or until you lose your concentration (as if you were casting a concentration spell), each hostile creature that starts its turn within 60 feet of you must succeed on a Constitution saving throw or be blinded until the aura ends.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 5 sorcery points to empower your Flickering Aura. For 1 minute or until you lose your concentration, each hostile creature that starts its turn within 60 ft of you must succeed on a Constitution saving throw or be blinded until the aura ends.</description>
+		</sheet>
+	</element>
+	
+</elements>

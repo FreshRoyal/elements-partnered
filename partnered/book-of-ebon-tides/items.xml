@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/items.xml" />
+		</update>
+	</info>
+
+	<!--Adventuring Gear (Drugs)-->
+	<element name="Requiem Bliss" type="Item" source="Book of Ebon Tides" id="ID_KBP_BOET_ITEM_REQUIEM_BLISS">
+		<description>
+			<p>When you smoke requiem bliss, you experience feelings of euphoria. You summon the spirit of a single deceased person whose name you know. The spirit takes on the physical characteristics it had in life and might touch you, though it cannot harm you. You can ask the spirit questions as the <i>speak with dead</i> spell with the following exceptions: you can ask up to ten questions, and the spirit cannot lie to you. In addition, you are simultaneously granted the benefit of the <i>contact other plane</i> spell (without taking psychic damage or going insane) as the summoned spirit consults with others and relates information about a single question that would otherwise be unknown to it.</p>
+			<p class="indent">You suffer 3 (1d6) poison damage per question asked and must succeed on a Constitution saving throw (DC 12 + 1 per question asked) or become addicted to the drug.</p>
+			<p class="indent">If you become addicted, you suffer two levels of exhaustion 1d4 days after you last smoked the drug and gain a further level of exhaustion for each week that requiem is not smoked. Levels of exhaustion gained through requiem use do not reduce as normal after taking a long rest. Smoking requiem again eliminates levels of exhaustion gained from abstaining.</p>
+			<p class="indent">At the end of each week, you can make a DC 15 Constitution saving throw. Three consecutive weekly successful saving throws are necessary to break the addiction through abstinence. Alternatively, the addiction can be broken with a <i>lesser restoration</i> or <i>heal</i> spell.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Requiem Clay" type="Item" source="Book of Ebon Tides" id="ID_KBP_BOET_ITEM_REQUIEM_CLAY">
+		<description>
+			<p>When you smoke requiem clay, you summon the spirit of a single deceased person that you personally knew in life. The spirit's image is visible, and its voice can be heard in whispers, but it cannot touch you. You can ask the spirit up to five questions, as the <i>speak with dead</i> spell. The spirit knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the spirit is under no compulsion to offer a truthful answer if you are hostile to it or if it recognizes you as an enemy. The spirit can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.</p>
+			<p class="indent">Afterward, you suffer 3 (1d6) poison damage per question asked and must succeed on a Constitution saving throw (DC 10 + 1 per question asked) or become addicted to the drug. If you become addicted, you suffer one level of exhaustion 1d4 days after you last smoked the drug and gain a further level of exhaustion for each week that requiem is not smoked. Levels of exhaustion gained through requiem use do not reduce as normal after taking a long rest. Smoking requiem again eliminates levels of exhaustion gained from abstaining.</p>
+			<p class="indent">At the end of each week, you can make a DC 13 Constitution saving throw. Two consecutive weekly successful saving throws are necessary to break the addiction through abstinence. Alternatively, the addiction can be broken with a <i>lesser restoration</i> or <i>heal</i> spell.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+		</setters>
+	</element>
+
+	<!--Apparel-->
+	<element name="Bearskin Cloak" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BEARSKIN_CLOAK">
+		<description>
+			<p>While wearing this cloak, as an action, you can assume the form of a <strong>brown bear</strong>, gaining its attacks (including multiattack), AC, and speed (including climb speed). You retain your own ability scores, hit points, and saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, barbarian, druid, ranger, brown bear, transform</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a barbarian, druid, or ranger">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Boots of Dancing" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BOOTS_OF_DANCING">
+		<description>
+			<p>These boots make your every movement smoother, stealthier, and more elegant. You can leap up to 10 feet vertically without effort, and land safely, taking no damage, from falls up to 30 feet—merely landing in a rather dramatic manner.</p>
+			<p class="indent">When combined with a <i>ring of dancing</i>, you gain advantage on all Charisma ability checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">fall damage, charisma, advantage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Boots of Shadow Walking" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BOOTS_OF_SHADOW_WALKING">
+		<description>
+			<p>Your movement is enhanced on shadow roads and across long distances. Your travel pace is double the normal rate, though your speed in combat is not affected.</p>
+		</description>
+		<setters>
+			<set name="keywords">travel</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Cloak of Splendor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_CLOAK_OF_SPLENDOR">
+		<description>
+			<p>This cloak is made of fine ermine and often embellished with fasteners or trimmed with gold or embroidered orange candles, suns, or similar symbols. While wearing this cloak, you can grip its edges and generate a <i>sunbeam</i> spell once per day. If you release the cloak's edges from your grasp, the light fades, and you cannot generate further lines of radiance.</p>
+			<p class="indent">In addition, while wearing the cloak, you can use your action to generate a set of 10 magical lights once per day, each as bright as a lantern and shedding full sunlight in a 20-foot radius. As a bonus action on your turn, you can move any or all the lights up to 60 feet to a new spot within range. A light must be within 30 feet of another light created by this cloak, and a light winks out if travels more than 100 feet from you.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, spell, sunbeam, bonus action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Cloak of the Raven" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_CLOAK_OF_THE_RAVEN">
+		<description>
+			<p>While wearing this cloak, you have advantage on Wisdom (Perception) checks. In an area of dim light or sunlight, you can grip the edges of the cloak with both hands and use it to fly at a speed of 30 feet. If you release the cloak's edges from your grasp while flying in this way or if you are no longer in dim light or sunlight, you lose this flying speed.</p>
+			<p class="indent">While wearing the cloak in an area of dim light or sunlight, you can use your action to cast <i>daylight</i> as a readied action. You may then fly or carry the <i>daylight</i> spell into any area of darkness. The cloak can't be used this way again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, flying speed, action, spell, daylight</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Earrings of Eclipse" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_EARRINGS_OF_ECLIPSE">
+		<description>
+			<p>These two cubes of smoky quartz are mounted on simple, silver posts. While you are wearing these earrings, you can take the Hide action while you are motionless in an area of dim light or darkness even when a creature can see you or when you have nothing to obscure you from the sight of a creature that can see you. If you are in darkness when you use the Hide action, you have advantage on the Dexterity (Stealth) check. If you move, attack, cast a spell, or do anything other than remain motionless, you are no longer hidden and can be detected normally.</p>
+		</description>
+		<setters>
+			<set name="keywords">hide, advantage, stealth</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Emerald Goblet" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_EMERALD_GOBLET">
+		<description>
+			<p>This goblet's rim and stem are made of silver. The cup of the goblet is a single enormous chunk of emerald that allows a view of the liquid within. When filled with any liquid, it becomes a shining green vessel filled with a green potion. Any creature that drinks from the goblet is protected against shadow corruption for a day.</p>
+			<p class="indent">The protection grants several additional benefits: you have advantage on Wisdom (Survival) checks used to gather food within the Shadow Realm, and you gain darkvision to 30 feet or extend your existing darkvision by 30 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, survival, darkvision</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Gloves of the Walking Shade" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_GLOVES_OF_THE_WALKING_SHADE">
+		<description>
+			<p>Each glove is comprised of three black-ivory rings (fitting the thumb, middle finger, and pinkie) which are connected to each other. The rings are then connected to an intricately engraved onyx wrist cuff by a web of fine platinum chains and tiny diamonds.</p>
+			<p class="indent">While wearing these gloves, you gain the following:</p>
+			<ul>
+				<li>You have resistance to necrotic damage.</li>
+				<li>You can spend one Hit Die during a short rest to remove one level of exhaustion instead of regaining hit points.</li>
+				<li>You can use an action to become a living shadow. While you are a living shadow, you can move through a space as narrow as 1 inch wide without squeezing, and you can take the Hide action as a bonus action while you are in dim light or darkness. Once used, this property of the gloves can't be used again until the next nightfall.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">necrotic, resistance, action, bonus action, living shadow</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Glowstone Helmet" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_GLOWSTONE_HELMET">
+		<description>
+			<p><i>Glowstone helmets</i> are usually of gnomish manufacture. While wearing this helm, you can use an action to cast a particular cantrip associated with that helmet (often <i>dancing lights</i>, <i>light</i>, <i>mending</i>, or sometimes <i>produce flame</i>). When combined with a <i>frostglow weapon</i> or a <i>find the path</i> spell, this helmet allows you to sense the direction and distance to the nearest ley line, shadow road, radiant well, and similar arcane landmarks.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, spells, dancing lights, light, mending, produce flame</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Sealskin Cloak" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SEALSKIN_CLOAK">
+		<description>
+			<p>While wearing this cloak, as an action, you can assume the form of seal, gaining its bite attack (1d8 piercing damage), AC 12, and 40 ft swim speed. You retain your own ability scores, hit points, and saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, action, seal, transform</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Styx Boots" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_STYX_BOOTS">
+		<description>
+			<p>These boots are usually made of heavy, sturdy leather—perhaps it's demon hide or some other planar creature's hide. While wearing these boots, you can walk over any body of water as if it were normal terrain, and you can slide or skate over relatively calm waters, snow, ice, sand, magma, or other smooth surfaces at double your normal walking speed. If the snow or ice is on a hill, you move at triple your normal walking speed. You can still use the Dash action normally as well.</p>
+			<p class="indent">When combined with the Armor of the Black River, the <i>Styx boots</i> permit you to use any branch of the River Styx and other planar waterways as a form of shadow road. Once per week, you can walk on such a planar waterway for 8 hours and arrive at any other plane of your choosing.</p>
+		</description>
+		<setters>
+			<set name="keywords">walking speed, double, triple</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Trickster's Boots" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_TRICKSTERS_BOOTS">
+		<description>
+			<p>These boots are usually shaped with a bright leather: red, orange, or purple. While wearing these boots, you can leave the tracks of any other creature in the snow, as you choose, including animal, monster, or even dragon tracks. You can also leave tracks resembling footgear you have seen or worn in the past. Attempts to follow these tracks are made normally.</p>
+		</description>
+		<setters>
+			<set name="keywords">tracks</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Whispering Cloak" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WHISPERING_CLOAK">
+		<description>
+			<p>This cloak is made of black, brown, and white bat pelts sewn together. While wearing it, you have blindsight out to a range of 60 feet. While wearing this cloak with its hood up, you transform into a creature of pure shadow. While in shadow form, your AC increases by 2, you have advantage on Dexterity (Stealth) checks, and you can move through a space as narrow as 1 inch wide without squeezing. You can cast spells normally while in shadow form, but you can't make ranged or melee attacks with nonmagical weapons. In addition, you can't pick up objects, and you can't give objects you are wearing or carrying to others.</p>
+			<p class="indent">This effect lasts up to 1 hour. Deduct time spent in shadow form in increments of 1 minute from the total time. After it has been used for 1 hour, the cloak can't be used in this way again until the next dusk when its time limit resets. Pulling the hood up or down requires an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, blindsight, transform, ac, advantage, stealth</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Wolfskin Cloak" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WOLFSKIN_CLOAK">
+		<description>
+			<p>While wearing this cloak, as an action, you can assume the form of a <strong>dire wolf</strong>, gaining its bite attack, speed, and AC. You also gain its Keen Hearing and Smell trait. You retain your own ability scores, hit points, and saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, action, dire wolf, transform</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<!--Armor-->
+	<element name="Armor of the Black River" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_ARMOR_OF_THE_BLACK_RIVER">
+		<description>
+			<p>While wearing this armor, you gain a +1 bonus to AC, and you are immune to shadow corruption (see Chapter 5 of Book of Ebon Tides) and void taint (see Midgard Worldbook) while you wear this armor. Additionally, you can use an action to assume a ghostly form for 10 minutes (together with up to ten creatures you touch), or until you are no longer wearing the armor, gaining a flying speed of 200 feet. You cannot take actions other than movement while in this form. Once this special action is used, it can't be used again until the next dawn.</p>
+			<p class="indent">When combined with the Styx boots, the <i>armor of the Black River</i> permits you to use any branch of the River Styx or other planar waterways as a shadow road. Once per week, you can walk on such a planar waterway for 8 hours and arrive at any other plane of your choosing.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy, action, transform, flying speed</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of the Black River</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Armor of the White Rose" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_ARMOR_OF_THE_WHITE_ROSE">
+		<description>
+			<p>You are immune to necrotic and cold damage and vulnerable to fire and radiant damage while you wear this armor. Additionally, you are imbued with soul-devouring energy. When you hit with a melee attack, the target takes an extra 3d6 necrotic damage, and you regain 3d6 hit points. If you gain hit points above your maximum, you immediately gain a level of exhaustion, and the soul-devouring power of the armor ends until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy, melee attack, necrotic, cold, damage, resistance, radiant, fire, vulnerability</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of the White Rose</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+		</rules>
+	</element>
+
+	<element name="Ebony Beetle Armor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_EBONY_BEETLE_ARMOR">
+		<description>
+			<p>This glossy black armor is made from enchanted carrion beetle chitin by the darakhul. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the ebony beetle version of the armor doesn't. While wearing the armor, you are immune to slashing damage. It is half the weight of comparable metal armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, heavy, slashing, immunity</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Ebony Beetle {{parent}}</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+		</rules>
+	</element>
+
+	<element name="Ghost Armor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_GHOST_ARMOR">
+		<description>
+			<p>While wearing this armor, you can speak its command word as a bonus action to move incorporeally for 1 round. You can move through other creatures and objects as if they were difficult terrain. You take 5 (1d10) force damage if you end your turn inside an object. You can use this ability a number of rounds per day equal to your level.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, medium, bonus action, incorporeal</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light or medium">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="name-format">Ghost {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Midnight Armor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MIDNIGHT_ARMOR">
+		<description>
+			<p>Spun of pure shadow and invisible in sunlight, armor of this type is typically of shadow goblin or derro construction. While wearing it, you gain a +1 bonus to AC and resistance to radiant damage. In addition, you have advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, hide, radiant, resistance, stealth, advantage</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light or hide">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||Hide</set>
+			<set name="name-format">Midnight {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+
+	<element name="Moonbeam Chain Mail" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MOONBEAM_CHAIN_MAIL">
+		<description>
+			<p>This armor is made of woven moonlight by the bearfolk. It weighs only 5 pounds and always glows with a gentle radiance. Its glow cannot be hidden by tunics or cloaks. While wearing this armor, you gain a +1 bonus to AC, increasing to +2 under moonlight. In addition, you gain an additional use of Wild Shape. You are considered proficient with this armor even if you lack proficiency with heavy armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">chain, wild shape</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="chain mail">Armor</set>
+			<set name="attunement" addition="by a druid">true</set>
+			<set name="enhancement">1</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Chain Mail</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL" />	
+		</rules>
+	</element>
+
+	<element name="Moonstone Banded Armor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MOONSTONE_BANDED_ARMOR">
+		<description>
+			<p>This armor is made of woven moonlight by the shadow goblins. It weighs half as much as comparable armor and always glows with a gentle radiance. While wearing this armor, you have advantage on saving throws against spells and effects involving radiant, cold, or necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy, advantage, saving throw</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Moonstone Banded {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Rattling Armor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_RATTLING_ARMOR">
+		<description>
+			<p>This armor is made of humanoid bones and enchanted with glamours of terror. While wearing this armor, you have resistance to necrotic damage. In addition, you can use an action to cast the <i>fear</i> spell. This property of the armor can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">splint, action, spell, fear</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="splint">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Splint</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Road Warden Shield" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_ROAD_WARDEN_SHIELD">
+		<description>
+			<p>While holding this shield, you can speak its command word to seal a portion of a shadow road, turning it into a looping path. Once that occurs, creatures walking the path always return to their starting point after 120 feet of movement. To end the looping effect, a creature on the looping path must step off the path. The effect also ends if the shield is destroyed or you speak the command word while holding the shield.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Serpent Hide" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SERPENT_HIDE">
+		<description>
+			<p>While wearing this armor, you can speak its command word to take on the form of a <strong>giant constrictor snake</strong>. You retain this form as long as you like, but once you return to your normal form, you cannot use it again until after a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">hide, action, giant constrictor snake</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="hide">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Hide</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Blinding" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SHIELD_OF_BLINDING">
+		<description>
+			<p>While holding this shield, you can speak its command word and choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is blinded for 1 minute. At the end of each of its turns, the target can make a new saving throw to regain their sight.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, saving throw, blinded</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+	
+	<element name="Shield of Crows" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SHIELD_OF_CROWS">
+		<description>
+			<p>While holding this shield, you can speak its command work to summon a <strong>swarm of ravens</strong>. For up to 12 hours, these birds will scout terrain, warn you of enemies, and keep watch while you sleep. They do not engage in combat on your behalf and flee if attacked or threatened. After the duration, the shield cannot summon another swarm until after you have left a loaf of bread, bits of dried meat, or similar food on the shield during a short rest.</p>
+			<p class="indent">In addition, while holding the shield, you gain the ability to speak with crows and other corvids.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, summon, swarm of crows</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Dawn's Head" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SHIELD_OF_DAWNS_HEAD">
+		<description>
+			<p>The shield has 3 charges, and it regains 1d3 expended charges daily at dawn. While holding this shield, you can expend 1 charge to create a beam of light 10 feet wide and 120 feet long to illuminate everything in front of the shield. All creatures in this beam of light appear in their true form: shapeshifters appear as their unshifted forms, illusions fail to disguise their users, and so on. You can maintain this beam for up to 1 minute, requiring concentration.</p>
+			<p class="indent">Additionally, undead in the beam take 1d6 radiant damage each round they remain in the beam.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, radiant, damage</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Otters" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SHIELD_OF_OTTERS">
+		<description>
+			<p>While holding this shield, you can speak its command word to summon a pair of otters (use <strong>giant weasel</strong> statistics). For up to 12 hours, these aquatic mammals will scout aquatic and riparian terrain, warn you of enemies, and keep watch while you sleep. They do not engage in combat on your behalf and flee if attacked or threatened. After the duration, the shield cannot summon another otter pair until after you have left fish, shellfish, or similar food on the shield during a short rest.</p>
+			<p class="indent">In addition, while holding the shield, you gain the ability to speak with otters and other aquatic mammals, such seals.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, summon, giant weasel</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Swans" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SHIELD_OF_SWANS">
+		<description>
+			<p>This shield has 3 charges, and it regains 1d3 expended charges daily at dawn. When you speak its command word and expend one charge, you gain a fly speed of 60 feet for 1d4 rounds (and you know when this ends).</p>
+			<p class="indent">In addition, while holding this shield you can speak with swans and other aquatic birds.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, flying speed</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Umbral Armor" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_UMBRAL_ARMOR">
+		<description>
+			<p>This armor is a dull gray, marked with flecks of gold or silver and sometimes filigreed in luminous purple swirls. While wearing this armor, you emit a trail of shadows that obscures your passage, wiping away tracks and hiding your movement. All attempts to track you are made with disadvantage, and all ranged attacks against you are also made with disadvantage. However, bright light (such as from sunlight or the daylight spell) negates both effects and makes this armor easy to see. In these conditions, all attacks made against you gain a +2 to the attack roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, medium, heavy, disadvantage</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Umbral {{parent}}</set>
+		</setters>
+	</element>
+
+	<!--Illusion Seeds-->
+	<element name="Illusion Seeds" type="Information" source="Book of Ebon Tides" id="ID_KBP_BOET_INFORMATION_ILLUSION_SEEDS">
+		<description>
+			<p>Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+	</element>
+
+	<element name="Ale Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_ALE_SEED">
+		<description>
+			<p>When thrown, this illusion seed turns into a small cask of wholesome ale, roughly 4 gallons worth, together with 4 tankards. It is often used by shadow goblins or porters to avoid carrying heavy, full-sized casks.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, ale</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Bonfire Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BONFIRE_SEED">
+		<description>
+			<p>When thrown, this illusion seed turns into a roaring bonfire about 5 feet across, complete with large and small timbers and hot coals. If thrown into a space where a creature is standing, you must make a ranged attack. If the attack misses, the creature knocks the seed into any neighboring space. If it hits, the bonfire does 2d6 fire damage to any creature standing in it at the start of its turn. The bonfire burns out normally in 1d4 hours, depending on rain and other conditions.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, ranged attack, fire, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Bridge Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BRIDGE_SEED">
+		<description>
+			<p>When thrown, this illusion seed turns into a wooden bridge with stone piers, covering a stream, moat, chasm, gorge, or river up to 40 feet across. If thrown into a space where a creature is standing or swimming, that creature finds itself standing on the bridge decking without suffering any ill effect. The bridge can be undermined by flooding or burnt by fire normally. Otherwise, it remains standing for decades, slowly decaying.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_DRAGON_SEED">
+		<description>
+			<p>When thrown, this illusion seed turns into a dragon of some kind, though the exact type is known only to its creator. Roll on the table below.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">d20</td><td>Dragon Type</td><td>Charisma DC</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1-2</td><td>Lantern dragonette (see <i>Tome of Beasts</i>)</td><td>8</td></tr>
+					<tr><td>3-4</td><td>Wind dragon wyrmling (see <i>Tome of Beasts</i>)</td><td>9</td></tr>
+					<tr><td>5-6</td><td>White dragon wyrmling</td><td>10</td></tr>
+					<tr><td>7</td><td>Lindwurm (see <i>Tome of Beasts</i>)</td><td>10</td></tr>
+					<tr><td>8</td><td>Red dragon wyrmling</td><td>11</td></tr>
+					<tr><td>9</td><td>Young white dragon</td><td>11</td></tr>
+					<tr><td>10</td><td>Young mithral dragon (see <i>Tome of Beasts</i>)</td><td>12</td></tr>
+					<tr><td>11</td><td>Young brass dragon</td><td>13</td></tr>
+					<tr><td>12</td><td>Young copper dragon</td><td>14</td></tr>
+					<tr><td>13</td><td>Young blue dragon</td><td>15</td></tr>
+					<tr><td>14</td><td>Young green dragon</td><td>16</td></tr>
+					<tr><td>15</td><td>Young flame dragon (see <i>Tome of Beasts</i>)</td><td>17</td></tr>
+					<tr><td>16</td><td>Young gold dragon</td><td>18</td></tr>
+					<tr><td>17</td><td>Adult white dragon</td><td>19</td></tr>
+					<tr><td>18</td><td>Adult mithral dragon (see <i>Tome of Beasts</i>)</td><td>20</td></tr>
+					<tr><td>19</td><td>Adult silver dragon</td><td>21</td></tr>
+					<tr><td>20</td><td>Adult red dragon</td><td>22</td></tr>
+				</tbody>
+			</table>
+			<p class="indent">The dragon created by the illusion seed considers you to be a friend, and it speaks with you and keeps you company for at least 24 hours. During that time, the dragon defends itself and may defend you. After each additional 24 hours, you must make a Charisma saving throw as shown on the table above. When the check fails, the illusory dragon vanishes.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Forest Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_FOREST_SEED">
+		<description>
+			<p>When thrown, this illusion seed turns into a forest, depending on your learning and natural understanding. Make either an Intelligence (Nature) or Wisdom (Survival) check and see the table below.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Check</td><td>Result</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>10 or less</td><td>A small copse of leafy trees about 50 feet across appears. A single bird nests there.</td></tr>
+					<tr><td>11-15</td><td>A grove of pine trees about 500 feet across appears with a single path through it that only the user knows or sees. Only a few birds and insects inhabit it.</td></tr>
+					<tr><td>16-19</td><td>A large forest of mixed types of trees about 1 mile across appears with several hollow trees, small ponds, streams, and 1d6 + 1 paths through it that only the user knows or sees. Many birds, small woodland animals, and deer or boar live in it.</td></tr>
+					<tr><td>20+</td><td>A vast and varied woodland more than 50 miles across appears. It contains rich wildlife appropriate to the climate. A single treant lives in this forest and is friendly to the owner of the seed.</td></tr>
+				</tbody>
+			</table>
+			<p class="indent">Fire of any kind can unravel the forest newly created by an illusion seed. While a campfire or even bonfire does little harm, the burning of a whole tree unravels the forest’s magic: the trees, paths, and wildlife all turn to smoke and drift away in 10 minutes. This unraveling only happens if the forest is less than 1 month old.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, nature, survival</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Knightly Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_KNIGHTLY_SEED">
+		<description>
+			<p>You must crack this seed and throw it—greater skill gains greater results. Make a Strength (Athletics) or Dexterity (Acrobatics) check and consult the table below. The creature that appears serves you as a knight and steed for a week and a day. If you are already a titled knight, the creature and steed serve as a squire.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Check</td><td>Result</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>10 or less</td><td><strong>Knight</strong> with <strong>warhorse</strong></td></tr>
+					<tr><td>11-15</td><td><strong>Green knight of the woods</strong> (see <i>Creature Codex</i>) with <strong>warhorse</strong> or substitute a <strong>Wyvern</strong></td></tr>
+					<tr><td>16-19</td><td><strong>Wyvern knight</strong> (see <i>Creature Codex</i>) with <strong>war wyvern</strong> (see <i>Creature Codex</i>) or substitute a <strong>Shield Guardian</strong></td></tr>
+					<tr><td>20+</td><td><strong>Infernal knight</strong> (devil) (see <i>Creature Codex</i>) on <strong>nightmare</strong> or substitute a <strong>Planetar</strong></td></tr>
+				</tbody>
+			</table>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, strength, acrobatics</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Messenger Owl Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MESSENGER_OWL_SEED">
+		<description>
+			<p>When thrown, the seed turns into a normal owl with an Intelligence score of 14 and the ability to speak Common and Umbral. It will carry a spoken message and any object weighing up to 1 pound for a distance of up to 30 miles, delivering them to a particular person, a creature with a particular title or station (such as the "guard at the east gate of the Court of Golden Oak" or "the Baron of Grenstad"), or to a particular place ("the queen's bedchamber" or "the Hedgehog Tavern").</p>
+			<p class="indent">Once its mission is accomplished, the messenger owl waits for up to 4 hours for a return message or object to carry back to you. If no object or message is provided, it flies away and disappears.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, owl</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Orchard Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_ORCHARD_SEED">
+		<description>
+			<p>When thrown, this illusion seed turns into a well-tended orchard of fruit or nut trees, depending on your learning and natural understanding. All its fruit is ripe and rich in flavor. Make either an Intelligence (Nature) or Wisdom (Survival) check and consult the table below.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Check</td><td>Result</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>10 or less</td><td>A pair of nut trees appears, such as hazelnut, walnut, or chestnut.</td></tr>
+					<tr><td>11-15</td><td>A set of 1d6 + 4 fruit trees appears, all of a single type, such as cherry, apple, or pear. They provide a full day's nourishment to anyone who eats from them.</td></tr>
+					<tr><td>16-19</td><td>A large orchard of 3d6 fruit trees appears, ready for harvest. The fruits all act as the <i>goodberry</i> spell, healing up to 10 hp total from the orchard and providing a day's nourishment on the first day it appears.</td></tr>
+					<tr><td>20+</td><td>An enormous orchard of 3d12 fruit trees appears, ready for harvest. The fruit provides a day's nourishment, acts as a long rest, and heals up to 10 hp per creature for the first day it appears.</td></tr>
+				</tbody>
+			</table>
+			<p class="indent">Fire of any kind can unravel the orchard newly created by an illusion seed. While a campfire or even bonfire does little harm, the burning of a whole tree unravels the forest’s magic: the trees, paths, and harvest all turn into smoke and drift away in 10 minutes. This unravelling only happens if the orchard is less than 1 month old.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, nature, survival</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Rain and Thunder Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_RAIN_AND_THUNDER_SEED">
+		<description>
+			<p>This seed must be used outdoors, and when thrown, you gain control of the weather within a 5-mile radius for up to 1d8 hours. You can change precipitation, temperature, and wind, shifting the weather within 30 minutes, for instance, from a clear day to a cloudy and rainy one, from warm to arctic cold, and from moderate winds to a storm. The effects of a rain and thunder seed must always make the weather less pleasant than they were before: colder, rainier, and windier, never the reverse. While the seed often produces thunder, any lightning does not strike near you, but neither is the lightning under your control.</p>
+			<p class="indent">The effects of a <i>rain and thunder seed</i> can be countered or dispelled by either a <i>control weather</i> or <i>counterspell</i> spell.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed, weather</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Road Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_ROAD_SEED">
+		<description>
+			<p>This seed must be used outdoors, and when thrown, it creates a well-built road through any terrain, up to 5 miles long. The road includes up to one bridge crossing for a stream or chasm up to 50 feet across, and it may likewise include supports, log causeways, or leveled sections along a single section of marsh, hillside, or even mountainous terrain. A <i>road seed</i> combined with a <i>tavern seed</i> can generate a road twice as long as a <i>road seed</i> alone.</p>
+			<p class="indent">A <i>road seed</i> can be countered or removed with an <i>earthquake</i> spell.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Stallion Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_STALLION_SEED">
+		<description>
+			<p>When thrown, the seed turns into a magical, swift courser with an Intelligence score of 14 and the ability to speak Common and Umbral. It will carry you for up to 30 miles, delivering you to a particular place or following a particular road or path.</p>
+			<p class="indent">If engaged in combat, the stallion acts as a normal <strong>warhorse</strong>. It flees (with you) at the first opportunity.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Tavern Seed" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_TAVERN_SEED">
+		<description>
+			<p>A <i>tavern seed</i> must be used outdoors, and when thrown, it creates a small, snug tavern of stone and wood, roughly 40 feet by 20 feet, with a lower public floor and an upper floor devoted to the staff bedchambers, storage, and a single room for rent. The entire building takes on an outward style of architecture, materials, roofing, and appearance as suits the region where it stands. It has a staff of three: a cook, a bartender, and a servant, of a type typical of the region (so humans in a human realm, shadow fey in the Shadow Realm, goblins in the wastelands, and so on).</p>
+			<p class="indent">Using a <i>tavern seed</i> in an existing settlement creates a snug tavern as normal, magically shifting two buildings to either side slightly to make room. The new structure is certainly notable and surprising to residents of the place.</p>
+			<p class="indent">A <i>tavern seed</i> combined with a <i>road seed</i> always includes a set of warm, secure stables as well as the tavern building itself.</p>
+			<p class="indent"><strong><em>Illusion Seeds.</em></strong> Illusion seeds are wondrous items first created in the Shadow Realm and reliant on a supply of shadow matter to power their effects—each such seed generates an illusion and those illusions can take quite powerful forms. While illusion seeds are fairly permanent in the Shadow Realm, where there is shadow matter to empower and sustain the illusions, they are notably less permanent anywhere else. In the mortal world and on other planes, the effects of illusion seeds last for 2d12 hours and then crumble away in a small burst of glittering light and shadows.</p>
+			<p class="indent">To use an illusion seed, its owner merely needs to throw it 5 feet or more from themselves (to avoid being caught in the magical effect). Once expended, their effects are permanent (in the Shadow Realm), though they can be unraveled using <i>dispel magic</i> (DC 13).</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion seed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<!--Memory Philters-->
+	<element name="Philter of Boundless Joy" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_BOUNDLESS_JOY">		
+		<description>
+			<p>As you imbibe this potion, you remember a time of pure happiness and joy, usually related to love, parenthood, or some other enormous, life-altering event—the specific memories depend on the philter's creator. You have advantage on Charisma ability checks for 1 hour and immediately gain the effects of a short rest.</p>
+			<p class="indent">The effects of this philter cancel the effects of a <i>philter of deep despair</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, charisma</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Deep Despair" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_DEEP_DESPAIR">		
+		<description>
+			<p>As you imbibe this potion, you remember a time of heart-rending sorrow, grief, and despair related to death, loss, or failure—the specific memories depend on the philter's creator. You have advantage on Wisdom saving throws for 1 hour but cannot take bonus actions of any kind during that time.</p>
+			<p class="indent">The effects of this philter cancel the effects of a <i>philter of boundless joy</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, wisdom, saving throw</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Enchanted Fortune" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_ENCHANTED_FORTUNE">		
+		<description>
+			<p>As you imbibe this potion, you remember a time of staggering good fortune, accomplishment, and success—the specific memories depend on the philter's creator. You have advantage on the next three ability checks, attack rolls, or saving throws you make (including death saving throws).</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, ability checks</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Innocence" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_INNOCENCE">		
+		<description>
+			<p>As you imbibe this potion, you return to a childlike state, remembering your life as it was in your formative years—the specific memories depend on the philter's creator. You have resistance to psychic damage for 1 hour and have advantage on Constitution ability checks during that time.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic, resistance, advantage, constitution</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Loving Kindness" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_LOVING_KINDNESS">		
+		<description>
+			<p>As you imbibe this potion, you remember a time of love and acceptance—the specific memories depend on the philter's creator. You cannot be affected by spells from the school of enchantment for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">enchantment</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Lust" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_LUST">		
+		<description>
+			<p>As you imbibe this potion, you are overtaken with memories and feelings from a time of physical desire—the specific memories depend on the philter's creator. You must succeed on a DC 13 Wisdom saving throw or be overcome by a fit of lust for 1 minute. While in a fit of lust, you seek out either a person whose affection you desire or, more rarely, an object of consuming passion (usually a token, trophy, or fetish of some kind) to claim for yourself. On a successful saving throw, only the memories are passed to you. You can repeat the saving throw at the end of each of your turns, ending the effect on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Mercy" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_MERCY">		
+		<description>
+			<p>As you imbibe this potion, you remember a time of mercy, atonement, and forgiveness—the specific memories depend on the philter's creator. You are immune to being frightened for 1 hour and have advantage on Wisdom ability checks during that time.</p>
+			<p class="indent">The effects of this philter cancel the effects of a <i>philter of righteous anger</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">frightened, immunity, advantage, wisdom</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Righteous Anger" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_RIGHTEOUS_ANGER">		
+		<description>
+			<p>As you imbibe this potion, you are overtaken with feelings of anger and memories of justice denied, betrayals, or blasphemy—the specific memories depend on the philter's creator. You must succeed on a DC 13 Wisdom saving throw or be overcome by a fit of rage for 1 minute. While in a fit of rage, you have advantage on melee attack rolls, and your melee weapon attacks deal an extra 3 (1d6) damage. You cannot distinguish friend from foe and must attack the nearest creature. If no creatures are nearby, you must dash in the direction of the nearest living creature. If no other creature is near enough to move to and attack, you stalk off in a random direction, seeking a target for your anger. On a successful saving throw, only the memories are passed to you. You can repeat the saving throw at the end of each of your turns, ending the effect on a success.</p>
+			<p class="indent">The effects of this philter cancel the effects of a <i>philter of mercy</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">rage, advantage, melee attack</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Philter of Waking Dreams" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_PHILTER_OF_WAKING_DREAMS">		
+		<description>
+			<p>As you imbibe this potion, you remember a particular scene of importance, such as a duel, kiss, theft, betrayal, murder, or funeral—the specific memories depend on the philter's creator. You can take no action for 1 round while caught up in these memories and thereafter cannot forget these events: any creature seen in such a memory will be remembered, as well as their name, by you as someone you have seen before. With a successful DC 13 Wisdom (Insight) check, you may note details of importance within the waking dream, including the relationships of people within the dream, their status, and the location of the dream.</p>
+			<p class="indent">False memories cannot be created via a <i>philter of waking dreams</i>, though what the imbiber remembers may be colored by time or strong emotion.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Potions, Scrolls, and Wondrous Items-->
+	<element name="Book of Ebon Tides" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BOOK_OF_EBON_TIDES">
+		<description>
+			<p>This strange twilight-hued tome was written on pages of pure shadow weave, bound in traditional birchboard covers, wrapped with shadow goblin hide, and imbued with the memories of forests in the Shadow Realm. Its covers often dance with shadows as if it were resting in a forest grove, and some owners swear that a goblin face appears on them now and again. The sturdy lock on one side opens only for wizards, elves, and shadow fey.</p>
+			<p class="indent">The book has 15 charges, and it regains 2d6 + 3 expended charges daily in the twilight before dawn. If you expend the last charge, roll a d20. On a 1, the book retains its Ebon Tides and Shadow Lore properties but loses its Spells property.</p>
+			<p class="indent"><strong><em>Ebon Tides.</em></strong> f you spend 100 hours over a period of 30 days or more studying the volume, you can perform a magical ritual to shift the structure of the Shadow Realm in particular ways. At any point after your study completes, you can expend 5 of the book's charges while spending 1 minute concentrating and performing invocations to transform the terrain near you. You don't need to repeat the study to use this property again. When the magic ritual completes, make an Intelligence (Arcana) check and consult the table below for the appropriate DCs. You can change the terrain in any one way listed at your result or lower. For example, if your result was 17, you could turn a small forest up to 30 feet across into a grassland, create a grove of trees up to 240 feet across, create a 6-foot-wide flowing stream, overgrow 1,500 feet of an existing road, or other similar option. Only natural terrain you can see can be affected. Built structures, such as homes or castles, remain untouched, though roads and trails can be overgrown or hidden. On a failure, the terrain is unchanged. On a 1, an <strong>overshadow</strong> (see <i>Tome of Beasts 2</i> or substitute with ghost) also appears and attacks you. On a 20, you can choose two options.</p>
+			<p class="indent">Deities, fey lords and ladies, archdevils, demon lords, and other powerful rulers in the Shadow Realm can prevent these terrain modifications from happening in their presence or anywhere within their respective domains.</p>
+			<p class="indent"><strong><em>Shadow Lore.</em></strong> If you spend 10 minutes referencing this book while researching the Shadow Realm or its creatures, you double your proficiency bonus on Arcana, History, and Religion checks to recall lore about such subjects for the next 24 hours. If you don't have proficiency in these skills, you instead gain proficiency in them for the next 24 hours, but you are only proficient when recalling information about the subjects of your research. This research can be done during a short rest.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> While holding the book, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>cloak of shadow</i> (1 charge), <i>darkness</i> (2 charges), <i>mirror image</i> (2 charges), <i>phantasmal killer</i> (4 charges), <i>see invisibility</i> (2 charges), <i>seeming</i> (5 charges), <i>shadow gateway</i> (5 charges), <i>shadow step</i> (4 charges), or <i>slither</i> (2 charges). You can also use an action to cast the <i>douse light</i> or <i>minor illusion</i> cantrips from the book without using any charges.</p>
+			<p class="indent"><strong><em>Retributive Shadows.</em></strong> You can use an action to speak a special command word and rip the book in half. The book is destroyed and releases its remaining magic in a wave of shadow magic. Four 10-foot cubes of shadow move outward from the book in the cardinal directions, and each cube moves up to 20 feet each round, away from the point where the book was destroyed. This effect works like the <i>creeping darkness</i> (see <i>Deep Magic</i>) spell, except it creates four cubes instead of three, and the necrotic damage dealt by the spell increases by 1d6 for each charge remaining in the book. At the GM's discretion, this effect can work like the <i>incendiary cloud</i> spell instead of the <i>creeping darkness</i> spell, except the cloud is a cloud of shadow that deals necrotic damage instead of fire damage, is centered on you, and the damage dealt by the spell increases by 1d4 for each charge remaining in the book.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">DC</td><td>Effect</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>8</td><td>Obscure a path and remove all signs of passage (30 feet per point over 7).</td></tr>
+					<tr><td>10</td><td>Create a grove of trees (30 feet across per point over 9).</td></tr>
+					<tr><td>11</td><td>Create or dry up a lake or pond (1 foot wide per point over 11).</td></tr>
+					<tr><td>12</td><td>Create a flowing stream (1 foot wide per point over 11).</td></tr>
+					<tr><td>13</td><td>Overgrow an existing road with brush or trees (300 feet per point over 12).</td></tr>
+					<tr><td>14</td><td>Shift a river to a new course (300 feet per point over 13).</td></tr>
+					<tr><td>15</td><td>Move a forest (300 feet per point over 14).</td></tr>
+					<tr><td>16</td><td>Create a small hill, riverbank, or cliff (10 feet tall per point over 15).</td></tr>
+					<tr><td>17</td><td>Turn a small forest into grassland or clearing or vice versa (30 feet across per point over 16).</td></tr>
+					<tr><td>18</td><td>Create a new river (10 feet wide per point over 17).</td></tr>
+					<tr><td>19</td><td>Turn a large forest into grassland or vice versa (300 feet across per point over 19).</td></tr>
+					<tr><td>20</td><td>Create a new mountain (1,000 feet high per point over 19).</td></tr>
+					<tr><td>22</td><td>Shrink an existing hill or mountain (reducing 1,000 feet per point over 21).</td></tr>
+				</tbody>
+			</table>
+			<div class="sidebar">
+				<h5>Ebon Tides In Midgard</h5>
+				<p>Written by an elven princess at the Court of Silver Words, this volume encodes her understanding and mastery of shadow. Whimsical illusions suffuse every page, animating its illuminated capital letters and ornamental figures. The book is a famous work among the sable elves of the Shadow Realm, and it opens to the touch of any elfmarked or sable elf character.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">wizard, shadow realm, terrain, arcana, history, religion, spells, action, cloak of shadow, darkness, mirror image, phantasmal killer, see invisibility, seeming, shadow gateway, shadow step, slither, douse light, minor illusion, necrotic, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a wizard">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Collapsible Mountain" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_COLLAPSIBLE_MOUNTAIN">
+		<description>
+			<p>This small statuette of a snow-topped, forested mountain seems remarkably detailed, yet it stands only about 4 inches tall. Stories tell that it was a gift from the bearfolk to the shadow fey priests of Hecate when they first came to the Shadow Realm and that it was once merely a collapsible hill. Over time, its power has grown as it travels from one owner to another. The priests of Hecate say no one can retain it for more than a year.</p>
+			<p class="indent">When you hold the <i>collapsible mountain</i>, you may take an action to speak its command word to instantaneously create a pine-covered mountain, fully 2,500 feet tall. You may choose to either have the mountain rise under you or to have the mountain rise under another creature you can see at least 120 feet away. In the first case, other creatures nearby may wind up hundreds of feet below you (and combat ends between any two non-adjacent creatures). Groups of creatures move roughly 2d6 × 100 feet apart. If you have the mountain rise under another creature, you and adjacent creatures see the mountain grow rapidly nearby, but you remain at the altitude you started at. A small spring or brook usually appears nearby in this instance.</p>
+			<p class="indent">Each day, the mountain's land and streams provide simple food and fresh, cold water sufficient to nourish 15 humanoids or five steeds.</p>
+			<p class="indent">Speaking the command word again collapses the mountain. Any creature standing on it is not harmed (the descent is swift but not dangerous). Creatures who enter combat unaware of the nature of the <i>collapsible mountain</i> are treated as if surprised by the sudden change.</p>
+		</description>
+		<setters>
+			<set name="keywords">food, water, surprised</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Crown of Infinite Midnight" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_CROWN_OF_INFINITE_MIDNIGHT">
+		<description>
+			<p>This dazzling helm is set with 1d12 sapphires, 2d12 black opals, and 3d12 obsidians. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.</p>
+			<p class="indent">You gain the following benefits while wearing it:</p>
+			<ul>
+				<li>You can use an action to cast one of the following spells (save DC 17), using one of the helm's gems of the specified type as a component: <i>darkness</i> (obsidian), <i>vampiric touch</i> (black opal), or <i>wall of ice</i> (sapphire). The gem is destroyed when the spell is cast and disappears from the helm.</li>
+				<li>As long as it has at least one sapphire, you have blindsight to 120 feet. Any living creature that starts its turn in that area takes 1d6 necrotic damage.</li>
+				<li>As long as the helm has at least one black opal, you have resistance to necrotic damage.</li>
+				<li>As long as the helm has at least one piece of obsidian, you can use an action and speak a command word to cause one weapon you are holding to sizzle with black flames. The flames are harmless to you and to the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.</li>
+			</ul>
+			<p class="indent">Roll a d20 if you are wearing the helm and take necrotic damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits shadowy purple rays from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking necrotic damage equal to the number of gems in the helm. The helm and its gems are then destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, spells, darkness, vampiric touch, wall of ice, blindsight, necrotic, damage, resistance, saving throw, fire</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">head</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	
+	<element name="Hecate's Lantern" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_HECATES_LANTERN">
+		<description>
+			<p>Hecate's lantern is said to have been used to divide darkness and light during the creation of the Shadow Realm. It is made of gold and mithral with panes of amber and clear crystal, and it can be held by an ornate loop at its top. A single ever-burning candle shines within, though the panes of the lantern often make it appear as three candles.</p>
+			<p class="indent">You must be brandishing the lantern to use it. This lantern has 12 charges for the following properties. It regains 1d12 + 1 expended charges daily at dawn. If you expend the lantern's last charge, roll a d20. On a 1, the lantern vanishes and returns to a high priestess of Hecate or to the goddess herself.</p>
+			<p class="indent"><strong><em>Create Mire.</em></strong> As an action, you can expend 5 charges to create shadow mire with a 40-foot radius centered on you.</p>
+			<p class="indent"><strong><em>Force Shift.</em></strong> As an action, you can expend 3 charges to force any shapeshifter you can see within 120 feet to shift their form. If unwilling, the target gains a DC 13 Charisma saving throw to negate the effect.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> As an action, you can cast the <i>moonbeam</i> spell (2 charges) with a range encompassing any point you can see or the <i>child of light and darkness</i> spell (8 charges).</p>
+		</description>
+		<setters>
+			<set name="keywords">cleric, wizard, action, shadow mire, saving throw, spells, moonbeam, child of light and darkness</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a cleric or wizard">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	
+	<element name="Instant Door" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_INSTANT_DOOR">
+		<description>
+			<p>This item resembles an ornate key of bright copper, often inset with semi-precious stones or detailed with engraved filigree scrollwork and ornaments. While holding the key, you can make a turning motion to create a door in any wall within 5 feet of you. This door goes through a wall up to 5 feet thick, creating an exit that remains until you remove it. Turning the key in the opposite direction turns any normal, non‑magical door into a section of stone or other material matching the wall to either side (wood, wattle, plaster, and so on).</p>
+		</description>
+		<setters>
+			<set name="keywords">key</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Labyrinth Rope" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_LABYRINTH_ROPE">
+		<description>
+			<p>When you speak a command word, this rope slithers like a snake toward the nearest exit out of any maze, dungeon, or labyrinth for 1 hour at a speed of 20 feet per round. When it reaches the exit, it coils itself up and waits for you to retrieve it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Moonseeker's Lantern of Safe Returns" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MOONSEEKERS_LANTERN_OF_SAFE_RETURNS">
+		<description>
+			<p>This pyramid-shaped lantern has clear crystal sides and is made of black iron woven with sparkling silver.</p>
+			<p class="indent">While holding the lantern, you can use an action to speak its command word. The lantern floats 2 feet away from you at shoulder height, and sheds bright light in a 30-foot-radius sphere and dim light for an additional 30 feet. You and any of your companions within 30 feet of the lantern while it is shedding light can't be surprised, except when incapacitated by something other than nonmagical sleep. When you are in the Shadow Realm, the lantern also emits a pinpoint of light in the direction of Corremel, City of Lanterns.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, light</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
+	<element name="Shadow Portal Scroll" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SHADOW_PORTAL_SCROLL">
+		<description>
+			<p>Written on black leather in letters of glowing white, a shadow portal scroll opens a portal as a form of invitation from a fey enchanter, goblin shaman, or other powerful arcanist of the Shadow Realm. All creatures within 10 feet of you when the scroll is read are transported to the Shadow Realm, usually near the scroll maker's residence.</p>
+		</description>
+		<setters>
+			<set name="category">Scrolls</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Scroll</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Unerring Dowsing Rod" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_UNERRING_DOWSING_ROD">
+		<description>
+			<p>This gnarled willow root is worn and smooth. The wood is dark from long centuries spent absorbing the living darkness of the Shadow Realm.</p>
+			<p class="indent">When you hold this rod in both hands by its short, forked branches, you feel it gently tugging you toward the closest source of fresh water. If the closest source of fresh water is located underground, the dowsing rod directs you to a spot above the source and then dips its tip down toward the ground. When you use this dowsing rod on the Material Plane, it directs you to bodies of water, such as creeks and ponds. When you use it in the Shadow Realm, where fresh water is much more difficult to find, it directs you to bodies of water, but it might also direct you toward homes with freshwater barrels or to creatures with containers of fresh water on them.</p>
+		</description>
+		<setters>
+			<set name="keywords">water</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
+	<element name="Wine of the Starry Void" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WINE_OF_THE_STARRY_VOID">		
+		<description>
+			<p>Found largely in the realms of the Court of a Million Stars and in the hands of disciples of the Void, this wine enables you to see the future—for a time. Roll 10d20 and apply each resulting die in any order when ability checks, attack rolls, saving throws, or even death saving throws are required. However, all ten results must be applied before any normal rolls can resume.</p>
+		</description>
+		<setters>
+			<set name="keywords">ability checks, attack rolls, saving throws</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Wine of the Summer Court" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WINE_OF_THE_SUMMER_COURT">		
+		<description>
+			<p>This white wine is slightly pink from the rose petals added to the grapes prior to the crush. It is light and airy and evaporates within an hour if left exposed to the air. The wine tastes of peach, grapefruit, and your first kiss. Drinking it fills you with giddy thoughts of dancing, romance, and adventure.</p>
+			<p class="indent">When you drink this wine, you have advantage on Charisma ability checks for 1 hour, and you can reroll one failed ability check, attack roll, or saving throw during that time.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, charisma</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Wine of the Winter Court" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WINE_OF_THE_WINTER_COURT">		
+		<description>
+			<p>This wine, so dark red in color it is nearly black, pours from its bottle in a syrupy flow. When you drink it, you taste notes of sour apple, bitter ash, and jealousy, and your thoughts are occupied with vivid memories of heartbreak and loss.</p>
+			<p class="indent">When you drink this wine, you have disadvantage on Charisma ability checks for 1 hour, but you are immune to being charmed and can add your proficiency bonus to Wisdom saving throws for the duration. If you already add your proficiency bonus to Wisdom saving throws, your bonus is instead doubled for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">disadvantage, charisma, charmed, immunity, wisdom, saving throw</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Rings, Staves, and Wands-->
+	<element name="Ring of Dancing" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_RING_OF_DANCING">
+		<description>
+			<p>When you dance, caper, or perform for an audience, your movements are especially thrilling and graceful. You have advantage on all Charisma (Persuasion) checks with any fey, giant, or humanoid who has watched such a performance of yours within 24 hours. When worn with boots of dancing, you instead have advantage on all Charisma ability checks.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Daylight" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_RING_OF_DAYLIGHT">
+		<description>
+			<p>This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. By speaking the command word, you can make the ring shed light in a 60-foot radius sphere for 1 hour. The sphere is bright light and sheds dim light for an additional 60 feet. If you close your fist, put on a glove, or otherwise cover your ring hand completely, you block the light. If any of this light's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>
+			<p class="indent">In addition, melee or ranged attacks you make while wearing the ring of daylight deal radiant damage rather than their normal type.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Ring of the Ghouls" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_RING_OF_THE_GHOULS">
+		<description>
+			<p>This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, when you make a successful melee attack and use your reaction to expend 1 of the ring's charges, the target must succeed on a DC 13 Constitution saving throw or be paralyzed until the end of its next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Winter's Kiss" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_RING_OF_WINTERS_KISS">
+		<description>
+			<p>When you suffer cold damage while wearing the ring of winter's kiss, you take damage normally. However, on your next turn, you can target any creature within 30 feet, making an attack roll with a +7 bonus. On a hit, the target takes the same cold damage you took.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Staff of Radiance" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_STAFF_OF_RADIANCE">
+		<description>
+			<p>This staff of yarrow wood is often bleached white with points of glowing golden warmth embedded in the wood. You have resistance to radiant damage while you hold this staff.</p>
+			<p class="indent">The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: <i>burning radiance</i>* (4 charges), <i>daylight</i> (2 charges), <i>searing sun</i>* (3 charges), or <i>sunburst</i> (5 charges). You may cast the <i>douse light</i>* or <i>light</i> cantrips without expending a charge. (Spells marked with an asterisk are from <i>Deep Magic</i>.)</p>
+			<p class="indent">You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">druid, sorcerer, warlock, wizard, radiant, resistance, action, spells, burning radiance, daylight, searing sun, sunburst, douse light, light</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a druid, sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">10</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	
+	<element name="Staff of the Void" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_STAFF_OF_THE_VOID">
+		<description>
+			<p>This staff of ironwood is often cracked and gnarled with points of purple, wriggling movement seemingly moving through the wood. You have resistance to psychic damage while you hold this staff.</p>
+			<p class="indent">The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: <i>life drain</i>* (5 charges), <i>living shadows</i>* (4 charges), <i>maddening whispers</i>* (2 charges), or <i>void strike</i>* (3 charges). You may cast the word of <i>misfortune</i>* cantrip without expending a charge. (Spells marked with an asterisk are from Deep Magic.)</p>
+			<p class="indent">The staff regains 1d6 + 4 expended charges daily at midnight. If you expend the last charge, roll a d20. On a 1, the staff turns to ash and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">cleric, sorcerer, warlock, wizard, psychic, resistance, action, spells, life drain, living shadows, maddening whispers, void strike, misfortune</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a cleric, sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">10</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+
+	<element name="Wand of Shadows" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WAND_OF_SHADOWS">
+		<description>
+			<p>This wand has 5 charges. While holding it, you have advantage on Dexterity (Stealth) checks against creatures that rely on sight. You can also use an action to expend 1 or more of its charges to cast the <i>darkbolt</i> spell (save DC 15, see Deep Magic) from it. For 1 charge, you cast the 2nd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>
+			<p class="indent">The wand regains 1d6 + 1 expended charges daily at midnight. If you expend the last charge, roll a d20. On a 1, the wand turns to ash and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+
+	<element name="Wand of Tides" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WAND_OF_TIDES">
+		<description>
+			<p>This wand has 5 charges. While holding it, you cannot be paralyzed. You can also use an action to expend 1 or more of its charges to warp space around you, filling it with tangible shadows. All creatures moving toward you move as if they are in difficult terrain. Attack rolls against you have disadvantage. The shadows last for 3 rounds or until you choose to end them.</p>
+			<p class="indent">The wand regains 1d4 + 1 expended charges daily at midnight. If you expend the last charge, roll a d20. On a 1, the wand turns to ash and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+
+	<!--Weapons-->
+	<element name="Blade of Grass" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_BLADE_OF_GRASS">
+		<description>
+			<p>This magic weapon has 7 charges. While holding it, you can use a bonus action and expend 1 charge to conjure a thick patch of shrubs, grasses, aboveground roots, and even small saplings in a 10-foot radius. The area becomes difficult terrain, and the foliage is thick enough to provide cover against ranged attacks. The growth is permanent unless you speak the command word again.</p>
+			<p class="indent">The weapon regains all expended charges after a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, axe, cleric, druid, bonus action, difficult terrain</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="sword or axe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="attunement" addition="by a druid or cleric">true</set>
+			<set name="name-format">{{parent}} of Grass</set>
+			<set name="charges">7</set>
+		</setters>
+	</element>
+
+	<element name="Fey Blade" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_FEY_BLADE">
+		<description>
+			<p>This weapon is lightweight and portable and can easily fit into a dagger sheath, even if a two-handed weapon or polearm. You can draw it from the sheath or replace it as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, axe, bonus action</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="sword or axe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="name-format">Fey {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Frostglow Weapon" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_FROSTGLOW_WEAPON">
+		<description>
+			<p>These mithral weapons are commonly found among gnomes and quicksteps, who prize their power to shed a chilling blue light on command. You can use a bonus action to speak this weapon's command word, and all creatures within 30 feet must succeed on a DC 15 Constitution saving throw, becoming paralyzed for 1 round on a failed saving throw and having their speed reduced to zero for 1 round on a successful one. The effect ends at the beginning of your next turn. This action cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, rapier, bonus action, saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier or dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Rapier||Dagger</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Frostglow {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Hecate's Dagger" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_HECATES_DAGGER">
+		<description>
+			<p>This adamantine dagger has a blue leather hilt wrapped with gold wire, a star opal as its pommel. Its blade is etched with the phases of the moon and a triangle similar to Hecate's holy symbol. It is said to be one of the daggers the goddess used when she parted and shaped raw shadow to create the Shadow Realm for her devoted followers. Several such daggers may exist.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties.</p>
+			<p class="indent"><strong><em>Counterspell.</em></strong> When you speak Hecate's name while wielding the dagger, your <i>counterspell</i> rolls are all made with advantage.</p>
+			<p class="indent"><strong><em>Geas.</em></strong> Once per day, you may cast the <i>geas</i> spell on any cleric, paladin, or devout follower of Hecate.</p>
+			<p class="indent"><strong><em>Control Shadows.</em></strong> Once per day, you may cast either the <i>ebon tide</i> spell or the <i>dimension door</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, spells, counterspell, advantage, geas, ebon tide, dimension door</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement" addition="by a cleric or wizard">true</set>
+		</setters>
+	</element>
+
+	<element name="Lunar Lance" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_LUNAR_LANCE">
+		<description>
+			<p>Made by shadow goblins to keep larger foes at a distance, <i>lunar lances</i> are often given to goblins on battlements or other vantage points. They weigh literally nothing but are as sharp as any dagger. This weapon adds 10 feet to your reach when attacking with it.</p>
+		</description>
+		<setters>
+			<set name="keywords">polearm, reach</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any polearm">Weapon</set> 
+			<set name="rarity">Uncommon</set>
+			<!--<set name="weapon">ID_INTERNAL_WEAPON_GROUP_POLEARMS</set>-->
+			<set name="weapon">Glaive||Halberd||Lance||Pike||Quarterstaff||Spear||Trident</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Lunar {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Mooncatcher's Net" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MOONCATCHERS_NET">
+		<description>
+			<p>Used by the river giants to harvest memory fragments from the dark waters of the Shadow Realm, <i>mooncatcher's nets</i> are woven by the priests of Hecate or by moonshadow catcher goblins.</p>
+			<p class="indent">You have a +1 bonus on attack rolls with this magic weapon. It has the normal effects of a net but is very tough. A creature must succeed on a DC 16 Strength check to free itself or another creature from the net. Dealing 15 slashing damage to the net also frees the creature. The net has AC 14 and 25 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the net drops to 0 hit points, it is destroyed.</p>
+			<p class="indent">As well as using the net as a weapon, you can drag the net through dark water to harvest 1d4 random memory fragments. Roll 1d10 on the table below for each fragment to determine the memory fragment captured. Each memory fragment can be used as component in creating a memory philter of the type listed in parentheses. You must make a successful DC 15 Dexterity (Sleight of Hand) check to transfer each memory fragment from the net into a suitable container or it is lost.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">d10</td><td>Memory Fragment</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>Happy time with a friend (<i>philter of boundless joy</i>)</td></tr>
+					<tr><td>2</td><td>Embarrassing failure (<i>philter of deep despair</i>)</td></tr>
+					<tr><td>3</td><td>Glorious success (<i>philter of enchanted fortune</i>)</td></tr>
+					<tr><td>4</td><td>Favored childhood memory (<i>philter of innocence</i>)</td></tr>
+					<tr><td>5</td><td>Act of kindness (<i>philter of loving kindness</i>)</td></tr>
+					<tr><td>6</td><td>Romantic partner (<i>philter of lust</i>)</td></tr>
+					<tr><td>7</td><td>Deceased loved one (<i>philter of mercy</i>)</td></tr>
+					<tr><td>8</td><td>Great victory in battle (<i>philter of righteous anger</i>)</td></tr>
+					<tr><td>9</td><td>A dream (<i>philter of waking dreams</i>)</td></tr>
+					<tr><td>10</td><td>Roll twice</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">net, saving throw, memory fragment</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="net">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Net</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Moonsteel Weapon" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_MOONSTEEL_WEAPON">
+		<description>
+			<p>The blade of this magic weapon seems to shine from within with a pale white light. The weapon deals an extra 1d6 radiant damage to any creature it hits. If the creature is not in its true form, it becomes frightened until the start of your next turn. At the start of its turn, a creature frightened in this way must succeed on a DC 13 Charisma saving throw or immediately return to its true form.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, rapier, radiant, damage, saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier or dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Rapier||Dagger</set>
+			<set name="name-format">Moonsteel {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Quickstep Weapon" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_QUICKSTEP_WEAPON">
+		<description>
+			<p>When you wield this weapon and a creature you can see targets you with an attack, you can use your reaction to move to an unoccupied space within 5 feet of your position without provoking opportunity attacks. If this movement would put you out of reach of the attacker, the attack is at disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, rapier, reaction, disadvantage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier or dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Rapier||Dagger</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Quickstep {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Scepter Weapon" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_SCEPTER_WEAPON">
+		<description>
+			<p>By speaking this weapon's command word as a bonus action, you activate a harsh purple light. While this light shines, you have advantage on Charisma (Intimidation) checks made to interact with beasts, dragons, fey, giants, humanoids, and monstrosities.</p>
+			<p class="indent">In addition, any foe or object you strike with a <i>scepter weapon</i> glows, shedding dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.</p>
+		</description>
+		<setters>
+			<set name="keywords">club, hammer, mace, staff, bonus action, advantage, intimidation</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="club, hammer, mace, or staff">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CLUBS||ID_INTERNAL_WEAPON_GROUP_HAMMERS||ID_INTERNAL_WEAPON_GROUP_MACES||Staff||Quarterstaff</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Scepter {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Witchlight Scimitar" type="Magic Item" source="Book of Ebon Tides" id="ID_KBP_BOET_MAGIC_ITEM_WITCHLIGHT_SCIMITAR">
+		<description>
+			<p>You can use a bonus action to speak this magic scimitar's command word, causing golden radiance to spring from the blade. It sheds bright light in a 30-foot-radius sphere and dim light for an additional 30 feet. While the scimitar is ablaze, it deals an extra 2d6 radiant damage to any target it hits. The witchlight glow lasts until you use a bonus action to speak the command word again or until you drop or sheathe the scimitar.</p>
+		</description>
+		<setters>
+			<set name="keywords">scimitar, radiant, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="scimitar">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Scimitar</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+</elements>

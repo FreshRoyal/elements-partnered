@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Erina</name>
+		<description>Erina from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="race-erina.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-erina.xml" />
+		</update>
+	</info>
+
+	<element name="Erina" type="Race" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_ERINA">
+		<description>
+			<p>The enigmatic hedgehog-folk trace their history back to the beginning of the world—further back than even elves can trace—to the first groves and wild grasslands, to those green places between the elemental poles that birthed all that is. Or so the erina druids like to claim.</p>
+			<p class="indent">The erina are a small-statured species of creatures resembling bipedal hedgehogs. They often escape the notice of the powerful rulers of the land, though anyone traveling through the wilds would do well to have them as allies.</p>
+			<h4>Curious</h4>
+			<p>Erina are a highly intelligent species whose natural curiosity and cunning serve them well. They are always probing around the limits of their territory and keep a careful record of their environment. Erina seem supernaturally aware of their surroundings and have a keen eye for things that are out of place or novel.</p>
+			<h4>Scroungers</h4>
+			<p>Erina subsist by scrounging. In the wild, their diet consists of fruit, roots, insects, and small animals that come within range of their spears. The few erina who make their homes in cities live in much the same way. For this reason, erina sometimes run afoul of the law, though they are not naturally greedy.</p>
+			<h4>Defenders of Hearth and Home</h4>
+			<p>The erina generally worship deities focused on the hearth and home. The tenets of such deities regarding defense of home align very well with the erina's territorial nature. The burrows of the erina contain a dizzying number of tunnels and chambers with multiple camouflaged entrances and exits. Invading an erina burrow is a nightmarish experience, as the little defenders burrow over, under, and beside their enemies with alarming speed, striking from a freshly dug hole before retreating to safety.</p>
+			<h4>Erina Abroad</h4>
+			<p>Erina tend to live in large communities of their own kind. Occasionally, compatible fey creatures may lair near or even within an erina burrow. On occasion, some erina are so overcome with curiosity that they leave their homes to investigate the world beyond. These adventurous erina make excellent rangers and druids, exploring the unknown wilderness with a grin and a twitching nose.</p>
+			<p class="indent">Other times, if there is a great threat to the region where the erina have dug their burrows, the defenders of the colony embark on a mission to face the danger nose-on. On rare occasions, some erina may find their actions warrant expulsion from the burrow. Erina communities are often suspicious of warlocks and sorcerers, and members of the colony who make bargains with strange entities or who exhibit dangerous connections to powerful magic are often escorted out of the burrow.</p>
+			<h4>Erina Language</h4>
+			<p>Erina speak their own language, a series of whirring sounds punctuated by clicks. Erina can also communicate with other erina using only twitches of the nose and whiskers, though this old nonverbal language has fallen out of fashion in recent generations. Most burrows have at least one member who speaks the Common tongue.</p>
+			<h4>Erina Names</h4>
+			<p>Erina names translate poorly into other languages. When outside erina lands, erinas tend to adopt names with long, open vowel sounds. These sounds are rare in their own language and bring pleasure to their ears. Erina are certain to extend the vowel sounds in their names when introducing themselves.</p>
+			<ul class="unstyled">
+				<li><strong>Individual Names:</strong> May-nay, Wayee, Leemay, Einore, Die-Nu, Lowno.</li>
+			</ul>
+			<h4>Erina Traits</h4>
+			<p>Your erina character has traits which complement its curiosity, sociability, and fierce nature.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and you can choose to increase either your Wisdom or Charisma score by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Erina reach maturity around 15 years and can live up to 60 years, though some erina burrow elders have memories of events which suggest erina can live much longer.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Erina are good-hearted and extremely social creatures who have a difficult time adapting to the laws of other species.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Erina average about 3 feet tall and weigh about 50 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to life in the dark burrows of your people, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Hardy.</em></strong> The erina diet of snakes and venomous insects has made them hardy. You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+			<p class="indent"><strong><em>Spines.</em></strong> Erina grow needle-sharp spines in small clusters atop their heads and along their backs. While you are grappling a creature or while a creature is grappling you, the creature takes 1d4 piercing damage at the start of your turn.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Digger.</em></strong> You have a burrowing speed of 20 feet, but you can use it to move through only earth and sand, not mud, ice, or rock.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak Erina and either Common or Sylvan.</p>
+		</description>
+		<setters>
+			<set name="names" type="custom">May-nay, Wayee, Leemay, Einore, Die-Nu, Lowno</set>
+			<set name="names-format">{{custom}}</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Erina)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_ASI)" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Erina)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Erina)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_ASI)" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_ERINA" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_LANGUAGE)" />
+			<select type="Language" name="Language (Erina)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_SYLVAN" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_LANGUAGE)" />
+			<select type="Language" name="Customized Language (Erina)" supports="Custom Race Language||BOET Erina Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_HARDY" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_SPINES" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_DIGGER" />
+			<select type="Race Variant" name="Erina Variant" supports="BOET Erina Variant" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Hardy" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_HARDY">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_HARDY</requirements>
+		<description>
+			<p>The erina diet of snakes and venomous insects has made them hardy. You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	
+	<element name="Spines" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_SPINES">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_SPINES</requirements>
+		<description>
+			<p>Erina grow needle-sharp spines in small clusters atop their heads and along their backs. While you are grappling a creature or while a creature is grappling you, the creature takes 1d4 piercing damage at the start of your turn.</p>
+		</description>
+		<sheet>
+			<description>While you are grappling a creature or while a creature is grappling you, the creature takes 1d4 piercing damage at the start of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Keen Senses" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_KEEN_SENSES">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_KEEN_SENSES</requirements>
+		<description>
+			<p>You have proficiency in the Perception skill. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Keen Senses)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Digger" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_ERINA_DIGGER">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_DIGGER</requirements>
+		<description>
+			<p>You have a burrowing speed of 20 feet, but you can use it to move through only earth and sand, not mud, ice, or rock.</p>
+		</description>
+		<sheet>
+			<description>You have a burrowing speed of {{speed:burrow}} ft, but you can use it to move through only earth and sand, not mud, ice, or rock.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:burrow" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Erina ASI Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_ASI" />
+
+	<element name="Erina Language Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_LANGUAGE" />
+
+	<element name="Erina Hardy Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_HARDY" />
+
+	<element name="Erina Spines Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_SPINES" />
+
+	<element name="Erina Keen Senses Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_KEEN_SENSES" />
+
+	<element name="Erina Digger Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_DIGGER" />
+
+	<!--Spiritfarer Erina-->
+	<element name="Spiritfarer Erina" type="Race Variant" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_VARIANT_SPIRITFARER_ERINA">
+		<supports>BOET Erina Variant</supports>
+		<description>
+			<p>The erina are a race of bipedal folk that resemble hedgehogs. Originally hailing from the Bright Lands, the shadow fey brought erinas along as servitors when they first came to the Shadow Realm, where they quickly adapted to the shadows and have learned to thrive in the dark forests and underground warrens. Their natural propensity for exploration and their unrivaled burrowing skills mean that they’ve tunneled their way to many a strange new locale—including the mortal realms. They’ve primarily settled around the plateau that hosts the Queen’s Wood and the Silver Hills, but regular bands of explorers, naturalists, and wilderness guides have established underground camps throughout the realm.</p>
+			<p class="indent">The shadow fey are not entirely pleased by the erinas’ wanderlust (making them less than entirely useful servants) nor with their open policy of assisting travelers in and out of the Shadow Realm through their underground shadow roads. However, at least for now, it is easier for the shadow fey to ignore these aspects of the crafty survivalists.</p>
+			<p class="indent">Spiritfarer erinas are a subrace of erina. You can find out more about the base erina race in <i>Tome of Heroes</i>.</p>
+			<h4>Erina Names</h4>
+			<p>Erina names translate poorly into other languages. When outside erina lands, erinas tend to adopt names with long, open vowel sounds. These sounds are rare in their own language and bring pleasure to their ears. Erina are certain to extend the vowel sounds in their names when introducing themselves.</p>
+			<ul class="unstyled">
+				<li><strong>Individual Names:</strong> May-nay, Wayee, Leemay, Einore, Die-Nu, Lowno.</li>
+			</ul>
+			<h4>Erina Traits</h4>
+			<p>You are a spiritfarer erina, whose ancestors were forever changed by the Shadow Realm, setting you apart from most other erina.</p>
+			<p class="indent">You exhibit a few different traits from typical erinas. The following traits include those shared with the base erina’s traits (see <i>Tome of Heroes</i>), though replacing the Ability Score Increase, Hardy, Spines, and Keen Senses traits with those listed.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and you can choose to increase either your Dexterity or Charisma score by 1. (This trait replaces the base erina’s Ability Score Increase trait.)</p>
+			<p class="indent"><strong><em>Age.</em></strong> Erina reach maturity around 15 years and can live up to 60 years, though some erina burrow elders have memories of events which suggest erina can live much longer.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Erina are good-hearted and extremely social creatures who have a difficult time adapting to the laws of other species.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Erina average about 3 feet tall and weigh about 50 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to life in the dark burrows of your people, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Digger.</em></strong> You have a burrowing speed of 20 feet, but you can use it to move through only earth and sand, not mud, ice, or rock.</p>
+			<p class="indent"><strong><em>Quills.</em></strong> Your spines are longer and more potent than other erinas. Whenever you make a successful melee attack against a target within 5 feet of you, that target takes an additional 3 (1d6) piercing damage. (This trait replaces the base erina’s Spines trait.)</p>
+			<p class="indent"><strong><em>Sharp Instincts.</em></strong> You can't be surprised, except when incapacitated by something other than nonmagical sleep.  (This replaces the base erina’s Keen Senses trait.)</p>
+			<p class="indent"><strong><em>Spirit Tongue.</em></strong> You have an innate knack for speaking to the spirit world. You know the <i>message</i> cantrip. When you reach 3rd level, you can cast the <i>charm person</i> spell with this trait (targeting only undead creatures), and starting at 5th level, you can cast the <i>enthrall</i> spell with it. Once you cast a non‑cantrip spell with this trait, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak Erina and Umbral and either Common, Elvish, or Sylvan.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_ASI" />
+			<stat name="wisdom" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Spiritfarer Erina)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Spiritfarer Erina)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spiritfarer Erina)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_ERINA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Spiritfarer Erina)" supports="ID_LANGUAGE_COMMON|ID_LANGUAGE_ELVISH|ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Spiritfarer Erina)" supports="Custom Race Language||BOET Erina Language||BOET Umbral" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SPIRITFARER_ERINA_QUILLS" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SPIRITFARER_ERINA_SHARP_INSTINCTS" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SPIRITFARER_ERINA_SPIRIT_TONGUE" />
+		</rules>
+	</element>
+
+	<element name="Quills" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SPIRITFARER_ERINA_QUILLS">
+		<description>
+			<p>Your spines are longer and more potent than other erinas. Whenever you make a successful melee attack against a target within 5 feet of you, that target takes an additional 3 (1d6) piercing damage. (This trait replaces the base erina’s Spines trait.)</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a successful melee attack against a target within 5 ft of you, that target takes an additional 1d6 piercing damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_SPINES" />
+		</rules>
+	</element>
+
+	<element name="Sharp Instincts" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SPIRITFARER_ERINA_SHARP_INSTINCTS">
+		<description>
+			<p>You can't be surprised, except when incapacitated by something other than nonmagical sleep.  (This replaces the base erina’s Keen Senses trait.)</p>
+		</description>
+		<sheet>
+			<description>You can't be surprised, except when incapacitated by something other than nonmagical sleep.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_ERINA_KEEN_SENSES" />
+		</rules>
+	</element>
+
+	<element name="Spirit Tongue" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SPIRITFARER_ERINA_SPIRIT_TONGUE">
+		<description>
+			<p>You have an innate knack for speaking to the spirit world. You know the <i>message</i> cantrip. When you reach 3rd level, you can cast the <i>charm person</i> spell with this trait (targeting only undead creatures), and starting at 5th level, you can cast the <i>enthrall</i> spell with it. Once you cast a non‑cantrip spell with this trait, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the message cantrip. Wisdom is your spellcasting ability for this spell.</description>
+			<description level="3">You know the message cantrip. You can cast the charm person spell once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+			<description level="5">You know the message cantrip. You can cast the charm person and enthrall spells once per long rest. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MESSAGE" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" level="5"/>
+		</rules>
+	</element>
+
+</elements>

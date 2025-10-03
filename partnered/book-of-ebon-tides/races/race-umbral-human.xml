@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Umbral Human</name>
+		<description>Umbral Human from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="race-umbral-human.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-umbral-human.xml" />
+		</update>
+	</info>
+
+	<element name="Umbral Human" type="Race" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_UMBRAL_HUMAN">
+		<description>
+			<p>The Shadow Realm twists beings with its magic, and in the case of the umbral humans, this influence can have radical effects. These umbral folk are not merely humans corrupted by shadow but rather slowly transformed by their exposure to shadow over generations, gradually becoming inured to it. These are the changelings.</p>
+			<p class="indent">Beyond shadow's natural and inevitable influence, the shadow fey have long experimented with the shadows and its effects on mortals, whether to punish the foolish or to create better servants—or just for fun—and some umbral humans, those that survive, are the result of these rituals. These twisted souls are often labeled as the gifted by others, but they rarely if ever think of themselves in such terms.</p>
+			<h4>Umbral Human Traits</h4>
+			<p>Your umbral human character has certain characteristics in common with all umbral humans.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> You may choose one score to increase by 2 and a different score to increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Your natural aging process slows and becomes similar to that of an elf or shadow fey.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Umbral humans have often walked a troubling path to become what they are. This tends to push umbral humans toward neutral or chaotic alignments, but all variations exist.</p>
+			<p class="indent"><strong><em>Size.</em></strong> As with humans from the Material Plane, umbral humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet as though it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Dark Infusion.</em></strong> You have resistance to cold damage.</p>
+			<p class="indent"><strong><em>Fade Away.</em></strong> While standing perfectly still, you can use an action to become invisible. You become visible again if you move or take an action. You can use this feature a number of times per day equal to your proficiency bonus.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Umbral.</p>
+			<p class="indent"><strong><em>Subtypes.</em></strong> The generational infusion of shadow manifests itself in different ways, but two especially noteworthy categories of umbral humans exist: changelings and the gifted. Choose one of the two subraces presented below.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Umbral Human)" supports="Custom Ability Score Increase 2" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Umbral Human)" supports="Custom Ability Score Increase 1" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" requirements="!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_MOVEMENT_SPEED" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Grant" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Umbral Human)" supports="Custom Race Language||BOET Umbral"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_DARK_INFUSION" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_FADE_AWAY" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_SUBTYPES" />
+		</rules>
+	</element>
+
+	<element name="Dark Infusion" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_DARK_INFUSION">
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	
+	<element name="Fade Away" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_FADE_AWAY">
+		<description>
+			<p>While standing perfectly still, you can use an action to become invisible. You become visible again if you move or take an action. You can use this feature a number of times per day equal to your proficiency bonus.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Day">
+			<description>While standing perfectly still, you can become invisible. You become visible again if you move or take an action.</description>
+		</sheet>
+	</element>
+
+	<element name="Subtypes" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_SUBTYPES">
+		<description>
+			<p>The generational infusion of shadow manifests itself in different ways, but two especially noteworthy categories of umbral humans exist: changelings and the gifted. Choose one of the two subraces presented below.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Umbral Human Subrace" supports="BOET Umbral Human Subrace" />
+		</rules>
+	</element>
+
+	<!--Changeling-->
+	<element name="Changeling" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_UMBRAL_HUMAN_CHANGELING">
+		<supports>BOET Umbral Human Subrace</supports>
+		<description>
+			<p>Changelings are the natural result of humans adapting to a life in the shadows over multiple generations. Originally, humans were stolen from the mortal lands to serve their shadow fey masters—or just on a whim—and many more humans simply got lost on a shadow road or abandoned and ultimately became stranded in the Shadow Realm. And that new life in shadows must ultimately change a mortal.</p>
+			<p class="indent">Changelings resemble their cousins from the mortal lands but with the hallmarks of a life in the shadows, similar to how shadow fey differ from other elves. Their skin color tends toward alabaster white, ebon black, or subtle grays. Some have even grown rudimentary horns, like shadow fey. Their appearance may change further in generations to come—perhaps constantly evolving and even drastically diverging in some ways.</p>
+			<h4>Changeling Names</h4>
+			<p>Changelings typically take on the naming customs of the dominant peoples in the communities they grow up in. Where umbral humans are concentrated, the newcomers will often retain naming customs from the mortal lands from whence they originated—if their memories remain—while long-settled umbral human families use an amalgam of naming customs. For those communities of long standing within shadow, the naming follows a blend of styles in a linguistic melting pot.</p>
+			<ul class="unstyled">
+				<li><strong>Male Umbral Human Names:</strong> Abradal, Dalid, Haggar, Hosano, Juns, Korim, Masoosh, Obrax, Ulaf, Woldemar.</li>
+				<li><strong>Female Umbral Human Names:</strong> Analinda, Breck, Cloria, Helgamet, Linnet, Maswen, Nuriam, Ranna, Siffar, Soffy, Ulsa.</li>
+			</ul>
+			<h4>Changeling Umbral Human Traits</h4>
+			<p>You are a changeling, a human adapted to the shadows, thriving in its embrace.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Cover Story.</em></strong> You gain proficiency in the Deception or Persuasion skill.</p>
+			<p class="indent"><strong><em>Shadow Glamour.</em></strong> You can use an action to cast the <i>disguise self</i> spell at will.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Abradal, Dalid, Haggar, Hosano, Juns, Korim, Masoosh, Obrax, Ulaf, Woldemar</set>
+			<set name="names" type="female">Analinda, Breck, Cloria, Helgamet, Linnet, Maswen, Nuriam, Ranna, Siffar, Soffy, Ulsa</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<sheet display="false" alt="Changeling Umbral Human" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Changeling)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_CHANGELING_COVER_STORY" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_CHANGELING_SHADOW_GLAMOUR" />
+		</rules>
+	</element>
+
+	<element name="Cover Story" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_CHANGELING_COVER_STORY">
+		<description>
+			<p>You gain proficiency in the Deception or Persuasion skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Cover Story" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Cover Story)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Shadow Glamour" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_CHANGELING_SHADOW_GLAMOUR">
+		<description>
+			<p>You can use an action to cast the <i>disguise self</i> spell at will.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can cast the disguise self spell at will.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+
+	<!--The Gifted-->
+	<element name="The Gifted" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_UMBRAL_HUMAN_GIFTED">
+		<supports>BOET Umbral Human Subrace</supports>
+		<description>
+			<p>Dealing with the fey is dangerous, and the gifted are living proof. These broken souls are those umbral humans that have drunk a bit too deeply, too quickly, of the shadows. This transformation is often initiated by the shadow fey, though not always, for there are many dark powers in the shadows. It could be an unwilling change, forced upon an unfortunate soul, or it could be in payment for some fey pact, whether as boon or bane.</p>
+			<p class="indent">The gifted can vary widely in their physical appearance, depending on the nature of the change. Sometimes they appear as "normal" umbral humans and sometimes they'll appear as shadow fey. Still other times, the change can cause minor cosmetic changes or even more dramatic and severe changes: tails, hooves, vestigial wings, and the like are not unknown—not to mention the mental and emotional alterations that can accompany them. No matter how small the physical change though, a gifted always bears some sign visible to at least themselves.</p>
+			<p class="indent">Occasionally, the change robs the individual of their memories.</p>
+			<h4>Gifted Names</h4>
+			<p>Gifted umbral humans typically follow the same naming customs as changelings. However, many take the opportunity to completely reinvent themselves, if their change comes later in life, in name and even in personality traits.</p>
+			<h4>Gifted Umbral Folk Traits</h4>
+			<p>You are of the gifted, granted potent fey abilities.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Cursed Infusion.</em></strong> You have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Shadow Gift.</em></strong> You struck a bargain with a shadow fey to receive a gift, but it came at a terrible price. Choose one of the options below to determine the benefit and penalty you possess (or discuss other options with your GM):</p>
+			<ul>
+				<li>Increase one of your ability scores by 6 (up to 20). Reduce two different ability scores by 2.</li>
+				<li>You no longer need to eat or breathe to survive and require only 4 hours for a long rest. Gain one level of exhaustion. This level of exhaustion cannot be removed by any means magical or non-magical.</li>
+				<li>Cut your current base movement speed in half. Gain a fly, swim, or climb speed equal to your newly halved base movement speed.</li>
+				<li>You become proficient in one skill of your choice and always roll ability checks made with that skill at advantage. Choose a second skill, and always roll ability checks made with that skill at disadvantage.</li>
+				<li>Each day at dawn, you gain temporary hit points equal to your Constitution score. You are no longer able to spend hit dice to heal during short rests.</li>
+			</ul>
+		</description>
+		<sheet display="false" alt="Gifted Umbral Human" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (The Gifted)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_DARK_INFUSION" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT" />
+		</rules>
+	</element>
+
+	<element name="Dark Infusion" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_DARK_INFUSION">
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Shadow Gift" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT">
+		<description>
+			<p>You struck a bargain with a shadow fey to receive a gift, but it came at a terrible price. Choose one of the options below to determine the benefit and penalty you possess (or discuss other options with your GM):</p>
+			<ul>
+				<li>Increase one of your ability scores by 6 (up to 20). Reduce two different ability scores by 2.</li>
+				<li>You no longer need to eat or breathe to survive and require only 4 hours for a long rest. Gain one level of exhaustion. This level of exhaustion cannot be removed by any means magical or non-magical.</li>
+				<li>Cut your current base movement speed in half. Gain a fly, swim, or climb speed equal to your newly halved base movement speed.</li>
+				<li>You become proficient in one skill of your choice and always roll ability checks made with that skill at advantage. Choose a second skill, and always roll ability checks made with that skill at disadvantage.</li>
+				<li>Each day at dawn, you gain temporary hit points equal to your Constitution score. You are no longer able to spend hit dice to heal during short rests.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Shadow Gift" supports="BOET Shadow Gift" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase and Reduction" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_ABILITY_SCORE_INCREASE_REDUCTION">
+		<supports>BOET Shadow Gift</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your ability scores by 6 (up to 20). Reduce two different ability scores by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +6 (Shadow Gift)" supports="BOET Shadow Gift Ability Score Improvement" />
+			<select type="Ability Score Improvement" name="Ability Score Diminishment -2 (Shadow Gift)" supports="BOET Shadow Gift Ability Score Diminishment" number="2" />
+		</rules>
+	</element>
+	<element name="Exhaustion" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_EXHAUSTION">
+		<supports>BOET Shadow Gift</supports>
+		<compendium display="false" />
+		<description>
+			<p>You no longer need to eat or breathe to survive and require only 4 hours for a long rest. Gain one level of exhaustion. This level of exhaustion cannot be removed by any means magical or non-magical.</p>
+		</description>
+		<sheet alt="Shadow Gift">
+			<description>You no longer need to eat or breathe to survive and require only 4 hours for a long rest. Gain one level of exhaustion. This level of exhaustion cannot be removed by any means magical or non-magical.</description>
+		</sheet>
+	</element>
+	<element name="Movement Speed" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_MOVEMENT_SPEED">
+		<supports>BOET Shadow Gift</supports>
+		<compendium display="false" />
+		<description>
+			<p>Cut your current base movement speed in half. Gain a fly, swim, or climb speed equal to your newly halved base movement speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="15" bonus="base" />
+			<select type="Racial Trait" name="Movement Speed (Shadow Gift)" supports="BOET Shadow Gift Movement Speed" />
+		</rules>
+	</element>
+	<element name="Skill Advantage and Disadvantage" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_DISADVANTAGE">
+		<supports>BOET Shadow Gift</supports>
+		<compendium display="false" />
+		<description>
+			<p>You become proficient in one skill of your choice and always roll ability checks made with that skill at advantage. Choose a second skill, and always roll ability checks made with that skill at disadvantage.</p>
+		</description>
+		<sheet alt="Shadow Gift">
+			<description>You always roll {{boet-gifted-advantage}} checks at advantage, but you always roll {{boet-gifted-disadvantage}} checks at disadvantage.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Skill Proficiency and Advantage (Shadow Gift)" supports="BOET Shadow Gift Skill Advantage" />
+			<select type="Racial Trait" name="Skill Disadvantage (Shadow Gift)" supports="BOET Shadow Gift Skill Disadvantage" />
+		</rules>
+	</element>
+	<element name="Temporary Hit Points" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_TEMPORARY_HIT_POINTS">
+		<supports>BOET Shadow Gift</supports>
+		<compendium display="false" />
+		<description>
+			<p>Each day at dawn, you gain temporary hit points equal to your Constitution score. You are no longer able to spend hit dice to heal during short rests.</p>
+		</description>
+		<sheet alt="Shadow Gift">
+			<description>Each day at dawn, you gain {{constitution}} temporary hp. You are no longer able to spend hit dice to heal during short rests.</description>
+		</sheet>
+	</element>
+
+	<!--Ability Score Options-->
+	<element name="Strength" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_STRENGTH_INCREASE_6">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_STRENGTH_DECREASE_2</requirements>
+		<supports>BOET Shadow Gift Ability Score Improvement</supports>
+		<description>
+			<p>Your Strength increases by 6.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="6" alt="Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Dexterity" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_DEXTERITY_INCREASE_6">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_DEXTERITY_DECREASE_2</requirements>
+		<supports>BOET Shadow Gift Ability Score Improvement</supports>
+		<description>
+			<p>Your Dexterity increases by 6.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="6" alt="Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Constitution" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CONSTITUTION_INCREASE_6">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CONSTITUTION_DECREASE_2</requirements>
+		<supports>BOET Shadow Gift Ability Score Improvement</supports>
+		<description>
+			<p>Your Constitution increases by 6.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="6" alt="Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_INTELLIGENCE_INCREASE_6">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_INTELLIGENCE_DECREASE_2</requirements>
+		<supports>BOET Shadow Gift Ability Score Improvement</supports>
+		<description>
+			<p>Your Intelligence increases by 6.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="6" alt="Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_WISDOM_INCREASE_6">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_WISDOM_DECREASE_2</requirements>
+		<supports>BOET Shadow Gift Ability Score Improvement</supports>
+		<description>
+			<p>Your Wisdom increases by 6.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="6" alt="Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CHARISMA_INCREASE_6">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CHARISMA_DECREASE_2</requirements>
+		<supports>BOET Shadow Gift Ability Score Improvement</supports>
+		<description>
+			<p>Your Charisma increases by 6.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="6" alt="Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Strength" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_STRENGTH_DECREASE_2">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_STRENGTH_INCREASE_6</requirements>
+		<supports>BOET Shadow Gift Ability Score Diminishment</supports>
+		<description>
+			<p>Your Strength decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Dexterity" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_DEXTERITY_DECREASE_2">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_STRENGTH_DEXTERITY_6</requirements>
+		<supports>BOET Shadow Gift Ability Score Diminishment</supports>
+		<description>
+			<p>Your Dexterity decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Constitution" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CONSTITUTION_DECREASE_2">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CONSTITUTION_INCREASE_6</requirements>
+		<supports>BOET Shadow Gift Ability Score Diminishment</supports>
+		<description>
+			<p>Your Constitution decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Intelligence" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_INTELLIGENCE_DECREASE_2">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_INTELLIGENCE_INCREASE_6</requirements>
+		<supports>BOET Shadow Gift Ability Score Diminishment</supports>
+		<description>
+			<p>Your Intelligence decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_WISDOM_DECREASE_2">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_WISDOM_INCREASE_6</requirements>
+		<supports>BOET Shadow Gift Ability Score Diminishment</supports>
+		<description>
+			<p>Your Wisdom decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Ability Score Improvement" source="Internal" id="ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CHARISMA_DECREASE_2">
+		<requirements>!ID_KBP_BOET_OPTION_UMBRAL_HUMAN_GIFTED_CHARISMA_INCREASE_6</requirements>
+		<supports>BOET Shadow Gift Ability Score Diminishment</supports>
+		<description>
+			<p>Your Charisma decreases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="-2" alt="Ability Score Decrease" />
+		</rules>
+	</element>
+
+	<!--Movement Speed Options-->
+	<element name="Fly Speed" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_MOVEMENT_SPEED_FLY">
+		<supports>BOET Shadow Gift Movement Speed</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain a fly speed equal to your newly halved base movement speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Swim Speed" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_MOVEMENT_SPEED_SWIM">
+		<supports>BOET Shadow Gift Movement Speed</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain a swim speed equal to your newly halved base movement speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Climb Speed" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_MOVEMENT_SPEED_CLIMB">
+		<supports>BOET Shadow Gift Movement Speed</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain a climb speed equal to your newly halved base movement speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Skill Advantage Options-->
+	<element name="Acrobatics" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ACROBATICS">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ACROBATICS</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Acrobatics skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<stat inline="true" name="boet-gifted-advantage" value="Acrobatics"/>
+		</rules>
+	</element>
+
+	<element name="Animal Handling" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ANIMAL_HANDLING">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ANIMAL_HANDLING</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Animal Handling skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<stat inline="true" name="boet-gifted-advantage" value="Animal Handling"/>
+		</rules>
+	</element>
+
+	<element name="Arcana" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ARCANA">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ARCANA</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Arcana skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<stat inline="true" name="boet-gifted-advantage" value="Arcana"/>
+		</rules>
+	</element>
+
+	<element name="Athletics" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ATHLETICS">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ATHLETICS</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Athletics skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<stat inline="true" name="boet-gifted-advantage" value="Athletics"/>
+		</rules>
+	</element>
+
+	<element name="Deception" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_DECEPTION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_DECEPTION</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Deception skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<stat inline="true" name="boet-gifted-advantage" value="Deception"/>
+		</rules>
+	</element>
+
+	<element name="History" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_HISTORY">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_HISTORY</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the History skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<stat inline="true" name="boet-gifted-advantage" value="History"/>
+		</rules>
+	</element>
+
+	<element name="Insight" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_INSIGHT">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_INSIGHT</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Insight skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<stat inline="true" name="boet-gifted-advantage" value="Insight"/>
+		</rules>
+	</element>
+
+	<element name="Intimidation" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_INTIMIDATION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_INTIMIDATION</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Intimidation skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<stat inline="true" name="boet-gifted-advantage" value="Intimidation"/>
+		</rules>
+	</element>
+
+	<element name="Investigation" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_INVESTIGATION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_INVESTIGATION</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Investigation skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<stat inline="true" name="boet-gifted-advantage" value="Investigation"/>
+		</rules>
+	</element>
+
+	<element name="Medicine" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_MEDICINE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_MEDICINE</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Medicine skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<stat inline="true" name="boet-gifted-advantage" value="Medicine"/>
+		</rules>
+	</element>
+
+	<element name="Nature" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_NATURE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_NATURE</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Nature skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<stat inline="true" name="boet-gifted-advantage" value="Nature"/>
+		</rules>
+	</element>
+
+	<element name="Perception" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_PERCEPTION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_PERCEPTION</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Perception skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<stat inline="true" name="boet-gifted-advantage" value="Perception"/>
+		</rules>
+	</element>
+
+	<element name="Performance" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_PERFORMANCE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_PERFORMANCE</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Performance skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<stat inline="true" name="boet-gifted-advantage" value="Performance"/>
+		</rules>
+	</element>
+
+	<element name="Persuasion" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_PERSUASION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_PERSUASION</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Persuasion skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<stat inline="true" name="boet-gifted-advantage" value="Persuasion"/>
+		</rules>
+	</element>
+
+	<element name="Religion" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_RELIGION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_RELIGION</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Religion skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<stat inline="true" name="boet-gifted-advantage" value="Religion"/>
+		</rules>
+	</element>
+
+	<element name="Sleight of Hand" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_SLEIGHT_OF_HAND">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_SLEIGHT_OF_HAND</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Sleight of Hand skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<stat inline="true" name="boet-gifted-advantage" value="Sleight of Hand"/>
+		</rules>
+	</element>
+
+	<element name="Stealth" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_STEALTH">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_STEALTH</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Stealth skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<stat inline="true" name="boet-gifted-advantage" value="Stealth"/>
+		</rules>
+	</element>
+
+	<element name="Survival" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_SURVIVAL">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_SURVIVAL</requirements>
+		<supports>BOET Shadow Gift Skill Advantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in the Survival skill and always roll ability checks made with that skill at advantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<stat inline="true" name="boet-gifted-advantage" value="Survival"/>
+		</rules>
+	</element>
+
+	<!--Skill Disadvantage Options-->
+	<element name="Acrobatics" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ACROBATICS">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ACROBATICS</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Acrobatics skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Acrobatics"/>
+		</rules>
+	</element>
+
+	<element name="Animal Handling" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ANIMAL_HANDLING">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ANIMAL_HANDLING</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Animal Handling skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Animal Handling"/>
+		</rules>
+	</element>
+
+	<element name="Arcana" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ARCANA">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ARCANA</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Arcana skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Arcana"/>
+		</rules>
+	</element>
+
+	<element name="Athletics" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_ATHLETICS">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_ATHLETICS</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Athletics skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Athletics"/>
+		</rules>
+	</element>
+
+	<element name="Deception" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_DECEPTION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_DECEPTION</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Deception skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Deception"/>
+		</rules>
+	</element>
+
+	<element name="History" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_HISTORY">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_HISTORY</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the History skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="History"/>
+		</rules>
+	</element>
+
+	<element name="Insight" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_INSIGHT">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_INSIGHT</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Insight skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Insight"/>
+		</rules>
+	</element>
+
+	<element name="Intimidation" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_INTIMIDATION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_INTIMIDATION</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Intimidation skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Intimidation"/>
+		</rules>
+	</element>
+
+	<element name="Investigation" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_INVESTIGATION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_INVESTIGATION</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Investigation skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Investigation"/>
+		</rules>
+	</element>
+
+	<element name="Medicine" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_MEDICINE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_MEDICINE</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Medicine skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Medicine"/>
+		</rules>
+	</element>
+
+	<element name="Nature" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_NATURE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_NATURE</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Nature skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Nature"/>
+		</rules>
+	</element>
+
+	<element name="Perception" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_PERCEPTION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_PERCEPTION</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Perception skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Perception"/>
+		</rules>
+	</element>
+
+	<element name="Performance" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_PERFORMANCE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_PERFORMANCE</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Performance skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Performance"/>
+		</rules>
+	</element>
+
+	<element name="Persuasion" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_PERSUASION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_PERSUASION</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Persuasion skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Persuasion"/>
+		</rules>
+	</element>
+
+	<element name="Religion" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_RELIGION">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_RELIGION</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Religion skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Religion"/>
+		</rules>
+	</element>
+
+	<element name="Sleight of Hand" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_SLEIGHT_OF_HAND">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_SLEIGHT_OF_HAND</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Sleight of Hand skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Sleight of Hand"/>
+		</rules>
+	</element>
+
+	<element name="Stealth" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_STEALTH">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_STEALTH</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Stealth skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Stealth"/>
+		</rules>
+	</element>
+
+	<element name="Survival" type="Racial Trait" source="Player’s Handbook" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_DISADVANTAGE_SURVIVAL">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_SURVIVAL</requirements>
+		<supports>BOET Shadow Gift Skill Disadvantage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always roll ability checks made with the Survival skill at disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="boet-gifted-disadvantage" value="Survival"/>
+		</rules>
+	</element>
+	
+</elements>

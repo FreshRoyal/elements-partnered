@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="spell.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/spells.xml" />
+		</update>
+	</info>
+
+    <element name="Bitter Wind" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BITTER_WIND">
+        <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Freezing wind, forming a line 120 feet long and 20 feet wide, blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 30 feet away from you in a direction following the line. Creatures that fail the saving throw also take 1d12 cold damage and are knocked prone. If cast during cold weather or in dark or shadowy conditions, the saving throw is made with disadvantage. Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.</p>
+            <p class="indent">As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>
+            <p class="indent">The bitter wind disperses gas or vapor, and it extinguishes candles, torches, lanterns, and similar flames in the area.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the saving throw is made with disadvantage, and the damage increases by 1d12 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (120-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a birch wood fan</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <element name="Blade of Blood and Bone" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BLADE_OF_BLOOD_AND_BONE">
+        <supports>Paladin, Ranger, Warlock</supports>
+        <description>
+            <p>When you cast this spell, you cut your body with the material component, your hit point maximum decreases by 3 and the material component disappears. For the duration, you can use a bonus action to draw a blade made of your own bone, blood, and sinew from your body. The blade is a magical weapon, uses your spell attack bonus when you attack with it, and deals 1d6 slashing damage on a hit. You are considered proficient with the blade. As a bonus action, you can slide the blade back into your body to conceal it. When the duration ends, the incision in your body disappears, your hit point maximum is restored, and the material component reappears.</p>
+            <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage dealt by the blade increases by 1d6 for every two slot levels above 2nd, and your hit point maximum decreases by an additional amount equal to the level of the slot used.</p>
+        </description>
+        <setters>
+			<set name="keywords">slashing</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">24 hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dagger or short sword, which is not consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <element name="Bright Sparks" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BRIGHT_SPARKS">
+        <supports>Bard, Cleric, Sorcerer, Wizard</supports>
+        <description>
+            <p>Sparks fly from your fingers for a moment, generating bright blue light. This illuminates the region around you to a distance of 60 feet until the start of your next turn. Wisdom (Perception) checks have advantage to spot creatures hidden in shadows.</p>
+        </description>
+        <setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">flint and steel</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Burning Radiance" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_BURNING_RADIANCE">
+		<supports>Cleric, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A line of light 60 feet long and 5 feet wide emanates from you in a direction of your choice. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature takes 10d8 radiant damage and catches fire; until someone takes an action to douse the fire, the creature takes 1d10 fire damage at the start of each of its turns. A successful saving throw halves the damage and prevents a creature from catching fire.</p>
+			<p class="indent">The burning radiance ignites flammable objects in the area that aren't being worn or carried.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant, fire</set>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self (60-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Charnel Banquet" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_CHARNEL_BANQUET">
+		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You transform a field of carrion into an empowering feast. For the duration, all creatures of your choice can consume the decaying flesh of any creature. If a creature has eaten of the carrion for the duration, it recovers 10d6 hit points, recovers half its expended Hit Dice (minimum 1), removes half its levels of exhaustion (minimum 1), and gains all the benefits of finishing a short rest.</p>
+			<p class="indent">Creatures affected by this spell must succeed on a Constitution saving throw at the end of the duration or be poisoned for 1 hour.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If this spell is cast using a 9th‑level slot, the affected creatures remove all levels of exhaustion gained and recover all expended Hit Dice in addition to the effects noted above.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 minute</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silt scarf</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Child of Light and Darkness" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_CHILD_OF_LIGHT_AND_DARKNESS">
+		<supports>Cleric, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 1-10, you take the form of a humanoid made of pure, searing light. On a roll of 11-20, you take the form of a humanoid made of bone-chilling darkness. In both forms, you have immunity to bludgeoning, piercing, and slashing damage from nonmagical attacks, and a creature that attacks you has disadvantage on the attack roll. You gain additional benefits while in either form.</p>
+			<p class="indent"><b><i>In Light Form.</i></b> You shed bright light in a 60-foot radius and dim light for an additional 60 feet, you are immune to fire damage, and you have resistance to radiant damage. Once per turn as a bonus action, you can teleport to a space you can see within the light you shed.</p>
+			<p class="indent"><b><i>In Darkness Form.</i></b> You are immune to cold damage, and you have resistance to necrotic damage. Once per turn as a bonus action, you can target up to three Large or smaller creatures within 30 feet of you. Each target must succeed on a Strength saving throw or be pulled or pushed (your choice) up to 20 feet straight toward or away from you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">8</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pebble from the Shadow Realm that has been left in the sun</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Cloak of Shadow" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_CLOAK_OF_SHADOW">
+		<supports>Wizard</supports>
+		<description>
+			<p>You cloak yourself in shadow, giving you advantage on Dexterity (Stealth) checks against creatures that rely on sight.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Conjure Ferryman" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_CONJURE_FERRYMAN">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>When standing on a riverbank or on the shore of some other body of water, you summon a ferry spirit and its boat, which appears in an unoccupied space that you can see within range. The spirit disappears when it drops to 0 hit points or when the spell ends. The spirit is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It takes you and up to 1 companion per your level across the river or body of water (no action required by you) or to other locations along the same water. If you don't issue any such commands, it defends itself from hostile creatures but otherwise takes no actions.</p>
+			<p class="indent">If your concentration is broken, the ferry and its guide don't disappear. Instead, you lose control of the conjured spirit, it becomes hostile toward you and your companions, and it might attack. An uncontrolled ferryman can't be dismissed by you, and it disappears 1 hour after you summoned it.</p>
+			<p class="indent">The GM has the ferry spirit's statistics (using those for lesser lunar devil or bearded devil).</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the boat can take you and your companions across a planar boundary into the Ethereal Plane and then exit on another body of water (and using a barbed devil). When you cast this spell using a spell slot of 5th level or higher, it can traverse the River Styx between planes, taking you and your companions to distant parts of the multiverse (and using a lunar devil, see Tome of Beasts, or bone devil).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjurattion</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a couple of copper coins</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Conjure Giant" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_CONJURE_GIANT">
+		<supports>Druid, Wizard</supports>
+		<description>
+			<p>You summon a giant of challenge rating 7 or lower, which appears in an unoccupied space that you can see within range. The giant disappears when they drop to 0 hit points or when the spell ends. The giant is friendly to you and your companions for the duration. Roll initiative for the giant, which has their own turns. They obey any verbal commands that you issue to them (no action required by you) as long as the commands don't violate their alignment. If you don't issue any commands to the giant, they defend themself from hostile creatures but otherwise take no actions. If your concentration is broken, the giant doesn't disappear, but instead, you lose control of them: the giant becomes hostile toward you and your companions and might attack. An uncontrolled giant can't be dismissed by you, and they disappear 1 hour after summoned.</p>
+			<p class="indent">The GM has the giant's statistics.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">Conjurattion</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Darkbolt" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DARKBOLT">
+		<supports>Sorcerer, Warlock, Wizard, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You utter a quick invocation to create a black nimbus around your hand, then hurl three rays of darkness at one or more targets in range. The rays can be divided between targets however you like. Make a ranged spell attack for each target (not each ray); each ray that hits deals 1d10 cold damage. A target that was hit by one or more rays must make a successful Constitution saving throw or be unable to use reactions until the start of its next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Deep Roots of the Moon" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DEEP_ROOTS_OF_THE_MOON">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<p>You bind shadow material into an enchanted fey road, fixing its path between two points so as to hold against ordinary weather and mundane alteration and to stretch and bend in shadow tides. This is called a shadow road, and it is subject to normal wear, to destruction by those with the tools to break it, and to magical destruction by hostile forces, such as by <i>dispel magic</i>.</p>
+			<p class="indent">If you wish, the spell may include a prayer or offering that serves as a keyword. This secret of the road allows anyone who knows and uses it to add one or two effects to the road, such as faster travel on the road (up to double the overland speed usually permitted) or locking and unlocking the road's portals outside of the Shadow Realm. Those who do not know the prayer, ritual, or offering cannot enter the road from outside of the Shadow Realm.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Permanent</set>
+			<set name="range">10 miles per caster</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a set of moonstones worth at least 50 gp per mile of enchanted road for a road entirely within the Shadow Realm or a set of opals worth at least 500 gp per mile for a road that stretches into another plane</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Doom of False Friends" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DOOM_OF_FALSE_FRIENDS">
+		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You sever the bonds of friendship and affection between your targets. Target two creatures of your choice within range that can hear and see you. Each target must make a Charisma saving throw. On a failed save, a target must use its movement and action to move toward and attack the other target of the spell. If an unaffected target of the spell moves out of range, the other target must make every effort to find and attack it. At the end of each turn that one of the targets cannot see the other target, it can make a new saving throw, overcoming the compulsion on a successful save.</p>
+			<p class="indent">Once all the spell's targets make successful saving throws, you become stunned until the end of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a 9th level slot, you can target two additional creatures. Each of the targets can decide on its turn which of the other targets it attacks or otherwise works against for the moment.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">8</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pink rose petal</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Doom of Poor Fortune" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DOOM_OF_POOR_FORTUNE">
+		<supports>Bard, Cleric, Paladin, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You turn luck against a creature of your choice within range. When the target makes an ability check, they must first make a Charisma saving throw or the check fails. This spell persists once cast, even if the target moves out of range. If cast with a higher-level slot, each subsequent effect is added to the effect noted above.</p>
+			<p class="indent">If the target ultimately succeeds on the check (or saving throw or attack at higher levels), then you take 1 psychic damage. If you ever lose concentration on the spell, you take 1d4 psychic damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, when the target is required to make a saving throw, it must make a Charisma saving throw in place of the required one, unless the required one is more difficult to make. When you cast this spell with a 4th-level slot, when the target makes an attack roll, it must make a Charisma saving throw prior to making the attack. On a failed save, the attack fails. If you cast this spell with an 8th level slot, this spell persists for the duration without requiring concentration.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dead clover</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Doom of Stacked Stones" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DOOM_OF_STACKED_STONES">
+		<supports>Druid, Sorcerer, Wizard, SPell Saving Throw</supports>
+		<description>
+			<p>You and three creatures of your choice within range must succeed on a Constitution saving throw when the spell is cast and again at the start of each of your turns while the spell is in effect. A creature whose saving throw fails is restrained. If one of the three targeted creatures fails this saving throw, as many as two other creatures (per initial target), each within 30 feet of the initial target, must make the same save. A restrained creature must continue to make saving throws each turn, and their condition worsens on a failure, as follows:</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Number of Turns Affected</td><td>Condition</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1 (spell is cast)</td><td><i>Restrained</i></td></tr>
+					<tr><td>2</td><td><i>Incapacitated</i></td></tr>
+					<tr><td>3</td><td><i>Stunned</i></td></tr>
+					<tr><td>4</td><td><i>Paralyzed</i></td></tr>
+					<tr><td>5</td><td><i>Petrified (turned to stone)</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a granite pebble</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Doom of Summer Years" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DOOM_OF_SUMMER_YEARS">
+		<supports>Cleric, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You rapidly reduce the age of your target. Choose a living creature within range. At the time the spell is cast and again at the start of each of your turns, your target must make a Constitution saving throw, decreasing 1d4 + 1 years in age on a successful save or 1 year on a failed one. A target ceases the de-aging process once it is reduced to infancy. A creature that is reduced in age retains all of its memories, ability scores, and features, but it gains 1 level of exhaustion for each 5 years it is reduced in age. A Medium creature reduced to childhood cannot use weapons with the heavy property. A Medium creature reduced to infancy cannot wield weapons or use tools. If the spell ends before 1 minute has passed, the target reverts to its true age. Otherwise, the targets is permanently reduced to its new age. Remove curse and greater restoration can be used to return a creature to its true age.</p>
+			<p class="indent">If you ever unintentionally lose concentration on the spell, you gain levels in exhaustion equal to what the target gained from this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sand from an hourglass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Douse Light" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DOUSE_LIGHT">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>With a simple gesture, you can put out a single small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a light or dancing lights cantrip.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Drayfn's Bane of Excellence" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DRAYFNS_BANE_OF_EXCELLENCE">
+		<supports>Bard, Cleric, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A creature of your choice within range must make a Charisma saving throw. On a failed save, the next ability check, attack roll, or saving throw the target makes, within the duration, that results in a roll of 20 on a d20, fails to have any effect. The number of times this cantrip can turn a natural 20 into a failure increases by one when you reach 5th level (two natural 20s), 11th level (three natural 20s), and 17th level (four natural 20s).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Drayfn's Blunted Bane" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DRAYFNS_BLUNTED_BANE">
+		<supports>Bard, Cleric, Paladin, Ranger, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Your target's weapon rapidly corrodes. A creature of your choice within range that is holding a manufactured, nonmagical weapon in one of its hands must succeed on a Strength saving throw. On a failed save, the target must roll all weapon damage dice twice and take the lower result. If the spell ends before 1 minute has passed, the target's weapon returns to its normal state. Otherwise, the weapon breaks down into a pile of rust or wood chips, as appropriate.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a rusty shard of iron</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Drayfn's Curse of Incompetence" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DRAYFNS_CURSE_OF_INCOMPETENCE">
+		<supports>Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Your target momentarily forgets its technical abilities. Select a creature within range that has an Intelligence of 3 or higher. Your target must make an Intelligence saving throw or be unable to add its proficiency bonus to any ability checks, attack rolls, or saving throws it makes. An affected creature can make a new saving throw at the end of each of its turns, regaining its proficiency bonus on a success.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a 5th‑level slot, the duration increases to concentration, up to 10 minutes. If you cast it using a 6th-level slot, the duration increases to concentration up to 1 hour. If you cast it using a 7th-level slot, the duration is 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a teardrop</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Drizzle" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_DRIZZLE">
+		<supports>Druid, Wizard</supports>
+		<description>
+			<p>You conjure up a very light rain, enough to dampen the ground in a 20-foot square but not enough to drink or to put out a fire of any size larger than a candle or match. If sustained for 1 minute, the ground is wet to the touch, and if sustained for 10 minutes, the affected area is slightly muddy or slippery, though not enough to impede movement. In freezing weather, this may generate a coating of thin ice.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ebon Tide" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_EBON_TIDE">
+		<supports>Cleric, Druid, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You generate a wave of shadow matter at a point on the ground that you can see within range. For the duration, black winds and currents of shadow matter whip in a 100-foot-radius circle centered on that point, modifying terrain and sometimes drowning creatures in the area. The area becomes difficult terrain. Each creature touching the ground must make a Constitution saving throw. On a failed save, the creature gains a level of exhaustion. When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked prone.</p>
+			<p class="indent">The ebon tide deals 30 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it sinks into the earth, consumed by the Shadow Realm. Any creature within a structure when it sinks must make a Constitution saving throw. On a failed save, the creature takes 2d12 necrotic damage, is knocked prone, and is blinded for 1 round. On a successful save, the creature takes half as much damage and doesn't fall prone or become blinded.</p>
+			<p class="indent">This spell can have additional effects depending on the terrain in the area, as determined by the GM. No more than two of the following effects can be the result of one casting of ebon tide.</p>
+			<p class="indent"><b><i>Hills and Hollows.</i></b> Ground rises or sinks throughout the spell's area at the start of your next turn after you cast the spell. These changes take the form of a hill, a slip fault (a new cliff), or a hollow. A total of 1d4 such hills, slip faults, or hollows open in locations chosen by the GM. A hollow or slip fault that opens beneath a structure causes it to automatically collapse (see above). A hollow or hill can alter the flow of local water, such as a moat, stream, or lake.</p>
+			<p class="indent"><b><i>Rivers, Shores, and Waters.</i></b> Water in the area can adopt an old course (such as an oxbow) or be swept into a new one, starting at the start of your next turn after you cast this spell. Only one such water element can be altered by the casting of this spell. (You cannot alter both a lake and a stream feeding it, for instance.)</p>
+			<p class="indent"><b><i>Shadow Mire.</i></b> All ground in the area of the spell becomes shadow mire (see Chapter 5 of Book of Ebon Tides) for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">7</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">500 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bottle of shadows</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Elf Shot" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_ELF_SHOT">
+		<supports>Bard, Sorcerer, Wizard, Spell Attack</supports>
+		<description>
+			<p>You pretend to shoot an arrow with a tiny bow. Make a ranged spell attack against a creature within range. On a hit, the target creature stumbles (is pushed) 5 feet in a random direction (roll a d8 and assign a direction to each die face), and its speed is 0 until the end of its next turn. Until the spell ends, you can make the attack again on each of your turns as an action.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pixie arrow</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Emerald Goblet" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_EMERALD_GOBLET">
+		<supports>Cleric, Paladin, Wizard</supports>
+		<description>
+			<p>You touch a drinking vessel and sprinkle acorn dust into it, which creates a shining green vessel filled with a green potion. Any creature that drinks from the goblet is protected against shadow corruption for 1 day.</p>
+			<p class="indent">The protection grants several additional benefits: you gain advantage to checks used to gather food within the Shadow Realm, and you gain darkvision to 30 feet (or extend your existing darkvision by 30 feet).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">24 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a powdered acorn, which the spell consumes, and a drinking vessel</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Faerie Toast" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_FAERIE_TOAST">
+		<supports>Bard, Cleric, Druid, Paladin, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You and up to five other creatures make a toast and drink to the lords and ladies of the fey courts. When you cast the spell, choose one of the following toasts, the targets of which must be within 10 feet of you throughout the casting.</p>
+			<p class="indent"><b><i>Commiseration.</i></b> Spellcasting participants can form or join a hag coven. While in the coven, each of the participants can share spell slots among themselves. Spells known by one member of the coven are known by all members of the coven for the duration and can be cast using any of the shared spell slots.</p>
+			<p class="indent"><b><i>Friendship.</i></b> Each of the participants in the toast becomes fey for the duration, in place of their original type, and their status increases by 2d6 while they are in the Shadow Realm or the Bright Lands.</p>
+			<p class="indent"><b><i>Husbandry.</i></b> For the duration, each of the participants can communicate with beasts as though they shared a language (though they gain no magical ability to influence them).</p>
+			<p class="indent"><b><i>Nightmares.</i></b> For the duration, the first time a creature comes within 30 feet of one of the participants, they must make a Wisdom saving throw or be frightened of all the participants for 1 minute.</p>
+			<p class="indent"><b><i>Playfulness.</i></b> Each participant grows gossamer wings, and for 10 rounds within the duration, they gain a fly speed equal to their walking speed. A participant that is not standing on a horizontal surface at the end of their turn falls to the ground.</p>
+			<p class="indent"><b><i>Restfulness.</i></b> Each of the participants gains advantage on saving throws against being charmed and can't be put to sleep by a spell or other magical effect for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bottle of shadows</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Feast of Flesh" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_FEAST_OF_FLESH">
+		<supports>Cleric, Paladin, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A creature of your choice within range is overcome with a need to consume the flesh of its own kind. The target must make a Charisma saving throw. On a failed save, its teeth become needlelike, and it becomes able to pinpoint creatures of the same type as it within 150 feet by scent. On its turn, the creature must move toward the nearest creature of its type by the fastest means possible. If it is within 5 feet of a creature of its type it must use its bonus action to make a bite attack against it. Your target has proficiency with its bite attack and deals damage equal to 1d6 + its Strength modifier. If a creature of its type is not present within 150 feet of the target, it must attack the closest living creature to it.</p>
+			<p class="indent">At the end of each of its turns and each time it takes damage, the target can make a new saving throw. The target has advantage on its saving throw if it is triggered by damage. On a success, the spell ends, and the target is poisoned for 1 hour, unless it is a cannibal or comes from a cannibalistic culture.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an animal tooth and a drop of your blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fire Dance" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_FIRE_DANCE">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You dance and twirl two sources of fire in a rapid pattern that leaves glowing trails. Creatures of your choice in the area that see your fire dance must make a Wisdom saving throw. Any creature that can't be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, a target becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
+			<p class="indent">The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor. The spell ends if you are incapacitated.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a burning mass of rags, a pair of torches, or similar fire in both hands</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fireflies" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_FIREFLIES">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<p>You summon a large volume of fireflies to illuminate a 15-foot-radius sphere for the duration. A few of the fireflies will settle on hidden or invisible creatures, making them somewhat easier to find. Attack rolls against invisible creatures in the area are no longer made with disadvantage, though attack rolls made by invisible creatures are still made with advantage, for only their general position is clearer by firefly light, not their specific movements. All Hide actions taken in the area are made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Flowering" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_FLOWERING">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<p>You summon a large volume of fireflies to illuminate a 15-foot-radius sphere for the duration. A few of the fireflies will settle on hidden or invisible creatures, making them somewhat easier to find. Attack rolls against invisible creatures in the area are no longer made with disadvantage, though attack rolls made by invisible creatures are still made with advantage, for only their general position is clearer by firefly light, not their specific movements. All Hide actions taken in the area are made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Gloaming" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_GLOAMING">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Magical gloom spreads from a point you choose within range to fill a 50-foot-radius sphere for the duration. The fading twilight spreads around corners. A creature with darkvision can see through this darkness, and any normal light can illuminate it. Ranged attacks made through the gloaming have disadvantage. If the point you choose is an object being worn or carried, the effect emanates from the object and moves with it. Completely covering the source of the gloaming with an opaque object, such as a bowl or a helm, blocks the darkness.</p>
+			<p class="indent">If any of this spell's area overlaps with an area of light created by a spell of 2nd level or higher, the effect is dispelled.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of smoked glass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Grim Harvest" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_GRIM_HARVEST">
+		<supports>Cleric, Druid, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You reap the life force of a dying creature and use it to empower the next spell you cast. Your target must be at 0 hit points and dying or must have died within the last round. If the target is dying, it must succeed on a Constitution saving throw or die. The next time you cast a spell, you gain 1d10 + your spellcasting ability modifier in temporary hit points and can choose one of the following effects to inflict on the target in addition to the usual effects of the spell you are casting. If you do not cast another spell within 1 minute of casting this one, the effect is lost.</p>
+			<p class="indent"><b><i>Clumsiness.</i></b> Your target's speed is halved for 1 minute, and it has disadvantage on Dexterity ability checks and saving throws. At the end of each of its turns, it can make a Constitution saving throw. If it succeeds, the effect ends.</p>
+			<p class="indent"><b><i>Fatiguing.</i></b> Your target must make a Constitution saving throw, gaining 1d4 levels of exhaustion on a failed save or 1 level of exhaustion on a successful one.</p>
+			<p class="indent"><b><i>Vampiric.</i></b> You recover a number of hit points equal to half the damage you dealt. If you dealt damage to multiple creatures, you recover half the amount of damage you dealt to one of the targets.</p>
+			<p class="indent"><b><i>Weakness</i></b> The target deals the minimum possible damage on melee attacks, if it hits, for 1 minute. At the end of each of its turns, it can make a Constitution saving throw. If it succeeds, the effect ends.</p>
+			<p class="indent"><b><i>Withering.</i></b> You deal an extra 4 dice of damage of the same type as the damage dice of the spell and all damage dealt by your spell becomes necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of gray sand and a bone chip</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Grim Shadows" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_GRIM_SHADOWS">
+		<supports>Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Sharp, spear-like shadows fill a 15-foot square of ground that you can see within range. For the duration, these shadows obscure creatures within the area, giving them half cover.</p>
+			<p class="indent">When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 1d8 piercing damage and be blinded until the spell ends. A creature that starts its turn in the area and is already blinded takes 1d8 piercing damage.</p>
+			<p class="indent">A creature blinded by grim shadows can use its action to make a Dexterity or Wisdom saving throw (its choice) against your spell save DC. On a success, its sight returns.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Hero of Fable" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_HERO_OF_FABLE">
+		<supports>Bard, Cleric, Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>You make a creature capable of great deeds, like a storybook champion, and at the same time empower that creature's foes to become worthy of a hero's attention. A creature of your choice within range gains advantage on all ability checks, attack rolls, and saving throws for the duration. At the same time, creatures that attack your target, or that make a saving throw against a spell or effect originating from your target, have advantage on their roll. If your target is unwilling, it must succeed on a Charisma saving throw to avoid the effects.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> You can target one additional creature for every slot level above 6th if you cast this spell using a 7th level or higher spell slot.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crown of laurel leaves</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Hibernation" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_HIBERNATION">
+		<supports>Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You hum a soothing melody and discard a bit of bear fur, which induces a soporific healing state in the next creature you touch. The target regains 1d6 hp and sleeps for 10 minutes per each hit point regained. If the creature is unwilling, it must succeed on a Constitution saving throw or fall asleep for the duration. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p>
+			<p class="indent">Each creature affected by this spell falls unconscious until the spell ends, the hibernating creature takes damage, or someone uses an action to shake or slap the hibernating creature awake. Undead and creatures immune to being charmed aren't affected by this spell.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If cast using 3rd-level or higher spell slot, you may touch one willing creature per level to induce hibernation.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">1 hour (see description)</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tuft of bear fur</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Knife of Fate" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_KNIFE_OF_FATE">
+		<supports>Cleric, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You speak a word of binding fate and point your dagger. A creature you can see within 60 feet of you must make a Wisdom saving throw. On a failed save, the target's fate is bound to one random ally of the target. Any damage or condition the target suffers is instead inflicted on the individual to whom they are bound, and vice versa. A creature can be bound to only one other creature at a time. This effect lasts until either of the affected creatures gains a level or are targeted by a <i>heal</i> spell or partake of a <i>heroes' feast</i> spell, lifting the binding.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Special</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver knife</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Krail's Maggot" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_KRAILS_MAGGOT">
+		<supports>Druid, Ranger, Warlock, Spell Attack</supports>
+		<description>
+			<p>A 6-inch-long maggot forms inside a creature of your choice within range and begins to devour the target from within. Make a melee spell attack against your target while in range. On a hit, the target takes necrotic damage from the maggot equal to 1d8 + your spellcasting ability modifier. As a bonus action on each of your subsequent turns, you can repeat the attack against your target.</p>
+			<p class="indent">As an action on its turn, your target can make a melee weapon attack against the maggot with a weapon that deals piercing or slashing damage. The maggot has AC equal to your spell save DC and 8 hit points per spell slot level used to create it. If your target hits the maggot, half of the damage is dealt to the maggot, and the other half is dealt to the target itself. If the maggot is killed, the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a live maggot</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Krail's Rot" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_KRAILS_ROT">
+		<supports>Cleric, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You target a creature of your choice within range with a wasting of the flesh. Your target must succeed on a Constitution saving throw or take 3d8 necrotic damage at the beginning of each of its turns for the duration. A target reduced to 0 hit points while under the effects of this spell has disadvantage on its death saving throws.</p>
+			<p class="indent">If your target dies, you can raise it as a <b>zombie</b> as a bonus action on your turn and can use a bonus action on each of your subsequent turns to mentally command it as long as you are within 60 feet of it. If you command multiple undead as a result of multiple castings of this spell or similar spells like <i>animate dead</i>, you can command any or all of them at the same time using the same bonus action, issuing the same command to each one. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>
+			<p class="indent">The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must expend a spell slot of 5th level or higher before the current 24-hour period ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a 7th‑level spell slot, your target takes 6d8 necrotic damage at the beginning of each of its turns and animates as a <b>ghoul</b> if it dies. If you cast it using a 9th-level spell slot, it takes 9d8 necrotic damage and animates as a ghast if it dies.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood, a piece of flesh, and a pinch of bone dust</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Krail's Rupture" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_KRAILS_RUPTURE">
+		<supports>Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You make a slicing motion with your finger, and you immediately break the grapple of the creature grappling you by magically entering their body and exiting them on the opposite side. The creature must make a Constitution saving throw, taking 3d12 necrotic damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">If cast in response to being swallowed, you exit the triggering creature's body, regardless of how much damage you deal to it, and fall prone in a space within 10 feet of the triggering creature.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction, which you take in response to being grappled or swallowed whole</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Leiloch's Arduous Shuffle" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LEILOCHS_ARDUOUS_SHUFFLE">
+		<supports>Bard, Warlock</supports>
+		<description>
+			<p>All creatures in a 20-foot-radius sphere centered on you that have fewer hit points than you when you cast the spell are compelled to dance a swaying, side-to-side shuffle-step. Any creature that can't be charmed is immune to the effects of this spell. An affected creature has its movement halved, cannot use reactions, and can make only one weapon or spell attack on its turn. At the beginning of its turn, a creature in the area can choose to take 1d4 levels of exhaustion to end the effect of this spell on itself.</p>
+			<p class="indent">A creature that has gained levels of exhaustion from this spell can remove all of them upon finishing a short rest.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">7</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gray ribbon</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Leiloch's Interminable Yarn" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LEILOCHS_INTERMINABLE_YARN">
+		<supports>Bard, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You tell a meandering story that is so full of asides and digressions that the point of it is lost on listeners. Any creature that is deafened or can't be charmed is immune to the effects of this spell. Creatures of your choice in a 20-foot-radius sphere centered on you are compelled to stop what they are doing and listen to your story. While they are enraptured by your words, they automatically fail Intelligence (Investigation) and Wisdom (Insight and Perception) checks, and their passive scores in those skills are considered to be 0 for the duration. A creature can choose to pull away from your performance but must succeed on a Wisdom saving throw or fall unconscious for 1 minute. This spell ends if you are incapacitated or can no longer speak.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scroll, containing a prepared speech</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Leiloch's Irritating Kazoo" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LEILOCHS_IRRITATING_KAZOO">
+		<supports>Bard, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You play a long, droning note on a kazoo. All creatures within 10 feet of you and that can hear you must make a Constitution saving throw. On a failure, a creature takes 1d6 thunder damage at the beginning of each of your turns and cannot cast spells with verbal components for the duration. On a success, a creature takes 1d6 thunder damage and cannot cast spells with verbal components until the end of its next turn. A creature that fails the initial saving throw can make a new saving throw at the end of each of its turns to end the effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">thunder</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wooden kazoo</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Life Drain" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LIFE_DRAIN">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>With a snarled word of void speech, you create a swirling vortex of purple energy. Choose a point you can see within range. Creatures within 15 feet of the point take 10d6 necrotic damage, or half damage with a successful Constitution saving throw. For each creature damaged by the spell, you can choose one other creature within range, including yourself, that is not a construct or undead. The secondary targets regain hit points equal to half the necrotic damage you rolled.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the vortex's damage increases by 1d6 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Living Shadows" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LIVING_SHADOWS">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You whisper sibilant words of void speech that cause shadows to writhe with unholy life. Choose a point you can see within range. Writhing shadows spread out in a 15-foot-radius sphere centered on that point, grasping at creatures in the area. A creature that starts its turn in the area or that enters the area for the first time on its turn must make a successful Strength saving throw or be restrained by the shadows. A creature that starts its turn restrained by the shadows must make a successful Constitution saving throw or gain one level of exhaustion.</p>
+			<p class="indent">A restrained creature can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Lost" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LOST">
+		<supports>Bard, Cleric, Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You attempt to confuse and confound a creature's sense of direction. The target must make a Wisdom saving throw, and if the saving throw fails, the spell removes all memory of particular locations, landmarks, and routes for the duration of the spell, even well-known ones such as locations within a city, a home forest, and well-known hills and roads.</p>
+			<p class="indent">A <i>remove curse</i> or <i>greater restoration</i> spell ends this effect.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th-level spell slot, the spell lasts until it is dispelled.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Lost and Wandering" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LOST_AND_WANDERING">
+		<supports>Bard, Cleric, Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>As the <i>lost</i> spell, and in addition to forgetting all navigation skills and landmarks, the target is compelled to wander off at a walk (attacking only in self-defense). The target must make a Wisdom saving throw, and if the saving throw fails, the spell removes all memory of particular locations, landmarks, and routes for the duration of the spell, even well-known ones such as locations within a city, a home forest, and well-known hills and roads. After 16 hours, the target can make another Wisdom saving throw. On a failure, the creature falls into an exhausted long rest.</p>
+			<p class="indent">A <i>remove curse</i> or <i>greater restoration</i> spell ends this effect.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them. If you use a spell slot of 7th level or higher, a target experiences the spell for a second day, making a Wisdom saving throw after they wake up to continue wandering. If you use a spell slot of 9th level or higher, a target experiences this spell every day for a week.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">24 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Lunar Transfer" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_LUNAR_TRANSFER">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>This spell instantly summons a glittering moonbeam that transports one sleeping creature or object of your choice that you can see within range to a destination you select. If you target an unwilling creature, it gains a Wisdom saving throw. On a successful save, the spell fails, and the caster appears in the target location instead. A transferred creature wakes up as soon as it arrives at its destination. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether the creature or object arrives there successfully.</p>
+			<p class="indent">The GM rolls d20 and consults the Lunar Transfer table below. The following definitions will help:</p>
+			<ul>
+				<li><b>Grove or Magic Circle</b> means a hallowed druid grove or a permanent teleportation circle whose sigil sequence you know.</li>
+				<li><b>Memento</b> means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.</li>
+				<li><b>Very Familiar</b> is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell.</li>
+				<li><b>Seen Casually</b> is someplace you have seen more than once but with which you aren't very familiar.</li>
+				<li><b>Viewed Once</b> is a place you have seen once, possibly using magic.</li>
+				<li><b>Description</b> is a place whose location and appearance you know through someone else's description, perhaps from a map.</li>
+				<li><b>False Destination</b> is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or perhaps you are attempting to teleport to a familiar location that no longer exists.</li>
+			</ul>
+			<p class="indent"><b><i>On Target.</i></b> The target creature or object appears where you want it to.</p>
+			<p class="indent"><b><i>Off Target.</i></b> The target creature or object appears a random distance away from the destination in a random direction. Distance off target is 5 miles times a 1d20 roll, though never more than half the distance traveled. For example, if you sent someone 250 miles and they landed off target, and you rolled an 8 on the d20, then they would arrive off target by 40 miles. If you had sent them only 20 miles, they could not be more than 10 miles off target. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting someone to a coastal city and they wound up 20 miles out at sea, they could be in trouble.</p>
+			<p class="indent"><b><i>Similar.</i></b> Your target creature or object winds up in a different area that's visually or thematically similar to the target area. If you are sending someone to your home laboratory, for example, they might wind up in another wizard's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, the creature or object appears in the closest similar place, but since the spell has no range limit, they could conceivably wind up anywhere on the plane.</p>
+			<p class="indent"><b><i>Mishap.</i></b> The spell's unpredictable magic results in a difficult journey. The teleporting creature or object takes 2d12 force damage, and the GM rerolls on the table to see where you wind up. (Multiple mishaps can occur, dealing damage each time.)</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">d20</td><td>Grove or Circle</td><td>Memento</td><td>Very Familiar</td><td>Seen Casually</td><td>Viewed Once</td><td>Description</td><td>False Destination</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>Similar</td><td>Mishap</td><td>Mishap</td><td>Mishap</td><td>Mishap</td><td>Mishap</td><td>Mishap</td></tr>
+					<tr><td>2-5</td><td>Off target</td><td>Similar</td><td>Similar</td><td>Similar</td><td>Mishap</td><td>Mishap</td><td>Mishap</td></tr>
+					<tr><td>6-9</td><td>On target</td><td>Off target</td><td>Off target</td><td>Similar</td><td>Similar</td><td>Similar</td><td>Mishap</td></tr>
+					<tr><td>10-13</td><td>On target</td><td>On target</td><td>Off target</td><td>Off target</td><td>Off target</td><td>Similar</td><td>Similar</td></tr>
+					<tr><td>14-17</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>Off target</td><td>Similar</td></tr>
+					<tr><td>18-19</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>Similar</td></tr>
+					<tr><td>18-19</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>Similar</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">200 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an opal worth 500 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Maddening Whispers" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_MADDENING_WHISPERS">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You whisper a string of void speech toward a target that can hear you. The target must succeed on a Charisma saving throw or be incapacitated. While incapacitated by this spell, the target's speed is 0 and it can't benefit from increases to its speed. To maintain the effect, you must use your action on subsequent turns to continue whispering; otherwise, the spell ends. The spell also ends if the target takes damage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Moonlight Sending" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_MOONLIGHT_SENDING">
+		<supports>Cleric, Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>You exhort a fiend to attack a distant foe. After the offering is made, make a spell attack roll to determine which fiend is summoned:</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">d20</td><td>Result</td><td>CR</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1-4</td><td>Sending fails</td><td>—</td></tr>
+					<tr><td>5-8</td><td><b>Wind demon</b> (see <i>Creature Codex</i>) or <b>quasit</b></td><td>1-2</td></tr>
+					<tr><td>9-12</td><td><b>Rattok demon</b> (see <i>Creature Codex</i>) or <b>bearded devil</b></td><td>3-4o</td></tr>
+					<tr><td>13-16</td><td><b>Lesser lunar devil</b> or <b>vrock</b></td><td>4-6</td></tr>
+					<tr><td>17-20</td><td><b>Lunar devil</b> or <b>hezrou</b></td><td>8</td></tr>
+					<tr><td>21+</td><td><b>Alnaar</b> (see <i>Creature Codex</i>) or <b>horned devil</b></td><td>9-11</td></tr>
+				</tbody>
+			</table>
+			<p class="indent">Once summoned, you must compel the fiend to seek out a particular creature you choose that is on the same plane of existence as you by making a DC 10 Charisma (Persuasion) check. On a success, the fiend slinks off to its target, usually but not always by night. On a failure, the fiend refuses, and the offering and the bowl are consumed in the casting.</p>
+			<p class="indent">The conjured fiend may find that the target is warded or inaccessible or simply difficult to find (whether because of invisibility or some other reason). In this case, you must make a DC 15 Charisma (Persuasion) check. On a success, the fiend returns and demands no further offering, reports its failure, and vanishes. On a failure, the fiend returns and demands another offering. If this is not immediately forthcoming, it attacks you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an offering of gemstones, incense, and oils worth at least 400 gp, which the spell consumes, set afire in an alabaster bowl</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Obfuscate Object" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_OBFUSCATE_OBJECT">
+		<supports>Bard, Warlock</supports>
+		<description>
+			<p>While you are in dim light, you cause an object in range to become unobtrusively obscured from the sight of other creatures. For the duration, you have advantage on Dexterity (Sleight of Hand) checks to hide the object. The object can't be larger than a shortsword, and it must be on your person, held in your hand, or otherwise unattended.</p>
+			<p class="indent">You can affect two objects when you reach 5th level, three objects at 11th level, and four objects at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ominous Winds" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_OMINOUS_WINDS">
+		<supports>Bard, Cleric, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a 1d12 and subtract the number rolled from the attack roll or saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cracked bone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Orros Mark of Fate" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_ORROS_MARK_OF_FATE">
+		<supports>Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<p>If you fail a saving throw, you may choose to succeed instead and then target a creature you can see within 30 feet to suffer the effects of your failed saving throw. You still suffer any effects of a successful saving throw, if any. The new target is entitled to its own saving throw as if it were the original target of the attack but with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction, which you take in response to failing a saving throw</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small iron shield</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Polychromatic Bubble" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_POLYCHROMATIC_BUBBLE">
+		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a shimmering, multicolored bubble around a Large or smaller creature or an object within range. The bubble is a 5-foot-radius sphere that has 10 hit points and an AC equal to your spell save DC. The bubble rises 10 feet into the air along with its contents, up to 30 feet, at the beginning of each of your turns. A creature trapped inside the bubble at the beginning of its turn cannot see or hear anything outside the bubble and must make a Wisdom saving throw or be charmed by you and the bubble until the start of its next turn. A creature outside the bubble that targets it with an attack must make a Wisdom saving throw or be charmed by you and the bubble until the beginning of its next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can create one additional bubble for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chip of soap and a drop of oil</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Portho's Portal" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_PORTHOS_PORTAL">
+		<supports>Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<p>You conjure a portal or doorway that links an unoccupied space you can see within range to a precise location in the mortal or fey realms—such as Midgard, the Shadow Realm, or the Summer Lands—that you have stood. The portal is a semicircular opening, which you can make 5 to 20 feet in diameter—it is often cast under a bridge, archway, or even under roots or branches of a large tree. You can orient the portal in any direction you choose. It has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal. The portal lasts for the duration.</p>
+			<p class="indent">Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If cast using a 5th-level or higher spell slot, you may make the portal last for 1 week after you create it. If cast using a 6th-level or higher spell slot, the shadow doorway is permanent until dispelled with a <i>radiant beacon</i> or <i>wish</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 hour</set>
+			<set name="duration">24 hours</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver latch or key worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Pratfall" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_PRATFALL">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You cause a small bit of bad luck to befall a creature, making it look humorously foolish. You create one of the following effects:</p>
+			<ul>
+				<li>A small, oily puddle appears under the feet of your target, causing it to lose balance. The target must succeed on a Dexterity saving throw or be unable to use bonus actions on its next turn as it regains its footing.</li>
+				<li>Tiny particles blow in your target's face, causing it to sneeze. The target must succeed on a Constitution saving throw or have disadvantage on its first attack roll on its next turn.</li>
+				<li>Strobing lights flash briefly before your target's eyes, causing difficulties with its vision. The target must succeed on a Constitution saving throw, or its passive Perception is halved until the end of its next turn.</li>
+				<li>The target feels the sensation of a quick, mild clap against its ears, briefly disorienting it. The target must succeed on a Constitution saving throw to maintain its concentration.</li>
+				<li>An invisible force sharply tugs on the target's trousers, causing their clothing to slip. The target must make a Dexterity saving throw. On a failed save, the target has disadvantage on its next attack roll with a two-handed weapon or loses its shield bonus to its AC until the end of its next turn as it uses one hand to gather itself.</li>
+			</ul>
+			<p class="indent">Only one of these effects can be used on a single creature at a time.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Radiant Beam" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_RADIANT_BEAM">
+		<supports>Bard, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A pillar of light falls from the air, filling the square you are in and the area within 5 feet of you. Each other creature in the area must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage and is blinded until the start of your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.</p>
+			<p class="indent">For the duration, a pillar of brilliant radiance shines around you and moves with you. It sheds bright light in a 10-foot radius and dim light for an additional 20 feet. The light is sunlight.</p>
+			<p class="indent">This spell's light can be seen from a distance of up to 10 miles outdoors at night or 5 miles during twilight.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of amber</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Searing Sun" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SEARING_SUN">
+		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>This spell intensifies the light and heat of the sun, so that it burns exposed flesh. You must be able to see the sun when you cast the spell. The searing sunlight affects a cylindrical area 50 feet in radius and 200 feet high, centered on the a point within range. Each creature that starts its turn in that area takes 5d8 fire damage, or half the damage with a successful Constitution saving throw. A creature that's shaded by a solid object—such as an awning, a building, or an overhanging boulder—has advantage on the saving throw. On your turn, you can use an action to move the center of the cylinder up to 20 feet along the ground in any direction.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">200 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a magnifying lens</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Adaptation" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SHADOW_ADAPTATION">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Your flesh and clothing pale and become faded as your body takes on a tiny fragment of the Shadow Realm. For the duration of this spell, you are immune to shadow corruption and have resistance to necrotic damage. In addition, you have advantage on saving throws against effects that reduce your Strength score or hit point maximum, such as a shadow's Strength Drain or the <i>harm</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scrap of black cloth</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Gateway" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SHADOW_GATEWAY">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>By drawing a circle of black chalk up to 15 feet in diameter and chanting for one minute during the casting time, you open a portal directly into the Plane of Shadow. The portal fills the chalk circle and appears as a vortex of inky blackness; nothing can be seen through it. Any object or creature that passes through the portal instantly arrives safely at the destination. The portal remains open for 1 minute or until you stop concentrating on the spell, and it can be used to travel between the Plane of Shadow and the chalk circle, in both directions, as many times as desired during the spell's duration.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of black chalk</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Portal" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SHADOW_PORTAL">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You create a door in the nearest wall, cliff, tree, or similar structure. It is immediately bound to a similar door up to 200 feet away. The near door must be a place within 10 feet that you can see while the distant door can be one that you can visualize or that you can describe by stating distance and direction, such as 100 feet straight down or 50 feet to the northwest and upward at a 45-degree angle.</p>
+			<p class="indent">Once the door is conjured, you can take actions normally to open and pass through the near portal, which immediately teleports you to the distant portal. Other creatures may do the same while the spell remains. The spell ends after the duration or when someone closes the distant portal's door as a bonus action.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If cast at 5th level, this spell can open the door to a shadow road. This may require additional somatic or material components specific to that road, and lacking those, the spell fails and is wasted.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">200 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver door latch worth 50 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Step" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SHADOW_STEP">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You can open a temporary portal between two darkened areas, allowing you to move from one such area to another without crossing the intervening space. If you start your turn in an area of dim light or darkness, you can open a portal to another area of dim light or darkness within range and transport yourself to that spot. Doing this uses up your movement for the turn, regardless of the distance traveled. You can use shadow step while prone. Moving in this manner does not draw opportunity attacks.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Slither" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SLITHER">
+		<supports>Wizard</supports>
+		<description>
+			<p>You momentarily become a shadow (a humanoid-shaped absence of light, not the Undead creature of that name). You can slide under a door, through a keyhole, or through any other tiny opening. All of your equipment is transformed with you, and you can move up to your full speed during the spell's duration. While in this form, you have advantage on Dexterity (Stealth) checks made in darkness or dim light and you are immune to nonmagical bludgeoning, piercing, and slashing damage. You can dismiss this spell by using an action to do so.</p>
+			<p class="indent">If you return to your normal form while in a space too small for you (such as a mouse hole, sewer pipe, or the like), you take 4d6 force damage and are pushed to the nearest space within 50 feet big enough to hold you. If the distance is greater than 50 feet, you take an extra 1d6 force damage for every additional 10 feet traveled.</p>
+			<p class="indent">While in shadow form, you can't talk or manipulate objects, and any objects you are carrying or holding can't be dropped, used, or otherwise interacted with. In addition, you can't attack or cast spells while in shadow form.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target an additional willing creature that you touch for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">ashes from a wooden statue of you made into ink and used to draw your portrait, worth at least 50 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Spider Song" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_SPIDER_SONG">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You sing a piping tune and conjure shadows into enormous, ever-growing webs. The area within a 20-foot cube within range is filled with shadows, and the area is lightly obscured and provides half cover to any creature within. You may create a new cube of shadows in range every other round so long as you retain concentration, in which case the previous cube disappears 1 round later. Cubes can overlap but there is no cumulative effect from it.</p>
+			<p class="indent">Each creature that enters the area or starts its turn in the area must make a Dexterity saving throw. On a failed save, the creature is incapacitated for as long as it remains in the shadows or until it breaks free. A creature incapacitated by the shadows can make a Strength check each round against your spell save DC. If it succeeds, it is no longer incapacitated.</p>
+			<p class="indent">The shadows can be removed from a single 20-foot cube with a <i>daylight</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a leg from a song spider or a tiny lute strung with spider silk</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Storm Door" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_STORM_DOOR">
+		<supports>Cleric, Druid, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Crackling with lightning, you teleport up to 120 feet to an unoccupied space that you can see. Each creature within 5 feet of both the space you left and your new space must make a Dexterity saving throw. A creature takes 1d12 lightning damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent">On each of your turns for the duration, you can use your bonus action to call up the lightning and open such a storm door again, targeting a different space with the door each time. If you are outdoors when you cast this spell, a storm develops within 1 minute and follows you. Under such conditions, the spell's damage increases to 2d12, and you can teleport up to 240 feet.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, a creature of your choice within 5 feet of you can teleport through the storm door with you. Accompanying creatures do not suffer the lightning damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a fulgurite</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ugly Duckling" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_UGLY_DUCKLING">
+		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>One creature of your choice within range must make a Charisma saving throw. On a failed save, the target has disadvantage on all Charisma checks it makes and anyone it speaks to is indifferent to them for the duration. If the target succeeds on a Charisma check while under the effect of this spell, it can make a new saving throw to overcome the effect.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can affect one additional target for each slot level used above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shard of mirror</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Void Strike" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_VOID_STRIKE">
+		<supports>Wizard, Spell Attack</supports>
+		<description>
+			<p>With a short phrase of void speech, you gather writhing darkness around your hand. When you cast the spell, and as an action on subsequent turns, you can unleash a bolt of darkness at a target within range. Make a ranged spell attack. If your target is in dim light or darkness, you have advantage on the roll. On a hit, the target takes 5d8 necrotic damage and is frightened of you until the start of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast the spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Word of Misfortune" type="Spell" source="Book of Ebon Tides" id="ID_KBP_BOET_SPELL_WORD_OF_MISFORTUNE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You hiss a word of void speech. Choose one creature you can see within range. The next time the creature makes a saving throw during the spell's duration, it must roll a d4 and subtract the result from the total of the saving throw. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shade</name>
+		<description>Shade from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="race-shade.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-shade.xml" />
+		</update>
+	</info>
+
+	<element name="Shade" type="Race" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_SHADE">
+		<description>
+			<p>Life leaves echoes in its wake, whether crumbled remnants of a bygone civilization, tales of heroes and gods that spawn new beliefs, or even the echo of an individual soul left behind to haunt the living world. Fantasy worlds are no strangers to ghosts and specters that linger beyond death, but sometimes a person's passion, purpose, and will to live are so strong, their tie to the living world so unbreakable, that their memories create a vessel for their soul after their body dies. These people are called shades. Shades can arise from any living race.</p>
+			<p class="indent">There are rumors of darakhul or other undead leaving shades behind after destruction, but there are no reliable accounts of such a creature. It is more likely that an undead creature with strong enough will to become a shade becomes a shade of the race they were in true life.</p>
+			<h4>Spirit and Flesh</h4>
+			<p>A shade possesses a physical body that looks, acts, and feels similar to a living member of their original race, at least superficially. Shades must breathe, consume food and drink, and require shelter from adverse weather. Despite the functional similarities to a living body, a shade isn't composed of flesh and blood. Their bodies are a memory of who they once were, inhabited and quickened by the presence of their soul. Exhaustion, deprivation, and injury take their toll on a shade's body, disrupting their body's ability to maintain the connection to their soul. Food, drink, and air aren't necessary to nourish their bodies but merely to help them maintain the sense of being a living, breathing creature. Similarly, shades appear to sleep, but they do not require it.</p>
+			<p class="indent">The more injured or exhausted a shade, the less corporeal they appear. The colors of their body wash out to pale, desaturated tones, and light begins to pass through them. Blood from their wounds starts out as red and vibrant as any humanoid's, but closer to death, their wounds cease to bleed and seem to evaporate at the edges.</p>
+			<h4>Living Memory</h4>
+			<p>The strength of a shade's memory of themselves and their place in life is the core of their being. Newer shades are almost impossible to distinguish from their prior, fully-living selves. Like anything exposed to the gnawing ravages of time, however, memory fades. The older a shade gets, the memories that keep them tethered to the living world begin to fray. They might grow forgetful, losing track of where they are or what year it is. Their memories might drift together, causing them to see people around them as figures from their past.</p>
+			<p class="indent">Many shades keep detailed memoirs, tending to them with the same devotion that any living creature shows seeking out food and water. Shades can theoretically live forever, but in practice, the memories that tether them to life can't hold out indefinitely. Journals and other personal mementos help shades keep hold of themselves and allow them to last longer, sometimes for centuries.</p>
+			<h4>Shade Adventurers</h4>
+			<p>Because they can arise from any people, shades come from all corners of the world and from all walks of life. Station and wealth are no guarantee to help one linger on after the body's death either. It's not unheard of for a person to die only to rise as a shade with little understanding that anything changed. Some even hide or dispose of their original remains, sometimes suppressing or deeply denying the act at all, and resume their life with no disruption. Anyone could secretly, sometimes even to themselves, be a shade.</p>
+			<p class="indent">Some traveling shades leave their old lives behind, particularly those who were alone in life with no one to mourn them or fuel their memory. Such shades make up the majority of adventurers. Other more established shades might set out on a quest for the means to restore their true life or to protect loved ones from a threat.</p>
+			<h4>Shade Traits</h4>
+			<p>Your shade character has a number of traits that arise from being a shade as well as a few drawn from life.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1, and one other ability score of your choice increases by 1. Choose one ability score that is increased by your Living Origin or by one of its subraces. That ability score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Shades appear as the age they were when they died. They potentially have no limit to their lifespan, but, realistically, ancient shades grow weary and lose their hold on their memories, fading away near 750 years old.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Shades come from all walks of life but tend toward neutrality. Shades that lack contact with other people grow more selfish over time and slip toward evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is determined by your Living Origin.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your speed is determined by your Living Origin.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Thanks to your dark planar parentage, you have superior vision in darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Ghostly Flesh.</em></strong> Starting at 3rd level, you can use your action to dissolve your physical body into the ephemeral stuff of spirits. You become translucent and devoid of color, and the air around you grows cold. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet with the ability to hover, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't made with silvered weapons. In addition, you have advantage on ability checks and saving throws made to escape a grapple or against being restrained, and you can move through creatures and solid objects as if they were difficult terrain. If you end your turn inside an object, you take 1d10 force damage. Once you use this trait, you can't use it again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Imperfect Undeath.</em></strong> You are a humanoid, but your partial transition into undeath makes you susceptible to effects that target undead. Though you can regain hit points from spells like <i>cure wounds</i>, you can also be affected by game effects that specifically target undead, such as a cleric's Turn Undead feature. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a shade. A <i>true resurrection</i> or <i>wish</i> spell can restore you to life as a fully living member of your original race.</p>
+			<p class="indent"><strong><em>Life Drain.</em></strong> When you damage a creature with an attack or a spell, you can choose to deal extra necrotic damage to the target equal to your level. If the creature's race matches your Living Origin, you gain temporary hit points equal to the necrotic damage dealt. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Spectral Resilience.</em></strong> You have advantage on saving throws against poison and disease, and you have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language spoken by your Living Origin.</p>
+			<p class="indent"><strong><em>Living Origin.</em></strong> As living echoes of who they once were, shades maintain some of the traits they bore in life. Choose another race as your Living Origin. This is the race you were in life. Your size and speed are those of your Living Origin, and you know one language spoken by your Living Origin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shade)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_ASI)" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Shade)" supports="Custom Ability Score Increase 1" requirements="!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_ASI)" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Living Origin)" supports="Feat" requirements="!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_ASI)" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LANGUAGE)" />
+			<select type="Language" name="Customized Language (Shade)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_GHOSTLY_FLESH" level="3" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_IMPERFECT_UNDEATH" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_LIFE_DRAIN" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_SPECTRAL_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_LIVING_ORIGIN" />
+			<select type="Race Variant" name="Shade Variant" supports="BOET Shade Variant" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Ghostly Flesh" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_GHOSTLY_FLESH">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_GHOSTLY_FLESH</requirements>
+		<description>
+			<p>Starting at 3rd level, you can use your action to dissolve your physical body into the ephemeral stuff of spirits. You become translucent and devoid of color, and the air around you grows cold. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet with the ability to hover, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't made with silvered weapons. In addition, you have advantage on ability checks and saving throws made to escape a grapple or against being restrained, and you can move through creatures and solid objects as if they were difficult terrain. If you end your turn inside an object, you take 1d10 force damage. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can dissolve your physical body into the ephemeral stuff of spirits. You become translucent and devoid of color, and the air around you grows cold. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet with the ability to hover, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't made with silvered weapons. In addition, you have advantage on ability checks and saving throws made to escape a grapple or against being restrained, and you can move through creatures and solid objects as if they were difficult terrain. If you end your turn inside an object, you take 1d10 force damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Imperfect Undeath" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_IMPERFECT_UNDEATH">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_IMPERFECT_UNDEATH</requirements>
+		<description>
+			<p>You are a humanoid, but your partial transition into undeath makes you susceptible to effects that target undead. Though you can regain hit points from spells like <i>cure wounds</i>, you can also be affected by game effects that specifically target undead, such as a cleric's Turn Undead feature. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a shade. A <i>true resurrection</i> or <i>wish</i> spell can restore you to life as a fully living member of your original race.</p>
+		</description>
+		<sheet>
+			<description>Though you are a humanoid, you are susceptible to effects that target undead. You can regain hp from spells, but you can also be affected by game effects that specifically target undead. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a darakhul. A true resurrection or wish spell can restore you to life as a fully living member of your original race.</description>
+		</sheet>
+	</element>
+
+	<element name="Life Drain" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_LIFE_DRAIN">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LIFE_DRAIN</requirements>
+		<description>
+			<p>When you damage a creature with an attack or a spell, you can choose to deal extra necrotic damage to the target equal to your level. If the creature's race matches your Living Origin, you gain temporary hit points equal to the necrotic damage dealt. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you damage a creature with an attack or a spell, you can choose to deal extra necrotic damage to the target equal to your level. If the creature's race matches your Living Origin, you gain temporary hit points equal to the necrotic damage dealt.</description>
+		</sheet>
+	</element>
+
+	<element name="Spectral Resilience" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_SPECTRAL_RESILIENCE">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_SPECTRAL_RESILIENCE</requirements>
+		<description>
+			<p>You have advantage on saving throws against poison and disease, and you have resistance to necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison and disease.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	
+	<element name="Living Origin" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SHADE_LIVING_ORIGIN">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LIVING_ORIGIN</requirements>
+		<description>
+			<p>As living echoes of who they once were, shades maintain some of the traits they bore in life. Choose another race as your Living Origin. This is the race you were in life. Your size and speed are those of your Living Origin, and you know one language spoken by your Living Origin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Size (Living Origin)" supports="ID_INTERNAL_RACIAL_TRAIT_TINY|ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<select type="Language" name="Language (Living Origin)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Shade ASI Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_ASI" />
+
+	<element name="Shade Language Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LANGUAGE" />
+
+	<element name="Shade Ghostly Flesh Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_GHOSTLY_FLESH" />
+
+	<element name="Shade Imperfect Death Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_IMPERFECT_DEATH" />
+
+	<element name="Shade Life Drain Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LIFE_DRAIN" />
+	
+	<element name="Shade Spectral Resilience Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_SPECTRAL_RESILIENCE" />
+
+	<element name="Shade Living Origin Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LIVING_ORIGIN" />
+
+	<!--Stygian Shade-->
+	<element name="Stygian Shade" type="Race Variant" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_VARIANT_STYGIAN_SHADE">
+		<supports>BOET Shade Variant</supports>
+		<description>
+			<p>The River Styx winds through the Shadow Realm, full of mindless shades that live only to consume the memories of those they can drown. An unfortunate few of these shades bound to the plane retain their mental faculties yet suffer daily to recall who they once were. Shades from the Shadow Realm are different from those of the mortal realms because they specifically lack most of their memories, and the drive to find what was lost propels them. Newly born shades are difficult to distinguish from ghosts, but most settlements in the Shadow Realm are familiar enough with the phenomenon to recognize a new shade when they stumble into town with no recollection of where they came from.</p>
+			<p class="indent">The city of Soriglass has become a haven for various undead, and shades congregate there in large numbers. It is often called the City of Shades. And a small community of shades have set up camp near the River Styx in hopes of preemptively finding and guiding the unfortunate individuals who wander out of its waters. This growing community is dedicated to helping shades of the Shadow Realm and to gathering resources to help its members discover who they once were.</p>
+			<p class="indent">Stygian shades are a subrace of shades. You can find more about the base shade race in <i>Tome of Heroes</i>.</p>
+			<h4>Stygian Shade Names</h4>
+			<p>Shades of the Shadow Realm awaken with little to no memory of who they were in life and rarely know their own names. Rediscovering one's name is a huge piece of reclaiming identity, so shades that do learn their own names use them with pride. For shades who don't yet remember, they often choose and discard different names for themselves as they attempt to find something that feels familiar.</p>
+			<div class="sidebar">
+				<h5>Stygian Shades</h5>
+				<p>Like other shades, stygian shades fade away as the remembrance of them becomes distant. But unlike those other shades, stygian shades, those shades that arise from the waters of the Shadow Realm, remember almost nothing of their previous lives, and they frequently strive to recover even the slightest detail of who they once were, collecting clues about their own past.</p>
+				<p class="indent">Stygian shades can still benefit from <i>memento mori</i> (see <i>Tome of Heroes</i>), and these can be one key in these characters regaining their memories.</p>
+			</div>
+			<h4>Stygian Shade Traits</h4>
+			<p>You are a Stygian shade, your identity stripped by the waters of the Shadow Realm, which sets you apart from most other shades.</p>
+			<p class="indent">You exhibit a few different traits from the shades of the mortal lands. The following traits include those shared with the base shade’s traits (see <i>Tome of Heroes</i>), though replacing the Ability Score Increase, Size, Life Drain, and Living Origin traits with those listed.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and one other ability score of your choice increases by 1. (This trait replaces the base shade’s Ability Score Increase trait.)</p>
+			<p class="indent"><strong><em>Age.</em></strong>  Shades appear as the age they were when they died. They potentially have no limit to their lifespan, but realistically, ancient shades grow weary and lose their will to hold onto reality, fading away near 750 years old or so.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Stygian shades come from all walks of life but tend toward neutrality. Those that can’t recover their memories or grow to resent their condition often drift toward evil alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Choose whether you are Small or Medium sized. (This trait replaces the base shade’s Size trait.)</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet as though it were bright light and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Death Mask.</em></strong> As an action, you can strip away your veneer of life and expose your true spectral face. All non-undead creatures within 30 feet that can see you must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to your Death Mask for the next 24 hours. You can use this ability a number of times per day equal to your Constitution modifier. (This trait replaces the base shade’s Life Drain trait.)</p>
+			<p class="indent"><strong><em>Ghostly Flesh.</em></strong> Starting at 3rd level, you can use your action to dissolve your physical body into the ephemeral stuff of spirits. You become translucent and devoid of color, and the air around you grows cold. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet with the ability to hover, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't made with silvered weapons. In addition, you have advantage on ability checks and saving throws made to escape a grapple or against being restrained, and you can move through creatures and solid objects as if they were difficult terrain. If you end your turn inside an object, you take 1d10 force damage. Once you use this trait, you can't use it again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Imperfect Undeath.</em></strong> You are a humanoid, but your partial transition into undeath makes you susceptible to effects that target undead. Though you can regain hit points from spells like <i>cure wounds</i>, you can also be affected by game effects that specifically target undead, such as a cleric's Turn Undead feature. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a shade. A <i>true resurrection</i> or <i>wish</i> spell can restore you to life as a fully living member of your original race.</p>
+			<p class="indent"><strong><em>Mysterious Origin.</em></strong> Stygian shades are born with almost no memory of their former lives but have an innate desire to remember who they are. When you create your stygian shade, decide which one of these questions you know the answer to. The rest are questions you seek to answer:</p>
+			<ul>
+				<li>What is your name?</li>
+				<li>Where are you from?</li>
+				<li>Who were the people you loved most?</li>
+				<li>How did you die?</li>
+				<li>What unfinished business has caused you to rise as a shade?</li>
+			</ul>
+			<p class="indent">(This replaces the base shade’s Living Origin trait.)</p>
+			<p class="indent"><strong><em>Spectral Resilience.</em></strong> You have advantage on saving throws against poison and disease, and you have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Umbral and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_ASI" />
+			<stat name="constitution" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Stygian Shade)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Stygian Shade)" supports="Custom Ability Score Increase 1" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Racial Trait" name="Size (Stygian Shade)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Stygian Shade)" supports="Standard||Exotic" />
+			<select type="Language" name="Customized Language (Stygian Shade)" supports="Custom Race Language||BOET Umbral" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_STYGIAN_SHADE_DEATH_MASK" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_STYGIAN_SHADE_MYSTERIOUS_ORIGIN" />
+		</rules>
+	</element>
+
+	<element name="Death Mask" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_STYGIAN_SHADE_DEATH_MASK">
+		<description>
+			<p>As an action, you can strip away your veneer of life and expose your true spectral face. All non-undead creatures within 30 feet that can see you must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to your Death Mask for the next 24 hours. You can use this ability a number of times per day equal to your Constitution modifier. (This trait replaces the base shade’s Life Drain trait.)</p>
+		</description>
+		<sheet action="Action" usage="{{constitution:modifier}}/Day">
+			<description>All non-undead creatures within 30 ft that can see you must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to your Death Mask for the next 24 hours.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LIFE_DRAIN" />
+		</rules>
+	</element>
+
+	<element name="Mysterious Origin" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_STYGIAN_SHADE_MYSTERIOUS_ORIGIN">
+		<description>
+			<p>tygian shades are born with almost no memory of their former lives but have an innate desire to remember who they are. When you create your stygian shade, decide which one of these questions you know the answer to. The rest are questions you seek to answer:</p>
+			<ul>
+				<li>What is your name?</li>
+				<li>Where are you from?</li>
+				<li>Who were the people you loved most?</li>
+				<li>How did you die?</li>
+				<li>What unfinished business has caused you to rise as a shade?</li>
+			</ul>
+			<p class="indent">(This replaces the base shade’s Living Origin trait.)</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_SHADE_LIVING_ORIGIN" />
+		</rules>
+	</element>
+
+</elements>

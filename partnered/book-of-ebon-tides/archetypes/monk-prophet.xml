@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Prophet</name>
+		<description>Way of the Prophet from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="monk-prophet.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/monk-prophet.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Prophet" type="Archetype" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_MONK_WAY_OF_THE_PROPHET">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks who follow the Way of the Prophet refuse to cloister the wisdom they have learned. They are driven to spread their knowledge to all the peoples of the land. Some are set on this path by divine intervention. Others take up the prophet's mantle out of a sense of personal obligation, and they all share a deep-rooted faith that empowers their actions.</p>
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_WISE_WORDS" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_CHARMING_AURA" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_RIGHTEOUS_STRIKE" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_BLESSED_CHOSEN" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_FORCE_OF_PERSONALITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_WISE_WORDS" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_CHARMING_AURA" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_RIGHTEOUS_STRIKE" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_BLESSED_CHOSEN" level="11" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_FORCE_OF_PERSONALITY" level="17" />
+		</rules>
+	</element>
+
+	<element name="Wise Words" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_WISE_WORDS">
+		<description>
+			<p>When you choose this tradition at 3rd level, you gain proficiency in the Performance and Persuasion skills. Additionally, whenever you roll an ability check using a Charisma-based skill, you can use your Wisdom modifier instead of your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>Whenever you roll an ability check using a Charisma-based skill, you can use your Wisdom modifier instead of your Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Charming Aura" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_CHARMING_AURA">
+		<description>
+			<p>Additionally, when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend a ki point to cast <i>charm person</i> or <i>command</i>, or you can expend 2 ki points to cast <i>suggestion</i>.</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>You can spend 1 ki point to cast charm person or command, or you can expend 2 ki points to cast suggestion.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" />
+		</rules>
+	</element>
+
+	<element name="Righteous Strike" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_RIGHTEOUS_STRIKE">
+		<description>
+			<p>At 6th level, when you hit a target with an unarmed strike, you can spend 1 ki point to cause the attack to deal either radiant (if you are good-aligned or neutral-aligned) or necrotic (if you are evil-aligned) damage equal to your proficiency bonus. You can use this feature only once on each of your turns.</p>
+		</description>
+		<sheet usage="1 Ki/Turn">
+			<description>When you hit a target with an unarmed strike, you can spend 1 ki point to cause the attack to deal either radiant (if you are good-aligned or neutral-aligned) or necrotic (if you are evil-aligned) damage equal to {{proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Blessed Chosen" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_BLESSED_CHOSEN">
+		<description>
+			<p>Beginning at 11th level, you are protected by the forces who spur your mission. If you are reduced to 0 hit points, you immediately regain hit points equal to your monk level. Alternatively, you can use an action to touch a fallen creature that has been dead for no longer than 10 minutes, and they return to life with hit points equal to your monk level.</p>
+			<p class="indent">You must finish a long rest before you can use this feature again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If you are reduced to 0 hp, you immediately regain {{level:monk}} hp. Alternatively, you can use an action to touch a fallen creature that has been dead for no longer than 10 minutes, and they return to life with {{level:monk}} hp.</description>
+		</sheet>
+	</element>
+
+	<element name="Force of Personality" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_WAY_OF_THE_PROPHET_FORCE_OF_PERSONALITY">
+		<description>
+			<p>Whenever any creature tries to attack you for the first time on a turn, you can use your reaction to roll a Charisma (Performance or Persuasion) ability check. If your check is higher than the creature's Wisdom ability score, it can't attack you on this turn, and it must choose a new target for its attack, or the attack is wasted.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever any creature tries to attack you for the first time on a turn, you can use your reaction to roll a Charisma (Performance or Persuasion) ability check. If your check is higher than the creature's Wisdom ability score, it can't attack you on this turn, and it must choose a new target for its attack, or the attack is wasted.</description>
+		</sheet>
+	</element>
+	
+</elements>

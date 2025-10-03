@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ravenfolk</name>
+		<description>Ravenfolk from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="race-ravenfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-ravenfolk.xml" />
+		</update>
+	</info>
+
+	<element name="Ravenfolk" type="Race" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_RAVENFOLK">
+		<description>
+			<p>Few races in Midgard live amid so much rumor, suspicion, and outright falsehood as the ravenfolk. They make their rookeries in every major city. Depending on whom you ask, they might condemn the ravenfolk as solitary wanderers bearing misfortune or praise them as messengers from the gods. Ravenfolk are loyal comrades and treacherous thieves, brave warriors and contemptible cowards. They are despised for their strange and secretive culture, and criticized for having no true culture of their own. The ravenfolk are a study in contradictions. These truths, half-truths, and lies conceal a greater mystery that few outsiders know.</p>
+			<p class="indent">If the ravenfolk have a homeland, it is in Beldestan to the east; or a branch of Wotan's tree to the North; or on a high cliff of Horus' hidden temple in the South. They have settlements in Trollheim, Vidim, Domovogrod, Nuria Natal, and the Dragon Empire. None of these are large, but in Nuria Natal at least, they serve honorably as temple guards and as defenders of the faithful of Horus.</p>
+			<p class="indent">Ravenfolk have no wings, but they do have tail feathers that sometimes flare out when they're angry.</p>
+			<h4>Of Gods and Men</h4>
+			<p>The ravenfolk of Midgard (also known as the huginn) are wily scoundrels, tricksters, assassins, spies, and thieves. The oldest tales say that the god Wotan the Rune Father brought the clever ravenfolk into being when he plucked the feathers from his two pet ravens, Huginn (Thought) and Muninn (Memory), and let the feathers drift down to Midgard. The feathers became ravenfolk, and they spread across the world as Wotan's spies.</p>
+			<p class="indent">In truth, the ravenfolk are a bridge between everyday life on Midgard and the realm of the gods. They share Wotan's secret knowledge of the branches of Yggdrasil the world tree. In the far northern reaches, the huginn are both the embodiment of the gods' will and a symbol of inevitable death in battle.</p>
+			<h4>Thieves, One and All</h4>
+			<p>No matter what trade, role, or profession a ravenfolk takes up, they are all thieves. They build their rookeries from found items, and much like normal ravens, have a great fondness for shiny baubles. Beyond physical thievery, they live to steal secrets. Ravenfolk are naturally adept at being unobtrusive, and they use that trait to feed their insatiable curiosity. The Tsar of Vidim employs a great flock of huginn as his personal spies and assassins.</p>
+			<p class="indent">Aside from their larcenous instincts, ravenfolk are scrupulous about keeping their word. That's not to say they don't lie; ravenfolk lie as much as anyone else, and maybe a bit more when the pressure's on. But if a promise or a vow can be extracted from one, it's as reliable as gold—which may be why ravenfolk seldom make promises or vows. Otherwise, their personalities are as varied as those of other races. They adapt readily to whatever environment they occupy, from remote wilderness to big cities—although their presence in cities is not always welcome. They frequently take on local customs, traditions, and beliefs to fit in with the community.</p>
+			<h4>Ravenfolk Names</h4>
+			<p>As with many other races whose native language is difficult for more humanlike vocal organs to deal with, ravenfolk tend to use different names among humans, dwarves, elves, and other humanoids than they use among their own kind. When choosing human-friendly names, ravenfolk borrow liberally from local traditions, mythology, and popular songs and poetry. They prefer names that invoke imagery (Starshadow, Moonglow, Rainshimmer) over more prosaic labels, but that's as much consistency as it's possible to define. Furthermore, since these aren't their real names, ravenfolk have little attachment to them. They swap names whenever they feel like it, until they finally settle on one that really suits them.</p>
+			<h4>Ravenfolk Traits</h4>
+			<p>Your ravenfolk character has certain characteristics in common with all other ravenfolk.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ravenfolk reach adulthood at 10 years old, and can live to be 110.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Ravenfolk tend toward chaos thanks to their capriciousness and insatiable curiosity. Greed overwhelms some ravenfolk, drawing them toward evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ravenfolk are slighter and shorter than humans. They range from 4 feet to just shy of 6 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Sudden Attack.</em></strong> You have advantage on attack rolls against a surprised creature.</p>
+			<p class="indent"><strong><em>Mimicry.</em></strong> Ravenfolk can mimic any sound they've heard. Make a Charisma (Deception) check against the passive Wisdom (Insight) of any listeners. Success indicates they believe the sound you created was real.</p>
+			<p class="indent"><strong><em>Trickster.</em></strong> You have proficiency in the Deception and Stealth skills.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Huginn's Speech and Northern Tongue.</p>
+		</description>
+		<setters>
+			<set name="names" type="custom">Starshadow, Moonglow, Rainshimmer</set>
+			<set name="names-format">{{custom}}</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ravenfolk)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_ASI)" />
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ravenfolk)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!(ID_INTERNAL_GRANTS_BACKGROUND_ASI||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_ASI)" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_HUGINNS_SPEECH" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_LANGUAGE)" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_NORTHERN_TONGUE" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE||ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_LANGUAGE)" />
+			<select type="Language" name="Customized Language (Ravenfolk)" supports="Custom Race Language||BOET Ravenfolk Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE,!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RAVENFOLK_SUDDEN_ATTACK" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RAVENFOLK_MIMICRY" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RAVENFOLK_TRICKSTER" />
+			<select type="Race Variant" name="Ravenfolk Variant" supports="BOET Ravenfolk Variant" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Sudden Attack" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RAVENFOLK_SUDDEN_ATTACK">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_SUDDEN_ATTACK</requirements>
+		<description>
+			<p>You have advantage on attack rolls against a surprised creature.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against a surprised creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Mimicry" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RAVENFOLK_MIMICRY">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_MIMICRY</requirements>
+		<description>
+			<p>Ravenfolk can mimic any sound they've heard. Make a Charisma (Deception) check against the passive Wisdom (Insight) of any listeners. Success indicates they believe the sound you created was real.</p>
+		</description>
+		<sheet>
+			<description>Make a Charisma (Deception) check against the passive Wisdom (Insight) of any listeners. Success indicates they believe the sound you created was real.</description>
+		</sheet>
+	</element>
+	
+	<element name="Trickster" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RAVENFOLK_TRICKSTER">
+		<requirements>!ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_TRICKSTER</requirements>
+		<description>
+			<p>You have proficiency in the Deception and Stealth skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Trickster)" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Ravenfolk ASI Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_ASI" />
+
+	<element name="Ravenfolk Language Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_LANGUAGE" />
+
+	<element name="Ravenfolk Sudden Attack Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_SUDDEN_ATTACK" />
+
+	<element name="Ravenfolk Mimicry Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_MIMICRY" />
+
+	<element name="Ravenfolk Trickster Replacement" type="Grants" source="Internal" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_TRICKSTER" />
+
+	<!--Sublime Ravenfolk-->
+	<element name="Sublime Ravenfolk" type="Race Variant" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_VARIANT_SUBLIME_RAVENFOLK">
+		<supports>BOET Ravenfolk Variant</supports>
+		<description>
+			<p>A growing proportion of ravenfolk have joined a mystery cult in the Shadow Realm; some claim this cult is new and others that it has ancient roots and is just now being revived. These ravenfolk call themselves Seekers of the Sublime and reportedly are drawn by a mysterious psychic song. Their numbers are still few, but more arrive along the shadow roads from the mortal lands regularly, waiting for the unknown singer to reveal their intentions. This network is highly secretive about the details of their mission, but so far, they have not conducted open hostilities against the other peoples of shadow.</p>
+			<p class="indent">Sublime ravenfolk are a subrace of ravenfolk. You can find more about the base ravenfolk race in <i>Midgard Heroes Handbook</i>.</p>
+			<h4>Sublime Ravenfolk Names</h4>
+			<p>As with many other races whose native language is difficult for more humanlike vocal organs to deal with, ravenfolk tend to use different names among humans, dwarves, elves, and other humanoids than they use among their own kind. When choosing human-friendly names, ravenfolk borrow liberally from local traditions, mythology, and popular songs and poetry. They prefer names that invoke imagery (Starshadow, Moonglow, Rainshimmer) over more prosaic labels, but that's as much consistency as it's possible to define. Furthermore, since these aren't their real names, ravenfolk have little attachment to them. They swap names whenever they feel like it, until they finally settle on one that really suits them.</p>
+			<h4>Sublime Ravenfolk Traits</h4>
+			<p>You are a ravenfolk mysteriously drawn to an unknown source within the Shadow Realm, which sets you apart from most other ravenfolk.</p>
+			<p class="indent">You exhibit a few different traits from typical ravenfolk. The following traits include those shared with the base ravenfolk’s traits (see <i>Midgard Heroes Handbook</i>), though replacing the Ability Score Increase, Mimicry, Sudden Attack, and Trickster traits with those listed.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Charisma score increases by 1. (This trait replaces the base ravenfolk’s Ability Score Increase trait.)</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ravenfolk reach adulthood at 10 years old, and can live to be 110.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Sublime ravenfolk more often tend toward lawful alignments than their cousins in the mortal world. They tend to seek stability and connectedness in their relationships, entrusting their path to the song.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ravenfolk are slighter and shorter than humans. They range from 4 feet to just shy of 6 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Constant Tune.</em></strong> You have advantage on saving throws against being charmed or frightened. (This trait replaces the base ravenfolk’s Sudden Attack trait.)</p>
+			<p class="indent"><strong><em>Cosmic Musician.</em></strong> You have proficiency in the Performance skill and gain proficiency with one musical instrument of your choice. (This trait replaces the base ravenfolk’s Trickster trait.)</p>
+			<p class="indent"><strong><em>Sublime Chord.</em></strong> As an action, you can mimic the mysterious sublime song to charm creatures within range. All creatures within 30 feet that can hear you must succeed on a DC 13 Charisma saving throw or become charmed by you for 10 minutes. The charmed creatures regard you as a casual friend. A creature makes this saving throw with advantage if you or your companions are fighting it. Once you use this ability, you cannot do so again until you complete a long rest. (This replaces the base ravenfolk’s Mimicry trait.)</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Ravenfolk, and Umbral.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_ASI" />
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Sublime Ravenfolk)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Sublime Ravenfolk)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_RAVENFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Sublime Ravenfolk)" supports="Custom Race Language||BOET Sublime Ravenfolk Language||BOET Umbral" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SUBLIME_RAVENFOLK_CONSTANT_TIME" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SUBLIME_RAVENFOLK_COSMIC_MUSICIAN" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SUBLIME_RAVENFOLK_SUBLIME_CHORD" />
+		</rules>
+	</element>
+
+	<element name="Constant Time" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SUBLIME_RAVENFOLK_CONSTANT_TIME">
+		<description>
+			<p>You have advantage on saving throws against being charmed or frightened. (This trait replaces the base ravenfolk’s Sudden Attack trait.)</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed or frightened.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_SUDDEN_ATTACK" />
+		</rules>
+	</element>
+
+	<element name="Cosmic Musician" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SUBLIME_RAVENFOLK_COSMIC_MUSICIAN">
+		<description>
+			<p>You have proficiency in the Performance skill and gain proficiency with one musical instrument of your choice. (This trait replaces the base ravenfolk’s Trickster trait.)</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_TRICKSTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Cosmic Musician)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Musical Instrument (Cosmic Musician)" supports="Musical Instrument" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Cosmic Musician)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Sublime Chord" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SUBLIME_RAVENFOLK_SUBLIME_CHORD">
+		<description>
+			<p>As an action, you can mimic the mysterious sublime song to charm creatures within range. All creatures within 30 feet that can hear you must succeed on a DC 13 Charisma saving throw or become charmed by you for 10 minutes. The charmed creatures regard you as a casual friend. A creature makes this saving throw with advantage if you or your companions are fighting it. Once you use this ability, you cannot do so again until you complete a long rest. (This replaces the base ravenfolk’s Mimicry trait.)</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can mimic the mysterious sublime song to charm creatures within range. All creatures within 30 feet that can hear you must succeed on a DC 13 Charisma saving throw or become charmed by you for 10 minutes. The charmed creatures regard you as a casual friend. A creature makes this saving throw with advantage if you or your companions are fighting it.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_KBP_BOET_RACIAL_TRAIT_REPLACEMENT_RAVENFOLK_MIMICRY" />
+		</rules>
+	</element>
+
+</elements>

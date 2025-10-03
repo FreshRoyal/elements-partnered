@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lunar Elf</name>
+		<description>Lunar Elf from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="elf-lunar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/elf-lunar.xml" />
+		</update>
+	</info>
+
+	<element name="Lunar Elf" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_LUNAR_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>Lunar elves are an offshoot of shadow fey and are quite rare, and their births are typically regarded as an auspicious omen. If the origin of the shadow fey is mysterious, then that of the lunar elves is even more so, though many lunar elves have been recently drawn toward the Moonlit King, seeking out this exiled sovereign. Always born under the light of the full moons, these shadow fey seem saturated with its light. Lunar elves are not automatically ostracized from the shadow fey courts, but many prefer to take up duties that remove themselves from the watchful eyes of the shadow fey nobles: serving as an emissary to the Moonlit Glades, taking up residence in the Starry Court, or training to hunt the beasts of the region is often preferable to the suspicious gaze of the Queen of Night and Magic.</p>
+			<p class="indent">Lunar elves are identical in appearance to shadow fey except their skin glows in the dark, and they have luminous silver eyes. While lunar elves can learn to suppress this glowing effect, moments of strong emotion tend to reveal their true natures. The horns of lunar elves tend to be long, spiraled, and pearlescent.</p>
+			<h4>Lunar Elf Names</h4>
+			<p>Lunar elves who wish to remain in shadow fey high society adopt names typical of the shadow fey. However, the lunar elves who choose to embrace their differences instead name themselves after the stars, which are so rarely seen through the dreary shadow sky. They consider this adoption of celestial names to be a true symbol of independence.</p>
+			<ul class="unstyled">
+				<li><strong>Example Names:</strong> Aldebaar, Belline, Caropa, Celene, Lestra, Mintella, Quogel, Solaris, Tollub, Virgesh.</li>
+			</ul>
+			<h4>Lunar Elf Traits</h4>
+			<p>Lunar elves are a subrace of elf. They enjoy the base elven racial traits along with the following subrace traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Although they have a malevolent reputation, the shadow fey are not inherently evil. They tend toward chaotic neutral, though every variation exists.</p>
+			<p class="indent"><strong><em>Luminous.</em></strong> You emit bright light in a 15-foot radius and dim light for an additional 15 feet. You can choose to suppress this effect to only dim light in a 15-foot radius, to suppress it completely, or to activate it at any time without expending an action. (This effect has a level equal to your proficiency bonus, and if any of its area overlaps with an area of darkness created by a spell of the same level or lower, the spell that created the darkness is dispelled.)</p>
+			<p class="indent"><strong><em>Moon Child.</em></strong> When in darkness, dim light, or a shadow large enough to cover your body, you can cast the <i>moonbeam</i> spell. You can use this ability a number of times per day equal to your Wisdom modifier (minimum 1), and you regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+			<p class="indent"><strong><em>Shadow Fey Weapon Training.</em></strong> You have proficiency with the rapier, shortsword, shortbow, and longbow.</p>
+			<p class="indent"><strong><em>Sunlight Sensitivity.</em></strong> You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in bright sunlight.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Elvish and Umbral.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Aldebaar, Belline, Caropa, Celene, Lestra, Mintella, Quogel, Solaris, Tollub, Virgesh</set>
+			<set name="names" type="female">Aldebaar, Belline, Caropa, Celene, Lestra, Mintella, Quogel, Solaris, Tollub, Virgesh</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Lunar Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Lunar Elf)" supports="Custom Race Language||BOET Umbral"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_LUMINOUS" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_MOON_CHILD" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_SHADOW_FEY_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_SUNLIGHT_SENSITIVITY" />
+		</rules>
+	</element>
+
+	<element name="Luminous" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_LUMINOUS">
+		<description>
+			<p>You emit bright light in a 15-foot radius and dim light for an additional 15 feet. You can choose to suppress this effect to only dim light in a 15-foot radius, to suppress it completely, or to activate it at any time without expending an action. (This effect has a level equal to your proficiency bonus, and if any of its area overlaps with an area of darkness created by a spell of the same level or lower, the spell that created the darkness is dispelled.)</p>
+		</description>
+		<sheet>
+			<description>You emit bright light in a 15-ft radius and dim light for an additional 15 ft. You can choose to suppress this effect to only dim light in a 15-ft radius, to suppress it completely, or to activate it at any time without expending an action. (This effect has a level equal to {{proficiency}}, and if any of its area overlaps with an area of darkness created by a spell of the same level or lower, the spell that created the darkness is dispelled.)</description>
+		</sheet>
+	</element>
+
+	<element name="Moon Child" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_MOON_CHILD">
+		<description>
+			<p>When in darkness, dim light, or a shadow large enough to cover your body, you can cast the <i>moonbeam</i> spell. You can use this ability a number of times per day equal to your Wisdom modifier (minimum 1), and you regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="{{boet:lunar elf:moon child:usage}}/Long Rest">
+			<description>When in darkness, dim light, or a shadow large enough to cover your body, you can cast the moonbeam spell. Wisdom is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" />
+			<stat name="boet:lunar elf:moon child:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="boet:lunar elf:moon child:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Shadow Weapon Training" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_SHADOW_FEY_WEAPON_TRAINING">
+		<description>
+			<p>You have proficiency with the rapier, shortsword, shortbow, and longbow.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Shadow Fey Weapon Training)" number="3" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Shadow Fey Weapon Training)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_LUNAR_ELF_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+		</sheet>
+	</element>
+
+	
+</elements>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Darakhul" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_DARAKHUL">
+		<supports>Exotic, BOET Darakhul Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Darakhul</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+	
+	<element name="Erina" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_ERINA">
+		<supports>Exotic, BOET Erina Language</supports>
+		<description>
+			<p>Erina speak their own language, a series of whirring sounds punctuated by clicks. Erina can also communicate with other erina using only twitches of the nose and whiskers, though this old nonverbal language has fallen out of fashion in recent generations. Most burrows have at least one member who speaks the Common tongue.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Erina</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Huginn's Speech" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_HUGINNS_SPEECH">
+		<supports>Exotic, BOET Ravenfolk Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Northern Tongue" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_NORTHERN_TONGUE">
+		<supports>Exotic, BOET Ravenfolk Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Ravenfolk" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_RAVENFOLK">
+		<supports>Exotic, BOET Sublime Ravenfolk Language</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Ravenfolk</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+	
+	<element name="Umbral" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_UMBRAL">
+		<supports>Exotic, BOET Umbral</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Shadow Fey</set>
+			<set name="script">Elvish</set>
+		</setters>
+	</element>
+
+	<element name="Void Speech" type="Language" source="Book of Ebon Tides" id="ID_KBP_BOET_LANGUAGE_VOID_SPEECH">
+		<supports>Exotic, BOET Void Speech</supports>
+		<description>
+			<p>Void Speech is a language of dark gods and ancient blasphemies, and the mere sound of its sibilant tones makes many other creatures quite uncomfortable.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Satarre</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+	
+</elements>

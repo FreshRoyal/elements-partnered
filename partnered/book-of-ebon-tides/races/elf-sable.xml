@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sable Elf</name>
+		<description>Sable Elf from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="elf-sable.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/elf-sable.xml" />
+		</update>
+	</info>
+
+	<element name="Sable Elf" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_SABLE_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>When the elves first began to decline, some chose to stand their ground while others accepted a pact with the shadows. And then there were the sable elves who simply chose to run. Unfortunately, this splinter group of indecisive elves quickly made enemies, and they were scorned by the elves who had seized the opportunity to forge a shadow pact. So now, these sable elves are scattered about the realms in perpetual disgrace, not belonging anywhere. However, they have one redoubt of their own, the Court of Golden Oak.</p>
+			<p class="indent">The few sable elves that remain possess the last vestiges of powerful elven magic that helped shape the early phases of the world, and they guard their secrets in isolation. Since there are so few of these elves remaining and only one community to speak of, the sable elf lineage is rapidly dying out. Their power allows these ancient elves to survive in almost any climate, and the dark forests of the Shadow Realm house a handful of these wanderers.</p>
+			<p class="indent">Sable elves are dark-eyed, often either red-haired or raven-haired, and silver-skinned. They have tall, willowy frames, similar to other elves. Most carry an irrepressible aura of world-weariness.</p>
+			<h4>Sable Elf Names</h4>
+			<p>Sable elves follow naming conventions of the ancient elves for their first birth name and their second adopted common name. However, they do not adopt the third name, or lineage name, that some elves do, as a reflection of their disgraced status.</p>
+			<h4>Sable Elf Traits</h4>
+			<p>You are an elf with a deeper affinity for elven magic that sets you apart from most other elves.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2, and your Dexterity decreases by 1.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Due to their exiled status, sable elves have lost attachment to many of the values traditionally held by elves. Centuries of solitude have pushed the remaining sable elves in different directions, and a variety of alignments are found within their ranks.</p>
+			<p class="indent"><strong><em>Blood Affinity.</em></strong> Choose a school of magic you have a natural affinity for. You learn a cantrip of your choice from that school. When you reach 3rd level, choose a 1st-level spell from the same school, and when you reach 5th level, choose a 3rd-level spell from the same school. You learn these spells and can cast them at their lowest level. Once you cast one of these spells, you must finish a long rest before you can cast the spell again using this feature. Your spellcasting ability for these spells is Intelligence.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Elvish and Umbral.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="dexterity" value="-1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Sable Elf)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Diminishment -1 (Sable Elf)" supports="Custom Ability Score Decrease 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Sable Elf)" supports="Custom Race Language||BOET Umbral"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY" />
+		</rules>
+	</element>
+
+	<element name="Blood Affinity" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY">
+		<description>
+			<p>Choose a school of magic you have a natural affinity for. You learn a cantrip of your choice from that school. When you reach 3rd level, choose a 1st-level spell from the same school, and when you reach 5th level, choose a 3rd-level spell from the same school. You learn these spells and can cast them at their lowest level. Once you cast one of these spells, you must finish a long rest before you can cast the spell again using this feature. Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Blood Affinity" supports="BOET Blood Affinity" />
+		</rules>
+	</element>
+	
+	<!--Blood Affinity Options-->
+	<element name="Abjuration" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_ABJURATION">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Abjuration school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Abjuration cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Abjuration cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Abjuration cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Abjuration Cantrip (Blood Affinity)" supports="Abjuration&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Abjuration Spell (Blood Affinity)" supports="Abjuration&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Abjuration Spell (Blood Affinity)" supports="Abjuration&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+	
+	<element name="Conjuration" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_CONJURATION">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Conjuration school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Conjuration cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Conjuration cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Conjuration cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Conjuration Cantrip (Blood Affinity)" supports="Conjuration&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Conjuration Spell (Blood Affinity)" supports="Conjuration&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Conjuration Spell (Blood Affinity)" supports="Conjuration&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Divination" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_DIVINATION">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Divination school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Divination cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Divination cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Divination cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Divination Cantrip (Blood Affinity)" supports="Divination&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Divination Spell (Blood Affinity)" supports="Divination&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Divination Spell (Blood Affinity)" supports="Divination&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Enchantment" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_ENCHANTMENT">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Enchantment school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Enchantment cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Enchantment cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Enchantment cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Enchantment Cantrip (Blood Affinity)" supports="Enchantment&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Enchantment Spell (Blood Affinity)" supports="Enchantment&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Enchantment Spell (Blood Affinity)" supports="Enchantment&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Evocation" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_EVOCATION">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Evocation school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Evocation cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Evocation cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Evocation cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Evocation Cantrip (Blood Affinity)" supports="Evocation&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Evocation Spell (Blood Affinity)" supports="Evocation&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Evocation Spell (Blood Affinity)" supports="Evocation&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Illusion" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_ILLUSION">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Illusion school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Illusion cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Illusion cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Illusion cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Illusion Cantrip (Blood Affinity)" supports="Illusion&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Illusion Spell (Blood Affinity)" supports="Illusion&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Illusion Spell (Blood Affinity)" supports="Illusion&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Necromancy" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_NECROMANCY">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Necromancy school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Necromancy cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Necromancy cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Necromancy cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Necromancy Cantrip (Blood Affinity)" supports="Necromancy&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Necromancy Spell (Blood Affinity)" supports="Necromancy&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Necromancy Spell (Blood Affinity)" supports="Necromancy&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Transmutation" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_SABLE_ELF_BLOOD_AFFINITY_TRANSMUTATION">
+		<supports>BOET Blood Affinity</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have an affinity for the Transmutation school of magic.</p>
+		</description>
+		<sheet alt="Blood Affinity">
+			<description>You know an Transmutation cantrip of your choice. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know an Transmutation cantrip of your choice. You can cast the 1st-level spell of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know an Transmutation cantrip of your choice. You can cast the 1st-level and 3rd-level spells of your choice once per long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Transmutation Cantrip (Blood Affinity)" supports="Transmutation&amp;&amp;0" />
+			<select type="Spell" name="1st-Level Transmutation Spell (Blood Affinity)" supports="Transmutation&amp;&amp;1" level="3" />
+			<select type="Spell" name="3rd-Level Transmutation Spell (Blood Affinity)" supports="Transmutation&amp;&amp;3" level="5" />
+		</rules>
+	</element>
+	
+</elements>

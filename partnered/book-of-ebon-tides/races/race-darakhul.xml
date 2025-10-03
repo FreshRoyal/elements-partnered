@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Darakhul</name>
+		<description>Darakhul from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="race-darakhul.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-darakhul.xml" />
+		</update>
+	</info>
+
+	<element name="Darakhul" type="Race" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_DARAKHUL">
+		<description>
+			<p>The darakhul are no strangers to darkness, and over the years, the members of the Twilight Empire deftly adapted to their new home and carved out a thriving civilization in the Shadow Realm. They have grown into a powerful force.</p>
+			<p class="indent">Living flesh is scarce in the Shadow Realm, so while the darakhul still hunt the living denizens of the plane and maintain elaborate trade networks to secure living cargo from mortal lands, they have discovered that the crackling trees—an invasive species originating in Evermaw—can assuage much of their hunger, and they have learned to subsist on the bloodlike sap drawn from these trees. This practice marks them though, for the corruption inherent in the flora causes a permanent blackening of the teeth, recession of the gums, and shriveling of the flesh around the mouth. As a result, the darakhul of the Shadow Realm are much less concerned with concealing their true nature. After all, they are far from the worst things that stalk the darkness.</p>
+			<p class="indent">In addition to the heritage subrace options presented in <i>Tome of Heroes</i>, a darakhul character from the Shadow Realm can choose one of the options below.</p>
+			<h4>Darakhul Names</h4>
+			<p>Ghouls tend to keep their first names from their time among the living. Their surnames, however, tend to be granted or chosen by the newly arrived darakhul after the Crossing (their passage into undeath). These are sometimes the name of a patron, lord, or lady, or a name used within the legions of the empire or within a particular faith. Some common lineage names are provided below. Some names are most common in the priesthoods while others are from the legions. Outside of those areas, surnames often celebrate particular affiliations in the trades or mark a tie to a founder of particular note. Because of this naming custom, different darakhul can end up with the same surname due to being chosen by the same patron, being part of the same temple, being the spawn of another darakhul, or some other similar circumstance.</p>
+			<p class="indent">Ghouls created outside the influence of the Twilight Empire might take on surnames related to their personal goals, keep their original surnames if attempting to regain some semblance of their previous life, or forgo a surname to avoid ties to the past, a church, or a patron.</p>
+			<ul class="unstyled">
+				<li><strong>Darakhul Surnames of the Priesthood:</strong> Al-Mot, Al-Qaan, Akma-aldan, Bloodtide, Vardeson.</li>
+				<li><strong>Darakhul Surnames of the Legions:</strong> Bonecracker, Ivory, Maggot, Mortus, Reaver, Secondus.</li>
+				<li><strong>Traditional Darakhul Surnames:</strong> Blackwater, Bloodborn, Calva, Canis, Carver, Corvan, Dawnbinder, Demonfinder, Edlest, Fuligin, Ghost, Gnollfeeder, Hunter, Jaeger, Miner, Orcandus, Osseor, Ravenfeeder, Shadowsmith, Strigator, Styxdrinker, Tanner, Umbro, Unsated, Verskull, Vespertan, Whispersen, Wormsong, Wraithcaller.</li>
+			</ul>
+			<h4>Darakhul Characters</h4>
+			<p>Both ordinary ghouls and darakhul arise from the infected corpses of other races. Most traits of the previous race are gone when the creature rises as a darakhul, though each darakhul carries some traits of their previous form (see the Heritage Darakhul Subraces). Still, most of a darakhul's cosmetic features, such as supple skin or a long beard, fade over time into the gaunt, skull-like face, fanged maw, and taut gray skin of a ghoulish undead.</p>
+			<div class="sidebar">
+				<h5>Playing a Darakhul Character</h5>
+				<p>Life as the ravenous undead comes with challenges for an adventurer. People revile the darakhul universally as scavengers at best and as loathsome, murdering abominations at worst. For such a being, participating as a member of an adventuring party is complicated.</p>
+				<p class="indent">One of the touchstones that provides stability in your new form is your old life. While you have urges and thoughts that are dark and terrible, memories and feelings from your life before undeath might resurface to help you cope. Sometimes these flashes are corrupted versions of your old self, manifesting in your mind in new ways. Other times the recollections and feelings bubble up unfiltered, reminding you of a time when you were alive. Both are painful, but pain can be instructive.</p>
+				<p class="indent">A major question you have to answer when you play a darakhul is, "How am I dealing with the change that transformed me into a darakhul?" Have you fully accepted your new situation, embracing your new powers and hungers as a boon? Do you fight against your urges daily, seeking to return to your old self? What were your goals before your transformation, and do you still pursue them? Are your new goals simply about survival, or are those aspirations a twisted reflection of the goals you had as a living creature?</p>
+				<p class="indent">Regardless of your current monstrous state, who you once were has a powerful effect on who you are now. The carefree spirit of a halfling, the fiendish urges of a tiefling, or the creative spark of a gnome: all of these do not leave you simply because of your new form. How do those traits manifest themselves in you now?</p>
+				<p class="indent">There is a great deal of narrative, dramatic, and roleplaying potential in that tension between the old self and the new. Darakhul may be undead, but they still must function in their own society—be it on the surface or in the empires beneath the surface. Most still have jobs to do and dreams to fulfill within their societies.</p>
+			</div>
+			<h4>Darakhul Traits</h4>
+			<p>Your darakhul character has certain characteristics in common with all other darakhul.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> An upper limit of darakhul age has never been discovered; most darakhul die violently.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Your alignment does not change when you become a darakhul, but most darakhul have a strong draw toward evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is determined by your Heritage Subrace.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is determined by your Heritage Subrace.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet as though it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Hunger for Flesh.</em></strong> You must consume 1 pound of raw meat each day or suffer the effects of starvation. If you go 24 hours without such a meal, you gain one level of exhaustion. While you have any levels of exhaustion from this trait, you can't regain hit points or remove levels of exhaustion until you spend at least 1 hour consuming 10 pounds of raw meat.</p>
+			<p class="indent"><strong><em>Imperfect Undeath.</em></strong> You transitioned into undeath, but your transition was imperfect. Though you are a humanoid, you are susceptible to effects that target undead. You can regain hit points from spells like <i>cure wounds</i>, but you can also be affected by game effects that specifically target undead, such as a cleric's Turn Undead feature. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a darakhul. A <i>true resurrection</i> or <i>wish</i> spell can restore you to life as a fully living member of your original race.</p>
+			<p class="indent"><strong><em>Powerful Jaw.</em></strong> Your heavy jaw is powerful enough to crush bones to powder. Your bite is a natural melee weapon, which you can use to make unarmed strikes. When you hit with it, your bite deals piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Sunlight Sensitivity.</em></strong> You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+			<p class="indent"><strong><em>Undead Resilience.</em></strong> You are infused with the dark energy of undeath, which frees you from some frailties that plague most creatures. You have resistance to necrotic damage and poison damage, you are immune to disease, and you have advantage on saving throws against being charmed or poisoned. When you finish a short rest, you can reduce your exhaustion level by 1, provided you have ingested at least 1 pound of raw meat in the last 24 hours (see Hunger for Flesh feature).</p>
+			<p class="indent"><strong><em>Undead Vitality.</em></strong> You don't need to breathe, and you don't sleep the way most creatures do. Instead, you enter a dormant state that resembles death, remaining semiconscious, for 6 hours a day. While dormant, you have disadvantage on Wisdom (Perception) checks. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Darakhul, Umbral, and a language associated with your Heritage Subrace.</p>
+			<p class="indent"><strong><em>Heritage Subrace.</em></strong> You were something else before you became a darakhul. This heritage determines some of your traits. Choose one Heritage Subrace below and apply the listed traits.</p>
+			<h4>Heritage Subraces</h4>
+			<p>Before the terrible scourge of darakhul fever transformed you into an undead creature, you belonged to another race. Although your undead self now rules you, some remnant of your past form clings to you, making you different from the darakhul created from other races. Sometimes you retain a trait, but more likely, you now have a trait that is a corruption of one you once possessed. For example, the elemental spark in a dragonborn is perverted into one of a more necrotic bent. The luck inherent in a halfling's spirit twists into a power that brings ill fortune to their enemies.</p>
+			<p class="indent">You were something else before you became a darakhul. This heritage determines some of your traits.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Darakhul)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_DARAKHUL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Darakhul)" supports="Custom Race Language||BOET Darakhul Language||BOET Umbral"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_HUNGER_FOR_FLESH" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_IMPERFECT_UNDEATH" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_POWERFUL_JAW" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_SUNLIGHT_SENSITIVITY" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_UNDEAD_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_UNDEAD_VITALITY" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHU_HERITAGE_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Hunger for Flesh" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_HUNGER_FOR_FLESH">
+		<description>
+			<p>You must consume 1 pound of raw meat each day or suffer the effects of starvation. If you go 24 hours without such a meal, you gain one level of exhaustion. While you have any levels of exhaustion from this trait, you can't regain hit points or remove levels of exhaustion until you spend at least 1 hour consuming 10 pounds of raw meat.</p>
+		</description>
+		<sheet>
+			<description>You must consume 1 pound of raw meat each day or suffer the effects of starvation. If you go 24 hours without such a meal, you gain one level of exhaustion. While you have any levels of exhaustion from this trait, you can't regain hit points or remove levels of exhaustion until you spend at least 1 hour consuming 10 pounds of raw meat.</description>
+		</sheet>
+	</element>
+
+	<element name="Imperfect Undeath" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_IMPERFECT_UNDEATH">
+		<description>
+			<p>You transitioned into undeath, but your transition was imperfect. Though you are a humanoid, you are susceptible to effects that target undead. You can regain hit points from spells like <i>cure wounds</i>, but you can also be affected by game effects that specifically target undead, such as a cleric's Turn Undead feature. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a darakhul. A <i>true resurrection</i> or <i>wish</i> spell can restore you to life as a fully living member of your original race.</p>
+		</description>
+		<sheet>
+			<description>Though you are a humanoid, you are susceptible to effects that target undead. You can regain hp from spells, but you can also be affected by game effects that specifically target undead. Game effects that raise a creature from the dead work on you as normal, but they return you to life as a darakhul. A true resurrection or wish spell can restore you to life as a fully living member of your original race.</description>
+		</sheet>
+	</element>
+
+	<element name="Powerful Jaw" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_POWERFUL_JAW">
+		<description>
+			<p>Your heavy jaw is powerful enough to crush bones to powder. Your bite is a natural melee weapon, which you can use to make unarmed strikes. When you hit with it, your bite deals piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your bite is a natural melee weapon, which you can use to make unarmed strikes. When you hit with it, your bite deals 1d4 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+		</sheet>
+	</element>
+
+	<element name="Undead Resilience" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_UNDEAD_RESILIENCE">
+		<description>
+			<p>You are infused with the dark energy of undeath, which frees you from some frailties that plague most creatures. You have resistance to necrotic damage and poison damage, you are immune to disease, and you have advantage on saving throws against being charmed or poisoned. When you finish a short rest, you can reduce your exhaustion level by 1, provided you have ingested at least 1 pound of raw meat in the last 24 hours (see Hunger for Flesh feature).</p>
+		</description>
+		<sheet>
+			<description>You are immune to disease, and you have advantage on saving throws against being charmed or poisoned. When you finish a short rest, you can reduce your exhaustion level by 1, provided you have ingested at least 1 pound of raw meat in the last 24 hours.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Undead Vitality" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_UNDEAD_VITALITY">
+		<description>
+			<p>You don't need to breathe, and you don't sleep the way most creatures do. Instead, you enter a dormant state that resembles death, remaining semiconscious, for 6 hours a day. While dormant, you have disadvantage on Wisdom (Perception) checks. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
+		</description>
+		<sheet>
+			<description>You don't need to breathe, and you don't sleep the way most creatures do. Instead, you enter a dormant state that resembles death, remaining semiconscious, for 6 hours a day. While dormant, you have disadvantage on Wisdom (Perception) checks. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</description>
+		</sheet>
+	</element>
+
+	<element name="Heritage Subrace" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHU_HERITAGE_SUBRACE">
+		<description>
+			<p>You were something else before you became a darakhul. This heritage determines some of your traits. Choose one Heritage Subrace below and apply the listed traits.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Heritage Subrace" supports="BOET Darakhul Subrace" />
+		</rules>
+	</element>
+
+	<!--Bearfolk Heritage-->
+	<element name="Bearfolk Heritage" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_DARAKHUL_BEARFOLK_HERITAGE">
+		<supports>BOET Darakhul Subrace</supports>
+		<description>
+			<p>Your darakhul character was a bearfolk before transforming into a darakhul. While your allegiance has changed, your mission to create order amid the darkness has not. The strength and tenacity of the darakhul are comfortingly familiar.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Bearfolk can reach a height of over 7 feet, possessing thick, muscular builds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Jaws of Death.</em></strong> Your powerful jaws serve you well as a darakhul. When you use your bite attack to make an unarmed strike, you deal piercing damage equal to 1d6 + your Strength modifier.</p>
+			<p class="indent"><strong><em>Undead Fortitude.</em></strong> Your tenacity in life has followed you into undeath. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Language.</em></strong> You can speak, read, and write Common (if you hail from mortal lands) or Umbral (if native to the Shadow Realm).</p>
+		</description>
+		<sheet display="false" alt="Darakhul (Bearfolk Heritage)" />
+		<rules>
+			<stat name="strength" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Bearfolk Heritage)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<select type="Language" name="Language (Bearfolk Heritage)" supports="ID_LANGUAGE_COMMON|ID_KBP_BOET_LANGUAGE_UMBRAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Bearfolk Heritage)" supports="Custom Race Language||BOET Umbral" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_BEARFOLK_HERITAGE_JAWS_OF_DEATH" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_BEARFOLK_HERITAGE_UNDEAD_FORTITUDE" />
+		</rules>
+	</element>
+
+	<element name="Jaws of Death" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_BEARFOLK_HERITAGE_JAWS_OF_DEATH">
+		<description>
+			<p>Your powerful jaws serve you well as a darakhul. When you use your bite attack to make an unarmed strike, you deal piercing damage equal to 1d6 + your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>When you use your bite attack to make an unarmed strike, you deal 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Undead Fortitude" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_BEARFOLK_HERITAGE_UNDEAD_FORTITUDE">
+		<description>
+			<p>Your tenacity in life has followed you into undeath. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 hp but not killed outright, you can drop to 1 hp instead.</description>
+		</sheet>
+	</element>
+
+	<!--Shadow Goblin Heritage-->
+	<element name="Shadow Goblin Heritage" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_DARAKHUL_SHADOW_GOBLIN_HERITAGE">
+		<supports>BOET Darakhul Subrace</supports>
+		<description>
+			<p>Your darakhul character was a shadow goblin before transforming into a darakhul.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Shadow goblins are between 3 and 4 feet tall and weigh between 40 and 80 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Dark Deed.</em></strong> Your fascination with humor has not gone away, but you've had to adopt more macabre tactics. As an action, you can perform a combination of rude gestures and sounds to attempt to scare one creature you can see within 30 feet. If the target can see and hear you, it must succeed on a Wisdom saving throw or become frightened of you until the end of its turn. The DC for this saving throw is equal to 10 plus your Charisma modifier.</p>
+			<p class="indent"><strong><em>Language.</em></strong> You can speak, read, and write Goblin.</p>
+		</description>
+		<sheet display="false" alt="Darakhul (Shadow Goblin Heritage)" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shadow Goblin Heritage)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Grant" id="ID_INTERNAL_GRANT_RACE_GOBLINOID" />
+
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Shadow Goblin Heritage)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_SHADOW_GOBLIN_HERITAGE_DARK_DEED" />
+		</rules>
+	</element>
+
+	<element name="Dark Deed" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_DARAKHUL_SHADOW_GOBLIN_HERITAGE_DARK_DEED">
+		<description>
+			<p>Your fascination with humor has not gone away, but you've had to adopt more macabre tactics. As an action, you can perform a combination of rude gestures and sounds to attempt to scare one creature you can see within 30 feet. If the target can see and hear you, it must succeed on a Wisdom saving throw or become frightened of you until the end of its turn. The DC for this saving throw is equal to 10 plus your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>You can perform a combination of rude gestures and sounds to attempt to scare one creature you can see within 30 feet. If the target can see and hear you, it must succeed on a Wisdom saving throw (DC {{boet:darakhul:dark deed:dc}}) or become frightened of you until the end of its turn.</description>
+		</sheet>
+		<rules>
+			<stat name="boet:darakhul:dark deed:dc" value="8" />
+			<stat name="boet:darakhul:dark deed:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+</elements>

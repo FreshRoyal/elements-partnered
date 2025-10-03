@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Book of Ebon Tides by Kobold Press</name>
+		<update version="1.0.0">
+			<file name="book-of-ebon-tides.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides.index" />
+		</update>
+	</info>
+	<files>
+		<file name="deities.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/deities.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/items.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/languages.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/source.xml" />
+		<file name="spell.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/spells.xml" />
+		
+		<!--Archetypes-->
+		<file name="barbarian-shadow-gnawer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/barbarian-shadow-gnawer.xml" />
+		<file name="bard-shadow.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/bard-shadow.xml" />
+		<file name="cleric-keeper.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/cleric-keeper.xml" />
+		<file name="cleric-shadow.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/cleric-shadow.xml" />
+		<file name="druid-shadows.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/druid-shadows.xml" />
+		<file name="monk-prophet.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/monk-prophet.xml" />
+		<file name="rogue-umbral-binder.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/rogue-umbral-binder.xml" />
+		<file name="sorcerer-light-weaver.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/sorcerer-light-weaver.xml" />
+		<file name="warlock-mother-of-sorrows.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/warlock-mother-of-sorrows.xml" />
+		<file name="wizard-shadow.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/wizard-shadow.xml" />
+
+		<!--Races-->
+		<file name="elf-lunar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/elf-lunar.xml" />
+		<file name="elf-sable.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/elf-sable.xml" />
+		<file name="elf-shadow-fey.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/elf-shadow-fey.xml" />
+		<file name="gnome-wyrd.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/gnome-wyrd.xml" />
+		<file name="race-bearfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-bearfolk.xml" />
+		<file name="race-darakhul.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-darakhul.xml" />
+		<file name="race-erina.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-erina.xml" />
+		<file name="race-quickstep.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-quickstep.xml" />
+		<file name="race-ratatosk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-ratatosk.xml" />
+		<file name="race-ravenfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-ravenfolk.xml" />
+		<file name="race-satarre.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-satarre.xml" />
+		<file name="race-shade.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-shade.xml" />
+		<file name="race-shadow-goblin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-shadow-goblin.xml" />
+		<file name="race-umbral-human.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-umbral-human.xml" />
+	</files>
+</index>

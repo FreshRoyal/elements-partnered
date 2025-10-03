@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deities</name>
+		<description>Deities from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/deities.xml" />
+		</update>
+	</info>
+
+	<element name="Ailuros" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_AILUROS">
+		<description>
+			<p>Ailuros is the wild and free goddess of moonlit nights and joyous hunting, a force for chaos and the patron of the alseid. With her hounds at her side, her lithe form, and her glowing moonlit arrows, she is sometimes thought of as half-fey herself, a member of the Great Hunt. She is a goddess of excellence and desire, the patron goddess of perfumers, alchemists, and those whose trade is beauty. With the scent of the trees and woodland streams in her hair, she and her hounds hunt wolves, foxes, and wild boar, protecting the livestock and crops of farmers and shepherds as well as driving away vermin.</p>
+			<p class="indent">Her hair is golden, her clothes made for the hunt. A solar or lunar disk hovers over her head, and she wears bracelets in the form of deer or serpents.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">C</set>
+			<set name="domains">Cat, Hunting, Lust, Moon</set>
+			<set name="symbol">deer</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Alquam" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_ALQUAM">
+		<description>
+			<p>As the demon lord devoted to darkness and the night, shadows are Alquam's natural home. He is a creature devoted to stealth, to the silent killing loved by assassins, raptors, and nocturnal animals. While he is often regarded as the Silent God, when his followers strike, they shout his name, and many of his most devoted followers are quite loud, brash people, not afraid to make plain their power. Aggressiveness and bullying are common among warriors, alchemists, and bandits devoted to the Master of Nightmares.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">E</set>
+			<set name="domains">Darkness, Death, Shadow, Wind</set>
+			<set name="symbol">black owl</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Anu-Akma" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_ANU_AKMA">
+		<description>
+			<p>Among the golden sands of the Southern deserts, Anu-Akma guards the tombs of royalty and stands against the scourges of age, madness, and the evil undead. Deep underground, his worship as Akma-Apophis takes a darker turn, combined with the rites of a devil he conquered long ago. There he is venerated as the greatest patron of the Ghoul Empire and Lord of the Underworld. And in that form, he came also to the Twilight Empire of the ghouls and thus into the Shadow Realm.</p>
+			<p class="indent">Anu-Akma promotes purity and preserves order, watching over the timely and dignified death of all. His priests anoint those of royal blood to rise again as mummies or liches, and gnoll mortuary guards and guides protect the vast ossuaries and cemeteries from desecration.</p>
+			<p class="indent">His ghoulish followers, meanwhile, await each human or goblin burial as a new source of flesh for feasting while Anu-Akma preserves the souls of those unfortunate corpses.</p>
+			<p class="indent">When portrayed by humans and desert folk, Anu-Akma is a tall and muscular jackal-headed man whose flesh seems made of the starry night sky. His eyes are golden, and he wears the garb of Southland royalty. Beneath the earth and in the Shadow Realm, his images portray a faceless darkness beneath heavy robes and mummy wrappings. He holds his arms wide, welcoming all into his cold domain.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">L</set>
+			<set name="domains">Death, Justice, Travel</set>
+			<set name="symbol">golden ankh and golden scythe</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Baccholon" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_BACCHOLON">
+		<description>
+			<p>Baccholon was once the Prince of Courtesies and Master of the Elves, their patron and paragon. And when the elves left the mortal world and returned to the Summer Lands, he led the procession in person, flowers in his hair and a song on his lips. His human and elfmarked followers fell into a long despair, filled with bouts of madness and drunkenness and bitter wrath. His temples fell into disuse or were reconsecrated to Charun or other gods. Baccholon's echo is still felt, his poetic hymns and joyous image carved in old elven halls and buildings, but his priests are vanishingly few and often not notably different from beggars and starving poets. A few of his order remember the heights of elven ritual magic, but this could be mere speculation or wishful dreaming—something the god's followers have always been prone to.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">C</set>
+			<set name="domains">Death, Lust, Prophecy, Travel, Wine</set>
+			<set name="symbol">golden ankh and golden scythe</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Bengta the Bear Maiden" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_BENGTA_THE_BEAR_MAIDEN">
+		<description>
+			<p>Bengta the Bear Maiden is the keeper of healthy communities and the champion who stands against all their threats. She is the ferocious aspect of Lada, the Goddess of Dawn, who takes the form of a radiant bearfolk. The Bear Maiden is much beloved in the Northlands where she is primarily worshipped. In addition to righteous wrath, Bengta presides over dawn, strength, and of course honey.</p>
+			<p class="indent">The Bear Maiden is one mask of the Goddess Lada, though Bengta has her distinct and rich tapestry of legend and myth perpetuated by the citizens of Björnrike. Though most greatly championed by the bearfolk, who share the god's form, human and dwarf healers, community leaders, berserkers, and merchants also worship Bengta's golden radiance. In opposition to the gentle-hearted Lada, Bengta represents the righteous guardian who protects communities. The Bear Maiden is a leader who encourages order and cohesion, ensuring all members contribute to creating a successful whole, much like a colony of bees. The other side of this cohesive leadership is the staunch devotion to destroying threats that would threaten the community. This commitment to swift and righteous wrath is what sets Bengta apart from Lada's kinder divine masks.</p>
+			<p class="indent">Tales of Bengta often depict her traveling the rough terrain of the Northlands, battling monsters that infringe upon the people she is sworn to protect. There are many tales centered on her dealings with the fey, in particular the great animal lords. The Bear Maiden's weapon is said to be spun from the honey of the Queen of Bees herself, though none of the god's enemies have survived to confirm this rumor.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">G</set>
+			<set name="domains">Justice, Keeper, Life, Nature</set>
+			<set name="symbol">flowering honeysuckle, bees, and a radiant eye of gold and amber</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Black Goat of the Woods" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_BLACK_GOAT_OF_THE_WOODS">
+		<description>
+			<p>Once the greatest of the gods of an arcane kingdom, Bacchana was the deity of night, wealth, influence, fertility, and power—a feminine human aspect of the elven god Baccholon with a completely transparent mask. Her priests gave her followers great license to lust and to every form of excess, and the people embraced her teachings with all their hearts. When these mages first summoned servants from beyond the Void, her church encouraged the endeavor and endorsed the wars that followed. The fight and its ever-increasing expenditure of magic, wealth, and prayer pleased her as nothing had before, but the atrocities of those wars tainted Bacchana as deeply as her homeland. With a deep lust for destruction, she looked to the realms beyond the stars where the Ancient Ones originated, and her soul and body were broken.</p>
+			<p class="indent">The Goat of the Woods appears in two forms: as a hideous, writhing, galloping crab covered with strange growths and tentacles or—when seeking not to drive her followers directly into madness—as a hermaphroditic satyr with large curving horns and black skin, clad in a wispy tunic of stars. Though referred to in the feminine, this mad god is as much male as female, and any form she takes blends the spectrum of gender.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">C</set>
+			<set name="domains">Apocalypse, Prophecy, Shadow, Void</set>
+			<set name="symbol">five stalks of golden wheat arranged in a pentagram</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Charun" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_CHARUN">
+		<description>
+			<p>Charun oversees the passage of souls: at birth, at death, and in the afterlife, maintaining the proper steps along the natural roads. He protects planar travelers, especially mortals, from demons and celestials alike. Charun uses the undead as tools and servants, though he sees them as the damaged shells of his charges, holding only a few scattered memories. Darakhul, vampires, and liches gain higher regard in his eyes since they retain their personalities. Immortal creatures such as outsiders and the fey meet with Charun's disapproval because all too often they trade in souls, disrupting their natural migration.</p>
+			<p class="indent">Charun wears a hood in most depictions, and his features are never clear. Visions of the god include snakelike hair, a hooked nose, large boar tusks, heavy brows, cold blue or fiery eyes, or a long black beard. Most agree that his arms are pale cream, though others say Charun has blue or gray skin; all agree on the snake tattoos on his forearms.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">N</set>
+			<set name="domains">Death, Ocean, Portal, Travel</set>
+			<set name="symbol">boat or an oar</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Gytellisor" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_GYTELLISOR">
+		<description>
+			<p>Gytellisor resembles a sable elf with fine garments, long hair, and delicate features. He is almost always shown either holding a book and reading or in an orator's pose, declaiming to his faithful or reciting elven poetry. He often wears a scholar's robes and a deep-purple crown of stars and lights.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">C</set>
+			<set name="domains">Knowledge, Travel, Void</set>
+			<set name="symbol">open book, sometimes marked with a golden apple or embellished with a chain</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Hecate" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_HECATE">
+		<description>
+			<p>The ways of the gods are inscrutable to mortals, and the ways of Hecate are likewise inscrutable to the gods. Hecate embodies change and transformation, and her actions seem haphazard. Her worshippers believe she uses her foreknowledge to improve the world while her detractors say her visions of the future have driven her insane.</p>
+			<p class="indent">Hecate appears in three forms, depending on the aligned phases of the twin moons: some small splinter groups claim that her inner mysteries include the "light of a third moon" as a source of mystical power. Most worshippers venerate all her forms, but some favor one over the others.</p>
+			<p class="indent">During the paired new moons, Hecate appears as the Lady of Darkness, a maiden who moves with a decisive and deadly grace. Capricious and vengeful, her followers are masters of poison, torture, and shadows.</p>
+			<p class="indent">At the half-moons, she becomes the Lady of Sighs, a grown, dark-haired woman who appears in dreams to whisper arcane secrets to her followers. She opens all doors, including the one between life and death. She holds a key in one hand and a book in the other. Mysterious and aloof, she favors arcanists, fey, and shapechangers.</p>
+			<p class="indent">Hecate's full moon aspect is the Lady of Tears, elderly and benevolent and holding a lantern or lamp. White or gray-haired, she reveals the future to her servants as she grieves for the pain of the world.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">E</set>
+			<set name="domains">Darkness, Knowledge, Labyrinth, Moon</set>
+			<set name="symbol">the moon, the dagger, the key, the book, and the lamp</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Kupkoresh" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_KUPKORESH">
+		<description>
+			<p>Kupkoresh is a copper-skinned man with black hair and a strong, narrow beard in the Nurian style. He is widely thought to have arrived from the bright lands when Corremel fell into shadow. He has a strong following among humans, who believe his smoky green incense burns away corruption and fosters friendships, alliances, and insight.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">L</set>
+			<set name="domains">Knowledge, Light, Mercy, Prophecy</set>
+			<set name="symbol">orange or reddish sun, sometimes paired with a temple sword or dagger</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Laughing Loki" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_LAUGHING_LOKI">
+		<description>
+			<p>What's known and rumored about Laughing Loki is surely only the tip of the iceberg compared to what's hidden behind misdirection and lies. You'll never hear the same story of his origin twice, and that's the way he likes it. Laughing Loki is a trickster and an instigator. He brings change—often dangerous change—but also helps the gods escape the trouble he causes. In a world dominated by the strong and forthright, he embodies the talents that more straightforward gods overlook: cleverness, stealth, and guile as well as humor and charm.</p>
+			<p class="indent">While his cleverness is indeed formidable, he is also a renowned shapeshifter and has sired numerous monsters, including the wolf Fenris, his half-dead daughter Hel, and (allegedly) the World Serpent.</p>
+			<p class="indent">Laughing Loki's fate is a dark one. Driven by jealousy, he will kill Baldur, and his monstrous children will bring about the twilight of the gods. These deeds might be in the future, but they cannot be forgiven or forgotten, even before they have come to pass. Some say the suspicion of the gods and the scorn of mortals will drive him from mischief to evil whereas others claim that Loki was wickedness incarnate from the start. The truth—like so much more about him—will probably never be known.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">C</set>
+			<set name="domains">Apocalypse, Knowledge, Travel, Trickery</set>
+			<set name="symbol">twin serpents, open net</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Santerr Illosi, Our Lady of Blood" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_SANTERR_ILLOSI">
+		<description>
+			<p>Santerr Illosi is a darakhul of blood and mystery whose three-layered cult includes most darakhul and lesser ghouls of the Twilight Empire. She is usually shown as a necromancer in a green robe, holding either a set of bones or a scythe, and with a ferocious grin (what the darakhul sometimes call a "feeding smile"). Occasionally she is shown with a sandaled foot resting on a human or shadow fey skull.</p>
+			<p class="indent">The outer layer of her cult are the Reapers, the middle ranks are the Sowers, and the highest rank are the Harvesters. Each gains access to additional knowledge, and it is believed that the highest ranks are all elder darakhul, forming a network of necromancers and blood mages within the Twilight Empire.</p>
+		</description>
+		<sheet alt="Santerr Illosi" />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">L</set>
+			<set name="domains">Death, Justice, Knowledge, Shadow</set>
+			<set name="symbol">stylized sickle-and-eye symbol</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="Santerr Marossa, Our Lady of Roses" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_SANTERR_MAROSSA">
+		<description>
+			<p>Santerr Marossa is the capering, joyous, spontaneous, and lively side of the shadow goblins: a mother-goddess of trickery and diligent study, strict with the wayward and quick with a helpful lie when a shadow goblin strays into the dangers of dealing with elves, humans, and bearfolk. While she is a healing goddess, Santerr Marossa is not above smacking heads to get results if she feels her priests and celebrants are missing the point. Only among the shadow goblins does a trickster goddess of healing seem to make any sense.</p>
+			<p class="indent">Santerr Marossa is usually shown as a shadow goblin matron, wearing a horned-crescent headdress in silver or ivory and a parti-colored set of robes. Statues and paintings of her calling to the moons, sitting cross-legged while throwing fortunetelling bones, or holding a child are most common. She is sometimes shown laughing and slapping a knee, a depiction commonly called the Joyous Mother.</p>
+		</description>
+		<sheet alt="Santerr Marossa" />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">G</set>
+			<set name="domains">Life, Light, Mercy, Nature, Trickery</set>
+			<set name="symbol">red, pink, or white rose</set>
+			<set name="gender">female</set>
+		</setters>
+	</element>
+
+	<element name="The Hunter" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_THE_HUNTER">
+		<description>
+			<p>The Hunter walks in countless forms, including those of a dire wolf, human huntsman, fell hound, centaur archer, pale king, fey assassin, blood demon, and goblin trapper. The god embodies the fierce animals lurking in the wild fringes as well as those who pursue and conquer them. The Blood God encourages the dark instincts that drive beasts to fury. The Hunter revels in the chase and thrives on power, violence, and blood.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">E</set>
+			<set name="domains">Death, Hunting, Moon</set>
+			<set name="symbol">bloodied carcass</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="The Old Roads" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_THE_OLD_ROADS">
+		<description>
+			<p>The Old Roads are gods of shadow—born in shadow and binding the land together. They are believed to be the ascended spirits of ancient road wardens and arcanists such as Hargen the Builder, and they are frequently portrayed in pairs or in multiples of three. They guide travelers, help the lost, and protect merchants, pilgrims, and shepherds.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">N</set>
+			<set name="domains">Life, Portal, Travel</set>
+			<set name="symbol">milestones carved with runes or symbols</set>
+			<set name="gender">-</set>
+		</setters>
+	</element>
+
+	<element name="Umbreserno" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_UMBRESERNO">
+		<description>
+			<p>Umbeserno is a drowsy, nocturnal god among the bearfolk, largely because of his role in hibernation and prophetic dreams. Where Bengta watches over the bearfolk during the day and encourages them to good works, Umbeserno watches over them at night and during the cold months when bearfolk lie dreaming and snoring. The bearfolk think of dreaming as a time of plans and hopes—an optimistic season and a season to gather strength.</p>
+			<p class="indent">Umbeserno is always shown as a large black bearfolk with a crescent mark on his forehead, typically wearing the robes of a shaman and often with his paw holding either an enormous salmon or a rainbow-colored dreamstone. A second popular pose is Umbeserno Dreamlord, which is a sleeping pose surrounded by signs of spring and life: flowers, fish, lightning bolts, comets, and rabbits as his signs and portents.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">G</set>
+			<set name="domains">Life, Nature, Prophecy, Shadow</set>
+			<set name="symbol">rainbow-colored dreamstone, the leaping salmon, and antlers surrounding a bird's nest</set>
+			<set name="gender">male</set>
+		</setters>
+	</element>
+
+	<element name="Vardesain" type="Deity" source="Book of Ebon Tides" id="ID_KBP_BOET_DEITY_VARDESAIN">
+		<description>
+			<p>All creatures hunger, and without food, life ends. Vardesain took this primal need and built a faith ranging from simple gluttony to cannibalistic feasting. Indeed, food is seen as a sacrament that builds life, health, and righteous strength in the faithful, and the followers of the Hunger God can be both great gourmands and the world's least picky eaters. Sacrifices to the god are invariably edible—and sometimes still living.</p>
+			<p class="indent">The god's best-known forms are those of scavengers and predators: white wolves, ghouls, and darakhul, but also undead of abnormal size. In any form, visions, depictions, and avatars of Vardesain are always feeding on something.</p>
+		</description>
+		<sheet />
+		<setters>
+			<set name="setting">Midgard</set>
+			<set name="alignment">N</set>
+			<set name="domains">Darkness, Death, Hunger, Life, Void</set>
+			<set name="symbol">a purple snake consuming its own tail or a pair of open jaws</set>
+			<set name="gender">-</set>
+		</setters>
+	</element>
+	
+</elements>

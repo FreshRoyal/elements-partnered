@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ratatosk</name>
+		<description>Ratatosk from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="race-ratatosk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-ratatosk.xml" />
+		</update>
+	</info>
+
+	<element name="Ratatosk" type="Race" source="Book of Ebon Tides" id="ID_KBP_BOET_RACE_RATATOSK">
+		<description>
+			<p>In recent decades, the squirrel-like beings called ratatosk have grown bored with simply safeguarding the World Tree and have decided to more actively battle corruption in the Shadow Realm. Being exuberant sentinels against all things evil—and having large personalities—ratatosks are often at odds with many of the Shadow Realm natives.</p>
+			<p class="indent">Ratatosks are insatiable tricksters. Sharing gossip from across the planes, they delight in learning secrets and spreading those tidbits of information in mischievous ways. Resembling squirrels with sleek fur and small tusks, they form close matriarchal familial units called drays within larger communities called scurries. More adventurous ratatosks often act as planar guides and guardians, though it is not uncommon to find squirrel-folk offering their services as couriers, thieves, or even spies.</p>
+			<h4>Ratatosk Names</h4>
+			<p>The ratatosk make no differentiation between male and female names. These names often tend to be short, but highly respected families occasionally add infixes like -eeor -ekketo create longer names. Ratatosks who dwell in other planes will sometimes take regional names.</p>
+			<ul class="unstyled">
+				<li><strong>Example Forenames:</strong> Chiringa, Daresh, Ekirp, Ekkitta, Kerasil, Najuta, Orrin, Skirekkeret, Tiptup, Turorri.</li>
+				<li><strong>Example Surnames:</strong> Birch, Bolt, Crimson, Dandy, Double Time, Echo, Glory, Hotspur, Indigo, Starburst, Zephyr.</li>
+			</ul>
+			<h4>Ratatosk Traits</h4>
+			<p>Your ratatosk heritage is apparent in a variety of traits you share with other ratatosks.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, but your Strength score decreases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ratatosk reach adulthood at age 10 and, due to their celestial nature, live up to 180 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Ever curious and delighting in unpredictability, ekorre ratatosks gravitate toward chaotic alignments as they view laws as vague suggestions at best. The tradvakt tend to be slightly more focused and lawful in their thinking. Both groups tend toward good, placing value on doing the right thing, though some individuals lean more toward their darker impulses.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet, and you have a climb speed of 10 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet as though it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Grounded Celestial.</em></strong> You are descended from celestials, but you are strongly attuned to the mortal world. Though you are a humanoid, you are still susceptible to effects that target celestials.</p>
+			<p class="indent"><strong><em>Sharp Tusks.</em></strong> Your sharp tusks are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal 1 piercing damage plus 1d4 psychic damage.</p>
+			<p class="indent"><strong><em>Telepathic.</em></strong> You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to 10 times your level. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can understand, read, and write Celestial and Common, but you speak via Telepathy.</p>
+			<p class="indent"><strong><em>Subraces.</em></strong> There are two main ratatosk subraces. The wily ekorre and the brave tradvakt. Choose one subrace below and apply the listed traits.</p>
+		</description>
+		<setters>
+			<set name="names" type="custom">Chiringa, Daresh, Ekirp, Ekkitta, Kerasil, Najuta, Orrin, Skirekkeret, Tiptup, Turorri</set>
+			<set name="names" type="family">Brightsong, Bristletooth, Flitpaw, Jumptwig, Silentleaf, Wisewhisker</set>
+			<set name="names-format">{{custom}} {{family}}</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="strength" value="-2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ratatosk)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Diminishment -2 (Ratatosk)" supports="Custom Ability Score Decrease 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:climb" value="10" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Ratatosk)" supports="Custom Race Language"  number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_GROUNDED_CELESTIAL" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_SHARP_TUSKS" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_TELEPATHIC" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_SUBRACES" />
+		</rules>
+	</element>
+
+	<element name="Grounded Celestial" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_GROUNDED_CELESTIAL">
+		<description>
+			<p>You are descended from celestials, but you are strongly attuned to the mortal world. Though you are a humanoid, you are still susceptible to effects that target celestials.</p>
+		</description>
+		<sheet>
+			<description>Though you are a humanoid, you are still susceptible to effects that target celestials.</description>
+		</sheet>
+	</element>
+
+	<element name="Sharp Tusks" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_SHARP_TUSKS">
+		<description>
+			<p>Your sharp tusks are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal 1 piercing damage plus 1d4 psychic damage.</p>
+		</description>
+		<sheet>
+			<description>Your tusks are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal 1 piercing damage plus 1d4 psychic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Telepathic" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_TELEPATHIC">
+		<description>
+			<p>You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to 10 times your level. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p>
+		</description>
+		<sheet>
+			<description>You can speak telepathically to any creature you can see, provided the creature is within {{boet:ratatosk:telepathic:distance}} feet. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</description>
+		</sheet>
+		<rules>
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+			<stat name="boet:ratatosk:telepathic:distance" value="level" />
+		</rules>
+	</element>
+
+	<element name="Subraces" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_SUBRACES">
+		<description>
+			<p>There are two main ratatosk subraces. The wily ekorre and the brave tradvakt. Choose one subrace below and apply the listed traits.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Ratatosk Subrace" supports="BOET Ratatosk Subrace" />
+		</rules>
+	</element>
+
+	<!--Ekorre-->
+	<element name="Ekorre (Clever Tusk)" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_RATATOSK_EKORRE">
+		<supports>BOET Ratatosk Subrace</supports>
+		<description>
+			<p>The ekorre are the image most have in mind when discussing ratatosks. Superficially similar to squirrels, they have sleek fur, often in shades of red and brown, and tiny tusks. These celestials dwell upon Yggdrasil and all its branches. Clever, egotistical, and endlessly curious, the ekorre carry messages across the planes, sharing information from individual to individual in a never-ending gossip network.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Either your Intelligence or Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ekorre ratatosks are around 1-1/2 feet tall and weigh between 20 and 50 pounds. Your size is Tiny.</p>
+			<p class="indent"><strong><em>Blessing of Yggdrasil.</em></strong> You are attuned to the World Tree and can tap into its power. You know the <i>message</i> and <i>vicious mockery</i> cantrips. When you reach 5th level, you can cast the <i>mirror image</i> spell with this trait. Once you cast a non-cantrip spell with this trait, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Diminutive Weapons.</em></strong> You can wield weapons with the light or finesse properties normally. You have disadvantage on attack rolls with other weapons, unable to use them effectively due to your Tiny size, and they are treated as two-handed weapons. You can't use heavy weapons at all. A weapon specifically designed for ratatosks (or for other Tiny creatures at the GM's discretion) are treated normally.</p>
+		</description>
+		<sheet display="false" alt="Ekorre Ratatosk" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Ekorre Ratatosk)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ekorre Ratatosk)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_TINY" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_EKORRE_BLESSING_OF_YGGDRASIL" />
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_EKORRE_DIMINUTIVE_WEAPONS" />
+		</rules>
+	</element>
+
+	<element name="Blessing of Yggdrasil" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_EKORRE_BLESSING_OF_YGGDRASIL">
+		<description>
+			<p>You are attuned to the World Tree and can tap into its power. You know the <i>message</i> and <i>vicious mockery</i> cantrips. When you reach 5th level, you can cast the <i>mirror image</i> spell with this trait. Once you cast a non-cantrip spell with this trait, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the message and vicious mockery cantrips. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the message and vicious mockery cantrips. You can cast the mirror image spell once per rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MESSAGE" />
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="5"/>
+		</rules>
+	</element>
+
+	<element name="Diminutive Weapons" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_EKORRE_DIMINUTIVE_WEAPONS">
+		<description>
+			<p>You can wield weapons with the light or finesse properties normally. You have disadvantage on attack rolls with other weapons, unable to use them effectively due to your Tiny size, and they are treated as two-handed weapons. You can't use heavy weapons at all. A weapon specifically designed for ratatosks (or for other Tiny creatures at the GM's discretion) are treated normally.</p>
+		</description>
+		<sheet>
+			<description>You can wield weapons with the light or finesse properties normally. You have disadvantage on attack rolls with other weapons, unable to use them effectively due to your Tiny size, and they are treated as two-handed weapons. You can't use heavy weapons at all. A weapon specifically designed for ratatosks are treated normally.</description>
+		</sheet>
+	</element>
+
+	<!--Tradvakt-->
+	<element name="Tradvakt (Tree Protector)" type="Sub Race" source="Book of Ebon Tides" id="ID_KBP_BOET_SUB_RACE_RATATOSK_TRADVAKT">
+		<supports>BOET Ratatosk Subrace</supports>
+		<description>
+			<p>The tradvakt, also called ratatosk warlords, believe themselves to be the guardians and protectors of Yggdrasil and the branches of the World Tree. Larger than their ekorre cousins, the tradvakt train from a young age to master weapons and battle tactics. They act to maintain order in their communities and stamp out dangers that threaten those settlements.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Size.</em></strong> A typical tradvakt stands between 2 and 3 feet tall, weighing from 60 to 100 pounds. Some massive ratatosk warlords reach a towering 3-1/2 feet. Your size is Small.</p>
+			<p class="indent"><strong><em>War Chatter.</em></strong> Your constant chittering distracts your opponents. As a bonus action, a non-ratatosk creature within 30 feet that can hear you must succeed on a Charisma saving throw or have disadvantage on its attack rolls until the start of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution bonus. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" alt="Tradvakt Ratatosk" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Tradvakt Ratatosk)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+
+			<grant type="Racial Trait" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_TRADVAKT_WAR_CHATTER" />
+		</rules>
+	</element>
+
+	<element name="War Chatter" type="Racial Trait" source="Book of Ebon Tides" id="ID_KBP_BOET_RACIAL_TRAIT_RATATOSK_TRADVAKT_WAR_CHATTER">
+		<description>
+			<p>Your constant chittering distracts your opponents. As a bonus action, a non-ratatosk creature within 30 feet that can hear you must succeed on a Charisma saving throw or have disadvantage on its attack rolls until the start of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution bonus. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>A non-ratatosk creature within 30 feet that can hear you must succeed on a Charisma saving throw (DC {{boet:tradvakt:war chatter:dc}}) or have disadvantage on its attack rolls until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="boet:tradvakt:war chatter:dc" value="8" />
+			<stat name="boet:tradvakt:war chatter:dc" value="constitution:modifier" />
+			<stat name="boet:tradvakt:war chatter:dc" value="proficiency" />
+		</rules>
+	</element>
+
+</elements>

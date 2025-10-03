@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Shadows</name>
+		<description>Circle of Shadows from Book of Ebon Tides</description>
+		<update version="0.0.1">
+			<file name="druid-shadows.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/druid-shadows.xml" />
+		</update>
+	</info>
+
+	<element name="Circles of Shadows" type="Archetype" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_DRUID_CIRCLE_OF_SHADOWS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids who belong to the Circle of Shadows embrace the primal power of darkness as the purest distillation of the natural world. While other druids might concern themselves with balance, the Circle of Shadows understands that all things eventually return to darkness, so it must be understood.</p>
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_UMBRAL_FORM" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_CIRCLE_SPELLS" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_DARK_SERVANT" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_SHADOW_MASS" />
+			<div element="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_DARKNESS_FALLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_UMBRAL_FORM" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_DARK_SERVANT" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_SHADOW_MASS" level="10" />
+			<grant type="Archetype Feature" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_DARKNESS_FALLS" level="14" />
+		</rules>
+	</element>
+
+	<element name="Umbral Form" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_UMBRAL_FORM">
+		<description>
+			<p>Starting at 2nd level, as a bonus action, you can expend a use of your Wild Shape feature to take on a shadowy umbral form, rather than transforming into a beast.</p>
+			<p class="indent">While in your umbral form, you retain your statistics, but your body becomes transparent like smoke. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), are incapacitated, die, or use this feature again.</p>
+			<p class="indent">While you are in this form, you gain the following features:</p>
+			<ul>
+				<li>While in dim light or darkness, you can take the Hide action as a bonus action.</li>
+				<li>You can move through a space as narrow as 1 inch wide without squeezing.</li>
+				<li>When a creature you can see hits you with a melee attack, you can use your reaction to deal cold damage equal to your proficiency bonus to that creature.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of your Wild Shape feature to take on a shadowy umbral form, rather than transforming into a beast. While in your umbral form, you retain your statistics, but your body becomes transparent like smoke. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), are incapacitated, die, or use this feature again. While you are in this form, you gain the following features: &#13;
+			• While in dim light or darkness, you can take the Hide action as a bonus action. &#13;
+			• You can move through a space as narrow as 1 inch wide without squeezing. &#13;
+			• When a creature you can see hits you with a melee attack, you can use your reaction to deal {{proficiency}} cold damage to that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Circle Spells" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_CIRCLE_SPELLS">
+		<description>
+			<p>You have embraced the powers of shadow, a dark force that suffuses reality. Your connection to this energy grants you access to some spells when you reach certain levels in this class, as shown on the Circle of Shadow Spells table.</p>
+			<p class="indent">Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5 class="caption">Circle of Shadows Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>bane, false life</em></td></tr>
+				<tr><td>3rd</td><td><em>darkness, darkvision</em></td></tr>
+				<tr><td>5th</td><td><em>blink, fear</em></td></tr>
+				<tr><td>7th</td><td><em>black tentacles, greater invisibility</em></td></tr>
+				<tr><td>9th</td><td><em>cone of cold, dream</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKVISION" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Dark Servant" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_DARK_SERVANT">
+		<description>
+			<p>At 6th level, you gain the ability to awaken shadows to do your bidding. As a bonus action, you can target a creature that you can see within 30 feet. That creature's shadow comes to life as a separate creature under your command, using the <strong>shadow</strong> stat block.</p>
+			<p class="indent">The shadow appears in an unoccupied space within 5 feet of the target and can act immediately. The shadow acts on your initiative, it must spend its turn moving toward the target by the most direct route, and it can use its action only to attack the target (and no action is required by you to command the shadow). If the shadow hits with an attack, instead of doing any damage, the target instead has disadvantage on the first attack or saving throw it makes before the start of the shadow's next turn.</p>
+			<p class="indent">The shadow disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{boet:circle of shadows:dark servant:usage}}/Long Rest">
+			<description>You can target a creature that you can see within 30 ft. That creature's shadow comes to life as a separate creature under your command, using the shadow stat block. &#13;
+			The shadow appears in an unoccupied space within 5 ft of the target and can act immediately. The shadow acts on your initiative, it must spend its turn moving toward the target by the most direct route, and it can use its action only to attack the target (and no action is required by you to command the shadow). If the shadow hits with an attack, instead of doing any damage, the target instead has disadvantage on the first attack or saving throw it makes before the start of the shadow's next turn. &#13;
+			The shadow disappears if it is reduced to 0 hp, if its target is reduced to 0 hp, or after 5 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="boet:circle of shadows:dark servant:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="boet:circle of shadows:dark servant:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Shadow Mass" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_SHADOW_MASS">
+		<description>
+			<p>At 10th level, your Umbral Form grows in power. While in this form, you gain the following additional benefits:</p>
+			<ul>
+				<li>You gain a fly speed equal to your normal speed, and you can hover.</li>
+				<li>You have resistance to all bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While in your Umbral Form, you gain a {{speed}} ft fly speed, and you can hover.
+			Additionally, you have resistance to all bludgeoning, piercing, and slashing damage from nonmagical attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Darkness Falls" type="Archetype Feature" source="Book of Ebon Tides" id="ID_KBP_BOET_ARCHETYPE_FEATURE_CIRCLE_OF_SHADOWS_DARKNESS_FALLS">
+		<description>
+			<p>At 14th level, you can use an action to emit a 15-foot-radius sphere of magical darkness centered on yourself. The sphere moves with you, and its darkness spreads around corners. When you create the sphere, you can designate any number of creatures that can see through the darkness, but otherwise, a creature with darkvision can't see through it, and nonmagical light can't illuminate it.</p>
+			<p class="indent">The sphere lasts for 1 minute, until you are incapacitated, or until it comes into contact with sunlight. If any of this effect's area overlaps with an area of light created by a spell of 7th level or lower, the spell that created the light is dispelled.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You can emit a 15-ft-radius sphere of magical darkness centered on yourself. The sphere moves with you, and its darkness spreads around corners. When you create the sphere, you can designate any number of creatures that can see through the darkness, but otherwise, a creature with darkvision can't see through it, and nonmagical light can't illuminate it.
+			The sphere lasts for 1 minute, until you are incapacitated, or until it comes into contact with sunlight. If any of this effect's area overlaps with an area of light created by a spell of 7th level or lower, the spell that created the light is dispelled.</description>
+		</sheet>
+	</element>
+	
+</elements>
