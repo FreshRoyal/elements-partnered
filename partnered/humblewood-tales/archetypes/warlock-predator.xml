@@ -3,7 +3,7 @@
 	<info>
 		<name>The Predator</name>
 		<description>The Predator patron from Humblewood Tales</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-predator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/archetypes/warlock-predator.xml" />
 		</update>
 	</info>
@@ -30,7 +30,7 @@
 		</rules>
 	</element>
 
-	<element name="Expanded Spell List" type="Archetype Feature" source="Pointy Hat" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_EXPANDED_SPELL_LIST">
+	<element name="Expanded Spell List" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_EXPANDED_SPELL_LIST">
 		<description>
 			<p>The Predator lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
 			<table>
