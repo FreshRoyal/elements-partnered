@@ -2,13 +2,17 @@
 <index>
 	<info>
 		<name>Other Partnered Content on DDB</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="other.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other.index" />
 		</update>
 	</info>
 	<files>
+		<!--Third Party-->>
 		<file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/expanded-racial-feats.xml" />
 		<file name="gunslinger-martial-archetype-for-fighters.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/gunslinger-martial-archetype-for-fighters.xml" />
+		
+		<!--Homebrew-->
 		<file name="builds-character.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/builds-character.xml" />
+		<file name="the-realms-will-know-your-name.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/the-realms-will-know-your-name.xml" />
 	</files>
 </index>
