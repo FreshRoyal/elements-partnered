@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Dungeons of Drakkenheim by the Dungeon Dudes and Ghostfire Gaming</name>
+		<update version="1.0.0">
+			<file name="dungeons-of-drakkenheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/items.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/source.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/spells.xml" />
+
+		<!--Backgrounds-->
+		<file name="background-continental-nobility.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-continental-nobility.xml" />
+        <file name="background-devoted-missionary.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-devoted-missionary.xml" />
+        <file name="background-mageborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-mageborn.xml" />
+        <file name="background-survivor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-survivor.xml" />
+        <file name="background-treasure-seeker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-treasure-seeker.xml" />
+	</files>
+</index>

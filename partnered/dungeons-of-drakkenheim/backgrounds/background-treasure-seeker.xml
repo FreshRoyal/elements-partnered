@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Treasure Seeker</name>
+		<description>Treasure Seeker from Dungeons Of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="background-treasure-seeker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-treasure-seeker.xml" />
+		</update>
+	</info>
+
+	<element name="Treasure Seeker" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_TREASURE_SEEKER">
+		<description>
+			<p>Lost treasure and valuable relics brought you to Drakkenheim. Perhaps the prospect of earning more gold than you can spend in your lifetime is too tantalizing to pass up, or alternatively you may seek items for their historical or religious significance.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Investigation and one choice from the following: Stealth, Insight, or Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Thieves' tools, cartographer's tools</li>
+				<li><strong>Equipment:</strong> Thieves' tools, a set of dark clothes with a hood and a face covering. A signet ring of a fake lord, a fake identification, a set of weighted dice, and a deck of cards.</li>
+			</ul>
+			<div element="ID_GFG_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED" />
+			<h5>Treasure Hunters' Secrets (1d8)</h5>
+			<table>
+				<tr><td style="text-align:center">1</td><td>You keep a cryptic map to a lost treasure that you have always wanted to uncover.</td></tr>
+				<tr><td style="text-align:center">2</td><td>You have a coin that is heads on both sides, helpful for winning a chance game.</td></tr>
+				<tr><td style="text-align:center">3</td><td>You have a magnifying spyglass you use to examine items.</td></tr>
+				<tr><td style="text-align:center">4</td><td>You have a ring that opens to reveal a small compartment inside.</td></tr>
+				<tr><td style="text-align:center">5</td><td>Your left boot has a compartment for a hidden dagger.</td></tr>
+				<tr><td style="text-align:center">6</td><td>You carry an old compass that doesn't point north, you hope it points towards a great treasure.</td></tr>
+				<tr><td style="text-align:center">7</td><td>You have a collection of exotic coins and medals that are of personal value to you.</td></tr>
+				<tr><td style="text-align:center">8</td><td>You have a rival treasure hunter who used to be a partner. You parted ways years ago.</td></tr>
+			</table>
+			<h4>Variant: Soldier of Fortune</h4>
+			<p>Rather than seeking your fortune from finding treasure, you seek yours by hunting down the brigands, outlaws, and monsters that now hide in Drakkenheim. You often take up dangerous bounties and follow wanted posters as long as the price is right. Danger is second nature to you and the horrors of the city are nothing compared to the thrill of the hunt, and the coin it can gain you.</p>
+		</description>
+		<setters>
+			<set name="short">Investigation, Stealth/Insight/Perception, Thieves' Tools, Cartographer's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <select type="Proficiency" name="Skill Proficiency (Treasure Seeker)" supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+			<grant type="Background Feature" id="ID_GFG_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Treasure Seeker" supports="DOD Variant Treasure Seeker" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Treasure Hunters' Secrets" type="List" optional="true">
+				<item id="1">You keep a cryptic map to a lost treasure that you have always wanted to uncover.</item>
+				<item id="2">You have a coin that is heads on both sides, helpful for winning a chance game.</item>
+				<item id="3">You have a magnifying spyglass you use to examine items.</item>
+				<item id="4">You have a ring that opens to reveal a small compartment inside.</item>
+				<item id="5">Your left boot has a compartment for a hidden dagger.</item>
+				<item id="6">You carry an old compass that doesn't point north, you hope it points towards a great treasure.</item>
+				<item id="7">You have a collection of exotic coins and medals that are of personal value to you.</item>
+				<item id="8">You have a rival treasure hunter who used to be a partner. You parted ways years ago.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I believe that I am destined for greatness, and nothing can convince me otherwise.</item>
+				<item id="2">I always have a plan or plot to outwit my foes. It may not always be good, but it's almost always overly complex.</item>
+				<item id="3">I love to flaunt my wealth and showcase the things I have bought with it.</item>
+				<item id="4">I pay no mind to the risks of a situation. I always bet on myself and my abilities and it's gotten me this far. Never tell me the odds.</item>
+				<item id="5">I have a quip, allegory, or joke for almost any situation.</item>
+				<item id="6">I lie about anything and everything. I lie for almost no reason at all, sometimes just to see if I can fool the people around me.</item>
+				<item id="7">I use flattery and honeyed words to get what I want.</item>
+				<item id="8">I can't help it if valuable objects lying around end up in my pockets. It's for safe keeping.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Independent. No one tells me what to do. I make my own rules, and my own luck. (Chaotic)</item>
+				<item id="2">Fair. I do not take anything from anyone who couldn't afford to lose it. I am a treasure hunter, not a thief. (Lawful)</item>
+				<item id="3">Family. I care about material possessions and wealth, but not as much as I care about my friends and family. (Good)</item>
+				<item id="4">Aspiration. Wealth is power. Wealth means you will be remembered. In this world making a name for yourself is as simple as acquiring enough gold to buy your way to victory. I intend to be remembered. (Any)</item>
+				<item id="5">Danger. Every great discovery requires risk. The greater the risk, the greater the reward. It's the thrill of the hunt that I live for. (Any)</item>
+				<item id="6">Dignity. The dead and their prized belongings deserve more than to waste away in the ruins. They deserve to be found, remembered, and taken care of. (Lawful)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">My desire for wealth is out of a need to protect my family.</item>
+				<item id="2">Something important to me was stolen. I've longed to get it back ever since.</item>
+				<item id="3">I'm wanted for my many crimes and hope that where I am going, the law will not follow.</item>
+				<item id="4">I made mistakes in my past that cost me the life of someone I loved. I will not let that happen again.</item>
+				<item id="5">I plan to be the greatest thief or most cunning explorer of all time.</item>
+				<item id="6">This is my last job, the big one. After this I hope to settle down with my wealth, maybe start a family.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">My entire identity is layers of falsities presented to hide my true self, for I am not a good person. I've never told the truth for as long as I can remember and it's too late now to stop.</item>
+				<item id="2">Every situation, every person, is only as valuable to me as what I can gain from them. I'm not afraid to pull strings to bend luck in my favour.</item>
+				<item id="3">I jump to defensive measures as soon as someone catches me in a lie, or tries to call me out for anything.</item>
+				<item id="4">I take what I want, and I want it all.</item>
+				<item id="5">I like to show my skills, talk big, and take big risks in the hopes of impressing everyone watching.</item>
+				<item id="6">I know for a fact I am the smartest person in the room, and if people are suggesting anything otherwise they are terribly mistaken.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Detail-Oriented" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You double your proficiency bonus when making any ability check to search the ruins of Drakkenheim.</p>
+		</description>
+		<sheet alt="Detail-Oriented" />
+	</element>
+
+	<element name="Variant: Soldier of Fortune" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_TREASURE_SEEKER_SOLDIER_OF_FORTUNE">
+		<supports>DOD Variant Treasure Seeker</supports>
+		<description>
+			<p>Rather than seeking your fortune from finding treasure, you seek yours by hunting down the brigands, outlaws, and monsters that now hide in Drakkenheim. You often take up dangerous bounties and follow wanted posters as long as the price is right. Danger is second nature to you and the horrors of the city are nothing compared to the thrill of the hunt, and the coin it can gain you.</p>
+		</description>
+		<sheet alt="Soldier of Fortune" />
+	</element>
+
+</elements>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Devoted Missionary</name>
+		<description>Devoted Missionary from Dungeons Of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="background-devoted-missionary.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-devoted-missionary.xml" />
+		</update>
+	</info>
+
+	<element name="Devoted Missionary" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_DEVOTED_MISSIONARY">
+		<description>
+			<p>You are a follower of one of the many religions of the world. Through either divine calling, visions, or prophecies, or because your church sent you as an envoy and representative, or maybe because you are seeking divine answers, you have made the journey to Drakkenheim. What sacred purpose lies in the ruins that you are quested with uncovering?</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Two of the following: History, Religion, Arcana, Nature</li>
+				<li><strong>Languages:</strong> Two of your choice</li>
+				<li><strong>Equipment:</strong> A set of pale robes, a small chip of delerium encased in glass, a walking stick, an amulet with a symbol of your chosen god, a small book of religious text.</li>
+			</ul>
+			<div element="ID_GFG_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH" />
+			<h5>Missionary Life (1d8)</h5>
+			<table>
+				<tr><td style="text-align:center">1</td><td>I was on a quest of self-enlightenment.</td></tr>
+				<tr><td style="text-align:center">2</td><td>I ritualistically surround myself with lit candles and ancient texts when I rest.</td></tr>
+				<tr><td style="text-align:center">3</td><td>I had taken a vow of silence until the time that my voice was needed to fulfil my destiny.</td></tr>
+				<tr><td style="text-align:center">4</td><td>I was the caretaker of ancient relics of our faith and am quested with finding others.</td></tr>
+				<tr><td style="text-align:center">5</td><td>I am but a pilgrim hoping to find divine light in dark places in the world.</td></tr>
+				<tr><td style="text-align:center">6</td><td>I was guided to my faith by angels who rescued me from my dark past.</td></tr>
+				<tr><td style="text-align:center">7</td><td>I broke my vows to my faith and was exiled. I seek redemption.</td></tr>
+				<tr><td style="text-align:center">8</td><td>I must prove myself worthy to my faith and its purpose, no matter the amount of blood spilled or lives lost.</td></tr>
+			</table>
+			<h4>Variant: Stargazer</h4>
+			<p>You witnessed the meteor 15 years ago. Whether you believe it to be destiny, a magical or divine calling, or just curiosity of the secrets that need to be unearthed, you are drawn to the crater. You believe that the crater holds some answers to the questions you seek, and that somewhere in Drakkenheim lies a truth beyond your comprehension. Your pilgrimage to Drakkenheim may have taken you weeks, months or even years but you had to come - something called you here and you must discover its origin.</p>
+		</description>
+		<setters>
+			<set name="short">2 Skills, 2 Languages</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Devoted Missionary)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_NATURE" number="2" />
+			<select type="Language" name="Language (Devoted Missionary)" supports="Standard||Exotic" number="2" />
+			<grant type="Background Feature" id="ID_GFG_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Devoted Missionary" supports="DOD Variant Devoted Missionary" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Missionary Life" type="List" optional="true">
+				<item id="1">I was on a quest of self-enlightenment.</item>
+				<item id="2">I ritualistically surround myself with lit candles and ancient texts when I rest.</item>
+				<item id="3">I had taken a vow of silence until the time that my voice was needed to fulfil my destiny.</item>
+				<item id="4">I was the caretaker of ancient relics of our faith and am quested with finding others.</item>
+				<item id="5">I am but a pilgrim hoping to find divine light in dark places in the world.</item>
+				<item id="6">I was guided to my faith by angels who rescued me from my dark past.</item>
+				<item id="7">I broke my vows to my faith and was exiled. I seek redemption.</item>
+				<item id="8">I must prove myself worthy to my faith and its purpose, no matter the amount of blood spilled or lives lost.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I empathize with those who do not follow the path of light. Creatures of all types can be brought back to the path of righteousness and are often suffering and in great pain.</item>
+				<item id="2">I believe in the words of my religion and quote its texts and scriptures as often as I can.</item>
+				<item id="3">I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.</item>
+				<item id="4">I have spent my life in a temple or church. Rough living wears on me quickly.</item>
+				<item id="5">I believe very strongly that everything will turn out okay, and nothing can shake my positive attitude.</item>
+				<item id="6">My faith kept me distant from others. I have very little experience with the world outside the church/temple/shrine.</item>
+				<item id="7">I have extremely strict etiquette and manners for interactions and tasks, and I refuse to stray from them.</item>
+				<item id="8">I am working on my thesis of religious ongoings in the world and excitedly discuss the nuances of these ideas with anyone and everyone.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Logic. Emotions must not cloud our judgement on what is right or true. (Lawful)</item>
+				<item id="2">Self. My religious journey is that of discovering myself. If I can obtain that, there is nothing left to know. (Any)</item>
+				<item id="3">Charity. I will always help those in need, no matter the cost. (Good)</item>
+				<item id="4">Faith. The path laid out before me is determined by the divine entity I worship. I will follow its signs and patterns to fulfil my purpose. (Lawful)</item>
+				<item id="5">Power. The gods have granted me divine powers and I must use them to make those who do not worship as strongly as I see the divine light and understand that I am the one true speaker of my faith. (Chaotic)</item>
+				<item id="6">Peace. I do not like to be part of conflicts, rather a neutral voice of reason to all sides. (Neutral)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Nothing is more important than my church and what it represents.</item>
+				<item id="2">I joined my religion to hide from a past I would rather forget.</item>
+				<item id="3">The path to enlightenment is unending. I must stay the course.</item>
+				<item id="4">I will die if it means doing right by my religious beliefs.</item>
+				<item id="5">Everything I do is for the good of the common people.</item>
+				<item id="6">I seek to preserve the ancient texts and artefact of my religion.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I judge others harshly and believe my path to be the one true path.</item>
+				<item id="2">I believe in the words of my religion so strongly that I follow them without question.</item>
+				<item id="3">The goal I have set for myself is my destiny, and I can not act against it or abandon it for any reason.</item>
+				<item id="4">My religion was meant to keep the dark thoughts at bay, but I find myself losing that battle and a blood thirst grows within me.</item>
+				<item id="5">This is my first taste of life outside my religion, and I enjoy its pleasures a little too much.</item>
+				<item id="6">The gods and my faith have determined that I am always correct as I speak on their behalf. There is no question in my mind that I speak the ultimate truths and any who do not agree are misguided fools.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Guided by Faith" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH">
+		<supports>Background Feature</supports>
+		<description>
+			<p>During a short rest you can give an inspiring pep talk to a number of allies equal to your proficiency bonus. Once in the next 8 hours, each of those allies can roll 1d4 and add it to the result of a single attack roll, ability check, or saving throw.</p>
+		</description>
+		<sheet alt="Guided by Faith" />
+	</element>
+
+	<element name="Variant: Stargazer" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_DEVOTED_MISSIONARY_STARGAZER">
+		<supports>DOD Variant Devoted Missionary</supports>
+		<description>
+			<p>You witnessed the meteor 15 years ago. Whether you believe it to be destiny, a magical or divine calling, or just curiosity of the secrets that need to be unearthed, you are drawn to the crater. You believe that the crater holds some answers to the questions you seek, and that somewhere in Drakkenheim lies a truth beyond your comprehension. Your pilgrimage to Drakkenheim may have taken you weeks, months or even years but you had to come - something called you here and you must discover its origin.</p>
+		</description>
+		<sheet alt="Stargazer" />
+	</element>
+
+</elements>

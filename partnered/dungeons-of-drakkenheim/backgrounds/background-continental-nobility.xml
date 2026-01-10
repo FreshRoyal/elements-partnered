@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Continental Nobility</name>
+		<description>Continental Nobility from Dungeons Of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="background-continental-nobility.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-continental-nobility.xml" />
+		</update>
+	</info>
+
+	<element name="Continental Nobility" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_CONTINENTAL_NOBILITY">
+		<prerequisite>Any class except sorcerer, warlock, or wizard</prerequisite>
+		<requirements>!(ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_CLASS_WIZARD|ID_WOTC_PHB24_CLASS_SORCERER|ID_WOTC_PHB24_CLASS_WARLOCK|ID_WOTC_PHB24_CLASS_WIZARD)</requirements>
+		<description>
+			<p><em>Requirements: Any class except sorcerer, warlock, or wizard</em></p>
+			<p>You are the scion of a noble household. Whether you hail from Caspia, Elyria, or Westemär, the fall of Drakkenheim has either adversely impacted your family's fortunes, or created a tantalizing opportunity to increase your political power and influence.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Two of the following: Persuasion, Athletics, History, or Intimidation</li>
+				<li><strong>Languages:</strong> Two of your choice</li>
+				<li><strong>Equipment:</strong> A signet ring or brooch bearing your family crest, a cape in the colours of your house, a set of fine clothes, and a pouch containing 25 gp.</li>
+			</ul>
+			<div element="ID_GFG_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE" />
+			<h5>Defining Event (1d8)</h5>
+			<table>
+				<tr><td style="text-align:center">1</td><td>I was well celebrated in my city as a slayer of a great troll.</td></tr>
+				<tr><td style="text-align:center">2</td><td>I witnessed the death of my family during the civil war. They were targets for their ties to the von Kessel name.</td></tr>
+				<tr><td style="text-align:center">3</td><td>I led my knights to victory in defending our castle during a raid in the war.</td></tr>
+				<tr><td style="text-align:center">4</td><td>I lost a lot of good soldiers in an earlier expedition into Drakkenheim. We never made it past the gate.</td></tr>
+				<tr><td style="text-align:center">5</td><td>My house was an enemy of the von Kessel family and had many battles with them.</td></tr>
+				<tr><td style="text-align:center">6</td><td>I broke ties with my family when they folded to the Silver Order.</td></tr>
+				<tr><td style="text-align:center">7</td><td>I am related, not to a king or queen, but to a noble figure who sat in the small council and made important decisions for their represented house.</td></tr>
+				<tr><td style="text-align:center">8</td><td>My family lost everything in the destruction of Drakkenheim. We are noble only in name, no longer in standing.</td></tr>
+			</table>
+			<h4>Variant: Last of the Line</h4>
+			<p>In the years following the destruction of Drakkenheim, calamity and misfortune wracked your house leaving you the sole surviving heir. Penniless and without land, you have come to Drakkenheim to rebuild your family’s legacy.</p>
+		</description>
+		<setters>
+			<set name="short">2 Skills, 2 Languages</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Continental Nobility)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2" />
+			<select type="Language" name="Language (Continental Nobility)" supports="Standard||Exotic" number="2" />
+			<grant type="Background Feature" id="ID_GFG_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Continental Nobility" supports="DOD Variant Continental Nobility" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Defining Event" type="List" optional="true">
+				<item id="1">I was well celebrated in my city as a slayer of a great troll.</item>
+				<item id="2">I witnessed the death of my family during the civil war. They were targets for their ties to the von Kessel name.</item>
+				<item id="3">I led my knights to victory in defending our castle during a raid in the war.</item>
+				<item id="4">I lost a lot of good soldiers in an earlier expedition into Drakkenheim. We never made it past the gate.</item>
+				<item id="5">My house was an enemy of the von Kessel family and had many battles with them.</item>
+				<item id="6">I broke ties with my family when they folded to the Silver Order.</item>
+				<item id="7">I am related, not to a king or queen, but to a noble figure who sat in the small council and made important decisions for their represented house.</item>
+				<item id="8">My family lost everything in the destruction of Drakkenheim. We are noble only in name, no longer in standing.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.</item>
+				<item id="2">I keep family traditions close. Honour and family are amongst the most important things in the world, and I cherish them.</item>
+				<item id="3">I miss the comforts of my home. This city is dirty and smells terrible.</item>
+				<item id="4">I believe in the good in people, and I hope to find a peaceful resolution to our problems. A diplomatic approach is something Westemär greatly needs.</item>
+				<item id="5">As a noble, I have a responsibility to protect those who cannot protect themselves.</item>
+				<item id="6">It is highly important that I look my best and maintain my regal demeanor in all situations. My reputation must go untarnished.</item>
+				<item id="7">I may be of noble birth, but have lived life on the road for some time. I am more than willing to share what I have with others, as I am no better or worse than anyone else.</item>
+				<item id="8">There is no challenge I can't face. I heard about the horrors and monsters of this world, and I am what they fear the most.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Respect. I am a respected member of my family, and I expect what remains of Drakkenheim's nobility and royal line to acknowledge my standing. (Lawful)</item>
+				<item id="2">Responsibility. It is my responsibility as a representative of my noble line to remain cordial, and diplomatic in dealings with the various high ranking members of Drakkenheim's society. (Good)</item>
+				<item id="3">Privacy. I do not wish for my nobility to come up. It may be best if the people of Drakkenheim do not know who I am. At least for now. (Any)</item>
+				<item id="4">Duty. It is my duty to aid the people of Drakkenheim. As a noble I was connected to this city, and it is what is expected of me. (Good)</item>
+				<item id="5">Glory. I must claim my victories and prove myself in battle. (Any)</item>
+				<item id="6">Family. Blood is thicker than water and I will fight to defend my family's honour. (Good)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I must prove myself as a great warrior for my house and my people.</item>
+				<item id="2">My family was once bound to the royal family of Westemär, I must ensure we remain bound to whoever takes the throne.</item>
+				<item id="3">My family's fortune was lost. Drakkenheim may be our last chance to get it back.</item>
+				<item id="4">My family was betrayed by one of the royal houses, and I plan to make sure any that remain of that name are brought to justice and my family takes its place where it belongs.</item>
+				<item id="5">I am destined to rule, as my ancestors before me have.</item>
+				<item id="6">I have been sent unwillingly on a diplomatic mission to Drakkenheim. I am to gain political standing in these crumbling ruins.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I boast about my own triumphs, and belittle the accomplishments of others.</item>
+				<item id="2">Bound by honor, I can never back down from a challenge, nor can I let those who undervalue my name go unchallenged.</item>
+				<item id="3">I do not like getting my hands dirty. Other people must do the heavy lifting, not me.</item>
+				<item id="4">I like to flaunt my wealth, and I spare no expense.</item>
+				<item id="5">I'm never wrong. Even if I was, I would never admit it.</item>
+				<item id="6">I was forced to lead, but I am very far out of my depth and desperately hoping people do not catch on that I don't know what I am doing here.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Noble Confidence" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>During a short rest you can give an inspiring pep talk to a number of allies equal to your proficiency bonus. Once in the next 8 hours, each of those allies can roll 1d4 and add it to the result of a single attack roll, ability check, or saving throw.</p>
+		</description>
+		<sheet alt="Noble Confidence" />
+	</element>
+
+	<element name="Variant: Last of the Line" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_CONTINENTAL_NOBILITY_LAST_OF_THE_LINE">
+		<supports>DOD Variant Continental Nobility</supports>
+		<description>
+			<p>In the years following the destruction of Drakkenheim, calamity and misfortune wracked your house leaving you the sole surviving heir. Penniless and without land, you have come to Drakkenheim to rebuild your family’s legacy.</p>
+		</description>
+		<sheet alt="Last of the Line" />
+	</element>
+
+</elements>

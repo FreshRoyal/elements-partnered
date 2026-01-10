@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mageborn</name>
+		<description>Mageborn from Dungeons Of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="background-mageborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-mageborn.xml" />
+		</update>
+	</info>
+
+	<element name="Mageborn" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_MAGEBORN">
+		<prerequisite>You must be a bard, sorcerer, warlock, or wizard</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_CLASS_WIZARD|ID_WOTC_PHB24_CLASS_BARD|ID_WOTC_PHB24_CLASS_SORCERER|ID_WOTC_PHB24_CLASS_WARLOCK|ID_WOTC_PHB24_CLASS_WIZARD</requirements>
+		<description>
+			<p><em>Requirement: You must be a bard, sorcerer, warlock, or wizard</em></p>
+			<p>You manifested arcane magical abilities at a young age, and were taken into the guardianship of the Amethyst Academy. You learned to harness your magic at a secluded magical school. After you came of age and completed your apprenticeship, you became free to pursue your own interests, but you must respect the laws and customs that govern all those with spellcasting powers. Under the Edicts of Lumen, mages are disinherited of any noble titles, and cannot own land.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Two of the following: Arcana, Deception, Investigation, Perception</li>
+                <li><strong>Tool Proficiencies:</strong> Either calligraphers' supplies or alchemists' supplies</li>
+                <li><strong>Equipment:</strong> A gnarled wand made of wood, a duster jacket, a satchel for material components and potions, an amulet or other trinket of importance to you</li>
+				<li><strong>Languages:</strong> Draconic or Elvish</li>
+			</ul>
+			<div element="ID_GFG_DOD_BACKGROUND_FEATURE_BOOKWORM" />
+			<h5>Mageborn Quirk (1d8)</h5>
+			<table>
+				<tr><td style="text-align:center">1</td><td>My eyes are two different colours.</td></tr>
+				<tr><td style="text-align:center">2</td><td>Whenever I cast a spell, my voice echoes and an unknown wind seems to blow around me.</td></tr>
+				<tr><td style="text-align:center">3</td><td>My eyes glow with octarine light when I am casting spells.</td></tr>
+				<tr><td style="text-align:center">4</td><td>I hear voices and sounds when close to magical entities, as if the magic itself speaks to me.</td></tr>
+				<tr><td style="text-align:center">5</td><td>I have full conversations with myself out loud that occasionally can get heated.</td></tr>
+				<tr><td style="text-align:center">6</td><td>Magic floods my mind and makes it difficult to sleep without constant nightmares and visions.</td></tr>
+				<tr><td style="text-align:center">7</td><td>I speak to beings from other planes of existence who manifest as simple creatures before me.</td></tr>
+				<tr><td style="text-align:center">8</td><td>I have a birthmark in a unique shape that appears every day for 2 and a half hours, then vanishes.</td></tr>
+			</table>
+			<h4>Variant: Malfeasant Mage</h4>
+			<p>You were expelled from the Amethyst Academy for some trespass, real or imagined, or perhaps you were never taken in by them and learned magic on your own. Common folk are often mistrustful of spellcasters who do not wear the Amethyst Academy colours, so you may need to hide your identity and abilities, especially from the Amethyst Academy and the Knights of the Silver Order.</p>
+		</description>
+		<setters>
+			<set name="short">2 Skills, Calligrapher's Supplies/Alchemists' Supplies, Draconic/Elvish</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Mageborn)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" />
+            <select type="Proficiency" name="Tool Proficiency (Mageborn)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<select type="Language" name="Language (Mageborn)" supports="ID_LANGUAGE_DRACONIC|ID_LANGUAGE_ELVISH" />
+			<grant type="Background Feature" id="ID_GFG_DOD_BACKGROUND_FEATURE_BOOKWORM" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Mageborn" supports="DOD Variant Mageborn" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Mageborn Quirk" type="List" optional="true">
+				<item id="1">My eyes are two different colours.</item>
+				<item id="2">Whenever I cast a spell, my voice echoes and an unknown wind seems to blow around me.</item>
+				<item id="3">My eyes glow with octarine light when I am casting spells.</item>
+				<item id="4">I hear voices and sounds when close to magical entities, as if the magic itself speaks to me.</item>
+				<item id="5">I have full conversations with myself out loud that occasionally can get heated.</item>
+				<item id="6">Magic floods my mind and makes it difficult to sleep without constant nightmares and visions.</item>
+				<item id="7">I speak to beings from other planes of existence who manifest as simple creatures before me.</item>
+				<item id="8">I have a birthmark in a unique shape that appears every day for 2 and a half hours, then vanishes.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I idolize one of the archmages of the Academy and hope to prove myself to them in time.</item>
+				<item id="2">Nothing will get between me and my goals. When people say something I care about is impossible, I prove them wrong.</item>
+				<item id="3">I am confident in my powers, and do not fear the horrors of Drakkenheim, for I can bend reality.</item>
+				<item id="4">I am constantly reading books. The more knowledge I can obtain, the more I can outwit friends and foes alike.</item>
+				<item id="5">I am a mage for hire and am not afraid to use my magic to get my hands dirty. A lot of people will pay top coin for a skill set like mine.</item>
+				<item id="6">I am a sucker for a good mystery and pride myself in my ability to solve them.</item>
+				<item id="7">Everyone is always so serious - we all die in the end, might as well enjoy the ride.</item>
+				<item id="8">I always push myself to be the best at whatever it is I set out to do.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Respect. My powers are a blessing and a curse, and I work diligently to show people not to fear magic. (Good)</item>
+				<item id="2">Knowledge. I left the Academy on good terms to work at one of the many historical institutes of the world, hoping that my love for books and history would be of use. (Any)</item>
+				<item id="3">Love. I left the Academy due to love, and I plan to keep my promise to that love. (Good)</item>
+				<item id="4">Forgiveness. I must undo the mistakes of my past by proving myself to those I care about most. (Good)</item>
+				<item id="5">Power. Delerium is power, and I must learn all I can about its origins and properties if I am to harness that power. (Chaotic)</item>
+				<item id="6">Independence. I stand alone from the Academy for a reason. I do not wish to be on their bad side, but I do not wish to be on their good side either. (Neutral)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">It is my duty to protect the Amethyst Academy.</item>
+				<item id="2">My life's work in the study of delerium caused my expulsion. I must continue that research to prove its value.</item>
+				<item id="3">The mysteries of my past and my power are tied to the meteor. I need answers.</item>
+				<item id="4">My terrible mistake was covered up by my mentor in the Academy. I owe them my life.</item>
+				<item id="5">My nightmares have guided me to Drakkenheim. I must investigate these visions.</item>
+				<item id="6">I come from a long line of wizards, my exit from the Academy was highly upsetting to them and I need to earn my way back into their favour, even if it means risking my life in Drakkenheim.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I walk straight into danger. What's the worst that could happen?</item>
+				<item id="2">I believe my plan is always far superior to everyone else's.</item>
+				<item id="3">I am distracted by possibilities of gaining knowledge or power, regardless of the cost or danger.</item>
+				<item id="4">I overcomplicate most situations with small details and over analyzing simple things.</item>
+				<item id="5">I get angry quickly, and cause more harm than good with my magic when I get mad.</item>
+				<item id="6">I can't get enough delerium. I want the power for myself.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Bookworm" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_BOOKWORM">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Once per day after you finish a long rest, you can spend one hour to create a spell scroll. You need only paper and ink to do so, and the level of the spell you can create equals one half your proficiency bonus (rounded down) or lower. The scroll you create must be a spell you know or have prepared. It crumbles to dust in 24 hours.</p>
+		</description>
+		<sheet alt="Bookworm" />
+	</element>
+
+	<element name="Variant: Malfeasant Mage" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_CONTINENTAL_NOBILITY_LAST_OF_THE_LINE">
+		<supports>DOD Variant Mageborn</supports>
+		<description>
+			<p>You were expelled from the Amethyst Academy for some trespass, real or imagined, or perhaps you were never taken in by them and learned magic on your own. Common folk are often mistrustful of spellcasters who do not wear the Amethyst Academy colours, so you may need to hide your identity and abilities, especially from the Amethyst Academy and the Knights of the Silver Order.</p>
+		</description>
+		<sheet alt="Malfeasant Mage" />
+	</element>
+
+</elements>

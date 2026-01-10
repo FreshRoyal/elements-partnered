@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Dungeons Of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/source.xml" />
+		</update>
+	</info>
+	<element name="Dungeons Of Drakkenheim" type="Source" source="Core" id="ID_GFG_SOURCE_DUNGEONS_OF_DRAKKENHEIM">
+		<description>
+			<p><strong>DUNGEONS OF DRAKKENHEIM</strong> is an adventure compatible with Fifth Edition <i>Dungeons and Dragons</i>. Designed by the DUNGEON DUDES, Monty Martin &amp; Kelly McLaughlin, based on the original livestream game broadcast on YouTube and Twitch!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DOD</set>
+			<set name="url">https://ghostfiregaming.com/product/dungeons-of-drakkenheim-pdf/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/DoD.jpg</set>
+			<set name="author" abbreviation="GFG" url="https://hitpointpress.com/">Dungeon Dudes, Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+			<set name="release">20220101</set>
+		</setters>
+	</element>
+</elements>

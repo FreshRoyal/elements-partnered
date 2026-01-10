@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Survivor</name>
+		<description>Survivor from Dungeons Of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="background-survivor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-survivor.xml" />
+		</update>
+	</info>
+
+	<element name="Survivor" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_SURVIVOR">
+		<description>
+			<p>Not everyone left Drakkenheim after the meteor. Some stayed behind, searching the ruins for things they lost: friends and family, or just seeking out treasure and artefacts. You know what places in the city are the most dangerous, what paths are the best to take, and often have an idea of the fastest ways to travel. Despite the Haze, and dangers, you've managed to survive, but carry the weight of Drakkenheim's madness with you.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Two of the following: Perception, Survival, Stealth, Athletics</li>
+				<li><strong>Tool Proficiencies:</strong> Cook's utensils, one other set of artisan's tools</li>
+				<li><strong>Equipment:</strong> Cook's utensils, climber's kit, a shovel, a pair of thick gloves, a cloak with a hood.</li>
+			</ul>
+			<div element="ID_GFG_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS" />
+			<h5>Marks of Survival (1d8)</h5>
+			<table>
+				<tr><td style="text-align:center">1</td><td>Being alone for so long means I am very used to conversing with myself out loud.</td></tr>
+				<tr><td style="text-align:center">2</td><td>I eat things that others find disgusting. I have learned to love the delicacies of scavenged food in the ruins.</td></tr>
+				<tr><td style="text-align:center">3</td><td>I have many scars across my body from barely scraping by.</td></tr>
+				<tr><td style="text-align:center">4</td><td>I am missing a finger on one hand due to a horrible encounter I had in the ruins.</td></tr>
+				<tr><td style="text-align:center">5</td><td>I keep a locket of someone I lost in the ruins. I stare at it every night before I fall asleep to remember what I am looking for.</td></tr>
+				<tr><td style="text-align:center">6</td><td>I keep souvenirs of the monsters I have bested in these ruins, to remind myself how strong I truly am.</td></tr>
+				<tr><td style="text-align:center">7</td><td>I can sleep just about anywhere, nothing really phases me anymore.</td></tr>
+				<tr><td style="text-align:center">8</td><td>I often recite the names of people I used to know and lost so I can hold on to their memory.</td></tr>
+			</table>
+			<h4>Variant: Veteran of the Civil War</h4>
+			<p>You survived the civil war that ravaged Westemär, either as a soldier or fleeing refugee. The war took something from you and changed you. It may be that you had to do things that went against your morals, or perhaps you lost friends and family in the bloodshed. Regardless, you walked away with scars that will not easily heal.</p>
+		</description>
+		<setters>
+			<set name="short">2 Skills, Cook's Utensils, 1 Artisan's Tool</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Survivor)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ATHLETICS" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+			<select type="Proficiency" name="Artisan's Tool Proficiency (Survivor)" supports="Artisan tools" />
+			<grant type="Background Feature" id="ID_GFG_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Survivor" supports="DOD Variant Survivor" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Marks of Survival" type="List" optional="true">
+				<item id="1">Being alone for so long means I am very used to conversing with myself out loud.</item>
+				<item id="2">I eat things that others find disgusting. I have learned to love the delicacies of scavenged food in the ruins.</item>
+				<item id="3">I have many scars across my body from barely scraping by.</item>
+				<item id="4">I am missing a finger on one hand due to a horrible encounter I had in the ruins.</item>
+				<item id="5">I keep a locket of someone I lost in the ruins. I stare at it every night before I fall asleep to remember what I am looking for.</item>
+				<item id="6">I keep souvenirs of the monsters I have bested in these ruins, to remind myself how strong I truly am.</item>
+				<item id="7">I can sleep just about anywhere, nothing really phases me anymore.</item>
+				<item id="8">I often recite the names of people I used to know and lost so I can hold on to their memory.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">I always have an exit strategy in mind if things go poorly.</item>
+				<item id="2">You can't survive in this grim city without a good sense of humor, but I have a taste for gallows humor.</item>
+				<item id="3">I try to work in the thin grey area between the squabbling factions, squeezing under their radar when possible. The less I am seen, the better.</item>
+				<item id="4">If you spot danger, it is best to avoid it, that's how you survive.</item>
+				<item id="5">Drakkenheim is a dangerous place. But I can navigate it with my eyes closed. No one else I've ever met is as good as I am.</item>
+				<item id="6">In order to survive the monsters of Drakkenheim, one must be a monster of Drakkenheim.</item>
+				<item id="7">Take everything you can from the dead, take it from the living if you can. If you are to survive, you must take any opportunity to scavenge.</item>
+				<item id="8">I will never give up until I reclaim what I lost in these ruins.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Self-Reliance. I won't risk my life for others. Everyone must fend for themselves—better you than me. (Evil)</item>
+				<item id="2">Bravery. I find the thrill of surviving the monsters and magics of Drakkenheim exhilarating and thrive on the chaos. (Chaotic)</item>
+				<item id="3">Safety. Whatever I can do to keep myself fed and keep a safe place to rest is good in my books. (Any)</item>
+				<item id="4">Helpful. People need all the help they can get in the city, and I know I can provide it. (Good)</item>
+				<item id="5">Hope. I believe there is something worth saving here, we must hold on to the idea of a better future. (Good)</item>
+				<item id="6">Responsibility. I lived here before the meteor, I'll live here long after. I must protect my home and do what I can to make it livable again. (Lawful)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I had family in these ruins. I know not what became of them, but I must find out.</item>
+				<item id="2">This city is my home, and I will fight for what's left of it until the very end.</item>
+				<item id="3">I'll do any dirty work in the city if it means a hot meal, a warm bed, or some good company.</item>
+				<item id="4">I've spent so long in these ruins, its the outside world that terrifies me now.</item>
+				<item id="5">Why haven't I left Drakkenheim? Have you seen how much gold there is to be made here?</item>
+				<item id="6">I am bound to the throne of Drakkenheim, and fight to see it one day reclaimed.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Any meal could be my last. I'll eat just about anything. I do what I must to survive.</item>
+				<item id="2">I don't like being outside the Haze of the city for too long, I've gotten used to it.</item>
+				<item id="3">I am convinced my family is alive in the city somewhere. I hear their voices call to me at night.</item>
+				<item id="4">I don't trust anyone easily. I'll sleep with one eye open even around my companions, for Drakkenheim makes monsters of us all.</item>
+				<item id="5">The years spent here have turned me to a vice, I very much rely on that vice to get me through my days.</item>
+				<item id="6">I hear voices constantly. Sometimes I get distracted with conversations with people who are not there.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Makeshift Meals" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You know how to purify food and rations found in the ruins. When you take a short rest, you prepare a meal for a number of creatures equal to your proficiency bonus. Creatures who consume the food regain hit points equal to your level. Once they do, they can't regain hit points from another one of your meals until they finish a long rest.</p>
+		</description>
+		<sheet alt="Makeshift Meals" />
+	</element>
+
+	<element name="Variant: Veteran of the Civil War" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_SURVIVOR_VETERAN_OF_THE_CIVIL_WAR">
+		<supports>DOD Variant Survivor</supports>
+		<description>
+			<p>You survived the civil war that ravaged Westemär, either as a soldier or fleeing refugee. The war took something from you and changed you. It may be that you had to do things that went against your morals, or perhaps you lost friends and family in the bloodshed. Regardless, you walked away with scars that will not easily heal.</p>
+		</description>
+		<sheet alt="Veteran of the Civil War" />
+	</element>
+
+</elements>
