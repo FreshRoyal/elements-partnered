@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Items from Dungeons Of Drakkenheim</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/items.xml" />
 		</update>
 	</info>
@@ -467,7 +467,7 @@
 
 	<element name="Lord Commander's Badge" type="Magic Item" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_LORD_COMMANDERS_BADGE">
 		<description>
-			<p>WAs an action while wearing this seal, you can invoke its power to issue a bellowing command clearly audible to all creatures within 300 feet of you. When you do, you may choose up to 12 allies you can see who can hear the command. Those allies each gain 20 temporary hit points. While these temporary hit points remain, those allies gain advantage on attack rolls and saving throws. Once you use this power, it can't be used again until the next dawn.</p>
+			<p>As an action while wearing this seal, you can invoke its power to issue a bellowing command clearly audible to all creatures within 300 feet of you. When you do, you may choose up to 12 allies you can see who can hear the command. Those allies each gain 20 temporary hit points. While these temporary hit points remain, those allies gain advantage on attack rolls and saving throws. Once you use this power, it can't be used again until the next dawn.</p>
 			<div class="reference">
 				<div element="ID_GFG_DOD_INFORMATION_CROWN_AUTHORITY" />
 			</div>
