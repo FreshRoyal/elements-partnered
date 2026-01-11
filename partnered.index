@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.0.9">
+		<update version="1.1.0">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -20,6 +20,7 @@
 		<!--Kobold Press-->
 		<file name="tome-of-beasts-2023.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023.index" />
 		<file name="book-of-ebon-tides.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides.index" />
+		<file name="tales-from-the-shadows.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows.index" />
 
 		<!--Ghostfire Gaming-->
 		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
