@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Tales from the Shadows</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows/source.xml" />
+		</update>
+	</info>
+	<element name="Tales from the Shadows" type="Source" source="Core" id="ID_KBP_SOURCE_TALES_FROM_THE_SHADOWS">
+		<description>
+			<p>A treasury of adventure across a realm of shadow awaits you! This adventure collection from Kobold Press features over a dozen short adventures for characters level 1 through 8. Journey through the dark and perilous imagination of a lost child. Explore the village of Leer, where there’s something tremendously strange about the livestock. Each adventure is a challenging, fey-touched journey into the Shadow Realm!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">TFTS</set>
+			<set name="url">https://koboldpress.com/kpstore/product/tales-from-the-shadows-for-5th-edition/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows/TftS.jpg</set>
+			<set name="author" abbreviation="KBP" url="https://koboldpress.com/">Kobold Press</set>
+			<set name="third-party">true</set>
+			<set name="release">20221011</set>
+		</setters>
+	</element>
+
+</elements>

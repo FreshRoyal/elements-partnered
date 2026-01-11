@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Tales from the Shadows by Kobold Press</name>
+		<update version="1.0.0">
+			<file name="tales-from-the-shadows.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows.index" />
+		</update>
+	</info>
+	<files>
+        <file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows/items.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows/source.xml" />
+	</files>
+</index>

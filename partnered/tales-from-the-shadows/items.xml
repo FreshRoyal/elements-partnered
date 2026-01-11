@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Tales from the Shadows</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tales-from-the-shadows/items.xml" />
+		</update>
+	</info>
+
+	<element name="Chitinous Club of c'Naazo" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_CHITINOUS_CLUB_OF_CNAAZO">
+		<description>
+			<p>Once a tentacle of the monstrosity c'Naazo, this massive club made of segmented chitin is suffused with glowing, phosphorescent green magic and emits an unpleasant odor when wielded.</p>
+			<p class="indent">You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><strong><em>Venomous Spray.</em></strong> As an action, you point the weapon at your enemies and spray forth a noxious cone of poison. Each creature in a 15-foot cone must make a DC 14 Dexterity saving throw. A creature takes 10 (3d6) poison damage on a failed save, or half as much on a successful one. Once you use this property, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">maul, action, dexterity, saving throw, poison, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="maul">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommony</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Maul</set>
+		</setters>
+	</element>
+
+	<element name="Goblin Chisel" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_GOBLIN_CHISEL">
+		<description>
+			<p>Used in the construction of a small goblin community in the Paletree Rise, this chisel is made of hardened grick beak. While using the <i>goblin chisel</i>, your proficiency bonus is doubled for any ability check you make that uses your proficiency with Mason's Tools or Woodcarver's Tools.</p>
+		</description>
+		<setters>
+			<set name="keywords">mason's tools, woodcarver's tools</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Liliana's Rose" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_LILIANAS_ROSE">
+		<description>
+			<p>This rose is fashioned of blood-red crystal affixed to a stem crafted of green gold, complete with hammered green-gold leaves and sharp thorns. The rose glows with an inner light that, when held, seems to pulse to the heartbeat of its bearer. A white silk ribbon is tied to the rose's stem, stitched with Elvish runes of gold thread, representing light, life, and revelation.</p>
+			<p class="indent">While you carry it, you can perform the following actions:</p>
+			<p class="indent"><strong><em>Rose of Radiance.</em></strong> The rose gives off light equal to that of a candle. As a bonus action, you can adjust the brightness of its illumination, extinguishing it entirely or increasing it so that it equals the brightness of a hooded lantern.</p>
+			<p class="indent"><strong><em>Not Yet My Love.</em></strong> As an action, you can, at will, touch a creature with the rose and cast <i>spare the dying</i>.</p>
+			<p class="indent"><strong><em>Shared Suffering.</em></strong> As a bonus action, you can prick your finger on one of the thorns of the rose, allowing it to feed on your blood and causing you 7 (2d6) points of damage. If you then touch the rose to a creature, you can, as an action, heal it for 2d6 points or provide those points to the creature as temporary hit points. If used in the latter fashion, you cannot heal the damage done to you by the rose until those temporary hit points have been expended. Once you use this property, you can't use it again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Inspiration of the Muse.</em></strong> As an action, you can use the rose to provide one creature with inspiration. Once you use this property, you can't use it again until you finish a long rest. If the creature does not expend the awarded inspiration by the time you next finish a long rest, the inspiration expires.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, illumination, light, action, spell, spare the dying, action, temporary hit points, inspiration</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="The Luminous Codex" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_THE_LUMINOUS_CODEX">
+		<description>
+			<p>The Luminous Codex is a spellbook that contains all the spells that an archmage has, plus the following: <i>fireball</i>, <i>sunbeam</i>, <i>sunburst</i>, <i>plane shift</i>, <i>demiplane</i>, and <i>imprisonment</i>.</p>
+			<p class="indent">While you are attuned to it, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Radiant Illumination.</em></strong> You know the <i>light</i> cantrip, and you can cast the <i>daylight</i> spell at will.</p>
+			<p class="indent"><strong><em>Radiant Blast.</em></strong> You can change the damage type of any spell you cast to radiant damage. Once you use this property, you can't use it again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Radiant Resilience.</em></strong> You are immune to radiant damage, and you disregard any penalties you would normally suffer from being in sunlight.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellbook, wizard, spells, disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop, fireball, sunbeam, sunburst, plane shift, demiplane, imprisonment, daylight, radiant, damage, immunity</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement" addition="by a wizard">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" requirements="ID_WOTC_PHB_CLASS_WIZARD|ID_WOTC_PHB24_CLASS_WIZARD" />
+		</rules>
+	</element>
+
+	<element name="Night Messenger's Coat" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_NIGHT_MESSENGERS_COAT">
+		<description>
+			<p>This ankle-length black woolen coat has a high, flared collar and an elbow-length capelet. It has wide, open sleeves and a row of large, silver buttons down one side. At the front corners of the capelet, embroidery of stylized, shadowy horses in a rearing stance appear in silver thread. While wearing the coat, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Shadow-touched Steed.</em></strong> You can, at will, use the coat to cast the spell <i>find steed</i> to summon a shadow‑touched fey mount of your preferred size and type. Summoning this steed takes 1 round, but once you have chosen your mount and its form, the coat always summons this same companion for you. Removing the <i>night messenger's coat</i> causes a mount summoned with it to vanish as though you dismissed it. Summoning mounts via find steed from other sources automatically fail while you wear a <i>night messenger's coat</i>.</p>
+			<p class="indent"><strong><em>Witchlight Sight.</em></strong> You can see and sense the trails left behind by witchlights.</p>
+			<p class="indent"><strong><em>Shadow Sense.</em></strong> You have advantage on Wisdom (Survival) checks made to navigate or avoid getting lost in the Shadow Realm.</p>
+			<p class="indent"><strong><em>Incorruptible.</em></strong> You have advantage on all saving throws made to resist shadow corruption.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, find steed, advantage, corruption</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Painted Stones, Puce" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_PUCE">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, fire, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Indigo" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_INDIGO">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, invisible</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Violet" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_VIOLET">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, immune, charmed, frightened</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Slate" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_SLATE">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, disadvantage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Mustard" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_MUSTARD">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, enhance ability</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Juniper" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_JUNIPER">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Umber" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_UMBER">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, reaction, force, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Painted Stones, Bone" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_PAINTED_STONES_BONE">
+		<description>
+			<p>The painted stones are magical and emanate different auras of magic, depending on the color. If the stones are taken from the Whispering Plains, they instantly lose their magical properties. Returning a stone to the Plains does not bring back its magic.</p>
+			<p class="indent">Only one stone can affect a creature at a time. Each stones has one charge. With a bonus action, a creature holding one of the stones can expend its single charge, activating the corresponding effect below:</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Emanation</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Puce</td> <td>Evocation</td> <td>For 1 minute, your weapon attacks deal additional fire damage equal to twice your proficiency bonus.</td> </tr>
+					<tr> <td>Indigo</td> <td>Illusion</td> <td>For 1 minute, you become invisible (no concentration required); the effect ends if you attack or cast a spell.</td> </tr>
+					<tr> <td>Violet</td> <td>Enchantment</td> <td>For 1 minute, you and one willing creature you can see within 30 feet become immune to the frightened and charmed conditions.</td> </tr>
+					<tr> <td>Slate</td> <td>Divination</td> <td>For 1 minute, all attacks against you are made with disadvantage.</td> </tr>
+					<tr> <td>Mustard</td> <td>Transmutation</td> <td>For 1 hour, you gain the benefits of the <i>enhance ability</i> spell, choosing two of the spell’s effects instead of one (no concentration required)</td> </tr>
+					<tr> <td>Juniper</td> <td>Abjuration</td> <td>A magical shield that has a number of hit points equal to five times your proficiency bonus surrounds you. When you have the shield active and take damage, the shield’s hit points are lost first, and any leftover damage carries over to your normal hit points. The shield lasts for 1 minute, or until the shield’s hit points are reduced to 0.</td> </tr>
+					<tr> <td>Umber</td> <td>Conjuration</td> <td>For 1 minute, you can use your reaction to fling a magical spike at a target you can see within 60 feet. The spike automatically hits its target, causing and amount of force damage equal to your proficiency bonus.</td> </tr>
+					<tr> <td>Bone</td> <td>Necromancy</td> <td>For 1 minute, each time you damage a creature with a weapon or spell attack, you regain an amount of hit points equal to your proficiency bonus.</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, hit points, healing</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Grimoire" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_SHADOW_GRIMOIRE">
+		<description>
+			<p>This thick tome is covered in inky black nightmare hide and bound with iron overlaid with silver. Delicate silver runes are inlaid in a circular pattern across the cover. The pages within are written in silver ink on jet-black paper. The book is extremely well-crafted, durable, and waterproof and measures just over 12 inches tall, 9 inches wide and 1 inch thick.</p>
+			<p class="indent">While the grimoire is on your person, you have advantage on all skill checks pertaining to shadow or darkness magic, geography, history, and denizens of the Shadow Realm.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> The <i>Shadow Grimoire</i> is a sentient neutral spellbook with an Intelligence of 15, a Wisdom of 15, and a Charisma of 14. It has an Armor Class of 15 and 20 hit points. It regains 1d8 + 4 hit points each evening at dusk. It has hearing and normal vision out to a range of 30 feet and darkvision out to a range of 60 feet.</p>
+			<p class="indent">The book can speak, read, and understand Common and Umbral and can communicate with its owner telepathically out to a range of 60 feet.</p>
+			<p class="indent"><strong><em>Personality.</em></strong> The <i>Shadow Grimoire</i> is intelligent, haughty, and extremely proud of its abilities and its unique nature. Once it decides to reveal its sentience and awareness, it expects to be treated in every way like a highly regarded equal. If the grimoire is confident its owner shares its outlook and goals, it reveals its abilities and complies with most requests.</p>
+			<p class="indent">It is often mysterious, cryptic, and prone to falling silent for long periods of time without cause or explanation. If it feels it is being mistreated or not shown the proper level of respect, the grimoire snaps itself shut and refuses to open or use any of its abilities until the situation changes to its satisfaction.</p>
+			<p class="indent">The grimoire has little interest in good or evil, law or chaos. Its primary interests lie in magic, specifically shadow and darkness magic or anything pertaining to the Shadow Realm. The grimoire is single-minded in its desire to learn all it can about shadow magic, and it expects its owner to share this desire. It insists that its owner prepare at least a few of the spells contained within its pages every day (the more, the better, of course). If the owner refuses, the grimoire may (at the GM's discretion) demand to be given to someone more worthy of it, make it impossible for its owner to attune to it, suppress one or more of its properties, or attempt to take control of its owner.</p>
+			<p class="indent">If the <i>Shadow Grimoire</i> attempts to take control of its owner, the owner must make a Charisma saving throw with a DC equal to 12 + the grimoire's Charisma modifier. On a failed save, the owner is charmed by the grimoire for 1d12 hours. While charmed, the owner must try to follow the grimoire's commands. Whether the attempt to control its owner succeeds or fails, the Shadow Grimoire can't use this power again until the next dusk.</p>
+			<p class="indent"><strong><em>Bookish.</em></strong> As an action, the <i>Shadow Grimoire</i> can open and close itself and flip instantly to any page it desires, including the current scroll page (see below). A DC 25 Strength check is required to close it, pry it open, or tear out a page against its will.</p>
+			<p class="indent"><strong><em>Shadow Jump (3/Day).</em></strong> The <i>Shadow Grimoire</i> can move from one shadow into another. As a bonus action, when the grimoire is in dim light or darkness, it can teleport up to 60 feet to an unoccupied space it can see that is also in dim light or darkness.</p>
+			<p class="indent"><strong><em>Sunlight Vulnerability.</em></strong> The <i>Shadow Grimoire</i> must always remain cloaked in shadow or the darkness of night. The grimoire is damaged if exposed to direct sunlight (not merely a <i>daylight</i> spell). For every minute the <i>Shadow Grimoire</i> is exposed to sunlight, it takes 1d8 radiant damage. If this damage exceeds the book's total hit points, the <i>Shadow Grimoire</i> bursts into gray flame and is forever destroyed.</p>
+			<p class="indent"><strong><em>Warded.</em></strong> The <i>Shadow Grimoire</i> is protected by a <i>glyph of warding</i>. The glyph can be triggered by the grimoire if it feels threatened. The glyph causes explosive runes to erupt in a 20-foot-radius sphere of crackling, shadowy energy. Each creature in the area must make a DC 13 Dexterity saving throw. A creature takes 5d8 cold damage on a failed save, or half as much damage on a successful one. Once the glyph of warding goes off, it can't be used again until the next dusk.</p>
+			<p class="indent"><strong><em>Enveloped by Shadows (Requires Attunement).</em></strong> The <i>Shadow Grimoire</i>'s secrets cling to your mind like the shadow realm itself. Only you can read its contents; to all others, its pages appear pure black. As your level increases, you gain the following benefits while holding or carrying this book.</p>
+			<p class="indent"><em>5th level.</em> The <i>Shadow Grimoire</i> is a spellbook that contains the following spells (see <i>Deep Magic</i> by Kobold Press):</p>
+			<ul class="unstyled">
+				<li>Cantrips: <i>claws of darkness, douse light, shadow bite, shadow blindness</i></li>
+				<li>1st level: <i>black ribbons, cloak of shadow, shadow armor, shadow hands</i></li>
+				<li>2nd level: <i>dark path, darkbolt, negative image, shadow puppets, slither</i></li>
+				<li>3rd level: <i>call shadow mastiff, shadow tendrils, shadow trove</i></li>
+				<li>4th level: <i>black hand, hide in one's shadow, shadow step</i></li>
+				<li>5th level: <i>dark dementing, shadow gateway</i></li>
+				<li>6th level: <i>become nightwing, black well</i></li>
+				<li>7th level: <i>conjure shadow titan, dying of the light</i></li>
+				<li>8th level: <i>creeping darkness</i></li>
+				<li>9th level: <i>umbral storm</i></li>
+			</ul>
+			<p>In addition, the <i>Shadow Grimoire</i> contains a special scroll page—a single spell from among the spells transcribed within it, that you may cast directly from the book as if it were a scroll. Once the spell is cast, another spell (other than the one just cast) randomly becomes the next spell that can be cast directly from the book. The spell is always of a level you can cast. You must spend an action to flip pages and find the new scroll-page spell. Once found, the scroll page can be marked for future reference. You do not need to provide a material component and casting the spell does not remove it from the spellbook. Once you have used the scroll page 3 times, it can't be used again until the next dusk.</p>
+			<p class="indent"><em>9th level.</em> You gain darkvision out to a range of 30 feet. If you already have darkvision, you can see in magical darkness out to a range of 30 feet as if in dim light. In addition, the <i>Shadow Grimoire</i>'s <i>glyph of warding</i> saving throw DC increases to 14, and the cold damage increases to 6d8.</p>
+			<p class="indent"><em>13th level.</em> When the area you occupy is in dim light or darkness, you can use a bonus action to step through the shadow and emerge from another shadow up to 200 feet away.In addition, the <i>Shadow Grimoire</i>'s Intelligence becomes 16, its Wisdom 16, its Charisma 15, its Armor Class 17, and its hit points 25. Finally, the grimoire's <i>glyph of warding</i> saving throw DC increases to 15, and the cold damage increases to 7d8.</p>
+			<p class="indent"><em>17th level.</em> You can use an action to transport yourself and up to eight willing creatures to the Shadow Realm as if you had cast the <i>plane shift</i> spell. You can't do this again until you finish a long rest. In addition, as an action, you may now choose which spell in the grimoire becomes a scroll page.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellbook, scroll, spells, claws of darkness, douse light, shadow bite, shadow blindness, black ribbons, cloak of shadow, shadow armor, shadow hands, dark path, darkbolt, negative image, shadow puppets, slither, call shadow mastiff, shadow tendrils, shadow trove, black hand, hide in one's shadow, shadow step, dark dementing, shadow gateway, become nightwing, black well, conjure shadow titan, dying of the light, creeping darkness, umbral storm, action, darkvision, bonus action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Fabled</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" level="9" />
+			<stat name="darkvision:range" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Shroud of Kairious" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_SHROUD_OF_KAIRIOUS">
+		<description>
+			<p>The top of this brass censer has silhouettes of hourglasses and the sun punched through its surface.</p>
+			<p class="indent">When issued its command word, the censer begins to emit a hazy, jasmine-scented shroud of vapor in a 15-foot radius centered on it for 2 hours. The vapor shroud does not affect your vision or the vision or visibility of the creatures inside of it. Creatures standing inside the vapor shroud are immune to Oshragora's temporal distortions and magic spells and effects that alter time, such as <i>slow</i>, <i>haste</i>, or <i>time stop</i>.</p>
+			<p class="indent">Once per day, while the censer is emitting vapor, you can use the command word to jump backwards in time 1 hour, losing any progress or ill effects gained during the erased hour. Once you have used this function, the censer ceases emitting vapor.</p>
+			<p class="indent">Once the censer has been used, it cannot be used again until noon the next day.</p>
+		</description>
+		<setters>
+			<set name="keywords">time</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+
+	<element name="Umbril Opal Necklace" type="Magic Item" source="Tales from the Shadows" id="ID_KBP_TFTS_MAGIC_ITEM_UMBRIL_OPAL_NECKLACE">
+		<description>
+			<p>This stunning necklace is crafted from finely wrought silver and sparkling black opals. When attuned to this necklace, your Charisma score increases by 2. Additionally, you have advantage on saving throws against being charmed.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, advantage, saving throw, charmed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" />
+		</rules>
+	</element>
+
+</elements>
