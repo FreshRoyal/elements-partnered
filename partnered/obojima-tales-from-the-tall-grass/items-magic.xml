@@ -3,7 +3,7 @@
 	<info>
 		<name>Magic Items</name>
 		<description>Magic Items from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-magic.xml" />
 		</update>
 	</info>
@@ -752,7 +752,7 @@
 
 	<element name="Umbrella of Shielding" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_UMBRELLA_OF_SHIELDING">
 		<description>
-			<p>This silk umbrella is reinforced with iron, making it as durable as it is heavy. It is considered a +1 shield. While wielding the umbrella and targeted by a ranged weapon attack, you can use your reaction to gain a +5 bonus to your AC for that attack, potentially causing the attack to miss you.</p>
+			<p>This silk umbrella is reinforced with iron, making it as durable as it is heavy. It is considered a +1 umbrella. While wielding the umbrella and targeted by a ranged weapon attack, you can use your reaction to gain a +5 bonus to your AC for that attack, potentially causing the attack to miss you.</p>
 		</description>
 		<setters>
 			<set name="keywords">ac, reaction</set>
@@ -762,11 +762,8 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="weapon">Umbrella</set>
+			<set name="enhancement">1</set>
 		</setters>
-		<rules>
-			<stat name="ac:shield" value="2" bonus="shield" />
-			<stat name="ac:shield" value="1" bonus="enhancement" />
-		</rules>
 	</element>
 
 	<element name="Weapon of the Sun And Moon" type="Magic Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_MAGIC_ITEM_LUNAR_WEAPON">
