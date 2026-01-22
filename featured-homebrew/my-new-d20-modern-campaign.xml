@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>My New d20 Modern Campaign</name>
+		<update version="0.0.1">
+			<file name="my-new-d20-modern-campaign.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/my-new-d20-modern-campaign.xml" />
+		</update>
+	</info>
+	
+	<element name="My New d20 Modern Campaign" type="Source" source="Core" id="ID_DH_SOURCE_MY_NEW_D20_MODERN_CAMPAIGN">
+		<description>
+			<p>"I’m a longtime D&amp;D player, but I’m also a sucker for urban fantasy. With the Dungeon Master’s Guide and some tweaking, I’ve begun to use the fifth edition rules to explore the possibilities of gunplay in a modern fantasy setting."" </p>
+		</description>
+		<setters>
+			<set name="abbreviation">MND20MC</set>
+			<set name="url">https://web.archive.org/web/20170908095203/https://dnd.wizards.com/articles/features/my-new-d20-modern-campaign</set>
+			<set name="author" abbreviation="DH" url="http://dnd.wizards.com">Dan Helmick</set>
+			<set name="homebrew">true</set>
+			<set name="release">20150413</set>
+		</setters>
+	</element>
+
+	<!--Resistance-->
+	<element name="Resistance (Ballistic)" type="Condition" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_CONDITION_DAMAGE_RESISTANCE_BALLISTIC">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Ballistic Damage" type="Rule" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_INFORMATION_BALLISTIC_DAMAGE">
+		<description>
+			<p>Ballistic damage is the type of damage that firearms inflict, and is a subset of piercing damage. This means that all ballistic damage counts as piercing damage, but not all piercing damage counts as ballistic damage. Magical effects or creature properties that grant resistance to piercing damage also apply to ballistic damage, but effects or properties reducing ballistic damage do not automatically apply to piercing damage.</p>
+		</description>
+	</element>
+
+	<!--Armor-->
+	<!-- Light Armor -->
+	<element name="Heavy Coat" type="Armor" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_ARMOR_LIGHT_HEAVY_COAT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_COAT</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Heavy Coat)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_COAT">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_COAT" />
+		</rules>
+	</append>
+
+	<element name="Leather Jacket" type="Armor" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_ARMOR_LIGHT_LEATHER_JACKET">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_JACKET</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Leather Jacket)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_JACKET">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER_JACKET" />
+		</rules>
+	</append>
+
+	<element name="Light Undercover Shirt" type="Armor" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_ARMOR_LIGHT_LIGHT_UNDERCOVER_SHIRT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>DR/2 ballistic</p>
+			<p>While you're wearing this armor, you have a damage reduction of 2 from ballistic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_UNDERCOVER_SHIRT</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Light Undercover Shirt)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_UNDERCOVER_SHIRT">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_UNDERCOVER_SHIRT" />
+		</rules>
+	</append>
+
+	<element name="Kevlar-lined Coat" type="Armor" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_ARMOR_LIGHT_KEVLAR_LINED_COAT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>DR/2 ballistic</p>
+			<p>While you're wearing this armor, you have a damage reduction of 2 from ballistic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dex modifier</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_KEVLAR_LINED_COAT</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Kevlar-lined Coat)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_KEVLAR_LINED_COAT">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_KEVLAR_LINED_COAT" />
+		</rules>
+	</append>
+
+	<element name="Undercover Vest" type="Armor" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_ARMOR_LIGHT_UNDERCOVER_VEST">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>DR/2 ballistic</p>
+			<p>While you're wearing this armor, you have a damage reduction of 2 from ballistic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">13 + Dex modifier</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_UNDERCOVER_VEST</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Undercover Vest)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_UNDERCOVER_VEST">
+		<supports>Light Armor, ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_UNDERCOVER_VEST" />
+		</rules>
+	</append>
+
+	<!-- Medium Armor -->
+	<element name="Concealable Vest" type="Armor" source="My New d20 Modern Campaign" id="D_DH_MND20MC_ARMOR_MEDIUM_CONCEALABLE_VEST">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>DR/3 ballistic</p>
+			<p>While you're wearing this armor, you have a damage reduction of 3 from ballistic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">12 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_CONCEALABLE_VEST</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Concealable Vest)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_CONCEALABLE_VEST">
+		<supports>Medium Armor, ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_CONCEALABLE_VEST" />
+		</rules>
+	</append>
+
+	<element name="Light-duty Vest" type="Armor" source="My New d20 Modern Campaign" id="D_DH_MND20MC_ARMOR_MEDIUM_LIGHT_DUTY_VEST">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>DR/3 ballistic</p>
+			<p>While you're wearing this armor, you have a damage reduction of 3 from ballistic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">14 + Dex modifier (max 3)</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_DUTY_VEST</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12" />
+			<stat name="ac:armored:armor" value="dexterity:modifier" maximum="3" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Light-duty Vest)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_DUTY_VEST">
+		<supports>Medium Armor, ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_DUTY_VEST" />
+		</rules>
+	</append>
+
+	<element name="Tactical Vest" type="Armor" source="My New d20 Modern Campaign" id="D_DH_MND20MC_ARMOR_MEDIUM_TACTICAL_VEST">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Resistance: ballistic</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="strength">10</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_TACTICAL_VEST</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+			<grant type="Condition" id="ID_DH_MND20MC_CONDITION_DAMAGE_RESISTANCE_BALLISTIC" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:10]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Tactical Vest)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_TACTICAL_VEST">
+		<supports>Medium Armor, ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_TACTICAL_VEST" />
+		</rules>
+	</append>
+
+	<!--Heavy Armor -->
+	<element name="Special Response Vest" type="Armor" source="My New d20 Modern Campaign" id="D_DH_MND20MC_ARMOR_HEAVY_SPECIAL_RESPONSE_VEST">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Resistance: ballistic</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">10</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">15</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_SPECIAL_RESPONSE_VEST</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+			<grant type="Condition" id="ID_DH_MND20MC_CONDITION_DAMAGE_RESISTANCE_BALLISTIC" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:10]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Special Response Vest)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_SPECIAL_RESPONSE_VEST">
+		<supports>Heavy Armor, ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_SPECIAL_RESPONSE_VEST" />
+		</rules>
+	</append>
+
+	<element name="Land Warrior Armor" type="Armor" source="My New d20 Modern Campaign" id="D_DH_MND20MC_ARMOR_HEAVY_LAND_WARRIOR_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>DR/5 ballistic/slashing</p>
+			<p>While you're wearing this armor, you have a damage reduction of 5 from both ballistic and slashing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">13</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">17</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LAND_WARRIOR_ARMOR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="17" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:13]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Land Warrior Armor)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LAND_WARRIOR_ARMOR">
+		<supports>Heavy Armor, ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_LAND_WARRIOR_ARMOR" />
+		</rules>
+	</append>
+
+	<element name="Forced Entry Unit" type="Armor" source="My New d20 Modern Campaign" id="D_DH_MND20MC_ARMOR_HEAVY_FORCED_ENTRY_UNIT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Resistance: ballistic/slashing</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">13</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">18</set>
+			<set name="proficiency">ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_FORCED_ENTRY_UNIT</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+			<grant type="Condition" id="ID_DH_MND20MC_CONDITION_DAMAGE_RESISTANCE_BALLISTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<stat name="speed" value="-10" bonus="armor" requirements="!([str:13]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+		</rules>
+	</element>
+	<element name="Armor Proficiency (Forced Entry Unit)" type="Proficiency" source="My New d20 Modern Campaign" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_FORCED_ENTRY_UNIT">
+		<supports>Heavy Armor, ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+	</element>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<rules>
+			<grant type="Proficiency" id="ID_DH_MND20MC_PROFICIENCY_ARMOR_PROFICIENCY_FORCED_ENTRY_UNIT" />
+		</rules>
+	</append>
+	
+</elements>

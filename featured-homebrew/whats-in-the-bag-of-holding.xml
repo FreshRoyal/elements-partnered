@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>What's in the Bag of Holding? Contest Winners</name>
+		<update version="0.0.1">
+			<file name="whats-in-the-bag-of-holding.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/whats-in-the-bag-of-holding.xml" />
+		</update>
+	</info>
+	
+	<element name="What's in the Bag of Holding? Contest Winners" type="Source" source="Core" id="ID_DDB_SOURCE_WHATS_IN_THE_BAG_OF_HOLDING_CONTEST_WINNERS">
+		<description>
+			<p>To celebrate the launch of <em>Stranger Things: Welcome to the Hellfire Club</em>, we invited players to create their own magic items using the D&D Beyond Homebrew tool. You delivered. </p>
+			<p>From riff-ready gear to the collar of a very good dog, these winners stood out for creativity, clear effects, and on-theme 80s energy.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WBH</set>
+			<set name="url">https://www.dndbeyond.com/posts/2105-whats-in-the-bag-of-holding-contest-winners</set>
+			<set name="author" abbreviation="DDB" url="https://www.dndbeyond.com/posts/2105-whats-in-the-bag-of-holding-contest-winners">aston452, Lanaken, Richard40567, kevtori, Iggisnilmor</set>
+			<set name="homebrew">true</set>
+			<set name="release">20251119</set>
+		</setters>
+	</element>
+
+	<element name="Sweatbands of Strumming" type="Magic Item" source="What's in the Bag of Holding? Contest Winners" id="ID_DDB_WBH_MAGIC_ITEM_SWEATBANDS_OF_STRUMMING">
+		<description>
+			<p>While wearing this item, you gain the following benefits:</p>
+			<p class="indent">You gain proficiency with lutes and guitars.</p>
+			<p class="indent">Magically learn how to play 1d4+3 songs, determined when creating this item.</p>
+		</description>
+		<setters>
+			<set name="keywords">proficiency, lute, guitar</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/magic-items/10758135-sweatbands-of-strumming</set>
+		</setters>
+	</element>
+
+	<element name="Shirt of the Defiant" type="Magic Item" source="What's in the Bag of Holding? Contest Winners" id="ID_DDB_WBH_MAGIC_ITEM_SHIRT_OF_THE_DEFIANT">
+		<description>
+			<p>This faded black cotton shirt bears the logo of a forgotten club: a horned fiend ready for battle. The garment grants the wearer advantage on saving throws against becoming frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, saving throw, frightened</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/magic-items/10747709-shirt-of-the-defiant</set>
+		</setters>
+	</element>
+
+	<element name="Devil Horn Rings" type="Magic Item" source="What's in the Bag of Holding? Contest Winners" id="ID_DDB_WBH_MAGIC_ITEM_DEVIL_HORN_RINGS">
+		<description>
+			<p>A pair of rings made from a devil's horns, which can be used to bolster allies and terrify foes. Activated by the wearer pressing their thumb against closed middle and ring fingers, with index and pinkie fingers pointed up as antennae. NOTE: Sticking tongue out is entirely optional.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/magic-items/10767894-devil-horn-rings</set>
+		</setters>
+	</element>
+
+	<element name="Flip-Up Shades" type="Magic Item" source="What's in the Bag of Holding? Contest Winners" id="ID_DDB_WBH_MAGIC_ITEM_FLIP_UP_SHADES">
+		<description>
+			<p>This eyeglass frame contains shaded lenses that can be flipped up or down to cover the wearer’s eyes. While the lenses are down the wearer has Advantage on Perception checks while in bright light but Disadvantage in dim light and darkness, and also can’t be Blinded due to light.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, perception, disadvantage, blinded</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/magic-items/10772106-flip-up-shades</set>
+		</setters>
+	</element>
+
+	<element name="Collar of the Goodest Boy" type="Magic Item" source="What's in the Bag of Holding? Contest Winners" id="ID_DDB_WBH_MAGIC_ITEM_COLLAR_OF_THE_GOODEST_BOY">
+		<description>
+			<p>Yell the command phrase "TREATS" to summon <strong>Tyr the Pyr</strong>. Tyr the Pyrenees is the large, fluffy, and white ardent defender of his friends, the small, and the helpless. This goodest of good boys is as ready to hand bad guys their own behind, as he is to snuggle.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by summoning Tyr the Pyr and spending 1 hour petting him">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/magic-items/10755002-collar-of-the-goodest-boy</set>
+		</setters>
+	</element>
+
+</elements>

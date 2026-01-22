@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Realms Now Know Your Name! Contest Winners</name>
+		<update version="0.0.1">
+			<file name="the-realms-will-know-your-name.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/the-realms-will-know-your-name.xml" />
+		</update>
+	</info>
+	
+	<element name="The Realms Now Know Your Name! Contest Winners" type="Source" source="Core" id="ID_DDB_SOURCE_THE_REALMS_WILL_KNOW_YOUR_NAME_CONTEST_WINNERS">
+		<description>
+			<p>To celebrate the launch of <i>Forgotten Realms: Adventures in Faerûn</i> and <i>Forgotten Realms: Heroes of Faerûn</i>, we invited players to write themselves into legend through The Realms Will Know Your Name Homebrew Feat Contest.</p>
+            <p>We sorted through the trove of feats submitted by the community and designed to capture the essence of the Realms—now it's time to reveal who has become immortalized as a hero in the Forgotten Realms!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RWKYN</set>
+			<set name="url">https://www.dndbeyond.com/posts/2121-the-realms-now-know-your-name-contest-winners</set>
+			<set name="author" abbreviation="DDB" url="https://www.dndbeyond.com/posts/2121-the-realms-now-know-your-name-contest-winners">TravisofRoy, athator, YappingDM</set>
+			<set name="homebrew">true</set>
+			<set name="release">20251218</set>
+		</setters>
+	</element>
+
+	<element name="All Part of the Plan" type="Feat" source="The Realms Now Know Your Name! Contest Winners" id="ID_DDB_RWKYN_FEAT_ALL_PART_OF_THE_PLAN">
+		<description>
+			<p>They say hindsight is 20/20, but for you it's second nature. This knack for always being one step ahead of the game has amazed your friends and infuriated your enemies as long as you can remember. When it looks like you've been bested, surprised, or otherwise outsmarted, you can spend a Heroic Inspiration and reframe the situation as if it was all part of the plan.</p>
+            <p>Locked door? You paid a guard to leave the key under the mat.</p>
+            <p>Immune to fire? You knew that and prepared Cone of Cold.</p>
+            <p>Zone of Truth? Good thing you got your memories modified yesterday!</p>
+		</description>
+		<sheet>
+			<description>When it looks like you've been bested, surprised, or otherwise outsmarted, you can spend a Heroic Inspiration and reframe the situation as if it was all part of the plan.</description>
+		</sheet>
+        <setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/feats/2180529-all-part-of-the-plan</set>
+		</setters>
+	</element>
+
+    <element name="Famed Adventurer" type="Feat" source="The Realms Now Know Your Name! Contest Winners" id="ID_DDB_RWKYN_FEAT_FAMED_ADVENTURER">
+		<description>
+			<p>Your adventures travel ahead of you in song and rumour, and the Realms greet you as a hero. You receive a 25% discount on any purchase from those who know your name. When you spin tales of your journeys before a crowd, your entire party gains Heroic Inspiration. After the telling, roll a d20; on a 1, a starry-eyed but inexperienced admirer (<b>Commoner</b> statblock) insists on joining your quest. If this fan dies, your legend falters, and you lose this feat’s benefits until you seek out their family and make amends.</p>
+		</description>
+		<sheet>
+			<description>You receive a 25% discount on any purchase from those who know your name. When you spin tales of your journeys before a crowd, your entire party gains Heroic Inspiration. After the telling, roll a d20; on a 1, a starry-eyed but inexperienced admirer (Commoner statblock) insists on joining your quest. If this fan dies, your legend falters, and you lose this feat’s benefits until you seek out their family and make amends.</description>
+		</sheet>
+        <setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/feats/2178602-famed-adventurer</set>
+		</setters>
+	</element>
+	
+	<!--There were quite a few typos and errors in this one-->
+    <element name="Fabled Aura" type="Feat" source="The Realms Now Know Your Name! Contest Winners" id="ID_DDB_RWKYN_FEAT_FABLED_AURA">
+		<requirements>[level:19]</requirements>
+		<supports>Epic Boon</supports>
+		<prerequisite>Level 19+</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+)</p>
+			<p>Your legendary fame is known throughout the world and many sing praises to your name. In combat your courage inspires others. Your allies within 20 feet of you gain a +1 bonus to saves made to resist the frightened effect. Additionally, if they are of a lower level or challenge rating than your level, they gain advantage on saves to resist or end the charmed or frightened conditions. Once per long rest, as a reaction to an ally failing a saving throw or being hit by an attack, you may destroy this aura temporarily. If you do so they act as though they succeeded on the save and gain 2d10 temporary hit points. Your aura reappears at the end of a long rest.</p>
+		</description>
+		<sheet>
+			<description>Your allies within 20 ft of you gain a +1 bonus to saves made to resist the frightened effect. Additionally, if they are of a lower level or challenge rating than your level, they gain advantage on saves to resist or end the charmed or frightened conditions. &#13;
+            Once per long rest, as a reaction to an ally failing a saving throw or being hit by an attack, you may destroy this aura temporarily. If you do so they act as though they succeeded on the save and gain 2d10 temporary hp. Your aura reappears at the end of a long rest.</description>
+		</sheet>
+         <setters>
+			<set name="sourceUrl">https://www.dndbeyond.com/feats/2173797-fabled-aura-epic-boon</set>
+		</setters>
+	</element>
+	
+</elements>
