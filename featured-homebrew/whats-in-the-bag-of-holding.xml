@@ -9,7 +9,7 @@
 	
 	<element name="What's in the Bag of Holding? Contest Winners" type="Source" source="Core" id="ID_DDB_SOURCE_WHATS_IN_THE_BAG_OF_HOLDING_CONTEST_WINNERS">
 		<description>
-			<p>To celebrate the launch of <em>Stranger Things: Welcome to the Hellfire Club</em>, we invited players to create their own magic items using the D&D Beyond Homebrew tool. You delivered. </p>
+			<p>To celebrate the launch of <em>Stranger Things: Welcome to the Hellfire Club</em>, we invited players to create their own magic items using the D&amp;D Beyond Homebrew tool. You delivered.</p>
 			<p>From riff-ready gear to the collar of a very good dog, these winners stood out for creativity, clear effects, and on-theme 80s energy.</p>
 		</description>
 		<setters>
