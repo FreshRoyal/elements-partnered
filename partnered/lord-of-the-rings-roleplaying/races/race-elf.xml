@@ -3,7 +3,7 @@
 	<info>
 		<name>Elf</name>
 		<description>Elf from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/races/race-elf.xml" />
 		</update>
 	</info>
@@ -139,7 +139,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Elven-Lore" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Proficiency" name="Elven-Lore" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<select type="Proficiency" name="Customized Skill Proficiency (Elven-Lore)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
