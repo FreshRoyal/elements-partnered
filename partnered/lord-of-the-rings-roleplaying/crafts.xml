@@ -3,7 +3,7 @@
 	<info>
 		<name>Crafts</name>
 		<description>Crafts from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="crafts.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/crafts.xml" />
 		</update>
 	</info>
@@ -185,7 +185,7 @@
 		<rules>
 			<grant type="Grants" id="ID_FLP_LRRP_GRANTS_CRAFTS" requirements="!ID_FLP_LRRP_CLASS_FEATURE_SCHOLAR_CRAFTS" />
 			<stat name="lrrp:crafts:slots" value="1" />
-			<select type="Proficiency" name="Weapon Proficiency, Weapon-Craft" supports="Simple||Martial" />
+			<select type="Proficiency" name="Weapon Proficiency, Weapon-Craft" supports="Simple||Martial" optional="true" />
 			<!--maybe go back and make elements for each official weapon? Ew.-->
 		</rules>
 	</element>
