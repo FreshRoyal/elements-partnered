@@ -3,7 +3,7 @@
 	<info>
 		<name>New Skills</name>
 		<description>New Skills from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
 		</update>
 	</info>
@@ -273,7 +273,22 @@
 			<stat name="travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
 		</rules>
 	</append>
-	<!--todo: append to 2024 bard-->
+
+	<append id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
+		<rules>
+			<stat name="explore:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<stat name="hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<stat name="travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+		</rules>
+	</append>
+
+	<!--Plane Shift: Amonkhet Kefnet's Blessing-->
+	<append id="ID_WOTC_PSA_RACIAL_TRAIT_AVEN_KEFNETS_BLESSING">
+		<rules>
+			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+		</rules>
+	</append>
 
 	<!--Book of Ebon Tides Gifted Umbral Human Skill Advantage and Disadvantage-->
 	<element name="Explore" type="Racial Trait" source="The Lord of the Rings Roleplaying" id="ID_KBP_BOET_RACIAL_TRAIT_UMBRAL_HUMAN_GIFTED_SHADOW_GIFT_SKILL_ADVANTAGE_EXPLORE">
