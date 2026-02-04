@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from One-Shot Wonders: Holiday Adventure Pack</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/items.xml" />
+		</update>
+	</info>
+
+	<element name="Partridge Armor" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_PARTRIDGE_ARMOR">
+		<description>
+			<p><i>Partridge feathers and a scarlet hood give this predominantly dull-brown leather armour some brighter detailing. Intricate embossing around the waist tells the story of a lonely bird.</i></p>
+			<p>You have a +1 bonus to Armour Class while wearing this armour. Twice per day, when an enemy moves within 5 ft of you, you can fly up to 10 ft away from them in a flurry of feathers as a Reaction without provoking opportunity attacks.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, reaction</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="any light">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="name-format">Partridge {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Turtle Dove Dagger" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_TURTLE_DOVE_DAGGER">
+		<description>
+			<p><i>From the tip of its thick steel blade to the base of its golden handle, each knife shimmers with a buzz of illusory energy.</i></p>
+			<p>While wielding a pair of <i>Turtle Dove Daggers</i>, you can create an illusory copy of yourself as an Action twice per long rest. The illusion lasts for 1 minute, or until you take damage. The illusion appears in an unoccupied space that you can see within 30 ft of you. You can take an Attack or Magic action on your turn to attack or cast a spell as if you were in the illusion's space, but you must use your own senses. As a Bonus Action, you can move the illusion up to 30 ft to a space you can see, but it must remain within 120 ft of you. Additionally, when both you and your illusion are within 5 ft of a creature that can see the illusion, you have advantage on attack rolls against that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, action, illusion</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
+	<element name="Trident of Henchantment" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_TURTLE_DOVE_DAGGER">
+		<description>
+			<p><i>A jasper effigy of a chicken's head rests at the top of this trident, and an egg-shaped amethyst is fixed to its base. It is a strange weapon, but is highly coveted by farmers and livestock owners.</i></p>
+			<p>This magic weapon has 4 charges, and regains 1d4 expended charges at dawn. When you use the Attack action with this weapon, you can immediately expend 1 of its charges to cast the <i>Polymorph</i> spell (save DC 15) and transform your target into a hen (AC 10, HP 1, Speed 30 ft) for 1 hour. If you expend the weapon's last charge, roll 1d4. On a 1, yolk explodes out of the egg-shaped gem at the base of the trident and the weapon loses its enchantment.</p>
+		</description>
+		<setters>
+			<set name="keywords">trident, spell, polymorph</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="trident">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Trident</set>
+		</setters>
+	</element>
+
+	<element name="Calling Quills" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_CALLING_QUILLS">
+		<description>
+			<p><i>These antique quills and writing pads were originally owned by siblings. When the family set up four different branches of their toy-making business across the continent, they developed the magical pads as an easy way to communicate orders and stock levels with one another.</i></p>
+			<p>When something is written on one of the four parchment pads, it is visible on all the other parchment pads. Messages are visible for 12 hours, at which point the pads magically absorb the ink.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Gold Rings of Might" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_GOLD_RINGS_OF_MIGHT">
+		<description>
+			<p><i>These five ornate, golden rings once belonged to an evil monarch. Alone, each is simply an inert piece of dress jewellery. When they are brought together, they hum with dark and ominous energy.</i></p>
+			<p>The <i>Gold Rings of Might</i> have 5 charges, and regain 1 expended charge every day at dawn. If you expend the last charge, the item loses its enchantment and does not recharge. If a creature is wearing the <i>Gold Rings of Might</i>, they can innately cast the <i>Shocking Grasp</i> spell as a Magic action.</p>
+			<p class="indent">The wearer can expend 1 charge to cast <i>Lightning Bolt</i> (save DC 15) as a Magic action, without using the materials or a spell slot.</p>
+			<p class="indent">Alternatively, the wearer can expend 3 charges to cast <i>Chain Lightning</i> (save DC 15) as a Magic action, without using the materials or a spell slot.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="slot">ring</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Goose Egg Healing Grenade" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_GOOSE_EGG_HEALING_GRENADE">
+		<description>
+			<p><i>Whether this smooth, pearlescent egg was truly laid by a mythical golden goose is the subject of much debate. What is known for sure, however, is that the egg has remarkable healing powers.</i></p>
+			<p>Once per day as an Action, this item can be thrown into an unoccupied space up to 40 ft away and release a wave of healing energy. Creatures within a 30 ft radius Sphere from the point the <i>Goose Egg Healing Grenade</i> lands regain 2d8 + 4 Hit Points, or 5d8 + 4 if they are within a 10 ft radius Sphere. The item's magic heals up to six creatures at a time, starting with the creatures with the lowest Hit Points.</p>
+			<p class="indent">This item's magic has no effect on undead creatures or constructs.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Swansong Staff" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_SWANSONG_STAFF">
+		<description>
+			<p><i>This gnarled, oak staff ends in a crook reminiscent of a swan's neck. It is clearly ancient, and was only recently uncovered from deep within an elven ruin.</i></p>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">Once a day, if the wielder is reduced to 0 Hit Points, the <i>Swansong Staff</i> immediately animates (using the stats of an <strong>Animated Broom</strong>) to protect them. The weapon acts on the wielder's initiative. If the animated weapon is reduced to 0 Hit Points or if its wielder regains consciousness, it becomes inanimate once more.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+	<element name="Phial of Stoutmilk" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_PHIAL_OF_STOUTMILK">		
+		<description>
+			<p><i>This thick glass bottle holds viscous, white, fizzing liquid. Tied around the bottle's neck is a worn tag that once listed the ingredients and stated dose.</i></p>
+			<p>For 1 hour after drinking this potion, when you take bludgeoning damage, reduce the total damage taken by 1d4. Your Strength and Constitution scores both increase by 2 until the potion's effects wear off.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Wand of Dancing" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_WAND_OF_BINDING">
+		<description>
+			<p><i>Light glistens across this shiny, black wand; the ribbons that flow from its tip twinkle and sparkle in rhythmic patterns.</i></p>
+			<p>You can spin and twirl holding this wand to cast the <i>Otto's Irresistible Dance</i> spell (save DC 14). The wand can be used to cast the spell as many times as you like each day, however, once a creature fails its saving throw against the spell cast by this wand, the wand cannot be used to cast the spell again until dawn the next day.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Boots of Soft Landing" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_BOOTS_OF_SOFT_LANDING">
+		<description>
+			<p><i>A pair of brown, fur-lined boots that have been finely crafted. The boots are quilted, and have ceramic soles that emit a colourful magical energy.</i></p>
+			<p>While wearing these boots, you always land on your feet and cannot be knocked Prone. Additionally, your fall speed is capped at 60 ft per round, and you take no damage from falling.</p>
+		</description>
+		<setters>
+			<set name="keywords">prone, fall damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Babble Pipes" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_BABBLE_PIPES">
+		<description>
+			<p><i>Made from pieces of several mismatched instruments, these panpipes have been tied together into a single, discordant whole.</i></p>
+			<p>Once a day, this instrument can be played as an Action, releasing a horrid symphony. Each creature in a 30 ft Emanation who can hear the music must succeed on a DC 12 Wisdom saving throw or have the Frightened condition for 1 minute.</p>
+			<p class="indent">A Frightened creature takes the Dash action and moves away from you by the safest route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a space where it doesn't have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">panpipes</set>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">onehand</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Metronome Drum" type="Magic Item" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_MAGIC_ITEM_METRONOME_DRUM">
+		<description>
+			<p><i>This neatly painted drum is attached to a leather shoulder harness, so it can be struck at waist height. Local folklore suggests that this instrument can have an almost hypnotic effect on those in earshot, but only if played at the correct tempo.</i></p>
+			<p class="indent">You can play this drum as an Action. Once a day, up to three Humanoids within a 30 ft Emanation of the drum beat must succeed on a DC 14 saving throw or have the Charmed condition and become Friendly towards you. The targets make their saving throws with advantage if you or your allies are fighting them. The Charmed condition ends after 1 hour or when you stop playing the drum. When the Charmed condition ends, the targets know they were Charmed by you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">onehand</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+</elements>

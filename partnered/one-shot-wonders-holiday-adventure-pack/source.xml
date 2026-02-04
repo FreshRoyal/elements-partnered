@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/source.xml" />
+		</update>
+	</info>
+	<element name="One-Shot Wonders: Holiday Adventure Pack" type="Source" source="Core" id="ID_RPP_SOURCE_ONE_SHOT_WONDERS_HOLIDAY_ADVENTURE_PACK">
+		<description>
+			<h5 style="margin-top:-1em">‘Tis the season to roll initiative!</h5>
+			<p>Bring joy and chaos to your table this Winterfest season, with sleigh chases, pudding gremlin fights and toy factory break-ins. This festive collection is bursting with ready-to-play one-shots, battle maps, playable species, magic items, and more for merry misadventures. Each one-shot is perfect for dropping into your campaign, or running as a special holiday game night!</p>
+			<p>What’s inside:</p>
+			<ul>
+				<li>5 holiday adventures (for levels 1–12), each playable in three hours</li>
+				<li>5 detailed maps, including a toy factory, ice castle, banquet hall and more</li>
+				<li>3 festive-themed monsters ready to battle your party</li>
+				<li>4 wintry playable species, from the Snowborn to the reindeer-like Tarandus</li>
+				<li>12 magic items based on the <i>Twelve Days of Christmas</i></li>
+			</ul>
+		</description>
+		<setters>
+			<set name="abbreviation">OSWHAP</set>
+			<set name="url">https://marketplace.dndbeyond.com/BB-3RDPARTY-2025/DB95H2YVZ</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/OSWHAP.png</set>
+			<set name="author" abbreviation="RPP" url="https://rollandplaypress.com/">Roll &amp; Play Press</set>
+			<set name="third-party">true</set>
+			<set name="release">20251206</set>
+		</setters>
+	</element>
+
+</elements>

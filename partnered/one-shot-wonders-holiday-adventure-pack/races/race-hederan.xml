@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hederan</name>
+		<description>Hederan from One-Shot Wonders: Holiday Adventure Pack</description>
+		<update version="0.0.1">
+			<file name="race-hederan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-hederan.xml" />
+		</update>
+	</info>
+
+	<element name="Hederan" type="Race" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACE_HEDERAN">
+		<description>
+			<p>Hederans are living embodiments of alpine trees, sentient beings of bark and leaf whose bodies host moss, holly and fungi. Their outer skin is made of thick bark that toughens with age, and beneath lies a network of green, sap-filled muscle. Twigs and berries sprout unpredictably, with the brightest clusters gathered around their heads. Their leaves and bark vary in colour, and are as diverse as the lands they live in.</p>
+			<p class="indent">Hederans have extraordinary lifespans, with some reaching over a thousand years of age. Every two centuries or so, a hederan enters a rare blooming phase when the flowers on its body release pollen and a single silver seed forms upon its back. The seed must be planted within a week, or it will wither away, but from it a new hederan sapling will grow.</p>
+			<p class="indent">Once planted by their parent, a hederan forms a deep bond with the soil of its homeland. They serve as guardians of winter forests, and maintain the balance of nature. Solitary by nature, they can live for centuries without meeting another of their kind, and no one knows how many exist across the world.</p>
+			<h5>HEDERAN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Small (about 2–4 ft tall) or Medium (about 4–7 ft tall), chosen when you select this species</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Hederan, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 ft.</p> 
+			<p class="indent"><strong><em>Outdoor Adept.</em></strong> You can move across Difficult Terrain made from earth or foliage without expending extra movement.</p> 
+			<p class="indent"><strong><em>Protected by Nature.</em></strong> You can attempt to Hide even when you are only lightly obscured by foliage, heavy rain/snow, mist, or other natural phenomena.</p> 
+			<p class="indent"><strong><em>Friend of Fauna.</em></strong> Once per Long Rest, you can cast the <i>Beast Bond</i> spell without the material components needed and without expending a spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Hederan)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Racial Trait" name="Size (Hederan)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Hederan)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Hederan)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+
+			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_OUTDOOR_ADEPT" />
+			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_PROTECTED_BY_NATURE" />
+			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_FRIEND_OF_FAUNA" />
+		</rules>
+	</element>
+
+	<element name="Outdoor Adept" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_OUTDOOR_ADEPT">
+		<description>
+			<p>You can move across Difficult Terrain made from earth or foliage without expending extra movement.</p>
+		</description>
+		<sheet>
+			<description>You can move across Difficult Terrain made from earth or foliage without expending extra movement.</description>
+		</sheet>
+	</element>
+
+	<element name="Protected by Nature" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_PROTECTED_BY_NATURE">
+		<description>
+			<p>You can attempt to Hide even when you are only lightly obscured by foliage, heavy rain/snow, mist, or other natural phenomena.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to Hide even when you are only lightly obscured by foliage, heavy rain/snow, mist, or other natural phenomena.</description>
+		</sheet>
+	</element>
+
+	<element name="Friend of Fauna" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_FRIEND_OF_FAUNA">
+		<description>
+			<p>Once per Long Rest, you can cast the Beast Bond spell without the material components needed and without expending a spell slot.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the Beast Bond spell without the material components needed and without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEAST_BOND" />
+		</rules>
+	</element>
+
+</elements>

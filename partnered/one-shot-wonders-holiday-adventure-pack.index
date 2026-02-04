@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>One Shot Wonders: Holiday Adventure Pack by Roll &amp; Play Press</name>
+		<update version="1.0.0">
+			<file name="one-shot-wonders-holiday-adventure-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack.index" />
+		</update>
+	</info>
+	<files>
+		<file name="race-canisar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-canisar.xml" />
+        <file name="race-hederan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-hederan.xml" />
+        <file name="race-snowborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-snowborn.xml" />
+        <file name="race-tarandus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-tarandus.xml" />
+        <file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/items.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/source.xml" />
+	</files>
+</index>
