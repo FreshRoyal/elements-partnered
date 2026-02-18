@@ -133,7 +133,7 @@
 			<p class="indent">However, the effort taxes you greatly; if you cast <i>revivify</i>, you take a −2 penalty to all attack rolls, saving throws, and ability checks, or a −4 penalty for any other spell that returns a creature from the dead. These penalties are cumulative. Every time you finish a long rest, the penalty is reduced by 1 until it disappears.</p>
 		</description>
 		<sheet>
-			<description>hen you cast a cleric spell that returns a creature from the dead, you can choose to cast the spell without expending any material components. When you cast the spell in this way the creature returns to life with a number of hp equal to half of their hp maximum, and does not suffer from any penalties from coming back from the dead. Otherwise, the spell functions as normal. However, the effort taxes you greatly; if you cast revivify, you take a -2 penalty to all attack rolls, saving throws, and ability checks, or a -4 penalty for any other spell that returns a creature from the dead. These penalties are cumulative. Every time you finish a long rest, the penalty is reduced by 1 until it disappears.</description>
+			<description>When you cast a cleric spell that returns a creature from the dead, you can choose to cast the spell without expending any material components. When you cast the spell in this way the creature returns to life with a number of hp equal to half of their hp maximum, and does not suffer from any penalties from coming back from the dead. Otherwise, the spell functions as normal. However, the effort taxes you greatly; if you cast revivify, you take a -2 penalty to all attack rolls, saving throws, and ability checks, or a -4 penalty for any other spell that returns a creature from the dead. These penalties are cumulative. Every time you finish a long rest, the penalty is reduced by 1 until it disappears.</description>
 		</sheet>
 		<setters>
 			<set name="sourceUrl">https://www.dndbeyond.com/subclasses/563092-phoenix-domain</set>
@@ -143,7 +143,7 @@
 	<element name="Potent Spellcasting" type="Archetype Feature" source="Builds Character" id="ID_DDB_BC_ARCHETYPE_FEATURE_PHOENIX_DOMAIN_POTENT_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
-			<p>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
 		</description>
 		<sheet>
 			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
