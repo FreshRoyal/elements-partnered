@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Builds Character</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="builds-character.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/builds-character.xml" />
 		</update>
 	</info>
@@ -118,7 +118,7 @@
 			</ul>
 		</description>
 		<sheet alt="Explosion of Life" action="Action" usage="Channel Divinity">
-			<description>ou present your holy symbol, and a sphere of fiery light emanates from you. The sphere is centered on you, has a 30-ft radius, and is filled with bright light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) starts its turn in the sphere, you can grant that creature these benefits: &#13;
+			<description>You present your holy symbol, and a sphere of fiery light emanates from you. The sphere is centered on you, has a 30-ft radius, and is filled with bright light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) starts its turn in the sphere, you can grant that creature these benefits: &#13;
 			• You grant it 1d8 temporary hp. &#13;
 			• The fire protects, granting resistance to fire damage until the end of its next turn.</description>
 		</sheet>
