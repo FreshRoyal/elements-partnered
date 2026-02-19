@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>Featured Homebrew</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="featured-homebrew.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew.index" />
 		</update>
 	</info>
 	<files>
 		<file name="my-new-d20-modern-campaign.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/my-new-d20-modern-campaign.xml" />
+		<file name="mike-mearls-homebrew.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/mike-mearls-homebrew.xml" />
         <file name="builds-character.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/builds-character.xml" />
         <file name="whats-in-the-bag-of-holding.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/whats-in-the-bag-of-holding.xml" />
         <file name="the-realms-will-know-your-name.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/the-realms-will-know-your-name.xml" />
