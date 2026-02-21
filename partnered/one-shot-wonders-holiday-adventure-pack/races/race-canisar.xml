@@ -29,8 +29,8 @@
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Canisar)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
-			<stat name="speed" value="30" bonus="base" />
-			<stat name="speed:burrow" value="10" bonus="base" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:burrow" value="10" bonus="base" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_BURROW_SPEED" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<stat name="darkvision:range" value="120" bonus="base" />
