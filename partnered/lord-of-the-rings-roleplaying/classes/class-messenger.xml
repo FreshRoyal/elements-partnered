@@ -3,7 +3,7 @@
 	<info>
 		<name>Messenger</name>
 		<description>Messenger from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-messenger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-messenger.xml" />
 		</update>
 	</info>
@@ -92,7 +92,7 @@
 		</rules>
 		<multiclass id="ID_FLP_LRRP_MULTICLASS_MESSENGER">
 			<prerequisite>Dexterity 13 and Charisma 13</prerequisite>
-			<requirements>([dex:13],[cha:13])</requirements>
+			<requirements>([dex:13],[cha:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armour, simple weapons, one skill from the class's skill list, one tool of your choice</set>
 			</setters>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Scholar</name>
 		<description>Scholar from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-scholar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-scholar.xml" />
 		</update>
 	</info>
@@ -92,7 +92,7 @@
 		</rules>
 		<multiclass id="ID_FLP_LRRP_MULTICLASS_SCHOLAR">
 			<prerequisite>Intelligence 13</prerequisite>
-			<requirements>[int:13]</requirements>
+			<requirements>[int:13]||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armour, simple weapons, one skill from the class' skill list, one of the tools from the class' tools list</set>
 			</setters>

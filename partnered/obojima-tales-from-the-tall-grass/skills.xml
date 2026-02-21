@@ -3,11 +3,19 @@
 	<info>
 		<name>Skills</name>
 		<description>Skills from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/skills.xml" />
 		</update>
 	</info>
 
+	<!--Append-->
+	<append id="ID_INTERNAL_GRANTS_CHARACTER_BASE">
+	   <rules>
+			<grant type="Class Feature" id="ID_1985_OTTG_CLASS_FEATURE_MECHANICS_DISPLAY" requirements="ID_1985_OTTG_OPTION_NEW_SKILLS" />
+			<grant type="Class Feature" id="ID_1985_OTTG_CLASS_FEATURE_SALVAGE_DISPLAY" requirements="ID_1985_OTTG_OPTION_NEW_SKILLS" />
+		</rules>
+	</append>
+	
 	<element name="New Skills (OTTG)" type="Option" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_OPTION_NEW_SKILLS">
 		<description>
 			<p></p>
@@ -16,8 +24,6 @@
 			<set name="short">You have access to the Mechanics and Salvage skills from <em>Obojima: Tales from the Tall Grass</em>.</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_1985_OTTG_CLASS_FEATURE_MECHANICS_DISPLAY" />
-			<grant type="Class Feature" id="ID_1985_OTTG_CLASS_FEATURE_SALVAGE_DISPLAY" />
 			<stat name="mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
 			<stat name="salvage:proficiency" value="intelligence:modifier" bonus="ability" />
 		</rules>
@@ -55,6 +61,21 @@
         </rules>
     </element>
 
+	<element name="Skill Expertise (Mechanics)" type="Proficiency" source="Internal" id="ID_1985_OTTG_PROFICIENCY_SKILL_EXPERTISE_MECHANICS">
+		<supports>Expertise, Skill Expertise, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Mechanics check you make.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="mechanics:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	
 	<element name="Skill Expertise (Mechanics)" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_EXPERTISE_MECHANICS">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS</requirements>
@@ -66,7 +87,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency" bonus="double" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_EXPERTISE_MECHANICS" />
 		</rules>
 	</element>
 
@@ -110,6 +131,21 @@
         </rules>
     </element>
 
+	<element name="Skill Expertise (Salvage)" type="Proficiency" source="Internal" id="ID_1985_OTTG_PROFICIENCY_SKILL_EXPERTISE_SALVAGE">
+		<supports>Expertise, Skill Expertise, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Salvage check you make.</p>
+			<div class="reference">
+				<div element="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="salvage:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
 	<element name="Skill Expertise (Salvage)" type="Class Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_CLASS_FEATURE_EXPERTISE_SALVAGE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE</requirements>
@@ -121,7 +157,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="salvage:proficiency" value="proficiency" bonus="double" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_EXPERTISE_SALVAGE" />
 		</rules>
 	</element>
 

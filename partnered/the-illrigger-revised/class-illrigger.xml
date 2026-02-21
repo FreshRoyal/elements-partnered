@@ -3,7 +3,7 @@
 	<info>
 		<name>Illrigger</name>
 		<description>Illrigger class from The Illrigger Revised</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-illrigger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/class-illrigger.xml" />
 		</update>
 	</info>
@@ -122,7 +122,7 @@
 		</rules>
 		<multiclass id="ID_MCDM_ILLR_MULTICLASS_ILLRIGGER">
 			<prerequisite>Strength 13 or Dexterity 13; Charisma 13</prerequisite>
-			<requirements>([str:13]||[dex:13]),[cha:13]</requirements>
+			<requirements>(([str:13]||[dex:13]),[cha:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
 			</setters>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Champion</name>
 		<description>Champion from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-champion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-champion.xml" />
 		</update>
 	</info>
@@ -89,7 +89,7 @@
 		</rules>
 		<multiclass id="ID_FLP_LRRP_MULTICLASS_CHAMPION">
 			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
-			<requirements>[str:13]||[dex:13]</requirements>
+			<requirements>([str:13]||[dex:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armour, medium armour, heavy armour, shields, simple weapons, martial weapons</set>
 			</setters>

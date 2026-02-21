@@ -3,7 +3,7 @@
 	<info>
 		<name>Warden</name>
 		<description>Warden from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-warden.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/classes/class-warden.xml" />
 		</update>
 	</info>
@@ -92,7 +92,7 @@
 		</rules>
 		<multiclass id="ID_FLP_LRRP_MULTICLASS_WARDEN">
 			<prerequisite>Wisdom 13</prerequisite>
-			<requirements>[wis:13]</requirements>
+			<requirements>[wis:13]||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armour, medium armour, shields, simple weapons, martial weapons</set>
 			</setters>

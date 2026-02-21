@@ -3,10 +3,20 @@
 	<info>
 		<name>New Skills</name>
 		<description>New Skills from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
 		</update>
 	</info>
+	
+	<!--Append-->
+	<append id="ID_INTERNAL_GRANTS_CHARACTER_BASE">
+	   <rules>
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_EXPLORE_DISPLAY" requirements="ID_FLP_LRRP_OPTION_NEW_SKILLS" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_HUNTING_DISPLAY" requirements="ID_FLP_LRRP_OPTION_NEW_SKILLS" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_RIDDLE_DISPLAY" requirements="ID_FLP_LRRP_OPTION_NEW_SKILLS" />
+			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TRAVEL_DISPLAY" requirements="ID_FLP_LRRP_OPTION_NEW_SKILLS" />
+		</rules>
+	</append>
 	
 	<!--New Skills Option-->
 	<element name="New Skills (LRRP)" type="Option" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_OPTION_NEW_SKILLS">
@@ -18,10 +28,6 @@
 			<set name="short">You have access to the Riddle, Explore, Hunting, and Travel skills from <em>The Lord of the Rings Roleplaying™</em>.</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_EXPLORE_DISPLAY" />
-			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_HUNTING_DISPLAY" />
-			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_RIDDLE_DISPLAY" />
-			<grant type="Class Feature" id="ID_FLP_LRRP_CLASS_FEATURE_TRAVEL_DISPLAY" />
 			<stat name="explore:proficiency" value="wisdom:modifier" bonus="ability" />
 			<stat name="hunting:proficiency" value="wisdom:modifier" bonus="ability" />
 			<stat name="riddle:proficiency" value="intelligence:modifier" bonus="ability" />
@@ -73,6 +79,21 @@
         </rules>
     </element>
 
+	<element name="Skill Expertise (Explore)" type="Proficiency" source="Internal" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_EXPLORE">
+		<supports>Expertise, Skill Expertise, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Explore check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="explore:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
 	<element name="Skill Expertise (Explore)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_EXPLORE">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE</requirements>
@@ -84,7 +105,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="explore:proficiency" value="proficiency" bonus="double" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_EXPLORE" />
 		</rules>
 	</element>
 
@@ -129,6 +150,21 @@
         </rules>
     </element>
 
+	<element name="Skill Expertise (Hunting)" type="Proficiency" source="Internal" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_HUNTING">
+		<supports>Expertise, Skill Expertise, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Hunting check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hunting:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
 	<element name="Skill Expertise (Hunting)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_HUNTING">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING</requirements>
@@ -140,7 +176,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="hunting:proficiency" value="proficiency" bonus="double" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_HUNTING" />
 		</rules>
 	</element>
 
@@ -185,6 +221,21 @@
         </rules>
     </element>
 
+	<element name="Skill Expertise (Riddle)" type="Proficiency" source="Internal" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_RIDDLE">
+		<supports>Expertise, Skill Expertise, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Riddle check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="riddle:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
 	<element name="Skill Expertise (Riddle)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_RIDDLEL">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
 		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE</requirements>
@@ -196,7 +247,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="riddle:proficiency" value="proficiency" bonus="double" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_RIDDLE" />
 		</rules>
 	</element>
 
@@ -240,6 +291,21 @@
             <stat name="travel:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL" alt="Double Proficiency" />
         </rules>
     </element>
+
+	<element name="Skill Expertise (Travel)" type="Proficiency" source="Internal" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPERTISE_TRAVEL">
+		<supports>Expertise, Skill Expertise, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Travel check you make.</p>
+			<div class="reference">
+				<div element="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="travel:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
 
 	<element name="Skill Expertise (Travel)" type="Class Feature" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_CLASS_FEATURE_EXPERTISE_TRAVEL">
 		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
