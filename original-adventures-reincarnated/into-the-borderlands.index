@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Original Adventures Reincarnated #1 - Into the Borderlands</name>
+		<update version="1.0.0">
+			<file name="into-the-borderlands.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands/items.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands/source.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands/spells.xml" />
+	</files>
+</index>

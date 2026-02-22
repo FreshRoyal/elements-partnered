@@ -7,7 +7,9 @@ This repo also contains homebrew featured through official Wizards of the Coast 
 
 Featured Homebrew Index URL: https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew.index
 
-This repo will also eventually include content from the first six books of Goodman Games' Original Adventures Reincarnated series.
+This repo includes content from the first six books of Goodman Games' Original Adventures Reincarnated series.
+
+Original Adventures Reincarnated Index URL: https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated.index
 
 
 ## Disclaimer

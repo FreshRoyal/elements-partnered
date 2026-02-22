@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Original Adventures Reincarnated #1 - Into the Borderlands</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands/spells.xml" />
+		</update>
+	</info>
+
+	<!--The source has no class spell lists from what I've seen, so I just defaulted to these all being wizard spells-->
+	
+	<element name="Directional Confusion" type="Spell" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_SPELL_DIRECTIONAL_CONFUSION">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>This spell of confusion is typically placed on a small labyrinth or series of dungeon corridors, to assault and twist a creature's sense of direction. Each creature that enters the 120-foot radius sphere enchanted with this spell is required to make a Wisdom saving throw. Success indicates the creacure is immune to the effects of this casting of the spell for 1 hour. Failure results in the loss of all sense of direction: right becomes confused with left, north and south become mixed up, etc. The DM should randomly determine which direction a creature goes despice its instructions, even if the random direction doesn't make sense - such is the enchantment.</p>
+			<p class="indent">After every 10 minuces spent in the area of effect, a creature can attempt another Wisdom saving throw.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 hour</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lodestone and a powdered gem worth 500 gp, which the spell consumes</set>
+			<set name="duration">Until dispelled</set>
+		</setters>
+	</element>
+
+	<element name="Fright" type="Spell" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_SPELL_FRIGHT">
+		<supports>Wizard, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>Your touch can project a horrid image. Make a melee spell attack against a creature. On a hit, the target must make a successful Wisdom saving throw, or drop whatever it is holding and become frightened for the duration of the spell.</p>
+			<p class="indent">When frightened, the creature must take the Dash action and move away from the caster by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight, it can attempt another Wisdom saving throw. On a successful saving throw the spell ends for that creature.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of grave dirt</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>
+
+	<element name="Greater Contigency" type="Spell" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_SPELL_GREATER_CONTIGENCY">
+		<supports>Wizard</supports>
+		<description>
+			<p>This spell functions exactly as a <i>contingeny</i> spell, except (and as noted above) the contingent spell can be any spell of 7th level or lower with a casting time 1 action and that can target you.</p>
+		</description>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Evocation</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a statuette of yourself in carved ivory or a precious metal and decorated wich gems worth at least 5,000 gp</set>
+			<set name="duration">30 days</set>
+		</setters>
+	</element>
+
+	<element name="Necrotic Bolt" type="Spell" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_SPELL_NECROTIC_BOLT">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>An inky bolt of darkness streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target cakes 3d6 necrotic damage and a brief wave of enervation sweeps over the target. The target makes its next atcack at disadvantage, assuming it occurs before the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+</elements>

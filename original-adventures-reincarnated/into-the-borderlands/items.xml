@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Original Adventures Reincarnated #1 - Into the Borderlands</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands/items.xml" />
+		</update>
+	</info>
+
+	<element name="Amulet of Protection from Good" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_AMULET_OF_PROTECTION_FROM_GOOD">
+		<description>
+			<p>This iron charm is affixed to a black leather cord. The disc-like amulet is shaped like a beastly maw with licking flames emitting from the mouth.</p>
+			<p class="indent">Once attuned co the device, the wearer is under the constant effects of a variant form of the <i>protection from good and evil</i> spell. Good-aligned creatures attack the bearer at disadvantage, and the wearer is immune co charm, fright, or possession by them.</p>
+		</description>
+		<setters>
+			<set name="keywords">disadvantage, alignment</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Black Mace" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_BLACK_MACE">
+		<description>
+			<p>This magical mace is favored by evil priests or cultists. The weapon has a handle of ebonywood (or is stained black) and a black iron head. The wielder gains a +1 bonus to attack and damage rolls. Against good-aligned creatures, the wielder can re-roll any damage result of a 1, but must take the second roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">mace, attack, damage, good, alignment</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="mace">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Mace</set>
+		</setters>
+	</element>
+
+	<element name="Brown Bag of Tricks" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_BROWN_BAG_OF_TRICKS">
+		<description>
+			<p>This ordinary bag, composed of brown cloth, functions exactly Like a <i>bag of tricks</i>, but the animals pulled from this bag are all burrowing in nature.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">D8</td> <td>Creature</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>1</td> <td>Armadillo</td> </tr>
+					<tr> <td>2</td> <td>Badger</td> </tr>
+					<tr> <td>3</td> <td>Rat</td> </tr>
+					<tr> <td>4</td> <td>Weasel</td> </tr>
+					<tr> <td>5</td> <td>Giant Armadillo</td> </tr>
+					<tr> <td>6</td> <td>Giant Badger</td> </tr>
+					<tr> <td>7</td> <td>Giant Rat</td> </tr>
+					<tr> <td>8</td> <td>Giant Weasel</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Cursed Blade" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_CURSED_BLADE">
+		<description>
+			<p>When removed from its scabbard, this blade glows pale yellow, equivalent to dim light in a 10-foot radius. A character that wields this sword gains a +1 bonus to attack and damage rolls. However, the blade is cursed, which is revealed only in the heat of battle.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Despite the bonus to hit (and damage) all weapon attacks with a cursed blade are made at disadvantage. This can be revealed with the use of an <i>idenfify</i> spell. The cursed blade can't be willingly discarded until the character is the recipient of a <i>remove curse</i> spell or similar magic.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, light</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Mask, Minor (Black)" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_DRAGON_MASK_MINOR_BLACK">		
+		<description>
+			<p>This mask is covered with scales and depicts the typical features of a chromatic dragon. These masks are often adorned with bone horns, feathers, or even gems. Once attuned to a particular mask, the wearer gains damage resistance and a minor breath weapon; the type depends on the mask's color.</p>
+			<p class="indent"><strong><em>Breath Weapon (Recharge 6).</em></strong> The mask wearer can use an action to exhale a draconic breath weapon, causing 3d8 points of damage. The range is a S-foot-by-30-foot line effect (for black and blue masks) or a 15-foot cone (for green, red, and white masks), and the damage type is determined by the mask's color. A target can attempt a DC 12 Dexterity saving throw to reduce the damage to half.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Damage/Resistance Type</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Black</td> <td>Acid</td> </tr>
+					<tr> <td>Blue</td> <td>Lightning</td> </tr>
+					<tr> <td>Green</td> <td>Poison</td> </tr>
+					<tr> <td>Red</td> <td>Fire</td> </tr>
+					<tr> <td>White</td> <td>Cold</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID"  />
+		</rules>
+	</element>
+	<element name="Dragon Mask, Minor (Blue)" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_DRAGON_MASK_MINOR_BLUE">		
+		<description>
+			<p>This mask is covered with scales and depicts the typical features of a chromatic dragon. These masks are often adorned with bone horns, feathers, or even gems. Once attuned to a particular mask, the wearer gains damage resistance and a minor breath weapon; the type depends on the mask's color.</p>
+			<p class="indent"><strong><em>Breath Weapon (Recharge 6).</em></strong> The mask wearer can use an action to exhale a draconic breath weapon, causing 3d8 points of damage. The range is a S-foot-by-30-foot line effect (for black and blue masks) or a 15-foot cone (for green, red, and white masks), and the damage type is determined by the mask's color. A target can attempt a DC 12 Dexterity saving throw to reduce the damage to half.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Damage/Resistance Type</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Black</td> <td>Acid</td> </tr>
+					<tr> <td>Blue</td> <td>Lightning</td> </tr>
+					<tr> <td>Green</td> <td>Poison</td> </tr>
+					<tr> <td>Red</td> <td>Fire</td> </tr>
+					<tr> <td>White</td> <td>Cold</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"  />
+		</rules>
+	</element>
+	<element name="Dragon Mask, Minor (Green)" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_DRAGON_MASK_MINOR_GREEN">		
+		<description>
+			<p>This mask is covered with scales and depicts the typical features of a chromatic dragon. These masks are often adorned with bone horns, feathers, or even gems. Once attuned to a particular mask, the wearer gains damage resistance and a minor breath weapon; the type depends on the mask's color.</p>
+			<p class="indent"><strong><em>Breath Weapon (Recharge 6).</em></strong> The mask wearer can use an action to exhale a draconic breath weapon, causing 3d8 points of damage. The range is a S-foot-by-30-foot line effect (for black and blue masks) or a 15-foot cone (for green, red, and white masks), and the damage type is determined by the mask's color. A target can attempt a DC 12 Dexterity saving throw to reduce the damage to half.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Damage/Resistance Type</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Black</td> <td>Acid</td> </tr>
+					<tr> <td>Blue</td> <td>Lightning</td> </tr>
+					<tr> <td>Green</td> <td>Poison</td> </tr>
+					<tr> <td>Red</td> <td>Fire</td> </tr>
+					<tr> <td>White</td> <td>Cold</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"  />
+		</rules>
+	</element>
+	<element name="Dragon Mask, Minor (Red)" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_DRAGON_MASK_MINOR_RED">		
+		<description>
+			<p>This mask is covered with scales and depicts the typical features of a chromatic dragon. These masks are often adorned with bone horns, feathers, or even gems. Once attuned to a particular mask, the wearer gains damage resistance and a minor breath weapon; the type depends on the mask's color.</p>
+			<p class="indent"><strong><em>Breath Weapon (Recharge 6).</em></strong> The mask wearer can use an action to exhale a draconic breath weapon, causing 3d8 points of damage. The range is a S-foot-by-30-foot line effect (for black and blue masks) or a 15-foot cone (for green, red, and white masks), and the damage type is determined by the mask's color. A target can attempt a DC 12 Dexterity saving throw to reduce the damage to half.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Damage/Resistance Type</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Black</td> <td>Acid</td> </tr>
+					<tr> <td>Blue</td> <td>Lightning</td> </tr>
+					<tr> <td>Green</td> <td>Poison</td> </tr>
+					<tr> <td>Red</td> <td>Fire</td> </tr>
+					<tr> <td>White</td> <td>Cold</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"  />
+		</rules>
+	</element>
+	<element name="Dragon Mask, Minor (White)" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_DRAGON_MASK_MINOR_WHITE">		
+		<description>
+			<p>This mask is covered with scales and depicts the typical features of a chromatic dragon. These masks are often adorned with bone horns, feathers, or even gems. Once attuned to a particular mask, the wearer gains damage resistance and a minor breath weapon; the type depends on the mask's color.</p>
+			<p class="indent"><strong><em>Breath Weapon (Recharge 6).</em></strong> The mask wearer can use an action to exhale a draconic breath weapon, causing 3d8 points of damage. The range is a S-foot-by-30-foot line effect (for black and blue masks) or a 15-foot cone (for green, red, and white masks), and the damage type is determined by the mask's color. A target can attempt a DC 12 Dexterity saving throw to reduce the damage to half.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">Color</td> <td>Damage/Resistance Type</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>Black</td> <td>Acid</td> </tr>
+					<tr> <td>Blue</td> <td>Lightning</td> </tr>
+					<tr> <td>Green</td> <td>Poison</td> </tr>
+					<tr> <td>Red</td> <td>Fire</td> </tr>
+					<tr> <td>White</td> <td>Cold</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"  />
+		</rules>
+	</element>
+
+	<element name="Elixir of Stone to Flesh" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_ELIXIR_OF_STONE_TO_FLESH">		
+		<description>
+			<p>This syrupy oil is typically stored in a clay or stone pot. If the oil is liberally applied (one dose is enough for a Medium-sized creature) to a creature that has been turned to stone (such as by the petrifying gaze of a medusa), the petrification effect ends, and the target is returned to flesh.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Helm of Opposite Alignment" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_HELM_OF_OPPOSITE_ALIGNMENT">
+		<description>
+			<p>This appears to be a typical metal cap or helm. It radiates a faint magical dweomer. If held and examined for more than a few moments, a creature must succeed on a DC 15 Wisdom saving throw, or place the helm on its head, triggering the curse.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> Once a creature places the helm on its head, the curse takes effect immediately. The creature's alignment shifts to the radical opposite: good to evil, law to chaos, and neutral to an absolute commitment (LE, LG, CE, or CG). Unless a <i>remove curse</i> spell is cast within 10 minutes of placing the helm on its head, only a <i>wish</i> spell can break the enchantment, allowing the helm to be removed and returning the creature's alignment to its original state.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Levitation" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_POTION_OF_LEVITATION">		
+		<description>
+			<p>When you drink this potion, you gain the effects of the <i>levitate</i> spell for 10 minutes (no concentration required). The potion's light blue fluid is carbonated and seems to be light and airy.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Staff of Stone" type="Magic Item" source="Original Adventures Reincarnated #1: Into the Borderlands" id="ID_GMG_OAR1_MAGIC_ITEM_STAFF_OF_STONE">
+		<description>
+			<p>This staff is about 6 feet long, and appears to be fashioned from a thin stony stalactite which glistens with moisture and has a ball-like head composed of glittery mica. Although it appears heavy and unwieldy, it's actually dry, cool to the touch, and quite light.</p>
+			<p class="indent">Once attuned to the device, the staff can be wielded as a magic quarterstaff that grants a +1 bonus to attack and damage rolls.</p>
+			<p class="indent">The staff has 21 charges that can be used to power the spells listed below. The staff regains ld6 + 1 charges weekly as long as it is in contact with a stony surface. If the last charge is expended, roll 1d20. On a 1, the staff regains 1d6 + 1 charges. On a 2-4, the staff becomes inert for 1 day and loses 1d6 + 1 charges. On a 20, the staff crumbles and becomes a worthless pile of rubble.</p>
+			<p class="indent"><strong>Spells.</strong> While holding this staff and using an action, 1 or more of its charges can be used to cast one of the following spells, using your spell save DC and spell attack bonus: <i>blade ward</i> (1 charge), <i>passwall</i> (5 charges), <i>stone shape</i> (4 charges), or <i>wall of stone</i> (5 charges).</p>
+		</description>
+		<setters>
+			<set name="keywords">druid, sorcerer, wizard, spells</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a druid, sorcerer, or wizard">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+</elements>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Original Adventures Reincarnated</name>
+		<update version="1.0.0">
+			<file name="original-adventures-reincarnated.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated.index" />
+		</update>
+	</info>
+	<files>
+		<file name="into-the-borderlands.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/original-adventures-reincarnated/into-the-borderlands.index" />
+	</files>
+</index>
