@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Mike Mearls Happy Fun Hour</name>
+		<update version="0.0.1">
+			<file name="happy-fun-hour.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/featured-homebrew/happy-fun-hour.xml" />
+		</update>
+	</info>
+	
+	<element name="The Mike Mearls Happy Fun Hour" type="Source" source="Core" id="ID_MIKE_SOURCE_MIKE_MEARLS_HAPPY_FUN_HOUR">
+		<description>
+			<p>Content designed by Mike Mearls, co-designer of Dungeons &amp; Dragons 5th Edition, while streaming on the official Dungeons &amp; Dragons Twitch channel</p>
+		</description>
+		<setters>
+			<set name="abbreviation">HFH</set>
+			<set name="url">https://thinkdm.org/hfh/</set>
+			<set name="author" abbreviation="MIKE" url="https://xcancel.com/mikemearls">Mike Mearls</set>
+			<set name="homebrew">true</set>
+			<set name="playtest">true</set>
+			<set name="release">20180320</set>
+		</setters>
+	</element>
+
+	<!--Slayer Fighter-->
+	<element name="Slayer" type="Archetype" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FIGHTER_SLAYER">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>A slayer is a fighter who specializes in bringing down the mightiest monsters wth a few, resounding blows. Some slayers target specific types of monsters, such as dwarven giant slayers who patrol the mountain’s peaks or human dragon slayers who train to defeat wyrms of all types.</p>
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_MARTIAL_EXPLOITS" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_DIPLOMACY" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_BLOODTHIRSTY_RUSH" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_OVERWHELMING_MOMENTUM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_MARTIAL_EXPLOITS" level="3" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS" level="3" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_DIPLOMACY" level="7" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS" level="10" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_BLOODTHIRSTY_RUSH" level="15" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_OVERWHELMING_MOMENTUM" level="18" />
+		</rules>
+	</element>
+
+	<element name="Martial Exploits" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_MARTIAL_EXPLOITS">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to use your tactical acumen and physical prowess to achieve astounding feats of martial skill.</p>
+			<p class="indent">You gain the ability to use martial exploits. You gain uses of martial exploits based on your fighter level, as shown in the Martial Exploits table. You retain all expensed uses when you complete a long rest.</p>
+			<p class="indent">You can apply the benefits of only one exploit to any given attack. If more than one exploit applies to an attack, you select which one to use. Some exploits require a creature to make a saving throw. The DC for such a save is 8 + your proficiency bonus + your Strength modifier.</p>
+			<h5 class="caption">Martial Explotis</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Uses</td></tr>
+				</thead>
+				<tr><td>3</td><td><em>3</em></td></tr>
+				<tr><td>4-6</td><td><em>5</em></td></tr>
+				<tr><td>7-9</td><td><em>7</em></td></tr>
+				<tr><td>11-12</td><td><em>9</em></td></tr>
+				<tr><td>13+</td><td><em>10</em></td></tr>
+			</table>
+		</description>
+		<sheet usage="{{hfh:slayer:martial exploits:uses}}/Long Rest">
+			<description>You have the ability to use martial exploits. You can apply the benefits of only one exploit to any given attack. If more than one exploit applies to an attack, you select which one to use. Some exploits require a creature to make a saving throw. DC {{hfh:slayer:martial exploits:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="hfh:slayer:martial exploits:uses" value="3" bonus="base" />
+			<stat name="hfh:slayer:martial exploits:uses" value="5" bonus="base" level="4" />
+			<stat name="hfh:slayer:martial exploits:uses" value="7" bonus="base" level="7" />
+			<stat name="hfh:slayer:martial exploits:uses" value="9" bonus="base" level="11" />
+			<stat name="hfh:slayer:martial exploits:uses" value="10" bonus="base" level="13" />
+
+			<stat name="hfh:slayer:martial exploits:dc" value="8" />
+			<stat name="hfh:slayer:martial exploits:dc" value="proficiency" />
+			<stat name="hfh:slayer:martial exploits:dc" value="strength:modifier" />
+		</rules>
+	</element>
+
+	<element name="Slayer's Exploits" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS">
+		<description>
+			<p>When you reach 3rd level, you gain several martial exploits that allow you to lay low even the mightiest foe. The ability to use a martial exploit to land a telling blow. You gain the Adamantine Bones, Bell Ringer, and Masterful Strike exploits.</p>
+			<p class="indent"><strong><em>Adamantine Bones.</em></strong> You focus your mind and grit your teeth, pushing aside pain and drawing on wellsprings of energy that blot out the pain of your wounds.</p>
+			<p class="indent">During your turn, you can expend a martial exploit to gain temporary hit points. You gain temporary hit points equal to 5 times your proficiency bonus.</p>
+			<p class="indent"><strong><em>Bellringer.</em></strong> You take careful aim at your foe’s head or other sensitive point, unleashing a brutal attack that knocks the target senseless.</p>
+			<p class="indent">You can expend a martial exploit when you hit with a melee weapon attack. The target of the attack must make a Constitution saving throw. If it fails, it is paralyzed. At the end of each of its turns, it can make a Constitution saving throw to end this effect.</p>
+			<p class="indent"><strong><em>Masterful Strike.</em></strong> You strike with overwhelming strength and accuracy, battering aside your foe’s defense to deliver a deadly strike.</p>
+			<p class="indent">When you make an attack, you can expend a martial exploit and roll a number of d6s equal to your proficiency bonus.</p>
+			<p class="indent">If the attack misses, you learn the target’s AC and can use the result of one or more d6s of your choice as a bonus to your attack roll, possibly turning the miss into a hit. Any remaining dice are used as a bonus to your weapon’s damage roll.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_ADAMANTINE_BONES" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_BELLRINGER" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_MASTERFUL_STRIKE" />
+		</rules>
+	</element>
+	<element name="Adamantine Bones" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_ADAMANTINE_BONES">
+		<description>
+			<p>You focus your mind and grit your teeth, pushing aside pain and drawing on wellsprings of energy that blot out the pain of your wounds.</p>
+			<p class="indent">During your turn, you can expend a martial exploit to gain temporary hit points. You gain temporary hit points equal to 5 times your proficiency bonus.</p>
+		</description>
+		<sheet usage="Martial Exploit">
+			<description>During your turn, you can expend a martial exploit to gain {{hfh:slayer:adamantine bones:thp}} temporary hp.</description>
+		</sheet>
+		<rules>
+			<stat name="hfh:slayer:adamantine bones:thp" value="proficiency" />
+			<stat name="hfh:slayer:adamantine bones:thp" value="proficiency" />
+			<stat name="hfh:slayer:adamantine bones:thp" value="proficiency" />
+			<stat name="hfh:slayer:adamantine bones:thp" value="proficiency" />
+			<stat name="hfh:slayer:adamantine bones:thp" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Bellringer" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_BELLRINGER">
+		<description>
+			<p>You take careful aim at your foe’s head or other sensitive point, unleashing a brutal attack that knocks the target senseless.</p>
+			<p class="indent">You can expend a martial exploit when you hit with a melee weapon attack. The target of the attack must make a Constitution saving throw. If it fails, it is paralyzed. At the end of each of its turns, it can make a Constitution saving throw to end this effect.</p>
+		</description>
+		<sheet usage="Martial Exploit">
+			<description>You can expend a martial exploit when you hit with a melee weapon attack. The target of the attack must make a Constitution saving throw. If it fails, it is paralyzed. At the end of each of its turns, it can make a Constitution saving throw to end this effect.</description>
+		</sheet>
+	</element>
+	<element name="Masterful Strike" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_MASTERFUL_STRIKE">
+		<description>
+			<p>You strike with overwhelming strength and accuracy, battering aside your foe’s defense to deliver a deadly strike.</p>
+			<p class="indent">When you make an attack, you can expend a martial exploit and roll a number of d6s equal to your proficiency bonus.</p>
+			<p class="indent">If the attack misses, you learn the target’s AC and can use the result of one or more d6s of your choice as a bonus to your attack roll, possibly turning the miss into a hit. Any remaining dice are used as a bonus to your weapon’s damage roll.</p>
+		</description>
+		<sheet usage="Martial Exploit">
+			<description>When you make an attack, you can expend a martial exploit and roll up to {{proficiency}}d{{hfh:slayer:masterful strike:die}}. If the attack misses, you learn the target's AC and can use the result of 1 or more d{{hfh:slayer:masterful strike:die}}s of your choice as a bonus to your attack roll, possibly turning the miss into a hit. Any remaining dice are used as a bonus to your weapon's damage roll.</description>
+		</sheet>
+		<rules>
+			<stat name="hfh:slayer:masterful strike:die" value="6" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Slayer's Diplomacy" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_DIPLOMACY">
+		<description>
+			<p>Starting at 7th level, you blend your martial talent with the softer skills needed to navigate the world. If you are holding a weapon when you make a Charisma (Intimidation) check, you gain a bonus to the roll equal to your proficiency bonus. You use your weapon to assist in your check, such as pole vaulting with your staff, using your sword to aid your balance, or menacing an enemy with a bloodied flail.</p>
+		</description>
+		<sheet>
+			<description>If you are holding a weapon when you make a Charisma (Intimidation) check, you gain a +{{proficiency}} bonus to the roll. You use your weapon to assist in your check.</description>
+		</sheet>
+	</element>
+
+	<element name="Superior Exploits" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS">
+		<description>
+			<p>Starting at 10th level, your mastery of your exploits allows you to maximize their effectiveness.</p>
+			<p class="indent"><strong><em>Improved Adamantine Bones.</em></strong> When you use Adamantine Bones, you gain advantage on all saving throws until the end of your next turn.</p>
+			<p class="indent"><strong><em>Improved Bellringer.</em></strong> If a target successfully saves against your Bellringer exploit or the attack misses, you can choose to not expend the use of your exploit. If you do so, you cannot use Bellringer again until the start of your next turn.</p>
+			<p class="indent"><strong><em>Improved Masterful Strike.</em></strong> You now roll d8s instead of d6s when using Masterful Strike.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS_IMPROVED_ADAMANTINE_BONES" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS_IMPROVED_BELLRINGER" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS_IMPROVED_MASTERFUL_STRIKE" />
+		</rules>
+	</element>
+	<element name="Improved Adamantine Bones" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS_IMPROVED_ADAMANTINE_BONES">
+		<description>
+			<p>When you use Adamantine Bones, you gain advantage on all saving throws until the end of your next turn.</p>
+		</description>
+		<sheet usage="Martial Exploit">
+			<description>When you use Adamantine Bones, you gain advantage on all saving throws until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Improved Bellringer" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SUPERIOR_EXPLOITS_IMPROVED_BELLRINGER">
+		<description>
+			<p>If a target successfully saves against your Bellringer exploit or the attack misses, you can choose to not expend the use of your exploit. If you do so, you cannot use Bellringer again until the start of your next turn.</p>
+		</description>
+		<sheet usage="Martial Exploit">
+			<description>If a target successfully saves against your Bellringer exploit or the attack misses, you can choose to not expend the use of your exploit. If you do so, you cannot use Bellringer again until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Improved Masterful Strike" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_SLAYERS_EXPLOITS_IMPROVED_MASTERFUL_STRIKE">
+		<description>
+			<p>You now roll d8s instead of d6s when using Masterful Strike.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hfh:slayer:masterful strike:die" value="8" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Bloodthirsty Rush" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_BLOODTHIRSTY_RUSH">
+		<description>
+			<p>Starting at 15th level, you strike with speed and certainty that catches others off guard. When rolling initiative, you add your proficiency bonus to the roll.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="initiative" value="proficiency" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_JACK_OF_ALL_TRADES_DISABLE" />
+		</rules>
+	</element>
+
+	<element name="Overwhelming Momentum" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_SLAYER_OVERWHELMING_MOMENTUM">
+		<description>
+			<p>Starting at 18th level, when you miss a foe with a melee attack, your next attack this turn against that target gains advantage.</p>
+		</description>
+		<sheet>
+			<description>When you miss a foe with a melee attack, your next attack this turn against that target gains advantage.</description>
+		</sheet>
+	</element>
+
+	<!--Soul Knife Monk-->
+	<element name="Way of the Soul Knife" type="Archetype" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_MONK_WAY_OF_THE_SOUL_KNIFE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Soul Knife are deadly assassins and bounty hunters. They use their psionic talents to manifest psionic blades that tear through their enemies’ bodies and psychic auras. Their talents extend beyond combat, as their ability to perceive auras allows them to track down foes and see through their deceptions.</p>
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_SOUL_KNIFE" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_PSYCHIC_SLASH" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_AURA_SIGHT" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_SPECTRAL_BLADES" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_PSYCHIC_FORM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_SOUL_KNIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_PSYCHIC_SLASH" level="3" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_AURA_SIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_SPECTRAL_BLADES" level="11" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_PSYCHIC_FORM" level="17" />
+		</rules>
+	</element>
+
+	<element name="Soul Knife" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_SOUL_KNIFE">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can use your psionic energy to manifest blades that disrupt your foes’ minds.</p>
+			<p class="indent">Your unarmed strikes deal your choice of psychic, piercing, slashing, or bludgeoning damage each time you hit.</p>
+			<p class="indent">In addition, you can use a bonus action to increase the reach of your unarmed strikes by 30 feet until the end of your turn.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes deal your choice of psychic, piercing, slashing, or bludgeoning damage each time you hit. &#13;
+			In addition, you can use a bonus action to increase the reach of your unarmed strikes by 30 feet until the end of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Psychic Slash" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_PSYCHIC_SLASH">
+		<description>
+			<p>At 3rd level, when you channel ki into your attacks you augment your soul knives to inflict devastating psionic attacks.</p>
+			<p class="indent">Whenever you hit a creature with one of the attacks granted by your Flurry of Blows and that attack inflicts psychic damage, you can impose one of the following effects on the target:</p>
+			<p class="indent"><strong><em>Life Drain.</em></strong> You gain temporary hit points equal to half the damage your attack deals.</p>
+			<p class="indent"><strong><em>Invoke Terror.</em></strong> The target must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn.</p>
+			<p class="indent"><strong><em>Invoke Wrath.</em></strong> The target suffers disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
+			<p class="indent"><strong><em>Astral Slide.</em></strong> You teleport the target up to 10 feet to a destination you can see.</p>
+			<p class="indent"><strong><em>Synaptic Overload.</em></strong> The target gains vulnerability to psychic damage until the end of your next turn.</p>
+		</description>
+		<sheet usage="Flurry of Blows">
+			<description>Whenever you hit a creature with one of the attacks granted by your Flurry of Blows and that attack inflicts psychic damage, you can impose one of the following effects on the target: &#13;
+			Life Drain. You gain temporary hp equal to half the damage your attack deals. &#13;
+			Invoke Terror. The target must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. &#13;
+			Invoke Wrath. The target suffers disadvantage on all attack rolls against targets other than you until the end of your next turn. &#13;
+			Astral Slide. You teleport the target up to 10 ft to a destination you can see. &#13;
+			Synaptic Overload. The target gains vulnerability to psychic damage until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Aura Sight" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_AURA_SIGHT">
+		<description>
+			<p>At 6th level, you gain the ability to perceive the auras of other creatures.</p>
+			<p class="indent">As an action, select a creature that you can see. That creature makes a Wisdom saving throw, though it has no knowledge that you forced it to attempt this saving throw. On a failed save, you learn if the creature shares and aspects of its alignment with you, its current hit points, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an action to determine the creature’s distance and direction from you.</p>
+			<p class="indent">If a creature succeeds on its saving throw against this ability, you cannot use this ability against that creature again until you complete a long rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>Select a creature that you can see. That creature makes a Wisdom saving throw, though it has no knowledge that you forced it to attempt this saving throw. On a failed save, you learn if the creature shares and aspects of its alignment with you, its current hp, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an action to determine the creature's distance and direction from you. &#13;
+			If a creature succeeds on its saving throw against this ability, you cannot use this ability against that creature again until you complete a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Spectral Blades" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_SPECTRAL_BLADES">
+		<description>
+			<p>At 11th level, you can cause your blades to phase through physical objects and defenses.</p>
+			<p class="indent">Once during your turn, you can choose to forego one unarmed strike in place of forcing a creature within the reach of that attack to make a Dexterity saving throw. On a failed saving throw, it takes your unarmed strike’s damage, or half that damage if it succeeds.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can choose to forego one unarmed strike in place of forcing a creature within the reach of that attack to make a Dexterity saving throw. On a failed saving throw, it takes your unarmed strike's damage, or half that damage if it succeeds.</description>
+		</sheet>
+	</element>
+
+	<element name="Psychic Form" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_WAY_OF_THE_SOUL_KNIFE_PSYCHIC_FORM">
+		<description>
+			<p>At 17th level, you can transform your physical body into the same psychic energy that comprises your soul knives. As a bonus action, you gain resistance to all types of damage, a fly speed of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can transform your physical body into the same psychic energy that comprises your soul knives. You gain resistance to all types of damage, a fly speed of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<!--Acrobat Rogue-->
+	<element name="Acrobat" type="Archetype" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_ROGUE_ACROBAT">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>Flavor text.</p>
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_AERIAL_ARTISTRY" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_FEARLESS_AERIALIST" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_UNCHAINED_AGILITY" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_AERIAL_MASTERY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_AERIAL_ARTISTRY" level="3" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_FEARLESS_AERIALIST" level="9" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_UNCHAINED_AGILITY" level="13" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_AERIAL_MASTERY" level="17" />
+		</rules>
+	</element>
+
+	<element name="Aerial Artistry" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_AERIAL_ARTISTRY">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to move with incredible speed, precision, and power. Few obstacles can prevent you from reaching your destination.</p>
+			<p class="indent">When you move, you can instead take two short movements by flying. Each movement is at half your speed, and you must end each one on a creature, solid object, or ground. If you do not, you fall and your movement ends.</p>
+		</description>
+		<sheet>
+			<description>When you move, you can instead take {{hfh:acrobat:aerial artistry:number}} short movements by flying. Each movement is half your speed, and you must end each one on a creature, solid object, or ground. If you do not, you fall and your movement ends.</description>
+		</sheet>
+		<rules>
+			<stat name="hfh:acrobat:aerial artistry:number" value="2" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Fearless Aerialist" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_FEARLESS_AERIALIST">
+		<description>
+			<p>Starting at 9th level, you no longer take damage from falling.</p>
+		</description>
+		<sheet>
+			<description>You no longer take damage from falling.</description>
+		</sheet>
+	</element>
+
+	<element name="Unchained Agility" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_UNCHAINED_AGILITY">
+		<description>
+			<p>At 13th level, your agility, speed, and flexibility allow you to escape from almost any danger. You gain the benefits of the <i>freedom of movement</i> spell.</p>
+		</description>
+		<sheet>
+			<description>You have the benefits of the freedom of movement spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Aerial Mastery" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_ACROBAT_AERIAL_MASTERY">
+		<description>
+			<p>At 17th level, your Aerial Artistry feature improves. When you move, you can instead take 4 short movements by flying.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hfh:acrobat:aerial artistry:number" value="4" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Kraken Warlock-->
+	<element name="Pact of the Kraken" type="Archetype" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_WARLOCK_PACT_OF_THE_KRAKEN">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Flavor text.</p>
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_GRASP_OF_THE_KRAKEN" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_INKY_ESCAPE" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_SCION_OF_THE_DEPTHS" />
+			<div element="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_UNLEASH_THE_KRAKEN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_GRASP_OF_THE_KRAKEN" level="1" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_INKY_ESCAPE" level="6" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_SCION_OF_THE_DEPTHS" level="10" />
+			<grant type="Archetype Feature" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_UNLEASH_THE_KRAKEN" level="14" />
+		</rules>
+	</element>
+
+	<element name="Grasp of the Kraken" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_GRASP_OF_THE_KRAKEN">
+		<description>
+			<p>Starting at 1st level, you gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point you can see within 60 feet of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 feet of that point must make a Strength saving throw against your warlock spell save DC. Creatures that fail their saving throw are grappled for 1 minute or until you use this ability again. The spectral tentacle’s Strength (Athletics) bonus is 2+ your proficiency bonus and its reach is 10 feet.</p>
+		</description>
+		<sheet action="Action">
+			<description>Pick a point you can see within 60 ft of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft of that point must make a Strength saving throw (DC {{warlock:spellcasting:dc}}). Creatures that fail their saving throw are grappled for 1 minute or until you use this ability again. The spectral tentacle's Strength (Athletics) bonus is +{{hfh:pact of the kraken:grasp of the kraken:modifier}} and its reach is 10 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="hfh:pact of the kraken:grasp of the kraken:modifier" value="2" />
+			<stat name="hfh:pact of the kraken:grasp of the kraken:modifier" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Inky Escape" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_INKY_ESCAPE">
+		<description>
+			<p>At 6th level, you gain the ability to call upon your patron to escape from your foes. As a reaction, when you take damage, you can cast <i>darkness</i> centered on a point within 5 feet of you. The spell lasts until the end of your next turn, and it has no affect on your vision.</p>
+			<p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>When you take damage, you can cast darkness centered on a point within 5 feet of you. The spell lasts until the end of your next turn, and it has no affect on your vision.</description>
+		</sheet>
+	</element>
+
+	<element name="Scion of the Depths" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_SCION_OF_THE_DEPTHS">
+		<description>
+			<p>Starting at 10th level, your patron accepts you into its inner court of servitors. You gain the ability to breathe water and a swim speed equal to your normal speed. You gain immunity to lightning damage. When your immunity reduced damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 feet of you to take lightning damage equal to your Charisma modifier + your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You can breathe water. When your lightning damage immunity reduces damage from an effect to 0, as a reaction, you can cause creatures of your choice that you can see within 30 ft of you to take {{hfh:pact of the kraken:scion of the depths:damage}} lightning damage.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="base" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+			<stat name="hfh:pact of the kraken:scion of the depths:damage" value="charisma:modifier" />
+			<stat name="hfh:pact of the kraken:scion of the depths:damage" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Unleash the Kraken" type="Archetype Feature" source="The Mike Mearls Happy Fun Hour" id="ID_MIKE_HFH_ARCHETYPE_FEATURE_PACT_OF_THE_KRAKEN_UNLEASH_THE_KRAKEN">
+		<description>
+			<p>At 14th level, you gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 feet of you and choose one of the following effects:</p>
+			<p class="indent"><strong><em>Transport.</em></strong> You and up to 5 willing creatures of your choice that you can see are grasped by tentacles that emerge from the portal. A second portal opens at a point of your choice within 100 miles that you have visited within the past 24 hours. A second portal opens, depositing you and your chosen allies there.</p>
+			<p class="indent"><strong><em>Fury.</em></strong> The tentacles slam into your foes. Pick up to 5 creatures you can see within 30 feet of the portal. Those creatures must make a Dexterity saving throw against your warlock spell save DC. Creatures that fail their saving throw take 10d6 bludgeoning damage and are restrained for 1 minute. Creatures that succeed on their saving throw take half damage and are not restrained. On its turn, a restrained creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end the restrained condition.</p>
+		</description>
+		<sheet usage="Action">
+			<description>You open a portal at a point you can see within 30 ft of you and choose one of the following effects: &#13;
+			Life Drain. You gain temporary hp equal to half the damage your attack deals. &#13;
+			Transport. You and up to 5 willing creatures of your choice that you can see are grasped by tentacles that emerge from the portal. A second portal opens at a point of your choice within 100 miles that you have visited within the past 24 hours. A second portal opens, depositing you and your chosen allies there. &#13;
+			Fury. The tentacles slam into your foes. Pick up to 5 creatures you can see within 30 ft of the portal. Those creatures must make a Dexterity saving throw (DC {{warlock:spellcasting:dc}}). Creatures that fail their saving throw take 10d6 bludgeoning damage and are restrained for 1 minute. Creatures that succeed on their saving throw take half damage and are not restrained. On its turn, a restrained creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end the restrained condition.</description>
+		</sheet>
+	</element>
+
+</elements>
