@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023-edition/languages.xml" />
 		</update>
 	</info>
+	
 	<element name="Umbral" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_UMBRAL">
 		<supports>Exotic</supports>
 		<description>
@@ -25,6 +26,79 @@
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<!--Monster Languages-->
+	<element name="Behtu" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_BEHTU">
+		<supports>Monster</supports>
+		<description>
+			<p>Typically spoken by behtu.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Behtu</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Darakhul" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_DARAKHUL">
+		<supports>Monster</supports>
+		<description>
+			<p>Typically spoken by darakhul.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Darakhul</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Derro" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_DERRO">
+		<supports>Monster</supports>
+		<description>
+			<p>Typically spoken by derro.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Derro</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Eonic" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_EONIC">
+		<supports>Monster</supports>
+		<description>
+			<p>Typically spoken by eonic drifters.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Eonic Drifters</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Lemurfolk" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_LEMURFOLK">
+		<supports>Monster</supports>
+		<description>
+			<p>Typically spoken by lemurfolk.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Lemurfolk</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Ravenfolk" type="Language" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_LANGUAGE_RAVENFOLK">
+		<supports>Monster</supports>
+		<description>
+			<p>Typically spoken by ravenfolk.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Ravenfolk</set>
 			<set name="script">-</set>
 		</setters>
 	</element>
