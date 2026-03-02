@@ -3,7 +3,7 @@
 	<info>
 		<name>Architect of Ruin</name>
 		<description>Architect of Ruin Archetype from The Illrigger Revised</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="illrigger-architectofruin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-architectofruin.xml" />
 		</update>
 	</info>
@@ -209,7 +209,7 @@
 		</sheet>
 	</element>
 
-	<!--Spell List-->
+	<!--Spell List (2014)-->
 	 <append id="ID_PHB_SPELL_CHILL_TOUCH">
 		<supports>Architect of Ruin</supports>
 	</append>
@@ -377,6 +377,177 @@
 		<supports>Architect of Ruin</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PHANTASMAL_KILLER">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	<!--Spell List (2024)-->
+	 <append id="ID_WOTC_PHB24_SPELL_CHILL_TOUCH">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_DANCING_LIGHTS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_FIRE_BOLT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_MESSAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_MINOR_ILLUSION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_RAY_OF_FROST">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_SHOCKING_GRASP">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_THAUMATURGY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_VICIOUS_MOCKERY">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	 <append id="ID_WOTC_PHB24_SPELL_BANE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_BURNING_HANDS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_CHARM_PERSON">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_COLOR_SPRAY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_COMMAND">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_HELLISH_REBUKE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_SHIELD">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_SHIELD_OF_FAITH">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_SILENT_IMAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	 <append id="ID_WOTC_PHB24_SPELL_NYSTULS_MAGIC_AURA">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_AUGURY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_BLUR">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_DARKNESS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_ENTHRALL">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_HEAT_METAL">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_HOLD_PERSON">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_INVISIBILITY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_LESSER_RESTORARION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	 <append id="ID_WOTC_PHB24_SPELL_SCORCHING_RAY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SILENCE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SUGGESTION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	
+	<append id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DISPEL_MAGIC">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FEAR">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FLY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_HASTE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MAJOR_IMAGE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_PHANTOM_STEED">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_REMOVE_CURSE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_REVIVIFY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SLOW">
+		<supports>Architect of Ruin</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_BANISHMENT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_BLIGHT">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_COMPULSION">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DEATH_WARD">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DIMENSION_DOOR">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DOMINATE_BEAST">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_HALLUCINATORY_TERRAIN">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_LOCATE_CREATURE">
+		<supports>Architect of Ruin</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER">
 		<supports>Architect of Ruin</supports>
 	</append>
 
