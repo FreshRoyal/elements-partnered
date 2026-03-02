@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/feats.xml" />
+		</update>
+	</info>
+
+    <element name="Brutal Grip" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_BRUTAL_GRIP">
+		<supports>General</supports>
+		<requirements>([level:4],[str:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Heavy Duelist.</i></b> You can wield a Melee weapon with Two-Handed in one hand.</p>
+			<p class="indent"><b><i>Versatile Dual Wielder.</i></b> While wielding a Melee weapon with Versatile in one hand, the weapon has the Light property for you.</p>
+		</description>
+		<sheet>
+			<description>You can wield a Melee weapon with Two-Handed in one hand. &#13;
+			While wielding a Melee weapon with Versatile in one hand, the weapon has the Light property for you.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Brutal Grip" />
+		</rules>
+	</element>
+
+    <element name="Field Commander" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FIELD_COMMANDER">
+		<supports>General</supports>
+		<requirements>([level:4],[cha:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Charisma 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Charisma 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Command.</i></b> As an action, you can issue a command to an ally within 60 feet that can hear you. It can immediately take an action as a Reaction. That action can be used to take only the Attack (one attack only), Dash, Dodge, Hide, Influence, Search, Study, or Utilize action.</p>
+			<p class="indent"><b><i>Tight Formation.</i></b> While you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can issue a command to an ally within 60 ft that can hear you. It can immediately take an action as a Reaction. That action can be used to take only the Attack (one attack only), Dash, Dodge, Hide, Influence, Search, Study, or Utilize action. &#13;
+			Additionally, while you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Field Commander" />
+		</rules>
+	</element>
+    
+    <element name="Focused Critical" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FOCUSED_CRITICAL">
+		<supports>General</supports>
+		<requirements>[level:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Improved Critical.</i></b> Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<sheet>
+			<description>Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Improved Critical)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+		</rules>
+	</element>
+    
+    <element name="Iron Hero" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_IRON_HERO">
+		<supports>General</supports>
+		<requirements>([level:4],!ID_MHP_TGCVSS_FEAT_IRON_HERO)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Underdog's Resolve.</i></b> When you are attacked by a creature that has a CR higher than your character level, you gain a +2 bonus to your Armor Class for that attack.</p>
+			<p class="indent"><b><i>Vengeful Strike.</i></b> You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 Hit Points since the end of your last turn.</p>
+			<p class="indent"><b><i>Heroic Intervention.</i></b> When an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening. You can take this Reaction a number of times equal to your Proficiency Bonus and regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet>
+			<description>When you are attacked by a creature that has a CR higher than {{level}}, you gain a +2 bonus to your AC for that attack. &#13;
+			You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 HPs since the end of your last turn. &#13;
+			Additionally, when an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening ({{proficiency}}/Short Rest).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Iron Hero)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+		</rules>
+	</element>
+
+</elements>

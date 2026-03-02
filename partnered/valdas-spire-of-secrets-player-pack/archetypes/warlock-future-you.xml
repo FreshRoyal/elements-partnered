@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Future You Patron</name>
+		<description>Future You Patron from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="warlock-future-you.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/warlock-future-you.xml" />
+		</update>
+	</info>
+
+	<element name="Future You Patron" type="Archetype" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_WARLOCK_FUTURE_YOU_PATRON">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p class="flavor">Manipulate Time with Help from the Future</p>
+			<p>Your patron is you in a decades-distant future. Perhaps your future self found an artifact of great power connecting them to the past, which they must now lead you to discover, or perhaps they were taught the mystic arts by their future self long ago, a cycle you will have to continue someday. Your future self has forgotten the fine details of some things and outright refuses to tell you about things you "can't know yet," but nevertheless offers compelling insight and guidance. You're not quite sure what your future self is planning for your future (and for their past), but one thing is certain—they need you alive.</p>
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_FUTURE_YOU_SPELLS" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_IT_HAPPENED_LIKE_THIS" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_I_COULD_DO_WITH_FEWER_SCARS" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_EXPECT_AN_AMBUSH" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_GRANDFATHER_PARADOX" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_FUTURE_YOU_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_IT_HAPPENED_LIKE_THIS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_I_COULD_DO_WITH_FEWER_SCARS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_EXPECT_AN_AMBUSH" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_GRANDFATHER_PARADOX" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Future You Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_FUTURE_YOU_SPELLS">
+		<description>
+			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Future You Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Future You Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Accelerate/Decelerate, Delay, Enhance Ability, Moment to Think, Recall</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Protection from Energy, Slow</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Death Ward, Dire Warning</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Legend Lore, Telepathic Bond</em></td></tr>
+			</table>
+			<p>In addition, strange effects linger after communicating with your future self. You gain one of the traits from the Future You Quirks table.</p>
+			<h5>Future You Quirks</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10" style="text-align:center">d6</td><td>Quirks</td></tr>
+				</thead>
+				<tr><td style="text-align:center">1</td><td>You often speak in the wrong tense or refer to yourself in a plural.</td></tr>
+				<tr><td style="text-align:center">2</td><td>You sometimes refer to a person by name before they've introduced themselves.</td></tr>
+				<tr><td style="text-align:center">3</td><td>You are unreasonably calm in dire circumstances.</td></tr>
+				<tr><td style="text-align:center">4</td><td>In certain lighting, you look much older than you are.</td></tr>
+				<tr><td style="text-align:center">5</td><td>Seeing certain people alive instantly reduces you to tears.</td></tr>
+				<tr><td style="text-align:center">6</td><td>Your future fashion sense clashes completely with that of today.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSSPP_SPELL_ACCELERATE_DECELERATE" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_MHP_VSSPP_SPELL_DELAY" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_MHP_VSSPP_SPELL_MOMENT_TO_THINK" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_MHP_VSSPP_SPELL_RECALL" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLOW" level="5" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="7" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_MHP_VSSPP_SPELL_DIRE_WARNING" level="7" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEGEND_LORE" level="9" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Level 3: It Happened Like This" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_IT_HAPPENED_LIKE_THIS">
+		<description>
+			<p>Your discussions of the future with yourself have given you peripheral knowledge about how events will play out. Whenever you finish a Short or Long Rest, the GM rolls a d20 and a d4 in secret and records the number rolled on the d20. The GM tells you the recorded d20 roll, unless they roll a 4 on the d4; in that case, they lie about the recorded d20 roll.</p>
+			<p class="indent">You can replace any D20 Test made by you or a creature you can see with the recorded d20 roll (no action required). You must choose to do so before the roll. If the GM lied about the roll, they inform you of the actual recorded d20 roll only after you replace the test with it.</p>
+		</description>
+		<sheet alt="It Happened Like This">
+			<description>Whenever you finish a Rest, the GM rolls a d20 and a d4 in secret and records the number rolled on the d20. The GM tells you the recorded d20 roll, unless they roll a 4 on the d4; in that case, they lie about the recorded d20 roll. &#13;
+			You can replace any D20 Test made by you or a creature you can see with the recorded d20 roll. You must choose to do so before the roll. If the GM lied about the roll, they inform you of the actual recorded d20 roll only after you replace the test with it.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: I Could Do With Fewer Scars" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_I_COULD_DO_WITH_FEWER_SCARS">
+		<description>
+			<p>Your future self warns you of particular attacks to watch out for. When a creature you can see hits you with an attack roll, you can take a Reaction to gain a +10 bonus to your AC against that attack, potentially causing it to miss.</p>
+			<p class="indent">You can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="I Could Do With Fewer Scars" action="Action" usage="2/Long Rest">
+			<description>When a creature you can see hits you with an attack roll, you can gain a +10 bonus to your AC against that attack, potentially causing it to miss. &#13;
+			You regain one expended use of this feature when you finish a Short Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Expect an Ambush" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_EXPECT_AN_AMBUSH">
+		<description>
+			<p>You have Advantage on Initiative rolls and Resistance to all damage on the first round of combat.</p>
+		</description>
+		<sheet alt="Expect an Ambush">
+			<description>You have Advantage on Initiative rolls and Resistance to all damage on the first round of combat.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Grandfather Paradox" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_GRANDFATHER_PARADOX">
+		<description>
+			<p>As a Magic action, you can goad a creature within 60 feet of you that can see or hear you into causing a paradox. The creature must make an Intelligence saving throw against your spell save DC. On a failed save, the creature takes 10d6 Psychic damage and has the Stunned condition for 1 minute as it is locked between opposing timelines. On a successful save, the target takes half as much damage only. The Stunned creature repeats the save at the end of each of its turns, ending the condition on itself on a success.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Grandfather Paradox" action="Action" usage="1/Long Rest">
+			<description>You can goad a creature within 60 ft of you that can see or hear you into causing a paradox. The creature must make a DC{{warlock:spellcasting:dc}} Intelligence saving throw. On a failed save, the creature takes 10d6 Psychic damage and has the Stunned condition for 1 minute as it is locked between opposing timelines. On a successful save, the target takes half as much damage only. The Stunned creature repeats the save at the end of each of its turns, ending the condition on itself on a success.</description>
+		</sheet>
+	</element>
+
+</elements>

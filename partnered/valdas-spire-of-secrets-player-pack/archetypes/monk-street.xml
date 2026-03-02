@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warrior of the Street</name>
+		<description>Warrior of the Street from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="monk-street.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/monk-street.xml" />
+		</update>
+	</info>
+
+	<element name="Warrior of the Street" type="Archetype" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_MONK_WARRIOR_OF_THE_STREET">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">Strike with Combos and Special Moves</p>
+			<p>"Street fighting" is an urban discipline founded on necessity, whose blindingly fast, unique brand of martial arts has been honed and perfected in back-alley brawls and tournaments alike. Monks who adopt this relatively new technique place comparatively little value on spiritual enlightenment and inner focus; the thrill of split-second timing, rapid combos, and decisive knock-outs drive them to become the best combatants in the world.</p>
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_COMBO" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_IRON_FIST" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_AIR_DASH" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_KO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_COMBO" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_IRON_FIST" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_AIR_DASH" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_KO" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Combo" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_COMBO">
+		<description>
+			<p>When you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to begin a combo. Until the end of the current turn, you gain a +2 bonus to attack rolls of your Unarmed Strikes. This bonus increases by 2, up to a maximum of +6, for each successive hit on the current turn. This bonus resets to +2 if you take damage or miss with an attack roll.</p>
+		</description>
+		<sheet alt="Combo" usage="Focus Point" >
+			<description>When you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to begin a combo. Until the end of the current turn, you gain a +2 bonus to attack rolls of your Unarmed Strikes. This bonus increases by 2, up to a maximum of +6, for each successive hit on the current turn. This bonus resets to +2 if you take damage or miss with an attack roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Iron Fist" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_IRON_FIST">
+		<description>
+			<p>Whenever you hit an object with an Unarmed Strike, the hit is a Critical Hit.</p>
+		</description>
+		<sheet alt="Iron Fist">
+			<description>Whenever you hit an object with an Unarmed Strike, the hit is a Critical Hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Special Moves" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES">
+		<description>
+			<p>You have memorized patterns of discrete movements that allow you to use the following special moves.</p>
+			<p class="indent"><em><strong>Energy Blast.</strong></em> When you take the Attack action on your turn, you can expend 1 Focus Point to replace one of your attacks with a blast of energy. One creature of your choice that you can see within 60 feet makes a Dexterity saving throw, taking Force damage equal to two rolls of your Martial Arts die, or half as much damage on a successful save.</p>
+			<p class="indent"><em><strong>Guard Breaker.</strong></em> If you make an attack roll with your Unarmed Strike and miss the target, you can expend 1 Focus Point to perform a Guard Breaker. This Unarmed Strike deals damage equal to your Dexterity modifier to the target. This miss doesn't reset your Combo bonus to attack rolls.</p>
+			<p class="indent"><em><strong>Uppercut.</strong></em> When you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus point to make an uppercut. You can push the target up to 5 feet away from you and give the target the Prone condition if it is Large or smaller.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES_ENERGY_BLAST" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES_GUARD_BREAKER" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES_UPPERCUT" />
+		</rules>
+	</element>
+	<element name="Energy Blast" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES_ENERGY_BLAST">
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn, you can expend 1 Focus Point to replace one of your attacks with a blast of energy. One creature of your choice that you can see within 60 feet makes a Dexterity saving throw, taking Force damage equal to two rolls of your Martial Arts die, or half as much damage on a successful save.</p>
+		</description>
+		<sheet action="Attack Action on Your Turn" usage="Focus Point">
+			<description>You can replace one of your attacks with a blast of energy. One creature of your choice that you can see within 60 ft makes a Dexterity saving throw, taking 2d{{martial arts:dice}} Force damage, or half as much damage on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Guard Breaker" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES_GUARD_BREAKER">
+		<compendium display="false" />
+		<description>
+			<p>If you make an attack roll with your Unarmed Strike and miss the target, you can expend 1 Focus Point to perform a Guard Breaker. This Unarmed Strike deals damage equal to your Dexterity modifier to the target. This miss doesn't reset your Combo bonus to attack rolls.</p>
+		</description>
+		<sheet usage="Focus Point">
+			<description>If you make an attack roll with your Unarmed Strike and miss the target, you can perform a Guard Breaker. This Unarmed Strike deals {{dexterity:modifier}} damage to the target. This miss doesn't reset your Combo bonus to attack rolls.</description>
+		</sheet>
+	</element>
+	<element name="Uppercut" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES_UPPERCUT">
+		<compendium display="false" />
+		<description>
+			<p>If you make an attack roll with your Unarmed Strike and miss the target, you can expend 1 Focus Point to perform a Guard Breaker. This Unarmed Strike deals damage equal to your Dexterity modifier to the target. This miss doesn't reset your Combo bonus to attack rolls.</p>
+		</description>
+		<sheet usage="Focus Point">
+			<description>When you hit a creature with an Unarmed Strike and deal damage, you can make an uppercut. You can push the target up to 5 ft away from you and give the target the Prone condition if it is Large or smaller.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Air Dash" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_AIR_DASH">
+		<description>
+			<p>On your turn, you can expend 1 Focus Point to gain a Fly Speed equal to your Speed until the end of your next turn (no action required). You have Advantage on the next melee attack you make before the end of the current turn.</p>
+		</description>
+		<sheet alt="Air Dash" usage="Focus Point">
+			<description>On your turn, you can gain a {{speed}} ft Fly Speed equal until the end of your next turn. You have Advantage on the next melee attack you make before the end of the current turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: K.O." type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_KO">
+		<description>
+			<p>Once per turn when you hit a creature with an Unarmed Strike, you can attempt to knock the target out. The target takes extra Force damage equal to three rolls of your Martial Arts die. If the target has 100 Hit Points or fewer after you deal damage with the Unarmed Strike, it has the Unconscious condition for 10 minutes.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest. You can also restore your use of it by expending 5 Focus Points (no action required).</p>
+		</description>
+		<sheet alt="K.O." usage="1/Short Rest or 5 Focus Points">
+			<description>Once per turn when you hit a creature with an Unarmed Strike, you can attempt to knock the target out. The target takes 3d{{martial arts:dice}} extra Force damage. If the target has 100 HPs or fewer after you deal damage with the Unarmed Strike, it has the Unconscious condition for 10 minutes.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Accelerate/Decelerate" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_ACCELERATE_DECELERATE">
+		<supports>Bard, Cleric, Sorcerer, Wizard, Damaging Spell</supports>
+		<description>
+			<p>This spell accelerates or decelerates an attack (see the chosen effect below) the instant before it strikes, lessening or multiplying its force.</p>
+			<p class="indent"><b><i>Accelerate.</i></b> The target takes an extra 2d6 damage from the attack. This extra damage is the same type dealt by the triggering attack.</p>
+			<p class="indent"><b><i>Decelerate.</i></b> Reduce the damage the target takes by 2d6 (to a minimum of 0 damage).</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The extra damage or reduction in damage increases by 1d6 for each slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage, attack, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school" addition="Chronomancy">Transmutation</set>
+			<set name="time">Reaction, which you take when you see an attack roll hit a creature within 60 feet of yourself</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of oil or molasses</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Clue" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_CLUE">
+		<supports>Bard, Cleric, Druid, Paladin, Ranger, Wizard</supports>
+		<description>
+			<p>When you cast this spell, all footprints and fingerprints within a 30-foot Emanation originating from you become highlighted and glow faintly for the duration. When you cast the spell, choose any point in time up to 10 days ago. Only footprints and fingerprints left between that time and the present will be highlighted. Each creature that leaves footprints and fingerprints is assigned a unique color, but are not otherwise identified. Any creature that moves or touches objects within the Emanation will also leave colorful footprints and fingerprints, which might reveal invisible creatures in the area.</p>
+		</description>
+		<setters>
+			<set name="keywords">emanation, footprints, fingerprints</set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">Action or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a magnifying glass and pipe</set>
+			<set name="duration">10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Defenestration" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_DEFENESTRATION">
+		<supports>Bard, Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A wave of force erupts from your open hand, hurling a creature you can see within range through a window. The target makes a Strength saving throw. On a failure, the target is pushed up to 20 feet and thrown through a window of your choice. If there is no window within 20 feet of the target, it is instead pushed up to 20 feet in a direction of your choice and thrown through a window of arcane force, which materializes behind the creature and vanishes after it shatters. The target takes 4d6 Slashing damage and has the Prone condition when it is thrown through a window. On a successful save, the target is instead only pushed 10 feet and takes no damage.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 and the distance the target is pushed on a success or failure increases by 5 feet for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, save, push, window, slashing, damage, prone, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Delay" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_DELAY">
+		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You briefly slow time for a creature of your choice that you can see within range. The target must succeed on a Wisdom saving throw or be moved to last place in the Initiative order from the start of the next round onwards.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, initiative</set>
+			<set name="level">1</set>
+			<set name="school" addition="Chronomancy">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an octagonal sign</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Dire Warning" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_DIRE_WARNING">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>You receive a message of up to 6 words from yourself in the future, warning you of a critical threat or pointing you toward a fruitful avenue. The GM determines this message. At some point in the future, once you have learned why you sent the message, you must perform a ritual over the course of 10 minutes, which can be done during a Short or Long Rest, to deliver the message back in time to your past self. If you cast this spell and receive no message, it indicates that you will never complete the ritual in the future, possibly owing to your death or another hindrance.</p>
+			<p class="indent">Once you cast this spell, you can't cast it again for 7 days or until you perform its ritual.</p>
+		</description>
+		<setters>
+			<set name="keywords">message, future, ritual</set>
+			<set name="level">4</set>
+			<set name="school" addition="Chronomancy">Divination</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Finger Guns" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_FINGER_GUNS">
+		<supports>Bard, Sorcerer, Wizard, Damaging Spell</supports>
+		<description>
+			<p>You extend your forefinger and thumb, a dangerous gesture mimicking a gun. For the duration, your hand counts as a Simple Ranged weapon with a range of 60/240 feet and the Slow mastery property. You can use your spellcasting ability instead of Dexterity for the attack rolls of this weapon. On a hit, the weapon deals 2d6 Force damage and doesn't add your ability modifier to damage.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The weapon's normal range increases by 30 feet and its long range increases by 120 feet when you reach levels 5 (90/360 feet), 11 (120/480 feet), and 17 (150/600 feet).</p>
+		</description>
+		<setters>
+			<set name="keywords">simple, ranged, weapon, range, slow, mastery, force, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school" addition="Firearm">Evocation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Game of Fate" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_GAME_OF_FATE">
+		<supports>Bard, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You magically compel a creature within range that can hear and understand you to a nonmagical game with vital consequences. An unwilling creature must succeed on a Wisdom saving throw or be compelled to join you in the game.</p>
+			<p class="indent">The loser of the game takes 6d6 Psychic damage. If no player has won or lost by the end of the spell's duration, both you and the target take this damage. If you or one of your allies harms the target, you forfeit the game, and vice versa if the target or one of its allies harms you. Additionally, you and the target creature can negotiate for greater stakes. You can wager for higher Psychic damage (up to a maximum of 12d6), currency, property, or more esoteric rewards, such as bestowal of a noble title. The spell reveals if a creature attempts to place a bet it can't fulfill. A bet is finalized when you and the target agree on the bet, solidifying the bet with a handshake or similar gesture. Property or currency bet on the game is teleported to the winner at the game's conclusion. The loser is also magically compelled to take any action (such as bestowing a noble title) wagered as part of a bet.</p>
+			<p class="indent">Lastly, no spell, magical effect, or creature other than you and the target can influence the game's outcome.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, psychic, damage</set>
+			<set name="level">6</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Gaming Set</set>
+			<set name="duration">1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Hangover" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_HANGOVER">
+		<supports>Bard, Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You emit a drunken aura that quickly washes away, leaving an intense hangover. A creature you choose within range makes a Constitution saving throw. On a failed save, the creature takes 3d8 Psychic damage and has the Poisoned condition until the end of your next turn. On a successful save, the target takes half as much damage only. The target has Disadvantage on Constitution saving throws it makes to maintain Concentration as a result of this damage.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">constitution, save, psychic, damage, poisoned, disadvantage, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of strong liquor</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Mandy's Feral Follower" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_MANDYS_FERAL_FOLLOWER">
+		<supports>Wizard</supports>
+		<description>
+			<p>You touch a Medium or smaller Beast, which shape-shifts into a Humanoid with an appearance of your choice. The Beast's statistics are replaced by the stat block of a <strong>Commoner</strong> but retains its Hit Points and Hit Point Dice. You choose the Commoner's skill proficiency. The commoner wears Fine Clothes but has no other equipment, and has a basic understanding of all unskilled tasks.</p>
+			<p class="indent">The target gains 10 Temporary Hit Points. The spell ends early on the target if it has no Temporary Hit Points left. When the spell ends, the Fine Clothes dissipate into smoke.</p>
+			<p class="indent"><b><i>Combat.</i></b> The commoner is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. It behaves as though it is dutifully employed by you.</p>
+			<p class="indent"><b><i>Duration.</i></b> This spell's duration varies depending upon when and where it was cast. If cast in a location where time passes normally, the spell lasts until the twelfth stroke of the next midnight, however long that may be. Elsewhere, the spell lasts for 24 hours.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">beast, commoner, transform, temporary hit points, upcasting, higher-level spell slot</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small servant's bell</set>
+			<set name="duration">Special</set>
+		</setters>
+	</element>
+
+	<element name="Memorize" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_MEMORIZE">
+		<supports>Bard, Cleric, Wizard</supports>
+		<description>
+			<p>When you cast this spell, your eyes pass over a page of written text that is committed to your memory. For the next year, you remember the exact details of all information on the page. After that time, you have Advantage on all Intelligence checks you make to recall this information.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, intelligence</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">silver string worth 10+ GP, tied in a knot, which the spell consumes</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Moment to Think" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_MOMENT_TO_THINK">
+		<supports>Cleric, Sorcerer, Wizard, Damaging Spell</supports>
+		<description>
+			<p>When you cast this spell, you briefly stop time for everyone but yourself. You can take one additional action and move around in your space while no time passes for other creatures. That action can be used only to take the Search, Study, or Utilize action. Furthermore, you can't affect or damage any creature or object, other than objects you are wearing or carrying. If an object leaves your hand, it also becomes frozen in time.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, search, study, utilize</set>
+			<set name="level">0</set>
+			<set name="school" addition="Chronomancy">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Paradox" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_PARADOX">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>By twisting the flow of time into knots, you cause one action of your choice taken within range within the last round to be undone. Reality then reasserts itself, recoiling from the damage caused by removing an event from time. The direct effects of that action, such as damage dealt by an attack or spell, are undone, but the indirect effects, such as creatures choosing to move to different locations, are not. The creature that took the action takes 10d8 Psychic damage, as it copes with its history being modified.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, psychic, damage</set>
+			<set name="level">9</set>
+			<set name="school" addition="Chronomancy">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Polybrachia" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_POLYBRACHIA">
+		<supports>Druid, Paladin, Ranger, Warlock</supports>
+		<description>
+			<p>Two muscular arms of brilliant arcane energy appear on a willing creature that you touch. These arms are fully functional and can be used to wield weapons and Shields (allowing the target to simultaneously hold 2 two-handed weapons, or 4 one-handed weapons), perform Somatic components of spells, and perform other actions. For the duration, the target has Advantage on Strength (Athletics) checks. The target can take a Bonus Action to make a melee attack using a weapon wielded by the arms.</p>
+		</description>
+		<setters>
+			<set name="keywords">weapons, shields, hand, advantage, athletics, bonus action, melee, attack</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pair of armbands</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Recall" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_RECALL">
+		<supports>Sorcerer, Wizard, Damaging Spell</supports>
+		<description>
+			<p>Record your location when you cast this spell. Until the end of your next turn, you can take a Reaction in response to an attack roll, a creature casting a spell, or a creature moving within 5 feet of you to teleport back to that location, or to the nearest unoccupied space if that space is occupied. This teleportation precedes the triggering attack or spell. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">reaction, teleport</set>
+			<set name="level">2</set>
+			<set name="school" addition="Chronomancy">Conjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Rumor" type="Spell" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_SPELL_RUMOR">
+		<supports>Bard, Wizard</supports>
+		<description>
+			<p>You magically spread a rumor of 10 words or less in a 100-foot Emanation originating from you. Any creature within the Emanation that can hear and understand three or more other creatures believes that they hear the rumor being repeated by someone nearby. Different creatures hear the rumor from different people, so a concrete origin is impossible to discern. Generally, creatures won't become Hostile upon hearing even the most vicious rumors, but hearing a rumor can affect their attitude positively or negatively.</p>
+		</description>
+		<setters>
+			<set name="keywords">emanation</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+</elements>

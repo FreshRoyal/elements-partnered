@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Revelry</name>
+		<description>Oath of Revelry from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="paladin-revelry.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/paladin-revelry.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Revelry" type="Archetype" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_PALADIN_OATH_OF_REVELRY">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<p class="flavor">Work Hard and Party Harder</p>
+			<p>Paladins who swear the Oath of Revelry make a solemn vow to party day and night until their hearts give out. The antithesis of stuffy, lawful crusaders, these emissaries of carousal travel the land, crashing parties and raising hell wherever they raise a glass. Authorities bristle at their arrival, but the youth cheer, for a Party Paladin is always accompanied by a good time.</p>
+			<p class="indent">These paladins share the following tenets:</p>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Abide by the doctrines of the Codicus Brodicus.</li>
+				<li>Celebrate every occasion, inviting friend and foe alike.</li>
+				<li>When necessary, fight for your right to party.</li>
+			</ul>
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_OATH_SPELLS" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_CONJURE_DRINK" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_AURA_OF_FRATERNITY" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_MERRYMAKER" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_PARTY_ANIMAL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_CONJURE_DRINK" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_AURA_OF_FRATERNITY" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_MERRYMAKER" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_PARTY_ANIMAL" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_OATH_SPELLS">
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Revelry Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of Revelry Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Paladin Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Charm Person, Hideous Laughter</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Enhance Ability, Hangover</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Create Food And Water, Hypnotic Pattern</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Charm Monster, Freedom of Movement</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Geas, Telepathic Bond</em></td></tr>
+			</table>      
+		</description>
+		<sheet display="false" />
+		<rules> 
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EHANCE_ABILITY" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_MHP_VSSPP_SPELL_HANGOVER" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CREATE_FOOD_AND_WATER" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HYPNOTIC_PATTERN" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GEAS" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RARYS_TELEPATHIC_BOND" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Conjure Drink" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_CONJURE_DRINK">
+		<description>
+			<p>As a Magic action, you can expend one use of your Channel Divinity to conjure a number of mugs filled with frothy ale up to your Charisma modifier (minimum of one), which appear in spaces within 30 feet of yourself. A creature that drinks the ale as a Bonus Action gains Temporary Hit Points equal to your Charisma modifier and has Advantage on saving throws for 1 minute. When you finish a Long Rest, the mugs and remaining ale vanish.</p>
+		</description>
+		<sheet alt="Conjure Drink" action="Action" usage="Channel Divinity">
+			<description>You can conjure up to {{vsspp:conjure drink:number}} mugs filled with frothy ale, which appear in spaces within 30 ft of yourself. A creature that drinks the ale as a Bonus Action gains {{charisma:modifier}} THPs and has Advantage on saving throws for 1 minute. When you finish a Long Rest, the mugs and remaining ale vanish.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp:conjure drink:number" value="1" bonus="base"/>
+			<stat name="vsspp:conjure drink:number" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Level 7: Aura of Fraternity" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_AURA_OF_FRATERNITY">
+		<description>
+			<p>You and your allies deal an extra 1d4 damage on attacks using Melee weapons or Unarmed Strikes while in your Aura of Protection. This damage is the same type dealt by the weapon or Unarmed Strike.</p>
+		</description>
+		<sheet alt="Aura of Fraternity">
+			<description>You and your allies deal an extra 1d4 damage on attacks using Melee weapons or Unarmed Strikes while in your Aura of Protection. This damage is the same type dealt by the weapon or Unarmed Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Merrymaker" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_MERRYMAKER">
+		<description>
+			<p>When you or an ally within 30 feet of yourself that can see or hear you makes a D20 Test, you can take a Reaction to give that creature Advantage on the roll.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a Long Rest. If the creature still fails the D20 Test, this use of Merrymaker isn't expended.</p>
+		</description>
+		<sheet alt="Merrymaker" action="Reaction" usage="{{vsspp:merrymaker:usage}}/Long Rest">
+			<description>When you or an ally within 30 feet of yourself that can see or hear you makes a D20 Test, you can give that creature Advantage on the roll. If the creature still fails the D20 Test, this use of Merrymaker isn't expended.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp:merrymaker:usage" value="1" bonus="base"/>
+			<stat name="vsspp:merrymaker:usage" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Level 20: Party Animal" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_PARTY_ANIMAL">
+		<description>
+			<p>As a Bonus Action, you can imbue your Aura of Protection with the many-hued magic of revelry, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><b><i>Extra Damage.</i></b> The extra damage from your Aura of Fraternity increases to 1d8.</p>
+			<p class="indent"><b><i>Heroic Inspiration.</i></b> At the start of each of your turns, you can give Heroic Inspiration to one ally within the aura.</p>
+			<p class="indent"><b><i>Immunities.</i></b> You and your allies have Immunity to the Blinded, Deafened, Exhaustion, and Poisoned conditions while in the aura.</p>
+		</description>
+		<sheet alt="Party Animal" action="Bonus Action" usage="1/Long Rest">
+			<description>For 10 minutes or until you end them, your Aura of Protection has the following benefits: &#13;
+			• The extra damage from your Aura of Fraternity increases to 1d8. &#13;
+			• At the start of each of your turns, you can give Heroic Inspiration to one ally within the aura. &#13;
+			• You and your allies have Immunity to the Blinded, Deafened, Exhaustion, and Poisoned conditions while in the aura. &#13;
+			You can restore a use of this feature by expending a level 5 spell slot.</description>
+		</sheet>
+	</element>
+
+</elements>

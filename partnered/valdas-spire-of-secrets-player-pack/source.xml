@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/source.xml" />
+		</update>
+	</info>
+	<element name="Valda's Spire of Secrets: Player Pack" type="Source" source="Core" id="ID_MHP_SOURCE_VALDAS_SPIRE_OF_SECRETS_PLAYER_PACK">
+		<description>
+			<p>In his extraplanar tower, the devious lich Valda grows his grim collection: heroes of every description from across the multiverse, petrified in marble and arranged by specialty.</p>
+			<p>Play as a living teddy bear or a musclebound “wizard” in this must-have pack of player options for D&amp;D Beyond. Featuring two unique species, six innovative subclasses, new Chronomancy spells, and a hoard of magic items to bring wit, whimsy, and chaos to your game!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">VSSPP</set>
+			<set name="url">https://marketplace.dndbeyond.com/PROMOTION/DBFJVUWLA</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/VSSPP.png</set>
+			<set name="author" abbreviation="MHP" url="https://magehandpress.com/">Mage Hand Press</set>
+			<set name="third-party">true</set>
+			<set name="release">20250404</set>
+		</setters>
+	</element>
+
+</elements>

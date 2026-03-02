@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mandrake</name>
+		<description>Mandrake from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="race-mandrake.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/races/race-mandrake.xml" />
+		</update>
+	</info>
+
+	<element name="Mandrake" type="Race" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACE_MANDRAKE">
+		<description>
+			<p>With a skin of thick bark and leaves growing at their extremities, you could be forgiven for believing that mandrakes are simply bizarre plants, treants, or animated trees. The truth is far stranger: mandrakes are a bizarre midway between animal and plant. A ruby ichor pumps through their root-veins, and they can equally eat living things or bask in sunlight for nourishment. Depending on the season in which they are harvested, a mandrake might resemble a spry, leafy sapling or thick, woody tree.</p>
+			<p class="indent">Common folks have long held misconceptions about mandrakes—believing them categorically to be wailing babies—but druids know them as the green emissaries who stand between the realms of animals and plants, making peace for all parties. In druidic lore, mandrakes are bespoke creations of a primordial goddess of nature, intended to act as delegates of her will.</p>
+			<p class="indent">Today, mandrakes are rare and make their homes in the forests near where villages and cities meet the true wilds. They live for hundreds of years, growing wider and more gnarled with age.</p>
+			<h5>MANDRAKE TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Plant</li>
+				<li><strong>Size:</strong> Small (about 2-3 feet tall) or Medium (about 6 feet tall; Marionette construction only)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Mandrake, you have these special traits.</p>
+			<p class="indent"><strong><em>Plant Nature.</em></strong> As long as you are in direct sunlight for at least 4 hours a day, you don't need to eat. Additionally, you can breathe through your leaves and you can absorb water and nutrients through your feet.</p> 
+			<p class="indent"><strong><em>Natural Connection.</em></strong> You have proficiency in the Nature or Survival skill.</p> 
+			<p class="indent"><strong><em>Root Magic.</em></strong> You know the <i>Shillelagh</i> cantrip and can target yourself with the spell, treating one of your limbs as a Club for the duration of the spell.</p>
+			<p class="indent">When you reach character level 3, you always have <i>Goodberry</i> prepared, and when you reach character level 5, you always have <i>Barkskin</i> prepared. You can cast each of these spells without a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>
+			<p class="indent"><strong><em>Entangling Vines.</em></strong> You can take a Bonus Action to cause grasping weeds and vines to sprout up from the ground around a Large or smaller creature you can see within 30 feet of yourself. Until the end of the creature's next turn, its Speed is 0 and can't increase. This effect ends early if the creature replaces one of its attacks with with freeing itself. You can use this Bonus Action a number of times equal to your Proficiency Bonus and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">When you reach character level 3, your Entangling Vines gain an additional effect based on the season in which you were harvested (choose when you select this species):</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em">
+				<li><strong>Spring.</strong> Your Entangling Vines can target an airborne creature within 30 feet of the ground, which is pulled safely to the ground when you use this trait.</li>
+				<li><strong>Summer.</strong> Your Entangling Vines can move the target up to 10 feet to an unoccupied space on the ground or floor.</li>
+				<li><strong>Autumn.</strong> Your Entangling Vines can affect a second creature within 5 feet of the first target.</li>
+				<li><strong>Winter.</strong> The target takes Cold damage equal to your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Mandrake)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_PLANT" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Mandrake)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Mandrake)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_PLANT_NATURE" />
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_NATURAL_CONNECTION" />
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES" />
+		</rules>
+	</element>
+
+	<element name="Plant Nature" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_PLANT_NATURE">
+		<description>
+			<p>As long as you are in direct sunlight for at least 4 hours a day, you don't need to eat. Additionally, you can breathe through your leaves and you can absorb water and nutrients through your feet.</p>
+		</description>
+		<sheet>
+			<description>As long as you are in direct sunlight for at least 4 hours a day, you don't need to eat. Additionally, you can breathe through your leaves and you can absorb water and nutrients through your feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Connection" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_NATURAL_CONNECTION">
+		<description>
+			<p>You have proficiency in the Nature or Survival skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Natural Connection)" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Natural Connection)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Root Magic" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC">
+		<description>
+			<p>You know the <i>Shillelagh</i> cantrip and can target yourself with the spell, treating one of your limbs as a Club for the duration of the spell.</p>
+			<p class="indent">When you reach character level 3, you always have <i>Goodberry</i> prepared, and when you reach character level 5, you always have <i>Barkskin</i> prepared. You can cast each of these spells without a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHILLELAGH" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GOODBERRY" level="3" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BARKSKIN" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Root Magic)" supports="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_INTELLIGENCE|ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_WISDOM|ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Player’s Handbook (2024)" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
+		</description>
+		<sheet>
+			<description>You know the Shillelagh cantrip. Your spellcasting ability for this spell is Intelligence.</description>
+			<description level="3">You know the Shillelagh cantrip, and you can cast the Goodberry spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Player’s Handbook (2024)" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
+		</description>
+		<sheet>
+			<description>You know the Shillelagh cantrip. Your spellcasting ability for this spell is Wisdom.</description>
+			<description level="3">You know the Shillelagh cantrip, and you can cast the Goodberry spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Player’s Handbook (2024)" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
+		</description>
+		<sheet>
+			<description>You know the Shillelagh cantrip. Your spellcasting ability for this spell is Charisma.</description>
+			<description level="3">You know the Shillelagh cantrip, and you can cast the Goodberry spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Entangling Vines" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES">
+		<description>
+			<p>You can take a Bonus Action to cause grasping weeds and vines to sprout up from the ground around a Large or smaller creature you can see within 30 feet of yourself. Until the end of the creature's next turn, its Speed is 0 and can't increase. This effect ends early if the creature replaces one of its attacks with with freeing itself. You can use this Bonus Action a number of times equal to your Proficiency Bonus and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">When you reach character level 3, your Entangling Vines gain an additional effect based on the season in which you were harvested (choose when you select this species):</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em">
+				<li><strong>Spring.</strong> Your Entangling Vines can target an airborne creature within 30 feet of the ground, which is pulled safely to the ground when you use this trait.</li>
+				<li><strong>Summer.</strong> Your Entangling Vines can move the target up to 10 feet to an unoccupied space on the ground or floor.</li>
+				<li><strong>Autumn.</strong> Your Entangling Vines can affect a second creature within 5 feet of the first target.</li>
+				<li><strong>Winter.</strong> The target takes Cold damage equal to your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can cause grasping weeds and vines to sprout up from the ground around a Large or smaller creature you can see within 30 ft of yourself. Until the end of the creature's next turn, its Speed is 0 and can't increase. This effect ends early if the creature replaces one of its attacks with with freeing itself.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Season (Entangling Vines)" supports="VSSPP Entangling Vines Season" />
+		</rules>
+	</element>
+	<element name="Spring" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES_SPRING">
+		<supports>VSSPP Entangling Vines Season</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Entangling Vines can target an airborne creature within 30 feet of the ground, which is pulled safely to the ground when you use this trait.</p>
+		</description>
+		<sheet>
+			<description />
+			<description level="3">Your Entangling Vines can target an airborne creature within 30 ft of the ground, which is pulled safely to the ground when you use this trait.</description>
+		</sheet>
+	</element>
+	<element name="Summer" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES_SUMMER">
+		<supports>VSSPP Entangling Vines Season</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Entangling Vines can move the target up to 10 feet to an unoccupied space on the ground or floor.</p>
+		</description>
+		<sheet>
+			<description />
+			<description level="3">Your Entangling Vines can move the target up to 10 ft to an unoccupied space on the ground or floor.</description>
+		</sheet>
+	</element>
+	<element name="Autumn" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES_AUTUMN">
+		<supports>VSSPP Entangling Vines Season</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Entangling Vines can affect a second creature within 5 feet of the first target.</p>
+		</description>
+		<sheet>
+			<description />
+			<description level="3">Your Entangling Vines can affect a second creature within 5 ft of the first target.</description>
+		</sheet>
+	</element>
+	<element name="Winter" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES_WINTER">
+		<supports>VSSPP Entangling Vines Season</supports>
+		<compendium display="false" />
+		<description>
+			<p>The target takes Cold damage equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet>
+			<description />
+			<description level="3">The target takes {{proficiency}} Cold damage.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Geppettin</name>
+		<description>Geppettin from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="race-geppettin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/races/race-geppettin.xml" />
+		</update>
+	</info>
+
+	<element name="Geppettin" type="Race" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACE_GEPPETTIN">
+		<description>
+			<p>Ever a joy to children, geppettin resemble living playthings made of wood, cloth, or porcelain. Though easily mistaken for puppets, geppettin aren't manipulated by a just-out-of-sight puppeteer; they are animated, sentient, and independent.</p>
+			<p class="indent">As a species, the geppettin are an oddity. Though rare, they are numerous enough and share enough similarities that they may be counted as an actual species, and not merely freak mishaps of magic. While there might be dedicated creators of geppettin, as there are with golems, many geppettin come to life on their own.</p>
+			<p class="indent">Geppettin are often shorter than halflings. Their physical features vary greatly from type to type, but they often resemble Humanoids. Despite being made of somewhat flimsy materials, sentience grants them an odd hardiness. They never hunger and rarely tire. Most find some form of work or profession in entertainment, but a few find fantastic success as spies and assassins.</p>
+			<p class="indent">As Constructs, geppettin don't age, and mature as soon as they become sentient.</p>
+			<h4>BISQUES</h4>
+			<p>Bisque geppettin are a form of porcelain doll, crafted with exacting specification and luxurious clothing materials. Though they are designed to look as realistic as possible, they are often the most terrifying geppettin due to their lifeless visages.</p>
+			<h4>MARIONETTES</h4>
+			<p>Marionette geppettin are made mostly out of wood, with painted faces and carved clothing. Due to their construction, their jointed limbs are quite flexible, and they are known to be fantastic dancers. The very largest marionettes, called mannequins, stand as tall as a human and bear completely blank, expressionless faces.</p>
+			<h4>PLUSHIES</h4>
+			<p>Plushies, also called raggedies, are any form of stuffed or soft geppettin. Though they often look Humanoid, they may also look like animals, monsters, or any other anthropomorphic creature.</p>
+			<h5>GEPPETTIN TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Construct</li>
+				<li><strong>Size:</strong> Small (about 2-3 feet tall) or Medium (about 6 feet tall; Marionette construction only)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Geppettin, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p> 
+			<p class="indent"><strong><em>Construct Nature.</em></strong> You don't need food, drink, or air. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a motionless state, during which you retain consciousness.</p> 
+			<p class="indent"><strong><em>Handcrafted Quality.</em></strong> Your design might be unnerving, articulated, or friendly. You have proficiency in the Intimidation, Performance, or Persuasion skill.</p> 
+			<p class="indent"><strong><em>Gepettin Construction.</em></strong> For simplicity, geppettin are classified by their materials: bisque are porcelain, marionettes are wood, and plushies are made of fabric. Choose one of the following constructions:</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em">
+				<li><strong>Bisque.</strong> You are indistinguishable from a porcelain doll until the moment you strike. Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes extra damage equal to your Proficiency Bonus. The damage is the same type dealt by the weapon.</li>
+				<li><strong>Marionette.</strong> Loose strings hang from your jointed limbs. During your turn, your reach is 5 feet greater with any Melee weapon that lacks the Reach, Two-Handed, and Versatile properties.</li>
+				<li><strong>Plushie.</strong> You are stuffed with fluff. When you take Bludgeoning damage, you can take a Reaction to gain Resistance to the triggering damage. You are also knocked 5 feet away from the source of the damage. You can't take this Reaction if you can't be knocked away from the source of the damage.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Geppettin)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" requirements="!ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CONSTRUCT" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Geppettin)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Geppettin)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_CONSTRUCT_NATURE" />
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_HANDCRAFTED_QUALITY" />
+			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION" />
+		</rules>
+	</element>
+
+	<element name="Construct Nature" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_CONSTRUCT_NATURE">
+		<description>
+			<p>You don't need food, drink, or air. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a motionless state, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>You don't need food, drink, or air. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a motionless state, during which you retain consciousness.</description>
+		</sheet>
+	</element>
+
+	<element name="Handcrafted Quality" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_HANDCRAFTED_QUALITY">
+		<description>
+			<p>Your design might be unnerving, articulated, or friendly. You have proficiency in the Intimidation, Performance, or Persuasion skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Handcrafted Quality)" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Handcrafted Quality)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Geppettin Construction" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION">
+		<description>
+			<p>For simplicity, geppettin are classified by their materials: bisque are porcelain, marionettes are wood, and plushies are made of fabric. Choose one of the following constructions:</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em">
+				<li><strong>Bisque.</strong> You are indistinguishable from a porcelain doll until the moment you strike. Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes extra damage equal to your Proficiency Bonus. The damage is the same type dealt by the weapon.</li>
+				<li><strong>Marionette.</strong> Loose strings hang from your jointed limbs. During your turn, your reach is 5 feet greater with any Melee weapon that lacks the Reach, Two-Handed, and Versatile properties.</li>
+				<li><strong>Plushie.</strong> You are stuffed with fluff. When you take Bludgeoning damage, you can take a Reaction to gain Resistance to the triggering damage. You are also knocked 5 feet away from the source of the damage. You can't take this Reaction if you can't be knocked away from the source of the damage.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Geppettin Construction" supports="VSSPP Geppettin Construction" />
+		</rules>
+	</element>
+
+	<element name="Bisque" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION_BISQUE">
+		<supports>VSSPP Geppettin Construction</supports>
+		<compendium display="false" />
+		<description>
+			<p>You are indistinguishable from a porcelain doll until the moment you strike. Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes extra damage equal to your Proficiency Bonus. The damage is the same type dealt by the weapon.</p>
+		</description>
+		<sheet alt="Geppettin Construction, Bisque">
+			<description>Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes {{proficiency}} extra damage. The damage is the same type dealt by the weapon.</description>
+		</sheet>
+	</element>
+
+	<element name="Marionette" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION_MARIONETTE">
+		<supports>VSSPP Geppettin Construction</supports>
+		<compendium display="false" />
+		<description>
+			<p>Loose strings hang from your jointed limbs. During your turn, your reach is 5 feet greater with any Melee weapon that lacks the Reach, Two-Handed, and Versatile properties.</p>
+		</description>
+		<sheet alt="Geppettin Construction, Marionette">
+			<description>During your turn, your reach is 5 ft greater with any Melee weapon that lacks the Reach, Two-Handed, and Versatile properties.</description>
+		</sheet>
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+	</element>
+
+	<element name="Plushie" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION_PLUSHIE">
+		<supports>VSSPP Geppettin Construction</supports>
+		<compendium display="false" />
+		<description>
+			<p>You are stuffed with fluff. When you take Bludgeoning damage, you can take a Reaction to gain Resistance to the triggering damage. You are also knocked 5 feet away from the source of the damage. You can't take this Reaction if you can't be knocked away from the source of the damage.</p>
+		</description>
+		<sheet alt="Geppettin Construction, Plushie">
+			<description>When you take Bludgeoning damage, you can take a Reaction to gain Resistance to the triggering damage. You are also knocked 5 ft away from the source of the damage. You can't take this Reaction if you can't be knocked away from the source of the damage.</description>
+		</sheet>
+	</element>
+
+</elements>

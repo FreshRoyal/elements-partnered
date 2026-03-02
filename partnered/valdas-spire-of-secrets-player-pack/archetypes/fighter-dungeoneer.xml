@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dungeoneer</name>
+		<description>Dungeoneer from Valda's Spire of Secrets: Player Pack</description>
+		<update version="0.0.1">
+			<file name="fighter-dungeoneer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/fighter-dungeoneer.xml" />
+		</update>
+	</info>
+
+	<element name="Dungeoneer" type="Archetype" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FIGHTER_DUNGEONEER">
+		<supports>Fighter Subclass</supports>
+		<description>
+			<p class="flavor">Survive the Dungeon</p>
+			<p>Only fools would dive headfirst into an abandoned crypt filled with monsters and deathtraps, but it seems only fools emerge from such crypts laden with as much loot as they can carry. The archetypal dungeon delver is a veteran of such suicidal dungeon delves, and has become intimately familiar with the hazards therein. In the course of their adventures, such a Dungeoneer will have adopted countless best practices, along with a litany of unproven superstitions which they believe keeps them alive. Principles from "always be the first one to hit the monster" to "never be the first one to touch a treasure chest" line a Dungeoneer's journal. However, it's probably better to be paranoid and superstitious than lying at the bottom of a pit trap, incinerated by a Fireball, or digested by a mimic.</p>
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_HEROIC_SUPERSTITION" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_DUNGEON_PRECAUTIONS" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_MONSTER_KILL" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_AVOIDANCE" />
+			<div element="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_HEROIC_SUPERSTITION" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_DUNGEON_PRECAUTIONS" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_MONSTER_KILL" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_AVOIDANCE" level="15" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Kick in the Door" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR">
+		<description>
+			<p>You have Advantage attack rolls you make during the first round of combat.</p>
+		</description>
+		<sheet alt="Kick in the Door">
+			<description>You have Advantage attack rolls you make during the first round of combat.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Heroic Superstition" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_HEROIC_SUPERSTITION">
+		<description>
+			<p>You gain Heroic Inspiration when you do any of the following.</p>
+			<p class="indent"><em><strong>Damage Vulnerability.</strong></em> Deal a type of damage to which a creature has Vulnerability.</p>
+			<p class="indent"><em><strong>Find Weakness.</strong></em> Trigger a creature's specific weakness, such as Shadow's Sunlight Weakness or dealing damage that prevents a creature's Regeneration.</p>
+			<p class="indent"><em><strong>Guess the Monster.</strong></em> Guess a creature's specific kind (such as a mimic or lich) before seeing it. The GM confirms if you are correct when the creature is revealed. You can't guess the identity of Humanoids.</p>
+			<p class="indent"><em><strong>Secret Doors.</strong></em> Discover a secret door.</p>
+			<p class="indent"><em><strong>Trapfinder.</strong></em> Detect or disarm a trap.</p>
+			<p class="indent"><em><strong>Treasure Hoard.</strong></em> Find an Uncommon, Rare, Very Rare, or Legendary magic item or treasure worth 100 GP+.</p>
+		</description>
+		<sheet alt="Heroic Superstition">
+			<description>You gain Heroic Inspiration when you do any of the following: &#13;
+			• Deal a type of damage to which a creature has Vulnerability. &#13;
+			• Trigger a creature's specific weakness, such as Shadow's Sunlight Weakness or dealing damage that prevents a creature's Regeneration. &#13;
+			• Guess a creature's specific kind before seeing it. The GM confirms if you are correct when the creature is revealed. You can't guess the identity of Humanoids. &#13;
+			• Discover a secret door. &#13;
+			• Detect or disarm a trap. &#13;
+			• Find an Uncommon, Rare, Very Rare, or Legendary magic item or treasure worth 100 GP+.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Dungeon Precautions" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_DUNGEON_PRECAUTIONS">
+		<description>
+			<p>You can cast any of the following spells without a spell slot: <i>Alarm, Comprehend Languages, Detect Magic, Detect Poison and Disease, Find Traps, Identify,</i> and <i>Purify Food and Drink</i>. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this feature (choose the ability when you cast the spell).</p>
+			<p class="indent">You can use this feature five times and regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Dungeon Precautions" usage="5/Long Rest">
+			<description>You can cast any of the following spells without a spell slot: Alarm, Comprehend Languages, Detect Magic, Detect Poison and Disease, Find Traps, Identify, and Purify Food and Drink. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this feature (choose the ability when you cast the spell).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Monster Kill" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_MONSTER_KILL">
+		<description>
+			<p>Once per turn when you hit an Aberration, Dragon, Fey, Fiend, Monstrosity, Ooze, or Undead with an attack with a weapon, you can deal an extra 1d10 damage to the target. This damage is the same type dealt by the weapon.</p>
+		</description>
+		<sheet alt="Monster Kill" usage="1/Turn">
+			<description>When you hit an Aberration, Dragon, Fey, Fiend, Monstrosity, Ooze, or Undead with an attack with a weapon, you can deal an extra 1d10 damage to the target. This damage is the same type dealt by the weapon.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Avoidance" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_AVOIDANCE">
+		<description>
+			<p>When you're subjected to an effect that allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Avoidance">
+			<description>When you're subjected to an effect that allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Veteran Hero" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO">
+		<description>
+			<p>Your dungeoneering expertise gives you the following benefits.</p>
+			<p class="indent"><em><strong>Peerless Heroism.</strong></em> Once per turn when you make a D20 Test, you can expend Heroic Inspiration to turn the roll into a 20, instead of rerolling the d20.</p>
+			<p class="indent"><em><strong>Double Inspiration.</strong></em> You can have two instances of Heroic Inspiration at one time. You can use only one Heroic Inspiration per roll.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO_PEERLESS_HEROISM" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO_DOUBLE_INSPIRATION" />
+		</rules>
+	</element>
+	<element name="Peerless Heroism" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO_PEERLESS_HEROISM">
+		<compendium display="false" />
+		<description>
+			<p>Once per turn when you make a D20 Test, you can expend Heroic Inspiration to turn the roll into a 20, instead of rerolling the d20.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you make a D20 Test, you can expend Heroic Inspiration to turn the roll into a 20, instead of rerolling the d20.</description>
+		</sheet>
+	</element>
+	<element name="Double Inspiration" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO_DOUBLE_INSPIRATION">
+		<compendium display="false" />
+		<description>
+			<p>You can have two instances of Heroic Inspiration at one time. You can use only one Heroic Inspiration per roll.</p>
+		</description>
+		<sheet>
+			<description>You can have two instances of Heroic Inspiration at one time. You can use only one Heroic Inspiration per roll.</description>
+		</sheet>
+	</element>
+	
+</elements>
