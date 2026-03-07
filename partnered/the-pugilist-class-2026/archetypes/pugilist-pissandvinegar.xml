@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Piss and Vinegar</name>
+		<description>Piss and Vinegar from The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="pugilist-pissandvinegar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-pissandvinegar.xml" />
+		</update>
+	</info>
+
+	<element name="Piss and Vinegar" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_PISS_AND_VINEGAR">
+		<supports>TPC24 Pugilist Subclass</supports>
+		<description>
+			<p class="flavor">Throw Barbs and Hands</p>
+			<p>Some Pugilists revel in their reputations as heels, happily playing up their bad behavior for notoriety. Despised by their enemies for their obscene curses and dirty tricks, these Pugilists take pride in their ability to provoke and willingness to win fights at any cost.</p>
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS" level="6" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS" level="11" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Bad Attitude" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE</requirements>
+		<description>
+			<p>You gain proficiency in the Intimidation skill if you don't have it already. Additionally, you gain a bonus to checks using this skill equal to your Strength modifier (minimum bonus of +1).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<stat name="tpc24:bad attitude:modifier" value="1" bonus="base" />
+			<stat name="tpc24:bad attitude:modifier" value="strength:modifier" bonus="base" />
+			<stat name="intimidation:misc" value="tpc24:bad attitude:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Salty Salute" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE</requirements>
+		<description>
+			<p>You have mastered the art of the enraging insult. As a Bonus Action, you can provoke a creature within 60 feet that can see or hear you. That creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</p>
+			<p class="indent">The saving throw DC for this and all other features from this subclass equals 8 plus your Constitution modifier and Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Salty Salute" action="Bonus Action">
+			<description>You can provoke a creature within 60 ft that can see or hear you. That creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 1d{{tpc24:fisticuffs:dice}}+{{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
+			<description level="17">You can provoke a creature within 60 ft that can see or hear you. That creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 2d6+{{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:salty salute:dc" value="8" bonus="base" />
+			<stat name="tpc24:salty salute:dc" value="proficiency" bonus="proficiency" />
+			<stat name="tpc24:salty salute:dc" value="constitution:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Dirty Tricks" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS</requirements>
+		<description>
+			<p>You have a few tricks up your sleeve to even the odds when the going gets tough. You can use one of the following Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can't use that trick again until you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Heelstomper.</strong></em> When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+			<p class="indent"><em><strong>Low Blow.</strong></em> When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</p>
+			<p class="indent"><em><strong>Pocket Sand.</strong></em> As a Bonus Action, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the Blinded condition until the end of its next turn.</p>
+		</description>
+		<sheet alt="Dirty Tricks" usage="1/Turn">
+			<description>You can use one Dirty Trick each turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_HEELSTOMPER" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_LOW_BLOW" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_POCKET_SAND" />
+		</rules>
+	</element>
+	<element name="Heelstomper" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_HEELSTOMPER">
+		<compendium display="false" />
+		<description>
+			<p>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+		</description>
+		<sheet usage="Dirty Tricks - 1/Short Rest">
+			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a DC{{tpc24:salty salute:dc}} Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</description>
+		</sheet>
+	</element>
+	<element name="Low Blow" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_LOW_BLOW">
+		<compendium display="false" />
+		<description>
+			<p>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</p>
+		</description>
+		<sheet usage="Dirty Tricks - 1/Short Rest">
+			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a DC{{tpc24:salty salute:dc}} Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Pocket Sand" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_POCKET_SAND">
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the Blinded condition until the end of its next turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Dirty Tricks - 1/Short Rest">
+			<description>You toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a DC{{tpc24:salty salute:dc}} Constitution saving throw or have the Blinded condition until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Mean Old Cuss" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS</requirements>
+		<description>
+			<p>You can offend every creature in the room with the flick of a wrist and a few curt words. As a Bonus Action, you can choose a number of targets within 30 feet of yourself that can see or hear you up to your level in this class. Each chosen creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</p>
+			<p class="indent">Once you use this feature, you must finish a Short or Long Rest before you use it again. You can also restore your use of it by expending 3 Moxie Points (no action required).</p>
+		</description>
+		<sheet alt="Mean Old Cuss" action="Bonus Action" usage="1/Short Rest or 3 Moxie Points">
+			<description>You can choose up to {{level:pugilist}} targets within 30 ft of yourself that can see or hear you. Each chosen creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 1d{{tpc24:fisticuffs:dice}}+{{constitution:modifier}} Psychic damage and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</description>
+			<description level="17">You can choose up to {{level:pugilist}} targets within 30 ft of yourself that can see or hear you. Each chosen creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 2d6+{{constitution:modifier}} Psychic damage and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Dirtier Tricks" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS</requirements>
+		<description>
+			<p>You gain the following additional Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can't use that trick again until you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Rabbit Punch.</strong></em> When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</p>
+			<p class="indent"><em><strong>Sucker Punch.</strong></em> When you hit a creature with an Unarmed Strike or Pugilist weapon, you can turn the hit into a Critical Hit. For this Critical Hit, you roll the attack's damage dice three times and add them together, instead of twice as normal.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_RABBIT_PUNCH" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_SUCKER_PUNCH" />
+		</rules>
+	</element>
+	<element name="Rabbit Punch" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_RABBIT_PUNCH">
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</p>
+		</description>
+		<sheet usage="Dirty Tricks - 1/Short Rest">
+			<description>When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Rabbit Punch" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS_SUCKER_PUNCH">
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws.</p>
+		</description>
+		<sheet usage="Dirty Tricks - 1/Short Rest">
+			<description>When you hit a creature with an Unarmed Strike or Pugilist weapon, you can turn the hit into a Critical Hit. For this Critical Hit, you roll the attack's damage dice three times and add them together, instead of twice as normal.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Bad Attitude Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_BAD_ATTITUDE" />
+	<element name="Salty Salute Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_SALTY_SALUTE" />
+	<element name="Dirty Tricks Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS" />
+	<element name="Mean Old Cuss Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_MEAN_OLD_CUSS" />
+	<element name="Dirtier Tricks Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PISS_AND_VINEGAR_DIRTIER_TRICKS" />
+
+</elements>

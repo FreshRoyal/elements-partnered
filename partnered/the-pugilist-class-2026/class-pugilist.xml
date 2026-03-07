@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pugilist</name>
+		<description>Pugilist from The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="class-pugilist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/class-pugilist.xml" />
+		</update>
+	</info>
+
+	<element name="Pugilist" type="Class" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_PUGILIST">
+		<description>
+			<p>Pugilists live a rough and tumble life that leaves them full of determination and recklessness, either from overconfidence or desperation. In a fight, they channel this strength of character to dig deep and snatch victory from the jaws of defeat, even when outarmed and outnumbered. Even when they ultimately fail, Pugilists go down swinging.</p>
+			<p class="indent">Pugilists tap into their inner strength in the form of moxie. This is not an esoteric or mystical energy that flows through the multiverse, but the result of self-confidence and determination forged over a lifetime of hardship with a never-say-die attitude. Anyone can be taught how to fist fight but accessing the strength and resilience of the Pugilist can't. The secret of mastering moxie doesn't come from disciplined study or rigorous training, it comes from years of wanting and needing.</p>
+			<p class="indent">In back alleys, underground fight clubs, and poorer quarters, Pugilists don't have time to consider the lofty ideals of philosophy or ponder the mysteries of the universe. They spend their days chasing down their next meal or, if they're fortunate enough to have that, their next drink, bedfellow, or flophouse. For Pugilists, becoming an adventurer might be the only way out of whatever miserable situation they've been stuck in since infancy. For others, getting lost out in the world is an escape from the tangled web of debt or enemies they've piled up. But some Pugilists are happy just with the promise of ample opportunities to bloody their knuckles.</p>
+			<div class="sidebar">
+				<h5>CORE PUGILIST TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Strength</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D10 per Pugilist level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Strength and Constitution</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Acrobatics, Athletics, Deception, Intimidation, Perception, Sleight of Hand, or Stealth.</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left>">Simple weapons and improvised</td></tr>
+					<tr><td><b>Tool Proficiencies</b></td><td class="left"><i>Choose one type of Gaming Set</i></td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light armor</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A or B:</i> (A) Club, Handaxe, Gaming Set (chosen for the tool proficiency above), Dungeoneer's Pack, and 31 GP; or (B) 50 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A PUGILIST ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Pugilist Traits table.</li>
+				<li>Gain the Pugilist's level 1 features, which are listed in the Pugilist Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Pugilist Traits table: Hit Point Die, proficiency with Improvised weapons, and training with Light armor.</li>
+				<li>Gain the Pugilist's level 1 features, which are listed in the Pugilist Features table.</li>
+			</ul>
+			<h5>PUGILIST FEATURES</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="col-45 left">Class Features</td><td class="col-10">Fisticuffs</td><td class="col-10">Moxie Points</td></tr>
+				</thead>
+				<tr><td> 1</td><td>+2</td><td class="left">Fisticuffs, Iron Chin</td><td>1d8</td><td>—</td></tr>
+				<tr><td> 2</td><td>+2</td><td class="left">Moxie, Bloodied But Unbowed, Swagger Streak</td><td>1d8</td><td>2</td></tr>
+				<tr><td> 3</td><td>+2</td><td class="left">Heavy Hitter, Pugilist Subclass</td><td>1d8</td><td>2</td></tr>
+				<tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement, Dig Deep</td><td>1d8</td><td>3</td></tr>
+				<tr><td> 5</td><td>+3</td><td class="left">Extra Attack, Haymaker</td><td>1d10</td><td>3</td></tr>
+				<tr><td> 6</td><td>+3</td><td class="left">Moxie-Fueled Fists, Subclass feature</td><td>1d10</td><td>4</td></tr>
+				<tr><td> 7</td><td>+3</td><td class="left">Down But Not Out</td><td>1d10</td><td>4</td></tr>
+				<tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>1d10</td><td>5</td></tr>
+				<tr><td> 9</td><td>+4</td><td class="left">School of Hard Knocks</td><td>1d10</td><td>5</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Herculean, Shake It Off</td><td>1d10</td><td>6</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Subclass feature</td><td>1d12</td><td>6</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>1d12</td><td>7</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Dig Deeper</td><td>1d12</td><td>7</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Unbreakable</td><td>1d12</td><td>8</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Pugnacious</td><td>1d12</td><td>8</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>1d12</td><td>9</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Subclass feature</td><td>2d6</td><td>9</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Fighting Spirit</td><td>2d6</td><td>10</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>2d6</td><td>11</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Peak Physical Condition</td><td>2d6</td><td>12</td></tr>
+			</table>
+			<h4>PUGILIST CLASS FEATURES</h4>
+			<p>As a Pugilist, you gain the following class features when you reach the specified Pugilist levels. These features are listed in the Pugilist Features table.</p>
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_FISTICUFFS" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_IRON_CHIN" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_BLOODIED_BUT_UNBOWED" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SWAGGER_STREAK" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HEAVY_HITTER" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PUGILIST_SUBCLASS" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DIG_DEEP" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_EXTRA_ATTACK" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HAYMAKER" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_FUELED_FISTS" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DOWN_BUT_NOT_OUT" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HERCULEAN" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SHAKE_IT_OFF" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DIG_DEEPER" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_UNBREAKABLE" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PUGNACIOUS" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_FIGHTING_SPIRIT" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_EPIC_BOON" />
+			<div element="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PEAK_PHYSICAL_CONDITION" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A Streetfighter with Swagger to Spare</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST" />
+			<grant type="Proficiency" id="ID_ALE_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST" />
+			<select type="Proficiency" name="Gaming Set (Pugilist)" supports="Gaming Set" requirements="!ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST" />
+			<select type="Proficiency" name="Skill Proficiency (Pugilist)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST" />
+
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_FISTICUFFS" level="1" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_IRON_CHIN" level="1" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE" level="2" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_BLOODIED_BUT_UNBOWED" level="2" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SWAGGER_STREAK" level="2" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HEAVY_HITTER" level="3" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PUGILIST_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DIG_DEEP" level="4" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HAYMAKER" level="5" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_FUELED_FISTS" level="6" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DOWN_BUT_NOT_OUT" level="7" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS" level="9" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HERCULEAN" level="10" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SHAKE_IT_OFF" level="10" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DIG_DEEPER" level="13" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_UNBREAKABLE" level="14" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PUGNACIOUS" level="15" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_FIGHTING_SPIRIT" level="18" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PEAK_PHYSICAL_CONDITION" level="20" />
+		</rules>
+		<multiclass id="ID_SVAC_PUGILIST2026_MULTICLASS_PUGILIST">
+			<prerequisite>Strength 13</prerequisite>
+			<requirements>([str:13],!(ID_DMSG_PUGL_CLASS_PUGILIST||ID_MULTICLASS_PUGILIST))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Improvised weapons, Light armor</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Fisticuffs" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_FISTICUFFS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_FISTICUFFS</requirements>
+		<description>
+			<p style="margin-bottom: 0.2em">Your years of fighting in back alleys and taverns have given you mastery over combat styles that use Unarmed Strikes and Pugilist weapons, which are the following:</p>
+			<ul style="margin-top:0em; margin-bottom: 0.2em">
+				<li>Simple Melee weapons</li>
+				<li>Improvised weapons</li>
+			</ul>
+			<p>You gain the following benefits while you are unarmed or wielding only Pugilist weapons and you are wearing Light or no armor and are not wielding a Shield.</p>
+			<p class="indent"><em><strong>Bonus Unarmed Strike.</strong></em> You can make an Unarmed Strike as a Bonus Action.</p>
+			<p class="indent"><em><strong>Fisticuffs Die.</strong></em> You can roll 1d8 in place of the normal damage of your Unarmed Strike or Pugilist weapons. This die changes as you gain Pugilist levels, as shown in the Fisticuffs column of the Pugilist Features table.</p>
+			<p class="indent"><em><strong>Improved Improvisation.</strong></em> Your talent for turning everything into a weapon allows you to use the mastery properties of Improvised Weapons. All Improvised Weapons count as having the Sap mastery property for you.</p>
+		</description>
+		<sheet alt="Fisticuffs">
+			<description>You can make an Unarmed Strike as a Bonus Action. &#13;
+			Additionally, your Unarmed Strikes and Pugilist weapons (which are Simple Melee or Improvised weapons) deal 1d{{tpc24:fisticuffs:dice}}+{{strength:modifier}} Bludgeoning damage, and Improvised weapons count as having the Sap property for you.</description>
+			<description level="17">You can make an Unarmed Strike as a Bonus Action. &#13;
+			Additionally, your Unarmed Strikes and Pugilist weapons (which are Simple Melee or Improvised weapons) deal 2d6+{{strength:modifier}} Bludgeoning damage, and Improvised weapons count as having the Sap property for you.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:fisticuffs:dice" value="8" bonus="fisticuffs" />
+			<stat name="tpc24:fisticuffs:dice" value="10" bonus="fisticuffs" level="5" />
+			<stat name="tpc24:fisticuffs:dice" value="12" bonus="fisticuffs" level="11" />
+
+			<select type="Class Feature" name="Improvised Weapon (Sap)" supports="TPC24 Improvised Weapon Sap" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_IMPROVISED_WEAPON_SAP" />
+		</rules>
+	</element>
+	<element name="Improvised Weapon (Sap)" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_IMPROVISED_WEAPON_SAP">
+		<supports>TPC24 Improvised Weapon Sap</supports>
+		<requirements>ID_ALE_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 1: Iron Chin" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_IRON_CHIN">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_IRON_CHIN</requirements>
+		<description>
+			<p>While you are wearing Light or no armor and not wielding a Shield, your base Armor Class equals 12 plus your Constitution modifier.</p>
+		</description>
+		<sheet alt="Iron Chin">
+			<description>While you are wearing Light or no armor and not wielding a Shield, your base AC is {{ac:iron chin pugilist}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:iron chin pugilist" value="12" bonus="base" />
+			<stat name="ac:iron chin pugilist" value="constitution:modifier" bonus="ability" />
+
+			<stat name="ac:calculation" value="ac:iron chin pugilist" bonus="calculation" equipped="([armor:none]||[armor:light]),[shield:none]" alt="Iron Chin (Pugilist)" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Moxie" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE</requirements>
+		<description>
+			<p>Your experiences of beating the odds have given you a moxie you can channel in the midst of battle. This swagger is represented by a number of Moxie Points. Your Pugilist level determines the maximum number of points you have, as shown in the Moxie Points column of the Pugilist Features table.</p>
+			<p class="indent">You can spend these points to enhance or fuel certain Pugilist features. You start knowing three such features: Brace Up, One-Two Punch, and Stick and Move, each of which is detailed below.</p>
+			<p class="indent">When you expend a Moxie Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.</p>
+			<p class="indent"><em><strong>Brace Up.</strong></em> You can use a Bonus Action and expend 1 Moxie Point to brace for attacks. When you do so, roll your Fisticuffs die, and gain a number of Temporary Hit Points equal to the number rolled plus your Pugilist level and your Constitution modifier. These Temporary Hit Points vanish if any remain after 10 minutes.</p>
+			<p class="indent"><em><strong>One-Two Punch.</strong></em> You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action.</p>
+			<p class="indent"><em><strong>Stick and Move.</strong></em> You can use a Bonus Action and expend 1 Moxie Point to make an Unarmed Strike and take the Dash or Disengage action.</p>
+		</description>
+		<sheet alt="Moxie">
+			<description>You have {{tpc24:moxie:points}} Moxie Points. You regain any spent points after a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:moxie:points" value="2" bonus="base" />
+			<stat name="tpc24:moxie:points" value="3" bonus="base" level="4" />
+			<stat name="tpc24:moxie:points" value="4" bonus="base" level="6" />
+			<stat name="tpc24:moxie:points" value="5" bonus="base" level="8" />
+			<stat name="tpc24:moxie:points" value="6" bonus="base" level="10" />
+			<stat name="tpc24:moxie:points" value="7" bonus="base" level="12" />
+			<stat name="tpc24:moxie:points" value="8" bonus="base" level="14" />
+			<stat name="tpc24:moxie:points" value="9" bonus="base" level="16" />
+			<stat name="tpc24:moxie:points" value="10" bonus="base" level="18" />
+			<stat name="tpc24:moxie:points" value="11" bonus="base" level="19" />
+			<stat name="tpc24:moxie:points" value="12" bonus="base" level="20" />
+			
+			<select type="Class Feature" name="Brace Up" supports="TPC24 Brace Up" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP"/>
+			<select type="Class Feature" name="One-Two Punch" supports="TPC24 One Two Punch" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_ONE_TWO_PUNCH" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_ONE_TWO_PUNCH"/>
+			<select type="Class Feature" name="Stick and Move" supports="TPC24 Stick and Move" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE"/>
+		</rules>
+	</element>
+	<element name="Brace Up" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP">
+		<supports>TPC24 Brace Up</supports>
+		<description>
+			<p>You can use a Bonus Action and expend 1 Moxie Point to brace for attacks. When you do so, roll your Fisticuffs die, and gain a number of Temporary Hit Points equal to the number rolled plus your Pugilist level and your Constitution modifier. These Temporary Hit Points vanish if any remain after 10 minutes.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Moxie Point">
+			<description>You can brace for attacks. When you do so, roll your Fisticuffs die, and gain 1d{{tpc24:fisticuffs:dice}}+{{tpc24:brace up:modifier}} THPs. These THPs vanish if any remain after 10 minutes.</description>
+			<description level="17">You can brace for attacks. When you do so, roll your Fisticuffs die, and gain 2d6+{{tpc24:brace up:modifier}} THPs. These THPs vanish if any remain after 10 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:brace up:modifier" value="level:pugilist" />
+			<stat name="tpc24:brace up:modifier" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="One-Two Punch" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_ONE_TWO_PUNCH">
+		<supports>TPC24 One Two Punch</supports>
+		<description>
+			<p>You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Moxie Point">
+			<description>You can make two Unarmed Strikes.</description>
+		</sheet>
+	</element>
+	<element name="Stick and Move" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE">
+		<supports>TPC24 Stick and Move</supports>
+		<description>
+			<p>You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Moxie Point">
+			<description>You can make an Unarmed Strike and take the Dash or Disengage action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 2: Bloodied But Unbowed" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_BLOODIED_BUT_UNBOWED">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_BLOODIED_BUT_UNBOWED</requirements>
+		<description>
+			<p>When you take damage, you can take a Reaction to regain all your expended Moxie Points. If you are Bloodied when you take this Reaction, you also gain Temporary Hit Points equal to four times your Pugilist level. These Temporary Hit Points vanish if any remain when you finish a Short Rest.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Bloodied But Unbowed" action="Reaction" usage="1/Short Rest">
+			<description>When you take damage, you can regain all your expended Moxie Points. If you are Bloodied when you take this Reaction, you also gain {{tpc24:bloodied but unbowed:thp}} THPs. These THPs vanish if any remain when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Swagger Streak" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SWAGGER_STREAK">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_SWAGGER_STREAK</requirements>
+		<description>
+			<p>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can expend a Moxie Point to attempt to swagger your way to success. Roll your Fisticuffs die and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Swagger Streak" usage="Moxie Point">
+			<description>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can attempt to swagger your way to success. Roll 1d{{tpc24:fisticuffs:dice}} and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</description>
+			<description level="17">When you fail a Strength, Dexterity, Constitution, or Charisma check, you can attempt to swagger your way to success. Roll 2d6 and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Heavy Hitter" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HEAVY_HITTER">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HEAVY_HITTER</requirements>
+		<description>
+			<p>When you hit a creature with an Unarmed Strike, you can use both the Damage and your choice of the Grapple or Shove option.</p>
+		</description>
+		<sheet alt="Heavy Hitter">
+			<description>When you hit a creature with an Unarmed Strike, you can use both the Damage and your choice of the Grapple or Shove option.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Pugilist Subclass" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PUGILIST_SUBCLASS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PUGILIST_SUBCLASS</requirements>
+		<description>
+			<p>You gain a Pugilist subclass of your choice. A subclass is a specialization that grants you features at certain Pugilist levels. For the rest of your career, you gain each of your subclass's features that are of your Pugilist level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Pugilist Subclass" supports="TPC24 Pugilist Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_ABILITY_SCORE_IMPROVEMENTS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Pugilist 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Pugilist 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Dig Deep" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DIG_DEEP">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEP</requirements>
+		<description>
+			<p>You can use a Bonus Action to dig deep. For 10 minutes, you have Resistance to Bludgeoning, Piercing, and Slashing damage and you ignore the effects of Exhaustion levels less than 6.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you gain 1 Exhaustion level (no action required by you) to restore your use of it.</p>
+		</description>
+		<sheet alt="Dig Deep" action="Bonus Action" usage="1/Long Rest">
+			<description>For 10 minutes, you have Resistance to Bludgeoning, Piercing, and Slashing damage and you ignore the effects of Exhaustion levels less than 6. &#13;
+			You can gain 1 Exhaustion level to restore your use of it.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 5: Extra Attack" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_EXTRA_ATTACK">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_EXTRA_ATTACK</requirements>
+		<description>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Haymaker" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HAYMAKER">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAYMAKER</requirements>
+		<description>
+			<p>When you make an attack with an Unarmed Strike or Pugilist weapon, you can expend 1 Moxie Point to swing with wild abandon. On a hit, regain the expended Moxie Point and you deal maximum damage with that attack.</p>
+		</description>
+		<sheet alt="Haymaker" usage="Moxie Point">
+			<description>When you make an attack with an Unarmed Strike or Pugilist weapon, you can swing with wild abandon. On a hit, regain the expended Moxie Point and you deal maximum damage with that attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Moxie-Fueled Fists" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_FUELED_FISTS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_FUELED_FISTS</requirements>
+		<description>
+			<p>Whenever you deal damage with your Unarmed Strike or an attack with an improvised weapon, it can deal your choice of Force damage or its normal damage type.</p>
+		</description>
+		<sheet alt="Moxie-Fueled Fists">
+			<description>Whenever you deal damage with your Unarmed Strike or an attack with an improvised weapon, it can deal your choice of Force damage or its normal damage type.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Down But Not Out" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DOWN_BUT_NOT_OUT">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOWN_BUT_NOT_OUT</requirements>
+		<description>
+			<p>When you use your Bloodied But Unbowed while you are Bloodied, you can add a bonus to the damage of your Unarmed Strikes and attacks with Pugilist weapons for the next minute. This bonus equals your Constitution modifier plus the number of levels of Exhaustion you have.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Down But Not Out" usage="1/Long Rest">
+			<description>When you use your Bloodied But Unbowed while you are Bloodied, you can add a bonus to the damage of your Unarmed Strikes and attacks with Pugilist weapons for the next minute. This bonus equals {{constitution:modifier}} plus the number of levels of Exhaustion you have.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 9: School of Hard Knocks" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SCHOOL_OF_HARD_KNOCKS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_SCHOOL_OF_HARD_KNOCKS</requirements>
+		<description>
+			<p>Once per turn, you can deal an extra 1d12 damage when you hit with an Unarmed Strike or attack with a Pugilist weapon. This damage is the same type dealt by the weapon or Unarmed Strike. You can forgo this extra damage to apply one of the following effects.</p>
+			<p class="indent"><em><strong>Endanger.</strong></em> The next time the creature is hit by an attack, the attack deals the maximum result of the attack's damage dice rather than rolling.</p>
+			<p class="indent"><em><strong>Provoke.</strong></em> The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</p>
+		</description>
+		<sheet alt="School of Hard Knocks" usage="1/Turn">
+			<description>You can deal an extra 1d12 damage when you hit with an Unarmed Strike or attack with a Pugilist weapon. This damage is the same type dealt by the weapon or Unarmed Strike. You can forgo this extra damage to apply one of the following effects: &#13;
+			• Endanger. The next time the creature is hit by an attack, the attack deals the maximum result of the attack's damage dice rather than rolling. &#13;
+			•  Provoke. The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Herculean" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_HERCULEAN">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HERCULEAN</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Heavy Lifter.</strong></em> Your Strength score is doubled when determining your carrying capacity.</p>
+			<p class="indent"><em><strong>Pillar Breaker.</strong></em> When you hit an object with an Unarmed Strike, the hit is a Critical Hit.</p>
+			<p class="indent"><em><strong>Unmatched Athlete.</strong></em> Your jump distance is doubled.</p>
+		</description>
+		<sheet alt="Herculean">
+			<description>When you hit an object with an Unarmed Strike, the hit is a Critical Hit. &#13;
+			Additionally, your jump distance is doubled.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Shake It Off" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_SHAKE_IT_OFF">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_SHAKE_IT_OFF</requirements>
+		<description>
+			<p>With unflappable resolve, you can remove one of the following conditions from yourself at the start of each of your turns: Blinded, Charmed, Deafened, one level of Exhaustion, Frightened, Paralyzed, Poisoned, Restrained, or Stunned.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you take a level of Exhaustion (no action required by you) to restore your use of it.</p>
+		</description>
+		<sheet alt="Shake It Off" usage="1/Long Rest">
+			<description>You can remove one of the following conditions from yourself at the start of each of your turns: Blinded, Charmed, Deafened, one level of Exhaustion, Frightened, Paralyzed, Poisoned, Restrained, or Stunned. &#13;
+			You can take a level of Exhaustion to restore your use of this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 13: Dig Deeper" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_DIG_DEEPER">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEPER</requirements>
+		<description>
+			<p>You can use a Bonus Action to dig deeper. For 1 minute, you have all the benefits of your Dig Deep and can use your School of Hard Knocks twice per turn instead of once.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. Starting at level 20, you can use it twice before a Long Rest.</p>
+		</description>
+		<sheet alt="Dig Deeper" action="Bonus Action">
+			<description usage="1/Long Rest">For 1 minute, you have all the benefits of your Dig Deep and can use your School of Hard Knocks twice per turn instead of once.</description>
+			<description level="20" usage="2/Long Rest">For 1 minute, you have all the benefits of your Dig Deep and can use your School of Hard Knocks twice per turn instead of once.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Unbreakable" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_UNBREAKABLE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_UNBREAKABLE</requirements>
+		<description>
+			<p>You have Advantage on Strength, Dexterity, and Constitution saving throws.</p>
+			<p class="indent">Additionally, whenever you make a saving throw and fail, you can expend 1 Moxie Point to reroll it, and you must use the new roll.</p>
+		</description>
+		<sheet alt="Unbreakable">
+			<description>You have Advantage on Strength, Dexterity, and Constitution saving throws. &#13;
+			Additionally, whenever you make a saving throw and fail, you can expend 1 Moxie Point to reroll it, and you must use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Pugnacious" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PUGNACIOUS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PUGNACIOUS</requirements>
+		<description>
+			<p>When you roll Initiative, you can remove one level of Exhaustion on yourself and regain your uses of Down But Not Out, Dig Deep, and Shake It Off.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Pugnacious" usage="1/Long Rest">
+			<description>When you roll Initiative, you can remove one level of Exhaustion on yourself and regain your uses of Down But Not Out, Dig Deep, and Shake It Off.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Fighting Spirit" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_FIGHTING_SPIRIT">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_FIGHTING_SPIRIT</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. When you do, you gain Temporary Hit Points equal to half of your maximum Hit Points, regain all your expended Moxie Points, and have Resistance to all damage except Force for the next minute.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Fighting Spirit" usage="1/Long Rest">
+			<description>When you are reduced to 0 HPs but not killed outright, you can drop to 1 HP instead. When you do, you gain THPs equal to half of your maximum HPs, regain all your expended Moxie Points, and have Resistance to all damage except Force for the next minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_EPIC_BOON">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Combat Prowess is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Epic Boon (Pugilist 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Peak Physical Condition" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_PEAK_PHYSICAL_CONDITION">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PEAK_PHYSICAL_CONDITION</requirements>
+		<description>
+			<p>Your strength and resilience are the stuff of legends. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Hale and Hearty.</strong></em> Your Strength and Constitution scores increase by 2, to a maximum of 23.</p>
+			<p class="indent"><em><strong>Sleep It Off.</strong></em> When you finish a Long Rest and you have the Exhaustion condition, you lose all levels of Exhaustion.</p>
+			<p class="indent"><em><strong>Vim and Vigor.</strong></em> When you finish a Short Rest, you regain Hit Points equal to twice your Pugilist level.</p>
+		</description>
+		<sheet alt="Peak Physical Condition">
+			<description>When you finish a Long Rest and you have the Exhaustion condition, you lose all levels of Exhaustion. &#13;
+			Additionally, when you finish a Short Rest, you regain {{tpc24:peak physical condition:hp}} HPs.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="2" alt="Peak Physical Condition" />
+			<stat name="constitution" value="2" alt="Peak Physical Condition" />
+			<stat name="strength:max" value="3" bonus="ability"/>
+			<stat name="constitution:max" value="3" bonus="ability"/>
+
+			<stat name="tpc24:peak physical condition:hp" value="level:pugilist" />
+			<stat name="tpc24:peak physical condition:hp" value="level:pugilist" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Fisticuffs Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_FISTICUFFS" />
+	<element name="Iron Chin Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_IRON_CHIN" />
+	<element name="Moxie Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE" />
+	<element name="Moxie: Brace Up Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP" />
+	<element name="Moxie: One-Two Punch Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_ONE_TWO_PUNCH" />
+	<element name="Moxie: Stick and Move Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE" />
+	<element name="Bloodied But Unbowed Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_BLOODIED_BUT_UNBOWED" />
+	<element name="Swagger Streak Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_SWAGGER_STREAK" />
+	<element name="Heavy Hitter Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HEAVY_HITTER" />
+	<element name="Pugilist Subclass Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PUGILIST_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Dig Deep Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEP" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_EXTRA_ATTACK" />
+	<element name="Haymaker Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAYMAKER" />
+	<element name="Moxie-Fueled Fists Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_FUELED_FISTS" />
+	<element name="Down But Not Out Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOWN_BUT_NOT_OUT" />
+	<element name="School of Hard Knocks Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_SCHOOL_OF_HARD_KNOCKS" />
+	<element name="Herculean Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HERCULEAN" />
+	<element name="Shake It Off Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_SHAKE_IT_OFF" />
+	<element name="Dig Deeper Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DIG_DEEPER" />
+	<element name="Unbreakable Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_UNBREAKABLE" />
+	<element name="Pugnacious Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PUGNACIOUS" />
+	<element name="Fighting Spirit Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_FIGHTING_SPIRIT" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_EPIC_BOON" />
+	<element name="Peak Physical Condition Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PEAK_PHYSICAL_CONDITION" />
+
+</elements>

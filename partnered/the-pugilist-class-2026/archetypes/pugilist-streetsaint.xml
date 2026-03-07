@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Street Saint</name>
+		<description>Street Saint from The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="pugilist-streetsaint.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-streetsaint.xml" />
+		</update>
+	</info>
+
+	<element name="Street Saint" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_STREET_SAINT">
+		<supports>TPC24 Pugilist Subclass</supports>
+		<description>
+			<p class="flavor">Devote Yourself to Prayer and Pummeling</p>
+			<p>Pugilists rise above the adversity they face. Those known as Street Saints do so with the aid of their deep and abiding faith in the gods. These Pugilists were tested and came out the other side with their righteous resolve to live in service to the gods strengthened. A resolve their gods have taken note of.</p>
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_LAY_ON_HANDS" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_HALLOWED_HANDS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_LAY_ON_HANDS" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE" level="6" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE" level="11" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_HALLOWED_HANDS" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Channel Divinity" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY</requirements>
+		<description>
+			<p>You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with two such effects: Fists of Faith and Grace of the Gods. Each time you use this subclass's Channel Divinity, you choose which effect from this subclass to create.</p>
+			<p class="indent">Once you use this subclass's Channel Divinity, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Fists of Faith.</strong></em> As a Bonus Action, you can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra 1d4 Radiant damage or 2d4 if the target is a Fiend or Undead.</p>
+			<p class="indent"><em><strong>Grace of the Gods.</strong></em> As a Bonus Action, you beseech the gods for their grace. For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result.</p>
+		</description>
+		<sheet alt="Channel Divinity" usage="1/Short Rest">
+			<description>Each time you use the Street Saint's Channel Divinity, you choose which effect from this subclass to create.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_FISTS_OF_FAITH" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_GRACE_OF_THE_GODS" />
+		</rules>
+	</element>
+	<element name="Fists of Faith" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_FISTS_OF_FAITH">
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra 1d4 Radiant damage or 2d4 if the target is a Fiend or Undead.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channel Divinity">
+			<description>You can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra 1d4 Radiant damage or 2d4 if the target is a Fiend or Undead.</description>
+		</sheet>
+	</element>
+	<element name="Grace of the Gods" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY_GRACE_OF_THE_GODS">
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you beseech the gods for their grace. For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channel Divinity">
+			<description>For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 3: Lay on Hands" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_LAY_ON_HANDS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_LAY_ON_HANDS</requirements>
+		<description>
+			<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to three times your Pugilist level.</p>
+			<p class="indent">As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.</p>
+			<p class="indent">You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.</p>
+		</description>
+		<sheet alt="Lay on Hands" action="Bonus Action" usage="{{tpc24:lay on hands:hp pool}}/Long Rest">
+			<description>You can touch a creature and draw power from the pool to restore a number of HPs to that creature, up to the maximum amount remaining in your pool. You can also expend 5 HPs from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore HPs to the creature.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:lay on hands:hp pool" value="level:pugilist" />
+			<stat name="tpc24:lay on hands:hp pool" value="level:pugilist" />
+			<stat name="tpc24:lay on hands:hp pool" value="level:pugilist" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Ravaged But Resolute" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE</requirements>
+		<description>
+			<p>When you use your Bloodied But Unbowed, you can fully replenish your Lay On Hands healing pool.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Ravaged But Resolute" usage="1/Long Rest">
+			<description>When you use your Bloodied But Unbowed, you can fully replenish your Lay On Hands healing pool.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Aura of Resilience" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE</requirements>
+		<description>
+			<p>When you use your Dig Deep, you can radiate a protective, unseeable aura in a 10-foot Emanation that originates from you for the next 10 minutes. The aura is inactive while you have the Incapacitated condition. Your allies within the aura gain Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+			<p class="indent">Once you use this feature, you must finish a Long Rest before you can use it again.</p>
+		</description>
+		<sheet alt="Aura of Resilience" usage="Dig Deep - 1/Long Rest">
+			<description>You can radiate an aura in a 10-ft Emanation that originates from you for the next 10 minutes. The aura is inactive while you have the Incapacitated condition. Your allies within the aura gain Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Hallowed Hands" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_STREET_SAINT_HALLOWED_HANDS">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_HALLOWED_HANDS</requirements>
+		<description>
+			<p>Once on each of your turns when you hit a creature with an Unarmed Strike or Pugilist weapon, you can expend a number of points from your Lay On Hands healing pool to deal extra Radiant damage to the target, to a maximum of your Pugilist level. The damage equals the number of points expended, or twice as much if the target is a Fiend or Undead.</p>
+		</description>
+		<sheet alt="Hallowed Hands" usage="1/Turn">
+			<description>When you hit a creature with an Unarmed Strike or Pugilist weapon, you can expend a number of points up to {{level:pugilist}} from your Lay On Hands healing pool to deal extra Radiant damage to the target. The damage equals the number of points expended, or twice as much if the target is a Fiend or Undead.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_CHANNEL_DIVINITY" />
+	<element name="Lay on Hands Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_LAY_ON_HANDS" />
+	<element name="Ravaged But Resolute Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_RAVAGED_BUT_RESOLUTE" />
+	<element name="Aura of Resilience Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_AURA_OF_RESILIENCE" />
+	<element name="Hallowed Hands Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_STREET_SAINT_HALLOWED_HANDS" />
+	
+</elements>

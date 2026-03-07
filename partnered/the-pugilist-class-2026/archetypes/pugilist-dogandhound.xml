@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dog and Hound</name>
+		<description>Dog and Hound from The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="pugilist-dogandhound.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-dogandhound.xml" />
+		</update>
+	</info>
+
+	<element name="Dog and Hound" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_DOG_AND_HOUND">
+		<supports>TPC24 Pugilist Subclass</supports>
+		<description>
+			<p class="flavor">Fight Side by Side with a Brawler's Best Friend</p>
+			<p>Pugilists know what it's like to be an underdog, so it's no surprise some form a battleforged bond with a canine companion. They're used to being disappointed by friends that walk on two legs but a friend on four is as loyal as they come. When a fight breaks out, this duo's bite is even worse than its bark.</p>
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND" />
+			<div class="reference">
+				<div element="ID_SVAC_PUGILIST2026_INFORMATION_HOUND" />
+			</div>
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND" level="11" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Brawler's Best Friend" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND</requirements>
+		<description>
+			<p>You summon and form a bond with a wild or stray dog, which draws strength from your bottomless well of resilience using the <strong>Hound</strong> stat block.</p>
+			<p class="indent">The hound is Friendly to you and your allies and obeys your commands. It flees if you die.</p>
+			<p class="indent"><em><strong>The Hound in Combat.</strong></em> In combat, the hound acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the hound to take the Bite action. If you have the Incapacitated condition, the hound acts on its own and isn't limited to the Dodge action.</p>
+			<p class="indent"><em><strong>Restoring or Replacing the Hound.</strong></em> If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie Points. The hound returns to life after 1 minute with all its Hit Points restored.</p>
+            <p class="indent">Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 feet of you. If you already have a hound from this feature, the old one vanishes when the new one appears.</p>
+           <div class="reference">
+				<div element="ID_SVAC_PUGILIST2026_INFORMATION_HOUND" />
+			</div>
+		</description>
+		<sheet alt="Brawler's Best Friend">
+			<description>You summon and form a bond with a wild or stray dog.The hound is Friendly to you and your allies and obeys your commands. It flees if you die. &#13;
+            In combat, the hound acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the hound to take the Bite action. If you have the Incapacitated condition, the hound acts on its own and isn't limited to the Dodge action. &#13;
+            If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie Points. The hound returns to life after 1 minute with all its HPs restored. Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 ft of you. If you already have a hound from this feature, the old one vanishes when the new one appears.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Hound" supports="TPC24 Hound" default="ID_SVAC_PUGILIST2026_COMPANION_PUGILIST_HOUND" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Mutt With Moxie" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE</requirements>
+		<description>
+			<p>You share everything with your faithful hound: food, shelter, even moxie. When you use abilities granted by your Moxie feature, your hound gains a benefit as well.</p>
+			<p class="indent"><em><strong>Brace Up.</strong></em> When you gain Temporary Hit Points from your Brace Up ability, your hound gains the same number of Temporary Hit Points.</p>
+			<p class="indent"><em><strong>One-Two Punch.</strong></em> When you use your One-Two Punch ability, your hound can make one or both attacks instead of you.</p>
+			<p class="indent"><em><strong>Stick and Move.</strong></em> When you use your Stick and Move ability, your hound can take your choice of the Dash, Disengage, or Help action.</p>
+		</description>
+		<sheet alt="Mutt With Moxie">
+			<description>When you take the Attack action on your turn, you can trasnsform one of your limbs, gaining the benefits below for 1 minute: &#13;
+			• When you gain THPs from your Brace Up ability, your hound gains the same number of THPs. &#13;
+			• When you use your One-Two Punch ability, your hound can make one or both attacks instead of you. &#13;
+			• When you use your Stick and Move ability, your hound can take your choice of the Dash, Disengage, or Help action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Coordinated Attack" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK</requirements>
+		<description>
+			<p>When you make an attack against a creature and your hound is within 5 feet of it, your hound can take a Reaction to give your attack Advantage. On a hit, you deal an extra 3d4 damage.</p>
+			<p class="indent">Additionally, whenever your hound hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type.</p>
+		</description>
+		<sheet alt="Coordinated Attack">
+			<description>When you make an attack against a creature and your hound is within 5 ft of it, your hound can take a Reaction to give your attack Advantage. On a hit, you deal an extra 3d4 damage. &#13;
+			Additionally, whenever your hound hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 11: Hound's Best Friend" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND</requirements>
+		<description>
+			<p>When a creature deals damage to your hound with an attack, you can take a Reaction to move up to half your Speed and make one melee attack with a Pugilist weapon or an Unarmed Strike against that creature.</p>
+		</description>
+		<sheet alt="Hound's Best Friend" action="Reaction">
+			<description>When a creature deals damage to your hound with an attack, you can to move up to half your Speed and make one melee attack with a Pugilist weapon or an Unarmed Strike against that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Off the Chain" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN</requirements>
+		<description>
+			<p>When a creature deals damage to your hound with an attack, you can take a Reaction to move up to half your Speed and make one melee attack with a Pugilist weapon or an Unarmed Strike against that creature.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending 3 Moxie Points (no action required).</p>
+		</description>
+		<sheet alt="Off the Chain" action="Reaction" usage="1/Long Rest">
+			<description>When your hound takes damage that causes it to become Bloodied or takes damage while it is Bloodied, you can let your hound off the chain. When you do so, the hound gains {{tpc24:off the chain:thp}} THPs and, for the next minute, its Speed increases by 15 ft and you can command it to use its Bite without taking a Bonus Action. &#13;
+            You can also restore your use of this feature by expending 3 Moxie Points.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:off the chain:thp" value="level:pugilist" />
+            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
+            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
+            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
+            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
+		</rules>
+	</element>
+
+	<!--Hound Companion and Information-->
+	<element name="Hound" type="Companion" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_COMPANION_PUGILIST_HOUND">
+		<compendium display="false" />
+		<supports>TPC24 Hound</supports>
+		<description />
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 plus your Constitution modifier</set>
+			<set name="hp">5 plus five times your Pugilist level (the hound has a number of Hit Dice [d8s] equal to your Pugilist level)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">13</set>
+			<set name="skills">PB equals your Proficiency Bonu</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_SVAC_PUGILIST2026_COMPANION_TRAIT_HOUND_PACK_BOND</set>
+			<set name="actions">ID_SVAC_PUGILIST2026_COMPANION_ACTION_HOUND_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" />
+			<stat name="companion:hp:max" value="5" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:hp:max" value="level:pugilist" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+	<element name="Pack Bond" type="Companion Trait" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_COMPANION_TRAIT_HOUND_PACK_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add {{proficency}} to any ability check or saving throw the beast makes.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_COMPANION_ACTION_HOUND_BITE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your Constitution modifier plus your Proficiency Bonus, reach 5 ft. Hit: 2d4 + 2 plus your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and Proficiency Bonus) or one of the following effects of your choice occur: the target has the Grappled condition, it has the Prone condition, or it is pushed 5 feet away from the hound.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Bonus equals your Constitution modifier plus your Proficiency Bonus, reach 5 ft. Hit: 2d4 + 2 plus your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and Proficiency Bonus) or one of the following effects of your choice occur: the target has the Grappled condition, it has the Prone condition, or it is pushed 5 ft away from the hound.</description>
+		</sheet>
+	</element>
+
+	<element name="Hound" type="Information" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_INFORMATION_HOUND">
+		<description>
+			<p style="margin-bottom:5px"><em>Medium Beast, Neutral</em></p>
+			<ul class="unstyled">
+				<li><strong>AC</strong> 12 plus your Constitution modifier</li>
+				<li><strong>HP</strong> 5 plus five times your Pugilist level (the hound has a number of Hit Dice [d8s] equal to your Pugilist level)</li>
+				<li><strong>Speed</strong> 40 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:2px;margin-bottom:10px">
+				<tr style="font-size:8px"><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td></tr>
+				<tr><td><b>STR</b></td><td>14</td><td>+2</td><td>+2+PB</td><td><b>DEX</b></td><td>14</td><td>+2</td><td>+2+PB</td><td><b>CON</b></td><td>15</td><td>+2</td><td>+2+PB</td></tr>
+				<tr><td><b>INT</b></td><td>3</td><td>-4</td><td>-4+PB</td><td><b>WIS</b></td><td>12</td><td>+1</td><td>+1+PB</td><td><b>CHA</b></td><td>13</td><td>+1</td><td>+1+PB</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Senses</strong> Darkvision 60 ft.; Passive Perception 11</li>
+				<li><strong>Languages</strong> Understands the languages you know</li>
+				<li><strong>CR</strong> None (XP 0; PB equals your Proficiency Bonus)</li>
+			</ul>
+			<h4 style="margin-top:5px">Traits</h4>
+			<ul class="unstyled">
+				<li><strong><em>Pack Bond.</em></strong> Add your Proficiency Bonus to any ability check or saving throw the beast makes.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite.</strong> Melee Attack Roll:</em> Bonus equals your Constitution modifier plus your Proficiency Bonus, reach 5 ft. <em>Hit:</em>  2d4 + 2 plus your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and Proficiency Bonus) or one of the following effects of your choice occur: the target has the Grappled condition, it has the Prone condition, or it is pushed 5 feet away from the hound.</li>
+			</ul>
+		</description>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Brawler's Best Friend Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_BRAWLERS_BEST_FRIEND" />
+	<element name="Mutt with Moxie Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_MUTT_WITH_MOXIE" />
+	<element name="Coordinated Attack Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_COORDINATED_ATTACK" />
+	<element name="Hound's Best Friend Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_HOUNDS_BEST_FRIEND" />
+	<element name="Off the Chain Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_DOG_AND_HOUND_OFF_THE_CHAIN" />
+	
+</elements>

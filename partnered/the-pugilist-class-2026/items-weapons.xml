@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons from The Pugilist Class (2026)</name>
+		<description>The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/items-weapons.xml" />
+		</update>
+	</info>
+	
+	<!--Weapons-->
+	<element name="Brass Knuckles" type="Weapon" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_WEAPON_BRASS_KNUCKLES">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_PUSH</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Push.</b> If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES</set>
+		</setters>
+	</element>
+
+	<element name="Hand Claws" type="Weapon" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_WEAPON_HAND_CLAWS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Vex.</b> If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CLAWS</set>
+		</setters>
+	</element>
+
+	<element name="Punch Knife" type="Weapon" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_WEAPON_PUNCH_KNIFE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_SAP</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Sap.</b> If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_PUNCH_KNIFE</set>
+		</setters>
+	</element>
+
+	<!--Weapon Masteries-->
+	<element name="Brass Knuckles (Push)" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_BRASS_KNUCKLES_PUSH">
+		<supports>Weapon Mastery, Simple, Melee</supports>
+		<requirements>ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</description>
+		</sheet>
+	</element>
+
+	<element name="Hand Claws (Vex)" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_HAND_CLAWS_VEX">
+		<supports>Weapon Mastery, Simple, Melee</supports>
+		<requirements>ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CLAWS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Punch Knife (Sap)" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_PUNCH_KNIFE_SAP">
+		<supports>Weapon Mastery, Simple, Melee</supports>
+		<requirements>ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_PUNCH_KNIFE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<!--Weapon Proficiencies-->
+	<element name="Weapon Proficiency (Brass Knuckles)" type="Proficiency" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Hand Claws)" type="Proficiency" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CLAWS">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Punch Knife)" type="Proficiency" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_PUNCH_KNIFE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES" type="Proficiency" />
+			<grant name="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CLAWS" type="Proficiency" />
+			<grant name="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_PUNCH_KNIFE" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Kensei Weapon Options-->
+
+	<element name="Kensei Weapon (Brass Knuckles)" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_KENSEI_WEAPON_BRASS_KNUCKLES">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Brass Knuckles if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Hand Claws)" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_KENSEI_WEAPON_HAND_CLAWS">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Hand Claws if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CLAWS" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Punch Knife)" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_KENSEI_WEAPON_PUNCH_KNIFE">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Punch Knife if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_SVAC_PUGILIST2026_PROFICIENCY_WEAPON_PROFICIENCY_PUNCH_KNIFE" />
+		</rules>
+	</element>
+
+</elements>

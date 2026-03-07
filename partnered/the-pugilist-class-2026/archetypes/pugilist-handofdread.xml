@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hand of Dread</name>
+		<description>Hand of Dread from The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="pugilist-handofdread.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-handofdread.xml" />
+		</update>
+	</info>
+
+	<element name="Hand of Dread" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_HAND_OF_DREAD">
+		<supports>TPC24 Pugilist Subclass</supports>
+		<description>
+			<p class="flavor">Dabble With Dread Powers</p>
+			<p>In your darkest hour, you pleaded for the strength to take what you wanted from the world and a dread power took notice. At first, you may have relished the cathartic rush that came with channeling your eldritch might to claim what you felt you deserved, but this pact came with strings attached. In times of distress you hear the entity whispering in the back of your mind, urging you to indulge your most base impulses.</p>
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH" />
+			<div element="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL" level="6" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH" level="11" />
+			<grant type="Archetype Feature" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Black Magic" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_BLACK_MAGIC">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_HAND_OF_DREAD_BLACK_MAGIC</requirements>
+		<description>
+			<p>As a result of your relationship with your dread power, you gain the following benefits.</p>
+			<p class="indent"><em><strong>Two Cantrips.</strong></em> You learn two cantrips of your choice from the Warlock spell list. Constitution is your spellcasting ability for your Black Magic spells.</p>
+			<p class="indent"><em><strong>Level 1 Spell.</strong></em> Choose a level 1 spell from the Warlock spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+			<p class="indent"><em><strong>Spell Change.</strong></em> Whenever you gain a new level, you can replace one of the spells you chose with this feature with a different spell of the same level from the Warlock spell list.</p>
+		</description>
+		<sheet alt="Black Magic">
+			<description>You know two Cantrips and always have a Level 1 spell from the Warlock spell list prepared. You can cast the Level 1 spell once without a spell slot once per Long Rest. You can also cast this spell with any spell slots you have. Whenever you gain a new level, you can replace one of the spells you chose with this feature with a different spell of the same level from the Warlock spell list. Constitution is your spellcasting ability for these cantrips and spell.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Warlock Cantrip (Black Magic)" supports="Warlock,0" number="2" />
+			<select type="Spell" name="Level 1 Spell (Black Magic)" supports="Warlock,0" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Dread Hand" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DREAD_HAND">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_DREAD_HAND</requirements>
+		<description>
+			<p>When you take the Attack action on your turn, you can manifest the evidence of your foul pledge to otherworldly powers. When you do, one of your limbs transmogrifies into a monstrous appearance reminiscent of your dread power and you gain the benefits below for 1 minute. Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Revenging Strike.</strong></em> When you are hit by a melee attack, you can take a Reaction to make an Unarmed Strike against the creature that attacked you if it is within reach.</p>
+			<p class="indent"><em><strong>Unslakeable Bloodlust.</strong></em> When you hit a target with an Unarmed Strike, you can roll the attack's damage dice twice and use either roll against the target.</p>
+			<p class="indent"><em><strong>Whirlwind of Violence.</strong></em> The first time you miss with an Unarmed Strike each turn, you can reroll the attack and must use the new result.</p>
+			<div class="sidebar">
+				<h5>DREAD POWERS</h5>
+				<p>A dread power can be any powerful malevolent entity capable of bestowing a portion of its power onto a mortal. Archdemons, Fey royalty, ancient liches, and unfathomable intelligences from beyond space and time are all possibilities.</p>
+			</div>
+		</description>
+		<sheet alt="Dread Hand" action="Attack Action" usage="1/Short Rest">
+			<description>When you take the Attack action on your turn, you can trasnsform one of your limbs, gaining the benefits below for 1 minute: &#13;
+			• When you are hit by a melee attack, you can take a Reaction to make an Unarmed Strike against the creature that attacked you if it is within reach. &#13;
+			• When you hit a target with an Unarmed Strike, you can roll the attack's damage dice twice and use either roll against the target. &#13;
+			• The first time you miss with an Unarmed Strike each turn, you can reroll the attack and must use the new result.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Deal with the Devil" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL</requirements>
+		<description>
+			<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p>
+			<p class="indent"><em><strong>Cloak of Shadows.</strong></em> You can cast <i>Invisibility</i> once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Mask of Many Faces.</strong></em> You can cast <i>Disguise Self</i> without expending a spell slot.</p>
+			<p class="indent"><em><strong>Otherworldly Walk.</strong></em> You can cast <i>Misty Step</i> once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Deal with the Devil" supports="TPC24 Deal with the Devil" />
+		</rules>
+	</element>
+	<element name="Cloak of Shadows" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_CLOAK_OF_SHADOWS">
+		<supports>TPC24 Deal with the Devil</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast <i>Invisibility</i> once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Deal with the Devil, Cloak of Shadows" usage="1/Short Rest">
+			<description>You can cast Invisibility once without a spell slot. Whenever you finish a Long Rest, you can change your Deal with the Devil choice.</description>
+		</sheet>
+	</element>
+	<element name="Mask of Many Faces" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_MASK_OF_MANY_FACES">
+		<supports>TPC24 Deal with the Devil</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast <i>Disguise Self</i> without expending a spell slot.</p>
+		</description>
+		<sheet alt="Deal with the Devil, Mask of Many Faces">
+			<description>You can cast Disguise Self without expending a spell slot. Whenever you finish a Long Rest, you can change your Deal with the Devil choice.</description>
+		</sheet>
+	</element>
+	<element name="Otherworldly Walk" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_OTHERWORLDLY_WALK">
+		<supports>TPC24 Deal with the Devil</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast <i>Misty Step</i> once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Deal with the Devil, Otherworldly Walk" usage="1/Short Rest">
+			<description>You can cast Misty Step once without a spell slot. Whenever you finish a Long Rest, you can change your Deal with the Devil choice.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 11: Grotesque Growth" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH</requirements>
+		<description>
+			<p>When you use your Dread Hand feature, you gain the benefits of the Enlarge effect of the <I>Enlarge/Reduce</I> spell and have a 10-foot reach.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you take a level of Exhaustion (no action required by you) to restore your use of it.</p>
+		</description>
+		<sheet alt="Grotesque Growth" usage="Dread Hand">
+			<description>When you use your Dread Hand feature, you gain the benefits of the Enlarge effect of the Enlarge/Reduce spell and have a 10-ft reach. You can take a level of Exhaustion to restore your use of this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Fountain of Viscera" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA">
+		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA</requirements>
+		<description>
+			<p>You can take a Magic action and expend 6 Moxie Points to attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a Dexterity saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead.</p>
+			<p class="indent">If this damage reduces the target to 0 Hit Points, it immediately dies as you rip a hole through it, creating a stomach-turning fountain of viscera. When this happens, each creature of your choice within a 30-foot Emanation originating from you must succeed on a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or have the Frightened condition for 1 minute. A creature that fails the saving throw can repeat the Wisdom saving throw again at the end of each of its turns, ending the Frightened condition on itself on a success.</p>
+			<p class="indent">Once you use this feature, you must finish a Long Rest before you can use it again.</p>
+		</description>
+		<sheet alt="Fountain of Viscera" usage="6 Moxie Points - 1/Long Rest">
+			<description>ou can attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a DC{{tpc24:fountain of viscera:dc}} Dexterity saving throw. On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead. &#13;
+			If this damage reduces the target to 0 HPs, it immediately dies, creating a fountain of viscera. Each creature of your choice within a 30-ft Emanation originating from you must succeed on a DC{{tpc24:fountain of viscera:dc}} Wisdom saving throw or have the Frightened condition for 1 minute. A creature that fails the saving throw can repeat the saving throw again at the end of each of its turns, ending the Frightened condition on itself on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="tpc24:fountain of viscera:dc" value="8" bonus="base" />
+			<stat name="tpc24:fountain of viscera:dc" value="proficiency" bonus="proficiency" />
+			<stat name="tpc24:fountain of viscera:dc" value="constitution:modifier" bonus="ability" />
+		</rules>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Black Magic Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_HAND_OF_DREAD_BLACK_MAGIC" />
+	<element name="Dread Hand Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_DREAD_HAND" />
+	<element name="Deal with the Devil Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL" />
+	<element name="Grotesque Growth Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_GROTESQUE_GROWTH" />
+	<element name="Fountain of Viscera Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_HAND_OF_DREAD_FOUNTAIN_OF_VISCERA" />
+	
+</elements>

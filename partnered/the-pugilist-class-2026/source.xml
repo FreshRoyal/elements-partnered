@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/source.xml" />
+		</update>
+	</info>
+	<element name="The Pugilist Class (2026)" type="Source" source="Core" id="ID_SVAC_SOURCE_THE_PUGILIST_CLASS_2026">
+		<description>
+			<p><b>Play a Pugilist if you want to play a streetfighting scrapper with swagger to spare.</b></p>
+			<p>Pugilists live a rough and tumble life that leaves them full of determination and recklessness, either from overconfidence or desperation. In a fight, they channel this strength of character to dig deep and snatch victory from the jaws of defeat, even when outarmed and outnumbered. Even when they ultimately fail, Pugilists go down swinging.</p>
+			<p>Included are:</p>
+			<ul>
+				<li>The Pugilist Class</li>
+				<li>6 subclasses</li>
+				<li>3 new weapons</li>
+				<li>23 new magic items</li>
+				<li>4 new Pugilist NPC stat blocks for use as friends or foes</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="abbreviation">PUGILIST2026</set>
+			<set name="url">https://marketplace.dndbeyond.com/PROMOTION/Q4AXQ3W?pid=DBQ4AXQ3W</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/TPC26.png</set>
+			<set name="author" abbreviation="SVAC" url="https://www.sterlingvermin.com/">Sterling Vermin Adventuring Co</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20260204</set>
+		</setters>
+	</element>
+
+</elements>

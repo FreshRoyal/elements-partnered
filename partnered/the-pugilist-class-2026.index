@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>The Pugilist Class (2026) by Sterling Vermin Adventuring Co</name>
+		<update version="1.0.0">
+			<file name="the-pugilist-class-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026.index" />
+		</update>
+	</info>
+	<files>
+		<file name="class-pugilist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/class-pugilist.xml" />
+        <file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/items-magic.xml" />
+        <file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/items-weapons.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/source.xml" />
+
+        <!--Archetypes-->
+        <file name="pugilist-dogandhound.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-dogandhound.xml" />
+        <file name="pugilist-handofdread.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-handofdread.xml" />
+        <file name="pugilist-pissandvinegar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-pissandvinegar.xml" />
+        <file name="pugilist-squaredcircle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-squaredcircle.xml" />
+        <file name="pugilist-streetsaint.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-streetsaint.xml" />
+        <file name="pugilist-sweetscience.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-sweetscience.xml" />
+	</files>
+</index>

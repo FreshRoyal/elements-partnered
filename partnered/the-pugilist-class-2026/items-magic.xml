@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>Magic Items from The Pugilist Class (2026)</description>
+		<update version="0.0.1">
+			<file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/items-magic.xml" />
+		</update>
+	</info>
+	
+	<element name="Bonebreakers" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_BONEBREAKERS">
+		<description>
+			<p>These unremarkable brass knuckles appear well used if not well loved. They are covered in dings and scratches accompanied by the odd stain.</p>
+			<p class="indent">You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature with this weapon, you can attempt to maim them. When you do so, the creature must succeed on a DC 19 Constitution saving throw or be maimed in one of the following ways of your choice. The creature remains maimed until it is targeted by a <i>Greater Restoration</i> spell or similar magic. Once this property is used, it can't be used again until the next dawn.</p>
+			<p class="indent"><strong><em>Broken Arm.</em></strong> The creature has Disadvantage on attack rolls with weapons and Unarmed Strikes.</p>
+			<p class="indent"><strong><em>Broken Leg.</em></strong> The creature's Speed is halved.</p>
+			<p class="indent"><strong><em>Broken Ribs.</em></strong> The creature has Disadvantage on Strength and Dexterity ability checks and saving throws.</p>
+			<p class="indent"><strong><em>Broken Skull.</em></strong> The creature has Disadvantage on Intelligence and Wisdom ability checks and saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass knuckles, constitution, saving throw, disadvantage, attack rolls, dexterity, strength, intelligence, wisdom, ability checks</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement" addition="by a Pugilist">true</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Brass Knuckles</set>
+		</setters>
+	</element>
+
+	<element name="Botle of Brew Tasting" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_BOTTLE_OF_BREW_TASTING">		
+		<description>
+			<p>This magic item is a glass bottle with a blank label on its front. When a potion or other liquid is poured into the bottle, the contents and effects of the liquid will appear, written in Common, on the label. This writing fades when the bottle is emptied of its contents.</p>
+		</description>
+		<setters>
+			<set name="keywords">potion, liquid</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Bottomless Box of Treats" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_BOTTOMLESS_BOX_OF_TREATS">		
+		<description>
+			<p>This wondrous item has 5 charges. When you reach inside this box, you can expend a charge to pull out a treat. A Beast that eats the snack regains 3d4 + 3 Hit Points and removes one level of Exhaustion or ends one condition on it: Blinded, Charmed, Deafened, Frightened, or Paralyzed.</p>
+			<p class="indent">The box regains 1d4 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">beast, hit points, exhaustion, condition, blinded, charmed, deafened, frightened, paralyzed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Club of Unconsciousness" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_CLUB_OF_UNCONSCIOUSNESS">
+		<description>
+			<p>You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you score a Critical Hit with this weapon, the target must succeed on a DC 15 Constitution saving throw or forget everything it saw and heard for the past minute and have the Unconscious condition for 1 minute. This condition ends early if the target takes damage or someone within 5 feet uses an action to wake it up.</p>
+		</description>
+		<setters>
+			<set name="keywords">club, greatclub, critical hit, constitution, saving throw, unconscious</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Club or Greatclub">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Club||Greatclub</set>
+			<set name="name-format">{{parent}} of Unconsciousness</set>
+		</setters>
+	</element>
+
+	<element name="Coin of Easy Living" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_COIN_OF_EASY_LIVING">		
+		<description>
+			<p>This Gold Piece appears mundane but, when flipped, always lands on the side you call while it is in the air. Additionally, you can summon it to your palm at will as a Bonus Action.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Everfull Stein" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_EVERFULL_STEIN">		
+		<description>
+			<p>This large ceramic stein is decorated with dwarven glyphs and topped with a brass lid that can be opened by thumb lever. While the lid is closed and the stein is empty, you can name a nonmagical ale, beer, or mead as a Bonus Action and the stein fills with that liquid.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, liquid</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Ferguson's Talons" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_FERGUSONS_TALONS">
+		<description>
+			<p>Legend has it these hand claws were crafted from the talons of a fabled feline. You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> The creature has Disadvantage on attack rolls with weapons and Unarmed Strikes.</p>
+			<p class="indent"><strong><em>Feline Form.</em></strong> While you are holding this magic weapon, you can cast <i>Polymorph</i> from it. When you do, the spell targets only yourself and the only form you can take is a Cat.</p>
+			<p class="indent"><strong><em>Nine Lives.</em></strong> The weapon has 9 charges. While holding it, when you fail a Death Saving Throw you can expend 1 charge (no action required) to succeed on it instead. The weapon loses this property if it has no charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">hand claws, darkvision, polymorph, cat, death saving throws</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Hand Claws">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Hand Claws</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Last Rites Rum" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_LAST_RITES_RUM">		
+		<description>
+			<p>When you drink this potion, you take 2d4 Necrotic damage. For 1 hour, you have Resistance to Radiant damage, and whenever you deal damage with your Unarmed Strike, it can deal your choice of Necrotic damage or its normal damage type.</p>
+			<p class="indent">This potion is thin and gray. It smells vaguely unpleasant but tastes like nothing at all.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Loaded Dice" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_LOADED_DICE">		
+		<description>
+			<p>This set of six-sided dice is indistinguishable from nonmagical dice. While attuned to the dice, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Luck.</em></strong> The dice have 6 charges and regain 1d6 charges daily at dawn. When you fail a D20 Test, you can expend 1 charge to reroll the test if you don't have the Incapacitated condition. You must use the new roll.</p>
+			<p class="indent"><strong><em>LOaded.</em></strong> When you use this magic item to play a dice game, you have Advantage on ability checks made to determine the winner of the game.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, liquid</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Mage Mashers" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_MAGE_MASHERS">
+		<description>
+			<p>These brass knuckles are forged from a dull black ore that sparkles with a prism of colors when held to light. They feel heavier than they look like they should be, especially to creatures capable of casting spells.</p>
+			<p class="indent">You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature that can cast at least one spell, that creature takes an extra 1d6 Force damage. Additionally when you deal damage to a creature that is Concentrating using this weapon, it has Disadvantage on the saving throw it makes to maintain Concentration.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass knuckles, force, damage, disadvantage, concentration, saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Brass Knuckles</set>
+		</setters>
+	</element>
+
+	<element name="Medallion of Mettle" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_MEDALLION_OF_METTLE">		
+		<description>
+			<p>This ostentatious medallion draws the eye of even casual onlookers. Whenever you gain Temporary Hit Points, you gain an additional 1d6 Temporary Hit Points.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporary hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">neck</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Mugfist Knuckles" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_MUGFIST_KNUCKLES">
+		<description>
+			<p>These brass knuckles are plated with cheap faux gold that wouldn't fool even the most casual observer.</p>
+			<p class="indent">You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you score a Critical Hit against an enemy with this magic weapon, you gain GP equal to the creature's Challenge Rating (or level if it does not have a Challenge Rating). Creatures with a Challenge Rating less than 1 count as 0.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass knuckles, critical hit, gp, gold</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Brass Knuckles</set>
+		</setters>
+	</element>
+
+	<element name="Penitent Pummelers" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_PENITENT_PUMMELERS">
+		<description>
+			<p>These brass knuckles are made of gold and etched with a holy symbol over each knuckle. You gain a +1 to attack rolls and damage rolls with this magic weapon.</p>
+			<p class="indent">When you hit a Fiend or Undead with this weapon, that creature takes an extra 1d12 Radiant damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass knuckles, holy symbol, fiend, undead, radiant, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Brass Knuckles</set>
+		</setters>
+	</element>
+
+	<element name="Poundwise Porter" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_POUNDWISE_PORTER">		
+		<description>
+			<p>For 1 minute after you drink this potion, you gain a +3 bonus to attack rolls and damage rolls with your Unarmed Strikes.</p>
+			<p class="indent">This potion is thick and dark brown topped with a cream colored froth.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Punchdrunk Punters" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_PUNCHDRUNK_PUNTERS">
+		<description>
+			<p>These beat up and well worn weapons smell as if they've spent a week at the bottom of a forgotten cask in a busy tavern.</p>
+			<p class="indent">You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. Each time you deal damage to a creature, it gains one Toxin Point for 1 hour, to a maximum of 10 Toxin Points. As a Magic action, you can cause a creature you can see to take 1d8 Poison damage for each Toxin Point it has, then it loses all Toxin Points.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass knuckles, hand claws, punch knife, poison, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Brass Knuckles, Hnad Claws, or Punch Knife">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Brass Knuckles||Hand Claws||Punch Knife</set>
+			<set name="name-format">Punchdrunk {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Ramuh's Katar" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_RAMUHS_KATAR">
+		<description>
+			<p>This punch knife style weapon is carved from a single chunk of superconductive dark violet metal that binds to the fist and forearm with black leather straps.</p>
+			<p class="indent">You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you score a Critical Hit against a creature with this magic weapon, that creature takes an extra 2d6 Lightning damage. Additionally, while you are attuned to this magical weapon, you have Advantage on Initiative rolls and you can cast <i>Jump</i> on yourself.</p>
+		</description>
+		<setters>
+			<set name="keywords">punch knife, critical hit, lightning, damage, inititative, advantage, spell, jump</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Punch Knife">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Punch Knife</set>
+		</setters>
+	</element>
+
+	<element name="Ratbite" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_RATBITE">
+		<description>
+			<p>These pungent weapons are made of leather of dubious origin with clumps of fur still attached. The leather grip fits snugly over the knuckles, with rat teeth and bits of bone sticking out the outward facing side. It gives off an unpleasant odor.</p>
+			<p class="indent">You gain a +3 bonus to attack rolls and damage rolls made with these magic weapons. While you are attuned to these weapons, you have Immunity to magical contagions. Any creature who takes damage from this Constitution saving throw or contract Sewer Plague. When you score a Critical Hit against a creature with these magic weapons, it takes an extra 2d4 Necrotic damage and has Disadvantage on saving throws against magical contagions for seven days.</p>
+		</description>
+		<setters>
+			<set name="keywords">hand claws, immunity, magical contagions, constitution, saving throw, sewer plague, critical hit, necrotic, damage, disadvantage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Hand Claws">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Hand Claws</set>
+		</setters>
+	</element>
+
+	<element name="Salamander Sauce" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_SALAMANDER_SAUCE">		
+		<description>
+			<p>When you drink this potion, you take 2d4 Fire damage. For 1 hour, you have Resistance to Cold damage and whenever you deal damage with your Unarmed Strike, it can deal your choice of Fire damage or its normal damage type.</p>
+			<p class="indent">This potion is bright red and smells of hot peppers and spices. It is typically drizzled on food prior to eating but it is possible to consume it straight from the bottle.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Yggdrasil's Tap" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_YGGDRASILS_TAP">
+		<description>
+			<p>This punch knife stands out from others being made of a dark wood that's harder than iron.</p>
+			<p class="indent">You gain a +1 bonus to attack rolls and damage rolls with this magic weapon. When you hit a creature with this weapon, you can roll and expend a Hit Point Die. The target takes extra Piercing damage equal to the roll, and you regain the same number of Hit Points.</p>
+		</description>
+		<setters>
+			<set name="keywords">punch knife, piercing, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Punch Knife">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Punch Knife</set>
+		</setters>
+	</element>
+	
+	<!--Animated Inks-->
+	<element name="Animated Inks (Uncommon)" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_ANIMATED_INKS_UNCOMMON">		
+		<description>
+			<p>When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum Challenge Rating is 1.</p>
+			<p class="indent">You can take the Magic action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 Hit Points, it returns to your body as a tattoo. Once you have used a Magic action to animate this tattoo, it can't be used again until 3 days pass.</p>
+			<p class="indent">If you end or lose Attunement to this magic item, the tattoo disappears and all other effects of this potion end.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Animated Inks (Rare)" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_ANIMATED_INKS_RARE">		
+		<description>
+			<p>When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum Challenge Rating is 3.</p>
+			<p class="indent">You can take the Magic action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 Hit Points, it returns to your body as a tattoo. Once you have used a Magic action to animate this tattoo, it can't be used again until 3 days pass.</p>
+			<p class="indent">If you end or lose Attunement to this magic item, the tattoo disappears and all other effects of this potion end.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Animated Inks (Very Rare)" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_ANIMATED_INKS_VERY_RARE">		
+		<description>
+			<p>When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum Challenge Rating is 7.</p>
+			<p class="indent">You can take the Magic action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 Hit Points, it returns to your body as a tattoo. Once you have used a Magic action to animate this tattoo, it can't be used again until 3 days pass.</p>
+			<p class="indent">If you end or lose Attunement to this magic item, the tattoo disappears and all other effects of this potion end.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<!--Leather Jerkin-->
+	<element name="Leather Jerkin, +1" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_LEATHER_JERKIN_1">
+		<description>
+			<p>You have a +1 bonus to Armor Class while you aren't wearing armor and wearing this garment. You can use a Shield and still gain the benefit of this magic item.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="[armor:none]" />		
+		</rules>
+	</element>
+
+	<element name="Leather Jerkin, +2" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_LEATHER_JERKIN_2">
+		<description>
+			<p>You have a +2 bonus to Armor Class while you aren't wearing armor and wearing this garment. You can use a Shield and still gain the benefit of this magic item.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="2" equipped="[armor:none]" />		
+		</rules>
+	</element>
+
+	<element name="Leather Jerkin, +3" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_LEATHER_JERKIN_3">
+		<description>
+			<p>You have a +3 bonus to Armor Class while you aren't wearing armor and wearing this garment. You can use a Shield and still gain the benefit of this magic item.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="3" equipped="[armor:none]" />		
+		</rules>
+	</element>
+	
+	<!--Spiked Collar-->
+	<element name="Spiked Collar, +1" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_SPIKED_COLLAR_1">
+		<description>
+			<p>This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a +1 bonus to its attack rolls and damage rolls while wearing this collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">attack, damage, beast</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Spiked Collar, +2" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_SPIKED_COLLAR_2">
+		<description>
+			<p>This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a +2 bonus to its attack rolls and damage rolls while wearing this collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">attack, damage, beast</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Spiked Collar, +3" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_SPIKED_COLLAR_3">
+		<description>
+			<p>This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a +3 bonus to its attack rolls and damage rolls while wearing this collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">attack, damage, beast</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<!--Studded Collar-->
+	<element name="Studded Collar, +1" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_STUDDED_COLLAR_1">
+		<description>
+			<p>This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a +1 bonus to Armor Class and saving throws while wearing this collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, saving throw, beast</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />		
+			<stat name="strength:save:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="dexterity:save:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="constitution:save:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="intelligence:save:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="wisdom:save:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="charisma:save:misc" value="1" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+		</rules>
+	</element>
+
+	<element name="Studded Collar, +2" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_STUDDED_COLLAR_2">
+		<description>
+			<p>This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a +2 bonus to Armor Class and saving throws while wearing this collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, saving throw, beast</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />		
+			<stat name="strength:save:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="dexterity:save:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="constitution:save:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="intelligence:save:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="wisdom:save:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="charisma:save:misc" value="2" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+		</rules>
+	</element>
+
+	<element name="Studded Collar, +3" type="Magic Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_MAGIC_ITEM_STUDDED_COLLAR_3">
+		<description>
+			<p>This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a +3 bonus to Armor Class and saving throws while wearing this collar.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, saving throw, beast</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />		
+			<stat name="strength:save:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="dexterity:save:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="constitution:save:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="intelligence:save:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="wisdom:save:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<stat name="charisma:save:misc" value="3" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+		</rules>
+	</element>
+
+</elements>
