@@ -24,6 +24,7 @@
 			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/OSWHAP.png</set>
 			<set name="author" abbreviation="RPP" url="https://rollandplaypress.com/">Roll &amp; Play Press</set>
 			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
 			<set name="release">20251206</set>
 		</setters>
 	</element>

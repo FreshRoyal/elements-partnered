@@ -18,6 +18,7 @@
 			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/VSSPP.png</set>
 			<set name="author" abbreviation="MHP" url="https://magehandpress.com/">Mage Hand Press</set>
 			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
 			<set name="release">20250404</set>
 		</setters>
 	</element>
