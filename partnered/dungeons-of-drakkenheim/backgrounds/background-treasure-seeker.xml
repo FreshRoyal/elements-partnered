@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Treasure Seeker</name>
-		<description>Treasure Seeker from Dungeons Of Drakkenheim</description>
-		<update version="0.0.1">
+		<description>Treasure Seeker from Dungeons of Drakkenheim</description>
+		<update version="0.0.2">
 			<file name="background-treasure-seeker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-treasure-seeker.xml" />
 		</update>
 	</info>
 
-	<element name="Treasure Seeker" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_TREASURE_SEEKER">
+	<element name="Treasure Seeker" type="Background" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_TREASURE_SEEKER">
 		<description>
 			<p>Lost treasure and valuable relics brought you to Drakkenheim. Perhaps the prospect of earning more gold than you can spend in your lifetime is too tantalizing to pass up, or alternatively you may seek items for their historical or religious significance.</p>
 			<ul class="unstyled">
@@ -89,7 +89,7 @@
 		</rules>
 	</element>
 
-	<element name="Feature: Detail-Oriented" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED">
+	<element name="Feature: Detail-Oriented" type="Background Feature" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED">
 		<supports>Background Feature</supports>
 		<description>
 			<p>You double your proficiency bonus when making any ability check to search the ruins of Drakkenheim.</p>
@@ -97,7 +97,7 @@
 		<sheet alt="Detail-Oriented" />
 	</element>
 
-	<element name="Variant: Soldier of Fortune" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_TREASURE_SEEKER_SOLDIER_OF_FORTUNE">
+	<element name="Variant: Soldier of Fortune" type="Background Variant" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_TREASURE_SEEKER_SOLDIER_OF_FORTUNE">
 		<supports>DOD Variant Treasure Seeker</supports>
 		<description>
 			<p>Rather than seeking your fortune from finding treasure, you seek yours by hunting down the brigands, outlaws, and monsters that now hide in Drakkenheim. You often take up dangerous bounties and follow wanted posters as long as the price is right. Danger is second nature to you and the horrors of the city are nothing compared to the thrill of the hunt, and the coin it can gain you.</p>

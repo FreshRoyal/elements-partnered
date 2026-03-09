@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Devoted Missionary</name>
-		<description>Devoted Missionary from Dungeons Of Drakkenheim</description>
-		<update version="0.0.1">
+		<description>Devoted Missionary from Dungeons of Drakkenheim</description>
+		<update version="0.0.2">
 			<file name="background-devoted-missionary.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-devoted-missionary.xml" />
 		</update>
 	</info>
 
-	<element name="Devoted Missionary" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_DEVOTED_MISSIONARY">
+	<element name="Devoted Missionary" type="Background" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_DEVOTED_MISSIONARY">
 		<description>
 			<p>You are a follower of one of the many religions of the world. Through either divine calling, visions, or prophecies, or because your church sent you as an envoy and representative, or maybe because you are seeking divine answers, you have made the journey to Drakkenheim. What sacred purpose lies in the ruins that you are quested with uncovering?</p>
 			<ul class="unstyled">
@@ -87,7 +87,7 @@
 		</rules>
 	</element>
 
-	<element name="Feature: Guided by Faith" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH">
+	<element name="Feature: Guided by Faith" type="Background Feature" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH">
 		<supports>Background Feature</supports>
 		<description>
 			<p>During a short rest you can give an inspiring pep talk to a number of allies equal to your proficiency bonus. Once in the next 8 hours, each of those allies can roll 1d4 and add it to the result of a single attack roll, ability check, or saving throw.</p>
@@ -95,7 +95,7 @@
 		<sheet alt="Guided by Faith" />
 	</element>
 
-	<element name="Variant: Stargazer" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_DEVOTED_MISSIONARY_STARGAZER">
+	<element name="Variant: Stargazer" type="Background Variant" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_DEVOTED_MISSIONARY_STARGAZER">
 		<supports>DOD Variant Devoted Missionary</supports>
 		<description>
 			<p>You witnessed the meteor 15 years ago. Whether you believe it to be destiny, a magical or divine calling, or just curiosity of the secrets that need to be unearthed, you are drawn to the crater. You believe that the crater holds some answers to the questions you seek, and that somewhere in Drakkenheim lies a truth beyond your comprehension. Your pilgrimage to Drakkenheim may have taken you weeks, months or even years but you had to come - something called you here and you must discover its origin.</p>

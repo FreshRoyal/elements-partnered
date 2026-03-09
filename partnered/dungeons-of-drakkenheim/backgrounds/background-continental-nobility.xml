@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Continental Nobility</name>
-		<description>Continental Nobility from Dungeons Of Drakkenheim</description>
-		<update version="0.0.1">
+		<description>Continental Nobility from Dungeons of Drakkenheim</description>
+		<update version="0.0.2">
 			<file name="background-continental-nobility.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-continental-nobility.xml" />
 		</update>
 	</info>
 
-	<element name="Continental Nobility" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_CONTINENTAL_NOBILITY">
+	<element name="Continental Nobility" type="Background" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_CONTINENTAL_NOBILITY">
 		<prerequisite>Any class except sorcerer, warlock, or wizard</prerequisite>
 		<requirements>!(ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_CLASS_WIZARD|ID_WOTC_PHB24_CLASS_SORCERER|ID_WOTC_PHB24_CLASS_WARLOCK|ID_WOTC_PHB24_CLASS_WIZARD)</requirements>
 		<description>
@@ -90,7 +90,7 @@
 		</rules>
 	</element>
 
-	<element name="Feature: Noble Confidence" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE">
+	<element name="Feature: Noble Confidence" type="Background Feature" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE">
 		<supports>Background Feature</supports>
 		<description>
 			<p>During a short rest you can give an inspiring pep talk to a number of allies equal to your proficiency bonus. Once in the next 8 hours, each of those allies can roll 1d4 and add it to the result of a single attack roll, ability check, or saving throw.</p>
@@ -98,7 +98,7 @@
 		<sheet alt="Noble Confidence" />
 	</element>
 
-	<element name="Variant: Last of the Line" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_CONTINENTAL_NOBILITY_LAST_OF_THE_LINE">
+	<element name="Variant: Last of the Line" type="Background Variant" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_CONTINENTAL_NOBILITY_LAST_OF_THE_LINE">
 		<supports>DOD Variant Continental Nobility</supports>
 		<description>
 			<p>In the years following the destruction of Drakkenheim, calamity and misfortune wracked your house leaving you the sole surviving heir. Penniless and without land, you have come to Drakkenheim to rebuild your family’s legacy.</p>

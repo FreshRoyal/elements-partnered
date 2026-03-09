@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Survivor</name>
-		<description>Survivor from Dungeons Of Drakkenheim</description>
-		<update version="0.0.1">
+		<description>Survivor from Dungeons of Drakkenheim</description>
+		<update version="0.0.2">
 			<file name="background-survivor.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-survivor.xml" />
 		</update>
 	</info>
 
-	<element name="Survivor" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_SURVIVOR">
+	<element name="Survivor" type="Background" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_SURVIVOR">
 		<description>
 			<p>Not everyone left Drakkenheim after the meteor. Some stayed behind, searching the ruins for things they lost: friends and family, or just seeking out treasure and artefacts. You know what places in the city are the most dangerous, what paths are the best to take, and often have an idea of the fastest ways to travel. Despite the Haze, and dangers, you've managed to survive, but carry the weight of Drakkenheim's madness with you.</p>
 			<ul class="unstyled">
@@ -88,7 +88,7 @@
 		</rules>
 	</element>
 
-	<element name="Feature: Makeshift Meals" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS">
+	<element name="Feature: Makeshift Meals" type="Background Feature" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS">
 		<supports>Background Feature</supports>
 		<description>
 			<p>You know how to purify food and rations found in the ruins. When you take a short rest, you prepare a meal for a number of creatures equal to your proficiency bonus. Creatures who consume the food regain hit points equal to your level. Once they do, they can't regain hit points from another one of your meals until they finish a long rest.</p>
@@ -96,7 +96,7 @@
 		<sheet alt="Makeshift Meals" />
 	</element>
 
-	<element name="Variant: Veteran of the Civil War" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_SURVIVOR_VETERAN_OF_THE_CIVIL_WAR">
+	<element name="Variant: Veteran of the Civil War" type="Background Variant" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_SURVIVOR_VETERAN_OF_THE_CIVIL_WAR">
 		<supports>DOD Variant Survivor</supports>
 		<description>
 			<p>You survived the civil war that ravaged Westemär, either as a soldier or fleeing refugee. The war took something from you and changed you. It may be that you had to do things that went against your morals, or perhaps you lost friends and family in the bloodshed. Regardless, you walked away with scars that will not easily heal.</p>

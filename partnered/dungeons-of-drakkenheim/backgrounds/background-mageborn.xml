@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Mageborn</name>
-		<description>Mageborn from Dungeons Of Drakkenheim</description>
-		<update version="0.0.1">
+		<description>Mageborn from Dungeons of Drakkenheim</description>
+		<update version="0.0.2">
 			<file name="background-mageborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim/backgrounds/background-mageborn.xml" />
 		</update>
 	</info>
 
-	<element name="Mageborn" type="Background" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_MAGEBORN">
+	<element name="Mageborn" type="Background" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_MAGEBORN">
 		<prerequisite>You must be a bard, sorcerer, warlock, or wizard</prerequisite>
 		<requirements>ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_CLASS_WIZARD|ID_WOTC_PHB24_CLASS_BARD|ID_WOTC_PHB24_CLASS_SORCERER|ID_WOTC_PHB24_CLASS_WARLOCK|ID_WOTC_PHB24_CLASS_WIZARD</requirements>
 		<description>
@@ -92,7 +92,7 @@
 		</rules>
 	</element>
 
-	<element name="Feature: Bookworm" type="Background Feature" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_BOOKWORM">
+	<element name="Feature: Bookworm" type="Background Feature" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_FEATURE_BOOKWORM">
 		<supports>Background Feature</supports>
 		<description>
 			<p>Once per day after you finish a long rest, you can spend one hour to create a spell scroll. You need only paper and ink to do so, and the level of the spell you can create equals one half your proficiency bonus (rounded down) or lower. The scroll you create must be a spell you know or have prepared. It crumbles to dust in 24 hours.</p>
@@ -100,7 +100,7 @@
 		<sheet alt="Bookworm" />
 	</element>
 
-	<element name="Variant: Malfeasant Mage" type="Background Variant" source="Dungeons Of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_CONTINENTAL_NOBILITY_LAST_OF_THE_LINE">
+	<element name="Variant: Malfeasant Mage" type="Background Variant" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_BACKGROUND_VARIANT_CONTINENTAL_NOBILITY_LAST_OF_THE_LINE">
 		<supports>DOD Variant Mageborn</supports>
 		<description>
 			<p>You were expelled from the Amethyst Academy for some trespass, real or imagined, or perhaps you were never taken in by them and learned magic on your own. Common folk are often mistrustful of spellcasters who do not wear the Amethyst Academy colours, so you may need to hide your identity and abilities, especially from the Amethyst Academy and the Knights of the Silver Order.</p>
