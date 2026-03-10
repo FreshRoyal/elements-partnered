@@ -9,7 +9,7 @@
 	</info>
 
 	<element name="Sweet Science" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_SWEET_SCIENCE">
-		<supports>TPC24 Pugilist Subclass</supports>
+		<supports>PUGILIST2026 Pugilist Subclass</supports>
 		<description>
 			<p class="flavor">Float Like a Butterfly, Sting Like a Bee</p>
 			<p>Pugilists who practice the Sweet Science hit hard, fast, and often. These Pugilists sometimes battle for the entertainment of the upper classes, but just as often duke it out in back alleys and bars where their next breath depends on a knockout.</p>
@@ -46,11 +46,11 @@
 			<p class="indent">If you reduce the damage to 0, you can make an Unarmed Strike or attack with a Pugilist weapon against a creature within your reach as part of the same Reaction.</p>
 		</description>
 		<sheet alt="Cross Counter" action="Reaction" usage="Moxie Point">
-			<description>When you take damage from a melee attack, you can reduce the damage dealt to you by that attack by 1d10+{{tpc24:cross counter:modifier}}. If you reduce the damage to 0, you can make an Unarmed Strike or attack with a Pugilist weapon against a creature within your reach as part of the same Reaction.</description>
+			<description>When you take damage from a melee attack, you can reduce the damage dealt to you by that attack by 1d10+{{pugilist2026:cross counter:modifier}}. If you reduce the damage to 0, you can make an Unarmed Strike or attack with a Pugilist weapon against a creature within your reach as part of the same Reaction.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:cross counter:modifier" value="strength:modifier" />
-			<stat name="tpc24:cross counter:modifier" value="level:pugilist" />
+			<stat name="pugilist2026:cross counter:modifier" value="strength:modifier" />
+			<stat name="pugilist2026:cross counter:modifier" value="level:pugilist" />
 		</rules>
 	</element>
 
@@ -93,12 +93,12 @@
 			<p>When you score a Critical Hit against a creature, it must make a Constitution saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</p>
 		</description>
 		<sheet>
-			<description>When you score a Critical Hit against a creature, it must make a DC{{tpc24:coldcock:dc}} Constitution saving throw. On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</description>
+			<description>When you score a Critical Hit against a creature, it must make a DC{{pugilist2026:coldcock:dc}} Constitution saving throw. On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:coldcock:dc" value="8" bonus="base" />
-			<stat name="tpc24:coldcock:dc" value="proficiency" bonus="proficiency" />
-			<stat name="tpc24:coldcock:dc" value="strength:modifier" bonus="ability" />
+			<stat name="pugilist2026:coldcock:dc" value="8" bonus="base" />
+			<stat name="pugilist2026:coldcock:dc" value="proficiency" bonus="proficiency" />
+			<stat name="pugilist2026:coldcock:dc" value="strength:modifier" bonus="ability" />
 		</rules>
 	</element>
 	<element name="Uppercut" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_SWEET_SCIENCE_KNOCK_OUT_UPPERCUT">

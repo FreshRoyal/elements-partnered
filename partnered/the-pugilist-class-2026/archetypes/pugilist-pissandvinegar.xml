@@ -9,7 +9,7 @@
 	</info>
 
 	<element name="Piss and Vinegar" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_PISS_AND_VINEGAR">
-		<supports>TPC24 Pugilist Subclass</supports>
+		<supports>PUGILIST2026 Pugilist Subclass</supports>
 		<description>
 			<p class="flavor">Throw Barbs and Hands</p>
 			<p>Some Pugilists revel in their reputations as heels, happily playing up their bad behavior for notoriety. Despised by their enemies for their obscene curses and dirty tricks, these Pugilists take pride in their ability to provoke and willingness to win fights at any cost.</p>
@@ -37,9 +37,9 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-			<stat name="tpc24:bad attitude:modifier" value="1" bonus="base" />
-			<stat name="tpc24:bad attitude:modifier" value="strength:modifier" bonus="base" />
-			<stat name="intimidation:misc" value="tpc24:bad attitude:modifier" />
+			<stat name="pugilist2026:bad attitude:modifier" value="1" bonus="base" />
+			<stat name="pugilist2026:bad attitude:modifier" value="strength:modifier" bonus="base" />
+			<stat name="intimidation:misc" value="pugilist2026:bad attitude:modifier" />
 		</rules>
 	</element>
 	
@@ -50,13 +50,13 @@
 			<p class="indent">The saving throw DC for this and all other features from this subclass equals 8 plus your Constitution modifier and Proficiency Bonus.</p>
 		</description>
 		<sheet alt="Salty Salute" action="Bonus Action">
-			<description>You can provoke a creature within 60 ft that can see or hear you. That creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 1d{{tpc24:fisticuffs:dice}}+{{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
-			<description level="17">You can provoke a creature within 60 ft that can see or hear you. That creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 2d6+{{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
+			<description>You can provoke a creature within 60 ft that can see or hear you. That creature must succeed on a DC{{pugilist2026:salty salute:dc}} Wisdom saving throw or take 1d{{pugilist2026:fisticuffs:dice}}+{{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
+			<description level="17">You can provoke a creature within 60 ft that can see or hear you. That creature must succeed on a DC{{pugilist2026:salty salute:dc}} Wisdom saving throw or take 2d6+{{constitution:modifier}} Psychic damage and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:salty salute:dc" value="8" bonus="base" />
-			<stat name="tpc24:salty salute:dc" value="proficiency" bonus="proficiency" />
-			<stat name="tpc24:salty salute:dc" value="constitution:modifier" bonus="ability" />
+			<stat name="pugilist2026:salty salute:dc" value="8" bonus="base" />
+			<stat name="pugilist2026:salty salute:dc" value="proficiency" bonus="proficiency" />
+			<stat name="pugilist2026:salty salute:dc" value="constitution:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -83,7 +83,7 @@
 			<p>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
 		</description>
 		<sheet usage="Dirty Tricks - 1/Short Rest">
-			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a DC{{tpc24:salty salute:dc}} Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</description>
+			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a DC{{pugilist2026:salty salute:dc}} Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</description>
 		</sheet>
 	</element>
 	<element name="Low Blow" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_LOW_BLOW">
@@ -92,7 +92,7 @@
 			<p>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</p>
 		</description>
 		<sheet usage="Dirty Tricks - 1/Short Rest">
-			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a DC{{tpc24:salty salute:dc}} Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</description>
+			<description>When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a DC{{pugilist2026:salty salute:dc}} Strength saving throw or attacks against the creature have Advantage until the end of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Pocket Sand" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_PISS_AND_VINEGAR_DIRTY_TRICKS_POCKET_SAND">
@@ -101,7 +101,7 @@
 			<p>As a Bonus Action, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the Blinded condition until the end of its next turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Dirty Tricks - 1/Short Rest">
-			<description>You toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a DC{{tpc24:salty salute:dc}} Constitution saving throw or have the Blinded condition until the end of its next turn.</description>
+			<description>You toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a DC{{pugilist2026:salty salute:dc}} Constitution saving throw or have the Blinded condition until the end of its next turn.</description>
 		</sheet>
 	</element>
 
@@ -112,8 +112,8 @@
 			<p class="indent">Once you use this feature, you must finish a Short or Long Rest before you use it again. You can also restore your use of it by expending 3 Moxie Points (no action required).</p>
 		</description>
 		<sheet alt="Mean Old Cuss" action="Bonus Action" usage="1/Short Rest or 3 Moxie Points">
-			<description>You can choose up to {{level:pugilist}} targets within 30 ft of yourself that can see or hear you. Each chosen creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 1d{{tpc24:fisticuffs:dice}}+{{constitution:modifier}} Psychic damage and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</description>
-			<description level="17">You can choose up to {{level:pugilist}} targets within 30 ft of yourself that can see or hear you. Each chosen creature must succeed on a DC{{tpc24:salty salute:dc}} Wisdom saving throw or take 2d6+{{constitution:modifier}} Psychic damage and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</description>
+			<description>You can choose up to {{level:pugilist}} targets within 30 ft of yourself that can see or hear you. Each chosen creature must succeed on a DC{{pugilist2026:salty salute:dc}} Wisdom saving throw or take 1d{{pugilist2026:fisticuffs:dice}}+{{constitution:modifier}} Psychic damage and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</description>
+			<description level="17">You can choose up to {{level:pugilist}} targets within 30 ft of yourself that can see or hear you. Each chosen creature must succeed on a DC{{pugilist2026:salty salute:dc}} Wisdom saving throw or take 2d6+{{constitution:modifier}} Psychic damage and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn.</description>
 		</sheet>
 	</element>
 

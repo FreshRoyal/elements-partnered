@@ -9,7 +9,7 @@
 	</info>
 
 	<element name="Street Saint" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_STREET_SAINT">
-		<supports>TPC24 Pugilist Subclass</supports>
+		<supports>PUGILIST2026 Pugilist Subclass</supports>
 		<description>
 			<p class="flavor">Devote Yourself to Prayer and Pummeling</p>
 			<p>Pugilists rise above the adversity they face. Those known as Street Saints do so with the aid of their deep and abiding faith in the gods. These Pugilists were tested and came out the other side with their righteous resolve to live in service to the gods strengthened. A resolve their gods have taken note of.</p>
@@ -71,13 +71,13 @@
 			<p class="indent">As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.</p>
 			<p class="indent">You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.</p>
 		</description>
-		<sheet alt="Lay on Hands" action="Bonus Action" usage="{{tpc24:lay on hands:hp pool}}/Long Rest">
+		<sheet alt="Lay on Hands" action="Bonus Action" usage="{{pugilist2026:lay on hands:hp pool}}/Long Rest">
 			<description>You can touch a creature and draw power from the pool to restore a number of HPs to that creature, up to the maximum amount remaining in your pool. You can also expend 5 HPs from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore HPs to the creature.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:lay on hands:hp pool" value="level:pugilist" />
-			<stat name="tpc24:lay on hands:hp pool" value="level:pugilist" />
-			<stat name="tpc24:lay on hands:hp pool" value="level:pugilist" />
+			<stat name="pugilist2026:lay on hands:hp pool" value="level:pugilist" />
+			<stat name="pugilist2026:lay on hands:hp pool" value="level:pugilist" />
+			<stat name="pugilist2026:lay on hands:hp pool" value="level:pugilist" />
 		</rules>
 	</element>
 

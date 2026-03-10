@@ -152,20 +152,20 @@
 		</description>
 		<sheet alt="Fisticuffs">
 			<description>You can make an Unarmed Strike as a Bonus Action. &#13;
-			Additionally, your Unarmed Strikes and Pugilist weapons (which are Simple Melee or Improvised weapons) deal 1d{{tpc24:fisticuffs:dice}}+{{strength:modifier}} Bludgeoning damage, and Improvised weapons count as having the Sap property for you.</description>
+			Additionally, your Unarmed Strikes and Pugilist weapons (which are Simple Melee or Improvised weapons) deal 1d{{pugilist2026:fisticuffs:dice}}+{{strength:modifier}} Bludgeoning damage, and Improvised weapons count as having the Sap property for you.</description>
 			<description level="17">You can make an Unarmed Strike as a Bonus Action. &#13;
 			Additionally, your Unarmed Strikes and Pugilist weapons (which are Simple Melee or Improvised weapons) deal 2d6+{{strength:modifier}} Bludgeoning damage, and Improvised weapons count as having the Sap property for you.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:fisticuffs:dice" value="8" bonus="fisticuffs" />
-			<stat name="tpc24:fisticuffs:dice" value="10" bonus="fisticuffs" level="5" />
-			<stat name="tpc24:fisticuffs:dice" value="12" bonus="fisticuffs" level="11" />
+			<stat name="pugilist2026:fisticuffs:dice" value="8" bonus="fisticuffs" />
+			<stat name="pugilist2026:fisticuffs:dice" value="10" bonus="fisticuffs" level="5" />
+			<stat name="pugilist2026:fisticuffs:dice" value="12" bonus="fisticuffs" level="11" />
 
-			<select type="Class Feature" name="Improvised Weapon (Sap)" supports="TPC24 Improvised Weapon Sap" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_IMPROVISED_WEAPON_SAP" />
+			<select type="Class Feature" name="Improvised Weapon (Sap)" supports="PUGILIST2026 Improvised Weapon Sap" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_IMPROVISED_WEAPON_SAP" />
 		</rules>
 	</element>
 	<element name="Improvised Weapon (Sap)" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_MASTERY_PROPERTY_IMPROVISED_WEAPON_SAP">
-		<supports>TPC24 Improvised Weapon Sap</supports>
+		<supports>PUGILIST2026 Improvised Weapon Sap</supports>
 		<requirements>ID_ALE_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS</requirements>
 		<compendium display="false" />
 		<description>
@@ -203,42 +203,42 @@
 			<p class="indent"><em><strong>Stick and Move.</strong></em> You can use a Bonus Action and expend 1 Moxie Point to make an Unarmed Strike and take the Dash or Disengage action.</p>
 		</description>
 		<sheet alt="Moxie">
-			<description>You have {{tpc24:moxie:points}} Moxie Points. You regain any spent points after a Short Rest.</description>
+			<description>You have {{pugilist2026:moxie:points}} Moxie Points. You regain any spent points after a Short Rest.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:moxie:points" value="2" bonus="base" />
-			<stat name="tpc24:moxie:points" value="3" bonus="base" level="4" />
-			<stat name="tpc24:moxie:points" value="4" bonus="base" level="6" />
-			<stat name="tpc24:moxie:points" value="5" bonus="base" level="8" />
-			<stat name="tpc24:moxie:points" value="6" bonus="base" level="10" />
-			<stat name="tpc24:moxie:points" value="7" bonus="base" level="12" />
-			<stat name="tpc24:moxie:points" value="8" bonus="base" level="14" />
-			<stat name="tpc24:moxie:points" value="9" bonus="base" level="16" />
-			<stat name="tpc24:moxie:points" value="10" bonus="base" level="18" />
-			<stat name="tpc24:moxie:points" value="11" bonus="base" level="19" />
-			<stat name="tpc24:moxie:points" value="12" bonus="base" level="20" />
+			<stat name="pugilist2026:moxie:points" value="2" bonus="base" />
+			<stat name="pugilist2026:moxie:points" value="3" bonus="base" level="4" />
+			<stat name="pugilist2026:moxie:points" value="4" bonus="base" level="6" />
+			<stat name="pugilist2026:moxie:points" value="5" bonus="base" level="8" />
+			<stat name="pugilist2026:moxie:points" value="6" bonus="base" level="10" />
+			<stat name="pugilist2026:moxie:points" value="7" bonus="base" level="12" />
+			<stat name="pugilist2026:moxie:points" value="8" bonus="base" level="14" />
+			<stat name="pugilist2026:moxie:points" value="9" bonus="base" level="16" />
+			<stat name="pugilist2026:moxie:points" value="10" bonus="base" level="18" />
+			<stat name="pugilist2026:moxie:points" value="11" bonus="base" level="19" />
+			<stat name="pugilist2026:moxie:points" value="12" bonus="base" level="20" />
 			
-			<select type="Class Feature" name="Brace Up" supports="TPC24 Brace Up" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP"/>
-			<select type="Class Feature" name="One-Two Punch" supports="TPC24 One Two Punch" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_ONE_TWO_PUNCH" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_ONE_TWO_PUNCH"/>
-			<select type="Class Feature" name="Stick and Move" supports="TPC24 Stick and Move" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE"/>
+			<select type="Class Feature" name="Brace Up" supports="PUGILIST2026 Brace Up" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_BRACE_UP"/>
+			<select type="Class Feature" name="One-Two Punch" supports="PUGILIST2026 One Two Punch" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_ONE_TWO_PUNCH" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_ONE_TWO_PUNCH"/>
+			<select type="Class Feature" name="Stick and Move" supports="PUGILIST2026 Stick and Move" default="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE" requirements="!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_MOXIE_STICK_AND_MOVE"/>
 		</rules>
 	</element>
 	<element name="Brace Up" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_BRACE_UP">
-		<supports>TPC24 Brace Up</supports>
+		<supports>PUGILIST2026 Brace Up</supports>
 		<description>
 			<p>You can use a Bonus Action and expend 1 Moxie Point to brace for attacks. When you do so, roll your Fisticuffs die, and gain a number of Temporary Hit Points equal to the number rolled plus your Pugilist level and your Constitution modifier. These Temporary Hit Points vanish if any remain after 10 minutes.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Moxie Point">
-			<description>You can brace for attacks. When you do so, roll your Fisticuffs die, and gain 1d{{tpc24:fisticuffs:dice}}+{{tpc24:brace up:modifier}} THPs. These THPs vanish if any remain after 10 minutes.</description>
-			<description level="17">You can brace for attacks. When you do so, roll your Fisticuffs die, and gain 2d6+{{tpc24:brace up:modifier}} THPs. These THPs vanish if any remain after 10 minutes.</description>
+			<description>You can brace for attacks. When you do so, roll your Fisticuffs die, and gain 1d{{pugilist2026:fisticuffs:dice}}+{{pugilist2026:brace up:modifier}} THPs. These THPs vanish if any remain after 10 minutes.</description>
+			<description level="17">You can brace for attacks. When you do so, roll your Fisticuffs die, and gain 2d6+{{pugilist2026:brace up:modifier}} THPs. These THPs vanish if any remain after 10 minutes.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:brace up:modifier" value="level:pugilist" />
-			<stat name="tpc24:brace up:modifier" value="constitution:modifier" />
+			<stat name="pugilist2026:brace up:modifier" value="level:pugilist" />
+			<stat name="pugilist2026:brace up:modifier" value="constitution:modifier" />
 		</rules>
 	</element>
 	<element name="One-Two Punch" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_ONE_TWO_PUNCH">
-		<supports>TPC24 One Two Punch</supports>
+		<supports>PUGILIST2026 One Two Punch</supports>
 		<description>
 			<p>You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action.</p>
 		</description>
@@ -247,7 +247,7 @@
 		</sheet>
 	</element>
 	<element name="Stick and Move" type="Class Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_CLASS_FEATURE_PUGILIST_MOXIE_STICK_AND_MOVE">
-		<supports>TPC24 Stick and Move</supports>
+		<supports>PUGILIST2026 Stick and Move</supports>
 		<description>
 			<p>You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action.</p>
 		</description>
@@ -263,13 +263,13 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet alt="Bloodied But Unbowed" action="Reaction" usage="1/Short Rest">
-			<description>When you take damage, you can regain all your expended Moxie Points. If you are Bloodied when you take this Reaction, you also gain {{tpc24:bloodied but unbowed:thp}} THPs. These THPs vanish if any remain when you finish a Short Rest.</description>
+			<description>When you take damage, you can regain all your expended Moxie Points. If you are Bloodied when you take this Reaction, you also gain {{pugilist2026:bloodied but unbowed:thp}} THPs. These THPs vanish if any remain when you finish a Short Rest.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
-			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
-			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
-			<stat name="tpc24:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="pugilist2026:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="pugilist2026:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="pugilist2026:bloodied but unbowed:thp" value="level:pugilist" />
+			<stat name="pugilist2026:bloodied but unbowed:thp" value="level:pugilist" />
 		</rules>
 	</element>
 
@@ -279,7 +279,7 @@
 			<p>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can expend a Moxie Point to attempt to swagger your way to success. Roll your Fisticuffs die and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet alt="Swagger Streak" usage="Moxie Point">
-			<description>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can attempt to swagger your way to success. Roll 1d{{tpc24:fisticuffs:dice}} and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</description>
+			<description>When you fail a Strength, Dexterity, Constitution, or Charisma check, you can attempt to swagger your way to success. Roll 1d{{pugilist2026:fisticuffs:dice}} and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</description>
 			<description level="17">When you fail a Strength, Dexterity, Constitution, or Charisma check, you can attempt to swagger your way to success. Roll 2d6 and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest.</description>
 		</sheet>
 	</element>
@@ -301,7 +301,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Pugilist Subclass" supports="TPC24 Pugilist Subclass" level="3" />
+			<select type="Archetype" name="Pugilist Subclass" supports="PUGILIST2026 Pugilist Subclass" level="3" />
 		</rules>
 	</element>
 
@@ -484,7 +484,7 @@
 		</description>
 		<sheet alt="Peak Physical Condition">
 			<description>When you finish a Long Rest and you have the Exhaustion condition, you lose all levels of Exhaustion. &#13;
-			Additionally, when you finish a Short Rest, you regain {{tpc24:peak physical condition:hp}} HPs.</description>
+			Additionally, when you finish a Short Rest, you regain {{pugilist2026:peak physical condition:hp}} HPs.</description>
 		</sheet>
 		<rules>
 			<stat name="strength" value="2" alt="Peak Physical Condition" />
@@ -492,8 +492,8 @@
 			<stat name="strength:max" value="3" bonus="ability"/>
 			<stat name="constitution:max" value="3" bonus="ability"/>
 
-			<stat name="tpc24:peak physical condition:hp" value="level:pugilist" />
-			<stat name="tpc24:peak physical condition:hp" value="level:pugilist" />
+			<stat name="pugilist2026:peak physical condition:hp" value="level:pugilist" />
+			<stat name="pugilist2026:peak physical condition:hp" value="level:pugilist" />
 		</rules>
 	</element>
 

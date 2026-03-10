@@ -9,7 +9,7 @@
 	</info>
 
 	<element name="Squared Circle" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_SQUARED_CIRCLE">
-		<supports>TPC24 Pugilist Subclass</supports>
+		<supports>PUGILIST2026 Pugilist Subclass</supports>
 		<description>
 			<p class="flavor">Drop and Lock Your Foes</p>
 			<p>Pugilists who fight in the Squared Circle know the fastest way to win a fight is to force a submission. These wrestlers focus on controlling their most powerful opponents with chokeholds and arm bars, forcing the enemy to fight on the Pugilist's terms.</p>
@@ -50,7 +50,7 @@
 			<p>When you start your turn with one or more creatures Grappled, you can deal Bludgeoning damage to each creature you have Grappled (no action required). The damage equals one roll of your Fisticuffs die plus your Strength modifier.</p>
 		</description>
 		<sheet>
-			<description>When you start your turn with one or more creatures Grappled, you can deal 1d{{tpc24:fisticuffs:dice}}+{{strength:modifier}} Bludgeoning damage to each creature you have Grappled.</description>
+			<description>When you start your turn with one or more creatures Grappled, you can deal 1d{{pugilist2026:fisticuffs:dice}}+{{strength:modifier}} Bludgeoning damage to each creature you have Grappled.</description>
 			<description level="17">When you start your turn with one or more creatures Grappled, you can deal 2d6+{{strength:modifier}} Bludgeoning damage to each creature you have Grappled.</description>
 		</sheet>
 	</element>

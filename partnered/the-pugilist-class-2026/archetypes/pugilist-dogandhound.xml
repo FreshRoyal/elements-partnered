@@ -9,7 +9,7 @@
 	</info>
 
 	<element name="Dog and Hound" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_DOG_AND_HOUND">
-		<supports>TPC24 Pugilist Subclass</supports>
+		<supports>PUGILIST2026 Pugilist Subclass</supports>
 		<description>
 			<p class="flavor">Fight Side by Side with a Brawler's Best Friend</p>
 			<p>Pugilists know what it's like to be an underdog, so it's no surprise some form a battleforged bond with a canine companion. They're used to being disappointed by friends that walk on two legs but a friend on four is as loyal as they come. When a fight breaks out, this duo's bite is even worse than its bark.</p>
@@ -50,7 +50,7 @@
             If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie Points. The hound returns to life after 1 minute with all its HPs restored. Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 ft of you. If you already have a hound from this feature, the old one vanishes when the new one appears.</description>
 		</sheet>
 		<rules>
-			<select type="Companion" name="Hound" supports="TPC24 Hound" default="ID_SVAC_PUGILIST2026_COMPANION_PUGILIST_HOUND" />
+			<select type="Companion" name="Hound" supports="PUGILIST2026 Hound" default="ID_SVAC_PUGILIST2026_COMPANION_PUGILIST_HOUND" />
 		</rules>
 	</element>
 	
@@ -99,22 +99,22 @@
             <p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending 3 Moxie Points (no action required).</p>
 		</description>
 		<sheet alt="Off the Chain" action="Reaction" usage="1/Long Rest">
-			<description>When your hound takes damage that causes it to become Bloodied or takes damage while it is Bloodied, you can let your hound off the chain. When you do so, the hound gains {{tpc24:off the chain:thp}} THPs and, for the next minute, its Speed increases by 15 ft and you can command it to use its Bite without taking a Bonus Action. &#13;
+			<description>When your hound takes damage that causes it to become Bloodied or takes damage while it is Bloodied, you can let your hound off the chain. When you do so, the hound gains {{pugilist2026:off the chain:thp}} THPs and, for the next minute, its Speed increases by 15 ft and you can command it to use its Bite without taking a Bonus Action. &#13;
             You can also restore your use of this feature by expending 3 Moxie Points.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:off the chain:thp" value="level:pugilist" />
-            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
-            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
-            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
-            <stat name="tpc24:off the chain:thp" value="level:pugilist" />
+			<stat name="pugilist2026:off the chain:thp" value="level:pugilist" />
+            <stat name="pugilist2026:off the chain:thp" value="level:pugilist" />
+            <stat name="pugilist2026:off the chain:thp" value="level:pugilist" />
+            <stat name="pugilist2026:off the chain:thp" value="level:pugilist" />
+            <stat name="pugilist2026:off the chain:thp" value="level:pugilist" />
 		</rules>
 	</element>
 
 	<!--Hound Companion and Information-->
 	<element name="Hound" type="Companion" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_COMPANION_PUGILIST_HOUND">
 		<compendium display="false" />
-		<supports>TPC24 Hound</supports>
+		<supports>PUGILIST2026 Hound</supports>
 		<description />
 		<setters>
 			<set name="size">Medium</set>

@@ -9,7 +9,7 @@
 	</info>
 
 	<element name="Hand of Dread" type="Archetype" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_PUGILIST_HAND_OF_DREAD">
-		<supports>TPC24 Pugilist Subclass</supports>
+		<supports>PUGILIST2026 Pugilist Subclass</supports>
 		<description>
 			<p class="flavor">Dabble With Dread Powers</p>
 			<p>In your darkest hour, you pleaded for the strength to take what you wanted from the world and a dread power took notice. At first, you may have relished the cathartic rush that came with channeling your eldritch might to claim what you felt you deserved, but this pact came with strings attached. In times of distress you hear the entity whispering in the back of your mind, urging you to indulge your most base impulses.</p>
@@ -76,11 +76,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype Feature" name="Deal with the Devil" supports="TPC24 Deal with the Devil" />
+			<select type="Archetype Feature" name="Deal with the Devil" supports="PUGILIST2026 Deal with the Devil" />
 		</rules>
 	</element>
 	<element name="Cloak of Shadows" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_CLOAK_OF_SHADOWS">
-		<supports>TPC24 Deal with the Devil</supports>
+		<supports>PUGILIST2026 Deal with the Devil</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can cast <i>Invisibility</i> once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
@@ -90,7 +90,7 @@
 		</sheet>
 	</element>
 	<element name="Mask of Many Faces" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_MASK_OF_MANY_FACES">
-		<supports>TPC24 Deal with the Devil</supports>
+		<supports>PUGILIST2026 Deal with the Devil</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can cast <i>Disguise Self</i> without expending a spell slot.</p>
@@ -100,7 +100,7 @@
 		</sheet>
 	</element>
 	<element name="Otherworldly Walk" type="Archetype Feature" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ARCHETYPE_FEATURE_PUGILIST_HAND_OF_DREAD_DEAL_WITH_THE_DEVIL_OTHERWORLDLY_WALK">
-		<supports>TPC24 Deal with the Devil</supports>
+		<supports>PUGILIST2026 Deal with the Devil</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can cast <i>Misty Step</i> once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest.</p>
@@ -129,13 +129,13 @@
 			<p class="indent">Once you use this feature, you must finish a Long Rest before you can use it again.</p>
 		</description>
 		<sheet alt="Fountain of Viscera" usage="6 Moxie Points - 1/Long Rest">
-			<description>ou can attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a DC{{tpc24:fountain of viscera:dc}} Dexterity saving throw. On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead. &#13;
-			If this damage reduces the target to 0 HPs, it immediately dies, creating a fountain of viscera. Each creature of your choice within a 30-ft Emanation originating from you must succeed on a DC{{tpc24:fountain of viscera:dc}} Wisdom saving throw or have the Frightened condition for 1 minute. A creature that fails the saving throw can repeat the saving throw again at the end of each of its turns, ending the Frightened condition on itself on a success.</description>
+			<description>ou can attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a DC{{pugilist2026:fountain of viscera:dc}} Dexterity saving throw. On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead. &#13;
+			If this damage reduces the target to 0 HPs, it immediately dies, creating a fountain of viscera. Each creature of your choice within a 30-ft Emanation originating from you must succeed on a DC{{pugilist2026:fountain of viscera:dc}} Wisdom saving throw or have the Frightened condition for 1 minute. A creature that fails the saving throw can repeat the saving throw again at the end of each of its turns, ending the Frightened condition on itself on a success.</description>
 		</sheet>
 		<rules>
-			<stat name="tpc24:fountain of viscera:dc" value="8" bonus="base" />
-			<stat name="tpc24:fountain of viscera:dc" value="proficiency" bonus="proficiency" />
-			<stat name="tpc24:fountain of viscera:dc" value="constitution:modifier" bonus="ability" />
+			<stat name="pugilist2026:fountain of viscera:dc" value="8" bonus="base" />
+			<stat name="pugilist2026:fountain of viscera:dc" value="proficiency" bonus="proficiency" />
+			<stat name="pugilist2026:fountain of viscera:dc" value="constitution:modifier" bonus="ability" />
 		</rules>
 	</element>
 	
