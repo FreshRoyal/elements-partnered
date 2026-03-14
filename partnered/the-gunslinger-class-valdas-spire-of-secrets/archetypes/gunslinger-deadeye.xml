@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deadeye</name>
+		<description>Deadeye from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="gunslinger-deadeye.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-deadeye.xml" />
+		</update>
+	</info>
+
+	<element name="Deadeye" type="Archetype" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_GUNSLINGER_DEADEYE">
+		<supports>TGCVSS Gunslinger Subclass</supports>
+		<description>
+			<p class="flavor">Shoot with Bullseye Precision</p>
+			<p>A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.</p>
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_EAGLE_EYE" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_SHARPSHOOTERS_STANCE" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_CONCEALED_POSITION" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_REPOSITION" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_FOCUSED_SHOT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_EAGLE_EYE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_SHARPSHOOTERS_STANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_CONCEALED_POSITION" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_REPOSITION" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_FOCUSED_SHOT" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Eagle Eye [Maneuver]" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_EAGLE_EYE">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_EAGLE_EYE</requirements>
+		<description>
+			<p>Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Eagle Eye" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_EAGLE_EYE_RISK">
+		<supports>TGCVSS Risk Eagle Eye</supports>
+		<compendium display="false" />
+		<description>
+			<p>Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.</p>
+		</description>
+		<sheet usage="1/Turn - Risk Die">
+			<description>When you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.</description>
+		</sheet>
+	</element>
+	<append id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK">
+		<rules>
+			<select type="Archetype Feature" name="TGCVSS Risk Eagle Eye" supports="TGCVSS Risk Eagle Eye" default="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_EAGLE_EYE_RISK" requirements="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_EAGLE_EYE" />
+		</rules>
+	</append>
+
+	<element name="Level 3: Sharpshooter's Stance" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_SHARPSHOOTERS_STANCE">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_SHARPSHOOTERS_STANCE</requirements>
+		<description>
+			<p>You have trained to fire from a stable Prone position, granting the following conditions.</p>
+			<p class="indent"><em><strong>Fire While Prone.</strong></em> You don't have Disadvantage on ranged attack rolls as a result of the Prone condition.</p>
+			<p class="indent"><em><strong>Quick Stand.</strong></em> When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.</p>
+		</description>
+		<sheet alt="Sharpshooter's Stance">
+			<description>You don't have Disadvantage on ranged attack rolls as a result of the Prone condition. &#13;
+			Additionally, when you have the Prone condition, you can right yourself and thereby end the condition with only 5 ft of movement.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Concealed Position" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_CONCEALED_POSITION">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_CONCEALED_POSITION</requirements>
+		<description>
+			<p>You excel at firing from concealment, granting you the following benefits.</p>
+			<p class="indent"><em><strong>Camouflage.</strong></em> You can take the Hide action even if you aren't Heavily Obscured or behind Three-Quarters Cover or Total Cover, as long as you have the Prone condition. The Invisible condition of this Hide action ends if you don't have the Prone condition.</p>
+			<p class="indent"><em><strong>Sniper's Nest.</strong></em> If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</p>
+		</description>
+		<sheet alt="Concealed Position">
+			<description>You can take the Hide action even if you aren't Heavily Obscured or behind Three-Quarters Cover or Total Cover, as long as you have the Prone condition. The Invisible condition of this Hide action ends if you don't have the Prone condition. &#13;
+			Additionally, if you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Reposition" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_REPOSITION">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_REPOSITION</requirements>
+		<description>
+			<p>Whenever a creature misses you with an attack roll, you can take a Reaction to end the Prone condition on yourself and move up to half your Speed.</p>
+		</description>
+		<sheet alt="Reposition" action="Reaction">
+			<description>Whenever a creature misses you with an attack roll, you can end the Prone condition on yourself and move up to half your Speed.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Focused Shot" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_FOCUSED_SHOT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_FOCUSED_SHOT</requirements>
+		<description>
+			<p>When you take the Attack action, you can choose to make only one ranged attack roll using a weapon to make a Focused Shot. You have Advantage on this attack roll and, on a hit, score a Critical Hit.</p>
+		</description>
+		<sheet alt="Focused Shot" action="Action">
+			<description>You can choose to make only one ranged attack roll using a weapon to make a Focused Shot. You have Advantage on this attack roll and, on a hit, score a Critical Hit.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Eagle Eye Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_EAGLE_EYE" />
+	<element name="Sharpshooter's Stance Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_SHARPSHOOTERS_STANCE" />
+	<element name="Concealed Position Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_CONCEALED_POSITION" />
+	<element name="Reposition Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_REPOSITION" />
+	<element name="Focused Shot Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEADEYE_FOCUSED_SHOT" />
+	
+
+</elements>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>High Roller</name>
+		<description>High Roller from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="gunslinger-highroller.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-highroller.xml" />
+		</update>
+	</info>
+
+	<element name="High Roller" type="Archetype" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_GUNSLINGER_HIGH_ROLLER">
+		<supports>TGCVSS Gunslinger Subclass</supports>
+		<description>
+			<p class="flavor">Gamble with Life and Death</p>
+			<p>Fortune is a fickle thing—unless you're a High Roller. These Gunslingers are master card sharps and dice throwers that mix their love of risk with their talent for gunplay. High Rollers push their luck until it runs out, then push harder. Why settle for a win when you could bet it all and win big?</p>
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_POKER_FACE" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISK_TAKER" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_POKER_FACE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISK_TAKER" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Poker Face" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_POKER_FACE">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_POKER_FACE</requirements>
+		<description>
+			<p>You gain proficiency with all Gaming Sets and in one of the following skills of your choice: Deception, Insight, or Perception.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET" />
+			<select type="Proficiency" name="Skill Proficiency (Poker Face)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Liar's Dice [Maneuver]" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_LIARS_DICE</requirements>
+		<description>
+			<p>When you make a damage roll with a Ranged weapon, you can expend one Risk Die as a Bonus Action and declare it to be a hidden roll. Roll the damage in secret and declare any total you wish. The GM has the option to call your bluff, in which case you reveal the damage dice you rolled. This has different consequences based on whether or not you lied.</p>
+			<p class="indent"><em><strong>The GM Calls Your Bluff; You Lied.</strong></em> The damage you deal is halved.</p>
+			<p class="indent"><em><strong>The GM Calls Your Bluff; You Told the Truth.</strong></em> The damage you deal is doubled.</p>
+			<p class="indent"><em><strong>The GM Doesn't Call Your Bluff.</strong></em> Use the total damage you declared, even if you rolled a different total.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Liar's Dice" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE_RISK">
+		<supports>TGCVSS Risk Liars Dice</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you make a damage roll with a Ranged weapon, you can expend one Risk Die as a Bonus Action and declare it to be a hidden roll. Roll the damage in secret and declare any total you wish. The GM has the option to call your bluff, in which case you reveal the damage dice you rolled. This has different consequences based on whether or not you lied.</p>
+			<p class="indent"><em><strong>The GM Calls Your Bluff; You Lied.</strong></em> The damage you deal is halved.</p>
+			<p class="indent"><em><strong>The GM Calls Your Bluff; You Told the Truth.</strong></em> The damage you deal is doubled.</p>
+			<p class="indent"><em><strong>The GM Doesn't Call Your Bluff.</strong></em> Use the total damage you declared, even if you rolled a different total.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Risk Die">
+			<description>When you make a damage roll with a Ranged weapon, you can declare it to be a hidden roll. Roll the damage in secret and declare any total you wish. The GM has the option to call your bluff, in which case you reveal the damage dice you rolled. This has different consequences based on whether or not you lied. &#13;
+			•  The GM Calls Your Bluff; You Lied: The damage you deal is halved. &#13;
+			•  The GM Calls Your Bluff; You Told the Truth: The damage you deal is doubled. &#13;
+			•  The GM Doesn't Call Your Bluff: Use the total damage you declared, even if you rolled a different total.</description>
+		</sheet>
+	</element>
+	<append id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK">
+		<rules>
+			<select type="Archetype Feature" name="TGCVSS Risk Liars Dice" supports="TGCVSS Risk Liars Dice" default="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE_RISK" requirements="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_LIARS_DICE" />
+		</rules>
+	</append>
+
+	<element name="Level 6: Risky Business" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS</requirements>
+		<description>
+			<p>Once per turn when you make an attack roll against an enemy and the roll doesn't have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.</p>
+		</description>
+		<sheet alt="Risky Business" usage="1/Turn">
+			<description>When you make an attack roll against an enemy and the roll doesn't have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Risk Taker" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_RISK_TAKER">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_RISK_TAKER</requirements>
+		<description>
+			<p>You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die. When you do so, roll a d6 instead of a Risk Die.</p>
+		</description>
+		<sheet alt="Risk Taker">
+			<description>You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die. When you do so, roll a d6 instead of a Risk Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Double or Nothing" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING</requirements>
+		<description>
+			<p>When you score a Critical Hit using a Ranged weapon, you can gamble for a higher result. Roll a d20. If the roll is a 10 or higher, roll all of the attack's damage dice four times and add them together, instead of only two times as normal for a Critical Hit. If you roll a 9 or lower on the d20, the Critical Hit becomes a normal hit.</p>
+		</description>
+		<sheet alt="Double or Nothing">
+			<description>When you score a Critical Hit using a Ranged weapon, you can gamble for a higher result. Roll a d20. If the roll is a 10 or higher, roll all of the attack's damage dice four times and add them together, instead of only two times as normal for a Critical Hit. If you roll a 9 or lower on the d20, the Critical Hit becomes a normal hit.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Poker Face Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_POKER_FACE" />
+	<element name="Liar's Dice Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_LIARS_DICE" />
+	<element name="Risky Business Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_RISKY_BUSINESS" />
+	<element name="Risk Taker Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_RISK_TAKER" />
+	<element name="Double or Nothing Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HIGH_ROLLER_DOUBLE_OR_NOTHING" />
+	
+
+</elements>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>White Hat</name>
+		<description>White Hat from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="gunslinger-whitehat.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-whitehat.xml" />
+		</update>
+	</info>
+
+	<element name="White Hat" type="Archetype" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_GUNSLINGER_WHITE_HAT">
+		<supports>TGCVSS Gunslinger Subclass</supports>
+		<description>
+			<p class="flavor">Protect Your Allies and Uphold the Law</p>
+			<p>Some Gunslingers live by a code and expect others to do the same. These Gunslingers, known as White Hats, sometimes serve as officers of the law but never hesitate to do what's right when the law says otherwise. Despite their affinity for deadly weapons, White Hats prefer to keep their friends safe and subdue their enemies nonviolently—a preference their enemies don't often oblige.</p>
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_STEELY_EYED_AURA" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_REACH_FOR_THE_SKIES" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LONG_ARM_OF_THE_LAW" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_STEELY_EYED_AURA" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_REACH_FOR_THE_SKIES" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LONG_ARM_OF_THE_LAW" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Lay Down the Law [Maneuver]" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW</requirements>
+		<description>
+			<p>You can take a Bonus Action and expend one Risk Die to keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 feet of you. That ally gains Temporary Hit Points equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Lay Down the Law" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW_RISK">
+		<supports>TGCVSS Risk Lay Down the Law</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can take a Bonus Action and expend one Risk Die to keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 feet of you. That ally gains Temporary Hit Points equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Risk Die">
+			<description>You can keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 ft of you. That ally gains THPs equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.</description>
+		</sheet>
+	</element>
+	<append id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK">
+		<rules>
+			<select type="Archetype Feature" name="TGCVSS Risk Lay Down the Law" supports="TGCVSS Risk Lay Down the Law" default="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW_RISK" requirements="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW" />
+		</rules>
+	</append>
+
+	<element name="Level 3: Steely-Eyed Aura" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_STEELY_EYED_AURA">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_STEELY_EYED_AURA</requirements>
+		<description>
+			<p>An aura of stoic confidence radiates from you in a 10-foot Emanation. You and allies within the Emanation have Advantage on saving throws made to avoid or end the Frightened condition. The aura is inactive while you have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Steely-Eyed Aura">
+			<description>An aura of stoic confidence radiates from you in a {{tgcvss:steely eyed aura:range}}-ft Emanation. You and allies within the Emanation have Advantage on saving throws made to avoid or end the Frightened condition. The aura is inactive while you have the Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<stat name="tgcvss:steely eyed aura:range" value="10" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Reach for the Skies" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_REACH_FOR_THE_SKIES">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_REACH_FOR_THE_SKIES</requirements>
+		<description>
+			<p>When you score a Critical Hit against a creature, you call for the target to surrender instead of lodging a projectile in it. The target must succeed on a Wisdom saving throw against your Maneuver save DC or have the Frightened and Incapacitated conditions for 1 minute. These conditions end early if the creature takes any damage, if you have the Incapacitated condition, or if you die. The creature can repeat the Wisdom saving throw at the end of each of its turns, ending the conditions on itself on a success.</p>
+		</description>
+		<sheet alt="Reach for the Skies">
+			<description>When you score a Critical Hit against a creature, you call for the target to surrender instead of lodging a projectile in it. The target must succeed on a DC{{tgcvss:risk:dc}} Wisdom saving throw or have the Frightened and Incapacitated conditions for 1 minute. These conditions end early if the creature takes any damage, if you have the Incapacitated condition, or if you die. The creature can repeat the Wisdom saving throw at the end of each of its turns, ending the conditions on itself on a success.</description>
+			<description level="14">When you score a Critical Hit against a creature, you call for the target to surrender instead of lodging a projectile in it. The target must succeed on a DC{{tgcvss:risk:dc}} Wisdom saving throw or have the Frightened and Stunned conditions for 1 minute. These conditions end early if the creature takes any damage, if you have the Incapacitated condition, or if you die. The creature can repeat the Wisdom saving throw at the end of each of its turns, ending the conditions on itself on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Long Arm of the Law" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_LONG_ARM_OF_THE_LAW">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_LONG_ARM_OF_THE_LAW</requirements>
+		<description>
+			<p>Once per turn when you hit a Large or smaller creature with a ranged attack using a weapon, you can hobble the target. The creature can't move on its next turn unless it first takes the Disengage action.</p>
+		</description>
+		<sheet alt="Long Arm of the Law" usage="1/Turn">
+			<description>When you hit a Large or smaller creature with a ranged attack using a weapon, you can hobble the target. The creature can't move on its next turn unless it first takes the Disengage action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Gold Star Hero" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO</requirements>
+		<description>
+			<p>Though gunslinging heroism, you gain the following benefits.</p>
+			<p class="indent"><em><strong>Improved Aura.</strong></em> The range of your Steely-Eyed Aura feature increases to 30 feet.</p>
+			<p class="indent"><em><strong>Iron-Clad Law.</strong></em> When you use your Lay Down the Law maneuver, the ally has Resistance to Bludgeoning, Piercing, and Slashing damage until the start of your next turn.</p>
+			<p class="indent"><em><strong>Stunned Surrender.</strong></em> When a creature fails its saving throw against your Reach for the Skies feature, it has the Stunned condition instead of the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Gold Star Hero">
+			<description>When you use your Lay Down the Law maneuver, the ally has Resistance to Bludgeoning, Piercing, and Slashing damage until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="tgcvss:steely eyed aura:range" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Lay Down the Law Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_LAY_DOWN_THE_LAW" />
+	<element name="Steely-Eyed Aura Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_STEELY_EYED_AURA" />
+	<element name="Reach for the Skies Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_REACH_FOR_THE_SKIES" />
+	<element name="Long Arm of the Law Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_LONG_ARM_OF_THE_LAW" />
+	<element name="Gold Star Hero Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WHITE_HAT_GOLD_STAR_HERO" />
+	
+</elements>

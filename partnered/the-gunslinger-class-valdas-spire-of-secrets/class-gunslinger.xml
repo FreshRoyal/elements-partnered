@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gunslinger</name>
+		<description>Gunslinger from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/class-gunslinger.xml" />
+		</update>
+	</info>
+
+	<element name="Gunslinger" type="Class" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_GUNSLINGER">
+		<description>
+			<p>Risk is in a Gunslinger's blood. They are bold renegades, bucking tradition and forging a new path with dangerous and inelegant firearms. Gunslingers are infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck to survive.</p>
+			<h4>GUTS AND GUNPOWDER</h4>
+			<p>Black powder isn't for the faint of heart. Its thunderous applause is volatile and imprecise—a barely controlled explosion directed at an enemy. Only the truly fearless seek to master it. But Gunslingers have nerves of steel, hurling death from their guns in a roaring cacophony. Adapted for shootouts, gunslingers are mobile and daring, knowing that life or death hangs on snap decision-making and one's own mettle.</p>
+			<h4>DANGEROUS OUTSIDERS</h4>
+			<p>A Gunslinger's explosive lifestyle lends well to wandering and adventuring. Gunslingers often shoot first and ask questions later, an attitude which earns them few friends and bountiful enemies. In their travels, most gunslingers are secretive and take great lengths to go unnoticed, lest they be spotted by old foes with scores to settle.</p>
+			<div class="sidebar">
+				<h5>CORE GUNSLINGER TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Dexterity</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D8 per Gunslinger level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Dexterity and Charisma</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Acrobatics, Animal Handling, Athletics, Deception, Insight, Intimidation, Perception, Persuasion, Sleight of Hand, or Stealth</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left">Simple weapons and Martial Ranged weapons</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light armor</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A or B:</i> (A) Leather Armor, 2 Daggers, Revolver, 50 Bullets, Explorer's Pack, and 11 GP; or (B) 175 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A GUNSLINGER ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Gunslinger Traits table.</li>
+				<li>Gain the Gunslinger’s level 1 features, which are listed in the Rogue Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Gunslinger Traits table: Hit Point Die, proficiency with Martial Ranged weapons, and training with Light armor.</li>
+				<li>Gain the Gunslinger’s level 1 features, which are listed in the Gunslinger Features table.</li>
+			</ul>
+			<h5>GUNSLINGER FEATURES</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td>Proficiency Bonus</td><td class="col-50 left">Class Features</td><td>Risk Dice</td><td>Weapon Mastery</td></tr>
+				</thead>
+				<tr><td>1</td><td>+2</td><td class="left">Fighting Style, Quick Draw, Weapon Mastery</td><td>-</td><td>2</td></tr>
+				<tr><td>2</td><td>+2</td><td class="left">Critical Shot, Risk</td><td>4d8</td><td>2</td></tr>
+				<tr><td>3</td><td>+2</td><td class="left">Gunslinger Subclass</td><td>4d8</td><td>2</td></tr>
+				<tr><td>4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>4d8</td><td>3</td></tr>
+				<tr><td>5</td><td>+3</td><td class="left">Extra Attack, Gut Shot</td><td>4d8</td><td>3</td></tr>
+				<tr><td>6</td><td>+3</td><td class="left">Subclass feature</td><td>5d8</td><td>3</td></tr>
+				<tr><td>7</td><td>+3</td><td class="left">Evasion</td><td>5d8</td><td>3</td></tr>
+				<tr><td>8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>5d8</td><td>3</td></tr>
+				<tr><td>9</td><td>+4</td><td class="left">Critical Shot</td><td>5d8</td><td>3</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Subclass feature</td><td>5d10</td><td>4</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Overkill</td><td>5d10</td><td>4</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5d10</td><td>4</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Cheat Death</td><td>5d10</td><td>4</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Subclass feature</td><td>6d10</td><td>4</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Dire Gambit</td><td>6d10</td><td>4</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>6d10</td><td>4</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Critical Shot</td><td>6d10</td><td>4</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Deft Maneuver</td><td>6d12</td><td>4</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>6d12</td><td>4</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Headshot</td><td>6d12</td><td>4</td></tr>
+			</table>
+			<h4>GUNSLINGER CLASS FEATURES</h4>
+			<p>As a Gunslinger, you gain the following class features when you reach the specified Gunslinger levels. These features are listed in the Gunslinger Features table.</p>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_QUICK_DRAW"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_WEAPON_MASTERY"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_CRITICAL_SHOT"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK"/>
+			<div element="ID_MHP_TGCVSS_INFORMATION_GUNSLINGER_MANEUVER_OPTIONS"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_GUNSLINGER_SUBCLASS"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_ABILITY_SCORE_IMPROVEMENT"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_GUT_SHOT"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EVASION"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_OVERKILL"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_CHEAT_DEATH"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_DIRE_GAMBIT"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EPIC_BOON"/>
+			<div element="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_HEADSHOT"/>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">The Definitive Gritty, Risk-Taking Class</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MHP_TGCVSS_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MHP_TGCVSS_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MHP_TGCVSS_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MHP_TGCVSS_MULTICLASS_GUNSLINGER" />
+			<select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING__ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_MHP_TGCVSS_MULTICLASS_GUNSLINGER" />
+
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_QUICK_DRAW" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_WEAPON_MASTERY" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_CRITICAL_SHOT" level="2"/>
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK" level="2"/>
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_GUNSLINGER_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_GUT_SHOT" level="5" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_OVERKILL" level="11" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_CHEAT_DEATH" level="13" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_DIRE_GAMBIT" level="15" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_DEFT_MANEUVER" level="18" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_HEADSHOT" level="20" />
+		</rules>
+		<multiclass id="ID_MHP_TGCVSS_MULTICLASS_GUNSLINGER">
+			<prerequisite>Dexterity 13</prerequisite>
+			<requirements>[dex:13]||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial Ranged weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Fighting Style" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You gain a Fighting Style feat of your choice. If you choose a feat, such as Great Weapon Fighting, that requires you to hold a Melee weapon in one or two hands, you can use that feat with Ranged weapons.</p>
+			<p class="indent">Whenever you gain a Gunslinger level, you can replace the feat you chose with a different Fighting Style feat.</p>
+		</description>
+		<sheet alt="Fighting Style, Gunslinger">
+			<description>If you choose a feat that requires you to hold a Melee weapon in one or two hands, you can use that feat with Ranged weapons.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Gunslinger 1)" supports="Fighting Style" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Quick Draw" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_QUICK_DRAW">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_QUICK_DRAW</requirements>
+		<description>
+			<p>You're adept at drawing and firing before others have time to react, granting you the following benefits.</p>
+			<p class="indent"><em><strong>Initiative.</strong></em> You have Advantage on Initiative rolls.</p>
+			<p class="indent"><em><strong>Double Draw.</strong></em> You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>
+		</description>
+		<sheet alt="Quick Draw">
+			<description>You have Advantage on Initiative rolls. &#13;
+			Additionally, you can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 1: Weapon Mastery" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_WEAPON_MASTERY">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WEAPON_MASTERY</requirements>
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Ranged weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+			<p class="indent">When you reach certain Gunslinger levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Gunslinger Features table.</p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery (Gunslinger 1)" level="1" supports="(Weapon Mastery,Simple)||(Weapon Mastery,Martial,Ranged)" number="2"/>
+			<select type="Class Feature" name="Weapon Mastery (Gunslinger 4)" level="4" supports="(Weapon Mastery,Simple)||(Weapon Mastery,Martial,Ranged)" />
+			<select type="Class Feature" name="Weapon Mastery (Gunslinger 10)" level="10" supports="(Weapon Mastery,Simple)||(Weapon Mastery,Martial,Ranged)" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Critical Shot" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_CRITICAL_SHOT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_CRITICAL_SHOT</requirements>
+		<description>
+			<p>Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+			<p class="indent">At Gunslinger level 9, your attack rolls with Ranged weapons score a Critical Hit on a roll of 18-20. At Gunslinger level 17, they score a Critical Hit on a roll of 17-20.</p>
+		</description>
+		<sheet alt="Critical Shot">
+			<description>Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.</description>
+			<description level="9">Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 18-20 on the d20.</description>
+			<description level="17">Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 17-20 on the d20.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 2: Risk" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK</requirements>
+		<description>
+			<p>You can perform incredible feats of daring fueled by special dice called Risk Dice.</p>
+			<p class="indent"><em><strong>Risk Dice.</strong></em> You have four Risk Dice, which are d8s. A Risk Die is expended when you use it. You regain all expended Risk Dice when you finish a Short or Long Rest. Your Risk Die changes and more Risk Dice become available as shown on the Risk Dice column of the Gunslinger Features table.</p>
+			<p class="indent"><em><strong>Maneuvers.</strong></em> You can expend Risk Dice to perform maneuvers. Your maneuver options are detailed later in the class description.</p>
+			<p class="indent"><em><strong>Saving Throws.</strong></em> If a maneuver requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Risk" usage="{{tgcvss:risk:number}}d{{tgcvss:risk:dice}}/Short Rest">
+			<description>You have {{tgcvss:risk:number}} Risk Dice, which are d{{tgcvss:risk:dice}}s. A Risk Die is expended when you use it. You can expend Risk Dice to perform maneuvers. (DC {{tgcvss:risk:dc}})</description>
+		</sheet>
+		<rules>
+			<stat name="tgcvss:risk:number" value="4" bonus="base" />
+			<stat name="tgcvss:risk:number" value="5" bonus="base" level="6" />
+			<stat name="tgcvss:risk:number" value="6" bonus="base" level="14" />
+
+			<stat name="tgcvss:risk:dice" value="8" bonus="base" />
+			<stat name="tgcvss:risk:dice" value="10" bonus="base" level="10" />
+			<stat name="tgcvss:risk:dice" value="12" bonus="base" level="18" />
+			
+			<stat name="tgcvss:risk:dc" value="8" bonus="base" />
+			<stat name="tgcvss:risk:dc" value="proficiency" bonus="proficiency" />
+			<stat name="tgcvss:risk:dc" value="dexterity:modifier" bonus="ability" />
+
+			<select type="Class Feature" name="Bite the Bullet" supports="TGCVSS Bite the Bullet" default="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_BITE_THE_BULLET" requirements="!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_BITE_THE_BULLET" />
+			<select type="Class Feature" name="Blindfire" supports="TGCVSS Blindfire" default="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_BLINDFIRE" requirements="!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_BLINDFIRE" />
+			<select type="Class Feature" name="Dodge Roll" supports="TGCVSS Dodge Roll" default="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_DODGE_ROLL" requirements="!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_DODGE_ROLL" />
+			<select type="Class Feature" name="Grazing Shot" supports="TGCVSS Grazing Shot" default="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_GRAZING_SHOT" requirements="!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_GRAZING_SHOT" />
+			<select type="Class Feature" name="Maverick Spirit" supports="TGCVSS Maverick Spirit" default="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_MAVERICK_SPIRIT" requirements="!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_MAVERICK_SPIRIT" />
+			<select type="Class Feature" name="Skin of Your Teeth" supports="TGCVSS Skin of Your Teeth" default="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_SKIN_OF_YOUR_TEETH" requirements="!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_SKIN_OF_YOUR_TEETH" />
+		</rules>
+	</element>
+	<element name="Bite the Bullet" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_BITE_THE_BULLET">
+		<supports>TGCVSS Bite the Bullet</supports>
+		<description>
+			<p>As a Bonus Action, you can expend one Risk Die to gain Temporary Hit Points equal to the number rolled on the die plus your Gunslinger level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Risk Die">
+			<description>You can gain THPs equal to the number rolled on the die plus {{level:gunslinger}}.</description>
+		</sheet>
+	</element>
+	<element name="Blindfire" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_BLINDFIRE">
+		<supports>TGCVSS Blindfire</supports>
+		<description>
+			<p>You can take a Bonus Action and expend one Risk Die to gain Blindsight with a range of 30 feet until the end of the current turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Risk Die">
+			<description>You can gain Blindsight with a range of 30 ft until the end of the current turn.</description>
+		</sheet>
+	</element>
+	<element name="Dodge Roll" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_DODGE_ROLL">
+		<supports>TGCVSS Dodge Roll</supports>
+		<description>
+			<p>You can expend one Risk Die as a Bonus Action to move up to 15 feet and reload any Ranged weapon you are holding. This movement doesn't provoke Opportunity Attacks and is unaffected by Difficult Terrain.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Risk Die">
+			<description>You can move up to 15 ft and reload any Ranged weapon you are holding. This movement doesn't provoke Opportunity Attacks and is unaffected by Difficult Terrain.</description>
+		</sheet>
+	</element>
+	<element name="Grazing Shot" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_GRAZING_SHOT">
+		<supports>TGCVSS Grazing Shot</supports>
+		<description>
+			<p>When you miss with a ranged attack roll using a weapon, you can expend one Risk Die (no action required) to deal damage to that creature equal to a roll of the die plus your Dexterity modifier (minimum of 1). This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier. You can only use this maneuver once per turn.</p>
+		</description>
+		<sheet usage="Risk Die - 1/Turn">
+			<description>When you miss with a ranged attack roll using a weapon, you can deal {{tgcvss:grazing shot:modifier}} damage to that creature. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="tgcvss:grazing shot:modifier" value="1" bonus="bonus" />
+			<stat name="tgcvss:grazing shot:modifier" value="dexterity:modifier" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="Maverick Spirit" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_MAVERICK_SPIRIT">
+		<supports>TGCVSS Maverick Spirit</supports>
+		<description>
+			<p>When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.</p>
+		</description>
+		<sheet usage="Risk Die - 1/Turn">
+			<description>When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success.</description>
+		</sheet>
+	</element>
+	<element name="Skin of Your Teeth" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK_SKIN_OF_YOUR_TEETH">
+		<supports>TGCVSS Skin of Your Teeth</supports>
+		<description>
+			<p>When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm's way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.</p>
+		</description>
+		<sheet action="Reaction" usage="Risk Die">
+			<description>When a creature you can see hits you with an attack roll, you can dodge out of harm's way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Gunslinger Subclass" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_GUNSLINGER_SUBCLASS">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_GUNSLINGER_SUBCLASS</requirements>
+		<description>
+			<p>You gain a Gunslinger subclass of your choice. A subclass is a specialization that grants you features at certain Gunslinger levels. For the rest of your career, you gain each of your subclass's features that are of your Gunslinger level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Gunslinger Subclass" supports="TGCVSS Gunslinger Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_ABILITY_SCORE_IMPROVEMENTS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Gunslinger 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Gunslinger 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Gunslinger 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Gunslinger 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Extra Attack" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_EXTRA_ATTACK</requirements>
+		<description>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Gut Shot" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_GUT_SHOT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_GUT_SHOT</requirements>
+		<description>
+			<p>Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute or until the target replaces one of its attacks with dislodging the projectile, its Speed is halved and it has Disadvantage on attack rolls.</p>
+		</description>
+		<sheet alt="Gut Shot">
+			<description>Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute or until the target replaces one of its attacks with dislodging the projectile, its Speed is halved and it has Disadvantage on attack rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Evasion" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EVASION">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_EVASION</requirements>
+		<description>
+			<p>When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail.</p>
+			<p class="indent">You don't benefit from this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Evasion">
+			<description>When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You don't benefit from this feature if you have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Overkill" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_OVERKILL">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_OVERKILL</requirements>
+		<description>
+			<p>When you deal damage with a Ranged weapon that doesn't add your ability modifier to the roll, you add your ability modifier nonetheless. If you already add your modifier to the damage roll, the target takes an extra 1d8 damage of the weapon's type.</p>
+			<p class="indent">Note that weapons that have the Firearm property don't add your ability modifier to damage rolls.</p>
+		</description>
+		<sheet alt="Overkill">
+			<description>When you deal damage with a Ranged weapon that doesn't add your ability modifier to the roll, you add your ability modifier nonetheless. If you already add your modifier to the damage roll, the target takes an extra 1d8 damage of the weapon's type.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 13: Cheat Death" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_CHEAT_DEATH">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_CHEAT_DEATH</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to your Gunslinger level.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Cheat Death" usage="1/Short Rest">
+			<description>When you are reduced to 0 HPs and not killed outright, you can drop to 1 HP instead, and you regain {{level:gunslinger}} HPs.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Dire Gambit" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_DIRE_GAMBIT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DIRE_GAMBIT</requirements>
+		<description>
+			<p>Whenever you roll Initiative or score a Critical Hit, you regain one expended Risk Die.</p>
+		</description>
+		<sheet alt="Dire Gambit">
+			<description>Whenever you roll Initiative or score a Critical Hit, you regain one expended Risk Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Deft Maneuver" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_DEFT_MANEUVER">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEFT_MANEUVER</requirements>
+		<description>
+			<p>You gain a special additional Bonus Action that you can take once on each of your turns. You can take this special Bonus Action only to use a maneuver.</p>
+		</description>
+		<sheet alt="Deft Maneuver" usage="1/Turn">
+			<description>You gain a special additional Bonus Action. You can take this special Bonus Action only to use a maneuver.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_EPIC_BOON">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Epic Boon (Gunslinger 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Headshot" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_HEADSHOT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HEADSHOT</requirements>
+		<description>
+			<p>When you score a Critical Hit against a creature using a Ranged weapon, you can choose for it to be a Headshot. If the creature has less than 100 Hit Points, it dies. Otherwise, it takes an extra 10d10 damage of the weapon's type.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest. You can also restore your use of it by expending three Risk Dice (no action required).</p>
+		</description>
+		<sheet alt="Headshot" usage="1/Short Rest">
+			<description>When you score a Critical Hit against a creature using a Ranged weapon, you can choose for it to be a Headshot. If the creature has less than 100 HPs, it dies. Otherwise, it takes an extra 10d10 damage of the weapon's type. &#13;
+			You can also restore your use of this feature by expending 3 Risk Dice.</description>
+		</sheet>
+	</element>
+
+	<element name="Maneuver Options" type="Information" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_INFORMATION_GUNSLINGER_MANEUVER_OPTIONS">
+		<description>
+			<p class="indent"><i><b>Bite the Bullet.</b></i> As a Bonus Action, you can expend one Risk Die to gain Temporary Hit Points equal to the number rolled on the die plus your Gunslinger level.</p>
+			<p class="indent"><i><b>Blindfire.</b></i> You can take a Bonus Action and expend one Risk Die to gain Blindsight with a range of 30 feet until the end of the current turn.</p>
+			<p class="indent"><i><b>Dodge Roll.</b></i> You can expend one Risk Die as a Bonus Action to move up to 15 feet and reload any Ranged weapon you are holding. This movement doesn't provoke Opportunity Attacks and is unaffected by Difficult Terrain.</p>
+			<p class="indent"><i><b>Grazing Shot.</b></i> When you miss with a ranged attack roll using a weapon, you can expend one Risk Die (no action required) to deal damage to that creature equal to a roll of the die plus your Dexterity modifier (minimum of 1). This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier. You can only use this maneuver once per turn.</p>
+			<p class="indent"><i><b>Maverick Spirit.</b></i> When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.</p>
+			<p class="indent"><i><b>Skin of Your Teeth.</b></i> When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm's way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.</p>
+		</description>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_FIGHTING_STYLE" />
+	<element name="Guick Draw Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_GUICK_DRAW" />
+	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_WEAPON_MASTERY" />
+	<element name="Critical Shot Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_CRITICAL_SHOT" />
+	<element name="Risk Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK" />
+	<element name="Risk: Bite the Bullet Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_BITE_THE_BULLET" />
+	<element name="Risk: Blindfire Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_BLINDFIRE" />
+	<element name="Risk: Dodge Roll Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_DODGE_ROLL" />
+	<element name="Risk: Grazing Shot Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_GRAZING_SHOT" />
+	<element name="Risk: Maverick Spirit Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_MAVERICK_SPIRIT" />
+	<element name="Risk: Skin of Your Teeth Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_RISK_SKIN_OF_YOUR_TEETH" />
+	<element name="Gunslinger Subclass Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_GUNSLINGER_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_EXTRA_ATTACK" />
+	<element name="Gut Shot Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_GUT_SHOT" />
+	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_EVASION" />
+	<element name="Overkill Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_OVERKILL" />
+	<element name="Cheat Death Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_CHEAT_DEATH" />
+	<element name="Dire Gambit Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DIRE_GAMBIT" />
+	<element name="Deft Maneuver Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_DEFT_MANEUVER" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_EPIC_BOON" />
+	<element name="Headshot Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_HEADSHOT" />
+
+</elements>

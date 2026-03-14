@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Antiballistics Field" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_ANTIBALLISTICS_FIELD">
+		<supports>Cleric, Wizard, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>A 40-foot Emanation extends from you, disrupting projectiles and causing Ranged weapons to malfunction. Within the Emanation, whenever a Ranged weapon is used for an attack, the weapon immediately malfunctions and the attack is lost. A malfunctioning weapon can't be used to make an attack until a creature takes the Utilize action to fix the weapon malfunction. Ranged attacks using weapons whose projectiles pass through the Emanation have Disadvantage and deal only half damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">emanation, disadvantage, ranged attack rolls, half damage</set>
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of wet gunpowder</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Ballistic Smite" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_BALLISTIC_SMITE">
+		<supports>Paladin, Damaging Spell, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>Choose Acid, Cold, Fire, Lightning, Poison, or Thunder damage. The target hit by the attack takes an extra 2d6 damage of the chosen type. The triggering attack can deal the chosen damage type or its normal damage type (your choice).</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">on hit, ranged, weapon, acid, cold, fire, lightning, poison, thunder, damage, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a creature with a Ranged weapon</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Concealed Shot" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_CONCEALED_SHOT">
+		<supports>Bard, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>A Ranged weapon you touch is made supernaturally subtle. For the duration, when you make a ranged attack using the weapon, the weapon or ammunition you're using becomes invisible while in flight and the weapon becomes silent. If the weapon produces smoke or light, the spell suppresses these effects. The weapon or projectile you're using becomes visible again after the attack hits or misses. If you are hidden and the target is 80 feet or further from you, the attack doesn't reveal your location.</p>
+		</description>
+		<setters>
+			<set name="keywords">weapon, ranged, attack, invisible, silent</set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Ranged weapon</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Conjure Cannonball" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_CONJURE_CANNONBALL">
+		<supports>Sorcerer, Wizard, Damaging Spell, Spell Saving Throw, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>You summon a cannonball, mid-flight and at full velocity, which explodes on impact. Make a ranged spell attack roll against a target you can see within range. On a hit, the target takes 5d10 Bludgeoning damage and an explosion extends from it in a 5-foot Emanation. Each creature other than the target within the Emanation makes a Dexterity saving throw, taking half as much damage as the target on a failed save.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d10 for each slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">ranged, bludgeoning, damage, emanation, dexterity, save, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school" addition="Firearm">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">600 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small replica cannon</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Conjure Cover" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_CONJURE_COVER">
+		<supports>Druid, Paladin, Sorcerer, Wizard, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>You conjure a low cobblestone wall along the ground at a point you can see within range. The wall is 18 inches thick and is composed of three 5-foot-long, 3-foot-high segments. Each segment must be contiguous with at least one other segment.</p>
+			<p class="indent">A Medium creature that hunkers behind the wall has Half Cover, and a Small creature that hunkers behind it has Three-Quarters Cover. The wall can be leapt over without spending any additional movement.</p>
+			<p class="indent">Each segment has AC 10 and 30 Hit Points. Reducing a segment of the wall to 0 Hit Points causes it to crumble, destroying it. The wall disappears when all the segments are destroyed or the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">half cover, three-quarters cover</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a duck figurine</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Finger Guns" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_FINGER_GUNS">
+		<supports>Bard, Sorcerer, Wizard, Damaging Spell</supports>
+		<description>
+			<p>You extend your forefinger and thumb, a dangerous gesture mimicking a gun. For the duration, your hand counts as a Simple Ranged weapon with a range of 60/240 feet and the Slow mastery property. You can use your spellcasting ability instead of Dexterity for the attack rolls of this weapon. On a hit, the weapon deals 2d6 Force damage and doesn't add your ability modifier to damage.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The weapon's normal range increases by 30 feet and its long range increases by 120 feet when you reach levels 5 (90/360 feet), 11 (120/480 feet), and 17 (150/600 feet).</p>
+		</description>
+		<setters>
+			<set name="keywords">simple, ranged, weapon, range, slow, mastery, force, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school" addition="Firearm">Evocation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Jam Weapon" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_JAM_WEAPON">
+		<supports>Bard, Wizard, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>The weapon you target suffers a malfunction and the attack fails. A malfunctioning weapon can't be used to make an attack until a creature takes the Utilize action to fix the weapon malfunction.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Reaction, which you take when a creature you can see within range makes an attack using a Ranged weapon</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of wet gunpowder</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Jethro's Instant Reload" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_JETHROS_INSTANT_RELOAD">
+		<supports>Bard, Ranger, Wizard, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>One Ranged weapon you touch becomes enchanted to reload itself automatically. If the weapon has the Loading or Reload property, you ignore the property for the duration. When the weapon's ammunition is depleted, ammunition you are carrying teleports into the weapon.</p>
+		</description>
+		<setters>
+			<set name="keywords">loading, reload, property</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spent bullet casing</set>
+			<set name="duration">8 hours</set>
+		</setters>
+	</element>
+
+	<element name="Perforating Shot" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_PERFORATING_SHOT">
+		<supports>Paladin, Ranger, Damaging Spell, TGCVSS Gun Mage Adept</supports>
+		<description>
+			<p>As your attack hits or misses the target, the weapon or ammunition transforms into a 5-foot-wide Line of magical energy that extends out to the weapon's normal range. The Line includes the attack's original target. Each creature within the Line makes a Dexterity saving throw, taking Force damage equal to the weapon's normal damage on a failed save or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The weapon's damage increases by 1d8 for each slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">weapon, line, dexterity, save, force, damage, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action, which you take immediately after hitting or missing with a ranged attack using a weapon</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+</elements>

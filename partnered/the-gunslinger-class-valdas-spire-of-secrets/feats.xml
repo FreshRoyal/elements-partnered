@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Gun-Mage Adept" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_GUN_MAGE_ADEPT">
+		<supports>General</supports>
+		<requirements>([level:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Ranged Weapon Proficiency.</i></b> You gain proficiency with Ranged Martial weapons.</p>
+			<p class="indent"><b><i>Cantrip.</i></b> You learn the <i>Finger Guns</i> cantrip.</p>
+			<p class="indent"><b><i>Expanded Spell List.</i></b> The following spells are added to your spell list: <i>Antiballistics Field, Ballistic Smite, Conjure Cannonball, Conjure Cover, Jam Weapon, Jethro's Instant Reload,</i> and <i>Perforating Shot</i>.</p>
+			<p class="indent"><b><i>Spells Prepared.</i></b> Choose a number of spells equal to your Proficiency Bonus from among those in the Expanded Spell List benefit. You always have these spells prepared. Whenever you gain a new level, you can replace one of these spells with a different spell from the Expanded Spell List.</p>
+		</description>
+		<sheet>
+			<description>You know the Finger Guns cantrip. &#13;
+			You have {{proficiency}} spells prepared from Antiballistics Field, Ballistic Smite, Conjure Cannonball, Conjure Cover, Jam Weapon, Jethro's Instant Reload, and Perforating Shot. You always have these spells prepared. Whenever you gain a new level, you can replace one of these spells with a different spell from this list.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Gun-Mage Adept" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS" />
+			<grant type="Spell" id="ID_MHP_TGCVSS_SPELL_FINGER_GUNS" />
+			
+			<select type="Spell" name="Spell (Gun-Mage Adept)" supports="TGCVSS Gun Mage Adept" level="1" number="2" />
+			<select type="Spell" name="Spell (Gun-Mage Adept)" supports="TGCVSS Gun Mage Adept" level="5" />
+			<select type="Spell" name="Spell (Gun-Mage Adept)" supports="TGCVSS Gun Mage Adept" level="9" />
+			<select type="Spell" name="Spell (Gun-Mage Adept)" supports="TGCVSS Gun Mage Adept" level="13" />
+			<select type="Spell" name="Spell (Gun-Mage Adept)" supports="TGCVSS Gun Mage Adept" level="17" />
+		</rules>
+		<spellcasting all="true" extend="true">
+			<extend>TGCVSS Gun Mage Adept</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Iron Hero" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_IRON_HERO">
+		<supports>General</supports>
+		<requirements>([level:4],!ID_MHP_VSSPP_FEAT_IRON_HERO)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Underdog's Resolve.</i></b> When you are attacked by a creature that has a CR higher than your character level, you gain a +2 bonus to your Armor Class for that attack.</p>
+			<p class="indent"><b><i>Vengeful Strike.</i></b> You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 Hit Points since the end of your last turn.</p>
+			<p class="indent"><b><i>Heroic Intervention.</i></b> When an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening. You can take this Reaction a number of times equal to your Proficiency Bonus and regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet>
+			<description>When you are attacked by a creature that has a CR higher than {{level}}, you gain a +2 bonus to your AC for that attack. &#13;
+			You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 HPs since the end of your last turn. &#13;
+			Additionally, when an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening ({{proficiency}}/Short Rest).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Iron Hero)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+		</rules>
+	</element>
+	
+	<element name="Marksman's Luck" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_MARKSMANS_LUCK">
+		<supports>General</supports>
+		<requirements>([level:4],[dex:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Flip Die.</i></b> Once per turn, when you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. Note that for a balanced die, the top and bottom numbers add up to one more than the die's largest number.</p>
+			<p class="indent"><b><i>Enhanced Critical.</i></b> When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, when you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. &#13;
+			Additionally, when you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Marksman's Luck" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/source.xml" />
+		</update>
+	</info>
+	<element name="The Gunslinger Class: Valda's Spire of Secrets" type="Source" source="Core" id="ID_MHP_SOURCE_THE_GUNSLINGER_CLASS_VALDAS_SPIRE_OF_SECRETS">
+		<description>
+			<p>You’re a Gunslinger, cool under pressure and deadly in a quick-draw. You may have few friends, but your enemies will be quaking in their boots.</p>
+			<p>Play the Gunslinger class if you enjoy scoring powerful Critical Hits and having an entire arsenal of guns at your disposal.</p>
+            <ul>
+				<li>The complete Gunslinger class for levels 1 - 20</li>
+				<li>6 gun-toting subclasses</li>
+				<li>An arsenal of new firearms to explore</li>
+				<li>A host of new maneuvers powered by Risk Dice</li>
+                <li>9 spells</li>
+                <li>3 feats</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="abbreviation">TGCVSS</set>
+			<set name="url">https://marketplace.dndbeyond.com/category/DBGYLCFKE</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/TGCVSS.png</set>
+			<set name="author" abbreviation="MHP" url="https://magehandpress.com/">Mage Hand Press</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20250611</set>
+		</setters>
+	</element>
+
+</elements>

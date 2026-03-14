@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>Weapons from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/items-weapons.xml" />
+		</update>
+	</info>
+
+	<!--Individual pieces of ammunition, price and weight were recalculated.-->
+	<element name="Bullet" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_BULLET">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0.15">2.4 oz.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Cannonball" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_CANNONBALL">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Flare" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_FLARE">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Shell" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_SHELL">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0.15">2.4 oz.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Shot" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_SHOT">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Weapons-->
+	<!--Renaissance-->
+	<element name="Blunderbuss" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_BLUNDERBUSS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p>This distinctive short-range firearm features a dramatically flared muzzle designed to launch shot in a wide spray. Most effective at close range, the Blunderbuss can be considered a precursor to the modern shotgun.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="range">20/60; Shot</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS</set>
+		</setters>
+	</element>
+
+	<!--Industrial-->
+	<element name="Double-Barrel Shotgun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_DOUBLE_BARREL_SHOTGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_2, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p>A classic design with two loaded barrels, the Double-Barrel Shotgun trades ammo capacity and range for reliability and firepower.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">20/60; Shell</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="cost" currency="gp">175</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN</set>
+		</setters>
+	</element>
+
+	<element name="Hunting Rifle" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_HUNTING_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_4, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SIGHTED</supports>
+		<description>
+			<p>Designed for big game, Hunting Rifles are slow but accurate, requiring bolt action operation between every shot.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Sighted.</b> Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">80/320; Bullet</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HUNTING_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Parlor Gun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PARLOR_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_2, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<description>
+			<p>The smallest usable firearm, a Parlor Gun can be tucked into a stocking or hidden down a sleeve for two barrels of point-blank fire.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Vex.</b> If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="range">30/120; Bullet</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PARLOR_GUN</set>
+		</setters>
+	</element>
+
+	<element name="Revolver" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_REVOLVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_6, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p>An iconic handgun, the Revolver stores six bullets in a rotating cylinder. This weapon is favored by Gunslingers for its reliability and stopping-power.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">30/120; Bullet</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER</set>
+		</setters>
+	</element>
+
+	<element name="Cannon" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_CANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_EXPLODE</supports>
+		<description>
+			<p>Smoothbore, muzzleloading Cannons are common fixtures on pirate ships and defensive fortifications, capable of splintering wood and reducing stone to gravel with a thunderous boom. Larger siege weapons of this type exist, and require entire teams of operators to position, load, and fire.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Explode.</b> When you take the Attack action, you can replace one of your attacks with an explosion from this weapon's projectile. This explosion is a 5-foot-radius Sphere centered on a point you choose within the weapon's normal range. Each creature within the Sphere makes a Dexterity saving throw (DC 8 plus your Strength or Dexterity modifier and your Proficiency Bonus). On a failed save, a creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. On a successful save, a creature takes half as much damage. You can create an explosion only once per turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="fire">2d8</set>
+			<set name="range">100/400; Cannonball</set>
+			<set name="weight" lb="225">225 lb.</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_CANNON</set>
+		</setters>
+	</element>
+
+	<element name="Gattling Gun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_GATTLING_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_40, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC</supports>
+		<description>
+			<p>Infamous for its rate of fire, the Gatling Gun rotates and fires six or more barrels in succession. This weapon is cumbersome, easily recognizable, and utterly terrifying.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Automatic.</b> When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">60/240; Bullet</set>
+			<set name="weight" lb="125">125 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_GATTLING_GUN</set>
+		</setters>
+	</element>
+
+	<element name="Magnum" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_MAGNUM">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_6, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p>Chambered for large-caliber bullets, Magnum revolvers pack the most kick possible into a single shot.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">30/120; Bullet</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_MAGNUM</set>
+		</setters>
+	</element>
+
+	<!--Modern-->
+	<element name="Flare Gun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_FLARE_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p>Less a firearm and more a survival tool, a Flare Gun fires a single white-hot flare, useful for distress signals and last-ditch-effort self defense.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="fire">2d6</set>
+			<set name="range">30/120; Flare</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_FLARE_GUN</set>
+		</setters>
+	</element>
+
+	<element name="Handgun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_HANDGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_10, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<description>
+			<p>Portable, reliable, and with a generous magazine size, the Handgun is the go-to firearm for self-defense and law enforcement.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Vex.</b> If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="fire">2d4</set>
+			<set name="range">30/120; Bullet</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HANDGUN</set>
+		</setters>
+	</element>
+
+	<element name="Assault Rifle" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_ASSAULT_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_20, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC</supports>
+		<description>
+			<p>Combining a high rate of fire with rifle-grade ballistics, the Assault Rifle is a staple weapon for all modern militaries. Dozens of variants exist on this general design, but all share the traits of a flexible and formidable weapon.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Automatic.</b> When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">80/320; Bullet</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_ASSAULT_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Pump Shotgun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PUMP_SHOTGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_8, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p>The Pump Shotgun's namesake is a distinctive sliding grip on the barrel which can be "pumped" to chamber a new round.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">20/60; Shell</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PUMP_SHOTGUN</set>
+		</setters>
+	</element>
+
+	<element name="Sniper Rifle" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_SNIPER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SIGHTED</supports>
+		<description>
+			<p>An instrument of ranged precision, the Sniper Rifle can take shots from distant, nearly invisible ranges.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Sighted.</b> Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="range">100/400; Bullet</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Submachine Gun" type="Weapon" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_SUBMACHINE_GUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_16, ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC</supports>
+		<description>
+			<p>Firing lighter, easier to control rounds, the Submachine Gun is an effective alternative to larger automatic weapons.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Automatic.</b> When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="range">30/120; Bullet</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SUBMACHINE_GUN</set>
+		</setters>
+	</element>
+	
+	<!--Weapon Properties-->
+	<element name="Firearm" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM">
+		<description>
+			<p>You don't add your ability modifier to the weapon's damage, unless otherwise stated. Firearm ammunition is destroyed upon use.</p>
+		</description>
+	</element>
+
+	<element name="Recoil" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL">
+		<description>
+			<p>After you make an attack with this weapon, you can't make ranged attacks beyond the weapon's normal range until the end of the current turn.</p>
+		</description>
+	</element>
+
+	<element name="Reload (2)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_2">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (4)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_4">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (6)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_6">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (8)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_8">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (10)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_10">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (16)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_16">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (20)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_20">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+
+	<element name="Reload (40)" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_40">
+		<description>
+			<p>You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action.</p>
+		</description>
+	</element>
+	
+	<!--Weapon Masteries-->
+	<element name="Gattling Gun (Automatic)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_GATTLING_GUN_AUTOMATIC">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_GATTLING_GUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</description>
+		</sheet>
+	</element>
+	<element name="Assault Rifle (Automatic)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_ASSAULT_RIFLE_AUTOMATIC">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_ASSAULT_RIFLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</description>
+		</sheet>
+	</element>
+	<element name="Submachine Gun (Automatic)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_SUBMACHINE_GUN_AUTOMATIC">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SUBMACHINE_GUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</description>
+		</sheet>
+	</element>
+	<element name="Automatic" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC">
+		<description>
+			<p>When you make an attack with this weapon, you can choose to make two attacks instead. These attacks are always made with Disadvantage, regardless of circumstance. You can't replace these attacks. If this weapon has Ammunition, these attacks use twice the normal amount of ammunition.</p>
+		</description>
+	</element>
+
+	<element name="Cannon (Explode)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_CANNON_EXPLODE">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_CANNON</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action, you can replace one of your attacks with an explosion from this weapon's projectile. This explosion is a 5-foot-radius Sphere centered on a point you choose within the weapon's normal range. Each creature within the Sphere makes a Dexterity saving throw (DC 8 plus your Strength or Dexterity modifier and your Proficiency Bonus). On a failed save, a creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. On a successful save, a creature takes half as much damage. You can create an explosion only once per turn.</p>
+		</description>
+		<sheet action="Attack" usage="1/Turn">
+			<description>You can replace one of your attacks with an explosion from this weapon's projectile. This explosion is a 5-ft-radius Sphere centered on a point you choose within the weapon's normal range. Each creature within the Sphere makes a DC{{tgcvss:weapon mastery explode:dc}} Dexterity saving throw. On a failed save, a creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. On a successful save, a creature takes half as much damage.</description>
+		</sheet>
+		<rules>
+			<stat name="tgcvss:weapon mastery explode:dc:ability" value="strength:modifier" bonus="base" />
+			<stat name="tgcvss:weapon mastery explode:dc:ability" value="dexterity:modifier" bonus="base" />
+			<stat name="tgcvss:weapon mastery explode:dc" value="8" bonus="base"/>
+			<stat name="tgcvss:weapon mastery explode:dc" value="proficiency" bonus="proficiency"/>
+			<stat name="tgcvss:weapon mastery explode:dc" value="tgcvss:weapon mastery explode:dc:ability" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Explode" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_EXPLODE">
+		<description>
+			<p>When you take the Attack action, you can replace one of your attacks with an explosion from this weapon's projectile. This explosion is a 5-foot-radius Sphere centered on a point you choose within the weapon's normal range. Each creature within the Sphere makes a Dexterity saving throw (DC 8 plus your Strength or Dexterity modifier and your Proficiency Bonus). On a failed save, a creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. On a successful save, a creature takes half as much damage. You can create an explosion only once per turn.</p>
+		</description>
+	</element>
+
+	<element name="Blunderbuss (Scatter)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_BLUNDERBUSS_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+		</description>
+		<sheet>
+			<description>Being within 5 ft of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</description>
+		</sheet>
+	</element>
+	<element name="Double-Barrel Shotgun (Scatter)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_DOUBLE_BARREL_SHOTGUN_SCATTER">
+		<supports>Weapon Mastery, Simple, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+		</description>
+		<sheet>
+			<description>Being within 5 ft of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</description>
+		</sheet>
+	</element>
+	<element name="Pump Shotgun (Scatter)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_PUMP_SHOTGUN_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PUMP_SHOTGUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+		</description>
+		<sheet>
+			<description>Being within 5 ft of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</description>
+		</sheet>
+	</element>
+	<element name="Scatter" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER">
+		<description>
+			<p>Being within 5 feet of an enemy doesn't impose Disadvantage on your ranged attack rolls with this weapon.</p>
+		</description>
+	</element>
+
+	<element name="Hunting Rifle (Sighted)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_HUNTING_RIFLE_SIGHTED">
+		<supports>Weapon Mastery, Simple, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HUNTING_RIFLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Sniper Rifle (Sighted)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_SNIPER_RIFLE_SIGHTED">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Sighted" type="Weapon Property" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_WEAPON_PROPERTY_SIGHTED">
+		<description>
+			<p>Attacking at long range with this weapon doesn't impose Disadvantage on your attack rolls. When you hit a creature with an attack using this weapon at long range, you can reroll any of the damage dice and must use the new roll.</p>
+		</description>
+	</element>
+
+	<element name="Revolver (Slow)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_REVOLVER_SLOW">
+		<supports>Weapon Mastery, Simple, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 ft until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 ft.</description>
+		</sheet>
+	</element>
+	<element name="Magnum (Slow)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_MAGNUM_SLOW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_MAGNUM</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 ft until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 ft.</description>
+		</sheet>
+	</element>
+	<element name="Flare Gun (Slow)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_FLARE_GUN_SLOW">
+		<supports>Weapon Mastery, Simple, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_FLARE_GUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 ft until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Parlor Gun (Vex)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_PARLOR_GUN_VEX">
+		<supports>Weapon Mastery, Simple, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PARLOR_GUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Handgun (Vex)" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_MASTERY_PROPERTY_HANDGUN_VEX">
+		<supports>Weapon Mastery, Simple, Ranged</supports>
+		<requirements>ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HANDGUN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<!--Weapon Proficiencies-->
+	<element name="Weapon Proficiency (Double-Barrel Shotgun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_2, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Hunting Rifle)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HUNTING_RIFLE">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_4, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SIGHTED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Parlor Gun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PARLOR_GUN">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_2, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Revolver)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_6, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Flare Gun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_FLARE_GUN">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Handgun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HANDGUN">
+		<supports>Weapon, Simple, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_10, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+	</element>
+	
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HUNTING_RIFLE" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PARLOR_GUN" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_FLARE_GUN" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HANDGUN" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Blunderbuss)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Cannon)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_CANNON">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_EXPLODE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Gattling Gun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_GATTLING_GUN">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_40, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Magnum)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_MAGNUM">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_6, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Assault Rifle)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_ASSAULT_RIFLE">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_20, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Pump Shotgun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PUMP_SHOTGUN">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_MHP_TGCVSS_WEAPON_PROPERTY_RECOIL, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_8, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SCATTER</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Sniper Rifle)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_MHP_TGCVSS_WEAPON_PROPERTY_SIGHTED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Submachine Gun)" type="Proficiency" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SUBMACHINE_GUN">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_MHP_TGCVSS_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_MHP_TGCVSS_WEAPON_PROPERTY_RELOAD_16, ID_MHP_TGCVSS_WEAPON_PROPERTY_AUTOMATIC</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_CANNON" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_GATTLING_GUN" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_MAGNUM" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_ASSAULT_RIFLE" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PUMP_SHOTGUN" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" type="Proficiency" />
+			<grant name="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SUBMACHINE_GUN" type="Proficiency" />
+		</rules>
+	</append>
+
+	<!--Kensei Weapon Options-->
+	<element name="Kensei Weapon (Double-Barrel Shotgun)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_DOUBLE_BARREL_SHOTGUN">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Double-Barrel Shotgun if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Hunting Rifle)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_HUNTING_RIFLE">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Hunting Rifle if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HUNTING_RIFLE" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Parlor Gun)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_PARLOR_GUN">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Parlor Gun if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_PARLOR_GUN" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Revolver)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_REVOLVER">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Revolver if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Flare Gun)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_FLARE_GUN">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Flare Gun if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_FLARE_GUN" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Handgun)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_HANDGUN">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Handgun if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_HANDGUN" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Assault Rifle)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_ASSAULT_RIFLE">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Assault Rifle if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_ASSAULT_RIFLE" />
+		</rules>
+	</element>
+
+	<element name="Kensei Weapon (Submachine Gun)" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_KENSEI_WEAPON_SUBMACHINE_GUN">
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with the Submachine Gun if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_MHP_TGCVSS_PROFICIENCY_WEAPON_PROFICIENCY_SUBMACHINE_GUN" />
+		</rules>
+	</element>
+
+</elements>

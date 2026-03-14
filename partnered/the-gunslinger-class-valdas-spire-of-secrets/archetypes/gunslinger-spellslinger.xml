@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spellslinger</name>
+		<description>Spellslinger from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<update version="0.0.1">
+			<file name="gunslinger-spellslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-spellslinger.xml" />
+		</update>
+	</info>
+
+	<element name="Spellslinger" type="Archetype" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_GUNSLINGER_SPELLSLINGER">
+		<supports>TGCVSS Gunslinger Subclass</supports>
+		<description>
+			<p class="flavor">Complement Your Gunslinging with Arcana</p>
+			<p>Magic and guns aren't so different—arcane power is like gunpowder, a spell is like a bullet, and you are like a gun, directing your spells with precision at unfortunate targets. Spellslingers mix the disciplines of gunplay and spellcasting, sometimes loading arcane charges with your shots and firing bullets enhanced with lighting, frost, or flame.</p>
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" />
+			<h5>SPELLSLINGER SPELLCASTING</h5>
+			<table class="class-features">
+				<tr style="font-weight: bold">
+					<td rowspan="2">Gunslinger Level</td>
+					<td rowspan="2">Spells Prepared</td>
+					<td colspan="4" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
+				</tr>
+				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+				<tr><td> 3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLSHOT" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_COUNTER_MAGE" />
+			<div element="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLSHOT" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_COUNTER_MAGE" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Spellcasting" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_SPELLCASTING</requirements>
+		<description>
+			<p>You complement your bullets with the ability to cast spells.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You know two cantrips of your choice from the Wizard spell list (see that class's section for its list). <i>Fire Bolt</i> and <i>Message</i> are recommended. Whenever you gain a Gunslinger level, you can replace one of these cantrips with another cantrip of your choice from the Wizard spell list.</p>
+			<p class="indent">When you reach Gunslinger level 10, you learn another Wizard cantrip of your choice.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Spellslinger Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Prepared Spells of Level 1+.</em></strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Wizard spell list. <i>Chromatic Orb</i>, <i>Jump</i>, and <i>Shield</i> are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Gunslinger levels, as shown in the Prepared Spells column of the Spellslinger Spellcasting table. Whenever that number increases, choose additional spells from the Wizard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Gunslinger, your list of prepared spells can include five Wizard spells of levels 1 and 2 in any combination.</p>
+			<p class="indent"><strong><em>Changing your Prepared Spells.</em></strong> Whenever you gain a Gunslinger level, you can replace one spell on your list with another Wizard spell for which you have spell slots.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your Wizard spells.</p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> You can use an Arcane Focus or a Ranged weapon as a Spellcasting Focus for your Wizard spells.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet alt="Spellcasting">
+			<description>You can replace one of your spells and/or cantrips whenever you gain a Gunslinger level. You can use an Arcane Focus or a Ranged weapon as a Spellcasting Focus for your Wizard spells.</description>
+		</sheet>
+		<spellcasting name="Spellslinger" ability="Intelligence" allowReplace="true">
+			<list>Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="spellslinger:spellcasting:slots:1" value="2" level="3" />
+			<stat name="spellslinger:spellcasting:slots:1" value="1" level="4" />
+			<stat name="spellslinger:spellcasting:slots:1" value="1" level="7" />
+			<stat name="spellslinger:spellcasting:slots:2" value="2" level="7" />
+			<stat name="spellslinger:spellcasting:slots:2" value="1" level="10" />
+			<stat name="spellslinger:spellcasting:slots:3" value="2" level="13" />
+			<stat name="spellslinger:spellcasting:slots:3" value="1" level="16" />
+			<stat name="spellslinger:spellcasting:slots:4" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip (Spellslinger)" supports="Wizard, 0" level="3" number="2" spellcasting="Spellslinger" />
+			<select type="Spell" name="Cantrip (Spellslinger)" supports="Wizard, 0" level="10" spellcasting="Spellslinger" />
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Spellslinger" />
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Spellslinger"/>
+			<select type="Spell" name="Spell (Spellslinger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" spellcasting="Spellslinger"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Bang, You're Dead!" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD</requirements>
+		<description>
+			<p>You can use magic in place of guns.</p>
+			<p class="indent"><strong><em>Finger Guns.</em></strong> You learn the <i>Finger Guns</i> cantrip.</p>
+			<p class="indent"><strong><em>Arcane Shot.</em></strong> When you hit a target with a <i>Finger Guns</i> attack, you can expend one Risk Die as a Bonus Action and add it to the damage roll.</p>
+		</description>
+		<sheet alt="Bang, You're Dead!" action="Bonus Action" usage="Risk Die">
+			<description>When you hit a target with a Finger Guns attack, you can expend one Risk Die add it to the damage roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_MHP_TGCVSS_SPELL_FINGER_GUNS" spellcasting="Spellslinger" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Spellshot" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLSHOT">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_SPELLSHOT</requirements>
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</p>
+		</description>
+		<sheet alt="Spellshot" action="Action">
+			<description>You can replace one of your attacks with a Wizard cantrip that has a casting time of an action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Counter-Mage" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_COUNTER_MAGE">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_COUNTER_MAGE</requirements>
+		<description>
+			<p>Your experience in combating spellcasters grants you the following benefits.</p>
+			<p class="indent"><strong><em>Abjuration-Breaker.</em></strong> Whenever you make a ranged attack roll, you temporarily disrupt protective magic affecting the target. For the duration of the attack, the effects of spells targeting the creature, such as <i>Mage Armor</i>, as well as the properties and powers of magic items worn or carried by the creature, are suppressed and don't function. The target of the attack can't take a Reaction to cast spells such as <i>Shield</i> in response to the attack or damage.</p>
+			<p class="indent"><strong><em>Antimagic Shot.</em></strong> When you score a Critical Hit and the target is affected by your Gut Shot feature, it also impedes the target's ability to cast spells. While the projectile is lodged in the target, it can't cast spells or take the Magic action. Additionally, the target has Disadvantage on Constitution saving throws it makes to maintain Concentration.</p>
+			<p class="indent"><strong><em>Inured to Magic.</em></strong> When you fail a saving throw against a spell or magical effect, you can take a Reaction to roll 1d6 and add it to the roll, potentially turning the failure into a success.</p>
+		</description>
+		<sheet alt="Bang, You're Dead!" action="Bonus Action" usage="Risk Die">
+			<description>When you hit a target with a Finger Guns attack, you can expend one Risk Die add it to the damage roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_ABJURATION_BREAKER" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_ANTIMAGIC_SHOT" />
+			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_SPELLCASTING" />
+		</rules>
+	</element>
+	<element name="Abjuration Breaker" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_ABJURATION_BREAKER">
+		<compendium display="false" />
+		<description>
+			<p>Whenever you make a ranged attack roll, you temporarily disrupt protective magic affecting the target. For the duration of the attack, the effects of spells targeting the creature, such as <i>Mage Armor</i>, as well as the properties and powers of magic items worn or carried by the creature, are suppressed and don't function. The target of the attack can't take a Reaction to cast spells such as <i>Shield</i> in response to the attack or damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a ranged attack roll, you temporarily disrupt protective magic affecting the target. For the duration of the attack, the effects of spells targeting the creature as well as the properties and powers of magic items worn or carried by the creature, are suppressed and don't function. The target of the attack can't take a Reaction to cast spells in response to the attack or damage.</description>
+		</sheet>
+	</element>
+	<element name="Antimagic Shot" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_ANTIMAGIC_SHOT">
+		<compendium display="false" />
+		<description>
+			<p>When you score a Critical Hit and the target is affected by your Gut Shot feature, it also impedes the target's ability to cast spells. While the projectile is lodged in the target, it can't cast spells or take the Magic action. Additionally, the target has Disadvantage on Constitution saving throws it makes to maintain Concentration.</p>
+		</description>
+		<sheet>
+			<description>While the projectile is lodged in the target from your Gut Shot feature, it can't cast spells or take the Magic action. Additionally, the target has Disadvantage on Constitution saving throws it makes to maintain Concentration.</description>
+		</sheet>
+	</element>
+	<element name="Inured to Magic" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_INURED_TO_MAGIC">
+		<compendium display="false" />
+		<description>
+			<p>When you fail a saving throw against a spell or magical effect, you can take a Reaction to roll 1d6 and add it to the roll, potentially turning the failure into a success.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you fail a saving throw against a spell or magical effect, you can roll 1d6 and add it to the roll, potentially turning the failure into a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Magic Bullet [Maneuver]" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET">
+		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET</requirements>
+		<description>
+			<p>When you make a spell attack roll, you can expend one Risk Die as a Bonus Action to substitute the spell attack with a ranged attack using a weapon. Add the Risk Die to the attack roll. On a hit, the attack deals the weapon's normal damage, in addition to the effects of the spell attack roll.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Magic Bullet" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET_RISK">
+		<supports>TGCVSS Risk Magic Bullet</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you make a spell attack roll, you can expend one Risk Die as a Bonus Action to substitute the spell attack with a ranged attack using a weapon. Add the Risk Die to the attack roll. On a hit, the attack deals the weapon's normal damage, in addition to the effects of the spell attack roll.</p>
+		</description>
+		<sheet usage="1/Turn - Risk Die">
+			<description>When you make a spell attack roll, you can substitute the spell attack with a ranged attack using a weapon. Add the Risk Die to the attack roll. On a hit, the attack deals the weapon's normal damage, in addition to the effects of the spell attack roll.</description>
+		</sheet>
+	</element>
+	<append id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_RISK">
+		<rules>
+			<select type="Archetype Feature" name="TGCVSS Risk Magic Bullet" supports="TGCVSS Risk Magic Bullet" default="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET_RISK" requirements="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET" />
+		</rules>
+	</append>
+
+	<!--Feature Replacement Grants-->
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_SPELLCASTING" />
+	<element name="Bang, You're Dead! Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_BANG_YOURE_DEAD" />
+	<element name="Spellshot Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_SPELLSHOT" />
+	<element name="Counter-Mage Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_COUNTER_MAGE" />
+	<element name="Magic Bullet Feature Replacement" type="Grants" source="Internal" id="ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_SPELLSLINGER_MAGIC_BULLET" />
+	
+</elements>
