@@ -724,14 +724,14 @@
 			<p>Filled with diagrams showing humans with alien features, this book of strange medical lore is written in monster-blood ink infused with draconic dust and then etched onto parchment pages made from aberration skin. The manuscript is bound in a scale-clad cover.</p>
 			<p class="indent">You can use this manual as a Spellcasting Focus for your Apothecary or Warlock spells. When you use the manual as a Spellcasting Focus, you gain a +1 bonus to spell attack rolls and spell save DCs of your Apothecary or Warlock spells.</p>
 			<p class="indent">In addition, the book contains the knowledge of an Apothecary Esoteric Theory or Warlock Eldritch Invocation up to a level determined by the manual's rarity and chosen when the item is created, which you gain while you are attuned to it. This determines which class is required to attune to the item.</p>
-			<h5>Manual of Occult Anatomy Rarities</h5>
+			<h5 style="text-align:center">Manual of Occult Anatomy Rarities</h5>
 			<table>
 				<thead>
-					<tr><td class="col-10" style="text-align:center">Rarity</td><td>Bonus</td><td>Maximum Level</td></tr>
+					<tr><td style="text-align:center">Rarity</td><td style="text-align:center">Bonus</td><td style="text-align:center">Maximum Level</td></tr>
 				</thead>
-				<tr><td style="text-align:center">Rare</td><td>+1</td><td>6th</td></tr>
-				<tr><td style="text-align:center">Very Rare</td><td>+2</td><td>10th</td></tr>
-				<tr><td style="text-align:center">Legendary</td><td>+3</td><td>15th</td></tr>
+				<tr><td style="text-align:center">Rare</td><td style="text-align:center">+1</td><td style="text-align:center">6th</td></tr>
+				<tr><td style="text-align:center">Very Rare</td><td style="text-align:center">+2</td><td style="text-align:center">10th</td></tr>
+				<tr><td style="text-align:center">Legendary</td><td style="text-align:center">+3</td><td style="text-align:center">15th</td></tr>
 			</table>
 		</description>
 		<setters>
@@ -755,14 +755,14 @@
 			<p>Filled with diagrams showing humans with alien features, this book of strange medical lore is written in monster-blood ink infused with draconic dust and then etched onto parchment pages made from aberration skin. The manuscript is bound in a scale-clad cover.</p>
 			<p class="indent">You can use this manual as a Spellcasting Focus for your Apothecary or Warlock spells. When you use the manual as a Spellcasting Focus, you gain a +2 bonus to spell attack rolls and spell save DCs of your Apothecary or Warlock spells.</p>
 			<p class="indent">In addition, the book contains the knowledge of an Apothecary Esoteric Theory or Warlock Eldritch Invocation up to a level determined by the manual's rarity and chosen when the item is created, which you gain while you are attuned to it. This determines which class is required to attune to the item.</p>
-			<h5>Manual of Occult Anatomy Rarities</h5>
+			<h5 style="text-align:center">Manual of Occult Anatomy Rarities</h5>
 			<table>
 				<thead>
-					<tr><td class="col-10" style="text-align:center">Rarity</td><td>Bonus</td><td>Maximum Level</td></tr>
+					<tr><td style="text-align:center">Rarity</td><td style="text-align:center">Bonus</td><td style="text-align:center">Maximum Level</td></tr>
 				</thead>
-				<tr><td style="text-align:center">Rare</td><td>+1</td><td>6th</td></tr>
-				<tr><td style="text-align:center">Very Rare</td><td>+2</td><td>10th</td></tr>
-				<tr><td style="text-align:center">Legendary</td><td>+3</td><td>15th</td></tr>
+				<tr><td style="text-align:center">Rare</td><td style="text-align:center">+1</td><td style="text-align:center">6th</td></tr>
+				<tr><td style="text-align:center">Very Rare</td><td style="text-align:center">+2</td><td style="text-align:center">10th</td></tr>
+				<tr><td style="text-align:center">Legendary</td><td style="text-align:center">+3</td><td style="text-align:center">15th</td></tr>
 			</table>
 		</description>
 		<setters>
@@ -786,14 +786,14 @@
 			<p>Filled with diagrams showing humans with alien features, this book of strange medical lore is written in monster-blood ink infused with draconic dust and then etched onto parchment pages made from aberration skin. The manuscript is bound in a scale-clad cover.</p>
 			<p class="indent">You can use this manual as a Spellcasting Focus for your Apothecary or Warlock spells. When you use the manual as a Spellcasting Focus, you gain a +3 bonus to spell attack rolls and spell save DCs of your Apothecary or Warlock spells.</p>
 			<p class="indent">In addition, the book contains the knowledge of an Apothecary Esoteric Theory or Warlock Eldritch Invocation up to a level determined by the manual's rarity and chosen when the item is created, which you gain while you are attuned to it. This determines which class is required to attune to the item.</p>
-			<h5>Manual of Occult Anatomy Rarities</h5>
+			<h5 style="text-align:center">Manual of Occult Anatomy Rarities</h5>
 			<table>
 				<thead>
-					<tr><td class="col-10" style="text-align:center">Rarity</td><td>Bonus</td><td>Maximum Level</td></tr>
+					<tr><td style="text-align:center">Rarity</td><td style="text-align:center">Bonus</td><td style="text-align:center">Maximum Level</td></tr>
 				</thead>
-				<tr><td style="text-align:center">Rare</td><td>+1</td><td>6th</td></tr>
-				<tr><td style="text-align:center">Very Rare</td><td>+2</td><td>10th</td></tr>
-				<tr><td style="text-align:center">Legendary</td><td>+3</td><td>15th</td></tr>
+				<tr><td style="text-align:center">Rare</td><td style="text-align:center">+1</td><td style="text-align:center">6th</td></tr>
+				<tr><td style="text-align:center">Very Rare</td><td style="text-align:center">+2</td><td style="text-align:center">10th</td></tr>
+				<tr><td style="text-align:center">Legendary</td><td style="text-align:center">+3</td><td style="text-align:center">15th</td></tr>
 			</table>
 		</description>
 		<setters>
