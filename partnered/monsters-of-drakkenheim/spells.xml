@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Monsters of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/spells.xml" />
+		</update>
+	</info>
+	
+    <element name="Purge Contamination" type="Spell" source="Monsters of Drakkenheim" id="ID_GFG_MOD_SPELL_PURGE_CONTAMINATION">
+		<supports>Bard, CLeric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You apply alchemical fluids or holy water to a Contaminated Humanoid creature while reciting an exacting magical chant which expels eldritch contaminants from its body. When you finish casting the spell, all Contamination levels and mutations are removed from the creature. It then gains 1 level of Exhaustion for each Contamination level removed with this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">contamination</set>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">100 gp of alchemical fluids or holy water, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

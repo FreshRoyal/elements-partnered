@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Monsters of Drakkenheim by the Dungeon Dudes and Ghostfire Gaming</name>
+		<update version="1.0.0">
+			<file name="monsters-of-drakkenheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/items.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/source.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/spells.xml" />
+	</files>
+</index>

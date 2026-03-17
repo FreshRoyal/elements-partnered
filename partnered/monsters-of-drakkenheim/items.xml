@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Monsters of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/items.xml" />
+		</update>
+	</info>
+
+	<!--Delerium-->
+	<element name="Delerium, Chip" type="Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_ITEM_DELERIUM_CHIP">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor. It appears in geode clusters of translucent, sharp-edged crystals which reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than a human.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Size</td><td>Market Value</td><td>Weight</td><td>AC</td><td>HP</td><td>Extraction</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Chip</td><td>10 gold</td><td>1/4 lbs</td><td>15</td><td>5</td><td>1 action</td></tr>
+					<tr><td>Fragment</td><td>100 gold</td><td>1/2 lbs</td><td>17</td><td>10</td><td>1 minute</td></tr>
+					<tr><td>Shard</td><td>500 gold</td><td>1 lbs</td><td>19</td><td>15</td><td>5 minutes</td></tr>
+					<tr><td>Crystal</td><td>1,000 gold</td><td>2 lbs</td><td>21</td><td>20</td><td>30 minutes</td></tr>
+					<tr><td>Geode</td><td>5,000 gold</td><td>20 lbs+</td><td>23</td><td>25</td><td>1 hour</td></tr>
+					<tr><td>Massive Cluster</td><td>Priceless</td><td>8,000 lbs+</td><td>25</td><td>50</td><td>7 days</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="Delerium, Fragment" type="Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_ITEM_DELERIUM_FRAGMENT">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor. It appears in geode clusters of translucent, sharp-edged crystals which reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than a human.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Size</td><td>Market Value</td><td>Weight</td><td>AC</td><td>HP</td><td>Extraction</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Chip</td><td>10 gold</td><td>1/4 lbs</td><td>15</td><td>5</td><td>1 action</td></tr>
+					<tr><td>Fragment</td><td>100 gold</td><td>1/2 lbs</td><td>17</td><td>10</td><td>1 minute</td></tr>
+					<tr><td>Shard</td><td>500 gold</td><td>1 lbs</td><td>19</td><td>15</td><td>5 minutes</td></tr>
+					<tr><td>Crystal</td><td>1,000 gold</td><td>2 lbs</td><td>21</td><td>20</td><td>30 minutes</td></tr>
+					<tr><td>Geode</td><td>5,000 gold</td><td>20 lbs+</td><td>23</td><td>25</td><td>1 hour</td></tr>
+					<tr><td>Massive Cluster</td><td>Priceless</td><td>8,000 lbs+</td><td>25</td><td>50</td><td>7 days</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="Delerium, Shard" type="Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_ITEM_DELERIUM_SHARD">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor. It appears in geode clusters of translucent, sharp-edged crystals which reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than a human.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Size</td><td>Market Value</td><td>Weight</td><td>AC</td><td>HP</td><td>Extraction</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Chip</td><td>10 gold</td><td>1/4 lbs</td><td>15</td><td>5</td><td>1 action</td></tr>
+					<tr><td>Fragment</td><td>100 gold</td><td>1/2 lbs</td><td>17</td><td>10</td><td>1 minute</td></tr>
+					<tr><td>Shard</td><td>500 gold</td><td>1 lbs</td><td>19</td><td>15</td><td>5 minutes</td></tr>
+					<tr><td>Crystal</td><td>1,000 gold</td><td>2 lbs</td><td>21</td><td>20</td><td>30 minutes</td></tr>
+					<tr><td>Geode</td><td>5,000 gold</td><td>20 lbs+</td><td>23</td><td>25</td><td>1 hour</td></tr>
+					<tr><td>Massive Cluster</td><td>Priceless</td><td>8,000 lbs+</td><td>25</td><td>50</td><td>7 days</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="Delerium, Crystal" type="Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_ITEM_DELERIUM_CRYSTAL">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor. It appears in geode clusters of translucent, sharp-edged crystals which reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than a human.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Size</td><td>Market Value</td><td>Weight</td><td>AC</td><td>HP</td><td>Extraction</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Chip</td><td>10 gold</td><td>1/4 lbs</td><td>15</td><td>5</td><td>1 action</td></tr>
+					<tr><td>Fragment</td><td>100 gold</td><td>1/2 lbs</td><td>17</td><td>10</td><td>1 minute</td></tr>
+					<tr><td>Shard</td><td>500 gold</td><td>1 lbs</td><td>19</td><td>15</td><td>5 minutes</td></tr>
+					<tr><td>Crystal</td><td>1,000 gold</td><td>2 lbs</td><td>21</td><td>20</td><td>30 minutes</td></tr>
+					<tr><td>Geode</td><td>5,000 gold</td><td>20 lbs+</td><td>23</td><td>25</td><td>1 hour</td></tr>
+					<tr><td>Massive Cluster</td><td>Priceless</td><td>8,000 lbs+</td><td>25</td><td>50</td><td>7 days</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="Delerium, Geode" type="Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_ITEM_DELERIUM_GEODE">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor. It appears in geode clusters of translucent, sharp-edged crystals which reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than a human.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Size</td><td>Market Value</td><td>Weight</td><td>AC</td><td>HP</td><td>Extraction</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Chip</td><td>10 gold</td><td>1/4 lbs</td><td>15</td><td>5</td><td>1 action</td></tr>
+					<tr><td>Fragment</td><td>100 gold</td><td>1/2 lbs</td><td>17</td><td>10</td><td>1 minute</td></tr>
+					<tr><td>Shard</td><td>500 gold</td><td>1 lbs</td><td>19</td><td>15</td><td>5 minutes</td></tr>
+					<tr><td>Crystal</td><td>1,000 gold</td><td>2 lbs</td><td>21</td><td>20</td><td>30 minutes</td></tr>
+					<tr><td>Geode</td><td>5,000 gold</td><td>20 lbs+</td><td>23</td><td>25</td><td>1 hour</td></tr>
+					<tr><td>Massive Cluster</td><td>Priceless</td><td>8,000 lbs+</td><td>25</td><td>50</td><td>7 days</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="Delerium, Massive Cluster" type="Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_ITEM_DELERIUM_MASSIVE_CLUSTER">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor. It appears in geode clusters of translucent, sharp-edged crystals which reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than a human.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">Size</td><td>Market Value</td><td>Weight</td><td>AC</td><td>HP</td><td>Extraction</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Chip</td><td>10 gold</td><td>1/4 lbs</td><td>15</td><td>5</td><td>1 action</td></tr>
+					<tr><td>Fragment</td><td>100 gold</td><td>1/2 lbs</td><td>17</td><td>10</td><td>1 minute</td></tr>
+					<tr><td>Shard</td><td>500 gold</td><td>1 lbs</td><td>19</td><td>15</td><td>5 minutes</td></tr>
+					<tr><td>Crystal</td><td>1,000 gold</td><td>2 lbs</td><td>21</td><td>20</td><td>30 minutes</td></tr>
+					<tr><td>Geode</td><td>5,000 gold</td><td>20 lbs+</td><td>23</td><td>25</td><td>1 hour</td></tr>
+					<tr><td>Massive Cluster</td><td>Priceless</td><td>8,000 lbs+</td><td>25</td><td>50</td><td>7 days</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" excludeEncumbrance="true" lb="8000">8000 lb.</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+	
+	<!--Magic Items-->
+	<element name="Amulet of Incineration" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_AMULET_OF_INCINERATION">
+		<description>
+			<p>Crafted from a gem made from the elemental dust of an entropic flame set within a bone talisman, and glazed in the blood of an aberration, this amulet shimmers with an internal, ever-burning fire.</p>
+			<p class="indent">Once per turn, when you cast a spell that deals Fire damage using a spell slot, you can choose one target that was dealt Fire damage by the spell to gain the Burning (3d6 Fire) condition.</p>
+		</description>
+		<setters>
+			<set name="keywords">necklace, fire, damage, burning, condition</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Amulet of Primal Wisdom" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_AMULET_OF_PRIMAL_WISDOM">
+		<description>
+			<p>Crafted from the dried leaves of magical plants and imbued with their dust, this amulet is decorated with a singular dried flower and then encased in sap. The pendant glows softly with the light of springtime and smells of floral fields in bloom.</p>
+			<p class="indent">Your Wisdom score is 19 while you wear this magic amulet. It has no effect on you if your Wisdom is 19 or higher without it.</p>
+		</description>
+		<setters>
+			<set name="keywords">necklace, wisdom</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="wisdom:score:set" value="19" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Aqua Delerium" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_AQUA_DELERIUM">		
+		<description>
+			<p>This purple potion glows dimly with octarine light. It swirls and sparkles in its small, stoppered bottle.</p>
+			<p class="indent">When you drink this potion, you regain expended spell slots. Roll 1d6. You choose spell slots to regain which have a combined level equal to or less than the result. None of the slots can be higher than level 5.</p>
+			<p class="indent">For one hour after drinking <i>Aqua Delerium</i>, roll 1d20 each time you cast a spell of level 1 or higher. On a 1, you trigger a random Arcane Anomalies.</p>
+			<p class="indent">If you consume more than one dose of <i>Aqua Delerium</i> before finishing a Long Rest, you take 1d12 Necrotic damage for each spell slot level regained from the second dose, and your Hit Point maximum is reduced by an amount equal to the damage taken until you finish a Long Rest. This damage can't be reduced or prevented in any way.</p>
+			<p class="indent">When a creature who cannot cast spells using spell slots drinks Aqua Delerium, it takes 10 (3d6) Necrotic damage and gains one level of Contamination.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Aqua Expurgo" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_AQUA_EXPURGO">		
+		<description>
+			<p>This bright orange fluid is stored in a syringe and charged with arcane magic. You can use a Utilize action to administer the shot directly to the heart of yourself or another willing creature.</p>
+			<p class="indent">You are protected against Contamination for six hours after receiving a dose of <i>Aqua Expurgo</i>. During this time, whenever you fail a saving throw against an effect which would cause you to gain one or more Contamination levels, you can choose to succeed instead. You can use this ability three times, after which the effects of <i>Aqua Expurgo</i> expire.</p>
+			<p class="indent">If the effects of <i>Aqua Expurgo</i> expire in this manner, you immediately take 10 (3d6) Necrotic damage and become Incapacitated for 1 minute while you violently retch corrupt bile. Your Hit Point maximum is reduced by an amount equal to the damage taken. This reduction lasts until you finish a Long Rest. You die if this effect reduces your Hit Point maximum to 0. The Necrotic damage can't be reduced or prevented by any means.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Blade of Retribution" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_BLADE_OF_RETRIBUTION">
+		<description>
+			<p>The metal of this blade is forged in the dust of celestials, with a hilt wrapped in fiend skin leather. The eye of a dragon is placed upon the hilt and polished in monster blood.</p>
+			<p class="indent">When you use this magic weapon to attack a creature and roll a 20 on the d20 for the attack roll, you can cast <i>Divine Smite</i> as part of the same action used to make the attack without expending a spell slot.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, paladin, divine smite</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a Paladin">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">{{parent}} of Retribution</set>
+		</setters>
+	</element>
+
+	<element name="Bracers of Arc Lightning" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_BRACERS_OF_ARC_LIGHTNING">
+		<description>
+			<p>These bracers are crafted with fine leathers decorated with magical scales, washed in elemental fluids, elemental dust, and contaminated ichor. The animus used must be from a creature that deals Lightning damage, allowing the bracers to channel the element.</p>
+			<p class="indent">While wearing these magic bracers you gain Resistance to Lightning damage and Immunity to the Shocked condition.</p>
+			<p class="indent">These magic bracers have six charges, and regain all expended charges each day at dawn. Once per turn when you hit a creature with a ranged weapon attack, you can expend one charge from the bracers to deal an extra 3d6 Lightning damage to the target. A target which takes this damage has the Shocked condition until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">resistance, lightning, immunity, shocked, condition, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">arms</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+
+	<element name="Champion's Weapon" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_CHAMPIONS_WEAPON">
+		<description>
+			<p>Attack rolls made using this magic weapon can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<setters>
+			<set name="keywords">critical hit</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Any Simple or Martial">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Champion's {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Charged Gauntlets" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_CHARGED_GAUNTLETS">
+		<description>
+			<p>These light gauntlets are made from cloth woven from the hair of a fiend and reinforced with the scales of a dragon. The gauntlets are washed with an alchemical formula made from elemental fluid and undead dust. They are then powered with a rare animus collected from an aberration.</p>
+			<p class="indent">Each time you hit with an Unarmed Strike while attuned to these magic gauntlets they gain one charge. The gauntlets can have up to 10 charges. Any unexpended charges disappear when you take a Long Rest or roll Initiative.</p>
+			<p class="indent">While the gauntlets have at least one charge, your Unarmed Strikes deal Lightning damage instead of its normal damage type.</p>
+			<p class="indent">While the gauntlets have 5 or more charges, your Unarmed Strikes deal an additional 2d6 Lightning damage and push the target 10 feet away from you on a hit.</p>
+			<p class="indent">You can expend 2 charges from the gauntlets to cast the <i>Shield</i> spell.</p>
+			<p class="indent">You can expend 10 charges from the gauntlets to cast <i>Destructive Wave</i> or <i>Wall of Force</i>, using your monk's focus saving throw DC.</p>
+		</description>
+		<setters>
+			<set name="keywords">monk, unarmed strike, lightning, damage, push, spells, shield, destructive wave, wall of force</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Monk">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Charm of Swarms" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_CHARM_OF_SWARMS">
+		<description>
+			<p>This charm resembles a large gnat. It is made of the spores of dead mushrooms; the mandibles of an insectoid creature are placed upon it. The charm is coated in an acidic bile and held together by dried mucus. It smells of bugs and rot.</p>
+			<p class="indent">When an enemy within 5 feet of you scores a Critical Hit on an attack made against you, you can cause the enemy to become Burning (2d6 Necrotic). While the target is Burning in this way, you have Advantage on attacks against the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">critical hit, burning, condition, necrotic, damage, advantage, attacks</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Circlet of Valor" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_CIRCLET_OF_VALOR">
+		<description>
+			<p>This steel circlet is forged from a construct and set with a gemstone animus containing a fiend. After being cleansed in the fires of a dragon's breath, this holy circlet glimmers with radiant energy.</p>
+			<p class="indent">When you cast a spell of level 1 or higher that restores Hit Points to a creature, that creature gains Valor (1d4) until the end of its next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Cold Snap Circlet" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_COLD_SNAP_CIRCLET">
+		<description>
+			<p>This icy circlet is made from frozen contaminated ichor, kept in a state of permafrost by the heart of a naturally cold creature, and lined with frozen bones of undead, all powered by the animus of an elemental. Even in its permanently frozen state, it is comfortable to wear.</p>
+			<p class="indent">Once per turn, when you cast a spell that deals Cold damage using a spell slot, you can choose one target that was dealt Cold damage by the spell to gain the Frozen condition. The escape DC equals your spell save DC.</p>
+		</description>
+		<setters>
+			<set name="keywords">frozen, condition, cold, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Crest of the Sacred Flame" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_CREST_OF_THE_SACRED_FLAME">
+		<description>
+			<p>This crest is crafted from the compressed dust of fiends destroyed and sanctified by the Sacred Flame and torched in fires ignited by the elemental fluid taken from a dragon. This simple crest is made from the bones of undead creatures washed in acidic monster bile.</p>
+			<p class="indent">While attuned to this magic crest you increase the Emanation of your Aura of Protection by 10 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">paladin, aura of protection</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Paladin">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="aura of protection:range" value="10" />
+		</rules>
+	</element>
+
+	<element name="Crimson Blade" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_CRIMSON_BLADE">
+		<description>
+			<p>A blood-red ichor drips down this sword's darkened steel blade. The sword is coated in sanguine witch blood. The dust of dead vampires is forged into the steel of the blade, giving it its blackened sheen. The edge is then empowered by the heart of a dragon. Its gold hilt wrapped in crimson leathers and a bloodred ruby plucked from the corpse of a Sanguine Witch. The fangs of vampires decorate the pommel.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic sword.</p>
+			<p class="indent">Any a creature you hit with this weapon that isn't a Construct or Undead takes an extra 3d6 Necrotic damage, and you regain Hit Points equal to the Necrotic damage dealt.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> While attuned to this blade, you can't enter a residence without an invitation from one of its occupants.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, necrotic, damage, healing, hit points</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">Crimson {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Dazing Hammer" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_DAZING_HAMMER">
+		<description>
+			<p>This hammer is made from giant bones and forged in undead dust. The bones are then stained with monster blood.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls with this magic hammer.</p>
+			<p class="indent">When you score a Critical Hit with this hammer, the target is Dazed until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer, maul, critical hit, dazed, condition</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Warhammer or Maul">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Warhammer||Maul</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Dazing {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Electric Charge Ring" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_ELECTRIC_CHARGE_RING">
+		<description>
+			<p>This ring, composed of living lightning, is forged from elemental dust compressed into a gem around the lens eye of a construct, washed in the acidic glands of a monster before being set into an animus of an elemental.</p>
+			<p class="indent">When you cast a spell using a spell slot that deals Lightning damage, choose one target that failed its first saving throw against that spell. That creature is Shocked until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+		</setters>
+	</element>
+
+	<element name="Everhot Stew Pot" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_EVERHOT_STEW_POT">
+		<description>
+			<p>This cauldron is made using the plated iron from a construct infused with the ash of an elemental. The animus used must be from a dragon which adds both control and potency to the latent elemental magics. The spoon used to stir the cauldron is carved from the bone of a magical creature. This cauldron can heat to boiling temperatures without requiring fire simply by being filled and stirred, and the stews and soups it produces are always delicious and hearty.</p>
+			<p class="indent">During a Long Rest, you can cook enough stew to feed up to three creatures. All creatures who eat a stew from this pot gain 10 Temporary Hit Points. While a creature has these Temporary Hit Points, they gain Valor (1d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">temporary hit points, valor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Familiar Figurine" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_FAMILIAR_FIGURINE">
+		<description>
+			<p>Once per day as a Magic action, you can use this finely-carved figurine to cast <i>Find Familiar</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, find familiar</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Fractal Key" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_FRACTAL_KEY">
+		<description>
+			<p>As an action, a creature in a Thin Place can create a gate to the Ethereal Plane for 1 minute, after which the key crumbles to dust.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, ethereal plane</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Frozen Armor" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_FROZEN_ARMOR">
+		<description>
+			<p>This armor channels cold energy through carefully manufactured veins of elemental fluid that run along the inside of its frame. Elemental dust is mixed with the gold in its forming, and contaminated ichor is used as a catalyst to magnify the magical effects. The animus gem placed centrally upon it must be infused with the energy of a frost giant.</p>
+			<p class="indent">While attuned to this armor you have Resistance to Cold damage and are Immune to the Frozen condition.</p>
+			<p class="indent">This magical armor has six charges, and regains all expended charges each day at dawn. When you are hit by a melee attack, you can use your Reaction and expend 1 charge from the armor to freeze your attacker in place. The creature must make a DC 15 Constitution saving throw or be Frozen (DC 15).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="any">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Frozen {{parent}}</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Ghost Sight Bow" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_GHOST_SIGHT_BOW">
+		<description>
+			<p>This bow is hand-carved carefully from the bones of a dryad and stained in the undead blood of vampires. Strung with the hair of a banshee with a powerful wraith animus is placed within the handle. Once the bow's crafting is complete, it fades from its physical form into a semi-corporeal form.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic longbow.</p>
+			<p class="indent">The bow produces its own spectral ammunition which deals Force damage instead of Piercing damage. The ammunition disappears when it hits or misses a target.</p>
+			<p class="indent">While attuned to this weapon, you can use a Bonus Action to see into the Ethereal Plane and see all invisible creatures and objects until the end of your turn. Additionally, you can see through all walls and solid objects within 60 feet of you until the end of your turn. During this time, ammunition fired from this bow passes through solid objects, and you can target enemies within 60 feet of you with your ranged attacks, even if they are behind total cover. You can use this Bonus Action only if you haven't moved during your turn. After you use the Bonus Action, your Speed becomes 0 until the end of your turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow, force, damage, bonus action, ethereal plane, invisible</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Longbow">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Longbow</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+
+	<element name="Giant Femur Club" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_GIANT_FEMUR_CLUB">
+		<description>
+			<p>This club is made from the cleaned and polished femur of a giant, crafted finely into a usable two-handed club. Its tapered hilt is wrapped in stained leather. Fastened to the top of the club is a large troll skull with several monstrous teeth embedded into it like a bone morningstar, giving the weapon a grim appearance. The club is imbued with elemental power from the animus used to power the weapon, which causes it to crackle with elemental power.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic greatclub, and you have Advantage on attack rolls made against Giants.</p>
+			<p class="indent">While attuned to this club you deal an additional 2d6 damage of the type associated with the elemental dust infused into it.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatclub, damage, advantage, attack, giant</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Greatclub">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Greatclub</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+	<element name="Gloves of Ratling Ability" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_GLOVES_OF_RATLING_ABILITY">
+		<description>
+			<p>Your Dexterity score is 19 while you wear these ratling hide gloves. They have no effect on you if your Dexterity is 19 or higher without them.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="dexterity:score:set" value="19" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Greater Rejuvenation Potion" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_GREATER_REJUVENATION_POTION">		
+		<description>
+			<p>When you consume this potion, you immediately gain the benefits of a Long Rest.</p>
+			<p class="indent">Once you consume a <i>Greater Rejuvenation Potion</i>, you can't benefit from consuming another until you finish 3d6 Long Rests.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Hag-Stitched Troll Leather Armor" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_HAG_STITCHED_TROLL_LEATHER_ARMOR">
+		<description>
+			<p>You gain a +1 bonus to Armor Class while wearing this magic armor.</p>
+			<p class="indent">This magic armor has 50 charges. It regains all expended charges each day at dawn. While wearing this armor and attuned to it, at the start of your turn you can expend between 1 and 10 charges from the armor (no action required). You regain 1 Hit Point for each charge expended in this way. If you take Acid or Fire damage while wearing this armor, it loses 1 charge for each point of Acid or Fire damage taken.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Leather or Hide">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="armor">Hide||Leather</set>
+			<set name="name-format">Hag-Stitched Troll {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Hammer of Chaos" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_HAMMER_OF_CHAOS">
+		<description>
+			<p>A <i>hammer of chaos</i> is crafted by melting down the magical plates of otherworldly constructs, infused with both the fluid and dust of elementals. The weapon is then soaked in the grey matter of an aberrant brain. This steel hammer is fitted into a shaft made from fiend skin leather and the ribs of a dragon.</p>
+			<p class="indent">You gain a +3 bonus to attack rolls and damage rolls made with this weapon. This hammer has Thrown with a normal range of 30 feet and a long range of 90 feet. When you hit with an attack using this weapon, choose Acid, Cold, Fire, Lightning, Poison, or Thunder. The hammer deals 2d8 extra damage of the chosen type.</p>
+			<p class="indent">When you hit with a ranged attack using this weapon, if you roll the same number on two or more of the d8s, the hammer ricochets to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll if the attack hits. After making this attack, the hammer flies back to your hand.</p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer, maul, thrown, acid, cold, fire, lightning, poison, thunder, damage, ricochet</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Warhammer or Maul">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Warhammer||Maul</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+			<set name="name-format">{{parent}} of Chaos</set>
+		</setters>
+	</element>
+
+	<element name="Hazewind Cape" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_HAZEWIND_CAPE">
+		<description>
+			<p>This crimson and gold hooded cape is fitted with the feathers of fallen Harpies and dyed in their blood, this grants the wearer some resistance to the songs of Harpies. The cape is then infused with the dust of a fey creature which grants it a powerful anti-charm effect powered by an animus.</p>
+			<p class="indent">While wearing this cape, you have Advantage on saving throws against the Charmed and Frightened conditions.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, saving throws, saves, charmed, frightened</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Heart String Harp" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_HEART_STRING_HARP">
+		<description>
+			<p>When played, this instrument reverberates with draconic whispers and enchantment that drift subtly within the notes that are struck, giving the music a sense of foreboding and palpable charm. Crafted from finely polished ivory and imbued with the animus of a fey creature, the true magic of this harp comes from the finely crafted strings made from combining the sinew of a dragon's heart chords and the hair of a fey, willingly given out of kindness.</p>
+			<p class="indent">You can use this magical harp as a Spellcasting Focus for your Bard spells. While attuned to this item, you gain a +1 bonus to your spell attack rolls and spell save DC.</p>
+			<p class="indent">When you cast an Enchantment spell of level 1 to level 5 that targets only one creature using this harp as the Spellcasting Focus, you can target a second creature within the spell's range.</p>
+		</description>
+		<setters>
+			<set name="keywords">bard</set>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="Harp or Lyre">Musical Instrument</set>
+			<set name="slot">onehand</set>
+			<set name="attunement" addition="by a Bard">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="bard:spellcasting:attack" value="1" />
+			<stat name="bard:spellcasting:dc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Helm of Comprehending Languages" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_HELM_OF_COMPREHENDING_LANGUAGES">
+		<description>
+			<p>This helm is forged in fires ignited with elemental dust, using plates from a construct and the heart of a red dragon. The plates are then soaked in elemental fluid before having an animus gem installed that contains the energy of a Fire Giant.</p>
+			<p class="indent">While your Rage is active, you gain Resistance to Fire damage. In addition, once per turn, while you are Raging, when you hit a target with a Melee weapon that benefitted from your Reckless Attack feature, the target becomes Burning (2d4 Fire).</p>
+		</description>
+		<setters>
+			<set name="keywords">barbarian, rage, resistance, fire, melee, reckless attack, burning, condition, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Barbarian">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Inexhaustible Armor" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_INEXHAUSTABLE_ARMOR">
+		<description>
+			<p>This armor is made from fey leathers and magical plates, infused with the chemical solutions found in some constructs and empowered with the heart of a gorgon.</p>
+			<p class="indent">While attuned to this armor, you gain an additional use of your Second Wind class feature. In addition, when you use your Second Wind, you regain an additional 3d6 Hit Points and can remove one of the following conditions from yourself: Blinded, Charmed, Dazed, Deafened, Frightened, Immobilized, Poisoned, Slowed, or Staggered.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="any">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a Fighter">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Inexhaustible {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Injector's Crossbow" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_INJECTORS_CROSSBOW">
+		<description>
+			<p>This crossbow is covered in metal plating, decorative and refined pointed metal tips along an oak wood body, and foregrip. The barrel and limb are reinforced with the steel plates from a construct, with a stained leather grip made from a monster's hide. Its hair strung bowstring and leather fasteners hold a series of syringes in place. The crossbow's stock has a series of various tubes extruding from it that connect to an alchemical chamber on the side of the weapon. A mechanical wheel feeds the darts into place upon filling them, auto-loading the crossbow for easy firing.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic crossbow. This crossbow ignores Loading, and you don't need a free hand to load a piece of ammunition into it.</p>
+			<p class="indent">Once per turn when you hit a creature with a ranged attack using this crossbow, you can apply one of the following poisons.</p>
+			<p class="indent"><strong><em>Virulent.</em></strong> The target takes an extra 2d6 Poison damage.</p>
+			<p class="indent"><strong><em>Weakening.</em></strong> The target must make a DC 15 Constitution saving throw. On a failed save, it is Weakened until the start of your next turn.</p>
+			<p class="indent"><strong><em>Immobilizing.</em></strong> The target must make a DC 15 Strength saving throw. On a failed save, it is Immobilized until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">crossbow, loading, poison, damage, constitution, saving throw, save, strength, weakend, condition, immobilized</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Any Crossbow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Injector's {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Mantle of Otherworldly Charisma" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MANTLE_OF_OTHERWORLDLY_CHARISMA">
+		<description>
+			<p>Structured from the fur and skin of a monstrosity and the horns of a fiend, and coated in the dust of fey creatures, this mantle is imbued with charming energies.</p>
+			<p class="indent">Your Charisma score is 19 while you wear this magic cape. It has no effect on you if your Charisma is 19 or higher without it.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="charisma:score:set" value="19" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Manual of Occult Anatomy +1" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MANUAL_OF_OCCULT_ANATOMY_1">
+		<description>
+			<p>Filled with diagrams showing humans with alien features, this book of strange medical lore is written in monster-blood ink infused with draconic dust and then etched onto parchment pages made from aberration skin. The manuscript is bound in a scale-clad cover.</p>
+			<p class="indent">You can use this manual as a Spellcasting Focus for your Apothecary or Warlock spells. When you use the manual as a Spellcasting Focus, you gain a +1 bonus to spell attack rolls and spell save DCs of your Apothecary or Warlock spells.</p>
+			<p class="indent">In addition, the book contains the knowledge of an Apothecary Esoteric Theory or Warlock Eldritch Invocation up to a level determined by the manual's rarity and chosen when the item is created, which you gain while you are attuned to it. This determines which class is required to attune to the item.</p>
+			<h5>Manual of Occult Anatomy Rarities</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10" style="text-align:center">Rarity</td><td>Bonus</td><td>Maximum Level</td></tr>
+				</thead>
+				<tr><td style="text-align:center">Rare</td><td>+1</td><td>6th</td></tr>
+				<tr><td style="text-align:center">Very Rare</td><td>+2</td><td>10th</td></tr>
+				<tr><td style="text-align:center">Legendary</td><td>+3</td><td>15th</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">apothecary, warlock, spellcasting focus, esoteric theory, eldritch invocation</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an Apothecary or Warlock">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="warlock:spellcasting:attack" value="1" />
+			<stat name="warlock:spellcasting:dc" value="1" />
+			<stat name="apothecary:spellcasting:attack" value="1" />
+			<stat name="apothecary:spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Manual of Occult Anatomy +2" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MANUAL_OF_OCCULT_ANATOMY_2">
+		<description>
+			<p>Filled with diagrams showing humans with alien features, this book of strange medical lore is written in monster-blood ink infused with draconic dust and then etched onto parchment pages made from aberration skin. The manuscript is bound in a scale-clad cover.</p>
+			<p class="indent">You can use this manual as a Spellcasting Focus for your Apothecary or Warlock spells. When you use the manual as a Spellcasting Focus, you gain a +2 bonus to spell attack rolls and spell save DCs of your Apothecary or Warlock spells.</p>
+			<p class="indent">In addition, the book contains the knowledge of an Apothecary Esoteric Theory or Warlock Eldritch Invocation up to a level determined by the manual's rarity and chosen when the item is created, which you gain while you are attuned to it. This determines which class is required to attune to the item.</p>
+			<h5>Manual of Occult Anatomy Rarities</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10" style="text-align:center">Rarity</td><td>Bonus</td><td>Maximum Level</td></tr>
+				</thead>
+				<tr><td style="text-align:center">Rare</td><td>+1</td><td>6th</td></tr>
+				<tr><td style="text-align:center">Very Rare</td><td>+2</td><td>10th</td></tr>
+				<tr><td style="text-align:center">Legendary</td><td>+3</td><td>15th</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">apothecary, warlock, spellcasting focus, esoteric theory, eldritch invocation</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an Apothecary or Warlock">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="warlock:spellcasting:attack" value="2" />
+			<stat name="warlock:spellcasting:dc" value="2" />
+			<stat name="apothecary:spellcasting:attack" value="2" />
+			<stat name="apothecary:spellcasting:dc" value="2" />
+		</rules>
+	</element>
+	<element name="Manual of Occult Anatomy +3" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MANUAL_OF_OCCULT_ANATOMY_3">
+		<description>
+			<p>Filled with diagrams showing humans with alien features, this book of strange medical lore is written in monster-blood ink infused with draconic dust and then etched onto parchment pages made from aberration skin. The manuscript is bound in a scale-clad cover.</p>
+			<p class="indent">You can use this manual as a Spellcasting Focus for your Apothecary or Warlock spells. When you use the manual as a Spellcasting Focus, you gain a +3 bonus to spell attack rolls and spell save DCs of your Apothecary or Warlock spells.</p>
+			<p class="indent">In addition, the book contains the knowledge of an Apothecary Esoteric Theory or Warlock Eldritch Invocation up to a level determined by the manual's rarity and chosen when the item is created, which you gain while you are attuned to it. This determines which class is required to attune to the item.</p>
+			<h5>Manual of Occult Anatomy Rarities</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10" style="text-align:center">Rarity</td><td>Bonus</td><td>Maximum Level</td></tr>
+				</thead>
+				<tr><td style="text-align:center">Rare</td><td>+1</td><td>6th</td></tr>
+				<tr><td style="text-align:center">Very Rare</td><td>+2</td><td>10th</td></tr>
+				<tr><td style="text-align:center">Legendary</td><td>+3</td><td>15th</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">apothecary, warlock, spellcasting focus, esoteric theory, eldritch invocation</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by an Apothecary or Warlock">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="warlock:spellcasting:attack" value="3" />
+			<stat name="warlock:spellcasting:dc" value="3" />
+			<stat name="apothecary:spellcasting:attack" value="3" />
+			<stat name="apothecary:spellcasting:dc" value="3" />
+		</rules>
+	</element>
+
+	<element name="Mask of Monstrous Forms" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MASK_OF_MONSTROUS_FORMS">
+		<description>
+			<p>This magic mask is made from the skull of a particular monstrosity (with a Challenge Rating of 6 or lower). The skull is carved into a mask, engraved with aberrant dust, and then boiled in a vat of mimic mucus, the flesh of a doppelganger, and acidic bile. Finally, a vessel containing the animus of any creature with the Shapechanger trait is placed upon the forehead of the mask, channeling its shapechanging magic.</p>
+			<p class="indent">While attuned to the mask, you can expend two uses of your Wild Shape feature to transform into the monstrosity associated with the mask, instead of a Beast.</p>
+		</description>
+		<setters>
+			<set name="keywords">druid, wild shape, monstrosity</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Druid">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Monster Hunter's Weapon +1" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MONSTER_HUNTERS_WEAPON_1">
+		<description>
+			<p>These weapons are carved from bark, with a core of magical sap, and decorated with leaves from magical plants. Their hilts and shafts are bound in hair from a fey creature. This magic weapon channels the natural magic found in the elements of nature.</p>
+			<p class="indent">While holding this magic weapon, you gain a +1 bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell attack rolls and the saving throw DCs of your Ranger spells. The bonus is determined by the weapon's rarity. In addition, you can use the weapon as a Spellcasting Focus for your Ranger spells.</p>
+			<p class="indent">When you hit with an attack using this weapon, you can expend a Ranger spell slot to cast <i>Hunter's Mark</i> on the target as part of the same action used to make the attack. When you cast <i>Hunter's Mark</i> in this way it does not require Concentration. Additionally, the spell lasts for one minute or until the target dies or you cast <i>Hunter's Mark</i> again using either the weapon or otherwise.</p>
+		</description>
+		<setters>
+			<set name="keywords">ranger, spellcasting focus, hunter's mark</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="attunement" addition="by a Ranger">true</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Monster Hunter's {{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ranger:spellcasting:attack" value="1" />
+			<stat name="ranger:spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Monster Hunter's Weapon +2" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MONSTER_HUNTERS_WEAPON_2">
+		<description>
+			<p>These weapons are carved from bark, with a core of magical sap, and decorated with leaves from magical plants. Their hilts and shafts are bound in hair from a fey creature. This magic weapon channels the natural magic found in the elements of nature.</p>
+			<p class="indent">While holding this magic weapon, you gain a +2 bonus to attack and damage rolls made with it, and you gain a +2 bonus to spell attack rolls and the saving throw DCs of your Ranger spells. The bonus is determined by the weapon's rarity. In addition, you can use the weapon as a Spellcasting Focus for your Ranger spells.</p>
+			<p class="indent">When you hit with an attack using this weapon, you can expend a Ranger spell slot to cast <i>Hunter's Mark</i> on the target as part of the same action used to make the attack. When you cast <i>Hunter's Mark</i> in this way it does not require Concentration. Additionally, the spell lasts for one minute or until the target dies or you cast <i>Hunter's Mark</i> again using either the weapon or otherwise.</p>
+		</description>
+		<setters>
+			<set name="keywords">ranger, spellcasting focus, hunter's mark</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="attunement" addition="by a Ranger">true</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">Monster Hunter's {{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ranger:spellcasting:attack" value="2" />
+			<stat name="ranger:spellcasting:dc" value="2" />
+		</rules>
+	</element>
+	<element name="Monster Hunter's Weapon +3" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_MONSTER_HUNTERS_WEAPON_3">
+		<description>
+			<p>These weapons are carved from bark, with a core of magical sap, and decorated with leaves from magical plants. Their hilts and shafts are bound in hair from a fey creature. This magic weapon channels the natural magic found in the elements of nature.</p>
+			<p class="indent">While holding this magic weapon, you gain a +3 bonus to attack and damage rolls made with it, and you gain a +3 bonus to spell attack rolls and the saving throw DCs of your Ranger spells. The bonus is determined by the weapon's rarity. In addition, you can use the weapon as a Spellcasting Focus for your Ranger spells.</p>
+			<p class="indent">When you hit with an attack using this weapon, you can expend a Ranger spell slot to cast <i>Hunter's Mark</i> on the target as part of the same action used to make the attack. When you cast <i>Hunter's Mark</i> in this way it does not require Concentration. Additionally, the spell lasts for one minute or until the target dies or you cast <i>Hunter's Mark</i> again using either the weapon or otherwise.</p>
+		</description>
+		<setters>
+			<set name="keywords">ranger, spellcasting focus, hunter's mark</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="attunement" addition="by a Ranger">true</set>
+			<set name="enhancement">3</set>
+			<set name="name-format">Monster Hunter's {{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ranger:spellcasting:attack" value="3" />
+			<stat name="ranger:spellcasting:dc" value="3" />
+		</rules>
+	</element>
+
+	<element name="Necromancer's Armor" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_NECROMANCERS_ARMOR">
+		<description>
+			<p>This suit of armor is constructed from the bones of the dead and outfitted over black woven fabric. The armor has two skulls as pauldrons upon the shoulders, a reinforced spine, and a rib cage that covers the front, and the entire structure is ornately decorated with the fangs of fallen beasts. The bones are magically imbued with otherworldly energy, powered by a powerful undead animus.</p>
+			<p class="indent">While attuned to this armor, you are proficient with this armor even if you lack proficiency with light armor.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Light">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="name-format">Necromancer's {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Pelt of the Pack Lord" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_PELT_OF_THE_PACK_LORD">
+		<description>
+			<p>This pelt cape is made from the fur of a Garmyr stitched carefully into the leathers of a ratling, decorated with the talons of a harpy, and polished to a shine with contaminated ichor.</p>
+			<p class="indent">While you are attuned to this pelt and are within 5 feet of a hostile creature, your allies have Advantage on attack rolls against that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, attack rolls</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Pendant of Prismatic Protection" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_PENDANT_OF_PRISMATIC_PROTECTION">
+		<description>
+			<p>The jeweled pendant has 3 charges, which are replenished when you finish a Long Rest. When you take Acid, Cold, Fire, Lightning, or Poison damage, you can use a Reaction to expend 1 charge from the pendant to gain resistance to that damage type until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid, cold, fire, lightning, poison, resistance, reaction</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Controlled Mutation" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_POTION_OF_CONTROLLED_MUTATION">		
+		<description>
+			<p>This sickly-looking potion contains a writhing mass of tentacles that animate and uncomfortably crawl down the imbiber's throat when consumed. The taste is pungent and fishy, and results in the sudden outbreak of random, but temporary, mutations.</p>
+			<p class="indent">When you consume this potion, you gain the effects of one randomly determined Mutation until you start a Short or Long Rest. You can roll on the Mutations table twice, choosing which mutation manifests. You don't gain any Contamination levels as a result of this Mutation. When the effect ends, your body returns to normal.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Rat Tooth Dagger" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_RAT_TOOTH_DAGGER">
+		<description>
+			<p>When you hit with an attack as part of an Attack action using this magic dagger and apply your Sneak Attack to the damage roll, you can make an additional attack using this dagger as part of the same action. If that attack hits and meets the criteria for your Sneak Attack, you can apply half your Sneak Attack dice (rounded down) to the attack's damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, rogue, attack, sneak attack</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement" addition="by a Rogue">true</set>
+		</setters>
+	</element>
+
+	<element name="Reflector Shield" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_REFLECTOR_SHIELD">
+		<description>
+			<p>This magic shield is formed from the shell of an Anomollusk combined with leather from an aberration as its handle. It's fused together and coated in contaminated ichor and inset with a rare animus. Once complete, the shell gives off an otherworldly hue that shimmers in kaleidoscopic patterns. The shield can reflect attacks and magic.</p>
+			<p class="indent">When you take Acid, Cold, Fire, Force, Lightning, or Thunder damage from a creature you can see within 60 feet of you, you can use your Reaction to cause the creature to take the same damage (you still take the damage).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Rejuvenation Potion" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_REJUVENATION_POTION">		
+		<description>
+			<p>When you drink this bright purple potion, you immediately gain the benefits of a short rest.</p>
+			<p class="indent">After you consume a <I>Rejuvenation Potion</I>, you can't benefit from consuming another until you finish a 1d4 Long Rests.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Retracer Boots" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_RETRACER_BOOTS">
+		<description>
+			<p>These boots are crafted from the flesh and scales of a dragon and decorated with Harpy feathers and the webbed membranes of flying creatures. The soles are injected with goopy ooze, allowing their wearer to jump back in time and space.</p>
+			<p class="indent">You can use a Bonus Action on your turn to click the heels of these boots together. When you do, you teleport to the space you occupied at the start of your turn so long as it is currently unoccupied.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, teleport</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Scroll of Spell Power" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_SCROLL_OF_SPELL_POWER">
+		<description>
+			<p>When you roll damage for a spell of level 1 or higher, you can expend this scroll to re-roll a number of the damage dice up to the level of the spell cast. You must use the new rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Scrolls</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Scroll</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Scythed Arm Blades" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_SCYTHED_ARM_BLADES">
+		<description>
+			<p>These steel arm blades are razor sharp, 4-foot-long scythes that are fastened to two locking bracers made of spinal bones. The fasteners are made from fine leather with steel buckles. Delerium crystals are embedded in the armbands, infusing the blades with energy.</p>
+			<p class="indent">These magic shortswords function as a pair and must be wielded together for their magic properties to function. Attuning to the shortswords counts as being attuned to one magic item.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with these magic shortswords. While attuned to these weapons, you can activate the Nick mastery property in addition to a different mastery property you're using with these weapons.</p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword, weapon mastery, nick</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Shortsword</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Swashbuckler's Boots" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_SWASHBUCKLERS_BOOTS">
+		<description>
+			<p>While wearing these supple leather boots, Opportunity Attacks against you have Disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">opportunity attacks, disadvantage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Sword Between Worlds" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_SWORD_BETWEEN_WORLDS">
+		<description>
+			<p>This otherworldly blade is made from starmetal steel; a potent alloy produced by combining iron with carbon extracted from the bones of powerful aberrant creatures. During the forging process, the blade is quenched in the spinal fluids of a Far Dweller to draw out extraplanar forces. The resulting metal has an octarine sheen that reflects possible worlds and other realities. The grip and crossguard are decorated with the barbs and leather of a Warp Marauder, and the pommel is set with a delerium crystal containing the eldritch essence of a Far Dweller that powers the weapon's magic.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made using this magic weapon.</p>
+			<p class="indent">Once per turn when you score a Critical Hit or reduce a creature to 0 Hit Points using this weapon, immediately after the attack you can teleport to an unoccupied space within 120 feet you can see. Additionally, once per turn when you teleport to an unoccupied space within 5 feet of another creature while wielding this weapon, you can make one weapon attack against that creature with this weapon as part of the same action or Bonus Action made to teleport.</p>
+			<p class="indent">While holding the blade, you can use a Magic action to cast <i>Dimension Door</i>. Once you do, you must finish a short or Long Rest before you can use this feature again.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> You have Disadvantage on saving throws against any spell or other effect which would forcibly teleport you or send you to another plane of existence.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, critical hit, teleport, bonus action, attack, spell, dimension door</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">{{parent}} Between Worlds</set>
+		</setters>
+	</element>
+
+	<element name="Talon Gloves" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_TALON_GLOVES">
+		<description>
+			<p>These leather gloves are outfitted with the talons of fallen beasts and stitched together with the arcane stitching of apothecary creations. The gloves are then empowered by elemental magic, reinforced with bone, and powered by an animus.</p>
+			<p class="indent">While wearing these gloves, you gain Climb Speed equal to your Speed, and your Unarmed Strikes deal an additional 1d6 Piercing damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">climb speed, unarmed strikes, piercing, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Tentacle Whip" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_TENTACLE_WHIP">
+		<description>
+			<p>This whip is made from the tentacles and guts of aberrant creatures, stitched to the webbed membranes of winged beasts and fused to the bark of a plant creature. Once the animus is placed, the tentacles begin to writhe and wriggle and the whip can latch and drag creatures along the ground with uncanny strength.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic whip, which has a reach of 20 feet.</p>
+			<p class="indent">Once per turn when you hit a Large or smaller creature with an attack using this weapon, you can pull it 10 feet towards you.</p>
+		</description>
+		<setters>
+			<set name="keywords">whip, reach, pull</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Whip</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+
+	<element name="Time Dilation Medallion" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_TIME_DILATION_MEDALLION">
+		<description>
+			<p>The inner workings of this clockwork device are formed from gears forged from magical constructs gathered around a focusing lens, held together carefully by the needles of magical creatures. The animus used harnesses the energy of The Algorithm, a being of order and consequence, whose control over time and space ripples from the strange clockworks of the medallion.</p>
+			<p class="indent">This medallion has 3 charges. It crumbles to dust when you expend the final charge.</p>
+			<p class="indent">You can expend 1 charge from the medallion to take an extra action on your turn. Each time you do, you can roll 1d6. On a 1, at the end of your turn, you become unstuck in time and space as the medallion casts the <i>Maze</i> spell on you. On a 6, the medallion regains 1d3 charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">extra action, maze</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Trollblood Potion" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_TROLLBLOOD_POTION">		
+		<description>
+			<p>This potion is a bubbling, sickly, green-brown viscous soup that has the consistency of mucus. What appears to be the rotting eye of a troll floats in the potion. It smells acrid and nauseating and tastes even worse than it looks.</p>
+			<p class="indent">When you drink this potion, for the next minute, you regain 5 Hit Points at the start of your turn. The effects of this potion end early if you take Fire or Acid damage.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Vampire Blood Potion" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_VAMPIRE_BLOOD_POTION">		
+		<description>
+			<p>This potion is a crimson-red bubbling brew that tastes distinctly of copper. When you drink this potion, you gain the following benefits for the next minute:</p>
+			<ul>
+				<li>The effects of this potion end early if you take Radiant damage or enter sunlight.</li>
+				<li>If damage reduces you to 0 Hit Points, you must make a Constitution saving throw with a DC of 5 + half the damage taken, unless the damage is Radiant or from a Critical Hit. On a success, you drop to 1 Hit Point instead, and the effects of this potion end.</li>
+				<li>The effects of this potion end early if you take Radiant damage or enter sunlight.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Wand of Jinxes" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_WAND_OF_JINXES">
+		<description>
+			<p>This wand is carved from magical bark, with the hair of an undead creature in its core and finished in goopy ooze.</p>
+			<p class="indent">Once per turn when you deal damage with a Warlock cantrip to a creature, you can make that creature Jinxed (1d4) until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a Warlock">true</set>
+		</setters>
+	</element>
+
+	<element name="Wand of the Precocious Apprentice" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_WAND_OF_THE_PRECOCIOUS_APPRENTICE">
+		<description>
+			<p>Once per turn when you deal damage to a creature using a cantrip while holding this wand, one target of that cantrip takes an extra 1d4 damage of the type dealt by the spell.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Whirling Bonesaw" type="Magic Item" source="Monsters of Drakkenheim" id="ID_GFG_MOD_MAGIC_ITEM_WHIRLING_BONESAW">
+		<description>
+			<p>This large greataxe is made from a blade taken off a Ripper and refitted into a housing made from the plates of constructs and reinforced with the rib bones of a monstrosity. The blade is equipped with a leather belt that connects to an elemental-fueled motor powered by a Very Rare Animus.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">Once on your turn when you hit a Bloodied creature using this weapon, you can make one additional attack with this weapon as part of the same action.</p>
+		</description>
+		<setters>
+			<set name="keywords">greataxe, bloodied, additional attack</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Greataxe</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+</elements>

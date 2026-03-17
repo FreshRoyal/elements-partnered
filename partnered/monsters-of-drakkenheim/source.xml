@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Monsters of Drakkenheim</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/source.xml" />
+		</update>
+	</info>
+	<element name="Monsters of Drakkenheim" type="Source" source="Core" id="ID_GFG_SOURCE_MONSTERS_OF_DRAKKENHEIM">
+		<description>
+			<p><strong>Face the Horrors of Drakkenheim!</strong></p>
+            <p>Immerse your players in eldritch horror with this comprehensive monster resource. Design unforgettable encounters using detailed tactics, lair descriptions, crafting rules, and unique loot.</p>
+            <p>Customize your game with new magic items, crafting recipes, and deadly conditions to unleash Drakkenheim’s monstrous denizens.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">MOD</set>
+			<set name="url">https://marketplace.dndbeyond.com/category/DB4KDB0Q1</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/MoD.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com/">Ghostfire Gaming, Dungeon Dudes</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20250604</set>
+		</setters>
+	</element>
+</elements>
