@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/tome-of-beasts-2023-edition/items.xml" />
+		</update>
+	</info>
+	
+	<element name="Spinosaurus" type="Item" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_ITEM_SPINOSAURUS">
+		<description>
+			<p>Before it can be ridden in combat, a spinosaurus dinosaur must practice bearing the weight of its trainer and passengers. They rarely master more than a handful of tricks, but they are extremely comfortable in the water and can be trained to be are aware that some of their riders may not breathe water.</p>
+			<p class="indent">An adult spinosaurus can carry up to six tons as cargo. Riding a spinosaurus requires an exotic saddle, riding platform, or howdah.</p>
+			<p><strong><em>Speed.</em></strong> 60 ft.<br/><strong><em>Carrying Capacity.</em></strong> 3,000 lb.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element>
+	
+	<element name="Dissimortuum's Cursed Mask" type="Magic Item" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_MAGIC_ITEM_DISSIMORTUUMS_CURSED_MASK">
+		<description>
+			<p>The dissimortuum's mask is nigh indestructible. When the creature is destroyed, its mask usually survives and breaks free. On its own, the object emits a faint magical aura with mixed enchantment and necromantic properties. It is a tempting souvenir, but any humanoid or giant foolish enough to don the mask is immediately wracked by pain and takes 7 (2d6) necrotic damage. The creature must succeed on a DC 15 Wisdom saving throw or become dominated by the mask. The domination arrives slowly. The creature acts normally for a day or two, but then the creature notices periods of time that cannot be accounted for. During these unremembered times, the creature gathers the grisly components needed to build a new body for the dissimortuum. This process takes a week, after which the creature is freed from domination as the dissimortuum arises anew and dons its mask once more.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic, damage, wisdom, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Vanisher Hat" type="Magic Item" source="Tome of Beasts 1 (2023 Edition)" id="ID_KBP_TOB23_MAGIC_ITEM_VANISHER_HAT">
+		<description>
+			<p>This plain hat appears to be a rough burlap tam. A creature that can see through illusions sees the hat as a golden, bejeweled coronet. While wearing this hat, you can use an action to speak its command word to become invisible and gain a flying speed of 40 feet for up to 1 minute. Anything you are wearing or carrying is invisible with you. You remain invisible and capable of flying until you repeat the command word as an action or until you attack or cast a spell. Once used, the hat can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">invisible, flying speed, fly speed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+</elements>
