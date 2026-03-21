@@ -489,8 +489,8 @@
 		<rules>
 			<stat name="strength" value="2" alt="Peak Physical Condition" />
 			<stat name="constitution" value="2" alt="Peak Physical Condition" />
-			<stat name="strength:max" value="3" bonus="ability"/>
-			<stat name="constitution:max" value="3" bonus="ability"/>
+			<stat name="strength:max:extra" value="3" bonus="base"/>
+			<stat name="constitution:max:extra" value="3" bonus="base"/>
 
 			<stat name="pugilist2026:peak physical condition:hp" value="level:pugilist" />
 			<stat name="pugilist2026:peak physical condition:hp" value="level:pugilist" />
