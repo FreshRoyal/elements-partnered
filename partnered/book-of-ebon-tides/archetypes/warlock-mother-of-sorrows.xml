@@ -3,7 +3,7 @@
 	<info>
 		<name>Mother of Sorrows</name>
 		<description>Mother of Sorrows from Book of Ebon Tides</description>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="warlock-mother-of-sorrows.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/archetypes/warlock-mother-of-sorrows.xml" />
 		</update>
 	</info>
@@ -57,6 +57,17 @@
 			<extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
 			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
 			<extend>ID_PHB_SPELL_CONTAGION</extend>
+
+			<extend>ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_INFLICT_WOUNDS</extend>
+			<extend>ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SILENCE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_STINKING_CLOUD</extend>
+			<extend>ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH</extend>
+			<extend>ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CLOUDKILL</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CONTAGION</extend>
 		</spellcasting>
 	</element>
 

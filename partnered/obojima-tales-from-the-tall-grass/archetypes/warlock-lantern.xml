@@ -3,7 +3,7 @@
 	<info>
 		<name>The Lantern</name>
 		<description>The Lantern from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-lantern.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/warlock-lantern.xml" />
 		</update>
 	</info>
@@ -58,6 +58,14 @@
 			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
 			<extend>ID_1985_OTTG_SPELL_CREATE_SPIRIT_TRAIN_STOP</extend>
 			<extend>ID_1985_OTTG_SPELL_TAMH_GONS_FIERY_FESTIVAL_FEAST</extend>
+			
+			<extend>ID_WOTC_PHB24_SPELL_FAERIE_FIRE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_IDENTIFY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_LOCATE_OBJECT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_DAYLIGHT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_NONDETECTION</extend>
+			<extend>ID_WOTC_PHB24_SPELL_GUARDIAN_OF_FAITH</extend>
+			<extend>ID_WOTC_PHB24_SPELL_LOCATE_CREATURE</extend>
 		</spellcasting>
 	</element>
 

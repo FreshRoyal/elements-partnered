@@ -3,7 +3,7 @@
 	<info>
 		<name>The Predator</name>
 		<description>The Predator patron from Humblewood Tales</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="warlock-predator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/archetypes/warlock-predator.xml" />
 		</update>
 	</info>
@@ -56,6 +56,16 @@
 			<extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
 			<extend>ID_PHB_SPELL_CONTAGION</extend>
 			<extend>ID_PHB_SPELL_MISLEAD</extend>
+			
+			<extend>ID_WOTC_PHB24_SPELL_HUNTERS_MARK</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FEATHER_FALL</extend>
+			<extend>ID_WOTC_PHB24_SPELL_ALTER_SELF</extend>
+			<extend>ID_WOTC_PHB24_SPELL_BLINK</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SLOW</extend>
+			<extend>ID_WOTC_PHB24_SPELL_DOMINATE_BEAST</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CONTAGION</extend>
+			<extend>ID_WOTC_PHB24_SPELL_MISLEAD</extend>
 		</spellcasting>
 	</element>
 
