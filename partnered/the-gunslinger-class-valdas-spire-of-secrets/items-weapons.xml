@@ -269,7 +269,7 @@
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="damage" type="fire">2d4</set>
+			<set name="damage" type="piercing">2d4</set>
 			<set name="range">30/120; Bullet</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="cost" currency="gp">125</set>
