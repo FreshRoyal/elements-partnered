@@ -11,7 +11,7 @@
     <element name="Brutal Grip" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_BRUTAL_GRIP">
 		<supports>General</supports>
 		<requirements>([level:4],[str:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
-		<prerequisite>Level 4+, Dexterity 13+</prerequisite>
+		<prerequisite>Level 4+, Strength 13+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
 			<p>You gain the following benefits.</p>
