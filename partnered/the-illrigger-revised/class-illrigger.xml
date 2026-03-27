@@ -3,7 +3,7 @@
 	<info>
 		<name>Illrigger</name>
 		<description>Illrigger class from The Illrigger Revised</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-illrigger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/class-illrigger.xml" />
 		</update>
 	</info>
@@ -430,7 +430,7 @@
 		</sheet>
 		<rules>
 			<stat name="ac:unarmored defense illrigger bravado:base" value="10" />
-			<stat name="ac:unarmored defense barbarian:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense illrigger bravado:dexterity" value="dexterity:modifier" />
 			<stat name="ac:unarmored defense illrigger bravado:charisma" value="charisma:modifier" />
 
 			<stat name="ac:unarmored defense illrigger bravado" value="ac:unarmored defense illrigger bravado:base" />
