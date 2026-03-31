@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Weapons</name>
-		<description>Weapons from The Gunslinger Class: Valda's Spire of Secrets</description>
+		<name>Items</name>
+		<description>Items from The Gunslinger Class: Valda's Spire of Secrets</description>
 		<update version="0.0.1">
-			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/items-weapons.xml" />
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/items.xml" />
 		</update>
 	</info>
 
+	<!--Equipment Pack-->
+	<element name="Class Equipment Pack (Gunslinger)" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_CLASS_EQUIPMENT_PACK_GUNSLINGER">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Gunslinger Class, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• 2 Daggers</p>
+			<p class="indent">• Revolver</p>
+			<p class="indent">• 50 Bullets</p>
+			<p class="indent" style="margin-bottom:5px">• Explorer's Pack</p>
+			<p><b>Note:</b> This pack doesn't include Leather Armor and 11 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item amount="2">ID_WOTC_PHB24_WEAPON_DAGGER</item>
+			<item>ID_MHP_TGCVSS_WEAPON_REVOLVER</item>
+			<item amount="50">ID_WOTC_PHB24_ITEM_BULLET_FIREARM</item>
+			<item>ID_WOTC_PHB24_ITEM_EXPLORERS_PACK</item>
+		</extract>
+	</element>
+	
 	<!--Individual pieces of ammunition, price and weight were recalculated.-->
 	<element name="Bullet" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_BULLET">
 		<description>

@@ -524,4 +524,25 @@
 	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_EPIC_BOON" />
 	<element name="Peak Physical Condition Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_PEAK_PHYSICAL_CONDITION" />
 
+	<!--Equipment Pack-->
+	<element name="Class Equipment Pack (Pugilist)" type="Item" source="The Pugilist Class (2026)" id="ID_SVAC_PUGILIST2026_ITEM_CLASS_EQUIPMENT_PACK_PUGILIST">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Pugilist Class, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Club</p>
+			<p class="indent">•  Handaxe</p>
+			<p class="indent" style="margin-bottom:5px">• Dungeoneer's Pack</p>
+			<p><b>Note:</b> This pack doesn't include the Gaming Set which was chosen for this Class's tool proficiency and 31 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_WEAPON_CLUB</item>
+			<item>ID_WOTC_PHB24_WEAPON_HANDAXE</item>
+			<item>ID_WOTC_PHB24_ITEM_DUNGEONEERS_PACK</item>
+		</extract>
+	</element>
 </elements>
