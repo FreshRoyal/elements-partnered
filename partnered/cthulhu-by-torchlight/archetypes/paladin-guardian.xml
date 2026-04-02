@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Guardian</name>
+		<description>Oath of the Guardian from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="paladin-guardian.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/paladin-guardian.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Guardian" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_PALADIN_OATH_OF_THE_GUARDIAN">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“The first step to killing an eldritch horror: don't die.”</p>
+				<p class="text-align:right">— Miranda of the Unbroken Shield</p>
+			</div>
+			<p>These Paladins serve as protectors of the common folk and guards against rampaging monsters. Those who embrace this oath range from itinerant Paladins who single-handedly defend towns on the borderlands to elite groups of knights tasked with protecting the cardinals of a religious order.</p>
+			<h4>Tenets of the Guardian</h4>
+			<p>Like any Paladin oath, the ethos embraced by specific Paladins or the order they belong to shapes their beliefs. Listed below are sample tenets for the various alignments. Create your specific tenets by picking up to four ideals that capture your views.</p>
+			<h5>Tenets of Chaos</h5>
+			<p><em><strong>Affinity.</strong></em> You protect and help those you feel meet your personal standards.</p>
+			<p><em><strong>Beauty.</strong></em> Violence is nihilistic; protect the beautiful and precious instead.</p>
+			<p><em><strong>Freedom.</strong></em> Tyrants use violence to oppress. You deny that power.</p>
+			<h5>Tenets of Evil</h5>
+			<p><em><strong>Dominance.</strong></em> Let others believe you protect them so you can rule them.</p>
+			<p><em><strong>Opportunism.</strong></em> Protect others while it profits you. Strike when they weaken.</p>
+			<p><em><strong>Profit.</strong></em> Guard the wealthy as long as they pay. Join the mob when they fall.</p>
+			<h5>Tenets of Good</h5>
+			<p><em><strong>Courage.</strong></em> Stand firm in the face of danger.</p>
+			<p><em><strong>Sacrifice.</strong></em> Suffer for others so they may flourish.</p>
+			<p><em><strong>Service.</strong></em> Use your strength to serve those who need help most.</p>
+			<h5>Tenets of Law</h5>
+			<p><em><strong>Fidelity.</strong></em> Keep your oath above all.</p>
+			<p><em><strong>Protection.</strong></em> Guard civilization to preserve order.</p>
+			<p><em><strong>Service.</strong></em> Follow your code to protect others, even in complex duties.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_OATH_SPELLS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_DEFENSIVE_INTERVENTION" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_MARKING_STRIKE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_GUARDING_PRESENCE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_INSPIRING_DEFENSE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_WARD_OF_THE_GUARDIAN" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_GUARDIAN_ANGEL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_DEFENSIVE_INTERVENTION" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_MARKING_STRIKE" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_GUARDING_PRESENCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_INSPIRING_DEFENSE" level="7"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_WARD_OF_THE_GUARDIAN" level="15"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_GUARDIAN_ANGEL" level="20"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Oath Spells" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_OATH_SPELLS">
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Guardian Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of the Guardian Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Paladin Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Alarm, Shield of Faith</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Lesser Restoration, Warding Bond</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Beacon of Hope, Protection from Energy</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Death Ward, Guardian of Faith</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Greater Restoration, Raise Dead</em></td></tr>
+			</table>      
+		</description>
+		<sheet display="false" />
+		<rules> 
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALARM" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD_OF_FAITH" level="3" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WARDING_BOND" level="5" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEACON_OF_HOPE" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_OF_ENERGY" level="9" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAISE_DEAD" level="17" spellcasting="Paladin" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Defensive Intervention" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_DEFENSIVE_INTERVENTION">
+		<description>
+			<p>When a creature you can see hits another creature within 30 feet of you with an attack roll, you can take a Reaction and expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space within range of the triggering attack and become the target of the attack.</p>
+		</description>
+		<sheet alt="Defensive Intervention" action="Reaction" usage="Channel Divinity">
+			<description>When a creature you can see hits another creature within 30 ft of you with an attack roll, you can teleport up to 30 ft to an unoccupied space within range of the triggering attack and become the target of the attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Marking Strike" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_MARKING_STRIKE">
+		<description>
+			<p>When you hit a creature with an attack roll using a weapon, you can forgo using that weapon's mastery property to mark the target until the end of your next turn. This effect ends early if you have the Incapacitated condition or if someone else marks the creature. A marked creature has Disadvantage on attack rolls against targets other than you, and it must spend 2 feet of movement for every 1 foot it moves when moving away from you.</p>
+		</description>
+		<sheet alt="Marking Strike" action="Reaction" usage="Channel Divinity">
+			<description>When you hit a creature with an attack roll using a weapon, you can forgo using that weapon's mastery property to mark the target until the end of your next turn. This effect ends early if you have the Incapacitated condition or if someone else marks the creature. A marked creature has Disadvantage on attack rolls against targets other than you, and it must spend 2 ft of movement for every 1 ft it moves when moving away from you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 7: Guarding Presence" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_GUARDING_PRESENCE">
+		<description>
+			<p>As a Bonus Action, you can choose creatures within 5 feet of yourself, up to a number of creatures equal to your Charisma modifier (minimum of one creature). Each of the chosen creatures can use your AC instead of its own AC as long as it remains within 5 feet of you or until you have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Guarding Presence" action="Bonus Action">
+			<description>You can choose up to {{cbt:guarding presence:number}} creatures within 5 ft of yourself. Each of the chosen creatures can use your AC instead of its own AC as long as it remains within 5 ft of you or until you have the Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:guarding presence:number" value="1" bonus="bonus" />
+			<stat name="cbt:guarding presence:number" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Inspiring Defense" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_INSPIRING_DEFENSE">
+		<description>
+			<p>You can attack twice instead of once whenever you make an Opportunity Attack action. In addition, creatures of your choice under the effects of your Guarding Presence can attack twice instead of once whenever they make an Opportunity Attack.</p>
+		</description>
+		<sheet alt="Inspiring Defense">
+			<description>You can attack twice instead of once whenever you make an Opportunity Attack action. In addition, creatures of your choice under the effects of your Guarding Presence can attack twice instead of once whenever they make an Opportunity Attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Ward of the Guardian" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_WARD_OF_THE_GUARDIAN">
+		<description>
+			<p>When a creature marked by you that you can see reduces an ally to 0 Hit Points and doesn't kill the ally outright, you can take a Reaction to have the ally drop to 1 Hit Point instead. If you do so, the ally can immediately take a Reaction to make a melee attack against the marked creature if it's within reach.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Ward of the Guardian" action="Reaction" usage="{{cbt:ward of the guardian:usage}}/Long Rest">
+			<description>When a creature marked by you that you can see reduces an ally to 0 HPs and doesn't kill the ally outright, you can have the ally drop to 1 HP instead. If you do so, the ally can immediately take a Reaction to make a melee attack against the marked creature if it's within reach.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:ward of the guardian:usage" value="1" bonus="bonus" />
+			<stat name="cbt:ward of the guardian:usage" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Guardian Angel" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_PALADIN_GUARDIAN_GUARDIAN_ANGEL">
+		<description>
+			<p>As a Bonus Action, you become a living bastion of defense, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><b><i>Walking Bastion.</i></b> Your Guarding Presence becomes a 100-foot Emanation. Creatures of your choice within the Emanation can use your AC.</p>
+			<p class="indent"><b><i>Endless Divinity.</i></b> On each of your turns, if you have no uses of Channel Divinity left, you can give yourself one use.</p>
+			<p class="indent"><b><i>Supreme Punishment.</i></b> You can use Ward of the Guardian without taking a Reaction once each round. When you do so, you can't use it this way again until the start of your next turn.</p>
+		</description>
+		<sheet alt="Guardian Angel" action="Bonus Action" usage="1/Long Rest">
+			<description>You become a living bastion of defense, granting the benefits below for 1 minute or until you end them: &#13;
+			• Your Guarding Presence becomes a 100-ft Emanation. Creatures of your choice within the Emanation can use your AC. &#13;
+			• On each of your turns, if you have no uses of Channel Divinity left, you can give yourself one use. &#13;
+			• You can use Ward of the Guardian without taking a Reaction once each round. When you do so, you can't use it this way again until the start of your next turn. &#13;
+			You can restore a use of this feature by expending a level 5 spell slot.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/items.xml" />
+		</update>
+	</info>
+
+	<!--Tools-->
+    <element name="Fingerprint Kit" type="Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ITEM_TOOL_FINGERPRINT_KIT">
+		<description>
+			<ul class="unstyled">
+				<li style="margin-bottom:-1em"><strong>Ability:</strong> Intelligence</li>
+				<li style="text-align:right; margin-top:-1em"><strong>Weight:</strong> 1 lb.</li>
+				<li><strong>Utilize:</strong> Reveal the fingerprint left behind on an object and sketch a copy (DC 20), or match a copied fingerprint against a humanoid creature's (DC 15).</li>
+			</ul>
+            <p>This item allows you to capture the details of a fingerprint that has been left on an object and match them against another creature. It consists of an inkpad, parchment, and talcum powder.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_CSM_CBT_PROFICIENCY_TOOL_PROFICIENCY_FINGERPRINT_KIT</set>
+		</setters>
+	</element>
+    <element name="Tool Proficiency (Fingerprint Kit)" type="Proficiency" source="Cthulhu by Torchlight" id="ID_CSM_CBT_PROFICIENCY_TOOL_PROFICIENCY_FINGERPRINT_KIT">
+		<supports>Tool, Kit</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_CSM_CBT_ITEM_TOOL_FINGERPRINT_KIT" />
+			</div>
+		</description>
+	</element>
+    <element name="Tool Expertise (Fingerprint Kit)" type="Class Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_EXPERTISE_TOOL_FINGERPRINT_KIT">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_CSM_CBT_PROFICIENCY_TOOL_PROFICIENCY_FINGERPRINT_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Fingerprint Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_CSM_CBT_ITEM_TOOL_FINGERPRINT_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Fingerprint Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="fingerprint kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+    <element name="Witchboard" type="Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ITEM_TOOL_WITCHBOARD">
+		<description>
+			<ul class="unstyled">
+				<li style="margin-bottom:-1em"><strong>Ability:</strong> Charisma</li>
+				<li style="text-align:right; margin-top:-1em"><strong>Weight:</strong> 1 lb.</li>
+				<li><strong>Utilize:</strong> Exchange messages of up to 10 words with an Ethereal creature within 30 feet (DC 15).</li>
+			</ul>
+            <p>A witchboard is a slat of wood covered with letters, usually the Common alphabet though versions for different scripts are available. You can use it to contact Ethereal creatures, allowing limited conversations with them.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_CSM_CBT_PROFICIENCY_TOOL_PROFICIENCY_WITCHBOARD</set>
+		</setters>
+	</element>
+    <element name="Tool Proficiency (Witchboard)" type="Proficiency" source="Cthulhu by Torchlight" id="ID_CSM_CBT_PROFICIENCY_TOOL_PROFICIENCY_WITCHBOARD">
+		<supports>Tool</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_CSM_CBT_ITEM_TOOL_WITCHBOARD" />
+			</div>
+		</description>
+	</element>
+    <element name="Tool Expertise (Witchboard)" type="Class Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_EXPERTISE_TOOL_WITCHBOARD">
+		<supports>Expertise, Tool Expertise</supports>
+		<requirements>ID_CSM_CBT_PROFICIENCY_TOOL_PROFICIENCY_FINGERPRINT_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Witchboard check you make.</p>
+			<div class="reference">
+				<div element="ID_CSM_CBT_ITEM_TOOL_WITCHBOARD" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Witchboard check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="witchboard:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+    <!--Magic Items-->
+    <element name="Book of Dzyan" type="Magic Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_MAGIC_ITEM_BOOK_OF_DZYAN">
+		<description>
+			<p>This strange tome is reputed to have been originally penned by the first human civilization that long ago disappeared beneath the rising seas. It grants its bearer insights needed to peer into secretive realms, at the cost of a growing suspicion of others.</p>
+			<p><b><i>Language:</i></b> Celestial.</p>
+			<p><b><i>Attunement Check:</i></b> Intelligence (Arcana) DC 20. To end your attunement to the <i>Book of Dzyan</i>, a demon or devil must cast <i>Remove Curse</i> on you. The book then disappears in a flash of light.</p>
+			<p><b><i>Benefits:</i></b> While attuned to the <i>Book of Dzyan</i>, you gain the following benefits:</p>
+			<ul>
+				<li>You can see Invisible creatures and objects within 30 feet of you.</li>
+				<li>You can read and write Abyssal and Infernal.</li>
+				<li>If you can cast spells, you always have <i>Guidance, Detect Magic, Locate Object, Fly, Divination, Contact Deity</i>, and <i>Call Deity</i> prepared.</li>
+				<li>Simply touching a wall or object allows you to detect secret doors or similar hidden compartments built into that object within 5 feet of you.</li>
+				<li>You have Advantage on all Wisdom (Insight) checks. If your check result is a 20 or higher, you learn a secret about a creature. This benefit applies only once for a given creature.</li>
+				<li>The save DC of your spells gains a +1 bonus.</li>
+			</ul>
+			<p><b><i>Drawbacks:</i></b> When you encounter a creature you have never seen before, roll a d20 at the start of each of your turns. On a 10 or higher, you can only use your action that turn to Study it and learn about it. Once you do so, you no longer need to make this roll when that creature is present. This drawback applies to a general type of creature. If you encountered a Hydra this drawback would apply, but it would not affect you when encountering different Hydras in the future.</p>
+			<p><b><i>Insight-Insatiable Curiosity (+15):</i></b> You cannot bear to think that there are secrets out there that are beyond your grasp. A closed door, a parchment covered with strange runes, or anything else that holds a secret is an irresistible lure to you.</p>
+			<p><b><i>Lore:</i></b> The <i>Book of Dzyan</i> allows you to automatically succeed all DC 25 or lower checks made to learn about creatures of the planes.</p>
+		</description>
+		<setters>
+			<set name="keywords">invisible, abyssal, infernal, spells, guidance, detect magic, locate object, fly, divination, contact deity, call deity, secret doors, advantage, insight, spell save dc</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Necronomicon" type="Magic Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_MAGIC_ITEM_NECRONOMICON">
+		<description>
+			<p>The most infamous of mythos tomes, the Necronomicon contains within its pages untold secrets of the mythos.</p>
+			<p><b><i>Language:</i></b> Infernal.</p>
+			<p><b><i>Attunement Check:</i></b> Intelligence (Arcana) DC 20. To end your Attunement to the <i>Necronomicon</i>, you must defeat a mythos deity in combat.</p>
+			<p><b><i>Benefits:</i></b> While attuned to the <i>Necronomicon</i>, you gain the following benefits:</p>
+			<ul>
+				<li>You double your Proficiency Bonus if it applies to an Intelligence check.</li>
+				<li>You can read and write Abyssal, Celestial, Draconic, and Primordial.</li>
+				<li>If you can cast spells, you always have <i>Evil Eye, Dread Curse of Azathoth, Dust of Suleiman</i>, and <i>Voorish Sign</i> prepared.</li>
+				<li>Ghouls and Ghasts refuse to attack you unless you are first Hostile toward them.</li>
+				<li>Skeletons and Zombies obey your verbal commands.</li>
+				<li>A mythos deity attacks or otherwise attempts to harm you only if there are no other targets available for its attacks. You have Advantage on all Charisma checks to sway their attitude.</li>
+				<li>If you have the spellcasting class feature, you gain one additional spell slot for each level you can use. You regain these added spell slots as normal based on your spellcasting class feature.</li>
+				<li>The save DC of your spells gains a +2 bonus.</li>
+			</ul>
+			<p><b><i>Drawbacks:</i></b> At midnight each day roll a d20. On a 10 or higher, you gain a Doom of the Necronomicon point. When you have 20 or more such points, you disappear into thin air, claimed by the inscrutable power that infuses this tome. The <i>Necronomicon</i> is the only possession you leave behind.</p>
+			<p><b><i>Insight-Compulsion to Annihilation (+20):</i></b> You are driven to meet and understand the deities of the Cthulhu Mythos. Such entities are fascinating. They are the true masters of reality, those who were and shall forever be. By understanding them, by coming in direct contact with them, you can unlock their secrets and match their power. All others failed because they were weak. I will be different. I will survive. You will see.</p>
+			<p><b><i>Lore:</i></b> The <i>Necronomicon</i> allows you to automatically succeed all checks made to learn about the undead and all DC 20 or lower checks made to uncover information about the mythos in general.</p>
+		</description>
+		<setters>
+			<set name="keywords">proficiency bonus, abyssal, celestial, draconic, primordial, spells, evil eye, dread curse of azathoth, dust of suleiman, voorish sign, undead, ghouls, shosts, skeletons, zombies, advantage, charisma, mythos, spell slots, spellcasting dc</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_DRACONIC" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<stat name="spellcasting:dc" value="2" />
+		</rules>
+	</element>
+
+	<element name="Pnakotic Manuscripts" type="Magic Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_MAGIC_ITEM_PNAKOTIC_MANUSCRIPTS">
+		<description>
+			<p>The <i>Pnakotic Manuscripts</i> originate from a long-lost species that once walked the world, long before the rise of humans, elves, and other intelligences. These creatures communed with the Cthulhu Mythos and were perhaps their servitors. This strange tome was written before time began its proper flow and grants insights into its workings. By reading it, you learn to move between time's beats.</p>
+			<p><b><i>Language:</i></b> Primordial.</p>
+			<p><b><i>Attunement Check:</i></b> Intelligence (Religion) DC 15. To end your Attunement to the <i>Pnakotic Manuscripts</i>, you must be the target of a <i>Remove Curse</i> spell.</p>
+			<p><b><i>Benefits:</i></b> While attuned to the <i>Pnakotic Manuscripts</i>, you gain the following benefits:</p>
+			<ul>
+				<li>You double your bonus to Initiative.</li>
+				<li>You gain a +10 bonus to Speed.</li>
+				<li>You have Advantage on all Dexterity saving throws.</li>
+				<li>You gain a +1 bonus to AC.</li>
+				<li>Once per turn while moving, you can teleport back to any spot you occupied during your current move.</li>
+			</ul>
+			<p><b><i>Drawbacks:</i></b> You age at an accelerated rate. After one week, you age an additional week. After two weeks, you age an additional four weeks. After three weeks, you age an additional six weeks, and so on. If you remove your Attunement to this item and later attune to it again, you preserve this drawback's progress.</p>
+			<p><b><i>Insight-No Time to Tarry (+15):</i></b> You hate any activity that takes more than a few moments. You grow impatient as your attention fades and you seek something new to do, leaving critical work unattended as you start a new project or seek out something new to do.</p>
+			<p><b><i>Lore:</i></b> The <i>Pnakotic Manuscript</i> allows you to automatically succeed all checks made to learn about time and its nature.</p>
+		</description>
+		<setters>
+			<set name="keywords">initiative, speed, advantage, dexterity, saves, saving throws, ac, armor class, teleport</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="initiative:misc" value="initiative" />
+			<stat name="speed" value="10" alt="Pnakotic Manuscripts" />
+			<stat name="ac:misc" value="1" alt="Pnakotic Manuscripts" />
+		</rules>
+	</element>
+
+	<element name="Seven Cryptical Books of Hsan" type="Magic Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_MAGIC_ITEM_SEVEN_CRYPTICAL_BOOKS_OF_HSAN">
+		<description>
+			<p>These seven scrolls each cover a different topic concerning the relationship between the gods, the material world, and the planes. Those who master them can create doors to other worlds.</p>
+			<p><b><i>Language:</i></b> Celestial.</p>
+			<p><b><i>Attunement Check:</i></b> Intelligence (Religion) DC 20. To end your Attunement to the <i>Seven Cryptical Books of Hsan</i>, you must visit each of the seven realms that it allows access to.</p>
+			<p><b><i>Benefits:</i></b> While attuned to the <i>Seven Cryptical Books of Hsan</i>, you gain the following benefits:</p>
+			<ul>
+				<li>If you have the spellcasting class feature, you can prepare one additional spell for each spell level you can cast. That spell must be chosen from the Cleric spell list.</li>
+				<li>You gain a +1 bonus to the DC of any spell you cast that is on the Cleric spell list.</li>
+				<li>You have Advantage on all Wisdom saving throws.</li>
+				<li>You gain one additional spell slot of the highest level you can use.</li>
+				<li>You can cast <i>Gate</i> once per day without expending a spell slot. Wisdom is your casting ability for this spell. When you cast it, you open a gate to a location described in the books. If you use this feature again while at the location, the spell connects to the second location in the books. There are seven such locations, and using this feature at the seventh one returns you to the place where you first used this ability. The specific locations are left to the DM to decide, but legend has it that each is a domain of a long forgotten deity since claimed by agents of the Cthulhu Mythos.</li>
+			</ul>
+			<p><b><i>Drawbacks:</i></b> You have an overwhelming drive to use the books to visit the realms it allows you to access. If you go a week without using the Gate feature, you gain a level of Exhaustion that you cannot lose until you cast <i>Gate</i> using this item and travel through the portal you created.</p>
+			<p><b><i>Insight-Enemy of the Dark (+20):</i></b> You are an ardent foe of the Cthulhu Mythos. When you encounter their agents and entities, you are compelled to defeat them and drive them back to the dark corners of the cosmos that spawned them. You struggle to leave any location that has been overrun with their foul evil.</p>
+			<p><b><i>Lore:</i></b> The <i>Seven Cryptical Books of Hsan</i> allows you to automatically succeed all checks made to learn about dead gods.</p>
+		</description>
+		<setters>
+			<set name="keywords">spells, cleric, spellcasting dc, advantage, wisdom, saves, saving throws, gate, mythos</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="The King in Yellow" type="Magic Item" source="Cthulhu by Torchlight" id="ID_CSM_CBT_MAGIC_ITEM_THE_KING_IN_YELLOW">
+		<description>
+			<p>A thin, leather-bound volume, The King in Yellow contains a dreamlike play that compels a reader to obsess over the text. They read the play again and again, slowly coming to believe that the disconnected scenes and strange vistas it describes are real.</p>
+			<p><b><i>Language:</i></b> Common.</p>
+			<p><b><i>Attunement Check:</i></b> Charisma (Performance) DC 15. Unlike other tomes, you are compelled to make this check when inspecting <i>The King in Yellow</i>. If you succeed, you attune to the book. To end your Attunement to <i>The King in Yellow</i>, you must meet Hastur.</p>
+			<p><b><i>Benefits:</i></b> While attuned to <i>The King in Yellow</i>, you gain the following benefits:</p>
+			<ul>
+				<li>You gain Advantage on all Charisma (Performance) checks.</li>
+				<li>You gain Advantage on all Charisma (Deception) checks as long as your lie involves characters, scenes, and locations drawn from <i>The King in Yellow</i>.</li>
+				<li>You can cast <i>Contact Deity</i>. Charisma is your spellcasting ability for this spell. Once you use this feature, you cannot use it again until you finish a long rest. When you cast that spell using this item, you always contact Hastur.</li>
+				<li>Each time you finish a Long Rest, roll a d20. On a 1 you can cast <i>Call Deity</i> to summon Hastur. You lose access to this benefit if you finish a Long Rest without using it. If you do not use the spell, you gain a level of Exhaustion that cannot be removed while you are attuned to this item.</li>
+			</ul>
+			<p><b><i>Drawbacks:</i></b> You have Disadvantage on all Wisdom (Perception), Wisdom (Insight), and Intelligence (Investigation) checks, as images of Carcosa dance in your mind, distracting you from the increasing unreal world around you.</p>
+			<p><b><i>Insight-Lost Carcosa (+20):</i></b> You must find lost Carcosa and gaze upon forgotten Lake Hali. There, in that dreadful realm, you will finally find peace. No matter the cost, you must find the path there. You see omens and signs of Carcosa in the strangest places. The depths of ancient dungeons. The entrails of a slain enemy. Every sign points you back to Carcosa, again and again.</p>
+			<p><b><i>Lore:</i></b> <i>The King in Yellow</i> allows you to automatically succeed all checks made to learn about Hastur and elements associated with it.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, performance, deception, spells, contact deity, call deity</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+    
+</elements>

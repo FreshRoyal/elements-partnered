@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hungering Dark</name>
+		<description>Hungering Dark from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="sorcerer-hungeringdark.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/sorcerer-hungeringdark.xml" />
+		</update>
+	</info>
+
+	<element name="Hungering Dark" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_SORCERER_HUNGERING_DARK">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“When you tell us to fear the dark, it isn't to protect us, but to keep us under control.”</p>
+				<p class="text-align:right">— Hilda Farwander</p>
+			</div>
+			<p>When Sorcerers first manifest their abilities, they sometimes describe the experience as a slumbering portion of their identity awakening, a sudden understanding of their true nature.</p>
+			<p class="indent">Other Sorcerers aren't so fortunate. The magic within claws at their souls and pushes at their mind. It is like a hungry beast, always ravenous, never satisfied despite desperate efforts. These poor spellcasters are living gateways to a realm of darkness and gloom, a place said to serve as the source of all undead.</p>
+			<p class="indent">Sorcerers of the Hungering Dark are conflicted victims of their own power. They wield mighty spells, but, by using their magic, they create a bridge that allows horrid creatures to step into this world, even if for only a moment.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_INNATE_DARKNESS_SPELLS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_SHADOWED_SOUL" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_FRIENDS_TO_DARKNESS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_PURE_DARKNESS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_ONE_WITH_DARKNESS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_INNATE_DARKNESS_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_SHADOWED_SOUL" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_FRIENDS_TO_DARKNESS" level="6"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_PURE_DARKNESS" level="14"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_ONE_WITH_DARKNESS" level="18"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Innate Darkness Magic" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_INNATE_DARKNESS_SPELLS">
+		<description>
+			<p>When you reach a Sorcerer level specified in the Innate Darkness Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Innate Darkness Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Sorcerer Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Confounding Shadows, Darkness, Tide of Darkness, Umbral Tendril</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Fear, Shadowy Eruption</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Black Tentacles, Greater Invisibility</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Mislead, Summon Shadow</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_CONFOUNDING_SHADOWS" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_TIDE_OF_DARKNESS" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_UMBRAL_TENDRIL" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_SHADOWY_ERUPTION" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISLEAD" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_SUMMON_SHADOW" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Shadowed Soul" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_SHADOWED_SOUL">
+		<description>
+			<p>The darkness within allows you to push away the light. You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet. In addition, you can see through any magical Darkness you create with your Innate Darkness feature, unless you have the Blinded or Incapacitated condition.</p>
+		</description>
+		<sheet alt="Shadowed Soul">
+			<description>You can see through any magical Darkness you create with your Innate Darkness feature, unless you have the Blinded or Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60"/>
+		</rules>
+	</element>
+
+	<element name="Level 6: Friends to Darkness" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_FRIENDS_TO_DARKNESS">
+		<description>
+			<p>When you cast any spell from your Innate Darkness feaure, you can choose a number creatures up to your Charisma modifier (minimum of one creature). A chosen creature can see through any magical Darkness you create for 1 minute.</p>
+		</description>
+		<sheet alt="Friends to Darkness">
+			<description>When you cast any spell from your Innate Darkness feaure, you can choose up to {{cbt:friends to darkness:number}} creatures. A chosen creature can see through any magical Darkness you create for 1 minute.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:friends to darkness:number" value="1" bonus="bonus" />
+			<stat name="cbt:friends to darkness:number" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Pure Darkness" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_PURE_DARKNESS">
+		<description>
+			<p>When you cast any spell from your Innate Darkness feature that creates an area of Darkness, Darkvision and Blindsight can't see within the area of the spell.</p>
+		</description>
+		<sheet alt="Pure Darkness">
+			<description>When you cast any spell from your Innate Darkness feature that creates an area of Darkness, Darkvision and Blindsight can't see within the area of the spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: One with Darkness" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_SORCERER_HUNGERING_DARK_ONE_WITH_DARKNESS">
+		<description>
+			<p>The darkness within you roils with hunger and transforms you. You exist in a shadowy state between reality and darkness. On your turn, you have the Invisible condition and can't be perceived by Truesight or Blindsight. You can teleport up to 30 feet to an unoccupied space you can see but only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.</p>
+		</description>
+		<sheet alt="One with Darkness">
+			<description>On your turn, you have the Invisible condition and can't be perceived by Truesight or Blindsight. You can teleport up to 30 ft to an unoccupied space you can see but only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.</description>
+		</sheet>
+	</element>
+	
+</elements>

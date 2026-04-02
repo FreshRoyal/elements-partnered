@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Drama</name>
+		<description>College of Drama from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="bard-drama.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/bard-drama.xml" />
+		</update>
+	</info>
+
+	<element name="College of Drama" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARD_COLLEGE_OF_DRAMA">
+		<supports>Bard Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“All the world's a stage,</p>
+                <p class="flavor">And all the men and women merely players.</p>
+                <p class="flavor">They have their exits and their entrances;</p>
+                <p class="flavor">And one man in his time plays many parts.”</p>
+				<p class="text-align:right">— William Shakespeare</p>
+			</div>
+			<p>Bards tell tales in a variety of ways. Some sing. Some dance. But it is through art they share the sagas of ancient days. Bards of the College of Drama take a deeper approach to bringing the old stories to life. With a combination of skill and magic, they alter not only their own appearance and voice but that of an entire troupe.</p>
+			<p class="indent">By becoming characters from legend, these Bards inspire greatness in those who witness their performances. They rally their allies to impossible feats of perseverance, reminding their friends that the heroes of old faced worse and carried through to victory.</p>
+			<p class="indent">Bards who adopt this specialization are particularly adept at infiltrating evil organizations. Their magic allows their entire party to take on a role, giving the group the opportunity to blend in during a ritual or take part in a large gathering.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_TRAGIC_HERO" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_ONE_LIFE_MANY_ROLES" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_STAGE_DIRECTION" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_ASSEMBLE_THE_TROUPE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_GRAND_FINALE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_TRAGIC_HERO" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_ONME_LIFE_MANY_ROLES" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_STAGE_DIRECTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_ASSEMBLE_THE_TROUPE" level="14"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_GRAND_FINALE" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Tragic Hero" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_TRAGIC_HERO">
+		<description>
+			<p>A great performance sometimes comes at a cost to the artist. If you fail a saving throw, choose other creatures you can see within 60 feet of yourself. Each of the chosen creatures gains a bonus to saving throws equal to your Charisma modifier (minimum of +1) against the same effect that triggered this feature, potentially turning a failure into a success.</p>
+		</description>
+		<sheet alt="Tragic Hero">
+			<description>If you fail a saving throw, choose other creatures you can see within 60 ft of yourself. Each of the chosen creatures gains a +{{cbt:tragic hero:modifier}} bonus to saving throws against the same effect that triggered this feature.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:tragic hero:modifier" value="1" bonus="bonus" />
+			<stat name="cbt:tragic hero:modifier" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 3: One Life, Many Roles" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_ONE_LIFE_MANY_ROLES">
+		<description>
+			<p>You use your magic and dramatic training to step into a role. As a Bonus Action, you can cast <i>Disguise Self</i> with this feature. If you take on the appearance of a specific creature you can see when you cast <i>Disguise Self</i> in this way, you can adopt that creature's mannerisms and voice.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="One Life, Many Roles" action="Bonus Action" usage="1/Short Rest">
+			<description>You can cast Disguise Self with this feature. If you take on the appearance of a specific creature you can see when you cast Disguise Self in this way, you can adopt that creature's mannerisms and voice.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Stage Direction" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_STAGE_DIRECTION">
+		<description>
+			<p>You gain the ability to direct others as you inspire them, allowing them to make the most of your guidance. When a creature that can see you would normally roll one of your Bardic Inspiration die, don't roll the die; instead use the highest number possible for the die.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Stage Direction" usage="{{cbt:stage direction:usage}}/Long Rest">
+			<description>When a creature that can see you would normally roll one of your Bardic Inspiration die, don't roll the die; instead use the highest number possible for the die.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:stage direction:usage" value="1" bonus="bonus" />
+			<stat name="cbt:stage direction:usage" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Assemble the Troupe" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_ASSEMBLE_THE_TROUPE">
+		<description>
+			<p>When you cast <i>Disguise Self</i> using your One Life, Many Roles feature, you can target up to six willing creatures you can see within 30 feet of you with the <i>Disguise Self</i> spell. You choose the appearance each creature takes. While under the effects of the spell cast with this feature, the chosen creatures gain a bonus to Charisma checks equal to your Charisma modifier (minimum of +1).</p>
+		</description>
+		<sheet alt="Assemble the Troupe">
+			<description>When you cast Disguise Self using your One Life, Many Roles feature, you can target up to six willing creatures you can see within 30 ft of you with the Disguise Self spell. You choose the appearance each creature takes. While under the effects of the spell cast with this feature, the chosen creatures gain a +{{cbt:assemblke the troupe:modifier}} bonus to Charisma checks.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:assemblke the troupe:modifier" value="1" bonus="bonus" />
+			<stat name="cbt:assemblke the troupe:modifier" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Grand Finale" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARD_DRAMA_GRAND_FINALE">
+		<description>
+			<p>You gain the ability to deliver a stirring performance that spurs your companions to mighty deeds. As a Magic action, choose up to two other creatures within 60 feet that can see or hear you. Each of the chosen creatures can immediately take an action this turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Grand Finale" action="Action" usage="1/Long Rest">
+			<description>Choose up to 2 other creatures within 60 ft that can see or hear you. Each of the chosen creatures can immediately take an action this turn.</description>
+		</sheet>
+	</element>
+	
+</elements>

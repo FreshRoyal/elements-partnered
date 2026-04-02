@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mythos Investigator</name>
+		<description>Mythos Investigator from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="background-mythosinvestigator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/background-mythosinvestigator.xml" />
+		</update>
+	</info>
+
+	<element name="Mythos Investigator" type="Background" source="Cthulhu by Torchlight" id="ID_CSM_CBT_BACKGROUND_MYTHOS_INVESTIGATOR">
+		<description>
+			<p>Something in your past drew you into contact with the Cthulhu Mythos. While most sensible folk push such memories to the back of their minds, eager to move on with their lives, you chose a different path. Your experience with the mythos showed you that while these creatures are terrible, they can be defeated. You adventure in search of the mythos' influence on the world and seek to battle it however you can.</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Increase an ability score by 2 and another one of your choice by 1, or increase three different ability scores by 1. None of these increases can raise a score above 20.</li>
+				<li><strong>Feat:</strong> Choose any Origin feat.</li>
+				<li><strong>Skill Proficiencies:</strong> You gain proficiency in two skills of your choice.</li>
+				<li><strong>Tool Proficiency:</strong> You gain proficiency with one tool of your choice.</li>
+				<li><strong>Equipment:</strong> 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Ability Score Increase, Any Origin Feat, 2 Skills, and 1 Tool</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" />
+			<select type="Feat" name="Feat (Mythos Investigator)" supports="Origin" />
+			<select type="Proficiency" name="Skill Proficiency (Mythos Investigator)" supports="Skill" number="2" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Tool Proficiency (Mythos Investigator)" supports="Tool" />
+		</rules>
+	</element>
+
+</elements>

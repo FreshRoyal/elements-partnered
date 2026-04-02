@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Body Warping of Gorgoroth" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_BODY_WARPING_OF_GORGOROTH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Choose a Humanoid of your size that you can see in range. You physically transform to become an exact duplicate of that creature for the duration. Even a thorough physical examination fails to find any differences between you and the target.</p>
+			<p class="indent">Your voice and equipment don't change.</p>
+		</description>
+		<setters>
+			<set name="keywords">humanoid, transform</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Breath of the Deep" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_BREATH_OF_THE_DEEP">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>You conjure sea water from the deepest trench to surround a creature that you can see within range. The water seeps into the target's mouth and around its body, slowly crushing it with the unfathomable weight of the sea. The target takes 3d6 Bludgeoning damage and is unable to talk for the duration or use the verbal components of spells.</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning, damage, unable to talk, verbal components</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Call Deity" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CALL_DEITY">
+		<supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You can cast this spell only during the duration of a <i>Contact Deity</i> spell you also cast. You cause the deity you contacted to manifest in the nearest unoccupied space. For 1 hour, it acts as it wishes but treats you as an ally if you don't take actions against it. It doesn't extend this courtesy to your allies and interprets your attempts to protect others as acting against it.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos, contact deity</set>
+			<set name="level">8</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Cat's Spring" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CATS_SPRING">
+		<supports>Bard, Druid, Sorcerer, Warlock, Wizard, Spell Attack, Damaging Spell</supports>
+		<description>
+			<p>You jump up to 10 feet to an unoccupied space you can see and deliver a spectral claw attack that deals Slashing or Force damage (you choose when you cast the spell). Make a melee spell attack against a target. On a hit, the target takes 1d8 damage of the chosen type, and the next attack roll you make against it before the end of your next turn has Advantage.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">jump, melee, attack, slashing, force, damage, attack roll, advantage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Chant of Thoth" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CHANT_OF_THOTH">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>The first time you fail an Intelligence check during the spell's duration, you may automatically succeed on the check if the DC is less than your spell save DC. Otherwise, you gain a +2 bonus to that check. Once you use this benefit, you cannot use it again until you finish a Short Rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, check</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">8 hours</set>
+		</setters>
+	</element>
+
+	<element name="Clutch of Darkness" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CLUTCH_OF_DARKNESS">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You create a terrible force that slowly crushes the target from the inside. Choose a creature that you can see within range and roll 2d6 and record the total rolled. At the start of each of your turns, roll another 2d6 and add the number rolled to the total.</p>
+			<p class="indent">If the total is greater than the target's Strength, it has Disadvantage on Strength-based attacks.</p>
+			<p class="indent">If the total is greater than the target's Dexterity, its Speed is halved and attack rolls against it have Advantage.</p>
+			<p class="indent">If the total is greater than its current Hit Points, the target immediately implodes and dies.</p>
+		</description>
+		<setters>
+			<set name="keywords">disadvantage, strength, dexterity, speed, attack rolls, advantage</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Confounding Shadows" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CONFOUNDING_SHADOWS">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw, Damaging Spell</supports>
+		<description>
+			<p>You create an orb of writhing shadows and hurl it at a creature within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and it is unable to see you until the end of your next turn.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, psychic, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Contact Deity" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CONTACT_DEITY">
+		<supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You contact a deity of the Cthulhu Mythos. You can ask the entity 1d6 questions that can be answered with yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. Old Ones aren't necessarily omniscient, so you might receive "unclear" as an answer if a question pertains to information that lies beyond the Old One's knowledge. In a case where a one-word answer could be misleading or contrary to the Old One's interests, the GM might offer a short phrase as an answer instead.</p>
+			<p class="indent">When you cast this spell, roll a d20. If you roll a 1, the deity appears in the nearest unoccupied space and attacks creatures (including you) in the area for the spell's duration before returning to its realm.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos, communication, old ones</set>
+			<set name="level">5</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Create Mist of R'lyeh" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CREATE_MIST_OF_RLYEH">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>R'lyeh is an ancient city cloaked in a horror-filled mist. You tap into that dreadful mist to create a 20-foot-radius Sphere of fog centered on a point within range. The Sphere is Lightly Obscured. Strange, fleeting shapes are visible within it. A creature that ends its turn in the Sphere takes 1d4 Psychic damage. Beast creatures with an Intelligence of 3 or less refuse to enter the Sphere willingly.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, fog, lightly obscured, psychic, damage</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Curse of the Putrid Husk" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CURSE_OF_THE_PUTRID_HUSK">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You create a horrid illusion in the target's mind, convincing it that its body is slowly decaying. One creature that you can see in range is overcome with a sense of impending doom as it watches itself rot. Choose one of the following effects.</p>
+			<p>A creature selflessly tries to prevent the disease from spreading to its allies. Whenever it starts its turn within 30 feet of an ally, it takes the Dash action and moves away from its nearest ally by the safest route unless there is nowhere to move.</p>
+			<p>A creature becomes filled with spite as it tries to spread the disease to its enemies. It takes the Dash action and moves toward its nearest enemy by the safest route on each of its turns unless there is nowhere to move. When an enemy is within 5 feet of it, it makes an Unarmed Strike against that target.</p>
+		</description>
+		<setters>
+			<set name="keywords">dash, unarmed strike</set>
+			<set name="level">3</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Dismiss Deity" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_DISMISS_DEITY">
+		<supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You exert the natural order of the cosmos and force a Mythos entity back from whence it came. Choose a Bloodied Mythos or Deity creature that you can see within range. The target is transported to a random location on a plane (GM's choice) associated with its creature type.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos, transport, plane</set>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Doom" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_DOOM">
+		<supports>Cleric, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You whisper a prophecy of imminent death, and these words slip into the threads of a creature's fate and cause it to pull toward the moment of its death. One creature that you can see within range makes a Charisma saving throw. On a failed save, you can take a Reaction when the creature takes damage from an attack. Don't roll the attack's damage dice for the damage. Instead use the highest number possible for each damage die. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, save, reaction, damage</set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Dread Curse of Azathoth" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_DREAD_CURSE_OF_AZATHOTH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You utter the secret name of Azathoth and doom a creature to an inevitable death unless it breaks the spell. The creature gains a curse point at the end of each of its turns. When the creature gains its third curse point, it dies. It loses all curse points when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">curse, death</set>
+			<set name="level">7</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Dust of Suleiman" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_DUST_OF_SULEIMAN">
+		<supports>Cleric, Druid, Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>You conjure a cloud of fine dust that harms supernatural creatures. You create a 30-foot-radius Sphere of dust centered on a point within range. Choose a creature type other than Beast or Humanoid. Each creature of the chosen type within the Sphere take 20 Force damage. A creature also takes this damage when the Sphere moves into its space and when it enters the Sphere or ends its turn there. A creature can take this damage only once per turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, force, damage</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Evil Eye" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_EVIL_EYE">
+		<supports>Druid, Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>You glare at a creature that you can see within range, imposing a baleful hex on it. The target takes 1d4+2 Psychic damage, and attack rolls and Unarmed Strikes against it can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d4+2 when you reach levels 5 (2d4+4), 11 (3d4+6), and 17 (4d4+8).</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic, damage, attack rolls, unarmed strikes, critical hits, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Feline Chaos" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_FELINE_CHAOS">
+		<supports>Bard, Druid, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes 4d6 Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the Prone condition, taking another 2d6 Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage at the start of an affected target's turns increases by 2d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, dexterity, save, slashing, damage, disadvantage, ability checks, attack rolls, constitution, prone, upcasting, higher-level spell slot</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Feline Grace" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_FELINE_GRACE">
+		<supports>Bard, Druid, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You gain the unerring reflexes and balance of a cat. Until the spell ends, you gain the following benefits:</p>
+			<p>You are immune to the Prone condition while you don't have the Incapacitated condition, as you always land on your feet.</p>
+			<p>You can take a Reaction when you fall to reduce any damage you take from the fall by an amount equal to five times your level.</p>
+			<p>You gain Advantage on Dexterity checks and saving throws.</p>
+			<p>Your jump distance is doubled.</p>
+		</description>
+		<setters>
+			<set name="keywords">immune, prone, reaction, reduce fall damage, advantage, dexterity, checks, saves, jump distance</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Fist of Yog-Sothoth" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_FIST_OF_YOG_SOTHOTH">
+		<supports>Sorcerer, Warlock, Wizard. Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You conjure a horrid tendril of Yog-Sothoth into reality to batter your foe. One creature of your choice that you can see within range makes a Strength saving throw. On a failed save, it takes 8d6 Necrotic damage, has the Prone condition, and you move it up to 40 feet in any direction within the spell's range. On a successful save, it takes 8d6 Necrotic damage only.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, save, necrotic, damage, prone</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Phantom Panther" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_PHANTOM_PANTHER">
+		<supports>Bard, Druid, Ranger, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You conjure a spectral panther that pounces on a creature you can see within range, mauling and pinning it for your allies close in for the kill.</p>
+			<p class="indent">The target makes a Strength saving throw. On a failed save, the target takes 8d6 Force damage and has the Restrained condition until the spell ends. On a successful save, the target takes half as much damage only, and the spell ends. While Restrained, the target takes 2d6 Force damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a Strength (Athletics) check against your spell save DC. On a success, the spell ends.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, strength, save, force, damage, restrained, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Red Sign" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_RED_SIGN">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You reach above your head and conjure the dreaded Red Sign, a sigil of immense power that is inimical to all creatures. At the end of each of your turns for the duration, each creature (including yourself) within 30 feet of you that can see you takes 5d8 Necrotic damage. This damage can't break your Concentration. If this damage reduces a creature to 0 Hit Points, it and everything nonmagical it is wearing and carrying collapses into a pile of slime and viscera. The target can be revived only by a <i>True ResurrectionK</i> or a <i>Wish</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic, damage</set>
+			<set name="level">6</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Shadowy Eruption" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_SHADOWY_ERUPTION">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>A 20-foot radius Sphere of gloom erupts from a point you choose within range as fell energies from the dimension of shadow flood the area. You select an entity to push through into this reality for a horrifying moment. When you cast this spell, choose one of the following options:</p>
+			<p class="indent"><b><i>The Darkness Hides Terrors.</i></b> Creatures of your choice in the area must make Dexterity saving throws. A target takes 4d8 Psychic damage on a failed save and must use a reaction to move as far away as it can from the point you chose, using the safest route. On a successful save, the target takes half as much damage only.</p>
+			<p class="indent"><b><i>Tomb of Shadows.</i></b> Creatures of your choice in the area must make Constitution saving throws. A target takes 4d8 Necrotic damage on a failed save and its Speed is reduced by 20 feet. On a successful save, the target takes half as much damage only.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, dexterity, save, psychic, damage, constitution, necrotic, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<!--Summon Shadow-->
+	<element name="Summon Shadow" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_SUMMON_SHADOW">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You call forth a spirit of shadow. It manifests as a silhouette of pure blackness in an unoccupied space you can see within range. This corporeal form uses the <b>Shadow Spirit</b> stat block. When you cast this spell, choose Infiltrator or Assassin. Your choice determines certain traits in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p>
+			<p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
+			<div class="reference">
+				<div element="ID_CSM_CBT_INFORMATION_SHADOW_SPIRIT_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">summon, upcasting, higher-level spell slot</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+		</setters>
+	</element>
+	<element name="Shadow Spirit" type="Information" source="Cthulhu by Torchlight" id="ID_CSM_CBT_INFORMATION_SHADOW_SPIRIT_STATBLOCK">
+		<description>
+			<p style="margin-bottom:5px"><em>Medium Undead, Neutral</em></p>
+			<ul class="unstyled mb">
+				<li><strong>AC</strong> 11 + the spell's level</li>
+				<li><strong>HP</strong> 50 (Assassin only) or 40 (Infiltrator only) + 10 for each spell level above 5</li>
+				<li><strong>Speed</strong> 30 ft., Fly 40 ft. (Infiltrator only)</li>
+			</ul>
+			<table style="text-align:center;margin-top:2px;margin-bottom:10px">
+				<tr style="font-size:8px"><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td></tr>
+				<tr><td>STR</td><td>10</td><td>+0</td><td>+0</td><td>DEX</td><td>20</td><td>+5</td><td>+5</td><td>CON</td><td>15</td><td>+2</td><td>+2</td></tr>
+				<tr><td>INT</td><td>10</td><td>+0</td><td>+0</td><td>WIS</td><td>10</td><td>+0</td><td>+0</td><td>CHA</td><td>12</td><td>+1</td><td>+1</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Resistances</strong> Necrotic</li>
+				<li><strong>Immunities</strong> Cold</li>
+				<li><strong>Senses</strong> Darkvision 60 ft.; Passive Perception 10</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>CR</strong> None (XP 0; PB equals your Proficiency Bonus)</li>
+			</ul>
+			<h4 style="margin-top:5px">Traits</h4>
+			<ul class="unstyled">
+				<li><strong><em>Incorporeal Passage.</em></strong> The spirit can move through other creatures and objects as if they were Difficult Terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes 1d10 Force damage for every 5 feet traveled.</li>
+				<li><strong><em>Shadow Stealth.</em></strong> The spirit may take the Hide action as a Bonus Action when in Dim Light or Darkness.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em> The spirit makes a number of attacks equal to half this spell's level (round down).</li>
+				<li><em><strong>Chill Touch (Infiltrator Only).</strong> Melee Attack Roll:</em> Bonus equals your spell attack modifier, Reach 5 ft <em>Hit:</em> 2d4 + 3 + the spell's level Cold damage. If the spirit was hidden when it made the attack, the attack deals an additional 2d4 Cold damage.</li>
+				<li><em><strong>Deathly Bolt (Assassin Only).</strong> Ranged Attack Roll:</em> Bonus equals your spell attack modifier, range 150 ft <em>Hit:</em> 2d4 + 3 + the spell's level Cold damage. If the spirit was hidden when it made the attack, the attack deals an additional 2d4 Cold damage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Tide of Darkness" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_TIDE_OF_DARKNESS">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You unleash a wave of swirling shadows that fills an area next to you. Each creature in a 10-foot Cube of Darkness originating from you when you cast the spell makes a Wisdom saving throw. On a failed save, a creature takes 2d8 Psychic damage and is Blinded until it is no longer in the area of Darkness. On a successful save, it takes half as much damage and isn't Blinded. The Darkness lasts until the end of your next turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The size of the Cube increases by 5 feet for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">cube, darkness, wisdom, save, psychic, damage, blinded, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Umbral Tendril" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_UMBRAL_TENDRIL">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You create a long tendril of life-stealing shadow that lashes out at a creature in range that you can see.</p>
+			<p class="indent">Make a ranged spell attack against the target. On a hit the target takes 2d8 Necrotic damage and you gain Temporary Hit Points equal to the damage dealt.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">ranged spell attack, necrotic, damage, temporary hit points, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Voorish Sign" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_VOORISH_SIGN">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You have mastered the Voorish sign, a sigil from an ancient era said to predate the world's creation. Choose a creature that you can see within range. When you would normally roll one or more dice to deal damage to that creature with a spell, don't roll those dice for the damage; instead use the highest number possible for each die. In addition, you can choose a spell of level 5 or lower that you can cast, that has a casting time of an action. You can cast that spell as part of casting Voorish Sign, expending spell slots for both.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage</set>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Wave of Oblivion" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_WAVE_OF_OBLIVION">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You create a 30-foot Cone of oblivion. Each Bloodied creature in the Cone makes a Constitution saving throw. On a failed save a creature dies, and it and everything nonmagical it is wearing and carrying are turned to dust. The target can be revived only by a <i>True Resurrection</i> or a <i>Wish</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">cone, bloodied, constitution, save, death</set>
+			<set name="level">9</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+    
+</elements>

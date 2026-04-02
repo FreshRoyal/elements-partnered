@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Exalted Assembly of the Feline Court</name>
+		<description>Exalted Assembly of the Feline Court from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="warlock-felinecourt.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/warlock-felinecourt.xml" />
+		</update>
+	</info>
+
+	<element name="Exalted Assembly of the Feline Court" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“If man could be crossed with a cat, it would improve man but deteriorate the cat.”</p>
+				<p class="text-align:right">— Mark Twain</p>
+			</div>
+			<p>The entities of the Cthulhu Mythos have many enemies. Not all who learn of these terrible creatures fall victim to their promises of forbidden power. Across the cosmos, a grand conspiracy consisting of the most unlikely of creatures.</p>
+			<p class="indent">A court of intelligent house cats seek to protect the world from the Mythos. Hailing from across planes, worlds, and planets, they use magic and manipulation to ensure that their centuries of work domesticating humans remains uninterrupted. For all their skill at providing food, warmth, and shelter, humans are all too prone to corruption, meddling in powers far beyond their grasp. All it takes is one fool with a forbidden book and generations of work crumbles as yet another human civilization falls to dust.</p>
+			<p class="indent">The Exalted Assembly of the Feline Court coordinates efforts to sustain and protect their servants. They forge magical pact with those who show the right mix of cunning, bravery, and etiquette.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_SPELLS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_AFFINITY" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_FORM" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_VEXING_DISTRACTION" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_NINE_LIVES" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_SUMMON_THE_COURTIERS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_AFFINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_FORM" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_VEXING_DISTRACTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_NINE_LIVES" level="10"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_SUMMON_THE_COURTIERS" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Feline Spells" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_SPELLS">
+		<description>
+			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Feline Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Feline Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Animal Friendship, Cat's Spring, Feather Fall, Feline Grace, Misty Step, Speak with Animals</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Haste, Phantom Panther</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Freedom of Movement, Dimension Door</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Feline Chaos, Telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_CATS_SPRING" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEATHER_FALL" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_FELINE_GRACE" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" level="5" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_PHANTOM_PANTHER" level="5" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIMENSION_DOOR" level="7" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_CSM_CBT_SPELL_FELINE_CHAOS" level="9" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TELEKINESIS" level="9" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Feline Affinity" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_AFFINITY">
+		<description>
+			<p>You gain the ability to speak with the world's true nobility. You can cast <i>Speak with Animals</i> without expending a spell slot. When you cast the spell this way, the only Beasts you can verbally communicate with are cats, though most cats are reluctant to converse with a creature as simple as you.</p>
+		</description>
+		<sheet alt="Feline Affinity">
+			<description>You can cast Speak with Animals without expending a spell slot. When you cast the spell this way, the only Beasts you can verbally communicate with are cats, though most cats are reluctant to converse with a creature as simple as you.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Feline Form" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_FELINE_FORM">
+		<description>
+			<p>Your patron takes pity on you and gives you the ability to adopt a superior, more pleasing form. As a Bonus Action, you shape-shift into a Cat, a Tiny Beast. You stay in that form for a number of hours equal to half your Warlock level (rounded down) or until you use this feature again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action. While in this form, you retain your personality, memories, and ability to speak, and the following rules apply:</p>
+			<p class="indent"><em><strong>Game Statistics.</strong></em> Your game statistics are replaced by the Beast's stat block, but you retain your creature type; Hit Points; Hit Point Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block.</p>
+			<p class="indent"><em><strong>Spellcasting.</strong></em> While in your cat form, you can only casts spells that are on your Feline Spells feature. You can cast these spells without needing Material components. In addition, if you have the Invisible condition from the Hide action and cast a spell that doesn't target a Hostile creature, you retain the Invisible condition. Shapeshifting doesn't break your Concentration or otherwise interfere with a spell you've already cast.</p>
+			<p class="indent"><em><strong>Equipment.</strong></em> You choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for your Tiny Beast form to wear a piece of equipment. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Feline Form" action="Bonus Action" usage="{{cbt:feline form:uses}}/Long Rest">
+			<description>You can magically assume the form of a Cat. You can stay in that form for {{cbt:feline form:hours}} hours or until you use Feline Form again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action. &#13;
+			While transformed your statistics are replaced by the Cat’s, but you retain your creature type; HP; Hit Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. You can use Beast's skill or saving throw modifier if it's higher than yours. You can only cast spells that are on your Feline Spells feature, and you can cast them without Material components. Shape-shifting doesn’t break your Concentration or otherwise interfere with a spell you’ve already cast. I you have the Invisible condition from the Hide action and cast a spell that doesn't target a Hostile creature, you retain the Invisible condition. &#13;
+			You regain one expended use of your Wild Shape when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:feline form:uses" value="1" bonus="base" />
+			<stat name="cbt:feline form:uses" value="charisma:modifier" bonus="base" />
+			<stat name="cbt:feline form:hours" value="level:warlock:half" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Vexing Distraction" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_VEXING_DISTRACTION">
+		<description>
+			<p>While in your cat form, you can pass off the most destructive, distracting, and irritating behavior as cute or even adorable.</p>
+			<p class="indent">As a Bonus Action while in your cat form, choose a creature within 5 feet of you that can see and hear you. The target must succeed on a Wisdom save against your spell save DC or be affected by one of the following effects of your choice:</p>
+			<p class="indent"><b><i>Annoy.</i></b> The target has Disadvantage on D20 Tests until the end of your next turn.</p>
+			<p class="indent"><b><i>Confound.</i></b> The target's Speed is reduced to 0 until the end of your next turn.</p>
+			<p class="indent"><b><i>Distract.</i></b> A creature of your choice has Total Cover against the target until the end of the chosen creature's next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Vexing Distraction" action="Bonus Action" usage="{{cbt:vexing distraction:usage}}/Long Rest">
+			<description>While in your cat form, choose a creature within 5 ft of you that can see and hear you. The target must succeed on a DC{{warlock:spellcasting:dc}} Wisdom save or be affected by one of the following effects of your choice: &#13;
+			• The target has Disadvantage on D20 Tests until the end of your next turn. &#13;
+			• The target's Speed is reduced to 0 until the end of your next turn. &#13;
+			• A creature of your choice has Total Cover against the target until the end of the chosen creature's next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:vexing distraction:usage" value="1" bonus="base" />
+			<stat name="cbt:vexing distraction:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Nine Lives" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_NINE_LIVES">
+		<description>
+			<p>You are gifted with an almost inexplicable ability to survive dangerous situations. You have Nine Lives, which can be expended in the following ways:</p>
+			<ul>
+				<li>If you take damage while you have 0 Hit Points, you can expend 1 life to not suffer a Death Saving Throw failure. If the damage is from a Critical Hit, you must expend 2 lives to not suffer Death Saving Throw failures.</li>
+				<li>If you are forced to make a Death Saving Throw, you can expend 1 life to cause yourself to succeed instead.</li>
+				<li>If you are forced to make a Death Saving Throw, you can expend 5 lives to turn the roll into a 20.</li>
+				<li>If you would die from massive damage, you can expend 1 life to be reduced to 0 Hit Points instead of being killed outright.</li>
+				<li>When you are reduced to 0 Hit Points and not killed outright, you can expend 1 life to drop to 1 Hit Point instead.</li>
+				<li>If you are targeted with an effect that causes instant death, such as a <i>Power Word Kill</i> spell, you can expend 9 lives to ignore the effect.</li>
+			</ul>
+			<p class="indent">You regain all expended lives when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Nine Lives" action="Bonus Action" usage="9/Long Rest">
+			<description>You have Nine Lives, which can be expended in the following ways: &#13;
+			• If you take damage while you have 0 HPs, you can expend 1 life to not suffer a Death Saving Throw failure. If the damage is from a Critical Hit, you must expend 2 lives to not suffer Death Saving Throw failures. &#13;
+			• If you are forced to make a Death Saving Throw, you can expend 1 life to cause yourself to succeed instead. &#13;
+			• If you are forced to make a Death Saving Throw, you can expend 5 lives to turn the roll into a 20. &#13;
+			• If you would die from massive damage, you can expend 1 life to be reduced to 0 HPs instead of being killed outright. &#13;
+			• IWhen you are reduced to 0 HPs and not killed outright, you can expend 1 life to drop to 1 HP instead. &#13;
+			• If you are targeted with an effect that causes instant death, you can expend 9 lives to ignore the effect.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Summon the Courtiers" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_WARLOCK_EXALTED_ASSEMBLY_OF_THE_FELINE_COURT_SUMMON_THE_COURTIERS">
+		<description>
+			<p>Having served the Feline Assembly with grace, tact, and good taste, you have earned their favor. When you take damage from a creature that is within 60 feet of you, you can take a Reaction to call upon the Assembly's wrath. A horde of hissing, spectral cats emerges from the planar firmament and descends upon the creature that damaged you. That creature takes 5d10 Force damage and has the Blinded and Prone conditions until the end of your next turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you spend a Pact Magic spell slot (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Summon the Courtiers" action="Reaction" usage="1/Long Rest">
+			<description>When you take damage from a creature that is within 60 ft of you, you can call upon the Assembly's wrath. A horde of hissing, spectral cats emerges from the planar firmament and descends upon the creature that damaged you. That creature takes 5d10 Force damage and has the Blinded and Prone conditions until the end of your next turn. &#13;
+			You can spend a Pact Magic spell slot to restore your use of this feature.</description>
+		</sheet>
+	</element>
+	
+</elements>

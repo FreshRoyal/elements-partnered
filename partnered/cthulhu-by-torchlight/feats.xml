@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/feats.xml" />
+		</update>
+	</info>
+
+	<element name="I Fought, I Lived" type="Feat" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_I_FOUGHT_I_LIVED">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+            <p>You confronted a horror from beyond this world or spawned by terrible magic. It disregarded you as a puny mortal, but it learned its mistake the hard way when you sent it back to wherever it came from with good, old-fashioned muscle, courage, and a really, really large axe.</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Defiant Strike.</i></b> While you are Bloodied and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible. Once you use this benefit, you can't use it again until you finish a Long Rest.</p>
+			<p class="indent"><b><i>Indomitable Heart.</i></b> If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• While you are Bloodied and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible. (1/Long Rest) &#13;
+			• If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</description>
+		</sheet>
+	</element>
+
+    <element name="I Hid from the Terror" type="Feat" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_I_HID_FROM_THE_TERROR">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+            <p>That night is a blur. A strange presence, an overwhelming terror, and a confused jumble of screams mixed with faint memories of something terrible and hungry. You hid from it, finding a place too small for it to reach. The sounds of that night, and the awful aftermath you found that morning, will remain with you to the end of your days and beyond.</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Shadowed Strike.</i></b> If attacking would end the Invisible condition on you, you can make an attack and keep that condition. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Beneath Notice.</i></b> When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 feet away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures.</p>
+            <p class="indent"><b><i>Merge into Shadows.</i></b> Wisdom (Perception) checks made to detect you while you have the Invisible condition have Disadvantage.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• If attacking would end the Invisible condition on you, you can make an attack and keep that condition. ({{proficiency}}/Long Rest) &#13;
+			• When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 ft away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures. &#13;
+            • Wisdom (Perception) checks made to detect you while you have the Invisible condition have Disadvantage.</description>
+		</sheet>
+	</element>
+
+    <element name="I Owned the Gate" type="Feat" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_I_OWNED_THE_GATE">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+            <p>You didn't mean for things to turn out this way. You were curious and perhaps ignored a few signs, but it's hard to take ancient curses seriously. Musty old books say a lot of things, and most of them turn out to be mere fables. Most of them. The one book you read turned out to be the key to unleashing some ancient evil. Now it's in the world, and it's up to you to find it and send it back.</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Delver into Forgotten Lore.</i></b> You learn three languages of your choice.</p>
+			<p class="indent"><b><i>Foul Arcana.</i></b> You can tap into a brief glimpse of the mythos to empower a spell, at the cost of overwhelming your mind with a horrifying, cosmic insight. When you cast a spell, you can give that spell's save DC a +2 bonus but you have the Paralyzed condition until the start of your next turn. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you cast a spell, you can give that spell's save DC a +2 bonus but you have the Paralyzed condition until the start of your next turn.</description>
+		</sheet>
+        <rules>
+			<select type="Language" name="Language (I Opened the Gate)" supports="Standard||Rare||Exotic" number="3" />
+		</rules>
+	</element>
+
+    <element name="I Pierced the Illusion" type="Feat" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_I_PIERCED_THE_ILLUSION">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+            <p>You came across something strange and awful, made all the more terrible by its hidden nature. A town might have seemed innocent until it dragged unwitting visitors to their carefully tended sacrificial garden, or the family that took you in on a dark, stormy night were actually hungry cannibals. You survived because you saw their disguise and escaped or struck first.</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Clear Senses.</i></b> If you have the Charmed condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</p>
+			<p class="indent"><b><i>Ear for Falsehood.</i></b> When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest.</p>
+            <p class="indent"><b><i>Subtle Interrogation.</i></b> You have Advantage on Insight checks made against creatures that you are speaking with.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• If you have the Charmed condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition. &#13;
+			• When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement. ({{proficiency}}/Long Rest) &#13;
+            • You have Advantage on Insight checks made against creatures that you are speaking with.</description>
+		</sheet>
+	</element>
+    
+    <element name="I Survived to Tell the Tale" type="Feat" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_I_SURVIVED_TO_TELL_THE_TALE">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+            <p>You encountered something dreadful, a horrible creature or bizarre ritual that set you down the path to becoming an investigator of the strange. Your quick feet and instinct for survival carried you through that day and are your best assets.</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Instinct to Survive.</i></b> When you take damage that would reduce you to 0 Hit Points, you can immediately regain Hit Points equal to your level. When you use this benefit, you cannot use it again until you finish a Long Rest.</p>
+			<p class="indent"><b><i>Superior Speed.</i></b> You gain a +10 bonus to Speed.</p>
+            <p class="indent"><b><i>Wriggle Free.</i></b>  If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• When you take damage that would reduce you to 0 HPs, you can immediately regain {{level}} HPs. (1/Long Rest) &#13;
+			•  If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</description>
+		</sheet>
+        <rules>
+			<stat name="innate speed" value="10" />
+		</rules>
+	</element>
+
+</elements>

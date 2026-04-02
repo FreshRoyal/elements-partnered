@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Trail Warden</name>
+		<description>Trail Warden from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="ranger-trailwarden.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/ranger-trailwarden.xml" />
+		</update>
+	</info>
+
+	<element name="Trail Warden" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_RANGER_TRAIL_WARDEN">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“Wanting to become a hero is a noble aim, but no one remembers the guy who died of dysentery on his way to the dungeon.”</p>
+				<p class="text-align:right">— Hilda Farwander</p>
+			</div>
+			<p>Trail wardens are Rangers who have taken an oath. When they lead others into the wilderness, they swear to bring them back safe and sound, but they aren't mere bodyguards or tour guides. Trail Wardens only lead those they deem capable of providing the skills and abilities needed to endure the horrid monsters and grinding conditions of an expedition. Far from civilization's protective grasp, there is no room for dead weight. A single mistake can cost the lives of an entire party.</p>
+			<p class="indent">Trail Wardens are known for their harsh attitude toward others. Some Trail Wardens believe that they must bring the realities of the wilderness into civilization to prevent the careless from joining their expeditions and endangering the group. But once in the wilds, they become nurturing, protective, and insightful as they guide their charges safely through dangerous territory.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_TRAIL_WARDEN_SPELLS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_TACTICS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_LEAD_THE_WAY" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_TACTICAL_ASSAULT" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_EFFORT" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_GROUP_ASSAULT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_TRAIL_WARDEN_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_TACTICS" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_LEAD_THE_WAY" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_TACTICAL_ASSAULT" level="7"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_EFFORT" level="11"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_GROUP_ASSAULT" level="15"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Trail Warden Spells" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_TRAIL_WARDEN_SPELLS">
+		<description>
+			<p>When you reach a Ranger level specified in the Trail Warden Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Trail Warden Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Ranger Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Goodberry</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Pass Without Trace</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Spirit Guardians</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Guardian of Faith</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Mass Cure Wounds</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GOODBERRY" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIRIT_GUARDIANS" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Coordinated Tactics" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_TACTICS">
+		<description>
+			<p>You have an innate understanding of coordinating teamwork. It is represented by your Teamwork Die, which is used in the powers you have from this subclass. The Teamwork Die table shows the die size when you reach certain Ranger levels.</p>
+			<p class="indent">At the start of your turn, roll your Teamwork Die and use that result for it until the start of your next turn when you reroll it.</p>
+			<p class="indent"><b><i>Coordinated Strikes.</i></b> When another creature you can see hits a target with an attack roll, you can take a Reaction to roll your Teamwork Die and add the number rolled to the attack's damage against the target. The damage is of the same type dealt by the original attack.</p>
+			<p class="indent"><b><i>Coordinated Tactics.</i></b> You grant your allies the ability to harmonize their positions on the battlefield. At the start of your turn, after you roll your Teamwork Die you can choose any number of willing creatures within 60 feet of you that can see you. Each of the chosen creatures can take a Reaction to move up to a number of feet equal to 5 times the number rolled or up to its Speed, whichever is lower. This movement doesn't provoke Opportunity Attacks and ignores Difficult Terrain.</p>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Teamwork Die</td></tr>
+				</thead>
+				<tr><td>3</td><td>D6</td></tr>
+				<tr><td>11</td><td>D8</td></tr>
+				<tr><td>17</td><td>D10</td></tr>
+			</table>
+		</description>
+		<sheet alt="Coordinated Tactics">
+			<description>At the start of your turn, roll your Teamwork Die, a d{{cbt:teamwork die}}, and use that result for it until the start of your next turn when you reroll it. You can choose any number of willing creatures within 60 ft of you that can see you. Each of the chosen creatures can take a Reaction to move up to a number of ft equal to 5 times the number rolled or up to its Speed, whichever is lower. This movement doesn't provoke Opportunity Attacks and ignores Difficult Terrain.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:teamwork die" value="6" bonus="base" />
+			<stat name="cbt:teamwork die" value="8" bonus="base" level="11" />
+			<stat name="cbt:teamwork die" value="10" bonus="base" level="17" />
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_TACTICS_COORDINATED_STRIKES" />
+		</rules>
+	</element>
+	<element name="Coordinated Strikes" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_TACTICS_COORDINATED_STRIKES">
+		<compendium display="false" />
+		<description>
+			<p>When another creature you can see hits a target with an attack roll, you can take a Reaction to roll your Teamwork Die and add the number rolled to the attack's damage against the target. The damage is of the same type dealt by the original attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When another creature you can see hits a target with an attack roll, you can roll 1d{{cbt:teamwork die}} and add the number rolled to the attack's damage against the target. The damage is of the same type dealt by the original attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Lead the Way" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_LEAD_THE_WAY">
+		<description>
+			<p>When you make an ability check with a skill proficiency in which you have Expertise and succeed, you can choose other creatures within 60 feet of yourself. Until the start of your next turn, each of the chosen creatures gains a bonus to the same check equal to a roll of your Teamwork Die.</p>
+		</description>
+		<sheet alt="Lead the Way">
+			<description>When you make an ability check with a skill in which you have Expertise and succeed, you can choose other creatures within 60 ft of yourself. Until the start of your next turn, each of the chosen creatures gains a bonus to the same check equal to 1d{{cbt:teamwork die}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Tactical Assault" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_TACTICAL_ASSAULT">
+		<description>
+			<p>Your ability to direct the movement and attacks of your allies improves.</p>
+			<p class="indent">Each ally you choose with your Coordinate Tactics feature that can see or hear you gains one of the following benefits of their choice.</p>
+			<p class="indent"><b><i>Guardian Maneuver.</i></b> Until the start of your next turn, the first time the ally takes damage, they can reduce the damage taken by the number rolled on your Teamwork Die.</p>
+			<p class="indent"><b><i>Recon Maneuver.</i></b> When an ally takes a Reaction to move, it can take the Hide action as part of that Reaction. It gains a bonus to the Dexterity (Stealth) check equal to the number rolled on your Teamwork Die.</p>
+		</description>
+		<sheet alt="Tactical Assault">
+			<description>Each ally you choose with your Coordinate Tactics feature that can see or hear you gains one of the following benefits of their choice: &#13;
+			• Guardian Maneuver. Until the start of your next turn, the first time the ally takes damage, they can reduce the damage taken by the number rolled on your Teamwork Die. &#13;
+			• Recon Maneuver. When an ally takes a Reaction to move, it can take the Hide action as part of that Reaction. It gains a bonus to the Dexterity (Stealth) check equal to the number rolled on your Teamwork Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Coordinated Effort" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_COORDINATED_EFFORT">
+		<description>
+			<p>When you roll Initiative, you can roll your Teamwork Die if you don't have the Incapacitated condition; you and each ally within 30 feet of you that can see or hear you gains a bonus to Initiative equal to the number rolled.</p>
+		</description>
+		<sheet alt="Coordinated Effort">
+			<description>When you roll Initiative, you can roll 1d{{cbt:teamwork die}} if you don't have the Incapacitated condition; you and each ally within 30 ft of you that can see or hear you gains a bonus to Initiative equal to the number rolled.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Group Assault" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_RANGER_TRAIL_WARDEN_GROUP_ASSAULT">
+		<description>
+			<p>You coordinate your allies in their attacks against a powerful foe. If you take the Attack action and each attack you make is against the same target, you can choose other creatures within 60 feet of yourself. Each of the chosen creatures gains a bonus to one attack roll and damage roll equal to the number rolled on your Teamwork Die against the same target.</p>
+		</description>
+		<sheet alt="Group Assault">
+			<description>If you take the Attack action and each attack you make is against the same target, you can choose other creatures within 60 ft of yourself. Each of the chosen creatures gains a bonus to one attack roll and damage roll equal to the number rolled on your Teamwork Die against the same target.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/source.xml" />
+		</update>
+	</info>
+	<element name="Cthulhu by Torchlight" type="Source" source="Core" id="ID_CSM_SOURCE_CTHULHU_BY_TORCHLIGHT">
+		<description>
+			<p><strong>The Cthulhu Mythos invades fifth edition DUNGEONS &amp; DRAGONS!</strong></p>
+            <p>Ready your players with subclasses, feats, and spells powerful enough to stop even the hungriest shoggoth.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">CBT</set>
+			<set name="url">https://marketplace.dndbeyond.com/category/DBIRFDZMU</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/CBT.png</set>
+			<set name="author" abbreviation="CSM" url="https://www.chaosium.com/">Chaosium</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20250725</set>
+		</setters>
+	</element>
+</elements>

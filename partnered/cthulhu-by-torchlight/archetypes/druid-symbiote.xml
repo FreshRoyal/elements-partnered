@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the Symbiote</name>
+		<description>Circle of the Symbiote from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="druid-symbiote.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/druid-symbiote.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Symbiote" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_DRUID_CIRCLE_OF_THE_SYMBIOTE">
+		<supports>Druid Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“Steel and magic come and go. Nature abides.”</p>
+				<p class="text-align:right">— Lerex the Justifier</p>
+			</div>
+			<p>Druids typically view themselves as caretakers of the natural world, using their magic to maintain the wild realms. Druids of the Circle of the Symbiote take this a step further. They become part of nature, allowing plants to take root in their flesh and become an integral part of their being.</p>
+			<p class="indent">Druids of this circle are sometimes seen as extremists by their brethren. They treat plants and animals as equals, seeing intelligent creatures as no more worthy of respect or protection than other living things. At their most extreme, these Druids wage war against civilization, calling on fang and vine to topple those who would invade the natural world and subvert it.</p>
+			<p class="indent">These Druids, owing to their close bonds to the natural world, are drawn to face the horrid invaders of the Cthulhu Mythos. They see themselves as the wild's first line of defense against these abominations.</p>
+			<h4>Symbiote Appearance</h4>
+			<table>
+				<thead>
+					<tr><td class="col-10" style="text-align:center">D6 Roll or Choose</td><td>Symbiote Appearance</td></tr>
+				</thead>
+				<tr><td style="text-align:center">1</td><td>Your symbiote wishes to remain hidden. It slides into the folds of your clothes and seeks to avoid detection.</td></tr>
+				<tr><td style="text-align:center">2</td><td>To an observer, your symbiote looks like a flower that you have tucked over your ear or into your hair. However, a closer examination reveals roots that have bored through your skull and into your brain.</td></tr>
+				<tr><td style="text-align:center">3</td><td>Your symbiote lives just under the surface of your skin, forming a spiderweb pattern of roots and vines. Those who observe you for a time can see these roots shifting and moving.</td></tr>
+				<tr><td style="text-align:center">4</td><td>Your symbiote has replaced your hair, leaving you with a flowing mass of vines spilling to your shoulders. During the winter, the tendrils wither to a dull brown color. In the summer, they burst with colorful blooms.</td></tr>
+				<tr><td style="text-align:center">5</td><td>Your symbiote has replaced a limb, forming a sinuous tangle of woody roots woven like rope. This limb is as strong and flexible as your original, but it places some strange demands on you. Instead of drinking, you must dip your limb in water to slake your thirst.</td></tr>
+				<tr><td style="text-align:center">6</td><td>Your symbiote grows deep within your chest, its vines looping between your organs and reaching to touch beneath your skin. Short, sharp thorns stud parts of your body. To sustain your symbiote, you must skewer chunks of raw flesh on these thorns. Your symbiote draws nutrients from this meat.</td></tr>
+			</table>
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_CIRCLE_OF_SYMBIOTE_SPELLS" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SYMBIOTE_REFLEXES" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SURVIVAL_INSTINCT" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SURGE_OF_SUSTENANCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_CIRCLE_OF_SYMBIOTE_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SYMBIOTE_REFLEXES" level="6"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SURVIVAL_INSTINCT" level="10"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SURGE_OF_SUSTENANCE" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Circle of the Symbiote Spells" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_CIRCLE_OF_SYMBIOTE_SPELLS">
+		<description>
+			<p>When you reach a Druid level specified in the Circle of the Symbiote Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Circle of the Symbiote Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Druid Level</td><td class="left">Circle Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Barkskin, Entangle, Guidance</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Plant Growth</em></td></tr>
+				<tr><td>7</td><td class="left"><em>	Hallucinatory Terrain</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Tree Stride</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BARKSKIN" spellcasting="Druid" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENTANGLE" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDANCE" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Primal Symbiote" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE">
+		<description>
+			<p>Vines and roots grow across your body, forming a symbiotic network. As it draws physical and magical nourishment from you, the symbiote grants you a number of benefits.</p>
+			<p class="indent"><em><strong>Fortifying Presence.</strong></em> You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
+			<p class="indent"><em><strong>Symbiotic Transformation.</strong></em> As a Bonus Action, you can expend one use of Wild Shape to allow your symbiote to transform you into a plant-like brute as fibrous plates and vines cover your skin. For 1 minute, you gain a +2 bonus to AC, you gain a number of Temporary Hit Points equal to 2 plus half your Druid level (round down) at the start of each of your turns, and you gain Advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE_FORTIFYING_PRESENCE" />
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE_SYMBIOTIC_TRANSFORMATION" />
+		</rules>
+	</element>
+	<element name="Fortifying Presence" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE_FORTIFYING_PRESENCE">
+		<compendium display="false" />
+		<description>
+			<p>You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Constitution saving throws that you make to maintain Concentration.</description>
+		</sheet>
+	</element>
+	<element name="Symbiotic Transformation" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_PRIMAL_SYMBIOTE_SYMBIOTIC_TRANSFORMATION">
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you can expend one use of Wild Shape to allow your symbiote to transform you into a plant-like brute as fibrous plates and vines cover your skin. For 1 minute, you gain a +2 bonus to AC, you gain a number of Temporary Hit Points equal to 2 plus half your Druid level (round down) at the start of each of your turns, and you gain Advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Wild Shape">
+			<description>You can allow your symbiote to transform you into a plant-like brute. For 1 minute, you gain a +2 bonus to AC, you gain {{cbt:symbiotic transformation:thp}} THPs at the start of each of your turns, and you gain Advantage on Dexterity (Stealth) checks.</description>
+		</sheet>
+		<rules>
+			<stat name="cbt:symbiotic transformation:thp" value="2" bonus="base" />
+			<stat name="cbt:symbiotic transformation:thp" value="level:druid:half" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Symbiote Reflexes" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SYMBIOTE_REFLEXES">
+		<description>
+			<p>Your plant symbiote empowers you. You always have the <i>Haste</i> spell prepared. Once per active Symbiotic Transformation, you can cast <i>Haste</i> on yourself without a spell slot or components.</p>
+		</description>
+		<sheet alt="Symbiote Reflexes">
+			<description>Once per active Symbiotic Transformation, you can cast Haste on yourself without a spell slot or components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" spellcasting="Druid" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Survival Instinct" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SURVIVAL_INSTINCT">
+		<description>
+			<p>While you are in mortal peril, your symbiote can attempt to move you to safety. While you have the Incapacitated condition, you can take the Dash, Disengage, or Dodge action, and you retain the benefits of the Dodge action while you have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Survival Instinct">
+			<description>While you have the Incapacitated condition, you can take the Dash, Disengage, or Dodge action, and you retain the benefits of the Dodge action while you have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Surge of Sustenance" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_DRUID_SYMBIOTE_SURGE_OF_SUSTENANCE">
+		<description>
+			<p>As a Magic action, you can expend one use of Wild Shape to grant the benefits of finishing a Short Rest to yourself or a creature you touch.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Surge of Sustenance" action="Action" usage="Wild Shape - 1/Long Rest">
+			<description>You can grant the benefits of finishing a Short Rest to yourself or a creature you touch.</description>
+		</sheet>
+	</element>
+	
+</elements>

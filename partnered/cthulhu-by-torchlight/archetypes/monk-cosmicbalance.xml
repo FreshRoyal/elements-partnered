@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warrior of Cosmic Balance</name>
+		<description>Warrior of Cosmic Balance from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="monk-cosmicbalance.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/monk-cosmicbalance.xml" />
+		</update>
+	</info>
+
+	<element name="Warrior of Cosmic Balance" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_MONK_WARRIOR_OF_COSMIC_BALANCE">
+		<supports>Monk Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“When the cosmos spins out of alignment, my job is to kick it back into place. Literally.”</p>
+				<p class="text-align:right">— Sheresa, Acolyte of the Vast</p>
+			</div>
+			<p>Warriors of the Cosmic Balance watch the mystic paths of the world, the dimensional portals and arcane gates. And where eldrtich horrors seek to intrude upon the world, these warriors stand waiting. They are trained to use their inner power to purge even the strongest afflictions, and their merest touch can send the mightiest abominations back to the horrid pits that spawned them.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_GUARDIAN_OF_THE_WAY_TECHNIQUE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_SEEKER" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_WARDEN_OF_HARMONY" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_COSMIC_RESTORATION" />
+			<div element="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_WARD_THE_PROFANE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_GUARDIAN_OF_THE_WAY_TECHNIQUE" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_SEEKER" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_WARDEN_OF_HARMONY" level="6"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_COSMIC_RESTORATION" level="11"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_WARD_THE_PROFANE" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Guardian of the Way Technique" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_GUARDIAN_OF_THE_WAY_TECHNIQUE">
+		<description>
+			<p>You have studied alien creatures and learned to disrupt the foul energies that course through them. Once per turn when you make an Unarmed Strike with Flurry of Blows and deal damage, you can cause one of the following effects:</p>
+			<p class="indent"><em><strong>Anchoring Strike.</strong></em> Until the end of your next turn, the target can't teleport or use planar travel, including, entering an extradimensional space or demiplane.</p>
+			<p class="indent"><em><strong>Banishing Strike.</strong></em> The target teleports up to 15 feet to an unoccupied space you can see.</p>
+		</description>
+		<sheet alt="Guardian of the Way Technique" usage="1/Turn">
+			<description>When you make an Unarmed Strike with Flurry of Blows and deal damage, you can cause one of the following effects: &#13;
+			• Until the end of your next turn, the target can't teleport or use planar travel, including, entering an extradimensional space or demiplane. &#13;
+			• The target teleports up to 15 ft to an unoccupied space you can see.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 3: Seeker" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_SEEKER">
+		<description>
+			<p>You always have the <i>Detect Magic</i> and <i>Comprehend Languages</i> spells prepared. With this feature, you can cast one of the spells without a spell slot or components, and your spellcasting ability for it is Wisdom.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest unless you expend 1 Focus Point (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Seeker" usage="1/Long Rest">
+			<description>You always have the Detect Magic and Comprehend Languages spells prepared. With this feature, you can cast one of the spells without a spell slot or components, and your spellcasting ability for it is Wisdom. &#13;
+			You expend 1 Focus Point to restore your use of this feature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Warden of Harmony" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_WARDEN_OF_HARMONY">
+		<description>
+			<p>When a creature within 60 feet of you attempts to teleport, you can take a Reaction and spend 1 Focus Point to prevent the teleportation.</p>
+		</description>
+		<sheet alt="Warden of Harmony" action="Reaction" usage="Focus Point">
+			<description>When a creature within 60 ft of you attempts to teleport, you can prevent the teleportation.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 11: Cosmic Restoration" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_COSMIC_RESTORATION">
+		<description>
+			<p>As a Bonus Action, you can touch a willing creature (which could be yourself) and choose one of the following options.</p>
+			<p class="indent"><em><strong>Dispelling Touch.</strong></em> You end all spells of your choice currently affecting the target.</p>
+			<p class="indent"><em><strong>Purging Touch.</strong></em> You remove one of the following conditions from the target: Blinded, Charmed, Deafened, Exhaustion (decreases by 1), Frightened, Paralyzed, Petrified, Poisoned, or Stunned.</p>
+			<p class="indent"></p>
+		</description>
+		<sheet alt="Cosmic Restoration" action="Bonus Action" usage="1/Long Rest">
+			<description>You can touch a willing creature and choose one of the following options. You may expend 4 Focus Points to restore your use of this feature. &#13;
+			• You end all spells of your choice currently affecting the target. &#13;
+			• You remove one of the following conditions from the target: Blinded, Charmed, Deafened, Exhaustion (decreases by 1), Frightened, Paralyzed, Petrified, Poisoned, or Stunned.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 17: Ward the Profane" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_FEATURE_MONK_COSMIC_BALANCE_WARD_THE_PROFANE">
+		<description>
+			<p>Once per turn when you hit a creature with an Unarmed Strike, you can expend 3 Focus Points to cast <i>Banishment</i> targeting that creature. Wisdom is your spellcasting ability for it.</p>
+		</description>
+		<sheet alt="Ward the Profane" usage="3 Focus Points - 1/Turn">
+			<description>When you hit a creature with an Unarmed Strike, you cast Banishment targeting that creature. Wisdom is your spellcasting ability for it.</description>
+		</sheet>
+	</element>
+	
+</elements>

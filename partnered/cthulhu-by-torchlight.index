@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Cthulhu by Torchlight by Chaosium</name>
+		<update version="1.0.0">
+			<file name="cthulhu-by-torchlight.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight.index" />
+		</update>
+	</info>
+	<files>
+		<file name="background-mythosinvestigator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/background-mythosinvestigator.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/feats.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/spells.xml" />
+
+		<!--Archetypes-->
+		<file name="barbarian-spellscorned.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/barbarian-spellscorned.xml" />
+		<file name="bard-drama.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/bard-drama.xml" />
+		<file name="cleric-apocalypse.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/cleric-apocalypse.xml" />
+		<file name="druid-symbiote.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/druid-symbiote.xml" />
+		<file name="fighter-hero.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/fighter-hero.xml" />
+		<file name="monk-cosmicbalance.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/monk-cosmicbalance.xml" />
+		<file name="paladin-guardian.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/paladin-guardian.xml" />
+		<file name="ranger-trailwarden.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/ranger-trailwarden.xml" />
+		<file name="rogue-shadowstalker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/rogue-shadowstalker.xml" />
+		<file name="sorcerer-hungeringdark.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/sorcerer-hungeringdark.xml" />
+		<file name="warlock-felinecourt.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/warlock-felinecourt.xml" />
+		<file name="wizard-bibliomancy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/wizard-bibliomancy.xml" />
+	</files>
+</index>

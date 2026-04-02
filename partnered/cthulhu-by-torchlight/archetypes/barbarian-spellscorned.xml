@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Spell Scorned</name>
+		<description>Path of the Spell Scorned from Cthulhu by Torchlight</description>
+		<update version="0.0.1">
+			<file name="barbarian-spellscorned.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/archetypes/barbarian-spellscorned.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Spell Scorned" type="Archetype" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_PATH_OF_THE_SPELL_SCORNED">
+		<supports>Barbarian Subclass</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“My magic? It's the magic of stabbing things in the face. Works well in my experience.”</p>
+				<p class="text-align:right">— Oreg the Slayer</p>
+			</div>
+			<p>The Path of the Spell Scorned awakens a mote of antimagic within the soul of its adherents. These elite warriors steel themselves against magical effects. Some are specially trained bodyguards, tasked with protecting the elite mages of arcane academies or the high priests of religious orders. Others are demon hunters, their resistance allowing them to overcome the foul magic that strikes down lesser warriors.</p>
+			<div element="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_INSTINCTUAL_DIVINATION" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SPELL_HAMMER" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SPELL_SHIELD" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SUNDER_THE_WEAVE" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_BOLSTERING_HOWL" />
+			<div element="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_DIMENSIONAL_DUEL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_INSTINCTUAL_DIVINATION" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SPELL_HAMMER" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SPELL_SHIELD" level="3"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SUNDER_THE_WEAVE" level="6"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_BOLSTERING_HOWL" level="10"/>
+			<grant type="Archetype Feature" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_DIMENSIONAL_DUEL" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Instinctual Divination" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_INSTINCTUAL_DIVINATION">
+		<description>
+			<p>You gain an intuitive sense about the supernatural facets of the world. When you take the Study action to make an Intelligence (Arcana) or Intelligence (Religion) check, you can make it as a Wisdom (Survival) check instead.</p>
+		</description>
+		<sheet alt="Instinctual Divination">
+			<description>When you take the Study action to make an Intelligence (Arcana) or Intelligence (Religion) check, you can make it as a Wisdom (Survival) check instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Spell Hammer" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SPELL_HAMMER">
+		<description>
+			<p>You sheathe your weapons in crackling energy that is particularly baneful to creatures from other worlds, those that wield magic, or those that are capable of tremendous destruction. Once per turn while your Rage is active, you can deal double your Rage Damage bonus to a target you hit with a Strength-based attack. If the target has Legendary Actions, can cast spells, or was summoned, you can deal triple your Rage Damage bonus instead.</p>
+		</description>
+		<sheet alt="Spell Hammmer" usage="Rage - 1/Turn">
+			<description>While your Rage is active, you can deal double your Rage Damage bonus to a target you hit with a Strength-based attack. If the target has Legendary Actions, can cast spells, or was summoned, you can deal triple your Rage Damage bonus instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Spell Shield" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SPELL_SHIELD">
+		<description>
+			<p>You exert a void around you that consumes spells. While your Rage is active, you radiate a spell-consuming aura in a 30-foot Emanation that originates from you. You and your allies in the aura gain a bonus to saving throws against spells equal to your Rage Damage bonus.</p>
+		</description>
+		<sheet alt="Spell Shield" usage="Rage">
+			<description>While your Rage is active, you radiate a spell-consuming aura in a 30-ft Emanation that originates from you. You and your allies in the aura gain a +{{barbarian rage:damage}} bonus to saving throws against spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Sunder the Weave" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_SUNDER_THE_WEAVE">
+		<description>
+			<p>You always have the <i>Counterspell</i> spell prepared. With this feature, you can cast it without a spell slot or components while your Rage is active, and your spellcasting ability for it is Strength. As part of the Reaction you take to cast the spell, you can move up to your Speed and make one attack with a weapon against the target of the spell.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Sunder the Weave" usage="1/Short Rest">
+			<description>You can cast Counterspell without a spell slot or components while your Rage is active, and your spellcasting ability for it is Strength. As part of the Reaction you take to cast the spell, you can move up to {{speed}} ft and make one attack with a weapon against the target of the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Bolstering Howl" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_BOLSTERING_HOWL">
+		<description>
+			<p>When you or another creature that can hear you takes damage, you can take a Reaction to grant it Resistance against that damage. In addition, the target gains Resistance to that damage type until the end of the current turn.</p>
+		</description>
+		<sheet alt="Bolstering Howl" action="Reaction">
+			<description>When you or another creature that can hear you takes damage, you can grant it Resistance against that damage. In addition, the target gains Resistance to that damage type until the end of the current turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Dimensional Duel" type="Archetype Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_ARCHETYPE_BARBARIAN_SPELL_SCORNED_DIMENSIONAL_DUEL">
+		<description>
+			<p>You always have the <i>Banishment</i> spell prepared. When you activate your Rage or as a Bonus Action while your Rage is active, you can cast <i>Banishment</i> without a spell slot or components and while your Rage is active, and your spellcasting ability for it is Strength. You can maintain Concentration while your Rage is active. You can target up to three creatures when you cast <i>Banishment</i> this way. In addition, you can choose to pursue the creatures you banish. If you do so, the targets you banished don't have the Incapacitated condition for the spell's duration, and you travel with them to a demiplane. The demiplane is an empty room 30 to 200 feet in each dimension (you choose when you cast the spell) and made of wood or stone (your choice). You must create enough space for you and the targets, or the spell ends. The room is filled with Bright Light. When the spell ends, if you traveled with any targets, you and any dropped objects reappear in the space you left or in the nearest unoccupied space if that space is occupied.</p>
+			<p class="indent">You can use this feature a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Dimensional Duel" action="Rage or Bonus Action while Raging" usage="{{cbt:dimensional duel:usage}}/Long Rest">
+			<description>When you activate your Rage or as a Bonus Action while your Rage is active, you can cast Banishment without a spell slot or components and while your Rage is active, and your spellcasting ability for it is Strength. You can maintain Concentration while your Rage is active. You can target up to 3 creatures when you cast Banishment this way. In addition, you can choose to pursue the creatures you banish. If you do so, the targets you banished don't have the Incapacitated condition for the spell's duration, and you travel with them to a demiplane. The demiplane is an empty room 30 to 200 ft in each dimension (you choose when you cast the spell) and made of wood or stone (your choice). You must create enough space for you and the targets, or the spell ends. The room is filled with Bright Light. When the spell ends, if you traveled with any targets, you and any dropped objects reappear in the space you left or in the nearest unoccupied space if that space is occupied.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANISHMENT" />
+			<stat name="cbt:dimensional duel:usage" value="1" bonus="bonus" />
+			<stat name="cbt:dimensional duel:usage" value="strength:modifier" bonus="bonus" />
+		</rules>
+	</element>
+	
+</elements>
