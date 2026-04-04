@@ -3,7 +3,7 @@
 	<info>
 		<name>Trick Shot</name>
 		<description>Trick Shot from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="gunslinger-trickshot.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-trickshot.xml" />
 		</update>
 	</info>
@@ -102,7 +102,7 @@
 		<sheet display="false" />
 	</element>
 	<element name="Deft Deflection" type="Archetype Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT_DEFT_DEFLECTION_RISK">
-		<supports>TGCVSS Risk Ricochet</supports>
+		<supports>TGCVSS Risk Deft Deflection</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can shoot projectiles out of the air. When an ally within 30 feet of you is hit by an attack, you can take a Reaction and expend one Risk Die to grant that ally the benefit of the Skin of Your Teeth maneuver against that attack. You must be holding a Ranged weapon to use this maneuver.</p>
