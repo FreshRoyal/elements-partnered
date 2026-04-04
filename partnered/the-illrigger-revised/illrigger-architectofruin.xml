@@ -3,7 +3,7 @@
 	<info>
 		<name>Architect of Ruin</name>
 		<description>Architect of Ruin Archetype from The Illrigger Revised</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="illrigger-architectofruin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-architectofruin.xml" />
 		</update>
 	</info>

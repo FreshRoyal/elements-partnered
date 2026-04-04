@@ -3,7 +3,7 @@
 	<info>
 		<name>Scofflaw</name>
 		<description>Scofflaw from Humblewood Campaign Setting</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="fighter-scofflaw.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/archetypes/fighter-scofflaw.xml" />
 		</update>
 	</info>
