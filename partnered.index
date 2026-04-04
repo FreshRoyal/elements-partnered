@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.1.0">
+		<update version="1.1.1">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -26,6 +26,7 @@
 		<file name="grim-hollow-lairs-of-etharis.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-lairs-of-etharis.index" />
 		<file name="grim-hollow-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack.index" />
 		<file name="dungeons-of-drakkenheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim.index" />
+		<file name="monsters-of-drakkenheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim.index" />
 
 		<!--Hit Point Press-->
 		<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />
@@ -36,6 +37,18 @@
 
 		<!--1985 Games-->
 		<file name="obojima-tales-from-the-tall-grass.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass.index" />
-		
+
+		<!--Mage Hand Press-->
+		<file name="valdas-spire-of-secrets-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack.index" />
+		<file name="the-gunslinger-class-valdas-spire-of-secrets" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack.index" />
+
+		<!--Chaosium-->
+		<file name="cthulhu-by-torchlight.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight.index" />
+
+		<!--Roll and Play Press-->
+		<file name="one-shot-wonders-holiday-adventure-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack.index" />
+
+		<!--Sterling Vermin Adventuring Co-->
+		<file name="the-pugilist-class-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026.index" />
 	</files>
 </index>
