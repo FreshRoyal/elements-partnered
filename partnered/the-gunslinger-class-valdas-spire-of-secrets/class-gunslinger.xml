@@ -3,7 +3,7 @@
 	<info>
 		<name>Gunslinger</name>
 		<description>Gunslinger from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/class-gunslinger.xml" />
 		</update>
 	</info>
@@ -148,9 +148,11 @@
 			<p class="indent"><em><strong>Double Draw.</strong></em> You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>
 		</description>
 		<sheet alt="Quick Draw">
-			<description>You have Advantage on Initiative rolls. &#13;
-			Additionally, you can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</description>
+			<description>You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</description>
 		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
 	</element>
 	
 	<element name="Level 1: Weapon Mastery" type="Class Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_CLASS_FEATURE_GUNSLINGER_WEAPON_MASTERY">
