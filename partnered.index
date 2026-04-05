@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.1.1">
+		<update version="1.1.2">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -40,7 +40,7 @@
 
 		<!--Mage Hand Press-->
 		<file name="valdas-spire-of-secrets-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack.index" />
-		<file name="the-gunslinger-class-valdas-spire-of-secrets" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack.index" />
+		<file name="the-gunslinger-class-valdas-spire-of-secrets.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets.index" />
 
 		<!--Chaosium-->
 		<file name="cthulhu-by-torchlight.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight.index" />
