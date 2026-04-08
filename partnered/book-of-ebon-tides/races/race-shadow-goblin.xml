@@ -3,7 +3,7 @@
 	<info>
 		<name>Shadow Goblin</name>
 		<description>Shadow Goblin from Book of Ebon Tides</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-shadow-goblin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/races/race-shadow-goblin.xml" />
 		</update>
 	</info>
@@ -49,7 +49,7 @@
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
-			<grant type="Grant" id="ID_INTERNAL_GRANT_RACE_GOBLINOID" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_GOBLINOID" />
 			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_GOBLIN" />
 
 			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
