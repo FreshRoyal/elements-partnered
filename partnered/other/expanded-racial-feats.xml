@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Expanded Racial Feats</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/expanded-racial-feats.xml" />
 		</update>
 	</info>
@@ -23,7 +23,7 @@
 
 	<element name="Angelic Protection" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_ANGELIC_PROTECTION">
 		<prerequisite>Aasimar</prerequisite>
-		<requirements>ID_WOTC_DMG_RACE_AASIMAR||ID_WOTC_VGTM_RACE_AASIMAR||ID_WOTC_MOTM_RACE_AASIMAR||ID_WOTC_PHB24_RACE_AASIMAR</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_AASIMAR</requirements>
 		<description>
 			<p><i>Prerequisite: Aasimar</i></p>
 			<p>The innate resistance to magic that angels possess extends to you. You have advantage on saving throws against spells and other magical effects.</p>
@@ -35,7 +35,7 @@
 	
 	<element name="Dao Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_DAO_HERITAGE">
 		<prerequisite>Genasi (earth)</prerequisite>
-		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_EARTH||ID_WOTC_MOTM_SUBRACE_EARTH_GENASI</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_EARTH_GENASI</requirements>
 		<description>
 			<p><i>Prerequisite: Genasi (earth)</i></p>
 			<p>You manifest more of the magical power of your dao heritage. You gain the following benefits:</p>
@@ -60,7 +60,7 @@
 	
 	<element name="Djinn Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_DJINN_HERITAGE">
 		<prerequisite>Genasi (air)</prerequisite>
-		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_AIR||ID_WOTC_MOTM_SUBRACE_AIR_GENASI</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_AIR_GENASI</requirements>
 		<description>
 			<p><i>Prerequisite: Genasi (air)</i></p>
 			<p>You manifest more of the magical power of your djinn heritage. You gain the following benefits:</p>
@@ -84,7 +84,7 @@
 	
 	<element name="Efreet Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_EFREET_HERITAGE">
 		<prerequisite>Genasi (fire)</prerequisite>
-		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_FIRE||ID_WOTC_MOTM_SUBRACE_FIRE_GENASI</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_FIRE_GENASI</requirements>
 		<description>
 			<p><i>Prerequisite: Genasi (fire)</i></p>
 			<p>You manifest more of the magical power of your efreet heritage. You gain the following benefits:</p>
@@ -107,7 +107,7 @@
 
 	<element name="Feline Grace" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_FELINE_GRACE">
 		<prerequisite>Tabaxi</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_TAXBAXI||ID_WOTC_MOTM_RACE_TABAXI</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_TABAXI</requirements>
 		<description>
 			<p><i>Prerequisite: Tabaxi</i></p>
 			<p>Your incredible reflexes and agility further improve. You gain the following benefits:</p>
@@ -128,7 +128,7 @@
 
 	<element name="Firbolg Beast Magic" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_FIRBOLG_BEAST_MAGIC">
 		<prerequisite>Firbolg</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_FIRBOLG||ID_WOTC_MOTM_RACE_FIRBOLG</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_FIRBOLG</requirements>
 		<description>
 			<p><i>Prerequisite: Firbolg</i></p>
 			<p>Your connection to animals deepens. You learn the <i>speak with animals</i> spell and can cast it at will, without expending a spell slot. You also learn the <i>animal friendship</i> and <i>beast sense</i> spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Wisdom is your spellcasting ability for all three spells.</p>
@@ -143,7 +143,7 @@
 
 	<element name="Like a Boss" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_LIKE_A_BOSS">
 		<prerequisite>Goblin</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_GOBLIN||ID_WOTC_MOTM_RACE_GOBLIN||ID_WOTC_GGTR_RACE_GOBLIN||ID_WOTC_AWM_RACE_DANKWOOD_GOBLIN||ID_WOTC_PSZ_RACE_GOBLIN</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_GOBLIN</requirements>
 		<description>
 			<p><i>Prerequisite: Goblin</i></p>
 			<p>You are accustomed to using others to avoid being attacked. You gain the following benefits:</p>
@@ -162,7 +162,7 @@
 
 	<element name="Marid Heritage" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MARID_HERITAGE">
 		<prerequisite>Genasi (water)</prerequisite>
-		<requirements>ID_WOTC_POTA_SUBRACE_GENASI_WATER||ID_WOTC_MOTM_SUBRACE_WATER_GENASI</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_WATER_GENASI</requirements>
 		<description>
 			<p><i>Prerequisite: Genasi (water)</i></p>
 			<p>You manifest more of the magical power of your marid heritage. You gain the following benefits:</p>
@@ -185,7 +185,7 @@
 
 	<element name="Master of Mimicry" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MASTER_OF_MIMICRY">
 		<prerequisite>Kenku</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_KENKU||ID_WOTC_MOTM_RACE_KENKU</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_KENKU</requirements>
 		<description>
 			<p><i>Prerequisite: Kenku</i></p>
 			<p>You have learned to temporarily mimic even the training of others. You gain the following benefits:</p>
@@ -204,7 +204,7 @@
 
 	<element name="Mountain’s Endurance" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_MOUNTAINS_ENDURANCE">
 		<prerequisite>Goliath</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_GOLIATH||ID_WOTC_MOTM_RACE_GOLIATH||ID_WOTC_PHB24_RACIAL_TRAIT_GOLIATH_GIANT_ANCESTRY_STONES_ENDURANCE</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_GOLIATH</requirements>
 		<description>
 			<p><i>Prerequisite: Goliath</i></p>
 			<p>Your ability to shrug off some injuries is legendary, even for your race. You gain the following benefits:</p>
@@ -223,7 +223,7 @@
 
 	<element name="Serpent Form" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_SERPENT_FORM">
 		<prerequisite>Yuan-ti Pureblood</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_YUANTI_PUREBLOOD</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_YUAN_TI</requirements>
 		<description>
 			<p><i>Prerequisite: Yuan-ti Pureblood</i></p>
 			<p>You have unlocked more of your serpentfolk heritage. You gain the following benefits:</p>
@@ -244,7 +244,7 @@
 
 	<element name="Sky Warden" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_SKY_WARDEN">
 		<prerequisite>Aarakocra</prerequisite>
-		<requirements>ID_WOTC_POTA_RACE_AARAKOCRA||ID_WOTC_MOTM_RACE_AARAKOCRA</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_AARAKOCRA</requirements>
 		<description>
 			<p><i>Prerequisite: Aarakocra</i></p>
 			<p>You are trained for both scouting the skies and aerial combat. You gain the following benefits:</p>
@@ -266,7 +266,7 @@
 
 	<element name="Tanarukk Blood" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TANARUKK_BLOOD">
 		<prerequisite>Orc</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_ORC||ID_WOTC_ERLW_RACE_ORC||ID_WOTC_MOTM_RACE_ORC||ID_WOTC_PHB24_RACE_ORC</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_ORC</requirements>
 		<description>
 			<p><i>Prerequisite: Orc</i></p>
 			<p>Through fell magic or an ancestor, you are touched by the corruptive power of Baphomet. You gain the following benefits:</p>
@@ -288,7 +288,7 @@
 
 	<element name="Tortle Protector" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TORTLE_PROTECTOR">
 		<prerequisite>Tortle</prerequisite>
-		<requirements>ID_WOTC_TOA_RACE_TORTLE||ID_WOTC_MOTM_RACE_TORTLE</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_TORTLE</requirements>
 		<description>
 			<p><i>Prerequisite: Tortle</i></p>
 			<p>You have mastered using your shell to better protect yourself and others. You gain the following benefits:</p>
@@ -309,7 +309,7 @@
 
 	<element name="Touch of Sess’inek" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TOUCH_OF_SESSINEK">
 		<prerequisite>Lizardfolk</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_LIZARDFOLK||ID_WOTC_MOTM_RACE_LIZARDFOLK</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_LIZARDFOLK</requirements>
 		<description>
 			<p><i>Prerequisite: Lizardfolk</i></p>
 			<p>You embody the demonic bearing of a lizard king or queen. You gain the following benefits:</p>
@@ -330,7 +330,7 @@
 
 	<element name="Triton Deep Magic" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_TRITON_DEEP_MAGIC">
 		<prerequisite>Triton</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_TRITON||ID_WOTC_MOTM_RACE_TRITON</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_TRITON</requirements>
 		<description>
 			<p><i>Prerequisite: Triton</i></p>
 			<p>You master more of the magic of elemental air and water. You learn the <i>create or destroy water</i> spell and can cast it as a 1st level spell at will, without expending a spell slot. You also learn <i>warding wind</i> and <i>water breathing</i>, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.</p>
@@ -345,7 +345,7 @@
 
 	<element name="Uphold the Legion" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_UPHOLD_THE_LEGION">
 		<prerequisite>Hobgoblin</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_HOBGOBLIN||ID_WOTC_MOTM_RACE_HOBGOBLIN</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_HOBGOBLIN</requirements>
 		<description>
 			<p><i>Prerequisite: Hobgoblin</i></p>
 			<p>You were born for life in the legion. You gain the follow-ing benefits:</p>
@@ -366,7 +366,7 @@
 
 	<element name="Urd Wings" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_URD_WINGS">
 		<prerequisite>Kobold</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_KOBOLD||ID_WOTC_MOTM_RACE_KOBOLD</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_KOBOLD</requirements>
 		<description>
 			<p><i>Prerequisite: Kobold</i></p>
 			<p>You manifest leathery wings, transforming into an urd. You gain the following benefits:</p>
@@ -386,7 +386,7 @@
 
 	<element name="Well-Rested" type="Feat" source="Expanded Racial Feats" id="ID_ABF_ERF_FEAT_WELL_RESTED">
 		<prerequisite>Bugbear</prerequisite>
-		<requirements>ID_WOTC_VGTM_RACE_BUGBEAR||ID_WOTC_MOTM_RACE_BUGBEAR</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_BUGBEAR</requirements>
 		<description>
 			<p><i>Prerequisite: Bugbear</i></p>
 			<p>Your practiced napping leaves you invigorated when you are awake. You gain the following benefits:</p>
