@@ -3,7 +3,7 @@
 	<info>
 		<name>Spellslinger</name>
 		<description>Spellslinger from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="gunslinger-spellslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-spellslinger.xml" />
 		</update>
 	</info>
@@ -116,7 +116,7 @@
 			<p class="indent"><strong><em>Arcane Shot.</em></strong> When you hit a target with a <i>Finger Guns</i> attack, you can expend one Risk Die as a Bonus Action and add it to the damage roll.</p>
 		</description>
 		<sheet alt="Bang, You're Dead!" action="Bonus Action" usage="Risk Die">
-			<description>When you hit a target with a Finger Guns attack, you can expend one Risk Die add it to the damage roll.</description>
+			<description>When you hit a target with a Finger Guns attack, you can expend one Risk Die and add it to the damage roll.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_MHP_TGCVSS_SPELL_FINGER_GUNS" spellcasting="Spellslinger" />
@@ -142,7 +142,7 @@
 			<p class="indent"><strong><em>Inured to Magic.</em></strong> When you fail a saving throw against a spell or magical effect, you can take a Reaction to roll 1d6 and add it to the roll, potentially turning the failure into a success.</p>
 		</description>
 		<sheet alt="Bang, You're Dead!" action="Bonus Action" usage="Risk Die">
-			<description>When you hit a target with a Finger Guns attack, you can expend one Risk Die add it to the damage roll.</description>
+			<description>When you hit a target with a Finger Guns attack, you can expend one Risk Die and add it to the damage roll.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_MHP_TGCVSS_ARCHETYPE_FEATURE_GUNSLINGER_SPELLSLINGER_ABJURATION_BREAKER" />
