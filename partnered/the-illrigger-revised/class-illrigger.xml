@@ -3,7 +3,7 @@
 	<info>
 		<name>Illrigger</name>
 		<description>Illrigger class from The Illrigger Revised</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="class-illrigger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/class-illrigger.xml" />
 		</update>
 	</info>
@@ -190,6 +190,8 @@
 		</sheet>
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+			<select type="Language" name="Language (Forked Tongue)" supports="Standard||Exotic" number="2" />
+			<select type="Language" name="Language (Forked Tongue)" supports="Standard||Exotic" level="9" />
 		</rules>
 	</element>
 
