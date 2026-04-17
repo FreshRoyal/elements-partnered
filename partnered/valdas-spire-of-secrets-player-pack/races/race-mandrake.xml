@@ -3,7 +3,7 @@
 	<info>
 		<name>Mandrake</name>
 		<description>Mandrake from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-mandrake.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/races/race-mandrake.xml" />
 		</update>
 	</info>
@@ -84,7 +84,7 @@
 			<select type="Racial Trait" name="Spellcasting Ability (Root Magic)" supports="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_INTELLIGENCE|ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_WISDOM|ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_CHARISMA" />
 		</rules>
 	</element>
-	<element name="Intelligence" type="Racial Trait" source="Player’s Handbook (2024)" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_INTELLIGENCE">
+	<element name="Intelligence" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_INTELLIGENCE">
 		<compendium display="false" />
 		<description>
 			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
@@ -95,7 +95,7 @@
 			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Intelligence.</description>
 		</sheet>
 	</element>
-	<element name="Wisdom" type="Racial Trait" source="Player’s Handbook (2024)" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_WISDOM">
+	<element name="Wisdom" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_WISDOM">
 		<compendium display="false" />
 		<description>
 			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
@@ -106,7 +106,7 @@
 			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Wisdom.</description>
 		</sheet>
 	</element>
-	<element name="Charisma" type="Racial Trait" source="Player’s Handbook (2024)" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_CHARISMA">
+	<element name="Charisma" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC_CHARISMA">
 		<compendium display="false" />
 		<description>
 			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
