@@ -3,7 +3,7 @@
 	<info>
 		<name>Mandrake</name>
 		<description>Mandrake from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-mandrake.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/races/race-mandrake.xml" />
 		</update>
 	</info>
@@ -89,7 +89,7 @@
 		<description>
 			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
 		</description>
-		<sheet>
+		<sheet alt="Root Magic">
 			<description>You know the Shillelagh cantrip. Your spellcasting ability for this spell is Intelligence.</description>
 			<description level="3">You know the Shillelagh cantrip, and you can cast the Goodberry spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
 			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Intelligence.</description>
@@ -100,7 +100,7 @@
 		<description>
 			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
 		</description>
-		<sheet>
+		<sheet alt="Root Magic">
 			<description>You know the Shillelagh cantrip. Your spellcasting ability for this spell is Wisdom.</description>
 			<description level="3">You know the Shillelagh cantrip, and you can cast the Goodberry spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
 			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Wisdom.</description>
@@ -111,7 +111,7 @@
 		<description>
 			<div element="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC" />
 		</description>
-		<sheet>
+		<sheet alt="Root Magic">
 			<description>You know the Shillelagh cantrip. Your spellcasting ability for this spell is Charisma.</description>
 			<description level="3">You know the Shillelagh cantrip, and you can cast the Goodberry spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
 			<description level="5">You know the Shillelagh cantrip, and you can cast the Goodberry and Barkskin spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.Your spellcasting ability for these spells is Charisma.</description>
