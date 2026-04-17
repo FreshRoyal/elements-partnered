@@ -3,7 +3,7 @@
 	<info>
 		<name>Spellslinger</name>
 		<description>Spellslinger from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="gunslinger-spellslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/archetypes/gunslinger-spellslinger.xml" />
 		</update>
 	</info>
@@ -128,7 +128,7 @@
 		<description>
 			<p>When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</p>
 		</description>
-		<sheet alt="Spellshot" action="Action">
+		<sheet alt="Spellshot" action="Attack">
 			<description>You can replace one of your attacks with a Wizard cantrip that has a casting time of an action.</description>
 		</sheet>
 	</element>
