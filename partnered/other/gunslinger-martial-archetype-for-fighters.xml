@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Gunslinger Martial Archetype for Fighters</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="gunslinger-martial-archetype-for-fighters.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/gunslinger-martial-archetype-for-fighters.xml" />
 		</update>
 	</info>
@@ -53,9 +53,7 @@
 			<div element="ID_MMCR_GMAF_TRICK_SHOT_VIOLENT_SHOT" />
 			<div element="ID_MMCR_GMAF_RULE_AMMUNITION" />
 		</description>
-		<sheet>
-			<description>This archetype focuses on the ability to design, craft, and utilize powerful, yet dangerous ranged weapons.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_MMCR_GMAF_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY" level="3" />
 			<grant type="Archetype Feature" id="ID_MMCR_GMAF_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" level="3" />
