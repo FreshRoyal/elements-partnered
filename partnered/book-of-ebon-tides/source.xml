@@ -3,7 +3,7 @@
 	<info>
 		<name>Source</name>
 		<description>Book of Ebon Tides</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/book-of-ebon-tides/source.xml" />
 		</update>
 	</info>
@@ -31,91 +31,6 @@
 			<set name="third-party">true</set>
 			<set name="release">20221011</set>
 		</setters>
-	</element>
-
-	<!-- -2 ASIs, remove when in main repo -->
-	<element name="Strength" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_DECREASE_2">
-		<supports>Custom Ability Score Decrease 2</supports>
-		<description>
-			<p>Your Strength decreases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="strength" value="-2" alt="Ability Score Decrease" />
-		</rules>
-	</element>
-
-	<element name="Dexterity" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_DECREASE_2">
-		<supports>Custom Ability Score Decrease 2</supports>
-		<description>
-			<p>Your Dexterity decreases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="dexterity" value="-2" alt="Ability Score Decrease" />
-		</rules>
-	</element>
-
-	<element name="Constitution" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_DECREASE_2">
-		<supports>Custom Ability Score Decrease 2</supports>
-		<description>
-			<p>Your Constitution decreases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="constitution" value="-2" alt="Ability Score Decrease" />
-		</rules>
-	</element>
-
-	<element name="Intelligence" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_DECREASE_2">
-		<supports>Custom Ability Score Decrease 2</supports>
-		<description>
-			<p>Your Intelligence decreases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="intelligence" value="-2" alt="Ability Score Decrease" />
-		</rules>
-	</element>
-
-	<element name="Wisdom" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_DECREASE_2">
-		<supports>Custom Ability Score Decrease 2</supports>
-		<description>
-			<p>Your Wisdom decreases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="wisdom" value="-2" alt="Ability Score Decrease" />
-		</rules>
-	</element>
-
-	<element name="Charisma" type="Ability Score Improvement" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_DECREASE_2">
-		<supports>Custom Ability Score Decrease 2</supports>
-		<description>
-			<p>Your Charisma decreases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="charisma" value="-2" alt="Ability Score Decrease" />
-		</rules>
 	</element>
 
 </elements>
