@@ -3,7 +3,7 @@
 	<info>
 		<name>Skills</name>
 		<description>Skills from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/skills.xml" />
 		</update>
 	</info>
@@ -181,6 +181,22 @@
 		<rules>
 			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
 			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+		</rules>
+	</append>
+
+	<!--DMG Boon of Skill Proficiency-->
+	<append id="ID_WOTC_DMG_MAGIC_ITEM_BOON_OF_SKILL_PROFICIENCY">
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+		</rules>
+	</append>
+	
+	<!--PHB24 Boon of Skill-->
+	<append id="ID_WOTC_PHB24_FEAT_BOON_OF_SKILL">
+		<rules>
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<grant type="Proficiency" id="ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
 		</rules>
 	</append>
 

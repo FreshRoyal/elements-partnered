@@ -3,7 +3,7 @@
 	<info>
 		<name>New Skills</name>
 		<description>New Skills from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
 		</update>
 	</info>
@@ -346,6 +346,26 @@
 			<stat name="hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
 			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
 			<stat name="travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+		</rules>
+	</append>
+
+	<!--DMG Boon of Skill Proficiency-->
+	<append id="ID_WOTC_DMG_MAGIC_ITEM_BOON_OF_SKILL_PROFICIENCY">
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+		</rules>
+	</append>
+	
+	<!--PHB24 Boon of Skill-->
+	<append id="ID_WOTC_PHB24_FEAT_BOON_OF_SKILL">
+		<rules>
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<grant type="Proficiency" id="ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
 		</rules>
 	</append>
 
