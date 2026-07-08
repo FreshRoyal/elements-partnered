@@ -3,7 +3,7 @@
 	<info>
 		<name>Sheep Dragon Shepherd</name>
 		<description>Sheep Dragon Shepherd from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="monk-sheep-dragon-shepherd.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/monk-sheep-dragon-shepherd.xml" />
 		</update>
 	</info>
@@ -55,8 +55,12 @@
 		</description>
 		<sheet>
 			<description>When you make an unarmed strike, you can instead choose to make a special attack, firing a compressed blast of air from your mouth. This ranged weapon attack has a range of 60 ft, and it uses the same attack bonus and damage die as your unarmed strike.
-			Additionally, when you hit a target with this special attack, you can choose to spend 1 ki point to force the target to make a Strength saving throw (DC {{ki:dc}}). On a failed save, the target is knocked prone or pushed 10 ft away from you (your choice).</description>
+			Additionally, when you hit a target with this special attack, you can choose to spend 1 ki point to force the target to make a Strength saving throw (DC {{ottg:wind shot:dc}}). On a failed save, the target is knocked prone or pushed 10 ft away from you (your choice).</description>
 		</sheet>
+		<rules>
+			<stat name="ottg:wind shot:dc" value="ki:dc" bonus="base" />
+			<stat name="ottg:wind shot:dc" value="monks focus:dc" bonus="base" />
+		</rules>
 	</element>
 
 	<element name="Intercepting Maneuver" type="Archetype Feature" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ARCHETYPE_FEATURE_SHEEP_DRAGON_SHEPHERD_INTERCEPTING_MANEUVER">
