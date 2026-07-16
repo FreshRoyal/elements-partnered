@@ -3,7 +3,7 @@
 	<info>
 		<name>Hand of Dread</name>
 		<description>Hand of Dread from The Pugilist Class (2026)</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="pugilist-handofdread.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/archetypes/pugilist-handofdread.xml" />
 		</update>
 	</info>
@@ -42,7 +42,7 @@
 		</sheet>
 		<rules>
 			<select type="Spell" name="Warlock Cantrip (Black Magic)" supports="Warlock,0" number="2" />
-			<select type="Spell" name="Level 1 Spell (Black Magic)" supports="Warlock,0" />
+			<select type="Spell" name="Level 1 Spell (Black Magic)" supports="Warlock,1" />
 		</rules>
 	</element>
 	
