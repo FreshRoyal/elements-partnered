@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Obojima: Tales from the Tall Grass by 1985 Games</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="obojima-tales-from-the-tall-grass.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass.index" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
 		<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/skills.xml" />
 		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/source.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/spells.xml" />
-		<file name="type-spiritxml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/type-spirit.xml" />
+		<file name="type-spirit.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/type-spirit.xml" />
 		
 		<!--Archetypes-->
 		<file name="barbarian-belly-brewer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/archetypes/barbarian-belly-brewer.xml" />

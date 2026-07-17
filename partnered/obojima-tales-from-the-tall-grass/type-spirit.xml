@@ -3,8 +3,8 @@
 	<info>
 		<name>Spirit</name>
 		<description>Spirit Creature Type from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
-			<file name="type-spiritxml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/type-spirit.xml" />
+		<update version="0.0.2">
+			<file name="type-spirit.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/type-spirit.xml" />
 		</update>
 	</info>
 
