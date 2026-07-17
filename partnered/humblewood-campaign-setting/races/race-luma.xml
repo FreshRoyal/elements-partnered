@@ -3,7 +3,7 @@
 	<info>
 		<name>Luma</name>
 		<description>Luma from Humblewood Campaign Setting</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-luma.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/races/race-luma.xml" />
 		</update>
 	</info>
@@ -70,7 +70,8 @@
 			<p>As a bonus action, you can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed. You can use it in conjunction with a regular jump, but not while gliding.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You can use your powerful feathered arms to propel yourself upward a distance equal to {{speed:half}} ft. You can use it in conjunction with a regular jump, but not while gliding.</description>
+			<!--todo: replace with speed:half-->
+			<description>You can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed ft. You can use it in conjunction with a regular jump, but not while gliding.</description>
 		</sheet>
 	</element>
 
