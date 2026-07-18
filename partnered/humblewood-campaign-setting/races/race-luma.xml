@@ -71,7 +71,7 @@
 		</description>
 		<sheet action="Bonus Action">
 			<!--todo: replace with speed:half-->
-			<description>You can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed ft. You can use it in conjunction with a regular jump, but not while gliding.</description>
+			<description>You can use your powerful feathered arms to propel yourself upward a distance equal to half your movement speed. You can use it in conjunction with a regular jump, but not while gliding.</description>
 		</sheet>
 	</element>
 
