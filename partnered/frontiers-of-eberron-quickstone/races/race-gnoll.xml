@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gnoll</name>
+		<description>Gnoll from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-gnoll.xml" />
+		</update>
+	</info>
+
+	<element name="Gnoll" type="Race" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACE_GNOLL">
+		<description>
+			<p>Fierce and feral, the first gnolls were hyenas infused with malefic power by archfiends of war and the wild. They were created as cruel soldiers to serve in the endless conflicts of fiends, but over the course of countless generations a number of gnoll clans broke their ties to their demon overlords. These free gnolls are fiercely loyal to their pack and their clan, and serve as a stabilizing force within Droaam.</p>
+			<p class="indent">Gnolls that are bound to the overlords are vicious and wild. Those who have escaped this bondage still have a fiendish spark within, but they contain and control this power. Some learn to wield it as Warlocks. Others known as hwyri train to fight demons and other supernatural threats. Even free gnolls can be aggressive, but they are gifted hunters and fiercely loyal to those they choose as family.</p>
+			<h5>GNOLL TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 7–8 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Gnoll, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p> 
+			<p class="indent"><strong><em>Bite.</em></strong> Your teeth are natural weapons, which you can use to make Unarmed Strikes. If you hit with them, you deal Piercing damage equal to 1d4 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike.</p> 
+			<p class="indent"><strong><em>Hunter's Senses.</em></strong> You have proficiency in the Perception, Stealth, or Survival skill.</p>
+			<p class="indent"><strong><em>Rampage.</em></strong> When you use your Bite or reduce a creature to 0 Hit Points with an attack, you can use a Bonus Action to move up to half your Speed and make one attack with a weapon or an Unarmed Strike using your Bite.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Gnoll)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Gnoll)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Gnoll)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+			
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GNOLL_BITE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GNOLL_HUNTERS_SENSES" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GNOLL_RAMPAGE" />
+		</rules>
+	</element>
+
+	<element name="Bite" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GNOLL_BITE">
+		<description>
+			<p>Your teeth are natural weapons, which you can use to make Unarmed Strikes. If you hit with them, you deal Piercing damage equal to 1d4 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>You have teeth that you can use to make Unarmed Strikes. When you hit with it, the strike deals 1d4 + {{strength:modifier}} Piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Hunter's Senses" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GNOLL_HUNTERS_SENSES">
+		<description>
+			<p>You have proficiency in the Perception, Stealth, or Survival skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Hunter's Senses)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Hunter's Senses)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Rampage" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GNOLL_RAMPAGE">
+		<description>
+			<p>When you use your Bite or reduce a creature to 0 Hit Points with an attack, you can use a Bonus Action to move up to half your Speed and make one attack with a weapon or an Unarmed Strike using your Bite.</p>
+		</description>
+		<sheet>
+			<description>When you use your Bite or reduce a creature to 0 HPs with an attack, you can use a Bonus Action to move up to half your Speed and make one attack with a weapon or an Unarmed Strike using your Bite.</description>
+		</sheet>
+	</element>
+	
+</elements>

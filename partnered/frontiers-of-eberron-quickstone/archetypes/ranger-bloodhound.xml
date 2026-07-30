@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bloodhound</name>
+		<description>Bloodhound from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="ranger-bloodhound.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/ranger-bloodhound.xml" />
+		</update>
+	</info>
+
+	<element name="Bloodhound" type="Archetype" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_RANGER_BLOODHOUND">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">Follow your Mark to the Bitter End</p>
+			<p>Rangers recognise the primal connections between all living things, and as a Bloodhound you know precisely how to exploit them to track down your chosen prey. The Western Frontier is home to countless fugitives and war criminals, and House Tharashk trains its best bounty hunters to follow these ancient techniques— while on the other side of the Border Road, Znir hunters and worgs of the Great Pack use the skills of the Bloodhound to track enemies of Droaam.</p>
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_BLOODHOUND_SPELLS" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_UNWAVERING_ATTENTION" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_RELENTLESS_PURSUIT" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_EYES_ON_THE_PRIZE" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_NOWHERE_TO_HIDE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_BLOODHOUND_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_UNWAVERING_ATTENTION" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_RELENTLESS_PURSUIT" level="7" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_EYES_ON_THE_PRIZE" level="11" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_NOWHERE_TO_HIDE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Bloodhound Spells" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_BLOODHOUND_SPELLS">
+		<description>
+			<p>When you reach a Ranger level specified in the Bloodhound Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Bloodhound Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Ranger Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Alarm</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Hold Person</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Clairvoyance</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Locate Creature</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALARM" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_CREATURE" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Ley Line Tracker" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER">
+		<description>
+			<p>Given your knowledge of the landscape, you can use ley lines as conduits to stretch your magic over vast distances when tracking a target, granting you the following benefits.</p>
+			<p class="indent"><b><i>Mark Bounty.</i></b> Whenever you finish a Short or Long Rest, you can single out one creature as your bounty. To mark a creature as your bounty, you must have seen that creature or possess an object that has been in their possession for at least 24 hours. Once on each of your turns you can change your bounty to one creature you can see (no action required).</p>
+			<p class="indent"><b><i>Masterful Tracking.</i></b> Your Ranger spells of the Divination school can target your bounty at any distance, even if you cannot see them, unless your bounty is protected from Divination spells (as with Nondetection) or is on another plane of existence.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER_MARK_BOUNTY" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER_MASTERFUL_TRACKING" />
+		</rules>
+	</element>
+	<element name="Mark Bounty" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER_MARK_BOUNTY">
+		<compendium display="false" />
+		<description>
+			<p>Whenever you finish a Short or Long Rest, you can single out one creature as your bounty. To mark a creature as your bounty, you must have seen that creature or possess an object that has been in their possession for at least 24 hours. Once on each of your turns you can change your bounty to one creature you can see (no action required).</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a Short or Long Rest, you can single out one creature as your bounty. To mark a creature as your bounty, you must have seen that creature or possess an object that has been in their possession for at least 24 hours. Once on each of your turns you can change your bounty to one creature you can see.</description>
+		</sheet>
+	</element>
+	<element name="Masterful Tracking" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_LEY_LINE_TRACKER_MASTERFUL_TRACKING">
+		<compendium display="false" />
+		<description>
+			<p>Your Ranger spells of the Divination school can target your bounty at any distance, even if you cannot see them, unless your bounty is protected from Divination spells (as with <i>Nondetection</i>) or is on another plane of existence.</p>
+		</description>
+		<sheet>
+			<description>Your Ranger spells of the Divination school can target your bounty at any distance, even if you cannot see them, unless your bounty is protected from Divination spells or is on another plane of existence.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Unwavering Attention" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_UNWAVERING_ATTENTION">
+		<description>
+			<p>When you hit your bounty or a creature currently marked by your <i>Hunter's Mark</i>, you deal an extra 1d6 damage. You can deal this extra damage only once per turn. If you deal this damage as part of an Opportunity Attack, you can take a Reaction again from the start of the next creature's turn (instead of on your next turn).</p>
+		</description>
+		<sheet alt="Unwavering Attention">
+			<description>When you hit your bounty or a creature currently marked by your Hunter's Mark, you deal an extra 1d6 damage. You can deal this extra damage only once per turn. If you deal this damage as part of an Opportunity Attack, you can take a Reaction again from the start of the next creature's turn (instead of on your next turn).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Relentless Pursuit" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_RELENTLESS_PURSUIT">
+		<description>
+			<p>If your bounty or a creature currently marked by your <i>Hunter's Mark</i> ends its turn more than 5 feet away from you and you can see it, you can use your Reaction to move your speed towards it. This movement does not provoke Opportunity Attacks.</p>
+		</description>
+		<sheet alt="Relentless Pursuit" action="Reaction">
+			<description>If your bounty or a creature currently marked by your Hunter's Mark ends its turn more than 5 ft away from you and you can see it, you can move your speed towards it. This movement does not provoke Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Eyes on the Prize" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_EYES_ON_THE_PRIZE">
+		<description>
+			<p>You focus everything on bringing your chosen target down. When you take the Attack action and target only one creature with all your attacks, you can make an additional attack against that creature. If the additional attack is a melee attack and it hits, the target has either the Grappled or Prone condition (your choice). If the additional attack is a ranged attack and it hits, the target has the Prone condition.</p>
+		</description>
+		<sheet alt="Eyes on the Prize" action="Attack">
+			<description>When you take the Attack action and target only one creature with all your attacks, you can make an additional attack against that creature. If the additional attack is a melee attack and it hits, the target has either the Grappled or Prone condition (your choice). If the additional attack is a ranged attack and it hits, the target has the Prone condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Nowhere to Hide" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_RANGER_BLOODHOUND_NOWHERE_TO_HIDE">
+		<description>
+			<p>Illusions and other magical concealments cannot hinder your pursuit. You can cast <i>True Seeing</i> on yourself without expending a spell slot or material components. If you do so, you can't do so again until you finish a Short or Long Rest.</p>
+			<p class="indent">Additionally, when you use your Ley Line Tracker feature to target your bounty, you are not affected by magic that conceals your bounty from your Divination spells.</p>
+		</description>
+		<sheet alt="Nowhere to Hide" action="Attack">
+			<description>You can cast True Seeing on yourself without expending a spell slot or material components. (1/Long Rest) &#13;
+			Additionally, when you use your Ley Line Tracker feature to target your bounty, you are not affected by magic that conceals your bounty from your Divination spells.</description>
+		</sheet>
+	</element>
+	
+</elements>

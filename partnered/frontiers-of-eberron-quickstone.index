@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Frontiers of Eberron: Quickstone by Visionary Production and Design</name>
+		<update version="1.0.0">
+			<file name="frontiers-of-eberron-quickstone.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone.index" />
+		</update>
+	</info>
+	<files>
+		<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/feats.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/items.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/languages.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/spells.xml" />
+		<file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/weapon-masteries.xml" />
+
+		<!--Archetypes-->
+	   <file name="barbarian-demonshard.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/barbarian-demonshard.xml" />
+	   <file name="bard-wands.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/bard-wands.xml" />
+	   <file name="cleric-commerce.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/cleric-commerce.xml" />
+	   <file name="ranger-bloodhound.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/ranger-bloodhound.xml" />
+	   <file name="sorcerer-nemesis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/sorcerer-nemesis.xml" />
+	   <file name="warlock-stone-sovereign.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/warlock-stone-sovereign.xml" />
+
+		<!--Backgrounds-->
+		<file name="background-dragonmarked-bravo.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-bravo.xml" />
+		<file name="background-dragonmarked-foundling.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-foundling.xml" />
+		<file name="background-dragonmarked-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-scion.xml" />
+		<file name="background-magewright.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-magewright.xml" />
+		<file name="background-wandslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-wandslinger.xml" />
+
+		<!--Races-->
+		<file name="fiendish-legacy-options.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/fiendish-legacy-options.xml" />
+		<file name="race-gargoyle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-gargoyle.xml" />
+		<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-gnoll.xml" />
+		<file name="race-harpy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-harpy.xml" />
+		<file name="race-medusa.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-medusa.xml" />
+		<file name="race-warforged.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-warforged.xml" />
+		<file name="race-worg.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-worg.xml" />
+	</files>
+</index>

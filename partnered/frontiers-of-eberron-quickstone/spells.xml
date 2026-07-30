@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Gray Gaze" type="Spell" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_SPELL_GRAY_GAZE">
+		<supports>Druid, Sorcerer, Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You turn your gaze on one creature you can see within range. If the target can see your eyes, their body stiffens and cracks as if it were turning to stone. The target must succeed on a Constitution saving throw or take Necrotic damage equal to your Proficiency Bonus and have Disadvantage on the next Dexterity saving throw it makes before the end of its next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">constitution, save, necrotic, damage, disadvantage, dexterity, saving throws</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pebble with a hole in it</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Orien Step" type="Spell" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_SPELL_ORIEN_STEP">
+		<description>
+			<p>You teleport up to five feet to an unoccupied space you can see. You cannot teleport through solid objects or out of manacles and similar restraints.</p>
+		</description>
+		<setters>
+			<set name="keywords">teleport</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+</elements>

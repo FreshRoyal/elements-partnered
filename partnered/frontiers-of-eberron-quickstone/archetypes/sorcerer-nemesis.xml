@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Nemesis Sorcery</name>
+		<description>Nemesis Sorcery from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="sorcerer-nemesis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/sorcerer-nemesis.xml" />
+		</update>
+	</info>
+
+	<element name="Nemesis Sorcery" type="Archetype" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_SORCERER_NEMESIS_SORCERY">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<p class="flavor">Devastate Foes with Speed and Precision</p>
+			<p>While some sorcerers revel in unleashing devastation on dozens of enemies at once, you specialize in the arcane duel. You act with absolute precision, focusing your energy to strike at the perfect moment. You learn to break spells directed against you, whether expending your own power to fully counter them or casually dispersing deadly force. You may have learned the arts of magic on the battlefields of the Last War, but now you're the epitome of the lone wandslinger, always ready for the next duel.</p>
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_NEMESIS_SPELLS" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_READIED_MAGIC" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_SPELL_DEFLECTION" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_ALWAYS_READY" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_MINDSET_OF_PERFECT_PREDICTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_NEMESIS_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_READIED_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_SPELL_DEFLECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_ALWAYS_READY" level="14" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_MINDSET_OF_PERFECT_PREDICTION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Nemesis Spells" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_NEMESIS_SPELLS">
+		<description>
+			<p>When you reach a Sorcerer level specified in the Nemesis Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Nemesis Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Sorcerer Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Compelled Duel, Mirror Image, See Invisibility, Shield</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Counterspell, Slow</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Fire Shield, Otiluke's Resilient Sphere</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Circle of Power, Mislead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPELLED_DUEL" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLOW" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_SHIELD" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CIRCLE_OF_POWER" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISLEAD" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Readied Magic" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_READIED_MAGIC">
+		<description>
+			<p>You have learned to hold back your magical power, prepared to unleash it when the time is just right. If you use an Action to Ready a spell, you have Advantage on saving throws and ability checks until the start of your next turn. Additionally, if the trigger for your readied spell occurs, you can cast the readied spell without using your Reaction.</p>
+			<p class="indent">If the trigger does not resolve, if you choose not to act on the trigger, or if you lose Concentration on the spell, you gain a number of Sorcery Points equal to the spell's level at the start of your next turn. You still expend the spell slot as normal.</p>
+		</description>
+		<sheet alt="Readied Magic">
+			<description>If you use an Action to Ready a spell, you have Advantage on saving throws and ability checks until the start of your next turn. Additionally, if the trigger for your readied spell occurs, you can cast the readied spell without using your Reaction. &#13;
+			If the trigger does not resolve, if you choose not to act on the trigger, or if you lose Concentration on the spell, you gain a number of Sorcery Points equal to the spell's level at the start of your next turn. You still expend the spell slot as normal.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Spell Deflection" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_SPELL_DEFLECTION">
+		<description>
+			<p>When you take damage from a spell or other magical effect, you can use your Reaction to halve the spell's damage against you.</p>
+		</description>
+		<sheet alt="Divine Bargain" action="Reaction">
+			<description>When you take damage from a spell or other magical effect, you can half the spell's damage against you.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Always Ready" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_ALWAYS_READY">
+		<description>
+			<p>You always have your next spell dancing on the tip of your tongue. You can use a Bonus Action to Ready a spell as if you had used your Action to do so. If you expend a spell slot when you ready a spell in this way, it does not count against the usual limit of only one spell slot expended to cast a spell per turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest unless you spend 4 Sorcery Points (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Always Ready" action="Bonus Action" >
+			<description>You can Ready a spell as if you had used your Action to do so. If you expend a spell slot when you ready a spell in this way, it does not count against the usual limit of only one spell slot expended to cast a spell per turn. &#13;
+			You can spend 4 Sorcery Points (no action required) to restore your use of this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Mindset of Perfect Prediction" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_SORCERER_NEMESIS_SORCERY_MINDSET_OF_PERFECT_PREDICTION">
+		<description>
+			<p>You have learned to enter a focused state of mind. As an Action, you can activate your mindset of perfect prediction, gaining the benefits below. At the end of each of your turns, starting on the turn after you activated your mindset, you must make a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus). On a failed save, your mindset ends. If you are Concentrating on multiple spells when your mindset ends, you can choose one spell to maintain. The rest of the spells end as if your Concentration had been broken. Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+			<p class="indent"><em><strong>Quickened Mind.</strong></em> When rolling Initiative, you may instead choose an Initiative count of 31.</p>
+			<p class="indent"><em><strong>Expansive Mind.</strong></em> You can concentrate on any number of spells simultaneously. If you are forced to make a saving throw to maintain Concentration while you are Concentrating on multiple spells, you make only a single Constitution saving throw. On a failed save, your Concentration breaks on all spells.</p>
+			<p class="indent"><em><strong>Predictive Mind.</strong></em> You have <i>Counterspell</i> prepared. You can cast it as a 6th-level spell without expending a spell slot.</p>
+		</description>
+		<sheet alt="Mindset of Perfect Prediction" action="Action" usage="1/Long Rest">
+			<description>You can activate your mindset of perfect prediction, gaining the benefits below. At the end of each of your turns, starting on the turn after you activated your mindset, you must make a Charisma saving throw (DC {{feq:mindset of perfect prediction:dc}}). On a failed save, your mindset ends. If you are Concentrating on multiple spells when your mindset ends, you can choose one spell to maintain. The rest of the spells end as if your Concentration had been broken. &#13;
+			•  When rolling Initiative, you may instead choose an Initiative count of 31. &#13;
+			•  You can concentrate on any number of spells simultaneously. If you are forced to make a saving throw to maintain Concentration while you are Concentrating on multiple spells, you make only a single Constitution saving throw. On a failed save, your Concentration breaks on all spells. &#13;
+			•  You can cast Counterspell as a 6th-level spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<stat name="feq:mindset of perfect prediction:dc" value="8" bonus="base" />
+			<stat name="feq:mindset of perfect prediction:dc" value="proficiency" bonus="proficiency" />
+			<stat name="feq:mindset of perfect prediction:dc" value="charisma:modifier" bonus="ability" />
+		</rules>
+	</element>
+	
+</elements>

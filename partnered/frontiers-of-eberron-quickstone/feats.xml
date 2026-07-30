@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Wandslinger" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WANDSLINGER">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Arcane Aim.</i></b> You gain a +1 bonus to attack rolls you make with spells.</p>
+			<p class="indent"><b><i>Mystic Force.</i></b> When you cast a cantrip that requires the target to make a saving throw, increase the DC of the saving throw by 1.</p>
+		</description>
+		<sheet>
+			<description>When you cast a cantrip that requires the target to make a saving throw, increase the DC of the saving throw by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+		</rules>
+	</element>
+
+	<!--Lesser Dragonmark-->
+	<element name="Lesser Dragonmark" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK">
+		<supports>Origin</supports>
+		<requirements>ID_INTERNAL_GRANT_RACE_DWARF||ID_INTERNAL_GRANT_RACE_ELF||ID_INTERNAL_GRANT_RACE_GNOME||ID_INTERNAL_GRANT_RACE_HALF_ELF||ID_INTERNAL_GRANT_RACE_HALF_ORC||ID_INTERNAL_GRANT_RACE_HALFLING||ID_INTERNAL_GRANT_RACE_HUMAN||ID_INTERNAL_GRANT_RACE_ORC||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Member of appropriate species</prerequisite>
+		<description>
+			<p class="flavor">Origin Feat (Prerequisite: Member of appropriate species)</p>
+			<p>You possess a Lesser Dragonmark, which is visible somewhere on your body. You gain the following benefits.</p>
+			<p class="indent"><b><i>Manifest Dragonmark.</i></b> You manifest a dragonmark. Your choice of Mark is restricted by your species, as shown in the Least Dragonmark Benefit table. Your choice of Mark determines the skills, tools, and spells you gain, as given in the same table. When you select this feat, choose Intelligence, Wisdom, or Charisma as your spellcasting ability for the feat's cantrip(s) and spells.</p>
+			<p class="indent"><b><i>Guidance of the Mark.</i></b> You add 1d4 to any ability check you make using the skills or tools associated with your Mark.</p>
+			<p class="indent"><b><i>Cantrip.</i></b> You learn the cantrip(s) associated with your Mark. The Mark of Handling and Mark of Warding don't grant a cantrip; instead, each Mark grants three Spells of the Mark.</p>
+			<p class="indent"><b><i>Spells of the Mark.</i></b> Your dragonmark grants you access to the spells associated with your Mark. You always have these spells prepared, and you can cast each of them once at their lowest level without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Long Rest. To cast any of these spells at a higher level or a second time prior to finishing a Long Rest, you must expend a spell slot.</p>
+			<h5>Lesser Dragonmark Benefit</h5>
+			<table>
+				<thead>
+					<tr><td>Mark</td><td>Species</td><td>Guidance of the Mark</td><td>Cantrip</td><td>Spells of the Mark</td></tr>
+				</thead>
+				<tr><td>Detection</td><td>Khoravar (Half-Elf)</td><td>Investigation, Insight</td><td><em>Guidance</em></td><td><em>Detect Poison and Disease, See Invisibility</em></td></tr>
+				<tr><td>Finding</td><td>Human, Orc, Half-Orc</td><td>Perception, Survival</td><td><em>True Strike</em></td><td><em>Locate Animals and Plants, Locate Object</em></td></tr>
+				<tr><td>Handling</td><td>Human</td><td>Animal Handling, Nature</td><td>None</td><td><em>Animal Friendship, Beast Sense, Speak with Animals</em></td></tr>
+				<tr><td>Healing</td><td>Halfling</td><td>Medicine, Herbalism</td><td><em>Spare the Dying</em></td><td><em>Cure Wounds, Lesser Restoration</em></td></tr>
+				<tr><td>Hospitality</td><td>Halfling</td><td>Persuasion, Brewer's Supplies or Cook's Utensils</td><td><em>Friends, Prestidigitation</em></td><td><em>Calm Emotions, Purify Food and Drink</em></td></tr>
+				<tr><td>Making</td><td>Human</td><td>Arcana, Artisan's Tools</td><td><em>Mending</em></td><td><em>Identify, Magic Weapon</em></td></tr>
+				<tr><td>Passage</td><td>Human</td><td>Acrobatics, Land Vehicles</td><td><em>Orien Step</em></td><td><em>Longstrider, Misty Step</em></td></tr>
+				<tr><td>Scribing</td><td>Gnome</td><td>History, Calligrapher's Supplies</td><td><em>Message</em></td><td><em>Comprehend Languages, Illusory Script</em> (no Material component required)</td></tr>
+				<tr><td>Sentinel</td><td>Human</td><td>Insight, Perception</td><td><em>Blade Ward</em></td><td><em>Shield, Warding Bond</em></td></tr>
+				<tr><td>Shadow</td><td>Elf</td><td>Performance, Stealth</td><td><em>Minor Illusion</em></td><td><em>Darkness, Mirror Image</em></td></tr>
+				<tr><td>Storm</td><td>Khoravar (Half-Elf)</td><td>Acrobatics, Navigator's Tools</td><td><em>Shocking Grasp</em></td><td><em>Fog Cloud, Gust of Wind</em></td></tr>
+				<tr><td>Warding</td><td>Dwarf</td><td>Investigation, Thieves' Tools</td><td>None</td><td><em>Alarm, Arcane Lock, Knock</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING" requirements="ID_INTERNAL_GRANT_RACE_DWARF" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW" requirements="ID_INTERNAL_GRANT_RACE_ELF" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING" requirements="ID_INTERNAL_GRANT_RACE_GNOME" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING" requirements="ID_INTERNAL_GRANT_RACE_HALF_ORC" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING" requirements="ID_INTERNAL_GRANT_RACE_ORC" />
+			
+			<select type="Feat Feature" name="Lesser Dragonmark Benefit" supports="FEQ Half Elf Lesser Dragonmark Benefit" requirements="ID_INTERNAL_GRANT_RACE_HALF_ELF" />
+			<select type="Feat Feature" name="Lesser Dragonmark Benefit" supports="FEQ Halfling Lesser Dragonmark Benefit" requirements="ID_INTERNAL_GRANT_RACE_HALFLING" />
+			<select type="Feat Feature" name="Lesser Dragonmark Benefit" supports="FEQ Human Lesser Dragonmark Benefit" requirements="ID_INTERNAL_GRANT_RACE_HUMAN" />
+		</rules>
+	</element>
+
+	<element name="Mark of Detection" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION">
+		<supports>FEQ Half Elf Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Detection)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Detection)">
+			<description>You can add 1d4 to any ability check you make using the Investigation or Insight skill. &#13;
+			You know the Guidance cantrip, and you can cast the Detect Poison and Disease and See Invisibility spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDANCE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Detection)">
+			<description>You can add 1d4 to any ability check you make using the Investigation or Insight skill. &#13;
+			You know the Guidance cantrip, and you can cast the Detect Poison and Disease and See Invisibility spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDANCE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Detection)">
+			<description>You can add 1d4 to any ability check you make using the Investigation or Insight skill. &#13;
+			You know the Guidance cantrip, and you can cast the Detect Poison and Disease and See Invisibility spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDANCE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" />
+		</rules>
+	</element>
+
+	<element name="Mark of Finding" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING">
+		<supports>FEQ Human Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Finding)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Finding)">
+			<description>You can add 1d4 to any ability check you make using the Perception or Survival skill. &#13;
+			You know the True Strike cantrip, and you can cast the Locate Animals and Plants and Locate Object spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TRUE_STRIKE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_ANIMALS_AND_PLANTS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_OBJECTS" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Finding)">
+			<description>You can add 1d4 to any ability check you make using the Perception or Survival skill. &#13;
+			You know the True Strike cantrip, and you can cast the Locate Animals and Plants and Locate Object spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TRUE_STRIKE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_ANIMALS_AND_PLANTS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_OBJECTS" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Finding)">
+			<description>You can add 1d4 to any ability check you make using the Perception or Survival skill. &#13;
+			You know the True Strike cantrip, and you can cast the Locate Animals and Plants and Locate Object spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TRUE_STRIKE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_ANIMALS_AND_PLANTS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_OBJECTS" />
+		</rules>
+	</element>
+
+	<element name="Mark of Handling" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING">
+		<supports>FEQ Human Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Handling)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Handling)">
+			<description>You can add 1d4 to any ability check you make using the Animal Handling or Nature skill. &#13;
+			You can cast the Animal Friendship, Beast Sense, and Speak with Animals spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEAST_SENSE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Handling)">
+			<description>You can add 1d4 to any ability check you make using the Animal Handling or Nature skill. &#13;
+			You can cast the Animal Friendship, Beast Sense, and Speak with Animals spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEAST_SENSE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Handling)">
+			<description>You can add 1d4 to any ability check you make using the Animal Handling or Nature skill. &#13;
+			You can cast the Animal Friendship, Beast Sense, and Speak with Animals spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEAST_SENSE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+
+	<element name="Mark of Healing" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING">
+		<supports>FEQ Halfling Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Healing)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Healing)">
+			<description>You can add 1d4 to any ability check you make using the Medicine skill or a Herbalism Kit. &#13;
+			You know the Spare the Dying cantrip, and you can cast the Cure Wounds and Lesser Restoration spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Healing)">
+			<description>You can add 1d4 to any ability check you make using the Medicine skill or a Herbalism Kit. &#13;
+			You know the Spare the Dying cantrip, and you can cast the Cure Wounds and Lesser Restoration spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Healing)">
+			<description>You can add 1d4 to any ability check you make using the Medicine skill or a Herbalism Kit. &#13;
+			You know the Spare the Dying cantrip, and you can cast the Cure Wounds and Lesser Restoration spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" />
+		</rules>
+	</element>
+
+	<element name="Mark of Hospitality" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY">
+		<supports>FEQ Halfling Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Tool Proficiency (Mark of Hospitality)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Hospitality)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Hospitality)">
+			<description>You can add 1d4 to any ability check you make using the Persuasion skill or the tool you chose when taking this Feat. &#13;
+			You know the Friends and Prestidigitation cantrips, and you can cast the Calm Emotions and Purify Food and Drink spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FRIENDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALM_EMOTIONS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PURIFY_FOOD_AND_DRINK" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Hospitality)">
+			<description>You can add 1d4 to any ability check you make using the Persuasion skill or the tool you chose when taking this Feat. &#13;
+			You know the Friends and Prestidigitation cantrips, and you can cast the Calm Emotions and Purify Food and Drink spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FRIENDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALM_EMOTIONS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PURIFY_FOOD_AND_DRINK" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Hospitality)">
+			<description>You can add 1d4 to any ability check you make using the Persuasion skill or the tool you chose when taking this Feat. &#13;
+			You know the Friends and Prestidigitation cantrips, and you can cast the Calm Emotions and Purify Food and Drink spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FRIENDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALM_EMOTIONS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PURIFY_FOOD_AND_DRINK" />
+		</rules>
+	</element>
+	
+	<element name="Mark of Making" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING">
+		<supports>FEQ Human Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Making)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Paassage)">
+			<description>You can add 1d4 to any ability check you make using the Arcana skill or Artisan's Tools. &#13;
+			You know the Mending cantrip, and you can cast the Identify and Magic Weapon spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MENDING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_IDENTIFY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_WEAPON" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Paassage)">
+			<description>You can add 1d4 to any ability check you make using the Arcana skill or Artisan's Tools. &#13;
+			You know the Mending cantrip, and you can cast the Identify and Magic Weapon spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MENDING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_IDENTIFY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_WEAPON" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Paassage)">
+			<description>You can add 1d4 to any ability check you make using the Arcana skill or Artisan's Tools. &#13;
+			You know the Mending cantrip, and you can cast the Identify and Magic Weapon spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MENDING" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_IDENTIFY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_WEAPON" />
+		</rules>
+	</element>
+	
+	<element name="Mark of Passage" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE">
+		<supports>FEQ Human Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Passage)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Paassage)">
+			<description>You can add 1d4 to any ability check you make using the Acrobatics skill or Land Vehicles. &#13;
+			You know the Orien Step cantrip, and you can cast the Longstrider and Misty Step spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_VPD_FEQ_SPELL_ORIEN_STEP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LONGSTRIDER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Paassage)">
+			<description>You can add 1d4 to any ability check you make using the Acrobatics skill or Land Vehicles. &#13;
+			You know the Orien Step cantrip, and you can cast the Longstrider and Misty Step spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_VPD_FEQ_SPELL_ORIEN_STEP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LONGSTRIDER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_PASSAGE_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Paassage)">
+			<description>You can add 1d4 to any ability check you make using the Acrobatics skill or Land Vehicles. &#13;
+			You know the Orien Step cantrip, and you can cast the Longstrider and Misty Step spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_VPD_FEQ_SPELL_ORIEN_STEP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LONGSTRIDER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+		</rules>
+	</element>
+	
+	
+	<element name="Mark of Scribing" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING">
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Scribing)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Scribing)">
+			<description>You can add 1d4 to any ability check you make using the History skill or Calligrapher's Supplies. &#13;
+			You know the Message cantrip, and you can cast the Comprehend Languages and Illusory Script (no Material component required) spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MESSAGE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ILLUSORY_SCRIPT" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Scribing)">
+			<description>You can add 1d4 to any ability check you make using the History skill or Calligrapher's Supplies. &#13;
+			You know the Message cantrip, and you can cast the Comprehend Languages and Illusory Script (no Material component required) spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MESSAGE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ILLUSORY_SCRIPT" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Scribing)">
+			<description>You can add 1d4 to any ability check you make using the History skill or Calligrapher's Supplies. &#13;
+			You know the Message cantrip, and you can cast the Comprehend Languages and Illusory Script (no Material component required) spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MESSAGE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ILLUSORY_SCRIPT" />
+		</rules>
+	</element>
+	
+	<element name="Mark of Sentinel" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL">
+		<supports>FEQ Human Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Sentinel)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Sentinel)">
+			<description>You can add 1d4 to any ability check you make using the Insight or Perception skill. &#13;
+			You know the Blade Ward cantrip, and you can cast the Shield and Warding Bond spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLADE_WARD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WARDING_BOND" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Sentinel)">
+			<description>You can add 1d4 to any ability check you make using the Insight or Perception skill. &#13;
+			You know the Blade Ward cantrip, and you can cast the Shield and Warding Bond spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLADE_WARD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WARDING_BOND" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Sentinel)">
+			<description>You can add 1d4 to any ability check you make using the Insight or Perception skill. &#13;
+			You know the Blade Ward cantrip, and you can cast the Shield and Warding Bond spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLADE_WARD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WARDING_BOND" />
+		</rules>
+	</element>
+	
+	<element name="Mark of Shadow" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW">
+		<supports>FEQ Half Elf Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Shadow)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Shadow)">
+			<description>You can add 1d4 to any ability check you make using the Performance or Stealth skill. &#13;
+			You know the Minor Illusion cantrip, and you can cast the Darkness and Mirror Image spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MINOR_ILLUSION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Shadow)">
+			<description>You can add 1d4 to any ability check you make using the Performance or Stealth skill. &#13;
+			You know the Minor Illusion cantrip, and you can cast the Darkness and Mirror Image spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MINOR_ILLUSION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Shadow)">
+			<description>You can add 1d4 to any ability check you make using the Performance or Stealth skill. &#13;
+			You know the Minor Illusion cantrip, and you can cast the Darkness and Mirror Image spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MINOR_ILLUSION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE" />
+		</rules>
+	</element>
+	
+	<element name="Mark of Storm" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM">
+		<supports>FEQ Half Elf Lesser Dragonmark Benefit</supports>
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Storm)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Storm)">
+			<description>You can add 1d4 to any ability check you make using the Investigation skill or Navigator's Tools. &#13;
+			You know the Shocking Grasp cantrip, and you can cast the Fog Cloud and Gust of Wind spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHOCKING_GRASP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FOG_CLOUD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUST_OF_WIND" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Storm)">
+			<description>You can add 1d4 to any ability check you make using the Investigation skill or Navigator's Tools. &#13;
+			You know the Shocking Grasp cantrip, and you can cast the Fog Cloud and Gust of Wind spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHOCKING_GRASP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FOG_CLOUD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUST_OF_WIND" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Storm)">
+			<description>You can add 1d4 to any ability check you make using the Investigation skill or Navigator's Tools. &#13;
+			You know the Shocking Grasp cantrip, and you can cast the Fog Cloud and Gust of Wind spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHOCKING_GRASP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FOG_CLOUD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUST_OF_WIND" />
+		</rules>
+	</element>
+
+	<element name="Mark of Warding" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING">
+		<compendium display="false" />
+		<description>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Warding)" supports="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING_INTELLIGENCE|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING_WISDOM|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Warding)">
+			<description>You can add 1d4 to any ability check you make using the Investigation skill or Thieves' Tools. &#13;
+			You can cast the Alarm, Arcane Lock, and Knock spells once each per Long Rest. Intelligence is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALARM" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_LOCK" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_KNOCK" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Warding)">
+			<description>You can add 1d4 to any ability check you make using the Investigation skill or Thieves' Tools. &#13;
+			You can cast the Alarm, Arcane Lock, and Knock spells once each per Long Rest. Wisdom is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALARM" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_LOCK" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_KNOCK" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with your Lesser Dragonmark.</p>
+		</description>
+		<sheet alt="Lesser Dragonmark (Mark of Warding)">
+			<description>You can add 1d4 to any ability check you make using the Investigation skill or Thieves' Tools. &#13;
+			You can cast the Alarm, Arcane Lock, and Knock spells once each per Long Rest. Charisma is your spellcasting ability for the spells you cast with this trait. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALARM" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_LOCK" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_KNOCK" />
+		</rules>
+	</element>
+
+	<!--General Feats-->
+	<element name="Ashbound Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_ASHBOUND_INITIATE">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have learned a certain number of the secrets and techniques of the Ashbound druidic order. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Ashbound Proficiency.</i></b> You gain proficiency in the Intimidation skill.</p>
+			<p class="indent"><b><i>Arcane Emmity.</i></b> When a creature you can see casts a spell, you have Advantage on attack rolls against that creature until the end of your next turn.</p>
+			<p class="indent"><b><i>Ashbound Spells.</i></b> If you have the Spellcasting or the Pact Magic class feature, the spells on the Ashbound Spells table are added to the spell list of your spellcasting class.</p>
+			<h5>Ashbound Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Guiding Bolt</em></td></tr>
+				<tr><td>2</td><td><em>Branding Smite</em></td></tr>
+				<tr><td>3</td><td><em>Nondetection</em></td></tr>
+				<tr><td>4</td><td><em>Aura of Purity</em></td></tr>
+				<tr><td>5</td><td><em>Circle of Power</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>When a creature you can see casts a spell, you have Advantage on attack rolls against that creature until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Ashbound Initiate)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_GUIDING_BOLT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_BRANDING_SMITE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_NONDETECTION</extend>
+			<extend>ID_WOTC_PHB24_SPELL_AURA_OF_PURITY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CIRCLE_OF_POWER</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Gatekeeper Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_GATEKEEPER_INITIATE">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have learned a certain number of secrets and techniques of the Gatekeeper druidic order. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Gatekeeper Proficiency.</i></b> You gain proficiency in the Arcana skill.</p>
+			<p class="indent"><b><i>Protection Against Aberrations.</i></b> When you make a saving throw against the magic abilities of an Aberration or a spell cast by an Aberration, you can roll 1d4 and add it to your saving throw.</p>
+			<p class="indent"><b><i>Gatekeeper Spells.</i></b> If you have the Spellcasting or the Pact Magic class feature, the spells on the Gatekeeper Spells table are added to the spell list of your spellcasting class.</p>
+			<h5>Gatekeeper Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Detect Evil and Good</em></td></tr>
+				<tr><td>2</td><td><em>Warding Bond</em></td></tr>
+				<tr><td>3</td><td><em>Magic Circle</em></td></tr>
+				<tr><td>4</td><td><em>Banishment</em></td></tr>
+				<tr><td>5</td><td><em>Dispel Evil and Good</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>When you make a saving throw against the magic abilities of an Aberration or a spell cast by an Aberration, you can roll 1d4 and add it to your saving throw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gatekeeper Initiate)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_DETECT_EVIL_AND_GOOD</extend>
+			<extend>ID_WOTC_PHB24_SPELL_WARDING_BOND</extend>
+			<extend>ID_WOTC_PHB24_SPELL_MAGIC_CIRCLE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_BANISHMENT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_DISPEL_EVIL_AND_GOOD</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Greensinger Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_GREENSINGER_INITIATE">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have learned a certain number of secrets and techniques of the Greensinger druidic order. You gain the following benefits:</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Greensinger's Proficiency.</i></b> You gain proficiency in the Performance skill.</p>
+			<p class="indent"><b><i>Fey Dancer.</i></b> Whenever you cause a creature to gain the Charmed condition, you can join them in dance and revelry. If you do so, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
+			<p class="indent"><b><i>Fey Affinity.</i></b> Your spells and magical abilities that affect Humanoids also affect Fey.</p>
+			<p class="indent"><b><i>Greensinger Spells.</i></b> If you have the Spellcasting or the Pact Magic class feature, the spells on the Greensinger Spells table are added to the spell list of your spellcasting class.</p>
+			<h5>Greensinger Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Tasha's Hideous Laughter</em></td></tr>
+				<tr><td>2</td><td><em>Enthrall</em></td></tr>
+				<tr><td>3</td><td><em>Major Image</em></td></tr>
+				<tr><td>4</td><td><em>Compulsion</em></td></tr>
+				<tr><td>5</td><td><em>Mislead</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you cause a creature to gain the Charmed condition, you can join them in dance and revelry. If you do so, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks. &#13;
+			Additionally, your spells and magical abilities that affect Humanoids also affect Fey.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Greensinger Initiate)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+		</rules>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+			<extend>ID_WOTC_PHB24_SPELL_ENTHRALL</extend>
+			<extend>ID_WOTC_PHB24_SPELL_MAJOR_CIRCLE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_COMPULSION</extend>
+			<extend>ID_WOTC_PHB24_SPELL_MISLEAD</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Hewn for Battle" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_HEWN_FOR_BATTLE">
+		<supports>General</supports>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_GARGOYLE)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Gargoyle</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Gargoyle)</p>
+			<p>You have reshaped your stone body to be a more effective and devastating weapon of war. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Constitution by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Thickened Hide.</i></b> When you finish a Short or Long Rest, you can choose the thickness of your natural armor. While you aren't wearing armor, your base Armor Class becomes your choice of either 14 plus your Dexterity modifier, or 18. You can use a Shield and still gain this benefit.</p>
+			<p class="indent"><b><i>Spellcarving.</i></b> Your hide can be enchanted or infused as if it were nonmagical armor.</p>
+			<p class="indent"><b><i>Claws.</i></b> You have shaped your hands into fearsome claws. Your claws are natural weapons, which you can use to make Unarmed Strikes. If you hit with them, you deal Slashing damage equal to 1d6 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>Your hide can be enchanted or infused as if it were nonmagical armor. &#13;
+			• Additionally, you have claws which you can use to make Unarmed Strikes. If you hit with them, you deal 1d6+{{strength:modifier}} Slashing damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hewn for Battle)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
+			<stat name="ac:natural armor:gargoyle" value="14" bonus="base" />
+			<stat name="ac:calculation" value="18" bonus="calculation" alt="Natural Armor (Gargoyle)" />
+		</rules>
+	</element>
+
+	<element name="Orb Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_ORB_EXPERT">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>Your skill with magical Orbs helps you evade enemies while overcoming their defenses. You gain the following benefits.</p>
+			<p class="indent"><b><i>Fortune Teller.</i></b> When you finish a Short or Long Rest, roll 1d6 and record the result. When you cast a spell using an Orb as a Spellcasting Focus, you can add the result of this prescience roll to your spell attack roll, or reduce one target's saving throw by that amount. You must choose to do so before the attack roll or saving throw.</p>
+			<p class="indent">Once you use this benefit, you can't use it again until you finish a Short or Long Rest. Unused prescience rolls are lost when you finish a Short or Long Rest.</p>
+			<p class="indent"><b><i>See the Path.</i></b> While you are holding an Orb, Opportunity Attacks against you have Disadvantage.</p>
+			<p class="indent"><b><i>Prescient Escape.</i></b> While you are holding an Orb, whenever a creature you can see enters a space within 5 feet of you, you can use your Reaction to move up to your Speed without provoking an Opportunity Attack.</p>
+		</description>
+		<sheet>
+			<description>You gain following benefits: &#13;
+			• When you finish a Short or Long Rest, roll 1d6 and record the result. When you cast a spell using an Orb as a Spellcasting Focus, you can add the result of this prescience roll to your spell attack roll, or reduce one target's saving throw by that amount. You must choose to do so before the attack roll or saving throw. Once you use this benefit, you can't use it again until you finish a Short or Long Rest. Unused prescience rolls are lost when you finish a Short or Long Rest. &#13;
+			• While you are holding an Orb, Opportunity Attacks against you have Disadvantage. &#13;
+			• While you are holding an Orb, whenever a creature you can see enters a space within 5 ft of you, you can use your Reaction to move up to your Speed without provoking an Opportunity Attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Rod Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_ROD_EXPERT">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You've mastered the use of a Rod as an Arcane Focus. You gain the following benefits.</p>
+			<p class="indent"><b><i>Close-Ranged Focus.</i></b> If the target of a cantrip you cast using a Rod as a Spellcasting Focus is within 20 feet of you when you roll a 1 or 2 on a damage die, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+			<p class="indent"><b><i>Unshakeable Casting.</i></b> When you make a ranged spell attack roll while using a Rod as a Spellcasting Focus, you do not have Disadvantage on the roll if you are within 5 feet of an enemy.</p>
+			<p class="indent"><b><i>Rough &amp; Tumble.</i></b> When you make a ranged spell attack while using a Rod as a Spellcasting Focus, you can use a Bonus Action to make a melee attack with your Rod. It counts as a Club for the purposes of the attack.</p>
+		</description>
+		<sheet>
+			<description>You gain following benefits: &#13;
+			• If the target of a cantrip you cast using a Rod as a Spellcasting Focus is within 20 ft of you when you roll a 1 or 2 on a damage die, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. &#13;
+			• When you make a ranged spell attack roll while using a Rod as a Spellcasting Focus, you do not have Disadvantage on the roll if you are within 5 ft of an enemy. &#13;
+			• When you make a ranged spell attack while using a Rod as a Spellcasting Focus, you can use a Bonus Action to make a melee attack with your Rod. It counts as a Club for the purposes of the attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Shadow's Gift of Stone" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE">
+		<supports>General</supports>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_MEDUSA)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Medusa</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Medusa)</p>
+			<p>You have learned to channel arcane power through your gaze. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Innate Magic.</i></b> When you reach a character level specified in the Shadow's Gift of Stone Spells table, you thereafter always have the listed spells prepared. You can cast each of these spells once without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Your spellcasting ability for these spells is the same as the spellcasting ability you chose for your Petrifying Gaze trait.</p>
+			<h5>Shadow's Gift of Stone Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Character Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>4</td><td><em>Ensnaring Strike</em></td></tr>
+				<tr><td>5</td><td><em>Hold Person</em></td></tr>
+				<tr><td>9</td><td><em>Hypnotic Pattern</em></td></tr>
+				<tr><td>13</td><td><em>Stoneskin</em></td></tr>
+				<tr><td>17</td><td><em>Hold Monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Shadow's Gift of Stone)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ESNARING_STRIKE" level="4" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HYPNOTIC_PATTERN" level="9" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONESKIN" level="13" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER" level="17" />
+
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_INTELLIGENCE" requirements="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_INTELLIGENCE" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_WISDOM" requirements="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_WISDOM" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_CHARISMA" requirements="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_INTELLIGENCE">
+		<compendium display="false" />
+		<requirements>[character:4]</requirements>
+		<description>
+			<div element="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE" />
+		</description>
+		<sheet alt="Shadow's Gift of Stone">
+			<description>You know the Ensnaring Strike spell. You can cast it without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for this spell is Intelligence.</description>
+			<description level="5">You know the Ensnaring Strike and Hold Person spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="9">You know the Ensnaring Strike, Hold Person, and Hypnotic Pattern spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="13">You know the Ensnaring Strike, Hold Person, Hypnotic Pattern, and Stoneskin spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="17">You know the Ensnaring Strike, Hold Person, Hypnotic Pattern, Stoneskin, and Hold Monster spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_WISDOM">
+		<compendium display="false" />
+		<requirements>[character:4]</requirements>
+		<description>
+			<div element="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE" />
+		</description>
+		<sheet alt="Shadow's Gift of Stone">
+			<description>You know the Ensnaring Strike spell. You can cast it without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for this spell is Wisdom.</description>
+			<description level="5">You know the Ensnaring Strike and Hold Person spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="9">You know the Ensnaring Strike, Hold Person, and Hypnotic Pattern spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="13">You know the Ensnaring Strike, Hold Person, Hypnotic Pattern, and Stoneskin spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="17">You know the Ensnaring Strike, Hold Person, Hypnotic Pattern, Stoneskin, and Hold Monster spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_CHARISMA">
+		<compendium display="false" />
+		<requirements>[character:4]</requirements>
+		<description>
+			<div element="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE" />
+		</description>
+		<sheet alt="Shadow's Gift of Stone">
+			<description>You know the Ensnaring Strike spell. You can cast it without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for this spell is Charisma.</description>
+			<description level="5">You know the Ensnaring Strike and Hold Person spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="9">You know the Ensnaring Strike, Hold Person, and Hypnotic Pattern spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="13">You know the Ensnaring Strike, Hold Person, Hypnotic Pattern, and Stoneskin spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="17">You know the Ensnaring Strike, Hold Person, Hypnotic Pattern, Stoneskin, and Hold Monster spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Staff Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_STAFF_EXPERT">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You've unlocked the deadly ranged potential of the Staff. You gain the following benefits.</p>
+			<p class="indent"><b><i>Arcane Artillery.</i></b> When you cast a spell that has a range of 5 feet or greater using a Staff as your Spellcasting Focus, you can use a Bonus Action to double the range of the spell.</p>
+			<p class="indent"><b><i>Powerful Focus.</i></b> When you roll a 1 or 2 on a damage die for a cantrip you cast using a Staff as a Spellcasting Focus, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+			<p class="indent"><b><i>Explosive Casting.</i></b> If all targets of a spell you cast using a Staff as your Spellcasting Focus are more than half the spell's range from you, one creature of your choice that you hit with a spell attack or that fails a saving throw against the spell has the Prone condition.</p>
+		</description>
+		<sheet>
+			<description>You gain following benefits: &#13;
+			• When you cast a spell that has a range of 5 ft or greater using a Staff as your Spellcasting Focus, you can use a Bonus Action to double the range of the spell. &#13;
+			• When you roll a 1 or 2 on a damage die for a cantrip you cast using a Staff as a Spellcasting Focus, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. &#13;
+			• If all targets of a spell you cast using a Staff as your Spellcasting Focus are more than half the spell's range from you, one creature of your choice that you hit with a spell attack or that fails a saving throw against the spell has the Prone condition.</description>
+		</sheet>
+	</element>
+	
+	<element name="Stone Eyes" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_STONE_EYES">
+		<supports>General</supports>
+		<requirements>([character:8],ID_VPD_FEQ_RACE_MEDUSA)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Medusa</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 8+, Medusa)</p>
+			<p>Your Petrifying Gaze has come into its own. If a creature that has the Restrained or Paralyzed condition as a result of one of your spells or your Medusa's Gift trait fails a saving throw to end the effect by 5 or more, you can choose to turn that creature to stone. Any magical effects causing the creature to have the Restrained or Paralyzed condition end, and the creature has the Petrified condition for 1 minute. You must concentrate to maintain the effect. If you lose your Concentration, the Petrified condition ends.</p>
+			<p class="indent">If you maintain your Concentration on the effect for the entire possible duration, the target is Petrified until the condition is ended by <i>Greater Restoration</i> or similar magic.</p>
+		</description>
+		<sheet>
+			<description>If a creature that has the Restrained or Paralyzed condition as a result of one of your spells or your Medusa's Gift trait fails a saving throw to end the effect by 5 or more, you can choose to turn that creature to stone. Any magical effects causing the creature to have the Restrained or Paralyzed condition end, and the creature has the Petrified condition for 1 minute. You must concentrate to maintain the effect. If you lose your Concentration, the Petrified condition ends. &#13;
+			If you maintain your Concentration on the effect for the entire possible duration, the target is Petrified until the condition is ended by Greater Restoration or similar magic.</description>
+		</sheet>
+	</element>
+
+	<element name="Voice of the Fury" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY">
+		<supports>General</supports>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_HARPY)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Harpy</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Harpy)</p>
+			<p>The mystical power of your voice grows stronger. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Innate Magic.</i></b> When you reach a character level specified in the Voice of the Fury Spells table, you thereafter always have the listed spells prepared. You can cast each of these spells once without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Your spellcasting ability for these spells is the same as the spellcasting ability you chose for your Harpy's Charms trait.</p>
+			<h5>Shadow's Gift of Stone Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Character Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>4</td><td><em>Charm Person</em></td></tr>
+				<tr><td>5</td><td><em>Suggestion</em></td></tr>
+				<tr><td>9</td><td><em>Enemies Abound</em></td></tr>
+				<tr><td>13</td><td><em>Charm Monster</em></td></tr>
+				<tr><td>17</td><td><em>Dominate Person</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Voice of the Fury)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" level="4" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUGGESTION" level="5" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" level="9" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" level="13" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" level="17" />
+
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_INTELLIGENCE" requirements="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_INTELLIGENCE" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_WISDOM" requirements="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_WISDOM" />
+			<grant type="Feat Feature" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_CHARISMA" requirements="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_INTELLIGENCE">
+		<compendium display="false" />
+		<requirements>[character:4]</requirements>
+		<description>
+			<div element="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY" />
+		</description>
+		<sheet alt="Voice of the Fury">
+			<description>You know the Charm Person spell. You can cast it without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for this spell is Intelligence.</description>
+			<description level="5">You know the Charm Person and Suggestion spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="9">You know the Charm Person, Suggestion, and Enemies Abound spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="13">You know the Charm Person, Suggestion, Enemies Abound, and Charm Monster spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="17">You know the Charm Person, Suggestion, Enemies Abound, Charm Monster, and Dominate Person spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_WISDOM">
+		<compendium display="false" />
+		<requirements>[character:4]</requirements>
+		<description>
+			<div element="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY" />
+		</description>
+		<sheet alt="Voice of the Fury">
+			<description>You know the Charm Person spell. You can cast it without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for this spell is Wisdom.</description>
+			<description level="5">You know the Charm Person and Suggestion spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="9">You know the Charm Person, Suggestion, and Enemies Abound spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="13">You know the Charm Person, Suggestion, Enemies Abound, and Charm Monster spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="17">You know the Charm Person, Suggestion, Enemies Abound, Charm Monster, and Dominate Person spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_CHARISMA">
+		<compendium display="false" />
+		<requirements>[character:4]</requirements>
+		<description>
+			<div element="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY" />
+		</description>
+		<sheet alt="Voice of the Fury">
+			<description>You know the Charm Person spell. You can cast it without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast this spell using any spell slots you have of the appropriate level. Your spellcasting ability for this spell is Charisma.</description>
+			<description level="5">You know the Charm Person and Suggestion spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="9">You know the Charm Person, Suggestion, and Enemies Abound spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="13">You know the Charm Person, Suggestion, Enemies Abound, and Charm Monster spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+			<description level="17">You know the Charm Person, Suggestion, Enemies Abound, Charm Monster, and Dominate Person spells. You can cast them without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Wand Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WAND_EXPERT">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You are adept with the use of Wands as a swift Spellcasting Focus. You gain the following benefits.</p>
+			<p class="indent"><b><i>Wand Mastery.</i></b> If you make a spell attack using a Wand as a Spellcasting Focus, you gain Advantage on the attack roll if the target hasn't taken a turn.</p>
+			<p class="indent"><b><i>Unshakeable Casting.</i></b> When you make a ranged spell attack roll while using a Wand as a Spellcasting Focus, you do not have Disadvantage on the roll if you are within 5 feet of an enemy.</p>
+			<p class="indent"><b><i>Arcane Quickdraw.</i></b> Drawing or stowing a Wand does not count against the number of object interactions you can take for free on your turn.</p>
+		</description>
+		<sheet>
+			<description>You gain following benefits: &#13;
+			• If you make a spell attack using a Wand as a Spellcasting Focus, you gain Advantage on the attack roll if the target hasn't taken a turn. &#13;
+			• When you make a ranged spell attack roll while using a Wand as a Spellcasting Focus, you do not have Disadvantage on the roll if you are within 5 feet of an enemy. &#13;
+			• Drawing or stowing a Wand does not count against the number of object interactions you can take for free on your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Warden Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WARDEN_INITIATE">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have learned some of the secrets and techniques of the Wardens of the Wood druidic order. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Warden's Proficiency.</i></b> You gain proficiency in the Animal Handling skill.</p>
+			<p class="indent"><b><i>Protect Ally.</i></b> When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d6 + your Proficiency Bonus.</p>
+			<p class="indent">Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><b><i>Warden Spells.</i></b> If you have the Spellcasting or the Pact Magic class feature, the spells on the Wardens of the Wood Spells table are added to the spell list of your spellcasting class.</p>
+			<h5>Warden Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Sanctuary</em></td></tr>
+				<tr><td>2</td><td><em>Detect Thoughts</em></td></tr>
+				<tr><td>3</td><td><em>Blink</em></td></tr>
+				<tr><td>4</td><td><em>Mordenkainen's Faithful Hound</em></td></tr>
+				<tr><td>5</td><td><em>Hold Monster</em></td></tr>
+			</table>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When a creature you can see hits another creature within 5 ft of you with an attack roll, you can reduce the damage dealt to the target by 1d6 + {{proficiency}}.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Warden Initiate)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+		</rules>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_SANCTUARY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS</extend>
+			<extend>ID_WOTC_PHB24_SPELL_BLINK</extend>
+			<extend>ID_WOTC_PHB24_SPELL_MORDENKAINENS_FAITHFUL_HOUND</extend>
+			<extend>ID_WOTC_PHB24_SPELL_HOLD_MONSTER</extend>
+		</spellcasting>
+	</element>
+	
+	<element name="Wings of Stone" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WINGS_OF_STONE">
+		<supports>General</supports>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_GARGOYLE)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Gargoyle</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Gargoyle)</p>
+			<p>You have manifested stone wings and achieved mastery of the air. You have a Fly Speed equal to your Speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" alt="Wings of Stone" />
+		</rules>
+	</element>
+
+	<element name="Winter Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WINTER_INITIATE">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have learned some of the secrets and techniques of the Children of Winter druidic order. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Life from Death.</i></b> Whenever you take Necrotic damage, you gain Temporary Hit Points equal to your Proficiency Bonus after you take the damage.</p>
+			<p class="indent"><b><i>Summon Decay.</i></b> When you conjure a creature with a spell or magical ability, you can choose for that creature to be Undead instead of its usual creature type.</p>
+			<p class="indent"><b><i>Understand Disease.</i></b> You have Advantage on ability checks to research, diagnose, and treat disease.</p>
+			<p class="indent"><b><i>Children of Winter Spells.</i></b> If you have the Spellcasting or the Pact Magic class feature, the spells on the Children of Winter Spells table are added to the spell list of your spellcasting class.</p>
+			<h5>Children of Winter Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>False Life</em></td></tr>
+				<tr><td>2</td><td><em>Ray of Enfeeblement</em></td></tr>
+				<tr><td>3</td><td><em>Bestow Curse</em></td></tr>
+				<tr><td>4</td><td><em>Death Ward</em></td></tr>
+				<tr><td>5</td><td><em>Enervation</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain following benefits: &#13;
+			• Whenever you take Necrotic damage, you gain {{proficiency}} THPs after you take the damage. &#13;
+			• When you conjure a creature with a spell or magical ability, you can choose for that creature to be Undead instead of its usual creature type. &#13;
+			• You have Advantage on ability checks to research, diagnose, and treat disease.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Winter Initiate)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+		</rules>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_FALSE_LIFE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT</extend>
+			<extend>ID_WOTC_PHB24_SPELL_BESTOW_CURSE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_DEATH_WARD</extend>
+			<extend>ID_WOTC_PHB24_SPELL_ENERVATION</extend>
+		</spellcasting>
+	</element>
+
+</elements>

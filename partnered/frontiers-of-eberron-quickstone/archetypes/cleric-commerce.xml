@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Commerce Domain</name>
+		<description>Commerce Domain from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="cleric-commerce.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/cleric-commerce.xml" />
+		</update>
+	</info>
+
+	<element name="Commerce Domain" type="Archetype" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_CLERIC_COMMERCE_DOMAIN">
+		<supports>Cleric Subclass</supports>
+		<description>
+			<p class="flavor">Tip the Scales of Fate with Divine Gold</p>
+			<p>Prayer may be the currency of the gods, but hard cash makes the world go round. Clerics of the Commerce Domain believe that society and economy are two sides of the same coin, and defending one's community means little if you don't have the resources and trade to back it up. As the Sovereign of World and Wealth, Kol Korran is the most common patron to Clerics of this domain, but those with a more selfish outlook might look to the Keeper to support their greed.</p>
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_COMMERCE_DOMAIN_SPELLS" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_WEALTH" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_MONEY_SPINNER" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_BARGAIN" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_OPEN_MARKET" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_COMMERCE_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_WEALTH" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_MONEY_SPINNER" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_BARGAIN" level="6" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_OPEN_MARKET" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Commerce Domain Spells" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_COMMERCE_DOMAIN_SPELLS">
+		<description>
+			<p>Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Commerce Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>COMMERCE DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Augury, Charm Person, Comprehend Languages, Locate Object</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Glyph of Warding, Tongues</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Divination, Leomund's Secret Chest</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Legend Lore, Rary's Telepathic Bond</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_OBJECT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GLYPH_OF_WARDING" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TONGUES" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIVINATION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEOMUNDS_SECRET_CHEST" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEGEND_LORE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Divine Wealth" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_WEALTH">
+		<description>
+			<p>Your spiritual savvy manifests as material wealth. When you finish a Long Rest, you conjure two divine coins and lose any previously unspent divine coins. Whenever you make a saving throw against a magical effect caused by a hostile creature, you can choose to spend a divine coin or gain a divine coin. You must choose whether or not to spend a coin before you roll your save.</p>
+			<p class="indent"><em><strong>Spend a Coin.</strong></em> Roll a d4 and add the number rolled to the saving throw.</p>
+			<p class="indent"><em><strong>Gain a Coin.</strong></em> Roll a d4 and subtract the number rolled from the saving throw.</p>
+			<p>The number of divine coins you conjure when you finish a Long Rest changes when you reach certain Cleric levels. You conjure three at level 5, four at level 9, five at level 13, and six at level 17.</p>
+		</description>
+		<sheet alt="Divine Wealth">
+			<description>When you finish a Long Rest, you conjure {{feq:divine wealth:coins}} divine coins and lose any previously unspent divine coins. Whenever you make a saving throw against a magical effect caused by a hostile creature, you can choose to spend a divine coin or gain a divine coin. You must choose whether or not to spend a coin before you roll your save. &#13;
+			•  Spend a Coin. Roll a d4 and add the number rolled to the saving throw. &#13;
+			•  Gain a Coin. Roll a d4 and subtract the number rolled from the saving throw.</description>
+		</sheet>
+		<rules>
+			<stat name="feq:divine wealth:coins" value="2" bonus="base" />
+			<stat name="feq:divine wealth:coins" value="3" bonus="base" level="5" />
+			<stat name="feq:divine wealth:coins" value="4" bonus="base" level="9" />
+			<stat name="feq:divine wealth:coins" value="5" bonus="base" level="13" />
+			<stat name="feq:divine wealth:coins" value="6" bonus="base" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Money Spinner" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_MONEY_SPINNER">
+		<description>
+			<p>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to gain favor or turn away prying eyes. Choose a number of creatures within 30 feet of yourself equal to one plus one more for each divine coin you expend when you use this feature. For each target, choose either a bribe or a reward.</p>
+			<p class="indent"><em><strong>Reward.</strong></em> The target must make a Wisdom saving throw. On a failed save, the target has the Charmed condition for 1 minute or until it takes damage. While it has the Charmed condition, it is Friendly to you and other creatures you designate.</p>
+			<p class="indent"><em><strong>Bribe.</strong></em> The target must make a Wisdom saving throw. On a failed save, the target has the Blinded condition for 1 minute or until it takes damage.</p>
+		</description>
+		<sheet alt="Money Spinner" usage="Channel Divinity">
+			<description>You present your Holy Symbol and gain favor or turn away prying eyes. Choose a number of creatures within 30 ft of yourself equal to 1 plus 1 more for each divine coin you expend when you use this feature. For each target, choose either a bribe or a reward. &#13;
+			•  Reward. The target must make a Wisdom saving throw. On a failed save, the target has the Charmed condition for 1 minute or until it takes damage. While it has the Charmed condition, it is Friendly to you and other creatures you designate. &#13;
+			•  Bribe. The target must make a Wisdom saving throw. On a failed save, the target has the Blinded condition for 1 minute or until it takes damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Divine Bargain" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_BARGAIN">
+		<description>
+			<p>Transactions are at the heart of your belief system, and you have learned to buy and sell metaphysical boons with your divine wealth. As a Bonus Action, you can magically conduct a metaphysical trade with one creature you can see within 30 feet of yourself. Choose either Buy or Sell.</p>
+			<p class="indent"><em><strong>Buy.</strong></em> Give one of your divine coins to the target. It can spend the divine coin as if it had your Divine Wealth feature. The target takes 1d8 Necrotic damage, and you or one creature that you can see within 30 feet of yourself regains Hit Points equal to the damage taken.</p>
+			<p class="indent"><em><strong>Sell.</strong></em> Gain a divine coin. You take 1d8 Necrotic damage, and the target regains Hit Points equal to the damage taken. The damage cannot be reduced by any means.</p>
+		</description>
+		<sheet alt="Divine Bargain" action="Bonus Action">
+			<description>You can magically conduct a metaphysical trade with one creature you can see within 30 ft of yourself. Choose either Buy or Sell. &#13;
+			•  Buy. Give one of your divine coins to the target. It can spend the divine coin as if it had your Divine Wealth feature. The target takes {{feq:divine bargain:dice}}d8 Necrotic damage, and you or one creature that you can see within 30 ft of yourself regains HPs equal to the damage taken. &#13;
+			•  Sell. Gain a divine coin. You take {{feq:divine bargain:dice}}d8 Necrotic damage, and the target regains HPs equal to the damage taken. The damage cannot be reduced by any means.</description>
+		</sheet>
+		<rules>
+			<stat name="feq:divine bargain:dice" value="1" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 17: Open Market" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_OPEN_MARKET">
+		<description>
+			<p>When you use your Divine Bargain feature, you roll 2d8 rather than 1d8 to determine how many Hit Points are regained or lost.</p>
+			<p class="indent">In addition, when you use your Divine Bargain feature you can target up to six creatures you can see within 30 feet of yourself, buying or selling divine coins separately for each target. You use the same 2d8 roll to determine the Hit Points each creature regains or loses. If you target multiple creatures in this way, you cannot do so again until you finish a Short Rest.</p>
+		</description>
+		<sheet alt="Open Market" usage="1/Short Rest">
+			<description>When you use your Divine Bargain feature you can target up to six creatures you can see within 30 ft of yourself, buying or selling divine coins separately for each target. You use the same 2d8 roll to determine the Hit Points each creature regains or loses.</description>
+		</sheet>
+		<rules>
+			<stat name="feq:divine bargain:dice" value="2" bonus="base" />
+		</rules>
+	</element>
+	
+</elements>

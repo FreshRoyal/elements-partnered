@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/items.xml" />
+		</update>
+	</info>
+
+	<!--Steel Jaws-->
+	<element name="Steel Jaws" type="Weapon" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_WEAPON_STEEL_JAWS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_WOTC_PHB24_WEAPON_PROPERTY_TOPPLE</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Topple.</b> If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="slot">head</set>
+			<set name="proficiency">ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS</set>
+		</setters>
+	</element>
+
+		<element name="Weapon Proficiency (Steel Jaws)" type="Proficiency" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Kensei Weapon (Steel Jaws)" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_KENSEI_WEAPON_STEEL_JAWS">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Steel Jaws if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS" />
+		</rules>
+	</element>
+
+	<!--Magic Items-->
+	<element name="Barghest Collar" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_BARGHEST_COLLAR">
+		<description>
+			<p>As a Bonus Action when you bark the command word, you can transform from your worg form into a goblin form with your choice of physical characteristics, including age, sex, skin color, hair color, and voice. While transformed, your size is Small and you lose your Quadruped and Bite traits. Otherwise, your statistics don't change.</p>
+			<p class="indent">You can maintain the transformation for up to 4 hours, all at once or in several shorter periods, each one using a minimum of 1 minute of the duration. The collar regains 2 hours of transformation time for every 12 hours it isn't in use.</p>
+		</description>
+		<setters>
+			<set name="keywords">worg, bonus action, transform, goblin</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Worg">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Beggar's Wisdom" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_BEGGARS_WISDOM">
+		<description>
+			<p>The wit and wisdom of Beggar Dane is considered to be one of the national treasures of Breland. This small leatherbound book is a comprehensive, enchanted edition of his proverbs and advice. As a Magic action while holding this book, you can declare your desire for assistance with a particular task, causing the book to open to a page containing a quip or mote of wisdom that is strangely relevant to the situation at hand. You add 1d4 to the next ability check you make within the next minute. Once this property is used, you cannot benefit from any copy of Beggar's Wisdom until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, ability check</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Brand of Tyranny" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_BRAND_OF_TYRANNY">
+		<description>
+			<p>One end of this heavy, black iron Rod glows as if hot. Rather than burning red and orange, it shines a sickly shade of purple.</p>
+			<p class="indent">While holding this Rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</p>
+			<p class="indent">Whenever you touch a creature with this Rod, that creature must succeed on a DC 15 Charisma saving throw or be branded with the mark of Tol Kharash, the overlord known as the Horned King. Whenever a branded creature makes an attack roll or a saving throw against being Frightened, the creature must roll a d4 and subtract the number rolled from the attack roll or saving throw. The brand lasts until the next dawn or it is removed with <i>Remove Curse</i> or <i>Greater Restoration</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellcasting, attack, save, charisma, frightened</set>
+			<set name="category">Rods</set>
+			<set name="cost" currency="gp">40010</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="slot">onehand</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Cazhaak Eyeblinders" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_CAZHAAK_EYEBLINDERS">
+		<description>
+			<p>While wearing this magical blindfold, you can see as if you were not wearing it, and you cannot be Blinded by magical effects. However, if you possess the Petrifying Gaze trait, you cannot use it while you are wearing the blindfold.</p>
+			<p class="indent">When you don the blindfold, you can choose to magically seal it in place by nominating yourself or a creature you can see to hold the seal's power. You cannot remove the blindfold until the creature speaks a chosen command word, you and the creature are at least 1 mile apart, or the creature dies.</p>
+		</description>
+		<setters>
+			<set name="keywords">blindfold</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Daff's Wonderful Draught" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_DAFFS_WONDERFUL_DRAUGHT">		
+		<description>
+			<p>Daff d'Jorasco's eclectic style of medicine produces similarly eclectic brews. This potion is a magic item. As a Bonus Action, you can drink it or administer it to another creature within 5 of yourself. The creature that drinks this potion must roll on the following table to determine the effect:</p>
+			<table>
+				<thead>
+					<tr><td class="col-10" style="text-align:center">d6</td><td>Effect</td></tr>
+				</thead>
+				<tr><td style="text-align:center">1-3</td><td>You regain 4d4 + 4 Hit Points.</td></tr>
+				<tr><td style="text-align:center">4</td><td>You gain the effects of the <i>Detect Thoughts</i> spell for 1 minute or until you lose your Concentration. The save DC is 13.</td></tr>
+				<tr><td style="text-align:center">5</td><td>You gain the effects of the <i>Haste</i> spell for 1 minute or until you lose your Concentration.</td></tr>
+				<tr><td style="text-align:center">6</td><td>You must succeed on a DC 13 Wisdom saving throw or suffer the effects of the <i>Tasha's Hideous Laughter</i> spell for 1 minute.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Demonglass Orb" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_DEMONGLASS_ORB">
+		<description>
+			<p>Red and black flames flicker behind the rough cut facets of this heavy demonglass shard. Memories of the Ages of Demons are bound within, and spellcasters who dare channel their magic through it find themselves and their targets visited by visions of that terrible past.</p>
+			<p class="indent">Whenever you cast a Divination spell using this Orb as a Spellcasting Focus, you can give up some of your life force to reduce the saving throw of one creature affected by your spell. Roll 1 to 4 d6s; the resulting total is how much Necrotic damage you take. This damage can't be reduced in any way. The target has its saving throw reduced by 1 for each d6 of damage you take. You must decide how many dice to roll before the DM says whether the target succeeds or fails.</p>
+		</description>
+		<setters>
+			<set name="keywords">divination</set>
+			<set name="category">Spellcasting Focus</set>
+			<set name="cost" currency="gp">4020</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Demonglass Weapon" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_DEMONGLASS_WEAPON">
+		<description>
+			<p>A demonglass shard is inlaid into this weapon, granting it magical properties. Though the fiendish presence embedded within cannot speak directly to its wielder, its presence is keenly felt by those whose blood it spills.</p>
+			<p class="indent">You have a +1 bonus to attack and damage rolls made with this magic weapon. On a Critical Hit, the target is Frightened of you until the end of its next turn, and you gain Advantage on saving throws until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">critical hit, frightened, advantage, saves</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="type" addition="Any Simple or Martial">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Demonglass {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Dry Spell" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_DRY_SPELL">
+		<description>
+			<p>This desiccated Spell Scroll seems to draw the moisture from your fingertips. Its cipher is ineffable, and while its meaning becomes clear as you read the runes, clarity slips away should you try to transcribe it.</p>
+			<p class="indent">As a Magic action, you can use the scroll to cast <i>Control Water</i> without providing any Material components. The spell save DC is 15. In addition to the usual effects of the <i>Control Water</i> spell, any water manipulated by the spell is destroyed when the spell ends. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+		</description>
+		<setters>
+			<set name="category">Scrolls</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Scroll</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Duelist's Scorecard" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_DUELISTS_SCORECARD">
+		<description>
+			<p>This scrap of paper bears a table with space for five names. If you write a creature's name in one of the blank spaces on the table, it will shuffle the text to show their ranking as a duelist relative to all the other individuals named on the table. This appears to be calculated based on the number of duels the named individuals have won over the past year. The source of these scorecards and the rankings remains a mystery, but it appears to be linked to the Infinite Archive of Daanvi. Once all the spaces on the scorecard are filled, you cannot reveal the ranking of another name for 1 week, when all the names are magically erased.</p>
+		</description>
+		<setters>
+			<set name="keywords">write</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Figurine of Wondrous Power, Byeshk Worg Pack" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_FIGURINE_OF_WONDROUS_POWER_BYESHK_WORG_PACK">
+		<description>
+			<p>This set of four miniature worg statuettes is made from byeshk, a metal that is anathema to Aberrations. Each statuette is small enough to fit in a pocket. If you use a Magic action to speak the command word and throw one of the figurines to a point on the ground within 60 feet of you, the figurine becomes a living Worg for up to 1 hour. You can use one figurine or multiple simultaneously. If the space where a worg would appear is occupied by other creatures or objects, or if there isn't enough space for the worg, the figurine doesn't become a worg.</p>
+			<p class="indent">The worgs are Immune to Psychic damage, cannot be Charmed or Frightened, and their Bite attack deals an additional 2d6 damage against Aberrations.</p>
+			<p class="indent">The worgs are friendly to you and your companions. They understand your languages and obey your spoken commands. If you issue no commands, the worgs defend themselves but take no other actions.</p>
+			<p class="indent">At the end of the duration, the worgs revert to their figurine forms. A worg reverts to a figurine early if it drops to 0 Hit Points or if you use a Magic action to speak the command word again while touching it. When a worg becomes a figurine again, its property can't be used again until 7 days have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">transform</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Flashdraw" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_FLASHDRAW">
+		<description>
+			<p>This delicate Wand hums with bound potential, and seems drawn to your fingers. While attuned to it, you cannot be Surprised. Additionally, whenever you roll Initiative you can choose to immediately draw this wand (no action required). If you do so, you can roll 1d4 and add the total to your Initiative score, and all creatures within 5 feet of you take 1 Lightning damage.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">410</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Gorgon Hide Mail" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_GORGON_HIDE_MAIL">
+		<description>
+			<p>This suit of Scale Mail is made from the metallic hide of a gorgon. It is particularly valuable to anyone that wishes to visit Cazhaak Draal; while wearing this armor, you have Advantage on saving throws against any magical effect that would cause you to be Restrained or Petrified.</p>
+		</description>
+		<setters>
+			<set name="keywords">scale mail, advantage, saves, magical effect, restrained, petrified</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">body</set>
+			<set name="type" addition="scale mail">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Scale Mail</set>
+		</setters>
+	</element>
+
+	<element name="Grist Cakes" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_GRIST_CAKES">
+		<description>
+			<p>These rations made of troll meat slowly regenerate, promising a long-lasting food supply. A creature can use a Magic action to eat one cake. Eating a cake restores 1 Hit Point, and the cake provides enough nourishment to sustain a creature for one day.</p>
+			<p class="indent">A pack contains a maximum of 10 cakes. So long as at least 1 cake remains uneaten and unspoiled, the pack regenerates 1d6 cakes per day. If you take Fire or Acid damage while carrying a pack of <i>Grist Cakes</i>, 1d4 cakes permanently spoil and will no longer regenerate.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, hp, hit point, healing</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Ink's Aide" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_INKS_AIDE">
+		<description>
+			<p>This colorful, jellyfish-like blob has been carefully cultivated by Quickstone's schoolmaster, Tragomir "Ink" Narathun, to impart a full curriculum to its host—though he has yet to convince anyone to partake. To attune to this item, you must hold it to one ear for the full Attunement period, during which time its stringy tentacles reach inside your ear canal and secure the aide in place. The symbiont does not impair your hearing while it is attached.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> The symbiont has 4 charges. You can use a Magic action to expend 1 or more of its charges to cast one of the following spells (save DC 15) from it: <i>Enhance Ability</i> (2 charges) or <i>Comprehend Languages</i> (1 charge).</p>
+			<p class="indent">The symbiont regains 1d4 expended charges daily at dawn.</p>
+			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The aide can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the aide ends, and it detaches from your ear.</p> 
+		</description>
+		<setters>
+			<set name="keywords">action, spells, enhance ability, comprehend languages</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Jury's Squeaky Wheel" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_JURYS_SQUEAKY_WHEEL">
+		<description>
+			<p>This magic Shield resembles a wooden wagon wheel. Writing inscribed on its inner rim indicates the shield was crafted by Jury d'Cannith, Quickstone's premier artificer, to prove a point to her wife.</p>
+			<p class="indent">As a Bonus Action while holding this shield, you can grant Temporary Hit Points equal to your level to the humanoid creature you can see within 60 feet of yourself that has the fewest Hit Points. If creatures you can see within range are tied for the fewest Hit Points, you can choose which of those creatures gains the Temporary Hit Points.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, bonus action, temporary hit points</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">410</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Kharash's Promise" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_KHARASHS_PROMISE">
+		<description>
+			<p>Tol Kharash, the Horned King, overlord of tyranny, demands that his minions revel in domination, fear, and the suffering of the downtrodden. During his campaigns in the Age of Demons, Tol Kharash shaped an artifact that would announce his coming across the Barrens; a harbinger of cruelty.</p>
+			<p class="indent"><i>Kharash's Promise</i> is a 3-foot long warhorn forged of demonglass and black iron. A trickle of boiling blood constantly drips from its widest end. While holding this Horn, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your Bard spells.</p>
+			<p class="indent"><strong><em>Random Properties.</em></strong> This Artifact has the following random properties, which you can determine by rolling on the tables in the "Artifacts" section of the <i>Dungeon Master's Guide</i>:</p> 
+			<ul>
+				<li>2 minor beneficial properties</li>
+				<li>1 major beneficial property</li>
+				<li>2 minor detrimental properties</li>
+			</ul>
+			<p class="indent"><strong><em>Surety of Dominance.</em></strong> While attuned to the warhorn, no creature can assert its influence over you. You cannot be Charmed or Frightened. If a creature targets you with a magical effect that would cause you to be Charmed or Frightened, that creature takes 4d10 Psychic damage.</p> 
+			<p class="indent"><strong><em>Thaumaturgic Clarion.</em></strong> If you blow <i>Kharash's Promise</i>, the sound it produces can be heard by all creatures within 1 mile.</p> 
+			<p class="indent"><strong><em>Promised End.</em></strong> As a Magic action when you blow the horn, you can choose one creature that you can see and that can hear the horn to suffer a painful and inevitable end. The target must make a DC 20 Charisma saving throw. On a failed save, the target's Hit Point maximum is reduced by 1 at the start of each of its turns until it dies, you die, you are no longer on the same plane of existence as the target, or the effect is ended with a <i>Wish</i> spell. Once this property is used, you cannot do so again until 13 days have passed.</p> 
+			<p class="indent">As a Bonus Action while affected, the target can choose to confront the source of its inevitable end, teleporting to an unoccupied space within 5 feet of you.</p> 
+		</description>
+		<setters>
+			<set name="keywords">bard, warhorn, charmed, frightened, psychic, damage, sound, action, charisma, save, hit point maximum</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="bard:spellcasting:attack" value="3" />
+			<stat name="bard:spellcasting:dc" value="3" />
+		</rules>
+	</element>
+
+	<element name="Lharvion Lens" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_LHARVION_LENS">
+		<description>
+			<p>Hags, oni, doppelgangers, and more all spin webs of intrigue in Droaam, and the richest warlords have found ways to ensure their safety against infiltrators. This 4-inch-diameter, dull-gray glass lens is said to have been ground with a stone fallen from the moon Lharvion. When you speak its command word, the lens' power activates for 1 minute. If you look at a creature through the lens while it is active, you see ghostly images of every shape that creature has taken within the last 24 hours. The lens reveals shapes taken using innate magical abilities, as well as Illusion and Transmutation spells such as <i>Disguise Self</i> and <i>Polymorph</i>. It does not reveal mundane disguises. Once this property is used, it cannot be used again until 7 days have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion, transmutation, disguise self, polymorph</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Lightning Runner" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_LIGHTNING_RUNNER">
+		<description>
+			<p>This 10-foot-wide, 10-foot-long, 6-inch-thick platform of wood and steel levitates 5 feet off the ground and remains horizontal so long as it is within 20 feet of an operational track of lightning rail conductor stones. The platform can carry up to 2000 pounds. If it becomes overloaded, it drops to the ground, unable to levitate.</p>
+			<p class="indent">The platform is equipped with a 'pump' in its center that can be used to move it along the track of conductor stones. As a Magic action, a creature touching the pump can expend a spell slot of 1st-level or higher to cause the platform to continuously move either forwards or backwards along the conductor stone track at a speed of 30 feet. A creature with the Mark of Passage does not need to expend a spell slot to cause the platform to move.</p>
+			<p class="indent">Once moving, the platform will move in the chosen direction for one hour, or until a creature touching the pump uses a Magic action to cause the platform to stop. If stopped in this way, a creature must expend another spell slot as a Magic action to start the platform moving again.</p>
+			<p class="indent">If the platform encounters an obstacle while moving, it will continue to push against the obstacle unless stopped with a Magic action. Obstacles that weigh less than the total weight of the platform and its cargo will be pushed in front of the platform.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, move, mark of passage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Living Stoneskin" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_LIVING_STONESKIN">
+		<description>
+			<p>This Plate Armor appears to be made of stone slabs carved with alien symbols. It is strangely warm to the touch. To attune to this item, you must wear it for the entire Attunement period, during which the stone plates fuse with your skin.</p>
+			<p class="indent">While wearing this armor, you have a +1 bonus to Armor Class, and you have Resistance to nonmagical Bludgeoning, Piercing, and Slashing damage. Additionally, the armor hardens under extreme impact; if you take 20 or more nonmagical Bludgeoning, Piercing, or Slashing damage from one damage roll (after accounting for your Resistance), you are Petrified until the end of your next turn.</p>
+			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The armor can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the armor ends, and it detaches from you.</p> 
+			<p class="indent">The armor requires fresh blood be fed to it. Immediately after you finish any Long Rest, you must either feed half of your remaining Hit Dice to the armor (round up) or take 1 level of Exhaustion.</p> 
+		</description>
+		<setters>
+			<set name="keywords">plate, resistance, bludgeoning, piercing, slashing, symbiont</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">41500</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate armor">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">Plate</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />	
+		</rules>
+	</element>
+	
+	<element name="Lustrous Harpy Feather" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_LUSTROUS_HARPY_FEATHER">
+		<description>
+			<p>With the right expertise and rituals, a songbird harpy's magic can be suffused throughout her plumage. While wearing this magical feather, you find that people can be much more agreeable—all they need is a little push. When you make a Charisma (Persuasion) check, you can choose to have Advantage on the check (no action required). Once this property is used, the feather loses its luster and becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="keywords">persuasion, advantage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Masl of the Wielder" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_MASK_OF_THE_WIELDER">
+		<description>
+			<p>Though most worgs prefer to fight with their teeth or steel jaws, there are those that desire to wield a Dhakaani blade against their enemies. This ornate mask is set with magical gems that focus your subconscious thoughts into a subtle form of telekinesis, allowing you greater control over objects you hold in your teeth.</p>
+			<p class="indent">While wearing the mask, you can use your mouth to wield any Melee weapon that does not have the Heavy, Two-Handed, or Reach properties. If you use the mask to wield a weapon that has Versatile, you can only wield it as if you were using a single hand.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, weapon, worg</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">head</set>
+		</setters>
+	</element>
+	
+	<element name="Minotaur's Map" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_MINOTAURS_MAP">
+		<description>
+			<p>The minotaurs of Droaam have no issues navigating the winding streets of the region's great cities, and their understanding has been captured in these fragile maps. When you speak the map's command word while in the city for which it was made, you can add twice your Proficiency Bonus to any Wisdom (Survival) checks made to navigate or track a creature through the city for 1 hour. At the end of the hour, the map crumbles to dust.</p>
+		</description>
+		<setters>
+			<set name="keywords">survival, tracking</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Misthaven Miscellany" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_MISTHAVEN_MISCELLANY">
+		<description>
+			<p>This small embroidered pouch is said to contain the cast-off goods discarded by the Merchant of Misthaven, an archfey of Thelanis. When you reach into the pouch, you can pull out a random trinket (see page 46 of the 2024 version of the fifth edition <i>Player's Handbook</i> or any other random trinket table of your choice). A trinket pulled from this pouch disappears when you pull another trinket from the pouch.</p>
+		</description>
+		<setters>
+			<set name="keywords">trinket</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Ogre Tines" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_OGRE_TINES">
+		<description>
+			<p>Enterprising artificers are keen to bridge the gap between the tallest and the smallest Droaamites. Ogre Tines are just one example of the myriad devices designed to help giantkin interact with kobolds and goblins. Each set consists of five foot-long iron nails bound by a ring at their tops. When held in one hand, the nails can bend and twist as if they were tiny fingers. While using the tines, creatures of Medium size or larger that would normally have Disadvantage on Dexterity (Sleight of Hand) checks instead do not have Disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">sleight of hand</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Oni Braid" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_ONI_BRAID">
+		<description>
+			<p>This thin rope belt is woven with strands of white and black oni hair. While wearing the belt, you can speak its command word to cause your height to become exactly 5 ft. 10 inches, and your size to become Medium. You can speak the command word again to return to your natural size.</p>
+			<p class="indent">The original <i>Oni Braid</i> was designed by a hobgoblin artificer who wished to see eye to eye with all the people of Droaam, though it's rumored that she designed it to set everyone's height to be one inch less than her own.</p>
+		</description>
+		<setters>
+			<set name="keywords">size, medium</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Orlassk's Reach" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_ORLASSKS_REACH">
+		<description>
+			<p>Despite being separated from its original owner, the lost arm of the daelkyr Orlassk can grant its wielder a sliver of the Lord of Stone's magic; enough power to reshape the world. To attune to this symbiont, you must hold it against one of your arms for the full Attunement period, during which time its stone skin softens and envelops your limb.</p>
+			<p class="indent"><strong><em>Random Properties.</em></strong> This Artifact has the following random properties, which you can determine by rolling on the tables in the "Artifacts" section of the <i>Dungeon Master's Guide</i>:</p> 
+			<ul>
+				<li>2 minor beneficial properties</li>
+				<li>2 minor detrimental properties</li>
+				<li>1 major beneficial property</li>
+				<li>1 minor beneficial property</li>
+			</ul>
+			<p class="indent"><strong><em>Voice of the Daelkyr.</em></strong> You can speak with any Aberration as if you shared a language.</p> 
+			<p class="indent"><strong><em>Command Aberration.</em></strong> As a Magic action, you can cast <i>Dominate Monster</i> on an Aberration (save DC 18). Once this property is used, you cannot do so again until the next dawn.</p> 
+			<p class="indent"><strong><em>Petrifying Touch.</em></strong> The power of the stone shaper flows from you—despite what you may will. Any creature that you touch with your stone fingertips is affected as if you had cast <i>Flesh to Stone</i> (spell save DC 18). You do not need to concentrate on the effect, and you cannot choose to end it.</p> 
+			<p class="indent"><strong><em>Stone Speaking.</em></strong> As a Magic action, you imbue stones in an immobile 30-foot Emanation with limited sentience, giving them the ability to communicate with you. You can question stones about events in the effects area within the past day, gaining information about creatures that have passed, items that might have been removed from the area, and other circumstances. If an <strong>Earth Elemental</strong> or Petrified creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.</p>
+			<p class="indent"><strong><em>Greater Symbiotic Nature.</em></strong> The arm can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. Your Attunement to the arm can only be ended by a <i>Wish</i> spell.</p> 
+		</description>
+		<setters>
+			<set name="keywords">aberration, action, spells, dominate monster, flesh to stone, emanation</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<element name="Quickstone Boomstick" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_QUICKSTONE_BOOMSTICK">
+		<description>
+			<p>Whenever you cast a spell of 1st-level or higher using this Rod as a Spellcasting Focus, you can choose to release its power in a thunderous burst. All creatures within 5 feet of you (including you) must make a Constitution saving throw against your spell save DC. On a failed save, affected creatures take 1d4 Thunder damage for each level of the spell you cast, and are Deafened until the end of their next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">constitution, save, thunder, damage, deafened</set>
+			<set name="category">Rods</set>
+			<set name="cost" currency="gp">410</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="slot">onehand</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Quickstone Whisperer" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_QUICKSTONE_WHISPERER">
+		<description>
+			<p>This ancient, heavy marble torc is strangely warm to the touch. Though it resembles stone jewelry, the torc is in fact a simple symbiont which grants a limited form of control over earth and the ability to manipulate quickstone without the usual rituals. To attune to it, you must wear it around your neck for the full Attunement period, during which time it coils around your throat like a snake.</p>
+			<p class="indent">While wearing the torc, you can use a Magic action to transform a 5-foot cube of quickstone between its soft and wet forms, or irreversibly change it into its fixed form.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> As an Action, you can use the symbiote to cast <i>Mold Earth</i> or <i>Meld into Stone</i>. Once you use the torc to cast Meld into Stone, the spell can't be cast in this way until the next dusk.</p> 
+			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The torc can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the torc ends, and it uncoils from around your neck.</p> 
+		</description>
+		<setters>
+			<set name="keywords">action, spells, mold earth, meld into stone, symbiont</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Enzymatic Gastrostaff" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_SANDSTORM_STAFF">
+		<description>
+			<p>Many of the discarded weapons of the Last War have found their way into the hands of the people of the Barrens. This sliver of a broken Siege Staff can deliver a powerful punch when it needs to, but ejects an exhaust of swirling dust when exerted.</p>
+			<p class="indent">This staff can be wielded as a magic Quarterstaff. The staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn.</p>
+			<p class="indent">When you cast a spell using this Staff as a Spellcasting Focus, you can expend 1 charge to gain a +1 bonus to all spell attack rolls you make for that spell. If you do so, the staff conjures a 5-foot diameter vortex of dust in your space. At the start of each of your turns, roll a d20 for each dust vortex the staff has created. On a roll of 11 or higher, the dust vortex moves 5 feet in a random direction. On a roll of 10 or less, the dust vortex disappears.</p>
+			<p class="indent">Any creature that starts its turn within 5 feet of any of the dust vortexes must make a Constitution saving throw against your spell save DC. On a failed save, an affected creature takes 1d4 Bludgeoning damage and is Blinded until the end of its turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellcasting focus, quarterstaff, spell attack, constitution, save, bludgeoning, damage, blinded</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">405</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Sarkaas' Gladrags" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_SARKAAS_GLADRAGS">
+		<description>
+			<p>Deven Sarkaas of Littlehand Haberdashers in Quickstone knows all too well how important it is to look one's best... and how 'best' can be very different depending on who (or what) you're meeting with. Deven stitched this fine cloak and sent it to Graywall to be enchanted, only to lose track of the garment on the return journey.</p>
+			<p class="indent">As a Bonus Action while wearing the cloak, you can speak its command word to transform your outfit into finely crafted garments appropriate to the culture of one creature of your choice that you can see. Regardless of its appearance, the outfit can't be anything but clothing. Although it can duplicate the look of other magical clothing, the outfit doesn't gain its magical properties.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, transform, clothing</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">shoulders</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Scale of Kethelrax" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_SCALE_OF_KETHELRAX">
+		<description>
+			<p>This Dagger is said to have been created by Kethelrax the Cunning, the kobold warlord of Shaarat Kol. Its short, crimson blade resembles a red dragon's scale, and tiny flames dance along its edge.</p>
+			<p class="indent">While you are holding this Dagger, you can use it as a Spellcasting Focus for your spells. Additionally, you can cast <i>Fire Bolt</i> as a Magic action, using Intelligence, Wisdom, or Charisma (you choose when you Attune to the dagger) as the spellcasting ability.</p>
+			<p class="indent">Whenever you hit with a weapon attack using this Dagger, you can choose to deal Fire damage instead of Piercing damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, spellcasting focus, spell, fire bolt, fire, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">402</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<element name="Shock and Ore" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_SHOCK_AND_ORE">
+		<description>
+			<p>This pair of rough and ready War Picks are said to have been created by the first miners to quarry quickstone in the Barrens. They have long been passed around as heirlooms and rewards. These magical picks are a single magic item for the purposes of Attunement.</p>
+			<p class="indent">You gain the following benefits while wielding both picks:</p>
+			<ul>
+				<li>The picks have the Light weapon property.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with the picks.</li>
+				<li>The picks have 3 charges, which they share. They regain 1d3 expended charges daily at dawn.</li>
+				<li>When you hit a target with a Melee attack using Shock, you can expend 1 charge as a bonus action to deal an additional 2d8 Lightning damage. A creature affected by this damage can't take Reactions until the start of its next turn.</li>
+				<li>When you hit a target with a Melee attack using Ore, you can expend 1 charge to cast <i>Earth Tremor</i> as a Reaction, centered on the target.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">war picks, light, melee, attack, lightning, damage, spell, earth tremor, reaction, unique</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4005</set>
+			<set name="type" addition="War Pick">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">War Pick</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<element name="Stonebane Weapon" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_STONEBANE_WEAPON">
+		<description>
+			<p>This weapon was masterfully crafted by artificers of the ancient Dhakaani empire to combat the minions of the daelkyr Orlassk. It is forged from byeshk, and does not corrode or weather with time.</p>
+			<p class="indent">Although <i>stonebane weapons</i> are not inherently magical, this weapon ignores Resistance to nonmagical Bludgeoning, Piercing, and Slashing damage when used against creatures made of stone, creatures with stone-like natural armor (such as Gargoyles), and Petrified creatures.</p>
+			<p class="indent">As with other byeshk weapons, this weapon is especially effective against Aberrations. Whenever you hit an Aberration with this weapon, the target takes an extra 1d6 damage of the weapon's type, and it can't regain Hit Points until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">ignore resistance, bludgeoning, piercing, slashing, aberration</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="type" addition="Any Melee">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Stonebane {{parent}}</set>
+		</setters>
+	</element>
+	
+	<element name="Three-Faced Coin" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_THREE_FACED_COIN">
+		<description>
+			<p>This gold piece appears to be a normal coin, with the crown of Galifar on one side and the Octogram of the Sovereign Host on the other. However, when flipped, it will land with one of three different symbols showing, each corresponding to one of the patrons of the Three Faces of Coin: Kol Korran, Onatar, and Kol Turrant (the Keeper). When you flip the coin, you can will the coin to land displaying a face of your choice. Once this property is used, you cannot do so again until the next dawn.</p>
+			<p class="indent">While this item doesn't require a command word or Attunement, the ability must be consciously triggered; if you've never used a <i>Three-faced coin</i> before, you must spend a Short Rest studying it to learn how to activate it. After being flipped, the coin returns to its usual two faces when a creature next touches it.</p>
+		</description>
+		<setters>
+			<set name="keywords">coin flip</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Trollgut Rope" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_TROLLGUT_ROPE">
+		<description>
+			<p>The <i>Thunder Coach</i> is the workhorse of Orien's overland shipping, sometimes referred to as "galleons of the road." A product of the Twelve, it incorporated members of Kundarak, Cannith, and Orien in the design. A typical coach is a 10-foot-wide, 40-foot-long, 15-foot-high (including the wheels) vessel of wood and steel. When pulled by a large team (typically eight tribex), a coach can maintain a speed of up to five miles per hour. However, if someone with the Mark of Passage attunes to the coach and sits in the driver's seat, the full magic of the Thunder Coach comes into play. Under such conditions, four strong beasts can pull the coach at a steady pace of ten miles an hour. If it is moving along an Orien trade road, the effect is further amplified, allowing a top speed of 15 miles per hour. This requires the driver to remain seated and to maintain Concentration, as if casting a spell. However, beyond these limitations, they are capable of conversation and other actions.</p>
+			<p class="indent">The forward fifteen feet of the coach holds a small cabin for up to three crew members. The crew of a coach typically includes one marked driver and two crew members who serve as both guards and cargo haulers. One of these haulers is usually a Vadalis- trained (though unmarked) handler who cares for the beasts. The top of the coach has positions at the front and back where archers or wandslingers can be stationed with Half Cover.</p>
+			<p class="indent">A typical <i>Thunder Coach</i> has two cargo chambers; one magical and one mundane. The back gate of a <i>Thunder Coach</i> opens to grant access to an extradimensional space that functions in the same way as a <i>Bag of Holding</i>. When closed, the gate is typically sealed with an Arcane Lock linked to a password known to the driver. The mouth of the extradimensional space is 10-feet-wide by 10-feet-high. The size of the extradimensional space varies based on the model of the coach; the standard is 20-feet-wide, 15-feet-high, and 50-feet-deep. The system maintaining the extradimensional space takes up the final five feet of the coach.</p>
+			<p class="indent">Objects that produce extradimensional spaces (such as <i>Bags of Holding</i>, <i>Portable Holes</i>, or House Cannith's Crates of Containing) cannot cross the threshold of the rear compartment. For this reason, and to allow the transport of living creatures, the <i>Thunder Coach</i> also has a standard cargo compartment accessed from the side of the vehicle; this space is 10-feet-wide, 10-feet- high, and 20-feet-long.</p>
+		</description>
+		<setters>
+			<set name="keywords">vehicle, cargo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Creature with the Mark of Passage">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Trapper's Teeth" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_TRAPPERS_TEETH">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with these Steel Jaws.</p>
+			<p class="indent">The teeth have 4 charges. When you hit with an attack using them, you can expend 1 charge to leave a set of spectral teeth clamped around the target. The target's Speed is reduced to 0. At the end of each of its turns, the target can make a DC 13 Strength saving throw, ending the effect on a success. The teeth regain all expended charges at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">steel jaws, speed, strength, save</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4010</set>
+			<set name="type" addition="Steel Jaws">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Steel Jaws</set>
+			<set name="attunement" addition="by a Worg">true</set>
+		</setters>
+	</element>
+
+	<element name="Trollgut Rope" type="Magic Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_MAGIC_ITEM_TROLLGUT_ROPE">
+		<description>
+			<p>This 'rope' is made from treated troll entrails. Typically, it is found in a 50-ft length that weighs 6 pounds and can hold up to 3,000 pounds.</p>
+			<p class="indent">If <i>Trollgut Rope</i> is cut, you can use a Magic action to press two ends together, causing them to merge together into a single length of rope. This only works with pieces of <i>Trollgut Rope</i> from the same original coil. If the <i>Trollgut Rope</i> takes Fire or Acid damage, it no longer regenerates and becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="keywords">action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">51</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+</elements>

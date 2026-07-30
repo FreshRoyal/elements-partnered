@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Medusa</name>
+		<description>Medusa from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="race-medusa.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-medusa.xml" />
+		</update>
+	</info>
+
+	<element name="Medusa" type="Race" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACE_MEDUSA">
+		<description>
+			<p>Medusas are infamous across Khorvaire for the deadly power of their petrifying gaze. The medusas of Cazhaak Draal are one of the most powerful forces within Droaam, renowned both for their remarkable stonework and their deep devotion to the Dark Six; the Cazhaak Creed has become the most widespread religion in Droaam. Medusas tend to be calm and calculating, useful traits when a single glance can have devastating consequences.</p>
+			<p class="indent">Medusa appearance varies by bloodline; some have scaled skin while at a glance others appear to be carved from stone. All medusas have a mane of writhing serpents, and they can use this mane to observe their surroundings even when they are blindfolded or have their main eyes closed. The petrifying gaze that medusa are famous for is something that develops over time. Young medusas have a weaker form known as the Gray Gaze, which eventually evolves into the Shadowswift Gaze that can petrify creatures in an instant.</p>
+			<h5>MEDUSA TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Monstrosity</li>
+				<li><strong>Size:</strong> Medium (about 5–6 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Medusa, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p> 
+			<p class="indent"><strong><em>Fearsome Presence.</em></strong> You have proficiency in the Intimidation skill.</p>
+			<p class="indent"><strong><em>Serpentine.</em></strong> You know Serpentine, a sign language conveyed through the motion of the snakes atop your head. Serpentine has no written form and can only be utilized by medusas.</p> 
+			<p class="indent"><strong><em>Petrifying Gaze.</em></strong> You know the <i>Gray Gaze</i> cantrip and can cast it without components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this species). When you reduce a creature to 0 Hit Points with this spell, you can cause it to turn to stone. A creature turned to stone in this way has the Petrified condition.</p>
+			<p class="indent"><strong><em>Medusa's Gift.</em></strong> When you cast <i>Gray Gaze</i>, you can choose to augment it. If a creature fails its saving throw against the augmented spell, it has the Restrained condition for 1 minute instead of having Disadvantage on its next Dexterity saving throw. A Restrained target makes another Constitution saving throw at the end of each of its turns, ending the effect on a success. You must concentrate to maintain the effect. If you lose your Concentration, the creature no longer has the Restrained condition.</p>
+			<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Shadow's Magic.</em></strong> If you have the Spellcasting or the Pact Magic class feature, the spells on the Medusa Spells table are added to the spell list of your spellcasting class. You can cast these spells without Material components.</p>
+			<h5>Harpy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Ensnaring Strike</em></td></tr>
+				<tr><td>2</td><td><em>Hold Person</em></td></tr>
+				<tr><td>3</td><td><em>Hypnotic Pattern</em></td></tr>
+				<tr><td>4</td><td><em>Stoneskin</em></td></tr>
+				<tr><td>5</td><td><em>Hold Person</em></td></tr>
+			</table>
+			<div class="sidebar">
+                <h5>Shadow's Magic</h5>
+                <p>Harpies and Medusas both possess a trait called Shadow's Magic, which adds a set of spells to the spell list of any spellcasting class. While these abilities are resolved exactly like spells, they are supposed to reflect enhanced aspects of the harpy's voice or the medusa's gaze. When a Medusa Wizard uses Shadow's Magic to cast Hypnotic Pattern, they might glare at a group of people, their eyes flaring in iridescent colors. When a Harpy casts Suggestion, they might sing their request, the insidious power of their voice making it a command. Because of this, spells cast in this way don't require all of the usual components. While this is only true for spells on the Shadow's Magic lists, a Harpy or Medusa spellcaster could describe other spells as being manifestations of their voice or gaze. A Medusa Cleric could describe her Guiding Bolt as emerging from her eyes, while a Harpy Bard casting Shatter could describe it as a deadly song. This provides no mechanical benefit, but it's a way to add unique flavor to a character and to present their magic as expanded gifts of the Shadow.</p>
+            </div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Medusa)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_MONSTROSITY" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Medusa)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Medusa)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+			
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_FEARSOME_PRESENCE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SERPENTINE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_MEDUSAS_GIFT" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SHADOWS_MAGIC" />
+		</rules>
+	</element>
+
+	<element name="Fearsome Presence" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_FEARSOME_PRESENCE">
+		<description>
+			<p>You have proficiency in the Intimidation skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Fearsome Presence)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Serpentine" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SERPENTINE">
+		<description>
+			<p>You know Serpentine, a sign language conveyed through the motion of the snakes atop your head. Serpentine has no written form and can only be utilized by medusas.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_VPD_FEQ_LANGUAGE_SERPENTINE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Serpentine)" supports="Custom Race Language||FEQ Serpentine"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+	<element name="Petrifying Gaze" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE">
+		<description>
+			<p>You know the <i>Gray Gaze</i> cantrip and can cast it without components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this species). When you reduce a creature to 0 Hit Points with this spell, you can cause it to turn to stone. A creature turned to stone in this way has the Petrified condition.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_VPD_FEQ_SPELL_GRAY_GAZE" />
+			<select type="Racial Trait" name="Spellcasting Ability (Petrifying Gaze)" supports="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_INTELLIGENCE|ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_WISDOM|ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<div element="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE" />
+		</description>
+		<sheet alt="Petrifying Gaze">
+			<description>You know the Gray Gaze cantrip and can cast it without components. Your spellcasting ability for this spell is Intelligence. When you reduce a creature to 0 HPs with this spell, you can cause it to turn to stone. A creature turned to stone in this way has the Petrified condition.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_WISDOM">
+		<compendium display="false" />
+		<description>
+			<div element="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE" />
+		</description>
+		<sheet alt="Petrifying Gaze">
+			<description>You know the Gray Gaze cantrip and can cast it without components. Your spellcasting ability for this spell is Wisdom. When you reduce a creature to 0 HPs with this spell, you can cause it to turn to stone. A creature turned to stone in this way has the Petrified condition.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<div element="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE" />
+		</description>
+		<sheet alt="Petrifying Gaze">
+			<description>You know the Gray Gaze cantrip and can cast it without components. Your spellcasting ability for this spell is Charisma. When you reduce a creature to 0 HPs with this spell, you can cause it to turn to stone. A creature turned to stone in this way has the Petrified condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Medusa's Gift" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_MEDUSAS_GIFT">
+		<description>
+			<p>When you cast <i>Gray Gaze</i>, you can choose to augment it. If a creature fails its saving throw against the augmented spell, it has the Restrained condition for 1 minute instead of having Disadvantage on its next Dexterity saving throw. A Restrained target makes another Constitution saving throw at the end of each of its turns, ending the effect on a success. You must concentrate to maintain the effect. If you lose your Concentration, the creature no longer has the Restrained condition.</p>
+			<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you cast Gray Gaze, you can choose to augment it. If a creature fails its saving throw against the augmented spell, it has the Restrained condition for 1 minute instead of having Disadvantage on its next Dexterity saving throw. A Restrained target makes another Constitution saving throw at the end of each of its turns, ending the effect on a success. You must concentrate to maintain the effect. If you lose your Concentration, the creature no longer has the Restrained condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Shadow's Magic" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SHADOWS_MAGIC">
+		<description>
+			<p>If you have the Spellcasting or the Pact Magic class feature, the spells on the Medusa Spells table are added to the spell list of your spellcasting class. You can cast these spells without Material components.</p>
+			<h5>Harpy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Ensnaring Strike</em></td></tr>
+				<tr><td>2</td><td><em>Hold Person</em></td></tr>
+				<tr><td>3</td><td><em>Hypnotic Pattern</em></td></tr>
+				<tr><td>4</td><td><em>Stoneskin</em></td></tr>
+				<tr><td>5</td><td><em>Hold Person</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>If you have the Spellcasting or the Pact Magic class feature, the spells on the Medusa Spells table are added to the spell list of your spellcasting class. You can cast these spells without Material components.</description>
+		</sheet>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_ESNARING_STRIKE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_HOLD_PERSON</extend>
+			<extend>ID_WOTC_PHB24_SPELL_HYPNOTIC_PATTERN</extend>
+			<extend>ID_WOTC_PHB24_SPELL_STONESKIN</extend>
+			<extend>ID_WOTC_PHB24_SPELL_HOLD_MONSTER</extend>
+		</spellcasting>
+	</element>
+	
+</elements>

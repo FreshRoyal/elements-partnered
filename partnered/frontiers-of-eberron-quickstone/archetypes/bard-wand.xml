@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Wands</name>
+		<description>College of Wands from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="bard-wands.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/bard-wands.xml" />
+		</update>
+	</info>
+
+	<element name="College of Wands" type="Archetype" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_BARD_COLLEGE_OF_WANDS">
+		<supports>Bard Subclass</supports>
+		<description>
+			<p class="flavor">Wield Deadly Magic with Style and Panache</p>
+			<p>For a Bard of the College of Wands, spellcasting is an art and every duel is a symphony. Whether they use their skills as Entertainers, Smugglers, or Spies, a Bard can draw applause from an audience even as they lay an enemy low with a distracting word, a perfect gesture, and a surge of arcane power.</p>
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_BONUS_CANTRIP" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_WANDSLINGERS_PRESENCE" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AT_YOUR_FINGERTIPS" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_GOT_YOUR_BACK" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AINT_BIG_ENOUGH_FOR_THE_BOTH_OF_US" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_BONUS_CANTRIP" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_WANDSLINGERS_PRESENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AT_YOUR_FINGERTIPS" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_GOT_YOUR_BACK" level="6" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AINT_BIG_ENOUGH_FOR_THE_BOTH_OF_US" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Bonus Cantrip" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_BONUS_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the Sorcerer spell list (see the Sorcerer class's section of the <i>Player's Handbook</i> for a list of Sorcerer spells). <i>Fire Bolt</i> is recommended. The cantrip counts as a Bard cantrip for you, but it doesn't count against the number of Bard cantrips you know.</p>
+			<p class="indent">Additionally, you can use a Wand, Rod, or Orb as a Spellcasting Focus for your Bard spells.</p>
+		</description>
+		<sheet alt="Bonus Cantrip">
+			<description>You can use a Wand, Rod, or Orb as a Spellcasting Focus for your Bard spells.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Sorcerer Cantrip (Bonus Cantrip)" number="2" supports="Sorcerer&amp;&amp;0" spellcasting="Bard" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Wandslinger's Presence" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_WANDSLINGERS_PRESENCE">
+		<description>
+			<p>You know how to talk yourself up and tear your opponents down. If you speak to a creature for at least 1 minute, you can attempt to distract and rattle them when the call to action finally comes. If the creature rolls an Initiative count equal to or higher than your own, it must make a Wisdom saving throw against your spell save DC. On a failed save, the creature's Initiative is reduced to be equal to yours, and it acts immediately after you in the Initiative order.</p>
+		</description>
+		<sheet alt="Wandslinger's Presence">
+			<description>If you speak to a creature for at least 1 minute, you can attempt to distract and rattle them when the call to action finally comes. If the creature rolls an Initiative count equal to or higher than your own, it must make a Wisdom saving throw (DC {{bard:spellcasting:dc}}). On a failed save, the creature's Initiative is reduced to be equal to yours, and it acts immediately after you in the Initiative order.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: At Your Fingertips" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AT_YOUR_FINGERTIPS">
+		<description>
+			<p>When you hit a creature with a Bard cantrip or when a creature fails a saving throw against one of your Bard cantrips, you can expend one use of your Bardic Inspiration to deal an extra 2d6 damage to that creature. You can do so only once per round, on your turn.</p>
+			<p class="indent">In addition, if an allied creature within 10 feet of you takes damage from a creature that you can see within 60 feet of yourself, you can use your Reaction to cause the damaging creature to take 1d4 Fire or Necrotic damage (your choice). The damage increases when you reach Barbarian levels 6 (1d6), 10 (1d8), 14 (1d10) and 20 (1d12).</p>
+		</description>
+		<sheet alt="At Your Fingertips" usage="Bardic Inspiration - 1/Turn">
+			<description>When you hit a creature with a Bard cantrip or when a creature fails a saving throw against one of your Bard cantrips, you can expend one use of your Bardic Inspiration to deal an extra {{feq:at your fingertips:dice}}d6 damage to that creature.</description>
+		</sheet>
+		<rules>
+			<stat name="feq:at your fingertips:dice" value="2" bonus="base" />
+			<stat name="feq:at your fingertips:dice" value="3" bonus="base" level="5" />
+			<stat name="feq:at your fingertips:dice" value="5" bonus="base" level="10" />
+			<stat name="feq:at your fingertips:dice" value="8" bonus="base" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Got Your Back" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_GOT_YOUR_BACK">
+		<description>
+			<p>You know how to cast with style, and your allies can take heart from your displays of grit or showmanship. If you expend a use of your Bardic Inspiration to improve the damage of a cantrip with your At Your Fingertips feature, you can use your Bonus Action on the same turn to grant a creature you can see within 60 feet of yourself Advantage on the next saving throw it makes for 1 minute.</p>
+		</description>
+		<sheet alt="Got Your Back" action="Bonus Action">
+			<description>If you expend a use of your Bardic Inspiration to improve the damage of a cantrip with your At Your Fingertips feature, you can use your Bonus Action on the same turn to grant a creature you can see within 60 ft of yourself Advantage on the next saving throw it makes for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Ain't Big Enough for the Both of Us" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AINT_BIG_ENOUGH_FOR_THE_BOTH_OF_US">
+		<description>
+			<p>Your wandplay is legendary, and your territory is assured. Whenever you expend a use of your Bardic Inspiration or when a creature within 60 feet of you adds one of your Bardic Inspiration dice to a D20 Test, one creature of your choice that can see you within 60 feet of yourself must make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of its next turn. If the target already has the Frightened condition, it must immediately use its Reaction, if available, to move as far as away from you as it can, using the safest route.</p>
+		</description>
+		<sheet alt="Ain't Big Enough for the Both of Us">
+			<description>Whenever you expend a use of your Bardic Inspiration or when a creature within 60 ft of you adds one of your Bardic Inspiration dice to a D20 Test, one creature of your choice that can see you within 60 feet of yourself must make a Wisdom saving throw (DC {{bard:spellcasting:dc}}). On a failed save, the target has the Frightened condition until the end of its next turn. If the target already has the Frightened condition, it must immediately use its Reaction, if available, to move as far as away from you as it can, using the safest route.</description>
+		</sheet>
+	</element>
+	
+</elements>

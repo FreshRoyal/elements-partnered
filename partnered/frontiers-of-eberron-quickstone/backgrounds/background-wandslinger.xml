@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wandslinger</name>
+		<description>Wandslinger from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="background-wandslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-wandslinger.xml" />
+		</update>
+	</info>
+
+	<element name="Wandslinger" type="Background" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_BACKGROUND_WANDSLINGER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Magic Initiate (Wizard)</li>
+				<li><strong>Skill Proficiencies:</strong> Intimidation and Sleight of Hand</li>
+				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set or Woodcarver's Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Arcane Focus, Gaming Set, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Bows and blades are tools of the past. Magic is the future, and any capable combatant needs to know how to cast a cantrip. You're quick with a wand and a simple spell. Did you serve in the Last War? Were you a smuggler, or an enforcer in the criminal underworld? Whatever your past, you know that there's always opportunities for someone with steady hands and good aim.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Intelligence, Charisma, Magic Initiate (Wizard) Feat, Intimidation and Sleight of Hand Skills, Gaming Set or Woodcarver's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_INT_CHA" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_WIZARD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" /> 
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Gaming Set or Woodcarver's Tools (Wandslinger)" supports="Gaming Set||FEQ Woodcarvers Tools" />	
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS">
+		<supports>FEQ Woodcarvers Tools</supports>
+	</append>
+
+	<element name="Background Equipment Pack (Wandslinger)" type="Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ITEM_BACKGROUND_EQUIPMENT_PACK_WANDSLINGER">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Wandslinger Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• 2 Pouches</p>
+			<p class="indent">• Teaveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include an Arcane Focus, a Gaming Set, or 16 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item amount="2">ID_WOTC_PHB24_ITEM_POUCH</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+</elements>

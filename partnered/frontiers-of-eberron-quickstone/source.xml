@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/source.xml" />
+		</update>
+	</info>
+	<element name="Frontiers of Eberron: Quickstone" type="Source" source="Core" id="ID_VPD_SOURCE_FRONTIERS_OF_EBERRON_QUICKSTONE">
+		<description>
+			<p>Journey across the Western Frontier, the contested land that lies between the ancient kingdom of Breland and the rising nation of Droaam. <i>Frontiers of Eberron: Quickstone</i> takes a deep dive into this untamed region, exploring the towns and denizens of this dangerous land. Discover new character options and play as a harpy, gargoyle, or medusa "monster" species in the introductory "Heart of Stone" adventure, all included in this adventure sourcebook!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">FEQ</set>
+			<set name="url">https://www.dmsguild.com/en/product/493263/frontiers-of-eberron-roll20-adventure-bundle?filters=0_0_45393_0_0_0_0_0</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/FEQ.png</set>
+			<set name="author" abbreviation="VPD" url="https://www.visionarypnd.com/">Visionary Production and Design</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20240902</set>
+		</setters>
+	</element>
+
+</elements>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Stone Sovereign Patron</name>
+		<description>Stone Sovereign Patron from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="warlock-stone-sovereign.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/warlock-stone-sovereign.xml" />
+		</update>
+	</info>
+
+	<element name="Stone Sovereign Patron" type="Archetype" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_WARLOCK_STONE_SOVEREIGN_PATRON">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p class="flavor">Hear the Whispering of the Stones</p>
+			<p>You have listened to the will of the stone, and made a pact with one of Eberron's great earthen powers. The whispers of the daelkyr Orlassk corrupt many Warlocks to their cause, but similar magics may be the gifts of the greedy fey King Grayfinger or even the medusa Queen Sheshka of Cazhaak Draal. The gnomes of Lorghalan draw their power from their friendship with the earth elementals of their island; perhaps you have made peace with the earth itself.</p>
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_ETERNITY_IN_STONE" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SPEAKER" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SOVEREIGN_SPELLS" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_FORM_OF_STONE" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONES_EMBRACE" />
+			<div element="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SERVANT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_ETERNITY_IN_STONE" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SPEAKER" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SOVEREIGN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_FORM_OF_STONE" level="6" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONES_EMBRACE" level="10" />
+			<grant type="Archetype Feature" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SERVANT" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Eternity in Stone" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_ETERNITY_IN_STONE">
+		<description>
+			<p>When you reduce a creature to 0 Hit Points, you can cause it to turn to stone. If you do so, you gain Temporary Hit Points equal to 1d10 + your Warlock level. A creature turned to stone in this way has the Petrified condition.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Eternity in Stone" usage="1/Short Rest">
+			<description>When you reduce a creature to 0 HPs, you can cause it to turn to stone. If you do so, you gain THPs equal to 1d10 + {{level:warlock}}. A creature turned to stone in this way has the Petrified condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Stone Speaker" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SPEAKER">
+		<description>
+			<p>Your pact grants you the ability to commune with earth and stone. As a Magic action, you imbue stones in an immobile 30-foot Emanation with limited sentience, giving them the ability to communicate with you. You can question stones about events in the spell's area within the past day, gaining information about creatures that have passed, items that might have been removed from the area, and other circumstances.</p>
+			<p class="indent">If an Earth Elemental or a creature with the Petrified condition is in the area, you can communicate with it as if you shared a language, but you gain no magical ability to influence it.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Stone Speaker" action="Action" usage="1/Long Rest">
+			<description>You imbue stones in an immobile 30-ft Emanation with limited sentience, giving them the ability to communicate with you. You can question stones about events in the spell's area within the past day, gaining information about creatures that have passed, items that might have been removed from the area, and other circumstances. &#13;
+			If an Earth Elemental or a creature with the Petrified condition is in the area, you can communicate with it as if you shared a language, but you gain no magical ability to influence it.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Stone Sovereign Spells" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SOVEREIGN_SPELLS">
+		<description>
+			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Stone Sovereign Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Future You Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Absorb Elements, Earthbind, Earth Tremor, Spike Growth</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Magic Circle, Slow</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Stone Shape, Stoneskin</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Bigby's Hand, Wall of Stone</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ABSORB_ELEMENTS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EARTHBIND" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EARTH_TREMOR" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIKE_GROWTH" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_CIRCLE" level="5" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLOW" level="5" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONE_SHAPE" level="7" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONESKIN" level="7" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BIGBYS_HAND" level="9" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_STONE" level="9" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Form of Stone" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_FORM_OF_STONE">
+		<description>
+			<p>Stone is no prison to you. Whenever you have the Petrified condition, you are aware of your surroundings and you have Immunity to Bludgeoning, Piercing, and Slashing damage.</p>
+			<p class="indent">Additionally, you have learned to take on a stone form to protect yourself from injury. As a Reaction when you take damage, you can give yourself the Petrified condition until the start of your next turn. The Petrified condition applies before you take the triggering damage, possibly granting Resistance or Immunity to that damage. When the Petrified condition ends, you can choose to emerge from a stone surface into an unoccupied space you can see within 30 feet of yourself.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Stone Speaker" action="Action" usage="1/Short Rest">
+			<description>Whenever you have the Petrified condition, you are aware of your surroundings and you have Immunity to Bludgeoning, Piercing, and Slashing damage. &#13;
+			Additionally, you have learned to take on a stone form to protect yourself from injury. As a Reaction when you take damage, you can give yourself the Petrified condition until the start of your next turn. The Petrified condition applies before you take the triggering damage, possibly granting Resistance or Immunity to that damage. When the Petrified condition ends, you can choose to emerge from a stone surface into an unoccupied space you can see within 30 feet of yourself.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Stone's Embrace" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONES_EMBRACE">
+		<description>
+			<p>You always have the <i>Meld into Stone</i> spell prepared. When you cast <i>Meld into Stone</i>, you can choose up to five willing creatures within 5 feet of you to also gain the benefits of the spell. Each creature must be touching a stone object or surface large enough to fully contain their body. Affected creatures can end the effect on themselves early by using 5 feet of movement to leave the stone where they entered it.</p>
+			<p class="indent">Creatures who finish a Short or Long Rest while under the effect of your <i>Meld into Stone</i> spell gain Resistance against the first instance of damage they take after leaving the stone.</p>
+		</description>
+		<sheet alt="Stone's Embrace" usage="1/Short Rest">
+			<description>When you cast Meld into Stone, you can choose up to five willing creatures within 5 ft of you to also gain the benefits of the spell. Each creature must be touching a stone object or surface large enough to fully contain their body. Affected creatures can end the effect on themselves early by using 5 ft of movement to leave the stone where they entered it. &#13;
+			Creatures who finish a Short or Long Rest while under the effect of your Meld into Stone spell gain Resistance against the first instance of damage they take after leaving the stone.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELD_INTO_STONE" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Stone Servant" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SERVANT">
+		<description>
+			<p>You gain the ability to control the actions of Petrified creatures, while bestowing upon them the power of your patron. One creature with the Petrified condition that you touch becomes an Earth Elemental Spirit under your control as if you had cast the <i>Summon Elemental</i> spell at 6th-level. The creature's size does not change and you do not need to maintain Concentration. The transformation lasts until a <i>Greater Restoration</i> spell is cast on the creature, until the Elemental Spirit is reduced to 0 Hit Points, or until you use this feature again.</p>
+		</description>
+		<sheet alt="Stone Servant">
+			<description>One creature with the Petrified condition that you touch becomes an Earth Elemental Spirit under your control as if you had cast the Summon Elemental spell at 6th-level. The creature's size does not change and you do not need to maintain Concentration. The transformation lasts until a Greater Restoration spell is cast on the creature, until the Elemental Spirit is reduced to 0 HPs, or until you use this feature again.</description>
+		</sheet>
+	</element>
+	
+</elements>

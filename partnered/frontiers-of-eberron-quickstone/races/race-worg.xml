@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Worg</name>
+		<description>Worg from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="race-worg.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-worg.xml" />
+		</update>
+	</info>
+
+	<element name="Worg" type="Race" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACE_WORG">
+		<description>
+			<p>While sometimes mistaken for large wolves, worgs are a unique species of canid predator possessing keen intelligence and the power of speech. Worg senses are sharper than those of humans, and they feel a deep connection to the natural world; they delight in scents and sounds that others around them may not even notice. The worgs of the Watching Wood are devoted to the Devourer and the Fury, and this faith encourages them to rely on their instincts and intuition, as well as taking joy in the hunt and strengthening their pack.</p>
+			<p class="indent">The worgs of the Watching Wood are more compact than some other strains of the species. They are Medium creatures, though they can pull heavy loads and carry a Medium creature as a rider. While they have no hands and typically have little interest in material goods, the smiths of Maenya's Fist have developed specialized armor for worgs, along with Steel Jaws that strengthen a worg's bite and which can be enchanted like any other weapon.</p>
+			<h5>WORG TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Monstrosity</li>
+				<li><strong>Size:</strong> Medium (about 4–5 feet tall)</li>
+				<li><strong>Speed:</strong> 40 feet</li>
+			</ul>
+			<p>As a Worg, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p> 
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill, and you have Advantage on Wisdom (Perception) checks that rely on hearing or smell.</p> 
+			<p class="indent"><strong><em>Bite.</em></strong> Your formidable jaws are a natural weapon, which you can use to make Unarmed Strikes. If you hit with them, you deal Piercing damage equal to 1d8 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike.</p> 
+			<p class="indent"><strong><em>For the Pack.</em></strong> You can use the Help action as a Bonus Action.</p>
+			<p class="indent"><strong><em>Natural Armor.</em></strong> Your dense fur and thick hide provide you with natural armor. While you aren't wearing armor, your base Armor Class equals 12 plus your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Quadruped.</em></strong> You have several traits based on your quadrupedal body shape.</p>
+			<ul>
+				<li>You cannot hold items in your paws, and you cannot wield weapons or a Shield unless otherwise noted in the weapon's description (see Steel Jaws).</li>
+				<li>You can perform the Somatic components of spells with your front paws.</li>
+				<li>You have Disadvantage on ability checks that require fine manipulation.</li>
+				<li>You can carry a rider of Medium size or smaller. You also count as one size larger when determining your carrying capacity.</li>
+				<li>You cannot wear armor designed for humanoids, you must wear barding instead. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.</li>
+				<li>Any climb that requires hands is especially difficult for you. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Worg)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="40" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_MONSTROSITY" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Worg)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Worg)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+			
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_BITE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_FOR_THE_PACK" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_QUADRUPED" />
+		</rules>
+	</element>
+
+	<element name="Keen Senses" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_KEEN_SENSES">
+		<description>
+			<p>You have Advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+		</description>
+		<sheet>
+			<description>ou have Advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Keen Senses)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	
+	<element name="Bite" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_BITE">
+		<description>
+			<p>Your formidable jaws are a natural weapon, which you can use to make Unarmed Strikes. If you hit with them, you deal Piercing damage equal to 1d8 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>You have jaws that you can use to make Unarmed Strikes. When you hit with it, the strike deals 1d8 + {{strength:modifier}} Piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="For the Pack" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_FOR_THE_PACK">
+		<description>
+			<p>You can use the Help action as a Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can use the Help action.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Armor" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_NATURAL_ARMOR">
+		<description>
+			<p>Your dense fur and thick hide provide you with natural armor. While you aren't wearing armor, your base Armor Class equals 12 plus your Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>When you aren't wearing armor, your base AC is {{ac:natural armor:worg}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:worg" value="12" bonus="base" />
+			<stat name="ac:natural armor:worg" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="ac:natural armor:worg" bonus="calculation" alt="Natural Armor (Worg)" />
+		</rules>
+	</element>
+
+	<element name="Quadruped" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_QUADRUPED">
+		<description>
+			<p>You have several traits based on your quadrupedal body shape.</p>
+			<ul>
+				<li>You cannot hold items in your paws, and you cannot wield weapons or a Shield unless otherwise noted in the weapon's description (see Steel Jaws).</li>
+				<li>You can perform the Somatic components of spells with your front paws.</li>
+				<li>You have Disadvantage on ability checks that require fine manipulation.</li>
+				<li>You can carry a rider of Medium size or smaller. You also count as one size larger when determining your carrying capacity.</li>
+				<li>You cannot wear armor designed for humanoids, you must wear barding instead. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.</li>
+				<li>Any climb that requires hands is especially difficult for you. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You cannot hold items in your paws, and you cannot wield weapons or a Shield unless otherwise noted in the weapon's description. &#13;
+			You can perform the Somatic components of spells with your front paws. &#13;
+			You have Disadvantage on ability checks that require fine manipulation. &#13;
+			You can carry a rider of Medium size or smaller. &#13;
+			You cannot wear armor designed for humanoids, you must wear barding instead. The cost is 4 times the equivalent armor made for humanoids, and it weighs twice as much. &#13;
+			When you make a climb that requires hands, each ft of movement costs you 4 extra ft, instead of the normal 1 extra ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	
+</elements>

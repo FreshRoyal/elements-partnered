@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gargoyle</name>
+		<description>Gargoyle from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="race-gargoyle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-gargoyle.xml" />
+		</update>
+	</info>
+
+	<element name="Gargoyle" type="Race" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACE_GARGOYLE">
+		<description>
+			<p>Gargoyles are indistinguishable from stone statues... until they move. In Eberron, the first gargoyles were carved by Dhakaani goblins, but it was the daelkyr Orlassk who brought them to life. The oldest gargoyles have been in a state of torpor for thousands of years. Now they have risen to carve out a place of their own in the new nation of Droaam.</p>
+			<p class="indent">Gargoyles are humanoids carved from stone. The horned, winged form often associated with the gargoyle is a common design; in Eberron the Dhakaani placed these fierce figures on fortresses. However, gargoyles don't have to have horns or wings, and they can alter their form over time. Gargoyles reproduce by imbuing a sliver of their life force into a stone and burying it in gravel; this seed assimilates mass from the loose stone and builds its final form.</p>
+			<p class="indent">Gargoyles have no need of food or drink. They are nearly immune to the passage of time and can remain standing still indefinitely. For any gargoyle, a fundamental question is why they choose to move at all. What drives them? There are a few common archetypes. Seekers are driven by curiosity, and love seeing new places and learning new things. Guardians devote themselves to protecting a person, place, or concept. Movers enjoy motion itself—flight, fighting, dancing—and often become scouts or soldiers. Thinkers are rarely seen, because they have the least reason to actually move; they live to ponder philosophies and ideas. A statue in a temple or a library could be a gargoyle priest or sage, lost in contemplation.</p>
+			<h5>GARGOYLE TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Elemental</li>
+				<li><strong>Size:</strong> Medium (about 5–7 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Gargoyle, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Elemental Nature.</em></strong> You are a creature of living stone, which provides the following benefits.</p>
+			<ul>
+				<li>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</li>
+				<li>You don't need to eat, drink, or breathe. You do not gain Exhaustion levels due to Dehydration, Malnutrition, or Suffocation.</li>
+				<li>You are immune to disease.</li>
+				<li>You don't need to sleep, and magic can't put you to sleep.</li>
+				<li>You cannot be subjected to the Petrified condition against your will.</li>
+			</ul>
+			<p class="indent"><strong><em>False Appearance.</em></strong> While you remain motionless, you are indistinguishable from an inanimate statue.</p>
+			<p class="indent"><strong><em>Sentry's Rest.</em></strong> You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>Stoneskin.</em></strong> Your thick stone hide provides you with natural armor. While you aren't wearing armor, your base Armor Class equals 13 plus your Dexterity modifier. You can use a Shield and still gain this benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Gargoyle)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ELEMENTAL" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Gargoyle)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Gargoyle)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+			
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_ELEMENTAL_NATURE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_FALSE_APPEARANCE" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_SENTRYS_REST" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_STONESKIN" />
+		</rules>
+	</element>
+
+	<element name="Elemental Nature" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_ELEMENTAL_NATURE">
+		<description>
+			<p>You are a creature of living stone, which provides the following benefits.</p>
+			<ul>
+				<li>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</li>
+				<li>You don't need to eat, drink, or breathe. You do not gain Exhaustion levels due to Dehydration, Malnutrition, or Suffocation.</li>
+				<li>You are immune to disease.</li>
+				<li>You don't need to sleep, and magic can't put you to sleep.</li>
+				<li>You cannot be subjected to the Petrified condition against your will.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws you make to avoid or end the Poisoned condition. You also don't need to eat, drink, or breathe. You do not gain Exhaustion levels due to Dehydration, Malnutrition, or Suffocation. You are immune to disease. You also don't need to sleep, and magic can't put you to sleep. You cannot be subjected to the Petrified condition against your will.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="False Appearance" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_FALSE_APPEARANCE">
+		<description>
+			<p>While you remain motionless, you are indistinguishable from an inanimate statue.</p>
+		</description>
+		<sheet>
+			<description>While you remain motionless, you are indistinguishable from an inanimate statue.</description>
+		</sheet>
+	</element>
+
+	<element name="Sentry's Rest" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_SENTRYS_REST">
+		<description>
+			<p>You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</description>
+		</sheet>
+	</element>
+
+	<element name="Stoneskin" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_STONESKIN">
+		<description>
+			<p>Your thick stone hide provides you with natural armor. While you aren't wearing armor, your base Armor Class equals 13 plus your Dexterity modifier. You can use a Shield and still gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>When you aren't wearing armor, your base AC is {{ac:natural armor:gargoyle}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:gargoyle" value="13" bonus="base" />
+			<stat name="ac:natural armor:gargoyle" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="ac:natural armor:gargoyle" bonus="calculation" alt="Natural Armor (Gargoyle)" />
+		</rules>
+	</element>
+	
+</elements>

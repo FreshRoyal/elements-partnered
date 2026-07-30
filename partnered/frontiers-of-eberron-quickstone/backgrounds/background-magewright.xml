@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magewright</name>
+		<description>Magewright from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="background-magewright.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-magewright.xml" />
+		</update>
+	</info>
+
+	<element name="Magewright" type="Background" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_BACKGROUND_MAGEWRIGHT">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Wizard)</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana and Insight</li>
+				<li><strong>Tool Proficiency:</strong> Choose one kind of Artisan's Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Magic is part of everyday life in Eberron. <i>Prestidigitation</i> is an invaluable cantrip, whether you're a cook using it to heat and flavor food or a chimney sweep using it to wipe away dirt with a gesture. A blacksmith who doesn't know <i>Mending</i> is woefully unprepared. You could be an entertainer using <i>Minor Image</i> and <i>Silent Image</i> for your performances, or a courier relying on <i>Longstrider</i>. Consider the career you once followed, and choose a set of Artisan's Tools, cantrips, and a spell that could help with that work.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Wisdom, Magic Initiate (Wizard) Feat, Arcana and Insight Skills, Artisan's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_CON_INT_WIS" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_WIZARD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" /> 
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Artisan's Tools (Magewright)" supports="Artisan tools" />	
+		</rules>
+	</element>
+
+	<element name="Background Equipment Pack (Magewright)" type="Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ITEM_BACKGROUND_EQUIPMENT_PACK_MAGEWRIGHT">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Magewright Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• 2 Pouches</p>
+			<p class="indent">• Traveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include Artisan's Tools or 32 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item amount="2">ID_WOTC_PHB24_ITEM_POUCH</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+</elements>

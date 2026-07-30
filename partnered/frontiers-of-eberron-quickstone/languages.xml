@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/languages.xml" />
+		</update>
+	</info>
+
+	<element name="High Kaluu" type="Language" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_LANGUAGE_HIGH_KALUU">
+		<supports>Exotic, Rare</supports>
+		<description>
+			<p>Spoken only in the Venomous Demesne; it has its roots in Draconic, Infernal, and Riedran.</p>
+		</description>
+		<setters>
+			<set name="speakers">Venomous Demesne</set>
+		</setters>
+	</element>
+
+	<element name="Serpentine" type="Language" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_LANGUAGE_SERPENTINE">
+		<supports>Exotic, Rare, FEQ Serpentine</supports>
+		<description>
+			<p>Serpentine is the language of the medusas of Cazhaak Draal. It blends traditional speech with the hissing and writhing motions of the serpent mane. There's a distinct subset of Serpentine that relies solely on the motions of the serpents, allowing medusas within 60 feet of each other to silently communicate, provided that they can see one another. Any creature can learn Serpentine as a rare language or understand it through the use of magic, but only a creature with a functioning serpent mane can speak Serpentine.</p>
+		</description>
+		<setters>
+			<set name="speakers">Medusas</set>
+		</setters>
+	</element>
+
+	<element name="Stonegrind" type="Language" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_LANGUAGE_STONEGRIND">
+		<supports>Exotic, Rare</supports>
+		<description>
+			<p>The language of the gargoyles of Grimstone, which involves grinding stone surfaces together; other creatures can learn to understand it, but cannot speak it without a set of stones.</p>
+		</description>
+		<setters>
+			<set name="speakers">Gargoyles of Grimstone</set>
+		</setters>
+	</element>
+
+	<element name="Tauric" type="Language" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_LANGUAGE_TAURIC">
+		<supports>Exotic, Rare</supports>
+		<description>
+			<p>The language of the minotaur clans of the Barrens.</p>
+		</description>
+		<setters>
+			<set name="speakers">Minotaurs</set>
+		</setters>
+	</element>
+
+	<element name="Wuura'gaa" type="Language" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_LANGUAGE_WUURA_GAA">
+		<supports>Exotic, Rare</supports>
+		<description>
+			<p>The native tongue of the worgs of the Watching Wood.</p>
+		</description>
+		<setters>
+			<set name="speakers">Worgs of the Watching Wood</set>
+		</setters>
+	</element>
+
+</elements>

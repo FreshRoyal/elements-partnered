@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapon Masteries</name>
+		<description>Weapon Masteries from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/weapon-masteries.xml" />
+		</update>
+	</info>
+
+	<element name="Steel Jaws (Topple)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_STEEL_JAWS_TOPPLE">
+		<supports>Weapon Mastery, Simple, Melee</supports>
+		<requirements>ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 + the ability modifier used to make the attack roll and your PB). On a failed save, the creature has the Prone condition.</description>
+		</sheet>
+	</element>
+	
+	<!--Arcane Focus Weapon Masteries-->
+	<element name="Wands as Weapons" type="Information" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_INFORMATION_WANDS_AS_WEAPONS">
+		<description>
+			<p>Magic is a part of everyday life in the Five Nations. In the wake of the Last War, wandslingers have begun to displace traditional archers. But there are no rules that make a wandslinger's choice of weapon matter—there is no mechanical difference between using a Wand or a Staff. However, the 2024 version of the fifth edition <i>Player's Handbook</i> introduces Weapon Masteries—properties that reflect the full potential of a weapon, which can be unlocked by a skilled combatant. Adding Mastery properties to Arcane Focuses is a way to embrace the concept that Wands and the like are <i>weapons</i> in Eberron and to provide a distinct flavor to each focus. With these rules, the Wand is swift and vexing, the Rod staggers a target with brute force, and the Staff shoves them back with the power of its blast.</p>
+			<p class="indent">This is an optional rule that must be approved by the DM. If it is used, add the following Masteries to spellcasting focuses:</p>
+			<ul>
+				<li><b>Wands</b> have the <b>Vex</b> property.</li>
+				<li><b>Rods</b> have the <b>Slow</b> property.</li>
+				<li><b>Staffs</b> have the <b>Push</b> property.</li>
+				<li><b>Orbs</b> and <b>Crystals</b> have the <b>Sap</b> property.</li>
+			</ul>
+			<p>These variants are treated just like regular weapons: a character must have the Weapon Mastery feature and choose the specific type of arcane focus to use with it. The Mastery property <b>can only be used when the character casts a cantrip that requires an attack roll</b>: they do not apply to any other type of spellcasting.</p>
+		</description>
+	</element>
+	
+	<element name="Wand (Vex)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_WAND_VEX">
+		<supports>Weapon Mastery</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_INFORMATION_WANDS_AS_WEAPONS" />
+			</div>
+		</description>
+		<sheet>
+			<description>If you hit a creature with a cantrip using this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Rod (Slow)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_ROD_SLOW">
+		<supports>Weapon Mastery</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_INFORMATION_WANDS_AS_WEAPONS" />
+			</div>
+		</description>
+		<sheet>
+			<description>If you hit a creature with a cantrip using this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Staff (Push)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_STAFF_PUSH">
+		<supports>Weapon Mastery</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_INFORMATION_WANDS_AS_WEAPONS" />
+			</div>
+		</description>
+		<sheet>
+			<description>If you hit a creature with a cantrip using this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</description>
+		</sheet>
+	</element>
+
+	<element name="Orb (Sap)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_ORB_SAP">
+		<supports>Weapon Mastery</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_INFORMATION_WANDS_AS_WEAPONS" />
+			</div>
+		</description>
+		<sheet>
+			<description>If you hit a creature with a cantrip using this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Crystal (Sap)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_CRYSTAL_SAP">
+		<supports>Weapon Mastery</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+			<div class="sidebar">
+				<div element="ID_VPD_FEQ_INFORMATION_WANDS_AS_WEAPONS" />
+			</div>
+		</description>
+		<sheet>
+			<description>If you hit a creature with a cantrip using this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+</elements>

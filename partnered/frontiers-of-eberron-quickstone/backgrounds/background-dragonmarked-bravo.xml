@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragonmarked Bravo</name>
+		<description>Dragonmarked Bravo from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="background-dragonmarked-bravo.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-bravo.xml" />
+		</update>
+	</info>
+
+	<element name="Dragonmarked Bravo" type="Background" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_BACKGROUND_DRAGONMARKED_BRAVO">
+		<requirements>ID_INTERNAL_GRANT_RACE_DWARF||ID_INTERNAL_GRANT_RACE_ELF||ID_INTERNAL_GRANT_RACE_GNOME||ID_INTERNAL_GRANT_RACE_HALF_ELF||ID_INTERNAL_GRANT_RACE_HALF_ORC||ID_INTERNAL_GRANT_RACE_HALFLING||ID_INTERNAL_GRANT_RACE_HUMAN||ID_INTERNAL_GRANT_RACE_ORC</requirements>
+		<prerequisite>Member of appropriate species</prerequisite>
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</li>
+				<li><strong>Feat:</strong> Lesser Dragonmark</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics and Intimidation</li>
+				<li><strong>Tool Proficiency:</strong> As indicated on the Dragonmarked Backgrounds table</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Spear, Light Crossbow, 20 Bolts, Quiver, Traveler's Clothes, Dragonmarked Signet, Tool as indicated on the Dragonmarked Backgrounds table, 12 GP; or (B) 50 GP</li>
+			</ul>
+			<h5>Dragonmarked Backgrounds</h5>
+			<table>
+				<thead>
+					<tr><td>Lesser Dragonmark</td><td>Prerequisite</td><td>House</td><td>Tool Proficiency</td></tr>
+				</thead>
+				<tr><td>Detection</td><td>Khoravar (Half-Elf)</td><td>Medani</td><td><em>Choose one kind of Gaming Set</em></td></tr>
+				<tr><td>Finding</td><td>Human, Orc, Half-Orc</td><td>Tharashk</td><td><em>Choose one kind of Gaming Set</em></td></tr>
+				<tr><td>Handling</td><td>Human</td><td>Vadalis</td><td>Leatherworker's Tools</td></tr>
+				<tr><td>Healing</td><td>Halfling</td><td>Jorasco</td><td>Herbalism Kit</td></tr>
+				<tr><td>Hospitality</td><td>Halfling</td><td>Ghallanda</td><td><em>Choose Brewer's Supplies or Cook's Utensils</em></td></tr>
+				<tr><td>Making</td><td>Human</td><td>Cannith</td><td><em>Choose one kind of Artisan's Tools</em></td></tr>
+				<tr><td>Passage</td><td>Human</td><td>Orien</td><td>Choose one kind of Gaming Set</td></tr>
+				<tr><td>Scribing</td><td>Gnome</td><td>Sivis</td><td>Calligrapher's Supplies</td></tr>
+				<tr><td>Sentinel</td><td>Human</td><td>Deneith</td><td><em>Choose one kind of Gaming Set</em></td></tr>
+				<tr><td>Shadow</td><td>Elf</td><td>Phiarlan or Thuranni</td><td><em>Choose one kind of Artisan's Tools</em></td></tr>
+				<tr><td>Storm</td><td>Khoravar (Half-Elf)</td><td>Lyrandar</td><td>Navigator's Tools</td></tr>
+				<tr><td>Warding</td><td>Dwarf</td><td>Kundarak</td><td>Thieves' Tools</td></tr>
+			</table>
+			<p>Your work for your house took advantage of your strength and speed. Were you a mercenary fighting in the Last War? A guardian protecting your family's assets and interests? A laborer moving crates in a warehouse? You're a dragonmarked heir and still have good standing with your family, but you find the freewheeling life of an adventurer to be more compelling than following all the rules and regulations of one of the house guilds.</p>
+			<div class="reference">
+				<div element="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Charisma, Lesser Dragonmark Feat, Athletics and Intimidation Skills, Tool</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_CHA" />
+			<grant type="Feat" id="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" /> 
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			
+			<select type="Proficiency" name="Gaming Set (Dragonmarked Bravo)" supports="Gaming Set" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_DETECTION|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_FINDING|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SENTINEL" />
+			<select type="Proficiency" name="Artisan's Tools (Dragonmarked Bravo)" supports="Artisan tools" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_MAKING|ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SHADOW" />
+			<select type="Proficiency" name="Artisan's Tools (Dragonmarked Bravo)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HOSPITALITY" />
+			
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_HEALING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_SCRIBING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_STORM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" requirements="ID_VPD_FEQ_FEAT_FEATURE_LESSER_DRAGONMARK_MARK_OF_WARDING" />
+		</rules>
+	</element>
+
+	<element name="Background Equipment Pack (Dragonmarked Bravo)" type="Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ITEM_BACKGROUND_EQUIPMENT_PACK_DRAGONMARKED_BRAVO">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Dragonmarked Bravo Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Spear</p>
+			<p class="indent">• Light Crossbow</p>
+			<p class="indent">• 20 Bolts</p>
+			<p class="indent">• Quiver</p>
+			<p class="indent">• Traveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include a Dragonmarked Signet, a tool as indicated on the Dragonmarked Backgrounds table, or 12 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_WEAPON_SPEAR</item>
+			<item>ID_WOTC_PHB24_WEAPON_LIGHT_CROSSBOW</item>
+			<item amount="20">ID_WOTC_PHB24_ITEM_BOLT</item>
+			<item>ID_WOTC_PHB24_ITEM_QUIVER</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+</elements>

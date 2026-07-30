@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Harpy</name>
+		<description>Harpy from Frontiers of Eberron: Quickstone</description>
+		<update version="0.0.1">
+			<file name="race-harpy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-harpy.xml" />
+		</update>
+	</info>
+
+	<element name="Harpy" type="Race" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACE_HARPY">
+		<description>
+			<p>Harpies blend avian and human elements, possessing functional wings and birdlike legs ending in clawed feet. But the most remarkable feature of a harpy is their voice. Arcane power flows through a harpy and into their words, allowing them to manipulate emotions and to charm even the most hardened of hearts. While there are always exceptions, most harpies are passionate and energetic; the power of their song reflects their own surging emotions. Most enjoy the freedom of flight, expressing themselves through sound and motion.</p>
+			<p class="indent">The passionate nature of the harpy is reflected in their devotion to family, friends, and causes. Some of the harpy flights of Droaam are the most loyal allies of the Daughters of Sora Kell, while others stubbornly oppose their plans for Droaam. When creating a harpy character, think about their driving passion and pursue it fiercely.</p>
+			<h5>HARPY TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Humanoid</li>
+				<li><strong>Size:</strong> Medium (about 5–6 feet tall)</li>
+				<li><strong>Speed:</strong> 30 feet</li>
+			</ul>
+			<p>As a Harpy, you have these special traits.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> You have a Fly Speed equal to your Speed while you aren't wearing Medium or Heavy armor.</p> 
+			<p class="indent"><strong><em>Songbird.</em></strong> You have proficiency in the Performance skill.</p> 
+			<p class="indent"><strong><em>Harpy's Charm.</em></strong> You know the <i>Friends</i> cantrip and can cast it using only Verbal components in place of its usual components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this species).</p>
+			<p class="indent"><strong><em>Shadow's Magic.</em></strong> If you have the Spellcasting or the Pact Magic class feature, the spells on the Harpy Spells table are added to the spell list of your spellcasting class. You can cast these spells using only Verbal components in place of their usual components.</p>
+			<h5>Harpy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Charm Person</em></td></tr>
+				<tr><td>2</td><td><em>Suggestion</em></td></tr>
+				<tr><td>3</td><td><em>Enemies Abound</em></td></tr>
+				<tr><td>4</td><td><em>Charm Monster</em></td></tr>
+				<tr><td>5</td><td><em>Dominate Person</em></td></tr>
+			</table>
+			<div class="sidebar">
+                <h5>Shadow's Magic</h5>
+                <p>Harpies and Medusas both possess a trait called Shadow's Magic, which adds a set of spells to the spell list of any spellcasting class. While these abilities are resolved exactly like spells, they are supposed to reflect enhanced aspects of the harpy's voice or the medusa's gaze. When a Medusa Wizard uses Shadow's Magic to cast Hypnotic Pattern, they might glare at a group of people, their eyes flaring in iridescent colors. When a Harpy casts Suggestion, they might sing their request, the insidious power of their voice making it a command. Because of this, spells cast in this way don't require all of the usual components. While this is only true for spells on the Shadow's Magic lists, a Harpy or Medusa spellcaster could describe other spells as being manifestations of their voice or gaze. A Medusa Cleric could describe her Guiding Bolt as emerging from her eyes, while a Harpy Bard casting Shatter could describe it as a deadly song. This provides no mechanical benefit, but it's a way to add unique flavor to a character and to present their magic as expanded gifts of the Shadow.</p>
+            </div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Harpy)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Harpy)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Harpy)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+			
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_FLIGHT" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_SONGBIRD" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM" />
+			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_SHADOWS_MAGIC" />
+		</rules>
+	</element>
+
+	<element name="Flight" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_FLIGHT">
+		<description>
+			<p>You have a Fly Speed equal to your Speed while you aren't wearing Medium or Heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a Fly Speed equal to {{innate speed}} while you aren't wearing Medium or Heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+	<element name="Songbird" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_SONGBIRD">
+		<description>
+			<p>You have proficiency in the Performance skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Songbird)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Harpy's Charm" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM">
+		<description>
+			<p>You know the <i>Friends</i> cantrip and can cast it using only Verbal components in place of its usual components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this species).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FRIENDS" />
+			<select type="Racial Trait" name="Spellcasting Ability (Harpy's Charm)" supports="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_INTELLIGENCE|ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_WISDOM|ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<div element="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM" />
+		</description>
+		<sheet alt="Harpy's Charm">
+			<description>You know the Friends cantrip and can cast it using only Verbal components in place of its usual components. Your spellcasting ability for this spell is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_WISDOM">
+		<compendium display="false" />
+		<description>
+			<div element="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM" />
+		</description>
+		<sheet alt="Harpy's Charm">
+			<description>You know the Friends cantrip and can cast it using only Verbal components in place of its usual components. Your spellcasting ability for this spell is Wisdom.</description>
+		</sheet>
+	</element>
+		<element name="Charisma" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<div element="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM" />
+		</description>
+		<sheet alt="Harpy's Charm">
+			<description>You know the Friends cantrip and can cast it using only Verbal components in place of its usual components. Your spellcasting ability for this spell is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Shadow's Magic" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_SHADOWS_MAGIC">
+		<description>
+			<p>If you have the Spellcasting or the Pact Magic class feature, the spells on the Harpy Spells table are added to the spell list of your spellcasting class. You can cast these spells using only Verbal components in place of their usual components.</p>
+			<h5>Harpy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Charm Person</em></td></tr>
+				<tr><td>2</td><td><em>Suggestion</em></td></tr>
+				<tr><td>3</td><td><em>Enemies Abound</em></td></tr>
+				<tr><td>4</td><td><em>Charm Monster</em></td></tr>
+				<tr><td>5</td><td><em>Dominate Person</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>If you have the Spellcasting or the Pact Magic class feature, the spells on the Harpy Spells table are added to the spell list of your spellcasting class. You can cast these spells using only Verbal components in place of their usual components.</description>
+		</sheet>
+		<spellcasting all="true" extend="true">
+			<extend>ID_WOTC_PHB24_SPELL_CHARM_PERSON</extend>
+			<extend>ID_WOTC_PHB24_SPELL_SUGGESTION</extend>
+			<extend>ID_XGTE_SPELL_ENEMIES_ABOUND</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CHARM_MONSTER</extend>
+			<extend>ID_WOTC_PHB24_SPELL_DOMINATE_PERSON</extend>
+		</spellcasting>
+	</element>
+	
+</elements>
