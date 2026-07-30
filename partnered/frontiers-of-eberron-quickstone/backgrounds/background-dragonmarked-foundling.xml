@@ -4,7 +4,7 @@
 		<name>Dragonmarked Foundling</name>
 		<description>Dragonmarked Foundling from Frontiers of Eberron: Quickstone</description>
 		<update version="0.0.1">
-			<file name="background-dragonmarked-foundling.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-foundling.xml" />
+			<file name="background-dragonmarked-foundling.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-dragonmarked-foundling.xml" />
 		</update>
 	</info>
 

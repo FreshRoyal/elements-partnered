@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Frontiers of Eberron: Quickstone by Visionary Production and Design</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="frontiers-of-eberron-quickstone.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone.index" />
 		</update>
 	</info>
@@ -23,9 +23,9 @@
 	   <file name="warlock-stone-sovereign.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/warlock-stone-sovereign.xml" />
 
 		<!--Backgrounds-->
-		<file name="background-dragonmarked-bravo.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-bravo.xml" />
-		<file name="background-dragonmarked-foundling.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-foundling.xml" />
-		<file name="background-dragonmarked-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-scion.xml" />
+		<file name="background-dragonmarked-bravo.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-dragonmarked-bravo.xml" />
+		<file name="background-dragonmarked-foundling.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-dragonmarked-foundling.xml" />
+		<file name="background-dragonmarked-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-dragonmarked-scion.xml" />
 		<file name="background-magewright.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-magewright.xml" />
 		<file name="background-wandslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-wandslinger.xml" />
 

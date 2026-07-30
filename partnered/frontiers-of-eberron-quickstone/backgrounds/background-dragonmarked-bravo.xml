@@ -4,7 +4,7 @@
 		<name>Dragonmarked Bravo</name>
 		<description>Dragonmarked Bravo from Frontiers of Eberron: Quickstone</description>
 		<update version="0.0.1">
-			<file name="background-dragonmarked-bravo.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-bravo.xml" />
+			<file name="background-dragonmarked-bravo.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-dragonmarked-bravo.xml" />
 		</update>
 	</info>
 

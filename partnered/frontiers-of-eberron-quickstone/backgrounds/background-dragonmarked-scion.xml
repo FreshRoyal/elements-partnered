@@ -4,7 +4,7 @@
 		<name>Dragonmarked Scion</name>
 		<description>Dragonmarked Scion from Frontiers of Eberron: Quickstone</description>
 		<update version="0.0.1">
-			<file name="background-dragonmarked-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/dragonmarked-scion.xml" />
+			<file name="background-dragonmarked-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/backgrounds/background-dragonmarked-scion.xml" />
 		</update>
 	</info>
 
