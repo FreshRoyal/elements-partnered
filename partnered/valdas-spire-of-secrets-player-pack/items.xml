@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Items from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/items.xml" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 		<setters>
 			<set name="keywords">spell, mandys feral follower, commoner, transform</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -32,7 +32,7 @@
 		<setters>
 			<set name="keywords">fly speed, spell, unseen merchant, food, drink, wine</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="weight" lb="100">100 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">true</set>
@@ -48,7 +48,7 @@
 		<setters>
 			<set name="keywords">chronomancy, advantage, death, save, saving throws, letter</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -81,6 +81,7 @@
 			<set name="type">Ring</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">ring</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="equippable">true</set>
 			<set name="attunement">true</set>
 		</setters>

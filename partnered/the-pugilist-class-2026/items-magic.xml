@@ -3,7 +3,7 @@
 	<info>
 		<name>Magic Items</name>
 		<description>Magic Items from The Pugilist Class (2026)</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/items-magic.xml" />
 		</update>
 	</info>
@@ -23,6 +23,7 @@
 			<set name="type" addition="Brass Knuckles">Weapon</set>
 			<set name="rarity">Legendary</set>
 			<set name="attunement" addition="by a Pugilist">true</set>
+			<set name="cost" currency="gp">200001</set>
 			<set name="enhancement">3</set>
 			<set name="weapon">Brass Knuckles</set>
 		</setters>
@@ -36,6 +37,7 @@
 			<set name="keywords">potion, liquid</set>
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
 		</setters>
@@ -51,6 +53,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
@@ -66,6 +69,7 @@
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
 			<set name="enhancement">1</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weapon">Club||Greatclub</set>
 			<set name="name-format">{{parent}} of Unconsciousness</set>
 		</setters>
@@ -80,6 +84,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
+			<set name="cost" currency="gp">100</set>
 			<set name="rarity">Common</set>
 		</setters>
 	</element>
@@ -93,6 +98,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
+			<set name="cost" currency="gp">100</set>
 			<set name="rarity">Common</set>
 		</setters>
 	</element>
@@ -108,6 +114,7 @@
 			<set name="keywords">hand claws, darkvision, polymorph, cat, death saving throws</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Hand Claws">Weapon</set>
+			<set name="cost" currency="gp">40003</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 			<set name="enhancement">2</set>
@@ -126,6 +133,7 @@
 		<setters>
 			<set name="category">Potions</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">200</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
@@ -142,6 +150,7 @@
 			<set name="keywords">bonus action, liquid</set>
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="0">0 lb.</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
@@ -157,6 +166,7 @@
 			<set name="keywords">brass knuckles, force, damage, disadvantage, concentration, saving throw</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 			<set name="enhancement">2</set>
@@ -172,6 +182,7 @@
 			<set name="keywords">temporary hit points</set>
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="0">0 lb.</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">neck</set>
@@ -188,6 +199,7 @@
 			<set name="keywords">brass knuckles, critical hit, gp, gold</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="rarity">Uncommon</set>
 			<set name="attunement">true</set>
 			<set name="enhancement">1</set>
@@ -204,6 +216,7 @@
 			<set name="keywords">brass knuckles, holy symbol, fiend, undead, radiant, damage</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Brass Knuckles">Weapon</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Brass Knuckles</set>
@@ -220,6 +233,7 @@
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Very Rare</set>
+			<set name="cost" currency="gp">20000</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
@@ -234,6 +248,7 @@
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Brass Knuckles, Hnad Claws, or Punch Knife">Weapon</set>
 			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Brass Knuckles||Hand Claws||Punch Knife</set>
 			<set name="name-format">Punchdrunk {{parent}}</set>
@@ -250,6 +265,7 @@
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Punch Knife">Weapon</set>
 			<set name="rarity">Very Rare</set>
+			<set name="cost" currency="gp">40002</set>
 			<set name="attunement">true</set>
 			<set name="enhancement">2</set>
 			<set name="weapon">Punch Knife</set>
@@ -265,6 +281,7 @@
 			<set name="keywords">hand claws, immunity, magical contagions, constitution, saving throw, sewer plague, critical hit, necrotic, damage, disadvantage</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Hand Claws">Weapon</set>
+			<set name="cost" currency="gp">200003</set>
 			<set name="rarity">Legendary</set>
 			<set name="attunement">true</set>
 			<set name="enhancement">3</set>
@@ -280,6 +297,7 @@
 		<setters>
 			<set name="category">Potions</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">200</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
@@ -295,6 +313,7 @@
 			<set name="keywords">punch knife, piercing, damage</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Punch Knife">Weapon</set>
+			<set name="cost" currency="gp">4002</set>
 			<set name="rarity">Rare</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Punch Knife</set>
@@ -311,6 +330,7 @@
 		<setters>
 			<set name="category">Potions</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">200</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Uncommon</set>
 			<set name="attunement">true</set>
@@ -326,6 +346,7 @@
 		<setters>
 			<set name="category">Potions</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">2000</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
@@ -341,6 +362,7 @@
 		<setters>
 			<set name="category">Potions</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">20000</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
@@ -355,7 +377,7 @@
 		<setters>
 			<set name="keywords">armor</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
@@ -373,7 +395,7 @@
 		<setters>
 			<set name="keywords">armor</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
@@ -391,7 +413,7 @@
 		<setters>
 			<set name="keywords">armor</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">200000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
@@ -410,7 +432,7 @@
 		<setters>
 			<set name="keywords">attack, damage, beast</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -425,7 +447,7 @@
 		<setters>
 			<set name="keywords">attack, damage, beast</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -440,7 +462,7 @@
 		<setters>
 			<set name="keywords">attack, damage, beast</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -456,7 +478,7 @@
 		<setters>
 			<set name="keywords">armor, saving throw, beast</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -480,7 +502,7 @@
 		<setters>
 			<set name="keywords">armor, saving throw, beast</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -504,7 +526,7 @@
 		<setters>
 			<set name="keywords">armor, saving throw, beast</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>

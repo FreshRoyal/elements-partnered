@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Items from Monsters of Drakkenheim</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/items.xml" />
 		</update>
 	</info>
@@ -186,7 +186,7 @@
 		<setters>
 			<set name="keywords">necklace, fire, damage, burning, condition</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -202,7 +202,7 @@
 		<setters>
 			<set name="keywords">necklace, wisdom</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -224,6 +224,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">2000</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Rare</set>
@@ -239,6 +240,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">2000</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Rare</set>
@@ -255,6 +257,7 @@
 			<set name="keywords">sword, paladin, divine smite</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement" addition="by a Paladin">true</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
@@ -271,7 +274,7 @@
 		<setters>
 			<set name="keywords">resistance, lightning, immunity, shocked, condition, damage</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">arms</set>
 			<set name="type">Wondrous Item</set>
@@ -291,6 +294,7 @@
 			<set name="keywords">critical hit</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Any Simple or Martial">Weapon</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="rarity">Uncommon</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
 			<set name="name-format">Champion's {{parent}}</set>
@@ -309,7 +313,7 @@
 		<setters>
 			<set name="keywords">monk, unarmed strike, lightning, damage, push, spells, shield, destructive wave, wall of force</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">hands</set>
 			<set name="type">Wondrous Item</set>
@@ -326,7 +330,7 @@
 		<setters>
 			<set name="keywords">critical hit, burning, condition, necrotic, damage, advantage, attacks</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
@@ -341,7 +345,7 @@
 		<setters>
 			<set name="keywords">healing, hit points</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">head</set>
 			<set name="type">Wondrous Item</set>
@@ -358,7 +362,7 @@
 		<setters>
 			<set name="keywords">frozen, condition, cold, damage</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">head</set>
 			<set name="type">Wondrous Item</set>
@@ -374,7 +378,7 @@
 		<setters>
 			<set name="keywords">paladin, aura of protection</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement" addition="by a Paladin">true</set>
@@ -396,6 +400,7 @@
 			<set name="keywords">sword, necrotic, damage, healing, hit points</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
@@ -415,6 +420,7 @@
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Warhammer or Maul">Weapon</set>
 			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weapon">Warhammer||Maul</set>
 			<set name="enhancement">1</set>
 			<set name="name-format">Dazing {{parent}}</set>
@@ -429,6 +435,7 @@
 		<setters>
 			<set name="category">Rings</set>
 			<set name="type">Ring</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="slot">ring</set>
 			<set name="equippable">true</set>
@@ -443,7 +450,7 @@
 		<setters>
 			<set name="keywords">temporary hit points, valor</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
@@ -457,7 +464,7 @@
 		<setters>
 			<set name="keywords">spell, find familiar</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
@@ -471,7 +478,7 @@
 		<setters>
 			<set name="keywords">action, ethereal plane</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -486,7 +493,7 @@
 		</description>
 		<setters>
 			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="slot">body</set>
 			<set name="type" addition="any">Armor</set>
 			<set name="rarity">Rare</set>
@@ -510,6 +517,7 @@
 			<set name="keywords">longbow, force, damage, bonus action, ethereal plane, invisible</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Longbow">Weapon</set>
+			<set name="cost" currency="gp">40050</set>
 			<set name="rarity">Very Rare</set>
 			<set name="weapon">Longbow</set>
 			<set name="attunement">true</set>
@@ -527,6 +535,7 @@
 			<set name="keywords">greatclub, damage, advantage, attack, giant</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Greatclub">Weapon</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">Greatclub</set>
 			<set name="attunement">true</set>
@@ -541,7 +550,7 @@
 		<setters>
 			<set name="keywords">dexterity</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">hands</set>
 			<set name="type">Wondrous Item</set>
@@ -560,6 +569,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">100000</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Legendary</set>
@@ -577,6 +587,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="slot">body</set>
 			<set name="type" addition="Leather or Hide">Armor</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
@@ -598,6 +609,7 @@
 			<set name="keywords">warhammer, maul, thrown, acid, cold, fire, lightning, poison, thunder, damage, ricochet</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Warhammer or Maul">Weapon</set>
+			<set name="cost" currency="gp">200000</set>
 			<set name="rarity">Legendary</set>
 			<set name="weapon">Warhammer||Maul</set>
 			<set name="enhancement">3</set>
@@ -614,7 +626,7 @@
 		<setters>
 			<set name="keywords">advantage, saving throws, saves, charmed, frightened</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
@@ -631,7 +643,7 @@
 		<setters>
 			<set name="keywords">bard</set>
 			<set name="category">Musical Instruments</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4030</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="Harp or Lyre">Musical Instrument</set>
 			<set name="slot">onehand</set>
@@ -652,7 +664,7 @@
 		<setters>
 			<set name="keywords">barbarian, rage, resistance, fire, melee, reckless attack, burning, condition, damage</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">head</set>
 			<set name="type">Wondrous Item</set>
@@ -668,7 +680,7 @@
 		</description>
 		<setters>
 			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="slot">body</set>
 			<set name="type" addition="any">Armor</set>
 			<set name="rarity">Very Rare</set>
@@ -691,6 +703,7 @@
 			<set name="keywords">crossbow, loading, poison, damage, constitution, saving throw, save, strength, weakend, condition, immobilized</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Any Crossbow">Weapon</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</set>
@@ -707,7 +720,7 @@
 		<setters>
 			<set name="keywords">charisma</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
@@ -737,7 +750,7 @@
 		<setters>
 			<set name="keywords">apothecary, warlock, spellcasting focus, esoteric theory, eldritch invocation</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4025</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement" addition="by an Apothecary or Warlock">true</set>
@@ -768,7 +781,7 @@
 		<setters>
 			<set name="keywords">apothecary, warlock, spellcasting focus, esoteric theory, eldritch invocation</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">40025</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement" addition="by an Apothecary or Warlock">true</set>
@@ -799,7 +812,7 @@
 		<setters>
 			<set name="keywords">apothecary, warlock, spellcasting focus, esoteric theory, eldritch invocation</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">200025</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement" addition="by an Apothecary or Warlock">true</set>
@@ -821,7 +834,7 @@
 		<setters>
 			<set name="keywords">druid, wild shape, monstrosity</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">head</set>
 			<set name="type">Wondrous Item</set>
@@ -840,6 +853,7 @@
 			<set name="keywords">ranger, spellcasting focus, hunter's mark</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="any">Weapon</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
 			<set name="attunement" addition="by a Ranger">true</set>
@@ -861,6 +875,7 @@
 			<set name="keywords">ranger, spellcasting focus, hunter's mark</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="any">Weapon</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="rarity">Very Rare</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
 			<set name="attunement" addition="by a Ranger">true</set>
@@ -882,6 +897,7 @@
 			<set name="keywords">ranger, spellcasting focus, hunter's mark</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="any">Weapon</set>
+			<set name="cost" currency="gp">200000</set>
 			<set name="rarity">Legendary</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
 			<set name="attunement" addition="by a Ranger">true</set>
@@ -901,7 +917,7 @@
 		</description>
 		<setters>
 			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="slot">body</set>
 			<set name="type" addition="Light">Armor</set>
 			<set name="rarity">Rare</set>
@@ -919,7 +935,7 @@
 		<setters>
 			<set name="keywords">advantage, attack rolls</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
@@ -935,7 +951,7 @@
 		<setters>
 			<set name="keywords">acid, cold, fire, lightning, poison, resistance, reaction</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -950,6 +966,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">200</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Uncommon</set>
@@ -965,6 +982,7 @@
 			<set name="keywords">dagger, rogue, attack, sneak attack</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Dagger">Weapon</set>
+			<set name="cost" currency="gp">4002</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">Dagger</set>
 			<set name="attunement" addition="by a Rogue">true</set>
@@ -978,7 +996,7 @@
 		</description>
 		<setters>
 			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4010</set>
 			<set name="slot">body</set>
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Rare</set>
@@ -994,6 +1012,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">20000</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Very Rare</set>
@@ -1009,7 +1028,7 @@
 		<setters>
 			<set name="keywords">bonus action, teleport</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">feet</set>
 			<set name="type">Wondrous Item</set>
@@ -1023,7 +1042,7 @@
 		</description>
 		<setters>
 			<set name="category">Scrolls</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">200</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Scroll</set>
 			<set name="rarity">Uncommon</set>
@@ -1041,6 +1060,7 @@
 			<set name="keywords">shortsword, weapon mastery, nick</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="cost" currency="gp">4010</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">Shortsword</set>
 			<set name="enhancement">2</set>
@@ -1055,7 +1075,7 @@
 		<setters>
 			<set name="keywords">opportunity attacks, disadvantage</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">feet</set>
 			<set name="type">Wondrous Item</set>
@@ -1075,6 +1095,7 @@
 			<set name="keywords">sword, critical hit, teleport, bonus action, attack, spell, dimension door</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="cost" currency="gp">40000</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
@@ -1091,7 +1112,7 @@
 		<setters>
 			<set name="keywords">climb speed, unarmed strikes, piercing, damage</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">hands</set>
 			<set name="type">Wondrous Item</set>
@@ -1112,6 +1133,7 @@
 		<setters>
 			<set name="keywords">whip, reach, pull</set>
 			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4002</set>
 			<set name="type" addition="Shortsword">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">Whip</set>
@@ -1128,7 +1150,7 @@
 		<setters>
 			<set name="keywords">extra action, maze</set>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">200000</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">neck</set>
 			<set name="type">Wondrous Item</set>
@@ -1143,6 +1165,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">2000</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Rare</set>
@@ -1161,6 +1184,7 @@
 		</description>
 		<setters>
 			<set name="category">Potions</set>
+			<set name="cost" currency="gp">20000</set>
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Very Rare</set>
@@ -1175,7 +1199,7 @@
 		</description>
 		<setters>
 			<set name="category">Wands</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">4010</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="type">Wand</set>
@@ -1190,7 +1214,7 @@
 		</description>
 		<setters>
 			<set name="category">Wands</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">410</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="type">Wand</set>
@@ -1208,6 +1232,7 @@
 			<set name="keywords">greataxe, bloodied, additional attack</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="cost" currency="gp">40030</set>
 			<set name="rarity">Very Rare</set>
 			<set name="weapon">Greataxe</set>
 			<set name="enhancement">3</set>
