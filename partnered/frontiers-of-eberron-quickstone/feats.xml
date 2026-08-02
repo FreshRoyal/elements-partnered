@@ -3,14 +3,14 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/feats.xml" />
 		</update>
 	</info>
 
 	<element name="Wandslinger" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WANDSLINGER">
 		<supports>Fighting Style</supports>
-		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Fighting Style Feature</prerequisite>
 		<description>
 			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
@@ -29,7 +29,7 @@
 	<!--Lesser Dragonmark-->
 	<element name="Lesser Dragonmark" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_LESSER_DRAGONMARK">
 		<supports>Origin</supports>
-		<requirements>ID_INTERNAL_GRANT_RACE_DWARF||ID_INTERNAL_GRANT_RACE_ELF||ID_INTERNAL_GRANT_RACE_GNOME||ID_INTERNAL_GRANT_RACE_HALF_ELF||ID_INTERNAL_GRANT_RACE_HALF_ORC||ID_INTERNAL_GRANT_RACE_HALFLING||ID_INTERNAL_GRANT_RACE_HUMAN||ID_INTERNAL_GRANT_RACE_ORC||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>ID_INTERNAL_GRANT_RACE_DWARF||ID_INTERNAL_GRANT_RACE_ELF||ID_INTERNAL_GRANT_RACE_GNOME||ID_INTERNAL_GRANT_RACE_HALF_ELF||ID_INTERNAL_GRANT_RACE_HALF_ORC||ID_INTERNAL_GRANT_RACE_HALFLING||ID_INTERNAL_GRANT_RACE_HUMAN||ID_INTERNAL_GRANT_RACE_ORC||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Member of appropriate species</prerequisite>
 		<description>
 			<p class="flavor">Origin Feat (Prerequisite: Member of appropriate species)</p>
@@ -808,7 +808,7 @@
 	<!--General Feats-->
 	<element name="Ashbound Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_ASHBOUND_INITIATE">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -847,7 +847,7 @@
 
 	<element name="Gatekeeper Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_GATEKEEPER_INITIATE">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -886,7 +886,7 @@
 
 	<element name="Greensinger Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_GREENSINGER_INITIATE">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -927,7 +927,7 @@
 
 	<element name="Hewn for Battle" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_HEWN_FOR_BATTLE">
 		<supports>General</supports>
-		<requirements>([character:4],ID_VPD_FEQ_RACE_GARGOYLE)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_GARGOYLE)||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Gargoyle</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Gargoyle)</p>
@@ -950,7 +950,7 @@
 
 	<element name="Orb Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_ORB_EXPERT">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -970,7 +970,7 @@
 
 	<element name="Rod Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_ROD_EXPERT">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -989,7 +989,7 @@
 
 	<element name="Shadow's Gift of Stone" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE">
 		<supports>General</supports>
-		<requirements>([character:4],ID_VPD_FEQ_RACE_MEDUSA)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_MEDUSA)||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Medusa</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Medusa)</p>
@@ -1026,7 +1026,7 @@
 	</element>
 	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_INTELLIGENCE">
 		<compendium display="false" />
-		<requirements>[character:4]</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<div element="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE" />
 		</description>
@@ -1040,7 +1040,7 @@
 	</element>
 	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_WISDOM">
 		<compendium display="false" />
-		<requirements>[character:4]</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<div element="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE" />
 		</description>
@@ -1054,7 +1054,7 @@
 	</element>
 	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE_CHARISMA">
 		<compendium display="false" />
-		<requirements>[character:4]</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<div element="ID_VPD_FEQ_FEAT_SHADOWS_GIFT_OF_STONE" />
 		</description>
@@ -1069,7 +1069,7 @@
 
 	<element name="Staff Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_STAFF_EXPERT">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -1088,7 +1088,7 @@
 	
 	<element name="Stone Eyes" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_STONE_EYES">
 		<supports>General</supports>
-		<requirements>([character:8],ID_VPD_FEQ_RACE_MEDUSA)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:8],ID_VPD_FEQ_RACE_MEDUSA)||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 8+, Medusa</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 8+, Medusa)</p>
@@ -1103,7 +1103,7 @@
 
 	<element name="Voice of the Fury" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY">
 		<supports>General</supports>
-		<requirements>([character:4],ID_VPD_FEQ_RACE_HARPY)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_HARPY)||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Harpy</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Harpy)</p>
@@ -1140,7 +1140,7 @@
 	</element>
 	<element name="Intelligence" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_INTELLIGENCE">
 		<compendium display="false" />
-		<requirements>[character:4]</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<div element="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY" />
 		</description>
@@ -1154,7 +1154,7 @@
 	</element>
 	<element name="Wisdom" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_WISDOM">
 		<compendium display="false" />
-		<requirements>[character:4]</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<div element="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY" />
 		</description>
@@ -1168,7 +1168,7 @@
 	</element>
 	<element name="Charisma" type="Feat Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY_CHARISMA">
 		<compendium display="false" />
-		<requirements>[character:4]</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<div element="ID_VPD_FEQ_FEAT_VOICE_OF_THE_FURY" />
 		</description>
@@ -1183,7 +1183,7 @@
 
 	<element name="Wand Expert" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WAND_EXPERT">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -1202,7 +1202,7 @@
 
 	<element name="Warden Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WARDEN_INITIATE">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -1242,7 +1242,7 @@
 	
 	<element name="Wings of Stone" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WINGS_OF_STONE">
 		<supports>General</supports>
-		<requirements>([character:4],ID_VPD_FEQ_RACE_GARGOYLE)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],ID_VPD_FEQ_RACE_GARGOYLE)||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Gargoyle</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Gargoyle)</p>
@@ -1256,7 +1256,7 @@
 
 	<element name="Winter Initiate" type="Feat" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_FEAT_WINTER_INITIATE">
 		<supports>General</supports>
-		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -1295,5 +1295,23 @@
 			<extend>ID_WOTC_PHB24_SPELL_ENERVATION</extend>
 		</spellcasting>
 	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Frontiers of Eberron: Quickstone</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_GRANTS_FEAT_UNLOCKER" />
 
 </elements>

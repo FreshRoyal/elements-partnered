@@ -3,14 +3,14 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/feats.xml" />
 		</update>
 	</info>
 
 	<element name="Gun-Mage Adept" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_GUN_MAGE_ADEPT">
 		<supports>General</supports>
-		<requirements>([level:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([level:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_MHP_TGCVSS_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</p>
@@ -43,7 +43,7 @@
 
 	<element name="Iron Hero" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_IRON_HERO">
 		<supports>General</supports>
-		<requirements>([level:4],!ID_MHP_VSSPP_FEAT_IRON_HERO)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([level:4],!ID_MHP_VSSPP_FEAT_IRON_HERO)||ID_MHP_TGCVSS_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -65,7 +65,7 @@
 	
 	<element name="Marksman's Luck" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_MARKSMANS_LUCK">
 		<supports>General</supports>
-		<requirements>([level:4],[dex:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([level:4],[dex:13])||ID_MHP_TGCVSS_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Dexterity 13+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
@@ -82,5 +82,23 @@
 			<stat name="dexterity" value="1" alt="Marksman's Luck" />
 		</rules>
 	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>The Gunslinger Class: Valda's Spire of Secrets</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_MHP_TGCVSS_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_GRANTS_FEAT_UNLOCKER" />
 
 </elements>

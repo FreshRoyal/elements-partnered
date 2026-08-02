@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Humblewood Campaign Setting</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting/feats.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
 	
 	<element name="Aerial Expert" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_AERIAL_EXPERT">
 		<prerequisite>Glide trait</prerequisite>
-		<requirements>ID_HPP_HWCS_GRANTS_GLIDE_TRAIT</requirements>
+		<requirements>ID_HPP_HWCS_GRANTS_GLIDE_TRAIT||ID_HPP_HWCS_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<p><em>Prerequisite: Glide trait</em></p>
 			<p>Years of practice or an innate talent have made you adept at gliding. You gain the following benefits:</p>
@@ -54,7 +54,7 @@
 	
 	<element name="Heavy Glider" type="Feat" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_FEAT_HEAVY_GLIDER">
 		<prerequisite>Glide trait</prerequisite>
-		<requirements>ID_HPP_HWCS_GRANTS_GLIDE_TRAIT</requirements>
+		<requirements>ID_HPP_HWCS_GRANTS_GLIDE_TRAIT||ID_HPP_HWCS_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<p><em>Prerequisite: Glide trait</em></p>
 			<p>You were either born with great strength, or trained hard to allow yourself to glide under circumstances most would find impossible. You gain the following benefits:</p>
@@ -147,5 +147,23 @@
 			<select type="Proficiency" name="Woodwise" supports="ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_SURVIVAL" />
 		</rules>
 	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Humblewood Campaign Setting</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_HPP_HWCS_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Humblewood Campaign Setting" id="ID_HPP_HWCS_GRANTS_FEAT_UNLOCKER" />
 
 </elements>

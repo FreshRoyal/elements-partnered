@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Humblewood Tales</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/feats.xml" />
 		</update>
 	</info>
@@ -51,7 +51,7 @@
 
 	<element name="Forest Sage" type="Feat" source="Humblewood Tales" id="ID_HPP_HWT_FEAT_FOREST_SAGE">
 		<prerequisite>Druid or Wizard</prerequisite>
-		<requirements>ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB24_CLASS_WIZARD||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB24_CLASS_DRUID</requirements>
+		<requirements>[level:druid:1]||[level:wizard:1]||ID_HPP_HWT_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<p>The Tenders value diversity among ideas, and although they began as a purely druidic order, they have since learned to accept many different ways of thinking about the natural world, especially regarding the application of magic. You are either a wizard who has learned to temper your arcane research with an eye to maintaining the delicate balance of natural forces, or you are a druid who has learned a new understanding of natural magic through study and experimentation. You gain the following benefits:</p>
 			<ul>
@@ -74,7 +74,7 @@
 
 	<element name="Plantmender" type="Feat" source="Humblewood Tales" id="ID_HPP_HWT_FEAT_PLANTMENDER">
 		<prerequisite>Wisdom 13+</prerequisite>
-		<requirements>[wisdom:13]</requirements>
+		<requirements>[wisdom:13]||ID_HPP_HWT_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<p>One of the basic forms of Tender magic, plantmending is often taught to seedlings of the order. Plantmending can be used either to help the forest recover from disasters or to defend against hazards that might be encountered while traveling. You gain the following benefits:</p>
 			<ul>
@@ -97,4 +97,23 @@
 			<stat name="hwt:plantmender:usage" value="proficiency" />
 		</rules>
 	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Humblewood Tales" id="ID_HPP_HWT_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Humblewood Tales</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_HPP_HWT_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Humblewood Tales" id="ID_HPP_HWT_GRANTS_FEAT_UNLOCKER" />
+
 </elements>

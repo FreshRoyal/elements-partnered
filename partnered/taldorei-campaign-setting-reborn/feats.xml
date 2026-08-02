@@ -3,12 +3,12 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Tal'Dorei Campaign Setting Reborn</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/feats.xml" />
 		</update>
 	</info>
 
-	<element name="Cruel" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_CRUEL">
+	<element name="Cruel" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_CRUEL">
 		<description>
 			<p>The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others. You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are d6s. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it.</p>
 			<p>You can roll a cruelty die under any of the following circumstances, with the indicated result:</p>
@@ -28,8 +28,9 @@
 		</sheet>
 	</element>
 
-	<element name="Flash Recall" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_FLASH_RECALL">
+	<element name="Flash Recall" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_FLASH_RECALL">
 		<prerequisite>Spellcasting feature from a class that prepares spells</prerequisite>
+		<requirements>ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_CRDP_TCSR_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
 			<p>You've developed the ability to instantly recall an unprepared spell in moments of sudden necessity. As a bonus action, you prepare a spell of 1st level or higher from your spellbook (if you're a wizard) or from your class spell list (if you're not a wizard). This spell must be of a level for which you have spell slots, and it replaces another spell of an equal or higher level that you had previously prepared. Once you use this feat to recall a spell, you can't do so again until you complete a short or long rest.</p>
 		</description>
@@ -38,7 +39,7 @@
 		</sheet>
 	</element>
 
-	<element name="Mystic Conflux" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_MYSTIC_CONFLUX">
+	<element name="Mystic Conflux" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_MYSTIC_CONFLUX">
 		<description>
 			<p>You possess an intuitive understanding of the way magic ebbs and flows within enchanted items. Such items attune easily to you, and you are able to sound out their secrets. You gain the following benefits:</p>
 			<ul>
@@ -56,7 +57,7 @@
 		</rules>
 	</element>
 
-	<element name="Remarkable Recovery" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_REMARKABLE_RECOVERY">
+	<element name="Remarkable Recovery" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_REMARKABLE_RECOVERY">
 		<description>
 			<p>Your body has the ability to recover quickly from terrible injuries, and is unusually receptive to healing magic. You gain the following benefits:</p>
 			<ul>
@@ -66,10 +67,8 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>
-				When you are successfully stabilized while dying, you regain hit points equal to {{remarkable recovery:hp}}. &#13;
-				Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to {{remarkable recovery:hp}}. &#13;
-			</description>
+			<description>When you are successfully stabilized while dying, you regain hit points equal to {{remarkable recovery:hp}}. &#13;
+				Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to {{remarkable recovery:hp}}.</description>
 		</sheet>
 		<rules>
 			<stat name="constitution" value="1" />
@@ -78,11 +77,11 @@
 		</rules>
 	</element>
 
-	<element name="Spelldriver" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_SPELLDRIVER">
+	<element name="Spelldriver" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_SPELLDRIVER">
 		<prerequisite>11th level; Spellcasting or Pact Magic feature</prerequisite>
-		<requirements>[level:11]</requirements>
+		<requirements>([level:11],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_CRDP_TCSR_GRANTS_FEAT_UNLOCKER</requirements>
 		<description>
-			<p>	Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting.</p>
+			<p>Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting.</p>
  			<p class="indent">When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher.</p>
 		</description>
 		<sheet>
@@ -90,7 +89,7 @@
 		</sheet>
 	</element>
 
-	<element name="Thrown Arms Master" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_THROWN_ARMS_MASTER">
+	<element name="Thrown Arms Master" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_THROWN_ARMS_MASTER">
 		<description>
 			<p>You've honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:</p>
 			<ul>
@@ -111,7 +110,7 @@
 		</rules>
 	</element>
 
-	<element name="Vital Sacrifice" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_ID_CRDP_TCSR_FEAT_VITAL_SACRIFICE">
+	<element name="Vital Sacrifice" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_FEAT_VITAL_SACRIFICE">
 		<description>
 			<p>You've learned secrets of hemocraft that grant you esoteric power at the price of your own life force. As a bonus action, you can choose to take 1d6 necrotic damage to gain a blood boon. Your blood boon lasts for 1 hour or until expended. &#13;
 			You can expend this blood boon to gain one of the following benefits:</p>
@@ -132,5 +131,23 @@
 			</description>
 		</sheet>
 	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Tal'Dorei Campaign Setting Reborn</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_CRDP_TCSR_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_GRANTS_FEAT_UNLOCKER" />
 	
 </elements>

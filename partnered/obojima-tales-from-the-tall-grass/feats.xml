@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Magic Items from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/feats.xml" />
 		</update>
 	</info>
@@ -285,7 +285,7 @@
 	</element>
 
 	<element name="Nakudama's Electric Bloodline" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_NAKUDAMAS_ELECTRIC_BLOODLINE">
-		<requirements>ID_1985_OTTG_RACE_NAKUDAMA</requirements>
+		<requirements>ID_1985_OTTG_RACE_NAKUDAMA||ID_1985_OTTG_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>You must be a Nakudama</prerequisite>
 		<description>
 			<p><em>Prerequisite: You must be a Nakudama</em></p>
@@ -316,7 +316,7 @@
 	</element>
 
 	<element name="Nakudama's Toxin Bloodline" type="Feat" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_FEAT_NAKUDAMAS_TOXIN_BLOODLINE">
-		<requirements>ID_1985_OTTG_RACE_NAKUDAMA</requirements>
+		<requirements>ID_1985_OTTG_RACE_NAKUDAMA||ID_1985_OTTG_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>You must be a Nakudama</prerequisite>
 		<description>
 			<p><em>Prerequisite: You must be a Nakudama</em></p>
@@ -582,5 +582,23 @@
 			</div>
 		</description>
 	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Obojima: Tales from the Tall Grass</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_1985_OTTG_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_FEAT_UNLOCKER" />
 
 </elements>
