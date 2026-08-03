@@ -3,7 +3,7 @@
 	<info>
 		<name>Circle of the Blighted</name>
 		<description>The Circle of the Blighted from Tal'Dorei Campaign Setting Reborn</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="druid-blighted.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/druid-blighted.xml" />
 		</update>
 	</info>
@@ -33,6 +33,7 @@
 	</element>
 
 	<element name="Defile Ground" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_BLIGHTED_DEFILE_GROUND">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_DEFILE_GROUND</requirements>
 		<description>
 			<p>Starting at 2nd level when you choose this circle, you can use a bonus action to corrupt a patch of land or an area of water in a 10-foot radius centered on a point within 60 feet of you. This corruption lasts for 1 minute. The corrupted area is difficult terrain for creatures that are hostile to you. Additionally, when a creature in the area takes damage from an attack or spell for the first time on a turn, it takes an extra 1d4 necrotic damage. You can move this patch of corruption up to 30 feet as a bonus action. Flying creatures are unaffected by the corruption.</p>
 			<p class="indent">Starting at 10th level, the area of your defiled ground increases to a 20-foot radius. Additionally, the extra damage dealt by your defiled ground increases to 1d6 when you reach 10th level in this class, and 1d8 at 14th level.</p>
@@ -46,6 +47,7 @@
 	</element>
 
 	<element name="Blighted Shape" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_BLIGHTED_BLIGHTED_SHAPE">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_BLIGHTED_SHAPE</requirements>
 		<description>
 			<p>Also at 2nd level, your physical form begins to show effects of the corruption you wield, tracing blackened veins across your skin, producing gnarled, bony protrusions, or other eerie phenomena. You gain proficiency in the Charisma (Intimidation) skill.</p>
 			<p class="indent">Additionally, while you are transformed by your Wild Shape feature, you gain a +2 bonus to AC as gnarled spines protrude from your body. Your beast form also gains darkvision with a radius of 60 feet, or an additional 60 feet of darkvision if it already has that sense.</p>
@@ -59,6 +61,7 @@
 	</element>
 
 	<element name="Call of the Shadowseeds" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_BLIGHTED_CALL_OF_THE_SHADOWSEEDS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_CALL_OF_THE_SHADOWSEEDS</requirements>
 		<description>
 			<p>At 6th level, you learn to summon the feral children of the forest from the life force of your enemies. When a creature that is not undead or a construct takes damage within the area of your Defile Ground feature, you can use your reaction to summon a blighted sapling in an unoccupied space within 5 feet of the creature. You can direct the sapling to make an attack against any creature within 5 feet of it as a part of this reaction. The sapling then acts on your initiative, obeying your verbal commands.</p>
 			<p class="indent">The blighted sapling remains in your service until it's reduced to 0 hit points, until the end of your next long rest, or until you summon another sapling, at which point it crumbles into foul-smelling mulch. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
@@ -68,7 +71,7 @@
 			</div>
 		</description>
 		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
-			<description>When a creature that is not undead or a construct takes damage within the area of your Defile Ground feature, you can use your reaction to summon a blighted sapling in an unoccupied space within 5 feet of the creature. You can direct the sapling to make an attack against any creature within 5 feet of it as a part of this reaction. The sapling then acts on your initiative, obeying your verbal commands. The blighted sapling remains in your service until it's reduced to 0 hit points, until the end of your next long rest, or until you summon another sapling, at which point it crumbles into foul-smelling mulch.</description>
+			<description>When a creature that is not undead or a construct takes damage within the area of your Defile Ground feature, you can use your reaction to summon a blighted sapling in an unoccupied space within 5 ft of the creature. You can direct the sapling to make an attack against any creature within 5 ft of it as a part of this reaction. The sapling then acts on your initiative, obeying your verbal commands. The blighted sapling remains in your service until it's reduced to 0 hps, until the end of your next long rest, or until you summon another sapling, at which point it crumbles into foul-smelling mulch.</description>
 		</sheet>
 	</element>
 	<element name="Blighted Sapling" type="Information" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_INFORMATION_BLIGHTED_SAPLING_STATBLOCK">
@@ -98,6 +101,7 @@
 	</element>
 
 	<element name="Foul Conjuration" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_BLIGHTED_FOUL_CONJURATION">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_FOUL_CONJURATION</requirements>
 		<description>
 			<p>Starting at 10th level, the creatures you conjure are malformed and bloated with toxins. Any beast, fey, or plant (including your blighted sapling) summoned or created by your spells or class features gains the following traits:</p>
 			<p class="indent"><b><i>Blighted Resilience.</i></b> The creature has immunity to necrotic and poison damage and to the poisoned condition.</p>
@@ -121,6 +125,7 @@
 	</element>
 
 	<element name="Incarnation of Corruption" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_BLIGHTED_INCARNATION_OF_CORRUPTION">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_INCARNATION_OF_CORRUPTION</requirements>
 		<description>
 			<p>At 14th level, your physical form begins to take on the tainted traits of the land you are bonded to. Your skin grows ashen, and your eyes darken or turn completely white. Spines and jagged spurs emerge from your body, granting you resistance to necrotic damage and a +2 bonus to AC.</p>
 			<p class="indent">Additionally, whenever you start your turn within the radius of the corruption created by your Defile Ground feature, you can use a bonus action to gain temporary hit points equal to your proficiency bonus.</p>
@@ -130,8 +135,15 @@
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-			<stat name="ac:misc" value="2" />
+			<stat name="ac:misc" value="2" alt="Incarnation of Corruption" />
 		</rules>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Defile Ground Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_DEFILE_GROUND" />
+	<element name="Blighted Shape Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_BLIGHTED_SHAPE" />
+	<element name="Call of the Shadowseeds Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_CALL_OF_THE_SHADOWSEEDS" />
+	<element name="Foul Conjuration Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_FOUL_CONJURATION" />
+	<element name="Incarnation of Corruption Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_CIRCLE_OF_THE_BLIGHTED_INCARNATION_OF_CORRUPTION" />
 
 </elements>

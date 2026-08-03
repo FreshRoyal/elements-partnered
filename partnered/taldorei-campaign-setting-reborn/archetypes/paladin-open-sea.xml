@@ -36,6 +36,7 @@
 	</element>
 
 	<element name="Oath Spells" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_OATH_SPELLS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_SPELLS</requirements>
 		<description>
 			<p>You gain oath spells at the paladin levels listed in the Oath of the Open Sea Spells table. Spells marked with an asterisk are new spells described on the spells page.</p>
 			<h5 class="caption">Oath of the Open Sea Spells</h5>
@@ -66,6 +67,7 @@
 	</element>
 
 	<element name="Channel Divinity" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_CHANNEL_DIVINITY">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_CHANNEL_DIVINITY</requirements>
 		<description>
 			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
 			<p class="indent"><strong><em>Marine Layer.</em></strong> As an action, you channel the sea to create a thick cloud of fog that surrounds you for 20 feet in all directions. The fog moves with you, remaining centered on you and making its area heavily obscured. You and each creature within 5 feet of you instead treat the area as lightly obscured. This fog lasts for 10 minutes, spreads around corners, and cannot be dispersed unless you choose to end this effect (no action required).</p>
@@ -102,6 +104,7 @@
 	</element>
 
 	<element name="Aura of Liberation" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_AURA_OF_LIBERATION">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_AURA_OF_LIBERATIONS</requirements>
 		<description>
 			<p>Starting at 7th level, you fill nearby creatures with the energy of movement. While you're not incapacitated, you and creatures of your choice within 10 feet of you cannot be grappled or restrained, and ignore penalties on movement and attacks while underwater. Creatures that are already grappled or restrained when they enter the aura can spend 5 feet of movement to automatically escape unless they are bound by magic restraints.</p>
 			<p class="indent">When you reach 18th level in this class, the aura affects creatures within 30 feet of you.</p>
@@ -113,15 +116,17 @@
 	</element>
 
 	<element name="Stormy Waters" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_STORMY_WATERS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_STORMY_WATERS</requirements>
 		<description>
 			<p>At 15th level, you can call on the force of crashing waters as a reaction whenever a creature moves into or out of your reach. The creature takes 1d12 bludgeoning damage and must succeed on a Strength saving throw against your spell save DC or be knocked prone.</p>
 		</description>
-		<sheet>
-			<description>You can call on the force of crashing waters as a reaction whenever a creature moves into or out of your reach. The creature takes 1d12 bludgeoning damage and must succeed on a Strength saving throw (DC {{paladin:spellcasting:dc}}) or be knocked prone.</description>
+		<sheet action="Reaction">
+			<description>You can call on the force of crashing waters whenever a creature moves into or out of your reach. The creature takes 1d12 bludgeoning damage and must succeed on a Strength saving throw (DC {{paladin:spellcasting:dc}}) or be knocked prone.</description>
 		</sheet>
 	</element>
 
 	<element name="Mythic Swashbuckler" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_OATH_OF_THE_OPEN_SEA_MYTHIC_SWASHBUCKLER">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_MYTHIC_SWASHBUCKLER</requirements>
 		<description>
 			<p>At 20th level, you learn to channel the spirits of historic sea captains to briefly become a paragon of heroic adventure. As an action, you embrace these spirits of the sea to gain the following benefits for 1 minute:</p>
 			<ul>
@@ -145,6 +150,11 @@
 		</rules>
 	</element>
 	
-	
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_SPELLS" />
+	<element name="Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_CHANNEL_DIVINITY" />
+	<element name="Aura of Liberation Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_AURA_OF_LIBERATION" />
+	<element name="Stormy Waters Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_STORMY_WATERS" />
+	<element name="Mythic Swashbuckler Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_OATH_OF_THE_OPEN_SEAS_MYTHIC_SWASHBUCKLER" />
 
 </elements>

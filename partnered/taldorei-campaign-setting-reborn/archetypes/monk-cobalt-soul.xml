@@ -3,7 +3,7 @@
 	<info>
 		<name>Way of the Cobalt Soul</name>
 		<description>The Way of the Cobalt Soul from Tal'Dorei Campaign Setting Reborn</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="monk-cobalt-soul.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/monk-cobalt-soul.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Extract Aspects" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTRACT_ASPECTS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_EXTRACT_ASPECTS</requirements>
 		<description>
 			<p>Starting at 3rd level, you can strike pressure points to intuit crucial information about a foe. When you hit a creature with one of the attacks granted by your Flurry of Blows, you can analyze it. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature if it's within your reach. This benefit lasts until you finish a short or long rest.</p>
 			<p class="indent">Additionally, when you analyze a creature, you learn all of its damage vulnerabilities, damage resistances, damage immunities, and condition immunities.</p>
@@ -41,6 +42,7 @@
 	</element>
 
 	<element name="Extort Truth" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTORT_TRUTH">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_EXTORT_TRUTH</requirements>
 		<description>
 			<p>Starting at 6th level, you can precisely strike a hidden cluster of nerves on a creature, temporarily preventing it from masking its true thoughts and intent. When you hit a creature with an unarmed strike, you can spend 1 ki point to force it to make a Charisma saving throw. On a failed save, the creature is unable to speak a deliberate lie, and all Charisma checks directed at the creature are made with advantage for up to 10 minutes. You know if it succeeded or failed on its saving throw.</p>
 			<p class="indent">An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as the effect lasts.</p>
@@ -54,6 +56,7 @@
 	</element>
 
 	<element name="Mystical Erudition" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MYSTICAL_ERUDITION">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_MYSTICAL_ERUDITION</requirements>
 		<description>
 			<p>Also by 6th level, you have extensively studied the history and lore within the archives of the Cobalt Soul. You learn one language of your choice, and you gain proficiency with one of the following skills of your choice: Arcana, History, Investigation, Nature, or Religion. If you already have proficiency in one of the listed skills, you can instead choose to double your proficiency bonus for any ability check you make that uses the chosen proficiency.</p>
 			<p class="indent">You gain an additional language and an additional skill proficiency from the above list (or you can double the bonus of an existing proficiency from the list) at 11th and 17th level.</p>
@@ -110,6 +113,7 @@
 	</element>
 
 	<element name="Mind of Mercury" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MIND_OF_MERCURY">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_MIND_OF_MERCURY</requirements>
 		<description>
 			<p>Starting at 11th level, you've honed your awareness and reflexes through mental aptitude and pattern recognition. Once per turn, if you've already taken your reaction, you may spend 1 ki point to take an additional reaction. You can use only one reaction per triggering effect.</p>
 		</description>
@@ -119,6 +123,7 @@
 	</element>
 
 	<element name="Debilitating Barrage" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_DEBILITATING_BARRAGE">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_DEBILITATING_BARRAGE</requirements>
 		<description>
 			<p>Upon reaching 17th level, you've gained the knowledge to manipulate a creature's ki to undermine their fortitude. When you hit a creature with an unarmed strike, you can spend 3 ki points to cause the creature to gain vulnerability to one damage type of your choice for 1 minute, or until the end of a turn in which it has taken damage of that type.</p>
 			<p class="indent">If a creature has resistance to the damage type you choose, this resistance is suppressed for 1 minute, rather than gaining vulnerability. A creature that is immune to the damage type you choose is unaffected. A creature who is affected by this feature cannot be affected by it again for 24 hours.</p>
@@ -128,5 +133,12 @@
 			If a creature has resistance to the damage type you choose, this resistance is suppressed for 1 minute, rather than gaining vulnerability. A creature that is immune to the damage type you choose is unaffected. A creature who is affected by this feature cannot be affected by it again for 24 hours.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Extract Aspects Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_EXTRACT_ASPECTS" />
+	<element name="Extort Truth Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_EXTORT_TRUTH" />
+	<element name="Mystical Erudition Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_MYSTICAL_ERUDITION" />
+	<element name="Mind of Mercury Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_MIND_OF_MERCURY" />
+	<element name="Debilitating Barrage Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_WAY_OF_THE_COBALT_SOUL_DEBILITATING_BARRAGE" />
 	
 </elements>

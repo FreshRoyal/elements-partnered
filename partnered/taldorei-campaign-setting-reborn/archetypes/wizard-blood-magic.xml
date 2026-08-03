@@ -3,7 +3,7 @@
 	<info>
 		<name>Blood Magic Wizard</name>
 		<description>The Blood Magic Wizard from Tal'Dorei Campaign Setting Reborn</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="wizard-blood-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/wizard-blood-magic.xml" />
 		</update>
 	</info>
@@ -30,17 +30,19 @@
 	</element>
 
 	<element name="Blood Channeling" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BLOOD_CHANNELING">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_BLOOD_CHANNELING</requirements>
 		<description>
 			<p>When you choose this arcane tradition at 2nd level, you are able to use your own depleted life essence to channel your magical abilities. Whenever your current hit points are below your hit point maximum, you can use your own body as an arcane focus.</p>
 			<p class="indent">In addition, when casting a wizard spell that requires a costly material component, you can forego the component by taking 1d10 necrotic damage per 50 gp of the cost of the component (minimum 1d10). This damage can't be reduced in any way. If this damage reduces you to 0 hit points, the spell fails but the spell slot is not expended.</p>
 		</description>
 		<sheet>
-			<description>Whenever your current hit points are below your hit point maximum, you can use your own body as an arcane focus. &#13;
+			<description>Whenever your current hps are below your hp maximum, you can use your own body as an arcane focus. &#13;
 			In addition, when casting a wizard spell that requires a costly material component, you can forego the component by taking 1d10 necrotic damage per 50 gp of the cost of the component (minimum 1d10). This damage can't be reduced in any way. If this damage reduces you to 0 hit points, the spell fails but the spell slot is not expended.</description>
 		</sheet>
 	</element>
 
 	<element name="Sanguine Burst" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE_BURST">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_SANGUINE_BURST</requirements>
 		<description>
 			<p>Also at 2nd level, you learn how to weave your life force into a spell you cast, boosting its intensity at the cost of your vitality. Whenever you roll damage for a spell you've cast of 1st level or higher, you can choose to take necrotic damage equal to the spell's level to reroll a number of the damage dice up to your Intelligence modifier (minimum one). This damage can't be reduced in any way, and you must use the new rolls.</p>
 		</description>
@@ -54,6 +56,7 @@
 	</element>
 
 	<element name="Bond of Mutual Suffering" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BOND_OF_MUTUAL_SUFFERING">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_BOND_OF_MUTUAL_SUFFERING</requirements>
 		<description>
 			<p>At 6th level, when a creature you can see hits you with an attack, you can use your reaction to bind your vitality to the attacker and force them to share your pain. The attacker takes damage equal to the damage you took.</p>
 			<p class="indent">This feature cannot be used against constructs or undead. You can use this feature once. You must finish a short or long rest before you can use it again.</p>
@@ -68,25 +71,34 @@
 	</element>
 
 	<element name="Glyph of Hemorrhaging" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_MAGIC_GLYPH_OF_HEMORRHAGING">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_GLYPH_OF_HEMORRHAGING</requirements>
 		<description>
 			<p>Starting at 10th level, when you damage a creature with a spell, you can choose to curse that creature for 1 minute. While cursed in this way, whenever the creature is hit by an attack, it takes an extra 1d6 necrotic damage. At the end of each of the creature's turns, it can make a Constitution saving throw against your spell save DC, ending the curse on a success.</p>
 			<p class="indent">This feature cannot be used against creatures that are undead or constructs. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
 		</description>
 		<sheet usage="1/Short Rest">
-			<description>When you damage a creature with a spell, you can choose to curse that creature for 1 minute. While cursed in this way, whenever the creature is hit by an attack, it takes an extra 1d6 necrotic damage. At the end of each of the creature's turns, it can make a Constitution saving throw against your spell save DC, ending the curse on a success. &#13;
+			<description>When you damage a creature with a spell, you can choose to curse that creature for 1 minute. While cursed in this way, whenever the creature is hit by an attack, it takes an extra 1d6 necrotic damage. At the end of each of the creature's turns, it can make a Constitution saving throw {{wizard:spellcasting:dc}}, ending the curse on a success. &#13;
 			This feature cannot be used against constructs or undead.</description>
 		</sheet>
 	</element>
 
 	<element name="Thicker than Water" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_MAGIC_THICKER_THAN_WATER">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_THICKER_THAN_WATER</requirements>
 		<description>
 			<p>Upon reaching 14th level, the blood that flows through your veins is empowered with arcane vigor that mends wounds and helps preserve your life. Whenever a spell or magical effect causes you to regain hit points, you regain an additional number of hit points equal to your proficiency bonus.</p>
 			<p class="indent">In addition, while you are concentrating on a spell, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
 		</description>
 		<sheet>
-			<description>Whenever a spell or magical effect causes you to regain hit points, you regain an additional number of hit points equal to {{proficiency}}. &#13;
+			<description>Whenever a spell or magical effect causes you to regain hps, you regain an additional {{proficiency}} hps. &#13;
 			In addition, while you are concentrating on a spell, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Blood Channeling Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_BLOOD_CHANNELING" />
+	<element name="Sanguine Burst Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_SANGUINE_BURST" />
+	<element name="Bond of Mutual Suffering Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BOND_OF_MUTUAL_SUFFERING" />
+	<element name="Glyph of Hemorrhaging Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_GLYPH_OF_HEMORRHAGING" />
+	<element name="Thicker than Water Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_MAGIC_THICKER_THAN_WATER" />
 
 </elements>

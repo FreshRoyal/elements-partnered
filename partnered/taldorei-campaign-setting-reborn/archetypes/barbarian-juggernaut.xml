@@ -3,7 +3,7 @@
 	<info>
 		<name>Path of the Juggernaut</name>
 		<description>The Path of the Juggernaut from Tal'Dorei Campaign Setting Reborn</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/barbarian-juggernaut.xml" />
 		</update>
 	</info>
@@ -32,6 +32,7 @@
 	</element>
 
 	<element name="Thunderous Blows" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_THUNDEROUS_BLOWS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_THUNDEROUS_BLOWS</requirements>
 		<description>
 			<p>Starting when you choose this path at 3rd level, your rage instills you with the strength to shove and smash your way through your foes, making any battlefield your domain. When you hit a creature with a melee attack while you're raging, you can push that creature up to 5 feet away from you in a direction of your choice. A creature that is Huge or larger makes a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a success, the creature is not pushed.</p>
 			<p class="indent">Starting at 10th level, you can push a creature up to 10 feet when you hit it with a melee attack while you're raging.</p>
@@ -42,17 +43,18 @@
 			</div>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a melee attack while you're raging, you can push that creature up to 5 feet away from you in a direction of your choice. A creature that is Huge or larger makes a Strength saving throw (DC {{tcsr:juggernaut:thunderous blows:dc}}). On a success, the creature is not pushed.</description>
-			<description level="10">When you hit a creature with a melee attack while you're raging, you can push that creature up to 10 feet away from you in a direction of your choice. A creature that is Huge or larger makes a Strength saving throw (DC {{tcsr:juggernaut:thunderous blows:dc}}). On a success, the creature is not pushed.</description>
+			<description>When you hit a creature with a melee attack while you're raging, you can push that creature up to 5 ft away from you in a direction of your choice. A creature that is Huge or larger makes a Strength saving throw (DC {{tcsr:juggernaut:thunderous blows:dc}}). On a success, the creature is not pushed.</description>
+			<description level="10">When you hit a creature with a melee attack while you're raging, you can push that creature up to 10 ft away from you in a direction of your choice. A creature that is Huge or larger makes a Strength saving throw (DC {{tcsr:juggernaut:thunderous blows:dc}}). On a success, the creature is not pushed.</description>
 		</sheet>
 		<rules>
-			<stat name="tcsr:juggernaut:thunderous blows:dc" value="8" />
-			<stat name="tcsr:juggernaut:thunderous blows:dc" value="strength:modifier" />
-			<stat name="tcsr:juggernaut:thunderous blows:dc" value="proficiency" />
+			<stat name="tcsr:juggernaut:thunderous blows:dc" value="8" bonus="base" />
+			<stat name="tcsr:juggernaut:thunderous blows:dc" value="strength:modifier" bonus="modifier" />
+			<stat name="tcsr:juggernaut:thunderous blows:dc" value="proficiency" bonus="proficiency" />
 		</rules>
 	</element>
 
 	<element name="Spirit of the Mountain" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_SPIRIT_OF_THE_MOUNTAIN">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_SPIRIT_OF_THE_MOUNTAIN</requirements>
 		<description>
 			<p>At 3rd level, you harness your fury to anchor your feet to the ground, becoming a bulwark of strength. While you are raging, you can't be knocked prone or moved along the ground against your will.</p>
 		</description>
@@ -62,6 +64,7 @@
 	</element>
 
 	<element name="Demolishing Might" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_DEMOLISHING_MIGHT">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_DEMOLISHING_MIGHT</requirements>
 		<description>
 			<p>Starting at 6th level, your melee weapon attacks deal an extra 1d8 damage to constructs, and deal double damage to objects and structures.</p>
 		</description>
@@ -71,6 +74,7 @@
 	</element>
 
 	<element name="Resolute Stance" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_RESOLUTE_STANCE">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_RESOLUTE_STANCE</requirements>
 		<description>
 			<p>Also at 6th level, you can temporarily refocus your combat ability to make yourself a bulwark of defense. At the start of your turn (no action required), you can assume a defensive stance that lasts until the start of your next turn. While in this stance, you can't be grappled, attack rolls against you have disadvantage, and your weapon attacks are made with disadvantage.</p>
 		</description>
@@ -80,22 +84,24 @@
 	</element>
 
 	<element name="Hurricane Strike" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_HURRICANE_STRIKE">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_HURRICANE_STRIKES</requirements>
 		<description>
 			<p>Starting at 10th level, your blows can hurl foes through the air and into the attacks of your allies. As a reaction, when you push a creature at least 5 feet, you can then leap into an unoccupied space next to the creature. If you do so, the creature must succeed on a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier or be knocked prone. This leap costs no movement and does not provoke opportunity attacks.</p>
 			<p class="indent">Additionally, whenever you push a creature into a space within 5 feet of one of your allies, the ally can use its reaction to make a melee weapon attack against that creature.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When you push a creature at least 5 feet, you can then leap into an unoccupied space next to the creature. If you do so, the creature must succeed on a Strength saving throw (DC {{tcsr:juggernaut:hurricane strike:dc}}) or be knocked prone. This leap costs no movement and does not provoke opportunity attacks. &#13;
-			Additionally, whenever you push a creature into a space within 5 feet of one of your allies, the ally can use its reaction to make a melee weapon attack against that creature.</description>
+			<description>When you push a creature at least 5 ft, you can then leap into an unoccupied space next to the creature. If you do so, the creature must succeed on a Strength saving throw (DC {{tcsr:juggernaut:hurricane strike:dc}}) or be knocked prone. This leap costs no movement and does not provoke opportunity attacks. &#13;
+			Additionally, whenever you push a creature into a space within 5 ft of one of your allies, the ally can use its reaction to make a melee weapon attack against that creature.</description>
 		</sheet>
 		<rules>
-			<stat name="tcsr:juggernaut:hurricane strike:dc" value="8" />
-			<stat name="tcsr:juggernaut:hurricane strike:dc" value="strength:modifier" />
-			<stat name="tcsr:juggernaut:hurricane strike:dc" value="proficiency" />
+			<stat name="tcsr:juggernaut:hurricane strike:dc" value="8" bonus="base" />
+			<stat name="tcsr:juggernaut:hurricane strike:dc" value="strength:modifier" bonus="modifier" />
+			<stat name="tcsr:juggernaut:hurricane strike:dc" value="proficiency" bonus="proficiency" />
 		</rules>
 	</element>
 
 	<element name="Unstoppable" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_PATH_OF_THE_JUGGERNAUT_UNSTOPPABLE">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_UNSTOPPABLE</requirements>
 		<description>
 			<p>At 14th level, your fury in battle makes you unstoppable. While you're raging, your speed cannot be reduced, and you are immune to the frightened, paralyzed, prone, and stunned conditions.</p>
 			<p class="indent">If you are frightened, paralyzed, or stunned, you can still use a bonus action to enter a rage (even if you can't otherwise take actions). You aren't affected by any of these conditions while you're raging.</p>
@@ -105,5 +111,13 @@
 			If you are frightened, paralyzed, or stunned, you can still use a bonus action to enter a rage (even if you can't otherwise take actions). You aren't affected by any of these conditions while you're raging.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Thunderous Blows Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_THUNDEROUS_BLOWS" />
+	<element name="Spirit of the Mountain Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_SPIRIT_OF_THE_MOUNTAIN" />
+	<element name="Demolishing Might Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_DEMOLISHING_MIGHT" />
+	<element name="Resolute Stance Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_RESOLUTE_STANCE" />
+	<element name="Hurricane Stance Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_HURRICANE_STANCE" />
+	<element name="Unstoppable Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_PATH_OF_THE_JUGGERNAUT_UNSTOPPABLE" />
 
 </elements>

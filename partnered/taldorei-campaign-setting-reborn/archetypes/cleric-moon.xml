@@ -3,7 +3,7 @@
 	<info>
 		<name>Moon Domain</name>
 		<description>The Moon Domain from Tal'Dorei Campaign Setting Reborn</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-moon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/taldorei-campaign-setting-reborn/archetypes/cleric-moon.xml" />
 		</update>
 	</info>
@@ -32,6 +32,7 @@
 	</element>
 
 	<element name="Domain Spells" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_SPELLS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_SPELLS</requirements>
 		<description>
 			<p>You gain domain spells at the cleric levels listed in the Moon Domain Spells table.</p>
 			<h5 class="caption">Moon Domain Spells</h5>
@@ -62,6 +63,7 @@
 	</element>
 
 	<element name="Clarity of Catha" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_CLARITY_OF_CATHA">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_CLARITY_OF_CATHA</requirements>
 		<description>
 			<p>When you choose this domain at 1st level, you learn to shine light upon the mind's most dire moments, shielding those you protect. When a creature within 30 feet of you that you can see makes a Wisdom saving throw, you can use your reaction to grant that creature advantage on the save.</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
@@ -71,7 +73,8 @@
 		</sheet>
 	</element>
 
-	<element name="Channel Divinity: Blessing of the Full Monn" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_CD_BLESSING_OF_THE_FULL_MOON">
+	<element name="Channel Divinity: Blessing of the Full Moon" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_CD_BLESSING_OF_THE_FULL_MOON">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_CD_BLESSING_OF_THE_FULL_MOON</requirements>
 		<description>
 			<p>Starting at 2nd level, you can use your Channel Divinity to infuse your allies with bestial power. As an action, you instill a willing creature of your choice within 30 feet of you that you can see with one of the following blessings of your choice:</p>
 			<ul>
@@ -87,6 +90,7 @@
 	</element>
 
 	<element name="Channel Divinity: Mind of Two Moons" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_CD_MIND_OF_TWO_MOONS">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_CD_MIND_OF_TWO_MOONS</requirements>
 		<description>
 			<p>Starting at 6th level, you can use your Channel Divinity to invoke the twofold arcana of Exandria's moons. By expending one use of Channel Divinity, you can cast a second concentration spell while already concentrating on a first spell, as long as both spells are on your list of Moon Domain spells. If you need to make a Constitution saving throw to maintain your concentration on both spells, you make the save with disadvantage. On a failure, you lose concentration on both spells.</p>
 		</description>
@@ -96,6 +100,7 @@
 	</element>
 
 	<element name="Empowered Cantrips" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_EMPOWERED_CANTRIPS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
 			<p>Starting at 8th level, your cleric cantrips deal extra damage equal to your Wisdom modifier (minimum of 1).</p>
 		</description>
@@ -109,6 +114,7 @@
 	</element>
 
 	<element name="Eclipse of Ill Omen" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_CRDP_TCSR_ARCHETYPE_FEATURE_MOON_DOMAIN_ECLIPSE_OF_ILL_OMEN">
+		<requirements>!ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_ECLIPSE_OF_ILL_OMEN</requirements>
 		<description>
 			<p>At 17th level, you can call upon the vermillion moon Ruidus to flare in the sky above you, eclipsing all other light. Its power surrounds you even where the sky can't be seen, and even on other planes. As a bonus action, you can manifest an area of reddish, dim light in a 60-foot radius around you. In addition to the normal effects of dim light, creatures in the area make saving throws with disadvantage. When you create this eclipse, you can choose any number of creatures that are unaffected by it.</p>
 			<p class="indent">This eclipse lasts while you concentrate (as if concentrating on a spell) for up to 1 minute. Concentrating on this feature counts as concentrating on a Moon Domain spell for the purpose of your <i>Mind of Two Moons</i> feature.</p>
@@ -121,5 +127,12 @@
 			Additionally, once per turn when you deal radiant damage to any creatures in this area of dim light, you can curse one of those creatures until the eclipse ends (no action required). A creature cursed in this way has its speed halved and can't regain hp.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Domain Spells Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_BLOOD_DOMAIN_SPELLS" />
+	<element name="Clarity of Catha Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_CLARITY_OF_CATHA" />
+	<element name="Channel Divinity: Blessing of the Full Moon Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_CD_BLESSING_OF_THE_FULL_MOON" />
+	<element name="Channel Divinity: Mind of Two Moons Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_CD_MIND_OF_TWO_MOONS" />
+	<element name="Eclipse of Ill Omen Feature Replacement" type="Grants" source="Internal" id="ID_CRDP_TCSR_FEATURE_REPLACEMENT_MOON_DOMAIN_ECLIPSE_OF_ILL_OMEN" />
 
 </elements>
