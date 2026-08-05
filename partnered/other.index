@@ -2,14 +2,17 @@
 <index>
 	<info>
 		<name>Other Partnered Content on DDB</name>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="other.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other.index" />
 		</update>
 	</info>
 	<files>
-		<!--Third Party-->>
 		<file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/expanded-racial-feats.xml" />
 		<file name="gunslinger-martial-archetype-for-fighters.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/gunslinger-martial-archetype-for-fighters.xml" />
+
+		<!--Temporary, will be obsolete once these sources are merged in the Legacy repo-->
+		<file name="blood-hunter-2022.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/blood-hunter-2022.xml" />
+		<file name="dark-tides-of-bilgewater.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/dark-tides-of-bilgewater.xml" />
 		
 		<!--Homebrew, now obsolete-->
 		<obsolete name="builds-character.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/other/builds-character.xml" />
