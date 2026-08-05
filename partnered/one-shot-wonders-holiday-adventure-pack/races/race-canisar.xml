@@ -3,7 +3,7 @@
 	<info>
 		<name>Canisar</name>
 		<description>Canisar from One-Shot Wonders: Holiday Adventure Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-canisar.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-canisar.xml" />
 		</update>
 	</info>
@@ -32,13 +32,13 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<stat name="innate speed:burrow" value="10" bonus="base" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_BURROW_SPEED" />
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
-			<stat name="darkvision:range" value="120" bonus="base" />
 
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Language (Canisar)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Canisar)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
 
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" requirements="!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_DARKVISION" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_HIND_LEG_DASH" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_FANGED_JAWS" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_HUNTER_GATHERER" />
@@ -46,6 +46,7 @@
 		</rules>
 	</element>
 
+	<!--replace with internal burrow speed trait when it's added to the Legacy repo-->
 	<element name="Burrow Speed" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_BURROW_SPEED">
 		<compendium display="false" />
 		<description />
@@ -55,6 +56,7 @@
 	</element>
 
 	<element name="Hind Leg Dash" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_HIND_LEG_DASH">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_HIND_LEG_DASH</requirements>
 		<description>
 			<p>You gain an additional 10 ft of movement speed until the end of your turn whenever you use the Dash or Disengage action.</p>
 		</description>
@@ -64,6 +66,7 @@
 	</element>
 
 	<element name="Fanged Jaws" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_FANGED_JAWS">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_FANGED_JAWS</requirements>
 		<description>
 			<p>If you hit a target with an Unarmed Strike, you can deal piercing damage equal to 1d4 plus your Strength modifier.</p>
 		</description>
@@ -73,6 +76,7 @@
 	</element>
 
 	<element name="Hunter Gatherer" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_HUNTER_GATHERER">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_HUNTER_GATHERER</requirements>
 		<description>
 			<p>You have proficiency in the Nature, Survival or Stealth skill.</p>
 		</description>
@@ -84,6 +88,7 @@
 	</element>
 
 	<element name="Ancestral Blessing" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_CANISAR_ANCESTRAL_BLESSING">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_ANCESTRAL_BLESSING</requirements>
 		<description>
 			<p>Once per Short Rest, you can cast the <i>Guidance</i> spell on yourself as an Action.</p>
 		</description>
@@ -94,5 +99,12 @@
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDANCE" />
 		</rules>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_DARKVISION" />
+	<element name="Hind Leg Dash Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_HIND_LEG_DASH" />
+	<element name="Fanged Jaws Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_FANGED_JAWS" />
+	<element name="Hunter Gatherer Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_HUNTER_GATHERER" />
+	<element name="Infused Drakkonite Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_CANISAR_ANCESTRAL_BLESSING" />
 
 </elements>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Snowborn</name>
 		<description>Snowborn from One-Shot Wonders: Holiday Adventure Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-snowborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-snowborn.xml" />
 		</update>
 	</info>
@@ -43,6 +43,7 @@
 	</element>
 
 	<element name="Chilled Anatomy" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_SNOWBORN_CHILLED_ANATOMY">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_CHILLED_ANATOMY</requirements>
 		<description>
 			<p>You have Resistance to Cold damage. You also know the <i>Ray of Frost</i> cantrip.</p>
 		</description>
@@ -56,6 +57,7 @@
 	</element>
 	
 	<element name="Compacted Snow" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_SNOWBORN_COMPACTED_SNOW">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_COMPACTED_SNOW</requirements>
 		<description>
 			<p>You can move through the space of any creature that is a size larger than you, but you can't stop in the same space. Additionally, you can squeeze through a space that is large enough for a creature one size smaller than you without movement penalties.</p>
 		</description>
@@ -65,6 +67,7 @@
 	</element>
 
 	<element name="Frigid Construct" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_SNOWBORN_FRIGID_CONSTRUCT">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_FRIGID_CONSTRUCT</requirements>
 		<description>
 			<p>You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours unmoving; during this time you are indistinguishable from a snowman, but retain consciousness. You don't need to eat, drink or breathe.</p>
 		</description>
@@ -74,6 +77,7 @@
 	</element>
 
 	<element name="Glacial Form" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_SNOWBORN_GLACIAL_FORM">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_GLACIAL_FORM</requirements>
 		<description>
 			<p>Once per long rest, you can cast the <i>False Life</i> spell without using the material components or expending a spell slot, and harden your body into ice.</p>
 		</description>
@@ -84,5 +88,11 @@
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FALSE_LIFE" />
 		</rules>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Chilled Anatomy Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_CHILLED_ANATOMY" />
+	<element name="Compacted Snow Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_COMPACTED_SNOW" />
+	<element name="Frigid Construct Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_FRIGID_CONSTRUCT" />
+	<element name="Glacial Form Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_SNOWBORN_GLACIAL_FORM" />
 
 </elements>

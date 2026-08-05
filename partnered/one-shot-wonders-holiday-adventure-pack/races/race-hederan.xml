@@ -3,7 +3,7 @@
 	<info>
 		<name>Hederan</name>
 		<description>Hederan from One-Shot Wonders: Holiday Adventure Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-hederan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-hederan.xml" />
 		</update>
 	</info>
@@ -30,12 +30,12 @@
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Hederan)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<select type="Racial Trait" name="Size (Hederan)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
 
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Language (Hederan)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Hederan)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
 
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_DARKVISION" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_OUTDOOR_ADEPT" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_PROTECTED_BY_NATURE" />
 			<grant type="Racial Trait" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_FRIEND_OF_FAUNA" />
@@ -43,6 +43,7 @@
 	</element>
 
 	<element name="Outdoor Adept" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_OUTDOOR_ADEPT">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_OUTDOOR_ADEPT</requirements>
 		<description>
 			<p>You can move across Difficult Terrain made from earth or foliage without expending extra movement.</p>
 		</description>
@@ -52,6 +53,7 @@
 	</element>
 
 	<element name="Protected by Nature" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_PROTECTED_BY_NATURE">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_PROTECTED_BY_NATURE</requirements>
 		<description>
 			<p>You can attempt to Hide even when you are only lightly obscured by foliage, heavy rain/snow, mist, or other natural phenomena.</p>
 		</description>
@@ -61,6 +63,7 @@
 	</element>
 
 	<element name="Friend of Fauna" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_HEDERAN_FRIEND_OF_FAUNA">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_FRIEND_OF_FAUNA</requirements>
 		<description>
 			<p>Once per Long Rest, you can cast the Beast Bond spell without the material components needed and without expending a spell slot.</p>
 		</description>
@@ -71,5 +74,11 @@
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEAST_BOND" />
 		</rules>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_DARKVISION" />
+	<element name="Outdoor Adept Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_OUTDOOR_ADEPT" />
+	<element name="Protected by Nature Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_PROTECTED_BY_NATURE" />
+	<element name="Friend of Fauna Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_HEDERAN_FRIEND_OF_FAUNA" />
 
 </elements>

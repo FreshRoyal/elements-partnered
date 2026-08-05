@@ -3,7 +3,7 @@
 	<info>
 		<name>Tarandus</name>
 		<description>Tarandus from One-Shot Wonders: Holiday Adventure Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-tarandus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/one-shot-wonders-holiday-adventure-pack/races/race-tarandus.xml" />
 		</update>
 	</info>
@@ -44,6 +44,7 @@
 	</element>
 
 	<element name="Guiding Light" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_TARANDUS_GUIDING_LIGHT">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_GUIDING_LIGHT</requirements>
 		<description>
 			<p>As a Bonus Action, you can produce dim light in a 20 ft radius from your nose. You can end this effect as a Bonus Action.</p>
 		</description>
@@ -53,6 +54,7 @@
 	</element>
 
 	<element name="Antler Defence" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_TARANDUS_ANTLER_DEFENCE">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_ANTLER_DEFENCE</requirements>
 		<description>
 			<p>Once per Short Rest as a Reaction, you can lower your antlers and enter a defensive stance. Until the start of your next turn, you have a +2 bonus to your Armor Class against melee attacks.</p>
 		</description>
@@ -62,6 +64,7 @@
 	</element>
 
 	<element name="Hooves" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_TARANDUS_HOOVES">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_HOOVES</requirements>
 		<description>
 			<p>If you hit a target with an Unarmed Strike, you can deal bludgeoning damage equal to 1d4 plus your Strength modifier.</p>
 		</description>
@@ -71,6 +74,7 @@
 	</element>
 
 	<element name="Born to Navigate" type="Racial Trait" source="One-Shot Wonders: Holiday Adventure Pack" id="ID_RPP_OSWHAP_RACIAL_TRAIT_TARANDUS_BORN_TO_NAVIGATE">
+		<requirements>!ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_BORN_TO_NAVIGATE</requirements>
 		<description>
 			<p>You have proficiency in the Perception or Survival skill.</p>
 		</description>
@@ -80,5 +84,11 @@
 			<select type="Proficiency" name="Customized Skill Proficiency (Born to Navigate)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Guiding Light Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_GUIDING_LIGHT" />
+	<element name="Antler Defence Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_ANTLER_DEFENCE" />
+	<element name="Hooves Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_HOOVES" />
+	<element name="Born to Navigate Trait Replacement" type="Grants" source="Internal" id="ID_RPP_OSWHAP_RACIAL_TRAIT_REPLACEMENT_TARANDUS_BORN_TO_NAVIGATE" />
 
 </elements>
