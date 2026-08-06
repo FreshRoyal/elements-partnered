@@ -3,7 +3,7 @@
 	<info>
 		<name>Sanguine Knight</name>
 		<description>Sanguine Knight Archetype from The Illrigger Revised</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="illrigger-sanguineknight.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-sanguineknight.xml" />
 		</update>
 	</info>
@@ -43,6 +43,7 @@
 	</element>
 
 	<element name="Sutekh's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_BLESSING">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_SUTEKHS_BLESSING</requirements>
 		<description>
 			<p><em>3rd-Level Sanguine Knight Feature</em></p>
 			<p>When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain proficiency in the Religion skill.</p>
@@ -57,6 +58,7 @@
 	</element>
 
 	<element name="Exsanguinate" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_EXSANGUINATE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_EXSANGUINATE</requirements>
 		<description>
 			<p><em>3rd-Level Sanguine Knight Feature</em></p>
 			<p>You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature who isn't a Construct or Undead, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.</p>
@@ -67,6 +69,7 @@
 	</element>
 
 	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_INVOKE_HELL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_INVOKE_HELL</requirements>
 		<compendium display="false" />
 		<description>
 			<p><em>3rd-Level Sanguine Knight Feature</em></p>
@@ -107,6 +110,7 @@
 	</element>
 
 	<element name="Sutekh's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_SUTEKHS_INTERDICTION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_SUTEKHS_INTERDICTION</requirements>
 		<description>
 			<p><em>7th-Level Sanguine Knight Feature</em></p>
 			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
@@ -123,6 +127,7 @@
 	</element>
 
 	<element name="Bloodstroke" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_BLOODSTROKE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_BLOODSTROKE</requirements>
 		<description>
 			<p><em>11th-Level Sanguine Knight Feature</em></p>
 			<p>The magic that shields your allies now also saps their enemies' strength. When an ally who has temporary hit points from your Exsanguinate feature is hit by a melee attack, the attacker takes cold, fire, or necrotic damage (your choice) equal to your illrigger level.</p>
@@ -133,6 +138,7 @@
 	</element>
 
 	<element name="Haemal Exchange" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SANGUINE_KNIGHT_HAEMAL_EXCHANGE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_HAEMAL_EXCHANGE</requirements>
 		<description>
 			<p><em>15th-Level Sanguine Knight Feature</em></p>
 			<p>You have mastered the ability to enervate enemies and endow allies. When an interdicted creature within 60 feet of you makes an attack roll or saving throw, you can use your reaction to burn one of the seals on them and transfer their power. The target must roll a d8 and subtract the number rolled from the triggering attack roll or saving throw.</p>
@@ -143,5 +149,13 @@
 			You then empower an ally within 30 ft of you. The next time that ally makes an attack roll or saving throw, they roll a d8 and add the number rolled to the attack roll or saving throw.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Sutekh's Blessing Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_SUTEKHS_BLESSING" />
+	<element name="Exsanguinate Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_EXSANGUINATE" />
+	<element name="Invoke Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_INVOKE_HELL" />
+	<element name="Sutekh's Interdiction Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_SUTEKHS_INTERDICTION" />
+	<element name="Bloodstroke Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_BLOODSTROKE" />
+	<element name="Haemal Exchange Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SANGUINE_KNIGHT_HAEMAL_EXCHANGE" />
 
 </elements>

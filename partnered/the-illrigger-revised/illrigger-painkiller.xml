@@ -3,7 +3,7 @@
 	<info>
 		<name>Painkiller</name>
 		<description>Painkiller Archetype from The Illrigger Revised</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="illrigger-painkiller.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-painkiller.xml" />
 		</update>
 	</info>
@@ -40,6 +40,7 @@
 	</element>
 
 	<element name="Dispater's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DISPATERS_BLESSING">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DISPATERS_BLESSING</requirements>
 		<description>
 			<p><em>3rd-Level Painkiller Feature</em></p>
 			<p>When Dispater accepts you as his illrigger, you gain proficiency with heavy armor.</p>
@@ -51,6 +52,7 @@
 	</element>
 
 	<element name="Devastator" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEVASTATOR">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DEVASTATOR</requirements>
 		<description>
 			<p><em>3rd-Level Painkiller Feature</em></p>
 			<p>As an action, you invoke the authority of Dispater. You make a weapon attack and choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.</p>
@@ -62,6 +64,7 @@
 	</element>
 
 	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_INVOKE_HELL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_INVOKE_HELL</requirements>
 		<compendium display="false" />
 		<description>
 			<p><em>3rd-Level Painkiller Feature</em></p>
@@ -95,6 +98,7 @@
 	</element>
 
 	<element name="Dispater's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DESPATERS_INTERDICTION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DISPATERS_INTERDICTION</requirements>
 		<description>
 			<p><em>7th-Level Painkiller Feature</em></p>
 			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
@@ -111,6 +115,7 @@
 	</element>
 
 	<element name="You Die on My Command!" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_YOU_DIE_ON_MY_COMMAND">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_YOU_DIE_BY_MY_COMMAND</requirements>
 		<description>
 			<p><em>11th-Level Painkiller Feature</em></p>
 			<p>When an ally within 30 feet of you who can hear you drops to 0 hit points without being killed outright, you can use your reaction to shout an order at them, causing them to drop to 1 hit point instead. Once you use this reaction, you can't do so again until you finish a short or long rest.</p>
@@ -121,6 +126,7 @@
 	</element>
 
 	<element name="Deathstrike" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_PAINKILLER_DEATHSTRIKE">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DEATHSTRIKE</requirements>
 		<description>
 			<p><em>15th-Level Painkiller Feature</em></p>
 			<p>When you hit an interdicted creature with a melee weapon attack, you can use your reaction to burn one of the seals on them to turn the hit into a critical hit. When you do, you also double the damage dice you roll for the burned seal.</p>
@@ -130,5 +136,13 @@
 			<description>When you hit an interdicted creature with a melee weapon attack, you can use your reaction to burn one of the seals on them to turn the hit into a critical hit. When you do, you also double the damage dice you roll for the burned seal.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Dispater's Blessing Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DISPATERS_BLESSING" />
+	<element name="Devastator Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DEVASTATOR" />
+	<element name="Invoke Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_INVOKE_HELL" />
+	<element name="Dispater's Interdiction Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DISPATERS_INTERDICTION" />
+	<element name="You Die on My Command! Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_YOU_DIE_BY_MY_COMMAND" />
+	<element name="Deathstrike Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_PAINKILLER_DEATHSTRIKE" />
 
 </elements>

@@ -39,6 +39,7 @@
 	</element>
 
 	<element name="Marked for Death" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_MARKED_FOR_DEATH">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_MARKED_FOR_DEATH</requirements>
 		<description>
 			<p><em>3rd-Level Shadowmaster Feature</em></p>
 			<p>You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.</p>
@@ -49,6 +50,7 @@
 	</element>
 
 	<element name="Strike from the Dark" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_STRIKE_FROM_THE_DARK">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_STRIKE_FROM_THE_DARK</requirements>
 		<description>
 			<p><em>3rd-Level Shadowmaster Feature</em></p>
 			<p>You understand the power of striking from the shadows. Once per turn, when you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll a number of d4s equal to your proficiency bonus and deal extra damage equal to the total you rolled. This damage increases by 1d4 if the target is in dim light or darkness.</p>
@@ -64,6 +66,7 @@
 	</element>
 
 	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_INVOKE_HELL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_INVOKE_HELL</requirements>
 		<compendium display="false" />
 		<description>
 			<p><em>3rd-Level Shadowmaster Feature</em></p>
@@ -97,6 +100,7 @@
 	</element>
 
 	<element name="Belial's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_BELIALS_INTERDICTION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_BELIALS_INTERDICTION</requirements>
 		<description>
 			<p><em>7th-Level Shadowmaster Feature</em></p>
 			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
@@ -113,6 +117,7 @@
 	</element>
 
 	<element name="Umbral Killer" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_UMBRAL_KILLER">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_UMBRAL_KILLER</requirements>
 		<description>
 			<p><em>11th-Level Shadowmaster Feature</em></p>
 			<p>Shadows are your companion, aiding you in your exploits. You gain the following benefits:</p>
@@ -126,13 +131,14 @@
 			<description>You have advantage on Dexterity (Stealth) checks made to hide. Whenever you make a Dexterity saving throw to take only half damage from an effect, you instead take no damage if you succeed on the saving throw, and half damage if you fail.</description>
 		</sheet>
 		<rules>
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
 			<stat name="darkvision:range" value="60" />
 			<stat name="speed" value="10" />
 		</rules>
 	</element>
 
 	<element name="Doomed to the Shadows" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_SHADOWMASTER_DOOMED_TO_THE_SHADOWS">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_DOOMED_TO_THE_SHADOWS</requirements>
 		<description>
 			<p><em>15th-Level Shadowmaster Feature</em></p>
 			<p>You have perfected your assassin's strike. The extra damage from your Strike from the Dark feature increases to a number of d8s equal to your proficiency bonus (instead of that number of d4s), and you deal an extra 2d8 damage if the target is in dim light or darkness (instead of an extra 1d4 damage).</p>
@@ -147,5 +153,13 @@
 			<stat name="strike from the dark:bonus die" value="8" bonus="base" />
 		</rules>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Marked for Death Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_MARKED_FOR_DEATH" />
+	<element name="Strike from the Dark Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_STRIKE_FROM_THE_DARK" />
+	<element name="Invoke Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_INVOKE_HELL" />
+	<element name="Belial's Interdiction Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_BELIALS_INTERDICTION" />
+	<element name="Umbral Killer Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_UMBRAL_KILLER" />
+	<element name="Doomed to the Shadows Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_SHADOWMASTER_DOOMED_TO_THE_SHADOWS" />
 
 </elements>

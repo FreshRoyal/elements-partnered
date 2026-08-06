@@ -3,7 +3,7 @@
 	<info>
 		<name>Hellspeaker</name>
 		<description>Hellspeaker Archetype from The Illrigger Revised</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="illrigger-hellspeaker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-hellspeaker.xml" />
 		</update>
 	</info>
@@ -46,6 +46,7 @@
 	</element>
 
 	<element name="Moloch's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_BLESSING">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_MOLOCHS_BLESSING</requirements>
 		<description>
 			<p><em>3rd-Level Hellspeaker Feature</em></p>
 			<p>When Moloch accepts you as his illrigger, you gain proficiency in the Persuasion or Deception skill (your choice). If you already have proficiency in the skill of your choice, your proficiency bonus is doubled for any ability check you make with that skill.</p>
@@ -76,6 +77,7 @@
 	</element>
 	
 	<element name="Charm Enemy" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_CHARM_ENEMY">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_CHARM_ENEMY</requirements>
 		<description>
 			<p><em>3rd-Level Hellspeaker Feature</em></p>
 			<p>When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them. While charmed, the target regards you as a friendly acquaintance. When the charmed condition ends, the target knows they were charmed by you.</p>
@@ -93,6 +95,7 @@
 	</element>
 
 	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INVOKE_HELL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_INVOKE_HELL</requirements>
 		<compendium display="false" />
 		<description>
 			<p><em>3rd-Level Hellspeaker Feature</em></p>
@@ -126,6 +129,7 @@
 	</element>
 
 	<element name="Moloch's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_MOLOCHS_INTERDICTION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_MOLOCHS_INTERDICTION</requirements>
 		<description>
 			<p><em>7th-Level Hellspeaker Feature</em></p>
 			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
@@ -142,6 +146,7 @@
 	</element>
 
 	<element name="Intransigent" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_INTRANSIGENT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_INTRANSIGENT</requirements>
 		<description>
 			<p><em>11th-Level Hellspeaker Feature</em></p>
 			<p>You and each creature of your choice within 10 feet of you are immune to the charmed condition while you are conscious.</p>
@@ -152,6 +157,7 @@
 	</element>
 
 	<element name="Let's Make a Deal" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_LETS_MAKE_A_DEAL">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_LETS_MAKE_A_DEAL</requirements>
 		<description>
 			<p><em>11th-Level Hellspeaker Feature</em></p>
 			<p>You can offer your allies a deal—at a price, of course. As a bonus action, you choose one willing ally within 60 feet of you who can hear you.</p>
@@ -165,6 +171,7 @@
 	</element>
 
 	<element name="Quid Pro Quo" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_HELLSPEAKER_QUID_PRO_QUO">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_QUID_PRO_QUO</requirements>
 		<description>
 			<p><em>15th-Level Hellspeaker Feature</em></p>
 			<p>You can whisper to the legions of Hell, ensnaring enemies and calling allies. As an action, you can attempt to banish a creature you can see within 30 feet of you. The target must succeed on a Charisma saving throw. On a failed save, the target is banished to the wastes of Hell for 1 minute, after which they return to the unoccupied space nearest to the one they left. A target banished in this way can repeat the saving throw at the end of each of their turns, ending the effect early on a success. A creature who succeeds on a saving throw against this effect becomes immune to your Quid Pro Quo for 24 hours.</p>
@@ -176,5 +183,14 @@
 			Additionally, when a target is banished in this way, a devil jurist or a horned devil appears in their place. This devil acts as an ally to you and follows your commands until the banished creature is no longer banished, at which time the devil disappears.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Moloch's Blessing Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_MOLOCHS_BLESSING" />
+	<element name="Charm Enemy Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_CHARM_ENEMY" />
+	<element name="Invoke Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_INVOKE_HELL" />
+	<element name="Moloch's Interdiction Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_MOLOCHS_INTERDICTION" />
+	<element name="Intransigent Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_INTRANSIGENT" />
+	<element name="Let's Make a Deal Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_LETS_MAKE_A_DEAL" />
+	<element name="Quid Pro Quo Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_HELLSPEAKER_QUID_PRO_QUO" />
 
 </elements>

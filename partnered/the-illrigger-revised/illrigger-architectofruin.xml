@@ -3,7 +3,7 @@
 	<info>
 		<name>Architect of Ruin</name>
 		<description>Architect of Ruin Archetype from The Illrigger Revised</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="illrigger-architectofruin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/illrigger-architectofruin.xml" />
 		</update>
 	</info>
@@ -41,6 +41,7 @@
 	</element>
 
 	<element name="Asmodeus's Blessing" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_BLESSING">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_ASMODEUSS_BLESSING</requirements>
 		<description>
 			<p><em>3rd-Level Architect of Ruin Feature</em></p>
 			<p>When Asmodeus accepts you as an Architect of Ruin, he grants you access to his infernal knowledge. You gain proficiency in one of the following skills of your choice: Arcana, History, Nature, or Religion.</p>
@@ -55,6 +56,7 @@
 	</element>
 
 	<element name="Spellcasting" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SPELLCASTING">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_SPELLCASTING</requirements>
 		<description>
 			<p>As an Architect of Ruin, you access a well of profane magic to cast spells.</p>
 			<p class="indent"><strong><em>Cantrips.</em></strong> You know two cantrips of your choice from the Architect of Ruin spell list (presented at the end of this subclass). You learn an additional cantrip from this list at 10th level.</p>
@@ -128,6 +130,7 @@
 	
 	<element name="Invoke Hell" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_INVOKE_HELL">
 		<compendium display="false" />
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_INVOKE_HELL</requirements>
 		<description>
 			<p><em>3rd-Level Architect of Ruin Feature</em></p>
 			<p>You gain the following two Invoke Hell options:</p>
@@ -160,6 +163,7 @@
 	</element>
 
 	<element name="Hellish Versatility" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_HELLISH_VERSATILITY">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_HELLISH_VERSATILITY</requirements>
 		<description>
 			<p><em>7th-Level Architect of Ruin Feature</em></p>
 			<p>Once on each of your turns, you can cast one of your illrigger cantrips in place of one of your attacks granted by your Extra Attack feature.</p>
@@ -170,6 +174,7 @@
 	</element>
 
 	<element name="Asmodeus's Interdiction" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_ASMODEUSS_INTERDICTION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_ASMODEUSS_INTERDICTION</requirements>
 		<description>
 			<p><em>7th-Level Architect of Ruin Feature</em></p>
 			<p>You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.</p>
@@ -186,6 +191,7 @@
 	</element>
 
 	<element name="Submit" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_SUBMIT">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_SUBMIT</requirements>
 		<description>
 			<p><em>11th-Level Hellspeaker Feature</em></p>
 			<p>When you cast an illrigger spell you know, you can burn two seals on an interdicted creature (no action required) to impose disadvantage on their saving throw against the spell.</p>
@@ -196,6 +202,7 @@
 	</element>
 
 	<element name="Vile Transmogrification" type="Archetype Feature" source="The Illrigger Revised" id="ID_MCDM_ILLR_ARCHETYPE_FEATURE_ARCHITECT_OF_RUIN_VILE_TRANSMOGRIFICATION">
+		<requirements>!ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_VILE_TRANSMOGRIFICATION</requirements>
 		<description>
 			<p><em>15th-Level Architect of Ruin Feature</em></p>
 			<p>You uncover two new ways to employ Asmodeus's magic:</p>
@@ -209,6 +216,15 @@
 			• You can expend any number of seals to regain a spell slot of a level equal to one-third that number.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Asmodeus's Blessing Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_ASMODEUSS_BLESSING" />
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_SPELLCASTING" />
+	<element name="Invoke Hell Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_INVOKE_HELL" />
+	<element name="Hellish Versatility Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_HELLISH_VERSATILITY" />
+	<element name="Asmodeus's Interdiction Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_ASMODEUSS_INTERDICTION" />
+	<element name="Submit Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_SUBMIT" />
+	<element name="Vile Transmogrification Feature Replacement" type="Grants" source="Internal" id="ID_MCDM_ILLR_FEATURE_REPLACEMENT_ILLRIGGER_ARCHITECT_OF_RUIN_VILE_TRANSMOGRIFICATION" />
 
 	<!--Spell List (2014)-->
 	 <append id="ID_PHB_SPELL_CHILL_TOUCH">

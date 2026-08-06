@@ -3,7 +3,7 @@
 	<info>
 		<name>Illrigger</name>
 		<description>Illrigger class from The Illrigger Revised</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="class-illrigger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-illrigger-revised/class-illrigger.xml" />
 		</update>
 	</info>
@@ -169,9 +169,9 @@
 			<stat name="baleful interdict:dice" value="3" bonus="base" level="11" />
 			<stat name="baleful interdict:dice" value="4" bonus="base" level="20" />
 			<stat name="baleful interdict:range" value="30" bonus="base" />
-			<stat name="baleful interdict:dc" value="8" />
-			<stat name="baleful interdict:dc" value="proficiency" />
-			<stat name="baleful interdict:dc" value="charisma:modifier" />
+			<stat name="baleful interdict:dc" value="8" bonus="base" />
+			<stat name="baleful interdict:dc" value="proficiency" bonus="proficiency" />
+			<stat name="baleful interdict:dc" value="charisma:modifier" bonus="modifier" />
 		</rules>
 	</element>
 
