@@ -3,7 +3,7 @@
 	<info>
 		<name>Skills</name>
 		<description>Skills from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/skills.xml" />
 		</update>
 	</info>
@@ -24,8 +24,8 @@
 			<set name="short">You have access to the Mechanics and Salvage skills from <em>Obojima: Tales from the Tall Grass</em>.</set>
 		</setters>
 		<rules>
-			<stat name="mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
-			<stat name="salvage:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="ottg:mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="ottg:salvage:proficiency" value="intelligence:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -37,8 +37,8 @@
 			<p>Your Intelligence (Mechanics) check measures your ability to comprehend, operate, craft, and repair non-magical machines.</p>
 		</description>
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency" bonus="proficiency" />
-			<stat name="mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="ottg:mechanics:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="ottg:mechanics:proficiency" value="intelligence:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -57,7 +57,7 @@
 
     <element name="Mechanics Proficiency Double" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS_DOUBLE">
         <rules>
-            <stat name="mechanics:proficiency" value="proficiency" bonus="double" requirements="!ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS" alt="Double Proficiency" />
+            <stat name="ottg:mechanics:proficiency" value="proficiency" bonus="double" requirements="!ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_MECHANICS" alt="Double Proficiency" />
         </rules>
     </element>
 
@@ -72,7 +72,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency" bonus="double" />
+			<stat name="ottg:mechanics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 	
@@ -95,7 +95,7 @@
 		<compendium display="false" />
 		<description />
 		<sheet alt="Intelligence (Mechanics)">
-			<description>Your bonus for checks using this skill is {{mechanics:proficiency}}.</description>
+			<description>Your bonus for checks using this skill is {{ottg:mechanics:proficiency}}.</description>
 		</sheet>
 	</element>
 
@@ -107,8 +107,8 @@
 			<p>The GM might ask you to make an Intelligence (Salvage) check to search for, dissassemble, or otherwise recall information about mechanical parts that are useful for magical and non-magical machines or potions.</p>
 		</description>
 		<rules>
-			<stat name="salvage:proficiency" value="proficiency" bonus="proficiency" />
-			<stat name="salvage:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="ottg:salvage:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="ottg:salvage:proficiency" value="intelligence:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -127,7 +127,7 @@
 
     <element name="Salvage Proficiency Double" type="Grants" source="Obojima: Tales from the Tall Grass" id="ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE_DOUBLE">
         <rules>
-            <stat name="salvage:proficiency" value="proficiency" bonus="double" requirements="!ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE" alt="Double Proficiency" />
+            <stat name="ottg:salvage:proficiency" value="proficiency" bonus="double" requirements="!ID_1985_OTTG_GRANTS_PROFICIENCY_SKILL_SALVAGE" alt="Double Proficiency" />
         </rules>
     </element>
 
@@ -142,7 +142,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="salvage:proficiency" value="proficiency" bonus="double" />
+			<stat name="ottg:salvage:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -165,22 +165,22 @@
 		<compendium display="false" />
 		<description />
 		<sheet alt="Intelligence (Salvage)">
-			<description>Your bonus for checks using this skill is {{salvage:proficiency}}.</description>
+			<description>Your bonus for checks using this skill is {{ottg:salvage:proficiency}}.</description>
 		</sheet>
 	</element>
 
 	<!--Jack of All Trades-->
 	<append id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
-			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			<stat name="ottg:mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat name="ottg:salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
 		</rules>
 	</append>
 	
 	<append id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
-			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			<stat name="ottg:mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat name="ottg:salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
 		</rules>
 	</append>
 
@@ -203,16 +203,16 @@
 	<!--Plane Shift: Amonkhet Kefnet's Blessing-->
 	<append id="ID_WOTC_PSA_RACIAL_TRAIT_AVEN_KEFNETS_BLESSING">
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
-			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			<stat name="ottg:mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat name="ottg:salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
 		</rules>
 	</append>
 
 	<!--LRRP Errand Runner-->
 	<append id="ID_FLP_LRRP_CLASS_FEATURE_MESSENGER_ERRAND_RUNNER">
 		<rules>
-			<stat name="mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
-			<stat name="salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
+			<stat name="ottg:mechanics:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_MECHANICS" />
+			<stat name="ottg:salvage:proficiency" value="proficiency:half" requirements="!ID_1985_OTTG_PROFICIENCY_SKILL_SALVAGE" />
 		</rules>
 	</append>
 
