@@ -3,7 +3,7 @@
 	<info>
 		<name>New Skills</name>
 		<description>New Skills from The Lord of the Rings Roleplaying</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="skills.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying/skills.xml" />
 		</update>
 	</info>
@@ -28,10 +28,10 @@
 			<set name="short">You have access to the Riddle, Explore, Hunting, and Travel skills from <em>The Lord of the Rings Roleplaying™</em>.</set>
 		</setters>
 		<rules>
-			<stat name="explore:proficiency" value="wisdom:modifier" bonus="ability" />
-			<stat name="hunting:proficiency" value="wisdom:modifier" bonus="ability" />
-			<stat name="riddle:proficiency" value="intelligence:modifier" bonus="ability" />
-			<stat name="travel:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="lrrp:explore:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="lrrp:hunting:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="lrrp:riddle:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="lrrp:travel:proficiency" value="wisdom:modifier" bonus="ability" />
 		</rules>
 	</element>
 	
@@ -55,8 +55,8 @@
 			<p class="flavor">“We have found a dry cave," they said, "not far round the next corner; and ponies and all could get inside.”</p>
 		</description>
 		<rules>
-			<stat name="explore:proficiency" value="proficiency" bonus="proficiency" />
-			<stat name="explore:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="lrrp:explore:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="lrrp:explore:proficiency" value="wisdom:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -75,7 +75,7 @@
 
     <element name="Explore Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE_DOUBLE">
         <rules>
-            <stat name="explore:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE" alt="Double Proficiency" />
+            <stat name="lrrp:explore:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_EXPLORE" alt="Double Proficiency" />
         </rules>
     </element>
 
@@ -90,7 +90,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="explore:proficiency" value="proficiency" bonus="double" />
+			<stat name="lrrp:explore:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -113,7 +113,7 @@
 		<compendium display="false" />
 		<description />
 		<sheet alt="Wisdom (Explore)">
-			<description>Your bonus for checks using this skill is {{explore:proficiency}}.</description>
+			<description>Your bonus for checks using this skill is {{lrrp:explore:proficiency}}.</description>
 		</sheet>
 	</element>
 
@@ -122,12 +122,12 @@
 		<supports>Skill,Wisdom</supports>
 		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
 		<description>
-			<p>Knowing how to hunt is a fundamental skill, shared by most cultures of Middle-earth. A Wisdom (Hunting) check is required when hunting wild game, or to follow tracks and identify a quarry by its spoor. This skill also covers fishing and preparing traps. In wilder areas, hunters learn to apply their trade to more dangerous creatures—such as Orcs, Spiders, or Wargs—or else risk becoming the prey.</p>
+			<p>Knowing how to hunt is a fundamental skill, shared by most cultures of Middle-earth. A Wisdom (Hunting) check is required when lrrp:hunting wild game, or to follow tracks and identify a quarry by its spoor. This skill also covers fishing and preparing traps. In wilder areas, hunters learn to apply their trade to more dangerous creatures—such as Orcs, Spiders, or Wargs—or else risk becoming the prey.</p>
 			<p class="flavor">They dwelt most often by the edges of the woods, from which they could escape at times to hunt, or to ride and run over the open lands by moonlight or starlight...</p>
 		</description>
 		<rules>
-			<stat name="hunting:proficiency" value="proficiency" bonus="proficiency" />
-			<stat name="hunting:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="lrrp:hunting:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="lrrp:hunting:proficiency" value="wisdom:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -146,7 +146,7 @@
 
     <element name="Hunting Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_HUNTING_DOUBLE">
         <rules>
-            <stat name="hunting:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_HUNTING" alt="Double Proficiency" />
+            <stat name="lrrp:hunting:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_HUNTING" alt="Double Proficiency" />
         </rules>
     </element>
 
@@ -161,7 +161,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="hunting:proficiency" value="proficiency" bonus="double" />
+			<stat name="lrrp:hunting:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -184,7 +184,7 @@
 		<compendium display="false" />
 		<description />
 		<sheet alt="Wisdom (Hunting)">
-			<description>Your bonus for checks using this skill is {{hunting:proficiency}}.</description>
+			<description>Your bonus for checks using this skill is {{lrrp:hunting:proficiency}}.</description>
 		</sheet>
 	</element>
 
@@ -193,12 +193,12 @@
 		<supports>Skill,Intelligence</supports>
 		<requirements>ID_FLP_LRRP_OPTION_NEW_SKILLS</requirements>
 		<description>
-			<p>The riddle game is an accepted custom among many creatures, including quite a few that would be classified as wicked if they did not respect the ancient rules. An Intelligence (Riddle) check is used to gain helpful insight from a spoken or written riddle, but also to draw conclusions from seemingly unconnected scraps of information by deduction, reasoning, and intuition.</p>
-			<p class="flavor">"A Hobbit waded out into the water and back; but I cannot say how long ago." "How then do you read this riddle?" asked Gimli.</p>
+			<p>The lrrp:riddle game is an accepted custom among many creatures, including quite a few that would be classified as wicked if they did not respect the ancient rules. An Intelligence (Riddle) check is used to gain helpful insight from a spoken or written lrrp:riddle, but also to draw conclusions from seemingly unconnected scraps of information by deduction, reasoning, and intuition.</p>
+			<p class="flavor">"A Hobbit waded out into the water and back; but I cannot say how long ago." "How then do you read this lrrp:riddle?" asked Gimli.</p>
 		</description>
 		<rules>
-			<stat name="riddle:proficiency" value="proficiency" bonus="proficiency" />
-			<stat name="riddle:proficiency" value="intelligence:modifier" bonus="ability" />
+			<stat name="lrrp:riddle:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="lrrp:riddle:proficiency" value="intelligence:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -217,7 +217,7 @@
 
     <element name="Riddle Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_RIDDLE_DOUBLE">
         <rules>
-            <stat name="riddle:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_RIDDLE" alt="Double Proficiency" />
+            <stat name="lrrp:riddle:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_RIDDLE" alt="Double Proficiency" />
         </rules>
     </element>
 
@@ -232,7 +232,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="riddle:proficiency" value="proficiency" bonus="double" />
+			<stat name="lrrp:riddle:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -255,7 +255,7 @@
 		<compendium display="false" />
 		<description />
 		<sheet alt="Intelligence (Riddle)">
-			<description>Your bonus for checks using this skill is {{riddle:proficiency}}.</description>
+			<description>Your bonus for checks using this skill is {{lrrp:riddle:proficiency}}.</description>
 		</sheet>
 	</element>
 
@@ -268,8 +268,8 @@
 			<p class="flavor">The country was much rougher and more barren than in the green vale of the Great River in Wilderland on the other side of the range, and their going would be slow...</p>
 		</description>
 		<rules>
-			<stat name="travel:proficiency" value="proficiency" bonus="proficiency" />
-			<stat name="travel:proficiency" value="wisdom:modifier" bonus="ability" />
+			<stat name="lrrp:travel:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="lrrp:travel:proficiency" value="wisdom:modifier" bonus="ability" />
 		</rules>
 	</element>
 
@@ -288,7 +288,7 @@
 
     <element name="Travel Proficiency Double" type="Grants" source="The Lord of the Rings Roleplaying" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_TRAVEL_DOUBLE">
         <rules>
-            <stat name="travel:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL" alt="Double Proficiency" />
+            <stat name="lrrp:travel:proficiency" value="proficiency" bonus="double" requirements="!ID_FLP_LRRP_GRANTS_PROFICIENCY_SKILL_TRAVEL" alt="Double Proficiency" />
         </rules>
     </element>
 
@@ -303,7 +303,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="travel:proficiency" value="proficiency" bonus="double" />
+			<stat name="lrrp:travel:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -318,7 +318,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="travel:proficiency" value="proficiency" bonus="double" />
+			<stat name="lrrp:travel:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -326,26 +326,26 @@
 		<compendium display="false" />
 		<description />
 		<sheet alt="Wisdom (Travel)">
-			<description>Your bonus for checks using this skill is {{travel:proficiency}}.</description>
+			<description>Your bonus for checks using this skill is {{lrrp:travel:proficiency}}.</description>
 		</sheet>
 	</element>
 
 	<!--Jack of All Trades-->
 	<append id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
 		<rules>
-			<stat name="explore:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
-			<stat name="hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
-			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
-			<stat name="travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<stat name="lrrp:explore:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<stat name="lrrp:hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<stat name="lrrp:riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<stat name="lrrp:travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
 		</rules>
 	</append>
 
 	<append id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
 		<rules>
-			<stat name="explore:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
-			<stat name="hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
-			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
-			<stat name="travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
+			<stat name="lrrp:explore:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_EXPLORE" />
+			<stat name="lrrp:hunting:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_HUNTING" />
+			<stat name="lrrp:riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<stat name="lrrp:travel:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_TRAVEL" />
 		</rules>
 	</append>
 
@@ -372,7 +372,7 @@
 	<!--Plane Shift: Amonkhet Kefnet's Blessing-->
 	<append id="ID_WOTC_PSA_RACIAL_TRAIT_AVEN_KEFNETS_BLESSING">
 		<rules>
-			<stat name="riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
+			<stat name="lrrp:riddle:proficiency" value="proficiency:half" requirements="!ID_FLP_LRRP_PROFICIENCY_SKILL_RIDDLE" />
 		</rules>
 	</append>
 
