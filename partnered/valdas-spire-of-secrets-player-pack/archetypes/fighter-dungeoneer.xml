@@ -3,7 +3,7 @@
 	<info>
 		<name>Dungeoneer</name>
 		<description>Dungeoneer from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="fighter-dungeoneer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/fighter-dungeoneer.xml" />
 		</update>
 	</info>
@@ -32,6 +32,7 @@
 	</element>
 
 	<element name="Level 3: Kick in the Door" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR</requirements>
 		<description>
 			<p>You have Advantage attack rolls you make during the first round of combat.</p>
 		</description>
@@ -41,6 +42,7 @@
 	</element>
 
 	<element name="Level 3: Heroic Superstition" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_HEROIC_SUPERSTITION">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_HEROIC_SUPERSTITION</requirements>
 		<description>
 			<p>You gain Heroic Inspiration when you do any of the following.</p>
 			<p class="indent"><em><strong>Damage Vulnerability.</strong></em> Deal a type of damage to which a creature has Vulnerability.</p>
@@ -62,6 +64,7 @@
 	</element>
 
 	<element name="Level 7: Dungeon Precautions" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_DUNGEON_PRECAUTIONS">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_DUNGEON_PRECAUTIONS</requirements>
 		<description>
 			<p>You can cast any of the following spells without a spell slot: <i>Alarm, Comprehend Languages, Detect Magic, Detect Poison and Disease, Find Traps, Identify,</i> and <i>Purify Food and Drink</i>. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this feature (choose the ability when you cast the spell).</p>
 			<p class="indent">You can use this feature five times and regain all expended uses when you finish a Long Rest.</p>
@@ -72,6 +75,7 @@
 	</element>
 
 	<element name="Level 10: Monster Kill" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_MONSTER_KILL">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_MONSTER_KILL</requirements>
 		<description>
 			<p>Once per turn when you hit an Aberration, Dragon, Fey, Fiend, Monstrosity, Ooze, or Undead with an attack with a weapon, you can deal an extra 1d10 damage to the target. This damage is the same type dealt by the weapon.</p>
 		</description>
@@ -81,6 +85,7 @@
 	</element>
 
 	<element name="Level 15: Avoidance" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_AVOIDANCE">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_AVOIDANCE</requirements>
 		<description>
 			<p>When you're subjected to an effect that allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</p>
 		</description>
@@ -90,6 +95,7 @@
 	</element>
 
 	<element name="Level 18: Veteran Hero" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_FIGHTER_DUNGEONEER_VETERAN_HERO">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_VETERAN_HERO</requirements>
 		<description>
 			<p>Your dungeoneering expertise gives you the following benefits.</p>
 			<p class="indent"><em><strong>Peerless Heroism.</strong></em> Once per turn when you make a D20 Test, you can expend Heroic Inspiration to turn the roll into a 20, instead of rerolling the d20.</p>
@@ -119,5 +125,13 @@
 			<description>You can have two instances of Heroic Inspiration at one time. You can use only one Heroic Inspiration per roll.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Kick in the Door Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_KICK_IN_THE_DOOR" />
+	<element name="Heroic Superstition Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_HEROIC_SUPERSTITION" />
+	<element name="Dungeon Precautions Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_DUNGEON_PRECAUTIONS" />
+	<element name="Monster Kill Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_MONSTER_KILL" />
+	<element name="Avoidance Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_AVOIDANCE" />
+	<element name="Veteran Hero Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_FIGHTER_DUNGEONEER_VETERAN_HERO" />
 	
 </elements>

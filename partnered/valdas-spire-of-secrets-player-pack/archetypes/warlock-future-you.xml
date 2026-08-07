@@ -3,7 +3,7 @@
 	<info>
 		<name>Future You Patron</name>
 		<description>Future You Patron from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-future-you.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/warlock-future-you.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Level 3: Future You Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_FUTURE_YOU_SPELLS">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_FUTURE_YOU_SPELLS</requirements>
 		<description>
 			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Future You Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Future You Spells</h5>
@@ -72,6 +73,7 @@
 	</element>
 
 	<element name="Level 3: It Happened Like This" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_IT_HAPPENED_LIKE_THIS">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_IT_HAPPENED_LIKE_THIS</requirements>
 		<description>
 			<p>Your discussions of the future with yourself have given you peripheral knowledge about how events will play out. Whenever you finish a Short or Long Rest, the GM rolls a d20 and a d4 in secret and records the number rolled on the d20. The GM tells you the recorded d20 roll, unless they roll a 4 on the d4; in that case, they lie about the recorded d20 roll.</p>
 			<p class="indent">You can replace any D20 Test made by you or a creature you can see with the recorded d20 roll (no action required). You must choose to do so before the roll. If the GM lied about the roll, they inform you of the actual recorded d20 roll only after you replace the test with it.</p>
@@ -83,6 +85,7 @@
 	</element>
 
 	<element name="Level 6: I Could Do With Fewer Scars" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_I_COULD_DO_WITH_FEWER_SCARS">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_I_COULD_DO_WITH_FEWER_SCARS</requirements>
 		<description>
 			<p>Your future self warns you of particular attacks to watch out for. When a creature you can see hits you with an attack roll, you can take a Reaction to gain a +10 bonus to your AC against that attack, potentially causing it to miss.</p>
 			<p class="indent">You can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
@@ -94,6 +97,7 @@
 	</element>
 
 	<element name="Level 10: Expect an Ambush" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_EXPECT_AN_AMBUSH">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_EXPECT_AN_AMBUSH</requirements>
 		<description>
 			<p>You have Advantage on Initiative rolls and Resistance to all damage on the first round of combat.</p>
 		</description>
@@ -103,6 +107,7 @@
 	</element>
 
 	<element name="Level 14: Grandfather Paradox" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_WARLOCK_FUTURE_YOU_PATRON_GRANDFATHER_PARADOX">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_GRANDFATHER_PARADOX</requirements>
 		<description>
 			<p>As a Magic action, you can goad a creature within 60 feet of you that can see or hear you into causing a paradox. The creature must make an Intelligence saving throw against your spell save DC. On a failed save, the creature takes 10d6 Psychic damage and has the Stunned condition for 1 minute as it is locked between opposing timelines. On a successful save, the target takes half as much damage only. The Stunned creature repeats the save at the end of each of its turns, ending the condition on itself on a success.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
@@ -111,5 +116,12 @@
 			<description>You can goad a creature within 60 ft of you that can see or hear you into causing a paradox. The creature must make a DC{{warlock:spellcasting:dc}} Intelligence saving throw. On a failed save, the creature takes 10d6 Psychic damage and has the Stunned condition for 1 minute as it is locked between opposing timelines. On a successful save, the target takes half as much damage only. The Stunned creature repeats the save at the end of each of its turns, ending the condition on itself on a success.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Future You Spells Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_FUTURE_YOU_SPELLS" />
+	<element name="It Happened Like This Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_IT_HAPPENED_LIKE_THIS" />
+	<element name="I Could Do With Fewer Scars Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_I_COULD_DO_WITH_FEWER_SCARS" />
+	<element name="Expect an Ambush Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_EXPECT_AN_AMBUSH" />
+	<element name="Grandfather Paradox Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_WARLOCK_FUTURE_YOU_PATRON_GRANDFATHER_PARADOX" />
 
 </elements>

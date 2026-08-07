@@ -3,7 +3,7 @@
 	<info>
 		<name>Arachnoid Stalker</name>
 		<description>Arachnoid Stalker from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="rogue-arachnoid-stalker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/rogue-arachnoid-stalker.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Level 3: Webbing" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_WEBBING">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_WEBBING</requirements>
 		<description>
 			<p>You can magically produce sticky, silken spider webs from your hands as a Bonus Action. This web dissolves after 1 minute. When you create the webs, you can use them to do one of the following.</p>
 			<p class="indent"><b><i>Pull Yourself.</i></b> You project a line of web at a point you can see within 30 feet, pulling yourself to that point in a straight line without provoking Opportunity Attacks. You can use this benefit as a Reaction when you fall to pull yourself up to 10 feet in any direction.</p>
@@ -52,6 +53,7 @@
 	</element>
 	
 	<element name="Level 3: Venomous Strike" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_VENOMOUS_STRIKE">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_VENOMOUS_STRIKE</requirements>
 		<description>
 			<p>When you deal Sneak Attack damage to a creature, you can choose for the Sneak Attack to deal d8s of Poison damage instead of d6s of the same type dealt by the weapon.</p>
 		</description>
@@ -61,6 +63,7 @@
 	</element>
 
 	<element name="Level 9: Wall Crawling" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_WALL_CRAWLING">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_WALL_CRAWLING</requirements>
 		<description>
 			<p>When you deal Sneak Attack damage to a creature, you can choose for the Sneak Attack to deal d8s of Poison damage instead of d6s of the same type dealt by the weapon.</p>
 			<p class="indent"><b><i>Climber.</i></b> You gain a Climb Speed equal to your Speed.</p>
@@ -68,7 +71,7 @@
 			<p class="indent"><b><i>Spider Climb.</i></b> You can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free.</p>
 		</description>
 		<sheet alt="Wall Crawling">
-			<description>ou can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free. If you are on a ceiling and Lightly Obscured, you can take the Hide action as long as any enemy that could see you is below you.</description>
+			<description>You can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free. If you are on a ceiling and Lightly Obscured, you can take the Hide action as long as any enemy that could see you is below you.</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed:climb" value="innate speed" bonus="base" />
@@ -76,6 +79,7 @@
 	</element>
 
 	<element name="Level 13: Spider Sense" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_SPIDER_SENSE">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_SPIDER_SENSE</requirements>
 		<description>
 			<p>When you make a saving throw and take damage, you can take a Reaction to use your Uncanny Dodge, halving the damage you take (round down).</p>
 		</description>
@@ -85,6 +89,7 @@
 	</element>
 
 	<element name="Level 17: Paralytic Venom" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_PARALYTIC_VENOM">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_PARALYTIC_VENOM</requirements>
 		<description>
 			<p>You gain the following Cunning Strike option.</p>
 			<p class="indent"><b><i>Paralyze (Cost: 4d6).</i></b> When you deal Poison damage with your Venomous Strike, the target must succeed on a Constitution saving throw or have the Paralyzed condition until the end of your next turn.</p>
@@ -106,5 +111,12 @@
 			<select type="Archetype Feature" name="VSSPP Cunning Strike Paralyze" supports="VSSPP Cunning Strike Paralyze" default="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_PARALYTIC_VENOM_PARALYZE" requirements="ID_MHP_VSSPP_ARCHETYPE_FEATURE_ROGUE_ARACHNOID_STALKER_PARALYTIC_VENOM" />
 		</rules>
 	</append>
+
+	<!--Feature Replacement Grants-->
+	<element name="Webbing Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_WEBBING" />
+	<element name="Venomous Strike Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_VENOMOUS_STRIKE" />
+	<element name="Wall Crawling Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_WALL_CRAWLING" />
+	<element name="Spider Sense Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_SPIDER_SENSE" />
+	<element name="Paralytic Venom Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_ROGUE_ARACHNOID_STALKER_PARALYTIC_VENOM" />
 
 </elements>

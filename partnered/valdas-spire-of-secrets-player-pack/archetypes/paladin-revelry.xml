@@ -3,7 +3,7 @@
 	<info>
 		<name>Oath of Revelry</name>
 		<description>Oath of Revelry from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="paladin-revelry.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/paladin-revelry.xml" />
 		</update>
 	</info>
@@ -36,6 +36,7 @@
 	</element>
 
 	<element name="Level 3: Oath Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_OATH_SPELLS">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_OATH_SPELLS</requirements>
 		<description>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Revelry Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Oath of Revelry Spells</h5>
@@ -66,6 +67,7 @@
 	</element>
 
 	<element name="Level 3: Conjure Drink" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_CONJURE_DRINK">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_CONJURE_DRINK</requirements>
 		<description>
 			<p>As a Magic action, you can expend one use of your Channel Divinity to conjure a number of mugs filled with frothy ale up to your Charisma modifier (minimum of one), which appear in spaces within 30 feet of yourself. A creature that drinks the ale as a Bonus Action gains Temporary Hit Points equal to your Charisma modifier and has Advantage on saving throws for 1 minute. When you finish a Long Rest, the mugs and remaining ale vanish.</p>
 		</description>
@@ -79,6 +81,7 @@
 	</element>
 
 	<element name="Level 7: Aura of Fraternity" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_AURA_OF_FRATERNITY">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_AURA_OF_FRATERNITY</requirements>
 		<description>
 			<p>You and your allies deal an extra 1d4 damage on attacks using Melee weapons or Unarmed Strikes while in your Aura of Protection. This damage is the same type dealt by the weapon or Unarmed Strike.</p>
 		</description>
@@ -88,6 +91,7 @@
 	</element>
 
 	<element name="Level 15: Merrymaker" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_MERRYMAKER">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_MERRYMAKER</requirements>
 		<description>
 			<p>When you or an ally within 30 feet of yourself that can see or hear you makes a D20 Test, you can take a Reaction to give that creature Advantage on the roll.</p>
 			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a Long Rest. If the creature still fails the D20 Test, this use of Merrymaker isn't expended.</p>
@@ -102,6 +106,7 @@
 	</element>
 
 	<element name="Level 20: Party Animal" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_PALADIN_REVELRY_PARTY_ANIMAL">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_PARTY_ANIMAL</requirements>
 		<description>
 			<p>As a Bonus Action, you can imbue your Aura of Protection with the many-hued magic of revelry, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
 			<p class="indent"><b><i>Extra Damage.</i></b> The extra damage from your Aura of Fraternity increases to 1d8.</p>
@@ -116,5 +121,12 @@
 			You can restore a use of this feature by expending a level 5 spell slot.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_OATH_SPELLS" />
+	<element name="Conjure Drink Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_CONJURE_DRINK" />
+	<element name="Aura of Fraternity Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_AURA_OF_FRATERNITY" />
+	<element name="Merrymaker Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_MERRYMAKER" />
+	<element name="Party Animal Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_PALADIN_REVELRY_PARTY_ANIMAL" />
 
 </elements>

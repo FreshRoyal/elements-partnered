@@ -3,7 +3,7 @@
 	<info>
 		<name>Warrior of the Street</name>
 		<description>Warrior of the Street from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="monk-street.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/archetypes/monk-street.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Level 3: Combo" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_COMBO">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_COMBO</requirements>
 		<description>
 			<p>When you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to begin a combo. Until the end of the current turn, you gain a +2 bonus to attack rolls of your Unarmed Strikes. This bonus increases by 2, up to a maximum of +6, for each successive hit on the current turn. This bonus resets to +2 if you take damage or miss with an attack roll.</p>
 		</description>
@@ -39,6 +40,7 @@
 	</element>
 
 	<element name="Level 3: Iron Fist" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_IRON_FIST">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_IRON_FIST</requirements>
 		<description>
 			<p>Whenever you hit an object with an Unarmed Strike, the hit is a Critical Hit.</p>
 		</description>
@@ -48,6 +50,7 @@
 	</element>
 
 	<element name="Level 6: Special Moves" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_SPECIAL_MOVES">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_SPECIAL_MOVES</requirements>
 		<description>
 			<p>You have memorized patterns of discrete movements that allow you to use the following special moves.</p>
 			<p class="indent"><em><strong>Energy Blast.</strong></em> When you take the Attack action on your turn, you can expend 1 Focus Point to replace one of your attacks with a blast of energy. One creature of your choice that you can see within 60 feet makes a Dexterity saving throw, taking Force damage equal to two rolls of your Martial Arts die, or half as much damage on a successful save.</p>
@@ -90,6 +93,7 @@
 	</element>
 
 	<element name="Level 11: Air Dash" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_AIR_DASH">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_AIR_DASH</requirements>
 		<description>
 			<p>On your turn, you can expend 1 Focus Point to gain a Fly Speed equal to your Speed until the end of your next turn (no action required). You have Advantage on the next melee attack you make before the end of the current turn.</p>
 		</description>
@@ -99,6 +103,7 @@
 	</element>
 
 	<element name="Level 17: K.O." type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_ARCHETYPE_FEATURE_MONK_STREET_KO">
+		<requirements>!ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_KO</requirements>
 		<description>
 			<p>Once per turn when you hit a creature with an Unarmed Strike, you can attempt to knock the target out. The target takes extra Force damage equal to three rolls of your Martial Arts die. If the target has 100 Hit Points or fewer after you deal damage with the Unarmed Strike, it has the Unconscious condition for 10 minutes.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest. You can also restore your use of it by expending 5 Focus Points (no action required).</p>
@@ -107,5 +112,12 @@
 			<description>Once per turn when you hit a creature with an Unarmed Strike, you can attempt to knock the target out. The target takes 3d{{martial arts:dice}} extra Force damage. If the target has 100 HPs or fewer after you deal damage with the Unarmed Strike, it has the Unconscious condition for 10 minutes.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Combo Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_COMBO" />
+	<element name="Iron Fist Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_IRON_FIST" />
+	<element name="Special Moves Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_SPECIAL_MOVES" />
+	<element name="Air Dash Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_AIR_DASH" />
+	<element name="K.O. Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_FEATURE_REPLACEMENT_MONK_STREET_KO" />
 
 </elements>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Geppettin</name>
 		<description>Geppettin from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-geppettin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/races/race-geppettin.xml" />
 		</update>
 	</info>
@@ -43,12 +43,12 @@
 			<grant type="Size" id="ID_SIZE_SMALL" requirements="!ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CONSTRUCT" />
 			<stat name="innate speed" value="30" bonus="base" />
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
 
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Language (Geppettin)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Geppettin)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
 
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_DARKVISION" />
 			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_CONSTRUCT_NATURE" />
 			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_HANDCRAFTED_QUALITY" />
 			<grant type="Racial Trait" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION" />
@@ -56,6 +56,7 @@
 	</element>
 
 	<element name="Construct Nature" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_CONSTRUCT_NATURE">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_CONSTRUCT_NATURE</requirements>
 		<description>
 			<p>You don't need food, drink, or air. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a motionless state, during which you retain consciousness.</p>
 		</description>
@@ -65,6 +66,7 @@
 	</element>
 
 	<element name="Handcrafted Quality" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_HANDCRAFTED_QUALITY">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_HANDCRAFTED_QUALITY</requirements>
 		<description>
 			<p>Your design might be unnerving, articulated, or friendly. You have proficiency in the Intimidation, Performance, or Persuasion skill.</p>
 		</description>
@@ -76,6 +78,7 @@
 	</element>
 
 	<element name="Geppettin Construction" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_GEPPETTIN_CONSTRUCTION</requirements>
 		<description>
 			<p>For simplicity, geppettin are classified by their materials: bisque are porcelain, marionettes are wood, and plushies are made of fabric. Choose one of the following constructions:</p>
 			<ul class="unstyled" style="text-indent:-1em; margin-left:1em">
@@ -89,7 +92,6 @@
 			<select type="Racial Trait" name="Geppettin Construction" supports="VSSPP Geppettin Construction" />
 		</rules>
 	</element>
-
 	<element name="Bisque" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION_BISQUE">
 		<supports>VSSPP Geppettin Construction</supports>
 		<compendium display="false" />
@@ -100,7 +102,6 @@
 			<description>Whenever you deal damage to a creature with a weapon attack roll on your first turn in combat, the creature takes {{proficiency}} extra damage. The damage is the same type dealt by the weapon.</description>
 		</sheet>
 	</element>
-
 	<element name="Marionette" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION_MARIONETTE">
 		<supports>VSSPP Geppettin Construction</supports>
 		<compendium display="false" />
@@ -114,7 +115,6 @@
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 		</rules>
 	</element>
-
 	<element name="Plushie" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_GEPPETTIN_GEPPETTIN_CONSTRUCTION_PLUSHIE">
 		<supports>VSSPP Geppettin Construction</supports>
 		<compendium display="false" />
@@ -125,5 +125,11 @@
 			<description>When you take Bludgeoning damage, you can take a Reaction to gain Resistance to the triggering damage. You are also knocked 5 ft away from the source of the damage. You can't take this Reaction if you can't be knocked away from the source of the damage.</description>
 		</sheet>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_DARKVISION" />
+	<element name="Construct Nature Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_CONSTRUCT_NATURE" />
+	<element name="Handcrafted Quality Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_HANDCRAFTED_QUALITY" />
+	<element name="Geppettin Construction Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_GEPPETTIN_GEPPETTIN_CONSTRUCTION" />
 
 </elements>

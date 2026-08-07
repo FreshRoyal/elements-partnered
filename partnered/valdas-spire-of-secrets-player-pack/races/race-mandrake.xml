@@ -3,7 +3,7 @@
 	<info>
 		<name>Mandrake</name>
 		<description>Mandrake from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-mandrake.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/races/race-mandrake.xml" />
 		</update>
 	</info>
@@ -52,6 +52,7 @@
 	</element>
 
 	<element name="Plant Nature" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_PLANT_NATURE">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_PLANT_NATURE</requirements>
 		<description>
 			<p>As long as you are in direct sunlight for at least 4 hours a day, you don't need to eat. Additionally, you can breathe through your leaves and you can absorb water and nutrients through your feet.</p>
 		</description>
@@ -61,6 +62,7 @@
 	</element>
 
 	<element name="Natural Connection" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_NATURAL_CONNECTION">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_NATURAL_CONNECTION</requirements>
 		<description>
 			<p>You have proficiency in the Nature or Survival skill.</p>
 		</description>
@@ -72,6 +74,7 @@
 	</element>
 
 	<element name="Root Magic" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ROOT_MAGIC">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_ROOT_MAGIC</requirements>
 		<description>
 			<p>You know the <i>Shillelagh</i> cantrip and can target yourself with the spell, treating one of your limbs as a Club for the duration of the spell.</p>
 			<p class="indent">When you reach character level 3, you always have <i>Goodberry</i> prepared, and when you reach character level 5, you always have <i>Barkskin</i> prepared. You can cast each of these spells without a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>
@@ -119,6 +122,7 @@
 	</element>
 
 	<element name="Entangling Vines" type="Racial Trait" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_RACIAL_TRAIT_MANDRAKE_ENTANGLING_VINES">
+		<requirements>!ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_ENTANGLING_VINES</requirements>
 		<description>
 			<p>You can take a Bonus Action to cause grasping weeds and vines to sprout up from the ground around a Large or smaller creature you can see within 30 feet of yourself. Until the end of the creature's next turn, its Speed is 0 and can't increase. This effect ends early if the creature replaces one of its attacks with with freeing itself. You can use this Bonus Action a number of times equal to your Proficiency Bonus and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">When you reach character level 3, your Entangling Vines gain an additional effect based on the season in which you were harvested (choose when you select this species):</p>
@@ -180,5 +184,11 @@
 			<description level="3">The target takes {{proficiency}} Cold damage.</description>
 		</sheet>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Plant Nature Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_PLANT_NATURE" />
+	<element name="Natural Connection Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_NATURAL_CONNECTION" />
+	<element name="Root Magic Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_ROOT_MAGIC" />
+	<element name="Entangling Vines Construction Trait Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP_RACIAL_TRAIT_REPLACEMENT_MANDRAKE_ENTANGLING_VINES" />
 
 </elements>
