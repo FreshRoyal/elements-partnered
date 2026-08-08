@@ -3,7 +3,7 @@
 	<info>
 		<name>Gunslinger</name>
 		<description>Gunslinger from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/class-gunslinger.xml" />
 		</update>
 	</info>
@@ -290,7 +290,7 @@
 		<requirements>!ID_MHP_TGCVSS_FEATURE_REPLACEMENT_GUNSLINGER_ABILITY_SCORE_IMPROVEMENTS</requirements>
 		<compendium display="false" />
 		<description>
-			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.</p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Gunslinger levels 8, 12, and 16.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
