@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Northlands Sagas</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/northlands-sagas/source.xml" />
+		</update>
+	</info>
+	<element name="Northlands Sagas" type="Source" source="Core" id="ID_KBP_SOURCE_NORTHLANDS_SAGAS">
+		<description>
+			<p><strong>Forge Legends in a Frostbound Saga</strong></p>
+            <p><i>Northlands Sagas</i> is an 11-adventure compendium set in a frostbound world of myth and danger, a complete campaign for levels 1–12 that pits heroes against cunning gods, dread cults, and the relentless pull of fate itself.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">NLS</set>
+			<set name="url">https://koboldpress.com/kpstore/product/northlands-sagas/</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/northlands-sagas/NLS.png</set>
+			<set name="author" abbreviation="KBP" url="https://koboldpress.com/">Kobold Press</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20260520</set>
+		</setters>
+	</element>
+</elements>

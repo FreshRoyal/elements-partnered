@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Northlands Sagas by Kobold Press</name>
+		<update version="1.0.0">
+			<file name="northlands-sagas.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/northlands-sagas.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/northlands-sagas/items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/northlands-sagas/source.xml" />
+	</files>
+</index>

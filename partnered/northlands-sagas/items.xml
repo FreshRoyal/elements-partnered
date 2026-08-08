@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Northlands Sagas</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/northlands-sagas/items.xml" />
+		</update>
+	</info>
+
+	<element name="Birdcage of Innocuousness" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_BIRDCAGE_OF_INNOCUOUSNESS">
+		<description>
+			<p>This silver birdcage, sized for giants, features figures of songbirds giving the impression they fly around its exterior.</p>
+			<p class="indent">When a creature with a Fly Speed enters the birdcage, it must make a DC 14 Wisdom saving throw, becoming docile on a failure until it leaves the cage (on a success it can open the cage from the inside and escape). A creature outside the cage can use a Bonus Action to open or close it. A creature outside the cage also can use an action to speak a command word to either create an illusion of a harmless songbird in place of the creature inside or revert the illusion to the caged creature's true appearance. When a creature exits the birdcage, it returns to its true appearance.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, bonus action, action, illusion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Glamsyni Shield" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_GLAMSYNI_SHIELD">
+		<description>
+			<p>This round metal shield is emblazoned with the glamsyni rune. While wielding it, you can use a reaction to teleport up to 10 feet to an unoccupied space you can see. This property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">reaction, teleport</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">410</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Ice Wall Orb" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_ICE_WALL_ORB">
+		<description>
+			<p>You can cast <i>Wall of Ice</i> using Charisma as her spellcasting ability (spell save DC 16). The wall created by this item requires no Concentration and lasts 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, wall of ice, charisma, no concentration</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+		</setters>
+	</element>
+
+	<element name="Master's Tonrosp Flute" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_MASTERS_TONROSP_FLUTE">
+		<description>
+			<p><b><i>Extraordinary Quality.</i></b> A flute of extraordinary quality that grants +2 to Performance checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">panpipes</set>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Instrument</set>
+			<set name="slot">onehand</set>
+		</setters>
+	</element>
+
+	<element name="Mother's Comb" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_MOTHERS_COMB">
+		<description>
+			<p>This bone comb is sized to assist with the weaving of cloth on a loom. It appears quite plain and unadorned. Using the <i>Identify</i> spell on the comb reveals its name but no other features.</p>
+			<p class="indent">When someone views the comb using <i>Detect Magic</i>, it radiates extraordinarily powerful Divination magic.</p>
+			<p class="indent">The comb first appears in Among the Norns and returns in The Redspear Trail.</p>
+		</description>
+		<setters>
+			<set name="keywords">divination</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+
+	<element name="Tyr's Blade" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_TYRS_BLADE">
+		<description>
+			<p>This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4015</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+
+	<element name="Uror's Shears" type="Magic Item" source="Northlands Sagas" id="ID_KBP_NLS_MAGIC_ITEM_URORS_SHEARS">
+		<description>
+			<p>Legends tell of the three Norns, entities of power who weave the threads of fate and destiny. Of the trio, Uror appears as a crone. She crafted these shears to cut the threads of mortals when they die.</p>
+			<p class="indent">This pair of scissors seems forged from crude iron, rough and pitted—but they are impossibly sharp. They first appear in Down the Wolf Barrow and return in Among the Norns and Storming the Den of Fenris.</p>
+			<p class="indent"><b><i>Fated Edge.</i></b> While wielding the shears, you can use an Action to cut through any single object, regardless of the material or nature of the object. A single action allows you to cut through <b>5 feet</b> of material, and you can use your Action on subsequent rounds to continue cutting. On your turn, you can change the direction of your cuts, as long as the shears continue to touch the object and don't stop cutting. The GM has the final determination as to what counts as a single object.</p>
+			<p class="indent">If used on a living creature, the shears are a magic weapon that grants a +1 bonus to attack. On a hit, the shears deal 1 Force damage. A creature that takes damage from the shears must make a DC 18 Constitution saving throw. On a failed save, the thread of the creature's fate is cut, and it vanishes forever; on a success, it takes 10d10 Force damage.</p>
+			<p class="indent"><b><i>One Use Only.</i></b> When you successfully hit a living creature or have cut through one object (or cut though a number of 5-foot squares equal to your Proficiency Bonus), the shears immediately vanish. Stories suggest the shears return to the hands of the Norns, but this remains unconfirmed.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, cut, magic weapon, force, damage, constitution, save, one use only</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+
+</elements>
