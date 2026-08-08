@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description>Weapons from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-weapons.xml" />
 		</update>
 	</info>
@@ -436,6 +436,32 @@
 			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VERTEBRAE_SWORD" type="Proficiency" />
 			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VAULTERS_AXE" type="Proficiency" />
 			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FIELD_SPEAR" type="Proficiency" />
+		</rules>
+	</append>
+
+	<append id="ID_INTERNAL_PROFICIENCY_GROUP_AXES">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VAULTERS_AXE" type="Proficiency" />
+		</rules>
+	</append>
+	
+	<append id="ID_INTERNAL_PROFICIENCY_GROUP_CLUBS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_CANDLEMAKERS_CLUB" type="Proficiency" />
+		</rules>
+	</append>
+
+	<append id="ID_INTERNAL_PROFICIENCY_GROUP_SPEARS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_DANDELION_SPEAR" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_FIELD_SPEAR" type="Proficiency" />
+		</rules>
+	</append>
+	
+	<append id="ID_INTERNAL_PROFICIENCY_GROUP_SWORDS">
+		<rules>
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_SECRET_STONE_SWORD" type="Proficiency" />
+			<grant name="ID_1985_OTTG_PROFICIENCY_WEAPON_PROFICIENCY_VERTEBRAE_SWORD" type="Proficiency" />
 		</rules>
 	</append>
 
