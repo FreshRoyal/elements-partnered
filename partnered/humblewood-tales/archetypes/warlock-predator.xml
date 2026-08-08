@@ -3,7 +3,7 @@
 	<info>
 		<name>The Predator</name>
 		<description>The Predator patron from Humblewood Tales</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="warlock-predator.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/archetypes/warlock-predator.xml" />
 		</update>
 	</info>
@@ -31,6 +31,7 @@
 	</element>
 
 	<element name="Expanded Spell List" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_EXPANDED_SPELL_LIST">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_EXPANDED_SPELL_LIST</requirements>
 		<description>
 			<p>The Predator lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
 			<table>
@@ -70,17 +71,19 @@
 	</element>
 
 	<element name="Bonus Proficiencies" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_BONUS_PROFICIENCIES">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_BONUS_PROFICIENCIES</requirements>
 		<description>
 			<p>Starting at 1st level, your patron grants you enhanced tracking skills. You gain expertise with the Survival skill, and you add double your proficiency bonus to any Wisdom (Survival) skill checks you make.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
-			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_SURVIVAL" />
 		</rules>
 	</element>
 
 	<element name="Form of the Beast" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_FORM_OF_THE_BEAST">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_FORM_OF_THE_BEAST</requirements>
 		<description>
 			<p>At 1st level, you can use your bonus action to channel the ferocity and guile of your patron, transforming into a beastly figure. For 10 minutes, you gain the following abilities:</p>
 			<ul>
@@ -115,6 +118,7 @@
 	</element>
 
 	<element name="Thrill of the Hunt" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_THRILL_OF_THE_HUNT">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_THRILL_OF_THE_HUNT</requirements>
 		<description>
 			<p>At 6th level, you gain the ability to feast on the vitality of your foes while you are in your Form of the Beast. Once per turn, when you hit a creature with your bite attack, you can cause the attack to deal an extra 3d6 points of necrotic damage. You regain a number of hit points equal to half the total damage dealt with this attack.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you score a critical hit with a bite or claw attack or until you finish a short or long rest.</p>
@@ -127,6 +131,7 @@
 	</element>
 
 	<element name="Fearsome Presence" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_FEARSOME_PRESENCE">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_FEARSOME_PRESENCE</requirements>
 		<description>
 			<p>At 10th level, you learn how to channel the presence of a frightful beast, even when not transformed. You can use your action to cause each hostile creature you can see within a 30-foot radius to make a Wisdom saving throw against your spell save DC. On a failure, the target becomes frightened of you for 1 minute, and it is restrained until the end of your next turn. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
@@ -137,6 +142,7 @@
 	</element>
 
 	<element name="Uncaged Beast" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_THE_PREDATOR_UNCAGED_BEAST">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_UNCAGED_BEAST</requirements>
 		<description>
 			<p>Upon reaching 14th level, you become even more ferocious when pushed to your limits. When an attacker that you can see hits you with an attack, you can use your reaction to immediately transform into your Form of the Beast and then make one bite or claw attack at an enemy within 5 feet of you.</p>
 			<p class="indent">Additionally, while transformed into your Form of the Beast, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a bite or claw attack against that creature.</p>
@@ -146,5 +152,13 @@
 			Additionally, while transformed into your Form of the Beast, when you take damage from a creature that is within 5 ft of you, you can use your reaction to make a bite or claw attack against that creature.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_EXPANDED_SPELL_LIST" />
+	<element name="Bonus Proficiencies Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_BONUS_PROFICIENCIES" />
+	<element name="Form of the Beast Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_FORM_OF_THE_BEAST" />
+	<element name="Thrill of the Hunt Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_THRILL_OF_THE_HUNT" />
+	<element name="Fearsome Presence Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_FEARSOME_PRESENCE" />
+	<element name="Uncaged Beast Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_THE_PREDATOR_UNCAGED_BEAST" />
 	
 </elements>

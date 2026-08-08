@@ -3,7 +3,7 @@
 	<info>
 		<name>Leyline Magic</name>
 		<description>Leyline Magic Arcane Tradition from Humblewood Tales</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="wizard-leyline-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales/archetypes/wizard-leyline-magic.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
 		<description>
 			<p>The primal forces of nature have their own magical energy, one which can be harnessed by wizards with proper training. By drawing on this power, leyline wizards can tap into primordial reservoirs of magic to gain access to new spells, empower their own spellcasting, or disrupt opposing forces that attempt to take root in their domain. The most powerful wizards of this tradition can set new leylines, transforming unnatural or inhospitable places into paradises with time. These wizards work closely with druids, and they can gradually heal environments that have been blighted or corrupted.</p>
 			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_ATTUNEMENT" />
-			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS" />
+			<div element="ID_HPP_HWT_INFORMATION_LEYLINE_MAGIC_LEYLINE_SPELLS" />
 			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_THRUM_OF_THE_LAND" />
 			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_BIORHYTHM" />
 			<div element="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_DISRUPTION" />
@@ -22,7 +22,6 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_ATTUNEMENT" level="2" />
-			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS" level="2" />
 			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_THRUM_OF_THE_LAND" level="2" />
 			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_BIORHYTHM" level="6" />
 			<grant type="Archetype Feature" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_DISRUPTION" level="10" />
@@ -31,9 +30,11 @@
 	</element>
 
 	<element name="Natural Attunement" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_ATTUNEMENT">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_NATURAL_ATTUNEMENT</requirements>
 		<description>
 			<p>When you choose this arcane tradition at 2nd level, you learn how to attune yourself to the magic of leylines which course through nature. Each day when you prepare your spells in a natural setting, you may also attune yourself to the energy of a nearby leyline to gain additional spells. When you do, consult the list of spells from the Leyline Spells table that matches the environment in which you prepared your spells. You can only be attuned to one leyline at a time.</p>
 			<p class="indent">While attuned to a leyline, you gain access to any spells on your current list of leyline spells for which you meet the level requirement. For as long as you are attuned to a leyline, you always have these spells prepared, and they don't count against the number of spells you can prepare each day. Leyline spells are not copied into your spellbook. If you gain access to a spell that doesn't appear on the wizard spell list, the spell is nonetheless a wizard spell for you.</p>
+			<div element="ID_HPP_HWT_INFORMATION_LEYLINE_MAGIC_LEYLINE_SPELLS" />
 		</description>
 		<sheet>
 			<description>Each day when you prepare your spells in a natural setting, you may also attune yourself to the energy of a nearby leyline to gain additional spells. When you do, consult the list of spells from the Leyline Spells table that matches the environment in which you prepared your spells. You can only be attuned to one leyline at a time.
@@ -44,7 +45,7 @@
 		</rules>
 	</element>
 
-	<element name="Leyline Spells" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS">
+	<element name="Leyline Spells" type="Information" source="Humblewood Tales" id="ID_HPP_HWT_INFORMATION_LEYLINE_MAGIC_LEYLINE_SPELLS">
 		<description>
 			<h5>Arctic</h5>
 			<table>
@@ -124,10 +125,10 @@
 				<tr><td>9th</td><td><em>insect plague</em></td></tr>
 			</table>
 		</description>
-		<sheet display="false" />
 	</element>
 	
 	<element name="Thrum of the Land" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_THRUM_OF_THE_LAND">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_THRUM_OF_THE_LAND</requirements>
 		<description>
 			<p>Also at 2nd level, you learn how to channel energy from a leyline to supplement your spells, infusing them with power. Whenever you are in an environment that matches a leyline to which you are attuned, you can apply one of the following benefits to any leyline spell you cast (chosen when you cast the spell):</p>
 			<ul>
@@ -151,6 +152,7 @@
 	</element>
 
 	<element name="Biorhythm" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_BIORHYTHM">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_BIORHYTHM</requirements>
 		<description>
 			<p>At 6th level, you learn to channel the leyline's energies to augment your body's natural healing. As long as you are attuned to a leyline, whenever you use your Arcane Recovery feature to regain expended spell slots, you regain 1d8 hit points for each spell slot you recover.</p>
 			<p class="indent">Additionally, when you complete a short rest in a natural setting, you can attune yourself to a different leyline, following the rules of your Natural Attunement feature.</p>
@@ -162,6 +164,7 @@
 	</element>
 
 	<element name="Natural Disruption" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_NATURAL_DISRUPTION">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_NATURAL_DISRUPTION</requirements>
 		<description>
 			<p>By 10th level, you can channel energy from your leyline to disrupt others' magic. You can cast <i>counterspell</i> or <i>dispel magic</i> without expending a spell slot at the level of the highest spell slot available to you.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
@@ -172,6 +175,7 @@
 	</element>
 
 	<element name="Leyline Weaving" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_WEAVING">
+		<requirements>!ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_LEYLINE_WEAVING</requirements>
 		<description>
 			<p>At 14th level, you have learned how to tap into the interconnected network of distant leylines, temporarily infusing even unnatural or hostile environments with their power. By spending 1 hour in meditation, you can draw on the power of a distant leyline to temporarily create a new one in your location. When you do this, you may choose any one terrain from the Leyline Spells tables and attune yourself to its leyline. The terrain of this leyline does not need to match the terrain you are currently in. Your new leyline affects a 1-mile radius area from the spot you meditated upon, which counts as the terrain of the leyline you attuned to for the purposes of using your leyline abilities. It is hard for a leyline to take root in unfamiliar spaces, and after 24 hours, this effect dissipates. Once you use this feature, you can't do so again until you finish a long rest.</p>
 			<p class="indent">By using this ability to create the same type of leyline on the same spot each day for a full year, you can cause the effect to become permanent. This will forever alter the natural landscape within the zone you created, and you can choose whether the environment within this zone matches your new leyline or combines the features of its terrain with those naturally present.</p>
@@ -181,6 +185,13 @@
 			By using this ability to create the same type of leyline on the same spot each day for a full year, you can cause the effect to become permanent. This will forever alter the natural landscape within the zone you created, and you can choose whether the environment within this zone matches your new leyline or combines the features of its terrain with those naturally present.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Natural Attunement Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_NATURAL_ATTUNEMENT" />
+	<element name="Thrum of the Land Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_THRUM_OF_THE_LAND" />
+	<element name="Biorhythm Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_BIORHYTHM" />
+	<element name="Natural Disruption Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_NATURAL_DISRUPTION" />
+	<element name="Leyline Weaving Feature Replacement" type="Grants" source="Internal" id="ID_HPP_HWT_FEATURE_REPLACEMENT_LEYLINE_MAGIC_LEYLINE_WEAVING" />
 
 	<!--Leyline Spell Lists-->
 	<element name="Arctic" type="Archetype Feature" source="Humblewood Tales" id="ID_HPP_HWT_ARCHETYPE_FEATURE_LEYLINE_MAGIC_LEYLINE_SPELLS_ARCTIC">
