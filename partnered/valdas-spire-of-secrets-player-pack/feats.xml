@@ -3,14 +3,14 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/feats.xml" />
 		</update>
 	</info>
 
     <element name="Brutal Grip" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_BRUTAL_GRIP">
 		<supports>General</supports>
-		<requirements>([level:4],[str:13])||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],[str:13])||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Strength 13+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
@@ -30,7 +30,7 @@
 
     <element name="Field Commander" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FIELD_COMMANDER">
 		<supports>General</supports>
-		<requirements>([level:4],[cha:13])||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],[cha:13])||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+, Charisma 13+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+, Charisma 13+)</p>
@@ -50,7 +50,7 @@
     
     <element name="Focused Critical" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FOCUSED_CRITICAL">
 		<supports>General</supports>
-		<requirements>[level:4]||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>[character:4]||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
@@ -68,7 +68,7 @@
     
     <element name="Iron Hero" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_IRON_HERO">
 		<supports>General</supports>
-		<requirements>([level:4],!ID_MHP_TGCVSS_FEAT_IRON_HERO)||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
+		<requirements>([character:4],!ID_MHP_TGCVSS_FEAT_IRON_HERO)||ID_MHP_VSSPP_GRANTS_FEAT_UNLOCKER</requirements>
 		<prerequisite>Level 4+</prerequisite>
 		<description>
 			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
