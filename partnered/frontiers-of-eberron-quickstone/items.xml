@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Items from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/items.xml" />
 		</update>
 	</info>
@@ -12,6 +12,7 @@
 	<element name="Steel Jaws" type="Weapon" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_WEAPON_STEEL_JAWS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_WOTC_PHB24_WEAPON_PROPERTY_TOPPLE</supports>
 		<description>
+			<p>Because they have no hands, worgs cannot wield weapons in the same way that most player characters can. However, worgs can wield a specially designed Martial Melee weapon called "Steel Jaws." Only Worgs can wield Steel Jaws, fitting as they do over a Worg's teeth. A Worg cannot use its Bite trait while it is wielding Steel Jaws.</p>
 			<div class="sidebar" style="margin-top:10px">
 				<h5>MASTERY</h5>
 				<p><b>Topple.</b> If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
@@ -27,7 +28,7 @@
 		</setters>
 	</element>
 
-		<element name="Weapon Proficiency (Steel Jaws)" type="Proficiency" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS">
+	<element name="Weapon Proficiency (Steel Jaws)" type="Proficiency" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS">
 		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 	</element>
 
