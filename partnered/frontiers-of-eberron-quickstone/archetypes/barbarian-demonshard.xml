@@ -3,7 +3,7 @@
 	<info>
 		<name>Path of the Demonshard</name>
 		<description>Path of the Demonshard from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="barbarian-demonshard.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/barbarian-demonshard.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Level 3: Demontongue" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARBARIAN_DEMONSHARD_DEMONTONGUE">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_DEMONTONGUE</requirements>
 		<description>
 			<p>Your demonshard grants you innate understanding of the languages of fiends. You can speak and understand your choice of either Abyssal or Infernal.</p>
 		</description>
@@ -40,6 +41,7 @@
 	</element>
 
 	<element name="Level 3: Fiendish Punishment" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARBARIAN_DEMONSHARD_FIENDISH_PUNISHMENT">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_FIENDISH_PUNISHMENT</requirements>
 		<description>
 			<p>The fiendish presence in your demonshard can punish your enemies. While your Rage is active, if you take damage from a creature that you can see within 60 feet of yourself, the creature takes 1d4 Fire or Necrotic damage (your choice). You can use this feature only once per turn.</p>
 			<p class="indent">In addition, if an allied creature within 10 feet of you takes damage from a creature that you can see within 60 feet of yourself, you can use your Reaction to cause the damaging creature to take 1d4 Fire or Necrotic damage (your choice). The damage increases when you reach Barbarian levels 6 (1d6), 10 (1d8), 14 (1d10) and 20 (1d12).</p>
@@ -58,6 +60,7 @@
 	</element>
 
 	<element name="Level 6: Just One Master" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARBARIAN_DEMONSHARD_JUST_ONE_MASTER">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_JUST_ONE_MASTER</requirements>
 		<description>
 			<p>The fiendish presence in your demonshard has grown, and it reacts badly to competition. While your Rage is active you have Advantage on saving throws against the Charmed and Frightened conditions, and you have Resistance to Psychic damage.</p>
 			<p class="indent">Additionally, if you take Psychic damage or if you make a saving throw to avoid or end the Charmed or Frightened conditions, you must use your Reaction, if available, to immediately enter a Rage. Entering a Rage in this way does not expend a use of your Rage.</p>
@@ -69,6 +72,7 @@
 	</element>
 
 	<element name="Level 10: Overflowing Malice" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARBARIAN_DEMONSHARD_OVERFLOWING_MALICE">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_OVERFLOWING_MALICE</requirements>
 		<description>
 			<p>The evil in your demonshard has grown, and its power can escape when you are distracted by pain. When a creature triggers your Fiendish Punishment feature, all other creatures within 10 feet of you take the damage, too.</p>
 		</description>
@@ -78,6 +82,7 @@
 	</element>
 
 	<element name="Level 14: Aspect of Tyranny" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARBARIAN_DEMONSHARD_ASPECT_OF_TYRANNY">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_ASPECT_OF_TYRANNY</requirements>
 		<description>
 			<p>The fiendish presence in your demonshard revels in the pain it has wrought. When a creature takes damage from your Fiendish Punishment or Overflowing Malice features, you can use your Reaction to cause one affected creature to make a Wisdom saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). The creature suffers a -1 penalty to its saving throw for each other creature affected by Fiendish Punishment or Overflowing Malice on the same turn. On a failed save, the creature takes 1d10 Necrotic damage and has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save (without a penalty), ending the effect on itself on a success.</p>
 		</description>
@@ -90,5 +95,12 @@
 			<stat name="feq:aspect of tyranny:dc" value="constitution:modifier" bonus="ability" />
 		</rules>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Demontongue Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_DEMONTONGUE" />
+	<element name="Fiendish Punishment Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_FIENDISH_PUNISHMENT" />
+	<element name="Just One Master Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_JUST_ONE_MASTER" />
+	<element name="Overflowing Malice Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_OVERFLOWING_MALICE" />
+	<element name="Aspect of Tyranny Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARBARIAN_DEMONSHARD_ASPECT_OF_TYRANNY" />
 	
 </elements>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Commerce Domain</name>
 		<description>Commerce Domain from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-commerce.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/cleric-commerce.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Level 3: Commerce Domain Spells" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_COMMERCE_DOMAIN_SPELLS">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_COMMERCE_DOMAIN_SPELLS</requirements>
 		<description>
 			<p>Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Commerce Domain Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>COMMERCE DOMAIN SPELLS</h5>
@@ -59,6 +60,7 @@
 	</element>
 
 	<element name="Level 3: Divine Wealth" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_WEALTH">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_DIVINE_WEALTH</requirements>
 		<description>
 			<p>Your spiritual savvy manifests as material wealth. When you finish a Long Rest, you conjure two divine coins and lose any previously unspent divine coins. Whenever you make a saving throw against a magical effect caused by a hostile creature, you can choose to spend a divine coin or gain a divine coin. You must choose whether or not to spend a coin before you roll your save.</p>
 			<p class="indent"><em><strong>Spend a Coin.</strong></em> Roll a d4 and add the number rolled to the saving throw.</p>
@@ -80,6 +82,7 @@
 	</element>
 
 	<element name="Level 3: Money Spinner" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_MONEY_SPINNER">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_MONEY_SPINNER</requirements>
 		<description>
 			<p>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to gain favor or turn away prying eyes. Choose a number of creatures within 30 feet of yourself equal to one plus one more for each divine coin you expend when you use this feature. For each target, choose either a bribe or a reward.</p>
 			<p class="indent"><em><strong>Reward.</strong></em> The target must make a Wisdom saving throw. On a failed save, the target has the Charmed condition for 1 minute or until it takes damage. While it has the Charmed condition, it is Friendly to you and other creatures you designate.</p>
@@ -93,6 +96,7 @@
 	</element>
 
 	<element name="Level 6: Divine Bargain" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_DIVINE_BARGAIN">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_DIVINE_BARGAIN</requirements>
 		<description>
 			<p>Transactions are at the heart of your belief system, and you have learned to buy and sell metaphysical boons with your divine wealth. As a Bonus Action, you can magically conduct a metaphysical trade with one creature you can see within 30 feet of yourself. Choose either Buy or Sell.</p>
 			<p class="indent"><em><strong>Buy.</strong></em> Give one of your divine coins to the target. It can spend the divine coin as if it had your Divine Wealth feature. The target takes 1d8 Necrotic damage, and you or one creature that you can see within 30 feet of yourself regains Hit Points equal to the damage taken.</p>
@@ -109,6 +113,7 @@
 	</element>
 
 	<element name="Level 17: Open Market" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_COMMERCE_DOMAIN_OPEN_MARKET">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_OPEN_MARKET</requirements>
 		<description>
 			<p>When you use your Divine Bargain feature, you roll 2d8 rather than 1d8 to determine how many Hit Points are regained or lost.</p>
 			<p class="indent">In addition, when you use your Divine Bargain feature you can target up to six creatures you can see within 30 feet of yourself, buying or selling divine coins separately for each target. You use the same 2d8 roll to determine the Hit Points each creature regains or loses. If you target multiple creatures in this way, you cannot do so again until you finish a Short Rest.</p>
@@ -120,5 +125,12 @@
 			<stat name="feq:divine bargain:dice" value="2" bonus="base" />
 		</rules>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Commerce Domain Spells Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_COMMERCE_DOMAIN_SPELLS" />
+	<element name="Divine Wealth Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_DIVINE_WEALTH" />
+	<element name="Money Spinner Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_MONEY_SPINNER" />
+	<element name="Divine Bargain Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_DIVINE_BARGAIN" />
+	<element name="Open Market Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_COMMERCE_DOMAIN_OPEN_MARKET" />
 	
 </elements>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Worg</name>
 		<description>Worg from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-worg.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-worg.xml" />
 		</update>
 	</info>
@@ -45,7 +45,7 @@
 			<select type="Language" name="Language (Worg)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Worg)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
 			
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_DARKVISION" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_KEEN_SENSES" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_BITE" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_FOR_THE_PACK" />
@@ -55,6 +55,7 @@
 	</element>
 
 	<element name="Keen Senses" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_KEEN_SENSES">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_KEEN_SENSES</requirements>
 		<description>
 			<p>You have Advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
 		</description>
@@ -68,6 +69,7 @@
 	</element>
 	
 	<element name="Bite" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_BITE">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_BITE</requirements>
 		<description>
 			<p>Your formidable jaws are a natural weapon, which you can use to make Unarmed Strikes. If you hit with them, you deal Piercing damage equal to 1d8 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike.</p>
 		</description>
@@ -77,6 +79,7 @@
 	</element>
 
 	<element name="For the Pack" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_FOR_THE_PACK">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_FOR_THE_PACK</requirements>
 		<description>
 			<p>You can use the Help action as a Bonus Action.</p>
 		</description>
@@ -86,6 +89,7 @@
 	</element>
 
 	<element name="Natural Armor" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_NATURAL_ARMOR">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_NATURAL_ARMOR</requirements>
 		<description>
 			<p>Your dense fur and thick hide provide you with natural armor. While you aren't wearing armor, your base Armor Class equals 12 plus your Dexterity modifier.</p>
 		</description>
@@ -100,6 +104,7 @@
 	</element>
 
 	<element name="Quadruped" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_WORG_QUADRUPED">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_QUADRUPED</requirements>
 		<description>
 			<p>You have several traits based on your quadrupedal body shape.</p>
 			<ul>
@@ -123,5 +128,13 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
 		</rules>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_DARKVISION" />
+	<element name="Keen Senses Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_KEEN_SENSES" />
+	<element name="Bite Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_BITE" />
+	<element name="For the Pack Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_FOR_THE_PACK" />
+	<element name="Natural Armor Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_NATURAL_ARMOR" />
+	<element name="Quadruped Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_WORG_QUADRUPED" />
 	
 </elements>

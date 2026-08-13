@@ -3,7 +3,7 @@
 	<info>
 		<name>Harpy</name>
 		<description>Harpy from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-harpy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-harpy.xml" />
 		</update>
 	</info>
@@ -57,6 +57,7 @@
 	</element>
 
 	<element name="Flight" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_FLIGHT">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_FLIGHT</requirements>
 		<description>
 			<p>You have a Fly Speed equal to your Speed while you aren't wearing Medium or Heavy armor.</p>
 		</description>
@@ -69,6 +70,7 @@
 	</element>
 
 	<element name="Songbird" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_SONGBIRD">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_SONGBIRD</requirements>
 		<description>
 			<p>You have proficiency in the Performance skill.</p>
 		</description>
@@ -80,6 +82,7 @@
 	</element>
 
 	<element name="Harpy's Charm" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_HARPYS_CHARM">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_HARPYS_CHARM</requirements>
 		<description>
 			<p>You know the <i>Friends</i> cantrip and can cast it using only Verbal components in place of its usual components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this species).</p>
 		</description>
@@ -118,6 +121,7 @@
 	</element>
 
 	<element name="Shadow's Magic" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_HARPY_SHADOWS_MAGIC">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_SHADOWS_MAGIC</requirements>
 		<description>
 			<p>If you have the Spellcasting or the Pact Magic class feature, the spells on the Harpy Spells table are added to the spell list of your spellcasting class. You can cast these spells using only Verbal components in place of their usual components.</p>
 			<h5>Harpy Spells</h5>
@@ -143,5 +147,11 @@
 			<extend>ID_WOTC_PHB24_SPELL_DOMINATE_PERSON</extend>
 		</spellcasting>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Flight Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_FLIGHT" />
+	<element name="Songbird Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_SONGBIRD" />
+	<element name="Harpy's Charm Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_HARPYS_CHARM" />
+	<element name="Shadow's Magic Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_HARPY_SHADOWS_MAGIC" />
 	
 </elements>

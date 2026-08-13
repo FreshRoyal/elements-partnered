@@ -3,7 +3,7 @@
 	<info>
 		<name>Medusa</name>
 		<description>Medusa from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-medusa.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-medusa.xml" />
 		</update>
 	</info>
@@ -53,7 +53,7 @@
 			<select type="Language" name="Language (Medusa)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Medusa)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
 			
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_DARKVISION" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_FEARSOME_PRESENCE" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SERPENTINE" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE" />
@@ -63,6 +63,7 @@
 	</element>
 
 	<element name="Fearsome Presence" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_FEARSOME_PRESENCE">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_FEARSOME_PRESENCE</requirements>
 		<description>
 			<p>You have proficiency in the Intimidation skill.</p>
 		</description>
@@ -74,6 +75,7 @@
 	</element>
 
 	<element name="Serpentine" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SERPENTINE">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_SERPENTINE</requirements>
 		<description>
 			<p>You know Serpentine, a sign language conveyed through the motion of the snakes atop your head. Serpentine has no written form and can only be utilized by medusas.</p>
 		</description>
@@ -85,6 +87,7 @@
 	</element>
 
 	<element name="Petrifying Gaze" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_PETRIFYING_GAZE">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_PETRIFYING_GAZE</requirements>
 		<description>
 			<p>You know the <i>Gray Gaze</i> cantrip and can cast it without components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this species). When you reduce a creature to 0 Hit Points with this spell, you can cause it to turn to stone. A creature turned to stone in this way has the Petrified condition.</p>
 		</description>
@@ -123,6 +126,7 @@
 	</element>
 
 	<element name="Medusa's Gift" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_MEDUSAS_GIFT">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_MEDUSAS_GIFT</requirements>
 		<description>
 			<p>When you cast <i>Gray Gaze</i>, you can choose to augment it. If a creature fails its saving throw against the augmented spell, it has the Restrained condition for 1 minute instead of having Disadvantage on its next Dexterity saving throw. A Restrained target makes another Constitution saving throw at the end of each of its turns, ending the effect on a success. You must concentrate to maintain the effect. If you lose your Concentration, the creature no longer has the Restrained condition.</p>
 			<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
@@ -133,6 +137,7 @@
 	</element>
 
 	<element name="Shadow's Magic" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_MEDUSA_SHADOWS_MAGIC">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_SHADOWS_MAGIC</requirements>
 		<description>
 			<p>If you have the Spellcasting or the Pact Magic class feature, the spells on the Medusa Spells table are added to the spell list of your spellcasting class. You can cast these spells without Material components.</p>
 			<h5>Harpy Spells</h5>
@@ -158,5 +163,13 @@
 			<extend>ID_WOTC_PHB24_SPELL_HOLD_MONSTER</extend>
 		</spellcasting>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_DARKVISION" />
+	<element name="Fearsome Presence Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_FEARSOME_PRESENCE" />
+	<element name="Serpentine Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_SERPENTINE" />
+	<element name="Petrifying Gaze Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_PETRIFYING_GAZE" />
+	<element name="Medusa's Gift Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_MEDUSAS_GIFT" />
+	<element name="Shadow's Magic Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_MEDUSA_SHADOWS_MAGIC" />
 	
 </elements>

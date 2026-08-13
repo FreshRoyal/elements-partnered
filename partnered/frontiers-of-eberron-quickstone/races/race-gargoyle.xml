@@ -3,7 +3,7 @@
 	<info>
 		<name>Gargoyle</name>
 		<description>Gargoyle from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-gargoyle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/races/race-gargoyle.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 			<select type="Language" name="Language (Gargoyle)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Gargoyle)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
 			
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_DARKVISION" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_ELEMENTAL_NATURE" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_FALSE_APPEARANCE" />
 			<grant type="Racial Trait" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_SENTRYS_REST" />
@@ -53,6 +53,7 @@
 	</element>
 
 	<element name="Elemental Nature" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_ELEMENTAL_NATURE">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_ELEMENTAL_NATURE</requirements>
 		<description>
 			<p>You are a creature of living stone, which provides the following benefits.</p>
 			<ul>
@@ -72,6 +73,7 @@
 	</element>
 
 	<element name="False Appearance" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_FALSE_APPEARANCE">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_FALSE_APPEARANCE</requirements>
 		<description>
 			<p>While you remain motionless, you are indistinguishable from an inanimate statue.</p>
 		</description>
@@ -81,6 +83,7 @@
 	</element>
 
 	<element name="Sentry's Rest" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_SENTRYS_REST">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_SENTRYS_REST</requirements>
 		<description>
 			<p>You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
 		</description>
@@ -90,6 +93,7 @@
 	</element>
 
 	<element name="Stoneskin" type="Racial Trait" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_RACIAL_TRAIT_GARGOYLE_STONESKIN">
+		<requirements>!ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_STONESKIN</requirements>
 		<description>
 			<p>Your thick stone hide provides you with natural armor. While you aren't wearing armor, your base Armor Class equals 13 plus your Dexterity modifier. You can use a Shield and still gain this benefit.</p>
 		</description>
@@ -102,5 +106,12 @@
 			<stat name="ac:calculation" value="ac:natural armor:gargoyle" bonus="calculation" alt="Natural Armor (Gargoyle)" />
 		</rules>
 	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_DARKVISION" />
+	<element name="Elemental Nature Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_ELEMENTAL_NATURE" />
+	<element name="False Appearance Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_FALSE_APPEARANCE" />
+	<element name="Sentry's Rest Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_SENTRYS_REST" />
+	<element name="Stoneskin Trait Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_RACIAL_TRAIT_REPLACEMENT_GARGOYLE_STONESKIN" />
 	
 </elements>

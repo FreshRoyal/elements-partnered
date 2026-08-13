@@ -3,7 +3,7 @@
 	<info>
 		<name>Stone Sovereign Patron</name>
 		<description>Stone Sovereign Patron from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-stone-sovereign.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/warlock-stone-sovereign.xml" />
 		</update>
 	</info>
@@ -32,6 +32,7 @@
 	</element>
 
 	<element name="Level 3: Eternity in Stone" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_ETERNITY_IN_STONE">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_ETERNITY_IN_STONE</requirements>
 		<description>
 			<p>When you reduce a creature to 0 Hit Points, you can cause it to turn to stone. If you do so, you gain Temporary Hit Points equal to 1d10 + your Warlock level. A creature turned to stone in this way has the Petrified condition.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
@@ -42,6 +43,7 @@
 	</element>
 
 	<element name="Level 3: Stone Speaker" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SPEAKER">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SPEAKER</requirements>
 		<description>
 			<p>Your pact grants you the ability to commune with earth and stone. As a Magic action, you imbue stones in an immobile 30-foot Emanation with limited sentience, giving them the ability to communicate with you. You can question stones about events in the spell's area within the past day, gaining information about creatures that have passed, items that might have been removed from the area, and other circumstances.</p>
 			<p class="indent">If an Earth Elemental or a creature with the Petrified condition is in the area, you can communicate with it as if you shared a language, but you gain no magical ability to influence it.</p>
@@ -54,6 +56,7 @@
 	</element>
 
 	<element name="Level 3: Stone Sovereign Spells" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SOVEREIGN_SPELLS">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SOVEREIGN_SPELLS</requirements>
 		<description>
 			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Stone Sovereign Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Future You Spells</h5>
@@ -83,6 +86,7 @@
 	</element>
 
 	<element name="Level 6: Form of Stone" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_FORM_OF_STONE">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_FORM_OF_STONE</requirements>
 		<description>
 			<p>Stone is no prison to you. Whenever you have the Petrified condition, you are aware of your surroundings and you have Immunity to Bludgeoning, Piercing, and Slashing damage.</p>
 			<p class="indent">Additionally, you have learned to take on a stone form to protect yourself from injury. As a Reaction when you take damage, you can give yourself the Petrified condition until the start of your next turn. The Petrified condition applies before you take the triggering damage, possibly granting Resistance or Immunity to that damage. When the Petrified condition ends, you can choose to emerge from a stone surface into an unoccupied space you can see within 30 feet of yourself.</p>
@@ -95,6 +99,7 @@
 	</element>
 
 	<element name="Level 10: Stone's Embrace" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONES_EMBRACE">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONES_EMBRACE</requirements>
 		<description>
 			<p>You always have the <i>Meld into Stone</i> spell prepared. When you cast <i>Meld into Stone</i>, you can choose up to five willing creatures within 5 feet of you to also gain the benefits of the spell. Each creature must be touching a stone object or surface large enough to fully contain their body. Affected creatures can end the effect on themselves early by using 5 feet of movement to leave the stone where they entered it.</p>
 			<p class="indent">Creatures who finish a Short or Long Rest while under the effect of your <i>Meld into Stone</i> spell gain Resistance against the first instance of damage they take after leaving the stone.</p>
@@ -109,6 +114,7 @@
 	</element>
 
 	<element name="Level 14: Stone Servant" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SERVANT">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SERVANT</requirements>
 		<description>
 			<p>You gain the ability to control the actions of Petrified creatures, while bestowing upon them the power of your patron. One creature with the Petrified condition that you touch becomes an Earth Elemental Spirit under your control as if you had cast the <i>Summon Elemental</i> spell at 6th-level. The creature's size does not change and you do not need to maintain Concentration. The transformation lasts until a <i>Greater Restoration</i> spell is cast on the creature, until the Elemental Spirit is reduced to 0 Hit Points, or until you use this feature again.</p>
 		</description>
@@ -116,5 +122,13 @@
 			<description>One creature with the Petrified condition that you touch becomes an Earth Elemental Spirit under your control as if you had cast the Summon Elemental spell at 6th-level. The creature's size does not change and you do not need to maintain Concentration. The transformation lasts until a Greater Restoration spell is cast on the creature, until the Elemental Spirit is reduced to 0 HPs, or until you use this feature again.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Eternity in Stone Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_ETERNITY_IN_STONE" />
+	<element name="Stone Speaker Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SPEAKER" />
+	<element name="Stone Sovereign Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SOVEREIGN_SPELLS" />
+	<element name="Form of Stone Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_FORM_OF_STONE" />
+	<element name="Stone's Embrace Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONES_EMBRACE" />
+	<element name="Stone Servant Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_WARLOCK_STONE_SOVEREIGN_PATRON_STONE_SERVANT" />
 	
 </elements>

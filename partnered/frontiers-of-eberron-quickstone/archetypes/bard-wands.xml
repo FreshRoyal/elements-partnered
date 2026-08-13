@@ -3,7 +3,7 @@
 	<info>
 		<name>College of Wands</name>
 		<description>College of Wands from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="bard-wands.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/archetypes/bard-wands.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
 	</element>
 
 	<element name="Level 3: Bonus Cantrip" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_BONUS_CANTRIP">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_BONUS_CANTRIP</requirements>
 		<description>
 			<p>You know one cantrip of your choice from the Sorcerer spell list (see the Sorcerer class's section of the <i>Player's Handbook</i> for a list of Sorcerer spells). <i>Fire Bolt</i> is recommended. The cantrip counts as a Bard cantrip for you, but it doesn't count against the number of Bard cantrips you know.</p>
 			<p class="indent">Additionally, you can use a Wand, Rod, or Orb as a Spellcasting Focus for your Bard spells.</p>
@@ -43,6 +44,7 @@
 	</element>
 
 	<element name="Level 3: Wandslinger's Presence" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_WANDSLINGERS_PRESENCE">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_WANDSLINGERS_PRESENCE</requirements>
 		<description>
 			<p>You know how to talk yourself up and tear your opponents down. If you speak to a creature for at least 1 minute, you can attempt to distract and rattle them when the call to action finally comes. If the creature rolls an Initiative count equal to or higher than your own, it must make a Wisdom saving throw against your spell save DC. On a failed save, the creature's Initiative is reduced to be equal to yours, and it acts immediately after you in the Initiative order.</p>
 		</description>
@@ -52,6 +54,7 @@
 	</element>
 
 	<element name="Level 3: At Your Fingertips" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AT_YOUR_FINGERTIPS">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_AT_YOUR_FINGERTIPS</requirements>
 		<description>
 			<p>When you hit a creature with a Bard cantrip or when a creature fails a saving throw against one of your Bard cantrips, you can expend one use of your Bardic Inspiration to deal an extra 2d6 damage to that creature. You can do so only once per round, on your turn.</p>
 			<p class="indent">In addition, if an allied creature within 10 feet of you takes damage from a creature that you can see within 60 feet of yourself, you can use your Reaction to cause the damaging creature to take 1d4 Fire or Necrotic damage (your choice). The damage increases when you reach Barbarian levels 6 (1d6), 10 (1d8), 14 (1d10) and 20 (1d12).</p>
@@ -68,6 +71,7 @@
 	</element>
 
 	<element name="Level 6: Got Your Back" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_GOT_YOUR_BACK">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_GOT_YOUR_BACK</requirements>
 		<description>
 			<p>You know how to cast with style, and your allies can take heart from your displays of grit or showmanship. If you expend a use of your Bardic Inspiration to improve the damage of a cantrip with your At Your Fingertips feature, you can use your Bonus Action on the same turn to grant a creature you can see within 60 feet of yourself Advantage on the next saving throw it makes for 1 minute.</p>
 		</description>
@@ -77,6 +81,7 @@
 	</element>
 
 	<element name="Level 14: Ain't Big Enough for the Both of Us" type="Archetype Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_ARCHETYPE_FEATURE_BARD_WANDS_AINT_BIG_ENOUGH_FOR_THE_BOTH_OF_US">
+		<requirements>!ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_AINT_BIG_ENOUGH_FOR_THE_BOTH_OF_US</requirements>
 		<description>
 			<p>Your wandplay is legendary, and your territory is assured. Whenever you expend a use of your Bardic Inspiration or when a creature within 60 feet of you adds one of your Bardic Inspiration dice to a D20 Test, one creature of your choice that can see you within 60 feet of yourself must make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of its next turn. If the target already has the Frightened condition, it must immediately use its Reaction, if available, to move as far as away from you as it can, using the safest route.</p>
 		</description>
@@ -84,5 +89,12 @@
 			<description>Whenever you expend a use of your Bardic Inspiration or when a creature within 60 ft of you adds one of your Bardic Inspiration dice to a D20 Test, one creature of your choice that can see you within 60 feet of yourself must make a Wisdom saving throw (DC {{bard:spellcasting:dc}}). On a failed save, the target has the Frightened condition until the end of its next turn. If the target already has the Frightened condition, it must immediately use its Reaction, if available, to move as far as away from you as it can, using the safest route.</description>
 		</sheet>
 	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Bonus Cantrip Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_BONUS_CANTRIP" />
+	<element name="Wandslinger's Presence Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_WANDSLINGERS_PRESENCE" />
+	<element name="At Your Fingertips Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_AT_YOUR_FINGERTIPS" />
+	<element name="Got Your Back Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_GOT_YOUR_BACK" />
+	<element name="Ain't Big Enough for the Both of Us Feature Replacement" type="Grants" source="Internal" id="ID_VPD_FEQ_FEATURE_REPLACEMENT_BARD_WANDS_AINT_BIG_ENOUGH_FOR_THE_BOTH_OF_US" />
 	
 </elements>
