@@ -3,7 +3,7 @@
 	<info>
 		<name>Magic Items</name>
 		<description>Magic Items from Obojima: Tales from the Tall Grass</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/obojima-tales-from-the-tall-grass/items-magic.xml" />
 		</update>
 	</info>
@@ -168,7 +168,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">Ucommon</set>
+			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
 
