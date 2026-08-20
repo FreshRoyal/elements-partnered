@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/feats.xml" />
 		</update>
 	</info>
@@ -939,7 +939,7 @@
 		</description>
 		<sheet>
 			<description>Your hide can be enchanted or infused as if it were nonmagical armor. &#13;
-			• Additionally, you have claws which you can use to make Unarmed Strikes. If you hit with them, you deal 1d6+{{strength:modifier}} Slashing damage.</description>
+			Additionally, you have claws which you can use to make Unarmed Strikes. If you hit with them, you deal 1d6+{{strength:modifier}} Slashing damage.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase (Hewn for Battle)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
