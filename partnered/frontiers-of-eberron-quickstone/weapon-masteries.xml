@@ -3,13 +3,13 @@
 	<info>
 		<name>Weapon Masteries</name>
 		<description>Weapon Masteries from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/weapon-masteries.xml" />
 		</update>
 	</info>
 
 	<element name="Steel Jaws (Topple)" type="Class Feature" source="Frontiers of Eberron: Quickstone" id="ID_VPD_FEQ_CLASS_FEATURE_MASTERY_PROPERTY_STEEL_JAWS_TOPPLE">
-		<supports>Weapon Mastery, Simple, Melee</supports>
+		<supports>Weapon Mastery, Martial, Melee</supports>
 		<requirements>ID_VPD_FEQ_PROFICIENCY_WEAPON_PROFICIENCY_STEEL_JAWS</requirements>
 		<compendium display="false" />
 		<description>
