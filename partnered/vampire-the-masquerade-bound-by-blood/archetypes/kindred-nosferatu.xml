@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Nosferatu</name>
+		<description>Nosferatu from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="kindred-nosferatu.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-nosferatu.xml" />
+		</update>
+	</info>
+
+	<element name="Nosferatu" type="Archetype" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_KINDRED_NOSFERATU">
+		<supports>VMBB Kindred Subclass</supports>
+		<description>
+			<p class="flavor">Hide Yourself from Prying Eyes and Unleash Your Own Monstrous Nature</p>
+			<p>Nosferatu undergo a tragic transformation upon becoming Kindred. Their visage is warped to represent the Beast inside, making them into a terror who forges connections only with vermin and monsters. They must overcome this adversity with their gifts, lest they become the monsters they resemble.</p>
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_NOSFERATU_BANE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFTS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_INHUMAN_STRENGTH" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFTS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_NOSFERATU_BANE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFTS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_INHUMAN_STRENGTH" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFTS" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hidden in Plain Sight" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT</requirements>
+		<description>
+			<p class="indent"><em><strong>Mask of a Thousand Faces.</strong></em> You can cast the <i>Disguise Self</i> spell without expending a spell slot.</p>
+			<p class="indent"><em><strong>Vanish.</strong></em> You can cast the <i>Invisibility</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and regain all expended uses when you finish a Short Rest or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT_MASK_OF_A_THOUSAND_FACES" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT_VANISH" />
+		</rules>
+	</element>
+	<element name="Mask of a Thousand Faces" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT_MASK_OF_A_THOUSAND_FACES">
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>Disguise Self</i> spell without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Disguise Self spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Vanish" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT_VANISH">
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>Invisibility</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and regain all expended uses when you finish a Short Rest or Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>You can cast the Invisibility spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Nosferatu Bane" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_NOSFERATU_BANE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_NOSFERATU_NOSFERATU_BANE</requirements>
+		<description>
+			<p>Your physical appearance is monstrous and unsettling. You have Disadvantage on Charisma checks when interacting with non-Undead that can see your hideous visage.</p>
+		</description>
+		<sheet alt="Nosferatu Bane">
+			<description>You have Disadvantage on Charisma checks when interacting with non-Undead that can see your hideous visage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Monstrous Gift" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_NOSFERATU_MONSTROUS_GIFT</requirements>
+		<description>
+			<p>You have become more at peace with your monstrous appearance, unlocking aspects of yourself. You can choose two benefits from the following list.</p>
+			<p class="indent"><em><strong>Animalist.</strong></em> You can cast the <i>Animal Friendship, Animal Messenger</i>, and <i>Speak with Animals</i> spells. You can cast each of these spells without expending a spell slot. Once you cast each spell in this way, you can't cast that spell in this way again until you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Ears of the Bat.</strong></em> You have Blindsight with a range of 60 feet.</p>
+			<p class="indent"><em><strong>Feral Talons.</strong></em> You have a Climb Speed equal to your Speed, and when you hit with your Unarmed Strike and deal damage, you can deal Slashing damage equal to 1d8 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+			<p class="indent"><em><strong>Leathery Hide.</strong></em> Creatures you can see within 60 feet of yourself have Disadvantage on saving throws to avoid or end the Charmed condition.</p>
+			<p class="indent"><em><strong>Patagia.</strong></em> Creatures you can see within 60 feet of yourself have Disadvantage on saving throws to avoid or end the Charmed condition.</p>
+			<p class="indent"><em><strong>The Terror.</strong></em> Creatures you can see within 60 feet of yourself have Disadvantage on saving throws to avoid or end the Charmed condition.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Monstrous Gift" supports="VMBB Monstrous Gift" number="2" />
+		</rules>
+	</element>
+	<element name="Animalist" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT_ANIMALIST">
+		<compendium display="false" />
+		<supports>VMBB Monstrous Gift</supports>
+		<description>
+			<p>You can cast the <i>Animal Friendship, Animal Messenger</i>, and <i>Speak with Animals</i> spells. You can cast each of these spells without expending a spell slot. Once you cast each spell in this way, you can't cast that spell in this way again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Animal Friendship, Animal Messenger, and Speak with Animals spells. You can cast each of these spells without expending a spell slot. Once you cast each spell in this way, you can't cast that spell in this way again until you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_MESSENGER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+	<element name="Ears of the Bat" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT_EARS_OF_THE_BAT">
+		<compendium display="false" />
+		<supports>VMBB Monstrous Gift</supports>
+		<description>
+			<p>You have Blindsight with a range of 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Feral Talons" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT_FERAL_TALONS">
+		<compendium display="false" />
+		<supports>VMBB Monstrous Gift</supports>
+		<description>
+			<p>You have a Climb Speed equal to your Speed, and when you hit with your Unarmed Strike and deal damage, you can deal Slashing damage equal to 1d8 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>When you hit with your Unarmed Strike and deal damage, you can deal 1d8+{{strength:modifier}} Slashing damage instead of the normal damage of an Unarmed Strike.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Leathery Hide" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT_LEATHERY_HIDE">
+		<compendium display="false" />
+		<supports>VMBB Monstrous Gift</supports>
+		<description>
+			<p>Damage dealt to you except Fire and Radiant is reduced by an amount equal to your Constitution modifier (minimum reduction of 1).</p>
+		</description>
+		<sheet>
+			<description>Damage dealt to you except Fire and Radiant is reduced by {{vmbb:leathery hide:reduction}}.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:leathery hide:reduction" value="constitution:modifier" bonus="bonus" />
+			<stat name="vmbb:leathery hide:reduction" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="Patagia" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT_PATAGIA">
+		<compendium display="false" />
+		<supports>VMBB Monstrous Gift</supports>
+		<description>
+			<p>If you aren't Incapacitated or wearing Heavy armor, you can extend your skin to glide. When you fall, you can move up to 5 feet horizontally for every 1 foot you descend, and when you would take damage from a fall, you can take a Reaction to reduce the fall's damage to 0.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>If you aren't Incapacitated or wearing Heavy armor, you can extend your skin to glide. When you fall, you can move up to 5 ft horizontally for every 1 ft you descend, and when you would take damage from a fall, you can take a Reaction to reduce the fall's damage to 0.</description>
+		</sheet>
+	</element>
+	<element name="The Terror" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT_THE_TERROR">
+		<compendium display="false" />
+		<supports>VMBB Monstrous Gift</supports>
+		<description>
+			<p>As a Magic action, you can reveal your monstrous nature to up to three creatures you can see within 30 feet. Each target must succeed on a Wisdom saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or gain the Frightened condition for 1 minute, or until you deal damage to it.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can reveal your monstrous nature to up to three creatures you can see within 30 ft. Each target must succeed on a DC{{}} Wisdom save or gain the Frightened condition for 1 minute, or until you deal damage to it.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:the terror:dc" value="8" bonus="base" />
+			<stat name="vmbb:the terror:dc" value="charisma:modifier" bonus="ability" />
+			<stat name="vmbb:the terror:dc" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Inhuman Strength" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_INHUMAN_STRENGTH">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_NOSFERATU_INHUMAN_STRENGTH</requirements>
+		<description>
+			<p>You experience the world, in all its wonders, with vampiric speed. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Ability Score Increase.</strong></em> Your Strength score increases by 2, to a maximum of 25.</p>
+			<p class="indent"><em><strong>Powerful Blows.</strong></em> As a Bonus Action, expend 3 Blood Points for 1 minute. When you hit with a Melee weapon or Unarmed Strike, the target takes an extra 1d10 Force damage.</p>
+		</description>
+		<sheet alt="Inhuman Strength" action="Bonus Action" usage="3 Blood Points">
+			<description>For 1 minute, when you hit with a Melee weapon or Unarmed Strike, the target takes an extra 1d10 Force damage.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="2" alt="Inhuman Strength" />
+			<stat name="strength:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Level 11: The Concealing" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_THE_CONCEALING</requirements>
+		<description>
+			<p>Your obfuscation abilities can now extend to objects and creatures in your vicinity.</p>
+			<p class="indent"><em><strong>Conceal.</strong></em> As a Magic action you can expend 3 Blood Points to touch an object and make it vanish from sight and memory. The object gains the Invisible condition and creatures forgetting it may recover memories by succeeding on the Investigation check described in the source. A <i>Remove Curse</i> or <i>Greater Restoration</i> restores true memory.</p>
+			<p class="indent"><em><strong>Cloak the Gathering.</strong></em> When you cast <i>Invisibility</i>, you can expend up to 6 Blood Points to affect additional creatures within 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING_CONCEAL" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING_CLOAK_THE_GATHERING" />
+		</rules>
+	</element>
+	<element name="Conceal" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING_CONCEAL">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action you can expend 3 Blood Points to touch an object and make it vanish from sight and memory. The object gains the Invisible condition and creatures forgetting it may recover memories by succeeding on the Investigation check described in the source. A <i>Remove Curse</i> or <i>Greater Restoration</i> restores true memory.</p>
+		</description>
+		<sheet action="Action" usage="3 Blood Points">
+			<description>You touch an object and make it vanish from sight and memory. The object gains the Invisible condition and creatures forgetting it may recover memories by succeeding on the Investigation check described in the source. A Remove Curse or Greater Restoration restores true memory.</description>
+		</sheet>
+	</element>
+	<element name="Cloak the Gathering" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING_CLOAK_THE_GATHERING">
+		<compendium display="false" />
+		<description>
+			<p>When you cast <i>Invisibility</i>, you can expend up to 6 Blood Points to affect additional creatures within 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When you cast Invisibility, you can expend up to 6 Blood Points to affect additional creatures within 30 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Greater Monstrous Gift" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT</requirements>
+		<description>
+			<p>Your physical monstrousness has evolved. You can choose one benefit from the following list.</p>
+			<p class="indent"><em><strong>Call the Wretched.</strong></em> You can expend 2 Blood Points to cast the <i>Blight</i> or <i>Insect Plague</i> spell.</p>
+			<p class="indent"><em><strong>Distending Jaws.</strong></em> You can roll one additional Feed Die when you feed. In addition, you can use your jaws to make Unarmed Strikes. When you hit with your Unarmed Strike and deal damage, you can deal Piercing damage equal to 2d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+			<p class="indent"><em><strong>One with the Night.</strong></em> Your Blindsight is increased to 90 feet, and you can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
+			<p class="indent"><em><strong>Skin of the Chameleon.</strong></em> You can expend 2 Blood Points to cast the <i>Greater Invisibility</i> spell. In addition, you have Advantage on Dexterity (Stealth) checks.</p>
+			<p class="indent"><em><strong>Stony Flesh.</strong></em> In response to taking damage, you can use your Reaction to expend 1 Blood Point to gain Resistance for 1 minute to two damage types, other than Fire, Psychic, and Radiant, including against the triggering damage.</p>
+			<p class="indent"><em><strong>Wings of the Gargoyle.</strong></em> While you aren't wearing Heavy armor, your Speed increases by 10 feet, and you gain a Fly Speed equal to your Speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Greater Monstrous Gift" supports="VMBB Greater Monstrous Gift" />
+		</rules>
+	</element>
+	<element name="Call the Wretched" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT_CALL_THE_WRETCHED">
+		<compendium display="false" />
+		<supports>VMBB Greater Monstrous Gift</supports>
+		<description>
+			<p>You can expend 2 Blood Points to cast the <i>Blight</i> or <i>Insect Plague</i> spell.</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the Blight or Insect Plague spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INSECT_PLAGUE" />
+		</rules>
+	</element>
+	<element name="Distending Jaws" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT_DISTENDING_JAWS">
+		<compendium display="false" />
+		<supports>VMBB Greater Monstrous Gift</supports>
+		<description>
+			<p>You can roll one additional Feed Die when you feed. In addition, you can use your jaws to make Unarmed Strikes. When you hit with your Unarmed Strike and deal damage, you can deal Piercing damage equal to 2d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>You can roll 1 additional Feed Die when you feed. In addition, you can use your jaws to make Unarmed Strikes. When you hit with your Unarmed Strike and deal damage, you can deal 2d6+{{strength:modifier}} Piercing damage instead of the normal damage of an Unarmed Strike.</description>
+		</sheet>
+	</element>
+	<element name="One with the Night" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT_ONE_WITH_THE_NIGHT">
+		<compendium display="false" />
+		<supports>VMBB Greater Monstrous Gift</supports>
+		<description>
+			<p>Your Blindsight is increased to 90 feet, and you can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 ft of yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="90" bonus="base" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+	<element name="Skin of the Chameleon" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT_SKIN_OF_THE_CHAMELEON">
+		<compendium display="false" />
+		<supports>VMBB Greater Monstrous Gift</supports>
+		<description>
+			<p>You can expend 2 Blood Points to cast the <i>Greater Invisibility</i> spell. In addition, you have Advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet>
+			<description>You can expend 2 Blood Points to cast the Greater Invisibility spell. In addition, you have Advantage on Dexterity (Stealth) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" />
+		</rules>
+	</element>
+	<element name="Stony Flesh" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT_STONY_FLESH">
+		<compendium display="false" />
+		<supports>VMBB Greater Monstrous Gift</supports>
+		<description>
+			<p>In response to taking damage, you can use your Reaction to expend 1 Blood Point to gain Resistance for 1 minute to two damage types, other than Fire, Psychic, and Radiant, including against the triggering damage.</p>
+		</description>
+		<sheet action="Reaction" usage="Blood Point">
+			<description>In response to taking damage, you can gain Resistance for 1 minute to two damage types, other than Fire, Psychic, and Radiant, including against the triggering damage.</description>
+		</sheet>
+	</element>
+	<element name="Wings of the Gargoyle" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFT_WINGS_OF_THE_GARGOYLE">
+		<compendium display="false" />
+		<supports>VMBB Greater Monstrous Gift</supports>
+		<description>
+			<p>While you aren't wearing Heavy armor, your Speed increases by 10 feet, and you gain a Fly Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>While you aren't wearing Heavy armor, your Speed increases by 10 feet, and you gain a Fly Speed equal to your Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="10" equipped="![armor:heavy]" />
+			<stat name="speed:fly" value="speed" bonus="base" equipped="![armor:heavy]" />
+		</rules>
+	</element>
+
+	<element name="Level 18: What Goes Bump in the Night" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT</requirements>
+		<description>
+			<p class="indent"><em><strong>Lord of Vermin.</strong></em> As a Magic action, you can expend 3 Blood Points to summon 1d4 + 1 swarms of bats, insects, or rats for 1 hour. Once used, can't use again until a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Stalk the Shadows.</strong></em> You can cast <i>Greater Invisibility</i> on yourself without a spell slot a number of times equal to your Proficiency Bonus, regaining uses on a Short or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT_LORD_OF_VERMIN" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT_STALK_THE_SHADOWS" />
+		</rules>
+	</element>
+	<element name="Lord of Vermin" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT_LORD_OF_VERMIN">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, you can expend 3 Blood Points to summon 1d4 + 1 swarms of bats, insects, or rats for 1 hour. Once used, can't use again until a Short or Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="3 Blood Points - 1/Short Rest">
+			<description>You can summon 1d4 + 1 swarms of bats, insects, or rats for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Stalk the Shadows" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT_STALK_THE_SHADOWS">
+		<compendium display="false" />
+		<description>
+			<p>You can cast <i>Greater Invisibility</i> on yourself without a spell slot a number of times equal to your Proficiency Bonus, regaining uses on a Short or Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>You can cast the Greater Invisibility spell on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" />
+		</rules>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Hidden in Plain Sight Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT" />
+	<element name="Nosferatu Bane Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_NOSFERATU_NOSFERATU_BANE" />
+	<element name="Monstrous Gifts Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_MONSTROUS_GIFTS" />
+	<element name="Inhuman Strength Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_NOSFERATU_INHUMAN_STRENGTH" />
+	<element name="The Concealing Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_THE_CONCEALING" />
+	<element name="Greater Monstrous Gifts Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_GREATER_MONSTROUS_GIFTS" />
+	<element name="What Goes Bump in the Night Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_WHAT_GOES_BUMP_IN_THE_NIGHT" />
+	
+</elements>

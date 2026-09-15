@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ghoul</name>
+		<description>Ghoul from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="background-ghoul.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-ghoul.xml" />
+		</update>
+	</info>
+
+	<element name="Ghoul" type="Background" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_BACKGROUND_GHOUL">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</li>
+				<li><strong>Feat:</strong> Nocturnal</li>
+				<li><strong>Skill Proficiencies:</strong> Perception and Survival</li>
+				<li><strong>Tool Proficiency:</strong> Choose one kind of Artisan's Tools</li>
+				<li><strong>Equipment:</strong> <i> Choose A or B:</i> (A) Artisan's Tools (same as above), Dagger, Kindred Vitae, Hooded Lantern, Shortbow, 20 Arrows, Traveler's Clothes, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_FEAT_NOCTURNAL" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Charisma, Nocturnal Feat, Perception and Survival Skills, Artisan's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_CHA" />
+			<grant type="Feat" id="ID_GFG_VMBB_FEAT_NOCTURNAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" /> 
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Artisan's Tools (Ghoul)" supports="Artisan tools" />
+		</rules>
+	</element>
+
+</elements>

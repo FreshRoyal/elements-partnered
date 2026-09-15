@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Equipment Packs</name>
+		<description>Equipment Packs from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="items-packs.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/items/items-packs.xml" />
+		</update>
+	</info>
+
+	<element name="Hunter's Kit" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_HUNTERS_KIT">
+		<description>
+			<p>Sometimes called a "vampire hunting kit," the Hunter's Kit contains the following items: 6 Candles, Crowbar, Holy Symbol, 2 vials of Holy Water, Backpack, Mirror, 4 Torches, and Wooden Stakes.</p>
+			<p><b>Note:</b> Due to the app's limitations, this kit doesn't include Holy Symbol (can be selected under "Spellcasting Focus" category).</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item amount="6">ID_WOTC_PHB24_ITEM_CANDLE</item>
+			<item>ID_WOTC_PHB24_ITEM_CROWBAR</item>
+			<item amount="2">ID_WOTC_PHB24_ITEM_HOLY_WATER</item>
+			<item>ID_WOTC_PHB24_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB24_ITEM_MIRROR</item>
+			<item amount="4">ID_WOTC_PHB24_ITEM_TORCH</item>
+			<item>ID_GFG_VMBB_WEAPON_WOODEN_STAKE</item>
+		</extract>
+	</element>
+	
+	<element name="Class Equipment Pack (Kindred)" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_CLASS_EQUIPMENT_PACK_KINDRED">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Kindred Class, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• 2 Daggers</p>
+			<p class="indent">• Shortsword</p>
+			<p class="indent" style="margin-bottom:5px">• Explorer's Pack</p>
+			<p><b>Note:</b> This pack doesn't include Leather Armor, Artisan's Tools of your choice (can be selected under "Tools" category) and 15 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item amount="2">ID_WOTC_PHB24_WEAPON_DAGGER</item>
+			<item>ID_WOTC_PHB24_WEAPON_SHORTSWORD</item>
+			<item>ID_WOTC_PHB24_ITEM_EXPLORERS_PACK</item>
+		</extract>
+	</element>
+
+	<!--Background Equipment Packs-->
+	<element name="Background Equipment Pack (Ghoul)" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BACKGROUND_EQUIPMENT_PACK_GHOUL">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Ghoul Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Dagger</p>
+			<p class="indent">• Kindred Vitae</p>
+			<p class="indent">• Hooded Lantern</p>
+			<p class="indent">• Shortbow</p>
+			<p class="indent">• 20 Arrows</p>
+			<p class="indent">• Traveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include Artisan's Tools (can be chosen in "Tools" Equipment category) or 10 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_WEAPON_DAGGER</item>
+			<item>ID_GFG_VMBB_MAGIC_ITEM_KINDRED_VITAE</item>
+			<item>ID_WOTC_PHB24_ITEM_LANTERN_HOODED</item>
+			<item>ID_WOTC_PHB24_WEAPON_SHORTBOW</item>
+			<item amount="20">ID_WOTC_PHB24_ITEM_ARROW</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+	<element name="Background Equipment Pack (Ritualist)" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BACKGROUND_EQUIPMENT_PACK_RITUALIST">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Ritualist Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Alchemist's Supplies</p>
+			<p class="indent">• Book</p>
+			<p class="indent">• Dagger</p>
+			<p class="indent">• Ink</p>
+			<p class="indent">• Traveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include 9 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_ITEM_TOOL_ALCHEMISTS_SUPPLIES</item>
+			<item>ID_WOTC_PHB24_ITEM_BOOK</item>
+			<item>ID_WOTC_PHB24_WEAPON_DAGGER</item>
+			<item>ID_WOTC_PHB24_ITEM_INK</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+	<element name="Background Equipment Pack (Scholar of the Hunt)" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BACKGROUND_EQUIPMENT_PACK_SCHOLAR_OF_THE_HUNT">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Scholar of the Hunt Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Manacles</p>
+			<p class="indent">• Mirror</p>
+			<p class="indent">• Traveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include Gaming Set (can be chosen in "Tools" Equipment category) or 15 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_ITEM_MANACLES</item>
+			<item>ID_WOTC_PHB24_ITEM_MIRROR</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+	<element name="Background Equipment Pack (Thrall)" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BACKGROUND_EQUIPMENT_PACK_THRALL">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Thrall Background, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Healer's Kit</p>
+			<p class="indent">• Bullseye Lantern</p>
+			<p class="indent">• Traveler's Clothes</p>
+			<p><b>Note:</b> This pack doesn't include Gaming Set or Musical Instrument (can be chosen in "Tools" or "Musical Instrument" Equipment category) or 32 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_ITEM_HEALERS_KIT</item>
+			<item>ID_WOTC_PHB24_ITEM_LANTERN_BULLSEYE</item>
+			<item>ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS</item>
+		</extract>
+	</element>
+
+</elements>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Touchastone</name>
+		<description>Touchstone from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="background-touchstone.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-touchstone.xml" />
+		</update>
+	</info>
+
+	<element name="Touchstone" type="Background" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_BACKGROUND_TOUCHSTONE">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Protected</li>
+				<li><strong>Skill Proficiencies:</strong> Persuasion and Survival</li>
+				<li><strong>Tool Proficiency:</strong> Choose one kind of Artisan's Tools</li>
+				<li><strong>Equipment:</strong> <i> Choose A or B:</i> (A) Artisan's Tools (same as above), Traveler's Clothes, 16 GP; or (B) 50 GP</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_FEAT_PROTECTED" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Charisma, Protected Feat, Persuasion and Survival Skills, Artisan's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_CON_INT_CHA" />
+			<grant type="Feat" id="ID_GFG_VMBB_FEAT_PROTECTED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" /> 
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Artisan's Tools (Touchstone)" supports="Artisan tools" />
+		</rules>
+	</element>
+
+</elements>

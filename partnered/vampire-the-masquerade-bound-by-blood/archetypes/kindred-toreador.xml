@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Toreador</name>
+		<description>Toreador from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="kindred-toreador.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-toreador.xml" />
+		</update>
+	</info>
+
+	<element name="Toreador" type="Archetype" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_KINDRED_TOREADOR">
+		<supports>VMBB Kindred Subclass</supports>
+		<description>
+			<p class="flavor">See the World Like No One Else Can</p>
+			<p>Toreador are steeped in art and beauty. They use their superhuman senses to experience aspects of the world no one else can. They feel everything deeply, and, with a glance or a few words, can instill similar feelings in others. If there is awe to be found, a Toreador can find it.</p>
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_AN_ARTISTS_SOUL" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TOREADOR_BANE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_LIVE_FAST_BE_A_GOOD_LOOKING_CORPSE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_VISIONARY" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_AN_ARTISTS_SOUL" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TOREADOR_BANE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_LIVE_FAST_BE_A_GOOD_LOOKING_CORPSE" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_VISIONARY" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: An Artist's Soul" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_AN_ARTISTS_SOUL">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_TOREADOR_AN_ARTISTS_SOUL</requirements>
+		<description>
+			<p>You have in you a spark of talent and inspiration that has only been fanned brighter by your vampiric ascension. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Auspicious Senses.</strong></em> You have Advantage on Intelligence (Investigation) and Wisdom (Perception) checks. In addition, the range of your Darkvision increases to 120 feet.</p>
+			<p class="indent"><em><strong>Chosen for Talent.</strong></em> You gain proficiency in two skills and one tool of your choice. If you already have proficiency in the chosen skill, you gain Expertise in it.</p>
+		</description>
+		<sheet alt="An Artist's Soul">
+			<description>You have Advantage on Intelligence (Investigation) and Wisdom (Perception) checks.</description>
+		</sheet>
+		<rules>
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<select type="Proficiency" name="Skill Proficiency or Expertise (An Artist's Soul)" number="2" supports="Skill||Skill Expertise" />
+			<select type="Proficiency" name="Tool Proficiency (An Artist's Soul)" supports="Tool" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Toreador Bane" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TOREADOR_BANE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_TOREADOR_TOREADOR_BANE</requirements>
+		<description>
+			<p>You suffer a great malaise in the absence of beauty. When you roll a 9 or lower on the d20 for an Intelligence (Investigation) or Wisdom (Perception) check, you see nothing of immediate beauty and gain the Restrained condition. At the end of each of your turns, you can make a DC 10 Wisdom saving throw, ending the condition on a success.</p>
+		</description>
+		<sheet alt="Toreador Bane">
+			<description>When you roll a 9 or lower on the d20 for an Intelligence (Investigation) or Wisdom (Perception) check, you see nothing of immediate beauty and gain the Restrained condition. At the end of each of your turns, you can make a DC10 Wisdom save, ending the condition on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Depth of Feelings" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_DEPTH_OF_FEELINGS</requirements>
+		<description>
+			<p>You can see aspects of the world that others can't, including emotions. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Aura Sight.</strong></em> As a Magic action, you can expend 2 Blood Points to see a creature's aura for 1 minute. You can ask the GM up to two questions that can be answered with yes or no. You must ask your questions before the effect ends. You receive a correct answer for each question. The following are example questions.</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li>Is the creature's creature type X? (Where X is a creature type specified by the player character, such as Monstrosity or Undead)</li>
+				<li>Can the creature cast spells?</li>
+				<li>Is the creature Hostile toward me?</li>
+				<li>Does the creature believe what it is saying?</li>
+			</ul>
+			<p class="indent">The GM has final say as to whether the question can be answered, but the answers must be truthful.</p>
+			<p class="indent"><em><strong>Entrancement.</strong></em> You can expend 1 Blood Point to cast the <i>Calm Emotions</i>, <i>Charm Monster</i>, or <i>Charm Person</i> spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS_AURA_SIGHT" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS_ENTRANCEMENT" />
+		</rules>
+	</element>
+	<element name="Aura Sight" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS_AURA_SIGHT">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, you can expend 2 Blood Points to see a creature's aura for 1 minute. You can ask the GM up to two questions that can be answered with yes or no. You must ask your questions before the effect ends. You receive a correct answer for each question. The following are example questions.</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li>Is the creature's creature type X? (Where X is a creature type specified by the player character, such as Monstrosity or Undead)</li>
+				<li>Can the creature cast spells?</li>
+				<li>Is the creature Hostile toward me?</li>
+				<li>Does the creature believe what it is saying?</li>
+			</ul>
+			<p class="indent">The GM has final say as to whether the question can be answered, but the answers must be truthful.</p>
+		</description>
+		<sheet action="Action" usage="2 Blood Points">
+			<description>You can see a creature's aura for 1 minute. You can ask the GM up to two questions that can be answered with yes or no. You must ask your questions before the effect ends. You receive a correct answer for each question.</description>
+		</sheet>
+	</element>
+	<element name="Entrancement" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_DEPTH_OF_FEELINGS_ENTRANCEMENT">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 1 Blood Point to cast the <i>Calm Emotions</i>, <i>Charm Monster</i>, or <i>Charm Person</i> spell.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Calm Emotions, Charm Monster, or Charm Person spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALM_EMOTIONS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Live Fast, Be a Good Looking Corpse" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_LIVE_FAST_BE_A_GOOD_LOOKING_CORPSE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_TOREADOR_LIVE_FAST_BE_A_GOOD_LOOKING_CORPSE</requirements>
+		<description>
+			<p>You experience the world, in all its wonders, with vampiric speed. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Ability Score Increase.</strong></em> Your Dexterity score increases by 2, to a maximum of 25.</p>
+			<p class="indent"><em><strong>Rapidity.</strong></em> As a Bonus Action, you can expend 1 Blood Point to gain an additional action on your turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action. This effects lasts for a number of turns equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Live Fast, Be a Good Looking Corpse" action="Bonus Action" usage="Blood Point">
+			<description>You can gain an additional action on your turns for {{proficiency}} turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="2" alt="Live Fast, Be a Good Looking Corpse" />
+			<stat name="dexterity:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Level 11: Visionary" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_VISIONARY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_VISIONARY</requirements>
+		<description>
+			<p>You have honed your skills and your perceptions to a razor's edge. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Practiced Perfection.</strong></em> You gain Expertise in three of your skill proficiencies of your choice.</p>
+			<p class="indent"><em><strong>Spirit's Touch.</strong></em> As a Magic action, you can expend 2 Blood Points to touch an object and perceive emotional residues on it for 10 minutes. You can ask the GM a number of questions equal to your Proficiency Bonus, which must be answered truthfully. You must ask your questions before the effect ends. The following are examples of questions that can be asked.</p>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li>What did the last creature that touched this look like?</li>
+				<li>What was the emotional state of the last creature that used the object?</li>
+				<li>Is this object magical?</li>
+				<li>Is this object cursed?</li>
+				<li>Is this object trapped?</li>
+				<li>What are any physical details of the object that aren't readily visible?</li>
+				<li>How many creatures have touched the object in the last 24 hours?</li>
+			</ul>
+		</description>
+		<sheet alt="Visionary" action="Action" usage="2 Blood Points">
+			<description>You touch an object and perceive emotional residues on it for 10 minutes. You can ask the GM {{proficiency}} questions, which must be answered truthfully. You must ask your questions before the effect ends.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Expertise (Visionary)" number="3" supports="Skill Expertise" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Truly Majestic" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_TRULY_MAJESTIC</requirements>
+		<description>
+			<p>You exude vampiric allure and have learned how to charm others. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Eerily Convincing.</strong></em> You have Advantage on Charisma (Deception and Persuasion) checks. In addition, when you cast a spell with your Entrancement feature, a creature has Disadvantage on any saving throw it makes against the spell.</p>
+			<p class="indent"><em><strong>Majesty.</strong></em> You can expend 3 Blood Points to cast the <i>Sanctuary</i> spell on yourself. When you cast the spell in this way, the spell doesn't end if you make an attack roll, cast a spell, or deal damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC_EERILY_CONVINCING" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC_MAJESTY" />
+		</rules>
+	</element>
+	<element name="Eerily Convincing" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC_EERILY_CONVINCING">
+		<compendium display="false" />
+		<description>
+			<p>You have Advantage on Charisma (Deception and Persuasion) checks. In addition, when you cast a spell with your Entrancement feature, a creature has Disadvantage on any saving throw it makes against the spell.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Charisma (Deception and Persuasion) checks. In addition, when you cast a spell with your Entrancement feature, a creature has Disadvantage on any saving throw it makes against the spell.</description>
+		</sheet>
+	</element>
+	<element name="Majesty" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_TRULY_MAJESTIC_MAJESTY">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 3 Blood Points to cast the <i>Sanctuary</i> spell on yourself. When you cast the spell in this way, the spell doesn't end if you make an attack roll, cast a spell, or deal damage.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Sanctuary spell on yourself. When you cast the spell in this way, the spell doesn't end if you make an attack roll, cast a spell, or deal damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SANCTUARY" />
+		</rules>
+	</element>
+
+	<element name="Level 18: Magnum Opus" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_MAGNUM_OPUS</requirements>
+		<description>
+			<p>You have mastered what it means to be one of the greatest vampiric artisans, which defines you as much as you define it. Choose two of the following benefits.</p>
+			<p class="indent"><em><strong>Flicker.</strong></em> As a Bonus Action, you can expend 3 Blood Points to dance between the beats of a mortal's heart. Until the start of your next turn, you have a +3 bonus to AC, your Speed is doubled, your movement doesn't provoke Opportunity Attacks, and you have Advantage on attack rolls.</p>
+			<p class="indent"><em><strong>Clairvoyance.</strong></em> You can expend 2 Blood Points to cast the <i>Clairvoyance</i> or <i>Scrying</i> spell. When you cast the spell in this way, the sensor can't be perceived.</p>
+			<p class="indent"><em><strong>Open Mind.</strong></em> You can use a Magic action to expend 1 Blood point to choose any number of creatures you know within 5 miles of yourself or any number of creatures you can see within 120 feet of yourself. You and the chosen creatures can communicate telepathically with each other while the creatures and you are within 5 miles of each other for 8 hours. You and the targets can instantly share words, images, sounds, and other sensory messages with each other through the link, and the targets recognize you as the creature they are communicating with. This effect enables creatures to understand the meaning of your words and any sensory messages you send to them.</p>
+			<p class="indent"><em><strong>Star Magnetism.</strong></em> You can expend 3 Blood Points to cast the <i>Mass Suggestion</i> spell. When you cast the spell in this way, you can target any creature you can communicate with, you don't need line of sight, the range becomes 1 mile, and you can modify it so that it doesn't require Concentration.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Magnum Opus" supports="VMBB Magnum Opus" number="2" />
+		</rules>
+	</element>
+	<element name="Flicker" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS_FLICKER">
+		<compendium display="false" />
+		<supports>VMBB Magnum Opus</supports>
+		<description>
+			<p>As a Bonus Action, you can expend 3 Blood Points to dance between the beats of a mortal's heart. Until the start of your next turn, you have a +3 bonus to AC, your Speed is doubled, your movement doesn't provoke Opportunity Attacks, and you have Advantage on attack rolls.</p>
+		</description>
+		<sheet action="Bonus Action" usage="3 Blood Points">
+			<description>Until the start of your next turn, you have a +3 bonus to AC, your Speed is doubled, your movement doesn't provoke Opportunity Attacks, and you have Advantage on attack rolls.</description>
+		</sheet>
+	</element>
+	<element name="Clairvoyance" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS_CLAIRVOYANCE">
+		<compendium display="false" />
+		<supports>VMBB Magnum Opus</supports>
+		<description>
+			<p>You can expend 2 Blood Points to cast the <i>Clairvoyance</i> or <i>Scrying</i> spell. When you cast the spell in this way, the sensor can't be perceived.</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the Clairvoyance or Scrying spell. When you cast the spell in this way, the sensor can't be perceived.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" />
+		</rules>
+	</element>
+	<element name="Open Mind" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS_OPEN_MIND">
+		<compendium display="false" />
+		<supports>VMBB Magnum Opus</supports>
+		<description>
+			<p>You can use a Magic action to expend 1 Blood Point to choose any number of creatures you know within 5 miles of yourself or any number of creatures you can see within 120 feet of yourself. You and the chosen creatures can communicate telepathically with each other while the creatures and you are within 5 miles of each other for 8 hours. You and the targets can instantly share words, images, sounds, and other sensory messages with each other through the link, and the targets recognize you as the creature they are communicating with. This effect enables creatures to understand the meaning of your words and any sensory messages you send to them.</p>
+		</description>
+		<sheet action="Action" usage="Blood Point">
+			<description>You can choose any number of creatures you know within 5 miles of yourself or any number of creatures you can see within 120 ft of yourself. You and the chosen creatures can communicate telepathically with each other while the creatures and you are within 5 miles of each other for 8 hours. You and the targets can instantly share words, images, sounds, and other sensory messages with each other through the link, and the targets recognize you as the creature they are communicating with. This effect enables creatures to understand the meaning of your words and any sensory messages you send to them.</description>
+		</sheet>
+	</element>
+	<element name="Star Magnetism" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_TOREADOR_MAGNUM_OPUS_STAR_MAGNETISM">
+		<compendium display="false" />
+		<supports>VMBB Magnum Opus</supports>
+		<description>
+			<p>You can expend 3 Blood Points to cast the <i>Mass Suggestion</i> spell. When you cast the spell in this way, you can target any creature you can communicate with, you don't need line of sight, the range becomes 1 mile, and you can modify it so that it doesn't require Concentration.</p>
+		</description>
+		<sheet action="Bonus Action" usage="3 Blood Points">
+			<description>You can cast the Mass Suggestion spell. When you cast the spell in this way, you can target any creature you can communicate with, you don't need line of sight, the range becomes 1 mile, and you can modify it so that it doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_SUGGESTION" />
+		</rules>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="An Artist's Soul Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_TOREADOR_AN_ARTISTS_SOUL" />
+	<element name="Toreador Bane Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_TOREADOR_TOREADOR_BANE" />
+	<element name="Depth of Feelings Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_DEPTH_OF_FEELINGS" />
+	<element name="Live Fast, Be a Good Looking Corpse Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_TOREADOR_LIVE_FAST_BE_A_GOOD_LOOKING_CORPSE" />
+	<element name="Visionary Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_VISIONARY" />
+	<element name="Truly Majestic Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_TRULY_MAJESTIC" />
+	<element name="Magnum Opus Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_TOREADOR_MAGNUM_OPUS" />
+	
+</elements>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kindred</name>
+		<description>Kindred from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="class-kindred.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/class-kindred.xml" />
+		</update>
+	</info>
+
+	<element name="Kindred" type="Class" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_KINDRED">
+		<description>
+			<p>Kindred are an ancient line of vampires who have existed since the first days of humanity. These vampires are innately social creatures who form their own socio-political sects and divisions, often based on clans and bloodlines. They gather for camaraderie and safety among the only beings who can understand the eternal hunger within.</p>
+			<p class="indent">Kindred draw their abilities, collectively known as vampiric Disciplines, from the supernatural power in their blood, which they more eloquently call vitae. The older and more powerful Kindred become, the more blood they can consume and concentrate within themselves, calling upon it to fuel their undead bodies and powers. These Disciplines allow them to do unbelievable things. They can possess intense strength, durability, or speed. They can transform into creatures of the night, or even mist. They can leash the wills of others. They can manipulate minds and perceptions. And they can reshape the darkness in which they are at home. Kindred can call upon truly terrifying powers, and they are all powered by vitae.</p>
+			<p class="indent">Kindred can develop in different ways, but as the centuries of their existence have proven, the clans and bloodlines carry specific aspects of their vampirism throughout the generations, from sire to childe. These manifest as each clan's ancient bane, the cost to be paid beyond just the endless hunger for blood and the struggle to keep at bay the Beast inside. There are Kindred in every walk of life, it seems, hiding in plain sight, acting like mortals, and maintaining their eternal Masquerade.</p>
+			<div class="sidebar">
+				<h5>Kindred and Other Species</h5>
+				<p>In the <i>Vampire: The Masquerade</i> (and the collective <i>World of Darkness</i>) setting, the vast majority of Kindred are human. While there might be the occasional plot-based variation, all Kindred characters are made using the human species.</p>
+				<p class="indent">In fifth edition games, however, since Kindred is a class, other species can be Kindred if GMs want to create vampiric options in their campaigns.</p>
+			</div>
+			<div class="sidebar">
+				<h5>CORE KINDRED TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Charisma</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D10 per Kindred level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Constitution and Charisma</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Athletics, Deception, History, Intimidation, Perception, Persuasion, Survival, or Stealth.</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left>">Simple weapons and Martial weapons that have the Light property</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light armor and Breastplate</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A or B:</i> (A) Leather Armor, 2 Daggers, Shortsword, Artisan's Tools of your choice, Explorer's Pack, and 15 GP; or (B) 75 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A KINDRED ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Kindred Traits table.</li>
+				<li>Gain the Kindred's level 1 features, which are listed in the Kindred Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Kindred Traits table: Hit Point Die, proficiency in one skill of your choice from the Kindred's skill list, proficiency with Simple weapons, and training with Light armor and breastplates.</li>
+				<li>Gain the Kindred's level 1 features, which are listed in the Kindred Features table.</li>
+			</ul>
+			<h5>KINDRED FEATURES</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="col-45 left">Class Features</td><td class="col-10">Blood Points</td><td class="col-10">Feed Dice</td></tr>
+				</thead>
+				<tr><td>1</td><td>+2</td><td class="left">Feed, The Beast, Blood Potency, Kindred Biology</td><td>1</td><td>2d6</td></tr>
+				<tr><td>2</td><td>+2</td><td class="left">Kindred Feat</td><td>2</td><td>2d6</td></tr>
+				<tr><td>3</td><td>+2</td><td class="left">Kindred Subclass</td><td>2</td><td>2d6</td></tr>
+				<tr><td>4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>2d6</td></tr>
+				<tr><td>5</td><td>+3</td><td class="left">Bestial Fury, Improved Feed</td><td>3</td><td>3d6</td></tr>
+				<tr><td>6</td><td>+3</td><td class="left">Subclass feature</td><td>4</td><td>3d6</td></tr>
+				<tr><td>7</td><td>+3</td><td class="left">Kindred Feat</td><td>4</td><td>3d6</td></tr>
+				<tr><td>8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>5</td><td>3d6</td></tr>
+				<tr><td>9</td><td>+4</td><td class="left">Subclass feature</td><td>5</td><td>4d6</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Kindred Feat, Vampiric Will</td><td>6</td><td>4d6</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Subclass feature</td><td>6</td><td>4d6</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>7</td><td>4d6</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Kindred Feat</td><td>7</td><td>5d6</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Efficient Feeding</td><td>8</td><td>5d6</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Subclass feature</td><td>8</td><td>5d6</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>9</td><td>5d6</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Kindred Feat</td><td>9</td><td>6d6</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Subclass feature</td><td>10</td><td>6d6</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>10</td><td>6d6</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Ancient Awakening</td><td>11</td><td>6d6</td></tr>
+			</table>
+			<h4>KINDRED CLASS FEATURES</h4>
+			<p>As a Kindred, you gain the following class features when you reach the specified Kindred levels. These features are listed in the Kindred Features table.</p>
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_FEED" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_THE_BEAST" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_FEAT" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_SUBCLASS" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BESTIAL_FURY" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_IMPROVED_FEED" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_VAMPIRIC_WILL" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_EFFICIENT_FEEDING" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_EPIC_BOON" />
+			<div element="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING" />
+			<div class="sidebar">
+				<h5>Kindred or Cainite?</h5>
+				<p>In the Dark Ages setting, vampires do not yet call themselves Kindred. That term belongs to a later era, born from the political institutions that will eventually organize vampiric society across the modern nights. In the Dark Ages, vampires more commonly call themselves Cainites, tracing their lineage to Caine, the first of their kind.</p>
+				<p class="indent">The Kindred class is designed to work across any era in which vampires have existed. In modern nights, "Cainite" carries specific weight as the preferred term of the Sabbat sect, and using it as a catch-all can create confusion. Kindred is used here as a more neutral term for the class.</p>
+				<p class="indent">If you are playing in a Dark Ages campaign, feel free to have your character use Cainite at the table. The rules work the same either way. What you are, regardless of the century, is something that drinks blood and does not die easily.</p>
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A Vampiric Survivor Empowered by Blood</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_GFG_VMBB_MULTICLASS_KINDRED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_GFG_VMBB_MULTICLASS_KINDRED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_GFG_VMBB_MULTICLASS_KINDRED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BREASTPLATE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_GFG_VMBB_MULTICLASS_KINDRED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_GFG_VMBB_MULTICLASS_KINDRED" />
+			<select type="Proficiency" name="Skill Proficiency (Kindred)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_GFG_VMBB_MULTICLASS_KINDRED" />
+
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_FEED" level="1" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_THE_BEAST" level="1" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY" level="1" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY" level="1" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_FEAT" level="2" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BESTIAL_FURY" level="5" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_IMPROVED_FEED" level="5" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_VAMPIRIC_WILL" level="10" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_EFFICIENT_FEEDING" level="14" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING" level="20" />
+		</rules>
+		<multiclass id="ID_GFG_VMBB_MULTICLASS_KINDRED">
+			<prerequisite>Charisma 13</prerequisite>
+			<requirements>([cha:13],!ID_GFG_VMBB_FEAT_THIN_BLOODED)||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">one skill from the Kindred's skill list, Simple weapons, Light armor, Breastplate</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<select type="Proficiency" name="Skill Proficiency (Kindred)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Feed" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_FEED">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_FEED</requirements>
+		<description>
+			<p>You feed on the blood of other creatures. This is most often accomplished through your sharp fangs. As an action, you can feed on another creature within 5 feet of yourself if the target is willing, Charmed by you, or has the Incapacitated, Grappled, Paralyzed, Restrained, Stunned, or Unconscious condition. You can feed only once per turn.</p>
+			<p class="indent">When you feed, roll up to your maximum Feed Dice plus your Constitution modifier (minimum of 1). The creature takes Necrotic damage equal to the roll's total. This damage only reduces the creature's Hit Point maximum by an amount equal to the roll's total. The number of Feed Dice increases as you gain Kindred levels, as shown in the Feed Dice column of the Kindred Features table. If you roll a 6 on a d6 on a Feed Die, you can regain 1 expended Blood Point. If a creature's Hit Point maximum is reduced to 0, you can regain 1 expended Blood Point.</p>
+			<p class="indent"><em><strong>Feeding from the Willing.</strong></em> If you feed on a willing creature or a creature Charmed by you, it can spend 1 Hit Point Die. It rolls the Hit Point Die and reduces its Hit Point maximum by the amount rolled, and you can regain 1 expended Blood Point. Feeding in this way doesn't end the Charmed condition.</p>
+			<p class="indent"><em><strong>Hit Die Deficit.</strong></em> If a creature has no remaining Hit Point Dice, the creature takes Necrotic damage equal to a roll of your Feed Dice plus your Constitution modifier, and the creature's Hit Point maximum is reduced by an amount equal to the roll's total.</p>
+			<p class="indent"><em><strong>Maximum Successful Feedings.</strong></em> A creature can provide a number of Blood Points based on its size. A Small creature provides 1 Blood Point, a Medium provides 3, a Large provides 5, a Huge provides 7, and a Gargantuan provides 10. A creature regains all lost Blood Points when it finishes a Long Rest.</p>
+			<p class="indent"><em><strong>Creature Susceptible to Feed.</strong></em> You can feed on any creature with blood or other life-giving fluid. Aberrations, Beasts, Dragons, Fey, Giants, Monstrosities, and Humanoids are the most common targets. Constructs, Elementals, Oozes, and Plants usually don't have blood. Work with your GM to determine the types of creatures you can feed on.</p>
+			<div class="sidebar">
+				<h5>The Blood Bond</h5>
+				<p>A mysterious power in the blood of Kindred causes creatures to become Blood Bound to that Kindred when:</p>
+				<ul>
+					<li>They drink from the same Kindred at least three times within one year.</li>
+					<li>At least one Long Rest occurs between each of the three drinks.</li>
+				</ul>
+				<p>While Blood Bound to a Kindred, a creature is considered Charmed by that Kindred and has Advantage on saving throws to avoid being Charmed or Frightened by other creatures. This is in addition to the effects from the Kindred Vitae consumable.</p>
+				<p class="indent">A Blood Bond can be suppressed for 1 minute if the creature succeeds on a DC 25 Charisma saving throw. The bond is only permanently removed if the creature doesn't drink from that Kindred again for a year, or if the Kindred in question is killed.</p>
+			</div>
+		</description>
+		<sheet alt="Feed" action="Action" usage="1/Turn">
+			<description>You can feed on another creature within 5 ft if the target is willing, Charmed by you, or has the Incapacitated, Grappled, Paralyzed, Restrained, Stunned, or Unconscious condition. You can feed on any creature with blood or other life-giving fluid. &#13;
+			When you feed, roll up to {{vmbb:feed:dice}}d6+{{vmbb:feed:modifier}}. The creature takes Necrotic damage equal to the total. This damage only reduces the creature's HP maximum by an amount equal to the roll's total. If you roll a 6 on a d6 on a Feed Die, you can regain 1 Blood Point. If a creature's HP maximum is reduced to 0, you can regain 1 Blood Point. &#13;
+			If you feed on a willing creature or a creature Charmed by you, it can spend 1 HP Die. It rolls the HP Die and reduces its HP maximum by the amount rolled, and you can regain 1 Blood Point. Feeding in this way doesn't end the Charmed condition. If a creature has no remaining HP Dice, the creature takes Necrotic damage equal to a roll of your Feed Dice plus {{constitution:modifier}}, and the creature's HP maximum is reduced by an amount equal to the roll's total. A creature can provide a number of Blood Points based on its size (Small = 1, Medium = 3, Large = 5, Huge = 7, Gargantuan = 10). A creature regains all Blood Points when it finishes a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:feed:dice" value="2" bonus="base" />
+			<stat name="vmbb:feed:dice" value="3" bonus="base" level="5" />
+			<stat name="vmbb:feed:dice" value="4" bonus="base" level="9" />
+			<stat name="vmbb:feed:dice" value="5" bonus="base" level="13" />
+			<stat name="vmbb:feed:dice" value="6" bonus="base" level="17" />
+
+			<stat name="vmbb:feed:modifier" value="1" bonus="bonus" />
+			<stat name="vmbb:feed:modifier" value="constitution:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 1: The Beast" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_THE_BEAST">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_THE_BEAST</requirements>
+		<description>
+			<p>You have a terrible Beast within that can only be sated with blood. As a Bonus Action, you can use this Beast's predatory instincts to sharpen your senses and abilities. Until the start of your next turn, you have Advantage on D20 Tests you make.</p>
+			<p class="indent">You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Hunger.</strong></em> If a D20 Test benefiting from your Beast feature fails, you go into a bloodlusted, hunger-driven state. This bloodlusted state ends after 1 minute or after you have successfully used your Feed feature, whichever comes first.</p>
+			<p class="indent">While bloodlusted, you regard the creature nearest to you that you can see or hear and that you can feed on as your prey. If there are multiple possible creatures, choose one at random. On each of your turns, you must move as close to the creature as possible and take the Attack action to make an Unarmed Strike to grapple the target. If you're unable to get close enough to the creature to grapple it, your turn ends after you've used up all your available movement. If the creature dies or can no longer be seen or heard by you, the next nearest creature that you can see or hear and that you can feed on becomes your new target. If the target is in range and has the Grappled condition at the start of your turn, you use your action to feed on it.</p>
+		</description>
+		<sheet alt="The Beast" action="Bonus Action" usage="{{proficiency}}/Short Rest">
+			<description>You can use your instincts to sharpen your senses and abilities. Until the start of your next turn, you have Advantage on D20 Tests you make. If a D20 Test benefiting from this feature fails, you enter a bloodlusted state. This bloodlusted state ends after 1 minute or after you have successfully used your Feed feature. While bloodlusted, you regard the creature nearest to you that you can see or hear and that you can feed on as your prey. If there are multiple possible creatures, choose one at random. On each of your turns, you must move as close to the creature as possible and take the Attack action to make an Unarmed Strike to grapple the target. If you're unable to get close enough to the creature to grapple it, your turn ends after you've used up all your movement. If the creature dies or can no longer be seen or heard by you, the next nearest creature that you can see or hear and that you can feed on becomes your new target. If the target is in range and has the Grappled condition at the start of your turn, you use your action to feed on it.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 1: Blood Potency" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BLOOD_POTENCY</requirements>
+		<description>
+			<p>You are fueled by blood, represented by Blood Points. Your Kindred level determines the number of points you have, as shown in the Blood Points column of the Kindred Features table. You can expend Blood Points in the following ways:</p>
+			<p class="indent"><em><strong>Heal Wounds.</strong></em> As a Bonus Action, you can expend 1 Blood Point to regain Hit Points equal to 1d10 plus your Kindred level.</p>
+			<p class="indent"><em><strong>Hunger Sated.</strong></em> If you fail a D20 Test that is affected by your Beast feature, you can expend 1 Blood Point to ignore the effects of Hunger.</p>
+			<p class="indent"><em><strong>Vitae Powers.</strong></em> There are Kindred feats and subclass features fueled by expending Blood Points.</p>
+		</description>
+		<sheet alt="Blood Potency">
+			<description>You have {{vmbb:blood potency:points}} Blood Point(s).</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:blood potency:points" value="1" bonus="base" />
+			<stat name="vmbb:blood potency:points" value="2" bonus="base" level="2" />
+			<stat name="vmbb:blood potency:points" value="3" bonus="base" level="4" />
+			<stat name="vmbb:blood potency:points" value="4" bonus="base" level="6" />
+			<stat name="vmbb:blood potency:points" value="5" bonus="base" level="8" />
+			<stat name="vmbb:blood potency:points" value="6" bonus="base" level="10" />
+			<stat name="vmbb:blood potency:points" value="7" bonus="base" level="12" />
+			<stat name="vmbb:blood potency:points" value="8" bonus="base" level="14" />
+			<stat name="vmbb:blood potency:points" value="9" bonus="base" level="16" />
+			<stat name="vmbb:blood potency:points" value="10" bonus="base" level="18" />
+			<stat name="vmbb:blood potency:points" value="11" bonus="base" level="20" />
+
+			<select type="Class Feature" name="Heal Wounds" supports="VMBB Heal Wounds" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY_HEAL_WOUNDS" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BLOOD_POTENCY_HEAL_WOUNDS"/>
+			<select type="Class Feature" name="Hunger Sated" supports="VMBB Hunger Sated" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY_HUNGER_SATED" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BLOOD_POTENCY_HUNGER_SATED"/>
+		</rules>
+	</element>
+	<element name="Heal Wounds" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY_HEAL_WOUNDS">
+		<supports>VMBB Heal Wounds</supports>
+		<description>
+			<p>As a Bonus Action, you can expend 1 Blood Point to regain Hit Points equal to 1d10 plus your Kindred level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Blood Point">
+			<description>You regain 1d10+{{level:kindred}} HPs.</description>
+		</sheet>
+	</element>
+	<element name="Hunger Sated" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BLOOD_POTENCY_HUNGER_SATED">
+		<supports>VMBB Hunger Sated</supports>
+		<description>
+			<p>If you fail a D20 Test that is affected by your Beast feature, you can expend 1 Blood Point to ignore the effects of Hunger.</p>
+		</description>
+		<sheet usage="{{vmpp:hunger sated:points}} Blood Point(s)">
+			<description>If you fail a D20 Test that is affected by your Beast feature, you can ignore the effects of Hunger.</description>
+		</sheet>
+		<rules>
+			<stat name="vmpp:hunger sated:points" value="1" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Kindred Biology" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY</requirements>
+		<description>
+			<p>You are a specific kind of vampire known as a Kindred, which brings physical benefits and drawbacks.</p>
+			<p class="indent"><em><strong>Awaken.</strong></em> You don't regain expended Blood Points when you finish a Short or Long Rest. To gain the benefits of a Long Rest, you must have at least 1 Blood Point in your pool or you only gain the benefits of a Short Rest.</p>
+			<p class="indent"><em><strong>Darkvision.</strong></em> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><em><strong>Sanguivore.</strong></em> You can't eat food or drink. If you consume more than a nibble or sip, you have the Poisoned condition that ends once you expel what you consumed. While Poisoned in this way, you must succeed on a Constitution saving throw every 10 minutes to avoid having the Incapacitated condition, which lasts for 1 minute as you vomit up what you've consumed. The initial DC of this saving throw is 10, and it increases by 5 with each successive save.</p>
+			<p class="indent">Instead, you must consume a number of Blood Points per day equal to the number of pounds of food a creature your size normally requires per day (usually, 1 per day for Small and Medium creatures). You can expend 1 Blood Point to automatically succeed on the DC 10 Constitution saving throw to avoid gaining 1 level of Exhaustion from Malnutrition.</p>
+			<p class="indent">Expending Blood Points to activate your Kindred features or Kindred Feats does not count towards the Blood Points you need to expend for sustenance.</p>
+			<p class="indent"><em><strong>Sunlight Vulnerability.</strong></em> You take 5 Radiant damage if you start your turn in sunlight.</p>
+			<p class="indent"><em><strong>Supernatural Spellcasting.</strong></em> Charisma is your spellcasting ability for spells from your Kindred subclass and Kindred feats, your spells require no Verbal or Somatic components, and they require no Material components unless they are consumed by the spell or have a cost specified in it; taking damage can't break your Concentration.</p>
+			<p class="indent"><em><strong>Torpor.</strong></em> If your Exhaustion level is 6, you aren't killed. Instead, you drop to 1 Hit Point, become Unconscious, and can't remove the condition until you have expended a number of Blood Points equal to your Proficiency Bonus over any length of time. Another creature can feed you while you are Unconscious to recover Blood Points, but the details of how that occurs is left for you and your GM to determine.</p>
+			<p class="indent"><em><strong>Undead.</strong></em> You have the Undead (Kindred) creature type in addition to your normal creature type. You don't age.</p>
+			<p class="indent"><em><strong>Vampiric Resilience.</strong></em> You automatically succeed on Death Saving Throws. Being reduced to 0 Hit Points by Fire or Radiant damage, or being beheaded kills you outright.</p>
+			<p class="indent"><em><strong>Vampiric Vulnerabilities.</strong></em> You have Vulnerability to Fire and Radiant damage.</p>
+			<p class="indent"><em><strong>Wooden Stake Through the Heart.</strong></em> When you are attacked with a wooden weapon that deals Piercing damage and you are reduced to 0 Hit Points or the attack roll is a Critical Hit, you are staked through the heart and have the Paralyzed condition until the weapon is removed.</p>
+		</description>
+		<sheet alt="Kindred Biology" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_DARKVISION" />
+
+			<select type="Class Feature" name="Awaken" supports="VMBB Awaken" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_AWAKEN" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_AWAKEN"/>
+			<select type="Class Feature" name="Sanguivore" supports="VMBB Sanguivore" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_SANGUIVORE" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_SANGUIVORE"/>
+			<select type="Class Feature" name="Sunlight Vulnerability" supports="VMBB Sunlight Vulnerability" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_SUNLIGHT_VULNERABILITY" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_SUNLIGHT_VULNERABILITY"/>
+			<select type="Class Feature" name="Supernatural Spellcasting" supports="VMBB Supernatural Spellcasting" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_SUPERNATURAL_SPELLCASTING" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_SUPERNATURAL_SPELLCASTING"/>
+			<select type="Class Feature" name="Torpor" supports="VMBB Torpor" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_TORPOR" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_TORPOR"/>
+			<select type="Class Feature" name="Undead" supports="VMBB Undead" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_UNDEAD" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_UNDEAD"/>
+			<select type="Class Feature" name="Vampiric Resilience" supports="VMBB Vampiric Resilience" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_RESILIENCE" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_RESILIENCE"/>
+			<select type="Class Feature" name="Vampiric Vulnerabilities" supports="VMBB Vampiric Vulnerabilities" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_VULNERABILITIES" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_VULNERABILITIES"/>
+			<select type="Class Feature" name="Wooden Stake Through the Heart" supports="VMBB Wooden Stake Through the Heart" default="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_WOODEN_STAKE_THROUGH_THE_HEART" requirements="!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_WOODEN_STAKE_THROUGH_THE_HEART"/>
+		</rules>
+	</element>
+	<element name="Awaken" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_AWAKEN">
+		<supports>VMBB Awaken</supports>
+		<description>
+			<p>You don't regain expended Blood Points when you finish a Short or Long Rest. To gain the benefits of a Long Rest, you must have at least 1 Blood Point in your pool or you only gain the benefits of a Short Rest.</p>
+		</description>
+		<sheet>
+			<description>You don't regain expended Blood Points when you finish a Short or Long Rest. To gain the benefits of a Long Rest, you must have at least 1 Blood Point in your pool or you only gain the benefits of a Short Rest.</description>
+		</sheet>
+	</element>
+	<element name="Sanguivore" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_SANGUIVORE">
+		<supports>VMBB Sanguivore</supports>
+		<description>
+			<p>You can't eat food or drink. If you consume more than a nibble or sip, you have the Poisoned condition that ends once you expel what you consumed. While Poisoned in this way, you must succeed on a Constitution saving throw every 10 minutes to avoid having the Incapacitated condition, which lasts for 1 minute as you vomit up what you've consumed. The initial DC of this saving throw is 10, and it increases by 5 with each successive save.</p>
+			<p class="indent">Instead, you must consume a number of Blood Points per day equal to the number of pounds of food a creature your size normally requires per day (usually, 1 per day for Small and Medium creatures). You can expend 1 Blood Point to automatically succeed on the DC 10 Constitution saving throw to avoid gaining 1 level of Exhaustion from Malnutrition.</p>
+			<p class="indent">Expending Blood Points to activate your Kindred features or Kindred Feats does not count towards the Blood Points you need to expend for sustenance.</p>
+		</description>
+		<sheet>
+			<description>You can't eat food or drink. If you consume more than a nibble or sip, you have the Poisoned condition that ends once you expel what you consumed. While Poisoned in this way, you must succeed on a DC10 Constitution save every 10 minutes to avoid having the Incapacitated condition, which lasts for 1 minute as you vomit up what you've consumed. The DC increases by 5 with each successive save. &#13;
+			Instead, you must consume a number of Blood Points per day equal to the number of pounds of food a creature your size normally requires per day. You can expend 1 Blood Point to automatically succeed on the DC10 Constitution save to avoid gaining 1 level of Exhaustion from Malnutrition. Expending Blood Points to activate your Kindred features or Kindred Feats does not count towards the Blood Points you need to expend for sustenance.</description>
+		</sheet>
+	</element>
+	<element name="Sunlight Vulnerability" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_SUNLIGHT_VULNERABILITY">
+		<supports>VMBB Sunlight Vulnerability</supports>
+		<description>
+			<p>You take 5 Radiant damage if you start your turn in sunlight.</p>
+		</description>
+		<sheet>
+			<description>You take {{vbmm:sunlight vulnerability:damage}} Radiant damage if you start your turn in sunlight.</description>
+		</sheet>
+		<rules>
+			<stat name="vbmm:sunlight vulnerability:damage" value="5" bonus="base" />
+		</rules>
+	</element>
+	<element name="Supernatural Spellcasting" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_SUPERNATURAL_SPELLCASTING">
+		<supports>VMBB Supernatural Spellcasting</supports>
+		<description>
+			<p>Charisma is your spellcasting ability for spells from your Kindred subclass and Kindred feats, your spells require no Verbal or Somatic components, and they require no Material components unless they are consumed by the spell or have a cost specified in it; taking damage can't break your Concentration.</p>
+		</description>
+		<sheet>
+			<description>Charisma is your spellcasting ability for spells from your Kindred subclass and Kindred feats, your spells require no Verbal, Somatic or Material components unless they are consumed by the spell or have a cost specified in it. Taking damage can't break your Concentration.</description>
+		</sheet>
+	</element>
+	<element name="Torpor" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_TORPOR">
+		<supports>VMBB Torpor</supports>
+		<description>
+			<p>If your Exhaustion level is 6, you aren't killed. Instead, you drop to 1 Hit Point, become Unconscious, and can't remove the condition until you have expended a number of Blood Points equal to your Proficiency Bonus over any length of time. Another creature can feed you while you are Unconscious to recover Blood Points, but the details of how that occurs is left for you and your GM to determine.</p>
+		</description>
+		<sheet>
+			<description>If your Exhaustion level is 6, you aren't killed. Instead, you drop to 1 HP, become Unconscious, and can't remove the condition until you have expended {{proficiency}} Blood Points over any length of time. Another creature can feed you while you are Unconscious to recover Blood Points.</description>
+		</sheet>
+	</element>
+	<element name="Undead" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_UNDEAD">
+		<supports>VMBB Undead</supports>
+		<description>
+			<p>You have the Undead (Kindred) creature type in addition to your normal creature type. You don't age.</p>
+		</description>
+		<sheet>
+			<description>You have the Undead (Kindred) creature type in addition to your normal creature type. You don't age.</description>
+		</sheet>
+	</element>
+	<element name="Vampiric Resilience" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_RESILIENCE">
+		<supports>VMBB Vampiric Resilience</supports>
+		<description>
+			<p>You automatically succeed on Death Saving Throws. Being reduced to 0 Hit Points by Fire or Radiant damage, or being beheaded kills you outright.</p>
+		</description>
+		<sheet>
+			<description>You automatically succeed on Death Saving Throws. Being reduced to 0 HPs by Fire or Radiant damage, or being beheaded kills you outright.</description>
+		</sheet>
+	</element>
+	<element name="Vampiric Vulnerabilities" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_VULNERABILITIES">
+		<supports>VMBB Vampiric Vulnerabilities</supports>
+		<description>
+			<p>You have Vulnerability to Fire and Radiant damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+		</rules>
+	</element>
+	<element name="Wooden Stake Through the Heart" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_BIOLOGY_WOODEN_STAKE_THROUGH_THE_HEART">
+		<supports>VMBB Wooden Stake Through the Heart</supports>
+		<description>
+			<p>When you are attacked with a wooden weapon that deals Piercing damage and you are reduced to 0 Hit Points or the attack roll is a Critical Hit, you are staked through the heart and have the Paralyzed condition until the weapon is removed.</p>
+		</description>
+		<sheet>
+			<description>When you are attacked with a wooden weapon that deals Piercing damage and you are reduced to 0 HPs or the attack roll is a Critical Hit, you are staked through the heart and have the Paralyzed condition until the weapon is removed.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 2: Kindred Feat" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_FEAT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_FEAT</requirements>
+		<description>
+			<p>You gain a Kindred feat of your choice for which you qualify. You gain this feature again at Kindred levels 7, 10, 13, and 17.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Kindred Feat (Kindred 2)" supports="Kindred" level="2" />
+			<select type="Feat" name="Kindred Feat (Kindred 7)" supports="Kindred" level="7" />
+			<select type="Feat" name="Kindred Feat (Kindred 10)" supports="Kindred" level="10" />
+			<select type="Feat" name="Kindred Feat (Kindred 13)" supports="Kindred" level="13" />
+			<select type="Feat" name="Kindred Feat (Kindred 17)" supports="Kindred" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Kindred Subclass" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_KINDRED_SUBCLASS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_SUBCLASS</requirements>
+		<description>
+			<p>You gain a Kindred subclass of your choice. A subclass is a specialization that grants you features at certain Kindred levels. For the rest of your career, you gain each of your subclass's features that are of your Kindred level or lower.</p>
+			<div class="sidebar">
+				<h5>Creating Kindred Characters in the World of Darkness</h5>
+				<p>In the <i>Vampire: The Masquerade</i>, Kindred are usually aware of their clan or bloodline soon after they are sired. In order to maintain game balance with other classes, levels 1 and 2 of the Kindred class are designed to represent the learning curve of becoming Kindred, a process that can take longer for some.</p>
+				<p class="indent">In a campaign set wholly in the <i>World of Darkness</i>, it is suggested that Kindred characters be created at level 3. This allows them to choose their clan or bloodline from the beginning of the game, and this may allow them to create lengthier backstories that can bring their Vampire: The Masquerade characters to life, proverbially speaking.</p>
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Kindred Subclass" supports="VMBB Kindred Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_ABILITY_SCORE_IMPROVEMENTS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Kindred levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Kindred 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Kindred 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Kindred 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Kindred 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Bestial Fury" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_BESTIAL_FURY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BESTIAL_FURY</requirements>
+		<description>
+			<p>Once per turn when you hit a target with a Melee weapon or Unarmed Strike, you can expend 2 uses of your Beast feature to roll the weapon's damage dice twice and use either roll against the target. If this damage reduces it to 0 Hit Points, you can't choose to leave the creature at 1 Hit Point as per the "Knocking Out a Creature" rule.</p>
+			<p class="indent"><em><strong>Hunger.</strong></em> If a D20 Test benefiting from your Beast feature fails, you go into a bloodlusted, hunger-driven state. This bloodlusted state ends after 1 minute or after you have successfully used your Feed feature, whichever comes first.</p>
+			<p class="indent">While bloodlusted, you regard the creature nearest to you that you can see or hear and that you can feed on as your prey. If there are multiple possible creatures, choose one at random. On each of your turns, you must move as close to the creature as possible and take the Attack action to make an Unarmed Strike to grapple the target. If you're unable to get close enough to the creature to grapple it, your turn ends after you've used up all your available movement. If the creature dies or can no longer be seen or heard by you, the next nearest creature that you can see or hear and that you can feed on becomes your new target. If the target is in range and has the Grappled condition at the start of your turn, you use your action to feed on it.</p>
+		</description>
+		<sheet alt="Bestial Fury">
+			<description>Once per turn when you hit a target with a Melee weapon or Unarmed Strike, you can expend 2 uses of your Beast feature to roll the weapon's damage dice twice and use either roll against the target. If this damage reduces it to 0 HPs, you can't choose to leave the creature at 1 HP as per the "Knocking Out a Creature" rule. &#13;
+			In addition, while affected by your Beast feature, you can attack twice instead of once whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 5: Improved Feed" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_IMPROVED_FEED">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_IMPROVED_FEED</requirements>
+		<description>
+			<p>You can use the Feed feature as a Bonus Action. In addition, a creature Grappled by you has Disadvantage on its checks to escape the grapple.</p>
+		</description>
+		<sheet alt="Improved Feed">
+			<description>You can use the Feed feature as a Bonus Action. In addition, a creature Grappled by you has Disadvantage on its checks to escape the grapple.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Vampiric Will" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_VAMPIRIC_WILL">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VAMPIRIC_WILL</requirements>
+		<description>
+			<p>You have Advantage on saving throws to avoid or end the Charmed condition, and against effects that turn undead.</p>
+		</description>
+		<sheet alt="Vampiric Will">
+			<description>You have Advantage on saving throws to avoid or end the Charmed condition, and against effects that turn undead.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Efficient Feeding" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_EFFICIENT_FEEDING">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_EFFICIENT_FEEDING</requirements>
+		<description>
+			<p>Whenever you roll a die for your Feed feature, you can reroll the die, and you must use the new roll.</p>
+		</description>
+		<sheet alt="Efficient Feeding">
+			<description>Whenever you roll a die for your Feed feature, you can reroll the die, and you must use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_EPIC_BOON">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Epic Boon (Kindred 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Ancient Awakening" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_ANCIENT_AWAKENING</requirements>
+		<description>
+			<p>The essence of the original vampiric Antediluvians has awoken in you. Pick four Ability Scores. Increase each chosen Ability Score by 2, to a maximum of 25.</p>
+			<p class="indent">If a Kindred subclass feature allows for an Ability Score to be increased beyond 25, Ancient Awakening can increase that Ability Score up to the maximum noted in that other feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Score Increase (Ancient Awakening)" supports="VMBB Ancient Awakening" number="4" />
+		</rules>
+	</element>
+	<element name="Strength" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING_STRENGTH">
+		<compendium display="false" />
+		<supports>VMBB Ancient Awakening</supports>
+		<description>
+			<p>Increase your Strength score by 2, to a maximum of 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" alt="Ancient Awakening" />
+			<stat name="strength:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Dexterity" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING_DEXTERITY">
+		<compendium display="false" />
+		<supports>VMBB Ancient Awakening</supports>
+		<description>
+			<p>Increase your Dexterity score by 2, to a maximum of 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" alt="Ancient Awakening" />
+			<stat name="dexterity:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Constitution" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING_CONSTITUTION">
+		<compendium display="false" />
+		<supports>VMBB Ancient Awakening</supports>
+		<description>
+			<p>Increase your Constitution score by 2, to a maximum of 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" alt="Ancient Awakening" />
+			<stat name="constitution:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Intelligence" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>VMBB Ancient Awakening</supports>
+		<description>
+			<p>Increase your Intelligence score by 2, to a maximum of 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" alt="Ancient Awakening" />
+			<stat name="intelligence:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Wisdom" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING_WISDOM">
+		<compendium display="false" />
+		<supports>VMBB Ancient Awakening</supports>
+		<description>
+			<p>Increase your Wisdom score by 2, to a maximum of 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" alt="Ancient Awakening" />
+			<stat name="wisdom:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Charisma" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_KINDRED_ANCIENT_AWAKENING_CHARISMA">
+		<compendium display="false" />
+		<supports>VMBB Ancient Awakening</supports>
+		<description>
+			<p>Increase your Charisma score by 2, to a maximum of 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" alt="Ancient Awakening" />
+			<stat name="charisma:max:extra" value="5" bonus="base"/>
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Feed Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_FEED" />
+	<element name="The Beast Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_THE_BEAST" />
+	<element name="Blood Potency Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BLOOD_POTENCY" />
+	<element name="Blood Potency: Heal Wounds Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BLOOD_POTENCY_HEAL_WOUNDS" />
+	<element name="Blood Potency: Hunger Sated Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BLOOD_POTENCY_HUNGER_SATED" />
+	<element name="Kindred Biology Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY" />
+	<element name="Kindred Biology: Darkvision Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_DARKVISION" />
+	<element name="Kindred Biology: Sanguivore Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_SANGUIVORE" />
+	<element name="Kindred Biology: Sunlight Vulnerability Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_SUNLIGHT_VULNERABILITY" />
+	<element name="Kindred Biology: Supernatural Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_SUPERNATURAL_SPELLCASTING" />
+	<element name="Kindred Biology: Torpor Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_TORPOR" />
+	<element name="Kindred Biology: Undead Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_UNDEAD" />
+	<element name="Kindred Biology: Vampiric Resilience Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_RESILIENCE" />
+	<element name="Kindred Biology: Vampiric Vulnerabilities Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_VAMPIRIC_VULNERABILITIES" />
+	<element name="Kindred Biology: Wooden Stake Through the Heart Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_BIOLOGY_WOODEN_STAKE_THROUGH_THE_HEART" />
+	<element name="Kindred Feat Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_FEAT" />
+	<element name="Kindred Subclass Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_KINDRED_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Bestial Fury Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BESTIAL_FURY" />
+	<element name="Improved Feed Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_IMPROVED_FEED" />
+	<element name="Vampiric Will Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VAMPIRIC_WILL" />
+	<element name="Efficient Feeding Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_EFFICIENT_FEEDING" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_EPIC_BOON" />
+	<element name="Ancient Awakening Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_ANCIENT_AWAKENING" />
+	
+</elements>

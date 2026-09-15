@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kindred Feats</name>
+		<description>Kindred Feats from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="feats-kindred.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/feats/feats-kindred.xml" />
+		</update>
+	</info>
+
+	<element name="Alacrity" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_ALACRITY">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>You move at supernatural speeds. You gain the following benefits.</p>
+			<p class="indent"><b><i>Burst of Speed.</i></b> As a Bonus Action, you can expend 1 Blood Point to gain an additional action. That action can be used to take only the Attack (one attack only) or Disengage action.</p>
+			<p class="indent"><b><i>Fast.</i></b> Your Speed increases by 10 feet, and you have Advantage on Initiative rolls.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Blood Point">
+			<description>You can gain an additional action. That action can be used to take only the Attack (one attack only) or Disengage action.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="10" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
+	</element>
+
+	<element name="Cloak of Shadows" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_CLOAK_OF_SHADOWS">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>You are adept at supernaturally masking your presence. You gain the following benefits.</p>
+			<p class="indent"><b><i>Enshrouded.</i></b> As a Bonus Action, you give yourself Advantage on your next Dexterity (Stealth) check on the current turn.</p>
+			<p class="indent"><b><i>Unseen Passage.</i></b> As a Magic action, you gain the Invisible condition until the end of your next turn.</p>
+			<p class="indent">You can use this Magic action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• (Bonus Action) You give yourself Advantage on your next Dexterity (Stealth) check on the current turn. &#13;
+			• (Action) You gain the Invisible condition until the end of your next turn. ({{proficiency}}/Long Rest) </description>
+		</sheet>
+	</element>
+
+	<element name="Convincing Thoughts" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_CONVINCING_THOUGHTS">
+		<supports>Kindred</supports>
+		<requirements>([character:7],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 7+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 7+, Kindred Class)</p>
+			<p>Your supernatural powers of persuasion are uncannily hidden from your victim's mind. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increases.</i></b> Increase your Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Charming Smile.</i></b> You can cast the <i>Charm Person</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Rationalize.</i></b> When spells or effects that cause the Charmed condition end, the target doesn't know it was Charmed by you.</p>
+		</description>
+		<sheet usage="{{proficency}}/Long Rest">
+			<description>You can cast the Charm Person spell without expending a spell slot. When spells or effects that cause the Charmed condition end, the target doesn't know it was Charmed by you.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Convincing Thoughts" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
+		</rules>
+	</element>
+
+	<element name="Daywalker" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DAYWALKER">
+		<supports>Kindred</supports>
+		<requirements>ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Kindred Class)</p>
+			<p>The sun's light doesn't harm you as badly as it does other Kindred. You gain the following benefits.</p>
+			<p class="indent"><b><i>Dhampir's Boon.</i></b> When you take damage from sunlight, reduce the damage taken by 2.</p>
+			<p class="indent"><b><i>Endure Radiance.</i></b> As a Bonus Action, you can expend 1 Blood Point to remove your Vulnerability to Radiant damage for 1 minute.</p>
+			<p class="indent"><b><i>Wake with Evening's Freshness.</i></b> When you start a Long Rest, you can make a DC 12 Constitution saving throw. If you succeed, you count as having at least 1 Blood Point for that Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• (Bonus Action) You can expend 1 Blood Point to remove your Vulnerability to Radiant damage for 1 minute. &#13;
+			• When you start a Long Rest, you can make a DC 12 Constitution save. If you succeed, you count as having at least 1 Blood Point for that Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="vbmm:sunlight vulnerability:damage" value="-2" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Animalism)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_ANIMALISM">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You gain proficiency in the Animal Handling and Nature skills. If you already have proficiency in that skill, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ANIMALHANDLING" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Auspex)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_AUSPEX">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You gain proficiency in the Investigation and Perception skills. If you already have proficiency in that skill, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INVESTIGATION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERCEPTION" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Celerity)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_CELERITY">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You gain an extra Reaction, which you can use with any of your existing Reactions.</p>
+		</description>
+		<sheet>
+			<description>You gain an extra Reaction, which you can use with any of your existing Reactions.</description>
+		</sheet>
+	</element>
+
+	<element name="Discipline Acquisition (Dominate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_DOMINATE">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You gain proficiency in the Deception and Intimidation skills. If you already have proficiency in that skill, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Fortitude)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_FORTITUDE">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">Damage dealt to you except Fire and Radiant is reduced by an amount equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet>
+			<description>Damage dealt to you except Fire and Radiant is reduced by {{proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Discipline Acquisition (Obfuscate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_OBFUSCATE">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You gain proficiency in the Sleight of Hand and Stealth skills. If you already have proficiency in that skill, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_SLEIGHTOFHAND" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_STEALTH" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Oblivion)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_OBLIVION">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can see normally in Dim Light and Darkness—both magical and nonmagical—within 90 feet of yourself.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in magical Dim Light and Darkness within 90 ft of yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="90" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Potence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_POTENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">When you hit a creature with a Melee weapon or Unarmed Strike as part of the Attack action on your turn, you can deal extra damage to the target equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a Melee weapon or Unarmed Strike as part of the Attack action on your turn, you can deal {{proficiency}} extra damage to the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Discipline Acquisition (Presence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_PRESENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You gain proficiency in the Performance and Persuasion skills. If you already have proficiency in that skill, you gain Expertise in it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFDORMANCE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Discipline Acquisition (Protean)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_PROTEAN">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You learn the basic concepts of a vampiric Discipline from another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can deal an extra 1d6 Slashing damage to a target you hit with an Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>You can deal an extra 1d6 Slashing damage to a target you hit with an Unarmed Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Feral Whispers" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_FERAL_WHISPERS">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>You have an animalistic connection to the creatures of the wilderness. You gain the following benefits.</p>
+			<p class="indent"><b><i>Call of the Wild.</i></b> As a Magic action, you can expend 1 Blood Point to summon a number of Large or smaller Beasts (such as a Rat or Wolf) equal to your Charisma modifier (minimum of 1). The total Challenge Rating for summoned Beasts can't exceed your Proficiency Bonus. A summoned Beast arrives at your location in 1d4 + 1 rounds and is Charmed by you for 1 minute after it arrives. In combat, a Beast shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.</p>
+			<p class="indent"><b><i>Daunt.</i></b> As a Bonus Action, make a Charisma (Intimidation) check and choose a creature you can see within 30 feet of you. The target must make a Wisdom saving throw with a DC equal to the result of your Intimidation check. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against this effect.</p>
+			<p class="indent">You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• (Action) You can expend 1 Blood Point to summon {{vmbb:feral whispers:amount}} Large or smaller Beasts. The total CR for summoned Beasts can't exceed {{proficiency}}. A summoned Beast arrives at your location in 1d4 + 1 rounds and is Charmed by you for 1 minute after it arrives. In combat, a Beast shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger. &#13;
+			• You can cast the Speak with Animals spell, but only as a Ritual.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:feral whispers:amount" value="1" base="bonus" />
+			<stat name="vmbb:feral whispers:amount" value="charisma:modifier" base="bonus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+	
+	<element name="Forceful Presence" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_FORCEFUL_PRESENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>You can focus your vampiric presence to instill emotions in others. You gain the following benefits.</p>
+			<p class="indent"><b><i>Awe.</i></b> As a Bonus Action, you give yourself Advantage on Charisma (Intimidation, Performance, and Persuasion) checks for 10 minutes.</p>
+			<p class="indent">You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Daunt.</i></b> As a Bonus Action, make a Charisma (Intimidation) check and choose a creature you can see within 30 feet of you. The target must make a Wisdom saving throw with a DC equal to the result of your Intimidation check. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against this effect.</p>
+			<p class="indent">You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You gain the following benefits: &#13;
+			• (Bonus Action) You give yourself Advantage on Charisma (Intimidation, Performance, and Persuasion) checks for 10 minutes. ({{proficiency}}/Long Rest) &#13;
+			• (Bonus Action) Make a Charisma (Intimidation) check and choose a creature you can see within 30 ft of you. The target must make a Wisdom save with a DC equal to the result of your Intimidation check. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against this effect. ({{proficiency}}/Long Rest)</description>
+		</sheet>
+	</element>
+	
+	<element name="Greater Discipline Acquisition (Animalism)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_ANIMALISM">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_ANIMALISM)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Animalism)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Animalism))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">You can cast the <i>Speak with Animals</i> and <i>Animal Messenger</i> spells but only as Rituals. You can cast the <i>Animal Friendship</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Speak with Animals and Animal Messenger spells but only as Rituals. You can cast the Animal Friendship spell without expending a spell slot {{proficiency}} times per Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_MESSENGER" />
+		</rules>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Auspex)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_AUSPEX">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_AUSPEX)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Auspex)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Auspex))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action, you can expend 1 Blood Point to gain Advantage on Intelligence and Wisdom checks and saving throws for 1 minute.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Blood Point">
+			<description>You can gain Advantage on Intelligence and Wisdom checks and saving throws for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Celerity)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_CELERITY">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_CELERITY)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Celerity)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Celerity))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action or as a Reaction when you are hit by an attack roll, you can expend 1 Blood Point to double your Speed and gain a +3 bonus to AC until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action or Reaction" usage="Blood Point">
+			<description>As a Bonus Action or as a Reaction when you are hit by an attack roll, you can double your Speed and gain a +3 bonus to AC until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Dominate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_DOMINATE">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_DOMINATE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Dominate)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Dominate))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">You can cast the <i>Charm Person</i> and <i>Suggestion</i> spells. You can cast either spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can cast the Charm Person and Suggestion spells but only as Rituals.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUGGESTION" />
+		</rules>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Fortitude)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_FORTITUDE">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_FORTITUDE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Fortitude)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Fortitude))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">When you're subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feat if you have the Incapacitated condition. In addition, you have Advantage on Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>When you're subjected to an effect that allows you to make a Constitution save to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feat if you have the Incapacitated condition. You also have Advantage on Constitution saves.</description>
+		</sheet>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Obfuscate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_OBFUSCATE">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_OBFUSCATE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Obfuscate)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Obfuscate))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.</p>
+		</description>
+		<sheet>
+			<description>While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.</description>
+		</sheet>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Oblivion)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_OBLIVION">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_OBLIVION)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Oblivion)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Oblivion))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">You can expend 1 Blood Point to cast the <i>Darkness</i> spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Darkness spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+		</rules>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Potence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_POTENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_POTENCE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Potence)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Potence))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action, you can expend 2 Blood Points to empower your strikes for 1 minute. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d10 Force damage. In addition, you deal double damage to objects and structures.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Blood Points">
+			<description>For 1 minute, when you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d10 Force damage. In addition, you deal double damage to objects and structures.</description>
+		</sheet>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Presence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_PRESENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_PRESENCE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Presence)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Presence))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">You expend 3 Blood Points to cast the <i>Fear</i> spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration, and creatures have Disadvantage on the saving throw against the spell.</p>
+		</description>
+		<sheet usage="3 Blood Points">
+			<description>You cast the Fear spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration, and creatures have Disadvantage on the saving throw against the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" />
+		</rules>
+	</element>
+
+	<element name="Greater Discipline Acquisition (Protean)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_PROTEAN">
+		<supports>Kindred</supports>
+		<requirements>([character:8],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_DISCIPLINE_ACQUISITION_PROTEAN)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Kindred Class, Discipline Acquisition (Protean)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 8+, Kindred Class, Discipline Acquisition (Protean))</p>
+			<p>Your talents with the vampiric Discipline of another clan or bloodline have improved. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action, you can expend 2 Blood Points to deal an extra 2d6 Slashing damage to a target you hit with an Unarmed Strike for 1 minute.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Blood Points">
+			<description>You can deal an extra 2d6 Slashing damage to a target you hit with an Unarmed Strike for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Hardened Skin" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_HARDENED_SKIN">
+		<supports>Kindred</supports>
+		<requirements>([character:7],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 7+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 7+, Kindred Class)</p>
+			<p>Your skin is dense and difficult to damage. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Damage Resistance.</i></b> Select Bludgeoning or Slashing damage. You have Resistance to the chosen damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" alt="Hardened Skin" />
+			<select type="Feat Feature" name="Damage Resistance (Hardened Skin)" supports="VMBB Hardened Skin" />
+		</rules>
+	</element>
+	<element name="Bludgeoning" type="Feat Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_FEATURE_HARDENED_SKIN_BLUDGEONING">
+		<supports>VMBB Hardened Skin</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Resistance to Bludgeoning damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+	<element name="Slashing" type="Feat Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_FEATURE_HARDENED_SKIN_SLASHING">
+		<supports>VMBB Hardened Skin</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Resistance to Slashing damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+
+	<element name="Heightened Senses" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_HEIGHTENED_SENSES">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>Your vampiric senses are stronger and more precise than ever before. You gain the following benefits.</p>
+			<p class="indent"><b><i>Preternatural Perception.</i></b> You have Advantage on Wisdom (Insight and Perception) checks.</p>
+			<p class="indent"><b><i>Sense the Unseen.</i></b> You have Blindsight with a range of 30 feet. In addition, you can cast the <i>See Invisibility</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Wisdom (Insight and Perception) checks. &#13;
+			In addition, you can cast the See Invisibility spell without expending a spell slot {{proficiency}} times per Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="30" bonus="base" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" />
+		</rules>
+	</element>
+	
+	<element name="Lethal Body" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_LETHAL_BODY">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>You possess potent vampiric strength, turning your bare hands into deadly weapons.</p>
+			<p class="indent"><b><i>Crushing Blows.</i></b> You can deal 1d8 extra damage when you hit a target with an Unarmed Strike. The extra damage is the same type dealt by that strike.</p>
+			<p class="indent"><b><i>Iron Grip.</i></b> A creature has Disadvantage on ability checks and saving throws to escape your grapple.</p>
+		</description>
+		<sheet>
+			<description>You can deal 1d8 extra damage when you hit a target with an Unarmed Strike. &#13;
+			In addition, a creature has Disadvantage on ability checks and saving throws to escape your grapple.</description>
+		</sheet>
+	</element>
+
+	<element name="Loyal Servant" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_LOYAL_SERVANT">
+		<supports>Kindred</supports>
+		<requirements>([character:7],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 7+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 7+, Kindred Class)</p>
+			<p>You have a loyal companion who has gained power from your blood. You gain the following benefits.</p>
+			<p class="indent"><b><i>Companion.</i></b> A loyal Beast or Humanoid is Blood Bound to you. Choose a Beast or Humanoid stat block that has a maximum Challenge Rating of up to half your Proficiency Bonus. When choosing a companion, you may look in the monster section of source books or elsewhere for an eligible Beast or Humanoid if the Game Master permits you to do so.</p>
+			<p class="indent"><b><i>Power in the Blood.</i></b> Your Loyal Servant has one Kindred feat of your choice, and it counts as a level 2 Kindred for the purpose of selecting a Kindred feat. In addition, your Loyal Servant can spend 1 Hit Point Die in place of 1 Blood Point for the purpose of its feat.</p>
+			<p class="indent"><b><i>Replacing a Servant.</i></b> If your servant is killed or otherwise leaves, you can choose a new Loyal Servant after 30 days. The GM can lengthen or shorten this time based on in-game circumstances.</p>
+		</description>
+		<sheet>
+			<description>A CR {{proficiency:half}} or lower Beast or Humanoid is Blood Bound to you. Your servant can spend their HD Dice in place of Blood Points for their chosen Kindred feat. If your servant is killed or otherwise leaves, you can choose a new Loyal Servant after 30 days. The GM can lengthen or shorten this time based on in-game circumstances.</description>
+		</sheet>
+	</element>
+	
+	<element name="Mind Tricks" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_MIND_TRICKS">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>You can dominate others with your mental powers. You gain the following benefits.</p>
+			<p class="indent"><b><i>Cloud Memory.</i></b> You can cast the <i>Command</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. In addition, you gain access to a special command.</p>
+			<p class="indent"><b><i>Forget.</i></b> The target has only a hazy and unsure recollection of the last 5 minutes.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can cast the Command spell without expending a spell slot. The target has only a hazy and unsure recollection of the last 5 minutes.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMMAND" />
+		</rules>
+	</element>
+	
+	<element name="Self-Control" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SELF_CONTROL">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>You manage your Beast better than many. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Reining the Beast.</i></b> When you would be affected by the Hunger of your Beast feature, you can take a Reaction to immediately end the effect.</p>
+			<p class="indent">You can use this benefit a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{vmbb:self control:usage}}/Long Rest">
+			<description>When you would be affected by the Hunger of your Beast feature, you can immediately end the effect.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Self-Control" />
+			<stat name="vmbb:self control:usage" value="1" base="bonus" />
+			<stat name="vmbb:self control:usage" value="wisdom:modifier" base="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Superior Discipline Acquisition (Animalism)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_ANIMALISM">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_ANIMALISM)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Animalism)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Animalism))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can expend 1 Blood Point to cast the <i>Charm Monster</i> or <i>Dominate Beast</i> spell. When you cast the spell in this way, the target has Disadvantage on the saving throw against the spell.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Charm Monster or Dominate Beast spell. When you cast the spell in this way, the target has Disadvantage on the saving throw against the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_BEAST" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Auspex)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_AUSPEX">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_AUSPEX)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Auspex)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Auspex))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can cast <i>Detect Magic</i> but only as a ritual. You can cast <i>Clairvoyance</i> and <i>Telepathy</i>. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You can cast Detect Magic but only as a ritual. You can cast Clairvoyance and Telepathy. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TELEPATHY" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Celerity)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_CELERITY">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_CELERITY)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Celerity)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Celerity))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action, you can expend 1 Blood Point to gain an additional action. That action can be used to take only the Attack (one attack only), Dash, Disengage, Dodge, Hide, or Utilize action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Blood Point">
+			<description>You can gain an additional action. That action can be used to take only the Attack (one attack only), Dash, Disengage, Dodge, Hide, or Utilize action.</description>
+		</sheet>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Dominate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_DOMINATE">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_DOMINATE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Dominate)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Dominate))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can expend 3 Blood Points to cast the <i>Mass Suggestion</i> spell. When you cast the spell in this way, creatures have Disadvantage on the saving throw against the spell.</p>
+		</description>
+		<sheet usage="3 Blood Points">
+			<description>You can cast the Mass Suggestion spell. When you cast the spell in this way, creatures have Disadvantage on the saving throw against the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_SUGGESTION" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Fortitude)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_FORTITUDE">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_FORTITUDE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Fortitude)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Fortitude))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can expend 3 Blood Points to cast the <i>Mass Suggestion</i> spell. When you cast the spell in this way, creatures have Disadvantage on the saving throw against the spell.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage except Fire and Radiant, you can reduce the damage taken by {{vmbb:superior discipline acquisition fortitude:reduction}}.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:superior discipline acquisition fortitude:reduction" value="consitution:modifier" bonus="ability" />
+			<stat name="vmbb:superior discipline acquisition fortitude:reduction" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Obfuscate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_OBFUSCATE">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_OBFUSCATE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Obfuscate)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Obfuscate))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can cast the <i>Invisibility</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. In addition, when you gain the Invisible condition, you can expend up to 3 Blood Points to grant up to three other creatures that you can see within 30 feet of yourself the Invisible condition for 1 minute. The number of Blood Points expended in this way equals the number of creatures affected by this feat.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Invisibility spell without expending a spell slot {{proficiency}} times per Long Rest. In addition, when you gain the Invisible condition, you can expend up to 3 Blood Points to grant up to 3 other creatures that you can see within 30 ft of yourself the Invisible condition for 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Oblivion)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_OBLIVION">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_OBLIVION)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Oblivion)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Oblivion))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can expend 2 Blood Points to cast the <i>Black Tentacles</i> spell. When you cast the spell in this way, the <i>Black Tentacles</i> deal 1d6 Bludgeoning damage and 2d6 Cold damage (instead of 3d6 Bludgeoning damage).</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the Black Tentacles spell. When you cast the spell in this way, the Black Tentacles deal 1d6 Bludgeoning damage and 2d6 Cold damage (instead of 3d6 Bludgeoning damage).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Potence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_POTENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_POTENCE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Potence)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Potence))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action, you can expend up to 6 Blood Points to increase your Strength score by an amount equal to the number of Blood Points expended in this way for 1 hour.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend up to 6 Blood Points to increase your Strength score by an amount equal to the number of Blood Points expended in this way for 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Presence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_PRESENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_PRESENCE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Presence)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Presence))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can cast the <i>Suggestion</i> spell without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast the Suggestion spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUGGESTION" />
+		</rules>
+	</element>
+
+	<element name="Superior Discipline Acquisition (Protean)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_PROTEAN">
+		<supports>Kindred</supports>
+		<requirements>([character:12],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_GREATER_DISCIPLINE_ACQUISITION_PROTEAN)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 12+, Kindred Class, Greater Discipline Acquisition (Protean)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 12+, Kindred Class, Greater Discipline Acquisition (Protean))</p>
+			<p>The vampiric Discipline of another clan or bloodline is now second nature to you. You gain the following benefits.</p>
+			<p class="indent">You can expend 1 Blood Point to cast the <i>Meld into Stone</i> spell on yourself. When you cast the spell in this way, the object or surface must be dirt, sand, or clay, and the spell's duration becomes 24 hours for that casting.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Meld into Stone spell on yourself. When you cast the spell in this way, the object or surface must be dirt, sand, or clay, and the spell's duration becomes 24 hours for that casting.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELD_INTO_STONE" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Animalism)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_ANIMALISM">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_ANIMALISM)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Animalism)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Animalism))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You cast the <i>Dominate Beast</i> spell as its level 7 version without expending a spell slot, and you can modify it so that it doesn't require Concentration. Once you cast the spell with this feat, you can't do so in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You cast the Dominate Beast spell as its level 7 version without expending a spell slot, and you can modify it so that it doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_BEAST" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Auspex)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_AUSPEX">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_AUSPEX)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Auspex)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Auspex))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can expend 2 Blood Points to cast the <i>True Seeing</i> spell on yourself.</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the True Seeing spell on yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TRUE_SEEING" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Celerity)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_CELERITY">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_CELERITY)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Celerity)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Celerity))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can expend 2 Blood Points to cast the <i>Haste</i> spell on yourself. When you cast the spell in this way, when the spell ends, you aren't Incapacitated and your Speed isn't reduced to 0.</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the Haste spell on yourself. When you cast the spell in this way, when the spell ends, you aren't Incapacitated and your Speed isn't reduced to 0.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Dominate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_DOMINATE">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_DOMINATE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Dominate)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Dominate))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You cast the <i>Dominate Person</i> spell as its level 7 version without expending a spell slot, and you can modify it so that it doesn't require Concentration. Once you cast the spell with this feat, you can't do so in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You cast the Dominate Person spell as its level 7 version without expending a spell slot, and you can modify it so that it doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Fortitude)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_FORTITUDE">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_FORTITUDE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Fortitude)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Fortitude))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">When you take damage except Fire and Radiant, you can take a Reaction and expend 2 Blood Points to reduce the damage you take by half (round down) or 4 Blood Points to reduce the damage to 0.</p>
+		</description>
+		<sheet action="Reaction" usage="2 or 4 Blood Points">
+			<description>When you take damage except Fire and Radiant, you can expend 2 Blood Points to reduce the damage you take by half or 4 Blood Points to reduce the damage to 0.</description>
+		</sheet>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Obfuscate)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_OBFUSCATE">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_OBFUSCATE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Obfuscate)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Obfuscate))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can expend 1 Blood Point to cast the <i>Greater Invisibility</i> spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration. In addition, you have Advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Greater Invisibility spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration. In addition, you have Advantage on Dexterity (Stealth) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Oblivion)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_OBLIVION">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_OBLIVION)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Oblivion)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Oblivion))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">When a creature that you can see within 10 feet of you misses an attack roll, you can take a Reaction and expend 1 Blood Point to deal 2d8 Bludgeoning damage and 2d8 Cold damage to that creature.</p>
+		</description>
+		<sheet action="Reaction" usage="Blood Point">
+			<description>When a creature that you can see within 10 ft of you misses an attack roll, you can deal 2d8 Bludgeoning damage and 2d8 Cold damage to that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Presence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_PRESENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_PRESENCE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Presence)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Presence))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can expend 3 Blood Points to cast the <i>Sanctuary</i> spell on yourself. When you cast the spell in this way, the spell doesn't end if you make an attack roll, cast a spell, or deal damage.</p>
+		</description>
+		<sheet usage="3 Blood Points">
+			<description>You can cast the Sanctuary spell on yourself. When you cast the spell in this way, the spell doesn't end if you make an attack roll, cast a spell, or deal damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SANCTUARY" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Protean)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_PROTEAN">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_PROTEAN)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Protean)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Protean))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">You can expend 3 Blood Points to cast <i>Polymorph</i> on yourself, shape-shifting into a Bat, Cat, Rat, Raven, or Wolf. You can expend 1 additional Blood Point to shape-shift into a Dire Wolf, Giant Bat, Giant Rat, or Panther. While in that form, you retain your Intelligence, Wisdom, and Charisma scores.</p>
+		</description>
+		<sheet usage="3 Blood Points">
+			<description>You can cast Polymorph on yourself, shape-shifting into a Bat, Cat, Rat, Raven, or Wolf. You can expend 1 additional Blood Point to shape-shift into a Dire Wolf, Giant Bat, Giant Rat, or Panther. While in that form, you retain your Intelligence, Wisdom, and Charisma scores.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" />
+		</rules>
+	</element>
+
+	<element name="Supreme Discipline Acquisition (Potence)" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_SUPREME_DISCIPLINE_ACQUISITION_POTENCE">
+		<supports>Kindred</supports>
+		<requirements>([character:16],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT,ID_GFG_VMBB_FEAT_SUPERIOR_DISCIPLINE_ACQUISITION_POTENCE)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 16+, Kindred Class, Superior Discipline Acquisition (Potence)</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 16+, Kindred Class, Superior Discipline Acquisition (Potence))</p>
+			<p>You have learned all you can about a vampiric Discipline of another clan or bloodline. You gain the following benefits.</p>
+			<p class="indent">As a Bonus Action, you can expend 2 Blood Points to give yourself Advantage on attack rolls using Strength for 1 minute. In addition, whenever you have Advantage on an attack roll using Strength, you can reroll one of the dice once.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Blood Points">
+			<description>You give yourself Advantage on attack rolls using Strength for 1 minute. In addition, whenever you have Advantage on an attack roll using Strength, you can reroll one of the dice once.</description>
+		</sheet>
+	</element>
+
+	<element name="The Kiss" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_THE_KISS">
+		<supports>Kindred</supports>
+		<requirements>ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Kindred Class)</p>
+			<p>Your bite is intoxicating to your prey.</p>
+			<p class="indent"><b><i>Pleasurable Feeding.</i></b> When you feed, you can choose to roll d4s instead of d6s for your Feed Dice. When you do so, you regain 1 Blood Point on a roll of a 4 on the d4, and the creature is Charmed by you. The Charmed condition lasts until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you feed, you can choose to roll d4s instead of d6s for your Feed Dice. When you do so, you regain 1 Blood Point on a roll of a 4 on the d4, and the creature is Charmed by you. The Charmed condition lasts until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Touch of Darkness" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_TOUCH_OF_DARKNESS">
+		<supports>Kindred</supports>
+		<requirements>([character:2],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 2+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 2+, Kindred Class)</p>
+			<p>There is darkness within you, and it has given you a gift. You gain the following benefits.</p>
+			<p class="indent"><b><i>Eyes of Night.</i></b> You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
+			<p class="indent"><b><i>Shadowplay.</i></b> You have Advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in magical Dim Light and Darkness within 120 ft of yourself. &#13;
+			In addition, you have Advantage on Dexterity (Stealth) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Vitae Concentration" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_VITAE_CONCENTRATION">
+		<supports>Kindred</supports>
+		<requirements>([character:4],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Kindred Feat (Prerequisite: Level 4+, Kindred Class)</p>
+			<p>There is darkness within you, and it has given you a gift. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Increase Blood Pool.</i></b> Your Blood Point maximum increases by your Constitution modifier (minimum of 1).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" alt="Vitae Concentration" />
+			<stat name="vmbb:vitae concentration:points" value="1" base="bonus" />
+			<stat name="vmbb:vitae concentration:points" value="constitution:modifier" base="bonus" />
+			<stat name="vmbb:blood potency:points" value="vmbb:vitae concentration:points" />
+			<stat name="vmbb:thin blooded:points" value="vmbb:vitae concentration:points" />
+		</rules>
+	</element>
+
+	<!--Epic Boon-->
+	<element name="Boon of Generations" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_BOON_OF_GENERATIONS">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT)||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Kindred Class</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Kindred Class)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Deep Feeding.</i></b> Whenever you roll a Feed Die for your Feed feature, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
+			<p class="indent"><b><i>Potent Blood.</i></b> Your Blood Point maximum increases by 5.</p>
+		</description>
+		<sheet>
+			<description>Whenever you roll a Feed Die for your Feed feature, you can reroll the die if it rolls a 1, and you must use the new roll.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of Generations)" supports="Boon Ability Score Increase" />
+			<stat name="vmbb:blood potency:points" value="5" />
+			<stat name="vmbb:thin blooded:points" value="5" />
+		</rules>
+	</element>
+
+	<!--Kindred Class Requirement Grant-->
+	<element name="Kindred Class Requirement" type="Grants" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT" />
+	
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Vampire the Masquerade: Bound by Blood</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER" />
+
+</elements>

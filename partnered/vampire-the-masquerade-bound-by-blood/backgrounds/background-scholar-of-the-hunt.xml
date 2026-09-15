@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scholar of the Hunt</name>
+		<description>Scholar of the Hunt from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="background-scholar-of-the-hunt.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-scholar-of-the-hunt.xml" />
+		</update>
+	</info>
+
+	<element name="Scholar of the Hunt" type="Background" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_BACKGROUND_SCHOLAR_OF_THE_HUNT">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Well-Read</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana and Investigation</li>
+				<li><strong>Tool Proficiency:</strong> Gaming Set</li>
+				<li><strong>Equipment:</strong> <i> Choose A or B:</i> (A) Gaming Set (same as above), Manacles, Mirror, Traveler's Clothes, 15 GP; or (B) 50 GP</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_FEAT_WELL_READ" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Wisdom, Well-Read Feat, Arcana and Investigation Skills, Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_CON_INT_WIS" />
+			<grant type="Feat" id="ID_GFG_VMBB_FEAT_WELL_READ" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" /> 
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Gaming Set (Scholar of the Hunt)" supports="Gaming Set" />
+		</rules>
+	</element>
+
+</elements>

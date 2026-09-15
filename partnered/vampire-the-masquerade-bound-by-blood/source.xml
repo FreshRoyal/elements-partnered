@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/source.xml" />
+		</update>
+	</info>
+	<element name="Vampire the Masquerade: Bound by Blood" type="Source" source="Core" id="ID_GFG_SOURCE_VAMPIRE_THE_MASQUERADE_BOUND_BY_BLOOD">
+		<description>
+			<h5 style="margin-top:-1em">Descend into an Age of Blood and Hunger…</h5>
+			<p>700 CE. The rain has turned to falling snow and the days of Northern Brittania grow shorter with each dusk. Your coterie has returned home to mourn. But in the quiet town on the edge of the woods, something monstrous lurks in the dark with a bloodlust as great as your own. Welcome to the World of Darkness…</p>
+		</description>
+		<setters>
+			<set name="abbreviation">VMBB</set>
+			<set name="url">https://marketplace.dndbeyond.com/category/4IQF87I?pid=DB4IQF87I</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/VMBB.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com/">Ghostfire Gaming, White Wolf Publishing</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20260728</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ventrue</name>
+		<description>Ventrue from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="kindred-ventrue.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-ventrue.xml" />
+		</update>
+	</info>
+
+	<element name="Ventrue" type="Archetype" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_KINDRED_VENTRUE">
+		<supports>VMBB Kindred Subclass</supports>
+		<description>
+			<p class="flavor">Control Others with Influence and Guile</p>
+			<p>The Ventrue have elevated themselves to be the "Clan of Kings," imposing their will on the clans and standing contemptuously against those who would defy them. After lifetimes of prudent rule, the Ventrue have earned their figurative throne.</p>
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VENTRUE_BANE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DARE_NOT_FALTER" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_MASS_MANIPULATION" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_VENTRUE_BANE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DARE_NOT_FALTER" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_MASS_MANIPULATION" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Voice of Authority" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_VOICE_OF_AUTHORITY</requirements>
+		<description>
+			<p>You can impose control over others while keeping others from imposing control over you. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Do as I Say.</strong></em> You can cast the <i>Command</i> and <i>Suggestion</i> spells. You can cast either spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+			<p class="indent"><em><strong>Unshakably Confident.</strong></em> You have Advantage on Wisdom saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY_DO_AS_I_SAY" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY_UNSHAKABLY_CONFIDENT" />
+		</rules>
+	</element>
+	<element name="Do as I Say" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY_DO_AS_I_SAY">
+		<compendium display="false" />
+		<description>
+			<p>You can cast the <i>Command</i> and <i>Suggestion</i> spells. You can cast either spell without expending a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>You can cast the Command or Suggestion spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMMAND" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUGGESTION" />
+		</rules>
+	</element>
+	<element name="Unshakably Confident" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VOICE_OF_AUTHORITY_UNSHAKABLY_CONFIDENT">
+		<compendium display="false" />
+		<description>
+			<p>You have Advantage on Wisdom saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Wisdom saving throws.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 3: Ventrue Bane" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_VENTRUE_BANE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_VENTRUE_BANE</requirements>
+		<description>
+			<p>You have an arguably refined palate for blood. Choose a specific physical aspect (such as natural blondes or the elderly) or a social aspect (such as employees, soldiers, or the willing). It cannot be a wide generalization, such as creature type. When you use your Feed feature on a creature that doesn't have your preferred aspect, you roll half the number of Feed Dice.</p>
+		</description>
+		<sheet alt="Ventrue Bane">
+			<description>When you use your Feed feature on a creature that doesn't have your preferred aspect, you roll half the number of Feed Dice.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Dare Not Falter" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DARE_NOT_FALTER">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_DARE_NOT_FALTER</requirements>
+		<description>
+			<p>You effortlessly shrug off harm to your body and mind. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Toughened.</strong></em> Your Hit Point maximum increases by an amount equal to your Kindred level when you gain this feature. Whenever you gain a Kindred level thereafter, your Hit Point maximum increases by an additional 1 Hit Point.</p>
+			<p class="indent"><em><strong>Unswayable Mind.</strong></em> If you fail a saving throw to avoid or end the Charmed, Frightened, or Stunned condition, you can reroll it. You must use the new roll.</p>
+		</description>
+		<sheet alt="Dare Not Falter">
+			<description>If you fail a saving throw to avoid or end the Charmed, Frightened, or Stunned condition, you can reroll it. You must use the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="level:kindred" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Domineering Control" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_DOMINEERING_CONTROL</requirements>
+		<description>
+			<p>You can impose control over others while keeping others from imposing control over you. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Befuddle.</strong></em> You can expend 1 Blood Point to cast the <i>Hypnotic Pattern</i> spell. When you cast the spell in this way, a creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against the spell while a creature with an Intelligence of 4 or higher has Disadvantage on the saving throw.</p>
+			<p class="indent"><em><strong>Entrance.</strong></em> As a Magic action, make a Charisma (Persuasion) check and expend 2 Blood Points to choose a creature you can see within 30 feet of you. The target must make a Wisdom saving throw with a DC equal to the result of your Persuasion check. On a failed save, the creature has the Stunned condition until the end of your next turn. At the end of each of the Stunned creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against the effect.</p>
+			<p class="indent"><em><strong>Persuade.</strong></em> You can expend 1 Blood Point to cast the <i>Charm Monster</i> spell.</p>
+			<p class="indent"><em><strong>Terrify.</strong></em> As a Magic action, make a Charisma (Intimidation) check and expend 1 Blood Point to choose a creature you can see within 30 feet of you. The target must make a Wisdom saving throw with a DC equal to the result of your Intimidation check. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against the effect.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_BEFUDDLE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_ENTRANCE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_PERSUADE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_TERRIFY" />
+		</rules>
+	</element>
+	<element name="Befuddle" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_BEFUDDLE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 1 Blood Point to cast the <i>Hypnotic Pattern</i> spell. When you cast the spell in this way, a creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against the spell while a creature with an Intelligence of 4 or higher has Disadvantage on the saving throw.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Hypnotic Pattern spell. When you cast the spell in this way, a creature with an Intelligence of 3 or lower automatically succeeds on its save against the spell while a creature with an Intelligence of 4 or higher has Disadvantage on the save.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HYPNOTIC_PATTERN" />
+		</rules>
+	</element>
+	<element name="Entrance" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_ENTRANCE">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, make a Charisma (Persuasion) check and expend 2 Blood Points to choose a creature you can see within 30 feet of you. The target must make a Wisdom saving throw with a DC equal to the result of your Persuasion check. On a failed save, the creature has the Stunned condition until the end of your next turn. At the end of each of the Stunned creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against the effect.</p>
+		</description>
+		<sheet action="Action" usage="2 Blood Points">
+			<description>Make a Charisma (Persuasion) check and choose a creature you can see within 30 ft of you. The target must make a Wisdom save with a DC equal to the result of your Persuasion check. On a failed save, the creature has the Stunned condition until the end of your next turn. At the end of each of the Stunned creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its save against the effect.</description>
+		</sheet>
+	</element>
+	<element name="Persuade" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_PERSUADE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 1 Blood Point to cast the <i>Charm Monster</i> spell.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Charm Monster spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" />
+		</rules>
+	</element>
+	<element name="Terrify" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_DOMINEERING_CONTROL_TERRIFY">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, make a Charisma (Intimidation) check and expend 1 Blood Point to choose a creature you can see within 30 feet of you. The target must make a Wisdom saving throw with a DC equal to the result of your Intimidation check. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its saving throw against the effect.</p>
+		</description>
+		<sheet action="Action" usage="Blood Point">
+			<description>Make a Charisma (Intimidation) check and choose a creature you can see within 30 ft of you. The target must make a Wisdom save with a DC equal to the result of your Intimidation check. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. A creature with an Intelligence of 3 or lower automatically succeeds on its save against the effect.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Mass Manipulation" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_MASS_MANIPULATION">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_MASS_MANIPULATION</requirements>
+		<description>
+			<p>Your ability to command and sway others grows to encompass multiple minds at once. You can expend 3 Blood Points to cast the <i>Mass Suggestion</i> spell. At level 15, you can expend 4 Blood Points to cast the spell as its level 7 version; at level 18, you can expend 5 Blood Points to cast it as its level 8 version; and at level 20, you can expend 6 Blood Points to cast it as its level 9 version.</p>
+		</description>
+		<sheet alt="Mass Manipulation" usage="3 Blood Points">
+			<description>You can cast the Mass Suggestion spell.</description>
+			<description level="15">You can cast the Mass Suggestion spell. You can expend 4 Blood Points to cast the spell as its level 7 version.</description>
+			<description level="18">You can cast the Mass Suggestion spell. You can expend 4 Blood Points to cast the spell as its level 7 version or 5 Blood Points to cast this spell as its level 8 version.</description>
+			<description level="20">You can cast the Mass Suggestion spell. You can expend 4 Blood Points to cast the spell as its level 7 version, 5 Blood Points to cast this spell as its level 8 version, or 6 Blood Points to cast this spell as its level 9 version.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_SUGGESTION" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Sanguine Fortification" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_SANGUINE_FORTIFICATION</requirements>
+		<description>
+			<p>Your vitae has resilience-enhancing properties. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Draught of Endurance.</strong></em> When a creature within 60 feet of you drinks your vitae, you can take a Reaction and expend 2 Blood Points to grant that creature a number of Temporary Hit Points equal to twice your Kindred level.</p>
+			<p class="indent"><em><strong>Flesh of Marble.</strong></em> When you take damage except Fire and Radiant, you can take a Reaction and expend 2 Blood Points to reduce the damage you take by half (round down) or 4 Blood Points to reduce the damage to 0.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION_DRAUGHT_OF_ENDURANCE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION_FLESH_OF_MARBLE" />
+		</rules>
+	</element>
+	<element name="Draught of Endurance" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION_DRAUGHT_OF_ENDURANCE">
+		<compendium display="false" />
+		<description>
+			<p>When a creature within 60 feet of you drinks your vitae, you can take a Reaction and expend 2 Blood Points to grant that creature a number of Temporary Hit Points equal to twice your Kindred level.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Blood Points">
+			<description>When a creature within 60 ft of you drinks your vitae, you can grant that creature {{vmbb:draught of endurance:hp}} THPs.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:draught of endurance:hp" value="level:kindred" />
+			<stat name="vmbb:draught of endurance:hp" value="level:kindred" />
+		</rules>
+	</element>
+	<element name="Flesh of Marble" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_SANGUINE_FORTIFICATION_FLESH_OF_MARBLE">
+		<compendium display="false" />
+		<description>
+			<p>When you take damage except Fire and Radiant, you can take a Reaction and expend 2 Blood Points to reduce the damage you take by half (round down) or 4 Blood Points to reduce the damage to 0.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Blood Points">
+			<description>When you take damage except Fire and Radiant, you can reduce the damage you take by half. Alternatively, you can expend 4 Blood Points to reduce the damage to 0.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Lordly Power" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_LORDLY_POWER</requirements>
+		<description>
+			<p>Your will over others becomes ironclad and staggeringly powerful. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Imposing Aura.</strong></em> When a creature within 15 feet of you targets you with an attack roll or a damaging spell, it must succeed on a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or either choose a new target or lose the attack or spell. On a successful save, the target isn't affected, and it's immune to Imposing Aura for 24 hours.</p>
+			<p class="indent"><em><strong>Penetrating Dominance.</strong></em> Creatures you can see within 60 feet of yourself have Disadvantage on saving throws to avoid or end the Charmed condition.</p>
+			<p class="indent"><em><strong>Summon.</strong></em> As a Magic action, you can expend 3 Blood Points to urge a Beast, Humanoid, or Undead you have touched and is on the same plane of existence as you to make a Wisdom saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus). On a failed save, the creature is compelled to come to you. The creature must use as much of its movement as possible to move in your direction on its turns, taking the safest route, and stopping only to eat and rest. A compelled creature repeats the save at the end of each day at dusk, ending the effect on itself on a success. You know if the compulsion ends early. You can't have more than one creature under this effect at a time. If you use this feature again, the effect on another creature ends.</p>
+			<p class="indent">When the creature appears, it is under no compulsion to behave a particular way. You can ask it to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services. Payment can take a variety of forms.</p>
+			<p class="indent">The GM can adjust these payments based on the circumstances under which you called upon it. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.</p>
+			<p class="indent">A <i>Remove Curse</i>, <i>Greater Restoration</i>, or <i>Wish</i> spell ends this effect.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER_IMPOSING_AURA" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER_PENETRATING_DOMINANCE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER_SUMMON" />
+		</rules>
+	</element>
+	<element name="Imposing Aura" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER_IMPOSING_AURA">
+		<compendium display="false" />
+		<description>
+			<p>When a creature within 15 feet of you targets you with an attack roll or a damaging spell, it must succeed on a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or either choose a new target or lose the attack or spell. On a successful save, the target isn't affected, and it's immune to Imposing Aura for 24 hours.</p>
+		</description>
+		<sheet>
+			<description>When a creature within 15 ft of you targets you with an attack roll or a damaging spell, it must succeed on a DC{{}} Wisdom save or either choose a new target or lose the attack or spell. On a successful save, the target isn't affected, and it's immune to Imposing Aura for 24 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:imposing aura:dc" value="8" bonus="base" />
+			<stat name="vmbb:imposing aura:dc" value="strength:modifier" bonus="ability" />
+			<stat name="vmbb:imposing aura:dc" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+	<element name="Penetrating Dominance" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER_PENETRATING_DOMINANCE">
+		<compendium display="false" />
+		<description>
+			<p>Creatures you can see within 60 feet of yourself have Disadvantage on saving throws to avoid or end the Charmed condition.</p>
+		</description>
+		<sheet>
+			<description>Creatures you can see within 60 ft of yourself have Disadvantage on saving throws to avoid or end the Charmed condition.</description>
+		</sheet>
+	</element>
+	<element name="Summon" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_VENTRUE_LORDLY_POWER_SUMMON">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, you can expend 3 Blood Points to urge a Beast, Humanoid, or Undead you have touched and is on the same plane of existence as you to make a Wisdom saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus). On a failed save, the creature is compelled to come to you. The creature must use as much of its movement as possible to move in your direction on its turns, taking the safest route, and stopping only to eat and rest. A compelled creature repeats the save at the end of each day at dusk, ending the effect on itself on a success. You know if the compulsion ends early. You can't have more than one creature under this effect at a time. If you use this feature again, the effect on another creature ends.</p>
+			<p class="indent">When the creature appears, it is under no compulsion to behave a particular way. You can ask it to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services. Payment can take a variety of forms.</p>
+			<p class="indent">The GM can adjust these payments based on the circumstances under which you called upon it. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.</p>
+			<p class="indent">A <i>Remove Curse</i>, <i>Greater Restoration</i>, or <i>Wish</i> spell ends this effect.</p>
+		</description>
+		<sheet action="Action" usage="3 Blood Points">
+			<description>You can urge a Beast, Humanoid, or Undead you have touched and is on the same plane of existence as you to make a DC{{vmbb:summon:dc}} Wisdom save. On a failed save, the creature is compelled to come to you. The creature must use as much of its movement as possible to move in your direction on its turns, taking the safest route, and stopping only to eat and rest. A compelled creature repeats the save at the end of each day at dusk, ending the effect on itself on a success. You know if the compulsion ends early. You can't have more than one creature under this effect at a time. If you use this feature again, the effect on another creature ends. &#13;
+			When the creature appears, it is under no compulsion to behave a particular way. You can ask it to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple to complex. You must be able to communicate with the creature to bargain for its services. Payment can take a variety of forms. &#13;
+			A Remove Curse, Greater Restoration, or Wish spell ends this effect.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:summon:dc" value="8" bonus="base" />
+			<stat name="vmbb:summon:dc" value="charisma:modifier" bonus="ability" />
+			<stat name="vmbb:summon:dc" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Voice of Authority Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_VOICE_OF_AUTHORITY" />
+	<element name="Ventrue Bane Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_VENTRUE_BANE" />
+	<element name="Dare Not Falter Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_DARE_NOT_FALTER" />
+	<element name="Domineering Control Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_DOMINEERING_CONTROL" />
+	<element name="Mass Manipulation Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_MASS_MANIPULATION" />
+	<element name="Sanguine Fortification Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_SANGUINE_FORTIFICATION" />
+	<element name="Lordly Power Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_VENTRUE_LORDLY_POWER" />
+	
+</elements>

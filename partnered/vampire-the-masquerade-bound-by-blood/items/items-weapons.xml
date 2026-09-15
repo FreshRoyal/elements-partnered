@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>Weapons from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/items/items-weapons.xml" />
+		</update>
+	</info>
+
+	<!--Wooden Stake-->
+	<element name="Wooden Stake" type="Weapon" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_WEAPON_WOODEN_STAKE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
+		<description>
+			<p>While any modest length of sharpened wood can be used as an improvised weapon, wooden stakes that have been carved, treated, and fire-hardened are specifically useful against Kindred. Dedicated wooden stakes use the weapon profile below.</p>
+			<p class="indent"><b><i>Driving the Stake.</i></b> If you are within 5 feet of a Kindred with the Restrained or Unconscious condition, you can take an action to make a DC 15 Intelligence (Medicine) check. On a successful check, the wooden stake is driven into the heart of the Kindred.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Nick.</b> When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_VMBB_PROFICIENCY_WEAPON_PROFICIENCY_WOODEN_STAKE</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Wooden Stake)" type="Proficiency" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_PROFICIENCY_WEAPON_PROFICIENCY_WOODEN_STAKE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant name="ID_GFG_VMBB_PROFICIENCY_WEAPON_PROFICIENCY_WOODEN_STAKE" type="Proficiency" />
+		</rules>
+	</append>
+
+	<element name="Wooden Stake (Nick)" type="Class Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_CLASS_FEATURE_MASTERY_PROPERTY_WOODEN_STAKE_NICK">
+		<supports>Weapon Mastery, Simple, Melee</supports>
+		<requirements>ID_GFG_VMBB_PROFICIENCY_WEAPON_PROFICIENCY_WOODEN_STAKE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action.</description>
+		</sheet>
+	</element>
+
+	<element name="Kensei Weapon (Wooden Stake)" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KENSEI_WEAPON_WOODEN_STAKE">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Wooden Stake if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_VMBB_PROFICIENCY_WEAPON_PROFICIENCY_WOODEN_STAKE" />
+		</rules>
+	</element>
+
+	<!--Ammunition-->
+	<element name="Arrow, Silver" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_ARROW_SILVER">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_UPKEEP_SILVER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">7</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Arrow, Wooden" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_ARROW_WOODEN">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_WOODEN_AMMUNITION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.025">1/40 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Silver" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BOLT_SILVER">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_UPKEEP_SILVER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.075">3/40 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Wooden" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BOLT_WOODEN">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_WOODEN_AMMUNITION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">7</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bullet, Silver" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BULLET_SILVER">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_UPKEEP_SILVER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bullet, Wooden" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_BULLET_WOODEN">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_WOODEN_AMMUNITION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Needle, Silver" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_NEEDLE_SILVER">
+		<description>
+			<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+			<div class="reference">
+				<div element="ID_GFG_VMBB_INFORMATION_UPKEEP_SILVER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">2</set> 
+			<set name="weight" lb="0.02">1/50 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Information-->
+	<element name="Upkeep (Silver)" type="Information" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_INFORMATION_UPKEEP_SILVER">
+		<description>
+			<p>When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the <i>Mending</i> spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest.</p>
+		</description>
+	</element>
+
+	<element name="Wooden Melee Weapons" type="Information" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_INFORMATION_WOODEN_MELEE_WEAPONS">
+		<description>
+			<p>When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed.</p>
+		</description>
+	</element>
+
+	<element name="Wooden Ammunition" type="Information" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_INFORMATION_WOODEN_AMMUNITION">
+		<description>
+			<p>Wooden ammunition is destroyed after hitting or missing a target.</p>
+		</description>
+	</element>
+
+</elements>

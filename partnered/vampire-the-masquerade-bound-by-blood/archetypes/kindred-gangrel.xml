@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gangrel</name>
+		<description>Gangrel from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="kindred-gangrel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-gangrel.xml" />
+		</update>
+	</info>
+
+	<element name="Gangrel" type="Archetype" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_KINDRED_GANGREL">
+		<supports>VMBB Kindred Subclass</supports>
+		<description>
+			<p class="flavor">Let the Beast Inside in Order to Control It</p>
+			<p>The Gangrel have made peace with their Beast long ago, choosing to harness the wild power it promises and wield it rather than trying to stifle it. They are attuned to its feral nature, embodying the predator.</p>
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GANGREL_BANE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_THE_BEAST" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_FERAL_SPIRIT" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_CORPOREAL_MASTERY" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GANGREL_BANE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_THE_BEAST" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_FERAL_SPIRIT" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_CORPOREAL_MASTERY" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Gangrel Bane" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GANGREL_BANE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_GANGREL_GANGREL_BANE</requirements>
+		<description>
+			<p>The Beast reveals itself in you as animalistic features and behaviors. If you are affected by the Hunger of your Beast feature, you have Disadvantage on Charisma (Deception and Persuasion) checks until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Gangrel Bane">
+			<description>If you are affected by the Hunger of your Beast feature, you have Disadvantage on Charisma (Deception and Persuasion) checks until you finish a Long Rest.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 3: Gifts of the Beast" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_THE_BEAST">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_GANGREL_GIFTS_OF_THE_BEAST</requirements>
+		<description>
+			<p>Your body reflects the protean gifts of your animalistic Beast. You gain the following benefits.</p>
+			<p class="indent"><em><strong>Eyes of the Beast.</strong></em> The range of your Darkvision increases to 240 feet.</p>
+			<p class="indent"><em><strong>Feral Weapons.</strong></em> As a Bonus Action, you can expend 1 Blood Point to grow rending claws for 1 minute. Your Unarmed Strikes deal 2d6 Slashing damage, and you can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes.</p>
+		</description>
+		<sheet alt="Gifts of the Beast" action="Bonus Action" usage="Blood Point">
+			<description>You can grow claws for 1 minute. Your Unarmed Strikes deal 2d6+{{vmbb:gifts of the beast:ability modifier}} Slashing damage</description>
+		</sheet>
+		<rules>
+			<stat name="darkvision:range" value="240" bonus="base" />
+			<stat name="vmbb:gifts of the beast:ability modifier" value="strength:modifier" bonus="ability" />
+			<stat name="vmbb:gifts of the beast:ability modifier" value="dexterity:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Feral Spirit" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_FERAL_SPIRIT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_FERAL_SPIRIT</requirements>
+		<description>
+			<p>Your connection to your wild self forges a spiritual bridge with Beasts.</p>
+			<p class="indent"><em><strong>Beast Mind.</strong></em> While you look in the eyes of a Beast within 30 feet of yourself, you can speak telepathically with it, and you can use any of the Influence action's skill options with it.</p>
+			<p class="indent"><em><strong>Like Minds.</strong></em> You can cast the <i>Animal Friendship</i> spell without expending a spell slot. And when you cast the spell in this way, it is cast as if you had used a spell slot level equal to your Proficiency Bonus.</p>
+			<p class="indent"><em><strong>Wild Hunger.</strong></em> When you are affected by the Hunger of your Beast feature, you can deal 1d6 extra Slashing damage when you hit with an Unarmed Strike, and you also count as one size larger when determining what you can grapple.</p>
+		</description>
+		<sheet alt="Feral Spirit">
+			<description>You gain the following benefits: &#13;
+			• While you look in the eyes of a Beast within 30 ft of yourself, you can speak telepathically with it, and you can use any of the Influence action's skill options with it. &#13;
+			• You can cast the Animal Friendship spell at {{proficiency}}th level without expending a spell slot. &#13;
+			• When you are affected by the Hunger of your Beast feature, you can deal 1d6 extra Slashing damage when you hit with an Unarmed Strike, and you also count as one size larger when determining what you can grapple.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Gifts of Survival" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_GIFTS_OF_SURVIVAL</requirements>
+		<description>
+			<p>Your body is built to survive whatever the world sets before you.</p>
+			<p class="indent"><em><strong>Feral Fortitude.</strong></em> When you take damage except Fire and Radiant, you can take a Reaction to reduce the damage taken by your Proficiency Bonus plus your Constitution modifier (minimum reduction of 1).</p>
+			<p class="indent"><em><strong>Meld with Earth.</strong></em> As a Magic action, you can expend 1 Blood Point to cast the <i>Meld into Stone</i> spell, except the surface must be dirt, sand, or clay instead of stone. Additionally, while the spell is active, you gain Tremorsense with a range of 60 feet. The spell lasts until you end it (no action required) or when you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL_FERAL_FORTITUDE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL_MELD_WITH_EARTH" />
+		</rules>
+	</element>
+	<element name="Feral Fortitude" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL_FERAL_FORTITUDE">
+		<compendium display="false" />
+		<description>
+			<p>When you take damage except Fire and Radiant, you can take a Reaction to reduce the damage taken by your Proficiency Bonus plus your Constitution modifier (minimum reduction of 1).</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage except Fire and Radiant, you can reduce the damage taken by {{vmbb:feral fortitude:modifier}}.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:feral fortitude:modifier:base" value="constitution:modifier" bonus="ability" />
+			<stat name="vmbb:feral fortitude:modifier:base" value="proficiency" bonus="proficiency" />
+			<stat name="vmbb:feral fortitude:modifier" value="vmbb:feral fortitude:modifier:base" bonus="bonus" />
+			<stat name="vmbb:feral fortitude:modifier" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="Meld into Earth" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_GIFTS_OF_SURVIVAL_MELD_WITH_EARTH">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, you can expend 1 Blood Point to cast the <i>Meld into Stone</i> spell, except the surface must be dirt, sand, or clay instead of stone. Additionally, while the spell is active, you gain Tremorsense with a range of 60 feet. The spell lasts until you end it (no action required) or when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="Blood Point">
+			<description>You can cast the Meld into Stone spell, except the surface must be dirt, sand, or clay instead of stone. Additionally, while the spell is active, you gain Tremorsense with a range of 60 ft. The spell lasts until you end it or when you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELD_INTO_STONE" />
+		</rules>
+	</element>
+
+	<element name="Level 11: Corporeal Mastery" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_CORPOREAL_MASTERY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_CORPOREAL_MASTERY</requirements>
+		<description>
+			<p>Your connection to your wild self forges a spiritual bridge with Beasts.</p>
+			<p class="indent"><em><strong>Beast Form.</strong></em> As a Magic action, you can expend a number of Blood Points to shape-shift into a Beast form applicable to this feature (see "Known Forms" below). You stay in that form for a number of hours equal to half your Kindred level or until you use Corporeal Mastery again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
+			<p class="indent"><em><strong>Known Forms.</strong></em> You can expend 2 Blood Points to shape-shift into a <b>Bat, Cat, Rat, Raven,</b> or <b>Wolf</b>. You can expend 4 Blood Points to shape-shift into a <b>Dire Wolf, Giant Bat, Giant Rat,</b> or <b>Panther</b>.</p>
+			<p class="indent"><em><strong>Temporary Hit Points.</strong></em> When you assume a Beast form, you gain a number of Temporary Hit Points equal to your Kindred level.</p>
+			<p class="indent"><em><strong>Game Statistics.</strong></em> Your game statistics are replaced by the Beast's stat block, but you retain your creature type; Hit Points; Hit Point Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block. While in Beast form, you retain your personality and memories, and you can understand languages you know, but you can't speak.</p>
+			<p class="indent"><em><strong>Objects.</strong></em> Your ability to handle objects is determined by the form's limbs rather than your own. In addition, your equipment merges into your new form. Nonmagical equipment that merges with the form has no effect while you're in that form.</p>
+		</description>
+		<sheet alt="Corporeal Mastery" action="Action" usage="2 or 4 Blood Points">
+			<description>You can expend 2 Blood Points to shape-shift into a Bat, Cat, Rat, Raven, or Wolf or expend 4 Blood Points to shape-shift into a Dire Wolf, Giant Bat, Giant Rat, or Panther. You gain {{level:kindred}} THPs and stay in that form for {level:kindred:half} hours or until you use Corporeal Mastery again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action. &#13;
+			Your game statistics are replaced by the Beast's stat block, but you retain your creature type; HPs; HP Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block. While in Beast form, you retain your personality and memories, and you can understand languages you know, but you can't speak.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Command the Beast" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_COMMAND_THE_BEAST</requirements>
+		<description>
+			<p>You can impose your will upon wild things, allowing your Beast to overwhelm theirs.</p>
+			<p class="indent"><em><strong>Rein.</strong></em> You cast the <i>Dominate Beast</i> spell as its level 7 version, without expending a spell slot, and you can modify it so that it doesn't require Concentration.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.</p>
+			<p class="indent"><em><strong>Rouse.</strong></em> When an Undead (Kindred) you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction and expend 1 Blood Point to force that creature to use its Beast feature on that D20 Test. If the Kindred has no remaining uses of its Beast feature, this effect automatically fails.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST_REIN" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST_ROUSE" />
+		</rules>
+	</element>
+	<element name="Rein" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST_REIN">
+		<compendium display="false" />
+		<description>
+			<p>You cast the <i>Dominate Beast</i> spell as its level 7 version, without expending a spell slot, and you can modify it so that it doesn't require Concentration.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You cast the Dominate Beast spell at 7th-level without expending a spell slot, and you can modify it so that it doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_BEAST" />
+		</rules>
+	</element>
+	<element name="Rouse" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_COMMAND_THE_BEAST_ROUSE">
+		<compendium display="false" />
+		<description>
+			<p>When an Undead (Kindred) you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction and expend 1 Blood Point to force that creature to use its Beast feature on that D20 Test. If the Kindred has no remaining uses of its Beast feature, this effect automatically fails.</p>
+		</description>
+		<sheet action="Reaction" usage="Blood Point">
+			<description>When an Undead (Kindred) you can see within 30 ft of you is about to make a D20 Test, you can force that creature to use its Beast feature on that D20 Test. If the Kindred has no remaining uses of its Beast feature, this effect automatically fails.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Protean Rewards" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_PROTEAN_REWARDS</requirements>
+		<description>
+			<p>Your body can perform greater wonders.</p>
+			<p class="indent"><em><strong>Flesh of Marble.</strong></em> As a Magic action, you can expend 2 Blood Points to double your Gifts of Survival feature's Damage Reduction for 1 minute.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.</p>
+			<p class="indent"><em><strong>Mistform.</strong></em> You can expend 2 Blood Points to cast the <i>Gaseous Form</i> spell on yourself. When you cast the spell in this way, you can modify it so that it doesn't require Concentration.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS_FLESH_OF_MARBLE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS_MISTFORM" />
+		</rules>
+	</element>
+	<element name="Flesh of Marble" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS_FLESH_OF_MARBLE">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, you can expend 2 Blood Points to double your Gifts of Survival feature's Damage Reduction for 1 minute.</p>
+		</description>
+		<sheet action="Action" usage="2 Blood Points">
+			<description>You can double your Gifts of Survival feature's Damage Reduction for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Mistform" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_GANGREL_PROTEAN_REWARDS_MISTFORM">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 2 Blood Points to cast the <i>Gaseous Form</i> spell on yourself. When you cast the spell in this way, you can modify it so that it doesn't require Concentration.</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the Gaseous Form spell on yourself. When you cast the spell in this way, you can modify it so that it doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GASEOUS_FORM" />
+		</rules>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Gangrel Bane Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_GANGREL_GANGREL_BANE" />
+	<element name="Gifts of the Beast Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_GANGREL_GIFTS_OF_THE_BEAST" />
+	<element name="Feral Spirit Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_FERAL_SPIRIT" />
+	<element name="Gifts of Survival Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_GIFTS_OF_SURVIVAL" />
+	<element name="Corporeal Mastery Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_CORPOREAL_MASTERY" />
+	<element name="Command the Beast Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_COMMAND_THE_BEAST" />
+	<element name="Protean Rewards Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_GANGREL_PROTEAN_REWARDS" />
+	
+</elements>

@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.1.4">
+		<update version="1.1.5">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -28,6 +28,7 @@
 		<file name="grim-hollow-player-pack.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/grim-hollow-player-pack.index" />
 		<file name="dungeons-of-drakkenheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/dungeons-of-drakkenheim.index" />
 		<file name="monsters-of-drakkenheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim.index" />
+		<file name="vampire-the-masquerade-bound-by-blood.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood.index" />
 
 		<!--Hit Point Press-->
 		<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />

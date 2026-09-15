@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Brujah</name>
+		<description>Brujah from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="kindred-brujah.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-brujah.xml" />
+		</update>
+	</info>
+
+	<element name="Brujah" type="Archetype" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_KINDRED_BRUJAH">
+		<supports>VMBB Kindred Subclass</supports>
+		<description>
+			<p class="flavor">Stand Up, Stand Firm, and Fight for Something</p>
+			<p>The Brujah are a clan of freethinkers and revolutionaries who thrive on their own liberty and fight against oppression and stagnation. They find a power in themselves that is reflected as strength, speed, and a force of personality that makes them formidable in the varied conflicts they often find themselves in.</p>
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_BRUJAH_BANE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FIGHTING_FURY" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FLEETNESS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_BURNING_WRATH" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_ROUSE_EMOTIONS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_PUISSANT_MIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_BRUJAH_BANE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FIGHTING_FURY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FLEETNESS" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_BURNING_WRATH" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_ROUSE_EMOTIONS" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_PUISSANT_MIGHT" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Brujah Bane" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_BRUJAH_BANE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_BRUJAH_BANE</requirements>
+		<description>
+			<p>Your blood simmers with the rage of your vampiric ancestors. If you fail a D20 Test that is affected by your Beast feature and choose to expend Blood Points to ignore the effects of Hunger, you must expend a number of Blood Points equal to your Proficiency Bonus to ignore the effects, instead of 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="vmpp:hunger sated:points" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Fighting Fury" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FIGHTING_FURY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_FIGHTING_FURY</requirements>
+		<description>
+			<p>You can channel the rage simmering below the surface, funneling it into your physical strength and speed. You can expend 1 Blood Point to gain the following benefits for 1 minute.</p>
+			<p class="indent"><em><strong>Brawn.</strong></em> You have Advantage on the first attack roll you make with a Melee weapon or Unarmed Strike on your turn.</p>
+			<p class="indent"><em><strong>Swiftness.</strong></em> You can take the Dash or Dodge action as a Bonus Action.</p>
+			<p class="indent"><em><strong>Weapon Training.</strong></em> You gain proficiency with Martial weapons, and your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice.</p>
+		</description>
+		<sheet alt="Fighting Fury" usage="Blood Point">
+			<description>You gain the following benefits for 1 minute: &#13;
+			• You have Advantage on the first attack roll you make with a Melee weapon or Unarmed Strike on your turn. &#13;
+			• You can take the Dash or Dodge action as a Bonus Action. &#13;
+			• You gain proficiency with Martial weapons, and your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Fearsome" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_FEARSOME</requirements>
+		<description>
+			<p>Your vampiric presence exudes menace from the rise of your inner Beast.</p>
+			<p class="indent"><em><strong>Dread Gaze.</strong></em> You bare your fangs, your eyes flash with predatory hunger, and you let out a hiss that strikes terror in the hearts of others. You can expend 1 Blood Point to cast the <i>Fear</i> spell.</p>
+			<p class="indent"><em><strong>Predatory Aura.</strong></em> You have Advantage on Charisma (Intimidation) checks.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME_DREAD_GAZE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME_PREDATORY_AURA" />
+		</rules>
+	</element>
+	<element name="Dread Gaze" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME_DREAD_GAZE">
+		<compendium display="false" />
+		<description>
+			<p>You bare your fangs, your eyes flash with predatory hunger, and you let out a hiss that strikes terror in the hearts of others. You can expend 1 Blood Point to cast the <i>Fear</i> spell.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Fear spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" />
+		</rules>
+	</element>
+	<element name="Predatory Aura" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FEARSOME_PREDATORY_AURA">
+		<compendium display="false" />
+		<description>
+			<p>You have Advantage on Charisma (Intimidation) checks.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Charisma (Intimidation) checks.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 9: Fleetness" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_FLEETNESS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_FLEETNESS</requirements>
+		<description>
+			<p>Your celerity grants you bursts of incredible speed.</p>
+			<p class="indent"><em><strong>Dizzying Speed.</strong></em> You can expend 3 Blood Points to cast the <i>Haste</i> spell on yourself. When you cast the spell in this way, when the spell ends, you aren't Incapacitated and your Speed isn't reduced to 0.</p>
+		</description>
+		<sheet alt="Fleetness" usage="3 Blood Points">
+			<description>You can cast the Haste spell on yourself. When you cast the spell in this way, when the spell ends, you aren't Incapacitated and your Speed isn't reduced to 0.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" />
+		</rules>
+	</element>
+
+	<element name="Level 11: Burning Wrath" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_BURNING_WRATH">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_BURNING_WRATH</requirements>
+		<description>
+			<p>You pour all of your intensity and fury into yourself, causing your blood to seemingly boil on your skin. As a Bonus Action, you can expend 2 Blood Points to empower your Unarmed Strikes. For 1 minute or until you fail to make an attack roll against an enemy on your turn, whichever comes first, you can deal an extra 2d8 Necrotic damage to a target you hit with an Unarmed Strike.</p>
+		</description>
+		<sheet alt="Burning Wrath" action="Bonus Action" usage="2 Blood Points">
+			<description>You can empower your Unarmed Strikes. For 1 minute or until you fail to make an attack roll against an enemy on your turn, whichever comes first, you can deal an extra 2d8 Necrotic damage to a target you hit with an Unarmed Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Rouse Emotions" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_ROUSE_EMOTIONS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_ROUSE_EMOTIONS</requirements>
+		<description>
+			<p>You can extend your own passionate feelings into others, infecting them with your fervor. You can expend 3 Blood Points to cast one of the following spells.</p>
+			<p class="indent"><em><strong>Enthrall.</strong></em> You cast the <i>Charm Person</i> spell as if with a level 6 spell slot, and the creatures have Disadvantage on the saving throw.</p>
+			<p class="indent"><em><strong>Incite.</strong></em> You cast the <i>Confusion</i> spell. A creature that fails its saving throw automatically rolls 7-8 to determine its behavior for each turn.</p>
+			<p class="indent"><em><strong>Terrorize.</strong></em> You cast the <i>Fear</i> spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration and creatures have Disadvantage on the saving throw.</p>
+		</description>
+		<sheet alt="Rouse Emotions" usage="3 Blood Points">
+			<description>You can cast one of the following spells: &#13;
+			• You cast the Charm Person spell as if with a level 6 spell slot, and the creatures have Disadvantage on the saving throw. &#13;
+			• You cast the Confusion spell. A creature that fails its saving throw automatically rolls 7-8 to determine its behavior for each turn. &#13;
+			• You cast the Fear spell. When you cast the spell in this way, you can modify it so that it doesn't require Concentration and creatures have Disadvantage on the saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Puissant Might" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_BRUJAH_PUISSANT_MIGHT">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_PUISSANT_MIGHT</requirements>
+		<description>
+			<p>Your raw, supernatural strength is legendary.</p>
+			<p class="indent"><em><strong>Ability Score Increase.</strong></em> Your Strength score increases by 4, to a maximum of 30.</p>
+			<p class="indent"><em><strong>Pulverize.</strong></em> When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, your Melee weapon or Unarmed Strike deals two extra dice of its damage.</p>
+		</description>
+		<sheet alt="Puissant Might">
+			<description>When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, your Melee weapon or Unarmed Strike deals two extra dice of its damage.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="4" alt="Puissant Might" />
+			<stat name="strength:max:extra" value="10" bonus="base"/>
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Brujah Bane Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_BRUJAH_BANE" />
+	<element name="Fighting Fury Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_FIGHTING_FURY" />
+	<element name="Fearsome Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_FEARSOME" />
+	<element name="Fleetness Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_FLEETNESS" />
+	<element name="Burning Wrath Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_BURNING_WRATH" />
+	<element name="Rouse Emotions Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_ROUSE_EMOTIONS" />
+	<element name="Puissant Might Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_BRUJAH_PUISSANT_MIGHT" />
+	
+</elements>

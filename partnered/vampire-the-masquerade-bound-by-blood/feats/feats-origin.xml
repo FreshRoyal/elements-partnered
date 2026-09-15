@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Origin Feats</name>
+		<description>Origin Feats from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="feats-origin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/feats/feats-origin.xml" />
+		</update>
+	</info>
+
+	<element name="Healthy" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_HEALTHY">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You have, for whatever reason, maintained a physically healthy lifestyle. You gain the following benefits.</p>
+			<p class="indent"><b><i>Hit Die Use.</i></b> The first time you would spend a Hit Point Die after completing a Short or Long Rest, you gain the benefit of spending the Hit Die but do not spend it.</p>
+			<p class="indent"><b><i>Saving Throw Proficiency.</i></b> Choose one ability in which you lack saving throw proficiency. You gain saving throw proficiency with the chosen ability.</p>
+		</description>
+		<sheet>
+			<description>The first time you would spend a HP Die after completing a Short or Long Rest, you gain the benefit of spending the Hit Die but do not spend it.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Saving Throw Proficiency (Healthy)" supports="Saving Throw" />
+		</rules>
+	</element>
+
+	<element name="Nocturnal" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_NOCTURNAL">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You have spent many formative years in the darkness of night. You gain the following benefits.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 30 feet.</p>
+			<p class="indent"><b><i>Slink in Shadows.</i></b> Whenever you make a Dexterity (Stealth) check while in Dim Light or Darkness, you can treat a roll of 9 or lower on the d20 as a 10.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Dexterity (Stealth) check while in Dim Light or Darkness, you can treat a roll of 9 or lower on the d20 as a 10.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" requirements="!(ID_VISION_DARKVISION|ID_VISION_SUPERIORDARKVISION)" />
+			<stat name="darkvision:range" value="30" requirements="ID_VISION_DARKVISION|ID_VISION_SUPERIORDARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Protected" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_PROTECTED">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Luck Points.</i></b> You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Reroll.</i></b> Whenever you make a D20 Test and roll 9 or lower on the d20, you can spend 1 Luck Point to reroll the d20. You must accept the second result.</p>
+			<p class="indent"><b><i>Stabilize.</i></b> When you are reduced to 0 Hit Points and not killed outright, you can spend 1 Luck Point to drop to 1 Hit Point instead.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you roll a d20 for a D20 Test, you can reroll the d20. You must accept the second result. &#13;
+			Alternatively, when you are reduced to 0 HPs and not killed outright, you can spend 1 Luck Point to drop to 1 HP instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Thin-Blooded" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_THIN_BLOODED">
+		<requirements>!ID_GFG_VMBB_CLASS_KINDRED||ID_GFG_VMBB_GRANTS_FEAT_UNLOCKER</requirements>
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You have a portion of a vampire's blood flowing in your veins. You are a thin-blood, often destined for a place among the clanless. You gain the following benefits.</p>
+			<p class="indent"><b><i>Able to Feed.</i></b> You feed on the blood of other creatures. This is most often accomplished through your sharp fangs. As an action, you can feed on another creature within 5 feet of yourself if the target is willing, Charmed by you, or has the Incapacitated, Grappled, Paralyzed, Restrained, Stunned, or Unconscious condition. You can feed only once per turn.</p>
+			<p class="Indent">You have 2d6 Feed Dice. When you feed, roll up to your maximum Feed Dice plus your Constitution modifier (minimum of 1). The creature takes Necrotic damage equal to the roll's total. This damage only reduces the creature's Hit Point maximum by an amount equal to the roll's total. If you roll a 6 on a d6 on a Feed Die, you can regain 1 expended Blood Point. If a creature's Hit Point maximum is reduced to 0, you can regain 1 expended Blood Point.</p>
+			<p class="indent"><b><i>Feeding from the Willing.</i></b> If you feed on a willing creature or a creature Charmed by you, it can spend 1 Hit Point Die. It rolls the Hit Point Die and reduces its Hit Point maximum by the amount rolled, and you can regain 1 expended Blood Point. Feeding in this way doesn't end the Charmed condition.</p>
+			<p class="indent"><b><i>Hit Die Deficit.</i></b> If a creature has no remaining Hit Point Dice, the creature takes Necrotic damage equal to a roll of your Feed Dice plus your Constitution modifier, and the creature's Hit Point maximum is reduced by an amount equal to the roll's total.</p>
+			<p class="indent"><b><i>Maximum Successful Feedings.</i></b> A creature can provide a number of Blood Points based on its size. A Small creature provides 1 Blood Point, a Medium provides 3, a Large provides 5, a Huge provides 7, and a Gargantuan provides 10. A creature regains all lost Blood Points when it finishes a Long Rest.</p>
+			<p class="indent"><b><i>Creature Susceptible to Feed.</i></b> You can feed on any creature with blood or other life-giving fluid. Work with your GM to determine the types of creatures you can feed on.</p>
+			<p class="indent"><b><i>Kindred, but Not Kindred.</i></b> You ignore the Kindred class prerequisite for choosing Kindred feats. You can't gain levels in the Kindred class.</p>
+			<p class="indent"><b><i>Kindred Vitae.</i></b> You have a number of Blood Points equal to your Proficiency Bonus minus one.</p>
+			<p class="indent"><b><i>Supernatural Spellcasting.</i></b> Charisma is your spellcasting ability for spells from your Kindred feats. Your spells require no Verbal or Somatic components, and they require no Material components unless they are consumed by the spell or have a cost specified in it. Taking damage can't break your Concentration for spells cast using this feature.</p>
+		</description>
+		<sheet>
+			<description>You have {{vmbb:thin blooded:points}} Blood Points. &#13;
+			You can use an Action to feed on another creature with blood or other life-gicing fluid once per turn within 5 ft of yourself if the target is willing, Charmed by you, or has the Incapacitated, Grappled, Paralyzed, Restrained, Stunned, or Unconscious condition. &#13;
+			When you feed, roll up to 2d6+{{vmbb:thin blooded:modifier}}. The creature takes Necrotic damage equal to the roll's total. This damage only reduces the creature's HP maximum by an amount equal to the roll's total. If you roll a 6 on a d6 on a Feed Die, you can regain 1 expended Blood Point. If a creature's HP maximum is reduced to 0, you can regain 1 expended Blood Point. &#13;
+			If you feed on a willing creature or a creature Charmed by you, it can spend 1 HP Die. It rolls the HP Die and reduces its HP maximum by the amount rolled, and you can regain 1 Blood Point. Feeding in this way doesn't end the Charmed condition. If a creature has no remaining HP Dice, the creature takes Necrotic damage equal to a roll of your Feed Dice plus {{constitution:modifier}}, and the creature's HP maximum is reduced by an amount equal to the roll's total. A creature can provide a number of Blood Points based on its size (Small = 1, Medium = 3, Large = 5, Huge = 7, Gargantuan = 10). A creature regains all Blood Points when it finishes a Long Rest. &#13;
+			Charisma is your spellcasting ability for spells from your Kindred feats. Your spells require no Verbal or Somatic components, and they require no Material components unless they are consumed by the spell or have a cost specified in it. Taking damage can't break your Concentration for spells cast using this feature.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_GFG_VMBB_GRANTS_KINDRED_CLASS_REQUIREMENT" />
+			
+			<stat name="vmbb:thin blooded:modifier" value="1" bonus="bonus" />
+			<stat name="vmbb:thin blooded:modifier" value="constitution:modifier" bonus="bonus" />
+			
+			<stat name="vmbb:thin blooded:points" value="proficiency" bonus="base" />
+			<stat name="vmbb:thin blooded:points" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Well-Read" type="Feat" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_FEAT_WELL_READ">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You grew up with your nose buried in books. You gain the following benefits.</p>
+			<p class="indent"><b><i>Creature Lore.</i></b> When you roll Initiative, you can recall lore about a creature you can see within 30 feet of yourself; you know one Immunity, Resistance, Vulnerability, or Trait of that creature. You decide when you use this ability.</p>
+			<p class="indent"><b><i>Font of Useful Knowledge.</i></b> When you roll a 1 on an Intelligence (Arcana or History) check, you can reroll the die, and you must use the new roll.</p>
+			<p class="indent"><b><i>Rare Knowledge.</i></b> If you succeed on an Intelligence (Arcana or History) check, you learn additional lore. The GM has final say on what you learn, if anything. The lore might consist of important details, amusing revelations, or even secret lore that has never been widely known. The more information you already know about the thing, the more precise and detailed the information you receive is. That information is accurate but might be couched in figurative language or poetry, as determined by the GM.</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative, you can recall lore about a creature you can see within 30 ft of yourself; you know one Immunity, Resistance, Vulnerability, or Trait of that creature. You decide when you use this ability. &#13;
+			Additionally, when you roll a 1 on an Intelligence (Arcana or History) check, you can reroll the die, and you must use the new roll. If you succeed on an Intelligence (Arcana or History) check, you learn additional lore. The lore might consist of important details, amusing revelations, or even secret lore that has never been widely known. The more information you already know about the thing, the more precise and detailed the information you receive is. That information is accurate but might be couched in figurative language or poetry.</description>
+		</sheet>
+	</element>
+
+</elements>

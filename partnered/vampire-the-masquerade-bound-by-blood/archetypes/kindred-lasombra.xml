@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lasombra</name>
+		<description>Lasombra from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="kindred-lasombra.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-lasombra.xml" />
+		</update>
+	</info>
+
+	<element name="Lasombra" type="Archetype" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_KINDRED_LASOMBRA">
+		<supports>VMBB Kindred Subclass</supports>
+		<description>
+			<p class="flavor">Manipulate Darkness and Weakness with Ease</p>
+			<p>Kindred are creatures of darkness, but none so much as the Lasombra. They are masters infused with the inky abyss from which they draw their power, turning shadows into an extension of themselves.</p>
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_LASOMBRA_BANE" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_TASTE_OF_OBLIVION" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_ABYSSAL_STRENGTH" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_TENEBROUS_FORM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_LASOMBRA_BANE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_TASTE_OF_OBLIVION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_ABYSSAL_STRENGTH" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_TENEBROUS_FORM" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Lasombra Bane" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_LASOMBRA_BANE">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_LASOMBRA_BANE</requirements>
+		<description>
+			<p>Lasombra don't tolerate failure, especially their own. When you roll a 1 on the d20 of a D20 Test, you have Disadvantage on the next D20 Test you make within 1 minute.</p>
+		</description>
+		<sheet alt="Lasombra Bane">
+			<description>When you roll a 1 on the d20 of a D20 Test, you have Disadvantage on the next D20 Test you make within 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Taste of Oblivion" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_TASTE_OF_OBLIVION">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_TASTE_OF_OBLIVION</requirements>
+		<description>
+			<p>You are infused with the essence of darkness itself, gaining the following benefits.</p>
+			<p class="indent"><em><strong>Oblivion's Sight.</strong></em> You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
+			<p class="indent"><em><strong>Shadow Cloak.</strong></em> You have Advantage on Dexterity (Stealth) checks, and you can take the Hide action as a Bonus Action.</p>
+		</description>
+		<sheet alt="Taste of Oblivion">
+			<description>You can see normally in magical Dim Light and Darkness within 120 ft of yourself. &#13;
+			In addition, you have Advantage on Dexterity (Stealth) checks, and you can take the Hide action as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Shadow Mastery" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_SHADOW_MASTERY</requirements>
+		<description>
+			<p>You can call forth different aspects of the abyssal darkness.</p>
+			<p class="indent"><em><strong>Arms of Ahriman.</strong></em> You can expend 2 Blood Points to cast the <i>Black Tentacles</i> spell. When you cast the spell in this way, the <i>Black Tentacles</i> deal 1d6 Bludgeoning damage and 2d6 Cold damage (instead of 3d6 Bludgeoning damage).</p>
+			<p class="indent"><em><strong>Shrouding.</strong></em> You can expend 1 Blood Point to cast the <i>Darkness</i> spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY_ARMS_OF_AHRIMAN" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY_SHROUDING" />
+		</rules>
+	</element>
+	<element name="Arms of Ahriman" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY_ARMS_OF_AHRIMAN">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 2 Blood Points to cast the <i>Black Tentacles</i> spell. When you cast the spell in this way, the <i>Black Tentacles</i> deal 1d6 Bludgeoning damage and 2d6 Cold damage (instead of 3d6 Bludgeoning damage).</p>
+		</description>
+		<sheet usage="2 Blood Points">
+			<description>You can cast the Black Tentacles spell. When you cast the spell in this way, the Black Tentacles deal 1d6 Bludgeoning damage and 2d6 Cold damage (instead of 3d6 Bludgeoning damage).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" />
+		</rules>
+	</element>
+	<element name="Shrouding" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_SHADOW_MASTERY_SHROUDING">
+		<compendium display="false" />
+		<description>
+			<p>ou can expend 1 Blood Point to cast the <i>Darkness</i> spell.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Darkness spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Force of Will" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_FORCE_OF_WILL</requirements>
+		<description>
+			<p>You can focus your will upon others in a mental vise of your supernatural dominance.</p>
+			<p class="indent"><em><strong>Mesmerize.</strong></em> You can expend 1 Blood Point to cast the <i>Suggestion</i> spell.</p>
+			<p class="indent"><em><strong>Shhh...</strong></em> As a Magic action, you can expend 1 Blood Point to mentally lull a creature that you can see within 15 feet of yourself to sleep. The creature must succeed on a Wisdom saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or gain the Unconscious condition for 10 minutes. The effect ends if it takes damage or someone within 5 feet takes an action to shake it out of the effect. Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this effect.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL_MESMERIZE" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL_SHHH" />
+		</rules>
+	</element>
+	<element name="Mesmerize" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL_MESMERIZE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend 1 Blood Point to cast the <i>Suggestion</i> spell.</p>
+		</description>
+		<sheet usage="Blood Point">
+			<description>You can cast the Suggestion spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUGGESTION" />
+		</rules>
+	</element>
+	<element name="Shhh..." type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_FORCE_OF_WILL_SHHH">
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, you can expend 1 Blood Point to mentally lull a creature that you can see within 15 feet of yourself to sleep. The creature must succeed on a Wisdom saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or gain the Unconscious condition for 10 minutes. The effect ends if it takes damage or someone within 5 feet takes an action to shake it out of the effect. Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this effect.</p>
+		</description>
+		<sheet action="Action" usage="Blood Point">
+			<description>You can lull a creature that you can see within 15 ft of yourself to sleep. The creature must succeed on a DC{{vmbb:shhh:dc}} Wisdom save or gain the Unconscious condition for 10 minutes. The effect ends if it takes damage or someone within 5 ft takes an action to shake it out of the effect. Creatures that don't sleep or that have Immunity to the Exhaustion condition automatically succeed on saves against this effect.</description>
+		</sheet>
+		<rules>
+			<stat name="vmbb:shhh:dc" value="8" bonus="base" />
+			<stat name="vmbb:shhh:dc" value="charisma:modifier" bonus="modifier" />
+			<stat name="vmbb:shhh:dc" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Level 11: Abyssal Strength" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_ABYSSAL_STRENGTH">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_ABYSSAL_STRENGTH</requirements>
+		<description>
+			<p>You are a creature of darkness able to tap into a fierce wellspring of physical power.</p>
+			<p class="indent"><em><strong>Monstrous Might.</strong></em> As a Bonus Action, you can expend 2 Blood Points to increase your Strength score by an amount equal to your Proficiency Bonus for 1 minute.</p>
+		</description>
+		<sheet alt="Abyssal Strength" action="Bonus Action" usage="2 Blood Points">
+			<description>You can increase your Strength score by {{proficency}} for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Crush Weakness" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_CRUSH_WEAKNESS</requirements>
+		<description>
+			<p>You can focus your will upon others in a mental vise of your supernatural dominance.</p>
+			<p class="indent"><em><strong>Dark Judgement.</strong></em> When a creature you can see within 30 feet of you fails an ability check or saving throw, you can take a Reaction to expend 2 Blood Points to deal 4d8 Psychic damage to that creature.</p>
+			<p class="indent"><em><strong>Obliviate</strong></em> When a creature that you can see within 10 feet of you misses an attack roll, you can take a Reaction and expend 2 Blood Points to deal 2d8 Bludgeoning damage and 2d8 Cold damage to that creature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS_DARK_JUDGEMENT" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS_OBLIVIATE" />
+		</rules>
+	</element>
+	<element name="Dark Judgement" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS_DARK_JUDGEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When a creature you can see within 30 feet of you fails an ability check or saving throw, you can take a Reaction to expend 2 Blood Points to deal 4d8 Psychic damage to that creature.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Blood Points">
+			<description>When a creature you can see within 30 ft of you fails an ability check or saving throw, you can deal 4d8 Psychic damage to that creature.</description>
+		</sheet>
+	</element>
+	<element name="Obliviate" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_CRUSH_WEAKNESS_OBLIVIATE">
+		<compendium display="false" />
+		<description>
+			<p>When a creature that you can see within 10 feet of you misses an attack roll, you can take a Reaction and expend 2 Blood Points to deal 2d8 Bludgeoning damage and 2d8 Cold damage to that creature.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Blood Points">
+			<description>When a creature that you can see within 10 ft of you misses an attack roll, you can deal 2d8 Bludgeoning damage and 2d8 Cold damage to that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Tenebrous Form" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_LASOMBRA_TENEBROUS_FORM">
+		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_TENEBROUS_FORM</requirements>
+		<description>
+			<p>Your body can be wreathed in a whirling, armored skin of tangible darkness. As a Magic action, you can expend 5 Blood Points to assume a Tenebrous Form for 1 minute. While in your Tenebrous Form, you gain the following benefits.</p>
+			<p class="indent"><em><strong>Armored by Darkness.</strong></em> You have a +4 bonus to AC.</p>
+			<p class="indent"><em><strong>Dark Vigor.</strong></em> You gain 4d10 Temporary Hit Points.</p>
+			<p class="indent"><em><strong>Extend Shadows.</strong></em> You can expend 1 Blood Point to increase the duration of Tenebrous Form by 1 minute.</p>
+			<p class="indent"><em><strong>Power of Oblivion.</strong></em> You have Advantage on Strength and Constitution checks and saving throws.</p>
+			<p class="indent"><em><strong>Shadowstep.</strong></em> You can expend 1 Blood Point to cast the <i>Misty Step</i> spell, but the unoccupied space you travel to must be in Dim Light or Darkness.</p>
+			<p class="indent"><em><strong>Umbral Limbs.</strong></em> When you make an Unarmed Strike, your reach is 5 feet greater than normal, you can deal an extra 2d10 Cold damage to a target you hit with an Unarmed Strike, and you can grapple a creature if it is Huge or smaller.</p>
+		</description>
+		<sheet alt="Tenebrous Form" action="Action" usage="5 Blood Points">
+			<description>You can assume a Tenebrous Form for 1 minute. While in your Tenebrous Form, you gain the following benefits: &#13;
+			• You have a +4 bonus to AC. &#13;
+			• You gain 4d10 THPs. &#13;
+			• You can expend 1 Blood Point to increase the duration of Tenebrous Form by 1 minute. &#13;
+			• You have Advantage on Strength and Constitution checks and saving throws. &#13;
+			• You can expend 1 Blood Point to cast the Misty Step spell, but the unoccupied space you travel to must be in Dim Light or Darkness. &#13;
+			• When you make an Unarmed Strike, your reach is 5 ft greater than normal, you can deal an extra 2d10 Cold damage to a target you hit with an Unarmed Strike, and you can grapple a creature if it is Huge or smaller.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Lasombra Bane Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_LASOMBRA_BANE" />
+	<element name="Tales of Oblivion Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_TALES_OF_OBLIVION" />
+	<element name="Shadow Mastery Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_SHADOW_MASTERY" />
+	<element name="Force of Will Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_FORCE_OF_WILL" />
+	<element name="Abyssal Strength Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_ABYSSAL_STRENGTH" />
+	<element name="Crush Weakness Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_CRUSH_WEAKNESS" />
+	<element name="Tenebrous Form Feature Replacement" type="Grants" source="Internal" id="ID_GFG_VMBB_FEATURE_REPLACEMENT_KINDRED_LASOMBRA_TENEBROUS_FORM" />
+	
+</elements>

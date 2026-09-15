@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Vampire the Masquerade: Bound by Blood by Ghostfire Gaming</name>
+		<update version="1.0.0">
+			<file name="vampire-the-masquerade-bound-by-blood.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood.index" />
+		</update>
+	</info>
+	<files>
+		<file name="class-kindred.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/class-kindred.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/source.xml" />
+		
+		<!--Archetypes-->
+		<file name="kindred-brujah.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-brujah.xml" />
+		<file name="kindred-gangrel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-gangrel.xml" />
+		<file name="kindred-lasombra.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-lasombra.xml" />
+		<file name="kindred-nosferatu.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-nosferatu.xml" />
+		<file name="kindred-toreador.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-toreador.xml" />
+		<file name="kindred-ventrue.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-ventrue.xml" />
+
+		<!--Backgrounds-->
+		<file name="background-ghoul.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-ghoul.xml" />
+		<file name="background-ritualist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-ritualist.xml" />
+		<file name="background-scholar-of-the-hunt.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-scholar-of-the-hunt.xml" />
+		<file name="background-thrall.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-thrall.xml" />
+		<file name="background-touchstone.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/backgrounds/background-touchstone.xml" />
+
+		<!--Feats-->
+		<file name="feats-kindred.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/feats/feats-kindred.xml" />
+		<file name="feats-origin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/feats/feats-origin.xml" />
+		
+		<!--Items-->
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/items/items-gear.xml" />
+		<file name="items-packs.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/items/items-packs.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/items/items-weapons.xml" />
+	</files>
+</index>

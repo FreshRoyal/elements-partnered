@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<description>Adventuring Gear from Vampire the Masquerade: Bound by Blood</description>
+		<update version="0.0.1">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/items/items-gear.xml" />
+		</update>
+	</info>
+
+	<element name="Kindred Vitae" type="Magic Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_MAGIC_ITEM_KINDRED_VITAE">
+		<description>
+			<p>Vitae, blood from within a Kindred, has powerful properties that are passed on when imbibed by a non-Kindred. A single Blood Point can be stored in a drinkable vessel for up to 48 hours without alchemical treatment. When you drink this potion, you gain the following effects.</p>
+			<p class="indent"><i><b>Increased Strength and Speed:</b></i> Your Strength score increases by 2, and your Speed increases by 5 feet for 1 week.</p>
+			<p class="indent"><i><b> Increased Vitality:</b></i> You gain 2d6 Temporary Hit Points.</p>
+			<p class="indent"><i><b>Reduced Aging:</b></i> You physically ignore the next year of natural aging.</p>
+			<p class="indent">However, mortals who drink this potion are more susceptible to the powers of the Undead. For the period of 1 year, you have Disadvantage on saving throws against being Charmed or Frightened by Undead.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, ability score increase, speed, temporary hit points, aging, undead, disadvantage, saves, charmed, frightened</set>
+			<set name="category">Potions</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Leather Undervest" type="Item" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ITEM_LEATHER_UNDERVEST">
+		<description>
+			<p>These layered leather patches are worn under clothing or armor. The vest fits over the upper chest and back, protecting several internal organs from puncture, particularly the heart. While wearing a leather undervest, you gain the following benefits.</p>
+			<p class="indent"><i><b>Underarmor.</b></i> The leather undervest can be worn with any type of armor.</p>
+			<p class="indent"><i><b>Limited Flexibility.</b></i> The undervest allows a max Dexterity modifier of 3.</p>
+			<p class="indent"><i><b>Pierce Protection.</b></i> When you're hit by an attack while you're wearing a leather undervest, any Piercing damage dealt to you by that attack is reduced by 2. In addition, Intelligence (Medicine) checks to stake you in the heart have Disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing, damage, reduce, reduction</set>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+
+</elements>
