@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Items from Monsters of Drakkenheim</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/monsters-of-drakkenheim/items.xml" />
 		</update>
 	</info>
@@ -309,6 +309,15 @@
 			<p class="indent">While the gauntlets have 5 or more charges, your Unarmed Strikes deal an additional 2d6 Lightning damage and push the target 10 feet away from you on a hit.</p>
 			<p class="indent">You can expend 2 charges from the gauntlets to cast the <i>Shield</i> spell.</p>
 			<p class="indent">You can expend 10 charges from the gauntlets to cast <i>Destructive Wave</i> or <i>Wall of Force</i>, using your monk's focus saving throw DC.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_SHIELD" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_DESTRUCTIVE_WAVE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_WALL_OF_FORCE" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">monk, unarmed strike, lightning, damage, push, spells, shield, destructive wave, wall of force</set>
