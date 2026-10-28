@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Items from Frontiers of Eberron: Quickstone</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/frontiers-of-eberron-quickstone/items.xml" />
 		</update>
 	</info>
@@ -269,7 +269,13 @@
 			<p>This colorful, jellyfish-like blob has been carefully cultivated by Quickstone's schoolmaster, Tragomir "Ink" Narathun, to impart a full curriculum to its host—though he has yet to convince anyone to partake. To attune to this item, you must hold it to one ear for the full Attunement period, during which time its stringy tentacles reach inside your ear canal and secure the aide in place. The symbiont does not impair your hearing while it is attached.</p>
 			<p class="indent"><strong><em>Spells.</em></strong> The symbiont has 4 charges. You can use a Magic action to expend 1 or more of its charges to cast one of the following spells (save DC 15) from it: <i>Enhance Ability</i> (2 charges) or <i>Comprehend Languages</i> (1 charge).</p>
 			<p class="indent">The symbiont regains 1d4 expended charges daily at dawn.</p>
-			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The aide can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the aide ends, and it detaches from your ear.</p> 
+			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The aide can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the aide ends, and it detaches from your ear.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_ENHANCE_ABILITY" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">action, spells, enhance ability, comprehend languages</set>
@@ -311,7 +317,10 @@
 			<p class="indent"><strong><em>Surety of Dominance.</em></strong> While attuned to the warhorn, no creature can assert its influence over you. You cannot be Charmed or Frightened. If a creature targets you with a magical effect that would cause you to be Charmed or Frightened, that creature takes 4d10 Psychic damage.</p> 
 			<p class="indent"><strong><em>Thaumaturgic Clarion.</em></strong> If you blow <i>Kharash's Promise</i>, the sound it produces can be heard by all creatures within 1 mile.</p> 
 			<p class="indent"><strong><em>Promised End.</em></strong> As a Magic action when you blow the horn, you can choose one creature that you can see and that can hear the horn to suffer a painful and inevitable end. The target must make a DC 20 Charisma saving throw. On a failed save, the target's Hit Point maximum is reduced by 1 at the start of each of its turns until it dies, you die, you are no longer on the same plane of existence as the target, or the effect is ended with a <i>Wish</i> spell. Once this property is used, you cannot do so again until 13 days have passed.</p> 
-			<p class="indent">As a Bonus Action while affected, the target can choose to confront the source of its inevitable end, teleporting to an unoccupied space within 5 feet of you.</p> 
+			<p class="indent">As a Bonus Action while affected, the target can choose to confront the source of its inevitable end, teleporting to an unoccupied space within 5 feet of you.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG24_ARTIFACT_TABLE" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">bard, warhorn, charmed, frightened, psychic, damage, sound, action, charisma, save, hit point maximum</set>
@@ -483,7 +492,16 @@
 			<p class="indent"><strong><em>Command Aberration.</em></strong> As a Magic action, you can cast <i>Dominate Monster</i> on an Aberration (save DC 18). Once this property is used, you cannot do so again until the next dawn.</p> 
 			<p class="indent"><strong><em>Petrifying Touch.</em></strong> The power of the stone shaper flows from you—despite what you may will. Any creature that you touch with your stone fingertips is affected as if you had cast <i>Flesh to Stone</i> (spell save DC 18). You do not need to concentrate on the effect, and you cannot choose to end it.</p> 
 			<p class="indent"><strong><em>Stone Speaking.</em></strong> As a Magic action, you imbue stones in an immobile 30-foot Emanation with limited sentience, giving them the ability to communicate with you. You can question stones about events in the effects area within the past day, gaining information about creatures that have passed, items that might have been removed from the area, and other circumstances. If an <strong>Earth Elemental</strong> or Petrified creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.</p>
-			<p class="indent"><strong><em>Greater Symbiotic Nature.</em></strong> The arm can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. Your Attunement to the arm can only be ended by a <i>Wish</i> spell.</p> 
+			<p class="indent"><strong><em>Greater Symbiotic Nature.</em></strong> The arm can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. Your Attunement to the arm can only be ended by a <i>Wish</i> spell.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG24_ARTIFACT_TABLE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_DOMINATE_MONSTER" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_FLESH_TO_STONE" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">aberration, action, spells, dominate monster, flesh to stone, emanation</set>
@@ -517,7 +535,13 @@
 			<p>This ancient, heavy marble torc is strangely warm to the touch. Though it resembles stone jewelry, the torc is in fact a simple symbiont which grants a limited form of control over earth and the ability to manipulate quickstone without the usual rituals. To attune to it, you must wear it around your neck for the full Attunement period, during which time it coils around your throat like a snake.</p>
 			<p class="indent">While wearing the torc, you can use a Magic action to transform a 5-foot cube of quickstone between its soft and wet forms, or irreversibly change it into its fixed form.</p>
 			<p class="indent"><strong><em>Spells.</em></strong> As an Action, you can use the symbiote to cast <i>Mold Earth</i> or <i>Meld into Stone</i>. Once you use the torc to cast Meld into Stone, the spell can't be cast in this way until the next dusk.</p> 
-			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The torc can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the torc ends, and it uncoils from around your neck.</p> 
+			<p class="indent"><strong><em>Symbiotic Nature.</em></strong> The torc can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the torc ends, and it uncoils from around your neck.</p>
+			<div class="reference">
+				<div element="ID_XGTE_SPELL_MOLD_EARTH" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_MELD_INTO_STONE" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">action, spells, mold earth, meld into stone, symbiont</set>
@@ -572,6 +596,9 @@
 			<p>This Dagger is said to have been created by Kethelrax the Cunning, the kobold warlord of Shaarat Kol. Its short, crimson blade resembles a red dragon's scale, and tiny flames dance along its edge.</p>
 			<p class="indent">While you are holding this Dagger, you can use it as a Spellcasting Focus for your spells. Additionally, you can cast <i>Fire Bolt</i> as a Magic action, using Intelligence, Wisdom, or Charisma (you choose when you Attune to the dagger) as the spellcasting ability.</p>
 			<p class="indent">Whenever you hit with a weapon attack using this Dagger, you can choose to deal Fire damage instead of Piercing damage.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">dagger, spellcasting focus, spell, fire bolt, fire, damage</set>
@@ -595,6 +622,9 @@
 				<li>When you hit a target with a Melee attack using Shock, you can expend 1 charge as a bonus action to deal an additional 2d8 Lightning damage. A creature affected by this damage can't take Reactions until the start of its next turn.</li>
 				<li>When you hit a target with a Melee attack using Ore, you can expend 1 charge to cast <i>Earth Tremor</i> as a Reaction, centered on the target.</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_XGTE_SPELL_EARTH_TREMOR" />
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">war picks, light, melee, attack, lightning, damage, spell, earth tremor, reaction, unique</set>
