@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells</name>
 		<description>Spells from Cthulhu by Torchlight</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/spells.xml" />
 		</update>
 	</info>
@@ -62,7 +62,7 @@
 	</element>
 
 	<element name="Cat's Spring" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_CATS_SPRING">
-		<supports>Bard, Druid, Sorcerer, Warlock, Wizard, Spell Attack, Damaging Spell</supports>
+		<supports>Bard, Druid, Sorcerer, Warlock, Wizard, Spell Attack, Melee, Damaging Spell</supports>
 		<description>
 			<p>You jump up to 10 feet to an unoccupied space you can see and deliver a spectral claw attack that deals Slashing or Force damage (you choose when you cast the spell). Make a melee spell attack against a target. On a hit, the target takes 1d8 damage of the chosen type, and the next attack roll you make against it before the end of your next turn has Advantage.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
@@ -467,7 +467,7 @@
 	</element>
 
 	<element name="Umbral Tendril" type="Spell" source="Cthulhu by Torchlight" id="ID_CSM_CBT_SPELL_UMBRAL_TENDRIL">
-		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Attack</supports>
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Attack, Ranged</supports>
 		<description>
 			<p>You create a long tendril of life-stealing shadow that lashes out at a creature in range that you can see.</p>
 			<p class="indent">Make a ranged spell attack against the target. On a hit the target takes 2d8 Necrotic damage and you gain Temporary Hit Points equal to the damage dealt.</p>

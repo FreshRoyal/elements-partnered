@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells</name>
 		<description>Spells from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/spells.xml" />
 		</update>
 	</info>
@@ -64,7 +64,7 @@
 	</element>
 
 	<element name="Conjure Cannonball" type="Spell" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_SPELL_CONJURE_CANNONBALL">
-		<supports>Sorcerer, Wizard, Damaging Spell, Spell Saving Throw, TGCVSS Gun Mage Adept</supports>
+		<supports>Sorcerer, Wizard, Damaging Spell, Spell Saving Throw, Spell Attack, Ranged, TGCVSS Gun Mage Adept</supports>
 		<description>
 			<p>You summon a cannonball, mid-flight and at full velocity, which explodes on impact. Make a ranged spell attack roll against a target you can see within range. On a hit, the target takes 5d10 Bludgeoning damage and an explosion extends from it in a 5-foot Emanation. Each creature other than the target within the Emanation makes a Dexterity saving throw, taking half as much damage as the target on a failed save.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d10 for each slot level above 3.</p>
