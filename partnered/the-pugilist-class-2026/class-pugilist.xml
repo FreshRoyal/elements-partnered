@@ -3,7 +3,7 @@
 	<info>
 		<name>Pugilist</name>
 		<description>Pugilist from The Pugilist Class (2026)</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-pugilist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/class-pugilist.xml" />
 		</update>
 	</info>
@@ -530,7 +530,7 @@
 			<p style="margin-bottom:5px">This pack contains items that are given to a character of Pugilist Class, if you chose option A for Equipment.</p>
 			<p>You will receive following items by extracting contents of this pack:</p>
 			<p class="indent">• Club</p>
-			<p class="indent">•  Handaxe</p>
+			<p class="indent">• Handaxe</p>
 			<p class="indent" style="margin-bottom:5px">• Dungeoneer's Pack</p>
 			<p><b>Note:</b> This pack doesn't include the Gaming Set which was chosen for this Class's tool proficiency and 31 GP.</p>
 		</description>
