@@ -309,7 +309,7 @@
 		<requirements>!ID_SVAC_PUGILIST2026_FEATURE_REPLACEMENT_PUGILIST_ABILITY_SCORE_IMPROVEMENTS</requirements>
 		<compendium display="false" />
 		<description>
-			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.</p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Pugilist levels 8, 12, and 16.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
