@@ -3,7 +3,7 @@
 	<info>
 		<name>Pugilist</name>
 		<description>Pugilist from The Pugilist Class (2026)</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-pugilist.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026/class-pugilist.xml" />
 		</update>
 	</info>
@@ -384,7 +384,7 @@
 		<sheet alt="School of Hard Knocks" usage="1/Turn">
 			<description>You can deal an extra 1d12 damage when you hit with an Unarmed Strike or attack with a Pugilist weapon. This damage is the same type dealt by the weapon or Unarmed Strike. You can forgo this extra damage to apply one of the following effects: &#13;
 			• Endanger. The next time the creature is hit by an attack, the attack deals the maximum result of the attack's damage dice rather than rolling. &#13;
-			•  Provoke. The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</description>
+			• Provoke. The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn.</description>
 		</sheet>
 	</element>
 
