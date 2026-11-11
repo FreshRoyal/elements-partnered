@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shadow Court</name>
+		<description>Shadow Court from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="magus-shadow-court.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-shadow-court.xml" />
+		</update>
+	</info>
+
+	<element name="Shadow Court" type="Archetype" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_MAGUS_SHADOW_COURT">
+		<supports>MAGUS2026 Magus Subclass</supports>
+		<description>
+			<p class="flavor">Fight for Control from the Shadows</p>
+			<p>Although outsiders see the Shadow Court as a singular group, it is in fact multiple clans that wage clandestine wars against one another to obtain secrets and access to resources. Magi in the Shadow Court specialize in legerdemain, stealth, and assassination. Using these tools, these Magi manipulate political powers to stymie their enemies and advance their own agendas.</p>
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_SHADOW_COURT_MAGIC" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_BROKEN_MIRROR_JUTSU" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_FALSE_BODY_JUTSU" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_SHADOW_COURT_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_BROKEN_MIRROR_JUTSU" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_FALSE_BODY_JUTSU" level="14" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hand and Foot Training" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Covert Warrior.</strong></em> You gain proficiency in the Stealth skill and with Thieves' Tools. If you are already proficient with Stealth, you gain Expertise in it instead.</p>
+			<p class="indent"><em><strong>Enshadowed Equipment.</strong></em> You can take a Bonus Action to cause one of the following objects to magically coalesce from shadows in your hands: Caltrops, Costume, Crowbar, Grappling Hook, Ladder, Net, Parchment, Rope, Signal Whistle, Spyglass, or Thieves' Tools. This item remains until it has been exposed to Bright Light for 10 minutes, you dismiss it (no action required), or you use this Bonus Action again.</p>
+			<p class="indent">You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><em><strong>Martial Artist.</strong></em> You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes, and you can roll 1d6 in place of the normal damage of your Unarmed Strike. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING_ENSHADOWED_EQUIPMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING_MARTIAL_ARTIST" level="3" />
+		</rules>
+	</element>
+	<element name="Enshadowed Equipment" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING_ENSHADOWED_EQUIPMENT">
+		<compendium display="false" />
+		<description>
+			<p>You can take a Bonus Action to cause one of the following objects to magically coalesce from shadows in your hands: Caltrops, Costume, Crowbar, Grappling Hook, Ladder, Net, Parchment, Rope, Signal Whistle, Spyglass, or Thieves' Tools. This item remains until it has been exposed to Bright Light for 10 minutes, you dismiss it (no action required), or you use this Bonus Action again.</p>
+			<p class="indent">You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{magus2026:enshadowed equipment:usage}}/Long Rest">
+			<description>You can cause one of the following objects to coalesce in your hands: Caltrops, Costume, Crowbar, Grappling Hook, Ladder, Net, Parchment, Rope, Signal Whistle, Spyglass, or Thieves' Tools. This item remains until it has been exposed to Bright Light for 10 minutes, you dismiss it (no action required), or you use this Bonus Action again.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:enshadowed equipment:usage" value="1" bonus="bonus" />
+			<stat name="magus2026:enshadowed equipment:usage" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="Martial Artist" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING_MARTIAL_ARTIST">
+		<compendium display="false" />
+		<description>
+			<p>You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes, and you can roll 1d6 in place of the normal damage of your Unarmed Strike. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.</p>
+		</description>
+		<sheet>
+			<description>Your Unarmed Strikes deal 1d6+{{magus2026:martial arts:ability modifier}} Bludgeoning damage, and your Grapple or Shove DC is {{magus2026:martial arts:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:martial arts:ability modifier" value="strength:modifier" bonus="ability" />
+			<stat name="magus2026:martial arts:ability modifier" value="dexterity:modifier" bonus="ability" />
+			<stat name="magus2026:martial arts:dc" value="8" />
+			<stat name="magus2026:martial arts:dc" value="proficiency" />
+			<stat name="magus2026:martial arts:dc" value="magus2026:martial arts:ability modifier" bonus="ability" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Jade Mark" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_JADE_MARK</requirements>
+		<description>
+			<p>The effects of your mystic marks are enhanced by your greater understanding of the Shadow Court's esoteric knowledge. When you use your Mystic Mark feature, you are engulfed in an aura of translucent smoke and you gain the following effects based on the benefit or benefits chosen.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> When a creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to give the creature the Invisible condition until the end of its next turn. The condition ends early if the target makes an attack roll, deals damage, or casts a spell.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> Once per turn when you hit a creature with a weapon or Unarmed Strike, you can make the target overexposed until the start of your next turn or until it is hit with a Critical Hit. While overexposed, attack rolls against the target can score a Critical Hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet alt="Jade Mark">
+			<description>When you use your Mystic Mark feature, you gain the following effects based on the benefit or benefits chosen.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Aegis" supports="MAGUS2026 Jade Mark Aegis" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK_AEGIS" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_JADE_MARK_AEGIS"/>
+			<select type="Archetype Feature" name="Enspell" supports="MAGUS2026 Jade Mark Enspell" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK_ENSPELL" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_JADE_MARK_ENSPELL"/>
+		</rules>
+	</element>
+	<element name="Aegis" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK_AEGIS">
+		<compendium display="false" />
+		<supports>MAGUS2026 Jade Mark Aegis</supports>
+		<description>
+			<p>When a creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to give the creature the Invisible condition until the end of its next turn. The condition ends early if the target makes an attack roll, deals damage, or casts a spell.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see within 30 ft of you is hit by an attack, you can give the creature the Invisible condition until the end of its next turn. The condition ends early if the target makes an attack roll, deals damage, or casts a spell.</description>
+		</sheet>
+	</element>
+	<element name="Enspell" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_JADE_MARK_ENSPELL">
+		<compendium display="false" />
+		<supports>MAGUS2026 Jade Mark Enspell</supports>
+		<description>
+			<p>Once per turn when you hit a creature with a weapon or Unarmed Strike, you can make the target overexposed until the start of your next turn or until it is hit with a Critical Hit. While overexposed, attack rolls against the target can score a Critical Hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon or Unarmed Strike, you can make the target overexposed until the start of your next turn or until it is hit with a Critical Hit. While overexposed, attack rolls against the target can score a Critical Hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Shadow Court Magic" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_SHADOW_COURT_MAGIC">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_SHADOW_COURT_MAGIC</requirements>
+		<description>
+			<p>You can use Parchment as a Spellcasting Focus for your Magus spells. When you do, if the spell is level 1+ the Parchment is destroyed.</p>
+			<p class="indent">In addition, your training in the Shadow Court ensures you always have certain spells ready; when you reach a Magus level specified in the Shadow Court Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Shadow Court Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Magus Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Disguise Self, Forced Hesitation, Phantasmal Feint, Obscuring Prick</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Darkness, Invisibility</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Hypnotic Pattern, Major Image</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Greater Invisibility, Phantasmal Killer</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Mislead, Seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Shadow Court Magic">
+			<description>You can use Parchment as a Spellcasting Focus for your Magus spells. When you do, if the spell is level 1+ the Parchment is destroyed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_FORCED_HESITATION" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_PHANTASMAL_FEINT" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_OBSCURING_PRICK" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HYPNOTIC_PATTERN" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAJOR_IMAGE" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISLEAD" level="17" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEEMING" level="17" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Broken Mirror Jutsu" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_BROKEN_MIRROR_JUTSU">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_BROKEN_MIRROR_JUTSU</requirements>
+		<description>
+			<p>You always have the <i>Mirror Image</i> spell prepared.</p>
+			<p class="indent">You can use a Bonus Action to cast <i>Mirror Image</i> without expending a spell slot. When you do, each time a duplicate is destroyed the attacking creature must succeed on an Intelligence saving throw against your Magus spell save DC or take Psychic damage equal to your Magus level plus your Intelligence modifier.</p>
+			<p class="indent">Once you use this Bonus Action, you can't use it again until you finish a Long Rest unless you expend a level 2+ spell slot (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Broken Mirror Jutsu" action="Bonus Action" usage="1/Long Rest">
+			<description>You can cast Mirror Image without expending a spell slot. When you do, each time a duplicate is destroyed the attacking creature must succeed on a DC{{magus:spellcasting:dc}} Intelligence saving throw or take Psychic damage equal to your Magus level plus {{intelligence:modifier}}. &#13;
+			You can expend a level 2+ spell slot (no action required) to restore your use of this feature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE" level="7" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 14: False Body Jutsu" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_FALSE_BODY_JUTSU">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_FALSE_BODY_JUTSU</requirements>
+		<description>
+			<p>You can replace yourself with an unlikely body double in the instant before you take a blow. When you are hit by an attack, you can take a Reaction to reduce the damage from that attack to 1. When you do, you have the Invisible condition for 1 minute and teleport to an unoccupied space of your choice within 300 feet of you. You leave a block of wood or another harmless, mundane object in the space you teleported away from.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Font of Life" action="Reaction" usage="1/Long Rest">
+			<description>When you are hit by an attack, you can reduce the damage from that attack to 1. When you do, you have the Invisible condition for 1 minute and teleport to an unoccupied space of your choice within 300 ft of you. You leave a block of wood or another harmless, mundane object in the space you teleported away from.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Enshadowed Sifu" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Jade Spell Surge.</strong></em> You can expend the use of your Spell Surge to cast <i>Eyebite</i> or <i>Programmed Illusion</i>.</p>
+			<p class="indent"><em><strong>Shadow Puppeteer.</strong></em> When you finish a Short Rest, you can regain the use of your False Body Jutsu. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU_JADE_SPELL_SURGE" level="20" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU_SHADOW_PUPPETEER" level="20" />
+		</rules>
+	</element>
+	<element name="Jade Spell Surge" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU_JADE_SPELL_SURGE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend the use of your Spell Surge to cast <i>Eyebite</i> or <i>Programmed Illusion</i>.</p>
+		</description>
+		<sheet usage="Spell Surge">
+			<description>You can cast Eyebite or Programmed Illusion.</description>
+		</sheet>
+	</element>
+	<element name="Shadow Puppeteer" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU_SHADOW_PUPPETEER">
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can regain the use of your False Body Jutsu. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can regain the use of your False Body Jutsu.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Hand and Foot Training Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_HAND_AND_FOOT_TRAINING" />
+	<element name="Jade Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_JADE_MARK" />
+	<element name="Jade Mark: Aegis Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_JADE_MARK_AEGIS" />
+	<element name="Jade Mark: Enspell Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_JADE_MARK_ENSPELL" />
+	<element name="Shadow Court Magic Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_SHADOW_COURT_MAGIC" />
+	<element name="Broken Mirror Jutsu Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_BROKEN_MIRROR_JUTSU" />
+	<element name="False Body Jutsu Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_FALSE_BODY_JUTSU" />
+	<element name="Enshadowed Sifu Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SHADOW_COURT_ENSHADOWED_SIFU" />
+	
+</elements>

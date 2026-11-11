@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Animate Shield" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_ANIMATE_SHIELD">
+		<supports>Magus</supports>
+		<description>
+			<p>You cause the Shield used in this spell's casting to spring to life, flying of its own accord to defend you and your allies for the duration. The Shield animates in an unoccupied space of your choice within range. While it is animated, the Shield gives each creature of your choice within 5 feet of it a +2 bonus to AC if it is not wielding a Shield. The animate shield is a Small Construct with an AC equal to 12 plus your spellcasting ability modifier, 20 Hit Points, and Immunity to Poison and Psychic damage and all conditions.</p>
+			<p class="indent">As a Bonus Action on your later turns, you can cause the animate shield to fly up to 30 feet. This spell ends early if the animate shield is reduced to 0 Hit Points.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The animate shield's Hit Points increase by 10 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, construct, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Shield worth 1+ GP</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Animate Weapon" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_ANIMATE_WEAPON">
+		<supports>Magus</supports>
+		<description>
+			<p>You cause the weapon used in this spell's casting to spring to life, flying of its own accord to harass and harm your enemies for the duration. The weapon animates in an unoccupied space of your choice within range. While it persists, at the start of each of your turns, the animate weapon makes one attack against a target of your choice within 5 feet (if it is a Melee weapon without the Reach property), 10 feet (if it is a Melee weapon with the Reach property), or the weapon's Range (if it is a Ranged weapon or Melee weapon with the Thrown property). The weapon uses your spellcasting ability modifier for the attack and damage rolls instead of using Strength or Dexterity. The animate weapon is a Small Construct with an AC equal to 10 plus your spellcasting ability modifier, 20 Hit Points, and Immunity to Poison and Psychic damage and all conditions.</p>
+			<p class="indent">As a Bonus Action on your later turns, you can cause the animate weapon to fly up to 30 feet. This spell ends early if the animate weapon is reduced to 0 Hit Points.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The animate weapon's Hit Points increase by 10 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, construct, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon worth 1+ GP</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Arcane Invigoration" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_ARCANE_INVIGORATION">
+		<supports>Magus</supports>
+		<description>
+			<p>You sacrifice your life force to weave a mystic defense. Roll one or two of your unexpended Hit Point Dice, and gain a number of Temporary Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The number of unexpended Hit Point Dice you can roll increases by one for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">hit point dice, temporary hit points, thp, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Assess Enemy" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_ASSESS_ENEMY">
+		<supports>Magus, Ranger</supports>
+		<description>
+			<p>You divine the strengths and weaknesses of a creature you can see within range. You immediately learn if the target is Immune, Resistant, or Vulnerable to any damage types, and if so what types. In addition, for the duration you gain the following benefits:</p>
+			<ul>
+				<li>You know if the target is Bloodied.</li>
+				<li>Your attack rolls against the target score a Critical Hit on a roll of 19 or 20 on the d20.</li>
+				<li>When the target attacks you, you can use your Reaction to give the attack Disadvantage.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">information, immunity, resistance, vulnerablility, damage types, bloodied, critical hit, reaction, disadvantage</set>
+			<set name="level">4</set>
+			<set name="school">Divination</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Baffle" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_BAFFLE">
+		<supports>Bard, Magus, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You cause a creature to temporarily forget everything they've ever learned. The target must make an Intelligence saving throw. On a failure, it takes 1d4 Psychic damage and the first time it makes a D20 Test before the end of your next turn it takes a penalty equal to its Proficiency Bonus.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, save, psychic, damage, d20 test, penalty, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an obtusely written book</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Bitter Wind" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_BITTER_WIND">
+		<supports>Cleric, Druid, Magus, Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>The chill of mortality rattles through a creature of your choice within range. The target must succeed on a Constitution saving throw or take 1d8 Cold damage and lose all damage Resistances it has until the start of your next turn, or until it takes damage of a type it normally has Resistance to.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">constitution, save, cold, damage, resistances, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Carrionette" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_CARRIONETTE">
+		<supports>Warlock</supports>
+		<description>
+			<p>Ethereal strings spring from your fingers and wrap around the limbs of the triggering creature. If the creature is not a Construct or Undead, and doesn't have a Challenge Rating of 7+ ,it immediately dies if it is not already dead and, at the start of your next turn, you can instruct it where to move, choosing which of its Speeds to use (no action required). You can use a Bonus Action to issue a command for it to use an action of your choice from its stat block (except for casting a spell). This spell ends at the end of your turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The maximum Challenge Rating of a creature you can target with the spell increases by 3 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">immediately die, instant death, bonus action, command, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Reaction, which you take when a creature you can see within 60 feet is reduced to 0 Hit Points or dies</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cross brace</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Cascade of Hours" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_CASCADE_OF_HOURS">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>Time slows to a crawl for you and you alone. You complete one task that you can complete within 8 hours and that doesn't require interacting with another creature, in a pocket outside of time, such as traveling across a city, crafting an item, or reading a book. The stress of being nearly outside the flow of time prevents you from taking a Short or Long Rest while in the temporal pocket.</p>
+		</description>
+		<setters>
+			<set name="keywords">time, slow, 8 hours</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Caustic Claw" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_CAUSTIC_CLAW">
+		<supports>Druid, Magus, Sorcerer, Warlock, Damaging Spell, Melee, Spell Attack</supports>
+		<description>
+			<p>You attempt to strike a creature within range, causing its vital components to turn caustic and self-destructive. Make a melee spell attack against the target. On a hit, you deal 1d4 Acid damage and the target must expend and roll a Hit Point Dice if it has any. The target takes additional Poison damage equal to the result.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The Acid damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, attack, acid, poison, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Demiplanar Pitch" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_DEMIPLANAR_PITCH">
+		<supports> Magus, Sorcerer, Warlock, Damaging Spell, Ranged, Spell Attack</supports>
+		<description>
+			<p>You thrust your hand into empty space in front of you and punch through to a demiplane housing the contents of a random <i>Bag of Holding</i> somewhere in the multiverse, then launch whatever you can grab at a creature you can see within range. Make a ranged spell attack against the target, dealing 1d8 Bludgeoning, Piercing, or Slashing damage (your choice) on a hit. After you make the attack, the object teleports back to the demiplane it came from.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">bag of holding, ranged, attack, bludgeoning, piercing, slashing, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">90 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Ensorcelled Strike" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_ENSORCELLED_STRIKE">
+		<supports>Magus</supports>
+		<description>
+			<p>As part of casting this spell, you make an Unarmed Strike or attack with a weapon against a creature. On a hit, you deal damage as normal and the target is ensorcelled until the end of your next turn. While a creature is ensorcelled, it has Disadvantage on saving throws against spells, and spell attacks against it have Advantage. A target is no longer ensorcelled if it fails a saving throw against a spell or is hit by a spell attack.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> If the spell slot is level 2+, the attack deals an additional 1d6 Force damage for each slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">unarmed strike, weapon, disadvantage, saves, spell attacks, advantage, force, damage, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="First Speech" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_FIRST_SPEECH">
+		<supports>Bard, Druid, Sorcerer</supports>
+		<description>
+			<p>When the Tapestry was woven, the first creatures could communicate with one another perfectly through a speech that has long since been lost to time. Though the mortal mind cannot master such speech, you can temporarily learn it using this spell. For the duration you gain the ability to comprehend and verbally communicate with all creatures and plants, and whenever you make a Charisma (Deception, Intimidation, or Persuasion) check, you gain a bonus to the check equal to your spellcasting ability modifier (minimum of +1).</p>
+		</description>
+		<setters>
+			<set name="keywords">communicate, all creatures, plants, deception, intimidation, persuasion, bonus</set>
+			<set name="level">6</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">1 hour</set>
+		</setters>
+	</element>
+
+	<element name="Forced Hesitation" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_FORCED_HESITATION">
+		<supports>Bard, Ranger, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You tug on the threads of a creature's awareness at a pivotal moment. The target must succeed on a Wisdom saving throw or take 3d4 Psychic damage, and its Initiative roll is reduced by the highest result of the damage dice.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d4 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, psychic, damage, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Reaction, which you take when a creature you can see within range makes an Initiative roll</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Give Life" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_GIVE_LIFE">
+		<supports>Druid, Healing Spell</supports>
+		<description>
+			<p>By placing your hand on another creature, you transfer your life force to them. You expend and roll one of your Hit Point Dice. The target regains a number of Hit Points equal to the result of the roll.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> You can expend and roll an additional Hit Point Die when you reach levels 5 (2 total), 11 (3 total), and 17 (4 total).</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, hit points, hp, hit point dice, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Grave Bolt" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_GRAVE_BOLT">
+		<supports>Cleric, Warlock, Wizard, Damaging Spell, Healing Spell</supports>
+		<description>
+			<p>Negative energy crackles around your hand then shoots in a jagged black bolt from your outstretched fingers to a target of your choice that you can see within range. An Undead creature targeted by this spell regains 1d8 Hit Points, otherwise the target takes 1d8 Necrotic damage. A Humanoid creature who dies as a result of taking damage from this spell immediately transforms into a <strong>Zombie</strong> and acts at the start of the next round.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The Hit Points regained or damage dealt increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, hit points, hp, undead, necrotic, damage, humanoid, zombie, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of fetid swamp mud</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Grave Grasp" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_GRAVE_GRASP">
+		<supports>Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>You cause putrefied hands to burst out of the ground or another surface within range, grasping at a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target has the Restrained condition. While a creature has the Restrained condition from this spell, it can't regain Hit Points. The target, or another creature within 5 feet of the target, can use its action to free the target, ending the Restrained condition.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">ranged, spell attack, restrained, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Hateful Haunting" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_HATEFUL_HAUNTING">
+		<supports>Cleric, Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature within range who doesn't have the Deafened condition. The target hears the voices of its deceased ancestors heaping scorn upon it and must succeed on a Charisma saving throw or take 1d4 Psychic damage, plus an additional 1d4 Psychic damage the first time it fails a D20 Test before the end of its next turn.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Both the initial and additional damage increase by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, save, saving throw, psychic, damage, fail, d20 test, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Misfortunate Missle" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_MISFORTUNATE_MISSILE">
+		<supports>Bard, Sorcerer, Wizard, Damaging Spell, Ranged, Spell Attack</supports>
+		<description>
+			<p>Misfortune crystallizes into a physical force on your finger tips and launches where you direct it. Make a ranged spell attack against a creature you can see within range. On a hit, you deal 1d6 Force damage and before the start of your next turn, immediately after the target makes a D20 Test, you can use your Reaction to roll 1d4 and subtract it from the triggering roll's result.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">ranged, spell attack, force, damage, reaction, d20 test, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tuft of fur from a black cat</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Mortal Terror" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_MORTAL_TERROR">
+		<supports>Druid, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>A creature of your choice within range that can see you must succeed on a Wisdom saving throw or have the Frightened condition for the duration. While a creature has the Frightened condition from this spell, it suffers the following effects:</p>
+			<ul>
+				<li>When you deal damage to the target with an attack or spell, it takes an additional 1d4 Psychic damage.</li>
+				<li>If the target willingly moves more than half of its Speed in a turn it must immediately succeed on a Dexterity saving throw or have the Prone condition.</li>
+				<li>The target has Disadvantage on Wisdom (Perception) checks to notice actions, events, or creatures other than you.</li>
+			</ul>
+			<p class="indent">If the target cannot see you on its turn, it can use its action to make the saving throw again, ending the Frightened condition on a success.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, saving throw, frightened, psychic, damage, dexterity, prone, disadvantage, perception, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the skull of a deceased Humanoid</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Obscuring Prick" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_OBSCURING_PRICK">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A creature of your choice within range experiences a brief flash of pain in one of its eyes. The target must make a Wisdom saving throw. On a failure, it takes 1d4 Piercing damage and the target cannot see you, as if it had the Blinded condition, until the start of your next turn.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, saving throw, piercing, damage, blinded, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver needle</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Overexposure" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_OVEREXPOSURE">
+		<supports>Bard, Cleric, Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You cause a creature of your choice that you can see within range to shimmer with magical energy. When you do, the target must succeed on a Charisma saving throw or take 1d6 Radiant damage and become overexposed until it takes a Critical Hit or until the start of your next turn. While overexposed, attack rolls against the target can score a Critical Hit on a roll of 19 or 20.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, save, saving throw, radiant, damage, critical hit, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a twenty sided die</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Phantasmal Feint" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_PHANTASMAL_FEINT">
+		<supports>Bard, Magus, Sorcerer, Warlock, Wizard, Damaging Spell, Melee, Spell Attack</supports>
+		<description>
+			<p>You lash out with the toy used in this spell's casting. Make a melee spell attack against one creature of your choice within range. On a hit, you deal 1d6 Psychic damage and the next attack with a weapon or Unarmed Strike against the target before the start of your next turn has Advantage.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, spell attack, psychic, damage, attack, weapon, unarmed strike, advantage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="range">10 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a toy weapon</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Provoke" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_PROVOKE">
+		<supports>Magus</supports>
+		<description>
+			<p>A creature within range that doesn't have the Blinded and Deafened conditions is provoked by you for the duration of the spell. While provoked, the creature has Disadvantage on attack rolls against creatures other than you.</p>
+			<p class="indent">In addition, when the provoked creature attacks a creature other than you, you can use your Reaction to make an Unarmed Strike or attack with a weapon against it. On a hit, you deal the attack's normal damage and an additional 1d6 Force damage.</p>
+			<p class="indent">The effect of this spell ends early on a target if it ends its turn more than 60 feet away from you.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">provoked, disadvantage, attack rolls, reaction, unarmed strike, force, damage, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Reflect Magic" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_REFLECT_MAGIC">
+		<supports>Bard, Magus, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Shimmering interconnected hexagons momentarily appear around you, disrupting or redirecting a spell targeting you. The creature casting the spell makes an Intelligence saving throw. On a successful save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If the spell was cast with a spell slot, the slot is expended. On a failed save, you deflect the spell, choosing a new target, targets, or area for it as if you had cast the spell from your space. Once redirected, the spell is resolved as normal.</p>
+		</description>
+		<setters>
+			<set name="keywords">intelligence, save, saving throw, deflect, upcasting, higher-level spell slot</set>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction, which you take when you are targeted by, or within the area of, a spell</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a polished silver mirror worth 100+ GP, which this spell consumes</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Righteous Incitement" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_RIGHTEOUS_INCITEMENT">
+		<supports>Cleric, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You castigate a creature with words or a derisive strike. A creature you can see within range must make a Wisdom saving throw. On a failed save, the target takes 1d6 Radiant damage, and if it does not target you with an attack before the end of its next turn it takes an additional 1d6 Psychic damage.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Both the initial and additional damage increase by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, saving throw, radiant, damage, psychic, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Spell Aegis" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_SPELL_AEGIS">
+		<supports>Magus, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>You create a magical aegis with 3d8 Hit Points in an unoccupied space within range. When a creature within 10 feet of the aegis takes Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, or Thunder damage, you can choose for the aegis to take the damage instead. If this damage reduces the aegis to 0 Hit Points, the aegis is destroyed and the spell ends early. While this spell persists, you can use a Bonus Action to move the aegis to another unoccupied space within 60 feet of you.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The aegis's Hit Points increase by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid, cold, fire, force, lightning, necrotic, psychic, radiant, thunder, bonus action, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a turtle shell</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Strike Order" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_STRIKE_ORDER">
+		<supports>Bard, Magus, Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>You imbue your voice with supernatural authority and order a creature you can see within range that can hear and understand you to attack. The target must succeed on a Wisdom saving throw or immediately use its Reaction to make an attack against a creature of your choice other than itself within the reach or normal range of an attack it can make. The target makes this save with Advantage if it is Immune to the Charmed condition. The spell fails if the target is unable to take a Reaction or if there is no viable creature for it to attack.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> If you use a spell slot of level 6+, the duration increases to "Concentration, up to 1 minute", and you can use a Bonus Action on each of your subsequent turns for the duration to rebear the spells' effect. When you do, you can target the same creature or a different one within range.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, saving throw, reaction, attack, concentration, bonus action, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Stygian Blast" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_STYGIAN_BLAST">
+		<supports>Warlock, Wizard, Damaging Spell, Healing Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A black speck of dust floats to a point you choose within range before erupting with necrotic energy. Each Undead in a 20-foot-radius Sphere centred on that point regains 3d8 Hit Points. Other creatures and objects within the Sphere must make a Constitution saving throw, taking 6d8 Necrotic damage on a failed save. A Humanoid killed by this spell transforms into a <strong>Zombie</strong> which immediately acts at the start of the next round, and is hostile to all creatures, including you.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage and healing both increase by 1d8 for every spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, healing, hit points, hp, undead, constitution, save, saving throw, necrotic, damage, humanoid, zombie, upcasting, higher-level spell slot</set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gravestone ground into powder</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Thornhold" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_THORNHOLD">
+		<supports>Druid, Damaging Spell</supports>
+		<description>
+			<p>Phantasmal vines covered in thorns encircle you. You gain 1d4 Temporary Hit Points. If a creature deals damage with a melee attack that causes you to lose Temporary Hit Points gained by this spell, it takes Piercing damage equal to the number of Temporary Hit Points lost. You lose any remaining Temporary Hit Points granted by this spell at the end of your next turn.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The Temporary Hit Points granted increase by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">temporary hit points, thp, piercing, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Towerfall Tactic" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_TOWERFALL_TACTIC">
+		<supports>Magus, Spell Saving Throw</supports>
+		<description>
+			<p>You gain 5 Temporary Hit Points and the creature that made the triggering attack must make a Strength saving throw. On a failure, the creature gains the Prone condition and it cannot right itself to end the condition until after the end of the current turn. These Temporary Hit Points vanish if any remain after 1 minute.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The Temporary Hit Points increase by 5 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporary hit points, thp, stregnth, save, saving throw, prone, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction, which you take when you take damage from an attack</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Shield worth 1+ GP</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Warrior's Way" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_WARRIORS_WAY">
+		<supports>Magus</supports>
+		<description>
+			<p>You magically channel the martial wisdom of the multiverse's warriors. For the duration, you can attack twice instead of once whenever you take the Attack action on your turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can attack three times instead of once whenever you take the Attack action on your turn with a level 5+ spell slot.</p>
+		</description>
+		<setters>
+			<set name="keywords">attack, action, extra attack, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Waypoint" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_WAYPOINT">
+		<supports>Bard, Ranger, Wizard</supports>
+		<description>
+			<p>When you cast this spell you place an invisible mystic mark on the spot where you are standing, tethering yourself to it for the duration. During this time you can perform a 1 minute ritual to teleport yourself and a number of willing creatures equal to 1 plus your spellcasting ability modifier (minimum of 1) that you can see within 10 feet of you back to that spot. If the exact space is currently occupied by a creature or object you instead teleport to the nearest unoccupied space. Once you perform this ritual, this spell ends.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The duration increases with a spell slot of level 5-6 (24 hours), and 7+ (10 days).</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual, teleport, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spool of thread or loaf of bread</set>
+			<set name="duration">8 hours</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Aegis" type="Spell" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_SPELL_WEAPON_AEGIS">
+		<supports>Magus, Paladin, Sorcerer, Wizard</supports>
+		<description>
+			<p>You create a magical aegis with 3d8 Hit Points in an unoccupied space within range. When a creature within 10 feet of the aegis takes Bludgeoning, Piercing, Poison, or Slashing damage, you can choose for the aegis to take the damage instead. If this damage reduces the aegis to 0 Hit Points, the aegis is destroyed and the spell ends early. While this spell persists, you can use a Bonus Action to move the aegis to another unoccupied space within 60 feet of you.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The aegis's Hit Points increase by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning, piercing, poison, slashing, bonus action, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an iron shaving</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+
+</elements>

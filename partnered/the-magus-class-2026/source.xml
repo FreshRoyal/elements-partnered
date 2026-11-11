@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/source.xml" />
+		</update>
+	</info>
+	<element name="The Magus Class (2026)" type="Source" source="Core" id="ID_SVAC_SOURCE_THE_MAGUS_CLASS_2026">
+		<description>
+			<p><b>An Arcane Warrior Wielding Spell and Steel...</b></p>
+			<p>The Magus is a spell-slinging, steel-wielding new class with six subclasses, perfect for mixing and matching magical themes and combat styles.</p>
+			<p>New Features:</p>
+			<ul>
+				<li>The Magus class</li>
+				<li><b>6 subclasses:</b> Arcane Order, Heaven’s Guard, Knights Stygian, Shadow Court, Sidereal Cabal, Sylvan Circle.</li>
+				<li><b>30+ new spells</b> available to the Magus and expanding the spell lists of other classes.</li>
+				<li><b>20 magic items</b> every aspiring gish will wish for.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="abbreviation">MAGUS2026</set>
+			<set name="url">https://www.sterlingvermin.com/store/p/the-magus-class-55e</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/TMC26.png</set>
+			<set name="author" abbreviation="SVAC" url="https://www.sterlingvermin.com/">Sterling Vermin Adventuring Co</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20260929</set>
+		</setters>
+	</element>
+
+</elements>

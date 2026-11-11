@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heaven's Guard</name>
+		<description>Heaven's Guard from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="magus-heavens-guard.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-heavens-guard.xml" />
+		</update>
+	</info>
+
+	<element name="Heaven's Guard" type="Archetype" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_MAGUS_HEAVENS_GUARD">
+		<supports>MAGUS2026 Magus Subclass</supports>
+		<description>
+			<p class="flavor">Make Heaven a Place on Earth</p>
+			<p>Legend has it that in a time before recorded history, an elite host of Celestial warriors forsook their immortality and the divine realms, becoming mortal to protect the holy people and places of the Material Plane. The story goes that these martyrs' legacy lives on in the Heaven's Guard, an order of Magi that act as bodyguards to the righteous and sentinels of hallowed temples. Whether or not such tales are true, Magi in the Heaven's Guard eagerly serve as living shields to their chosen charges by drawing their enemies' ire and healing what wounds their adversaries manage to inflict.</p>
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_HEAVENS_GUARD_MAGIC" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_HEAVENSENT" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_GUARDIANS_WINGS" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_CLOAK_OF_RADIANCE" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_HEAVENS_GUARD_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_HEAVENSENT" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_GUARDIANS_WINGS" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_CLOAK_OF_RADIANCE" level="14" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Alabaster Mark" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_ALABASTER_MARK</requirements>
+		<description>
+			<p>The effects of your mystic marks are enhanced by your greater understanding of the Heaven's Guard's esoteric knowledge. When you use your Mystic Mark feature, a soft white and gold aura envelops you, and you gain the following effects based on the benefit or benefits chosen.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to guard the creature until the start of your next turn. While the creature is guarded this way, attacks against it have Disadvantage.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> Once per turn when you hit a creature with a weapon or Unarmed Strike, it has Disadvantage on attacks against creatures other than you until the start of your next turn.</p>
+		</description>
+		<sheet alt="Alabaster Mark">
+			<description>When you use your Mystic Mark feature, you gain the following effects based on the benefit or benefits chosen.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Aegis" supports="MAGUS2026 Alabaster Mark Aegis" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_AEGIS" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_AEGIS"/>
+			<select type="Archetype Feature" name="Enspell" supports="MAGUS2026 Alabaster Mark Enspell" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_ENSPELL" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_ENSPELL"/>
+		</rules>
+	</element>
+	<element name="Aegis" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_AEGIS">
+		<compendium display="false" />
+		<supports>MAGUS2026 Alabaster Mark Aegis</supports>
+		<description>
+			<p>When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to guard the creature until the start of your next turn. While the creature is guarded this way, attacks against it have Disadvantage.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a willing creature you can see within 30 ft of you is hit by an attack, you can guard the creature until the start of your next turn. While the creature is guarded this way, attacks against it have Disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Enspell" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_ENSPELL">
+		<compendium display="false" />
+		<supports>MAGUS2026 Alabaster Mark Enspell</supports>
+		<description>
+			<p>Once per turn when you hit a creature with a weapon or Unarmed Strike, it has Disadvantage on attacks against creatures other than you until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon or Unarmed Strike, it has Disadvantage on attacks against creatures other than you until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Heaven's Guard Magic" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_HEAVENS_GUARD_MAGIC">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_HEAVENS_GUARD_MAGIC</requirements>
+		<description>
+			<p>You can use a Holy Symbol as a Spellcasting Focus for your Magus spells.</p>
+			<p class="indent">In addition, your training in the Heaven's Guard ensures you always have certain spells ready; when you reach a Magus level specified in the Heaven's Guard Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Heaven's Guard Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Magus Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Cure Wounds, Give Life, Guiding Bolt, Righteous Incitement</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Animate Shield, Gentle Repose</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Mass Healing Word, Revivify</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Death Ward, Stoneskin</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Mass Cure Wounds, Raise Dead</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Heaven's Guard Magic">
+			<description>You can use a Holy Symbol as a Spellcasting Focus for your Magus spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_GIVE_LIFE" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDING_BOLT" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_RIGHTEOUS_INCITEMENT" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_ANIMATE_SHIELD" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GENTLE_REPOSE" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_HEALING_WORD" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_REVIVIFY" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONESKIN" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAISE_DEAD" level="17" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Heavensent" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_HEAVENSENT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_HEAVENSENT</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Best Offense.</strong></em> While you are using a Shield, you gain a +2 bonus to damage rolls with weapons and Unarmed Strikes.</p>
+			<p class="indent"><em><strong>Gifted Healer.</strong></em> When you cause a creature to regain Hit Points with a spell or Magus feature, you can expend a Hit Point Die, rolling it and adding the result to the total number of Hit Points restored.</p>
+			<p class="indent"><em><strong>Heaven's Hand.</strong></em> When you cast a Magus spell that deals damage, it can deal your choice of Radiant damage or its normal damage type.</p>
+		</description>
+		<sheet alt="Heavensent">
+			<description>You gain the following benefits. &#13;
+			• While you are using a Shield, you gain a +2 bonus to damage rolls with weapons and Unarmed Strikes. &#13;
+			• When you cause a creature to regain HPs with a spell or Magus feature, you can expend a HP Die, rolling it and adding the result to the total number of HPs restored. &#13;
+			• When you cast a Magus spell that deals damage, it can deal your choice of Radiant damage or its normal damage type.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Guardian's Wings" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_GUARDIANS_WINGS">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_GUARDIANS_WINGS</requirements>
+		<description>
+			<p>As a Bonus Action, you can fly up to twice your Speed. When you do, at the end of your turn creatures of your choice within 10 feet of you regain Hit Points equal to your Magus level plus your Intelligence modifier.</p>
+			<p class="indent">Once you use this feature, you can't use it again until the start of your next turn.</p>
+		</description>
+		<sheet alt="Guardian's Wings" usage="1/Short Rest">
+			<description>You can fly up to twice your Speed. When you do, at the end of your turn creatures of your choice within 10 ft of you regain {{magus2026:guardians wings:hp}} HPs.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:guardians wings:hp" value="level:magus" bonus="base" />
+			<stat name="magus2026:guardians wings:hp" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Cloak of Radiance" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_CLOAK_OF_RADIANCE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_CLOAK_OF_RADIANCE</requirements>
+		<description>
+			<p>As a Bonus Action you can cloak another creature within 30 feet of you and that you can see in radiant light. The target gains Temporary Hit Points equal to 5d10 plus your Magus level. While a creature has any Temporary Hit Points granted by this feature, it has the benefits listed below. Once you have used this feature, you can't use it again until you finish a Long Rest.</p>
+			<p class="indent"><em><strong>Brilliant.</strong></em> Creatures that do not have Immunity to the Blinded condition have Disadvantage on attacks against the target.</p>
+			<p class="indent"><em><strong>Bright.</strong></em> The target sheds Bright Light out to 30 feet and Dim Light for an additional 30 feet.</p>
+			<p class="indent"><em><strong>Buoyant.</strong></em> The target can take a Bonus Action on each of its turns to Fly up to 30 feet. If the creature does not land at the end of this movement, it falls to the ground without taking damage.</p>
+		</description>
+		<sheet alt="Cloak of Radiance" action="Bonus Action" usage="1/Long Rest">
+			<description>You can cloak another creature within 30 ft of you and that you can see in light. The target gains THPs equal to 5d10+{{level:magus}}. While a creature has any THPs granted by this feature, it has the benefits listed below. &#13;
+			• Creatures that do not have Immunity to the Blinded condition have Disadvantage on attacks against the target. &#13;
+			• The target sheds Bright Light out to 30 ft and Dim Light for an additional 30 ft. &#13;
+			• The target can take a Bonus Action on each of its turns to Fly up to 30 ft. If the creature does not land at the end of this movement, it falls to the ground without taking damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Bright as Dawn" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Alabaster Spell Surge.</strong></em> You can expend the use of your Spell Surge to cast <i>Heal</i> or <i>Sunbeam</i>.</p>
+			<p class="indent"><em><strong>Celestial Shieldbearer.</strong></em> When you finish a Short Rest, you can regain the use of your Cloak of Radiance. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN_ALABASTER_SPELL_SURGE" level="20" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN_CELESTIAL_SHIELDBEARER" level="20" />
+		</rules>
+	</element>
+	<element name="Alabaster Spell Surge" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN_ALABASTER_SPELL_SURGE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend the use of your Spell Surge to cast <i>Heal</i> or <i>Sunbeam</i>.</p>
+		</description>
+		<sheet usage="Spell Surge">
+			<description>You can cast Heal or Sunbeam.</description>
+		</sheet>
+	</element>
+	<element name="Celestial Shieldbearer" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN_CELESTIAL_SHIELDBEARER">
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can regain the use of your Cloak of Radiance. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can regain the use of your Cloak of Radiance.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Alabaster Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_ALABASTER_MARK" />
+	<element name="Alabaster Mark: Aegis Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_AEGIS" />
+	<element name="Alabaster Mark: Enspell Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_ALABASTER_MARK_ENSPELL" />
+	<element name="Heaven's Guard Magic Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_HEAVENS_GUARD_MAGIC" />
+	<element name="Heavensent Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_HEAVENSENT" />
+	<element name="Guardian's Wings Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_GUARDIANS_WINGS" />
+	<element name="Cloak of Radiance Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_CLOAK_OF_RADIANCE" />
+	<element name="Bright as Dawn Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_HEAVENS_GUARD_BRIGHT_AS_DAWN" />
+	
+</elements>

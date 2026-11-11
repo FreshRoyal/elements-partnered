@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/items.xml" />
+		</update>
+	</info>
+
+	<!--Adventuring Gear-->
+	<element name="Astrolabe" type="Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ITEM_ASTROLABE">
+		<description>
+			<p>An Astrolabe is a small instrument made of metal that can be used as a star chart and an instrument that can be used to solve a variety of problems related to astronomy and navigation.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Humanoid Skull" type="Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ITEM_HUMANOID_SKULL">
+		<description>
+			<p>A Memento Mori is a physical remnant of a deceased humanoid typically used as a trophy, to honor the dead, or for some other occult purpose. Spiritualists, Knights Stygian, and Necrodancers can use such an item as a Spellcasting Focus.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="2">2 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Necklace of Teeth" type="Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ITEM_NECKLACE_OF_TEETH">
+		<description>
+			<p>A Memento Mori is a physical remnant of a deceased humanoid typically used as a trophy, to honor the dead, or for some other occult purpose. Spiritualists, Knights Stygian, and Necrodancers can use such an item as a Spellcasting Focus.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Preserved Organ in a Jar" type="Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ITEM_PRESERVED_ORGAN_IN_A_JAR">
+		<description>
+			<p>A Memento Mori is a physical remnant of a deceased humanoid typically used as a trophy, to honor the dead, or for some other occult purpose. Spiritualists, Knights Stygian, and Necrodancers can use such an item as a Spellcasting Focus.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="5">5 lb.</set>
+		</setters>
+	</element>
+	
+	<!--Magic Items-->
+	<element name="Adamant Scale" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_ADAMANT_SCALE">
+		<description>
+			<p>When you cast the <i>Mage Armor</i> spell, you can consume this magic item. When you do, the base AC granted by the spell is 15 plus its Dexterity modifier and any Critical Hits against the target become normal hits for the spell's duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">mage armor, ac, armor class, critical hits</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+
+	<element name="Distorted Hourglass" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_DISTORTED_HOURGLASS">
+		<description>
+			<p>When you cast the <i>Haste</i> or <i>Slow</i> spell, you can consume this magic item. When you do, you cast both the <i>Haste</i> and <i>Slow</i> spells, but only need to concentrate on one spell. If you lose Concentration, both spells immediately end.</p>
+		</description>
+		<setters>
+			<set name="keywords">haste, slow, concentration</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="cost" currency="gp">20000</set>
+		</setters>
+	</element>
+
+	<element name="Dragon's Wingscale" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_DRAGONS_WINGSCALE">
+		<description>
+			<p>When you cast the <i>Dragon's Breath</i> spell, you can consume this magic item. When you do, the spell's target gains a Fly Speed of 30 feet for the duration of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragons breath, fly speed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+
+	<element name="Gilded Pate" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_GILDED_PATE">
+		<description>
+			<p>This gold covered skull can be used as a Memento Mori.</p>
+			<p class="indent">When you use this magic item as a Spellcasting Focus for a spell, you can apply one of the following effects.</p>
+			<p class="indent"><b><i>Channel the Beyond.</i></b> If the spell deals damage, you can change the damage type of the spell to your choice of Necrotic or Radiant damage.</p>
+			<p class="indent"><b><i>Enspelled Terror.</i></b> If the spell is level 1+, one target of the spell must succeed on a Wisdom saving throw against your spell save DC, or have the Frightened condition until the end of its next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">momento mori, spellcasting focus, necrotic, radiant, damage, wisdom, save, saving throw, frightened</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+
+	<element name="Grimoire of Stolen Secrets" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_GRIMOIRE_OF_STOLEN_SECRETS">
+		<description>
+			<p>This black leather tome is blank until imbued with Spell Scrolls. When you tuck a Spell Scroll into the grimoire and leave it untouched for 8 hours, the Spell Scroll is destroyed as if it had been used and the spell can now be found in the grimoire.</p>
+			<p class="indent">All spells in this grimoire are prepared by you and added to each of your classes' spell lists. The grimoire can contain a total of 5 spells with no spell being level 6+.</p>
+			<p class="indent">Once your Attunement on this magic item ends, the pages return to being blank.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell scrolls, prepared spells</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+			<set name="cost" currency="gp">4025</set>
+		</setters>
+	</element>
+
+	<element name="Iron Feather" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_IRON_FEATHER">
+		<description>
+			<p>When you cast the <i>Forced Hesitation</i> spell, you can consume this magic item. When you do, if the target fails its saving throw, its Initiative roll is reduced by the two highest results of the damage dice combined.</p>
+		</description>
+		<setters>
+			<set name="keywords">forced hesitation,fail, saving throw, save, initiative</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+
+	<element name="Jade Toadstool" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_JADE_TOADSTOOL">
+		<description>
+			<p>When you cast the <i>Revivify</i> spell, you can consume this magic item instead of a diamond worth 300+ GP. When you do, the target creature revives with Hit Points equal to its Hit Point maximum instead of 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">revivify, hit points, hp</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+
+	<element name="Leaden Mirror" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_LEADEN_MIRROR">
+		<description>
+			<p>When you cast the <i>Counterspell</i> spell and the target of the spell fails its saving throw, you can consume this magic item. When you do, if the target fails its saving throw, it loses any spell slot used to cast the spell, and takes 1d6 Force damage per level of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">counterspell, force, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+
+	<element name="Magic Magnifier" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_MAGIC_MAGNIFIER">
+		<description>
+			<p>When you cast the <i>Ensorcelled Strike</i> spell, you can consume this magic item. When you do, if you hit the target with the attack, the first time it takes damage from a spell before the end of your next turn it takes an additional 3d6 Force damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">ensorcelled strike, force, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+	
+	<element name="Magiceramic Mask" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_MAGICERAMIC_MASK">
+		<description>
+			<p>When you cast the <i>Nystul's Magic Aura</i> spell, you can consume this magic item. When you do, you can target an unwilling creature with the spell. The creature must succeed on a Charisma saving throw against your spell save DC or suffer the Mask effect of the spell for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">nystuls magic aura, unwilling creature</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="cost" currency="gp">20000</set>
+		</setters>
+	</element>
+	
+	<element name="Miniature Multiverse Model" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_MINIATURE_MULTIVERSE_MODEL">
+		<description>
+			<p>This mithril-detailed model of the cosmos can be used as an Astrolabe. When you use this object as a Spellcasting Focus, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</p>
+			<p class="indent">In addition, when a creature you can see within 60 feet of you makes a D20 Test, you can give that D20 Test your choice of Advantage or Disadvantage as a Reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">astrolabe, spellcasting focus, spell attack rolls, enhancement, spell saves, spel saving throws, reaction, disadvantage, d20 test</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+			<set name="cost" currency="gp">40000</set>
+		</setters>
+	</element>
+	
+	<element name="Necklace of Fangs" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_NECKLACE_OF_FANGS">
+		<description>
+			<p>This necklace of vampire and werebeast teeth can be used as a Memento Mori.</p>
+			<p class="indent">This necklace has 6 charges. While wearing the necklace, you can take a Magic action to expend 1 charge from the object and choose a creature you can see within 30 feet of you. That creature must make a Dexterity saving throw (save DC 13) taking 6d6 Piercing damage on a failed save or half as much damage on a successful one. You regain Hit Points equal to the amount of Piercing damage dealt.</p>
+			<p class="indent"><b><i>Regaining Charges.</i></b> The necklace regains 1d6 expended charges daily at dawn. If you expend the last charge, roll 1d20. On a 1, the necklace melts into black slag leaving permanent bite marks around your throat and shoulders.</p>
+		</description>
+		<setters>
+			<set name="keywords">momento mori, spellcasting focus, magic action, action, dexterity, save, saving throw, piercing, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">neck</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+	
+	<element name="Pickled Pixie Heart" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_PICKLED_PIXIE_HEART">
+		<description>
+			<p>This small glass vial containing a sickly green liquid and the preserved heart of a fairy can be used as a Memento Mori.</p>
+			<p class="indent">This vial has 5 charges. While holding the vial, you can expend 1 charge to cast <i>Misty Step</i>. When you do, each creature of your choice within 5 feet of the space you left must succeed on a Constitution saving throw (save DC 14) or have the Poisoned condition for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the condition on a success.</p>
+			<p class="indent"><b><i>Regaining Charges.</i></b> The object regains 1d4 + 1 expended charges daily at dawn. If you expend the object's last charge, roll 1d10. On a 1, the object dissipates into a bubbling sulphuric goo.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">momento mori, spellcasting focus, spell, misty step, constitution, save, saving throw, poisoned</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+	
+	<element name="Polychromatic Prism" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_POLYCHROMATIC_PRISM">
+		<description>
+			<p>When you cast the <i>Chromatic Orb</i> spell, you can consume this magic item. When you do, you can choose Necrotic, Psychic, or Radiant damage instead of the damage types listed in the spell's description, and the spell deals an additional 2d8 damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">chromatic orb, necrotic, psychic, radiant, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+	
+	<element name="Restless Cremains" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_RESTLESS_CREMAINS">
+		<description>
+			<p>This trembling silver vial of humanoid cremains can be used as a Memento Mori.</p>
+			<p class="indent">This vial has 9 charges. Whenever you cast a spell using the vial as a Spellcasting Focus, you can expend a number of charges up to the level of spell cast. For each charge expended, you summon a <strong>Dust Mephit</strong> to an unoccupied space you can see within 60 feet.</p>
+			<p class="indent">Each of the mephits understand your languages, obey your commands, are Friendly to you and your allies, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions. Each mephit summoned by this vial dissipates into dust and returns to the vial when it is reduced to 0 Hit Points or after 10 minutes.</p>
+			<p class="indent"><b><i>Regaining Charges.</i></b> The object regains 1d6 + 3 expended charges daily at dawn. If you expend the object's last charge, roll 1d20. On a 1, the vial crumbles into dust and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">momento mori, spellcasting focus, summon, dust mephit</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+	<element name="Ruby Toadstool" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_RUBY_TOADSTOOL">
+		<description>
+			<p>When you cast the <i>Enlarge/Reduce</i> spell, you can consume this magic item. When you do, the target's size increases by two categories instead of one and whenever the spell would require the target to roll 1d4, they roll 1d8 instead.</p>
+		</description>
+		<setters>
+			<set name="keywords">enlarge reduce, size</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+
+	<element name="Scythe of Grim Harvest" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_SCYTHE_OF_GRIM_HARVEST">
+		<description>
+			<p>This item appears to be a two-handed scythe, and can be used as a Memento Mori.</p>
+			<p class="indent"><b><i>Bloody Hungry.</i></b> You have Advantage on attacks against Bloodied creatures.</p>
+			<p class="indent"><b><i>Harvest Soul.</i></b> When a creature within 30 feet of you is reduced to 0 Hit Points, as a Reaction, you can gain Temporary Hit Points equal to its Challenge Rating or level, and make one attack with a weapon.</p>
+			<p class="indent"><b><i>Sweeping Shear.</i></b> As an action, you can force creatures of your choice within 10 feet of you to make a Dexterity saving throw (save DC 13). A creature takes Slashing damage equal to 3d6 plus your level on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="keywords">greataxe, advantage, attack, bloodied, reaction, temporary hit points, thp, action, dexterity, save, saving throw, slashing, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="weapon">Greataxe</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">4030</set>
+		</setters>
+	</element>
+
+	<element name="Starfall Spotter" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_STARFALL_SPOTTER">
+		<description>
+			<p>This gold and silver model of the stars can be used as an Astrolabe.</p>
+			<p class="indent">This object has 12 charges. While holding it, you can expend 1 charge to cast <i>Magic Missile</i> or 4 charges to cast <i>Fireball</i> (save DC 15) from it. When you cast either spell from this object, the damage type of the spell is Radiant, rather than its normal damage type.</p>
+			<p class="indent"><b><i>Regaining Charges.</i></b> The object regains 2d6 expended charges daily at dawn. If you expend the object's last charge, roll 1d20. On a 1, the object disappears in a streaking flash of light.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_MAGIC_MISSILE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_FIREBALL" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">magic action, action, astrolabe, spells, fireball, magic missle, radiant, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+			<set name="cost" currency="gp">40000</set>
+		</setters>
+	</element>
+	
+	<element name="Tiny Mithril Hammer" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_TINY_MITHRIL_HAMMER">
+		<description>
+			<p>When you cast the <i>Magic Weapon</i> spell, you can consume this magic item. When you do, the duration changes to 8 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">magic weapon, duration</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+
+	<element name="Witchwood Jaw" type="Magic Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_MAGIC_ITEM_WITCHWOOD_JAW">
+		<description>
+			<p>When you cast the <i>Animate Dead</i> spell, you can consume this magic item. When you do, the <strong>Skeletons</strong> and <strong>Zombies</strong> created through the spell can speak and understand any languages you know.</p>
+		</description>
+		<setters>
+			<set name="keywords">animate dead, understand languages</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+
+	<!--Equipment Pack-->
+	<element name="Class Equipment Pack (Magus)" type="Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ITEM_CLASS_EQUIPMENT_PACK_MAGUS">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Magus Class, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• Longbow</p>
+			<p class="indent">• 20 Arrows</p>
+			<p class="indent">• Quiver</p>
+			<p class="indent">• Rapier</p>
+			<p class="indent" style="margin-bottom:5px">• Component Pouch</p>
+			<p><b>Note:</b> This pack doesn't include Studded Leather Armor, a Diamond worth 50 GP, and 4 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB24_WEAPON_LONGBOW</item>
+			<item amount="20">ID_WOTC_PHB24_ITEM_ARROW</item>
+			<item>ID_WOTC_PHB24_ITEM_QUIVER</item>
+			<item>ID_WOTC_PHB24_WEAPON_RAPIER</item>
+			<item>ID_WOTC_PHB24_ITEM_COMPONENT_POUCH</item>
+		</extract>
+	</element>
+
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>The Magus Class (2026)</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_SVAC_MAGUS2026_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_GRANTS_FEAT_UNLOCKER" />
+
+</elements>

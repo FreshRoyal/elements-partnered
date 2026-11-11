@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magus</name>
+		<description>Magus Class from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="class-magus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/class-magus.xml" />
+		</update>
+	</info>
+
+	<element name="Magus" type="Class" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_MAGUS">
+		<description>
+			<p>Magi are gifted warriors that blend martial prowess with mystical puissance. Wielding spell and steel in tandem, Magi can render their enemies vulnerable to their magic with a look and invoke sigils to enhance their offensive and defensive abilities. Leveraging these diverse strengths, Magi can overcome even the most powerful adversaries and challenging obstacles.</p>
+			<p class="indent">Every Magi belongs to an esoteric order that shapes their abilities, enhances their sigils, and expands their magical capabilities. These orders also inform or reflect a Magus' goals and reasons for adventuring. Some orders compel Magi to catalogue the magical wonders of the multiverse while others call on Magi to deliver harsh and unrepentant justice. Just as a Magus balances their martial talents with their magical abilities, they must also balance their personal aspirations with their order's goals.</p>
+			<div class="sidebar">
+				<h5>CORE MAGUS TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Intelligence</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D8 per Magus level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Constitution and Intelligence</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Acrobatics, Arcana, Athletics, History, Insight, Investigation, Nature, Perception, or Religion.</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left>">Simple and Martial weapons</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light and Medium armor and Shields</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A or B:</i> (A) Studded Leather Armor, Longbow, 20 Arrows, Quiver, Rapier, Component Pouch, Diamond worth 50 GP, and 4 GP; or (B) 200 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A MAGUS ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Magus Traits table.</li>
+				<li>Gain the Magus's level 1 features, which are listed in the Magus Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Magus Traits table: Hit Point Die, proficiency with Martial weapons, proficiency in one skill of your choice from the Magus's skill list, and training with Light and Medium armor and Shields.</li>
+				<li>Gain the Magus's level 1 features, which are listed in the Magus Features table.</li>
+			</ul>
+			<h5>MAGUS FEATURES</h5>
+			<table class="class-features">
+				<tr style="font-weight: bold">
+					<td rowspan="2">Level</td>
+					<td class="col-30 left" rowspan="2">Class Features</td>
+					<td rowspan="2">Cantrips</td>
+					<td rowspan="2">Prepared<br />Spells</td>
+					<td colspan="5" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
+				</tr>
+				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+				<tr><td> 1</td><td class="left">Esoteric Eye, Spellcasting, Weapon Mastery</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2</td><td class="left">Fighting Style, Mystic Mark</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3</td><td class="left">Magus Subclass</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4</td><td class="left">Ability Score Improvement</td><td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5</td><td class="left">Arcane Ability, Sword and Sorcery</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6</td><td class="left">Magical Recovery</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7</td><td class="left">Subclass feature</td><td>2</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8</td><td class="left">Ability Score Improvement</td><td>2</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9</td><td class="left">Rite of Return</td><td>2</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td class="left">All-Seeing Eye</td><td>2</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td class="left">Sigil Surge</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td class="left">Ability Score Improvement</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td class="left">—</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14</td><td class="left">Subclass feature</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15</td><td class="left">Sorcerous Shielding</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td class="left">Ability Score Improvement</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17</td><td class="left">—</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18</td><td class="left">Spell Surge</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19</td><td class="left">Epic Boon</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20</td><td class="left">Archmagus, Subclass feature</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<h4>MAGUS CLASS FEATURES</h4>
+			<p>As a Magus, you gain the following class features when you reach the specified Magus levels. These features are listed in the Magus Features table.</p>
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ESOTERIC_EYE" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SPELLCASTING" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_WEAPON_MASTERY" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_FIGHTING_STYLE" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MYSTIC_MARK" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MAGUS_SUBCLASS" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCANE_ABILITY" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SWORD_AND_SORCERY" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MAGICAL_RECOVERY" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_RITE_OF_RETURN" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ALL_SEEING_EYE" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SIGIL_SURGE" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SPELL_SURGE" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_EPIC_BOON" />
+			<div element="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCHMAGUS" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">An Arcane Warrior Wielding Spell and Steel</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_SVAC_MAGUS2026_MULTICLASS_MAGUS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_SVAC_MAGUS2026_MULTICLASS_MAGUS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_SVAC_MAGUS2026_MULTICLASS_MAGUS" />
+			<select type="Proficiency" name="Skill Proficiency (Magus)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_SVAC_MAGUS2026_MULTICLASS_MAGUS" />
+
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ESOTERIC_EYE" level="1" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_WEAPON_MASTERY" level="1" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MYSTIC_MARK" level="2" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MAGUS_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCANE_ABILITY" level="5" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SWORD_AND_SORCERY" level="5" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MAGICAL_RECOVERY" level="6" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_RITE_OF_RETURN" level="9" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ALL_SEEING_EYE" level="10" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SIGIL_SURGE" level="11" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING" level="15" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SPELL_SURGE" level="18" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCHMAGUS" level="20" />
+		</rules>
+		<multiclass id="ID_SVAC_MAGUS2026_MULTICLASS_MAGUS">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>([int:13],!(ID_DMSG_HMGS_CLASS_MAGUS||ID_DMSG_HMGS_MULTICLASS_MAGUS))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial weapons, one skill from the Magus's skill list, Light armor, Medium armor, Shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<select type="Proficiency" name="Skill Proficiency (Magus)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION"/>
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Esoteric Eye" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ESOTERIC_EYE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ESOTERIC_EYE</requirements>
+		<description>
+			<p>As a Bonus Action, you can observe a creature you can see. Until the end of your next turn, you have Advantage on your Magus spell attacks against it and it has Disadvantage on saving throws against your Magus spells.</p>
+			<p class="indent">You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Esoteric Eye" action="Bonus Action" usage="{{magus2026:esoteric eye:usage}}/Long Rest">
+			<description>Until the end of your next turn, you have Advantage on your Magus spell attacks against a creature you can see and it has Disadvantage on saving throws against your Magus spells. 
+			You regain one expended use of this feature when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:esoteric eye:usage" value="1" bonus="bonus" />
+			<stat name="magus2026:esoteric eye:usage" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Spellcasting" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SPELLCASTING">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SPELLCASTING</requirements>
+		<description>
+			<p>With disciplined rehearsal, you can wage war and cast spells by rote. See the core rules for the rules on spellcasting. The information below details how you use those rules with Magus spells, which appear in the Magus spell list later in the class's description.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You know two Magus cantrips of your choice. <i>Chill Touch</i> and <i>Fire Bolt</i> are recommended. Whenever you gain a Magus level, you can replace one of your cantrips from this feature with another Magus cantrip of your choice.</p>
+			<p class="indent">When you reach Magus levels 11 and 16, you learn another Magus cantrip of your choice, as shown in the Cantrips column of the Magus Features table.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Magus Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Prepared Spells of Level 1+.</i></b> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Magus spells. <i>Chromatic Orb</i> and <i>Shield</i> are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Magus levels, as shown in the Prepared Spells column of the Magus Features table. Whenever that number increases, choose additional Magus spells until the number of spells on your list matches the number in the Magus Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Magus, your list of prepared spells can include six Magus spells of level 1 or 2 in any combination.</p>
+			<p class="indent">If another Magus feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Magus spells for you.</p>
+			<p class="indent"><b><i>Changing Your Prepared Spells.</i></b> Whenever you gain a Magus level, you can replace one spell on your list with another Magus spell for which you have spell slots.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Intelligence is your spellcasting ability for your Magus spells.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet alt="Spellcasting">
+			<description>Whenever you gain a Magus level, you can replace one of your spells with another Magus spell of your choice.</description>
+		</sheet>
+		<spellcasting name="Magus" ability="Intelligence" allowReplace="true">
+			<list>Magus</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="magus:spellcasting:slots:1" value="2" level="1" />
+			<stat name="magus:spellcasting:slots:1" value="1" level="3" />
+			<stat name="magus:spellcasting:slots:1" value="1" level="5" />
+			<stat name="magus:spellcasting:slots:2" value="2" level="5" />
+			<stat name="magus:spellcasting:slots:2" value="1" level="7" />
+			<stat name="magus:spellcasting:slots:3" value="2" level="9" />
+			<stat name="magus:spellcasting:slots:3" value="1" level="11" />
+			<stat name="magus:spellcasting:slots:4" value="1" level="13" />
+			<stat name="magus:spellcasting:slots:4" value="1" level="15" />
+			<stat name="magus:spellcasting:slots:4" value="1" level="17" />
+			<stat name="magus:spellcasting:slots:5" value="1" level="17" />
+			<stat name="magus:spellcasting:slots:5" value="1" level="19" />
+			
+			<select type="Spell" name="Cantrip (Magus)" supports="$(spellcasting:list), 0" number="2" spellcasting="Magus" />
+			<select type="Spell" name="Cantrip (Magus)" supports="$(spellcasting:list), 0" level="11" spellcasting="Magus" />
+			<select type="Spell" name="Cantrip (Magus)" supports="$(spellcasting:list), 0" level="16" spellcasting="Magus" />
+			
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number="2" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number="2" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Weapon Mastery" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_WEAPON_MASTERY">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_WEAPON_MASTERY</requirements>
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Rapiers and Pistols.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Longbows and Longswords.</p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Level 2: Fighting Style" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_FIGHTING_STYLE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You gain a Fighting Style feat of your choice. Instead of choosing one of those feats, you can choose the option below.</p>
+			<p class="indent"><b><i>Mystic Warrior.</i></b> You gain a bonus on Constitution saving throws you make to maintain Concentration equal to your Intelligence modifier (minimum +1). When you fail a Constitution saving throw to maintain Concentration on a spell, you gain Temporary Hit Points equal to twice the spell's level plus your Intelligence modifier.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Magus 2)" supports="Fighting Style||MAGUS2026 Mystic Warrior Fighting Style" />
+		</rules>
+	</element>
+	<element name="Mystic Warrior" type="Feat" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_FEAT_MYSTIC_WARRIOR">
+		<supports>MAGUS2026 Mystic Warrior Fighting Style</supports>
+		<requirements>ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_FIGHTING_STYLE||ID_SVAC_MAGUS2026_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Magus Fighting Style Feature</prerequisite>
+		<description>
+			<p>You gain a bonus on Constitution saving throws you make to maintain Concentration equal to your Intelligence modifier (minimum +1). When you fail a Constitution saving throw to maintain Concentration on a spell, you gain Temporary Hit Points equal to twice the spell's level plus your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>You gain a +{{magus2026:mystic warrior:modifier}} bonus on Constitution saving throws you make to maintain Concentration. When you fail a Constitution saving throw to maintain Concentration on a spell, you gain THPs equal to twice the spell's level plus {{intelligence:modifer}}.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:mystic warrior:modifier" value="1" bonus="bonus" />
+			<stat name="magus2026:mystic warrior:modifier" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Mystic Mark" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MYSTIC_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_MYSTIC_MARK</requirements>
+		<description>
+			<p>You can take a Bonus Action to imbue yourself with magical power and resilience. When you do, choose a Magus level 1+ spell you have prepared that has a casting time of an action or a Bonus Action, expend a spell slot equal to or higher than the spell level, and choose Force damage or a damage type dealt by the spell. You gain your choice of the Aegis or Enspell benefit.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> You have Resistance to the chosen damage type.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> When you deal damage with a weapon or Unarmed Strike, you can deal the chosen damage type instead of the normal damage type for the attack.</p>
+			<p>You can only benefit from one Aegis and one Enspell at a time. While you have an Aegis or Enspell, you can use a Bonus Action to release and cast a spell chosen using this feature. Your Mystic Mark and its corresponding benefit end after 1 hour, or when you release the spell.</p>
+		</description>
+		<sheet alt="Mystic Mark" action="Bonus Action">
+			<description>You imbue yourself with magical power. When you do, choose a Magus level 1+ spell you have prepared that has a casting time of an action or a Bonus Action, expend a spell slot equal to or higher than the spell level, and choose Force damage or a damage type dealt by the spell. You gain your choice of the Aegis or Enspell benefit. &#13;
+			• Aegis. You have Resistance to the chosen damage type. &#13;
+			• Enspell. When you deal damage with a weapon or Unarmed Strike, you can deal the chosen damage type instead of the normal damage type for the attack. &#13;
+			You can only benefit from one Aegis and one Enspell at a time. While you have an Aegis or Enspell, you can use a Bonus Action to release and cast a spell chosen using this feature. Your Mystic Mark and its corresponding benefit end after 1 hour, or when you release the spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Magus Subclass" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MAGUS_SUBCLASS">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_MAGUS_SUBCLASS</requirements>
+		<description>
+			<p>You gain a Magus subclass of your choice. A subclass is a specialization that grants you features at certain Magus levels. For the rest of your career, you gain each of your subclass's features that are of your Magus level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Magus Subclass" supports="MAGUS2026 Magus Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Magus levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Magus 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Magus 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Magus 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Magus 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Arcane Ability" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCANE_ABILITY">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ABILITY</requirements>
+		<description>
+			<p>When you fail an ability check, you can imbue your effort with a magical might. You add a bonus to the ability check equal to your Intelligence modifier plus the highest level unexpended spell you have, potentially turning it into a success.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest unless you expend a spell slot (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Arcane Ability" usage="1/Short Rest">
+			<description>When you fail an ability check, you can add a bonus to the ability check equal to {intelligence:modifier} plus the highest level unexpended spell you have, potentially turning it into a success. You can expend a spell slot (no action required) to restore your use of this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 5: Sword and Sorcery" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SWORD_AND_SORCERY">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SWORD_AND_SORCERY</requirements>
+		<description>
+			<p>When you take the Attack action and it doesn't benefit from the Extra Attack feature, you can cast a Magus cantrip with a casting time of an action as part of the same action. When you take the Magic action on your turn, you can use a Bonus Action to make one weapon attack.</p>
+		</description>
+		<sheet alt="Sword and Sorcery" action="Attack Action">
+			<description>When you take the Attack action and it doesn't benefit from the Extra Attack feature, you can cast a Magus cantrip with a casting time of an action as part of the same action. When you take the Magic action on your turn, you can use a Bonus Action to make one weapon attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Magical Recovery" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_MAGICAL_RECOVERY">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_MAGICAL_RECOVERY</requirements>
+		<description>
+			<p>You can regain some of your magical energy by meditating on the Tapestry and its myriad threads. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Magus level (round up), and none of the slots can be level 6 or higher. For example, if you're a level 6 Magus, you can recover up to three levels' worth of spell slots, regaining either one level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Magical Recovery" usage="{{magus2026:magical recovery:usage}}/Long Rest">
+			<description>When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than {{level:magus:half:up}}, and none of the slots can be level 6 or higher.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:magical recovery:usage" value="1" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Rite of Return" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_RITE_OF_RETURN">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_RITE_OF_RETURN</requirements>
+		<description>
+			<p>When your Mystic Mark ends without you releasing the spell, you regain the expended spell slot. Additionally, you can end your Mystic Mark as a Bonus Action, regaining the expended spell slot.</p>
+		</description>
+		<sheet alt="Rite of Return">
+			<description>When your Mystic Mark ends without you releasing the spell, you regain the expended spell slot. Additionally, you can end your Mystic Mark as a Bonus Action, regaining the expended spell slot.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: All-Seeing Eye" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ALL_SEEING_EYE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ALL_SEEING_EYE</requirements>
+		<description>
+			<p>As a Bonus Action, you can expend a use of your Esoteric Eye to gain Truesight out to a distance of 60 feet for 10 minutes. During this time, you can use the Bonus Action granted by your Esoteric Eye without requiring or expending any uses.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="All-Seeing Eye" action="Bonus Action" usage="Esoteric Eye - 1/Long Rest">
+			<description>You can expend a use of your Esoteric Eye to gain Truesight out to a distance of 60 feet for 10 minutes. During this time, you can use the Bonus Action granted by your Esoteric Eye without requiring or expending any uses.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Sigil Surge" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SIGIL_SURGE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIGIL_SURGE</requirements>
+		<description>
+			<p>The benefits of your Mystic Mark are improved.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> At the start of each of your turns, you gain Temporary Hit Points equal to the expended spell slot level plus your Intelligence modifier.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> When you deal damage with a weapon or Unarmed Strike, you deal an additional 1d6 damage of the chosen type.</p>
+		</description>
+		<sheet alt="Sigil Surge">
+			<description>While your Aegis is active, at the start of each of your turns, you gain THPs equal to the expended spell slot level plus {{intelligence:modifier}}. &#13;
+			Additionally, while your Enspell is active, when you deal damage with a weapon or Unarmed Strike, you deal an additional 1d6 damage of the chosen type.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Sorcerous Shielding" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SORCEROUS_SHIELDING</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Magic Resistance.</strong></em> Choose one of the following damage types: Force, Necrotic, Psychic, or Radiant. You have Resistance to that damage type. At the start of each of your turns, you can change the damage type affected by this feature to one of the other listed options.</p>
+			<p class="indent"><em><strong>Spell Parry.</strong></em> You have Advantage on saving throws against spells and spell attacks against you have Disadvantage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING_MAGIC_RESISTANCE" />
+			<grant type="Class Feature" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING_SPELL_PARRY" />
+		</rules>
+	</element>
+	<element name="Magic Resistance" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING_MAGIC_RESISTANCE">
+		<compendium display="false" />
+		<description>
+			<p>Choose one of the following damage types: Force, Necrotic, Psychic, or Radiant. You have Resistance to that damage type. At the start of each of your turns, you can change the damage type affected by this feature to one of the other listed options.</p>
+		</description>
+		<sheet>
+			<description>You have Resistance to Force, Necrotic, Psychic, or Radiant damage. At the start of each of your turns, you can change the damage type affected by this feature to one of the other listed options.</description>
+		</sheet>
+	</element>
+	<element name="Spell Parry" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SORCEROUS_SHIELDING_SPELL_PARRY">
+		<compendium display="false" />
+		<description>
+			<p>You have Advantage on saving throws against spells and spell attacks against you have Disadvantage.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws against spells and spell attacks against you have Disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Spell Surge" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_SPELL_SURGE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SPELL_SURGE</requirements>
+		<description>
+			<p>In times of need you can surge with arcane power, grasping at magic typically beyond your ability. Choose one level 6 Magus spell as your surge spell. You can cast your surge spell once without expending a spell slot. When you do, you regain one spell slot of your choice that is 5th level or lower.</p>
+			<p class="indent">Once you cast your surge spell, you must finish a Long Rest before you can cast it in this way again.</p>
+		</description>
+		<sheet alt="Spell Surge" usage="1/Long Rest">
+			<description>You can cast your surge spell once without expending a spell slot. When you do, you regain one spell slot of your choice that is 5th level or lower.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Level 6 Spell (Spell Surge)" supports="Magus, 6" level="18" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_EPIC_BOON">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Combat Prowess is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Epic Boon (Magus 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Archmagus" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCHMAGUS">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCHMAGUS</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Ability Score Enhancement.</strong></em> Choose Strength or Dexterity. Your Intelligence and the chosen ability score increase by 2, to a maximum of 23.</p>
+			<p class="indent"><em><strong>Rapid Recovery.</strong></em> You can use your Magical Recovery twice, regaining both uses when you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Score Increase (Archmagus)" supports="MAGUS2026 Archmagus" />
+			<stat name="intelligence" value="2" alt="Archmagus" />
+			<stat name="intelligence:max:extra" value="3" bonus="base"/>
+
+			<stat name="magus2026:magical recovery:usage" value="2" bonus="base" />
+		</rules>
+	</element>
+	<element name="Strength" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCHMAGUS_STRENGTH">
+		<compendium display="false" />
+		<supports>MAGUS2026 Archmagus</supports>
+		<description>
+			<p>Increase your Strength score by 2, to a maximum of 23.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" alt="Archmagus" />
+			<stat name="strength:max:extra" value="3" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Dexterity" type="Class Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_CLASS_FEATURE_MAGUS_ARCHMAGUS_DEXTERITY">
+		<compendium display="false" />
+		<supports>MAGUS2026 Archmagus</supports>
+		<description>
+			<p>Increase your Dexterity score by 2, to a maximum of 23.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" alt="Archmagus" />
+			<stat name="dexterity:max:extra" value="3" bonus="base"/>
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Esoteric Eye Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ESOTERIC_EYE" />
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SPELLCASTING" />
+	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_WEAPON_MASTERY" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_FIGHTING_STYLE" />
+	<element name="Mystic Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_MYSTIC_MARK" />
+	<element name="Magus Subclass Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_MAGUS_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Arcane Ability Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ABILITY" />
+	<element name="Sword and Sorcery Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SWORD_AND_SORCERY" />
+	<element name="Magical Recovery Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_MAGICAL_RECOVERY" />
+	<element name="Rite of Return Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_RITE_OF_RETURN" />
+	<element name="All-Seeing Eye Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ALL_SEEING_EYE" />
+	<element name="Sigil Surge Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIGIL_SURGE" />
+	<element name="Sorcerous Shielding Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SORCEROUS_SHIELDING" />
+	<element name="Spell Surge Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SPELL_SURGE" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_EPIC_BOON" />
+	<element name="Archmagus Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCHMAGUS" />
+	
+	<!--Spell List Appends (5e)-->
+	<append id="ID_PHB_SPELL_ACID_SPLASH">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHILL_TOUCH">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_BOLT">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGE_HAND">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POISON_SPRAY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_FROST">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHOCKING_GRASP">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_BURNING_HANDS">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHROMATIC_ORB">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COLOR_SPRAY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_MAGIC">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FALSE_LIFE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREASE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_IDENTIFY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_JUMP">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LONGSTRIDER">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGE_ARMOR">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHIELD">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_BLUR">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLAME_BLADE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_PERSON">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_WEAPON">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIRROR_IMAGE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISTY_STEP">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_COUNTERSPELL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIREBALL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HASTE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHTNING_BOLT">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PHANTOM_STEED">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLOW">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_BANISHMENT">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_SHIELD">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ICE_STORM">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LOCATE_CREATURE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONESKIN">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FIRE">
+		<supports>Magus</supports>
+	</append>
+	
+	<append id="ID_PHB_SPELL_CLOUDKILL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONJURE_ELEMENTAL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTACT_OTHER_PLANE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_MONSTER">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LEGEND_LORE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PLANAR_BINDING">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEPORTATION_CIRCLE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FORCE">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_BLADE_BARRIER">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTINGENCY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISINTEGRATE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLOBE_OF_INVULNERABILITY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUARDS_AND_WARDS">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUNBEAM">
+		<supports>Magus</supports>
+	</append>
+	
+	<!--Spell List Appends (5.5e)-->
+	<append id="ID_WOTC_PHB24_SPELL_ACID_SPLASH">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CHILL_TOUCH">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FIRE_BOLT">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MAGE_HAND">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_POISON_SPRAY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_RAY_OF_FROST">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SHOCKING_GRASP">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_BURNING_HANDS">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CHROMATIC_ORB">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_COLOR_SPRAY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FALSE_LIFE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_GREASE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_IDENTIFY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_JUMP">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_LONGSTRIDER">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MAGE_ARMOR">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SHIELD">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_BLUR">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_ENLARGE_REDUCE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FLAME_BLADE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_HOLD_PERSON">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MAGIC_WEAPON">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MISTY_STEP">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_COUNTERSPELL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DISPEL_MAGIC">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FIREBALL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FLY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_HASTE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_LIGHTNING_BOLT">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_MAGIC_CIRCLE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_PHANTOM_STEED">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_ENERGY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SLOW">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_BANISHMENT">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CONJURE_MINOR_ELEMENTALS">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DEATH_WARD">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_FIRE_SHIELD">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_ICE_STORM">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_LOCATE_CREATURE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_STONESKIN">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_WALL_OF_FIRE">
+		<supports>Magus</supports>
+	</append>
+	
+	<append id="ID_WOTC_PHB24_SPELL_CLOUDKILL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CONJURE_ELEMENTAL">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CONTACT_OTHER_PLANE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DISPEL_EVIL_AND_GOOD">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_LEGEND_LORE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_PLANAR_BINDING">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_TELEPORTATION_CIRCLE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_WALL_OF_FORCE">
+		<supports>Magus</supports>
+	</append>
+
+	<append id="ID_WOTC_PHB24_SPELL_BLADE_BARRIER">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CONTINGENCY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_DISINTEGRATE">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_GLOBE_OF_INVULNERABILITY">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_GUARDS_AND_WARDS">
+		<supports>Magus</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_SUNBEAM">
+		<supports>Magus</supports>
+	</append>
+
+</elements>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sylvan Circle</name>
+		<description>Sylvan Circle from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="magus-sylvan-circle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-sylvan-circle.xml" />
+		</update>
+	</info>
+
+	<element name="Sylvan Circle" type="Archetype" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_MAGUS_SYLVAN_CIRCLE">
+		<supports>MAGUS2026 Magus Subclass</supports>
+		<description>
+			<p class="flavor">Protect Wild Creatures and Natural Wonders</p>
+			<p>The Sylvan Circle acts as the sword and shield of the natural world. You adventure to ensure that the world's natural wonders are preserved and that the diversity of its flora and fauna are not threatened. Although some Sylvan Circle Magi become hardliners that see themselves at war with civilization, most work to strike a balance between the needs of the natural world and the multiverse's various peoples.</p>
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_AGRESTAL_SPIRIT" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_CIRCLE_SPELLS" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_NATURES_MASK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_FONT_OF_LIFE" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_AGRESTAL_SPIRIT" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_CIRCLE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_NATURES_MASK" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_FONT_OF_LIFE" level="14" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Agrestal Spirit" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_AGRESTAL_SPIRIT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_AGRESTAL_SPIRIT</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Additional Cantrips.</strong></em> You know two additional cantrips of your choice from the Magus or Druid spell list. These cantrips count as Magus cantrips for you but don't count against your number of cantrips known.</p>
+			<p class="indent"><em><strong>Green Hand.</strong></em> You gain proficiency in the Nature skill. If you are already proficient with Nature, you gain Expertise in it instead.</p>
+			<p class="indent"><em><strong>Wild Instincts.</strong></em> You can take the Disengage action as a Bonus Action. When you do, until the end of your turn your Speed increases by 15 feet and you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks.</p>
+			<p class="indent">You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Agrestal Spirit" action="Bonus Action" usage="{{magus2026:agrestal spirit:usage}}/Long Rest">
+			<description>ou can take the Disengage action as a Bonus Action. When you do, until the end of your turn your Speed increases by 15 ft and you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Agrestal Spirit)" supports="(Magus||Wizard), 0" level="3" number="2" spellcasting="Magus" />
+
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_NATURE" />
+			
+			<stat name="magus2026:agrestal spirit:usage" value="1" bonus="bonus" />
+			<stat name="magus2026:wild instincts:usage" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Emerald Mark" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK</requirements>
+		<description>
+			<p>The effects of your mystic marks are enhanced by your greater understanding of the Sylvan Circle's esoteric knowledge. When you use your Mystic Mark feature, a verdant green aura surrounds you and you gain the following effects based on the benefit or benefits chosen.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> When you or a willing creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to give the roll a bonus equal to your Intelligence modifier (minimum +1), potentially turning the failure into a success.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> Once per turn when you hit a creature with a weapon or Unarmed Strike, you can cause the target to treat all spaces as Difficult Terrain until the end of its next turn.</p>
+		</description>
+		<sheet alt="Emerald Mark">
+			<description>When you use your Mystic Mark feature, you gain the following effects based on the benefit or benefits chosen.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Aegis" supports="MAGUS2026 Emerald Mark Aegis" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_AEGIS" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_AEGIS"/>
+			<select type="Archetype Feature" name="Enspell" supports="MAGUS2026 Emerald Mark Enspell" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_ENSPELL" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_ENSPELL"/>
+		</rules>
+	</element>
+	<element name="Aegis" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_AEGIS">
+		<compendium display="false" />
+		<supports>MAGUS2026 Emerald Mark Aegis</supports>
+		<description>
+			<p>When you or a willing creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to give the roll a bonus equal to your Intelligence modifier (minimum +1), potentially turning the failure into a success.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you or a willing creature you can see within 30 ft of you fails a saving throw, you can give the roll a +{{magus2026:emerald mark aegis:modifier}} bonus, potentially turning the failure into a success.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:emerald mark aegis:modifier" value="1" bonus="bonus" />
+			<stat name="magus2026:emerald mark aegis:modifier" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="Enspell" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_ENSPELL">
+		<compendium display="false" />
+		<supports>MAGUS2026 Emerald Mark Enspell</supports>
+		<description>
+			<p>Once per turn when you hit a creature with a weapon or Unarmed Strike, you can cause the target to treat all spaces as Difficult Terrain until the end of its next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon or Unarmed Strike, you can cause the target to treat all spaces as Difficult Terrain until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Sylvan Circle Spells" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_CIRCLE_SPELLS">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_SYLVAN_CIRCLE_SPELLS</requirements>
+		<description>
+			<p>You can use an Druidic Focus as a Spellcasting Focus for your Magus spells.</p>
+			<p class="indent">In addition, your training in the Sylvan Circle ensures you always have certain spells ready; when you reach a Magus level specified in the Sylvan Circle Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Sylvan Circle Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Magus Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Entangle, Speak with Animals, Thorn Whip, Thornhold</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Lesser Restoration, Moonbeam</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Conjure Animals, Speak with Plants</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Conjure Woodland Beings, Polymorph</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Greater Restoration, Reincarnate</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Sylvan Circle Spells">
+			<description>You can use an Druidic Focus as a Spellcasting Focus for your Magus spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENTANGLE" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_THORN_WHIP" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_THORNHOLD" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MOONBEAM" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONJURE_ANIMALS" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_PLANTS" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONJURE_WOODLAND_BEINGS" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="17" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_REINCARNATE" level="17" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Nature's Mask" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_NATURES_MASK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_NATURES_MASK</requirements>
+		<description>
+			<p>You always have the <i>Polymorph</i> spell prepared. You can cast the spell on yourself without expending a spell slot, when you do, the spell does not require Concentration and its duration changes to 8 hours. You can end the spell at any point prior to the end of its duration (no action required).</p>
+			<p class="indent">Once you cast the spell in this way, you can't do so again until you finish a Short Rest or Long Rest.</p>
+		</description>
+		<sheet alt="Nature's Mask" usage="1/Short Rest">
+			<description>You can cast the Polymorph spell on yourself without expending a spell slot, when you do, the spell does not require Concentration and its duration changes to 8 hours. You can end the spell at any point prior to the end of its duration (no action required).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" level="7" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Font of Life" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_FONT_OF_LIFE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_FONT_OF_LIFE</requirements>
+		<description>
+			<p>As a Bonus Action, you can manifest sylvan energies in a 15-foot Emanation that originates from you for 1 minute. It ends early if you dismiss it (no action required) or have the Incapacitated condition.</p>
+			<p class="indent">When you manifest the Emanation and at the start of each of your subsequent turns, creatures of your choice within your Emanation regain Hit Points equal to 1d8 plus your Intelligence modifier (minimum of one). Additionally, creatures of your choice within your Emanation have Advantage on saving throws.</p>
+			<p class="indent">Once you use this feature, you must finish a Long Rest before you can do so again.</p>
+		</description>
+		<sheet alt="Font of Life" action="Bonus Action" usage="1/Long Rest">
+			<description>You can manifest a 15-foot Emanation that originates from you for 1 minute. It ends early if you dismiss it (no action required) or have the Incapacitated condition. When you manifest the Emanation and at the start of each of your subsequent turns, creatures of your choice within your Emanation regain 1d8+{{magus2026:font of life:modifier}} HPs. Additionally, creatures of your choice within your Emanation have Advantage on saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="magus2026:font of life:modifier" value="1" bonus="bonus" />
+			<stat name="magus2026:font of life:modifier" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Sylvan Savant" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Emerald Spell Surge.</strong></em> You can expend the use of your Spell Surge to cast <i>Conjure Fey</i> or <i>Wall of Thorns</i>.</p>
+			<p class="indent"><em><strong>Font Overflowing.</strong></em> When you finish a Short Rest, you can regain the use of your Font of Life. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT_EMERALD_SPELL_SURGE" level="20" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT_FONT_OVERFLOWING" level="20" />
+		</rules>
+	</element>
+	<element name="Emerald Spell Surge" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT_EMERALD_SPELL_SURGE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend the use of your Spell Surge to cast <i>Conjure Fey</i> or <i>Wall of Thorns</i>.</p>
+		</description>
+		<sheet usage="Spell Surge">
+			<description>You can cast Conjure Fey or Wall of Thorns.</description>
+		</sheet>
+	</element>
+	<element name="Font Overflowing" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT_FONT_OVERFLOWING">
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can regain the use of your Font of Life. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can regain the use of your Font of Life.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Agrestal Spirit Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_AGRESTAL_SPIRIT" />
+	<element name="Emerald Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK" />
+	<element name="Emerald Mark: Aegis Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_AEGIS" />
+	<element name="Emerald Mark: Enspell Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_EMERALD_MARK_ENSPELL" />
+	<element name="Sylvan Circle Spells Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_SYLVAN_CIRCLE_SPELLS" />
+	<element name="Nature's Mask Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_NATURES_MASK" />
+	<element name="Font of Life Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_FONT_OF_LIFE" />
+	<element name="Sylvan Savant Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SYLVAN_CIRCLE_SYLVAN_SAVANT" />
+	
+</elements>

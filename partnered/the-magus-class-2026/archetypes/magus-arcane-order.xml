@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arcane Order</name>
+		<description>Arcane Order from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="magus-arcane-order.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-arcane-order.xml" />
+		</update>
+	</info>
+
+	<element name="Arcane Order" type="Archetype" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_MAGUS_ARCANE_ORDER">
+		<supports>MAGUS2026 Magus Subclass</supports>
+		<description>
+			<p class="flavor">Defend the Arcane Architecture of the Multiverse</p>
+			<p>The Arcane Order seeks to catalog the magical wonders of the multiverse and defend the Tapestry from existential threats. You travel the world with an eye out for lost artifacts, magical monuments, and mystic secrets. Although some in the Arcane Order collect such prizes in a quest for power, most do so out of intellectual curiosity or the desire to preserve such treasures for future generations.</p>
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_ARCANE_ORDER_MAGIC" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MYSTIC_INSIGHTS" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_LESSER_SPELL_SURGE" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_OCCULT_SAVANT" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_ARCANE_VORTEX" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_ARCANE_ORDER_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MYSTIC_INSIGHTS" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_LESSER_SPELL_SURGE" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_OCCULT_SAVANT" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_ARCANE_VORTEX" level="14" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Amethyst Mark" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_AMETHYST_MARK</requirements>
+		<description>
+			<p>The effects of your mystic marks are enhanced by your greater understanding of the Arcane Order's esoteric knowledge. When you use your Mystic Mark feature, a faint purple, crystalline aura surrounds you and you gain the following effects based on the benefit or benefits chosen.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to swap places via teleportation. You suffer the effects of the attack instead of the creature and you have Resistance to damage dealt by the attack.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> Once per turn when you hit a creature with a weapon or Unarmed Strike, you can force it to make a Charisma saving throw against your spell save DC. On a failure, the creature is teleported 10 feet horizontally in a direction of your choosing.</p>
+		</description>
+		<sheet alt="Amethyst Mark">
+			<description>When you use your Mystic Mark feature, you gain the following effects based on the benefit or benefits chosen.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Aegis" supports="MAGUS2026 Amethyst Mark Aegis" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK_AEGIS" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_AMETHYST_MARK_AEGIS"/>
+			<select type="Archetype Feature" name="Enspell" supports="MAGUS2026 Amethyst Mark Enspell" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK_ENSPELL" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_AMETHYST_MARK_ENSPELL"/>
+		</rules>
+	</element>
+	<element name="Aegis" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK_AEGIS">
+		<compendium display="false" />
+		<supports>MAGUS2026 Amethyst Mark Aegis</supports>
+		<description>
+			<p>When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to swap places via teleportation. You suffer the effects of the attack instead of the creature and you have Resistance to damage dealt by the attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a willing creature you can see within 30 ft of you is hit by an attack, you can swap places via teleportation. You suffer the effects of the attack instead of the creature and you have Resistance to damage dealt by the attack.</description>
+		</sheet>
+	</element>
+	<element name="Enspell" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_AMETHYST_MARK_ENSPELL">
+		<compendium display="false" />
+		<supports>MAGUS2026 Amethyst Mark Enspell</supports>
+		<description>
+			<p>Once per turn when you hit a creature with a weapon or Unarmed Strike, you can force it to make a Charisma saving throw against your spell save DC. On a failure, the creature is teleported 10 feet horizontally in a direction of your choosing.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon or Unarmed Strike, you can force it to make a DC{{magus:spellcasting:dc}} Charisma saving throw. On a failure, the creature is teleported 10 feet horizontally in a direction of your choosing.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Arcane Order Magic" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_ARCANE_ORDER_MAGIC">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_ARCANE_ORDER_MAGIC</requirements>
+		<description>
+			<p>You can use an Arcane Focus as a Spellcasting Focus for your Magus spells.</p>
+			<p class="indent">In addition, your training in the Arcane Order ensures you always have certain spells ready; when you reach a Magus level specified in the Arcane Order Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Arcane Order Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Magus Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Demiplanar Pitch, Shocking Grasp, Find Familiar, Magic Missile</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Nystul's Magic Aura, Misty Step</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Dispel Magic, Waypoint</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Banishment, Mordenkainen's Private Sanctum</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Reflect Magic, Teleportation Circle</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Arcane Order Magic">
+			<description>You can use an Arcane Focus as a Spellcasting Focus for your Magus spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_DEMIPLANAR_PITCH" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHOCKING_GRASP" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_MISSILE" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_NYSTULS_MAGIC_AURA" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISPEL_MAGIC" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_WAYPOINT" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANISHMENT" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_REFLECT_MAGIC" level="17" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TELEPORTATION_CIRCLE" level="17" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Mystic Insights" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MYSTIC_INSIGHTS">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_MYSTIC_INSIGHTS</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Additional Cantrips.</strong></em> You know two cantrips of your choice from the Wizard spell list. These cantrips count as Magus cantrips for you but don't count against your number of cantrips known.</p>
+			<p class="indent"><em><strong>Arcana Adept.</strong></em> You gain proficiency in the Arcana skill. If you are already proficient with Arcana, you gain Expertise in it instead.</p>
+			<p class="indent"><em><strong>Eldritch Eye.</strong></em> You can take a Bonus Action to cast the <i>Detect Magic</i> spell or the <i>Identify</i> spell. You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Mystic Insights" action="Bonus Action" usage="{{magus2026:mystic insights:usage}}/Long Rest">
+			<description>You can cast the Detect Magic spell or the Identify spell.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Mystic Insights)" supports="Wizard, 0" level="3" number="2" spellcasting="Magus" />
+
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ARCANA" />
+			
+			<stat name="magus2026:mystic insights:usage" value="1" bonus="bonus" />
+			<stat name="magus2026:mystic insights:usage" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Lesser Spell Surge" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_LESSER_SPELL_SURGE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_LESSER_SPELL_SURGE</requirements>
+		<description>
+			<p>You can cast a Magus spell you have prepared without expending a spell slot, as if you had expended your highest level spell slot. Once you do, you cannot do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Lesser Spell Surge" usage="1/Long Rest">
+			<description>You can cast a Magus spell you have prepared without expending a spell slot, as if you had expended your highest level spell slot.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Occult Savant" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_OCCULT_SAVANT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_OCCULT_SAVANT</requirements>
+		<description>
+			<p>Choose two spells of a level you can cast from the Wizard spell list. You always have the chosen spells prepared. Whenever you gain a Magus level, you can replace one of the chosen spells with another spell from the Wizard spell list of a level you can cast.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Spell (Occult Savant)" supports="Wizard,$(spellcasting:slots)" spellcasting="Magus" level="7" number="2" allowReplace="true" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Arcane Vortex" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_ARCANE_VORTEX">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_ARCANE_VORTEX</requirements>
+		<description>
+			<p>As a Magic action, choose a point you can see within 60 feet of yourself, warping space in a 20-foot radius Sphere around it. You and your allies within the area can each teleport up to 30 feet in a direction of your choice. All other creatures in the area must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 6d8 Force damage, is pulled up to 15 feet closer to the point, and can't use its Speed to move away from that point until the start of your next turn. On a successful save, a creature takes half as much damage only.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Arcane Vortex" action="Action" usage="1/Long Rest">
+			<description>Choose a point you can see within 60 ft of yourself, warping space in a 20-ft radius Sphere around it. You and your allies within the area can each teleport up to 30 ft in a direction of your choice. All other creatures in the area must make a DC{{magus:spellcasting:dc}} Strength saving throw. On a failed save, a creature takes 6d8 Force damage, is pulled up to 15 ft closer to the point, and can't use its Speed to move away from that point until the start of your next turn. On a successful save, a creature takes half as much damage only.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Master of the Arcane" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Amethyst Spell Surge.</strong></em> You can expend the use of your Spell Surge to cast <i>Chain Lightning</i> or <i>Contingency</i>.</p>
+			<p class="indent"><em><strong>Vexing Vortices.</strong></em> When you finish a Short Rest, you can regain the use of your Arcane Vortex. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE_AMETHYST_SPELL_SURGE" level="20" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE_VEXING_VORTICES" level="20" />
+		</rules>
+	</element>
+	<element name="Amethyst Spell Surge" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE_AMETHYST_SPELL_SURGE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend the use of your Spell Surge to cast <i>Chain Lightning</i> or <i>Contingency</i>.</p>
+		</description>
+		<sheet usage="Spell Surge">
+			<description>You can cast Chain Lightning or Contingency.</description>
+		</sheet>
+	</element>
+	<element name="Vexing Vortices" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE_VEXING_VORTICES">
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can regain the use of your Arcane Vortex. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can regain the use of your Arcane Vortex.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Amethyst Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_AMETHYST_MARK" />
+	<element name="Amethyst Mark: Aegis Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_AMETHYST_MARK_AEGIS" />
+	<element name="Amethyst Mark: Enspell Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_AMETHYST_MARK_ENSPELL" />
+	<element name="Arcane Order Magic Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_ARCANE_ORDER_MAGIC" />
+	<element name="Mystic Insights Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_MYSTIC_INSIGHTS" />
+	<element name="Lesser Spell Surge Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_LESSER_SPELL_SURGE" />
+	<element name="Occult Savant Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_OCCULT_SAVANT" />
+	<element name="Arcane Vortex Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_ARCANE_VORTEX" />
+	<element name="Master of the Arcane Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_ARCANE_ORDER_MASTER_OF_THE_ARCANE" />
+	
+</elements>

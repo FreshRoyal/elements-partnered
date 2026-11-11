@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sidereal Cabal</name>
+		<description>Sidereal Cabal from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="magus-sidereal-cabal.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-sidereal-cabal.xml" />
+		</update>
+	</info>
+
+	<element name="Sidereal Cabal" type="Archetype" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_MAGUS_SIDEREAL_CABAL">
+		<supports>MAGUS2026 Magus Subclass</supports>
+		<description>
+			<p class="flavor">Master Your Destiny (and Everyone Else's Too)</p>
+			<p>Magi in the Sidereal Cabal consult the stars to foresee the future and intercede at moments of particular import. Long ago the cabal followed a philosophy of balance, believing that destiny and free will should be given equal weight. Today the cabal is split into two camps, kismetists and volitionists. Kismetists prefer indirect and discreet methods, believing that active and obvious interference in the world's affairs cause a disruption in the natural order of fate. Volitionists find pivotal moments where the road of destiny forks and interject themselves to force the outcome they prefer.</p>
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SIDEREAL_CABAL_MAGIC" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_STARLIT_SIGHT" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_CELESTIAL_CLOCKWORK_CONTROL" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SEAL_FATE" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_STARFINDER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SIDEREAL_CABAL_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_STARLIT_SIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_CELESTIAL_CLOCKWORK_CONTROL" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SEAL_FATE" level="14" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_STARFINDER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Selenite Mark" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SELENITE_MARK</requirements>
+		<description>
+			<p>The effects of your mystic marks are enhanced by your greater understanding of the Sidereal Cabal's esoteric knowledge. When you use your Mystic Mark feature, you give off a soft indistinct multicolored glow and hum with potential energy. You gain the following effects based on the benefit or benefits chosen.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to make the attacker reroll the attack with Disadvantage. It must use the new result.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> Once per turn when you miss a creature with a weapon or Unarmed Strike, you can make the attack roll again with Advantage. You must use the new result.</p>
+		</description>
+		<sheet alt="Selenite Mark">
+			<description>When you use your Mystic Mark feature, you gain the following effects based on the benefit or benefits chosen.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Aegis" supports="MAGUS2026 Selenite Mark Aegis" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_AEGIS" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_AEGIS"/>
+			<select type="Archetype Feature" name="Enspell" supports="MAGUS2026 Selenite Mark Enspell" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_ENSPELL" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_ENSPELL"/>
+		</rules>
+	</element>
+	<element name="Aegis" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_AEGIS">
+		<compendium display="false" />
+		<supports>MAGUS2026 Selenite Mark Aegis</supports>
+		<description>
+			<p>When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to make the attacker reroll the attack with Disadvantage. It must use the new result.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a willing creature you can see within 30 ft of you is hit by an attack, you can make the attacker reroll the attack with Disadvantage. It must use the new result.</description>
+		</sheet>
+	</element>
+	<element name="Enspell" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_ENSPELL">
+		<compendium display="false" />
+		<supports>MAGUS2026 Selenite Mark Enspell</supports>
+		<description>
+			<p>Once per turn when you miss a creature with a weapon or Unarmed Strike, you can make the attack roll again with Advantage. You must use the new result.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you miss a creature with a weapon or Unarmed Strike, you can make the attack roll again with Advantage. You must use the new result.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Sidereal Cabal Magic" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SIDEREAL_CABAL_MAGIC">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SIDEREAL_CABAL_MAGIC</requirements>
+		<description>
+			<p>You can use an Astrolabe or Arcane Focus as a Spellcasting Focus for your Magus spells.</p>
+			<p class="indent">In addition, your training in the Sidereal Cabal ensures you always have certain spells ready; when you reach a Magus level specified in the Sidereal Cabal Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Sidereal Cabal Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Magus Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Misfortunate Missile, Overexposure, Bane, Bless</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Augury, Mind Spike</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Haste, Slow</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Cascade of Hours, Divination</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Dream, Scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Sidereal Cabal Magic">
+			<description>You can use an Astrolabe or Arcane Focus as a Spellcasting Focus for your Magus spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_MISFORTUNATE_MISSILE" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_OVEREXPOSURE" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLESS" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIND_SPIKE" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLOW" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_CASCADE_OF_HOURS" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIVINATION" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DREAM" level="17" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" level="17" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Starlit Sight" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_STARLIT_SIGHT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_STARLIT_SIGHT</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Darkvision.</strong></em> You have Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.</p>
+			<p class="indent"><em><strong>Mini-Portent.</strong></em> Whenever you finish a Long Rest, roll one d20 and record the number rolled. You can replace any D20 Test made by you or a creature that you can see with this foretold roll. You must choose to do so before the roll. This foretold roll can be used only once. When you finish a Long Rest, you lose any unused foretold roll.</p>
+			<p class="indent"><em><strong>Revelator's Eyes.</strong></em> You gain proficiency in the Perception skill. If you are already proficient with Perception, you gain Expertise in it instead.</p>
+		</description>
+		<sheet alt="Starlit Sight">
+			<description>Whenever you finish a Long Rest, roll one d20 and record the number rolled. You can replace any D20 Test made by you or a creature that you can see with this roll. You must choose to do so before the roll. This roll can be used only once. When you finish a Long Rest, you lose any unused foretold roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERCEPTION" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Celestial Clockwork Control" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_CELESTIAL_CLOCKWORK_CONTROL">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_CELESTIAL_CLOCKWORK_CONTROL</requirements>
+		<description>
+			<p>Your extensive study of the stars has taught you to twist the heavenly mechanics of fate in your favor. After a creature you can see within 60 feet of you makes a D20 Test you can expend a spell slot to modify the result of the roll. When you do, you can choose to increase or decrease the result of the roll by the level of the expended spell slot, potentially turning a failure into a success or vice versa.</p>
+			<p class="indent">Once you use this feature, you can't use it again until the start of your next turn.</p>
+		</description>
+		<sheet alt="Celestial Clockwork Control" usage="1/Turn">
+			<description>After a creature you can see within 60 ft of you makes a D20 Test you can expend a spell slot to modify the result of the roll. When you do, you can choose to increase or decrease the result of the roll by the level of the expended spell slot, potentially turning a failure into a success or vice versa.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Seal Fate" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_SEAL_FATE">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SEAL_FATE</requirements>
+		<description>
+			<p>When a creature that you can see within 60 feet makes a roll with Advantage or Disadvantage, you can seal its fate. The creature rolls three d20s, rather than two, using the highest result if it had Advantage or the lowest result if it had Disadvantage.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short Rest or Long Rest.</p>
+		</description>
+		<sheet alt="Seal Fate">
+			<description usage="1/Short Rest">When a creature that you can see within 60 ft makes a roll with Advantage or Disadvantage, you can seal its fate. The creature rolls three d20s, rather than two, using the highest result if it had Advantage or the lowest result if it had Disadvantage.</description>
+			<description usage="3/Long Rest">When a creature that you can see within 60 ft makes a roll with Advantage or Disadvantage, you can seal its fate. The creature rolls three d20s, rather than two, using the highest result if it had Advantage or the lowest result if it had Disadvantage. &#13;
+			You regain one use of this feature after finishing a Short Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Starfinder" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_SIDEREAL_CABAL_STARFINDER">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_STARFINDER</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Selenite Spell Surge.</strong></em> You can expend the use of your Spell Surge to cast <i>First Speech</i> or <i>True Seeing</i>.</p>
+			<p class="indent"><em><strong>Weave Destiny.</strong></em> You can use your Seal Fate three times, regaining one use when you finish a Short Rest and all uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Starfinder" usage="Spell Surge">
+			<description>You can cast First Speech or True Seeing.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Selenite Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SELENITE_MARK" />
+	<element name="Selenite Mark: Aegis Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_AEGIS" />
+	<element name="Selenite Mark: Enspell Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SELENITE_MARK_ENSPELL" />
+	<element name="Sidereal Cabal Magic Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SIDEREAL_CABAL_MAGIC" />
+	<element name="Starlit Sight Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_STARLIT_SIGHT" />
+	<element name="Celestial Clockwork Control Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_CELESTIAL_CLOCKWORK_CONTROL" />
+	<element name="Seal Fate Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_SEAL_FATE" />
+	<element name="Starfinder Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_SIDEREAL_CABAL_STARFINDER" />
+	
+</elements>

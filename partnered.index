@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.1.5">
+		<update version="1.1.6">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -55,6 +55,7 @@
 
 		<!--Sterling Vermin Adventuring Co-->
 		<file name="the-pugilist-class-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-pugilist-class-2026.index" />
+		<file name="the-magus-class-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026.index" />
 
 	</files>
 </index>

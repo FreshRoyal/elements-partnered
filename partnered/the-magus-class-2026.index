@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>The Magus Class (2026) by Sterling Vermin Adventuring Co</name>
+		<update version="1.0.0">
+			<file name="the-magus-class-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026.index" />
+		</update>
+	</info>
+	<files>
+		<file name="class-magus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/class-magus.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/spells.xml" />
+
+		<!--Archetypes-->
+		<file name="magus-arcane-order.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-arcane-order.xml" />
+		<file name="magus-heavens-guard.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-heavens-guard.xml" />
+		<file name="magus-knights-stygian.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-knights-stygian.xml" />
+		<file name="magus-shadow-court.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-shadow-court.xml" />
+		<file name="magus-sidereal-cabal.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-sidereal-cabal.xml" />
+		<file name="magus-sylvan-circle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-sylvan-circle.xml" />
+	</files>
+</index>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Knights Stygian</name>
+		<description>Knights Stygian from The Magus Class (2026)</description>
+		<update version="0.0.1">
+			<file name="magus-knights-stygian.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-magus-class-2026/archetypes/magus-knights-stygian.xml" />
+		</update>
+	</info>
+
+	<element name="Knights Stygian" type="Archetype" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_MAGUS_KNIGHTS_STYGIAN">
+		<supports>MAGUS2026 Magus Subclass</supports>
+		<description>
+			<p class="flavor">Haunt the Unrighteous</p>
+			<p>When corruption spreads across the world like an infected sore and ne'er-do-wells hold the keys to the kingdoms, the Knights Stygian offer a cure that is as complete as it is brutal. These Magi believe that the means justify the ends, channeling dark magic to avenge injustices and bring evil to heel.</p>
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_KNIGHTS_STYGIAN_MAGIC" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_FACE_OF_FEAR" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OPEN_THE_IRON_GATES" />
+			<div element="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_KNIGHTS_STYGIAN_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_FACE_OF_FEAR" level="7" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OPEN_THE_IRON_GATES" level="14" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Doombringer" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Deathsight.</strong></em> You know when creatures you can see are Bloodied. In addition, you can see creatures with the Invisible condition if they are Bloodied, and you do not suffer Disadvantage on attacks against them as a result of the Invisible condition.</p>
+			<p class="indent"><em><strong>Unnatural Vitality.</strong></em> As a Bonus Action you can expend a spell slot to regain expended Hit Point Dice equal to twice the spell slot's level.</p>
+			<p class="indent"><em><strong>Reaper's Reward.</strong></em> Once per turn when you hit a creature with a weapon or Unarmed Strike, you can expend and roll a Hit Point Die. You regain Hit Points, and deal additional Necrotic damage to the creature, equal to a roll of the Hit Point Die.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER_DEATHSIGHT" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER_UNNATURAL_VITALITY" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER_REAPERS_REWARD" />
+		</rules>
+	</element>
+	<element name="Deathsight" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER_DEATHSIGHT">
+		<compendium display="false" />
+		<description>
+			<p>You know when creatures you can see are Bloodied. In addition, you can see creatures with the Invisible condition if they are Bloodied, and you do not suffer Disadvantage on attacks against them as a result of the Invisible condition.</p>
+		</description>
+		<sheet>
+			<description>You know when creatures you can see are Bloodied. In addition, you can see creatures with the Invisible condition if they are Bloodied, and you do not suffer Disadvantage on attacks against them as a result of the Invisible condition.</description>
+		</sheet>
+	</element>
+	<element name="Unnatural Vitality" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER_UNNATURAL_VITALITY">
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action you can expend a spell slot to regain expended Hit Point Dice equal to twice the spell slot's level.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a spell slot to regain expended HP Dice equal to twice the spell slot's level.</description>
+		</sheet>
+	</element>
+	<element name="Reaper's Reward" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER_REAPERS_REWARD">
+		<compendium display="false" />
+		<description>
+			<p>Once per turn when you hit a creature with a weapon or Unarmed Strike, you can expend and roll a Hit Point Die. You regain Hit Points, and deal additional Necrotic damage to the creature, equal to a roll of the Hit Point Die.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon or Unarmed Strike, you can expend and roll a HP Die. You regain HPs, and deal additional Necrotic damage to the creature, equal to a roll of the HP Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Knights Stygian Magic" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_KNIGHTS_STYGIAN_MAGIC">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_KNIGHTS_STYGIAN_MAGIC</requirements>
+		<description>
+			<p>You can use a Memento Mori as a Spellcasting Focus for your Magus spells.</p>
+			<p class="indent">In addition, your training in the Knights Stygian ensures you always have certain spells ready; when you reach a Magus level specified in the Knights Stygian Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Knights Stygian Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Magus Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Bitter Wind, Hateful Haunting, Grave Bolt, Grave Grasp</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Carrionette, Web</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Animate Dead, Mortal Terror</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Evard's Black Tentacles, Stygian Blast</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Contagion, Insect Plague</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Knights Stygian Magic">
+			<description>You can use a Memento Mori as a Spellcasting Focus for your Magus spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_BITTER_WIND" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_HATEFUL_HAUNTING" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_GRAVE_BOLT" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_GRAVE_GRASP" level="3" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_CARRIONETTE" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WEB" level="5" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMATE_DEAD" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_MORTAL_TERROR" level="9" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_SVAC_MAGUS2026_SPELL_STYGIAN_BLAST" level="13" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="17" spellcasting="Magus" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INSECT_PLAGUE" level="17" spellcasting="Magus" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Obsidian Mark" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK</requirements>
+		<description>
+			<p>The effects of your mystic marks are enhanced by your greater understanding of the Knights Stygian's esoteric knowledge. When you use your Mystic Mark feature, you emit drifting motes of black ash and the acrid smell of decay, and you gain the following effects based on the benefit or benefits chosen.</p>
+			<p class="indent"><em><strong>Aegis.</strong></em> When a creature you can see within 30 feet of you is hit by an attack, you can force the attacker to make a Constitution saving throw as a Reaction. On a failed save, the attacker takes Necrotic damage equal to half the damage of its attack.</p>
+			<p class="indent"><em><strong>Enspell.</strong></em> Once per turn when you hit a creature with an attack with a weapon or Unarmed Strike, you can deal an additional 1d4 Necrotic damage. If the target is Bloodied, the additional damage increases to 2d4.</p>
+		</description>
+		<sheet alt="Obsidian Mark">
+			<description>When you use your Mystic Mark feature, you gain the following effects based on the benefit or benefits chosen.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Aegis" supports="MAGUS2026 Obsidian Mark Aegis" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_AEGIS" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_AEGIS"/>
+			<select type="Archetype Feature" name="Enspell" supports="MAGUS2026 Obsidian Mark Enspell" default="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_ENSPELL" requirements="!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_ENSPELL"/>
+		</rules>
+	</element>
+	<element name="Aegis" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_AEGIS">
+		<compendium display="false" />
+		<supports>MAGUS2026 Obsidian Mark Aegis</supports>
+		<description>
+			<p>When a creature you can see within 30 feet of you is hit by an attack, you can force the attacker to make a Constitution saving throw as a Reaction. On a failed save, the attacker takes Necrotic damage equal to half the damage of its attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see within 30 ft of you is hit by an attack, you can force the attacker to make a Constitution saving throw. On a failed save, the attacker takes Necrotic damage equal to half the damage of its attack.</description>
+		</sheet>
+	</element>
+	<element name="Enspell" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_ENSPELL">
+		<compendium display="false" />
+		<supports>MAGUS2026 Obsidian Mark Enspell</supports>
+		<description>
+			<p>Once per turn when you hit a creature with an attack with a weapon or Unarmed Strike, you can deal an additional 1d4 Necrotic damage. If the target is Bloodied, the additional damage increases to 2d4.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with an attack with a weapon or Unarmed Strike, you can deal an additional 1d4 Necrotic damage. If the target is Bloodied, the additional damage increases to 2d4.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Face of Fear" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_FACE_OF_FEAR">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_FACE_OF_FEAR</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Dreadful Incantation.</strong></em> When you cast a level 1+ Necromancy spell or a spell from your Knights Stygian Magic, you can choose one creature within 60 feet of you that can see you. That creature must make a Wisdom saving throw against your spell save DC, gaining the Frightened condition until the start of your next turn on a failed save.</p>
+			<p class="indent"><em><strong>Fearless.</strong></em> You have Immunity to the Frightened condition.</p>
+			<p class="indent"><em><strong>Mortal Terror.</strong></em> As a Bonus Action you can expend a spell slot to regain expended Hit Point Dice equal to twice the spell slot's level.</p>
+		</description>
+		<sheet alt="Face of Fear">
+			<description>You gain the following benefits. &#13;
+			• When you cast a level 1+ Necromancy spell or a spell from your Knights Stygian Magic, you can choose one creature within 60 ft of you that can see you. That creature must make a DC{{magus:spellcasting:dc}} Wisdom saving throw, gaining the Frightened condition until the start of your next turn on a failed save. &#13;
+			• You have Immunity to the Frightened condition. &#13;
+			• Whenever you would deal Necrotic damage with a Magus spell or feature, you can deal your choice of Psychic or Necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Open the Iron Gates" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_OPEN_THE_IRON_GATES">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OPEN_THE_IRON_GATES</requirements>
+		<description>
+			<p>As a Bonus Action you can fling open the gates between life and death, filling the air with shadows and ash. When you do, you manifest a 30-foot Emanation that originates from you for the next minute.</p>
+			<p class="indent">When you manifest the Emanation and at the start of each of your subsequent turns, creatures of your choice within your Emanation regain Hit Points equal to 1d8 plus your Intelligence modifier (minimum of one). Additionally, creatures of your choice within your Emanation have Advantage on saving throws.</p>
+			<p class="indent">Once you use this feature, you must finish a Long Rest before you can do so again.</p>
+		</description>
+		<sheet alt="Open the Iron Gates" action="Bonus Action" usage="1/Long Rest">
+			<description>You manifest a 30-ft Emanation that originates from you for the next minute. When a creature starts its turn in your Emanation, you can deal 1d6 Necrotic damage to it. If the creature is Bloodied, you can deal 3d6 Necrotic damage instead. &#13;
+			In addition, you can take a Bonus Action to make a creature of your choice within your Emanation that is Bloodied take a DC{{magus:spellcasting:dc}} Wisdom saving throw. On a failed save, the creature has the Frightened condition until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Darkest Knight" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT">
+		<requirements>!ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><em><strong>Obsidian Spell Surge.</strong></em> You can expend the use of your Spell Surge to cast <i>Circle of Death</i> or <i>Create Undead</i>.</p>
+			<p class="indent"><em><strong>Stygian Sentinel.</strong></em> When you finish a Short Rest, you can regain the use of your Open the Iron Gates. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT_OBSIDIAN_SPELL_SURGE" level="20" />
+			<grant type="Archetype Feature" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT_STYGIAN_SENTINEL" level="20" />
+		</rules>
+	</element>
+	<element name="Obsidian Spell Surge" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT_OBSIDIAN_SPELL_SURGE">
+		<compendium display="false" />
+		<description>
+			<p>You can expend the use of your Spell Surge to cast <i>Circle of Death</i> or <i>Create Undead</i>.</p>
+		</description>
+		<sheet usage="Spell Surge">
+			<description>You can cast Circle of Death or Create Undead.</description>
+		</sheet>
+	</element>
+	<element name="Stygian Sentinel" type="Archetype Feature" source="The Magus Class (2026)" id="ID_SVAC_MAGUS2026_ARCHETYPE_FEATURE_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT_STYGIAN_SENTINEL">
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can regain the use of your Open the Iron Gates. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can regain the use of your Open the Iron Gates.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Doombringer Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_DOOMBRINGER" />
+	<element name="Knights Stygian Magic Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_KNIGHTS_STYGIAN_MAGIC" />
+	<element name="Obsidian Mark Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK" />
+	<element name="Obsidian Mark: Aegis Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_AEGIS" />
+	<element name="Obsidian Mark: Enspell Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OBSIDIAN_MARK_ENSPELL" />
+	<element name="Face of Fear Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_FACE_OF_FEAR" />
+	<element name="Open the Iron Gates Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_OPEN_THE_IRON_GATES" />
+	<element name="Darkest Knight Feature Replacement" type="Grants" source="Internal" id="ID_SVAC_MAGUS2026_FEATURE_REPLACEMENT_MAGUS_KNIGHTS_STYGIAN_DARKEST_KNIGHT" />
+	
+</elements>
