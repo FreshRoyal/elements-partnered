@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/feats.xml" />
 		</update>
 	</info>
@@ -55,12 +55,22 @@
 		</description>
 		<sheet>
 			<description>When you are attacked by a creature that has a CR higher than {{level}}, you gain a +2 bonus to your AC for that attack. &#13;
-			You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 HPs since the end of your last turn. &#13;
-			Additionally, when an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening ({{proficiency}}/Short Rest).</description>
+			Additionally, you have Advantage on attack rolls against any creature that has reduced one of your allies to 0 HPs since the end of your last turn.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase (Iron Hero)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+			<select type="Feat Feature" name="TGCVSS Iron Hero Heroic Intervention" supports="TGCVSS Iron Hero Heroic Intervention" default="ID_MHP_TGCVSS_FEAT_FEATURE_IRON_HERO_HEROIC_INTERVENTION" />
 		</rules>
+	</element>
+	<element name="Heroic Intervention" type="Feat Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_FEATURE_IRON_HERO_HEROIC_INTERVENTION">
+		<supports>TGCVSS Iron Hero Heroic Intervention</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Short Rest">
+			<description>When an enemy you can see takes a Legendary Action, you can intercede, preventing the Legendary Action from happening.</description>
+		</sheet>
 	</element>
 	
 	<element name="Marksman's Luck" type="Feat" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_MARKSMANS_LUCK">
@@ -74,13 +84,23 @@
 			<p class="indent"><b><i>Flip Die.</i></b> Once per turn, when you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. Note that for a balanced die, the top and bottom numbers add up to one more than the die's largest number.</p>
 			<p class="indent"><b><i>Enhanced Critical.</i></b> When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.</p>
 		</description>
-		<sheet>
-			<description>Once per turn, when you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. &#13;
-			Additionally, when you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.</description>
+		<sheet usage="1/Turn">
+			<description>When you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s.</description>
 		</sheet>
 		<rules>
 			<stat name="dexterity" value="1" alt="Marksman's Luck" />
+			<select type="Feat Feature" name="TGCVSS Marksmans Luck Enhanced Critical" supports="TGCVSS Marksmans Luck Enhanced Critical" default="ID_MHP_TGCVSS_FEAT_FEATURE_MARKSMANS_LUCK_ENHANCED_CRITICAL" />
 		</rules>
+	</element>
+	<element name="Enhanced Critical" type="Feat Feature" source="The Gunslinger Class: Valda's Spire of Secrets" id="ID_MHP_TGCVSS_FEAT_FEATURE_MARKSMANS_LUCK_ENHANCED_CRITICAL">
+		<supports>TGCVSS Marksmans Luck Enhanced Critical</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.</description>
+		</sheet>
 	</element>
 
 	<!--Feat Unlocker-->

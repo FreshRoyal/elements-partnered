@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Valda's Spire of Secrets: Player Pack</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack/feats.xml" />
 		</update>
 	</info>
@@ -39,13 +39,24 @@
 			<p class="indent"><b><i>Command.</i></b> As an action, you can issue a command to an ally within 60 feet that can hear you. It can immediately take an action as a Reaction. That action can be used to take only the Attack (one attack only), Dash, Dodge, Hide, Influence, Search, Study, or Utilize action.</p>
 			<p class="indent"><b><i>Tight Formation.</i></b> While you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</p>
 		</description>
-		<sheet>
-			<description>As an action, you can issue a command to an ally within 60 ft that can hear you. It can immediately take an action as a Reaction. That action can be used to take only the Attack (one attack only), Dash, Dodge, Hide, Influence, Search, Study, or Utilize action. &#13;
+		<sheet action="Action">
+			<description>You can issue a command to an ally within 60 ft that can hear you. It can immediately take an action as a Reaction. That action can be used to take only the Attack (one attack only), Dash, Dodge, Hide, Influence, Search, Study, or Utilize action. &#13;
 			Additionally, while you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</description>
 		</sheet>
 		<rules>
 			<stat name="charisma" value="1" alt="Field Commander" />
+			<select type="Feat Feature" name="VSSPP Field Commander Tight Formation" supports="VSSPP Field Commander Tight Formation" default="ID_MHP_VSSPP_FEAT_FEATURE_FIELD_COMMANDER_TIGHT_FORMATION" />
 		</rules>
+	</element>
+	<element name="Tight Formation" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FEATURE_FIELD_COMMANDER_TIGHT_FORMATION">
+		<supports>VSSPP Field Commander Tight Formation</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</p>
+		</description>
+		<sheet>
+			<description>While you are within 5 ft of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</description>
+		</sheet>
 	</element>
     
     <element name="Focused Critical" type="Feat" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FOCUSED_CRITICAL">
@@ -80,12 +91,22 @@
 		</description>
 		<sheet>
 			<description>When you are attacked by a creature that has a CR higher than {{level}}, you gain a +2 bonus to your AC for that attack. &#13;
-			You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 HPs since the end of your last turn. &#13;
-			Additionally, when an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening ({{proficiency}}/Short Rest).</description>
+			Additionally, you have Advantage on attack rolls against any creature that has reduced one of your allies to 0 HPs since the end of your last turn.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase (Iron Hero)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+			<select type="Feat Feature" name="VSSPP Iron Hero Heroic Intervention" supports="VSSPP Iron Hero Heroic Intervention" default="ID_MHP_VSSPP_FEAT_FEATURE_IRON_HERO_HEROIC_INTERVENTION" />
 		</rules>
+	</element>
+	<element name="Heroic Intervention" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack" id="ID_MHP_VSSPP_FEAT_FEATURE_IRON_HERO_HEROIC_INTERVENTION">
+		<supports>VSSPP Iron Hero Heroic Intervention</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Short Rest">
+			<description>When an enemy you can see takes a Legendary Action, you can intercede, preventing the Legendary Action from happening.</description>
+		</sheet>
 	</element>
 
 	<!--Feat Unlocker-->
