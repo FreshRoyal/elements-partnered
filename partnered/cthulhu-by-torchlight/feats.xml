@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from Cthulhu by Torchlight</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/cthulhu-by-torchlight/feats.xml" />
 		</update>
 	</info>
@@ -17,10 +17,21 @@
 			<p class="indent"><b><i>Defiant Strike.</i></b> While you are Bloodied and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible. Once you use this benefit, you can't use it again until you finish a Long Rest.</p>
 			<p class="indent"><b><i>Indomitable Heart.</i></b> If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</p>
 		</description>
+		<sheet usage="1/Long Rest">
+			<description>While you are Bloodied and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="CBT I Fought I Lived Indomitable Heart" supports="CBT I Fought I Lived Indomitable Heart" default="ID_CSM_CBT_FEAT_FEATURE_I_FOUGHT_I_LIVED_INDOMITABLE_HEART" />
+		</rules>
+	</element>
+	<element name="Indomitable Heart" type="Feat Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_FEATURE_I_FOUGHT_I_LIVED_INDOMITABLE_HEART">
+		<supports>CBT I Fought I Lived Indomitable Heart</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</p>
+		</description>
 		<sheet>
-			<description>You gain the following benefits: &#13;
-			• While you are Bloodied and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible. (1/Long Rest) &#13;
-			• If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</description>
+			<description>If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition.</description>
 		</sheet>
 	</element>
 
@@ -34,11 +45,32 @@
 			<p class="indent"><b><i>Beneath Notice.</i></b> When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 feet away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures.</p>
             <p class="indent"><b><i>Merge into Shadows.</i></b> Wisdom (Perception) checks made to detect you while you have the Invisible condition have Disadvantage.</p>
 		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>If attacking would end the Invisible condition on you, you can make an attack and keep that condition.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="CBT I Hid from the Terror Beneath Notice" supports="CBT I Hid from the Terror Beneath Notice" default="ID_CSM_CBT_FEAT_FEATURE_I_HID_FROM_THE_TERROR_BENEATH_NOTICE" />
+			<select type="Feat Feature" name="CBT I Hid from the Terror Merge into Shadows" supports="CBT I Hid from the Terror Merge into Shadows" default="ID_CSM_CBT_FEAT_FEATURE_I_HID_FROM_THE_TERROR_MERGE_INTO_SHADOWS" />
+		</rules>
+	</element>
+	<element name="Beneath Notice" type="Feat Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_FEATURE_I_HID_FROM_THE_TERROR_BENEATH_NOTICE">
+		<supports>CBT I Hid from the Terror Beneath Notice</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 feet away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures.</p>
+		</description>
 		<sheet>
-			<description>You gain the following benefits: &#13;
-			• If attacking would end the Invisible condition on you, you can make an attack and keep that condition. ({{proficiency}}/Long Rest) &#13;
-			• When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 ft away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures. &#13;
-            • Wisdom (Perception) checks made to detect you while you have the Invisible condition have Disadvantage.</description>
+			<description>When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 ft away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures.</description>
+		</sheet>
+	</element>
+	<element name="Merge into Shadows" type="Feat Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_FEATURE_I_HID_FROM_THE_TERROR_MERGE_INTO_SHADOWS">
+		<supports>CBT I Hid from the Terror Merge into Shadows</supports>
+		<compendium display="false" />
+		<description>
+			<p>Wisdom (Perception) checks made to detect you while you have the Invisible condition have Disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Wisdom (Perception) checks made to detect you while you have the Invisible condition have Disadvantage.</description>
 		</sheet>
 	</element>
 
@@ -70,10 +102,21 @@
             <p class="indent"><b><i>Subtle Interrogation.</i></b> You have Advantage on Insight checks made against creatures that you are speaking with.</p>
 		</description>
 		<sheet>
-			<description>You gain the following benefits: &#13;
-			• If you have the Charmed condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition. &#13;
-			• When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement. ({{proficiency}}/Long Rest) &#13;
-            • You have Advantage on Insight checks made against creatures that you are speaking with.</description>
+			<description>If you have the Charmed condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition. &#13;
+			Additionally, you have Advantage on Insight checks made against creatures that you are speaking with.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="CBT I Pierced the Illusion Ear for Falsehood" supports="CBT I Pierced the Illusion Ear for Falsehood" default="ID_CSM_CBT_FEAT_FEATURE_I_PIERCED_THE_ILLUSION_EAR_FOR_FALSEHOOD" />
+		</rules>
+	</element>
+	<element name="Ear for Falsehood" type="Feat Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_FEATURE_I_PIERCED_THE_ILLUSION_EAR_FOR_FALSEHOOD">
+		<supports>CBT I Pierced the Illusion Ear for Falsehood</supports>
+		<compendium display="false" />
+		<description>
+			<p>When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement.</description>
 		</sheet>
 	</element>
     
@@ -85,16 +128,25 @@
 			<p>You gain the following benefits.</p>
 			<p class="indent"><b><i>Instinct to Survive.</i></b> When you take damage that would reduce you to 0 Hit Points, you can immediately regain Hit Points equal to your level. When you use this benefit, you cannot use it again until you finish a Long Rest.</p>
 			<p class="indent"><b><i>Superior Speed.</i></b> You gain a +10 bonus to Speed.</p>
-            <p class="indent"><b><i>Wriggle Free.</i></b>  If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</p>
+            <p class="indent"><b><i>Wriggle Free.</i></b> If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</p>
 		</description>
-		<sheet>
-			<description>You gain the following benefits: &#13;
-			• When you take damage that would reduce you to 0 HPs, you can immediately regain {{level}} HPs. (1/Long Rest) &#13;
-			•  If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</description>
+		<sheet usage="1/Long Rest">
+			<description>When you take damage that would reduce you to 0 HPs, you can immediately regain {{level}} HPs.</description>
 		</sheet>
         <rules>
 			<stat name="innate speed" value="10" />
+			<select type="Feat Feature" name="CBT I Survived to Tell the Tale Wriggle Free" supports="CBT I Survived to Tell the Tale Wriggle Free" default="ID_CSM_CBT_FEAT_FEATURE_I_SURVIVED_TO_TELL_THE_TALE_WRIGGLE_FREE" />
 		</rules>
+	</element>
+	<element name="Wriggle Free" type="Feat Feature" source="Cthulhu by Torchlight" id="ID_CSM_CBT_FEAT_FEATURE_I_SURVIVED_TO_TELL_THE_TALE_WRIGGLE_FREE">
+		<supports>CBT I Survived to Tell the Tale Wriggle Free</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</p>
+		</description>
+		<sheet>
+			<description>If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it.</description>
+		</sheet>
 	</element>
 
 </elements>
