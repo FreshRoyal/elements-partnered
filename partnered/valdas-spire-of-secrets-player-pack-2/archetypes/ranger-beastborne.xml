@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Beastborne</name>
+		<description>Beastborne from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="ranger-beastborne.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/ranger-beastborne.xml" />
+		</update>
+	</info>
+
+	<element name="Beastborne" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_RANGER_BEASTBORNE">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">Channel Lycanthropic Fury</p>
+			<p>Whether by infected bite or insidious curse, your blood was infected with the magic of lycanthropy. A ferocious, bestial form lies just beneath your skin, awaiting the allure of blood and the thrill of a hunt. Perhaps, if you can avoid the violence or the siren call of moonlight, you can resist the lycanthropic urge. Or perhaps you might embrace the infection as a blessing or wield it as a fearsome weapon.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_LYCANTHROPE" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_FERAL_HOWL" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BLOODTHIRSTY_FURY" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_WALL_WARP" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_LYCANTHROPE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_FERAL_HOWL" level="7" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BLOODTHIRSTY_FURY" level="11" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_WALL_WARP" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Lycanthrope" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_LYCANTHROPE">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_LYCANTHROPE</requirements>
+		<description>
+			<p>Your true form is a bestial hybrid, granting you the following benefits.</p>
+			<p class="indent"><b><i>Claws.</i></b> You have a set of vicious claws that you can use to make Unarmed Strikes. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Slashing damage equal to 1d6 plus your Strength or Dexterity modifier instead of the strike's normal damage.</p>
+			<p class="indent"><b><i>Climb Speed.</i></b> You gain a Climb Speed equal to your Speed.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+		</description>
+		<sheet alt="Lycanthrope">
+			<description>Your Unarmed Strikes deal 1d6+{{vsspp2:lycanthrope:ability modifier}} Slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:lycanthrope:ability modifier" value="strength:modifier" bonus="ability" />
+			<stat name="vsspp2:lycanthrope:ability modifier" value="dexterity:modifier" bonus="ability" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Bestial Aspect" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT</requirements>
+		<description>
+			<p>In the throes of combat, you gradually lose control and slip into a beastlike form. The degree of your transformation is represented by your Bestial Aspect Level, which starts at 0. Your Bestial Aspect Level grants you benefits, as shown on the Bestial Aspect table. You gain all the benefits of your Bestial Aspect Level and lower.</p>
+			<p class="indent">When you deal damage to an enemy, you can take a Bonus Action to increase your Bestial Aspect Level by 1. If you don't deal damage to an enemy for 1 minute, your Bestial Aspect Level resets to 0.</p>
+			<h5>Bestial Aspect</h5>
+			<table>
+				<thead>
+					<tr><td class="col-5">Level</td><td>Benefits</td></tr>
+				</thead>
+				<tr><td>0</td><td>—</td></tr>
+				<tr><td>1</td><td><strong>Carnage.</strong> You gain a +2 bonus to your damage rolls with weapons and Unarmed Strikes.</td></tr>
+				<tr><td>2</td><td><strong>Fast Movement.</strong> Your Speed increases by 10 feet.</td></tr>
+				<tr><td>3</td><td><strong>Blood Frenzy.</strong> You have Advantage on attack rolls against any creature that doesn't have all its Hit Points.</td></tr>
+				<tr><td>4</td><td><strong>Thick Hide.</strong> If you aren't wielding a Shield, you gain a +2 bonus to AC.</td></tr>
+				<tr><td>5</td><td><strong>Retaliation.</strong> When you take damage from a creature that is within 5 feet of yourself, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.</td></tr>
+			</table>
+		</description>
+		<sheet alt="Bestial Aspect">
+			<description>You gradually transform, represented by your Bestial Aspect Level, which starts at 0. When you deal damage to an enemy, you can take a Bonus Action to increase your Bestial Aspect Level by 1. You gain all the benefits of your Bestial Aspect Level and lower. If you don't deal damage to an enemy for 1 minute, your Bestial Aspect Level resets to 0.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="VSSPP2 Bestial Aspect Carnage" supports="VSSPP2 Bestial Aspect Carnage" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_CARNAGE" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_CARNAGE" />
+			<select type="Archetype Feature" name="VSSPP2 Bestial Aspect Fast Movement" supports="VSSPP2 Bestial Aspect Fast Movement" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_FAST_MOVEMENT" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_FAST_MOVEMENT" />
+			<select type="Archetype Feature" name="VSSPP2 Bestial Aspect Blood Frenzy" supports="VSSPP2 Bestial Aspect Blood Frenzy" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_BLOOD_FRENZY" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_BLOOD_FRENZY" />
+			<select type="Archetype Feature" name="VSSPP2 Bestial Aspect Thick Hide" supports="VSSPP2 Bestial Aspect Thick Hide" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_THICK_HIDE" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_THICK_HIDE" />
+			<select type="Archetype Feature" name="VSSPP2 Bestial Aspect Retaliation" supports="VSSPP2 Bestial Aspect Retaliation" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_RETALIATION" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_RETALIATION" />
+		</rules>
+	</element>
+	<element name="1. Carnage" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_CARNAGE">
+		<supports>VSSPP2 Bestial Aspect Carnage</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain a +2 bonus to your damage rolls with weapons and Unarmed Strikes.</p>
+		</description>
+		<sheet>
+			<description>You gain a +{{vsspp2:bestial aspect carnage:modifier}} bonus to your damage rolls with weapons and Unarmed Strikes.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:bestial aspect carnage:modifier" value="2" bonus="base" />
+		</rules>
+	</element>
+	<element name="2. Fast Movement" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_FAST_MOVEMENT">
+		<supports>VSSPP2 Bestial Aspect Fast Movement</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Speed increases by 10 feet.</p>
+		</description>
+		<sheet>
+			<description>Your Speed increases by 10ft.</description>
+		</sheet>
+	</element>
+	<element name="3. Blood Frenzy" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_BLOOD_FRENZY">
+		<supports>VSSPP2 Bestial Aspect Blood Frenzy</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have Advantage on attack rolls against any creature that doesn't have all its Hit Points.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on attack rolls against any creature that doesn't have all its HPs.</description>
+		</sheet>
+	</element>
+	<element name="4. Thick Hide" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_THICK_HIDE">
+		<supports>VSSPP2 Bestial Aspect Thick Hide</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you aren't wielding a Shield, you gain a +2 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>If you aren't wielding a Shield, you gain a +2 bonus to AC.</description>
+		</sheet>
+	</element>
+	<element name="5. Retaliation" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BESTIAL_ASPECT_RETALIATION">
+		<supports>VSSPP2 Bestial Aspect Retaliation</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take damage from a creature that is within 5 feet of yourself, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage from a creature that is within 5 feet of yourself, you can make one melee attack against that creature, using a weapon or an Unarmed Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Feral Howl" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_FERAL_HOWL">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_FERAL_HOWL</requirements>
+		<description>
+			<p>When you roll Initiative, you can roll a d4 and increase your Bestial Aspect Level to the number rolled.</p>
+		</description>
+		<sheet alt="Feral Howl">
+			<description>When you roll Initiative, you can roll a d4 and increase your Bestial Aspect Level to the number rolled.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Bloodthirsty Fury" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_BLOODTHIRSTY_FURY">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BLOODTHIRSTY_FURY</requirements>
+		<description>
+			<p>Your true form is a bestial hybrid, granting you the following benefits.</p>
+			<p class="indent"><b><i>Bestial Mark.</i></b> You can cast <i>Hunter's Mark</i> as a part of the Bonus Action to increase your Bestial Aspect Level.</p>
+			<p class="indent"><b><i>Greater Carnage.</i></b> The damage bonus of your Carnage benefit increases to +3.</p>
+		</description>
+		<sheet alt="Bloodthirsty Fury">
+			<description>You can cast Hunter's Mark as a part of the Bonus Action to increase your Bestial Aspect Level.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:bestial aspect carnage:modifier" value="3" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Monstrous Resilience" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_RANGER_BEASTBORNE_MONSTROUS_RESILIENCE">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_MONSTROUS_RESILIENCE</requirements>
+		<description>
+			<p>Once per turn when you take damage, you can reduce the total damage you take, to a minimum of 0. The reduction equals your Constitution modifier plus your Bestial Aspect Level.</p>
+		</description>
+		<sheet alt="Monstrous Resilience" usage="1/Turn">
+			<description>When you take damage, you can reduce the total damage you take, to a minimum of 0. The reduction equals {{constitution:modifier}} plus your Bestial Aspect Level.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Lycanthrope Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_LYCANTHROPE" />
+	<element name="Bestial Aspect Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT" />
+	<element name="Bestial Aspect: Carnage Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_CARNAGE" />
+	<element name="Bestial Aspect: Fast Movement Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_FAST_MOVEMENT" />
+	<element name="Bestial Aspect: Blood Frenzy Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_BLOOD_FRENZY" />
+	<element name="Bestial Aspect: Thick Hide Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_THICK_HIDE" />
+	<element name="Bestial Aspect: Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BESTIAL_ASPECT_RETALIATION" />
+	<element name="Feral Howl Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_FERAL_HOWL" />
+	<element name="Bloodthirsty Fury Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_BLOODTHIRSTY_FURY" />
+	<element name="Monstrous Resilience Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_RANGER_BEASTBORNE_MONSTROUS_RESILIENCE" />
+
+</elements>

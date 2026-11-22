@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragon Domain</name>
+		<description>Dragon Domain from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="cleric-dragon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/cleric-dragon.xml" />
+		</update>
+	</info>
+
+	<element name="Dragon Domain" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_CLERIC_DRAGON_DOMAIN">
+		<supports>Cleric Subclass</supports>
+		<description>
+			<p class="flavor">Channel the Might of Dragon Gods</p>
+			<p>While dragons are the foremost worshipers of the Dragon Domain, the draconic deities accept the worship of any who crave wealth or power. Clerics of the Dragon Domain, often considered cultists, can channel the power and aspect of dragons, unleashing fearsome elemental magic and manifesting the awe-inspiring presence of an ancient wyrm.</p>
+			<p class="indent">The principal gods of the Dragon Domain include Tiamat, the five-headed mother of chromatic dragons, and Bahamut, the just and wise god of metallic dragons.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_CHROMATIC_AFFINITY" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_DRAGON_DOMAIN_SPELLS" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_DRACONIC_MAJESTY" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_WYRMS_BLESSING" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_CHROMATIC_AFFINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_DRAGON_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_DRACONIC_MAJESTY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_WYRMS_BLESSING" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Chromatic Affinity" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_CHROMATIC_AFFINITY">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_CHROMATIC_AFFINITY</requirements>
+		<description>
+			<p>Whenever you finish a Long Rest, choose Acid, Cold, Fire, Lightning, or Poison. When you cast a Cleric spell or use a Cleric feature that deals Necrotic or Radiant damage, you can change that damage to the chosen type.</p>
+			<p class="indent">Once per turn when you deal damage of the chosen damage type to a creature, you can deal extra damage of that type equal to your Cleric level to that creature. You can deal this extra damage a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Chromatic Affinity">
+			<description>Whenever you finish a Long Rest, choose Acid, Cold, Fire, Lightning, or Poison. When you cast a Cleric spell or use a Cleric feature that deals Necrotic or Radiant damage, you can change that damage to the chosen type. &#13;
+			Once per turn when you deal damage of the chosen damage type to a creature, you can deal {{level:cleric}} extra damage. You can deal this extra damage {{vsspp2:chromatic affinity:usage}} times per Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:chromatic affinity:usage" value="1" bonus="bonus" />
+			<stat name="vsspp2:chromatic affinity:usage" value="wisdom:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Dragon Domain Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_DRAGON_DOMAIN_SPELLS">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_DRAGON_DOMAIN_SPELLS</requirements>
+		<description>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Dragon Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>DRAGON DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Chromatic Orb, Command, Darkvision, Dragon's Breath</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Fly, Protection from Energy</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Banishment, Charm Monster</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Dominate Person, Summon Dragon</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHROMATIC_ORB" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMMAND" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKVISION" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DRAGONS_BREATH" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SUMMON_DRAGON" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Draconic Majesty" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_DRACONIC_MAJESTY">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_DRACONIC_MAJESTY</requirements>
+		<description>
+			<p>As a Magic action, you can present your Holy Symbol and expend a use of your Channel Divinity to manifest an aura of draconic authority around yourself in a 30-foot Emanation. Choose the Charmed or Frightened condition. Each creature of your choice in the Emanation must succeed on a Wisdom saving throw or have the chosen condition for 1 minute. A creature Charmed or Frightened by this feature makes another Wisdom saving throw at the end of each of its turns, ending the condition on itself on a success.</p>
+		</description>
+		<sheet alt="Draconic Majesty" action="Action" usage="Channel Divinity">
+			<description>You can present your Holy Symbol to manifest an aura of draconic authority around yourself in a 30-ft Emanation. Choose the Charmed or Frightened condition. Each creature of your choice in the Emanation must succeed on a Wisdom saving throw or have the chosen condition for 1 minute. A creature Charmed or Frightened by this feature makes another Wisdom saving throw at the end of each of its turns, ending the condition on itself on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Wyrm's Blessing" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_WYRMS_BLESSING">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_WYRMS_BLESSING</requirements>
+		<description>
+			<p>You can expend a use of your Channel Divinity to cast <i>Dragon's Breath</i> or <i>Protection from Energy</i> on yourself rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. This spell ends early if you cast that spell again, have the Incapacitated condition, or die.</p>
+		</description>
+		<sheet alt="Wyrm's Blessing" usage="Channel Divinity">
+			<description>You cast Dragon's Breath or Protection from Energy on yourself rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. This spell ends early if you cast that spell again, have the Incapacitated condition, or die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Legendary Aspect" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT</requirements>
+		<description>
+			<p>By conjuring the wings, claws, or tail of an ancient dragon, you can take one of the following Legendary Actions immediately after another creature's turn. Once you use this feature to take a Legendary Action, you can't take that one again until the start of your next turn. You can use this feature three times and regain all expended uses when you finish a Long Rest. You can also restore one use of it by expending a level 2+ spell slot (no action required).</p>
+			<p class="indent"><b><i>Rend.</i></b> You move up to your Speed and cast a Cleric cantrip that has a casting time of an action or make one melee attack using a weapon or an Unarmed Strike. The attack uses your Wisdom for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p class="indent"><b><i>Tail Swipe.</i></b> Each Large or smaller creature you choose within 10 feet of you gains the Prone condition.</p>
+			<p class="indent"><b><i>Wingbeat.</i></b> You immediately move up to your Speed. During this movement, you have a Fly Speed up to your Speed and don't provoke Opportunity Attacks.</p>
+		</description>
+		<sheet alt="Legendary Aspect" usage="3/Long Rest">
+			<description>You can take one of the following Legendary Actions immediately after another creature's turn. Once you use this feature to take a Legendary Action, you can't take that one again until the start of your next turn. You can also restore one use of this feature by expending a level 2+ spell slot (no action required).</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="VSSPP2 Legendary Aspect Rend" supports="VSSPP2 Legendary Aspect Rend" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_REND" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_REND" />
+			<select type="Archetype Feature" name="VSSPP2 Legendary Aspect Tail Swipe" supports="VSSPP2 Legendary Aspect Tail Swipe" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_TAIL_SWIPE" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_TAIL_SWIPE" />
+			<select type="Archetype Feature" name="VSSPP2 Legendary Aspect Wingbeat" supports="VSSPP2 Legendary Aspect Wingbeat" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_WINGBEAT" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_WINGBEAT" />
+		</rules>
+	</element>
+	<element name="Rend" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_REND">
+		<supports>VSSPP2 Legendary Aspect Rend</supports>
+		<compendium display="false" />
+		<description>
+			<p>You move up to your Speed and cast a Cleric cantrip that has a casting time of an action or make one melee attack using a weapon or an Unarmed Strike. The attack uses your Wisdom for the attack and damage rolls instead of using Strength or Dexterity.</p>
+		</description>
+		<sheet>
+			<description>You move up to {{speed}}ft. and cast a Cleric cantrip that has a casting time of an action or make one melee attack using a weapon or an Unarmed Strike. The attack uses your Wisdom for the attack and damage rolls instead of using Strength or Dexterity.</description>
+		</sheet>
+	</element>
+	<element name="Tail Swipe" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_TAIL_SWIPE">
+		<supports>VSSPP2 Legendary Aspect Tail Swipe</supports>
+		<compendium display="false" />
+		<description>
+			<p>Each Large or smaller creature you choose within 10 feet of you gains the Prone condition.</p>
+		</description>
+		<sheet>
+			<description>Each Large or smaller creature you choose within 10 ft of you gains the Prone condition.</description>
+		</sheet>
+	</element>
+	<element name="Wingbeat" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_WINGBEAT">
+		<supports>VSSPP2 Legendary Aspect Wingbeat</supports>
+		<compendium display="false" />
+		<description>
+			<p>You immediately move up to your Speed. During this movement, you have a Fly Speed up to your Speed and don't provoke Opportunity Attacks.</p>
+		</description>
+		<sheet>
+			<description>You immediately move up to {{speed}}ft. During this movement, you have a {{speed}}ft. Fly Speed and don't provoke Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Chromatic Affinity Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_CHROMATIC_AFFINITY" />
+	<element name="Dragon Domain Spells Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_DRAGON_DOMAIN_SPELLS" />
+	<element name="Draconic Majesty Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_DRACONIC_MAJESTY" />
+	<element name="Wyrm's Blessing Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_WYRMS_BLESSING" />
+	<element name="Legendary Aspect Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT" />
+	<element name="Legendary Aspect: Rend Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_REND" />
+	<element name="Legendary Aspect: Tail Swipe Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_TAIL_SWIPE" />
+	<element name="Legendary Aspect: Wingbeat Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_CLERIC_DRAGON_DOMAIN_LEGENDARY_ASPECT_WINGBEAT" />
+
+</elements>

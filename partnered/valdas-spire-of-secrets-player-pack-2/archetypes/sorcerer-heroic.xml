@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heroic Sorcery</name>
+		<description>Heroic Sorcery from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="sorcerer-heroic.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/sorcerer-heroic.xml" />
+		</update>
+	</info>
+
+	<element name="Heroic Sorcery" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_SORCERER_HEROIC_SORCERY">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<p class="flavor">Wield Swords and Sorcery as a Reincarnated Hero</p>
+			<p>You are the reincarnation of a legendary hero known to have slain many terrible foes, and your sorcerous magic draws from your legendary past. Being called back to life, whether by the gods, a very powerful mage, or a cycle of reincarnation, has awakened a well of magic and your ancient instincts for battle.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_HEROIC_SPELLS" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_EXTRA_ATTACK" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_WOUNDING_STRIKE" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_HEROIC_HASTE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_HEROIC_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_WOUNDING_STRIKE" level="14" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_HEROIC_HASTE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Heroic Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_HEROIC_SPELLS">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_HEROIC_SPELLS</requirements>
+		<description>
+			<p>When you reach a Sorcerer level specified in the Heroic Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Heroic Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Sorcerer Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Arc Blade, Burning Blade, Frigid Blade, Heroism, Magic Weapon, Mirror Image, Shield</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Haste, Phantom Steed</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Death Ward, Stoneskin</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Legend Lore, Hold Monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_MHP_VSSPP2_SPELL_ARC_BLADE" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_MHP_VSSPP2_SPELL_BURNING_BLADE" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_MHP_VSSPP2_SPELL_FRIGID_BLADE" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEROISM" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_WEAPON" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MIRROR_IMAGE" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHIELD" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTOM_STEED" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONESKIN" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEGEND_LORE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Martial Sorcery" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY</requirements>
+		<description>
+			<p>Your past heroic life grants you the following benefits.</p>
+			<p class="indent"><b><i>Heroic Soul.</i></b> At the start of each of your turns, you can spend 1 Sorcery Point to gain 1d6 plus your Sorcerer level in Temporary Hit Points (no action required).</p>
+			<p class="indent"><b><i>Innate Bladework.</i></b> Whenever you attack with a weapon with which you have proficiency while your Innate Sorcery feature is active, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p class="indent"><b><i>Martial Training.</i></b> You gain proficiency with Martial weapons and training with Light armor, Medium armor, and Shields.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY_HEROIC_SOUL" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY_INNATE_BLADEWORK" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+	<element name="Heroic Soul" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY_HEROIC_SOUL">
+		<compendium display="false" />
+		<description>
+			<p>At the start of each of your turns, you can spend 1 Sorcery Point to gain 1d6 plus your Sorcerer level in Temporary Hit Points (no action required).</p>
+		</description>
+		<sheet usage="Sorcery Point">
+			<description>At the start of each of your turns, you can gain 1d6+{{level:sorcerer}} THPs (no action required).</description>
+		</sheet>
+	</element>
+	<element name="Innate Bladework" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY_INNATE_BLADEWORK">
+		<compendium display="false" />
+		<description>
+			<p>Whenever you attack with a weapon with which you have proficiency while your Innate Sorcery feature is active, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity.</p>
+		</description>
+		<sheet>
+			<description>Whenever you attack with a weapon with which you have proficiency while your Innate Sorcery feature is active, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 6: Extra Attack" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_EXTRA_ATTACK">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_EXTRA_ATTACK</requirements>
+		<description>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your Sorcerer cantrips that has a casting time of an action in place of one of those attacks.</p>
+		</description>
+		<sheet alt="Extra Attack">
+			<description>You can cast one of your Sorcerer cantrips that has a casting time of an action in place of one of those attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Mystical Maneuvers" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS</requirements>
+		<description>
+			<p>You can use the following martial maneuvers.</p>
+			<p class="indent"><b><i>Blinding Attack.</i></b> When you hit a creature with an attack using a weapon or Unarmed Strike, you can expend two Sorcery Points as a Bonus Action to attempt to blind the target. Add 2d8 to the attack's damage roll. The target must succeed on a Constitution saving throw against your spell save DC or have the Blinded condition for 1 minute. At the end of each of its turns, the target repeats the save, ending the condition on itself on a success.</p>
+			<p class="indent"><b><i>Ruinous Blow.</i></b> When you hit a creature with an attack using a weapon or Unarmed Strike, you can expend two Sorcery Points as a Bonus Action to sunder its defenses. Add 2d8 to the attack's damage roll. The target has a -3 penalty to AC until the end of your next turn.</p>
+			<p class="indent"><b><i>Wounding Strike.</i></b> When you hit a creature with an attack using a weapon or Unarmed Strike, you can expend two Sorcery Points as a Bonus Action to deal the target a bleeding wound. Add 2d8 to the attack's damage roll. A creature with a bleeding wound can't regain Hit Points and takes Necrotic damage equal to 1d8 for each of its wounds at the start of each of its turns. This damage ignores Resistance and Immunity. A creature can take an action to staunch all of its bleeding wounds.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_BLINDING_ATTACK" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_RUINOUS_BLOW" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_WOUNDING_STRIKE" />
+		</rules>
+	</element>
+	<element name="Blinding Attack" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_BLINDING_ATTACK">
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an attack using a weapon or Unarmed Strike, you can expend two Sorcery Points as a Bonus Action to attempt to blind the target. Add 2d8 to the attack's damage roll. The target must succeed on a Constitution saving throw against your spell save DC or have the Blinded condition for 1 minute. At the end of each of its turns, the target repeats the save, ending the condition on itself on a success.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Sorcery Points">
+			<description>When you hit a creature with an attack using a weapon or Unarmed Strike, you can attempt to blind the target. Add 2d8 to the attack's damage roll. The target must succeed on a DC{{sorcerer:spellcasting:dc}} Constitution saving throw or have the Blinded condition for 1 minute. At the end of each of its turns, the target repeats the save, ending the condition on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Ruinous Blow" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_RUINOUS_BLOW">
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an attack using a weapon or Unarmed Strike, you can expend two Sorcery Points as a Bonus Action to sunder its defenses. Add 2d8 to the attack's damage roll. The target has a -3 penalty to AC until the end of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Sorcery Points">
+			<description>When you hit a creature with an attack using a weapon or Unarmed Strike, add 2d8 to the attack's damage roll. The target has a -3 penalty to AC until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Wounding Strike" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS_WOUNDING_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature with an attack using a weapon or Unarmed Strike, you can expend two Sorcery Points as a Bonus Action to deal the target a bleeding wound. Add 2d8 to the attack's damage roll. A creature with a bleeding wound can't regain Hit Points and takes Necrotic damage equal to 1d8 for each of its wounds at the start of each of its turns. This damage ignores Resistance and Immunity. A creature can take an action to staunch all of its bleeding wounds.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Sorcery Points">
+			<description>When you hit a creature with an attack using a weapon or Unarmed Strike, you can deal the target a bleeding wound. Add 2d8 to the attack's damage roll. A creature with a bleeding wound can't regain Hit Points and takes Necrotic damage equal to 1d8 for each of its wounds at the start of each of its turns. This damage ignores Resistance and Immunity. A creature can take an action to staunch all of its bleeding wounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Heroic Haste" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_SORCERER_HEROIC_SORCERY_HEROIC_HASTE">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_HEROIC_HASTE</requirements>
+		<description>
+			<p>Whenever you start casting <i>Haste</i> targeting yourself, you can modify it so that it doesn't require Concentration. If you do so, when the spell ends, you don't have the Incapacitated condition or a Speed of 0.</p>
+		</description>
+		<sheet alt="Heroic Haste">
+			<description>Whenever you start casting Haste targeting yourself, you can modify it so that it doesn't require Concentration. If you do so, when the spell ends, you don't have the Incapacitated condition or a Speed of 0.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Heroic Spells Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_HEROIC_SPELLS" />
+	<element name="Martial Sorcery Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_MARTIAL_SORCERY" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_EXTRA_ATTACK" />
+	<element name="Mystical Maneuvers Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_MYSTICAL_MANEUVERS" />
+	<element name="Heroic Haste Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_SORCERER_HEROIC_SORCERY_HEROIC_HASTE" />
+
+</elements>

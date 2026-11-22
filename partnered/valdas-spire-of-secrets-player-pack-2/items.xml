@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/items.xml" />
+		</update>
+	</info>
+
+	<element name="Bag of Cheer" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_BAG_OF_CHEER">
+		<description>
+			<p>This large sack, which weighs 30 pounds and is made from red velvet, appears to be full of presents in colorful wrapping. As a Magic action, you can pull a present from the bag and give it to another creature. The gift is tailored specifically to the recipient; the GM determines its nature or rolls on the Gifts table. The value of the gift can't exceed 100 GP.</p>
+			<p class="indent">Once three presents have been pulled from the bag, the bag can't be used again until the next dawn. Any additional presents removed from the bag are empty but well-decorated boxes.</p>
+			<h5>Gifts</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10">d10</td><td>Gift</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td> A weapon or Shield</td></tr>
+					<tr><td>2</td><td> Gold Pieces</td></tr>
+					<tr><td>3</td><td> An art object</td></tr>
+					<tr><td>4</td><td> Fine Clothes</td></tr>
+					<tr><td>5</td><td> A tool or Musical Instrument</td></tr>
+					<tr><td>6</td><td> <i>Potion of Healing</i></td></tr>
+					<tr><td>7</td><td> Gems</td></tr>
+					<tr><td>8</td><td> An exotic food</td></tr>
+					<tr><td>9</td><td> A Book</td></tr>
+					<tr><td>10</td><td> A toy or Gaming Set</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">magic action, action, weapon, shield, tool</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	
+	<element name="Gambler's Coin" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_GAMBLERS_COIN">
+		<description>
+			<p>This Gold Piece has deep scratches on one side. It has 3 charges and regains all expended charges daily at dawn. When you make a D20 Test, you can expend 1 charge to replace the d20 roll with a coin flip. On heads, the roll is treated as a 20 (though you don't score a Critical Hit with an attack roll or activate any other effects which trigger on the roll of a 20). On tails, the roll is treated as a 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">d20 test</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+
+	<element name="Leaden Manacles" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_LEADEN_MANACLES">
+		<description>
+			<p>These magical Manacles are used to restrain spellcasters. When a creature attempts to cast a spell or take the Magic action while it is bound with these Manacles, it makes a DC 20 ability check using its spellcasting ability. On a failure, the spell or Magic action fails and the creature takes 4d6 Fire damage. The spell slot or use of that Magic action is wasted, as well as the action, Bonus Action, or Reaction taken.</p>
+		</description>
+		<setters>
+			<set name="keywords">magic action, action, ability check, fire, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="cost" currency="gp">402</set>
+		</setters>
+	</element>
+
+	<element name="Nolzur's Painted World" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_NOLZURS_PAINTED_WORLD">
+		<description>
+			<p>This masterful painting, which is either Medium or Large, was crafted by a master painter using at least ten pots of <i>Nolzur's Marvelous Pigments</i>. The painting depicts a serene painted world and acts as a portal to a demiplane in which that world exists. Creatures of the painting's size or smaller can pass through the portal into the demiplane.</p>
+			<p class="indent">Inside the painted world, a portal to the real world appears as a misty archway. If the face of the painting is blocked, the misty archway in the demiplane disappears. The location, objects, and creatures depicted within the painted world are determined by the painting's creator. Such objects and creatures dissipate into smoke if removed from the painting. Time passes at half speed within the painted world.</p>
+		</description>
+		<setters>
+			<set name="keywords">demiplane</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="cost" currency="gp">200000</set>
+		</setters>
+	</element>
+
+	<element name="Reaper's Ammunition" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_REAPERS_AMMUNITION">
+		<description>
+			<p>If a creature takes damage from this magic ammunition, it dies. The ammunition then becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="keywords">kill</set>
+			<set name="category">Ammunition</set>
+			<set name="type">Ammunition</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+			<set name="cost" currency="gp">100000</set>
+		</setters>
+	</element>
+
+	<element name="Soul Figurine" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_SOUL_FIGURINE">
+		<description>
+			<p>This smiling, human-shaped figurine contains a reserve of life force. If you drop to 0 Hit Points while attuned to the figurine, roll 2d10 + 10. Your Hit Points instead change to the number rolled. The figurine's expression becomes sorrowful and the figurine becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="keywords">hit points</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, +1 Blade" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_BLADE_1">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This adamantine charm resembles a miniature Longsword. While attached to a weapon, you have a +1 bonus to attack and damage rolls made with this magic weapon. If the weapon already gains such a bonus, like a +2 Longsword, you choose which bonus to use; you can't use more than one.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, +2 Blade" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_BLADE_2">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This adamantine charm resembles a miniature Longsword. While attached to a weapon, you have a +2 bonus to attack and damage rolls made with this magic weapon. If the weapon already gains such a bonus, like a +2 Longsword, you choose which bonus to use; you can't use more than one.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, +3 Blade" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_BLADE_3">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This adamantine charm resembles a miniature Longsword. While attached to a weapon, you have a +3 bonus to attack and damage rolls made with this magic weapon. If the weapon already gains such a bonus, like a +2 Longsword, you choose which bonus to use; you can't use more than one.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">40000</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Arrowhead" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_ARROWHEAD">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This golden charm depicts a stone arrowhead. While attached to a weapon, your ranged attacks using it ignore Half Cover and Three-Quarters Cover.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, ranged, ignore cover</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Die" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_DIE">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This silver charm depicts a six-sided die. While attached to a weapon, it deals more potent critical hits. When you score a Critical Hit with this weapon, if you roll the highest number on any damage die, you can roll another of that die and add it to the damage. You can add a maximum of 5 dice to the attack's damage roll in this way.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, critical hit, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Flame" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_FLAME">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This brass charm resembles a burning fire. While attached to a weapon, it deals Fire damage instead of its normal damage type. When you hit a creature or object with this weapon, it begins Burning for 1 minute. If you hit a burning target again with this weapon, the damage the burning target takes at the start of each of its turns increases by one step (d4 → d6 → d8 → d10 → d12, to a maximum of 1d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, fire, damage, burning</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Hook" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_HOOK">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This bronze charm is shaped like a fishing hook. While attached to a weapon, if the weapon is on the same plane of existence as yourself, you can take a Bonus Action to teleport it to your hand.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, bonus action, teleport</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">100</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Lance" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_LANCE">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This copper charm depicts a short lance. While attached to a weapon, once on each of your turns when you make a melee attack roll with this weapon against a creature you can see, you can lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke Opportunity Attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you have nothing holding you aloft.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, melee, lunge, jump</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Lightning Bolt" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_LIGHTNING_BOLT">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This mithral charm depicts a wild lightning bolt. While attached to a weapon, it deals Lightning damage instead of its normal damage type and deals an extra 1d6 Lightning damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, lightning, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Charms, Quiver" type="Magic Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_MAGIC_ITEM_WEAPON_CHARMS_QUIVER">
+		<description>
+			<p>A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time.</p>
+			<p class="indent">This quartz charm resembles a quiver bristling with arrows. While attached to a weapon, it ignores the Loading property. Ammunition you are carrying teleports into the weapon when needed.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, magic action, magic weapon, weapon, ignore loading</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">400</set>
+		</setters>
+	</element>
+
+</elements>

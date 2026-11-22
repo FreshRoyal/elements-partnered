@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Arc Blade" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_ARC_BLADE">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>As lightning surges through the weapon used in the spell's casting, you make one attack. This attack can be a melee attack or ranged spell attack using the weapon with a range of 15 feet, as a wave of energy extends from the weapon. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If it is a ranged attack, it deals Lightning damage. Otherwise, it can deal Lightning damage or the weapon's normal damage type (your choice).</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Whether you deal Lightning damage or the weapon's normal damage type, the attack deals extra Lightning damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, weapon, attack, lightning, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">15 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Melee weapon with which you have proficiency and that is worth 1+ CP</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Blunder" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_BLUNDER">
+		<supports>Bard, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>The attacker must succeed on a Wisdom saving throw or suffer one of the following effects of your choice:</p>
+			<p class="indent"><b><i>Fumble.</i></b> The target drops one object of your choice that it's holding, with the object landing in a space you choose up to 10 feet away from the target. If the target drops the weapon it is using for the attack roll, it can make an Unarmed Strike for the triggering attack.</p>
+			<p class="indent"><b><i>Prat Fall.</i></b> The target has the Prone condition. The Disadvantage from the Prone condition applies against the triggering attack, potentially causing it to miss.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, drop object, prone, disadvantage</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Reaction, which you take when a creature you can see within range hits a target with an attack roll</set>
+			<set name="range">30 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a banana peel</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Burning Blade" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_BURNING_BLADE">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>Encasing the weapon used in the spell's casting in flames, you make one melee attack. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Fire damage or the weapon's normal damage type (your choice). If the weapon's damage die or any of the spell's damage dice roll the highest number, you can roll that die again and add it to the damage, rolling again if it is the highest number, and so on. You can add a maximum number of dice to the damage roll equal to your spellcasting ability modifier.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Whether you deal Fire damage or the weapon's normal damage type, the attack deals extra Fire damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, weapon, attack, fire, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Melee weapon with which you have proficiency and that is worth 1+ CP</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Candy Blast" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_CANDY_BLAST">
+		<supports>Sorcerer, Wizard, Spell Attack, Damaging Spell</supports>
+		<description>
+			<p>You summon a handful of hard candy—boiled sweets, mints, jelly beans, etc.—and hurl them at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Force damage and the candy forms a pile on the ground in its space, causing a 5-foot-square area of your choice in the target's space to become Difficult Terrain. The candy produced by this spell is edible but has no nutritional value, and vanishes after 1 minute, ending any Difficult Terrain.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">ranged, force, damage, difficult terrain, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Cheat" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_CHEAT">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>You twist your fingers and fate seems to follow suit. Until the end of your next turn, you can reroll any ability check you make to play nonmagical games of skill and must use the new roll. Therefore, this spell could influence a game of poker, but not the result of a <i>Deck of Many Things</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">reroll, ability check, games</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weighted die</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Cosmic Horror" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_COSMIC_HORROR">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>For the briefest moment, you open a portal to an eldritch dimension in a 10-foot-radius Sphere centered on a point you can see within range. Each creature within the Sphere makes a Wisdom saving throw as it beholds the nightmarish dimension. On a failed save, a creature takes 6d6 Psychic damage and has the Frightened condition for the duration. On a successful save, a creature takes half as much damage only.</p>
+			<p class="indent">A creature Frightened by this spell makes another Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, wisdom, save, psychic, damage, frightened, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dream journal</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Flashback" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_FLASHBACK">
+		<supports>Bard, Cleric, Wizard</supports>
+		<description>
+			<p>Casting your mind through time, you make a subtle alteration to history, allowing you to make preparations for the current situation within the last 24 hours. Describe to your GM how the precautions you took ahead of time to affect the current situation. For example, you might have packed a particular piece of gear or arranged for a distraction to occur at this exact moment. The GM might call for an ability check if the preparations are sufficiently challenging; on a failure, the spell fails and has no effect.</p>
+			<p class="indent">A Flashback's effects are limited, as reality reasserts itself with the fewest possible changes to accommodate the alteration in history. The spell can't remove creatures or objects from an encounter, harm a creature, or cause creatures and objects that aren't being worn or carried by you to move. It can generally add an element to an encounter, but can't generally subtract them. The GM decides on the extent of the Flashback's effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">history, alter, preparation</set>
+			<set name="level">3</set>
+			<set name="school" addition="Chronomancy">Divination</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Flawed Reconstruction" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_FLAWED_RECONSTRUCTION">
+		<supports>Sorcerer, Warlock, Wizard, Healing Spell</supports>
+		<description>
+			<p>You stitch together the wounds of a creature you touch, which regains 3d6 Hit Points. However, the mending is imperfect, and the target's Hit Point maximum is reduced by 1d6, to a minimum of 1.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The healing increases by 2d6 and the reduction increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a needle and thread</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Frenzy" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_FRENZY">
+		<supports>Bard, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>With a gesture, you reduce a crowd to base instinct and violence. Each creature in a 20-foot-radius Sphere centered on a point you choose within range makes a Wisdom saving throw. On a failed save, a creature has the Frenzied condition for the duration.</p>
+			<p class="indent">A creature with the Frenzied condition loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While Frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an Opportunity Attack if any creature provokes one.</p>
+			<p class="indent">At the end of its turn, an affected creature can repeat its saving throw, ending the condition on itself early on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, wisdom, save, frenzied, upcasting, higher-level spell slot</set>
+			<set name="level">6</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of fresh blood</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Frigid Blade" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_FRIGID_BLADE">
+		<supports>Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<description>
+			<p>Encasing the weapon used in the spell's casting in ice, you make one melee attack. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. The weapon's damage die increases by 1 step (d4 → d6 → d8 → d10 → d12 or 2d6, your choice). The weapon's damage dice don't increase if it has more than one weapon damage die. If the attack deals damage, it can be Cold damage or the weapon's normal damage type (your choice).</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Whether you deal Cold damage or the weapon's normal damage type, the attack deals extra Cold damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, weapon, attack, cold, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Melee weapon with which you have proficiency and that is worth 1+ CP</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Mandy's Marvelous Dress" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_MANDYS_MARVELOUS_DRESS">
+		<supports>Bard, Spell Saving Throw</supports>
+		<description>
+			<p>A willing creature you touch is instantly clothed in a fabulous ball gown, perfectly tailored and complete with a set of glittering jewelry. You can choose for the dress to sit atop the creature's clothing or armor, or for it to magically replace its outfit. The creature can't remove the dress until the spell ends; similarly, the jewelry vanishes if it is removed.</p>
+			<p class="indent"><b><i>Elegant Flair.</i></b> Until the spell ends, when the wearer makes a D20 Test using Charisma, it can replace the number it rolls with a 10.</p>
+			<p class="indent"><b><i>Glamourous Ward.</i></b> If the wearer of the dress is attacked by a creature that can see it, the attacker must succeed on a Wisdom saving throw or miss with the attack. On a success, the attacker is immune to this effect until the spell ends.</p>
+			<p class="indent"><b><i>Duration.</i></b> This spell's duration varies depending upon when and where it was cast. If cast in a location where time passes normally, the spell lasts until the twelfth stroke of the next midnight, however long that may be. Elsewhere, the spell lasts for 24 hours. When the spell ends, the dress vanishes in a puff of sparkles, and the creature becomes clothed in its original outfit.</p>
+		</description>
+		<setters>
+			<set name="keywords">d20 test, charisma, wisdom, save, attack, miss</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a glass slipper worth 100+ GP</set>
+			<set name="duration">Special</set>
+		</setters>
+	</element>
+
+	<element name="Protect Threshold" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_PROTECT_THRESHOLD">
+		<supports>Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Tracing arcane sigils along its boundary, you can ward a doorway, window, or other portal from entry. For the duration, an Invisible eldritch creature stalks the warded portal. Any creature that attempts to pass through the portal makes a Wisdom saving throw, taking 4d6 Psychic damage on a failed save or half as much damage on a successful save.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, save, psychic, damage, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ounce of salt for each foot of the warded portal's perimeter</set>
+			<set name="duration">10 minutes</set>
+		</setters>
+	</element>
+
+	<element name="Rocks Fall" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_ROCKS_FALL">
+		<supports>Druid, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Boulders appear in the air and fall in a 60-foot-radius, 120-foot-high Cylinder centered on a point within range. Each creature in the Cylinder makes a Dexterity saving throw. On a failed save, a target takes 10d8 Bludgeoning damage and is buried under the rubble. On a successful save, a target takes half as much damage only.</p>
+			<p class="indent">A buried creature has the Prone and Restrained conditions, and can take an action to make a Strength (Athletics) check against your spell save DC, freeing itself from the boulders and ending the Prone and Restrained conditions on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">cylinder, dexteiry, save, bludgeoning, damage, prone, restrained</set>
+			<set name="level">8</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">ten dice</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Rusting Grasp" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_RUSTING_GRASP">
+		<supports>Druid, Sorcerer, Wizard, Damaging Spell, Spell Attack</supports>
+		<description>
+			<p>You conjure a potent acid at your fingertips, which can corrode metal and burn flesh. Make a melee spell attack against a creature or object within your reach. On a hit, a creature takes 6d4 Acid damage and it has a -3 penalty to its AC, to a minimum of 10, for 1 hour.</p>
+			<p class="indent">If you target a nonmagical metal object with this spell that isn't being worn or carried, you corrode and destroy parts of the object you choose that can fit within a 1-foot Cube.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 2d4 for each spell slot level above 3. If you target a nonmagical object, you can destroy an additional cubic foot for each slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, spell attack, acid, damage, armor class, metal, corrode, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+	<element name="Soul Effigy" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_SOUL_EFFIGY">
+		<supports>Warlock, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>A Humanoid you touch makes a Constitution saving throw. On a failed save, a fragment of its soul is bound to the doll used in this spell's casting, which becomes an effigy of that creature. The spell ends if the effigy is destroyed or if the target is on another plane of existence. For the duration, you can use a Magic action to do one of the following.</p>
+			<p class="indent"><b><i>Control.</i></b> You directly control the target's actions and movement on its next turn by manipulating the effigy's limbs. That target can only take the Dash, Disengage, Hide, or Utilize action. While controlled, the target's movements are jerky and unnatural.</p>
+			<p class="indent"><b><i>Harm.</i></b> You prod the effigy and deal 2d8 damage to the target. This damage is Bludgeoning, Piercing, Slashing, or another damage type, appropriate to the means by which you harm the effigy. This damage ignores Resistance and Immunity.</p>
+			<p class="indent"><b><i>Restrain.</i></b> You submerge the effigy in water, causing the target to believe it is suffocating. The target has the Restrained condition until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">constitution, save, control, bludgeoning, piercing, slashing, damage, restrained</set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">Action or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a straw doll worth 1+ CP</set>
+			<set name="duration">8 hours</set>
+		</setters>
+	</element>
+
+	<element name="Stone Bones" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_STONE_BONES">
+		<supports>Druid, Paladin, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>Choose a creature you can see within range. The target has Resistance to Bludgeoning, Piercing, and Slashing damage until the spell ends at the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">resistance, bludgeoning, piercing, slashing</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Swift Flight" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_SWIFT_FLIGHT">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>Streaks of energy flow from the back of a creature you touch, tracing the shapes of wings. The target has a Fly Speed of 60 feet and can hover until the end of its next turn. When the spell ends, the target falls if it is in the air and nothing is holding it aloft.</p>
+		</description>
+		<setters>
+			<set name="keywords">fly speed</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bird's wing feather</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Sword of Judgement" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_SWORD_OF_JUDGEMENT">
+		<supports>Cleric, Paladin, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>This spell designates an area of protection in a 20-foot-radius Sphere centered on a point you choose within range. Within that Sphere, a spectral sword appears over each creature, following the creature as long as it remains within the Sphere.</p>
+			<p class="indent">Whenever a creature within the Sphere makes an attack or casts a spell, you can force that creature to make a Dexterity saving throw, as the sword above it falls. Resolve the Dexterity saving throw before the triggering attack or spell. On a failed save, the target takes 4d8 Force damage, or half as much damage on a successful save. A creature makes this save only once per turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 5.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, dexterity, save, force, damage, upcasting, higher-level spell slot</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a strand of horse hair</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Séance" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_SEANCE">
+		<supports>Bard, Wizard</supports>
+		<description>
+			<p>You and three or more willing creatures lock hands to conjure a spirit from the afterlife to answer your questions. Describe or name a creature that is familiar to you. If the creature's soul is free and willing, it manifests as a ghostly specter. This spell fails if the spirit was the target of this spell within the last 10 days.</p>
+			<p class="indent">Until the spell ends, you can ask up to three questions of the specter. The specter knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the specter is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. There is a 5 percent chance that this spell contacts the wrong spirit, one which will answer questions untruthfully or ambiguously.</p>
+		</description>
+		<setters>
+			<set name="keywords">contact, afterlife, specter, questions</set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal ball, deck of tarot cards, or ouija board, and incense worth 50+ GP</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+
+	<element name="Transient Bulwark" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_TRANSIENT_BULWARK">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>A fragile, invisible shield protects you for the duration. The next attack roll against you has a -10 penalty to hit, and the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">attack roll, penalty</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action or Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pearl worth 10+ GP, which the spell consumes</set>
+			<set name="duration">8 hours</set>
+		</setters>
+	</element>
+
+	<element name="Zephyr's Feather" type="Spell" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_SPELL_SWORD_OF_JUDGEMENT">
+		<supports>Druid, Ranger, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You wave your hand and four alabaster feathers, magically sharpened to a razor's edge, appear and orbit around you until the spell ends. When you cast this spell and as Bonus Action on your later turns, you can expend one of the feathers and make a ranged spell attack using it against a creature you can see within 120 feet of yourself. On a hit, the target takes 1d8 Force damage.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">bonus action, ranged, spell attack, force, damage, upcasting, higher-level spell slot</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dove's feathe</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+
+</elements>

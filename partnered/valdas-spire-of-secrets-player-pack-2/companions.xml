@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companions from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/companions.xml" />
+		</update>
+	</info>
+
+	<element name="Flying Book" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_FLYING_BOOK">
+		<supports>Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Construct</set>
+			<set name="alignment">Unaligned</set>
+			<set name="ac">13</set>
+			<set name="hp">5 (2d4)</set>
+			<set name="speed">0 ft., Fly 30 ft. (hover)</set>
+			<set name="strength">3</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">4</set>
+			<set name="charisma">1</set>
+			<set name="senses">Blindsight 30 ft., Passive Perception 7</set>
+			<set name="vulnerabilities">Fire</set>
+			<set name="immunities">Poison, Psychic</set>
+			<set name="conditionImmunities">Blinded, Charmed, Deafened, Frightened, Paralyzed, Petrified, Poisoned</set>
+			<set name="languages">-</set>
+			<set name="challenge">1/8</set>
+			<set name="proficiency">2</set>
+			<set name="actions">ID_MHP_VSSPP2_COMPANION_ACTION_FLYING_BOOK_SLAM</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Slam" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_FLYING_BOOK_SLAM">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +4, reach 5 ft. <i>Hit:</i> 4 (1d4 + 2) Bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Fright" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_FRIGHT">
+		<supports>Variant Familiar</supports>
+		<setters>
+			<set name="size">Small</set>
+			<set name="type">Undead</set>
+			<set name="alignment">Chaotic Evil</set>
+			<set name="ac">14</set>
+			<set name="hp">21 (6d6)</set>
+			<set name="speed">0 ft., Fly 30 ft. (hover)</set>
+			<set name="strength">1</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">15</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 9</set>
+			<set name="resistances">Fire</set>
+			<set name="immunities">Poison</set>
+			<set name="conditionImmunities">Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</set>
+			<set name="languages">Common plus one other language</set>
+			<set name="challenge">1/2</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSSPP2_FRIGHT_INCORPOREAL_MOVEMENT</set>
+			<set name="actions">ID_MHP_VSSPP2_COMPANION_ACTION_FRIGHT_LIFE_DRAIN</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" bonus="base" />
+			<stat name="companion:hp:max" value="21" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Incorporeal Movement" type="Companion Trait" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FRIGHT_INCORPOREAL_MOVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>The fright can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>The fright can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</description>
+		</sheet>
+	</element>
+	<element name="Life Drain" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_FRIGHT_LIFE_DRAIN">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +4, reach 5 ft. <i>Hit:</i> 9 (2d8) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d8) Necrotic damage. If the target is a creature, its HP maximum decreases by an amount equal to the damage taken.</description>
+		</sheet>
+	</element>
+
+	<element name="Grep" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_GREP">
+		<supports>Variant Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Monstrosity</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">14</set>
+			<set name="hp">21 (6d4 + 6)</set>
+			<set name="speed">15 ft., Fly 50 ft.</set>
+			<set name="strength">3</set>
+			<set name="dexterity">18</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">13</set>
+			<set name="wisdom">15</set>
+			<set name="charisma">10</set>
+			<set name="skills">Perception +4, Sleight of Hand +6, Stealth +6</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 14</set>
+			<set name="languages">Understands Common but can't speak</set>
+			<set name="challenge">1/2</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSSPP2_COMPANION_TRAIT_GREP_MIMICRY</set>
+			<set name="actions">ID_MHP_VSSPP2_COMPANION_ACTION_GREP_CLAW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" bonus="base" />
+			<stat name="companion:hp:max" value="21" bonus="base" />
+			<stat name="companion:speed" value="15" bonus="base" />
+			<stat name="companion:speed:fly" value="50" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:sleight of hand:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mimicry" type="Companion Trait" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_TRAIT_GREP_MIMICRY">
+		<compendium display="false" />
+		<description>
+			<p>The grep can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (Insight) check.</p>
+		</description>
+		<sheet>
+			<description>The grep can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (Insight) check.</description>
+		</sheet>
+	</element>
+	<element name="Claw" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_GREP_CLAW">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +6, reach 5 ft. <i>Hit:</i> 7 (1d6 + 4) Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +6, reach 5 ft. Hit: 7 (1d6 + 4) Slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Mock" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_MOCK">
+		<supports>Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Monstrosity</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">11</set>
+			<set name="hp">9 (2d4 + 4)</set>
+			<set name="speed">20 ft.</set>
+			<set name="strength">9</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">13</set>
+			<set name="charisma">6</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="immunities">Acid</set>
+			<set name="conditionImmunities">Prone</set>
+			<set name="languages">-</set>
+			<set name="challenge">1/8</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSSPP2_COMPANION_TRAIT_MOCK_ADHESIVE</set>
+			<set name="actions">ID_MHP_VSSPP2_COMPANION_ACTION_MOCK_BITE,ID_MHP_VSSPP2_COMPANION_BONUS_ACTION_MOCK_SHAPE_SHIFT</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" bonus="base" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="Adhesive (Object Form Only)" type="Companion Trait" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_TRAIT_MOCK_ADHESIVE">
+		<compendium display="false" />
+		<description>
+			<p>The mock adheres to anything that touches it. The mock has Advantage on attack rolls against any creature adhered to it. The target or a creature within 5 feet of it can detach the mock as an action.</p>
+		</description>
+		<sheet>
+			<description>The mock adheres to anything that touches it. The mock has Advantage on attack rolls against any creature adhered to it. The target or a creature within 5 ft of it can detach the mock as an action.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_MOCK_BITE">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +3, reach 5 ft. <i>Hit:</i> 3 (1d4 + 1) Piercing damage plus 2 (1d4) Acid damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Piercing damage plus 2 (1d4) Acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Shape-Shift (Bonus Action)" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_BONUS_ACTION_MOCK_SHAPE_SHIFT">
+		<compendium display="false" />
+		<description>
+			<p>The mock shape-shifts to resemble a Tiny object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed.</p>
+		</description>
+		<sheet>
+			<description>The mock shape-shifts to resemble a Tiny object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pet Rock" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_PET_ROCK">
+		<supports>Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Elemental</set>
+			<set name="alignment">Unaligned</set>
+			<set name="ac">15</set>
+			<set name="hp">5 (1d4 + 3)</set>
+			<set name="speed">0 ft.</set>
+			<set name="strength">1</set>
+			<set name="dexterity">1</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">5</set>
+			<set name="charisma">1</set>
+			<set name="senses">Passive Perception 7</set>
+			<set name="resistances">Bludgeoning, Fire, Lightning, Piercing, Radiant, Slashing</set>
+			<set name="immunities">Poison, Psychic</set>
+			<set name="conditionImmunities">Charmed, Exhaustion, Frightened, Paralyzed, Poisoned, Prone, Unconscious</set>
+			<set name="languages">Understands all but can't speak</set>
+			<set name="challenge">0</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSSPP2_COMPANION_TRAIT_PET_ROCK_JUST_A_ROCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" bonus="base" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+		</rules>
+	</element>
+	<element name="Just a Rock" type="Companion Trait" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_TRAIT_PET_ROCK_JUST_A_ROCK">
+		<compendium display="false" />
+		<description>
+			<p>The rock counts as an object. Additionally, it can't take actions and its Speed can't be increased.</p>
+		</description>
+		<sheet>
+			<description>The rock counts as an object. Additionally, it can't take actions and its Speed can't be increased.</description>
+		</sheet>
+	</element>
+	
+	<element name="Winter Wolf Pup" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_WINTER_WOLF_PUP">
+		<supports>Familiar</supports>
+		<setters>
+			<set name="size">Small</set>
+			<set name="type">Monstrosity</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">13</set>
+			<set name="hp">10 (3d6)</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">9</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="skills">Perception +3, Stealth +3</set>
+			<set name="senses">Passive Perception 13</set>
+			<set name="resistances">Cold</set>
+			<set name="languages">Common, Giant</set>
+			<set name="challenge">1/8</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_MHP_VSSPP2_COMPANION_TRAIT_WINTER_WOLF_PUP_PACK_TACTICS</set>
+			<set name="actions">ID_MHP_VSSPP2_COMPANION_ACTION_WINTER_WOLF_PUP_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="10" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Pack Tactics" type="Companion Trait" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_TRAIT_WINTER_WOLF_PUP_PACK_TACTICS">
+		<compendium display="false" />
+		<description>
+			<p>The pup has Advantage on attack rolls against a creature if at least one of the pup's Allies is within 5 feet of the creature and the Ally doesn't have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>The pup has Advantage on attack rolls against a creature if at least one of the pup's Allies is within 5 ft of the creature and the Ally doesn't have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_WINTER_WOLF_PUP_BITE">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +3, reach 5 ft. <i>Hit:</i> 3 (1d4 + 1) Piercing damage plus 2 (1d4) Cold damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Piercing damage plus 2 (1d4) Cold damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Yarn Golem" type="Companion" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_YARN_GOLEM">
+		<supports>Variant Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Construct</set>
+			<set name="alignment">Chaotic Neutral</set>
+			<set name="ac">13</set>
+			<set name="hp">21 (6d4 + 6)</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">8</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">8</set>
+			<set name="senses">Passive Perception 10</set>
+			<set name="resistances">Piercing</set>
+			<set name="immunities">Poison, Psychic</set>
+			<set name="conditionImmunities">Poisoned</set>
+			<set name="languages">Understands Common plus one other language but can't speak</set>
+			<set name="challenge">1/2</set>
+			<set name="proficiency">2</set>
+			<set name="actions">ID_MHP_VSSPP2_COMPANION_ACTION_YARN_GOLEM_POKE,ID_MHP_VSSPP2_COMPANION_ACTION_YARN_GOLEM_TANGLE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="21" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Poke" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_YARN_GOLEM_POKE">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +5, reach 5 ft. <i>Hit:</i> 8 (2d4 + 3) Piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +5, reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Tangle (Recharge 6)" type="Companion Action" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_COMPANION_ACTION_YARN_GOLEM_TANGLE">
+		<compendium display="false" />
+		<description>
+			<p><i>Dexterity Saving Throw:</i> DC 12, one creature that the golem can see within 5 feet. Failure: If the target is Medium or smaller, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition.</p>
+		</description>
+		<sheet>
+			<description>Dexterity Saving Throw: DC 12, one creature that the golem can see within 5 feet. Failure: If the target is Medium or smaller, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition.</description>
+		</sheet>
+	</element>
+	
+</elements>

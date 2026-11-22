@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the City</name>
+		<description>Circle of the City from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/druid-city.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the City" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_DRUID_CIRCLE_OF_THE_CITY">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p class="flavor">Master the Urban Jungle</p>
+			<p>The Circle of the City draws its power from buildings, streets, and people. These "Urban Druids" make their homes in sprawling settlements, far from the domains of their wild brethren.</p>
+			<p class="indent">An Urban Druid's magic can twist the city streets into knots and raise maze-like walls in alleyways. They might leap from rooftop to rooftop, commune with doors and walls for information, or transform into a rat to go unseen.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_CIRCLE_OF_THE_CITY_SPELLS" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_CITY_SHAPE" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_URBAN_DRUID" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_OBJECT_SHAPE" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_WALL_WARP" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_URBAN_COLOSSUS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_CIRCLE_OF_THE_CITY_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_CITY_SHAPE" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_URBAN_DRUID" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_OBJECT_SHAPE" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_WALL_WARP" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_URBAN_COLOSSUS" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Circle of the City Spells" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_CIRCLE_OF_THE_CITY_SPELLS">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_CIRCLE_OF_THE_CITY_SPELLS</requirements>
+		<description>
+			<p>When you reach a Druid level specified in the Circle of the City Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Circle of the City Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Druid Level</td><td class="left">Circle Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Grease, Jump, Shatter, Spider Climb</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Meld into Stone, Sending</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Fabricate, Stone Shape</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Animate Objects, Passwall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREASE" spellcasting="Druid" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_JUMP" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHATTER" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIDER_CLIMB" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELD_INTO_STONE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SENDING" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FABRICATE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONE_SHAPE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PASSWALL" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: City Shape" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_CITY_SHAPE">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_CITY_SHAPE</requirements>
+		<description>
+			<p>You can expend a use of your Wild Shape to cast <i>Meld into Stone, Passwall,</i> or <i>Stone Shape</i> without a spell slot.</p>
+		</description>
+		<sheet alt="City Shape" usage="Wild Shape">
+			<description>You can cast Meld into Stone, Passwall, or Stone Shape without a spell slot.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Urban Druid" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_URBAN_DRUID">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_URBAN_DRUID</requirements>
+		<description>
+			<p>When a creature you can see within 60 feet of you takes damage from an attack, you can take a Reaction to cast <i>Wall of Stone</i> between the target and the attacker. When you cast the spell in this way, you create a single 10-foot-by-10-foot panel that is 1 inch thick (AC 15, 30 HP, and Immunity to Poison and Psychic damage), which disappears at the end of your next turn. The panel takes the damage of the attack and disappears early if it is reduced to 0 Hit Points.</p>
+			<p class="indent"><b><i>Street Savvy.</i></b> Choose Acrobatics, History, Intimidation, Investigation, Persuasion, or Stealth. You gain a bonus to checks using this skill equal to your Wisdom modifier (minimum bonus of +1). You can change your selection when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Urban Magic.</i></b> Your magic takes on the aesthetic trappings of the urban landscape. Spells like <i>Entangle, Grasping Vine, Spike Growth,</i> and <i>Wall of Thorns</i> might cause growths of cobblestones, twisting pipes, or broken glass. The spells <i>Speak with Plants, Transport via Plants,</i> and <i>Tree Stride</i> can target structures instead of plants.</p>
+		</description>
+		<sheet alt="Urban Druid">
+			<description>Choose Acrobatics, History, Intimidation, Investigation, Persuasion, or Stealth. You gain a +{{vsspp2:urban druid:modifier}} bonus to checks using this skill. You can change your selection when you finish a Long Rest. &#13;
+			Additionally, the spells Speak with Plants, Transport via Plants, and Tree Stride can target structures instead of plants.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:urban druid:modifier" value="1" bonus="bonus" />
+			<stat name="vsspp2:urban druid:modifier" value="wisdom:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Object Shape" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_OBJECT_SHAPE">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_OBJECT_SHAPE</requirements>
+		<description>
+			<p>When you assume a Wild Shape form, you can choose the form of an <strong>Animated Object</strong> created by the <i>Animate Objects</i> spell. You choose the object's size (up to Large). At Druid level 10, you can also shape-shift into a Huge object.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_INFORMATION_ANIMATED_OBJECT" />
+			</div>
+		</description>
+		<sheet alt="Object Shape">
+			<description>When you assume a Wild Shape form, you can choose the form of an Animated Object created by the Animate Objects spell. You choose the object's size (up to Large).</description>
+			<description level="10">When you assume a Wild Shape form, you can choose the form of an Animated Object created by the Animate Objects spell. You choose the object's size (up to Huge).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Wall Warp" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_WALL_WARP">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_WALL_WARP</requirements>
+		<description>
+			<p>When a creature you can see within 60 feet of you takes damage from an attack, you can take a Reaction to cast <i>Wall of Stone</i> between the target and the attacker. When you cast the spell in this way, you create a single 10-foot-by-10-foot panel that is 1 inch thick (AC 15, 30 HP, and Immunity to Poison and Psychic damage), which disappears at the end of your next turn. The panel takes the damage of the attack and disappears early if it is reduced to 0 Hit Points.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>
+		</description>
+		<sheet alt="Wall Warp" action="Reaction" usage="1/Long Rest">
+			<description>When a creature you can see within 60 ft of you takes damage from an attack, you can cast Wall of Stone between the target and the attacker. When you cast the spell in this way, you create a single 10-ft-by-10-ft panel that is 1 inch thick (AC 15, 30 HP, and Immunity to Poison and Psychic damage), which disappears at the end of your next turn. The panel takes the damage of the attack and disappears early if it is reduced to 0 HPs. &#13;
+			You can also restore your use of this feature by expending a level 3+ spell slot (no action required).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Urban Colossus" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_DRUID_CITY_URBAN_COLOSSUS">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_URBAN_COLOSSUS</requirements>
+		<description>
+			<p>While shape-shifted into an <strong>Animated Object</strong>, you gain the following benefits.</p>
+			<p class="indent"><b><i>Armor Class.</i></b> Until you leave the form, your AC equals 18.</p>
+			<p class="indent"><b><i>Limited Damage Threshold.</i></b> Once per turn when you take less than 10 damage from a single attack or effect, you can reduce that damage to 0.</p>
+			<p class="indent"><b><i>Multiattack.</i></b> You can use Slam twice when you take the Attack action.</p>
+			<p class="indent"><b><i>Unstoppable.</i></b> You can move through the space of any creature. Moving through its space doesn't cost you extra movement, but you can't stop in the same space. If the creature is your size or smaller, it takes Bludgeoning damage equal to 2d6 plus your Wisdom modifier and has the Prone condition when you enter its space. A creature can take this damage once per turn.</p>
+		</description>
+		<sheet alt="Urban Colossus">
+			<description>While shape-shifted into an Animated Object, you gain the following benefits: &#13;
+			• Your AC is 18. &#13;
+			• Once per turn when you take less than 10 damage from a single attack or effect, you can reduce that damage to 0. &#13;
+			• You can use Slam twice when you take the Attack action. &#13;
+			• You can move through the space of any creature. Moving through its space doesn't cost you extra movement, but you can't stop in the same space. If the creature is your size or smaller, it takes 2d6+{{wisdom:modifier}} Bludgeoning damage and has the Prone condition when you enter its space. A creature can take this damage once per turn.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Circle of the City Spells Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_CIRCLE_OF_THE_CITY_SPELLS" />
+	<element name="City Shape Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_CITY_SHAPE" />
+	<element name="Urban Druid Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_URBAN_DRUID" />
+	<element name="Object Shape Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_OBJECT_SHAPE" />
+	<element name="Wall Warp Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_WALL_WARP" />
+	<element name="Urban Colossus Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_DRUID_CITY_URBAN_COLOSSUS" />
+
+</elements>

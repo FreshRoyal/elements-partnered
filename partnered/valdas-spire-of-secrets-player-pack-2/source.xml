@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/source.xml" />
+		</update>
+	</info>
+	<element name="Valda's Spire of Secrets: Player Pack 2" type="Source" source="Core" id="ID_MHP_SOURCE_VALDAS_SPIRE_OF_SECRETS_PLAYER_PACK_2">
+		<description>
+			<p><strong>Your next character lives here.</strong></p>
+			<p>The lich Valda has collected a grim menagerie of petrified adventurers within his Spire of Secrets. This Player Pack contains the best of his collection: feats, spells, magic items, familiars, and subclasses! Of course, he’ll probably turn you into stone too if he catches you.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">VSSPP2</set>
+			<set name="url">https://marketplace.dndbeyond.com/root/DB0MHH101?pid=DB0MHH101</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/VSSPP2.png</set>
+			<set name="author" abbreviation="MHP" url="https://magehandpress.com/">Mage Hand Press</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20260715</set>
+		</setters>
+	</element>
+
+</elements>

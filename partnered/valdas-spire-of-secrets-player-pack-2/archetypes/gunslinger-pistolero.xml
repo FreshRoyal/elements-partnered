@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pistolero</name>
+		<description>Pistolero from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="gunslinger-pistolero.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/gunslinger-pistolero.xml" />
+		</update>
+	</info>
+
+	<element name="Pistolero" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_GUNSLINGER_PISTOLERO">
+		<supports>TGCVSS Gunslinger Subclass</supports>
+		<description>
+			<p class="flavor">Fire Six-Shooters with Incredible Speed</p>
+			<p>Bullets are power, and you have long believed that more bullets equal more power. Your expertise is in delivering a hail of deadly fire to pulverize your enemies. Not every bullet needs to be accurate to make a difference.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_CLOSE_QUARTERS_SHOOTING" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_DISARM" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_SHOWDOWN" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_BULLET_TIME" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_CLOSE_QUARTERS_SHOOTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_DISARM" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_SHOWDOWN" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_BULLET_TIME" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Close-Quarters Shooting" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_CLOSE_QUARTERS_SHOOTING">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_CLOSE_QUARTERS_SHOOTING</requirements>
+		<description>
+			<p>Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+		</description>
+		<sheet alt="Close-Quarters Shooting">
+			<description>Being within 5 ft of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Fan the Hammer [Maneuver]" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER</requirements>
+		<description>
+			<p>When you take the Attack action with a Ranged weapon that doesn't have Two-Handed, you can expend one Risk Die as a Bonus Action to make two additional ranged attacks with that weapon. These additional attacks always have Disadvantage, regardless of circumstance. You can't use the Automatic mastery property with these attacks, and you must have a free hand to use this maneuver.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Fan the Hammer" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER_RISK">
+		<supports>VSSPP2 Risk Fan the Hammer</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action with a Ranged weapon that doesn't have Two-Handed, you can expend one Risk Die as a Bonus Action to make two additional ranged attacks with that weapon. These additional attacks always have Disadvantage, regardless of circumstance. You can't use the Automatic mastery property with these attacks, and you must have a free hand to use this maneuver.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Risk Die">
+			<description>When you take the Attack action with a Ranged weapon that doesn't have Two-Handed, you can make two additional ranged attacks with that weapon. These additional attacks always have Disadvantage, regardless of circumstance. You can't use the Automatic mastery property with these attacks, and you must have a free hand to use this maneuver.</description>
+		</sheet>
+	</element>
+	<append id="ID_MHP_VSSPP2_CLASS_FEATURE_GUNSLINGER_RISK">
+		<rules>
+			<select type="Archetype Feature" name="VSSPP2 Risk Fan the Hammer" supports="VSSPP2 Risk Fan the Hammer" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER_RISK" requirements="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER" />
+		</rules>
+	</append>
+
+	<element name="Level 6: Disarm" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_DISARM">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_DISARM</requirements>
+		<description>
+			<p>When you score a Critical Hit and trigger your Gut Shot feature against a creature, you can disarm the target instead of lodging a projectile in it. The target drops one object of your choice that it's holding, with the object landing in a space of your choice up to 15 feet away from the target.</p>
+		</description>
+		<sheet alt="Disarm">
+			<description>When you score a Critical Hit and trigger your Gut Shot feature against a creature, you can disarm the target instead of lodging a projectile in it. The target drops one object of your choice that it's holding, with the object landing in a space of your choice up to 15 ft away from the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Showdown [Maneuver]" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_SHOWDOWN">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_SHOWDOWN</requirements>
+		<description>
+			<p>When you roll Initiative, you can expend one Risk Die to draw a Ranged weapon and make an attack using it. Add the Risk Die to the damage roll. On a hit, the target has Disadvantage on attack rolls against creatures other than you on the first round of combat.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Showdown" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_SHOWDOWN_RISK">
+		<supports>VSSPP2 Risk Showdown</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you roll Initiative, you can expend one Risk Die to draw a Ranged weapon and make an attack using it. Add the Risk Die to the damage roll. On a hit, the target has Disadvantage on attack rolls against creatures other than you on the first round of combat.</p>
+		</description>
+		<sheet usage="Risk Die">
+			<description>When you roll Initiative, you can draw a Ranged weapon and make an attack using it. Add the Risk Die to the damage roll. On a hit, the target has Disadvantage on attack rolls against creatures other than you on the first round of combat.</description>
+		</sheet>
+	</element>
+	<append id="ID_MHP_VSSPP2_CLASS_FEATURE_GUNSLINGER_RISK">
+		<rules>
+			<select type="Archetype Feature" name="VSSPP2 Risk Showdown" supports="VSSPP2 Risk Showdown" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_SHOWDOWN_RISK" requirements="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_SHOWDOWN" />
+		</rules>
+	</append>
+
+	<element name="Level 14: Bullet Time" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_GUNSLINGER_PISTOLERO_BULLET_TIME">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_BULLET_TIME</requirements>
+		<description>
+			<p>Once on each of your turns when you make a ranged attack using a weapon, you can gain Advantage on the roll.</p>
+		</description>
+		<sheet alt="Bullet Time" usage="1/Turn">
+			<description>When you make a ranged attack using a weapon, you can gain Advantage on the roll.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Close-Quarters Shooting Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_CLOSE_QUARTERS_SHOOTING" />
+	<element name="Fan the Hammer Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_FAN_THE_HAMMER" />
+	<element name="Disarm Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_DISARM" />
+	<element name="Showdown Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_SHOWDOWN" />
+	<element name="Bullet Time Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_GUNSLINGER_PISTOLERO_BULLET_TIME" />
+
+</elements>

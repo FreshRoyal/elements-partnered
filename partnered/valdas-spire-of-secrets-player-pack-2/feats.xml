@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Familiar Keeper" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FAMILIAR_KEEPER">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Find Familiar.</i></b> You always have the <i>Find Familiar</i> spell prepared. Additionally, you can cast it as a Magic action without expending a spell slot or Material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat). Once you cast the spell using this benefit, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent"><b><i>Expanded Options.</i></b> When you cast <i>Find Familiar</i>, you can choose one of the normal forms for your familiar or one of the following special forms: <b>Imp, Pseudodragon, Quasit, Sphinx of Wonder,</b> or <b>Sprite</b>.</p>
+			<p class="indent"><b><i>Familiar Distraction.</i></b> When a creature within 5 feet of your familiar makes an attack roll, you can take a Reaction to command your familiar to give the attack Disadvantage. You impose Disadvantage in this way a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Familiar Keeper)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<select type="Feat Feature" name="Spellcasting Ability (Familiar Keeper)" supports="VSSPP2 Familiar Keeper" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_INTELLIGENCE">
+		<supports>VSSPP2 Familiar Keeper</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is Intelligence.</p>
+		</description>
+		<sheet alt="Familiar Keeper">
+			<description>You can cast Find Familiar as a Magic action without expending a spell slot or Material components once per Long Rest. Your spellcasting ability for this spell is Intelligence. &#13;
+			Additionally, when you cast Find Familiar, you can choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Sphinx of Wonder, or Sprite.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="VSSPP2 Familiar Keeper Familiar Distraction" supports="VSSPP2 Familiar Keeper Familiar Distraction" default="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_FAMILIAR_DISTRACTION" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_WISDOM">
+		<supports>VSSPP2 Familiar Keeper</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is Wisdom.</p>
+		</description>
+		<sheet alt="Familiar Keeper">
+			<description>You can cast Find Familiar as a Magic action without expending a spell slot or Material components once per Long Rest. Your spellcasting ability for this spell is Wisdom. &#13;
+			Additionally, when you cast Find Familiar, you can choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Sphinx of Wonder, or Sprite.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="VSSPP2 Familiar Keeper Familiar Distraction" supports="VSSPP2 Familiar Keeper Familiar Distraction" default="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_FAMILIAR_DISTRACTION" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_CHARISMA">
+		<supports>VSSPP2 Familiar Keeper</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is Charisma.</p>
+		</description>
+		<sheet alt="Familiar Keeper">
+			<description>You can cast Find Familiar as a Magic action without expending a spell slot or Material components once per Long Rest. Your spellcasting ability for this spell is Charisma. &#13;
+			Additionally, when you cast Find Familiar, you can choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Sphinx of Wonder, or Sprite.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="VSSPP2 Familiar Keeper Familiar Distraction" supports="VSSPP2 Familiar Keeper Familiar Distraction" default="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_FAMILIAR_DISTRACTION" />
+		</rules>
+	</element>
+	<element name="Familiar Distraction" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_FAMILIAR_KEEPER_FAMILIAR_DISTRACTION">
+		<supports>VSSPP2 Familiar Keeper Familiar Distraction</supports>
+		<compendium display="false" />
+		<description>
+			<p>When a creature within 5 feet of your familiar makes an attack roll, you can take a Reaction to command your familiar to give the attack Disadvantage. You impose Disadvantage in this way a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>When a creature within 5 ft of your familiar makes an attack roll, you can take a Reaction to command your familiar to give the attack Disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Flex Caster" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FLEX_CASTER">
+		<supports>General</supports>
+		<requirements>([character:4],ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE)||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Spellcasting Feature</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Upcast.</i></b> When you cast a spell, such as <i>Magic Missile</i>, that can be cast with a higher-level spell slot for more powerful effects, you can expend any additional spell slot to increase the spell's effective level by 1, to a maximum of level 9.</p>
+			<p class="indent"><b><i>Downcast.</i></b> When you cast a spell using a higher-level spell slot, you choose to recycle the excess magical energy instead of improving the spell. The spell is cast at its base level and you regain an expended level 1 spell slot.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that can be cast with a higher-level spell slot for more powerful effects, you can expend any additional spell slot to increase the spell's effective level by 1, to a maximum of level 9. &#13;
+			Additionally, hen you cast a spell using a higher-level spell slot, you choose to recycle the excess energy instead of improving the spell. The spell is cast at its base level and you regain an expended level 1 spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Flex Caster)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Magitechnician" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_MAGITECHNICIAN">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Magic Item Expert.</i></b> If one of your magic items calls for a saving throw, it uses the following DC if it is higher: 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus.</p>
+			<p class="indent"><b><i>Magic Item Charge.</i></b> When you finish a Short Rest, you can cause a magic item that regains charges or properties to recharge as if it were the next dawn. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Magitechnician)" supports="VSSPP2 Magitechnician" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_INTELLIGENCE">
+		<supports>VSSPP2 Magitechnician</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Magitechnician">
+			<description>If one of your magic items calls for a saving throw, it has a DC of {{vsspp2:magitechnician:dc}} if it is higher.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Magitechnician" />
+			<stat name="vsspp2:magitechnician:dc" value="8" bonus="base" />
+			<stat name="vsspp2:magitechnician:dc" value="intelligence:modifier" bonus="ability" />
+			<stat name="vsspp2:magitechnician:dc" value="proficiency" bonus="proficiency" />
+			<select type="Feat Feature" name="VSSPP2 Magitechnician Magic Item Recharge" supports="VSSPP2 Magitechnician Magic Item Recharge" default="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_MAGIC_ITEM_RECHARGE" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_WISDOM">
+		<supports>VSSPP2 Magitechnician</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Magitechnician">
+			<description>If one of your magic items calls for a saving throw, it has a DC of {{vsspp2:magitechnician:dc}} if it is higher.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Magitechnician" />
+			<stat name="vsspp2:magitechnician:dc" value="8" bonus="base" />
+			<stat name="vsspp2:magitechnician:dc" value="wisdom:modifier" bonus="ability" />
+			<stat name="vsspp2:magitechnician:dc" value="proficiency" bonus="proficiency" />
+			<select type="Feat Feature" name="VSSPP2 Magitechnician Magic Item Recharge" supports="VSSPP2 Magitechnician Magic Item Recharge" default="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_MAGIC_ITEM_RECHARGE" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_CHARISMA">
+		<supports>VSSPP2 Magitechnician</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Magitechnician">
+			<description>If one of your magic items calls for a saving throw, it has a DC of {{vsspp2:magitechnician:dc}} if it is higher.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Magitechnician" />
+			<stat name="vsspp2:magitechnician:dc" value="8" bonus="base" />
+			<stat name="vsspp2:magitechnician:dc" value="charisma:modifier" bonus="ability" />
+			<stat name="vsspp2:magitechnician:dc" value="proficiency" bonus="proficiency" />
+			<select type="Feat Feature" name="VSSPP2 Magitechnician Magic Item Recharge" supports="VSSPP2 Magitechnician Magic Item Recharge" default="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_MAGIC_ITEM_RECHARGE" />
+		</rules>
+	</element>
+	<element name="Magic Item Recharge" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_MAGITECHNICIAN_MAGIC_ITEM_RECHARGE">
+		<supports>VSSPP2 Magitechnician Magic Item Recharge</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can cause a magic item that regains charges or properties to recharge as if it were the next dawn. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can cause a magic item that regains charges or properties to recharge as if it were the next dawn.</description>
+		</sheet>
+	</element>
+
+	<element name="Metabolistic Magic" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_METABOLISTIC_MAGIC">
+		<supports>General</supports>
+		<requirements>[character:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE)||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Arcane Skill.</i></b> When you fail a D20 Test, you can expend a spell slot to gain a bonus to the roll, potentially causing it to succeed. The bonus equals 2 plus the level of the spell slot expended.</p>
+			<p class="indent"><b><i>Vital Fuel.</i></b> When you finish a Short Rest, you can expend a number of Hit Point Dice up to your Proficiency Bonus to recover expended spell slots. Choose spell slots to recover that have a combined level equal to no more than the number of Hit Point Dice expended. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>When you fail a D20 Test, you can expend a spell slot to gain a bonus to the roll, potentially causing it to succeed. The bonus equals 2 plus the level of the spell slot expended.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Metabolistic Magic)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<select type="Feat Feature" name="VSSPP2 Metabolistic Recharge Vital Fuel" supports="VSSPP2 Metabolistic Recharge Vital Fuel" default="ID_MHP_VSSPP2_FEAT_FEATURE_METABOLISTIC_MAGIC_VITAL_FUEL" />
+		</rules>
+	</element>
+	<element name="Vital Fuel" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_METABOLISTIC_MAGIC_VITAL_FUEL">
+		<supports>VSSPP2 Metabolistic Recharge Vital Fuel</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you finish a Short Rest, you can expend a number of Hit Point Dice up to your Proficiency Bonus to recover expended spell slots. Choose spell slots to recover that have a combined level equal to no more than the number of Hit Point Dice expended. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you finish a Short Rest, you can expend up to {{proficiency}} HP Dice to recover expended spell slots. Choose spell slots to recover that have a combined level equal to no more than the number of HP Dice expended.</description>
+		</sheet>
+	</element>
+
+	<element name="Pyromaniac" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_PYROMANIAC">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Firestarter Magic.</i></b> You know the <i>Fire Bolt</i> cantrip and you always have the <i>Burning Hands</i> and <i>Scorching Ray</i> spells prepared. You can cast <i>Burning Hands</i> and <i>Scorching Ray</i> without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spellcasting ability for this feat's spells is the ability increased by this feat.</p>
+			<p class="indent"><b><i>Flare Damage.</i></b> Whenever you deal Fire damage and roll the highest number on any damage die, you can roll that damage die again and add it to the damage, rolling again if it is the highest number, and so on. You can add a maximum number of dice to the damage roll equal to your Proficiency Bonus (minimum of 1).</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_BURNING_HANDS" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_SCORCHING_RAY" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Pyromaniac)" supports="VSSPP2 Pyromaniac" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BURNING_HANDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCORCHING_RAY" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_INTELLIGENCE">
+		<supports>VSSPP2 Pyromaniac</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Pyromaniac">
+			<description>You know the Fire Bolt cantrip. You can cast Burning Hands and Scorching Ray each without a spell slot once per Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Pyromaniac" />
+			<select type="Feat Feature" name="VSSPP2 Pyromaniac Flare Damage" supports="VSSPP2 Pyromaniac Flare Damage" default="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_FLARE_DAMAGE" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_WISDOM">
+		<supports>VSSPP2 Pyromaniac</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Pyromaniac">
+			<description>You know the Fire Bolt cantrip. You can cast Burning Hands and Scorching Ray each without a spell slot once per Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Pyromaniac" />
+			<select type="Feat Feature" name="VSSPP2 Pyromaniac Flare Damage" supports="VSSPP2 Pyromaniac Flare Damage" default="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_FLARE_DAMAGE" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_CHARISMA">
+		<supports>VSSPP2 Pyromaniac</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Pyromaniac">
+			<description>You know the Fire Bolt cantrip. You can cast Burning Hands and Scorching Ray each without a spell slot once per Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Pyromaniac" />
+			<select type="Feat Feature" name="VSSPP2 Pyromaniac Flare Damage" supports="VSSPP2 Pyromaniac Flare Damage" default="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_FLARE_DAMAGE" />
+		</rules>
+	</element>
+	<element name="Flare Damage" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_PYROMANIAC_FLARE_DAMAGE">
+		<supports>VSSPP2 Pyromaniac Flare Damage</supports>
+		<compendium display="false" />
+		<description>
+			<p>Whenever you deal Fire damage and roll the highest number on any damage die, you can roll that damage die again and add it to the damage, rolling again if it is the highest number, and so on. You can add a maximum number of dice to the damage roll equal to your Proficiency Bonus (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>Whenever you deal Fire damage and roll the highest number on any damage die, you can roll that damage die again and add it to the damage, rolling again if it is the highest number, and so on. You can add a maximum of {{proficiency}} dice to the damage roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Shock Trooper" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_SHOCK_TROOPER">
+		<supports>General</supports>
+		<requirements>[character:4],([str:13]||[dex:13])||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Strength or Dexterity 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>First Strike.</i></b> When you roll Initiative and don't have Disadvantage on the roll, you can draw a weapon and make an attack using it.</p>
+			<p class="indent"><b><i>Rapid Advance.</i></b> During the first round of each combat, your Speed is doubled.</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative and don't have Disadvantage on the roll, you can draw a weapon and make an attack using it. &#13;
+			Additionally, during the first round of each combat, your Speed is doubled.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Shock Trooper)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="Showman" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_SHOWMAN">
+		<supports>General</supports>
+		<requirements>[character:4],[cha:13]||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Charisma 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Charisma 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Expert Performer.</i></b> You gain proficiency in the Performance skill. If you already have proficiency in it, you gain Expertise in it.</p>
+			<p class="indent"><b><i>Taunt.</i></b> You can take a Bonus Action to mock a creature within 15 feet of yourself. If the target can hear you (though it need not understand you), it has Disadvantage on the next attack roll it makes against a creature other than you before the end of its next turn. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can mock a creature within 15 ft of yourself. If the target can hear you (though it need not understand you), it has Disadvantage on the next attack roll it makes against a creature other than you before the end of its next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Showman" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFORMANCE" />
+		</rules>
+	</element>
+
+	<element name="Spellblade" type="Feat" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_SPELLBLADE">
+		<supports>General</supports>
+		<requirements>[character:4],([int:13]||[wis:13]||[cha:13])||ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+; Intelligence, Wisdom, or Charisma 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+; Intelligence, Wisdom, or Charisma 13+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Blade Cantrips.</i></b> You learn two of the following cantrips of your choice: <i>Arc Blade, Burning Blade, Frigid Blade,</i> or <i>True Strike</i>. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this feat). Whenever you gain a new level, you can change your cantrip selection.</p>
+			<p class="indent"><b><i>Arcane Strike.</i></b> When you take the Attack action on your turn, you can replace one of the attacks with casting <i>Arc Blade, Burning Blade, Frigid Blade,</i> or <i>True Strike</i>.</p>
+			<p class="indent"><b><i>Channeled Attack.</i></b> When you make an attack using Strength or Dexterity with a weapon with which you have proficiency, you can gain a bonus to the attack roll equal to your Intelligence, Wisdom, or Charisma modifier (minimum of +1). Choose the ability each time you use this benefit. You can gain this bonus a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<div class="reference">
+				<div element="ID_MHP_VSSPP2_SPELL_ARC_BLADE" />
+			</div>
+			<div class="reference">
+				<div element="ID_MHP_VSSPP2_SPELL_BURNING_BLADE" />
+			</div>
+			<div class="reference">
+				<div element="ID_MHP_VSSPP2_SPELL_FRIGID_BLADE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_TRUE_STRIKE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Spellblade)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<select type="Feat Feature" name="Spellcasting Ability (Spellblade)" supports="VSSPP2 Spellblade" />
+			<select type="Spell" name="Blade Cantrip (Spellblade)" supports="ID_MHP_VSSPP2_SPELL_ARC_BLADE|ID_MHP_VSSPP2_SPELL_BURNING_BLADE|ID_MHP_VSSPP2_SPELL_FRIGID_BLADE|ID_WOTC_PHB24_SPELL_TRUE_STRIKE" number="2" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_INTELLIGENCE">
+		<supports>VSSPP2 Spellblade</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is Intelligence.</p>
+		</description>
+		<sheet alt="Spellblade">
+			<description>Your spellcasting ability for the cantrips you picked from this feat is Intelligence. Whenever you gain a new level, you can change your cantrip selection.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="VSSPP2 Spellblade Arcane Strike" supports="VSSPP2 Spellblade Arcane Strike" default="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_ARCANE_STRIKE" />
+			<select type="Feat Feature" name="VSSPP2 Spellblade Channeled Attack" supports="VSSPP2 Spellblade Channeled Attack" default="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_CHANNELED_ATTACK" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_WISDOM">
+		<supports>VSSPP2 Spellblade</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is Wisdom.</p>
+		</description>
+		<sheet alt="Spellblade">
+			<description>Your spellcasting ability for the cantrips you picked from this feat is Wisdom. Whenever you gain a new level, you can change your cantrip selection.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="VSSPP2 Spellblade Arcane Strike" supports="VSSPP2 Spellblade Arcane Strike" default="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_ARCANE_STRIKE" />
+			<select type="Feat Feature" name="VSSPP2 Spellblade Channeled Attack" supports="VSSPP2 Spellblade Channeled Attack" default="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_CHANNELED_ATTACK" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_CHARISMA">
+		<supports>VSSPP2 Spellblade</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability is Charisma.</p>
+		</description>
+		<sheet alt="Spellblade">
+			<description>Your spellcasting ability for the cantrips you picked from this feat is Charisma. Whenever you gain a new level, you can change your cantrip selection.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="VSSPP2 Spellblade Arcane Strike" supports="VSSPP2 Spellblade Arcane Strike" default="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_ARCANE_STRIKE" />
+			<select type="Feat Feature" name="VSSPP2 Spellblade Channeled Attack" supports="VSSPP2 Spellblade Channeled Attack" default="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_CHANNELED_ATTACK" />
+		</rules>
+	</element>
+	<element name="Arcane Strike" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_ARCANE_STRIKE">
+		<supports>VSSPP2 Spellblade Arcane Strike</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of the attacks with casting Arc Blade, Burning Blade, Frigid Blade, or True Strike.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn, you can replace one of the attacks with casting Arc Blade, Burning Blade, Frigid Blade, or True Strike.</description>
+		</sheet>
+	</element>
+	<element name="Channeled Attack" type="Feat Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_FEAT_FEATURE_SPELLBLADE_CHANNELED_ATTACK">
+		<supports>VSSPP2 Spellblade Channeled Attack</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you make an attack using Strength or Dexterity with a weapon with which you have proficiency, you can gain a bonus to the attack roll equal to your Intelligence, Wisdom, or Charisma modifier (minimum of +1). Choose the ability each time you use this benefit. You can gain this bonus a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you make an attack using Strength or Dexterity with a weapon with which you have proficiency, you can gain a bonus to the attack roll equal to your Intelligence, Wisdom, or Charisma modifier (minimum of +1).</description>
+		</sheet>
+	</element>
+	
+	<!--Feat Unlocker-->
+	<element name="Feat Unlocker" type="Item" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for all of the <i>Valda's Spire of Secrets: Player Pack 2</i> Feats, including level requirements.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_GRANTS_FEAT_UNLOCKER" />
+
+</elements>

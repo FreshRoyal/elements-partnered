@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Masks</name>
+		<description>College of Masks from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="bard-masks.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/bard-masks.xml" />
+		</update>
+	</info>
+
+	<element name="College of Masks" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_BARD_COLLEGE_OF_MASKS">
+		<supports>Bard Subclass</supports>
+		<description>
+			<p class="flavor">Embody Archetypal Characters Through Theater Masks</p>
+			<p>Bards in the College of Masks are virtuoso performers who practice becoming the figures they portray, rather than merely imitating them. Bards who join in this college subscribe to the notion that all life is performed in a "Great Play," and that all people wear metaphorical masks at all times. To engage in this great stage drama, a masked Bard carries a number of Persona Masks, each bestowing the powers of a specific theatrical figure.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_THESPIAN" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_VIRTUOSO_SKILL" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_MASTER_OF_MANY_FACES" />
+			<div element="ID_MHP_VSSPP2_INFORMATION_PERSONA_MASKS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_THESPIAN" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_VIRTUOSO_SKILL" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_MASTER_OF_MANY_FACES" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Persona Masks" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_PERSONA_MASKS</requirements>
+		<description>
+			<p>You learn to create magical masks, each of which allows you to take on a different persona and gain some aspect of that archetypal character.</p>
+			<p class="indent"><b><i>Persona Masks.</i></b> You gain 3 masks of your choice from the "Persona Masks" section later in this subclass's description. You gain an additional mask at Bard level 6 (4 masks) and Bard level 14 (5 masks). You can exchange one of your masks for another one whenever you finish a Long Rest.</p>
+			<p class="indent"><b><i>Wearing a Mask.</i></b> You can put on a mask or switch the mask you are wearing as a Bonus Action. Only you can gain the effects of your masks.</p>
+			<p class="indent"><b><i>Replacing a Mask.</i></b> If one of your masks is lost or stolen, you can remake the mask over the course of 8 hours, which can be done during a Long Rest.</p>
+		</description>
+		<sheet alt="Persona Masks">
+			<description>You can swap your mask as a Bonus Action. Only you can gain the effects of your masks. You can exchange one of your masks for another one whenever you finish a Long Rest. If one of your masks is lost or stolen, you can remake the mask over the course of 8 hours, which can be done during a Long Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Persona Mask (Level 3)" supports="VSSPP2 Persona Mask" number="3" />
+			<select type="Archetype Feature" name="Persona Mask (Level 6)" supports="VSSPP2 Persona Mask" level="6" />
+			<select type="Archetype Feature" name="Persona Mask (Level 14)" supports="VSSPP2 Persona Mask" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Thespian" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_THESPIAN">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_THESPIAN</requirements>
+		<description>
+			<p>Your theatrical talents grant you the following benefits.</p>
+			<p class="indent"><b><i>Disguise Kits.</i></b> You gain proficiency with the Disguise Kit.</p>
+			<p class="indent"><b><i>Dramatic Flair.</i></b> Whenever you make a Charisma (Performance) check, add your Bardic Inspiration to the roll without expending it.</p>
+		</description>
+		<sheet alt="Thespian">
+			<description>Whenever you make a Charisma (Performance) check, add your Bardic Inspiration to the roll without expending it.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+		</rules>
+	</element>
+	
+	<element name="Level 6: Virtuoso Skill" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_VIRTUOSO_SKILL">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_VIRTUOSO_SKILL</requirements>
+		<description>
+			<p>Once per turn when you make a D20 Test, you can choose to make it with Charisma if the test doesn't use it already.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (a minimum of once) and regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Virtuoso Skill" usage="{{vsspp2:virtuoso skill:usage}}/Long Rest">
+			<description>Once per turn when you make a D20 Test, you can choose to make it with Charisma if the test doesn't use it already.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:virtuoso skill:usage" value="1" bonus="bonus" />
+			<stat name="vsspp2:virtuoso skill:usage" value="charisma:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Master of Many Faces" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_MASTER_OF_MANY_FACES">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_MASTER_OF_MANY_FACES</requirements>
+		<description>
+			<p>You can wear two masks simultaneously, gaining the benefits of both.</p>
+		</description>
+		<sheet alt="Master of Many Faces">
+			<description>You can wear two masks simultaneously, gaining the benefits of both.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Persona Masks Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_PERSONA_MASKS" />
+	<element name="Thespian Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_THESPIAN" />
+	<element name="Virtuoso Skill Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_VIRTUOSO_SKILL" />
+	<element name="Master of Many Faces Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_BARD_MASKS_MASTER_OF_MANY_FACES" />
+
+	<!--Persona Masks-->
+	<element name="Persona Masks" type="Information" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_INFORMATION_PERSONA_MASKS">
+		<description>
+			<p>The following masks are listed alphabetically.</p>
+			<p class="indent"><b><i>Angel.</i></b> This flawless alabaster mask depicts a serene Celestial. Once per turn when you deal damage to a creature with an attack or spell, you can expend a use of your Bardic Inspiration to deal extra Radiant damage to the target equal to one roll of your Bardic Inspiration die.</p>
+			<p class="indent"><b><i>Archmage.</i></b> This clay mask topped with a pointed hat bears the wrinkles of a cantankerous archmage. When you reach a Bard level specified in the following table, you thereafter always have the listed spells prepared while you wear this mask.</p>
+			<h5>Archmage Persona Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Bard Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Fire Bolt, Scorching Ray, Thunderwave</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Lightning Bolt</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Ice Storm</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Wall of Stone</em></td></tr>
+			</table>
+			<p class="indent"><b><i>Devil.</i></b> This obsidian mask bears the fangs and horns of a handsome fiend. When you take damage from a creature that is within 30 feet of yourself, you can expend a use of your Bardic Inspiration as a Reaction to deal Fire damage to the creature. This damage equals two rolls of your Bardic Inspiration die, and you gain Temporary Hit Points equal to the damage dealt.</p>
+			<p class="indent"><b><i>Dragon.</i></b> When you put on this mask, and as a Bonus Action on each of your turns while you wear it, you can expend a Bardic Inspiration die to exhale flames in a 15-foot Cone. Each creature in the Cone makes a Dexterity saving throw against your spell save DC. On a failed save, a creature takes Fire damage equal to two rolls of your Bardic Inspiration die, or half as much damage on a successful save.</p>
+			<p class="indent"><b><i>Faceless.</i></b> Two perfectly round eyeholes stare out of this otherwise featureless porcelain mask. While you wear this mask, you always have the <i>Disguise Self</i> spell prepared. Whenever you start casting the spell, you can modify it so that it doesn't require a spell slot. If you do so, the spell's casting time becomes 1 minute for that casting and its duration becomes 8 hours. The spell ends early if you remove this mask.</p>
+			<p class="indent"><b><i>Gladiator.</i></b> This grim metal helm, pockmarked and scratched, conceals the entire face. While you wear this mask, you have proficiency with Martial weapons and training with Shields. As a Bonus Action, you can expend a use of your Bardic Inspiration to make one attack with a weapon or an Unarmed Strike.</p>
+			<p class="indent"><b><i>Hierophant.</i></b> In lieu of a face, this bronze mask bears the image of a holy symbol, with the barest of slits to see through. When you reach a Bard level specified in the following table, you thereafter always have the listed spells prepared while you wear this mask.</p>
+			<h5>Hierphant Persona Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Bard Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Aid, Cure Wounds, Spare the Dying</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Revivify</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Death Ward</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Mass Cure Wounds</em></td></tr>
+			</table>
+			<p class="indent"><b><i>Jester.</i></b> This cloth mask of a grinning jester is adorned with bells and checkerboard patterns. When you put on this mask, and as a Bonus Action on each of your turns while you wear it, you can move up to half your Speed without provoking Opportunity Attacks. You can also expend a use of Bardic Inspiration to cast Vicious Mockery as a part of this mask's Bonus Action.</p>
+			<p class="indent"><b><i>Noble.</i></b> This gleaming silver mask has two rubies set into its eyesockets. You can use your Bardic Inspiration as a part of the Bonus Action to put on this mask. When a creature with your Bardic Inspiration die fails a D20 Test while you wear this mask, it can roll the Bardic Inspiration die twice and add the higher result to the d20.</p>
+		</description>
+	</element>
+
+	<element name="Angel" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_ANGEL">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>This flawless alabaster mask depicts a serene Celestial. Once per turn when you deal damage to a creature with an attack or spell, you can expend a use of your Bardic Inspiration to deal extra Radiant damage to the target equal to one roll of your Bardic Inspiration die.</p>
+		</description>
+		<sheet usage="Bardic Inspiration - 1/Turn">
+			<description>When you deal damage to a creature with an attack or spell, you can deal extra Radiant damage to the target equal to one roll of your Bardic Inspiration die.</description>
+		</sheet>
+	</element>
+
+	<element name="Archmage" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_ARCHMAGE">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>This clay mask topped with a pointed hat bears the wrinkles of a cantankerous archmage. When you reach a Bard level specified in the following table, you thereafter always have the listed spells prepared while you wear this mask.</p>
+			<h5>Archmage Persona Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Bard Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Fire Bolt, Scorching Ray, Thunderwave</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Lightning Bolt</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Ice Storm</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Wall of Stone</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>When you wear this mask, you have the Fire Bolt cantrip and Thunderwave and Scorching Ray spells prepared.</description>
+			<description level="5">When you wear this mask, you have the Fire Bolt cantrip and Thunderwave, Scorching Ray, and Lightning Bolt spells prepared.</description>
+			<description level="7">When you wear this mask, you have the Fire Bolt cantrip and Thunderwave, Scorching Ray, Lightning Bolt, and Ice Storm spells prepared.</description>
+			<description level="9">When you wear this mask, you have the Fire Bolt cantrip and Thunderwave, Scorching Ray, Lightning Bolt, Ice Storm, and Wall of Stone spells prepared.</description>
+		</sheet>
+	</element>
+
+	<element name="Devil" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_DEVIL">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>This obsidian mask bears the fangs and horns of a handsome fiend. When you take damage from a creature that is within 30 feet of yourself, you can expend a use of your Bardic Inspiration as a Reaction to deal Fire damage to the creature. This damage equals two rolls of your Bardic Inspiration die, and you gain Temporary Hit Points equal to the damage dealt.</p>
+		</description>
+		<sheet action="Reaction" usage="Bardic Inspiration">
+			<description>When you take damage from a creature that is within 30 ft of yourself, you can deal Fire damage to the creature. This damage equals two rolls of your Bardic Inspiration die, and you gain THPs equal to the damage dealt.</description>
+		</sheet>
+	</element>
+
+	<element name="Dragon" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_DRAGON">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you put on this mask, and as a Bonus Action on each of your turns while you wear it, you can expend a Bardic Inspiration die to exhale flames in a 15-foot Cone. Each creature in the Cone makes a Dexterity saving throw against your spell save DC. On a failed save, a creature takes Fire damage equal to two rolls of your Bardic Inspiration die, or half as much damage on a successful save.</p>
+		</description>
+		<sheet usage="Bardic Inspiration">
+			<description>When you put on this mask, and as a Bonus Action on each of your turns while you wear it, you can exhale flames in a 15-ft Cone. Each creature in the Cone makes a DC{{bard:spellcasting:dc}} Dexterity saving throw. On a failed save, a creature takes Fire damage equal to two rolls of your Bardic Inspiration die, or half as much damage on a successful save.</description>
+		</sheet>
+	</element>
+
+	<element name="Faceless" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_FACELESS">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>Two perfectly round eyeholes stare out of this otherwise featureless porcelain mask. While you wear this mask, you always have the <i>Disguise Self</i> spell prepared. Whenever you start casting the spell, you can modify it so that it doesn't require a spell slot. If you do so, the spell's casting time becomes 1 minute for that casting and its duration becomes 8 hours. The spell ends early if you remove this mask.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+			</div>
+		</description>
+		<sheet>
+			<description>While you wear this mask, you always have the Disguise Self spell prepared. Whenever you start casting the spell, you can modify it so that it doesn't require a spell slot. If you do so, the spell's casting time becomes 1 minute for that casting and its duration becomes 8 hours. The spell ends early if you remove this mask.</description>
+		</sheet>
+	</element>
+
+	<element name="Gladiator" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_GLADIATOR">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>This grim metal helm, pockmarked and scratched, conceals the entire face. While you wear this mask, you have proficiency with Martial weapons and training with Shields. As a Bonus Action, you can expend a use of your Bardic Inspiration to make one attack with a weapon or an Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description>While you wear this mask, you have proficiency with Martial weapons and training with Shields. As a Bonus Action, you can expend a use of your Bardic Inspiration to make one attack with a weapon or an Unarmed Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="Hierophant" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_HIEROPHANT">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>In lieu of a face, this bronze mask bears the image of a holy symbol, with the barest of slits to see through. When you reach a Bard level specified in the following table, you thereafter always have the listed spells prepared while you wear this mask.</p>
+			<h5>Hierphant Persona Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Bard Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Aid, Cure Wounds, Spare the Dying</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Revivify</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Death Ward</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Mass Cure Wounds</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>When you wear this mask, you have the Spare the Dying cantrip and the Aid and Cure Wounds spells prepared.</description>
+			<description level="5">When you wear this mask, you have the Spare the Dying cantrip and the Aid, Cure Wounds, and Revivify spells prepared.</description>
+			<description level="7">When you wear this mask, you have the Spare the Dying cantrip and the Aid, Cure Wounds, Revivify, and Death Ward spells prepared.</description>
+			<description level="9">When you wear this mask, you have the Spare the Dying cantrip and the Aid, Cure Wounds, Revivify, Death Ward, and Mass Cure Wounds spells prepared.</description>
+		</sheet>
+	</element>
+
+	<element name="Jester" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_JESTER">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>This cloth mask of a grinning jester is adorned with bells and checkerboard patterns. When you put on this mask, and as a Bonus Action on each of your turns while you wear it, you can move up to half your Speed without provoking Opportunity Attacks. You can also expend a use of Bardic Inspiration to cast <i>Vicious Mockery</i> as a part of this mask's Bonus Action.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_VICIOUS_MOCKERY" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you put on this mask, and as a Bonus Action on each of your turns while you wear it, you can move up to half your Speed without provoking Opportunity Attacks. You can also expend a use of Bardic Inspiration to cast Vicious Mockery as a part of this mask's Bonus Action.</description>
+		</sheet>
+	</element>
+
+	<element name="Noble" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_BARD_MASKS_PERSONA_MASKS_NOBLE">
+		<supports>VSSPP2 Persona Mask</supports>
+		<compendium display="false" />
+		<description>
+			<p>This gleaming silver mask has two rubies set into its eyesockets. You can use your Bardic Inspiration as a part of the Bonus Action to put on this mask. When a creature with your Bardic Inspiration die fails a D20 Test while you wear this mask, it can roll the Bardic Inspiration die twice and add the higher result to the d20.</p>
+		</description>
+		<sheet>
+			<description>You can use your Bardic Inspiration as a part of the Bonus Action to put on this mask. When a creature with your Bardic Inspiration die fails a D20 Test while you wear this mask, it can roll the Bardic Inspiration die twice and add the higher result to the d20.</description>
+		</sheet>
+	</element>
+
+</elements>

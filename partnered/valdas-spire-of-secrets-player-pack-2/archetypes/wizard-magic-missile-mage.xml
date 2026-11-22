@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Missile Mage</name>
+		<description>Magic Missile Mage from Valda's Spire of Secrets: Player Pack 2</description>
+		<update version="0.0.1">
+			<file name="wizard-magic-missile-mage.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/valdas-spire-of-secrets-player-pack-2/archetypes/wizard-magic-missile-mage.xml" />
+		</update>
+	</info>
+
+	<element name="Magic Missile Mage" type="Archetype" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_WIZARD_MAGIC_MISSILE_MAGE">
+		<supports>Wizard Subclass</supports>
+		<description>
+			<p class="flavor">Cast Magic Missile Better Than Anyone</p>
+			<p><i>Magic Missile</i> is a staple wizard spell, beloved for its versatility and unerring accuracy. As a Missile Mage, however, your fondness for the spell borders on obsession. Your studies focus entirely on this spell, exploring every aspect of its casting, resulting in new augmentations and greater power.</p>
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES" />
+			<div element="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_GIGA_MISSILES" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT" level="3" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES" level="6" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES" level="10" />
+			<grant type="Archetype Feature" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_GIGA_MISSILES" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Magic Missile Savant" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT</requirements>
+		<description>
+			<p>Add the <i>Magic Missile</i> spell to your spellbook for free. Your expertise in this spell grants you the following benefits.</p>
+			<p class="indent"><b><i>Extra Darts.</i></b> When you cast <i>Magic Missile</i>, you create an extra dart of magical force. You create two extra darts at Wizard level 6, three extra darts at Wizard level 10, and four extra darts at Wizard level 14.</p>
+			<p class="indent"><b><i>Free Casting.</i></b> You can cast <i>Magic Missile</i> without a spell slot. You can do so a number of times equal to your Intelligence modifier (minimum of once). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Penetrating Darts.</i></b> Your <i>Magic Missile</i> darts bypass any effect, such as the <i>Shield</i> spell, that specifically blocks the <i>Magic Missile</i> spell.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_MAGIC_MISSILE" />
+			</div>
+		</description>
+		<sheet alt="Magic Missile Savant">
+			<description>When you cast Magic Missile, you create an extra dart. &#13;
+			Additionally, your Magic Missile darts bypass any effect that specifically blocks the Magic Missile spell.</description>
+			<description level="6">When you cast Magic Missile, you create 2 extra darts. &#13;
+			Additionally, your Magic Missile darts bypass any effect that specifically blocks the Magic Missile spell.</description>
+			<description level="10">When you cast Magic Missile, you create 3 extra darts. &#13;
+			Additionally, your Magic Missile darts bypass any effect that specifically blocks the Magic Missile spell.</description>
+			<description level="14">When you cast Magic Missile, you create 4 extra darts. &#13;
+			Additionally, your Magic Missile darts bypass any effect that specifically blocks the Magic Missile spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_MISSILE" level="3" spellcasting="Wizard" prepared="true" />
+			<select type="Archetype Feature" name="VSSPP2 Magic Missile Savant Free Casting" supports="VSSPP2 Magic Missile Savant Free Casting" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT_FREE_CASTING" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT_FREE_CASTING" />
+		</rules>
+	</element>
+	<element name="Free Casting" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT_FREE_CASTING">
+		<supports>VSSPP2 Magic Missile Savant Free Casting</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast <i>Magic Missile</i> without a spell slot. You can do so a number of times equal to your Intelligence modifier (minimum of once). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{vsspp2:free casting:usage}}/Long Rest">
+			<description>You can cast Magic Missile without a spell slot. You regain one expended use when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:free casting:usage" value="1" bonus="bonus" />
+			<stat name="vsspp2:free casting:usage" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Versatile Missiles" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES</requirements>
+		<description>
+			<p>You can accurately guide your Magic Missile darts to strike a target wherever you choose. When you cast Magic Missile, you can add one of the following Versatile Missile effects to a target struck by the darts. Each effect has a cost, which is the number of darts you must forgo to add the effect to the target. You can add different effects to different targets, paying the cost for each effect separately.</p>
+			<p class="indent"><b><i>Trip Missile (Cost: 1 Dart).</i></b> The target must succeed on Strength saving throw against your spell save DC or have the Prone condition.</p>
+			<p class="indent"><b><i>Blinding Missile (Cost: 3 Darts).</i></b> The target must succeed on Constitution saving throw against your spell save DC or have the Blinded condition until the start of your next turn.</p>
+			<p class="indent"><b><i>Stunning Missile (Cost: 5 Darts).</i></b> The target must succeed on a Constitution saving throw against your spell save DC or have the Stunned condition until the start of your next turn.</p>
+		</description>
+		<sheet alt="Versatile Missiles">
+			<description>When you cast Magic Missile, you can add one of the following effects to a target struck by the darts. Each effect has a cost, which is the number of darts you must forgo to add the effect to the target. You can add different effects to different targets, paying the cost for each effect separately.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="VSSPP2 Versatile Missiles Trip Missile" supports="VSSPP2 Versatile Missiles Trip Missile" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_TRIP_MISSILE" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_TRIP_MISSILE" />
+			<select type="Archetype Feature" name="VSSPP2 Versatile Missiles Blinding Missile" supports="VSSPP2 Versatile Missiles Blinding Missile" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_BLINDING_MISSILE" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_BLINDING_MISSILE" />
+			<select type="Archetype Feature" name="VSSPP2 Versatile Missiles Stunning Missile" supports="VSSPP2 Versatile Missiles Stunning Missile" default="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_STUNNING_MISSILE" requirements="!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_STUNNING_MISSILE" />
+		</rules>
+	</element>
+	<element name="Trip Missile" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_TRIP_MISSILE">
+		<supports>VSSPP2 Versatile Missiles Trip Missile</supports>
+		<compendium display="false" />
+		<description>
+			<p>The target must succeed on Strength saving throw against your spell save DC or have the Prone condition.</p>
+		</description>
+		<sheet usage="Cost: 1 Dart">
+			<description>The target must succeed on DC{{wizard:spellcasting:dc}} Strength saving throw or have the Prone condition.</description>
+		</sheet>
+	</element>
+	<element name="Blinding Missile" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_BLINDING_MISSILE">
+		<supports>VSSPP2 Versatile Missiles Blinding Missile</supports>
+		<compendium display="false" />
+		<description>
+			<p>The target must succeed on Constitution saving throw against your spell save DC or have the Blinded condition until the start of your next turn.</p>
+		</description>
+		<sheet usage="Cost: 3 Darts">
+			<description>The target must succeed on DC{{wizard:spellcasting:dc}} Constitution saving throw or have the Blinded condition until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Stunning Missile" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_STUNNING_MISSILE">
+		<supports>VSSPP2 Versatile Missiles Stunning Missile</supports>
+		<compendium display="false" />
+		<description>
+			<p>The target must succeed on a Constitution saving throw against your spell save DC or have the Stunned condition until the start of your next turn.</p>
+		</description>
+		<sheet usage="Cost: 5 Darts">
+			<description>The target must succeed on a DC{{wizard:spellcasting:dc}} Constitution saving throw or have the Stunned condition until the start of your next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 10: Shield of Missiles" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES</requirements>
+		<description>
+			<p>When you cast <i>Magic Missile</i>, you can direct the darts in a tight orbit around yourself, creating a protective 10-foot Emanation originating from you, which lasts for up to 1 minute.</p>
+			<p class="indent">You gain a bonus to your Armor Class equal to the number of darts orbiting you (maximum bonus of +5). Whenever a creature within 120 feet misses you with an attack roll, one dart strikes the attacker, dealing damage as normal and decreasing the number of darts orbiting you by one.</p>
+			<p class="indent">Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can strike the target with any number of darts orbiting you, dealing damage as normal and decreasing the number of darts orbiting you. You can damage a creature with the Emanation only once per turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>
+		</description>
+		<sheet alt="Shield of Missiles" usage="1/Long Rest">
+			<description>When you cast Magic Missile, you create a protective 10-ft Emanation originating from you, which lasts for up to 1 minute. You gain a bonus to your AC equal to the number of darts orbiting you (maximum of +5). Whenever a creature within 120 ft misses you with an attack roll, one dart strikes the attacker, dealing damage as normal and decreasing the number of darts orbiting you by one. &#13;
+			Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can strike the target with any number of darts orbiting you, dealing damage as normal and decreasing the number of darts orbiting you. You can damage a creature with the Emanation only once per turn. &#13;
+			You can also restore your use of this feature by expending a level 3+ spell slot (no action required).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Giga-Missiles" type="Archetype Feature" source="Valda's Spire of Secrets: Player Pack 2" id="ID_MHP_VSSPP2_ARCHETYPE_FEATURE_WIZARD_MAGIC_MISSILE_MAGE_GIGA_MISSILES">
+		<requirements>!ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_GIGA_MISSILES</requirements>
+		<description>
+			<p>When you cast Magic Missile, you can enhance the damage of the spell. You deal extra Force damage with each dart equal to your Intelligence modifier (minimum of 1).</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 6+ spell slot (no action required).</p>
+		</description>
+		<sheet alt="Giga-Missiles" usage="1/Long Rest">
+			<description>When you cast Magic Missile, you can enhance the damage of the spell. You deal +{{vsspp2:giga missiles:damage}} extra Force damage with each dart. &#13;
+			You can also restore your use of this feature by expending a level 6+ spell slot (no action required).</description>
+		</sheet>
+		<rules>
+			<stat name="vsspp2:giga missiles:damage" value="1" bonus="bonus" />
+			<stat name="vsspp2:giga missiles:damage" value="intelligence:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Magic Missile Savant Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT" />
+	<element name="Magic Missile Savant: Free Casting Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_MAGIC_MISSILE_SAVANT_FREE_CASTING" />
+	<element name="Versatile Missiles Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES" />
+	<element name="Versatile Missiles: Trip Missile Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_TRIP_MISSILE" />
+	<element name="Versatile Missiles: Blinding Missile Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_BLINDING_MISSILE" />
+	<element name="Versatile Missiles: Stunning Missile Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_VERSATILE_MISSILES_STUNNING_MISSILE" />
+	<element name="Shield of Missiles Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES" />
+	<element name="Giga-Missiles Feature Replacement" type="Grants" source="Internal" id="ID_MHP_VSSPP2_FEATURE_REPLACEMENT_WIZARD_MAGIC_MISSILE_MAGE_GIGA_MISSILES" />
+
+</elements>
