@@ -3,7 +3,7 @@
 	<info>
 		<name>Nosferatu</name>
 		<description>Nosferatu from Vampire the Masquerade: Bound by Blood</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="kindred-nosferatu.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/vampire-the-masquerade-bound-by-blood/archetypes/kindred-nosferatu.xml" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 			<p>Nosferatu undergo a tragic transformation upon becoming Kindred. Their visage is warped to represent the Beast inside, making them into a terror who forges connections only with vermin and monsters. They must overcome this adversity with their gifts, lest they become the monsters they resemble.</p>
 			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT" />
 			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_NOSFERATU_BANE" />
-			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFTS" />
+			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT" />
 			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_INHUMAN_STRENGTH" />
 			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING" />
 			<div element="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFTS" />
@@ -25,7 +25,7 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT" level="3" />
 			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_NOSFERATU_BANE" level="3" />
-			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFTS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_MONSTROUS_GIFT" level="6" />
 			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_INHUMAN_STRENGTH" level="9" />
 			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_THE_CONCEALING" level="11" />
 			<grant type="Archetype Feature" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_GREATER_MONSTROUS_GIFTS" level="15" />
@@ -36,7 +36,7 @@
 	<element name="Level 3: Hidden in Plain Sight" type="Archetype Feature" source="Vampire the Masquerade: Bound by Blood" id="ID_GFG_VMBB_ARCHETYPE_FEATURE_KINDRED_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT">
 		<requirements>!ID_GFG_VMBB_FEATURE_REPLACEMENT_NOSFERATU_HIDDEN_IN_PLAIN_SIGHT</requirements>
 		<description>
-			<p class="indent"><em><strong>Mask of a Thousand Faces.</strong></em> You can cast the <i>Disguise Self</i> spell without expending a spell slot.</p>
+			<p class="indent" style="margin-top:15px"><em><strong>Mask of a Thousand Faces.</strong></em> You can cast the <i>Disguise Self</i> spell without expending a spell slot.</p>
 			<p class="indent"><em><strong>Vanish.</strong></em> You can cast the <i>Invisibility</i> spell without expending a spell slot a number of times equal to your Proficiency Bonus, and regain all expended uses when you finish a Short Rest or Long Rest.</p>
 		</description>
 		<sheet display="false" />
