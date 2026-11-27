@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description>Feats from The Gunslinger Class: Valda's Spire of Secrets</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/the-gunslinger-class-valdas-spire-of-secrets/feats.xml" />
 		</update>
 	</info>
@@ -20,6 +20,9 @@
 			<p class="indent"><b><i>Cantrip.</i></b> You learn the <i>Finger Guns</i> cantrip.</p>
 			<p class="indent"><b><i>Expanded Spell List.</i></b> The following spells are added to your spell list: <i>Antiballistics Field, Ballistic Smite, Conjure Cannonball, Conjure Cover, Jam Weapon, Jethro's Instant Reload,</i> and <i>Perforating Shot</i>.</p>
 			<p class="indent"><b><i>Spells Prepared.</i></b> Choose a number of spells equal to your Proficiency Bonus from among those in the Expanded Spell List benefit. You always have these spells prepared. Whenever you gain a new level, you can replace one of these spells with a different spell from the Expanded Spell List.</p>
+			<div class="reference">
+				<div element="ID_MHP_TGCVSS_SPELL_FINGER_GUNS" />
+			</div>
 		</description>
 		<sheet>
 			<description>You know the Finger Guns cantrip. &#13;
