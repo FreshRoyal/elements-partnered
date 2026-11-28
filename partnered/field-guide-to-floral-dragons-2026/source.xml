@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<description>The Field Guide to Floral Dragons (2026)</description>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/source.xml" />
+		</update>
+	</info>
+	<element name="The Field Guide to Floral Dragons (2026)" type="Source" source="Core" id="ID_HPP_SOURCE_FIELD_GUIDE_TO_FLORAL_DRAGONS_2026">
+		<description>
+			<p><strong>The Field Guide to Floral Dragons</strong> blends the fascinating world of flowers with the fantastic world of dragons. Add a dash of magic, and the result is this fabulously floral draconomicon. Featuring Kin Wald’s gorgeous illustrations, this book contains everything you need to spark imagination and create floral dragon-filled stories and adventures.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">FGFD26</set>
+			<set name="url">https://marketplace.dndbeyond.com/BB-3RDPARTY-2025/6A6AE1P?pid=DB6A6AE1P</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/FGFD26.png</set>
+			<set name="author" abbreviation="HPP" url="https://hitpointpress.com/">Hit Point Press</set>
+			<set name="third-party">true</set>
+			<set name="information">D&amp;D 5.5e</set>
+			<set name="release">20260825</set>
+		</setters>
+	</element>
+</elements>

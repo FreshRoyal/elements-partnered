@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>The Field Guide to Floral Dragons (2026) by Hit Point Press</name>
+		<update version="1.0.0">
+			<file name="field-guide-to-floral-dragons-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/items.xml" />
+		<file name="race-floral-dragonborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/race-floral-dragonborn.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/source.xml" />
+		
+		<!--Archetypes-->
+		<file name="druid-flowers.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/archetypes/druid-flowers.xml" />
+		<file name="ranger-field-researcher.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/archetypes/ranger-field-researcher.xml" />
+		<file name="warlock-fungus.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/archetypes/warlock-fungus.xml" />
+	</files>
+</index>

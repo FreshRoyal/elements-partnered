@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Partnered Content</name>
-		<update version="1.1.7">
+		<update version="1.1.8">
 			<file name="partnered.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered.index" />
 		</update>
 	</info>
@@ -33,6 +33,7 @@
 		<!--Hit Point Press-->
 		<file name="humblewood-campaign-setting.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-campaign-setting.index" />
 		<file name="humblewood-tales.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/humblewood-tales.index" />
+		<file name="field-guide-to-floral-dragons-2026.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026.index" />
 
 		<!--Free League Publishing-->
 		<file name="lord-of-the-rings-roleplaying.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/lord-of-the-rings-roleplaying.index" />

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Flowers</name>
+		<description>Circle of Flowers from The Field Guide to Floral Dragons (2026)</description>
+		<update version="0.0.1">
+			<file name="druid-flowers.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/archetypes/druid-flowers.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Flowers" type="Archetype" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_DRUID_CIRCLE_OF_FLOWERS">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p>The first druids of the Circle of Flowers were people who sought out and bonded with floral dragons. The druids learned how to imitate floral dragons' forms and unique existence as beings that blend plants and animals. Now, these druids protect the floral dragons who first inspired their circle as well as the balance of nature in both its beauty and ferocity.</p>
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FLORAL_FORM" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DRACONIC_WILD_SHAPE" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DENDROLOGY_DEFENSES" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FLOWER_CIRCLE" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FLORAL_FORM" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DRACONIC_WILD_SHAPE" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DENDROLOGY_DEFENSES" level="6" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FLOWER_CIRCLE" level="10" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Floral Form" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FLORAL_FORM">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_FLORAL_FORM</requirements>
+		<description>
+			<p>Your body begins a transformation as you take on plant-like aspects, such as flowers blooming from your head or your skin becoming bark-like. You gain different benefits depending on the type of flower you choose. Once you gain access to a floral form spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5>Floral Form</h5>
+			<table>
+				<thead>
+					<tr><td>Flowers</td><td class="left">Benefits</td></tr>
+				</thead>
+				<tr><td>Aconite, clematis, larkspur</td><td class="left">You always have the <i>Detect Poison and Disease</i> spell prepared and gain Resistance to Poison damage.</td></tr>
+				<tr><td>Amaranth, apple tree, jade vine, magnolia</td><td class="left">You always have the <i>Goodberry</i> spell prepared, and whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains 1d4 additional Hit Points.</td></tr>
+				<tr><td>Azalea, hydrangea, peony, succulent</td><td class="left">You always have the <i>Cure Wounds</i> spell prepared, and you have Advantage on Saving Throws to resist being Poisoned.</td></tr>
+				<tr><td>Cherry blossom, dandelion, heliconia, wisteria</td><td class="left">You always have the <i>Sleep</i> spell prepared, and magic can't put you to sleep.</td></tr>
+				<tr><td>Lamium, water lily</td><td class="left">You always have the <i>Create or Destroy Water</i> spell prepared and gain a Swim Speed equal to your base walking speed.</td></tr>
+				<tr><td>Rhododendron, ornithogalum, manchineel, vampire lily</td><td class="left">You always have the <i>Bane</i> spell prepared, and you can use a Bonus Action to Dash toward a hostile creature.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Floral Form" supports="FGFD26 Floral Form" />
+		</rules>
+	</element>
+	<element name="Aconite" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_ACONITE">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Detect Poison and Disease</i> spell prepared and gain Resistance to Poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Druid" prepared="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Clematis" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_CLEMATIS">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Detect Poison and Disease</i> spell prepared and gain Resistance to Poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Druid" prepared="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Larkspur" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_LARKSPUR">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Detect Poison and Disease</i> spell prepared and gain Resistance to Poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Druid" prepared="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Amaranth" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_AMARANTH">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Goodberry</i> spell prepared, and whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains 1d4 additional Hit Points.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Whenever you use a spell of 1st level or higher to restore HPs to a creature, the creature regains 1d4 additional HPs.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GOODBERRY" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Apple Tree" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_APPLE_TREE">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Goodberry</i> spell prepared, and whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains 1d4 additional Hit Points.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Whenever you use a spell of 1st level or higher to restore HPs to a creature, the creature regains 1d4 additional HPs.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GOODBERRY" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Jade Vine" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_JADE_VINE">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Goodberry</i> spell prepared, and whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains 1d4 additional Hit Points.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Whenever you use a spell of 1st level or higher to restore HPs to a creature, the creature regains 1d4 additional HPs.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GOODBERRY" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Magnolia" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_MAGNOLIA">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Goodberry</i> spell prepared, and whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains 1d4 additional Hit Points.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Whenever you use a spell of 1st level or higher to restore HPs to a creature, the creature regains 1d4 additional HPs.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GOODBERRY" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Azalea" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_AZALEA">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Cure Wounds</i> spell prepared, and you have Advantage on Saving Throws to resist being Poisoned.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>You have Advantage on Saving Throws to resist being Poisoned.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Hydrangea" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_HYDRANGEA">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Cure Wounds</i> spell prepared, and you have Advantage on Saving Throws to resist being Poisoned.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>You have Advantage on Saving Throws to resist being Poisoned.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Peony" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_PEONY">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Cure Wounds</i> spell prepared, and you have Advantage on Saving Throws to resist being Poisoned.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>You have Advantage on Saving Throws to resist being Poisoned.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Succulent" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_SUCCULENT">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Cure Wounds</i> spell prepared, and you have Advantage on Saving Throws to resist being Poisoned.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>You have Advantage on Saving Throws to resist being Poisoned.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Cherry Blossom" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_CHERRY_BLOSSOM">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Sleep</i> spell prepared, and magic can't put you to sleep.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Magic can't put you to sleep.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEEP" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Dandelion" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_DANDELION">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Sleep</i> spell prepared, and magic can't put you to sleep.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Magic can't put you to sleep.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEEP" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Heliconia" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_HELICONIA">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Sleep</i> spell prepared, and magic can't put you to sleep.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Magic can't put you to sleep.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEEP" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Wisteria" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_WISTERIA">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Sleep</i> spell prepared, and magic can't put you to sleep.</p>
+		</description>
+		<sheet alt="Floral Form">
+			<description>Magic can't put you to sleep.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEEP" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Lamium" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_LAMIUM">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Create or Destroy Water</i> spell prepared and gain a Swim Speed equal to your base walking speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CREATE_OR_DESTROY_WATER" spellcasting="Druid" prepared="true" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Water Lily" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_WATER_LILY">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Create or Destroy Water</i> spell prepared and gain a Swim Speed equal to your base walking speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CREATE_OR_DESTROY_WATER" spellcasting="Druid" prepared="true" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Rhododendron" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_RHODODENDRON">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Bane</i> spell prepared, and you can use a Bonus Action to Dash toward a hostile creature.</p>
+		</description>
+		<sheet alt="Floral Form" action="Bonus Action">
+			<description>You can Dash toward a hostile creature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Ornithogalum" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_ORNITHOGALUM">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Bane</i> spell prepared, and you can use a Bonus Action to Dash toward a hostile creature.</p>
+		</description>
+		<sheet alt="Floral Form" action="Bonus Action">
+			<description>You can Dash toward a hostile creature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Manchineel" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_MANSHINEEL">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Bane</i> spell prepared, and you can use a Bonus Action to Dash toward a hostile creature.</p>
+		</description>
+		<sheet alt="Floral Form" action="Bonus Action">
+			<description>You can Dash toward a hostile creature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Vampire Lily" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_VAMPIRE_LILY">
+		<supports>FGFD26 Floral Form</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Bane</i> spell prepared, and you can use a Bonus Action to Dash toward a hostile creature.</p>
+		</description>
+		<sheet alt="Floral Form" action="Bonus Action">
+			<description>You can Dash toward a hostile creature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Draconic Wild Shape" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DRACONIC_WILD_SHAPE">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_DRACONIC_WILD_SHAPE</requirements>
+		<description>
+			<p>Your intimacy with the floral dragons lets you take on their forms. You add the following floral dragon shapes to your beast shapes that you can use with your Wild Shape feature, ignoring any restrictions based on CR, swim speed, or fly speeds.</p>
+			<h5>Draconic Wild Shape</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-30">Druid Level</td><td class="left">Dragon Form</td></tr>
+				</thead>
+				<tr><td>2nd</td><td class="left">Clematis Dragon, Dandelion Dragon, Rhododendron Dragon</td></tr>
+				<tr><td>4th</td><td class="left">Azalea Dragon</td></tr>
+				<tr><td>8th</td><td class="left">Amaranth Dragon, Jade Vine Dragon</td></tr>
+				<tr><td>12th</td><td class="left">Heliconia Dragon, Water Lily Dragon</td></tr>
+				<tr><td>16th</td><td class="left">Larkspur Dragon, Peony Dragon</td></tr>
+			</table>
+		</description>
+		<sheet alt="Draconic Wild Shape">
+			<description>You can use the following floral dragon shapes with your Wild Shape feature: Clematis Dragon, Dandelion Dragon, Rhododendron Dragon.</description>
+			<description level="4">You can use the following floral dragon shapes with your Wild Shape feature: Clematis Dragon, Dandelion Dragon, Rhododendron Dragon, Azalea Dragon.</description>
+			<description level="8">You can use the following floral dragon shapes with your Wild Shape feature: Clematis Dragon, Dandelion Dragon, Rhododendron Dragon, Azalea Dragon, Amaranth Dragon, Jade Vine Dragon.</description>
+			<description level="12">You can use the following floral dragon shapes with your Wild Shape feature: Clematis Dragon, Dandelion Dragon, Rhododendron Dragon, Azalea Dragon, Amaranth Dragon, Jade Vine Dragon, Heliconia Dragon, Water Lily Dragon.</description>
+			<description level="16">You can use the following floral dragon shapes with your Wild Shape feature: Clematis Dragon, Dandelion Dragon, Rhododendron Dragon, Azalea Dragon, Amaranth Dragon, Jade Vine Dragon, Heliconia Dragon, Water Lily Dragon, Larkspur Dragon, Peony Dragon.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 6: Dendrology Defenses" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DENDROLOGY_DEFENSES">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_DENDROLOGY_DEFENSES</requirements>
+		<description>
+			<p>As your connection with flowers deepens, you take on more plant-like traits. You can cast the <i>Barkskin</i> spell on yourself once a day without expending a spell slot. Additionally, when you cast <i>Barkskin</i> you don't need to concentrate on the spell.</p>
+		</description>
+		<sheet alt="Dendrology Defenses" usage="1/Day">
+			<description>You can cast the Barkskin spell on yourself without expending a spell slot. Additionally, when you cast Barkskin you don't need to concentrate on the spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Flower Circle" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FLOWER_CIRCLE">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_FLOWER_CIRCLE</requirements>
+		<description>
+			<p>Your connection with flowers lets you summon them from the earth to soothe yourself and your companions. During a Short Rest, you can cause an area of flowers to bloom on the ground in a 15-foot radius centered on you that lasts for 1 hour, until you are Incapacitated, or you leave the circle. Creatures of your choice within the area gain the following benefits:</p>
+			<ul>
+				<li>When they regain Hit Points by spending Hit Dice or with magic, they regain additional Hit Points equal to your Proficiency Bonus. Creatures can only benefit from this once per Short Rest.</li>
+				<li>They can't be surprised.</li>
+				<li>If they spend the full hour resting in the circle, they gain Resistance to Poison damage for 8 hours.</li>
+			</ul>
+			<p class="indent">Once you have used this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Flower Circle" usage="1/Long Rest">
+			<description>During a Short Rest, you can cause an area of flowers to bloom on the ground in a 15-ft radius centered on you that lasts for 1 hour, until you are Incapacitated, or you leave the circle. Creatures of your choice within the area gain the following benefits: &#13;
+			• When they regain HPs by spending Hit Dice or with magic, they regain {{proficiency}} additional Hit Points. Creatures can only benefit from this once per Short Rest. &#13;
+			• They can't be surprised. &#13;
+			• If they spend the full hour resting in the circle, they gain Resistance to Poison damage for 8 hours.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Full Bloom" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_FULL_BLOOM</requirements>
+		<description>
+			<p>Your flowery transformation begins to include draconic features as the magic of the floral dragons runs through your veins like sap. You gain new benefits based on the flower of your Floral Form.</p>
+			<h5>Full Bloom</h5>
+			<table>
+				<thead>
+					<tr><td>Flowers</td><td class="left">Benefits</td></tr>
+				</thead>
+				<tr><td>Aconite, clematis, larkspur</td><td class="left">Your melee weapon attacks deal an extra 1d8 Poison damage on a hit, and you gain Immunity to Poison damage.</td></tr>
+				<tr><td>Amaranth, apple tree, magnolia</td><td class="left">You always have the <i>Heroes' Feast</i> spell prepared and can cast it without the need for material components once every ten days.</td></tr>
+				<tr><td>Azalea, hydrangea, peony, succulent</td><td class="left">Whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains additional Hit Points equal to 1d8 + 5.</td></tr>
+				<tr><td>Cherry blossom, wisteria</td><td class="left">You always have the <i>Etherealness</i> spell prepared and can cast it once a day without expending a spell slot.</td></tr>
+				<tr><td>Lamium, water lily</td><td class="left">Your Swim Speed is double your base walking speed, you can breathe underwater, and you gain Immunity to Cold damage.</td></tr>
+				<tr><td>Rhododendron, manchineel, vampire lily</td><td class="left">You always have the <i>Arcane Sword</i> spell prepared, which takes the form of razor-sharp swirling leaves and petals. You can cast it without the need for material components.</td></tr>
+				<tr><td>Dandelion, heliconia, ornithogalum, jade vine</td><td class="left">Wings sprout from your back, and you gain a Fly Speed equal to your walking speed.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_ACONITE_CLEMATIS_LARKSPUR" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_ACONITE|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_CLEMATIS|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_LARKSPUR" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_AMARANTH_APPLE_TREE_MAGNOLIA" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_AMARANTH|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_APPLE_TREE|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_MAGNOLIA" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_AZALEA_HYDRANGEA_PEONY_SUCCULENT" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_AZALEA|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_HYDRANGEA|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_PEONY|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_SUCCULENT" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_CHERRY_BLOSSOM_WISTERIA" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_CHERRY_BLOSSOM|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_WISTERIA" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_LAMIUM_WATER_LILY" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_LAMIUM|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_WATER_LILY" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_RHODODENDRON_MANCHINEEL_VAMPIRE_LILY" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_RHODODENDRON|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_MANCHINEEL|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_VAMPIRE_LILY" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_DANDELION_HELICONIA_ORNITHOGALUM_JADE_VINE" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_DANDELION|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_HELICONIA|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_ORNITHOGALUM|ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORM_JADE_VINE" />
+		</rules>
+	</element>
+	<element name="Full Bloom (Aconite, clematis, larkspur)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_ACONITE_CLEMATIS_LARKSPUR">
+		<compendium display="false" />
+		<description>
+			<p>Your melee weapon attacks deal an extra 1d8 Poison damage on a hit, and you gain Immunity to Poison damage.</p>
+		</description>
+		<sheet alt="Full Bloom">
+			<description>Your melee weapon attacks deal an extra 1d8 Poison damage on a hit.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Druid" prepared="true" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+	<element name="Full Bloom (Amaranth, apple tree, magnolia)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_AMARANTH_APPLE_TREE_MAGNOLIA">
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Heroes' Feast</i> spell prepared and can cast it without the need for material components once every ten days.</p>
+		</description>
+		<sheet alt="Full Bloom">
+			<description>You can cast the Heroes' Feast spell without the need for material components once every ten days.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEROES_FEAST" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Full Bloom (Azalea, hydrangea, peony, succulent)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_AZALEA_HYDRANGEA_PEONY_SUCCULENT">
+		<compendium display="false" />
+		<description>
+			<p>Whenever you use a spell of 1st level or higher to restore Hit Points to a creature, the creature regains additional Hit Points equal to 1d8 + 5.</p>
+		</description>
+		<sheet alt="Full Bloom">
+			<description>Whenever you use a spell of 1st level or higher to restore HPs to a creature, the creature regains 1d8+5 additional HPs.</description>
+		</sheet>
+	</element>
+	<element name="Full Bloom (Cherry blossom, wisteria)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_CHERRY_BLOSSOM_WISTERIA">
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Etherealness</i> spell prepared and can cast it once a day without expending a spell slot.</p>
+		</description>
+		<sheet alt="Full Bloom">
+			<description>You can cast the Etherealness spell once a day without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ETHEREALNESS" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Full Bloom (Lamium, water lily)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_LAMIUM_WATER_LILY">
+		<compendium display="false" />
+		<description>
+			<p>Your Swim Speed is double your base walking speed, you can breathe underwater, and you gain Immunity to Cold damage.</p>
+		</description>
+		<sheet alt="Full Bloom">
+			<description>You can breathe underwater.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="double" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+		</rules>
+	</element>
+	<element name="Full Bloom (Rhododendron, manchineel, vampire lily)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_RHODODENDRON_MANCHINEEL_VAMPIRE_LILY">
+		<compendium display="false" />
+		<description>
+			<p>You always have the <i>Arcane Sword</i> spell prepared, which takes the form of razor-sharp swirling leaves and petals. You can cast it without the need for material components.</p>
+		</description>
+		<sheet alt="Full Bloom">
+			<description>You can cast Mordenkainen's Sword without the need for material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MORDENKAINENS_SWORD" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Full Bloom (Dandelion, heliconia, ornithogalum, jade vine)" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_FULL_BLOOM_DANDELION_HELICONIA_ORNITHOGALUM_JADE_VINE">
+		<compendium display="false" />
+		<description>
+			<p>Wings sprout from your back, and you gain a Fly Speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Floral Form Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_FLORAL_FORM" />
+	<element name="Draconic Wild Shape Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_DRACONIC_WILD_SHAPE" />
+	<element name="Dendrology Defenses Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_DRUID_FLOWERS_DENDROLOGY_DEFENSES" />
+	<element name="Flower Circle Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FLOWERS_FLOWER_CIRCLE" />
+	<element name="Full Bloom Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_DRUID_FULL_BLOOM" />
+
+</elements>

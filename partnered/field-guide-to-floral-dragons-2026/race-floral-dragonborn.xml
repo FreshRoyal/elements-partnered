@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Floral Dragonborn</name>
+		<description>Floral Dragonborn from The Field Guide to Floral Dragons (2026)</description>
+		<update version="0.0.1">
+			<file name="race-floral-dragonborn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/race-floral-dragonborn.xml" />
+		</update>
+	</info>
+
+	<element name="Floral Dragonborn" type="Race" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACE_FLORAL_DRAGONBORN">
+		<description>
+			<p>Blending the beauty of flowers and the ferocity of dragons, floral dragonborns take after the mysterious and majestic floral dragons. Rather than the bold metallic or chromatic scales of their dragonborn kin, their coloring evokes the delicate or vibrant shades of flowers, and they share as many traits with plants as they do with dragons.</p>
+			<h4>WILD SEEDS</h4>
+			<p>The first floral dragonborn emerged long ago as infants born to dragonborn parents. From the moment of their birth, it is clear that floral dragonborns are different from their dragonborn kin. As they grow to adulthood, their plantlike nature becomes more obvious—buds, blossoms, and leaves begin to sprout, mimicking the flowery frills and manes of floral dragons. They come to resemble the floral dragon they take after far more than their own parents.</p>
+			<p class="indent">What causes a floral dragonborn to be born is hotly debated. Some believe that parents spending a lot of time around a floral dragon is enough to infuse an unborn child with a floral essence. Others think that eating certain plants or vespon honey can influence their birth. The existence of floral dragonborn who take after elusive or antisocial floral dragons indicates that whatever the cause, proximity is not always necessary. Today, enough generations have passed since they first began to appear that many floral dragonborn are also born to floral dragonborn parents. Depending on their dragonborn clan and the type of flower the infant takes after, the arrival of a floral dragonborn child may be celebrated as a sign of good fortune or a sign or an omen of disaster.</p>
+			<h4>CALL OF NATURE</h4>
+			<p>Floral dragonborns are shaped by the cultures they grow up within. However, they also experience a deep sense of belonging and interconnectedness to natural environments. As living bridges between the three worlds of plants, dragons, and humanoids, many floral dragonborns feel a responsibility to maintain the balance between them.</p>
+			<p class="indent">The plant-like nature of floral dragonborns can also influence their personalities and attitudes. Just as trees and flowers change with the seasons, floral dragonborns can find themselves becoming restful in winter, energetic in spring, creative in summer, and somber in fall. They can also be particularly sensitive to pollution and changes in the environment.</p>
+			<h4>FLORAL DRAGONBORN NAMES</h4>
+			<p>Floral dragonborn draw their names from a variety of cultures, particularly draconic heritage. It is also common for them to receive names that speak to their connection with plants. As the first floral dragonborns were born into other dragonborn clans, early floral dragonborn clans weren't based on family ties. Though these clans have become more established over time, they still gladly adopt floral dragonborns who seek a place to set down roots. Some floral dragonborn reject the clan system entirely, preferring to go wherever the wind blows them.</p>
+			<ul class="unstyled">
+				<li><strong>Example Names:</strong> Abaxial, Alstroemeriax, Calyptrax, Chidor, Floriram, Karsissus, Phytomalanno, Rhachix, Samfire, Trissthanthamum, Zinni</li>
+				<li><strong>Example Clan Names:</strong> Campanuli, Chloranthal, Eudicot, Magnolii, Ranuncu, Rosid, Saxifrag</li>
+			</ul>
+			<h4>FLORAL DRAGONBORN TRAITS</h4>
+			<p>Floral dragonborns appear in as many different forms as the floral dragons. You embody a blend of draconic and botanical features. As a floral Dragonborn, you have the following traits:</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can read, speak, and write Common, Draconic, amd one other language.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a humanoid, and you count as a plant with regard to magic.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Floral Legacy.</em></strong> Choose your Floral Legacy from the Floral Legacy table. Your legacy grants you a skill proficiency, as shown in the table, and it also informs your Floral Breath Weapon and Floral Fortitude traits.</p>
+			<p class="indent">You resemble one species of floral dragon. The table suggests floral dragons that fit well into the different legacies, but many can fit into more than one legacy. For example, a floral dragonborn who resembles a lamium dragon could be a Guardian instead of a Waterplant. You are free to choose your Floral Legacy and which floral dragon you resemble.</p>
+			<h5>Floral Legacy</h5>
+			<table>
+				<thead>
+					<tr><td>Floral Legacy</td><td>Condition</td></tr>
+				</thead>
+				<tr><td>Beauty</td><td>You have proficiency in the Persuasion skill.</td><td>Cherry blossom, heliconia, jade vine, wisteria</td></tr>
+				<tr><td>Guardian</td><td>You have proficiency in the Perception skill.</td><td>Amaranth, rhododendron, magnolia</td></tr>
+				<tr><td>Healer</td><td>You have proficiency in the Medicine skill.</td><td>Apple tree, hydrangea, peony dragon, succulent</td></tr>
+				<tr><td>Poisoner</td><td>You have proficiency in the Intimidation skill.</td><td>Aconite, clematis, manchineel, larkspur, ornithogalum, vampire lily</td></tr>
+				<tr><td>Waterplant</td><td>You have proficiency in the Athletics skill.</td><td>Lamium, water lily</td></tr>
+				<tr><td>Wildflower</td><td>You have proficiency in the Acrobatics skill.</td><td>Azalea, dandelion</td></tr>
+			</table>
+			<p class="indent"><strong><em>Floral Breath Weapon.</em></strong> Your dragonborn breath weapon blossoms out with the power of flowers. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of swirling magical petals in a 15-foot Cone. Each creature in that area must make a Constitution saving throw (DC 8 + your Charisma modifier + your Proficiency Bonus). On a failed save, the creature takes 1d8 magical slashing damage and triggers the breath weapon effect of your Floral Legacy, as shown in the Floral Breath Weapon table. On a successful save, it takes half as much damage and your breath weapon effect is not triggered. This damage increases by 1d8 when you reach character levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+			<p class="indent">You can use your Floral Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<h5>Floral Breath Weapon</h5>
+			<table>
+				<thead>
+					<tr><td>Floral Legacy</td><td>Breath Weapon Effects</td></tr>
+				</thead>
+				<tr><td>Beauty</td><td>Each creature that fails its saving throw is Charmed by you until the end of its next turn.</td></tr>
+				<tr><td>Guardian</td><td>Each creature that fails its saving throw has Disadvantage on attacks against creatures other than you until the end of its next turn.</td></tr>
+				<tr><td>Healer</td><td>One creature of your choice within 15 feet of you regains Hit Points equal to half the total amount of damage your Floral Breath Weapon dealt to creatures that failed their saving throws.</td></tr>
+				<tr><td>Poisoner</td><td>Each creature that fails its saving throw has the Poisoned condition until the end of its next turn.</td></tr>
+				<tr><td>Waterplant</td><td>Each creature that fails its saving throw has the Prone condition.</td></tr>
+				<tr><td>Wildflower</td><td>You can move without provoking Opportunity Attacks until the end of your next turn. At least one creature must fail its saving throw for this effect to be triggered.</td></tr>
+			</table>
+			<p class="indent"><strong><em>Floral Fortitude.</em></strong> Your connection to nature roots you in resilience. You have Advantage on saving throws against a condition associated with your Floral Legacy, as shown in the Floral Fortitude table.</p>
+			<h5>Floral Fortitude</h5>
+			<table>
+				<thead>
+					<tr><td>Floral Legacy</td><td>Condition</td></tr>
+				</thead>
+				<tr><td>Beauty</td><td>Magical sleep</td></tr>
+				<tr><td>Guardian</td><td>Frightened</td></tr>
+				<tr><td>Healer</td><td>Exhaustion</td></tr>
+				<tr><td>Poisoner</td><td>Poisoned</td></tr>
+				<tr><td>Waterplant</td><td>Restrained</td></tr>
+				<tr><td>Wildflower</td><td>Charmed</td></tr>
+			</table>
+			<p class="indent"><strong><em>Draconic Blossoming.</em></strong> As buds burst into blossoms, you too can experience a brief burst of draconic might. Starting at character level 5, you can use a Bonus Action to manifest the draconic power of a floral dragon that fills you with vitality. For 1 minute, you regain 1d4 Hit Points at the start of each of your turns. Additionally, for the duration any creature that attacks you must first succeed on a Charisma saving throw (DC 8 + your Charisma modifier + your Proficiency Bonus) or be forced to choose a different target for its attack. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Abaxial, Alstroemeriax, Calyptrax, Chidor, Floriram, Karsissus, Phytomalanno, Rhachix, Samfire, Trissthanthamum, Zinni</set>
+			<set name="names" type="female">Abaxial, Alstroemeriax, Calyptrax, Chidor, Floriram, Karsissus, Phytomalanno, Rhachix, Samfire, Trissthanthamum, Zinni</set>
+			<set name="names" type="clan">Campanuli, Chloranthal, Eudicot, Magnolii, Ranuncu, Rosid, Saxifrag</set>
+			<set name="names-format">{{name}} {{clan}}</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Floral Dragonborn)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Racial Trait" name="Size (Floral Dragonborn)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_TYPE_HUMANOID_PLANT" />
+			
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Floral Dragonborn)" supports="Standard||Exotic" />
+			<select type="Language" name="Customized Language (Floral Dragonborn)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="2" />
+
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_DRACONIC_BLOSSOMING" level="5" />
+		</rules>
+	</element>
+
+	<element name="Humanoid Plant" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_TYPE_HUMANOID_PLANT">
+		<supports>Creature Type</supports>
+		<description>
+			<p>You are a humanoid, and you count as a plant with regard to magic.</p>
+			<div class="reference">
+				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
+			</div>
+		</description>
+		<sheet alt="Creature Type">
+			<description>Humanoid. You count as a plant with regard to magic.</description>
+		</sheet>
+	</element>
+
+	<element name="Floral Legacy" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY">
+		<requirements>!ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_FLORAL_LEGACY</requirements>
+		<description>
+			<p>Choose your Floral Legacy from the Floral Legacy table. Your legacy grants you a skill proficiency, as shown in the table, and it also informs your Floral Breath Weapon and Floral Fortitude traits.</p>
+			<p class="indent">You resemble one species of floral dragon. The table suggests floral dragons that fit well into the different legacies, but many can fit into more than one legacy. For example, a floral dragonborn who resembles a lamium dragon could be a Guardian instead of a Waterplant. You are free to choose your Floral Legacy and which floral dragon you resemble.</p>
+			<h5>Floral Legacy</h5>
+			<table>
+				<thead>
+					<tr><td>Floral Legacy</td><td>Condition</td></tr>
+				</thead>
+				<tr><td>Beauty</td><td>You have proficiency in the Persuasion skill.</td><td>Cherry blossom, heliconia, jade vine, wisteria</td></tr>
+				<tr><td>Guardian</td><td>You have proficiency in the Perception skill.</td><td>Amaranth, rhododendron, magnolia</td></tr>
+				<tr><td>Healer</td><td>You have proficiency in the Medicine skill.</td><td>Apple tree, hydrangea, peony dragon, succulent</td></tr>
+				<tr><td>Poisoner</td><td>You have proficiency in the Intimidation skill.</td><td>Aconite, clematis, manchineel, larkspur, ornithogalum, vampire lily</td></tr>
+				<tr><td>Waterplant</td><td>You have proficiency in the Athletics skill.</td><td>Lamium, water lily</td></tr>
+				<tr><td>Wildflower</td><td>You have proficiency in the Acrobatics skill.</td><td>Azalea, dandelion</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Floral Legacy" supports="FGFD26 Floral Legacy" />
+		</rules>
+	</element>
+	<element name="Beauty" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_BEAUTY">
+		<supports>FGFD26 Floral Legacy</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Floral Legacy is Beauty. You have proficiency in the Persuasion skill and advantage on saving throws you make to avoid or end magical sleep.</p>
+			<p class="indent">Additionally, each creature that fails its saving throw against your Floral Breath Weapon is Charmed by you until the end of its next turn.</p>
+		</description>
+		<sheet alt="Floral Legacy">
+			<description>Beauty.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Floral Legacy)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Guardian" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_GUARDIAN">
+		<supports>FGFD26 Floral Legacy</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Floral Legacy is Guardian. You have proficiency in the Perception skill and advantage on saving throws you make to avoid or end the Frightened condition.</p>
+			<p class="indent">Additionally, each creature that fails its saving throw against your Floral Breath Weapon has Disadvantage on attacks against creatures other than you until the end of its next turn.</p>
+		</description>
+		<sheet alt="Floral Legacy">
+			<description>Guardian.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Floral Legacy)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Healer" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_HEALER">
+		<supports>FGFD26 Floral Legacy</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Floral Legacy is Healer. You have proficiency in the Medicine skill and advantage on saving throws you make to avoid the Exhaustion condition.</p>
+			<p class="indent">Additionally, one creature of your choice within 15 feet of you regains Hit Points equal to half the total amount of damage your Floral Breath Weapon dealt to creatures that failed their saving throws.</p>
+		</description>
+		<sheet alt="Floral Legacy">
+			<description>Healer.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Floral Legacy)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Poisoner" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_POISONER">
+		<supports>FGFD26 Floral Legacy</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Floral Legacy is Poisoner. You have proficiency in the Intimidation skill and advantage on saving throws you make to avoid or end the Poisoned condition.</p>
+			<p class="indent">Additionally, each creature that fails its saving throw against your Floral Breath Weapon has the Poisoned condition until the end of its next turn.</p>
+		</description>
+		<sheet alt="Floral Legacy">
+			<description>Poisoner.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Floral Legacy)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Waterplant" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_WATERPLANT">
+		<supports>FGFD26 Floral Legacy</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Floral Legacy is Waterplant. You have proficiency in the Athletics skill and advantage on saving throws you make to avoid or end the Restrained condition.</p>
+			<p class="indent">Additionally, each creature that fails its saving throw against your Floral Breath Weapon has the Prone condition.</p>
+		</description>
+		<sheet alt="Floral Legacy">
+			<description>Waterplant.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Floral Legacy)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Wildflower" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_WILDFLOWER">
+		<supports>FGFD26 Floral Legacy</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Floral Legacy is Wildflower. You have proficiency in the Acrobatics skill and advantage on saving throws you make to avoid or end the Charmed condition.</p>
+			<p class="indent">Additionally, after using your Floral Breath Weapon, you can move without provoking Opportunity Attacks until the end of your next turn. At least one creature must fail its saving throw for this effect to be triggered.</p>
+		</description>
+		<sheet alt="Floral Legacy">
+			<description>Wildflower.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Floral Legacy)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Floral Breath Weapon" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON">
+		<requirements>!ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON</requirements>
+		<description>
+			<p>Your dragonborn breath weapon blossoms out with the power of flowers. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of swirling magical petals in a 15-foot Cone. Each creature in that area must make a Constitution saving throw (DC 8 + your Charisma modifier + your Proficiency Bonus). On a failed save, the creature takes 1d8 magical slashing damage and triggers the breath weapon effect of your Floral Legacy, as shown in the Floral Breath Weapon table. On a successful save, it takes half as much damage and your breath weapon effect is not triggered. This damage increases by 1d8 when you reach character levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+			<p class="indent">You can use your Floral Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<h5>Floral Breath Weapon</h5>
+			<table>
+				<thead>
+					<tr><td>Floral Legacy</td><td>Breath Weapon Effects</td></tr>
+				</thead>
+				<tr><td>Beauty</td><td>Each creature that fails its saving throw is Charmed by you until the end of its next turn.</td></tr>
+				<tr><td>Guardian</td><td>Each creature that fails its saving throw has Disadvantage on attacks against creatures other than you until the end of its next turn.</td></tr>
+				<tr><td>Healer</td><td>One creature of your choice within 15 feet of you regains Hit Points equal to half the total amount of damage your Floral Breath Weapon dealt to creatures that failed their saving throws.</td></tr>
+				<tr><td>Poisoner</td><td>Each creature that fails its saving throw has the Poisoned condition until the end of its next turn.</td></tr>
+				<tr><td>Waterplant</td><td>Each creature that fails its saving throw has the Prone condition.</td></tr>
+				<tr><td>Wildflower</td><td>You can move without provoking Opportunity Attacks until the end of your next turn. At least one creature must fail its saving throw for this effect to be triggered.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="fgfd:floral breath weapon:dc" value="8" bonus="base" />
+			<stat name="fgfd:floral breath weapon:dc" value="constitution:modifier" bonus="ability" />
+			<stat name="fgfd:floral breath weapon:dc" value="proficiency" bonus="proficiency" />
+			<stat name="fgfd:floral breath weapon:dice count" value="1" level="1" bonus="base" />
+			<stat name="fgfd:floral breath weapon:dice count" value="2" level="5" bonus="base" />
+			<stat name="fgfd:floral breath weapon:dice count" value="3" level="11" bonus="base" />
+			<stat name="fgfd:floral breath weapon:dice count" value="4" level="17" bonus="base" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_BEAUTY" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_BEAUTY" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_GUARDIAN" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_GUARDIAN" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_HEALER" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_HEALER" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_POISONER" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_POISONER" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_WATERPLANT" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_WATERPLANT" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_WILDFLOWER" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_WILDFLOWER" />
+		</rules>
+	</element>
+	<element name="Floral Breath Weapon (Beauty)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_BEAUTY">
+		<compendium display="false" />
+		<sheet alt="Floral Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale a 15ft Cone of swirling magical petals. Each creature in that area must make a DC{{fgfd:floral breath weapon:dc}} Constitution saving throw. On a failed save, the creature takes {{fgfd:floral breath weapon:dice count}}d8 magical slashing damage. Each creature that fails its saving throw is Charmed by you until the end of its next turn. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+	<element name="Floral Breath Weapon (Guardian)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_GUARDIAN">
+		<compendium display="false" />
+		<sheet alt="Floral Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale a 15ft Cone of swirling magical petals. Each creature in that area must make a DC{{fgfd:floral breath weapon:dc}} Constitution saving throw. On a failed save, the creature takes {{fgfd:floral breath weapon:dice count}}d8 magical slashing damage. Each creature that fails its saving throw has Disadvantage on attacks against creatures other than you until the end of its next turn. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+	<element name="Floral Breath Weapon (Healer)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_HEALER">
+		<compendium display="false" />
+		<sheet alt="Floral Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale a 15ft Cone of swirling magical petals. Each creature in that area must make a DC{{fgfd:floral breath weapon:dc}} Constitution saving throw. On a failed save, the creature takes {{fgfd:floral breath weapon:dice count}}d8 magical slashing damage. On a successful save, it takes half as much damage. One creature of your choice within 15 ft of you regains HPs equal to half the total amount of damage your Floral Breath Weapon dealt to creatures that failed their saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Floral Breath Weapon (Poisoner)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_POISONER">
+		<compendium display="false" />
+		<sheet alt="Floral Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale a 15ft Cone of swirling magical petals. Each creature in that area must make a DC{{fgfd:floral breath weapon:dc}} Constitution saving throw. On a failed save, the creature takes {{fgfd:floral breath weapon:dice count}}d8 magical slashing damage. Each creature that fails its saving throw has the Poisoned condition until the end of its next turn. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+	<element name="Floral Breath Weapon (Waterplant)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_WATERPLANT">
+		<compendium display="false" />
+		<sheet alt="Floral Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale a 15ft Cone of swirling magical petals. Each creature in that area must make a DC{{fgfd:floral breath weapon:dc}} Constitution saving throw. On a failed save, the creature takes {{fgfd:floral breath weapon:dice count}}d8 magical slashing damage. Each creature that fails its saving throw has the Prone condition. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+	<element name="Floral Breath Weapon (Wildflower)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON_WATERPLANT">
+		<compendium display="false" />
+		<sheet alt="Floral Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale a 15ft Cone of swirling magical petals. Each creature in that area must make a DC{{fgfd:floral breath weapon:dc}} Constitution saving throw. On a failed save, the creature takes {{fgfd:floral breath weapon:dice count}}d8 magical slashing damage. If any creature fails its saving throw, you can move without provoking Opportunity Attacks until the end of your next turn. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Floral Fortitude" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE">
+		<requirements>!ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE</requirements>
+		<description>
+			<p>Your connection to nature roots you in resilience. You have Advantage on saving throws against a condition associated with your Floral Legacy, as shown in the Floral Fortitude table.</p>
+			<h5>Floral Fortitude</h5>
+			<table>
+				<thead>
+					<tr><td>Floral Legacy</td><td>Condition</td></tr>
+				</thead>
+				<tr><td>Beauty</td><td>Magical sleep</td></tr>
+				<tr><td>Guardian</td><td>Frightened</td></tr>
+				<tr><td>Healer</td><td>Exhaustion</td></tr>
+				<tr><td>Poisoner</td><td>Poisoned</td></tr>
+				<tr><td>Waterplant</td><td>Restrained</td></tr>
+				<tr><td>Wildflower</td><td>Charmed</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_BEAUTY" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_BEAUTY" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_GUARDIAN" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_GUARDIAN" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_HEALER" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_HEALER" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_POISONER" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_POISONER" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_WATERPLANT" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_WATERPLANT" />
+			<grant type="Racial Trait" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_WILDFLOWER" requirements="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_LEGACY_WILDFLOWER" />
+		</rules>
+	</element>
+	<element name="Floral Fortitude (Beauty)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_BEAUTY">
+		<compendium display="false" />
+		<sheet alt="Floral Fortitude">
+			<description>You have Advantage on saving throws against magical sleep.</description>
+		</sheet>
+	</element>
+	<element name="Floral Fortitude (Guardian)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_GUARDIAN">
+		<compendium display="false" />
+		<sheet alt="Floral Fortitude">
+			<description>You have Advantage on saving throws against the Frightened condition.</description>
+		</sheet>
+	</element>
+	<element name="Floral Fortitude (Healer)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_HEALER">
+		<compendium display="false" />
+		<sheet alt="Floral Fortitude">
+			<description>You have Advantage on saving throws against the Exhaustion condition.</description>
+		</sheet>
+	</element>
+	<element name="Floral Fortitude (Poisoner)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_POISONER">
+		<compendium display="false" />
+		<sheet alt="Floral Fortitude">
+			<description>You have Advantage on saving throws against the Poisoner condition.</description>
+		</sheet>
+	</element>
+	<element name="Floral Fortitude (Waterplant)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_WATERPLANT">
+		<compendium display="false" />
+		<sheet alt="Floral Fortitude">
+			<description>You have Advantage on saving throws against the Restrained condition.</description>
+		</sheet>
+	</element>
+	<element name="Floral Fortitude (Wildflower)" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE_WILDFLOWER">
+		<compendium display="false" />
+		<sheet alt="Floral Fortitude">
+			<description>You have Advantage on saving throws against the Charmed condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Draconic Blossoming" type="Racial Trait" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_RACIAL_TRAIT_FLORAL_DRAGONBORN_DRACONIC_BLOSSOMING">
+		<requirements>!ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_DRACONIC_BLOSSOMING</requirements>
+		<description>
+			<p>As buds burst into blossoms, you too can experience a brief burst of draconic might. Starting at character level 5, you can use a Bonus Action to manifest the draconic power of a floral dragon that fills you with vitality. For 1 minute, you regain 1d4 Hit Points at the start of each of your turns. Additionally, for the duration any creature that attacks you must first succeed on a Charisma saving throw (DC 8 + your Charisma modifier + your Proficiency Bonus) or be forced to choose a different target for its attack. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You manifest the power of a floral dragon that fills you with vitality. For 1 minute, you regain 1d4 HPs at the start of each of your turns. Additionally, for the duration any creature that attacks you must first succeed on a DC{{fgfd:draconic blossoming:dc}} Charisma saving throw or be forced to choose a different target for its attack.</description>
+		</sheet>
+		<rules>
+			<stat name="fgfd:draconic blossoming:dc" value="8" bonus="base" />
+			<stat name="fgfd:draconic blossoming:dc" value="charisma:modifier" bonus="ability" />
+			<stat name="fgfd:draconic blossoming:dc" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Floral Legacy Trait Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_FLORAL_LEGACY" />
+	<element name="Floral Breath Weapon Trait Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_FLORAL_BREATH_WEAPON" />
+	<element name="Floral Fortitude Trait Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_FLORAL_FORTITUDE" />
+	<element name="Draconic Blossoming Trait Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_RACIAL_TRAIT_REPLACEMENT_FLORAL_DRAGONBORN_DRACONIC_BLOSSOMING" />
+
+</elements>

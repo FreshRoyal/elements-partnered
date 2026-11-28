@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Field Researcher</name>
+		<description>Field Researcher from The Field Guide to Floral Dragons (2026)</description>
+		<update version="0.0.1">
+			<file name="ranger-field-researcher.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/archetypes/ranger-field-researcher.xml" />
+		</update>
+	</info>
+
+	<element name="Field Researcher" type="Archetype" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_RANGER_FIELD_RESEARCHER">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p>Field Researcher Rangers investigate and protect the natural world. These explorers seek to preserve and understand the magic of floral dragons. Their skills let them roam wherever their research requires, and their observational abilities make them formidable opponents and steadfast allies should danger arise.</p>
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_FIELD_RESEARCHER_MAGIC" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_CASE_STUDY" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_RESEARCH_SKILLS" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_RESEARCH_TEAM" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_WARLOCK_FUNGUS_CYCLE_OF_DECAY" />
+			<div element="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_FLORAL_COLLABORATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_FIELD_RESEARCHER_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_CASE_STUDY" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_RESEARCH_SKILLS" level="3" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_RESEARCH_TEAM" level="7" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_HANDS_ON_ANALYSIS" level="11" />
+			<grant type="Archetype Feature" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_FLORAL_COLLABORATION" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Field Researcher Magic" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_FIELD_RESEARCHER_MAGIC">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_FIELD_RESEARCHER_MAGIC</requirements>
+		<description>
+			<p>When you reach a Ranger level specified in the Field Researcher Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Field Researcher Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Ranger Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Detect Magic</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Locate Animals or Plants</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Plant Growth</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Control Water</em></td></tr>
+				<tr><td>17</td><td class="left"><em>Awaken</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PLANT_GROWTH" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTROL_WATER" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AWAKEN" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Case Study" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_CASE_STUDY">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_CASE_STUDY</requirements>
+		<description>
+			<p>Your focus in combat lets you find the perfect moment to strike again. When you hit a creature with an attack, you can use your Bonus Action to make another attack with the same weapon against that creature.</p>
+		</description>
+		<sheet alt="Case Study">
+			<description>When you hit a creature with an attack, you can use your Bonus Action to make another attack with the same weapon against that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Research Skills" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_RESEARCH_SKILLS">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_RESEARCH_SKILLS</requirements>
+		<description>
+			<p>You have honed your research abilities, making you adaptable in the field. Whenever you make an Intelligence check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</p>
+			<p class="indent">In addition, you gain proficiency in one of the following skills of your choice: History, Investigation, or Nature.</p>
+		</description>
+		<sheet alt="Research Skills">
+			<description>Whenever you make an Intelligence check, you gain a +{{fgfd26:research skills:modifier}} bonus to the check.</description>
+		</sheet>
+		<rules>
+			<stat name="fgfd26:research skills:modifier" value="1" bonus="bonus" />
+			<stat name="fgfd26:research skills:modifier" value="wisdom:modifier" bonus="bonus" />
+			<select type="Proficiency" name="Skill Proficiency (Research Skills)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Research Team" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_RESEARCH_TEAM">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_RESEARCH_TEAM</requirements>
+		<description>
+			<p>You have learned that working with a group is key to successful field research. When you are adjacent to an ally, you can use your Reaction to grant your ally Advantage on one attack roll or skill check they make on their turn.</p>
+		</description>
+		<sheet alt="Research Team" action="Reaction">
+			<description>When you are adjacent to an ally, you can grant your ally Advantage on one attack roll or skill check they make on their turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Hands-on Analysis" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_HANDS_ON_ANALYSIS">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_HANDS_ON_ANALYSIS</requirements>
+		<description>
+			<p>Your ability to handle wild creatures lets you deal with those that might be hostile to others. When you cast the spells <i>Animal Friendship, Animal Messenger, Conjure Animals, Locate Animals or Plants,</i> or <i>Speak with Animals</i>, you can target or summon Plants and Dragons as well as Beasts as long as all the other requirements of the spell are met.</p>
+			<p class="indent">Additionally, when you use a spell of 1st level or higher to restore Hit Points to a Plant or Dragon, the creature regains additional Hit Points equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Hands-on Analysis">
+			<description>When you cast the spells Animal Friendship, Animal Messenger, Conjure Animals, Locate Animals or Plants, or Speak with Animals, you can target or summon Plants and Dragons as well as Beasts as long as all the other requirements of the spell are met. &#13;
+			Additionally, when you use a spell of 1st level or higher to restore HPs to a Plant or Dragon, the creature regains {{proficiency}} additional HPs.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Floral Collaboration" type="Archetype Feature" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ARCHETYPE_FEATURE_RANGER_FIELD_RESEARCHER_FLORAL_COLLABORATION">
+		<requirements>!ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_FLORAL_COLLABORATION</requirements>
+		<description>
+			<p>Thanks to your extensive research, you know exactly what to call on for aid. You can cast <i>Summon Dragon</i> without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest. When you cast this spell, you can choose to summon a floral dragon or Plant of CR 5 or lower instead of a Dragon spirit. When you summon a floral dragon, you can choose to make Wisdom (Animal Handling) checks instead of Constitution saving throws to maintain Concentration on this spell.</p>
+			
+		</description>
+		<sheet alt="Floral Collaboration" usage="1/Long Rest">
+			<description>You can cast Summon Dragon without a Material component. When you cast this spell, you can choose to summon a floral dragon or Plant of CR 5 or lower instead of a Dragon spirit. When you summon a floral dragon, you can choose to make Wisdom (Animal Handling) checks instead of Constitution saving throws to maintain Concentration on this spell.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Field Researcher Magic Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_FIELD_RESEARCHER_MAGIC" />
+	<element name="Case Study Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_CASE_STUDY" />
+	<element name="Research Skills Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_RESEARCH_SKILLS" />
+	<element name="Research Team Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_RESEARCH_TEAM" />
+	<element name="Hands-on Analysis Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_HANDS_ON_ANALYSIS" />
+	<element name="Floral Collaboration Feature Replacement" type="Grants" source="Internal" id="ID_HPP_FGFD26_FEATURE_REPLACEMENT_RANGER_FIELD_RESEARCHER_FLORAL_COLLABORATION" />
+
+</elements>

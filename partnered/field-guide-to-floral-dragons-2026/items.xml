@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description>Items from The Field Guide to Floral Dragons (2026)</description>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-partnered/master/partnered/field-guide-to-floral-dragons-2026/items.xml" />
+		</update>
+	</info>
+	
+	<!--Magic Items-->
+	<element name="Armor of the Vampire Lily Dragon" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_ARMOR_OF_THE_VAMPIRE_LILY_DRAGON">
+		<description>
+			<p>This armor has been reinforced with the spines of a <strong>Vampire Lily Dragon</strong>. You have a +1 bonus to AC while wearing this armor. Additionally, a creature that grapples you or hits you with a melee attack while within 5 feet of you must succeed on a DC 15 Dexterity saving throw or take 2d6 Poison damage and become Poisoned until the end of its next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, heavy, melee, attack, dexterity, saving throw, save, poison, damage, poisoned</set>
+			<set name="category">Magic Armor</set>
+			<set name="type" addition="Medium or Heavy">Armor</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="cost" currency="gp">40000</set>
+			<set name="slot">body</set>
+			<set name="name-format">{{parent}} of the Vampire Lily Dragon</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Cherry Blossom Token" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_CHERRY_BLOSSOM_TOKEN">
+		<description>
+			<p>Made from a pressed flower from the cherry blossom dragon, this token can bring good fortune.</p>
+			<p class="indent">While carrying this token, you have Advantage on Performance checks made to tell stories. Additionally, when you fail an attack roll, ability check, or saving throw, you can reroll the d20 and must use the new result. Once you have used this property, you can't use it again until next dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, performance, checks, stories, d20 test</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">4000</set>
+		</setters>
+	</element>
+
+	<element name="Clematis-tainted Weapon" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_CLEMATIS_TAINTED_WEAPON">
+		<description>
+			<p>This weapon is coated in the powerful toxin of a clematis dragon. When you hit with this weapon, the target must make a DC 16 Constitution saving throw, taking 1d8 Poison damage on a failed save or half as much damage on a successful one. A creature that fails its save is also Paralyzed until the end of its next turn unless it is immune to the Poisoned condition. Once a creature has been Paralyzed by this weapon, it is immune to the weapon's paralyzing effects for the next 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, dart, constitution, saving throw, save, poison, damage, paralyzed</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword, arrow, dart">Weapon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||Dart</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="name-format">Clematis-tainted {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Clematis-tainted Weapon" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_CLEMATIS_TAINTED_WEAPON_ARROW">
+		<compendium display="false" />
+		<description>
+			<p>This weapon is coated in the powerful toxin of a clematis dragon. When you hit with this weapon, the target must make a DC 16 Constitution saving throw, taking 1d8 Poison damage on a failed save or half as much damage on a successful one. A creature that fails its save is also Paralyzed until the end of its next turn unless it is immune to the Poisoned condition. Once a creature has been Paralyzed by this weapon, it is immune to the weapon's paralyzing effects for the next 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow, constitution, saving throw, save, poison, damage, paralyzed</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any sword, arrow, dart">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="name-format">Clematis-tainted Arrow</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Dandelion Hourglass" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_DANDELION_HOURGLASS">
+		<description>
+			<p>Fluffy seeds from <strong>dandelion dragons</strong> drift between the two bulbs of this hourglass. While attuned to this item, you have Advantage on Initiative rolls. Additionally, when a creature you can see within 120 feet of you rolls Initiative, you can use your Reaction to force it to make a DC 15 Intelligence saving throw. A creature can choose to fail the save. On a failure, the target must reroll its Initiative and must use the new result. Once you have used this property, you can't use it again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, initiative, reaction, intelligence, save, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">425</set>
+		</setters>
+	</element>
+	
+	<element name="Floral Dragon Grooming Rake" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_FLORAL_DRAGON_GROOMING_RAKE">
+		<description>
+			<p>The firm prongs of this rake are designed to remove dead leaves, wilted flowers, and dirt from a floral dragon. When you spend 10 minutes using this rake to groom a willing floral dragon, you have Advantage on Wisdom (Animal Handling) checks made to interact with the floral dragon for the next 24 hours. Additionally, the dragon makes all Dexterity and Constitution saving throws with Advantage for the next 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">floral dragon, advantage, animal handling, dexterity, constitution, saves, saving throws</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="cost" currency="gp">50</set>
+		</setters>
+	</element>
+	
+	<element name="Great Harvest Apple" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_PEONY_DRAGON_ESSENCE">
+		<description>
+			<p>This enormous apple is produced by an apple tree dragon. The apple is large enough to provide up to ten creatures with sustenance for one day. The apple can be sliced and shared, hollowed out and used for cooking, or baked into other dishes. A creature that spends at least 10 minutes consuming part of the apple gains the following benefits:</p>
+			<ul>
+				<li>It regains 2d8 Hit Points.</li>
+				<li>It gains Temporary Hit Points equal to the number of creatures that also consumed part of the apple during the same meal.</li>
+				<li>It gains Resistance to Acid damage for the next 24 hours.</li>
+			</ul>
+			<p class="indent">A creature can only benefit from a <i>great harvest apple</i>'s effects once every 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">sustenance, hit points, healing, temporary hit points, acid, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+	
+	<element name="Peony Dragon Essence" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_PEONY_DRAGON_ESSENCE">
+		<description>
+			<p>This fragrant essence is made from the tall peonies in a peony dragon's lair and is popular among spellcasters. Each vial of <i>peony dragon essence</i> contains 1d4 + 2 doses. When you cast an abjuration spell, you can add the essence to the spell as a material component to improve one casting of the spell with one of the following benefits:</p>
+			<ul>
+				<li>For 1 minute, the spell does not require Concentration.</li>
+				<li>You gain a +1 bonus to the spell attack roll or spell save DC of the spell.</li>
+				<li>You can choose one additional target for the spell.</li>
+				<li>The spell's duration is doubled.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">abjuration, spell, concentration, attack, save, duration</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cost" currency="gp">200</set>
+		</setters>
+	</element>
+	
+	<element name="Wisteria Dragon Perfume" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_WISTERIA_DRAGON_PERFUME">
+		<description>
+			<p>This light purple translucent perfume is sealed in a glass orb. As an action, you can throw the orb up to 60 feet away from you, shattering it on impact and releasing a powerful scent of wisteria flowers that spreads out in a 20-foot-radius Sphere centered on the point orb shattered. The sphere of invisible perfume spreads around corners and lasts for 1d4 rounds. Each creature that starts its turn inside the sphere or enters it on its turn must succeed on a DC 19 Constitution saving throw or fall Unconscious for 1 minute. Floral dragons, except for wisteria dragons, have Disadvantage on this saving throw. The effect ends for an affected creature if it takes any damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, constitution, saving throw, save, unconscious</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+		</setters>
+	</element>
+
+	<!--Potions-->
+	<element name="Hydrangea Dragon Antidote" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_HYDRANGEA_DRAGON_ANTIDOTE">
+		<description>
+			<p>This viscous liquid shifts between blue and pink in its vial. It is brewed from the blooms of a living hydrangea dragon.</p>
+			<p class="indent">A creature that has been poisoned that drinks this vial of liquid is no longer Poisoned. It also regains 2d12 Hit Points and reduces its levels of Exhaustion by 3.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ornithogalum Dragon Elixir" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_ORNITHOGALUM_DRAGON_ELIXIR">
+		<description>
+			<p>This shimmering, translucent green liquid is distilled from a living ornithogalum dragon's flowers. When you drink this potion, your Exhaustion level is reduced by one. Additionally, you can spend Hit Dice as though you had taken a Short Rest.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ornithogalum Dragon Honey" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_ORNITHOGALUM_DRAGON_HONEY">
+		<description>
+			<p>This thick liquid tastes sweet with a hint of herbal notes. One hour after consuming this honey, you must make a DC 19 Constitution saving throw. On a failure, you suffer a level of Exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Succulent Water of Life" type="Magic Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_MAGIC_ITEM_SUCCULENT_WATER_OF_LIFE">
+		<description>
+			<p>This thin liquid is light green but becomes dark red when shaken. When you drink this potion, you regain 1d10 Hit Points, and for 1 minute, you regain 1d10 Hit Points at the start of each of your turns, provided you have at least 1 Hit Point.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Poison-->
+	<element name="Clematis Poison" type="Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ITEM_POISON_CLEMATIS_POISON">
+		<description>
+			<p>A creature subjected to the poison must make a DC 16 Constitution saving throw, taking 13 (3d8) Poison damage on a failed save, or half as much damage on a successful one. A creature that fails its save is also Paralyzed for 1 hour.</p>
+			<p class="indent">This poison has no effect on creatures that are immune to the Poisoned condition.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG24_RULE_POISON_INJURY" />
+			</div>
+		</description>
+		<sheet alt="Clematis Poison (Injury)" />
+		<setters>
+			<set name="keywords">constitution, saving throw, save, poison, damage, paralyzed</set>
+			<set name="category">Poison</set>
+			<set name="type">Injury Poison</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Hydrangea Dragon Poison" type="Item" source="The Field Guide to Floral Dragons (2026)" id="ID_HPP_FGFD26_ITEM_POISON_HYDRANGEA_DRAGON_POISON">
+		<description>
+			<p>This colorless poison is harvested from the blooms of a living hydrangea dragon. A creature subjected to this poison must make a DC 15 Constitution saving throw. On a failed save, it takes 4d12 Poison damage, gains 4 levels of Exhaustion, and has the Poisoned condition until it is treated with <i>Hydrangea Dragon Antidote</i>. On a successful save, the creature gains 2 levels of Exhaustion and isn't Poisoned.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG24_RULE_POISON_CONTACT" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_DMG24_RULE_POISON_INGESTED" />
+			</div>
+		</description>
+		<sheet alt="Hydrangea Dragon Poison (Contact or Ingested)" />
+		<setters>
+			<set name="keywords">constitution, saving throw, save, poison, damage, exhaustion, poisoned</set>
+			<set name="category">Poison</set>
+			<set name="type">Contact or Ingested Poison</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+</elements>
